@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dayQuantity">
+        <item quantity="one">%1$d dia</item>
+        <item quantity="other">%1$d dias</item>
+    </plurals>
+    <plurals name="express_plurals">
+        <item quantity="one">aposta combinada</item>
+        <item quantity="other">apostas combinadas</item>
+    </plurals>
+    <plurals name="forecast_plurals">
+        <item quantity="one">prognóstico</item>
+        <item quantity="other">prognósticos</item>
+    </plurals>
+    <plurals name="monthQuantity">
+        <item quantity="one">%1$d mês</item>
+        <item quantity="other">%1$d meses</item>
+    </plurals>
+    <plurals name="prediction_plurals">
+        <item quantity="one">previsão</item>
+        <item quantity="other">previsões</item>
+    </plurals>
+    <plurals name="weekQuantity">
+        <item quantity="one">%1$d semana</item>
+        <item quantity="other">%1$d semanas</item>
+    </plurals>
+    <plurals name="yearQuantity">
+        <item quantity="one">%1$d ano</item>
+        <item quantity="other">%1$d anos</item>
+    </plurals>
+</resources>

@@ -1,0 +1,15 @@
+package e;
+
+import android.view.Window;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+
+/* compiled from: r8-map-id-1007347d93e945b62163496d2b3d545e4cec50eb5f7054b93987970dfadb4b15 */
+/* loaded from: classes.dex */
+public class r extends q {
+    @Override // e.p, k2.x
+    public void c(@NotNull Window window) {
+        Intrinsics.checkNotNullParameter(window, "window");
+        window.getAttributes().layoutInDisplayCutoutMode = 3;
+    }
+}

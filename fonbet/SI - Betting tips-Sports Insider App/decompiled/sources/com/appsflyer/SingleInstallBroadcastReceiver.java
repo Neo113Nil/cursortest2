@@ -1,0 +1,35 @@
+package com.appsflyer;
+
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import com.appsflyer.internal.AFa1ySDK;
+
+/* compiled from: r8-map-id-1007347d93e945b62163496d2b3d545e4cec50eb5f7054b93987970dfadb4b15 */
+/* loaded from: classes.dex */
+public class SingleInstallBroadcastReceiver extends BroadcastReceiver {
+    @Override // android.content.BroadcastReceiver
+    public void onReceive(Context context, Intent intent) {
+        String str;
+        if (intent == null) {
+            return;
+        }
+        try {
+            str = intent.getStringExtra("referrer");
+        } catch (Throwable th2) {
+            AFLogger.afErrorLog("error in BroadcastReceiver ", th2);
+            str = null;
+        }
+        if (str != null && AFa1ySDK.d_(context).getString("referrer", null) != null) {
+            AFa1ySDK.getRevenue().AFAdRevenueData(context, str);
+            return;
+        }
+        String string = AppsFlyerProperties.getInstance().getString("referrer_timestamp");
+        long currentTimeMillis = System.currentTimeMillis();
+        if (string == null || currentTimeMillis - Long.parseLong(string) >= 2000) {
+            AFLogger.afInfoLog("SingleInstallBroadcastReceiver called");
+            AFa1ySDK.getRevenue().b_(context, intent);
+            AppsFlyerProperties.getInstance().set("referrer_timestamp", String.valueOf(System.currentTimeMillis()));
+        }
+    }
+}

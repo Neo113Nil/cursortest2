@@ -1,0 +1,9 @@
+package com.logrocket.protobuf;
+
+/* compiled from: r8-map-id-1007347d93e945b62163496d2b3d545e4cec50eb5f7054b93987970dfadb4b15 */
+/* loaded from: classes.dex */
+public final class z1 extends IllegalArgumentException {
+    public z1(int i5, int i10) {
+        super(androidx.appcompat.widget.c1.j(i5, "Unpaired surrogate at index ", " of ", i10));
+    }
+}

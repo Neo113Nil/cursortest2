@@ -33,5 +33,105 @@
   ],
   "stdout": "Downloading com.neptunesoft.bacdz...\ncom.neptunesoft.bacdz downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Fonbet'"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.12.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "23"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да (Kotlin + kotlinx-coroutines 1.9.0)"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob / Google Mobile Ads (interstitial), Meta Audience Network (Facebook mediation adapter)"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics (connector / measurement), Firebase Cloud Messaging, Firebase Installations, Firebase Realtime Database (обратная связь), Firebase Storage (скачивание PDF), Firebase App Check, Google Play Services datatransport / measurement"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.SCHEDULE_EXACT_ALARM, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.FOREGROUND_SERVICE, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.READ_MEDIA_IMAGES, android.permission.READ_MEDIA_VIDEO, android.permission.ACCESS_NETWORK_STATE, android.permission.POST_NOTIFICATIONS, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, com.neptunesoft.bacdz.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.appcompat 1.7.1, androidx.activity 1.8.0, androidx.fragment 1.5.4, androidx.core / core-ktx 1.13.0, androidx.browser 1.8.0, androidx.webkit 1.11.0-alpha02, androidx.cardview, androidx.constraintlayout 2.2.1, androidx.coordinatorlayout, androidx.recyclerview 1.4.0, androidx.viewpager / viewpager2, androidx.room 2.7.2, androidx.sqlite 2.5.1, androidx.datastore 1.1.3, androidx.lifecycle, androidx.startup, androidx.swiperefreshlayout, androidx.work 2.7.0, androidx.emoji2, androidx.print, androidx.media, androidx.privacysandbox.ads, androidx.profileinstaller, com.google.android.material 1.12.0, Kotlin stdlib + kotlinx-coroutines 1.9.0, okio, Google Play Services (ads, ads-identifier, appset, base, basement, cloud-messaging, measurement, tasks, auth), Firebase (common, analytics, messaging, database, storage, installations, appcheck, datatransport, iid), Google Play In-App Review (com.google.android.play.core.review), com.github.barteksc.pdfviewer, com.shockwave.pdfium, com.makeramen.roundedimageview, Meta Audience Network (com.facebook.ads)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "bacalgeria.com, config.ru, dzetude.com, eddirasa.com, ency-education.com, neptune-soft.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "DARKMODE — флаг тёмной темы (ключ switchkey1); USEAPP — счётчик запусков (ключ switchkey2), после 20 запусков показывается окно оценки в Google Play Параметр Значение"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "нет Проверка подозрительных доменов Данные ниже взяты как есть из готовых проверок пайплайна (domain_checks.json / domain_checks.md): сводка VirusTotal, полный список Security vendors' analysis и три дополнительных пункта в конце."
+      }
+    ],
+    "domains": [
+      {
+        "domain": "bacalgeria.com",
+        "redirects_to": "http://click-v4.exmainclcknew.com/click?i=KTF3u-AEC0s_0",
+        "parked_at": "регистратор: Dynadot Inc"
+      },
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "dzetude.com",
+        "redirects_to": "https://www.dzetude.com/",
+        "parked_at": "регистратор: OVH sas"
+      },
+      {
+        "domain": "eddirasa.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: OVH sas"
+      },
+      {
+        "domain": "ency-education.com",
+        "redirects_to": "https://www.ency-education.com/",
+        "parked_at": "регистратор: Register.com - Network Solutions, LLC"
+      },
+      {
+        "domain": "neptune-soft.com",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: OVH sas"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }

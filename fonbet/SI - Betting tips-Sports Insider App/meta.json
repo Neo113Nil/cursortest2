@@ -1,0 +1,36 @@
+{
+  "app_id": "com.sports.insider",
+  "title": "SI - Betting tips",
+  "developer": "Sports Insider App",
+  "score": 3.3823528,
+  "icon": "https://play-lh.googleusercontent.com/FMOxsv_xHVnzr-MVW41WJ25pJkW9MnP7fdefICebRj8cmWHT3O_E1zAFenjETiF8cfeUnP8mHCj1xk3nfysq",
+  "url": "https://play.google.com/store/apps/details?id=com.sports.insider&hl=en&gl=us",
+  "keyword": "fonbet",
+  "developer_id": "Sports+Insider+App",
+  "released": "Aug 18, 2020",
+  "updated": "2026-01-24",
+  "version": "1.2.44.123",
+  "summary": "Betting Tips, Football Predictions, Match Analysis & Results",
+  "folder": "SI - Betting tips-Sports Insider App",
+  "path": "fonbet/SI - Betting tips-Sports Insider App",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.sports.insider.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/fonbet/SI - Betting tips-Sports Insider App",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.sports.insider...\ncom.sports.insider downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.sports.insider...\ncom.sports.insider downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

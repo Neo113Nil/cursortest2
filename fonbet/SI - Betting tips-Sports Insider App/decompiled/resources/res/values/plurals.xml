@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dayQuantity">
+        <item quantity="zero">%1$d days</item>
+        <item quantity="one">%1$d day</item>
+        <item quantity="two">%1$d days</item>
+        <item quantity="few">%1$d days</item>
+        <item quantity="many">%1$d days</item>
+        <item quantity="other">%1$d days</item>
+    </plurals>
+    <plurals name="express_plurals">
+        <item quantity="zero">express</item>
+        <item quantity="one">express</item>
+        <item quantity="two">expresses</item>
+        <item quantity="few">expresses</item>
+        <item quantity="many">expresses</item>
+        <item quantity="other">expresses</item>
+    </plurals>
+    <plurals name="forecast_plurals">
+        <item quantity="zero">forecast</item>
+        <item quantity="one">forecast</item>
+        <item quantity="two">forecasts</item>
+        <item quantity="few">forecasts</item>
+        <item quantity="many">forecasts</item>
+        <item quantity="other">forecasts</item>
+    </plurals>
+    <plurals name="monthQuantity">
+        <item quantity="zero">%1$d months</item>
+        <item quantity="one">%1$d month</item>
+        <item quantity="two">%1$d months</item>
+        <item quantity="few">%1$d months</item>
+        <item quantity="many">%1$d months</item>
+        <item quantity="other">%1$d months</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+    <plurals name="prediction_plurals">
+        <item quantity="zero">prediction</item>
+        <item quantity="one">prediction</item>
+        <item quantity="two">predictions</item>
+        <item quantity="few">predictions</item>
+        <item quantity="many">predictions</item>
+        <item quantity="other">predictions</item>
+    </plurals>
+    <plurals name="weekQuantity">
+        <item quantity="zero">%1$d weeks</item>
+        <item quantity="one">%1$d week</item>
+        <item quantity="two">%1$d weeks</item>
+        <item quantity="few">%1$d weeks</item>
+        <item quantity="many">%1$d weeks</item>
+        <item quantity="other">%1$d weeks</item>
+    </plurals>
+    <plurals name="yearQuantity">
+        <item quantity="zero">%1$d years</item>
+        <item quantity="one">%1$d year</item>
+        <item quantity="two">%1$d years</item>
+        <item quantity="few">%1$d years</item>
+        <item quantity="many">%1$d years</item>
+        <item quantity="other">%1$d years</item>
+    </plurals>
+</resources>

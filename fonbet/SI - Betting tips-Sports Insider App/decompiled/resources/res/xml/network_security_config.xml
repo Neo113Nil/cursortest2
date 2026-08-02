@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system"/>
+        </trust-anchors>
+    </base-config>
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">sport-insider.club
+        </domain>
+        <trust-anchors>
+            <certificates src="user"/>
+            <certificates src="system"/>
+            <certificates src="@raw/isrgx1pem"/>
+            <certificates src="@raw/isrgx2pem"/>
+            <certificates src="@raw/isrgx2byx1pem"/>
+            <certificates src="@raw/r10"/>
+            <certificates src="@raw/r11"/>
+            <certificates src="@raw/r12"/>
+            <certificates src="@raw/r13"/>
+            <certificates src="@raw/e5x2"/>
+            <certificates src="@raw/e5x2crossx1"/>
+            <certificates src="@raw/e6x2"/>
+            <certificates src="@raw/e6x2crossx1"/>
+            <certificates src="@raw/e7"/>
+            <certificates src="@raw/e7cross"/>
+            <certificates src="@raw/e8"/>
+            <certificates src="@raw/e8cross"/>
+        </trust-anchors>
+    </domain-config>
+</network-security-config>

@@ -1,0 +1,13 @@
+package lf;
+
+import mf.g;
+
+/* compiled from: r8-map-id-1007347d93e945b62163496d2b3d545e4cec50eb5f7054b93987970dfadb4b15 */
+/* loaded from: classes.dex */
+public final class b extends g {
+    @Override // mf.a
+    public final Object invokeSuspend(Object obj) {
+        h8.b.B(obj);
+        return obj;
+    }
+}

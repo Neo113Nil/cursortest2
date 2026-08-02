@@ -1,0 +1,17 @@
+package com.google.android.material.color.utilities;
+
+/* compiled from: r8-map-id-1007347d93e945b62163496d2b3d545e4cec50eb5f7054b93987970dfadb4b15 */
+/* loaded from: classes.dex */
+public final class DislikeAnalyzer {
+    private DislikeAnalyzer() {
+        throw new UnsupportedOperationException();
+    }
+
+    public static Hct fixIfDisliked(Hct hct) {
+        return isDisliked(hct) ? Hct.from(hct.getHue(), hct.getChroma(), 70.0d) : hct;
+    }
+
+    public static boolean isDisliked(Hct hct) {
+        return ((((double) Math.round(hct.getHue())) > 90.0d ? 1 : (((double) Math.round(hct.getHue())) == 90.0d ? 0 : -1)) >= 0 && (((double) Math.round(hct.getHue())) > 111.0d ? 1 : (((double) Math.round(hct.getHue())) == 111.0d ? 0 : -1)) <= 0) && ((((double) Math.round(hct.getChroma())) > 16.0d ? 1 : (((double) Math.round(hct.getChroma())) == 16.0d ? 0 : -1)) > 0) && ((((double) Math.round(hct.getTone())) > 65.0d ? 1 : (((double) Math.round(hct.getTone())) == 65.0d ? 0 : -1)) < 0);
+    }
+}
