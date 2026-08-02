@@ -1,0 +1,5 @@
+{
+  "checks": [],
+  "checked": [],
+  "note": "Prompt VT tables covered about.fb.com, about.meta.com, accounts.spotify.com, ai.character.app, ai.meta.com (truncated). All are Meta/Facebook/Spotify/Character.AI known services — excluded from «Подозрительные домены» per report rules (not custom/unknown hosts). No second domain tables in PDF."
+}

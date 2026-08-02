@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "apks": [
+    "com.instagram.android.apk",
+    "config.xxhdpi.apk"
+  ],
+  "base_apk": "com.instagram.android.apk",
+  "jadx": {
+    "ok": true,
+    "note": "self-prepared via apkeep+jadx after missing prepare commit; resources.arsc decode failed, sources decompiled"
+  },
+  "source": "apkeep:apk-pure",
+  "analysis_files": [
+    "com.instagram.android.xapk",
+    "apk/com.instagram.android.apk",
+    "apk/config.xxhdpi.apk",
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/sources/",
+    "decompiled/sources/X/",
+    "decompiled/sources/acamera/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/ca/",
+    "decompiled/sources/com/",
+    "decompiled/sources/exoplayer2/",
+    "decompiled/sources/fb/",
+    "decompiled/sources/fx/",
+    "decompiled/sources/fxcache/",
+    "decompiled/sources/go/",
+    "decompiled/sources/instagram/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/libraries/",
+    "decompiled/sources/meta/",
+    "decompiled/sources/net/",
+    "decompiled/sources/okhttp3/",
+    "decompiled/sources/org/"
+  ]
+}
