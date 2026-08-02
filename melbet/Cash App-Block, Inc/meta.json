@@ -32,5 +32,107 @@
   ],
   "stdout": "Downloading com.squareup.cash...\ncom.squareup.cash downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Cash App (com.squareup.cash), versionName 5.58.0 (versionCode 5580007; meta.json указывает 5.62.0), разработчик Block, Inc"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.2.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "29"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.3.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Firebase Cloud Messaging, Firebase Installations, AppsFlyer (атрибуция и OneLink deeplink), Bugsnag (сбои), Datadog (наблюдаемость), Braze (push/CRM), OpenTelemetry, Google Play Install Referrer, собственная аналитика Cash / app.cash.cdp"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_BACKGROUND_LOCATION, android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.BLUETOOTH, android.permission.BLUETOOTH_ADMIN, android.permission.BLUETOOTH_ADVERTISE, android.permission.BLUETOOTH_CONNECT, android.permission.BLUETOOTH_SCAN, android.permission.CAMERA, android.permission.CHANGE_NETWORK_STATE, android.permission.DETECT_SCREEN_CAPTURE, android.permission.DETECT_SCREEN_RECORDING, android.permission.FOREGROUND_SERVICE, android.permission.GET_ACCOUNTS, android.permission.INTERNET, android.permission.NFC, android.permission.POST_NOTIFICATIONS, android.permission.READ_BASIC_PHONE_STATE, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_PHONE_NUMBERS, android.permission.READ_PHONE_STATE, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS, android.permission.USE_BIOMETRIC, android.permission.USE_FINGERPRINT, android.permission.VIBRATE, android.per…"
+      },
+      {
+        "param": "Libraries",
+        "value": "com.squareup.cash / app.cash (broadway, molecule, zipline, redwood, cdp, mooncake, arcade, sqldelight, trifle), xyz.block, androidx (compose, camera, browser, webkit, room, work, datastore, navigation, media3, credentials, biometric, glance), com.google.firebase, com.google.android.gms (measurement, wallet, tapandpay, maps, auth, mlkit), com.google.android.material, okhttp3, okio, retrofit2, com.squareup.moshi, com.squareup.wire, dagger, coil3, timber, papa, radiography, curtains, com.appsflyer, com.braze / bo.app, com.bugsnag, com.datadog, io.opentelemetry, com.stripe, sqip, com.plaid, com.withpersona, com.fillr, com.knotapi, com.netcetera.threeds, com.fidesmo, com.miteksystems.misnap, com.airbnb.lottie, io.noties.markwon, com.valentinilk.shimmer, com.mikepenz.markdown, com.robinhood.spark, com.lyft.kronos, com.jakewharton, org.greenrobot.eventbus, org.bouncycastle, org.commonmark, nl.dionsegijn.konfetti, org.chromium.support_lib_boundary, com.nimbusds Подозрительные домены click.cash.app, clicks.cash.app, affiliate.fillr.com, afterpay.com, ag.orvis.com, aliexpress.com, aosom.com, api.fillr.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "хранилище «cash» через SharedPreferencesKeyValue: токены сессии (app-token, customer-token, target-account-token), флаги онбординга (onboarded, onboarding-token), session-flag:*, UI-флаги (fps_counter_enabled, скрытие баланса, подсказки, язык), токены аналитических потоков (WALLET_CARD_FLOW_TOKEN, SHOP_FLOW_TOKEN, TAP_TO_PAY_FLOW_KEY), Work user_token / selected_merchant_token, update-required, Fillr eligibility; ключей offer_url / cloak / gate нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет Подозрительные слова cloak / cloaking (Persona knownRootCloakingPackages — антирут, не клоака трафика), blacklist / whitelist (Fillr Unleash списки магазинов для автозаполнения), bot (Cash Moneybot — ИИ-помощник), offer (продукт Cash Offers), redirect (deeplink / платежные редиректы), affiliate (Fillr affiliate / WebViewUseCase.AFFILIATE — шопинг), deposit / withdraw / payout (банковские операции), landing (маршруты онбординга /borrow-landing), bridge (TaxWebAppBridge / Zipline JS-мосты), clickid (параметр AppsFlyer deeplink), postback (ключ AppsFlyer af_installpostback), webview / loadUrl (штатные WebView: Afterpay, shopping, support, tax, work) Проверка подозрительных доменов Данные ниже взяты как есть из готовых проверок пайплайна (domain_checks.json / domain_checks.md): сводка VirusTotal, полный список Security vendors' analysis и три дополнительных пункта в конце."
+      }
+    ],
+    "domains": [
+      {
+        "domain": "click.cash.app",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "clicks.cash.app",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "affiliate.fillr.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Key-Systems GmbH"
+      },
+      {
+        "domain": "afterpay.com",
+        "redirects_to": "https://www.afterpay.com/ → https://www.afterpay.com/global/country-select",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "ag.orvis.com",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "aliexpress.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "aosom.com",
+        "redirects_to": "https://www.aosom.com:443/",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "api.fillr.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Key-Systems GmbH"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }

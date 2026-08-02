@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="144dp"
+    android:width="316dp"
+    android:viewportWidth="316"
+    android:viewportHeight="144">
+    <group>
+        <clip-path android:pathData="M0,0h316v144h-316z"/>
+        <group>
+            <clip-path android:pathData="M0,0h316v144h-316z"/>
+            <path
+                android:fillColor="#00000000"
+                android:pathData="M74,68H98"
+                android:strokeColor="#7cacf8"
+                android:strokeWidth="1"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"/>
+            <path
+                android:fillColor="#00000000"
+                android:pathData="M80,78.39L92,57.61"
+                android:strokeColor="#7cacf8"
+                android:strokeWidth="1"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"/>
+            <path
+                android:fillColor="#00000000"
+                android:pathData="M92,78.39L80,57.61"
+                android:strokeColor="#7cacf8"
+                android:strokeWidth="1"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"/>
+            <path
+                android:fillColor="#00000000"
+                android:pathData="M246,48H70C56.75,48 46,58.75 46,72C46,85.25 56.75,96 70,96H246C259.26,96 270,85.25 270,72C270,58.75 259.26,48 246,48Z"
+                android:strokeColor="#e3e3e3"
+                android:strokeWidth="1"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"/>
+            <path
+                android:fillColor="#00000000"
+                android:pathData="M70,88H102"
+                android:strokeColor="#e3e3e3"
+                android:strokeWidth="1"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"/>
+            <path
+                android:fillColor="#00000000"
+                android:pathData="M118,88H150"
+                android:strokeColor="#e3e3e3"
+                android:strokeWidth="1"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"/>
+            <path
+                android:fillColor="#00000000"
+                android:pathData="M166,88H198"
+                android:strokeColor="#e3e3e3"
+                android:strokeWidth="1"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"/>
+            <path
+                android:fillColor="#00000000"
+                android:pathData="M214,88H246"
+                android:strokeColor="#e3e3e3"
+                android:strokeWidth="1"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"/>
+            <path
+                android:fillColor="#ec928e"
+                android:pathData="M134.69,57.14C134.27,57.4 133.73,57.4 133.32,57.14C130.47,55.33 126.65,55.67 124.16,58.15C121.68,60.64 121.34,64.46 123.15,67.31C123.41,67.73 123.41,68.27 123.15,68.68C121.34,71.53 121.68,75.35 124.16,77.84C126.65,80.33 130.47,80.66 133.32,78.85C133.73,78.59 134.27,78.59 134.69,78.85C137.54,80.66 141.36,80.32 143.84,77.84C146.33,75.35 146.67,71.53 144.86,68.68C144.6,68.26 144.6,67.72 144.86,67.31C146.67,64.46 146.33,60.64 143.84,58.15C141.36,55.66 137.53,55.33 134.69,57.14Z"
+                android:fillType="evenOdd"/>
+            <path
+                android:fillColor="#f09d00"
+                android:pathData="M179.16,57.19L171.18,65.17C169.62,66.73 169.62,69.27 171.18,70.83L179.16,78.81C180.72,80.37 183.26,80.37 184.82,78.81L192.8,70.83C194.36,69.27 194.36,66.73 192.8,65.17L184.82,57.19C183.26,55.63 180.72,55.63 179.16,57.19Z"/>
+            <path
+                android:fillColor="#37be5f"
+                android:pathData="M236,57C238.76,57 241,59.24 241,62V74C241,76.76 238.76,79 236,79H224C221.24,79 219,76.76 219,74V62C219,59.24 221.24,57 224,57H236ZM236,56H224C220.69,56 218,58.69 218,62V74C218,77.31 220.69,80 224,80H236C239.31,80 242,77.31 242,74V62C242,58.69 239.31,56 236,56Z"/>
+        </group>
+    </group>
+</vector>

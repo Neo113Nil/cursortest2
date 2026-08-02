@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@interpolator/m3_sys_motion_easing_emphasized_accelerate"
+    android:duration="@integer/m3_sys_motion_duration_short3"
+    android:shareInterpolator="true">
+    <translate
+        android:fromXDelta="0%"
+        android:toXDelta="100%"
+        android:fromYDelta="0%"
+        android:toYDelta="0%"/>
+</set>

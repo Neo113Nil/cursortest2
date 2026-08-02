@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/export_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/export_accounts"
+        android:layout_marginStart="@dimen/text_views_start_end_margin"
+        android:layout_marginEnd="@dimen/text_views_start_end_margin"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/icon_export"/>
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/select_accounts"
+        android:layout_below="@+id/export_icon"
+        android:layout_alignParentStart="true"
+        style="@style/ExportTitleStyle"/>
+    <TextView
+        android:id="@+id/subtitle"
+        android:text="@string/choose_otps"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true"
+        style="@style/ExportSubtitleStyle"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/otps_for_transfer_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/next_button"
+        android:layout_below="@+id/subtitle"
+        android:layout_marginStart="@dimen/text_views_start_end_margin"
+        android:layout_marginEnd="@dimen/text_views_start_end_margin"/>
+    <Button
+        android:enabled="false"
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/button_bottom_margin"
+        android:text="@string/next"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/text_views_start_end_margin"
+        android:layout_marginEnd="@dimen/text_views_start_end_margin"/>
+</RelativeLayout>

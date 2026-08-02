@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/og_bento_card_stack_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:filterTouchesWhenObscured="true"
+    android:layout_marginVertical="6dp"
+    style="@style/OneGoogleBentoMaterialCard">
+    <com.google.android.libraries.onegoogle.accountmenu.bento.viewbindings.cards.CardStackRecyclerView
+        android:id="@+id/og_bento_card_stack_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</com.google.android.material.card.MaterialCardView>

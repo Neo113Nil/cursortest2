@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/authenticator_upgrading_syncing_image_height"
+            android:layout_marginTop="@dimen/image_margin_top"
+            android:layout_marginBottom="@dimen/image_margin_bottom"
+            android:adjustViewBounds="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/google_authenticator_is_upgrading_headline"
+            app:srcCompat="@drawable/intro_to_syncing_for_upgrading_users"/>
+        <TextView
+            android:id="@+id/title"
+            android:text="@string/google_authenticator_is_upgrading_headline"
+            android:layout_below="@+id/image"
+            style="@style/title"/>
+        <TextView
+            android:id="@+id/description"
+            android:text="@string/google_authenticator_is_upgrading_details"
+            android:layout_below="@+id/title"
+            style="@style/description"/>
+        <Button
+            android:id="@+id/get_started"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/authenticator_upgrading_syncing_button_bottom_margin"
+            android:text="@string/get_started"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/start_margin"
+            android:layout_marginEnd="@dimen/end_margin"/>
+    </RelativeLayout>
+</ScrollView>

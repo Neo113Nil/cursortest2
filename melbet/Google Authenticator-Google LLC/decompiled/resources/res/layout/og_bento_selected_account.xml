@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:filterTouchesWhenObscured="true">
+    <FrameLayout
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/og_bento_selected_account_avatar"
+        android:layout_width="@dimen/bento_selected_account_avatar_size"
+        android:layout_height="@dimen/bento_selected_account_avatar_size"
+        android:layout_marginBottom="2dp"
+        android:contentDescription="@string/og_obake_feature_a11y"/>
+    <com.google.android.libraries.onegoogle.accountmenu.bento.viewbindings.TextViewContainer
+        android:id="@+id/og_bento_selected_account_greeting_message_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/og_bento_selected_account_greeting_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.GoogleMaterial3.TitleLarge"/>
+    </com.google.android.libraries.onegoogle.accountmenu.bento.viewbindings.TextViewContainer>
+    <com.google.android.libraries.onegoogle.accountmenu.bento.viewbindings.TextViewContainer
+        android:id="@+id/og_bento_manage_your_google_account_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/og_bento_manage_your_google_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            style="@style/Widget.GoogleMaterial3.Button.OutlinedButton"/>
+    </com.google.android.libraries.onegoogle.accountmenu.bento.viewbindings.TextViewContainer>
+</LinearLayout>

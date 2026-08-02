@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="?attr/colorSurfaceContainer"/>
+            <stroke
+                android:width="@dimen/og_dimmed_badge_outline_thickness"
+                android:color="?attr/colorSurfaceContainerLowest"/>
+        </shape>
+    </item>
+    <item
+        android:id="@+id/og_badge_icon"
+        android:drawable="@android:color/transparent"
+        android:left="@dimen/og_dimmed_badge_outline_thickness"
+        android:top="@dimen/og_dimmed_badge_outline_thickness"
+        android:right="@dimen/og_dimmed_badge_outline_thickness"
+        android:bottom="@dimen/og_dimmed_badge_outline_thickness"/>
+</layer-list>

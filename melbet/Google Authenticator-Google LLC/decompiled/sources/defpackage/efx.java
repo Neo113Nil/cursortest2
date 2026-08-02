@@ -1,0 +1,11 @@
+package defpackage;
+
+/* compiled from: PG */
+/* loaded from: classes2.dex */
+public interface efx {
+    hvi a();
+
+    hvi b();
+
+    hvi c();
+}

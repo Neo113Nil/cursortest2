@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="og_bento_menu_large_screen_bottom_margin">40dp</dimen>
+</resources>

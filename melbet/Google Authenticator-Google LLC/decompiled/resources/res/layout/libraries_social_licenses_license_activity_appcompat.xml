@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/license_activity_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:theme="?attr/actionBarTheme"
+        android:id="@+id/license_toolbar"
+        android:background="?attr/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:touchscreenBlocksFocus="false"/>
+    <ScrollView
+        android:id="@+id/license_activity_scrollview"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:typeface="monospace"
+            android:id="@+id/license_activity_textview"
+            android:paddingLeft="@dimen/license_text_padding_horizontal"
+            android:paddingTop="@dimen/license_text_padding_vertical"
+            android:paddingRight="@dimen/license_text_padding_horizontal"
+            android:paddingBottom="@dimen/license_text_padding_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/license_text_padding_horizontal"
+            android:paddingEnd="@dimen/license_text_padding_horizontal"/>
+    </ScrollView>
+</LinearLayout>

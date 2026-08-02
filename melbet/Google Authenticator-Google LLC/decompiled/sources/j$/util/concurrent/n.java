@@ -1,0 +1,10 @@
+package j$.util.concurrent;
+
+import java.io.Serializable;
+import java.util.concurrent.locks.ReentrantLock;
+
+/* compiled from: r8-map-id-2752cf38da47f0d75abdb97c37b25637dca0f8b8c0f6d2b14913d7d174dcc614 */
+/* loaded from: classes3.dex */
+public final class n extends ReentrantLock implements Serializable {
+    private static final long serialVersionUID = 2249069246763182397L;
+}

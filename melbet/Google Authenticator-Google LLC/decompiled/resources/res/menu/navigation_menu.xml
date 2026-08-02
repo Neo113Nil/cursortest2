@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/gs_compare_arrows_vd_theme_24"
+        android:id="@+id/migration"
+        android:title="@string/migration"/>
+    <item
+        android:icon="@drawable/gs_school_vd_theme_24"
+        android:id="@+id/how_it_works"
+        android:title="@string/how_it_works"/>
+    <item
+        android:icon="@drawable/gs_settings_vd_theme_24"
+        android:id="@+id/settings"
+        android:title="@string/settings"/>
+    <item
+        android:icon="@drawable/gs_help_vd_theme_24"
+        android:id="@+id/help_and_feedback"
+        android:title="@string/help_and_feedback"/>
+</menu>

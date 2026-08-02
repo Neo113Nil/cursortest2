@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/og_account_management_content_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:filterTouchesWhenObscured="true">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/account_management_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/og_bento_element_vertical_margin"
+        style="@style/OneGoogleBentoMaterialCard">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/account_management_expandable_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.libraries.onegoogle.common.ConstraintLayoutInterceptingTouches
+                android:id="@+id/og_bento_account_management_header_container"
+                android:background="@drawable/og_bento_ripple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/og_bento_card_horizontal_margin"/>
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/account_management_header_divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dividerColor="?attr/colorSurfaceContainer"
+                app:dividerThickness="@dimen/bento_divider_thickness"/>
+            <com.google.android.libraries.onegoogle.accountmenu.bento.common.BentoRecyclerView
+                android:id="@+id/accounts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.google.android.libraries.onegoogle.accountmenu.bento.viewbindings.cards.CardStackRecyclerView
+                android:id="@+id/account_management_actions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

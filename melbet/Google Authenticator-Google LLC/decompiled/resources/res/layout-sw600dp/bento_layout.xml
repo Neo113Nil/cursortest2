@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:filterTouchesWhenObscured="true">
+    <FrameLayout
+        android:id="@+id/og_bento_menu_scrim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"/>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/og_bento_menu_content_container"
+        android:layout_width="@dimen/og_bento_menu_large_screen_content_container_default_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/og_bento_menu_large_screen_bottom_margin"
+        android:layout_marginHorizontal="@dimen/og_bento_menu_content_container_horizontal_margin"
+        style="@style/OneGoogleBentoMaterialCard"/>
+</FrameLayout>
