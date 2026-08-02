@@ -1,0 +1,6 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="c00ecb56-4b78-5f3b-805b-26f1753ea7c5")}catch(e){}}();
+define(["exports","./playtika/core-legacy-586f780f","./playtika/std-legacy-12b02668","./slotomania/machine-core-legacy-e333ecb3","./MontezumaBonusGameDataBuilder-1b64efa2"],function(S,n,t,h,o){"use strict";class i extends h.ce{constructor(){super()}initScenarios(){this.addScenario(0,t.g.bind(this,this.createBonusGameScenario)),this.addScenario(1,t.g.bind(this,this.createBonusGameScenario))}createBonusGameScenario(s,r,c,u,a){const d=new o.M;return this.getBonusGame(s,r,c,u,a,d)}getBonusGame(s,r,c,u,a,d){const e=new h.cc(s,r,c,t.g.bind(this,this.setSharing),u,a);return e.withActionSource(new o.a),e.withDataBuilder(d),e.withView(new o.b("bonus/round0/scene.object")),e}static callPostponedTypeInfo(){i.typeInfo=new n.T(n.a.bi(15531)).__initialize__(n.a.ci(null),[n.a.ii(25),n.a.ii(26),n.a.ii(11730)],[])}static __instantiate__(s,r){return new i}}t.C.register(15531,i),S.MontezumaBonusScenario=i});
+//# sourceMappingURL=MontezumaBonusScenario-0e753332.js.map
+
+//# debugId=c00ecb56-4b78-5f3b-805b-26f1753ea7c5

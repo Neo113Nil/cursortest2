@@ -1,0 +1,6 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="12fb6269-cb69-5762-aef8-a1762a7ab1e6")}catch(e){}}();
+define(["exports","../playtika/std-legacy-12b02668"],function(n,a){"use strict";var t;(function(i){i[i.Default=0]="Default",i[i.Success=1]="Success",i[i.Warning=2]="Warning",i[i.Error=3]="Error",i[i.Light=4]="Light",i[i.Medium=5]="Medium",i[i.Heavy=6]="Heavy"})(t||(t={})),a.C.registerEnum(36339,t);class e{constructor(){var s,c;this._haptics=(c=(s=window.Capacitor)===null||s===void 0?void 0:s.Plugins)===null||c===void 0?void 0:c.Haptics,this._mute=!1}cancel(){}set mute(s){this._mute=s}vibrate(s){if(!(this._mute||!this._haptics))switch(s){case t.Light:this._haptics.impact({style:"LIGHT"});break;case t.Medium:this._haptics.impact({style:"MEDIUM"});break;case t.Heavy:this._haptics.impact({style:"HEAVY"});break;case t.Success:this._haptics.notification({type:"SUCCESS"});break;case t.Warning:this._haptics.notification({type:"WARNING"});break;case t.Error:this._haptics.notification({type:"ERROR"});break;default:this._haptics.vibrate()}}}a.C.register(36338,e),n.C=e});
+//# sourceMappingURL=nativebridge-93ed44d5.js.map
+
+//# debugId=12fb6269-cb69-5762-aef8-a1762a7ab1e6

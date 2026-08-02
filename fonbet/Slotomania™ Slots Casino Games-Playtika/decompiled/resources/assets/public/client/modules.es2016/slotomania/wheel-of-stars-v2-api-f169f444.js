@@ -1,0 +1,6 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="f095a1e9-6855-512d-81a4-e89f2582f28f")}catch(e){}}();
+define(["exports","../playtika/core-legacy-586f780f","../playtika/std-legacy-12b02668"],function(s,i,l){"use strict";const v={BALINKO_RECEIVED:"BalinkoReceived"},u={WHEEL_OF_STARSV_2:"SM.WheelOfStarsV2"};class n{constructor(e,t,o,S=!1,h=!1){this.viewContext=e,this.collectionId=t,this.activationSource=o,this.isRecovery=S,this.isArchive=h}static callPostponedTypeInfo(){n.typeInfo=new i.T(i.a.bi(30590)).__initialize__(i.a.ci([i.a.ai(275,"viewContext",0),i.a.ai(444,"collectionId",1),i.a.ai(272,"activationSource",2),i.a.ai(274,"isRecovery",3,!0,!1),i.a.ai(274,"isArchive",4,!0,!1)]),[i.a.ii(30591),i.a.ii(25)],[])}static __instantiate__(e,t){return new n(t[0],t[1],t[2],t[3],t[4])}}l.C.register(30590,n);const c={minimumSupportedCollection:8};class a{constructor(e,t,o){this.isFeatureAvailable=e,this.isSpinAvailable=t,this.cooldown=o}}l.C.register(30588,a),s.W=c,s.a=n,s.b=u,s.c=v,s.d=a});
+//# sourceMappingURL=wheel-of-stars-v2-api-f169f444.js.map
+
+//# debugId=f095a1e9-6855-512d-81a4-e89f2582f28f

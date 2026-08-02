@@ -1,0 +1,6 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="9ae673f7-97d1-5ae0-84f5-5bb0928a4c21")}catch(e){}}();
+define(["exports","../group-std-a36d2e63","../playtika/std-legacy-12b02668","../playtika/core-legacy-586f780f"],function(o,p,n,s){"use strict";class i{constructor(t){this._componentsInfo=t}registerSlotTypes(t){this._componentsInfo.registerSlotTypes(t)}dispose(){this._components.forEach(t=>t.dispose())}slotComponents(){return this._components==null&&(this._components=this._componentsInfo.getComponents()),this._components}get componentsTypes(){return this._componentsInfo.getTypes()}}n.C.register(12077,i);class c{constructor(t){this._lifeTimeScope=t}loadSlot(){return p.t.__awaiter(this,void 0,void 0,function*(){const t=yield this.getSlotImport();n.ab.callPostponed(),this.registerSlot(t);const e=s.k.resolve(this._lifeTimeScope,t);return new i(e)})}registerSlot(t){const e=new s.q;s.R.registerType(e,t),e.updateComponentRegistry(this._lifeTimeScope.componentRegistry)}}n.C.register(12076,c);function l(r){return t=>{t.prototype.gameId=r}}o.M=i,o.S=l,o.a=c});
+//# sourceMappingURL=machine-container-4b575d7d.js.map
+
+//# debugId=9ae673f7-97d1-5ae0-84f5-5bb0928a4c21

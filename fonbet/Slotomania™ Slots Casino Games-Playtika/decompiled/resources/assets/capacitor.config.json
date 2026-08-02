@@ -1,0 +1,34 @@
+{
+    "appId": "air.com.playtika.slotomania",
+    "appName": "Slotomania",
+    "bundledWebRuntime": true,
+    "npmClient": "yarn",
+    "webDir": "../www",
+    "plugins": {
+        "SplashScreen": {
+            "launchShowDuration": 0
+        },
+        "GooglePlayGamesServicesPlugin": {
+            "oauthWebClientId": "504521721398-l9emhv8o4rdb238ej9s7ndim8qak1m0b.apps.googleusercontent.com"
+        }
+    },
+    "cordova": {
+        "preferences": {
+            "APPCENTER_CRASHES_ALWAYS_SEND": "true",
+            "com.appboy.api_key": "9ee95261-48b4-4118-adab-2bce792738ba",
+            "com.appboy.firebase_cloud_messaging_registration_enabled": "true",
+            "com.appboy.android_fcm_sender_id": "str_504521721398",
+            "com.appboy.android_small_notification_icon": "res/android/drawable/icon_mono/icon_mono.png",
+            "com.appboy.android_large_notification_icon": "res/android/drawable/icon.png",
+            "com.appboy.default_notification_accent_color": "str_0xFFf33e3e",
+            "com.appboy.android_default_session_timeout": "str_5",
+            "com.appboy.handle_push_deep_links_automatically": "true",
+            "com.appboy.android_log_level": "0",
+            "com.appboy.android_vibration_pattern": "100,200,300,400,500,400,300,200,400",
+            "com.appboy.android_notification_channel_id": "slotomania_default_notification_channel",
+            "com.appboy.android_notification_channel_name": "Slotomania",
+            "com.appboy.android_notification_channel_description": "Slotomania updates",
+            "com.appboy.android_use_custom_layout": "true"
+        }
+    }
+}

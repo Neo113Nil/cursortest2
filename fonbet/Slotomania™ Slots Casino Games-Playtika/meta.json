@@ -1,0 +1,72 @@
+{
+  "app_id": "air.com.playtika.slotomania",
+  "title": "Slotomania™ Slots Casino Games",
+  "developer": "Playtika",
+  "score": 4.4092636,
+  "icon": "https://play-lh.googleusercontent.com/bAkYkSNAWbz8w8sPqUmBHuaeCMCdyTc9Gw-OyMGo1WnsAeTYsf0jeB7blDO4q4Ad85Kj2BxIerLNdw5YdKrSpw",
+  "url": "https://play.google.com/store/apps/details?id=air.com.playtika.slotomania&hl=en&gl=us",
+  "keyword": "fonbet",
+  "developer_id": "8370476508159322879",
+  "released": "Jan 26, 2012",
+  "updated": "2026-07-27",
+  "version": "77.163.07",
+  "summary": "Choose from endless slots games at Slotomania! Get 15 Million Welcome Coins!",
+  "folder": "Slotomania™ Slots Casino Games-Playtika",
+  "path": "fonbet/Slotomania™ Slots Casino Games-Playtika",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "air.com.playtika.slotomania-771630720-asset.apk",
+    "air.com.playtika.slotomania-771630720-asset_pack.apk",
+    "air.com.playtika.slotomania-771630720-asset_pack.config.group_medium_performance_astc.apk",
+    "air.com.playtika.slotomania-771630720-config.arm64_v8a.apk",
+    "air.com.playtika.slotomania-771630720-config.en.apk",
+    "air.com.playtika.slotomania-771630720-config.xxhdpi.apk",
+    "air.com.playtika.slotomania-771630720.apk"
+  ],
+  "target": "/root/play-collector/загрузки/fonbet/Slotomania™ Slots Casino Games-Playtika",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading air.com.playtika.slotomania...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading air.com.playtika.slotomania...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\nNo download URL returned. The app may require purchase or is unavailable for \nthis device.\n"
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ air.com.playtika.slotomania ──╮\n│ Slotomania™ Slots Casino Games │\n│ 77.163.07  (vc 771630720)      │\n╰────────────────────────────────╯\n\nDownloading 7 files  (382.3 MB)\nair.com.playtika.slotomania-771630720.apk                                     … \nair.com.playtika.slotomania-771630720-asset_pack.apk                          … \nair.com.playtika.slotomania-771630720-asset_pack.config.group_medium_perform… … \nair.com.playtika.slotomania-771630720-config.arm64_v8a.apk                    … \nair.com.playtika.slotomania-771630720-config.en.apk                           … \nair.com.playtika.slotomania-771630720-config.xxhdpi.apk                       … \nair.com.playtika.slotomania-771630720-asset.apk                               … \n\n                                Downloaded files                                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                              ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ air.com.playtika.slotomania-771630720.apk                         │  84.9 MB │\n│ air.com.playtika.slotomania-771630720-asset_pack.apk              │  12.3 KB │\n│ air.com.playtika.slotomania-771630720-asset_pack.config.group_me… │ 216.7 MB │\n│ air.com.playtika.slotomania-771630720-config.arm64_v8a.apk        │  37.6 MB │\n│ air.com.playtika.slotomania-771630720-config.en.apk               │  68.4 KB │\n│ air.com.playtika.slotomania-771630720-config.xxhdpi.apk           │ 159.5 KB │\n│ air.com.playtika.slotomania-771630720-asset.apk                   │  84.9 MB │\n└───────────────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.66@gmail.com               │\n│ GSF ID : 30068379fb8884de                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ air.com.playtika.slotomania ──╮\n│ Slotomania™ Slots Casino Games │\n│ 77.163.07  (vc 771630720)      │\n╰────────────────────────────────╯\n\nDownloading 7 files  (382.3 MB)\nair.com.playtika.slotomania-771630720.apk                                     … \nair.com.playtika.slotomania-771630720-asset_pack.apk                          … \nair.com.playtika.slotomania-771630720-asset_pack.config.group_medium_perform… … \nair.com.playtika.slotomania-771630720-config.arm64_v8a.apk                    … \nair.com.playtika.slotomania-771630720-config.en.apk                           … \nair.com.playtika.slotomania-771630720-config.xxhdpi.apk                       … \nair.com.playtika.slotomania-771630720-asset.apk                               … \n\n                                Downloaded files                                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                              ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ air.com.playtika.slotomania-771630720.apk                         │  84.9 MB │\n│ air.com.playtika.slotomania-771630720-asset_pack.apk              │  12.3 KB │\n│ air.com.playtika.slotomania-771630720-asset_pack.config.group_me… │ 216.7 MB │\n│ air.com.playtika.slotomania-771630720-config.arm64_v8a.apk        │  37.6 MB │\n│ air.com.playtika.slotomania-771630720-config.en.apk               │  68.4 KB │\n│ air.com.playtika.slotomania-771630720-config.xxhdpi.apk           │ 159.5 KB │\n│ air.com.playtika.slotomania-771630720-asset.apk                   │  84.9 MB │\n└───────────────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.66@gmail.com               │\n│ GSF ID : 30068379fb8884de                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+  "stderr": "",
+  "exit_code": 0
+}

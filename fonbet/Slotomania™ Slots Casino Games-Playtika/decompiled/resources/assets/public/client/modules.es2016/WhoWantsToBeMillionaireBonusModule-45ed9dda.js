@@ -1,0 +1,6 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="68f2c1b7-e347-5b0a-bbd5-ce6bf094b92f")}catch(e){}}();
+define(["exports","./playtika/std-legacy-12b02668","./playtika/contentsystem-49e58548","./playtika/core-legacy-586f780f","./slotomania/bonusgamecore-1adc3422","./slotomania/minigamecore-94d183e6","./slotomania/whowantstobeamillionaire-07bd46bb"],function(f,r,t,e,i,v,s){"use strict";class n{static registerBonuses(o,C,M=void 0){M==null&&(M=[]);for(const g of M)e.R.register(o,s.W,u=>new s.W(C,new v.h,new i.b(e.k.resolve(u,r.r(89))),()=>new s.a,e.k.resolve(u,r.r(4889)),e.k.resolve(u,r.r(692)),e.k.resolve(u,t.a),e.k.resolve(u,r.r(22687)))).as([r.r(22688)]).withMetadata("type",g)}constructor(){}register(o){n.registerBonuses(o,new s.M,["MirrorMeIfYouCan","MirrorMeIfYouCanSlotoQuest","MirrorMeIfYouCan_mfe"]),n.registerBonuses(o,new s.b,["MedusaMagicMirror","MedusaMagicMirrorSlotoQuest","MedusaMagicMirror_mfe"])}}r.C.register(34487,n),f.WhoWantsToBeMillionaireBonusModule=n});
+//# sourceMappingURL=WhoWantsToBeMillionaireBonusModule-45ed9dda.js.map
+
+//# debugId=68f2c1b7-e347-5b0a-bbd5-ce6bf094b92f

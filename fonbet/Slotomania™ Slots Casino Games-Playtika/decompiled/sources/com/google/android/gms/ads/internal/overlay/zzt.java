@@ -1,0 +1,10 @@
+package com.google.android.gms.ads.internal.overlay;
+
+/* compiled from: com.google.android.gms:play-services-ads@@25.1.0 */
+/* loaded from: classes6.dex */
+public final class zzt {
+    public int zza = 0;
+    public int zzb = 0;
+    public int zzc = 0;
+    public int zzd = 32;
+}

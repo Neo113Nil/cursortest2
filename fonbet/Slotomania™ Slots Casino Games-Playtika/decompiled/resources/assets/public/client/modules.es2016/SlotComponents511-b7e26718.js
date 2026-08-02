@@ -1,0 +1,6 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="837d496d-46f5-546f-b4e6-5befd95cd8ac")}catch(e){}}();
+define(["exports","./playtika/core-legacy-586f780f","./playtika/std-legacy-12b02668","./SlotComponents474-e7356181","./slotomania/machine-core-legacy-e333ecb3"],function(o,t,d,l,i){"use strict";const a={PERSONAL_JACKPOT_KEYS_BY_MACHINE_ID:new Map([[511,new i.P("rapidElves","RapidElves","rapidElves_","tdrf")],[11511,new i.P("rapidElvesSlotoQuest","RapidElvesSlotoQuest","rapidElvesSlotoQuest_","tdrf")]])};class n extends l.SlotComponents474{constructor(e,s=void 0){super(e,s);this._personalJackpotKeysByMachineId=a.PERSONAL_JACKPOT_KEYS_BY_MACHINE_ID,this._maxIconCount=51,this._staticRapidFireIconStartIndex=41,this._noIconId=50,this._iconMapping=[new t.a5(40,13)]}static callPostponedTypeInfo(){n.typeInfo=new t.T(t.a.bi(21658)).__initialize__(t.a.ci([t.a.ai(11691,"controllerContext",0),t.a.ai(11703,"slotContext",1,!0)]),[t.a.ii(12032),t.a.ii(12033),t.a.ii(25)],[])}static __instantiate__(e,s){return new n(s[0],s[1])}}d.C.register(21658,n),o.SlotComponents511=n});
+//# sourceMappingURL=SlotComponents511-b7e26718.js.map
+
+//# debugId=837d496d-46f5-546f-b4e6-5befd95cd8ac

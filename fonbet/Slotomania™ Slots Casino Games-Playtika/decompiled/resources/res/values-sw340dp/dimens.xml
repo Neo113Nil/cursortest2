@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pras_dialog_height">264dp</dimen>
+    <dimen name="pras_dialog_width">311dp</dimen>
+    <dimen name="widget_text_size">16dp</dimen>
+</resources>

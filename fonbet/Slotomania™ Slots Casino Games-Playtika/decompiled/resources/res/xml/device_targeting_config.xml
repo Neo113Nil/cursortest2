@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<device-targeting-config xmlns:config="http://schemas.android.com/apk/config">
+    <device-group name="medium_performance_astc">
+        <device-selector ram-min-bytes="2147483647">
+            <required-system-feature name="android.hardware.opengles.aep"/>
+        </device-selector>
+    </device-group>
+    <device-group name="medium_performance_pvr">
+        <device-selector ram-min-bytes="2147483647"/>
+    </device-group>
+    <device-group name="low_performance_astc">
+        <device-selector ram-max-bytes="2147483647">
+            <required-system-feature name="android.hardware.opengles.aep"/>
+        </device-selector>
+    </device-group>
+    <device-group name="low_performance_pvr">
+        <device-selector ram-max-bytes="2147483647"/>
+    </device-group>
+</device-targeting-config>

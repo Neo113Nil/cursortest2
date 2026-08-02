@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slotomania Cordova</title>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" src="./haxe/OneReward.js"></script>
+    <script type="text/javascript" src="dist/main.js"></script>
+    <link rel='stylesheet' href='styles/styles.css' type='text/css' media='all' />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <meta http-equiv="Content-Security-Policy" content="media-src * data: blob:; img-src *;">
+    <script type="">
+        var ANIMATION_FRAME_WORKER_JS_URL = "./AnimationFrameWorker.js";
+    </script>
+</head>
+<body>
+<style>
+    .oneclick {margin:40px; width: 250px; height: 40px; border-radius: 15px;}
+    .play-facebook {margin:40px; width: 250px; height: 60px;}
+</style>
+
+<div id="main_con" style="display:none;">
+    <div id="sloto_logo">
+        <div></div>
+    </div>
+    <div id="text_con">
+        <div></div>
+    </div>
+    <div id="social_con">
+        <div id="button_fb"></div>
+    </div>
+    <div id="button_apple" class="button_apple_up"></div>
+    <div id="btn_later">
+        <div></div>
+    </div>
+    <div id="game_con" class="game_con game_frame">
+        <div id="game_loading"></div>
+        <canvas id="gameview" width=1136 height=640></canvas>
+    </div>
+</div>
+
+<div id="setting_popup_holder"></div>
+<div id="OneRewardDiv"></div>
+<div id="PlaytechDiv"></div>
+
+<div id="loginErrorPopup"></div>
+
+<div class="error_popups_container">
+        
+    <div id="haxe_error_popup">
+        <img class="popup_image" src="img/haxe_error_popup_bg.png" >
+        <button id="haxe_error_ok_btn" type="submit" class="popup_ok_btn">
+            <img class="popup_image popup_button_image" src="img/haxe_error_popup_btn2.png" >
+            <img class="popup_image popup_button_image popup_btn_hover" src="img/haxe_error_popup_btn1.png" >
+        </button>
+    </div>
+    
+    <div id="login_error_popup">
+        <img class="popup_image" src="img/login_error_popup.png" >
+        <button id="login_error_ok_btn" type="submit" class="popup_ok_btn">
+            <img class="popup_image popup_button_image" src="img/login_error_popup_btn1.png" >
+            <img class="popup_image popup_button_image popup_btn_hover" src="img/login_error_popup_btn.png" >
+        </button>
+    </div>
+    
+</div>
+
+</body>
+</html>

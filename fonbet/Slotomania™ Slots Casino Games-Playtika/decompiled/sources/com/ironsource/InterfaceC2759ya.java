@@ -1,0 +1,24 @@
+package com.ironsource;
+
+import com.ironsource.mediationsdk.logger.IronSourceError;
+import com.unity3d.mediation.LevelPlayAdInfo;
+
+/* renamed from: com.ironsource.ya, reason: case insensitive filesystem */
+/* loaded from: classes5.dex */
+public interface InterfaceC2759ya {
+    void b(IronSourceError ironSourceError);
+
+    void d(IronSourceError ironSourceError);
+
+    void i();
+
+    void k();
+
+    void onAdClicked();
+
+    void onAdDisplayed(LevelPlayAdInfo levelPlayAdInfo);
+
+    void onAdLeftApplication();
+
+    void onAdLoaded(LevelPlayAdInfo levelPlayAdInfo);
+}

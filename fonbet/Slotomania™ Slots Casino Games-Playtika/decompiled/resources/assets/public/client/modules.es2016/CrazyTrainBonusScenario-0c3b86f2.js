@@ -1,0 +1,6 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="4f040859-4ed2-5718-bed9-33945042b4ee")}catch(e){}}();
+define(["exports","./playtika/core-legacy-586f780f","./playtika/std-legacy-12b02668","./slotomania/machine-core-legacy-e333ecb3","./LooseCabooseView-e4bacf2b"],function(a,i,s,r,t){"use strict";class e extends r.ce{constructor(){super()}initScenarios(){this.addScenario(0,s.g.bind(this,this.createLooseCabooseScenario))}createLooseCabooseScenario(c,o,u,h,d){const n=new t.L(c,o,u,s.g.bind(this,this.setSharing),h,d);return n.withStartPopup(new r.ci),n.withView(new t.a),n.withDataBuilder(new t.b),n.withActionSource(new t.c),n.withFinishPopup(new t.d),n}get scenarioKey(){return this._additionalParams.bonusId}static callPostponedTypeInfo(){e.typeInfo=new i.T(i.a.bi(15433)).__initialize__(i.a.ci(null),[i.a.ii(25),i.a.ii(26),i.a.ii(11730)],[])}static __instantiate__(c,o){return new e}}s.C.register(15433,e),a.CrazyTrainBonusScenario=e});
+//# sourceMappingURL=CrazyTrainBonusScenario-0c3b86f2.js.map
+
+//# debugId=4f040859-4ed2-5718-bed9-33945042b4ee

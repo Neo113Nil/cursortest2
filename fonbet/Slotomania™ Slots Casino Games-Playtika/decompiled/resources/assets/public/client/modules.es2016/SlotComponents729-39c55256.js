@@ -1,0 +1,6 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="4dab9ca3-16c6-5857-888f-1c57c0f16877")}catch(e){}}();
+define(["exports","./playtika/core-legacy-586f780f","./playtika/std-legacy-12b02668","./slotomania/machine-core-legacy-e333ecb3"],function(r,t,f,s){"use strict";class i extends s.pb{constructor(){super()}createFreeSpinSoundModel(u){return this.createSoundModel(this.gameEnvironment.sounds,"")}static callPostponedTypeInfo(){i.typeInfo=new t.T(t.a.bi(22072)).__initialize__(t.a.ci(null),[t.a.ii(25),t.a.ii(258),t.a.ii(26),t.a.ii(11320),t.a.ii(11321)],[])}static __instantiate__(u,d){return new i}}f.C.register(22072,i);class n extends s.d4{constructor(u,d){super(u,d)}configure(){super.configure(),this.replace(s.d5,s.d6),this.append(s.ex),this.replace(s.da,s.db),this.replace(s.fT,i),this.remove(s.d9)}static callPostponedTypeInfo(){n.typeInfo=new t.T(t.a.bi(22071)).__initialize__(t.a.ci([t.a.ai(11691,"controllerContext",0),t.a.ai(11703,"slotContext",1)]),[t.a.ii(12032),t.a.ii(12033),t.a.ii(25)],[])}static __instantiate__(u,d){return new n(d[0],d[1])}}f.C.register(22071,n),r.SlotComponents729=n});
+//# sourceMappingURL=SlotComponents729-39c55256.js.map
+
+//# debugId=4dab9ca3-16c6-5857-888f-1c57c0f16877

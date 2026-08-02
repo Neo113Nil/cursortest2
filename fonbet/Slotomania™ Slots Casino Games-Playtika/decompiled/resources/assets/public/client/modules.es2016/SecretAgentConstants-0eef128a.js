@@ -1,0 +1,6 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="ae257d1c-c714-5117-a191-5d8e709a0f1a")}catch(e){}}();
+define(["exports","./playtika/core-legacy-586f780f","./slotomania/machine-core-legacy-e333ecb3"],function(_,N,I){"use strict";const n=[1,2,3],E={FREE_SPIN_SCATTER_ICON_INDEX:18,FLY_COIN_ICON_INDEX:2,REPLACE_FLY_COIN_ICON_INDEX:15,START_ICON_INDEX_EXCEPT_SCATTER:2,LINES_COUNT:40,WILD_REELS:n,REPLACING_ICONS_SOURCE:[4,5,6,7,8,9,10,11,12,13,14],WILD_MULTIPLIER_MAP:new Map([[16,2],[17,3]]),TALL_ICON_MAPPING:[new N.a5(16,3),new N.a5(17,3),new N.a5(19,3),new N.a5(21,3)],SCATTER_ICON_MAPPING:[new N.a5(18,1)],SMALL_MULTIPLIER_MAPPING:new Map([[16,26],[17,27]]),SOUND_ANIM_ID:"sound_anim",NUDGING_STICKY_WILD_ICONS:[new I.ct(1,16),new I.ct(2,16),new I.ct(3,16),new I.ct(1,17),new I.ct(2,17),new I.ct(3,17)],ICON_COMPARER_INFOS:[{iconIds:[1,18],comparisonFunc:I.o.compareIconsYandX},{iconIds:[3],comparisonFunc:I.o.compareIconsYandX}],WILD_FEATURE_CONFIG:[{iconIndex:16,reelIndexes:n},{iconIndex:17,reelIndexes:n}]};_.S=E});
+//# sourceMappingURL=SecretAgentConstants-0eef128a.js.map
+
+//# debugId=ae257d1c-c714-5117-a191-5d8e709a0f1a

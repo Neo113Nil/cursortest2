@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>TRS</title>
+</head>
+<style>
+    html, body {
+        background-color: transparent;
+    }
+
+    html {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        cursor: default;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    #overlay {
+        background-color: transparent !important;
+    }
+</style>
+<body>
+<div id="OneRewardDiv"></div>
+<script type="text/javascript" src="./client/OneReward.js"></script>
+<script type="text/javascript">
+    function getMobileOperatingSystem() {
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        if (/windows phone/i.test(userAgent)) {
+            return "Windows Phone";
+        }
+
+        if (/android/i.test(userAgent)) {
+            return "Android";
+        }
+
+        if (/iPad|iPhone|iPod|AppleWebKit/.test(userAgent) && !window.MSStream) {
+            return  "iOS";
+        }
+
+        return "unknown"
+    }
+
+    function __main__(data) {
+        setTimeout(function() {
+            var args = JSON.parse(data);
+            // var cdnWebsiteUrl = args[0];
+            var oneRewardUrl = args[1];
+            var appKey = args[2];
+            var userId = args[3];
+            var sessionId = args[4];
+            // var currency = args[5];
+            // var platform = args[6];
+            // var deeplink = args[7];
+            // var lang = args[8];
+
+            // Luckily we have all required arguments from open(..) call to perform OneReward initialization.
+            CIE.DataWarehouse.setUrl(oneRewardUrl.trim().replace(/\/+$/g, "") + "/instrument");
+            CIE.DataWarehouse.setAppKey(appKey);
+            CIE.DataWarehouse.setAppUserId(userId);
+            CIE.DataWarehouse.setAppSessionId(sessionId);
+
+            var maxWidth = window.innerWidth * 0.9;
+            var maxHeight = window.innerHeight * 0.9;
+            var height = CIE.OneRewardPopup.setWidth(maxWidth);
+
+            if (height > maxHeight) {
+                CIE.OneRewardPopup.setWidth(maxHeight * CIE.OneRewardPopup.iframeAspectRatio);
+            }
+
+            CIE.OneRewardPopup.open.apply(CIE.OneRewardPopup, args);
+        }, 10);
+    }
+</script>
+<script type="text/javascript">
+    window.displayFlashScreenshot = function() {};
+    window.hideFlashScreenshot = function() {};
+    window.activateTab = function() {};
+
+    CIE.OneRewardPopup.setAdditionalMarginHeight(0);
+    CIE.OneRewardPopup.onDataFromPopupCallback = function(data) {
+        if (getMobileOperatingSystem() == "iOS") {
+            window.webkit.messageHandlers.postMessageListener.postMessage(data);
+        }
+        else {
+            WebApp.postMessage(data);
+        }
+    };
+
+    if (getMobileOperatingSystem() == "iOS") {
+        window.webkit.messageHandlers.getInitData.postMessage("getInitData");
+    }
+    else {
+        var data = WebApp.getInitData();
+        __main__(data);
+    }
+</script>
+</body>
+</html>

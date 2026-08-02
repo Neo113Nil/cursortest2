@@ -1,0 +1,6 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="0d3f5655-f9cf-5e18-9c82-1bb016af7727")}catch(e){}}();
+define(["exports","./playtika/std-legacy-12b02668","./slotomania/machine-core-legacy-e333ecb3","./FeatureActualRespinDetectorCommandFactory-5fbc1f5c","./playtika/monosyne-e5151f3b","./slotomania/monosyne-ext-d5d2a46f"],function(o,n,e,i,r,c){"use strict";class s extends e.vk{constructor(){super()}getWelcomeCoinGrabPopup(t){return new r.b2([new e.kp("CashSquadMultiPopupFeatureId",0,this._slotEventDispatcher),new e.kp("CashSquadFeatureQueueId",0,this._slotEventDispatcher)])}initEmotionSounds(t){const d=t.soundScene.bfSearchAs(r.C,e.C.EMOTIONS);this._emotionCoinsGrabSounds=c.N.getAllChildByPattern(d,r.A,"emotion_{0}")}}s.SOUND_NAME_PATTERN="emotion_{0}",n.C.register(21160,s);class u extends e.sg{constructor(t){super(t)}createFeatureActionSource(){return new s}createFeatureDetector(){return new e.rq(new i.F)}}n.C.register(21159,u),o.C=u});
+//# sourceMappingURL=CashSquadRespinFeatureSet-e710fd4f.js.map
+
+//# debugId=0d3f5655-f9cf-5e18-9c82-1bb016af7727

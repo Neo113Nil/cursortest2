@@ -1,0 +1,6 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="f4dff71e-5421-51c3-96f8-c008f270623f")}catch(e){}}();
+define(["require","exports","./playtika/core-legacy-586f780f","./playtika/std-legacy-12b02668","./slotomania/feature-toolkit-4dcdcbc6","./slotomania/orchestrator-faam2-8e4e03fe"],function(n,p,t,r,a,e){"use strict";class o extends e.a{constructor(i){super(i)}importBootstrapper(){return new Promise(function(i,s){n(["./InboxNotificationsModuleBootstrapper-2a211a15"],i,s)})}setupBootstrapperImport(){this.activatorsController=e.u(this.featureName,this._parentScope,r.g.bind(this,this.runBootstrapperImport)),this.activatorsController.useMachineActivator(()=>a.m(this._parentScope))}dispose(){var i;(i=this.activatorsController)===null||i===void 0||i.complete(),super.dispose()}static callPostponedTypeInfo(){o.typeInfo=new t.T(t.a.bi(4945)).__initialize__(t.a.ci([t.a.ai(1,"_parentScope",0)]),[t.a.ii(877),t.a.ii(388),t.a.ii(25),t.a.ii(23),t.a.ii(24),t.a.ii(26)],[])}static __instantiate__(i,s){return new o(s[0])}}r.C.register(4945,o),p.InboxNotificationsModuleApi=o});
+//# sourceMappingURL=InboxNotificationsModuleApi-a39f7070.js.map
+
+//# debugId=f4dff71e-5421-51c3-96f8-c008f270623f

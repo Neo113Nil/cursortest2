@@ -1,0 +1,15 @@
+package com.instagram.common.viewpoint.core;
+
+/* renamed from: com.facebook.ads.redexgen.X.pO, reason: case insensitive filesystem */
+/* loaded from: assets/audience_network/classes2.dex */
+public final class C2200pO {
+    public int A00;
+    public int A01;
+    public final int A02;
+
+    public C2200pO(int i, int i2, int i3) {
+        this.A01 = i;
+        this.A00 = i2;
+        this.A02 = i3;
+    }
+}

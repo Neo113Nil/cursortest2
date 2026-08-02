@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <fragment
+                android:name="com.playtika.pras.sdk.views.SettingsWebViewContainer"
+                android:layout_gravity="center"
+                android:id="@+id/purchaseSettingsWebViewContainerFragment"
+                android:layout_width="@dimen/new_widget_width"
+                android:layout_height="@dimen/new_widget_height"/>
+        </FrameLayout>
+    </ScrollView>
+</FrameLayout>
