@@ -25,11 +25,6 @@ public final class C0614Mw implements Serializable {
     public final String A0G;
 
     public C0614Mw(C0613Mv c0613Mv) {
-        String str;
-        String str2;
-        String str3;
-        String str4;
-        String str5;
         this.A0G = c0613Mv.A0G;
         this.A0F = c0613Mv.A0F;
         this.A04 = c0613Mv.A04;
@@ -42,16 +37,11 @@ public final class C0614Mw implements Serializable {
         this.A01 = c0613Mv.A01;
         this.A06 = c0613Mv.A06;
         this.A0B = c0613Mv.A0B;
-        str = c0613Mv.A07;
-        this.A07 = str;
-        str2 = c0613Mv.A0D;
-        this.A0D = str2;
-        str3 = c0613Mv.A03;
-        this.A03 = str3;
-        str4 = c0613Mv.A0A;
-        this.A0A = str4;
-        str5 = c0613Mv.A08;
-        this.A08 = str5;
+        this.A07 = c0613Mv.A07;
+        this.A0D = c0613Mv.A0D;
+        this.A03 = c0613Mv.A03;
+        this.A0A = c0613Mv.A0A;
+        this.A08 = c0613Mv.A08;
     }
 
     public final EnumC0612Mu A00() {

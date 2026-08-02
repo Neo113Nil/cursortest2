@@ -426,11 +426,11 @@
       },
       "redirects_to": "нет (без редиректа)",
       "redirect_chain": [
-        "http://bacalgeria.com/"
+        "https://bacalgeria.com/"
       ],
       "page_output": "title: Loading.... Loading...",
       "parked_at": "регистратор: Dynadot Inc",
-      "final_url": "http://bacalgeria.com/",
+      "final_url": "https://bacalgeria.com/",
       "http_status": 200,
       "table_rows": [
         {

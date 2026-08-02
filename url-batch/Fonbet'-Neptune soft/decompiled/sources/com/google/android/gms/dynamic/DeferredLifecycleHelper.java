@@ -49,6 +49,10 @@ public abstract class DeferredLifecycleHelper<T extends LifecycleDelegate> {
         }
     }
 
+    static /* bridge */ /* synthetic */ LifecycleDelegate zaa(DeferredLifecycleHelper deferredLifecycleHelper) {
+        return deferredLifecycleHelper.zaa;
+    }
+
     private final void zae(int i) {
         while (!this.zac.isEmpty() && ((zah) this.zac.getLast()).zaa() >= i) {
             this.zac.removeLast();

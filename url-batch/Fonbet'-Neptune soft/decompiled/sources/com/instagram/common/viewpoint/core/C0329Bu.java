@@ -3,6 +3,7 @@ package com.instagram.common.viewpoint.core;
 import android.net.ConnectivityManager;
 import android.net.Network;
 import android.net.NetworkCapabilities;
+import android.os.Handler;
 
 /* renamed from: com.facebook.ads.redexgen.X.Bu, reason: case insensitive filesystem */
 /* loaded from: assets/audience_network.dex */
@@ -16,7 +17,9 @@ public final class C0329Bu extends ConnectivityManager.NetworkCallback {
     }
 
     private void A00() {
-        this.A02.A04.post(new Runnable() { // from class: com.facebook.ads.redexgen.X.Bs
+        Handler handler;
+        handler = this.A02.A04;
+        handler.post(new Runnable() { // from class: com.facebook.ads.redexgen.X.Bs
             @Override // java.lang.Runnable
             public final void run() {
                 C0329Bu.this.A02();
@@ -25,7 +28,9 @@ public final class C0329Bu extends ConnectivityManager.NetworkCallback {
     }
 
     private void A01() {
-        this.A02.A04.post(new Runnable() { // from class: com.facebook.ads.redexgen.X.Bt
+        Handler handler;
+        handler = this.A02.A04;
+        handler.post(new Runnable() { // from class: com.facebook.ads.redexgen.X.Bt
             @Override // java.lang.Runnable
             public final void run() {
                 C0329Bu.this.A03();

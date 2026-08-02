@@ -1,15 +1,15 @@
 {
-  "app_id": "com.neptunesoft.lettrebacdz",
+  "app_id": "com.neptunesoft.mathematicsbacdz",
   "title": "Fonbet'",
   "developer": "Neptune soft",
   "developer_id": "7512881118161131049",
-  "icon": "https://play-lh.googleusercontent.com/YRPU4JtcAiY-jnGrPHMWAjKsU_vOOFlqcEA5AT8gY7MPCXcLDdQKRuvhZrcaMb_B1cqfZsWmgS0N_6vn8-Ceu_4",
-  "url": "https://play.google.com/store/apps/details?id=com.neptunesoft.lettrebacdz&hl=en&gl=us",
-  "score": 4.8,
-  "released": "Mar 13, 2022",
-  "updated": "Jul 26, 2026",
+  "icon": "https://play-lh.googleusercontent.com/zcRiEXy7R1lezQMiG_kJt12OYFFaJcWEQ8VdsHfR6m5lOKZMk3_vLRhKB6rFQJdqZKYZFu-N9Qa0TXBgcztWVQ",
+  "url": "https://play.google.com/store/apps/details?id=com.neptunesoft.mathematicsbacdz&hl=en&gl=us",
+  "score": null,
+  "released": "Nov 16, 2021",
+  "updated": "Jul 30, 2026",
   "version": "Varies with device",
-  "summary": "ze scores livescore: follow matches, live statistics, and results",
+  "summary": "mu scores livescore: follow matches, live statistics, and results",
   "keyword": "url-batch",
   "folder": "Fonbet'-Neptune soft",
   "path": "url-batch/Fonbet'-Neptune soft",
@@ -18,7 +18,8 @@
   "source": "apkeep:apk-pure",
   "files": [
     "com.neptunesoft.bacdz.xapk",
-    "com.neptunesoft.lettrebacdz.xapk"
+    "com.neptunesoft.lettrebacdz.xapk",
+    "com.neptunesoft.mathematicsbacdz.xapk"
   ],
   "target": "/root/play-collector/загрузки/url-batch/Fonbet'-Neptune soft",
   "attempts": [
@@ -27,11 +28,11 @@
       "try": 1,
       "ok": true,
       "exit_code": 0,
-      "stdout": "Downloading com.neptunesoft.lettrebacdz...\ncom.neptunesoft.lettrebacdz downloaded successfully!\n",
+      "stdout": "Downloading com.neptunesoft.mathematicsbacdz...\ncom.neptunesoft.mathematicsbacdz downloaded successfully!\n",
       "stderr": ""
     }
   ],
-  "stdout": "Downloading com.neptunesoft.lettrebacdz...\ncom.neptunesoft.lettrebacdz downloaded successfully!\n",
+  "stdout": "Downloading com.neptunesoft.mathematicsbacdz...\ncom.neptunesoft.mathematicsbacdz downloaded successfully!\n",
   "stderr": "",
   "exit_code": 0
 }
