@@ -1,0 +1,100 @@
+package androidx.compose.ui.draw;
+
+import androidx.compose.ui.geometry.Rect;
+import androidx.compose.ui.tooling.preview.AndroidUiModes;
+import androidx.compose.ui.unit.Density;
+import androidx.compose.ui.unit.DpRect;
+import androidx.compose.ui.unit.FontScaling;
+import kotlin.Metadata;
+
+/* compiled from: Shadow.kt */
+@Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\bf\u0018\u00002\u00020\u0001ø\u0001\u0000\u0082\u0002\u0006\n\u0004\b!0\u0001¨\u0006\u0002À\u0006\u0003"}, d2 = {"Landroidx/compose/ui/draw/DropShadowScope;", "Landroidx/compose/ui/draw/ShadowScope;", "ui"}, k = 1, mv = {2, 1, 0}, xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+/* loaded from: classes.dex */
+public interface DropShadowScope extends ShadowScope {
+
+    /* compiled from: Shadow.kt */
+    /* renamed from: androidx.compose.ui.draw.DropShadowScope$-CC, reason: invalid class name */
+    public final /* synthetic */ class CC {
+    }
+
+    /* compiled from: Shadow.kt */
+    @Metadata(k = 3, mv = {2, 1, 0}, xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+    public static final class DefaultImpls {
+        @Deprecated
+        /* renamed from: roundToPx--R2X_6o, reason: not valid java name */
+        public static int m6313roundToPxR2X_6o(DropShadowScope dropShadowScope, long j) {
+            return Density.CC.m9696$default$roundToPxR2X_6o(dropShadowScope, j);
+        }
+
+        @Deprecated
+        /* renamed from: roundToPx-0680j_4, reason: not valid java name */
+        public static int m6314roundToPx0680j_4(DropShadowScope dropShadowScope, float f) {
+            return Density.CC.m9697$default$roundToPx0680j_4(dropShadowScope, f);
+        }
+
+        @Deprecated
+        /* renamed from: toDp-GaN1DYA, reason: not valid java name */
+        public static float m6315toDpGaN1DYA(DropShadowScope dropShadowScope, long j) {
+            return FontScaling.CC.m9841$default$toDpGaN1DYA(dropShadowScope, j);
+        }
+
+        @Deprecated
+        /* renamed from: toDp-u2uoSUM, reason: not valid java name */
+        public static float m6316toDpu2uoSUM(DropShadowScope dropShadowScope, float f) {
+            return Density.CC.m9698$default$toDpu2uoSUM(dropShadowScope, f);
+        }
+
+        @Deprecated
+        /* renamed from: toDp-u2uoSUM, reason: not valid java name */
+        public static float m6317toDpu2uoSUM(DropShadowScope dropShadowScope, int i) {
+            return Density.CC.m9699$default$toDpu2uoSUM((Density) dropShadowScope, i);
+        }
+
+        @Deprecated
+        /* renamed from: toDpSize-k-rfVVM, reason: not valid java name */
+        public static long m6318toDpSizekrfVVM(DropShadowScope dropShadowScope, long j) {
+            return Density.CC.m9700$default$toDpSizekrfVVM(dropShadowScope, j);
+        }
+
+        @Deprecated
+        /* renamed from: toPx--R2X_6o, reason: not valid java name */
+        public static float m6319toPxR2X_6o(DropShadowScope dropShadowScope, long j) {
+            return Density.CC.m9701$default$toPxR2X_6o(dropShadowScope, j);
+        }
+
+        @Deprecated
+        /* renamed from: toPx-0680j_4, reason: not valid java name */
+        public static float m6320toPx0680j_4(DropShadowScope dropShadowScope, float f) {
+            return Density.CC.m9702$default$toPx0680j_4(dropShadowScope, f);
+        }
+
+        @Deprecated
+        public static Rect toRect(DropShadowScope dropShadowScope, DpRect dpRect) {
+            return Density.CC.$default$toRect(dropShadowScope, dpRect);
+        }
+
+        @Deprecated
+        /* renamed from: toSize-XkaWNTQ, reason: not valid java name */
+        public static long m6321toSizeXkaWNTQ(DropShadowScope dropShadowScope, long j) {
+            return Density.CC.m9703$default$toSizeXkaWNTQ(dropShadowScope, j);
+        }
+
+        @Deprecated
+        /* renamed from: toSp-0xMU5do, reason: not valid java name */
+        public static long m6322toSp0xMU5do(DropShadowScope dropShadowScope, float f) {
+            return FontScaling.CC.m9842$default$toSp0xMU5do(dropShadowScope, f);
+        }
+
+        @Deprecated
+        /* renamed from: toSp-kPz2Gy4, reason: not valid java name */
+        public static long m6323toSpkPz2Gy4(DropShadowScope dropShadowScope, float f) {
+            return Density.CC.m9704$default$toSpkPz2Gy4(dropShadowScope, f);
+        }
+
+        @Deprecated
+        /* renamed from: toSp-kPz2Gy4, reason: not valid java name */
+        public static long m6324toSpkPz2Gy4(DropShadowScope dropShadowScope, int i) {
+            return Density.CC.m9705$default$toSpkPz2Gy4((Density) dropShadowScope, i);
+        }
+    }
+}

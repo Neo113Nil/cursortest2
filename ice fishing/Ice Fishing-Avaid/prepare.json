@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "apks": [
+    "com.emeraldpulse.kyra.apk",
+    "config.armeabi_v7a.apk",
+    "config.en.apk",
+    "config.fr.apk",
+    "config.mdpi.apk"
+  ],
+  "base_apk": "com.emeraldpulse.kyra.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "note": "self-prepared via apkeep binary + apkpure xapk + jadx 1.5.1; jadx finished with 40 errors",
+    "out_dir": "decompiled",
+    "base_apk": "com.emeraldpulse.kyra.apk"
+  },
+  "source": "apkeep:apk-pure",
+  "analysis_files": [
+    "com.emeraldpulse.kyra.xapk",
+    "apk/com.emeraldpulse.kyra.apk",
+    "apk/config.armeabi_v7a.apk",
+    "apk/config.en.apk",
+    "apk/config.fr.apk",
+    "apk/config.mdpi.apk",
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/"
+  ]
+}

@@ -1,0 +1,423 @@
+package androidx.compose.material3;
+
+import androidx.compose.foundation.layout.BoxKt;
+import androidx.compose.foundation.layout.PaddingKt;
+import androidx.compose.foundation.layout.SizeKt;
+import androidx.compose.foundation.layout.WindowInsets;
+import androidx.compose.foundation.layout.WindowInsetsKt;
+import androidx.compose.foundation.layout.WindowInsetsSides;
+import androidx.compose.foundation.layout.WindowInsets_androidKt;
+import androidx.compose.material3.internal.Strings;
+import androidx.compose.material3.internal.Strings_androidKt;
+import androidx.compose.material3.tokens.ScrimTokens;
+import androidx.compose.material3.tokens.SheetBottomTokens;
+import androidx.compose.runtime.Composer;
+import androidx.compose.runtime.ComposerKt;
+import androidx.compose.runtime.GapComposerKt;
+import androidx.compose.runtime.RecomposeScopeImplKt;
+import androidx.compose.runtime.ScopeUpdateScope;
+import androidx.compose.runtime.internal.ComposableLambdaKt;
+import androidx.compose.ui.Modifier;
+import androidx.compose.ui.graphics.Color;
+import androidx.compose.ui.graphics.Shape;
+import androidx.compose.ui.semantics.SemanticsModifierKt;
+import androidx.compose.ui.semantics.SemanticsPropertiesKt;
+import androidx.compose.ui.semantics.SemanticsPropertyReceiver;
+import androidx.compose.ui.tooling.preview.AndroidUiModes;
+import androidx.compose.ui.unit.Dp;
+import kotlin.Deprecated;
+import kotlin.DeprecationLevel;
+import kotlin.Metadata;
+import kotlin.ReplaceWith;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+
+/* compiled from: SheetDefaults.kt */
+@Metadata(d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\bÇ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003JA\u0010)\u001a\u00020*2\b\b\u0002\u0010+\u001a\u00020,2\b\b\u0002\u0010-\u001a\u00020\u000f2\b\b\u0002\u0010.\u001a\u00020\u000f2\b\b\u0002\u0010/\u001a\u00020\u00052\b\b\u0002\u00100\u001a\u00020\u000bH\u0007¢\u0006\u0004\b1\u00102R\u0011\u0010\u0004\u001a\u00020\u00058G¢\u0006\u0006\u001a\u0004\b\u0006\u0010\u0007R\u0011\u0010\b\u001a\u00020\u00058G¢\u0006\u0006\u001a\u0004\b\t\u0010\u0007R\u0011\u0010\n\u001a\u00020\u000b8G¢\u0006\u0006\u001a\u0004\b\f\u0010\rR\u0013\u0010\u000e\u001a\u00020\u000f¢\u0006\n\n\u0002\u0010\u0012\u001a\u0004\b\u0010\u0010\u0011R\u0011\u0010\u0013\u001a\u00020\u000b8G¢\u0006\u0006\u001a\u0004\b\u0014\u0010\rR\u0013\u0010\u0015\u001a\u00020\u000f¢\u0006\n\n\u0002\u0010\u0012\u001a\u0004\b\u0016\u0010\u0011R\u0013\u0010\u0017\u001a\u00020\u000f¢\u0006\n\n\u0002\u0010\u0012\u001a\u0004\b\u0018\u0010\u0011R\u001a\u0010\u0019\u001a\u00020\u001a8GX\u0087\u0004¢\u0006\f\u0012\u0004\b\u001b\u0010\u001c\u001a\u0004\b\u001d\u0010\u001eR\u0011\u0010\u001f\u001a\u00020\u001a8G¢\u0006\u0006\u001a\u0004\b \u0010\u001eR\u0011\u0010!\u001a\u00020\u001a8G¢\u0006\u0006\u001a\u0004\b\"\u0010\u001eR\u0016\u0010#\u001a\u00020\u000fX\u0080\u0004¢\u0006\n\n\u0002\u0010\u0012\u001a\u0004\b$\u0010\u0011R\u0016\u0010%\u001a\u00020\u000fX\u0080\u0004¢\u0006\n\n\u0002\u0010\u0012\u001a\u0004\b&\u0010\u0011R\u0016\u0010'\u001a\u00020\u000fX\u0080\u0004¢\u0006\n\n\u0002\u0010\u0012\u001a\u0004\b(\u0010\u0011¨\u00063"}, d2 = {"Landroidx/compose/material3/BottomSheetDefaults;", "", "<init>", "()V", "HiddenShape", "Landroidx/compose/ui/graphics/Shape;", "getHiddenShape", "(Landroidx/compose/runtime/Composer;I)Landroidx/compose/ui/graphics/Shape;", "ExpandedShape", "getExpandedShape", "ContainerColor", "Landroidx/compose/ui/graphics/Color;", "getContainerColor", "(Landroidx/compose/runtime/Composer;I)J", "Elevation", "Landroidx/compose/ui/unit/Dp;", "getElevation-D9Ej5fM", "()F", "F", "ScrimColor", "getScrimColor", "SheetPeekHeight", "getSheetPeekHeight-D9Ej5fM", "SheetMaxWidth", "getSheetMaxWidth-D9Ej5fM", "windowInsets", "Landroidx/compose/foundation/layout/WindowInsets;", "getWindowInsets$annotations", "(Landroidx/compose/runtime/Composer;I)V", "getWindowInsets", "(Landroidx/compose/runtime/Composer;I)Landroidx/compose/foundation/layout/WindowInsets;", "standardWindowInsets", "getStandardWindowInsets", "modalWindowInsets", "getModalWindowInsets", "PositionalThreshold", "getPositionalThreshold-D9Ej5fM$material3", "VelocityThreshold", "getVelocityThreshold-D9Ej5fM$material3", "BoundaryDampeningZone", "getBoundaryDampeningZone-D9Ej5fM$material3", "DragHandle", "", "modifier", "Landroidx/compose/ui/Modifier;", "width", "height", "shape", "color", "DragHandle-lgZ2HuY", "(Landroidx/compose/ui/Modifier;FFLandroidx/compose/ui/graphics/Shape;JLandroidx/compose/runtime/Composer;II)V", "material3"}, k = 1, mv = {2, 1, 0}, xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+/* loaded from: classes.dex */
+public final class BottomSheetDefaults {
+    public static final int $stable = 0;
+    private static final float BoundaryDampeningZone;
+    private static final float PositionalThreshold;
+    private static final float SheetPeekHeight;
+    private static final float VelocityThreshold;
+    public static final BottomSheetDefaults INSTANCE = new BottomSheetDefaults();
+    private static final float Elevation = SheetBottomTokens.INSTANCE.m5566getDockedModalContainerElevationD9Ej5fM();
+    private static final float SheetMaxWidth = Dp.m9732constructorimpl(640);
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit DragHandle_lgZ2HuY$lambda$2(BottomSheetDefaults bottomSheetDefaults, Modifier modifier, float f, float f2, Shape shape, long j, int i, int i2, Composer composer, int i3) {
+        bottomSheetDefaults.m2550DragHandlelgZ2HuY(modifier, f, f2, shape, j, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
+        return Unit.INSTANCE;
+    }
+
+    @Deprecated(level = DeprecationLevel.WARNING, message = "Renamed as modalWindowInsets.", replaceWith = @ReplaceWith(expression = "modalWindowInsets", imports = {}))
+    public static /* synthetic */ void getWindowInsets$annotations(Composer composer, int i) {
+    }
+
+    private BottomSheetDefaults() {
+    }
+
+    public final Shape getHiddenShape(Composer composer, int i) {
+        ComposerKt.sourceInformationMarkerStart(composer, -1971658024, "C(<get-HiddenShape>)772@34672L5:SheetDefaults.kt#uh7d8r");
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventStart(-1971658024, i, -1, "androidx.compose.material3.BottomSheetDefaults.<get-HiddenShape> (SheetDefaults.kt:772)");
+        }
+        Shape value = ShapesKt.getValue(SheetBottomTokens.INSTANCE.getDockedMinimizedContainerShape(), composer, 6);
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventEnd();
+        }
+        ComposerKt.sourceInformationMarkerEnd(composer);
+        return value;
+    }
+
+    public final Shape getExpandedShape(Composer composer, int i) {
+        ComposerKt.sourceInformationMarkerStart(composer, 1683783414, "C(<get-ExpandedShape>)776@34870L5:SheetDefaults.kt#uh7d8r");
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventStart(1683783414, i, -1, "androidx.compose.material3.BottomSheetDefaults.<get-ExpandedShape> (SheetDefaults.kt:776)");
+        }
+        Shape value = ShapesKt.getValue(SheetBottomTokens.INSTANCE.getDockedContainerShape(), composer, 6);
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventEnd();
+        }
+        ComposerKt.sourceInformationMarkerEnd(composer);
+        return value;
+    }
+
+    public final long getContainerColor(Composer composer, int i) {
+        ComposerKt.sourceInformationMarkerStart(composer, 433375448, "C(<get-ContainerColor>)780@35033L5:SheetDefaults.kt#uh7d8r");
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventStart(433375448, i, -1, "androidx.compose.material3.BottomSheetDefaults.<get-ContainerColor> (SheetDefaults.kt:780)");
+        }
+        long value = ColorSchemeKt.getValue(SheetBottomTokens.INSTANCE.getDockedContainerColor(), composer, 6);
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventEnd();
+        }
+        ComposerKt.sourceInformationMarkerEnd(composer);
+        return value;
+    }
+
+    static {
+        float f = 56;
+        SheetPeekHeight = Dp.m9732constructorimpl(f);
+        PositionalThreshold = Dp.m9732constructorimpl(f);
+        float f2 = GapComposerKt.nodeKey;
+        VelocityThreshold = Dp.m9732constructorimpl(f2);
+        BoundaryDampeningZone = Dp.m9732constructorimpl(f2);
+    }
+
+    /* renamed from: getElevation-D9Ej5fM, reason: not valid java name */
+    public final float m2552getElevationD9Ej5fM() {
+        return Elevation;
+    }
+
+    public final long getScrimColor(Composer composer, int i) {
+        ComposerKt.sourceInformationMarkerStart(composer, -2040719176, "C(<get-ScrimColor>)787@35317L5:SheetDefaults.kt#uh7d8r");
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventStart(-2040719176, i, -1, "androidx.compose.material3.BottomSheetDefaults.<get-ScrimColor> (SheetDefaults.kt:787)");
+        }
+        long m6785copywmQWz5c$default = Color.m6785copywmQWz5c$default(ColorSchemeKt.getValue(ScrimTokens.INSTANCE.getContainerColor(), composer, 6), 0.32f, 0.0f, 0.0f, 0.0f, 14, null);
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventEnd();
+        }
+        ComposerKt.sourceInformationMarkerEnd(composer);
+        return m6785copywmQWz5c$default;
+    }
+
+    /* renamed from: getSheetPeekHeight-D9Ej5fM, reason: not valid java name */
+    public final float m2555getSheetPeekHeightD9Ej5fM() {
+        return SheetPeekHeight;
+    }
+
+    /* renamed from: getSheetMaxWidth-D9Ej5fM, reason: not valid java name */
+    public final float m2554getSheetMaxWidthD9Ej5fM() {
+        return SheetMaxWidth;
+    }
+
+    public final WindowInsets getWindowInsets(Composer composer, int i) {
+        ComposerKt.sourceInformationMarkerStart(composer, -511309409, "C(<get-windowInsets>)803@35919L11:SheetDefaults.kt#uh7d8r");
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventStart(-511309409, i, -1, "androidx.compose.material3.BottomSheetDefaults.<get-windowInsets> (SheetDefaults.kt:803)");
+        }
+        WindowInsets m1300onlybOOhFvg = WindowInsetsKt.m1300onlybOOhFvg(WindowInsets_androidKt.getSafeDrawing(WindowInsets.INSTANCE, composer, 6), WindowInsetsSides.m1314plusgK_yJZ4(WindowInsetsSides.INSTANCE.m1322getBottomJoeWqyM(), WindowInsetsSides.INSTANCE.m1328getTopJoeWqyM()));
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventEnd();
+        }
+        ComposerKt.sourceInformationMarkerEnd(composer);
+        return m1300onlybOOhFvg;
+    }
+
+    public final WindowInsets getStandardWindowInsets(Composer composer, int i) {
+        ComposerKt.sourceInformationMarkerStart(composer, -1434177499, "C(<get-standardWindowInsets>)807@36153L11:SheetDefaults.kt#uh7d8r");
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventStart(-1434177499, i, -1, "androidx.compose.material3.BottomSheetDefaults.<get-standardWindowInsets> (SheetDefaults.kt:807)");
+        }
+        WindowInsets m1300onlybOOhFvg = WindowInsetsKt.m1300onlybOOhFvg(WindowInsets_androidKt.getSafeDrawing(WindowInsets.INSTANCE, composer, 6), WindowInsetsSides.INSTANCE.m1322getBottomJoeWqyM());
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventEnd();
+        }
+        ComposerKt.sourceInformationMarkerEnd(composer);
+        return m1300onlybOOhFvg;
+    }
+
+    public final WindowInsets getModalWindowInsets(Composer composer, int i) {
+        ComposerKt.sourceInformationMarkerStart(composer, 100588221, "C(<get-modalWindowInsets>)812@36373L11:SheetDefaults.kt#uh7d8r");
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventStart(100588221, i, -1, "androidx.compose.material3.BottomSheetDefaults.<get-modalWindowInsets> (SheetDefaults.kt:812)");
+        }
+        WindowInsets m1300onlybOOhFvg = WindowInsetsKt.m1300onlybOOhFvg(WindowInsets_androidKt.getSafeDrawing(WindowInsets.INSTANCE, composer, 6), WindowInsetsSides.m1314plusgK_yJZ4(WindowInsetsSides.INSTANCE.m1322getBottomJoeWqyM(), WindowInsetsSides.INSTANCE.m1328getTopJoeWqyM()));
+        if (ComposerKt.isTraceInProgress()) {
+            ComposerKt.traceEventEnd();
+        }
+        ComposerKt.sourceInformationMarkerEnd(composer);
+        return m1300onlybOOhFvg;
+    }
+
+    /* renamed from: getPositionalThreshold-D9Ej5fM$material3, reason: not valid java name */
+    public final float m2553getPositionalThresholdD9Ej5fM$material3() {
+        return PositionalThreshold;
+    }
+
+    /* renamed from: getVelocityThreshold-D9Ej5fM$material3, reason: not valid java name */
+    public final float m2556getVelocityThresholdD9Ej5fM$material3() {
+        return VelocityThreshold;
+    }
+
+    /* renamed from: getBoundaryDampeningZone-D9Ej5fM$material3, reason: not valid java name */
+    public final float m2551getBoundaryDampeningZoneD9Ej5fM$material3() {
+        return BoundaryDampeningZone;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:10:0x004e  */
+    /* JADX WARN: Removed duplicated region for block: B:14:0x006a  */
+    /* JADX WARN: Removed duplicated region for block: B:22:0x0085  */
+    /* JADX WARN: Removed duplicated region for block: B:30:0x00a3  */
+    /* JADX WARN: Removed duplicated region for block: B:33:0x00ae  */
+    /* JADX WARN: Removed duplicated region for block: B:58:0x01ad  */
+    /* JADX WARN: Removed duplicated region for block: B:61:? A[RETURN, SYNTHETIC] */
+    /* JADX WARN: Removed duplicated region for block: B:76:0x019d  */
+    /* JADX WARN: Removed duplicated region for block: B:77:0x00a5  */
+    /* JADX WARN: Removed duplicated region for block: B:80:0x009a  */
+    /* JADX WARN: Removed duplicated region for block: B:83:0x007f  */
+    /* JADX WARN: Removed duplicated region for block: B:84:0x0051  */
+    /* renamed from: DragHandle-lgZ2HuY, reason: not valid java name */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final void m2550DragHandlelgZ2HuY(Modifier modifier, float f, float f2, Shape shape, long j, Composer composer, final int i, final int i2) {
+        Modifier modifier2;
+        int i3;
+        final float f3;
+        int i4;
+        float f4;
+        Shape shape2;
+        long j2;
+        Composer composer2;
+        final Modifier.Companion companion;
+        final float f5;
+        ScopeUpdateScope endRestartGroup;
+        float f6;
+        int i5;
+        int i6;
+        Composer startRestartGroup = composer.startRestartGroup(-1364277227);
+        ComposerKt.sourceInformation(startRestartGroup, "C(DragHandle)N(modifier,width:c#ui.unit.Dp,height:c#ui.unit.Dp,shape,color:c#ui.graphics.Color)835@37293L51,838@37466L82,843@37614L74,836@37353L335:SheetDefaults.kt#uh7d8r");
+        int i7 = i2 & 1;
+        if (i7 != 0) {
+            i3 = i | 6;
+            modifier2 = modifier;
+        } else if ((i & 6) == 0) {
+            modifier2 = modifier;
+            i3 = (startRestartGroup.changed(modifier2) ? 4 : 2) | i;
+        } else {
+            modifier2 = modifier;
+            i3 = i;
+        }
+        int i8 = i2 & 2;
+        if (i8 != 0) {
+            i3 |= 48;
+        } else if ((i & 48) == 0) {
+            f3 = f;
+            i3 |= startRestartGroup.changed(f3) ? 32 : 16;
+            i4 = i2 & 4;
+            if (i4 == 0) {
+                i3 |= 384;
+            } else if ((i & 384) == 0) {
+                f4 = f2;
+                i3 |= startRestartGroup.changed(f4) ? 256 : 128;
+                if ((i & 3072) == 0) {
+                    if ((i2 & 8) == 0) {
+                        shape2 = shape;
+                        if (startRestartGroup.changed(shape2)) {
+                            i6 = 2048;
+                            i3 |= i6;
+                        }
+                    } else {
+                        shape2 = shape;
+                    }
+                    i6 = 1024;
+                    i3 |= i6;
+                } else {
+                    shape2 = shape;
+                }
+                if ((i & 24576) == 0) {
+                    if ((i2 & 16) == 0) {
+                        j2 = j;
+                        if (startRestartGroup.changed(j2)) {
+                            i5 = 16384;
+                            i3 |= i5;
+                        }
+                    } else {
+                        j2 = j;
+                    }
+                    i5 = 8192;
+                    i3 |= i5;
+                } else {
+                    j2 = j;
+                }
+                if (startRestartGroup.shouldExecute((i3 & 9363) != 9362, i3 & 1)) {
+                    startRestartGroup.startDefaults();
+                    ComposerKt.sourceInformation(startRestartGroup, "832@37160L6,833@37242L5");
+                    if ((i & 1) != 0 && !startRestartGroup.getDefaultsInvalid()) {
+                        startRestartGroup.skipToGroupEnd();
+                        if ((i2 & 8) != 0) {
+                            i3 &= -7169;
+                        }
+                        if ((i2 & 16) != 0) {
+                            i3 &= -57345;
+                        }
+                        companion = modifier2;
+                    } else {
+                        companion = i7 != 0 ? Modifier.INSTANCE : modifier2;
+                        if (i8 != 0) {
+                            f3 = SheetBottomTokens.INSTANCE.m5565getDockedDragHandleWidthD9Ej5fM();
+                        }
+                        if (i4 != 0) {
+                            f4 = SheetBottomTokens.INSTANCE.m5564getDockedDragHandleHeightD9Ej5fM();
+                        }
+                        if ((i2 & 8) != 0) {
+                            i3 &= -7169;
+                            shape2 = MaterialTheme.INSTANCE.getShapes(startRestartGroup, 6).getExtraLarge();
+                        }
+                        if ((i2 & 16) != 0) {
+                            j2 = ColorSchemeKt.getValue(SheetBottomTokens.INSTANCE.getDockedDragHandleColor(), startRestartGroup, 6);
+                            i3 &= -57345;
+                        }
+                    }
+                    final float f7 = f4;
+                    startRestartGroup.endDefaults();
+                    if (ComposerKt.isTraceInProgress()) {
+                        ComposerKt.traceEventStart(-1364277227, i3, -1, "androidx.compose.material3.BottomSheetDefaults.DragHandle (SheetDefaults.kt:834)");
+                    }
+                    Strings.Companion companion2 = Strings.INSTANCE;
+                    final String m4895getString2EP1pXo = Strings_androidKt.m4895getString2EP1pXo(Strings.m4811constructorimpl(R.string.m3c_bottom_sheet_drag_handle_description), startRestartGroup, 0);
+                    f6 = SheetDefaultsKt.DragHandleVerticalPadding;
+                    Modifier m1203paddingVpY3zN4$default = PaddingKt.m1203paddingVpY3zN4$default(companion, 0.0f, f6, 1, null);
+                    ComposerKt.sourceInformationMarkerStart(startRestartGroup, -1105373081, "CC(remember):SheetDefaults.kt#9igjgp");
+                    boolean changed = startRestartGroup.changed(m4895getString2EP1pXo);
+                    Object rememberedValue = startRestartGroup.rememberedValue();
+                    if (changed || rememberedValue == Composer.INSTANCE.getEmpty()) {
+                        rememberedValue = new Function1() { // from class: androidx.compose.material3.BottomSheetDefaults$$ExternalSyntheticLambda0
+                            @Override // kotlin.jvm.functions.Function1
+                            public final Object invoke(Object obj) {
+                                Unit DragHandle_lgZ2HuY$lambda$0$0;
+                                DragHandle_lgZ2HuY$lambda$0$0 = BottomSheetDefaults.DragHandle_lgZ2HuY$lambda$0$0(m4895getString2EP1pXo, (SemanticsPropertyReceiver) obj);
+                                return DragHandle_lgZ2HuY$lambda$0$0;
+                            }
+                        };
+                        startRestartGroup.updateRememberedValue(rememberedValue);
+                    }
+                    ComposerKt.sourceInformationMarkerEnd(startRestartGroup);
+                    int i9 = i3 >> 6;
+                    composer2 = startRestartGroup;
+                    SurfaceKt.m4112SurfaceT9BRK9s(SemanticsModifierKt.semantics$default(m1203paddingVpY3zN4$default, false, (Function1) rememberedValue, 1, null), shape2, j2, 0L, 0.0f, 0.0f, null, ComposableLambdaKt.rememberComposableLambda(-1039573072, true, new Function2() { // from class: androidx.compose.material3.BottomSheetDefaults$$ExternalSyntheticLambda1
+                        @Override // kotlin.jvm.functions.Function2
+                        public final Object invoke(Object obj, Object obj2) {
+                            Unit DragHandle_lgZ2HuY$lambda$1;
+                            DragHandle_lgZ2HuY$lambda$1 = BottomSheetDefaults.DragHandle_lgZ2HuY$lambda$1(f3, f7, (Composer) obj, ((Integer) obj2).intValue());
+                            return DragHandle_lgZ2HuY$lambda$1;
+                        }
+                    }, startRestartGroup, 54), composer2, (i9 & 112) | 12582912 | (i9 & 896), 120);
+                    if (ComposerKt.isTraceInProgress()) {
+                        ComposerKt.traceEventEnd();
+                    }
+                    f5 = f7;
+                } else {
+                    composer2 = startRestartGroup;
+                    composer2.skipToGroupEnd();
+                    companion = modifier2;
+                    f5 = f4;
+                }
+                final float f8 = f3;
+                final Shape shape3 = shape2;
+                final long j3 = j2;
+                endRestartGroup = composer2.endRestartGroup();
+                if (endRestartGroup != null) {
+                    endRestartGroup.updateScope(new Function2() { // from class: androidx.compose.material3.BottomSheetDefaults$$ExternalSyntheticLambda2
+                        @Override // kotlin.jvm.functions.Function2
+                        public final Object invoke(Object obj, Object obj2) {
+                            Unit DragHandle_lgZ2HuY$lambda$2;
+                            DragHandle_lgZ2HuY$lambda$2 = BottomSheetDefaults.DragHandle_lgZ2HuY$lambda$2(BottomSheetDefaults.this, companion, f8, f5, shape3, j3, i, i2, (Composer) obj, ((Integer) obj2).intValue());
+                            return DragHandle_lgZ2HuY$lambda$2;
+                        }
+                    });
+                    return;
+                }
+                return;
+            }
+            f4 = f2;
+            if ((i & 3072) == 0) {
+            }
+            if ((i & 24576) == 0) {
+            }
+            if (startRestartGroup.shouldExecute((i3 & 9363) != 9362, i3 & 1)) {
+            }
+            final float f82 = f3;
+            final Shape shape32 = shape2;
+            final long j32 = j2;
+            endRestartGroup = composer2.endRestartGroup();
+            if (endRestartGroup != null) {
+            }
+        }
+        f3 = f;
+        i4 = i2 & 4;
+        if (i4 == 0) {
+        }
+        f4 = f2;
+        if ((i & 3072) == 0) {
+        }
+        if ((i & 24576) == 0) {
+        }
+        if (startRestartGroup.shouldExecute((i3 & 9363) != 9362, i3 & 1)) {
+        }
+        final float f822 = f3;
+        final Shape shape322 = shape2;
+        final long j322 = j2;
+        endRestartGroup = composer2.endRestartGroup();
+        if (endRestartGroup != null) {
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit DragHandle_lgZ2HuY$lambda$0$0(String str, SemanticsPropertyReceiver semanticsPropertyReceiver) {
+        SemanticsPropertiesKt.setContentDescription(semanticsPropertyReceiver, str);
+        return Unit.INSTANCE;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit DragHandle_lgZ2HuY$lambda$1(float f, float f2, Composer composer, int i) {
+        ComposerKt.sourceInformation(composer, "C844@37628L50:SheetDefaults.kt#uh7d8r");
+        if (!composer.shouldExecute((i & 3) != 2, i & 1)) {
+            composer.skipToGroupEnd();
+        } else {
+            if (ComposerKt.isTraceInProgress()) {
+                ComposerKt.traceEventStart(-1039573072, i, -1, "androidx.compose.material3.BottomSheetDefaults.DragHandle.<anonymous> (SheetDefaults.kt:844)");
+            }
+            BoxKt.Box(SizeKt.m1273sizeVpY3zN4(Modifier.INSTANCE, f, f2), composer, 0);
+            if (ComposerKt.isTraceInProgress()) {
+                ComposerKt.traceEventEnd();
+            }
+        }
+        return Unit.INSTANCE;
+    }
+}

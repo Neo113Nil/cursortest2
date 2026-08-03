@@ -1,0 +1,13 @@
+package androidx.compose.ui.input.pointer.util;
+
+import androidx.compose.ui.tooling.preview.AndroidUiModes;
+import kotlin.Metadata;
+
+/* compiled from: PlatformVelocityTracker.android.kt */
+@Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0018\u0002\n\u0000\u001a\b\u0010\u0000\u001a\u00020\u0001H\u0000¨\u0006\u0002"}, d2 = {"PlatformVelocityTracker", "Landroidx/compose/ui/input/pointer/util/PlatformVelocityTracker;", "ui"}, k = 2, mv = {2, 1, 0}, xi = AndroidUiModes.UI_MODE_NIGHT_MASK)
+/* loaded from: classes3.dex */
+public final class PlatformVelocityTracker_androidKt {
+    public static final PlatformVelocityTracker PlatformVelocityTracker() {
+        return new DefaultVelocityTracker();
+    }
+}
