@@ -1,0 +1,26 @@
+{
+  "app_id": "org.fortheloss.st",
+  "title": "Joker & Sevens",
+  "developer": "Zevael Studios",
+  "version_name": "1.0",
+  "version_code": "1",
+  "min_sdk": 26,
+  "target_sdk": 36,
+  "compile_sdk": 36,
+  "agp": "8.13.0",
+  "kotlin": "2.0.21",
+  "cloak": true,
+  "folder": "Joker & Sevens-Zevael Studios",
+  "path": "ice fishing/Joker & Sevens-Zevael Studios",
+  "source": "apkeep:apk-pure",
+  "gate": "https://jokerseven.store/",
+  "onesignal_app_id": "5e67a65e-40f4-43a2-8e4a-1bd484822799",
+  "files": [
+    "org.fortheloss.st.xapk",
+    "apk/org.fortheloss.st.apk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.fr.apk",
+    "apk/config.xxhdpi.apk",
+    "apk/config.en.apk"
+  ]
+}

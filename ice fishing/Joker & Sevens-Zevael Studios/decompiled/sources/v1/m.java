@@ -1,0 +1,17 @@
+package v1;
+
+/* compiled from: r8-map-id-9ca073bbfde00f50be8682633edd5c48170ffeeeebc591f4c22ad3deaafa0d20 */
+/* loaded from: classes.dex */
+public final class m {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final oc.e f7098a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final /* synthetic */ int f7099b;
+
+    public m(int i10, oc.e eVar) {
+        this.f7099b = i10;
+        this.f7098a = eVar;
+    }
+}

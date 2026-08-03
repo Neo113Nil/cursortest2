@@ -1,0 +1,21 @@
+package n0;
+
+import m0.c1;
+import m0.m2;
+
+/* compiled from: r8-map-id-9ca073bbfde00f50be8682633edd5c48170ffeeeebc591f4c22ad3deaafa0d20 */
+/* loaded from: classes.dex */
+public final class h extends i0 {
+
+    /* renamed from: c, reason: collision with root package name */
+    public static final h f5004c = new h(0, 4, 1);
+
+    @Override // n0.i0
+    public final void a(k0 k0Var, m0.c cVar, m2 m2Var, x4.q qVar, j0 j0Var) {
+        c1 c1Var = (c1) k0Var.b(2);
+        m0.v vVar = (m0.v) k0Var.b(1);
+        vVar.k(c1Var);
+        m0.t.d("Could not resolve state for movable content");
+        throw new ac.d();
+    }
+}

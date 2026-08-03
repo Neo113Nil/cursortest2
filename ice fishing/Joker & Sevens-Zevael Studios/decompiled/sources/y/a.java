@@ -1,0 +1,13 @@
+package y;
+
+/* compiled from: r8-map-id-9ca073bbfde00f50be8682633edd5c48170ffeeeebc591f4c22ad3deaafa0d20 */
+/* loaded from: classes.dex */
+public final class a implements h {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final b f8408a;
+
+    public a(b bVar) {
+        this.f8408a = bVar;
+    }
+}
