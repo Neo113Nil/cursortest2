@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "apks": [
+    "com.diamondlife.slots.vegas.free.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.hdpi.apk"
+  ],
+  "base_apk": "com.diamondlife.slots.vegas.free.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "note": "self-prepared via apkeep binary + apkpure xapk + jadx 1.5.1; jadx finished with 77 errors",
+    "out_dir": "decompiled",
+    "base_apk": "com.diamondlife.slots.vegas.free.apk"
+  },
+  "source": "apkeep:apk-pure",
+  "analysis_files": [
+    "com.diamondlife.slots.vegas.free.xapk",
+    "apk/com.diamondlife.slots.vegas.free.apk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.en.apk",
+    "apk/config.hdpi.apk",
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/"
+  ]
+}

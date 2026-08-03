@@ -1,0 +1,23 @@
+{
+  "app_id": "com.diamondlife.slots.vegas.free",
+  "title": "Lotsa Slots - Casino Online",
+  "developer": "SpinX Games Limited",
+  "version_name": "4.90",
+  "version_code": "534",
+  "min_sdk": 21,
+  "target_sdk": 35,
+  "compile_sdk": 35,
+  "agp": "7.4.2",
+  "kotlin": "2.1",
+  "cloak": false,
+  "folder": "Lotsa Slots - Casino Games-SpinX Games Limited",
+  "path": "aviator casino/Lotsa Slots - Casino Games-SpinX Games Limited",
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.diamondlife.slots.vegas.free.xapk",
+    "apk/com.diamondlife.slots.vegas.free.apk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.en.apk",
+    "apk/config.hdpi.apk"
+  ]
+}
