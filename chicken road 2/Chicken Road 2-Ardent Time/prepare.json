@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "apks": [
+    "com.watchfacestudio.huasi_urx110.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.fr.apk",
+    "config.xxxhdpi.apk"
+  ],
+  "base_apk": "com.watchfacestudio.huasi_urx110.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "note": "self-prepared via apkeep binary + apkpure xapk + jadx 1.5.1; jadx finished with 2 errors",
+    "out_dir": "decompiled",
+    "base_apk": "com.watchfacestudio.huasi_urx110.apk"
+  },
+  "source": "apkeep:apk-pure",
+  "analysis_files": [
+    "com.watchfacestudio.huasi_urx110.xapk",
+    "apk/com.watchfacestudio.huasi_urx110.apk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.en.apk",
+    "apk/config.fr.apk",
+    "apk/config.xxxhdpi.apk",
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/"
+  ]
+}

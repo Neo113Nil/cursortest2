@@ -1,0 +1,24 @@
+{
+  "app_id": "com.watchfacestudio.huasi_urx110",
+  "title": "Chicken Road 2",
+  "developer": "Ardent Time",
+  "version_name": "1157.0",
+  "version_code": "1157",
+  "min_sdk": 25,
+  "target_sdk": 36,
+  "compile_sdk": 36,
+  "agp": "8.6.0",
+  "kotlin": "2.1.0",
+  "cloak": true,
+  "folder": "Chicken Road 2-Ardent Time",
+  "path": "chicken road 2/Chicken Road 2-Ardent Time",
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.watchfacestudio.huasi_urx110.xapk",
+    "apk/com.watchfacestudio.huasi_urx110.apk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.en.apk",
+    "apk/config.fr.apk",
+    "apk/config.xxxhdpi.apk"
+  ]
+}
