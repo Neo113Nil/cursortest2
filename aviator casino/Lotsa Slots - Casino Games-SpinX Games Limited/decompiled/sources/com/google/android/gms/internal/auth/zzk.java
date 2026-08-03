@@ -1,0 +1,7 @@
+package com.google.android.gms.internal.auth;
+
+/* compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* loaded from: classes4.dex */
+public interface zzk extends android.os.IInterface {
+    void zzb(com.google.android.gms.common.api.Status status, android.os.Bundle bundle) throws android.os.RemoteException;
+}

@@ -1,0 +1,222 @@
+
+ptzp_Winnie.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/biyan
+  rotate: false
+  xy: 306, 8
+  size: 32, 20
+  orig: 32, 20
+  offset: 0, 0
+  index: -1
+images/biyan2
+  rotate: true
+  xy: 96, 83
+  size: 23, 17
+  orig: 23, 18
+  offset: 0, 0
+  index: -1
+images/erhuan1
+  rotate: true
+  xy: 250, 14
+  size: 18, 40
+  orig: 18, 40
+  offset: 0, 0
+  index: -1
+images/erhuan2
+  rotate: true
+  xy: 115, 88
+  size: 18, 40
+  orig: 18, 40
+  offset: 0, 0
+  index: -1
+images/gebo1
+  rotate: true
+  xy: 419, 20
+  size: 62, 88
+  orig: 62, 88
+  offset: 0, 0
+  index: -1
+images/gebo2
+  rotate: true
+  xy: 209, 34
+  size: 65, 106
+  orig: 65, 107
+  offset: 0, 0
+  index: -1
+images/kouqiang
+  rotate: false
+  xy: 157, 95
+  size: 25, 11
+  orig: 25, 11
+  offset: 0, 0
+  index: -1
+images/qunzi
+  rotate: false
+  xy: 190, 101
+  size: 146, 190
+  orig: 146, 191
+  offset: 0, 0
+  index: -1
+images/shangshen
+  rotate: true
+  xy: 338, 135
+  size: 156, 172
+  orig: 156, 172
+  offset: 0, 0
+  index: -1
+images/shou1
+  rotate: false
+  xy: 373, 309
+  size: 129, 62
+  orig: 129, 62
+  offset: 0, 0
+  index: -1
+images/tou
+  rotate: false
+  xy: 373, 373
+  size: 137, 137
+  orig: 137, 137
+  offset: 0, 0
+  index: -1
+images/toufa1
+  rotate: true
+  xy: 338, 84
+  size: 49, 165
+  orig: 49, 166
+  offset: 0, 0
+  index: -1
+images/toufadi
+  rotate: false
+  xy: 190, 293
+  size: 181, 217
+  orig: 181, 217
+  offset: 0, 0
+  index: -1
+images/tui1
+  rotate: false
+  xy: 2, 83
+  size: 92, 427
+  orig: 92, 427
+  offset: 0, 0
+  index: -1
+images/tui2
+  rotate: false
+  xy: 96, 108
+  size: 92, 402
+  orig: 92, 402
+  offset: 0, 0
+  index: -1
+images/yanbai
+  rotate: false
+  xy: 373, 293
+  size: 23, 14
+  orig: 23, 14
+  offset: 0, 0
+  index: -1
+images/yanbai2
+  rotate: false
+  xy: 398, 293
+  size: 20, 14
+  orig: 20, 14
+  offset: 0, 0
+  index: -1
+images/yanchi
+  rotate: true
+  xy: 504, 351
+  size: 20, 6
+  orig: 20, 6
+  offset: 0, 0
+  index: -1
+images/yanchi2
+  rotate: true
+  xy: 505, 118
+  size: 15, 5
+  orig: 15, 6
+  offset: 0, 0
+  index: -1
+images/yifu1
+  rotate: true
+  xy: 2, 9
+  size: 72, 205
+  orig: 73, 205
+  offset: 0, 0
+  index: -1
+images/yifudi
+  rotate: true
+  xy: 317, 30
+  size: 52, 100
+  orig: 52, 100
+  offset: 0, 0
+  index: -1
+images/youyanqiu
+  rotate: false
+  xy: 317, 87
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+images/zui
+  rotate: false
+  xy: 209, 6
+  size: 39, 26
+  orig: 40, 26
+  offset: 1, 0
+  index: -1
+images/zuoyanqiu
+  rotate: false
+  xy: 292, 20
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+
+ptzp_Winnie2.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/shou2
+  rotate: false
+  xy: 73, 104
+  size: 120, 138
+  orig: 120, 138
+  offset: 0, 0
+  index: -1
+images/yifu2
+  rotate: false
+  xy: 2, 44
+  size: 69, 198
+  orig: 70, 198
+  offset: 1, 0
+  index: -1
+images/yifu3
+  rotate: false
+  xy: 195, 137
+  size: 34, 31
+  orig: 34, 32
+  offset: 0, 1
+  index: -1
+images/yifudi2
+  rotate: true
+  xy: 73, 68
+  size: 34, 112
+  orig: 34, 112
+  offset: 0, 0
+  index: -1
+images/yifuyy
+  rotate: false
+  xy: 195, 170
+  size: 47, 72
+  orig: 49, 73
+  offset: 1, 1
+  index: -1
+images/yy
+  rotate: false
+  xy: 2, 7
+  size: 41, 35
+  orig: 41, 35
+  offset: 0, 0
+  index: -1

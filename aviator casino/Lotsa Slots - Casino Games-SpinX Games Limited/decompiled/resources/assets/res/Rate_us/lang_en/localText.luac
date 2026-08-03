@@ -1,0 +1,45 @@
+
+
+ local translateConfig = {
+	Qusetion = {
+		[1] = {
+			[1] = {
+				Name = "Technical",
+				Next = 2,
+			},
+			[2] = {
+				Name = "Payout",
+				Next = 3,
+			},
+			[3] = {
+				Name = "Game Experience",
+				Next = 4,
+			},
+			[4] = "Other(please specify)",
+		},
+		[2] = {
+			[1] = "Devices sluggish",
+			[2] = "Loading slow",
+			[3] = "Paid detention",
+			[4] = "Image loss",
+			[5] = "Other(please specify)"
+		},
+		[3] = {
+			[1] = "Not enough of Big/Mega wins",
+			[2] = "Not enough of Coins won",
+			[3] = "Too hard to win",
+			[4] = "Not enough of Bonus games",
+			[5] = "Other(please specify)"
+		},
+		[4] = {
+			[1] = "Themes are not interesting.",
+			[2] = "Not enough activities ",
+			[3] = "Too less bonuses of activities ",
+			[4] = "Some contents are hard to understand.",
+			[5] = "Can't play with my friends",
+			[6] = "Other(please specify)"
+		}
+	}
+
+}
+return translateConfig 

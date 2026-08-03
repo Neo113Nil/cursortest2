@@ -1,0 +1,33 @@
+package com.android.billingclient.api;
+
+/* compiled from: com.android.billingclient:billing@@7.0.0 */
+/* loaded from: classes2.dex */
+final class zzax extends android.os.ResultReceiver {
+    final /* synthetic */ com.android.billingclient.api.AlternativeBillingOnlyInformationDialogListener zza;
+    final /* synthetic */ com.android.billingclient.api.BillingClientImpl zzb;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    zzax(com.android.billingclient.api.BillingClientImpl billingClientImpl, android.os.Handler handler, com.android.billingclient.api.AlternativeBillingOnlyInformationDialogListener alternativeBillingOnlyInformationDialogListener) {
+        super(handler);
+        this.zza = alternativeBillingOnlyInformationDialogListener;
+        this.zzb = billingClientImpl;
+    }
+
+    @Override // android.os.ResultReceiver
+    public final void onReceiveResult(int i, android.os.Bundle bundle) {
+        com.android.billingclient.api.BillingResult.Builder newBuilder = com.android.billingclient.api.BillingResult.newBuilder();
+        newBuilder.setResponseCode(i);
+        if (i != 0) {
+            if (bundle == null) {
+                this.zzb.zzap(com.android.billingclient.api.zzcb.zza(73, 16, com.android.billingclient.api.zzce.zzj));
+                this.zza.onAlternativeBillingOnlyInformationDialogResponse(com.android.billingclient.api.zzce.zzj);
+                return;
+            } else {
+                newBuilder.setDebugMessage(com.google.android.gms.internal.play_billing.zzb.zzg(bundle, "BillingClient"));
+                int i2 = bundle.getInt("INTERNAL_LOG_ERROR_REASON");
+                this.zzb.zzap(com.android.billingclient.api.zzcb.zzb(i2 != 0 ? com.google.android.gms.internal.play_billing.zzgj.zza(i2) : 23, 16, newBuilder.build(), bundle.getString("INTERNAL_LOG_ERROR_ADDITIONAL_DETAILS")));
+            }
+        }
+        this.zza.onAlternativeBillingOnlyInformationDialogResponse(newBuilder.build());
+    }
+}

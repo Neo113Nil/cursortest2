@@ -1,0 +1,22 @@
+
+
+ local translateConfig = {
+	a_scratch_icon = "SCRATCH",
+	a_scratch_text1 = "MORE SPINS=HIGHER MULTIPLIERS!",
+	a_scratch_text1_time = "MORE SPINS=HIGHER MULTIPLIERS! RESETS IN",
+	a_scratch_text2 = "FREE SCRATCHER!",
+	a_scratch_text3 = "YOU COULD WIN UP TO:",
+	a_scratch_text4 = "Spin and scratch to win in any slot！",
+	a_scratch_button1 = "SCRATCH IN:",
+	a_scratch_button2 = "SCRATCH NOW!",
+	a_scratch_button3 = "SCRATCHES LEFT TODAY:/X",
+	a_scratch_tips1 = "YOU MAXED OUT YOUR SCRATCHES FOR TODAY! SCRATCH AGAIN IN ",
+	a_scratch_tips2 = [[FREE SCRATCHER EVERY 15 MINUTES!
+						MORE SPINS=HIGHER MULTIPLIER! 
+						*Multiplier will reset once per day]],
+	normal_use_cnt = "SCRATCHER TURNS: ",
+	special_use_cnt = "EXTRA TURNS: ",
+	extra_use_tip = [[2 UNUSED TURNS = 1 EXTRA TURN SAVED FOR NEXT ROUND(MAX:10). EXTRA TURNS DON'T CARRY OVER]],
+
+}
+return translateConfig 

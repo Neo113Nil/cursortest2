@@ -1,0 +1,293 @@
+
+scratch_big1.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shuchu/1_00
+  rotate: false
+  xy: 442, 309
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+shuchu/1_01
+  rotate: false
+  xy: 442, 309
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+shuchu/1_02
+  rotate: false
+  xy: 442, 309
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+shuchu/1_03
+  rotate: false
+  xy: 442, 309
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+shuchu/1_04
+  rotate: false
+  xy: 442, 309
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+shuchu/1_40
+  rotate: false
+  xy: 442, 309
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+shuchu/1_05
+  rotate: true
+  xy: 441, 107
+  size: 93, 57
+  orig: 330, 330
+  offset: 118, 135
+  index: -1
+shuchu/1_06
+  rotate: false
+  xy: 2, 23
+  size: 96, 60
+  orig: 330, 330
+  offset: 117, 133
+  index: -1
+shuchu/1_07
+  rotate: true
+  xy: 447, 304
+  size: 96, 63
+  orig: 330, 330
+  offset: 117, 132
+  index: -1
+shuchu/1_08
+  rotate: true
+  xy: 442, 202
+  size: 100, 64
+  orig: 330, 330
+  offset: 115, 132
+  index: -1
+shuchu/1_09
+  rotate: false
+  xy: 332, 114
+  size: 103, 65
+  orig: 330, 330
+  offset: 113, 132
+  index: -1
+shuchu/1_10
+  rotate: true
+  xy: 201, 92
+  size: 105, 65
+  orig: 330, 330
+  offset: 113, 132
+  index: -1
+shuchu/1_11
+  rotate: false
+  xy: 334, 245
+  size: 106, 65
+  orig: 330, 330
+  offset: 112, 132
+  index: -1
+shuchu/1_12
+  rotate: true
+  xy: 267, 201
+  size: 107, 65
+  orig: 330, 330
+  offset: 112, 132
+  index: -1
+shuchu/1_13
+  rotate: true
+  xy: 2, 86
+  size: 108, 65
+  orig: 330, 330
+  offset: 111, 132
+  index: -1
+shuchu/1_14
+  rotate: false
+  xy: 2, 375
+  size: 108, 66
+  orig: 330, 330
+  offset: 111, 131
+  index: -1
+shuchu/1_15
+  rotate: false
+  xy: 2, 307
+  size: 108, 66
+  orig: 330, 330
+  offset: 111, 131
+  index: -1
+shuchu/1_16
+  rotate: false
+  xy: 114, 443
+  size: 109, 65
+  orig: 330, 330
+  offset: 110, 132
+  index: -1
+shuchu/1_17
+  rotate: false
+  xy: 112, 376
+  size: 109, 65
+  orig: 330, 330
+  offset: 110, 132
+  index: -1
+shuchu/1_18
+  rotate: true
+  xy: 2, 196
+  size: 109, 65
+  orig: 330, 330
+  offset: 110, 132
+  index: -1
+shuchu/1_19
+  rotate: false
+  xy: 225, 443
+  size: 109, 65
+  orig: 330, 330
+  offset: 110, 132
+  index: -1
+shuchu/1_20
+  rotate: false
+  xy: 2, 443
+  size: 110, 65
+  orig: 330, 330
+  offset: 110, 132
+  index: -1
+shuchu/1_21
+  rotate: false
+  xy: 112, 309
+  size: 109, 65
+  orig: 330, 330
+  offset: 110, 132
+  index: -1
+shuchu/1_22
+  rotate: false
+  xy: 223, 376
+  size: 109, 65
+  orig: 330, 330
+  offset: 110, 132
+  index: -1
+shuchu/1_23
+  rotate: false
+  xy: 336, 444
+  size: 109, 64
+  orig: 330, 330
+  offset: 110, 133
+  index: -1
+shuchu/1_24
+  rotate: false
+  xy: 223, 310
+  size: 109, 64
+  orig: 330, 330
+  offset: 110, 133
+  index: -1
+shuchu/1_25
+  rotate: true
+  xy: 69, 196
+  size: 109, 64
+  orig: 330, 330
+  offset: 110, 133
+  index: -1
+shuchu/1_26
+  rotate: true
+  xy: 69, 85
+  size: 109, 64
+  orig: 330, 330
+  offset: 110, 133
+  index: -1
+shuchu/1_27
+  rotate: true
+  xy: 135, 198
+  size: 109, 64
+  orig: 330, 330
+  offset: 110, 133
+  index: -1
+shuchu/1_28
+  rotate: true
+  xy: 135, 87
+  size: 109, 64
+  orig: 330, 330
+  offset: 110, 133
+  index: -1
+shuchu/1_29
+  rotate: false
+  xy: 336, 378
+  size: 109, 64
+  orig: 330, 330
+  offset: 110, 133
+  index: -1
+shuchu/1_30
+  rotate: false
+  xy: 334, 312
+  size: 109, 64
+  orig: 330, 330
+  offset: 110, 133
+  index: -1
+shuchu/1_31
+  rotate: true
+  xy: 201, 199
+  size: 108, 64
+  orig: 330, 330
+  offset: 111, 133
+  index: -1
+shuchu/1_32
+  rotate: true
+  xy: 447, 402
+  size: 106, 63
+  orig: 330, 330
+  offset: 112, 133
+  index: -1
+shuchu/1_33
+  rotate: true
+  xy: 268, 93
+  size: 106, 62
+  orig: 330, 330
+  offset: 112, 134
+  index: -1
+shuchu/1_34
+  rotate: false
+  xy: 334, 181
+  size: 105, 62
+  orig: 330, 330
+  offset: 113, 134
+  index: -1
+shuchu/1_35
+  rotate: false
+  xy: 332, 52
+  size: 104, 60
+  orig: 330, 330
+  offset: 114, 135
+  index: -1
+shuchu/1_36
+  rotate: false
+  xy: 100, 24
+  size: 95, 59
+  orig: 330, 330
+  offset: 122, 135
+  index: -1
+shuchu/1_37
+  rotate: true
+  xy: 438, 12
+  size: 93, 56
+  orig: 330, 330
+  offset: 124, 137
+  index: -1
+shuchu/1_38
+  rotate: false
+  xy: 201, 39
+  size: 86, 51
+  orig: 330, 330
+  offset: 125, 138
+  index: -1
+shuchu/1_39
+  rotate: true
+  xy: 508, 295
+  size: 7, 2
+  orig: 330, 330
+  offset: 204, 146
+  index: -1

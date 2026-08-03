@@ -1,0 +1,240 @@
+package androidx.compose.foundation.lazy.layout;
+
+/* compiled from: LazyLayoutPrefetcher.android.kt */
+@kotlin.Metadata(d1 = {"\u0000n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0001\u0018\u0000 02\u00020\u00012\u00020\u00022\u00020\u00032\u00020\u0004:\u000201B%\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\b\u0012\u0006\u0010\t\u001a\u00020\n\u0012\u0006\u0010\u000b\u001a\u00020\f¢\u0006\u0002\u0010\rJ\u0018\u0010\u001a\u001a\u00020\u000f2\u0006\u0010\u001b\u001a\u00020\u000f2\u0006\u0010\u001c\u001a\u00020\u000fH\u0002J\u0010\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u000fH\u0016J \u0010 \u001a\u00020\u00152\u0006\u0010!\u001a\u00020\u000f2\u0006\u0010\"\u001a\u00020\u000f2\u0006\u0010#\u001a\u00020\u000fH\u0002J\b\u0010$\u001a\u00020\u001eH\u0016J\b\u0010%\u001a\u00020\u001eH\u0016J\b\u0010&\u001a\u00020\u001eH\u0016J\b\u0010'\u001a\u00020\u001eH\u0016J\"\u0010(\u001a\u00020)2\u0006\u0010*\u001a\u00020+2\u0006\u0010,\u001a\u00020-H\u0016ø\u0001\u0000¢\u0006\u0004\b.\u0010/R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u000fX\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010\u0011\u001a\n \u0013*\u0004\u0018\u00010\u00120\u0012X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00180\u0017X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0019\u001a\u00020\u0015X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\fX\u0082\u0004¢\u0006\u0002\n\u0000\u0082\u0002\u0007\n\u0005\b¡\u001e0\u0001¨\u00062"}, d2 = {"Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetcher;", "Landroidx/compose/runtime/RememberObserver;", "Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState$Prefetcher;", "Ljava/lang/Runnable;", "Landroid/view/Choreographer$FrameCallback;", "prefetchState", "Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState;", "subcomposeLayoutState", "Landroidx/compose/ui/layout/SubcomposeLayoutState;", "itemContentFactory", "Landroidx/compose/foundation/lazy/layout/LazyLayoutItemContentFactory;", com.facebook.appevents.internal.ViewHierarchyConstants.VIEW_KEY, "Landroid/view/View;", "(Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState;Landroidx/compose/ui/layout/SubcomposeLayoutState;Landroidx/compose/foundation/lazy/layout/LazyLayoutItemContentFactory;Landroid/view/View;)V", "averagePrecomposeTimeNs", "", "averagePremeasureTimeNs", "choreographer", "Landroid/view/Choreographer;", "kotlin.jvm.PlatformType", "isActive", "", "prefetchRequests", "Landroidx/compose/runtime/collection/MutableVector;", "Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetcher$PrefetchRequest;", "prefetchScheduled", "calculateAverageTime", "new", "current", "doFrame", "", "frameTimeNanos", "enoughTimeLeft", "now", "nextFrame", "average", "onAbandoned", "onForgotten", "onRemembered", "run", "schedulePrefetch", "Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState$PrefetchHandle;", com.google.firebase.analytics.FirebaseAnalytics.Param.INDEX, "", "constraints", "Landroidx/compose/ui/unit/Constraints;", "schedulePrefetch-0kLqBqw", "(IJ)Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState$PrefetchHandle;", com.moloco.sdk.xenoss.sdkdevkit.android.adrenderer.internal.vast.k.M, "PrefetchRequest", "foundation_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+/* loaded from: classes.dex */
+public final class LazyLayoutPrefetcher implements androidx.compose.runtime.RememberObserver, androidx.compose.foundation.lazy.layout.LazyLayoutPrefetchState.Prefetcher, java.lang.Runnable, android.view.Choreographer.FrameCallback {
+    private static long frameIntervalNs;
+    private long averagePrecomposeTimeNs;
+    private long averagePremeasureTimeNs;
+    private boolean isActive;
+    private final androidx.compose.foundation.lazy.layout.LazyLayoutItemContentFactory itemContentFactory;
+    private boolean prefetchScheduled;
+    private final androidx.compose.foundation.lazy.layout.LazyLayoutPrefetchState prefetchState;
+    private final androidx.compose.ui.layout.SubcomposeLayoutState subcomposeLayoutState;
+    private final android.view.View view;
+
+    /* renamed from: Companion, reason: from kotlin metadata */
+    public static final androidx.compose.foundation.lazy.layout.LazyLayoutPrefetcher.Companion INSTANCE = new androidx.compose.foundation.lazy.layout.LazyLayoutPrefetcher.Companion(null);
+    public static final int $stable = 8;
+    private final androidx.compose.runtime.collection.MutableVector<androidx.compose.foundation.lazy.layout.LazyLayoutPrefetcher.PrefetchRequest> prefetchRequests = new androidx.compose.runtime.collection.MutableVector<>(new androidx.compose.foundation.lazy.layout.LazyLayoutPrefetcher.PrefetchRequest[16], 0);
+    private final android.view.Choreographer choreographer = android.view.Choreographer.getInstance();
+
+    private final boolean enoughTimeLeft(long now, long nextFrame, long average) {
+        return now + average < nextFrame;
+    }
+
+    @Override // androidx.compose.runtime.RememberObserver
+    public void onAbandoned() {
+    }
+
+    public LazyLayoutPrefetcher(androidx.compose.foundation.lazy.layout.LazyLayoutPrefetchState lazyLayoutPrefetchState, androidx.compose.ui.layout.SubcomposeLayoutState subcomposeLayoutState, androidx.compose.foundation.lazy.layout.LazyLayoutItemContentFactory lazyLayoutItemContentFactory, android.view.View view) {
+        this.prefetchState = lazyLayoutPrefetchState;
+        this.subcomposeLayoutState = subcomposeLayoutState;
+        this.itemContentFactory = lazyLayoutItemContentFactory;
+        this.view = view;
+        INSTANCE.calculateFrameIntervalIfNeeded(view);
+    }
+
+    @Override // java.lang.Runnable
+    public void run() {
+        if (this.prefetchRequests.isEmpty() || !this.prefetchScheduled || !this.isActive || this.view.getWindowVisibility() != 0) {
+            this.prefetchScheduled = false;
+            return;
+        }
+        long nanos = java.util.concurrent.TimeUnit.MILLISECONDS.toNanos(this.view.getDrawingTime()) + frameIntervalNs;
+        boolean z = java.lang.System.nanoTime() > nanos;
+        boolean z2 = false;
+        while (this.prefetchRequests.isNotEmpty() && !z2) {
+            androidx.compose.foundation.lazy.layout.LazyLayoutPrefetcher.PrefetchRequest prefetchRequest = this.prefetchRequests.getContent()[0];
+            androidx.compose.foundation.lazy.layout.LazyLayoutItemProvider invoke = this.itemContentFactory.getItemProvider().invoke();
+            if (!prefetchRequest.getCanceled()) {
+                int itemCount = invoke.getItemCount();
+                int index = prefetchRequest.getIndex();
+                if (index >= 0 && index < itemCount) {
+                    if (prefetchRequest.getPrecomposeHandle() != null) {
+                        if (!(!prefetchRequest.getMeasured())) {
+                            throw new java.lang.IllegalStateException("request already measured".toString());
+                        }
+                        android.os.Trace.beginSection("compose:lazylist:prefetch:measure");
+                        try {
+                            long nanoTime = java.lang.System.nanoTime();
+                            if (!enoughTimeLeft(nanoTime, nanos, this.averagePremeasureTimeNs) && !z) {
+                                kotlin.Unit unit = kotlin.Unit.INSTANCE;
+                                z2 = true;
+                            }
+                            androidx.compose.ui.layout.SubcomposeLayoutState.PrecomposedSlotHandle precomposeHandle = prefetchRequest.getPrecomposeHandle();
+                            kotlin.jvm.internal.Intrinsics.checkNotNull(precomposeHandle);
+                            int placeablesCount = precomposeHandle.getPlaceablesCount();
+                            for (int i = 0; i < placeablesCount; i++) {
+                                precomposeHandle.mo3420premeasure0kLqBqw(i, prefetchRequest.getConstraints());
+                            }
+                            this.averagePremeasureTimeNs = calculateAverageTime(java.lang.System.nanoTime() - nanoTime, this.averagePremeasureTimeNs);
+                            this.prefetchRequests.removeAt(0);
+                            z = false;
+                        } finally {
+                        }
+                    } else {
+                        android.os.Trace.beginSection("compose:lazylist:prefetch:compose");
+                        try {
+                            long nanoTime2 = java.lang.System.nanoTime();
+                            if (!enoughTimeLeft(nanoTime2, nanos, this.averagePrecomposeTimeNs) && !z) {
+                                z2 = true;
+                                kotlin.Unit unit2 = kotlin.Unit.INSTANCE;
+                            }
+                            java.lang.Object key = invoke.getKey(prefetchRequest.getIndex());
+                            prefetchRequest.setPrecomposeHandle(this.subcomposeLayoutState.precompose(key, this.itemContentFactory.getContent(prefetchRequest.getIndex(), key, invoke.getContentType(prefetchRequest.getIndex()))));
+                            this.averagePrecomposeTimeNs = calculateAverageTime(java.lang.System.nanoTime() - nanoTime2, this.averagePrecomposeTimeNs);
+                            z = false;
+                            kotlin.Unit unit22 = kotlin.Unit.INSTANCE;
+                        } finally {
+                        }
+                    }
+                }
+            }
+            this.prefetchRequests.removeAt(0);
+        }
+        if (z2) {
+            this.choreographer.postFrameCallback(this);
+        } else {
+            this.prefetchScheduled = false;
+        }
+    }
+
+    @Override // android.view.Choreographer.FrameCallback
+    public void doFrame(long frameTimeNanos) {
+        if (this.isActive) {
+            this.view.post(this);
+        }
+    }
+
+    private final long calculateAverageTime(long r5, long current) {
+        if (current == 0) {
+            return r5;
+        }
+        long j = 4;
+        return (r5 / j) + ((current / j) * 3);
+    }
+
+    @Override // androidx.compose.foundation.lazy.layout.LazyLayoutPrefetchState.Prefetcher
+    /* renamed from: schedulePrefetch-0kLqBqw */
+    public androidx.compose.foundation.lazy.layout.LazyLayoutPrefetchState.PrefetchHandle mo742schedulePrefetch0kLqBqw(int index, long constraints) {
+        androidx.compose.foundation.lazy.layout.LazyLayoutPrefetcher.PrefetchRequest prefetchRequest = new androidx.compose.foundation.lazy.layout.LazyLayoutPrefetcher.PrefetchRequest(index, constraints, null);
+        this.prefetchRequests.add(prefetchRequest);
+        if (!this.prefetchScheduled) {
+            this.prefetchScheduled = true;
+            this.view.post(this);
+        }
+        return prefetchRequest;
+    }
+
+    @Override // androidx.compose.runtime.RememberObserver
+    public void onRemembered() {
+        this.prefetchState.setPrefetcher$foundation_release(this);
+        this.isActive = true;
+    }
+
+    @Override // androidx.compose.runtime.RememberObserver
+    public void onForgotten() {
+        this.isActive = false;
+        this.prefetchState.setPrefetcher$foundation_release(null);
+        this.view.removeCallbacks(this);
+        this.choreographer.removeFrameCallback(this);
+    }
+
+    /* compiled from: LazyLayoutPrefetcher.android.kt */
+    @kotlin.Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\r\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0000\b\u0002\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\b\u0010\u001b\u001a\u00020\u001cH\u0016R\u001a\u0010\u0007\u001a\u00020\bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\t\u0010\n\"\u0004\b\u000b\u0010\fR\u0019\u0010\u0004\u001a\u00020\u0005ø\u0001\u0000ø\u0001\u0001¢\u0006\n\n\u0002\u0010\u000f\u001a\u0004\b\r\u0010\u000eR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011R\u001a\u0010\u0012\u001a\u00020\bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0013\u0010\n\"\u0004\b\u0014\u0010\fR\u001c\u0010\u0015\u001a\u0004\u0018\u00010\u0016X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\u0018\"\u0004\b\u0019\u0010\u001a\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u001d"}, d2 = {"Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetcher$PrefetchRequest;", "Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetchState$PrefetchHandle;", com.google.firebase.analytics.FirebaseAnalytics.Param.INDEX, "", "constraints", "Landroidx/compose/ui/unit/Constraints;", "(IJLkotlin/jvm/internal/DefaultConstructorMarker;)V", "canceled", "", "getCanceled", "()Z", "setCanceled", "(Z)V", "getConstraints-msEJaDk", "()J", "J", "getIndex", "()I", "measured", "getMeasured", "setMeasured", "precomposeHandle", "Landroidx/compose/ui/layout/SubcomposeLayoutState$PrecomposedSlotHandle;", "getPrecomposeHandle", "()Landroidx/compose/ui/layout/SubcomposeLayoutState$PrecomposedSlotHandle;", "setPrecomposeHandle", "(Landroidx/compose/ui/layout/SubcomposeLayoutState$PrecomposedSlotHandle;)V", "cancel", "", "foundation_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+    private static final class PrefetchRequest implements androidx.compose.foundation.lazy.layout.LazyLayoutPrefetchState.PrefetchHandle {
+        private boolean canceled;
+        private final long constraints;
+        private final int index;
+        private boolean measured;
+        private androidx.compose.ui.layout.SubcomposeLayoutState.PrecomposedSlotHandle precomposeHandle;
+
+        public /* synthetic */ PrefetchRequest(int i, long j, kotlin.jvm.internal.DefaultConstructorMarker defaultConstructorMarker) {
+            this(i, j);
+        }
+
+        private PrefetchRequest(int i, long j) {
+            this.index = i;
+            this.constraints = j;
+        }
+
+        public final int getIndex() {
+            return this.index;
+        }
+
+        /* renamed from: getConstraints-msEJaDk, reason: not valid java name and from getter */
+        public final long getConstraints() {
+            return this.constraints;
+        }
+
+        public final androidx.compose.ui.layout.SubcomposeLayoutState.PrecomposedSlotHandle getPrecomposeHandle() {
+            return this.precomposeHandle;
+        }
+
+        public final void setPrecomposeHandle(androidx.compose.ui.layout.SubcomposeLayoutState.PrecomposedSlotHandle precomposedSlotHandle) {
+            this.precomposeHandle = precomposedSlotHandle;
+        }
+
+        public final boolean getCanceled() {
+            return this.canceled;
+        }
+
+        public final void setCanceled(boolean z) {
+            this.canceled = z;
+        }
+
+        public final boolean getMeasured() {
+            return this.measured;
+        }
+
+        public final void setMeasured(boolean z) {
+            this.measured = z;
+        }
+
+        @Override // androidx.compose.foundation.lazy.layout.LazyLayoutPrefetchState.PrefetchHandle
+        public void cancel() {
+            if (this.canceled) {
+                return;
+            }
+            this.canceled = true;
+            androidx.compose.ui.layout.SubcomposeLayoutState.PrecomposedSlotHandle precomposedSlotHandle = this.precomposeHandle;
+            if (precomposedSlotHandle != null) {
+                precomposedSlotHandle.dispose();
+            }
+            this.precomposeHandle = null;
+        }
+    }
+
+    /* compiled from: LazyLayoutPrefetcher.android.kt */
+    @kotlin.Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0010\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bH\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\t"}, d2 = {"Landroidx/compose/foundation/lazy/layout/LazyLayoutPrefetcher$Companion;", "", "()V", "frameIntervalNs", "", "calculateFrameIntervalIfNeeded", "", com.facebook.appevents.internal.ViewHierarchyConstants.VIEW_KEY, "Landroid/view/View;", "foundation_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+    public static final class Companion {
+        public /* synthetic */ Companion(kotlin.jvm.internal.DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private Companion() {
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        /* JADX WARN: Code restructure failed: missing block: B:7:0x001e, code lost:
+        
+            if (r6 >= 30.0f) goto L11;
+         */
+        /*
+            Code decompiled incorrectly, please refer to instructions dump.
+        */
+        public final void calculateFrameIntervalIfNeeded(android.view.View view) {
+            float f;
+            if (androidx.compose.foundation.lazy.layout.LazyLayoutPrefetcher.frameIntervalNs == 0) {
+                android.view.Display display = view.getDisplay();
+                if (!view.isInEditMode() && display != null) {
+                    f = display.getRefreshRate();
+                }
+                f = 60.0f;
+                androidx.compose.foundation.lazy.layout.LazyLayoutPrefetcher.frameIntervalNs = (long) (1000000000 / f);
+            }
+        }
+    }
+}

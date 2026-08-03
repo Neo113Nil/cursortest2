@@ -1,0 +1,29 @@
+
+
+ local translateConfig = {
+	a_lobbyfooter_unlock = "UNLOCK AT LEVEL",
+	a_lobbyfooter_lotsacash = "LOTSA CASH",
+	a_lobbyfooter_vipbronze = "BRONZE",
+	a_lobbyfooter_vipsilver = "SILVER",
+	a_lobbyfooter_vipgold = "GOLD",
+	a_lobbyfooter_vipplatinum = "PLATINUM",
+	a_lobbyfooter_vipdiamond = "DIAMOND",
+	a_lobbyfooter_vipsuperdiamond = "SUPER DIAMOND",
+	a_lobbyfooter_viptopsecret = "TOP SECRET",
+	a_lobbyfooter_club = "CLUB",
+	a_lobbyfooter_quest = "QUEST",
+	a_lobbyfooter_wheel = "WHEEL",
+	a_lobbyfooter_adbonus = "AD BONUS",
+	a_lobbyfooter_commingsoon = "COMING SOON",
+	a_lobbyfooter_missions = "MISSIONS",
+	a_lobbyfooter_in = "IN",
+	a_lobbyfooter_inbox = "INBOX",
+	a_lobbyfooter_oinky = "OINKY",
+	a_lobbyfooter_boost = "BOOST",
+	a_lobbyfooter_daysleft = "DAYS LEFT",
+	a_lobbyfooter_trophy = "TROPHY",
+	a_lobbyfooter_sailtoglory = "SAIL TO GLORY",
+	a_lobbyfooter_bigcity = "BIG CITY",
+
+}
+return translateConfig 

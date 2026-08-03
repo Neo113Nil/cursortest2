@@ -1,0 +1,7 @@
+
+
+local translateConfig = {
+	failed_text = "DU HAST DIESE BELOHNUNGEN BEREITS ABGEHOLT!",
+	expire_text = "GESCHENKE ABGELAUFEN! VERPASSE NICHT DAS NÄCHSTE!",
+}
+return translateConfig

@@ -1,0 +1,27 @@
+
+icon_effect.png
+size: 128,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1meirisd1
+  rotate: false
+  xy: 2, 64
+  size: 50, 48
+  orig: 50, 48
+  offset: 0, 0
+  index: -1
+2shandisn1
+  rotate: false
+  xy: 2, 2
+  size: 37, 60
+  orig: 39, 62
+  offset: 1, 1
+  index: -1
+3cdians
+  rotate: true
+  xy: 54, 73
+  size: 39, 51
+  orig: 39, 51
+  offset: 0, 0
+  index: -1

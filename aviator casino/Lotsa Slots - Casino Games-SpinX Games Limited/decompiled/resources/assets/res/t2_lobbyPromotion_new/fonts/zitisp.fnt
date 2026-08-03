@@ -1,0 +1,25 @@
+info face="Lotsa Fonts" size=38 bold=0 italic=0 charset="" unicode=1 stretchH=100 smooth=1 aa=2 padding=1,1,1,1 spacing=1,1 outline=0
+common lineHeight=38 base=32 scaleW=180 scaleH=180 pages=1 packed=0 alphaChnl=1 redChnl=0 greenChnl=0 blueChnl=0
+page id=0 file="zitisp.png"
+chars count=21
+char id=36   x=137   y=82    width=25    height=40    xoffset=-1    yoffset=-1    xadvance=23    page=0  chnl=15
+char id=44   x=163   y=82    width=15    height=40    xoffset=-1    yoffset=-1    xadvance=13    page=0  chnl=15
+char id=46   x=46    y=123   width=15    height=40    xoffset=-1    yoffset=-1    xadvance=13    page=0  chnl=15
+char id=48   x=138   y=0     width=28    height=40    xoffset=-1    yoffset=-1    xadvance=26    page=0  chnl=15
+char id=49   x=25    y=123   width=20    height=40    xoffset=-1    yoffset=-1    xadvance=18    page=0  chnl=15
+char id=50   x=29    y=41    width=27    height=40    xoffset=-1    yoffset=-1    xadvance=25    page=0  chnl=15
+char id=51   x=56    y=82    width=26    height=40    xoffset=-1    yoffset=-1    xadvance=24    page=0  chnl=15
+char id=52   x=57    y=41    width=27    height=40    xoffset=-1    yoffset=-1    xadvance=25    page=0  chnl=15
+char id=53   x=83    y=82    width=26    height=40    xoffset=-1    yoffset=-1    xadvance=24    page=0  chnl=15
+char id=54   x=85    y=41    width=27    height=40    xoffset=-1    yoffset=-1    xadvance=25    page=0  chnl=15
+char id=55   x=0     y=123   width=24    height=40    xoffset=-1    yoffset=-1    xadvance=22    page=0  chnl=15
+char id=56   x=113   y=41    width=27    height=40    xoffset=-1    yoffset=-1    xadvance=25    page=0  chnl=15
+char id=57   x=141   y=41    width=27    height=40    xoffset=-1    yoffset=-1    xadvance=25    page=0  chnl=15
+char id=65   x=78    y=0     width=29    height=40    xoffset=-1    yoffset=-1    xadvance=27    page=0  chnl=15
+char id=66   x=0     y=82    width=27    height=40    xoffset=-1    yoffset=-1    xadvance=25    page=0  chnl=15
+char id=75   x=0     y=41    width=28    height=40    xoffset=-1    yoffset=-1    xadvance=26    page=0  chnl=15
+char id=77   x=40    y=0     width=37    height=40    xoffset=-1    yoffset=-1    xadvance=35    page=0  chnl=15
+char id=81   x=108   y=0     width=29    height=40    xoffset=-1    yoffset=-1    xadvance=27    page=0  chnl=15
+char id=83   x=110   y=82    width=26    height=40    xoffset=-1    yoffset=-1    xadvance=24    page=0  chnl=15
+char id=84   x=28    y=82    width=27    height=40    xoffset=-1    yoffset=-1    xadvance=25    page=0  chnl=15
+char id=87   x=0     y=0     width=39    height=40    xoffset=-1    yoffset=-1    xadvance=37    page=0  chnl=15

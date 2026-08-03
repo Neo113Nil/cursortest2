@@ -1,0 +1,36 @@
+package com.fyber.inneractive.sdk.player.exoplayer2.extractor;
+
+/* loaded from: classes3.dex */
+public final class h implements com.fyber.inneractive.sdk.player.exoplayer2.extractor.r {
+    @Override // com.fyber.inneractive.sdk.player.exoplayer2.extractor.r
+    public final void a(long j, int i, int i2, int i3, byte[] bArr) {
+    }
+
+    @Override // com.fyber.inneractive.sdk.player.exoplayer2.extractor.r
+    public final void a(com.fyber.inneractive.sdk.player.exoplayer2.o oVar) {
+    }
+
+    @Override // com.fyber.inneractive.sdk.player.exoplayer2.extractor.r
+    public final void a(int i, com.fyber.inneractive.sdk.player.exoplayer2.util.n nVar) {
+        nVar.e(nVar.b + i);
+    }
+
+    @Override // com.fyber.inneractive.sdk.player.exoplayer2.extractor.r
+    public final int a(com.fyber.inneractive.sdk.player.exoplayer2.extractor.b bVar, int i, boolean z) {
+        int min = java.lang.Math.min(bVar.f, i);
+        bVar.b(min);
+        if (min == 0) {
+            min = bVar.a(com.fyber.inneractive.sdk.player.exoplayer2.extractor.b.g, 0, java.lang.Math.min(i, 4096), 0, true);
+        }
+        if (min != -1) {
+            bVar.c += min;
+        }
+        if (min != -1) {
+            return min;
+        }
+        if (z) {
+            return -1;
+        }
+        throw new java.io.EOFException();
+    }
+}

@@ -1,0 +1,16 @@
+info face="Lotsa Fonts" size=100 bold=0 italic=0 charset="" unicode=1 stretchH=100 smooth=1 aa=1 padding=2,2,6,2 spacing=4,4 outline=0
+common lineHeight=100 base=79 scaleW=600 scaleH=100 pages=1 packed=0 alphaChnl=1 redChnl=0 greenChnl=0 blueChnl=0
+page id=0 file="ziti_003.png"
+chars count=12
+char id=-1   x=540   y=0     width=4     height=9     xoffset=-2    yoffset=97    xadvance=0     page=0  chnl=15
+char id=37   x=0     y=0     width=54    height=68    xoffset=0     yoffset=17    xadvance=54    page=0  chnl=15
+char id=48   x=160   y=0     width=45    height=68    xoffset=0     yoffset=17    xadvance=45    page=0  chnl=15
+char id=49   x=495   y=0     width=41    height=68    xoffset=2     yoffset=17    xadvance=45    page=0  chnl=15
+char id=50   x=258   y=0     width=44    height=68    xoffset=0     yoffset=17    xadvance=45    page=0  chnl=15
+char id=51   x=306   y=0     width=44    height=68    xoffset=-1    yoffset=17    xadvance=45    page=0  chnl=15
+char id=52   x=58    y=0     width=48    height=68    xoffset=-2    yoffset=17    xadvance=45    page=0  chnl=15
+char id=53   x=449   y=0     width=42    height=68    xoffset=1     yoffset=17    xadvance=45    page=0  chnl=15
+char id=54   x=209   y=0     width=45    height=68    xoffset=0     yoffset=17    xadvance=45    page=0  chnl=15
+char id=55   x=402   y=0     width=43    height=68    xoffset=0     yoffset=17    xadvance=45    page=0  chnl=15
+char id=56   x=110   y=0     width=46    height=68    xoffset=-1    yoffset=17    xadvance=45    page=0  chnl=15
+char id=57   x=354   y=0     width=44    height=68    xoffset=0     yoffset=17    xadvance=45    page=0  chnl=15

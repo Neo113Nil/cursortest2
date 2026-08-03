@@ -1,0 +1,20 @@
+
+redpoint_effect.png
+size: 128,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+quan_00
+  rotate: false
+  xy: 2, 34
+  size: 80, 80
+  orig: 150, 150
+  offset: 35, 35
+  index: -1
+zhongxin_00
+  rotate: false
+  xy: 2, 2
+  size: 29, 30
+  orig: 29, 30
+  offset: 0, 0
+  index: -1

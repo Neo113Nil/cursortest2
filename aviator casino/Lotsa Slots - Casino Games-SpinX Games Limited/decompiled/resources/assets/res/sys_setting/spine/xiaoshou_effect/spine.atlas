@@ -1,0 +1,54 @@
+
+xiaoshou_effect.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+3xian
+  rotate: true
+  xy: 193, 80
+  size: 170, 57
+  orig: 170, 57
+  offset: 0, 0
+  index: -1
+ef_quan
+  rotate: false
+  xy: 2, 55
+  size: 189, 195
+  orig: 205, 205
+  offset: 7, 6
+  index: -1
+
+xiaoshou_effect2.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ef_guang
+  rotate: false
+  xy: 76, 44
+  size: 66, 66
+  orig: 66, 66
+  offset: 0, 0
+  index: -1
+ef_x
+  rotate: false
+  xy: 120, 143
+  size: 82, 81
+  orig: 162, 162
+  offset: 40, 41
+  index: -1
+ef_xx1
+  rotate: false
+  xy: 2, 112
+  size: 116, 112
+  orig: 128, 128
+  offset: 6, 8
+  index: -1
+shou
+  rotate: false
+  xy: 2, 2
+  size: 72, 108
+  orig: 128, 190
+  offset: 28, 42
+  index: -1

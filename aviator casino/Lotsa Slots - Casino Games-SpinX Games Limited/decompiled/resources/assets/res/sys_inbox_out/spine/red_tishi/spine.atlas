@@ -1,0 +1,13 @@
+
+red_tishi.png
+size: 64,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+hongquan_00000
+  rotate: false
+  xy: 2, 2
+  size: 60, 60
+  orig: 184, 184
+  offset: 62, 62
+  index: -1

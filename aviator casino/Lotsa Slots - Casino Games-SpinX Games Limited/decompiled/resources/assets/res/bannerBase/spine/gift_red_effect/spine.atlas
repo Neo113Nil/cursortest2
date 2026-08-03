@@ -1,0 +1,27 @@
+
+gift_red_effect.png
+size: 128,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+glow_00
+  rotate: false
+  xy: 2, 41
+  size: 80, 81
+  orig: 102, 102
+  offset: 11, 12
+  index: -1
+shang
+  rotate: true
+  xy: 84, 76
+  size: 46, 27
+  orig: 48, 29
+  offset: 1, 1
+  index: -1
+xia
+  rotate: false
+  xy: 2, 2
+  size: 43, 37
+  orig: 45, 39
+  offset: 1, 1
+  index: -1

@@ -1,0 +1,171 @@
+package androidx.compose.ui.layout;
+
+/* compiled from: SubcomposeLayout.kt */
+@kotlin.Metadata(d1 = {"\u0000A\n\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000*\u0001\u0001\u001a6\u0010\u0003\u001a\u00020\u00042\b\b\u0002\u0010\u0005\u001a\u00020\u00062\u001d\u0010\u0007\u001a\u0019\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u000b0\b¢\u0006\u0002\b\fH\u0007¢\u0006\u0002\u0010\r\u001a>\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u000e\u001a\u00020\u000f2\b\b\u0002\u0010\u0005\u001a\u00020\u00062\u001d\u0010\u0007\u001a\u0019\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u000b0\b¢\u0006\u0002\b\fH\u0007¢\u0006\u0002\u0010\u0010\u001a\u000e\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0014\"\u0010\u0010\u0000\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0004\n\u0002\u0010\u0002¨\u0006\u0015"}, d2 = {"ReusedSlotId", "androidx/compose/ui/layout/SubcomposeLayoutKt$ReusedSlotId$1", "Landroidx/compose/ui/layout/SubcomposeLayoutKt$ReusedSlotId$1;", "SubcomposeLayout", "", "modifier", "Landroidx/compose/ui/Modifier;", "measurePolicy", "Lkotlin/Function2;", "Landroidx/compose/ui/layout/SubcomposeMeasureScope;", "Landroidx/compose/ui/unit/Constraints;", "Landroidx/compose/ui/layout/MeasureResult;", "Lkotlin/ExtensionFunctionType;", "(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V", "state", "Landroidx/compose/ui/layout/SubcomposeLayoutState;", "(Landroidx/compose/ui/layout/SubcomposeLayoutState;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V", "SubcomposeSlotReusePolicy", "Landroidx/compose/ui/layout/SubcomposeSlotReusePolicy;", "maxSlotsToRetainForReuse", "", "ui_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
+/* loaded from: classes.dex */
+public final class SubcomposeLayoutKt {
+    private static final androidx.compose.ui.layout.SubcomposeLayoutKt$ReusedSlotId$1 ReusedSlotId = new java.lang.Object() { // from class: androidx.compose.ui.layout.SubcomposeLayoutKt$ReusedSlotId$1
+        public java.lang.String toString() {
+            return "ReusedSlotId";
+        }
+    };
+
+    public static final void SubcomposeLayout(final androidx.compose.ui.Modifier modifier, final kotlin.jvm.functions.Function2<? super androidx.compose.ui.layout.SubcomposeMeasureScope, ? super androidx.compose.ui.unit.Constraints, ? extends androidx.compose.ui.layout.MeasureResult> function2, androidx.compose.runtime.Composer composer, final int i, final int i2) {
+        int i3;
+        androidx.compose.runtime.Composer startRestartGroup = composer.startRestartGroup(-1298353104);
+        androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(SubcomposeLayout)P(1)76@3572L36,75@3538L144:SubcomposeLayout.kt#80mrfh");
+        int i4 = i2 & 1;
+        if (i4 != 0) {
+            i3 = i | 6;
+        } else if ((i & 14) == 0) {
+            i3 = (startRestartGroup.changed(modifier) ? 4 : 2) | i;
+        } else {
+            i3 = i;
+        }
+        if ((i2 & 2) != 0) {
+            i3 |= 48;
+        } else if ((i & 112) == 0) {
+            i3 |= startRestartGroup.changedInstance(function2) ? 32 : 16;
+        }
+        if ((i3 & 91) != 18 || !startRestartGroup.getSkipping()) {
+            if (i4 != 0) {
+                modifier = androidx.compose.ui.Modifier.INSTANCE;
+            }
+            if (androidx.compose.runtime.ComposerKt.isTraceInProgress()) {
+                androidx.compose.runtime.ComposerKt.traceEventStart(-1298353104, i3, -1, "androidx.compose.ui.layout.SubcomposeLayout (SubcomposeLayout.kt:74)");
+            }
+            startRestartGroup.startReplaceableGroup(-492369756);
+            androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "CC(remember):Composables.kt#9igjgp");
+            java.lang.Object rememberedValue = startRestartGroup.rememberedValue();
+            if (rememberedValue == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+                rememberedValue = new androidx.compose.ui.layout.SubcomposeLayoutState();
+                startRestartGroup.updateRememberedValue(rememberedValue);
+            }
+            startRestartGroup.endReplaceableGroup();
+            androidx.compose.ui.layout.SubcomposeLayoutState subcomposeLayoutState = (androidx.compose.ui.layout.SubcomposeLayoutState) rememberedValue;
+            int i5 = i3 << 3;
+            SubcomposeLayout(subcomposeLayoutState, modifier, function2, startRestartGroup, (i5 & 112) | 8 | (i5 & 896), 0);
+            if (androidx.compose.runtime.ComposerKt.isTraceInProgress()) {
+                androidx.compose.runtime.ComposerKt.traceEventEnd();
+            }
+        } else {
+            startRestartGroup.skipToGroupEnd();
+        }
+        androidx.compose.runtime.ScopeUpdateScope endRestartGroup = startRestartGroup.endRestartGroup();
+        if (endRestartGroup != null) {
+            endRestartGroup.updateScope(new kotlin.jvm.functions.Function2<androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit>() { // from class: androidx.compose.ui.layout.SubcomposeLayoutKt$SubcomposeLayout$2
+                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                /* JADX WARN: Multi-variable type inference failed */
+                {
+                    super(2);
+                }
+
+                @Override // kotlin.jvm.functions.Function2
+                public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.runtime.Composer composer2, java.lang.Integer num) {
+                    invoke(composer2, num.intValue());
+                    return kotlin.Unit.INSTANCE;
+                }
+
+                public final void invoke(androidx.compose.runtime.Composer composer2, int i6) {
+                    androidx.compose.ui.layout.SubcomposeLayoutKt.SubcomposeLayout(androidx.compose.ui.Modifier.this, function2, composer2, androidx.compose.runtime.RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
+                }
+            });
+        }
+    }
+
+    public static final void SubcomposeLayout(final androidx.compose.ui.layout.SubcomposeLayoutState subcomposeLayoutState, androidx.compose.ui.Modifier modifier, final kotlin.jvm.functions.Function2<? super androidx.compose.ui.layout.SubcomposeMeasureScope, ? super androidx.compose.ui.unit.Constraints, ? extends androidx.compose.ui.layout.MeasureResult> function2, androidx.compose.runtime.Composer composer, final int i, final int i2) {
+        androidx.compose.runtime.Composer startRestartGroup = composer.startRestartGroup(-511989831);
+        androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(SubcomposeLayout)P(2,1)109@5028L23,110@5081L28,113@5237L487,126@5770L65:SubcomposeLayout.kt#80mrfh");
+        if ((i2 & 2) != 0) {
+            modifier = androidx.compose.ui.Modifier.INSTANCE;
+        }
+        final androidx.compose.ui.Modifier modifier2 = modifier;
+        if (androidx.compose.runtime.ComposerKt.isTraceInProgress()) {
+            androidx.compose.runtime.ComposerKt.traceEventStart(-511989831, i, -1, "androidx.compose.ui.layout.SubcomposeLayout (SubcomposeLayout.kt:108)");
+        }
+        int currentCompositeKeyHash = androidx.compose.runtime.ComposablesKt.getCurrentCompositeKeyHash(startRestartGroup, 0);
+        androidx.compose.runtime.CompositionContext rememberCompositionContext = androidx.compose.runtime.ComposablesKt.rememberCompositionContext(startRestartGroup, 0);
+        androidx.compose.ui.Modifier materializeModifier = androidx.compose.ui.ComposedModifierKt.materializeModifier(startRestartGroup, modifier2);
+        androidx.compose.runtime.CompositionLocalMap currentCompositionLocalMap = startRestartGroup.getCurrentCompositionLocalMap();
+        final kotlin.jvm.functions.Function0<androidx.compose.ui.node.LayoutNode> constructor$ui_release = androidx.compose.ui.node.LayoutNode.INSTANCE.getConstructor$ui_release();
+        startRestartGroup.startReplaceableGroup(1405779621);
+        androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "CC(ReusableComposeNode):Composables.kt#9igjgp");
+        if (!(startRestartGroup.getApplier() instanceof androidx.compose.runtime.Applier)) {
+            androidx.compose.runtime.ComposablesKt.invalidApplier();
+        }
+        startRestartGroup.startReusableNode();
+        if (startRestartGroup.getInserting()) {
+            startRestartGroup.createNode(new kotlin.jvm.functions.Function0<androidx.compose.ui.node.LayoutNode>() { // from class: androidx.compose.ui.layout.SubcomposeLayoutKt$SubcomposeLayout$$inlined$ReusableComposeNode$1
+                {
+                    super(0);
+                }
+
+                /* JADX WARN: Type inference failed for: r0v1, types: [androidx.compose.ui.node.LayoutNode, java.lang.Object] */
+                @Override // kotlin.jvm.functions.Function0
+                public final androidx.compose.ui.node.LayoutNode invoke() {
+                    return kotlin.jvm.functions.Function0.this.invoke();
+                }
+            });
+        } else {
+            startRestartGroup.useNode();
+        }
+        androidx.compose.runtime.Composer m1641constructorimpl = androidx.compose.runtime.Updater.m1641constructorimpl(startRestartGroup);
+        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, subcomposeLayoutState, subcomposeLayoutState.getSetRoot$ui_release());
+        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, rememberCompositionContext, subcomposeLayoutState.getSetCompositionContext$ui_release());
+        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, function2, subcomposeLayoutState.getSetMeasurePolicy$ui_release());
+        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, currentCompositionLocalMap, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetResolvedCompositionLocals());
+        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, materializeModifier, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetModifier());
+        kotlin.jvm.functions.Function2<androidx.compose.ui.node.ComposeUiNode, java.lang.Integer, kotlin.Unit> setCompositeKeyHash = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetCompositeKeyHash();
+        if (m1641constructorimpl.getInserting() || !kotlin.jvm.internal.Intrinsics.areEqual(m1641constructorimpl.rememberedValue(), java.lang.Integer.valueOf(currentCompositeKeyHash))) {
+            m1641constructorimpl.updateRememberedValue(java.lang.Integer.valueOf(currentCompositeKeyHash));
+            m1641constructorimpl.apply(java.lang.Integer.valueOf(currentCompositeKeyHash), setCompositeKeyHash);
+        }
+        startRestartGroup.endNode();
+        startRestartGroup.endReplaceableGroup();
+        if (!startRestartGroup.getSkipping()) {
+            androidx.compose.runtime.EffectsKt.SideEffect(new kotlin.jvm.functions.Function0<kotlin.Unit>() { // from class: androidx.compose.ui.layout.SubcomposeLayoutKt$SubcomposeLayout$4
+                {
+                    super(0);
+                }
+
+                @Override // kotlin.jvm.functions.Function0
+                public /* bridge */ /* synthetic */ kotlin.Unit invoke() {
+                    invoke2();
+                    return kotlin.Unit.INSTANCE;
+                }
+
+                /* renamed from: invoke, reason: avoid collision after fix types in other method */
+                public final void invoke2() {
+                    androidx.compose.ui.layout.SubcomposeLayoutState.this.forceRecomposeChildren$ui_release();
+                }
+            }, startRestartGroup, 0);
+        }
+        if (androidx.compose.runtime.ComposerKt.isTraceInProgress()) {
+            androidx.compose.runtime.ComposerKt.traceEventEnd();
+        }
+        androidx.compose.runtime.ScopeUpdateScope endRestartGroup = startRestartGroup.endRestartGroup();
+        if (endRestartGroup != null) {
+            endRestartGroup.updateScope(new kotlin.jvm.functions.Function2<androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit>() { // from class: androidx.compose.ui.layout.SubcomposeLayoutKt$SubcomposeLayout$5
+                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                /* JADX WARN: Multi-variable type inference failed */
+                {
+                    super(2);
+                }
+
+                @Override // kotlin.jvm.functions.Function2
+                public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.runtime.Composer composer2, java.lang.Integer num) {
+                    invoke(composer2, num.intValue());
+                    return kotlin.Unit.INSTANCE;
+                }
+
+                public final void invoke(androidx.compose.runtime.Composer composer2, int i3) {
+                    androidx.compose.ui.layout.SubcomposeLayoutKt.SubcomposeLayout(androidx.compose.ui.layout.SubcomposeLayoutState.this, modifier2, function2, composer2, androidx.compose.runtime.RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
+                }
+            });
+        }
+    }
+
+    public static final androidx.compose.ui.layout.SubcomposeSlotReusePolicy SubcomposeSlotReusePolicy(int i) {
+        return new androidx.compose.ui.layout.FixedCountSubcomposeSlotReusePolicy(i);
+    }
+}

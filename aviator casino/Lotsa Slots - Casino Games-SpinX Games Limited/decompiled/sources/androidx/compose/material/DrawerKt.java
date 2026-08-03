@@ -1,0 +1,3750 @@
+package androidx.compose.material;
+
+/* compiled from: Drawer.kt */
+@kotlin.Metadata(d1 = {"\u0000p\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a\u0096\u0001\u0010\b\u001a\u00020\t2\u001c\u0010\n\u001a\u0018\u0012\u0004\u0012\u00020\f\u0012\u0004\u0012\u00020\t0\u000b¢\u0006\u0002\b\r¢\u0006\u0002\b\u000e2\b\b\u0002\u0010\u000f\u001a\u00020\u00102\b\b\u0002\u0010\u0011\u001a\u00020\u00122\b\b\u0002\u0010\u0013\u001a\u00020\u00142\b\b\u0002\u0010\u0015\u001a\u00020\u00162\b\b\u0002\u0010\u0017\u001a\u00020\u00052\b\b\u0002\u0010\u0018\u001a\u00020\u00192\b\b\u0002\u0010\u001a\u001a\u00020\u00192\b\b\u0002\u0010\u001b\u001a\u00020\u00192\u0011\u0010\u001c\u001a\r\u0012\u0004\u0012\u00020\t0\u001d¢\u0006\u0002\b\rH\u0007ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u001e\u0010\u001f\u001a3\u0010 \u001a\u00020\t2\u0006\u0010!\u001a\u00020\u00192\f\u0010\"\u001a\b\u0012\u0004\u0012\u00020\t0\u001d2\u0006\u0010#\u001a\u00020\u0014H\u0003ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b$\u0010%\u001a\u0096\u0001\u0010&\u001a\u00020\t2\u001c\u0010\n\u001a\u0018\u0012\u0004\u0012\u00020\f\u0012\u0004\u0012\u00020\t0\u000b¢\u0006\u0002\b\r¢\u0006\u0002\b\u000e2\b\b\u0002\u0010\u000f\u001a\u00020\u00102\b\b\u0002\u0010\u0011\u001a\u00020'2\b\b\u0002\u0010\u0013\u001a\u00020\u00142\b\b\u0002\u0010\u0015\u001a\u00020\u00162\b\b\u0002\u0010\u0017\u001a\u00020\u00052\b\b\u0002\u0010\u0018\u001a\u00020\u00192\b\b\u0002\u0010\u001a\u001a\u00020\u00192\b\b\u0002\u0010\u001b\u001a\u00020\u00192\u0011\u0010\u001c\u001a\r\u0012\u0004\u0012\u00020\t0\u001d¢\u0006\u0002\b\rH\u0007ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b(\u0010)\u001aA\u0010*\u001a\u00020\t2\u0006\u0010+\u001a\u00020\u00142\f\u0010,\u001a\b\u0012\u0004\u0012\u00020\t0\u001d2\f\u0010-\u001a\b\u0012\u0004\u0012\u00020\u00020\u001d2\u0006\u0010!\u001a\u00020\u0019H\u0003ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b.\u0010/\u001a \u00100\u001a\u00020\u00022\u0006\u00101\u001a\u00020\u00022\u0006\u00102\u001a\u00020\u00022\u0006\u00103\u001a\u00020\u0002H\u0002\u001a+\u00104\u001a\u00020\u00122\u0006\u00105\u001a\u0002062\u0014\b\u0002\u00107\u001a\u000e\u0012\u0004\u0012\u000206\u0012\u0004\u0012\u00020\u00140\u000bH\u0007¢\u0006\u0002\u00108\u001a+\u00109\u001a\u00020'2\u0006\u00105\u001a\u00020:2\u0014\b\u0002\u00107\u001a\u000e\u0012\u0004\u0012\u00020:\u0012\u0004\u0012\u00020\u00140\u000bH\u0007¢\u0006\u0002\u0010;\"\u0014\u0010\u0000\u001a\b\u0012\u0004\u0012\u00020\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000\"\u000e\u0010\u0003\u001a\u00020\u0002X\u0082T¢\u0006\u0002\n\u0000\"\u0013\u0010\u0004\u001a\u00020\u0005X\u0082\u0004ø\u0001\u0000¢\u0006\u0004\n\u0002\u0010\u0006\"\u0013\u0010\u0007\u001a\u00020\u0005X\u0082\u0004ø\u0001\u0000¢\u0006\u0004\n\u0002\u0010\u0006\u0082\u0002\u000b\n\u0002\b\u0019\n\u0005\b¡\u001e0\u0001¨\u0006<"}, d2 = {"AnimationSpec", "Landroidx/compose/animation/core/TweenSpec;", "", "BottomDrawerOpenFraction", "DrawerVelocityThreshold", "Landroidx/compose/ui/unit/Dp;", "F", "EndDrawerPadding", "BottomDrawer", "", "drawerContent", "Lkotlin/Function1;", "Landroidx/compose/foundation/layout/ColumnScope;", "Landroidx/compose/runtime/Composable;", "Lkotlin/ExtensionFunctionType;", "modifier", "Landroidx/compose/ui/Modifier;", "drawerState", "Landroidx/compose/material/BottomDrawerState;", "gesturesEnabled", "", "drawerShape", "Landroidx/compose/ui/graphics/Shape;", "drawerElevation", "drawerBackgroundColor", "Landroidx/compose/ui/graphics/Color;", "drawerContentColor", "scrimColor", "content", "Lkotlin/Function0;", "BottomDrawer-Gs3lGvM", "(Lkotlin/jvm/functions/Function3;Landroidx/compose/ui/Modifier;Landroidx/compose/material/BottomDrawerState;ZLandroidx/compose/ui/graphics/Shape;FJJJLkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V", "BottomDrawerScrim", "color", "onDismiss", com.helpshift.HelpshiftEvent.DATA_SDK_VISIBLE, "BottomDrawerScrim-3J-VO9M", "(JLkotlin/jvm/functions/Function0;ZLandroidx/compose/runtime/Composer;I)V", "ModalDrawer", "Landroidx/compose/material/DrawerState;", "ModalDrawer-Gs3lGvM", "(Lkotlin/jvm/functions/Function3;Landroidx/compose/ui/Modifier;Landroidx/compose/material/DrawerState;ZLandroidx/compose/ui/graphics/Shape;FJJJLkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V", "Scrim", "open", "onClose", "fraction", "Scrim-Bx497Mc", "(ZLkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;JLandroidx/compose/runtime/Composer;I)V", "calculateFraction", "a", "b", "pos", "rememberBottomDrawerState", "initialValue", "Landroidx/compose/material/BottomDrawerValue;", "confirmStateChange", "(Landroidx/compose/material/BottomDrawerValue;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;II)Landroidx/compose/material/BottomDrawerState;", "rememberDrawerState", "Landroidx/compose/material/DrawerValue;", "(Landroidx/compose/material/DrawerValue;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;II)Landroidx/compose/material/DrawerState;", "material_release"}, k = 2, mv = {1, 6, 0}, xi = 48)
+/* loaded from: classes.dex */
+public final class DrawerKt {
+    private static final float BottomDrawerOpenFraction = 0.5f;
+    private static final float EndDrawerPadding = androidx.compose.ui.unit.Dp.m4478constructorimpl(56);
+    private static final float DrawerVelocityThreshold = androidx.compose.ui.unit.Dp.m4478constructorimpl(400);
+    private static final androidx.compose.animation.core.TweenSpec<java.lang.Float> AnimationSpec = new androidx.compose.animation.core.TweenSpec<>(256, 0, null, 6, null);
+
+    public static final androidx.compose.material.DrawerState rememberDrawerState(final androidx.compose.material.DrawerValue initialValue, final kotlin.jvm.functions.Function1<? super androidx.compose.material.DrawerValue, java.lang.Boolean> function1, androidx.compose.runtime.Composer composer, int i, int i2) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(initialValue, "initialValue");
+        composer.startReplaceableGroup(-1435874229);
+        androidx.compose.runtime.ComposerKt.sourceInformation(composer, "C(rememberDrawerState)P(1)320@10387L125:Drawer.kt#jmzs0o");
+        if ((i2 & 2) != 0) {
+            function1 = new kotlin.jvm.functions.Function1<androidx.compose.material.DrawerValue, java.lang.Boolean>() { // from class: androidx.compose.material.DrawerKt$rememberDrawerState$1
+                @Override // kotlin.jvm.functions.Function1
+                public final java.lang.Boolean invoke(androidx.compose.material.DrawerValue it) {
+                    kotlin.jvm.internal.Intrinsics.checkNotNullParameter(it, "it");
+                    return true;
+                }
+            };
+        }
+        androidx.compose.material.DrawerState drawerState = (androidx.compose.material.DrawerState) androidx.compose.runtime.saveable.RememberSaveableKt.m1729rememberSaveable(new java.lang.Object[0], (androidx.compose.runtime.saveable.Saver) androidx.compose.material.DrawerState.INSTANCE.Saver(function1), (java.lang.String) null, (kotlin.jvm.functions.Function0) new kotlin.jvm.functions.Function0<androidx.compose.material.DrawerState>() { // from class: androidx.compose.material.DrawerKt$rememberDrawerState$2
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* JADX WARN: Multi-variable type inference failed */
+            {
+                super(0);
+            }
+
+            /* JADX WARN: Can't rename method to resolve collision */
+            @Override // kotlin.jvm.functions.Function0
+            public final androidx.compose.material.DrawerState invoke() {
+                return new androidx.compose.material.DrawerState(androidx.compose.material.DrawerValue.this, function1);
+            }
+        }, composer, 72, 4);
+        composer.endReplaceableGroup();
+        return drawerState;
+    }
+
+    @androidx.compose.material.ExperimentalMaterialApi
+    public static final androidx.compose.material.BottomDrawerState rememberBottomDrawerState(final androidx.compose.material.BottomDrawerValue initialValue, final kotlin.jvm.functions.Function1<? super androidx.compose.material.BottomDrawerValue, java.lang.Boolean> function1, androidx.compose.runtime.Composer composer, int i, int i2) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(initialValue, "initialValue");
+        composer.startReplaceableGroup(-598115156);
+        androidx.compose.runtime.ComposerKt.sourceInformation(composer, "C(rememberBottomDrawerState)P(1)337@10933L137:Drawer.kt#jmzs0o");
+        if ((i2 & 2) != 0) {
+            function1 = new kotlin.jvm.functions.Function1<androidx.compose.material.BottomDrawerValue, java.lang.Boolean>() { // from class: androidx.compose.material.DrawerKt$rememberBottomDrawerState$1
+                @Override // kotlin.jvm.functions.Function1
+                public final java.lang.Boolean invoke(androidx.compose.material.BottomDrawerValue it) {
+                    kotlin.jvm.internal.Intrinsics.checkNotNullParameter(it, "it");
+                    return true;
+                }
+            };
+        }
+        androidx.compose.material.BottomDrawerState bottomDrawerState = (androidx.compose.material.BottomDrawerState) androidx.compose.runtime.saveable.RememberSaveableKt.m1729rememberSaveable(new java.lang.Object[0], (androidx.compose.runtime.saveable.Saver) androidx.compose.material.BottomDrawerState.Companion.Saver(function1), (java.lang.String) null, (kotlin.jvm.functions.Function0) new kotlin.jvm.functions.Function0<androidx.compose.material.BottomDrawerState>() { // from class: androidx.compose.material.DrawerKt$rememberBottomDrawerState$2
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* JADX WARN: Multi-variable type inference failed */
+            {
+                super(0);
+            }
+
+            /* JADX WARN: Can't rename method to resolve collision */
+            @Override // kotlin.jvm.functions.Function0
+            public final androidx.compose.material.BottomDrawerState invoke() {
+                return new androidx.compose.material.BottomDrawerState(androidx.compose.material.BottomDrawerValue.this, function1);
+            }
+        }, composer, 72, 4);
+        composer.endReplaceableGroup();
+        return bottomDrawerState;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:100:0x01b4  */
+    /* JADX WARN: Removed duplicated region for block: B:102:0x01c2  */
+    /* JADX WARN: Removed duplicated region for block: B:105:0x01c7  */
+    /* JADX WARN: Removed duplicated region for block: B:107:0x01d9  */
+    /* JADX WARN: Removed duplicated region for block: B:10:0x0057  */
+    /* JADX WARN: Removed duplicated region for block: B:110:0x01e5  */
+    /* JADX WARN: Removed duplicated region for block: B:113:0x01f8  */
+    /* JADX WARN: Removed duplicated region for block: B:116:0x0209  */
+    /* JADX WARN: Removed duplicated region for block: B:118:0x021f  */
+    /* JADX WARN: Removed duplicated region for block: B:119:0x0203  */
+    /* JADX WARN: Removed duplicated region for block: B:120:0x01f2  */
+    /* JADX WARN: Removed duplicated region for block: B:121:0x01e0  */
+    /* JADX WARN: Removed duplicated region for block: B:122:0x01d6  */
+    /* JADX WARN: Removed duplicated region for block: B:123:0x01bf  */
+    /* JADX WARN: Removed duplicated region for block: B:124:0x01ae  */
+    /* JADX WARN: Removed duplicated region for block: B:125:0x0129  */
+    /* JADX WARN: Removed duplicated region for block: B:133:0x011f  */
+    /* JADX WARN: Removed duplicated region for block: B:136:0x0101  */
+    /* JADX WARN: Removed duplicated region for block: B:139:0x00e2  */
+    /* JADX WARN: Removed duplicated region for block: B:140:0x00af  */
+    /* JADX WARN: Removed duplicated region for block: B:149:0x00a5  */
+    /* JADX WARN: Removed duplicated region for block: B:150:0x0075  */
+    /* JADX WARN: Removed duplicated region for block: B:159:0x006c  */
+    /* JADX WARN: Removed duplicated region for block: B:18:0x0072  */
+    /* JADX WARN: Removed duplicated region for block: B:22:0x0090  */
+    /* JADX WARN: Removed duplicated region for block: B:30:0x00ab  */
+    /* JADX WARN: Removed duplicated region for block: B:34:0x00ca  */
+    /* JADX WARN: Removed duplicated region for block: B:42:0x00eb  */
+    /* JADX WARN: Removed duplicated region for block: B:50:0x0109  */
+    /* JADX WARN: Removed duplicated region for block: B:58:0x0125  */
+    /* JADX WARN: Removed duplicated region for block: B:62:0x0143  */
+    /* JADX WARN: Removed duplicated region for block: B:67:0x02d1  */
+    /* JADX WARN: Removed duplicated region for block: B:70:? A[RETURN, SYNTHETIC] */
+    /* JADX WARN: Removed duplicated region for block: B:73:0x016b  */
+    /* JADX WARN: Removed duplicated region for block: B:94:0x0255  */
+    /* JADX WARN: Removed duplicated region for block: B:97:0x01a9  */
+    /* renamed from: ModalDrawer-Gs3lGvM, reason: not valid java name */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public static final void m1364ModalDrawerGs3lGvM(final kotlin.jvm.functions.Function3<? super androidx.compose.foundation.layout.ColumnScope, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, kotlin.Unit> drawerContent, androidx.compose.ui.Modifier modifier, androidx.compose.material.DrawerState drawerState, boolean z, androidx.compose.ui.graphics.Shape shape, float f, long j, long j2, long j3, final kotlin.jvm.functions.Function2<? super androidx.compose.runtime.Composer, ? super java.lang.Integer, kotlin.Unit> content, androidx.compose.runtime.Composer composer, final int i, final int i2) {
+        int i3;
+        androidx.compose.ui.Modifier modifier2;
+        androidx.compose.material.DrawerState drawerState2;
+        int i4;
+        boolean z2;
+        androidx.compose.ui.graphics.Shape shape2;
+        int i5;
+        float f2;
+        int i6;
+        androidx.compose.material.DrawerState drawerState3;
+        androidx.compose.foundation.shape.CornerBasedShape cornerBasedShape;
+        long j4;
+        long j5;
+        long j6;
+        androidx.compose.ui.Modifier modifier3;
+        androidx.compose.material.DrawerState drawerState4;
+        float f3;
+        long j7;
+        long j8;
+        androidx.compose.ui.graphics.Shape shape3;
+        boolean z3;
+        java.lang.Object rememberedValue;
+        final long j9;
+        final long j10;
+        androidx.compose.runtime.Composer composer2;
+        final androidx.compose.material.DrawerState drawerState5;
+        final boolean z4;
+        final androidx.compose.ui.graphics.Shape shape4;
+        final float f4;
+        final long j11;
+        final androidx.compose.ui.Modifier modifier4;
+        androidx.compose.runtime.ScopeUpdateScope endRestartGroup;
+        int i7;
+        int i8;
+        int i9;
+        int i10;
+        int i11;
+        int i12;
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(drawerContent, "drawerContent");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(content, "content");
+        androidx.compose.runtime.Composer startRestartGroup = composer.startRestartGroup(1305806945);
+        androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(ModalDrawer)P(2,8,6,7,5,4:c#ui.unit.Dp,1:c#ui.graphics.Color,3:c#ui.graphics.Color,9:c#ui.graphics.Color)376@12880L39,378@12997L6,380@13112L6,381@13160L38,382@13239L10,385@13307L24,386@13336L3205:Drawer.kt#jmzs0o");
+        if ((i2 & 1) != 0) {
+            i3 = i | 6;
+        } else if ((i & 14) == 0) {
+            i3 = (startRestartGroup.changed(drawerContent) ? 4 : 2) | i;
+        } else {
+            i3 = i;
+        }
+        int i13 = i2 & 2;
+        if (i13 != 0) {
+            i3 |= 48;
+        } else if ((i & 112) == 0) {
+            modifier2 = modifier;
+            i3 |= startRestartGroup.changed(modifier2) ? 32 : 16;
+            if ((i & 896) != 0) {
+                if ((i2 & 4) == 0) {
+                    drawerState2 = drawerState;
+                    if (startRestartGroup.changed(drawerState2)) {
+                        i12 = 256;
+                        i3 |= i12;
+                    }
+                } else {
+                    drawerState2 = drawerState;
+                }
+                i12 = 128;
+                i3 |= i12;
+            } else {
+                drawerState2 = drawerState;
+            }
+            i4 = i2 & 8;
+            if (i4 == 0) {
+                i3 |= 3072;
+            } else if ((i & 7168) == 0) {
+                z2 = z;
+                i3 |= startRestartGroup.changed(z2) ? 2048 : 1024;
+                if ((57344 & i) == 0) {
+                    if ((i2 & 16) == 0) {
+                        shape2 = shape;
+                        if (startRestartGroup.changed(shape2)) {
+                            i11 = 16384;
+                            i3 |= i11;
+                        }
+                    } else {
+                        shape2 = shape;
+                    }
+                    i11 = 8192;
+                    i3 |= i11;
+                } else {
+                    shape2 = shape;
+                }
+                i5 = i2 & 32;
+                if (i5 != 0) {
+                    i3 |= androidx.profileinstaller.ProfileVerifier.CompilationStatus.RESULT_CODE_ERROR_CANT_WRITE_PROFILE_VERIFICATION_RESULT_CACHE_FILE;
+                } else if ((458752 & i) == 0) {
+                    f2 = f;
+                    i3 |= startRestartGroup.changed(f2) ? 131072 : 65536;
+                    if ((3670016 & i) != 0) {
+                        if ((i2 & 64) == 0) {
+                            i6 = i13;
+                            if (startRestartGroup.changed(j)) {
+                                i10 = 1048576;
+                                i3 |= i10;
+                            }
+                        } else {
+                            i6 = i13;
+                        }
+                        i10 = 524288;
+                        i3 |= i10;
+                    } else {
+                        i6 = i13;
+                    }
+                    if ((i & 29360128) == 0) {
+                        if ((i2 & 128) == 0 && startRestartGroup.changed(j2)) {
+                            i9 = 8388608;
+                            i3 |= i9;
+                        }
+                        i9 = 4194304;
+                        i3 |= i9;
+                    }
+                    if ((i & 234881024) == 0) {
+                        if ((i2 & 256) == 0 && startRestartGroup.changed(j3)) {
+                            i8 = androidx.core.view.accessibility.AccessibilityEventCompat.TYPE_VIEW_TARGETED_BY_SCROLL;
+                            i3 |= i8;
+                        }
+                        i8 = 33554432;
+                        i3 |= i8;
+                    }
+                    if ((i2 & 512) != 0) {
+                        i7 = (1879048192 & i) == 0 ? startRestartGroup.changed(content) ? 536870912 : 268435456 : 805306368;
+                        if ((1533916891 & i3) == 306783378 || !startRestartGroup.getSkipping()) {
+                            startRestartGroup.startDefaults();
+                            if ((i & 1) != 0 || startRestartGroup.getDefaultsInvalid()) {
+                                androidx.compose.ui.Modifier.Companion companion = i6 != 0 ? androidx.compose.ui.Modifier.INSTANCE : modifier2;
+                                if ((i2 & 4) != 0) {
+                                    drawerState3 = rememberDrawerState(androidx.compose.material.DrawerValue.Closed, null, startRestartGroup, 6, 2);
+                                    i3 &= -897;
+                                } else {
+                                    drawerState3 = drawerState2;
+                                }
+                                if (i4 != 0) {
+                                    z2 = true;
+                                }
+                                if ((i2 & 16) != 0) {
+                                    cornerBasedShape = androidx.compose.material.MaterialTheme.INSTANCE.getShapes(startRestartGroup, 6).getLarge();
+                                    i3 &= -57345;
+                                } else {
+                                    cornerBasedShape = shape2;
+                                }
+                                float m1360getElevationD9Ej5fM = i5 != 0 ? androidx.compose.material.DrawerDefaults.INSTANCE.m1360getElevationD9Ej5fM() : f2;
+                                if ((i2 & 64) != 0) {
+                                    j4 = androidx.compose.material.MaterialTheme.INSTANCE.getColors(startRestartGroup, 6).m1319getSurface0d7_KjU();
+                                    i3 &= -3670017;
+                                } else {
+                                    j4 = j;
+                                }
+                                if ((i2 & 128) != 0) {
+                                    j5 = androidx.compose.material.ColorsKt.m1333contentColorForek8zF_U(j4, startRestartGroup, (i3 >> 18) & 14);
+                                    i3 &= -29360129;
+                                } else {
+                                    j5 = j2;
+                                }
+                                if ((i2 & 256) != 0) {
+                                    i3 &= -234881025;
+                                    drawerState4 = drawerState3;
+                                    f3 = m1360getElevationD9Ej5fM;
+                                    j7 = j4;
+                                    j6 = androidx.compose.material.DrawerDefaults.INSTANCE.getScrimColor(startRestartGroup, 6);
+                                    j8 = j5;
+                                    modifier3 = companion;
+                                } else {
+                                    j6 = j3;
+                                    modifier3 = companion;
+                                    drawerState4 = drawerState3;
+                                    f3 = m1360getElevationD9Ej5fM;
+                                    j7 = j4;
+                                    j8 = j5;
+                                }
+                                shape3 = cornerBasedShape;
+                                z3 = z2;
+                            } else {
+                                startRestartGroup.skipToGroupEnd();
+                                if ((i2 & 4) != 0) {
+                                    i3 &= -897;
+                                }
+                                if ((i2 & 16) != 0) {
+                                    i3 &= -57345;
+                                }
+                                if ((i2 & 64) != 0) {
+                                    i3 &= -3670017;
+                                }
+                                if ((i2 & 128) != 0) {
+                                    i3 &= -29360129;
+                                }
+                                if ((i2 & 256) != 0) {
+                                    i3 &= -234881025;
+                                }
+                                j7 = j;
+                                j8 = j2;
+                                j6 = j3;
+                                drawerState4 = drawerState2;
+                                z3 = z2;
+                                shape3 = shape2;
+                                f3 = f2;
+                                modifier3 = modifier2;
+                            }
+                            final int i14 = i3;
+                            startRestartGroup.endDefaults();
+                            startRestartGroup.startReplaceableGroup(773894976);
+                            androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(rememberCoroutineScope)475@19849L144:Effects.kt#9igjgp");
+                            startRestartGroup.startReplaceableGroup(-492369756);
+                            androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(remember):Composables.kt#9igjgp");
+                            rememberedValue = startRestartGroup.rememberedValue();
+                            if (rememberedValue == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+                                androidx.compose.runtime.CompositionScopedCoroutineScopeCanceller compositionScopedCoroutineScopeCanceller = new androidx.compose.runtime.CompositionScopedCoroutineScopeCanceller(androidx.compose.runtime.EffectsKt.createCompositionCoroutineScope(kotlin.coroutines.EmptyCoroutineContext.INSTANCE, startRestartGroup));
+                                startRestartGroup.updateRememberedValue(compositionScopedCoroutineScopeCanceller);
+                                rememberedValue = compositionScopedCoroutineScopeCanceller;
+                            }
+                            startRestartGroup.endReplaceableGroup();
+                            final kotlinx.coroutines.CoroutineScope coroutineScope = ((androidx.compose.runtime.CompositionScopedCoroutineScopeCanceller) rememberedValue).getCoroutineScope();
+                            startRestartGroup.endReplaceableGroup();
+                            androidx.compose.ui.Modifier fillMaxSize$default = androidx.compose.foundation.layout.SizeKt.fillMaxSize$default(modifier3, 0.0f, 1, null);
+                            final androidx.compose.material.DrawerState drawerState6 = drawerState4;
+                            final boolean z5 = z3;
+                            final long j12 = j6;
+                            final androidx.compose.ui.graphics.Shape shape5 = shape3;
+                            j9 = j7;
+                            androidx.compose.ui.Modifier modifier5 = modifier3;
+                            j10 = j8;
+                            final float f5 = f3;
+                            kotlin.jvm.functions.Function3<androidx.compose.foundation.layout.BoxWithConstraintsScope, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> function3 = new kotlin.jvm.functions.Function3<androidx.compose.foundation.layout.BoxWithConstraintsScope, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1
+                                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                /* JADX WARN: Multi-variable type inference failed */
+                                {
+                                    super(3);
+                                }
+
+                                @Override // kotlin.jvm.functions.Function3
+                                public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.foundation.layout.BoxWithConstraintsScope boxWithConstraintsScope, androidx.compose.runtime.Composer composer3, java.lang.Integer num) {
+                                    invoke(boxWithConstraintsScope, composer3, num.intValue());
+                                    return kotlin.Unit.INSTANCE;
+                                }
+
+                                public final void invoke(androidx.compose.foundation.layout.BoxWithConstraintsScope BoxWithConstraints, androidx.compose.runtime.Composer composer3, int i15) {
+                                    int i16;
+                                    float f6;
+                                    androidx.compose.ui.Modifier m1521swipeablepPrIpRY;
+                                    float f7;
+                                    kotlin.jvm.internal.Intrinsics.checkNotNullParameter(BoxWithConstraints, "$this$BoxWithConstraints");
+                                    androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C397@13855L7,398@13894L2641:Drawer.kt#jmzs0o");
+                                    if ((i15 & 14) == 0) {
+                                        i16 = i15 | (composer3.changed(BoxWithConstraints) ? 4 : 2);
+                                    } else {
+                                        i16 = i15;
+                                    }
+                                    if ((i16 & 91) != 18 || !composer3.getSkipping()) {
+                                        long mo504getConstraintsmsEJaDk = BoxWithConstraints.mo504getConstraintsmsEJaDk();
+                                        if (!androidx.compose.ui.unit.Constraints.m4420getHasBoundedWidthimpl(mo504getConstraintsmsEJaDk)) {
+                                            throw new java.lang.IllegalStateException("Drawer shouldn't have infinite width");
+                                        }
+                                        final float f8 = -androidx.compose.ui.unit.Constraints.m4424getMaxWidthimpl(mo504getConstraintsmsEJaDk);
+                                        java.util.Map mapOf = kotlin.collections.MapsKt.mapOf(kotlin.TuplesKt.to(java.lang.Float.valueOf(f8), androidx.compose.material.DrawerValue.Closed), kotlin.TuplesKt.to(java.lang.Float.valueOf(0.0f), androidx.compose.material.DrawerValue.Open));
+                                        androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.LayoutDirection> localLayoutDirection = androidx.compose.ui.platform.CompositionLocalsKt.getLocalLayoutDirection();
+                                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                        java.lang.Object consume = composer3.consume(localLayoutDirection);
+                                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                                        boolean z6 = consume == androidx.compose.ui.unit.LayoutDirection.Rtl;
+                                        androidx.compose.ui.Modifier.Companion companion2 = androidx.compose.ui.Modifier.INSTANCE;
+                                        androidx.compose.material.SwipeableState<androidx.compose.material.DrawerValue> swipeableState$material_release = androidx.compose.material.DrawerState.this.getSwipeableState$material_release();
+                                        androidx.compose.foundation.gestures.Orientation orientation = androidx.compose.foundation.gestures.Orientation.Horizontal;
+                                        f6 = androidx.compose.material.DrawerKt.DrawerVelocityThreshold;
+                                        m1521swipeablepPrIpRY = androidx.compose.material.SwipeableKt.m1521swipeablepPrIpRY(companion2, swipeableState$material_release, mapOf, orientation, (r26 & 8) != 0 ? true : z5, (r26 & 16) != 0 ? false : z6, (r26 & 32) != 0 ? null : null, (r26 & 64) != 0 ? new kotlin.jvm.functions.Function2<T, T, androidx.compose.material.FixedThreshold>() { // from class: androidx.compose.material.SwipeableKt$swipeable$1
+                                            /* JADX WARN: Can't rename method to resolve collision */
+                                            @Override // kotlin.jvm.functions.Function2
+                                            public final androidx.compose.material.FixedThreshold invoke(T t, T t2) {
+                                                return new androidx.compose.material.FixedThreshold(androidx.compose.ui.unit.Dp.m4478constructorimpl(56), null);
+                                            }
+                                        } : new kotlin.jvm.functions.Function2<androidx.compose.material.DrawerValue, androidx.compose.material.DrawerValue, androidx.compose.material.ThresholdConfig>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1.1
+                                            @Override // kotlin.jvm.functions.Function2
+                                            public final androidx.compose.material.ThresholdConfig invoke(androidx.compose.material.DrawerValue drawerValue, androidx.compose.material.DrawerValue drawerValue2) {
+                                                kotlin.jvm.internal.Intrinsics.checkNotNullParameter(drawerValue, "<anonymous parameter 0>");
+                                                kotlin.jvm.internal.Intrinsics.checkNotNullParameter(drawerValue2, "<anonymous parameter 1>");
+                                                return new androidx.compose.material.FractionalThreshold(0.5f);
+                                            }
+                                        }, (r26 & 128) != 0 ? androidx.compose.material.SwipeableDefaults.resistanceConfig$default(androidx.compose.material.SwipeableDefaults.INSTANCE, mapOf.keySet(), 0.0f, 0.0f, 6, null) : null, (r26 & 256) != 0 ? androidx.compose.material.SwipeableDefaults.INSTANCE.m1520getVelocityThresholdD9Ej5fM() : f6);
+                                        final androidx.compose.material.DrawerState drawerState7 = androidx.compose.material.DrawerState.this;
+                                        final int i17 = i14;
+                                        long j13 = j12;
+                                        androidx.compose.ui.graphics.Shape shape6 = shape5;
+                                        long j14 = j9;
+                                        long j15 = j10;
+                                        float f9 = f5;
+                                        kotlin.jvm.functions.Function2<androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> function2 = content;
+                                        final boolean z7 = z5;
+                                        final kotlinx.coroutines.CoroutineScope coroutineScope2 = coroutineScope;
+                                        final kotlin.jvm.functions.Function3<androidx.compose.foundation.layout.ColumnScope, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> function32 = drawerContent;
+                                        composer3.startReplaceableGroup(733328855);
+                                        androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(Box)P(2,1,3)70@3267L67,71@3339L130:Box.kt#2w3rfo");
+                                        androidx.compose.ui.layout.MeasurePolicy rememberBoxMeasurePolicy = androidx.compose.foundation.layout.BoxKt.rememberBoxMeasurePolicy(androidx.compose.ui.Alignment.INSTANCE.getTopStart(), false, composer3, 0);
+                                        composer3.startReplaceableGroup(-1323940314);
+                                        androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(Layout)P(!1,2)74@2915L7,75@2970L7,76@3029L7,77@3041L460:Layout.kt#80mrfh");
+                                        androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.Density> localDensity = androidx.compose.ui.platform.CompositionLocalsKt.getLocalDensity();
+                                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                        java.lang.Object consume2 = composer3.consume(localDensity);
+                                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                                        androidx.compose.ui.unit.Density density = (androidx.compose.ui.unit.Density) consume2;
+                                        androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.LayoutDirection> localLayoutDirection2 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalLayoutDirection();
+                                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                        java.lang.Object consume3 = composer3.consume(localLayoutDirection2);
+                                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                                        androidx.compose.ui.unit.LayoutDirection layoutDirection = (androidx.compose.ui.unit.LayoutDirection) consume3;
+                                        androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.platform.ViewConfiguration> localViewConfiguration = androidx.compose.ui.platform.CompositionLocalsKt.getLocalViewConfiguration();
+                                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                        java.lang.Object consume4 = composer3.consume(localViewConfiguration);
+                                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                                        androidx.compose.ui.platform.ViewConfiguration viewConfiguration = (androidx.compose.ui.platform.ViewConfiguration) consume4;
+                                        kotlin.jvm.functions.Function0<androidx.compose.ui.node.ComposeUiNode> constructor = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getConstructor();
+                                        kotlin.jvm.functions.Function3<androidx.compose.runtime.SkippableUpdater<androidx.compose.ui.node.ComposeUiNode>, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> materializerOf = androidx.compose.ui.layout.LayoutKt.materializerOf(m1521swipeablepPrIpRY);
+                                        if (!(composer3.getApplier() instanceof androidx.compose.runtime.Applier)) {
+                                            androidx.compose.runtime.ComposablesKt.invalidApplier();
+                                        }
+                                        composer3.startReusableNode();
+                                        if (composer3.getInserting()) {
+                                            composer3.createNode(constructor);
+                                        } else {
+                                            composer3.useNode();
+                                        }
+                                        composer3.disableReusing();
+                                        androidx.compose.runtime.Composer m1641constructorimpl = androidx.compose.runtime.Updater.m1641constructorimpl(composer3);
+                                        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, rememberBoxMeasurePolicy, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+                                        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, density, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetDensity());
+                                        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, layoutDirection, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetLayoutDirection());
+                                        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, viewConfiguration, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetViewConfiguration());
+                                        composer3.enableReusing();
+                                        materializerOf.invoke(androidx.compose.runtime.SkippableUpdater.m1632boximpl(androidx.compose.runtime.SkippableUpdater.m1633constructorimpl(composer3)), composer3, 0);
+                                        composer3.startReplaceableGroup(2058660585);
+                                        composer3.startReplaceableGroup(-2137368960);
+                                        androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C72@3384L9:Box.kt#2w3rfo");
+                                        androidx.compose.foundation.layout.BoxScopeInstance boxScopeInstance = androidx.compose.foundation.layout.BoxScopeInstance.INSTANCE;
+                                        composer3.startReplaceableGroup(-1263168067);
+                                        androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C410@14358L45,423@14805L103,413@14416L542,428@14992L33,*430@15092L7,439@15556L55,429@15038L1487:Drawer.kt#jmzs0o");
+                                        composer3.startReplaceableGroup(733328855);
+                                        androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(Box)P(2,1,3)70@3267L67,71@3339L130:Box.kt#2w3rfo");
+                                        androidx.compose.ui.Modifier.Companion companion3 = androidx.compose.ui.Modifier.INSTANCE;
+                                        androidx.compose.ui.layout.MeasurePolicy rememberBoxMeasurePolicy2 = androidx.compose.foundation.layout.BoxKt.rememberBoxMeasurePolicy(androidx.compose.ui.Alignment.INSTANCE.getTopStart(), false, composer3, 0);
+                                        composer3.startReplaceableGroup(-1323940314);
+                                        androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(Layout)P(!1,2)74@2915L7,75@2970L7,76@3029L7,77@3041L460:Layout.kt#80mrfh");
+                                        androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.Density> localDensity2 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalDensity();
+                                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                        java.lang.Object consume5 = composer3.consume(localDensity2);
+                                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                                        androidx.compose.ui.unit.Density density2 = (androidx.compose.ui.unit.Density) consume5;
+                                        androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.LayoutDirection> localLayoutDirection3 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalLayoutDirection();
+                                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                        java.lang.Object consume6 = composer3.consume(localLayoutDirection3);
+                                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                                        androidx.compose.ui.unit.LayoutDirection layoutDirection2 = (androidx.compose.ui.unit.LayoutDirection) consume6;
+                                        androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.platform.ViewConfiguration> localViewConfiguration2 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalViewConfiguration();
+                                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                        java.lang.Object consume7 = composer3.consume(localViewConfiguration2);
+                                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                                        androidx.compose.ui.platform.ViewConfiguration viewConfiguration2 = (androidx.compose.ui.platform.ViewConfiguration) consume7;
+                                        kotlin.jvm.functions.Function0<androidx.compose.ui.node.ComposeUiNode> constructor2 = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getConstructor();
+                                        kotlin.jvm.functions.Function3<androidx.compose.runtime.SkippableUpdater<androidx.compose.ui.node.ComposeUiNode>, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> materializerOf2 = androidx.compose.ui.layout.LayoutKt.materializerOf(companion3);
+                                        if (!(composer3.getApplier() instanceof androidx.compose.runtime.Applier)) {
+                                            androidx.compose.runtime.ComposablesKt.invalidApplier();
+                                        }
+                                        composer3.startReusableNode();
+                                        if (composer3.getInserting()) {
+                                            composer3.createNode(constructor2);
+                                        } else {
+                                            composer3.useNode();
+                                        }
+                                        composer3.disableReusing();
+                                        androidx.compose.runtime.Composer m1641constructorimpl2 = androidx.compose.runtime.Updater.m1641constructorimpl(composer3);
+                                        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl2, rememberBoxMeasurePolicy2, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+                                        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl2, density2, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetDensity());
+                                        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl2, layoutDirection2, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetLayoutDirection());
+                                        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl2, viewConfiguration2, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetViewConfiguration());
+                                        composer3.enableReusing();
+                                        materializerOf2.invoke(androidx.compose.runtime.SkippableUpdater.m1632boximpl(androidx.compose.runtime.SkippableUpdater.m1633constructorimpl(composer3)), composer3, 0);
+                                        composer3.startReplaceableGroup(2058660585);
+                                        composer3.startReplaceableGroup(-2137368960);
+                                        androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C72@3384L9:Box.kt#2w3rfo");
+                                        androidx.compose.foundation.layout.BoxScopeInstance boxScopeInstance2 = androidx.compose.foundation.layout.BoxScopeInstance.INSTANCE;
+                                        composer3.startReplaceableGroup(32495683);
+                                        androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C411@14380L9:Drawer.kt#jmzs0o");
+                                        function2.invoke(composer3, java.lang.Integer.valueOf((i17 >> 27) & 14));
+                                        composer3.endReplaceableGroup();
+                                        composer3.endReplaceableGroup();
+                                        composer3.endReplaceableGroup();
+                                        composer3.endNode();
+                                        composer3.endReplaceableGroup();
+                                        composer3.endReplaceableGroup();
+                                        boolean isOpen = drawerState7.isOpen();
+                                        kotlin.jvm.functions.Function0<kotlin.Unit> function0 = new kotlin.jvm.functions.Function0<kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$2
+                                            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                            {
+                                                super(0);
+                                            }
+
+                                            @Override // kotlin.jvm.functions.Function0
+                                            public /* bridge */ /* synthetic */ kotlin.Unit invoke() {
+                                                invoke2();
+                                                return kotlin.Unit.INSTANCE;
+                                            }
+
+                                            /* renamed from: invoke, reason: avoid collision after fix types in other method */
+                                            public final void invoke2() {
+                                                if (z7 && drawerState7.getSwipeableState$material_release().getConfirmStateChange$material_release().invoke(androidx.compose.material.DrawerValue.Closed).booleanValue()) {
+                                                    kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(coroutineScope2, null, null, new androidx.compose.material.DrawerKt$ModalDrawer$1$2$2.AnonymousClass1(drawerState7, null), 3, null);
+                                                }
+                                            }
+
+                                            /* compiled from: Drawer.kt */
+                                            @kotlin.Metadata(k = 3, mv = {1, 6, 0}, xi = 48)
+                                            @kotlin.coroutines.jvm.internal.DebugMetadata(c = "androidx.compose.material.DrawerKt$ModalDrawer$1$2$2$1", f = "Drawer.kt", i = {}, l = {okhttp3.internal.http.StatusLine.HTTP_MISDIRECTED_REQUEST}, m = "invokeSuspend", n = {}, s = {})
+                                            /* renamed from: androidx.compose.material.DrawerKt$ModalDrawer$1$2$2$1, reason: invalid class name */
+                                            static final class AnonymousClass1 extends kotlin.coroutines.jvm.internal.SuspendLambda implements kotlin.jvm.functions.Function2<kotlinx.coroutines.CoroutineScope, kotlin.coroutines.Continuation<? super kotlin.Unit>, java.lang.Object> {
+                                                final /* synthetic */ androidx.compose.material.DrawerState $drawerState;
+                                                int label;
+
+                                                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                                AnonymousClass1(androidx.compose.material.DrawerState drawerState, kotlin.coroutines.Continuation<? super androidx.compose.material.DrawerKt$ModalDrawer$1$2$2.AnonymousClass1> continuation) {
+                                                    super(2, continuation);
+                                                    this.$drawerState = drawerState;
+                                                }
+
+                                                @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+                                                public final kotlin.coroutines.Continuation<kotlin.Unit> create(java.lang.Object obj, kotlin.coroutines.Continuation<?> continuation) {
+                                                    return new androidx.compose.material.DrawerKt$ModalDrawer$1$2$2.AnonymousClass1(this.$drawerState, continuation);
+                                                }
+
+                                                @Override // kotlin.jvm.functions.Function2
+                                                public final java.lang.Object invoke(kotlinx.coroutines.CoroutineScope coroutineScope, kotlin.coroutines.Continuation<? super kotlin.Unit> continuation) {
+                                                    return ((androidx.compose.material.DrawerKt$ModalDrawer$1$2$2.AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(kotlin.Unit.INSTANCE);
+                                                }
+
+                                                @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+                                                public final java.lang.Object invokeSuspend(java.lang.Object obj) {
+                                                    java.lang.Object coroutine_suspended = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED();
+                                                    int i = this.label;
+                                                    if (i == 0) {
+                                                        kotlin.ResultKt.throwOnFailure(obj);
+                                                        this.label = 1;
+                                                        if (this.$drawerState.close(this) == coroutine_suspended) {
+                                                            return coroutine_suspended;
+                                                        }
+                                                    } else {
+                                                        if (i != 1) {
+                                                            throw new java.lang.IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                                                        }
+                                                        kotlin.ResultKt.throwOnFailure(obj);
+                                                    }
+                                                    return kotlin.Unit.INSTANCE;
+                                                }
+                                            }
+                                        };
+                                        java.lang.Object valueOf = java.lang.Float.valueOf(f8);
+                                        java.lang.Object valueOf2 = java.lang.Float.valueOf(0.0f);
+                                        composer3.startReplaceableGroup(1618982084);
+                                        androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(remember)P(1,2,3):Composables.kt#9igjgp");
+                                        boolean changed = composer3.changed(valueOf) | composer3.changed(valueOf2) | composer3.changed(drawerState7);
+                                        java.lang.Object rememberedValue2 = composer3.rememberedValue();
+                                        if (changed || rememberedValue2 == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+                                            final float f10 = 0.0f;
+                                            rememberedValue2 = (kotlin.jvm.functions.Function0) new kotlin.jvm.functions.Function0<java.lang.Float>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$3$1
+                                                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                                {
+                                                    super(0);
+                                                }
+
+                                                /* JADX WARN: Can't rename method to resolve collision */
+                                                @Override // kotlin.jvm.functions.Function0
+                                                public final java.lang.Float invoke() {
+                                                    float calculateFraction;
+                                                    calculateFraction = androidx.compose.material.DrawerKt.calculateFraction(f8, f10, drawerState7.getOffset().getValue().floatValue());
+                                                    return java.lang.Float.valueOf(calculateFraction);
+                                                }
+                                            };
+                                            composer3.updateRememberedValue(rememberedValue2);
+                                        }
+                                        composer3.endReplaceableGroup();
+                                        androidx.compose.material.DrawerKt.m1365ScrimBx497Mc(isOpen, function0, (kotlin.jvm.functions.Function0) rememberedValue2, j13, composer3, (i17 >> 15) & 7168);
+                                        final java.lang.String m1509getString4foXLRw = androidx.compose.material.Strings_androidKt.m1509getString4foXLRw(androidx.compose.material.Strings.INSTANCE.m1506getNavigationMenuUdPEhr4(), composer3, 6);
+                                        androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.Density> localDensity3 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalDensity();
+                                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                        java.lang.Object consume8 = composer3.consume(localDensity3);
+                                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                                        androidx.compose.ui.unit.Density density3 = (androidx.compose.ui.unit.Density) consume8;
+                                        androidx.compose.ui.Modifier m620sizeInqDBjuR0 = androidx.compose.foundation.layout.SizeKt.m620sizeInqDBjuR0(androidx.compose.ui.Modifier.INSTANCE, density3.mo312toDpu2uoSUM(androidx.compose.ui.unit.Constraints.m4426getMinWidthimpl(mo504getConstraintsmsEJaDk)), density3.mo312toDpu2uoSUM(androidx.compose.ui.unit.Constraints.m4425getMinHeightimpl(mo504getConstraintsmsEJaDk)), density3.mo312toDpu2uoSUM(androidx.compose.ui.unit.Constraints.m4424getMaxWidthimpl(mo504getConstraintsmsEJaDk)), density3.mo312toDpu2uoSUM(androidx.compose.ui.unit.Constraints.m4423getMaxHeightimpl(mo504getConstraintsmsEJaDk)));
+                                        composer3.startReplaceableGroup(1157296644);
+                                        androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(remember)P(1):Composables.kt#9igjgp");
+                                        boolean changed2 = composer3.changed(drawerState7);
+                                        java.lang.Object rememberedValue3 = composer3.rememberedValue();
+                                        if (changed2 || rememberedValue3 == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+                                            rememberedValue3 = (kotlin.jvm.functions.Function1) new kotlin.jvm.functions.Function1<androidx.compose.ui.unit.Density, androidx.compose.ui.unit.IntOffset>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$5$1
+                                                {
+                                                    super(1);
+                                                }
+
+                                                @Override // kotlin.jvm.functions.Function1
+                                                public /* bridge */ /* synthetic */ androidx.compose.ui.unit.IntOffset invoke(androidx.compose.ui.unit.Density density4) {
+                                                    return androidx.compose.ui.unit.IntOffset.m4601boximpl(m1374invokeBjo55l4(density4));
+                                                }
+
+                                                /* renamed from: invoke-Bjo55l4, reason: not valid java name */
+                                                public final long m1374invokeBjo55l4(androidx.compose.ui.unit.Density offset) {
+                                                    kotlin.jvm.internal.Intrinsics.checkNotNullParameter(offset, "$this$offset");
+                                                    return androidx.compose.ui.unit.IntOffsetKt.IntOffset(kotlin.math.MathKt.roundToInt(androidx.compose.material.DrawerState.this.getOffset().getValue().floatValue()), 0);
+                                                }
+                                            };
+                                            composer3.updateRememberedValue(rememberedValue3);
+                                        }
+                                        composer3.endReplaceableGroup();
+                                        androidx.compose.ui.Modifier offset = androidx.compose.foundation.layout.OffsetKt.offset(m620sizeInqDBjuR0, (kotlin.jvm.functions.Function1) rememberedValue3);
+                                        f7 = androidx.compose.material.DrawerKt.EndDrawerPadding;
+                                        int i18 = i17 >> 12;
+                                        androidx.compose.material.SurfaceKt.m1511SurfaceFjzlyU(androidx.compose.ui.semantics.SemanticsModifierKt.semantics$default(androidx.compose.foundation.layout.PaddingKt.m572paddingqDBjuR0$default(offset, 0.0f, 0.0f, f7, 0.0f, 11, null), false, new kotlin.jvm.functions.Function1<androidx.compose.ui.semantics.SemanticsPropertyReceiver, kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$6
+                                            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                            {
+                                                super(1);
+                                            }
+
+                                            @Override // kotlin.jvm.functions.Function1
+                                            public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.ui.semantics.SemanticsPropertyReceiver semanticsPropertyReceiver) {
+                                                invoke2(semanticsPropertyReceiver);
+                                                return kotlin.Unit.INSTANCE;
+                                            }
+
+                                            /* renamed from: invoke, reason: avoid collision after fix types in other method */
+                                            public final void invoke2(androidx.compose.ui.semantics.SemanticsPropertyReceiver semantics) {
+                                                kotlin.jvm.internal.Intrinsics.checkNotNullParameter(semantics, "$this$semantics");
+                                                androidx.compose.ui.semantics.SemanticsPropertiesKt.setPaneTitle(semantics, m1509getString4foXLRw);
+                                                if (drawerState7.isOpen()) {
+                                                    final androidx.compose.material.DrawerState drawerState8 = drawerState7;
+                                                    final kotlinx.coroutines.CoroutineScope coroutineScope3 = coroutineScope2;
+                                                    androidx.compose.ui.semantics.SemanticsPropertiesKt.dismiss$default(semantics, null, new kotlin.jvm.functions.Function0<java.lang.Boolean>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$6.1
+                                                        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                                        {
+                                                            super(0);
+                                                        }
+
+                                                        /* JADX WARN: Can't rename method to resolve collision */
+                                                        @Override // kotlin.jvm.functions.Function0
+                                                        public final java.lang.Boolean invoke() {
+                                                            if (androidx.compose.material.DrawerState.this.getSwipeableState$material_release().getConfirmStateChange$material_release().invoke(androidx.compose.material.DrawerValue.Closed).booleanValue()) {
+                                                                kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(coroutineScope3, null, null, new androidx.compose.material.DrawerKt$ModalDrawer$1$2$6.AnonymousClass1.C00431(androidx.compose.material.DrawerState.this, null), 3, null);
+                                                            }
+                                                            return true;
+                                                        }
+
+                                                        /* compiled from: Drawer.kt */
+                                                        @kotlin.Metadata(k = 3, mv = {1, 6, 0}, xi = 48)
+                                                        @kotlin.coroutines.jvm.internal.DebugMetadata(c = "androidx.compose.material.DrawerKt$ModalDrawer$1$2$6$1$1", f = "Drawer.kt", i = {}, l = {450}, m = "invokeSuspend", n = {}, s = {})
+                                                        /* renamed from: androidx.compose.material.DrawerKt$ModalDrawer$1$2$6$1$1, reason: invalid class name and collision with other inner class name */
+                                                        static final class C00431 extends kotlin.coroutines.jvm.internal.SuspendLambda implements kotlin.jvm.functions.Function2<kotlinx.coroutines.CoroutineScope, kotlin.coroutines.Continuation<? super kotlin.Unit>, java.lang.Object> {
+                                                            final /* synthetic */ androidx.compose.material.DrawerState $drawerState;
+                                                            int label;
+
+                                                            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                                            C00431(androidx.compose.material.DrawerState drawerState, kotlin.coroutines.Continuation<? super androidx.compose.material.DrawerKt$ModalDrawer$1$2$6.AnonymousClass1.C00431> continuation) {
+                                                                super(2, continuation);
+                                                                this.$drawerState = drawerState;
+                                                            }
+
+                                                            @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+                                                            public final kotlin.coroutines.Continuation<kotlin.Unit> create(java.lang.Object obj, kotlin.coroutines.Continuation<?> continuation) {
+                                                                return new androidx.compose.material.DrawerKt$ModalDrawer$1$2$6.AnonymousClass1.C00431(this.$drawerState, continuation);
+                                                            }
+
+                                                            @Override // kotlin.jvm.functions.Function2
+                                                            public final java.lang.Object invoke(kotlinx.coroutines.CoroutineScope coroutineScope, kotlin.coroutines.Continuation<? super kotlin.Unit> continuation) {
+                                                                return ((androidx.compose.material.DrawerKt$ModalDrawer$1$2$6.AnonymousClass1.C00431) create(coroutineScope, continuation)).invokeSuspend(kotlin.Unit.INSTANCE);
+                                                            }
+
+                                                            @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+                                                            public final java.lang.Object invokeSuspend(java.lang.Object obj) {
+                                                                java.lang.Object coroutine_suspended = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED();
+                                                                int i = this.label;
+                                                                if (i == 0) {
+                                                                    kotlin.ResultKt.throwOnFailure(obj);
+                                                                    this.label = 1;
+                                                                    if (this.$drawerState.close(this) == coroutine_suspended) {
+                                                                        return coroutine_suspended;
+                                                                    }
+                                                                } else {
+                                                                    if (i != 1) {
+                                                                        throw new java.lang.IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                                                                    }
+                                                                    kotlin.ResultKt.throwOnFailure(obj);
+                                                                }
+                                                                return kotlin.Unit.INSTANCE;
+                                                            }
+                                                        }
+                                                    }, 1, null);
+                                                }
+                                            }
+                                        }, 1, null), shape6, j14, j15, null, f9, androidx.compose.runtime.internal.ComposableLambdaKt.composableLambda(composer3, -1941234439, true, new kotlin.jvm.functions.Function2<androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$7
+                                            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                            /* JADX WARN: Multi-variable type inference failed */
+                                            {
+                                                super(2);
+                                            }
+
+                                            @Override // kotlin.jvm.functions.Function2
+                                            public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.runtime.Composer composer4, java.lang.Integer num) {
+                                                invoke(composer4, num.intValue());
+                                                return kotlin.Unit.INSTANCE;
+                                            }
+
+                                            public final void invoke(androidx.compose.runtime.Composer composer4, int i19) {
+                                                androidx.compose.runtime.ComposerKt.sourceInformation(composer4, "C459@16456L55:Drawer.kt#jmzs0o");
+                                                if ((i19 & 11) == 2 && composer4.getSkipping()) {
+                                                    composer4.skipToGroupEnd();
+                                                    return;
+                                                }
+                                                androidx.compose.ui.Modifier fillMaxSize$default2 = androidx.compose.foundation.layout.SizeKt.fillMaxSize$default(androidx.compose.ui.Modifier.INSTANCE, 0.0f, 1, null);
+                                                kotlin.jvm.functions.Function3<androidx.compose.foundation.layout.ColumnScope, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> function33 = function32;
+                                                int i20 = ((i17 << 9) & 7168) | 6;
+                                                composer4.startReplaceableGroup(-483455358);
+                                                androidx.compose.runtime.ComposerKt.sourceInformation(composer4, "C(Column)P(2,3,1)77@3880L61,78@3946L133:Column.kt#2w3rfo");
+                                                androidx.compose.ui.layout.MeasurePolicy columnMeasurePolicy = androidx.compose.foundation.layout.ColumnKt.columnMeasurePolicy(androidx.compose.foundation.layout.Arrangement.INSTANCE.getTop(), androidx.compose.ui.Alignment.INSTANCE.getStart(), composer4, 0);
+                                                composer4.startReplaceableGroup(-1323940314);
+                                                androidx.compose.runtime.ComposerKt.sourceInformation(composer4, "C(Layout)P(!1,2)74@2915L7,75@2970L7,76@3029L7,77@3041L460:Layout.kt#80mrfh");
+                                                androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.Density> localDensity4 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalDensity();
+                                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer4, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                                java.lang.Object consume9 = composer4.consume(localDensity4);
+                                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer4);
+                                                androidx.compose.ui.unit.Density density4 = (androidx.compose.ui.unit.Density) consume9;
+                                                androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.LayoutDirection> localLayoutDirection4 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalLayoutDirection();
+                                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer4, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                                java.lang.Object consume10 = composer4.consume(localLayoutDirection4);
+                                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer4);
+                                                androidx.compose.ui.unit.LayoutDirection layoutDirection3 = (androidx.compose.ui.unit.LayoutDirection) consume10;
+                                                androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.platform.ViewConfiguration> localViewConfiguration3 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalViewConfiguration();
+                                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer4, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                                java.lang.Object consume11 = composer4.consume(localViewConfiguration3);
+                                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer4);
+                                                androidx.compose.ui.platform.ViewConfiguration viewConfiguration3 = (androidx.compose.ui.platform.ViewConfiguration) consume11;
+                                                kotlin.jvm.functions.Function0<androidx.compose.ui.node.ComposeUiNode> constructor3 = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getConstructor();
+                                                kotlin.jvm.functions.Function3<androidx.compose.runtime.SkippableUpdater<androidx.compose.ui.node.ComposeUiNode>, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> materializerOf3 = androidx.compose.ui.layout.LayoutKt.materializerOf(fillMaxSize$default2);
+                                                if (!(composer4.getApplier() instanceof androidx.compose.runtime.Applier)) {
+                                                    androidx.compose.runtime.ComposablesKt.invalidApplier();
+                                                }
+                                                composer4.startReusableNode();
+                                                if (composer4.getInserting()) {
+                                                    composer4.createNode(constructor3);
+                                                } else {
+                                                    composer4.useNode();
+                                                }
+                                                composer4.disableReusing();
+                                                androidx.compose.runtime.Composer m1641constructorimpl3 = androidx.compose.runtime.Updater.m1641constructorimpl(composer4);
+                                                androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl3, columnMeasurePolicy, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+                                                androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl3, density4, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetDensity());
+                                                androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl3, layoutDirection3, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetLayoutDirection());
+                                                androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl3, viewConfiguration3, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetViewConfiguration());
+                                                composer4.enableReusing();
+                                                materializerOf3.invoke(androidx.compose.runtime.SkippableUpdater.m1632boximpl(androidx.compose.runtime.SkippableUpdater.m1633constructorimpl(composer4)), composer4, 0);
+                                                composer4.startReplaceableGroup(2058660585);
+                                                composer4.startReplaceableGroup(-1163856341);
+                                                androidx.compose.runtime.ComposerKt.sourceInformation(composer4, "C79@3994L9:Column.kt#2w3rfo");
+                                                function33.invoke(androidx.compose.foundation.layout.ColumnScopeInstance.INSTANCE, composer4, java.lang.Integer.valueOf(((i20 >> 6) & 112) | 6));
+                                                composer4.endReplaceableGroup();
+                                                composer4.endReplaceableGroup();
+                                                composer4.endNode();
+                                                composer4.endReplaceableGroup();
+                                                composer4.endReplaceableGroup();
+                                            }
+                                        }), composer3, ((i17 >> 9) & 112) | 1572864 | (i18 & 896) | (i18 & 7168) | (458752 & i17), 16);
+                                        composer3.endReplaceableGroup();
+                                        composer3.endReplaceableGroup();
+                                        composer3.endReplaceableGroup();
+                                        composer3.endNode();
+                                        composer3.endReplaceableGroup();
+                                        composer3.endReplaceableGroup();
+                                        return;
+                                    }
+                                    composer3.skipToGroupEnd();
+                                }
+                            };
+                            composer2 = startRestartGroup;
+                            androidx.compose.foundation.layout.BoxWithConstraintsKt.BoxWithConstraints(fillMaxSize$default, null, false, androidx.compose.runtime.internal.ComposableLambdaKt.composableLambda(composer2, 816674999, true, function3), composer2, 3072, 6);
+                            drawerState5 = drawerState4;
+                            z4 = z3;
+                            shape4 = shape3;
+                            f4 = f3;
+                            j11 = j6;
+                            modifier4 = modifier5;
+                        } else {
+                            startRestartGroup.skipToGroupEnd();
+                            modifier4 = modifier2;
+                            drawerState5 = drawerState2;
+                            z4 = z2;
+                            shape4 = shape2;
+                            f4 = f2;
+                            composer2 = startRestartGroup;
+                            j9 = j;
+                            j10 = j2;
+                            j11 = j3;
+                        }
+                        endRestartGroup = composer2.endRestartGroup();
+                        if (endRestartGroup == null) {
+                            return;
+                        }
+                        endRestartGroup.updateScope(new kotlin.jvm.functions.Function2<androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$2
+                            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                            /* JADX WARN: Multi-variable type inference failed */
+                            {
+                                super(2);
+                            }
+
+                            @Override // kotlin.jvm.functions.Function2
+                            public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.runtime.Composer composer3, java.lang.Integer num) {
+                                invoke(composer3, num.intValue());
+                                return kotlin.Unit.INSTANCE;
+                            }
+
+                            public final void invoke(androidx.compose.runtime.Composer composer3, int i15) {
+                                androidx.compose.material.DrawerKt.m1364ModalDrawerGs3lGvM(drawerContent, modifier4, drawerState5, z4, shape4, f4, j9, j10, j11, content, composer3, i | 1, i2);
+                            }
+                        });
+                        return;
+                    }
+                    i3 |= i7;
+                    if ((1533916891 & i3) == 306783378) {
+                    }
+                    startRestartGroup.startDefaults();
+                    if ((i & 1) != 0) {
+                    }
+                    if (i6 != 0) {
+                    }
+                    if ((i2 & 4) != 0) {
+                    }
+                    if (i4 != 0) {
+                    }
+                    if ((i2 & 16) != 0) {
+                    }
+                    if (i5 != 0) {
+                    }
+                    if ((i2 & 64) != 0) {
+                    }
+                    if ((i2 & 128) != 0) {
+                    }
+                    if ((i2 & 256) != 0) {
+                    }
+                    shape3 = cornerBasedShape;
+                    z3 = z2;
+                    final int i142 = i3;
+                    startRestartGroup.endDefaults();
+                    startRestartGroup.startReplaceableGroup(773894976);
+                    androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(rememberCoroutineScope)475@19849L144:Effects.kt#9igjgp");
+                    startRestartGroup.startReplaceableGroup(-492369756);
+                    androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(remember):Composables.kt#9igjgp");
+                    rememberedValue = startRestartGroup.rememberedValue();
+                    if (rememberedValue == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+                    }
+                    startRestartGroup.endReplaceableGroup();
+                    final kotlinx.coroutines.CoroutineScope coroutineScope2 = ((androidx.compose.runtime.CompositionScopedCoroutineScopeCanceller) rememberedValue).getCoroutineScope();
+                    startRestartGroup.endReplaceableGroup();
+                    androidx.compose.ui.Modifier fillMaxSize$default2 = androidx.compose.foundation.layout.SizeKt.fillMaxSize$default(modifier3, 0.0f, 1, null);
+                    final androidx.compose.material.DrawerState drawerState62 = drawerState4;
+                    final boolean z52 = z3;
+                    final long j122 = j6;
+                    final androidx.compose.ui.graphics.Shape shape52 = shape3;
+                    j9 = j7;
+                    androidx.compose.ui.Modifier modifier52 = modifier3;
+                    j10 = j8;
+                    final float f52 = f3;
+                    kotlin.jvm.functions.Function3<androidx.compose.foundation.layout.BoxWithConstraintsScope, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> function32 = new kotlin.jvm.functions.Function3<androidx.compose.foundation.layout.BoxWithConstraintsScope, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1
+                        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                        /* JADX WARN: Multi-variable type inference failed */
+                        {
+                            super(3);
+                        }
+
+                        @Override // kotlin.jvm.functions.Function3
+                        public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.foundation.layout.BoxWithConstraintsScope boxWithConstraintsScope, androidx.compose.runtime.Composer composer3, java.lang.Integer num) {
+                            invoke(boxWithConstraintsScope, composer3, num.intValue());
+                            return kotlin.Unit.INSTANCE;
+                        }
+
+                        public final void invoke(androidx.compose.foundation.layout.BoxWithConstraintsScope BoxWithConstraints, androidx.compose.runtime.Composer composer3, int i15) {
+                            int i16;
+                            float f6;
+                            androidx.compose.ui.Modifier m1521swipeablepPrIpRY;
+                            float f7;
+                            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(BoxWithConstraints, "$this$BoxWithConstraints");
+                            androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C397@13855L7,398@13894L2641:Drawer.kt#jmzs0o");
+                            if ((i15 & 14) == 0) {
+                                i16 = i15 | (composer3.changed(BoxWithConstraints) ? 4 : 2);
+                            } else {
+                                i16 = i15;
+                            }
+                            if ((i16 & 91) != 18 || !composer3.getSkipping()) {
+                                long mo504getConstraintsmsEJaDk = BoxWithConstraints.mo504getConstraintsmsEJaDk();
+                                if (!androidx.compose.ui.unit.Constraints.m4420getHasBoundedWidthimpl(mo504getConstraintsmsEJaDk)) {
+                                    throw new java.lang.IllegalStateException("Drawer shouldn't have infinite width");
+                                }
+                                final float f8 = -androidx.compose.ui.unit.Constraints.m4424getMaxWidthimpl(mo504getConstraintsmsEJaDk);
+                                java.util.Map mapOf = kotlin.collections.MapsKt.mapOf(kotlin.TuplesKt.to(java.lang.Float.valueOf(f8), androidx.compose.material.DrawerValue.Closed), kotlin.TuplesKt.to(java.lang.Float.valueOf(0.0f), androidx.compose.material.DrawerValue.Open));
+                                androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.LayoutDirection> localLayoutDirection = androidx.compose.ui.platform.CompositionLocalsKt.getLocalLayoutDirection();
+                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                java.lang.Object consume = composer3.consume(localLayoutDirection);
+                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                                boolean z6 = consume == androidx.compose.ui.unit.LayoutDirection.Rtl;
+                                androidx.compose.ui.Modifier.Companion companion2 = androidx.compose.ui.Modifier.INSTANCE;
+                                androidx.compose.material.SwipeableState<androidx.compose.material.DrawerValue> swipeableState$material_release = androidx.compose.material.DrawerState.this.getSwipeableState$material_release();
+                                androidx.compose.foundation.gestures.Orientation orientation = androidx.compose.foundation.gestures.Orientation.Horizontal;
+                                f6 = androidx.compose.material.DrawerKt.DrawerVelocityThreshold;
+                                m1521swipeablepPrIpRY = androidx.compose.material.SwipeableKt.m1521swipeablepPrIpRY(companion2, swipeableState$material_release, mapOf, orientation, (r26 & 8) != 0 ? true : z52, (r26 & 16) != 0 ? false : z6, (r26 & 32) != 0 ? null : null, (r26 & 64) != 0 ? new kotlin.jvm.functions.Function2<T, T, androidx.compose.material.FixedThreshold>() { // from class: androidx.compose.material.SwipeableKt$swipeable$1
+                                    /* JADX WARN: Can't rename method to resolve collision */
+                                    @Override // kotlin.jvm.functions.Function2
+                                    public final androidx.compose.material.FixedThreshold invoke(T t, T t2) {
+                                        return new androidx.compose.material.FixedThreshold(androidx.compose.ui.unit.Dp.m4478constructorimpl(56), null);
+                                    }
+                                } : new kotlin.jvm.functions.Function2<androidx.compose.material.DrawerValue, androidx.compose.material.DrawerValue, androidx.compose.material.ThresholdConfig>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1.1
+                                    @Override // kotlin.jvm.functions.Function2
+                                    public final androidx.compose.material.ThresholdConfig invoke(androidx.compose.material.DrawerValue drawerValue, androidx.compose.material.DrawerValue drawerValue2) {
+                                        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(drawerValue, "<anonymous parameter 0>");
+                                        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(drawerValue2, "<anonymous parameter 1>");
+                                        return new androidx.compose.material.FractionalThreshold(0.5f);
+                                    }
+                                }, (r26 & 128) != 0 ? androidx.compose.material.SwipeableDefaults.resistanceConfig$default(androidx.compose.material.SwipeableDefaults.INSTANCE, mapOf.keySet(), 0.0f, 0.0f, 6, null) : null, (r26 & 256) != 0 ? androidx.compose.material.SwipeableDefaults.INSTANCE.m1520getVelocityThresholdD9Ej5fM() : f6);
+                                final androidx.compose.material.DrawerState drawerState7 = androidx.compose.material.DrawerState.this;
+                                final int i17 = i142;
+                                long j13 = j122;
+                                androidx.compose.ui.graphics.Shape shape6 = shape52;
+                                long j14 = j9;
+                                long j15 = j10;
+                                float f9 = f52;
+                                kotlin.jvm.functions.Function2<androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> function2 = content;
+                                final boolean z7 = z52;
+                                final kotlinx.coroutines.CoroutineScope coroutineScope22 = coroutineScope2;
+                                final kotlin.jvm.functions.Function3<? super androidx.compose.foundation.layout.ColumnScope, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, kotlin.Unit> function322 = drawerContent;
+                                composer3.startReplaceableGroup(733328855);
+                                androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(Box)P(2,1,3)70@3267L67,71@3339L130:Box.kt#2w3rfo");
+                                androidx.compose.ui.layout.MeasurePolicy rememberBoxMeasurePolicy = androidx.compose.foundation.layout.BoxKt.rememberBoxMeasurePolicy(androidx.compose.ui.Alignment.INSTANCE.getTopStart(), false, composer3, 0);
+                                composer3.startReplaceableGroup(-1323940314);
+                                androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(Layout)P(!1,2)74@2915L7,75@2970L7,76@3029L7,77@3041L460:Layout.kt#80mrfh");
+                                androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.Density> localDensity = androidx.compose.ui.platform.CompositionLocalsKt.getLocalDensity();
+                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                java.lang.Object consume2 = composer3.consume(localDensity);
+                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                                androidx.compose.ui.unit.Density density = (androidx.compose.ui.unit.Density) consume2;
+                                androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.LayoutDirection> localLayoutDirection2 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalLayoutDirection();
+                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                java.lang.Object consume3 = composer3.consume(localLayoutDirection2);
+                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                                androidx.compose.ui.unit.LayoutDirection layoutDirection = (androidx.compose.ui.unit.LayoutDirection) consume3;
+                                androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.platform.ViewConfiguration> localViewConfiguration = androidx.compose.ui.platform.CompositionLocalsKt.getLocalViewConfiguration();
+                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                java.lang.Object consume4 = composer3.consume(localViewConfiguration);
+                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                                androidx.compose.ui.platform.ViewConfiguration viewConfiguration = (androidx.compose.ui.platform.ViewConfiguration) consume4;
+                                kotlin.jvm.functions.Function0<androidx.compose.ui.node.ComposeUiNode> constructor = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getConstructor();
+                                kotlin.jvm.functions.Function3<androidx.compose.runtime.SkippableUpdater<androidx.compose.ui.node.ComposeUiNode>, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> materializerOf = androidx.compose.ui.layout.LayoutKt.materializerOf(m1521swipeablepPrIpRY);
+                                if (!(composer3.getApplier() instanceof androidx.compose.runtime.Applier)) {
+                                    androidx.compose.runtime.ComposablesKt.invalidApplier();
+                                }
+                                composer3.startReusableNode();
+                                if (composer3.getInserting()) {
+                                    composer3.createNode(constructor);
+                                } else {
+                                    composer3.useNode();
+                                }
+                                composer3.disableReusing();
+                                androidx.compose.runtime.Composer m1641constructorimpl = androidx.compose.runtime.Updater.m1641constructorimpl(composer3);
+                                androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, rememberBoxMeasurePolicy, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+                                androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, density, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetDensity());
+                                androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, layoutDirection, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetLayoutDirection());
+                                androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, viewConfiguration, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetViewConfiguration());
+                                composer3.enableReusing();
+                                materializerOf.invoke(androidx.compose.runtime.SkippableUpdater.m1632boximpl(androidx.compose.runtime.SkippableUpdater.m1633constructorimpl(composer3)), composer3, 0);
+                                composer3.startReplaceableGroup(2058660585);
+                                composer3.startReplaceableGroup(-2137368960);
+                                androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C72@3384L9:Box.kt#2w3rfo");
+                                androidx.compose.foundation.layout.BoxScopeInstance boxScopeInstance = androidx.compose.foundation.layout.BoxScopeInstance.INSTANCE;
+                                composer3.startReplaceableGroup(-1263168067);
+                                androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C410@14358L45,423@14805L103,413@14416L542,428@14992L33,*430@15092L7,439@15556L55,429@15038L1487:Drawer.kt#jmzs0o");
+                                composer3.startReplaceableGroup(733328855);
+                                androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(Box)P(2,1,3)70@3267L67,71@3339L130:Box.kt#2w3rfo");
+                                androidx.compose.ui.Modifier.Companion companion3 = androidx.compose.ui.Modifier.INSTANCE;
+                                androidx.compose.ui.layout.MeasurePolicy rememberBoxMeasurePolicy2 = androidx.compose.foundation.layout.BoxKt.rememberBoxMeasurePolicy(androidx.compose.ui.Alignment.INSTANCE.getTopStart(), false, composer3, 0);
+                                composer3.startReplaceableGroup(-1323940314);
+                                androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(Layout)P(!1,2)74@2915L7,75@2970L7,76@3029L7,77@3041L460:Layout.kt#80mrfh");
+                                androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.Density> localDensity2 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalDensity();
+                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                java.lang.Object consume5 = composer3.consume(localDensity2);
+                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                                androidx.compose.ui.unit.Density density2 = (androidx.compose.ui.unit.Density) consume5;
+                                androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.LayoutDirection> localLayoutDirection3 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalLayoutDirection();
+                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                java.lang.Object consume6 = composer3.consume(localLayoutDirection3);
+                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                                androidx.compose.ui.unit.LayoutDirection layoutDirection2 = (androidx.compose.ui.unit.LayoutDirection) consume6;
+                                androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.platform.ViewConfiguration> localViewConfiguration2 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalViewConfiguration();
+                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                java.lang.Object consume7 = composer3.consume(localViewConfiguration2);
+                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                                androidx.compose.ui.platform.ViewConfiguration viewConfiguration2 = (androidx.compose.ui.platform.ViewConfiguration) consume7;
+                                kotlin.jvm.functions.Function0<androidx.compose.ui.node.ComposeUiNode> constructor2 = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getConstructor();
+                                kotlin.jvm.functions.Function3<androidx.compose.runtime.SkippableUpdater<androidx.compose.ui.node.ComposeUiNode>, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> materializerOf2 = androidx.compose.ui.layout.LayoutKt.materializerOf(companion3);
+                                if (!(composer3.getApplier() instanceof androidx.compose.runtime.Applier)) {
+                                    androidx.compose.runtime.ComposablesKt.invalidApplier();
+                                }
+                                composer3.startReusableNode();
+                                if (composer3.getInserting()) {
+                                    composer3.createNode(constructor2);
+                                } else {
+                                    composer3.useNode();
+                                }
+                                composer3.disableReusing();
+                                androidx.compose.runtime.Composer m1641constructorimpl2 = androidx.compose.runtime.Updater.m1641constructorimpl(composer3);
+                                androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl2, rememberBoxMeasurePolicy2, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+                                androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl2, density2, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetDensity());
+                                androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl2, layoutDirection2, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetLayoutDirection());
+                                androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl2, viewConfiguration2, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetViewConfiguration());
+                                composer3.enableReusing();
+                                materializerOf2.invoke(androidx.compose.runtime.SkippableUpdater.m1632boximpl(androidx.compose.runtime.SkippableUpdater.m1633constructorimpl(composer3)), composer3, 0);
+                                composer3.startReplaceableGroup(2058660585);
+                                composer3.startReplaceableGroup(-2137368960);
+                                androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C72@3384L9:Box.kt#2w3rfo");
+                                androidx.compose.foundation.layout.BoxScopeInstance boxScopeInstance2 = androidx.compose.foundation.layout.BoxScopeInstance.INSTANCE;
+                                composer3.startReplaceableGroup(32495683);
+                                androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C411@14380L9:Drawer.kt#jmzs0o");
+                                function2.invoke(composer3, java.lang.Integer.valueOf((i17 >> 27) & 14));
+                                composer3.endReplaceableGroup();
+                                composer3.endReplaceableGroup();
+                                composer3.endReplaceableGroup();
+                                composer3.endNode();
+                                composer3.endReplaceableGroup();
+                                composer3.endReplaceableGroup();
+                                boolean isOpen = drawerState7.isOpen();
+                                kotlin.jvm.functions.Function0<kotlin.Unit> function0 = new kotlin.jvm.functions.Function0<kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$2
+                                    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                    {
+                                        super(0);
+                                    }
+
+                                    @Override // kotlin.jvm.functions.Function0
+                                    public /* bridge */ /* synthetic */ kotlin.Unit invoke() {
+                                        invoke2();
+                                        return kotlin.Unit.INSTANCE;
+                                    }
+
+                                    /* renamed from: invoke, reason: avoid collision after fix types in other method */
+                                    public final void invoke2() {
+                                        if (z7 && drawerState7.getSwipeableState$material_release().getConfirmStateChange$material_release().invoke(androidx.compose.material.DrawerValue.Closed).booleanValue()) {
+                                            kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(coroutineScope22, null, null, new androidx.compose.material.DrawerKt$ModalDrawer$1$2$2.AnonymousClass1(drawerState7, null), 3, null);
+                                        }
+                                    }
+
+                                    /* compiled from: Drawer.kt */
+                                    @kotlin.Metadata(k = 3, mv = {1, 6, 0}, xi = 48)
+                                    @kotlin.coroutines.jvm.internal.DebugMetadata(c = "androidx.compose.material.DrawerKt$ModalDrawer$1$2$2$1", f = "Drawer.kt", i = {}, l = {okhttp3.internal.http.StatusLine.HTTP_MISDIRECTED_REQUEST}, m = "invokeSuspend", n = {}, s = {})
+                                    /* renamed from: androidx.compose.material.DrawerKt$ModalDrawer$1$2$2$1, reason: invalid class name */
+                                    static final class AnonymousClass1 extends kotlin.coroutines.jvm.internal.SuspendLambda implements kotlin.jvm.functions.Function2<kotlinx.coroutines.CoroutineScope, kotlin.coroutines.Continuation<? super kotlin.Unit>, java.lang.Object> {
+                                        final /* synthetic */ androidx.compose.material.DrawerState $drawerState;
+                                        int label;
+
+                                        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                        AnonymousClass1(androidx.compose.material.DrawerState drawerState, kotlin.coroutines.Continuation<? super androidx.compose.material.DrawerKt$ModalDrawer$1$2$2.AnonymousClass1> continuation) {
+                                            super(2, continuation);
+                                            this.$drawerState = drawerState;
+                                        }
+
+                                        @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+                                        public final kotlin.coroutines.Continuation<kotlin.Unit> create(java.lang.Object obj, kotlin.coroutines.Continuation<?> continuation) {
+                                            return new androidx.compose.material.DrawerKt$ModalDrawer$1$2$2.AnonymousClass1(this.$drawerState, continuation);
+                                        }
+
+                                        @Override // kotlin.jvm.functions.Function2
+                                        public final java.lang.Object invoke(kotlinx.coroutines.CoroutineScope coroutineScope, kotlin.coroutines.Continuation<? super kotlin.Unit> continuation) {
+                                            return ((androidx.compose.material.DrawerKt$ModalDrawer$1$2$2.AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(kotlin.Unit.INSTANCE);
+                                        }
+
+                                        @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+                                        public final java.lang.Object invokeSuspend(java.lang.Object obj) {
+                                            java.lang.Object coroutine_suspended = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED();
+                                            int i = this.label;
+                                            if (i == 0) {
+                                                kotlin.ResultKt.throwOnFailure(obj);
+                                                this.label = 1;
+                                                if (this.$drawerState.close(this) == coroutine_suspended) {
+                                                    return coroutine_suspended;
+                                                }
+                                            } else {
+                                                if (i != 1) {
+                                                    throw new java.lang.IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                                                }
+                                                kotlin.ResultKt.throwOnFailure(obj);
+                                            }
+                                            return kotlin.Unit.INSTANCE;
+                                        }
+                                    }
+                                };
+                                java.lang.Object valueOf = java.lang.Float.valueOf(f8);
+                                java.lang.Object valueOf2 = java.lang.Float.valueOf(0.0f);
+                                composer3.startReplaceableGroup(1618982084);
+                                androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(remember)P(1,2,3):Composables.kt#9igjgp");
+                                boolean changed = composer3.changed(valueOf) | composer3.changed(valueOf2) | composer3.changed(drawerState7);
+                                java.lang.Object rememberedValue2 = composer3.rememberedValue();
+                                if (changed || rememberedValue2 == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+                                    final float f10 = 0.0f;
+                                    rememberedValue2 = (kotlin.jvm.functions.Function0) new kotlin.jvm.functions.Function0<java.lang.Float>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$3$1
+                                        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                        {
+                                            super(0);
+                                        }
+
+                                        /* JADX WARN: Can't rename method to resolve collision */
+                                        @Override // kotlin.jvm.functions.Function0
+                                        public final java.lang.Float invoke() {
+                                            float calculateFraction;
+                                            calculateFraction = androidx.compose.material.DrawerKt.calculateFraction(f8, f10, drawerState7.getOffset().getValue().floatValue());
+                                            return java.lang.Float.valueOf(calculateFraction);
+                                        }
+                                    };
+                                    composer3.updateRememberedValue(rememberedValue2);
+                                }
+                                composer3.endReplaceableGroup();
+                                androidx.compose.material.DrawerKt.m1365ScrimBx497Mc(isOpen, function0, (kotlin.jvm.functions.Function0) rememberedValue2, j13, composer3, (i17 >> 15) & 7168);
+                                final java.lang.String m1509getString4foXLRw = androidx.compose.material.Strings_androidKt.m1509getString4foXLRw(androidx.compose.material.Strings.INSTANCE.m1506getNavigationMenuUdPEhr4(), composer3, 6);
+                                androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.Density> localDensity3 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalDensity();
+                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                java.lang.Object consume8 = composer3.consume(localDensity3);
+                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                                androidx.compose.ui.unit.Density density3 = (androidx.compose.ui.unit.Density) consume8;
+                                androidx.compose.ui.Modifier m620sizeInqDBjuR0 = androidx.compose.foundation.layout.SizeKt.m620sizeInqDBjuR0(androidx.compose.ui.Modifier.INSTANCE, density3.mo312toDpu2uoSUM(androidx.compose.ui.unit.Constraints.m4426getMinWidthimpl(mo504getConstraintsmsEJaDk)), density3.mo312toDpu2uoSUM(androidx.compose.ui.unit.Constraints.m4425getMinHeightimpl(mo504getConstraintsmsEJaDk)), density3.mo312toDpu2uoSUM(androidx.compose.ui.unit.Constraints.m4424getMaxWidthimpl(mo504getConstraintsmsEJaDk)), density3.mo312toDpu2uoSUM(androidx.compose.ui.unit.Constraints.m4423getMaxHeightimpl(mo504getConstraintsmsEJaDk)));
+                                composer3.startReplaceableGroup(1157296644);
+                                androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(remember)P(1):Composables.kt#9igjgp");
+                                boolean changed2 = composer3.changed(drawerState7);
+                                java.lang.Object rememberedValue3 = composer3.rememberedValue();
+                                if (changed2 || rememberedValue3 == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+                                    rememberedValue3 = (kotlin.jvm.functions.Function1) new kotlin.jvm.functions.Function1<androidx.compose.ui.unit.Density, androidx.compose.ui.unit.IntOffset>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$5$1
+                                        {
+                                            super(1);
+                                        }
+
+                                        @Override // kotlin.jvm.functions.Function1
+                                        public /* bridge */ /* synthetic */ androidx.compose.ui.unit.IntOffset invoke(androidx.compose.ui.unit.Density density4) {
+                                            return androidx.compose.ui.unit.IntOffset.m4601boximpl(m1374invokeBjo55l4(density4));
+                                        }
+
+                                        /* renamed from: invoke-Bjo55l4, reason: not valid java name */
+                                        public final long m1374invokeBjo55l4(androidx.compose.ui.unit.Density offset) {
+                                            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(offset, "$this$offset");
+                                            return androidx.compose.ui.unit.IntOffsetKt.IntOffset(kotlin.math.MathKt.roundToInt(androidx.compose.material.DrawerState.this.getOffset().getValue().floatValue()), 0);
+                                        }
+                                    };
+                                    composer3.updateRememberedValue(rememberedValue3);
+                                }
+                                composer3.endReplaceableGroup();
+                                androidx.compose.ui.Modifier offset = androidx.compose.foundation.layout.OffsetKt.offset(m620sizeInqDBjuR0, (kotlin.jvm.functions.Function1) rememberedValue3);
+                                f7 = androidx.compose.material.DrawerKt.EndDrawerPadding;
+                                int i18 = i17 >> 12;
+                                androidx.compose.material.SurfaceKt.m1511SurfaceFjzlyU(androidx.compose.ui.semantics.SemanticsModifierKt.semantics$default(androidx.compose.foundation.layout.PaddingKt.m572paddingqDBjuR0$default(offset, 0.0f, 0.0f, f7, 0.0f, 11, null), false, new kotlin.jvm.functions.Function1<androidx.compose.ui.semantics.SemanticsPropertyReceiver, kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$6
+                                    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                    {
+                                        super(1);
+                                    }
+
+                                    @Override // kotlin.jvm.functions.Function1
+                                    public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.ui.semantics.SemanticsPropertyReceiver semanticsPropertyReceiver) {
+                                        invoke2(semanticsPropertyReceiver);
+                                        return kotlin.Unit.INSTANCE;
+                                    }
+
+                                    /* renamed from: invoke, reason: avoid collision after fix types in other method */
+                                    public final void invoke2(androidx.compose.ui.semantics.SemanticsPropertyReceiver semantics) {
+                                        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(semantics, "$this$semantics");
+                                        androidx.compose.ui.semantics.SemanticsPropertiesKt.setPaneTitle(semantics, m1509getString4foXLRw);
+                                        if (drawerState7.isOpen()) {
+                                            final androidx.compose.material.DrawerState drawerState8 = drawerState7;
+                                            final kotlinx.coroutines.CoroutineScope coroutineScope3 = coroutineScope22;
+                                            androidx.compose.ui.semantics.SemanticsPropertiesKt.dismiss$default(semantics, null, new kotlin.jvm.functions.Function0<java.lang.Boolean>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$6.1
+                                                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                                {
+                                                    super(0);
+                                                }
+
+                                                /* JADX WARN: Can't rename method to resolve collision */
+                                                @Override // kotlin.jvm.functions.Function0
+                                                public final java.lang.Boolean invoke() {
+                                                    if (androidx.compose.material.DrawerState.this.getSwipeableState$material_release().getConfirmStateChange$material_release().invoke(androidx.compose.material.DrawerValue.Closed).booleanValue()) {
+                                                        kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(coroutineScope3, null, null, new androidx.compose.material.DrawerKt$ModalDrawer$1$2$6.AnonymousClass1.C00431(androidx.compose.material.DrawerState.this, null), 3, null);
+                                                    }
+                                                    return true;
+                                                }
+
+                                                /* compiled from: Drawer.kt */
+                                                @kotlin.Metadata(k = 3, mv = {1, 6, 0}, xi = 48)
+                                                @kotlin.coroutines.jvm.internal.DebugMetadata(c = "androidx.compose.material.DrawerKt$ModalDrawer$1$2$6$1$1", f = "Drawer.kt", i = {}, l = {450}, m = "invokeSuspend", n = {}, s = {})
+                                                /* renamed from: androidx.compose.material.DrawerKt$ModalDrawer$1$2$6$1$1, reason: invalid class name and collision with other inner class name */
+                                                static final class C00431 extends kotlin.coroutines.jvm.internal.SuspendLambda implements kotlin.jvm.functions.Function2<kotlinx.coroutines.CoroutineScope, kotlin.coroutines.Continuation<? super kotlin.Unit>, java.lang.Object> {
+                                                    final /* synthetic */ androidx.compose.material.DrawerState $drawerState;
+                                                    int label;
+
+                                                    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                                    C00431(androidx.compose.material.DrawerState drawerState, kotlin.coroutines.Continuation<? super androidx.compose.material.DrawerKt$ModalDrawer$1$2$6.AnonymousClass1.C00431> continuation) {
+                                                        super(2, continuation);
+                                                        this.$drawerState = drawerState;
+                                                    }
+
+                                                    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+                                                    public final kotlin.coroutines.Continuation<kotlin.Unit> create(java.lang.Object obj, kotlin.coroutines.Continuation<?> continuation) {
+                                                        return new androidx.compose.material.DrawerKt$ModalDrawer$1$2$6.AnonymousClass1.C00431(this.$drawerState, continuation);
+                                                    }
+
+                                                    @Override // kotlin.jvm.functions.Function2
+                                                    public final java.lang.Object invoke(kotlinx.coroutines.CoroutineScope coroutineScope, kotlin.coroutines.Continuation<? super kotlin.Unit> continuation) {
+                                                        return ((androidx.compose.material.DrawerKt$ModalDrawer$1$2$6.AnonymousClass1.C00431) create(coroutineScope, continuation)).invokeSuspend(kotlin.Unit.INSTANCE);
+                                                    }
+
+                                                    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+                                                    public final java.lang.Object invokeSuspend(java.lang.Object obj) {
+                                                        java.lang.Object coroutine_suspended = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED();
+                                                        int i = this.label;
+                                                        if (i == 0) {
+                                                            kotlin.ResultKt.throwOnFailure(obj);
+                                                            this.label = 1;
+                                                            if (this.$drawerState.close(this) == coroutine_suspended) {
+                                                                return coroutine_suspended;
+                                                            }
+                                                        } else {
+                                                            if (i != 1) {
+                                                                throw new java.lang.IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                                                            }
+                                                            kotlin.ResultKt.throwOnFailure(obj);
+                                                        }
+                                                        return kotlin.Unit.INSTANCE;
+                                                    }
+                                                }
+                                            }, 1, null);
+                                        }
+                                    }
+                                }, 1, null), shape6, j14, j15, null, f9, androidx.compose.runtime.internal.ComposableLambdaKt.composableLambda(composer3, -1941234439, true, new kotlin.jvm.functions.Function2<androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$7
+                                    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                    /* JADX WARN: Multi-variable type inference failed */
+                                    {
+                                        super(2);
+                                    }
+
+                                    @Override // kotlin.jvm.functions.Function2
+                                    public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.runtime.Composer composer4, java.lang.Integer num) {
+                                        invoke(composer4, num.intValue());
+                                        return kotlin.Unit.INSTANCE;
+                                    }
+
+                                    public final void invoke(androidx.compose.runtime.Composer composer4, int i19) {
+                                        androidx.compose.runtime.ComposerKt.sourceInformation(composer4, "C459@16456L55:Drawer.kt#jmzs0o");
+                                        if ((i19 & 11) == 2 && composer4.getSkipping()) {
+                                            composer4.skipToGroupEnd();
+                                            return;
+                                        }
+                                        androidx.compose.ui.Modifier fillMaxSize$default22 = androidx.compose.foundation.layout.SizeKt.fillMaxSize$default(androidx.compose.ui.Modifier.INSTANCE, 0.0f, 1, null);
+                                        kotlin.jvm.functions.Function3<androidx.compose.foundation.layout.ColumnScope, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> function33 = function322;
+                                        int i20 = ((i17 << 9) & 7168) | 6;
+                                        composer4.startReplaceableGroup(-483455358);
+                                        androidx.compose.runtime.ComposerKt.sourceInformation(composer4, "C(Column)P(2,3,1)77@3880L61,78@3946L133:Column.kt#2w3rfo");
+                                        androidx.compose.ui.layout.MeasurePolicy columnMeasurePolicy = androidx.compose.foundation.layout.ColumnKt.columnMeasurePolicy(androidx.compose.foundation.layout.Arrangement.INSTANCE.getTop(), androidx.compose.ui.Alignment.INSTANCE.getStart(), composer4, 0);
+                                        composer4.startReplaceableGroup(-1323940314);
+                                        androidx.compose.runtime.ComposerKt.sourceInformation(composer4, "C(Layout)P(!1,2)74@2915L7,75@2970L7,76@3029L7,77@3041L460:Layout.kt#80mrfh");
+                                        androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.Density> localDensity4 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalDensity();
+                                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer4, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                        java.lang.Object consume9 = composer4.consume(localDensity4);
+                                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer4);
+                                        androidx.compose.ui.unit.Density density4 = (androidx.compose.ui.unit.Density) consume9;
+                                        androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.LayoutDirection> localLayoutDirection4 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalLayoutDirection();
+                                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer4, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                        java.lang.Object consume10 = composer4.consume(localLayoutDirection4);
+                                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer4);
+                                        androidx.compose.ui.unit.LayoutDirection layoutDirection3 = (androidx.compose.ui.unit.LayoutDirection) consume10;
+                                        androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.platform.ViewConfiguration> localViewConfiguration3 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalViewConfiguration();
+                                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer4, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                        java.lang.Object consume11 = composer4.consume(localViewConfiguration3);
+                                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer4);
+                                        androidx.compose.ui.platform.ViewConfiguration viewConfiguration3 = (androidx.compose.ui.platform.ViewConfiguration) consume11;
+                                        kotlin.jvm.functions.Function0<androidx.compose.ui.node.ComposeUiNode> constructor3 = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getConstructor();
+                                        kotlin.jvm.functions.Function3<androidx.compose.runtime.SkippableUpdater<androidx.compose.ui.node.ComposeUiNode>, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> materializerOf3 = androidx.compose.ui.layout.LayoutKt.materializerOf(fillMaxSize$default22);
+                                        if (!(composer4.getApplier() instanceof androidx.compose.runtime.Applier)) {
+                                            androidx.compose.runtime.ComposablesKt.invalidApplier();
+                                        }
+                                        composer4.startReusableNode();
+                                        if (composer4.getInserting()) {
+                                            composer4.createNode(constructor3);
+                                        } else {
+                                            composer4.useNode();
+                                        }
+                                        composer4.disableReusing();
+                                        androidx.compose.runtime.Composer m1641constructorimpl3 = androidx.compose.runtime.Updater.m1641constructorimpl(composer4);
+                                        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl3, columnMeasurePolicy, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+                                        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl3, density4, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetDensity());
+                                        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl3, layoutDirection3, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetLayoutDirection());
+                                        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl3, viewConfiguration3, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetViewConfiguration());
+                                        composer4.enableReusing();
+                                        materializerOf3.invoke(androidx.compose.runtime.SkippableUpdater.m1632boximpl(androidx.compose.runtime.SkippableUpdater.m1633constructorimpl(composer4)), composer4, 0);
+                                        composer4.startReplaceableGroup(2058660585);
+                                        composer4.startReplaceableGroup(-1163856341);
+                                        androidx.compose.runtime.ComposerKt.sourceInformation(composer4, "C79@3994L9:Column.kt#2w3rfo");
+                                        function33.invoke(androidx.compose.foundation.layout.ColumnScopeInstance.INSTANCE, composer4, java.lang.Integer.valueOf(((i20 >> 6) & 112) | 6));
+                                        composer4.endReplaceableGroup();
+                                        composer4.endReplaceableGroup();
+                                        composer4.endNode();
+                                        composer4.endReplaceableGroup();
+                                        composer4.endReplaceableGroup();
+                                    }
+                                }), composer3, ((i17 >> 9) & 112) | 1572864 | (i18 & 896) | (i18 & 7168) | (458752 & i17), 16);
+                                composer3.endReplaceableGroup();
+                                composer3.endReplaceableGroup();
+                                composer3.endReplaceableGroup();
+                                composer3.endNode();
+                                composer3.endReplaceableGroup();
+                                composer3.endReplaceableGroup();
+                                return;
+                            }
+                            composer3.skipToGroupEnd();
+                        }
+                    };
+                    composer2 = startRestartGroup;
+                    androidx.compose.foundation.layout.BoxWithConstraintsKt.BoxWithConstraints(fillMaxSize$default2, null, false, androidx.compose.runtime.internal.ComposableLambdaKt.composableLambda(composer2, 816674999, true, function32), composer2, 3072, 6);
+                    drawerState5 = drawerState4;
+                    z4 = z3;
+                    shape4 = shape3;
+                    f4 = f3;
+                    j11 = j6;
+                    modifier4 = modifier52;
+                    endRestartGroup = composer2.endRestartGroup();
+                    if (endRestartGroup == null) {
+                    }
+                }
+                f2 = f;
+                if ((3670016 & i) != 0) {
+                }
+                if ((i & 29360128) == 0) {
+                }
+                if ((i & 234881024) == 0) {
+                }
+                if ((i2 & 512) != 0) {
+                }
+                i3 |= i7;
+                if ((1533916891 & i3) == 306783378) {
+                }
+                startRestartGroup.startDefaults();
+                if ((i & 1) != 0) {
+                }
+                if (i6 != 0) {
+                }
+                if ((i2 & 4) != 0) {
+                }
+                if (i4 != 0) {
+                }
+                if ((i2 & 16) != 0) {
+                }
+                if (i5 != 0) {
+                }
+                if ((i2 & 64) != 0) {
+                }
+                if ((i2 & 128) != 0) {
+                }
+                if ((i2 & 256) != 0) {
+                }
+                shape3 = cornerBasedShape;
+                z3 = z2;
+                final int i1422 = i3;
+                startRestartGroup.endDefaults();
+                startRestartGroup.startReplaceableGroup(773894976);
+                androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(rememberCoroutineScope)475@19849L144:Effects.kt#9igjgp");
+                startRestartGroup.startReplaceableGroup(-492369756);
+                androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(remember):Composables.kt#9igjgp");
+                rememberedValue = startRestartGroup.rememberedValue();
+                if (rememberedValue == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+                }
+                startRestartGroup.endReplaceableGroup();
+                final kotlinx.coroutines.CoroutineScope coroutineScope22 = ((androidx.compose.runtime.CompositionScopedCoroutineScopeCanceller) rememberedValue).getCoroutineScope();
+                startRestartGroup.endReplaceableGroup();
+                androidx.compose.ui.Modifier fillMaxSize$default22 = androidx.compose.foundation.layout.SizeKt.fillMaxSize$default(modifier3, 0.0f, 1, null);
+                final androidx.compose.material.DrawerState drawerState622 = drawerState4;
+                final boolean z522 = z3;
+                final long j1222 = j6;
+                final androidx.compose.ui.graphics.Shape shape522 = shape3;
+                j9 = j7;
+                androidx.compose.ui.Modifier modifier522 = modifier3;
+                j10 = j8;
+                final float f522 = f3;
+                kotlin.jvm.functions.Function3<androidx.compose.foundation.layout.BoxWithConstraintsScope, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> function322 = new kotlin.jvm.functions.Function3<androidx.compose.foundation.layout.BoxWithConstraintsScope, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1
+                    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                    /* JADX WARN: Multi-variable type inference failed */
+                    {
+                        super(3);
+                    }
+
+                    @Override // kotlin.jvm.functions.Function3
+                    public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.foundation.layout.BoxWithConstraintsScope boxWithConstraintsScope, androidx.compose.runtime.Composer composer3, java.lang.Integer num) {
+                        invoke(boxWithConstraintsScope, composer3, num.intValue());
+                        return kotlin.Unit.INSTANCE;
+                    }
+
+                    public final void invoke(androidx.compose.foundation.layout.BoxWithConstraintsScope BoxWithConstraints, androidx.compose.runtime.Composer composer3, int i15) {
+                        int i16;
+                        float f6;
+                        androidx.compose.ui.Modifier m1521swipeablepPrIpRY;
+                        float f7;
+                        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(BoxWithConstraints, "$this$BoxWithConstraints");
+                        androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C397@13855L7,398@13894L2641:Drawer.kt#jmzs0o");
+                        if ((i15 & 14) == 0) {
+                            i16 = i15 | (composer3.changed(BoxWithConstraints) ? 4 : 2);
+                        } else {
+                            i16 = i15;
+                        }
+                        if ((i16 & 91) != 18 || !composer3.getSkipping()) {
+                            long mo504getConstraintsmsEJaDk = BoxWithConstraints.mo504getConstraintsmsEJaDk();
+                            if (!androidx.compose.ui.unit.Constraints.m4420getHasBoundedWidthimpl(mo504getConstraintsmsEJaDk)) {
+                                throw new java.lang.IllegalStateException("Drawer shouldn't have infinite width");
+                            }
+                            final float f8 = -androidx.compose.ui.unit.Constraints.m4424getMaxWidthimpl(mo504getConstraintsmsEJaDk);
+                            java.util.Map mapOf = kotlin.collections.MapsKt.mapOf(kotlin.TuplesKt.to(java.lang.Float.valueOf(f8), androidx.compose.material.DrawerValue.Closed), kotlin.TuplesKt.to(java.lang.Float.valueOf(0.0f), androidx.compose.material.DrawerValue.Open));
+                            androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.LayoutDirection> localLayoutDirection = androidx.compose.ui.platform.CompositionLocalsKt.getLocalLayoutDirection();
+                            androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                            java.lang.Object consume = composer3.consume(localLayoutDirection);
+                            androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                            boolean z6 = consume == androidx.compose.ui.unit.LayoutDirection.Rtl;
+                            androidx.compose.ui.Modifier.Companion companion2 = androidx.compose.ui.Modifier.INSTANCE;
+                            androidx.compose.material.SwipeableState<androidx.compose.material.DrawerValue> swipeableState$material_release = androidx.compose.material.DrawerState.this.getSwipeableState$material_release();
+                            androidx.compose.foundation.gestures.Orientation orientation = androidx.compose.foundation.gestures.Orientation.Horizontal;
+                            f6 = androidx.compose.material.DrawerKt.DrawerVelocityThreshold;
+                            m1521swipeablepPrIpRY = androidx.compose.material.SwipeableKt.m1521swipeablepPrIpRY(companion2, swipeableState$material_release, mapOf, orientation, (r26 & 8) != 0 ? true : z522, (r26 & 16) != 0 ? false : z6, (r26 & 32) != 0 ? null : null, (r26 & 64) != 0 ? new kotlin.jvm.functions.Function2<T, T, androidx.compose.material.FixedThreshold>() { // from class: androidx.compose.material.SwipeableKt$swipeable$1
+                                /* JADX WARN: Can't rename method to resolve collision */
+                                @Override // kotlin.jvm.functions.Function2
+                                public final androidx.compose.material.FixedThreshold invoke(T t, T t2) {
+                                    return new androidx.compose.material.FixedThreshold(androidx.compose.ui.unit.Dp.m4478constructorimpl(56), null);
+                                }
+                            } : new kotlin.jvm.functions.Function2<androidx.compose.material.DrawerValue, androidx.compose.material.DrawerValue, androidx.compose.material.ThresholdConfig>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1.1
+                                @Override // kotlin.jvm.functions.Function2
+                                public final androidx.compose.material.ThresholdConfig invoke(androidx.compose.material.DrawerValue drawerValue, androidx.compose.material.DrawerValue drawerValue2) {
+                                    kotlin.jvm.internal.Intrinsics.checkNotNullParameter(drawerValue, "<anonymous parameter 0>");
+                                    kotlin.jvm.internal.Intrinsics.checkNotNullParameter(drawerValue2, "<anonymous parameter 1>");
+                                    return new androidx.compose.material.FractionalThreshold(0.5f);
+                                }
+                            }, (r26 & 128) != 0 ? androidx.compose.material.SwipeableDefaults.resistanceConfig$default(androidx.compose.material.SwipeableDefaults.INSTANCE, mapOf.keySet(), 0.0f, 0.0f, 6, null) : null, (r26 & 256) != 0 ? androidx.compose.material.SwipeableDefaults.INSTANCE.m1520getVelocityThresholdD9Ej5fM() : f6);
+                            final androidx.compose.material.DrawerState drawerState7 = androidx.compose.material.DrawerState.this;
+                            final int i17 = i1422;
+                            long j13 = j1222;
+                            androidx.compose.ui.graphics.Shape shape6 = shape522;
+                            long j14 = j9;
+                            long j15 = j10;
+                            float f9 = f522;
+                            kotlin.jvm.functions.Function2<androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> function2 = content;
+                            final boolean z7 = z522;
+                            final kotlinx.coroutines.CoroutineScope coroutineScope222 = coroutineScope22;
+                            final kotlin.jvm.functions.Function3<? super androidx.compose.foundation.layout.ColumnScope, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, kotlin.Unit> function3222 = drawerContent;
+                            composer3.startReplaceableGroup(733328855);
+                            androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(Box)P(2,1,3)70@3267L67,71@3339L130:Box.kt#2w3rfo");
+                            androidx.compose.ui.layout.MeasurePolicy rememberBoxMeasurePolicy = androidx.compose.foundation.layout.BoxKt.rememberBoxMeasurePolicy(androidx.compose.ui.Alignment.INSTANCE.getTopStart(), false, composer3, 0);
+                            composer3.startReplaceableGroup(-1323940314);
+                            androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(Layout)P(!1,2)74@2915L7,75@2970L7,76@3029L7,77@3041L460:Layout.kt#80mrfh");
+                            androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.Density> localDensity = androidx.compose.ui.platform.CompositionLocalsKt.getLocalDensity();
+                            androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                            java.lang.Object consume2 = composer3.consume(localDensity);
+                            androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                            androidx.compose.ui.unit.Density density = (androidx.compose.ui.unit.Density) consume2;
+                            androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.LayoutDirection> localLayoutDirection2 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalLayoutDirection();
+                            androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                            java.lang.Object consume3 = composer3.consume(localLayoutDirection2);
+                            androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                            androidx.compose.ui.unit.LayoutDirection layoutDirection = (androidx.compose.ui.unit.LayoutDirection) consume3;
+                            androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.platform.ViewConfiguration> localViewConfiguration = androidx.compose.ui.platform.CompositionLocalsKt.getLocalViewConfiguration();
+                            androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                            java.lang.Object consume4 = composer3.consume(localViewConfiguration);
+                            androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                            androidx.compose.ui.platform.ViewConfiguration viewConfiguration = (androidx.compose.ui.platform.ViewConfiguration) consume4;
+                            kotlin.jvm.functions.Function0<androidx.compose.ui.node.ComposeUiNode> constructor = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getConstructor();
+                            kotlin.jvm.functions.Function3<androidx.compose.runtime.SkippableUpdater<androidx.compose.ui.node.ComposeUiNode>, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> materializerOf = androidx.compose.ui.layout.LayoutKt.materializerOf(m1521swipeablepPrIpRY);
+                            if (!(composer3.getApplier() instanceof androidx.compose.runtime.Applier)) {
+                                androidx.compose.runtime.ComposablesKt.invalidApplier();
+                            }
+                            composer3.startReusableNode();
+                            if (composer3.getInserting()) {
+                                composer3.createNode(constructor);
+                            } else {
+                                composer3.useNode();
+                            }
+                            composer3.disableReusing();
+                            androidx.compose.runtime.Composer m1641constructorimpl = androidx.compose.runtime.Updater.m1641constructorimpl(composer3);
+                            androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, rememberBoxMeasurePolicy, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+                            androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, density, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetDensity());
+                            androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, layoutDirection, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetLayoutDirection());
+                            androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, viewConfiguration, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetViewConfiguration());
+                            composer3.enableReusing();
+                            materializerOf.invoke(androidx.compose.runtime.SkippableUpdater.m1632boximpl(androidx.compose.runtime.SkippableUpdater.m1633constructorimpl(composer3)), composer3, 0);
+                            composer3.startReplaceableGroup(2058660585);
+                            composer3.startReplaceableGroup(-2137368960);
+                            androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C72@3384L9:Box.kt#2w3rfo");
+                            androidx.compose.foundation.layout.BoxScopeInstance boxScopeInstance = androidx.compose.foundation.layout.BoxScopeInstance.INSTANCE;
+                            composer3.startReplaceableGroup(-1263168067);
+                            androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C410@14358L45,423@14805L103,413@14416L542,428@14992L33,*430@15092L7,439@15556L55,429@15038L1487:Drawer.kt#jmzs0o");
+                            composer3.startReplaceableGroup(733328855);
+                            androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(Box)P(2,1,3)70@3267L67,71@3339L130:Box.kt#2w3rfo");
+                            androidx.compose.ui.Modifier.Companion companion3 = androidx.compose.ui.Modifier.INSTANCE;
+                            androidx.compose.ui.layout.MeasurePolicy rememberBoxMeasurePolicy2 = androidx.compose.foundation.layout.BoxKt.rememberBoxMeasurePolicy(androidx.compose.ui.Alignment.INSTANCE.getTopStart(), false, composer3, 0);
+                            composer3.startReplaceableGroup(-1323940314);
+                            androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(Layout)P(!1,2)74@2915L7,75@2970L7,76@3029L7,77@3041L460:Layout.kt#80mrfh");
+                            androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.Density> localDensity2 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalDensity();
+                            androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                            java.lang.Object consume5 = composer3.consume(localDensity2);
+                            androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                            androidx.compose.ui.unit.Density density2 = (androidx.compose.ui.unit.Density) consume5;
+                            androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.LayoutDirection> localLayoutDirection3 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalLayoutDirection();
+                            androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                            java.lang.Object consume6 = composer3.consume(localLayoutDirection3);
+                            androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                            androidx.compose.ui.unit.LayoutDirection layoutDirection2 = (androidx.compose.ui.unit.LayoutDirection) consume6;
+                            androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.platform.ViewConfiguration> localViewConfiguration2 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalViewConfiguration();
+                            androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                            java.lang.Object consume7 = composer3.consume(localViewConfiguration2);
+                            androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                            androidx.compose.ui.platform.ViewConfiguration viewConfiguration2 = (androidx.compose.ui.platform.ViewConfiguration) consume7;
+                            kotlin.jvm.functions.Function0<androidx.compose.ui.node.ComposeUiNode> constructor2 = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getConstructor();
+                            kotlin.jvm.functions.Function3<androidx.compose.runtime.SkippableUpdater<androidx.compose.ui.node.ComposeUiNode>, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> materializerOf2 = androidx.compose.ui.layout.LayoutKt.materializerOf(companion3);
+                            if (!(composer3.getApplier() instanceof androidx.compose.runtime.Applier)) {
+                                androidx.compose.runtime.ComposablesKt.invalidApplier();
+                            }
+                            composer3.startReusableNode();
+                            if (composer3.getInserting()) {
+                                composer3.createNode(constructor2);
+                            } else {
+                                composer3.useNode();
+                            }
+                            composer3.disableReusing();
+                            androidx.compose.runtime.Composer m1641constructorimpl2 = androidx.compose.runtime.Updater.m1641constructorimpl(composer3);
+                            androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl2, rememberBoxMeasurePolicy2, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+                            androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl2, density2, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetDensity());
+                            androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl2, layoutDirection2, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetLayoutDirection());
+                            androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl2, viewConfiguration2, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetViewConfiguration());
+                            composer3.enableReusing();
+                            materializerOf2.invoke(androidx.compose.runtime.SkippableUpdater.m1632boximpl(androidx.compose.runtime.SkippableUpdater.m1633constructorimpl(composer3)), composer3, 0);
+                            composer3.startReplaceableGroup(2058660585);
+                            composer3.startReplaceableGroup(-2137368960);
+                            androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C72@3384L9:Box.kt#2w3rfo");
+                            androidx.compose.foundation.layout.BoxScopeInstance boxScopeInstance2 = androidx.compose.foundation.layout.BoxScopeInstance.INSTANCE;
+                            composer3.startReplaceableGroup(32495683);
+                            androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C411@14380L9:Drawer.kt#jmzs0o");
+                            function2.invoke(composer3, java.lang.Integer.valueOf((i17 >> 27) & 14));
+                            composer3.endReplaceableGroup();
+                            composer3.endReplaceableGroup();
+                            composer3.endReplaceableGroup();
+                            composer3.endNode();
+                            composer3.endReplaceableGroup();
+                            composer3.endReplaceableGroup();
+                            boolean isOpen = drawerState7.isOpen();
+                            kotlin.jvm.functions.Function0<kotlin.Unit> function0 = new kotlin.jvm.functions.Function0<kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$2
+                                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                {
+                                    super(0);
+                                }
+
+                                @Override // kotlin.jvm.functions.Function0
+                                public /* bridge */ /* synthetic */ kotlin.Unit invoke() {
+                                    invoke2();
+                                    return kotlin.Unit.INSTANCE;
+                                }
+
+                                /* renamed from: invoke, reason: avoid collision after fix types in other method */
+                                public final void invoke2() {
+                                    if (z7 && drawerState7.getSwipeableState$material_release().getConfirmStateChange$material_release().invoke(androidx.compose.material.DrawerValue.Closed).booleanValue()) {
+                                        kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(coroutineScope222, null, null, new androidx.compose.material.DrawerKt$ModalDrawer$1$2$2.AnonymousClass1(drawerState7, null), 3, null);
+                                    }
+                                }
+
+                                /* compiled from: Drawer.kt */
+                                @kotlin.Metadata(k = 3, mv = {1, 6, 0}, xi = 48)
+                                @kotlin.coroutines.jvm.internal.DebugMetadata(c = "androidx.compose.material.DrawerKt$ModalDrawer$1$2$2$1", f = "Drawer.kt", i = {}, l = {okhttp3.internal.http.StatusLine.HTTP_MISDIRECTED_REQUEST}, m = "invokeSuspend", n = {}, s = {})
+                                /* renamed from: androidx.compose.material.DrawerKt$ModalDrawer$1$2$2$1, reason: invalid class name */
+                                static final class AnonymousClass1 extends kotlin.coroutines.jvm.internal.SuspendLambda implements kotlin.jvm.functions.Function2<kotlinx.coroutines.CoroutineScope, kotlin.coroutines.Continuation<? super kotlin.Unit>, java.lang.Object> {
+                                    final /* synthetic */ androidx.compose.material.DrawerState $drawerState;
+                                    int label;
+
+                                    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                    AnonymousClass1(androidx.compose.material.DrawerState drawerState, kotlin.coroutines.Continuation<? super androidx.compose.material.DrawerKt$ModalDrawer$1$2$2.AnonymousClass1> continuation) {
+                                        super(2, continuation);
+                                        this.$drawerState = drawerState;
+                                    }
+
+                                    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+                                    public final kotlin.coroutines.Continuation<kotlin.Unit> create(java.lang.Object obj, kotlin.coroutines.Continuation<?> continuation) {
+                                        return new androidx.compose.material.DrawerKt$ModalDrawer$1$2$2.AnonymousClass1(this.$drawerState, continuation);
+                                    }
+
+                                    @Override // kotlin.jvm.functions.Function2
+                                    public final java.lang.Object invoke(kotlinx.coroutines.CoroutineScope coroutineScope, kotlin.coroutines.Continuation<? super kotlin.Unit> continuation) {
+                                        return ((androidx.compose.material.DrawerKt$ModalDrawer$1$2$2.AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(kotlin.Unit.INSTANCE);
+                                    }
+
+                                    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+                                    public final java.lang.Object invokeSuspend(java.lang.Object obj) {
+                                        java.lang.Object coroutine_suspended = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED();
+                                        int i = this.label;
+                                        if (i == 0) {
+                                            kotlin.ResultKt.throwOnFailure(obj);
+                                            this.label = 1;
+                                            if (this.$drawerState.close(this) == coroutine_suspended) {
+                                                return coroutine_suspended;
+                                            }
+                                        } else {
+                                            if (i != 1) {
+                                                throw new java.lang.IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                                            }
+                                            kotlin.ResultKt.throwOnFailure(obj);
+                                        }
+                                        return kotlin.Unit.INSTANCE;
+                                    }
+                                }
+                            };
+                            java.lang.Object valueOf = java.lang.Float.valueOf(f8);
+                            java.lang.Object valueOf2 = java.lang.Float.valueOf(0.0f);
+                            composer3.startReplaceableGroup(1618982084);
+                            androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(remember)P(1,2,3):Composables.kt#9igjgp");
+                            boolean changed = composer3.changed(valueOf) | composer3.changed(valueOf2) | composer3.changed(drawerState7);
+                            java.lang.Object rememberedValue2 = composer3.rememberedValue();
+                            if (changed || rememberedValue2 == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+                                final float f10 = 0.0f;
+                                rememberedValue2 = (kotlin.jvm.functions.Function0) new kotlin.jvm.functions.Function0<java.lang.Float>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$3$1
+                                    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                    {
+                                        super(0);
+                                    }
+
+                                    /* JADX WARN: Can't rename method to resolve collision */
+                                    @Override // kotlin.jvm.functions.Function0
+                                    public final java.lang.Float invoke() {
+                                        float calculateFraction;
+                                        calculateFraction = androidx.compose.material.DrawerKt.calculateFraction(f8, f10, drawerState7.getOffset().getValue().floatValue());
+                                        return java.lang.Float.valueOf(calculateFraction);
+                                    }
+                                };
+                                composer3.updateRememberedValue(rememberedValue2);
+                            }
+                            composer3.endReplaceableGroup();
+                            androidx.compose.material.DrawerKt.m1365ScrimBx497Mc(isOpen, function0, (kotlin.jvm.functions.Function0) rememberedValue2, j13, composer3, (i17 >> 15) & 7168);
+                            final java.lang.String m1509getString4foXLRw = androidx.compose.material.Strings_androidKt.m1509getString4foXLRw(androidx.compose.material.Strings.INSTANCE.m1506getNavigationMenuUdPEhr4(), composer3, 6);
+                            androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.Density> localDensity3 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalDensity();
+                            androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                            java.lang.Object consume8 = composer3.consume(localDensity3);
+                            androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                            androidx.compose.ui.unit.Density density3 = (androidx.compose.ui.unit.Density) consume8;
+                            androidx.compose.ui.Modifier m620sizeInqDBjuR0 = androidx.compose.foundation.layout.SizeKt.m620sizeInqDBjuR0(androidx.compose.ui.Modifier.INSTANCE, density3.mo312toDpu2uoSUM(androidx.compose.ui.unit.Constraints.m4426getMinWidthimpl(mo504getConstraintsmsEJaDk)), density3.mo312toDpu2uoSUM(androidx.compose.ui.unit.Constraints.m4425getMinHeightimpl(mo504getConstraintsmsEJaDk)), density3.mo312toDpu2uoSUM(androidx.compose.ui.unit.Constraints.m4424getMaxWidthimpl(mo504getConstraintsmsEJaDk)), density3.mo312toDpu2uoSUM(androidx.compose.ui.unit.Constraints.m4423getMaxHeightimpl(mo504getConstraintsmsEJaDk)));
+                            composer3.startReplaceableGroup(1157296644);
+                            androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(remember)P(1):Composables.kt#9igjgp");
+                            boolean changed2 = composer3.changed(drawerState7);
+                            java.lang.Object rememberedValue3 = composer3.rememberedValue();
+                            if (changed2 || rememberedValue3 == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+                                rememberedValue3 = (kotlin.jvm.functions.Function1) new kotlin.jvm.functions.Function1<androidx.compose.ui.unit.Density, androidx.compose.ui.unit.IntOffset>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$5$1
+                                    {
+                                        super(1);
+                                    }
+
+                                    @Override // kotlin.jvm.functions.Function1
+                                    public /* bridge */ /* synthetic */ androidx.compose.ui.unit.IntOffset invoke(androidx.compose.ui.unit.Density density4) {
+                                        return androidx.compose.ui.unit.IntOffset.m4601boximpl(m1374invokeBjo55l4(density4));
+                                    }
+
+                                    /* renamed from: invoke-Bjo55l4, reason: not valid java name */
+                                    public final long m1374invokeBjo55l4(androidx.compose.ui.unit.Density offset) {
+                                        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(offset, "$this$offset");
+                                        return androidx.compose.ui.unit.IntOffsetKt.IntOffset(kotlin.math.MathKt.roundToInt(androidx.compose.material.DrawerState.this.getOffset().getValue().floatValue()), 0);
+                                    }
+                                };
+                                composer3.updateRememberedValue(rememberedValue3);
+                            }
+                            composer3.endReplaceableGroup();
+                            androidx.compose.ui.Modifier offset = androidx.compose.foundation.layout.OffsetKt.offset(m620sizeInqDBjuR0, (kotlin.jvm.functions.Function1) rememberedValue3);
+                            f7 = androidx.compose.material.DrawerKt.EndDrawerPadding;
+                            int i18 = i17 >> 12;
+                            androidx.compose.material.SurfaceKt.m1511SurfaceFjzlyU(androidx.compose.ui.semantics.SemanticsModifierKt.semantics$default(androidx.compose.foundation.layout.PaddingKt.m572paddingqDBjuR0$default(offset, 0.0f, 0.0f, f7, 0.0f, 11, null), false, new kotlin.jvm.functions.Function1<androidx.compose.ui.semantics.SemanticsPropertyReceiver, kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$6
+                                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                {
+                                    super(1);
+                                }
+
+                                @Override // kotlin.jvm.functions.Function1
+                                public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.ui.semantics.SemanticsPropertyReceiver semanticsPropertyReceiver) {
+                                    invoke2(semanticsPropertyReceiver);
+                                    return kotlin.Unit.INSTANCE;
+                                }
+
+                                /* renamed from: invoke, reason: avoid collision after fix types in other method */
+                                public final void invoke2(androidx.compose.ui.semantics.SemanticsPropertyReceiver semantics) {
+                                    kotlin.jvm.internal.Intrinsics.checkNotNullParameter(semantics, "$this$semantics");
+                                    androidx.compose.ui.semantics.SemanticsPropertiesKt.setPaneTitle(semantics, m1509getString4foXLRw);
+                                    if (drawerState7.isOpen()) {
+                                        final androidx.compose.material.DrawerState drawerState8 = drawerState7;
+                                        final kotlinx.coroutines.CoroutineScope coroutineScope3 = coroutineScope222;
+                                        androidx.compose.ui.semantics.SemanticsPropertiesKt.dismiss$default(semantics, null, new kotlin.jvm.functions.Function0<java.lang.Boolean>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$6.1
+                                            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                            {
+                                                super(0);
+                                            }
+
+                                            /* JADX WARN: Can't rename method to resolve collision */
+                                            @Override // kotlin.jvm.functions.Function0
+                                            public final java.lang.Boolean invoke() {
+                                                if (androidx.compose.material.DrawerState.this.getSwipeableState$material_release().getConfirmStateChange$material_release().invoke(androidx.compose.material.DrawerValue.Closed).booleanValue()) {
+                                                    kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(coroutineScope3, null, null, new androidx.compose.material.DrawerKt$ModalDrawer$1$2$6.AnonymousClass1.C00431(androidx.compose.material.DrawerState.this, null), 3, null);
+                                                }
+                                                return true;
+                                            }
+
+                                            /* compiled from: Drawer.kt */
+                                            @kotlin.Metadata(k = 3, mv = {1, 6, 0}, xi = 48)
+                                            @kotlin.coroutines.jvm.internal.DebugMetadata(c = "androidx.compose.material.DrawerKt$ModalDrawer$1$2$6$1$1", f = "Drawer.kt", i = {}, l = {450}, m = "invokeSuspend", n = {}, s = {})
+                                            /* renamed from: androidx.compose.material.DrawerKt$ModalDrawer$1$2$6$1$1, reason: invalid class name and collision with other inner class name */
+                                            static final class C00431 extends kotlin.coroutines.jvm.internal.SuspendLambda implements kotlin.jvm.functions.Function2<kotlinx.coroutines.CoroutineScope, kotlin.coroutines.Continuation<? super kotlin.Unit>, java.lang.Object> {
+                                                final /* synthetic */ androidx.compose.material.DrawerState $drawerState;
+                                                int label;
+
+                                                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                                C00431(androidx.compose.material.DrawerState drawerState, kotlin.coroutines.Continuation<? super androidx.compose.material.DrawerKt$ModalDrawer$1$2$6.AnonymousClass1.C00431> continuation) {
+                                                    super(2, continuation);
+                                                    this.$drawerState = drawerState;
+                                                }
+
+                                                @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+                                                public final kotlin.coroutines.Continuation<kotlin.Unit> create(java.lang.Object obj, kotlin.coroutines.Continuation<?> continuation) {
+                                                    return new androidx.compose.material.DrawerKt$ModalDrawer$1$2$6.AnonymousClass1.C00431(this.$drawerState, continuation);
+                                                }
+
+                                                @Override // kotlin.jvm.functions.Function2
+                                                public final java.lang.Object invoke(kotlinx.coroutines.CoroutineScope coroutineScope, kotlin.coroutines.Continuation<? super kotlin.Unit> continuation) {
+                                                    return ((androidx.compose.material.DrawerKt$ModalDrawer$1$2$6.AnonymousClass1.C00431) create(coroutineScope, continuation)).invokeSuspend(kotlin.Unit.INSTANCE);
+                                                }
+
+                                                @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+                                                public final java.lang.Object invokeSuspend(java.lang.Object obj) {
+                                                    java.lang.Object coroutine_suspended = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED();
+                                                    int i = this.label;
+                                                    if (i == 0) {
+                                                        kotlin.ResultKt.throwOnFailure(obj);
+                                                        this.label = 1;
+                                                        if (this.$drawerState.close(this) == coroutine_suspended) {
+                                                            return coroutine_suspended;
+                                                        }
+                                                    } else {
+                                                        if (i != 1) {
+                                                            throw new java.lang.IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                                                        }
+                                                        kotlin.ResultKt.throwOnFailure(obj);
+                                                    }
+                                                    return kotlin.Unit.INSTANCE;
+                                                }
+                                            }
+                                        }, 1, null);
+                                    }
+                                }
+                            }, 1, null), shape6, j14, j15, null, f9, androidx.compose.runtime.internal.ComposableLambdaKt.composableLambda(composer3, -1941234439, true, new kotlin.jvm.functions.Function2<androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$7
+                                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                /* JADX WARN: Multi-variable type inference failed */
+                                {
+                                    super(2);
+                                }
+
+                                @Override // kotlin.jvm.functions.Function2
+                                public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.runtime.Composer composer4, java.lang.Integer num) {
+                                    invoke(composer4, num.intValue());
+                                    return kotlin.Unit.INSTANCE;
+                                }
+
+                                public final void invoke(androidx.compose.runtime.Composer composer4, int i19) {
+                                    androidx.compose.runtime.ComposerKt.sourceInformation(composer4, "C459@16456L55:Drawer.kt#jmzs0o");
+                                    if ((i19 & 11) == 2 && composer4.getSkipping()) {
+                                        composer4.skipToGroupEnd();
+                                        return;
+                                    }
+                                    androidx.compose.ui.Modifier fillMaxSize$default222 = androidx.compose.foundation.layout.SizeKt.fillMaxSize$default(androidx.compose.ui.Modifier.INSTANCE, 0.0f, 1, null);
+                                    kotlin.jvm.functions.Function3<androidx.compose.foundation.layout.ColumnScope, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> function33 = function3222;
+                                    int i20 = ((i17 << 9) & 7168) | 6;
+                                    composer4.startReplaceableGroup(-483455358);
+                                    androidx.compose.runtime.ComposerKt.sourceInformation(composer4, "C(Column)P(2,3,1)77@3880L61,78@3946L133:Column.kt#2w3rfo");
+                                    androidx.compose.ui.layout.MeasurePolicy columnMeasurePolicy = androidx.compose.foundation.layout.ColumnKt.columnMeasurePolicy(androidx.compose.foundation.layout.Arrangement.INSTANCE.getTop(), androidx.compose.ui.Alignment.INSTANCE.getStart(), composer4, 0);
+                                    composer4.startReplaceableGroup(-1323940314);
+                                    androidx.compose.runtime.ComposerKt.sourceInformation(composer4, "C(Layout)P(!1,2)74@2915L7,75@2970L7,76@3029L7,77@3041L460:Layout.kt#80mrfh");
+                                    androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.Density> localDensity4 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalDensity();
+                                    androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer4, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                    java.lang.Object consume9 = composer4.consume(localDensity4);
+                                    androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer4);
+                                    androidx.compose.ui.unit.Density density4 = (androidx.compose.ui.unit.Density) consume9;
+                                    androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.LayoutDirection> localLayoutDirection4 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalLayoutDirection();
+                                    androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer4, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                    java.lang.Object consume10 = composer4.consume(localLayoutDirection4);
+                                    androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer4);
+                                    androidx.compose.ui.unit.LayoutDirection layoutDirection3 = (androidx.compose.ui.unit.LayoutDirection) consume10;
+                                    androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.platform.ViewConfiguration> localViewConfiguration3 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalViewConfiguration();
+                                    androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer4, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                    java.lang.Object consume11 = composer4.consume(localViewConfiguration3);
+                                    androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer4);
+                                    androidx.compose.ui.platform.ViewConfiguration viewConfiguration3 = (androidx.compose.ui.platform.ViewConfiguration) consume11;
+                                    kotlin.jvm.functions.Function0<androidx.compose.ui.node.ComposeUiNode> constructor3 = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getConstructor();
+                                    kotlin.jvm.functions.Function3<androidx.compose.runtime.SkippableUpdater<androidx.compose.ui.node.ComposeUiNode>, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> materializerOf3 = androidx.compose.ui.layout.LayoutKt.materializerOf(fillMaxSize$default222);
+                                    if (!(composer4.getApplier() instanceof androidx.compose.runtime.Applier)) {
+                                        androidx.compose.runtime.ComposablesKt.invalidApplier();
+                                    }
+                                    composer4.startReusableNode();
+                                    if (composer4.getInserting()) {
+                                        composer4.createNode(constructor3);
+                                    } else {
+                                        composer4.useNode();
+                                    }
+                                    composer4.disableReusing();
+                                    androidx.compose.runtime.Composer m1641constructorimpl3 = androidx.compose.runtime.Updater.m1641constructorimpl(composer4);
+                                    androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl3, columnMeasurePolicy, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+                                    androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl3, density4, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetDensity());
+                                    androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl3, layoutDirection3, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetLayoutDirection());
+                                    androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl3, viewConfiguration3, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetViewConfiguration());
+                                    composer4.enableReusing();
+                                    materializerOf3.invoke(androidx.compose.runtime.SkippableUpdater.m1632boximpl(androidx.compose.runtime.SkippableUpdater.m1633constructorimpl(composer4)), composer4, 0);
+                                    composer4.startReplaceableGroup(2058660585);
+                                    composer4.startReplaceableGroup(-1163856341);
+                                    androidx.compose.runtime.ComposerKt.sourceInformation(composer4, "C79@3994L9:Column.kt#2w3rfo");
+                                    function33.invoke(androidx.compose.foundation.layout.ColumnScopeInstance.INSTANCE, composer4, java.lang.Integer.valueOf(((i20 >> 6) & 112) | 6));
+                                    composer4.endReplaceableGroup();
+                                    composer4.endReplaceableGroup();
+                                    composer4.endNode();
+                                    composer4.endReplaceableGroup();
+                                    composer4.endReplaceableGroup();
+                                }
+                            }), composer3, ((i17 >> 9) & 112) | 1572864 | (i18 & 896) | (i18 & 7168) | (458752 & i17), 16);
+                            composer3.endReplaceableGroup();
+                            composer3.endReplaceableGroup();
+                            composer3.endReplaceableGroup();
+                            composer3.endNode();
+                            composer3.endReplaceableGroup();
+                            composer3.endReplaceableGroup();
+                            return;
+                        }
+                        composer3.skipToGroupEnd();
+                    }
+                };
+                composer2 = startRestartGroup;
+                androidx.compose.foundation.layout.BoxWithConstraintsKt.BoxWithConstraints(fillMaxSize$default22, null, false, androidx.compose.runtime.internal.ComposableLambdaKt.composableLambda(composer2, 816674999, true, function322), composer2, 3072, 6);
+                drawerState5 = drawerState4;
+                z4 = z3;
+                shape4 = shape3;
+                f4 = f3;
+                j11 = j6;
+                modifier4 = modifier522;
+                endRestartGroup = composer2.endRestartGroup();
+                if (endRestartGroup == null) {
+                }
+            }
+            z2 = z;
+            if ((57344 & i) == 0) {
+            }
+            i5 = i2 & 32;
+            if (i5 != 0) {
+            }
+            f2 = f;
+            if ((3670016 & i) != 0) {
+            }
+            if ((i & 29360128) == 0) {
+            }
+            if ((i & 234881024) == 0) {
+            }
+            if ((i2 & 512) != 0) {
+            }
+            i3 |= i7;
+            if ((1533916891 & i3) == 306783378) {
+            }
+            startRestartGroup.startDefaults();
+            if ((i & 1) != 0) {
+            }
+            if (i6 != 0) {
+            }
+            if ((i2 & 4) != 0) {
+            }
+            if (i4 != 0) {
+            }
+            if ((i2 & 16) != 0) {
+            }
+            if (i5 != 0) {
+            }
+            if ((i2 & 64) != 0) {
+            }
+            if ((i2 & 128) != 0) {
+            }
+            if ((i2 & 256) != 0) {
+            }
+            shape3 = cornerBasedShape;
+            z3 = z2;
+            final int i14222 = i3;
+            startRestartGroup.endDefaults();
+            startRestartGroup.startReplaceableGroup(773894976);
+            androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(rememberCoroutineScope)475@19849L144:Effects.kt#9igjgp");
+            startRestartGroup.startReplaceableGroup(-492369756);
+            androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(remember):Composables.kt#9igjgp");
+            rememberedValue = startRestartGroup.rememberedValue();
+            if (rememberedValue == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+            }
+            startRestartGroup.endReplaceableGroup();
+            final kotlinx.coroutines.CoroutineScope coroutineScope222 = ((androidx.compose.runtime.CompositionScopedCoroutineScopeCanceller) rememberedValue).getCoroutineScope();
+            startRestartGroup.endReplaceableGroup();
+            androidx.compose.ui.Modifier fillMaxSize$default222 = androidx.compose.foundation.layout.SizeKt.fillMaxSize$default(modifier3, 0.0f, 1, null);
+            final androidx.compose.material.DrawerState drawerState6222 = drawerState4;
+            final boolean z5222 = z3;
+            final long j12222 = j6;
+            final androidx.compose.ui.graphics.Shape shape5222 = shape3;
+            j9 = j7;
+            androidx.compose.ui.Modifier modifier5222 = modifier3;
+            j10 = j8;
+            final float f5222 = f3;
+            kotlin.jvm.functions.Function3<androidx.compose.foundation.layout.BoxWithConstraintsScope, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> function3222 = new kotlin.jvm.functions.Function3<androidx.compose.foundation.layout.BoxWithConstraintsScope, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1
+                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                /* JADX WARN: Multi-variable type inference failed */
+                {
+                    super(3);
+                }
+
+                @Override // kotlin.jvm.functions.Function3
+                public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.foundation.layout.BoxWithConstraintsScope boxWithConstraintsScope, androidx.compose.runtime.Composer composer3, java.lang.Integer num) {
+                    invoke(boxWithConstraintsScope, composer3, num.intValue());
+                    return kotlin.Unit.INSTANCE;
+                }
+
+                public final void invoke(androidx.compose.foundation.layout.BoxWithConstraintsScope BoxWithConstraints, androidx.compose.runtime.Composer composer3, int i15) {
+                    int i16;
+                    float f6;
+                    androidx.compose.ui.Modifier m1521swipeablepPrIpRY;
+                    float f7;
+                    kotlin.jvm.internal.Intrinsics.checkNotNullParameter(BoxWithConstraints, "$this$BoxWithConstraints");
+                    androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C397@13855L7,398@13894L2641:Drawer.kt#jmzs0o");
+                    if ((i15 & 14) == 0) {
+                        i16 = i15 | (composer3.changed(BoxWithConstraints) ? 4 : 2);
+                    } else {
+                        i16 = i15;
+                    }
+                    if ((i16 & 91) != 18 || !composer3.getSkipping()) {
+                        long mo504getConstraintsmsEJaDk = BoxWithConstraints.mo504getConstraintsmsEJaDk();
+                        if (!androidx.compose.ui.unit.Constraints.m4420getHasBoundedWidthimpl(mo504getConstraintsmsEJaDk)) {
+                            throw new java.lang.IllegalStateException("Drawer shouldn't have infinite width");
+                        }
+                        final float f8 = -androidx.compose.ui.unit.Constraints.m4424getMaxWidthimpl(mo504getConstraintsmsEJaDk);
+                        java.util.Map mapOf = kotlin.collections.MapsKt.mapOf(kotlin.TuplesKt.to(java.lang.Float.valueOf(f8), androidx.compose.material.DrawerValue.Closed), kotlin.TuplesKt.to(java.lang.Float.valueOf(0.0f), androidx.compose.material.DrawerValue.Open));
+                        androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.LayoutDirection> localLayoutDirection = androidx.compose.ui.platform.CompositionLocalsKt.getLocalLayoutDirection();
+                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                        java.lang.Object consume = composer3.consume(localLayoutDirection);
+                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                        boolean z6 = consume == androidx.compose.ui.unit.LayoutDirection.Rtl;
+                        androidx.compose.ui.Modifier.Companion companion2 = androidx.compose.ui.Modifier.INSTANCE;
+                        androidx.compose.material.SwipeableState<androidx.compose.material.DrawerValue> swipeableState$material_release = androidx.compose.material.DrawerState.this.getSwipeableState$material_release();
+                        androidx.compose.foundation.gestures.Orientation orientation = androidx.compose.foundation.gestures.Orientation.Horizontal;
+                        f6 = androidx.compose.material.DrawerKt.DrawerVelocityThreshold;
+                        m1521swipeablepPrIpRY = androidx.compose.material.SwipeableKt.m1521swipeablepPrIpRY(companion2, swipeableState$material_release, mapOf, orientation, (r26 & 8) != 0 ? true : z5222, (r26 & 16) != 0 ? false : z6, (r26 & 32) != 0 ? null : null, (r26 & 64) != 0 ? new kotlin.jvm.functions.Function2<T, T, androidx.compose.material.FixedThreshold>() { // from class: androidx.compose.material.SwipeableKt$swipeable$1
+                            /* JADX WARN: Can't rename method to resolve collision */
+                            @Override // kotlin.jvm.functions.Function2
+                            public final androidx.compose.material.FixedThreshold invoke(T t, T t2) {
+                                return new androidx.compose.material.FixedThreshold(androidx.compose.ui.unit.Dp.m4478constructorimpl(56), null);
+                            }
+                        } : new kotlin.jvm.functions.Function2<androidx.compose.material.DrawerValue, androidx.compose.material.DrawerValue, androidx.compose.material.ThresholdConfig>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1.1
+                            @Override // kotlin.jvm.functions.Function2
+                            public final androidx.compose.material.ThresholdConfig invoke(androidx.compose.material.DrawerValue drawerValue, androidx.compose.material.DrawerValue drawerValue2) {
+                                kotlin.jvm.internal.Intrinsics.checkNotNullParameter(drawerValue, "<anonymous parameter 0>");
+                                kotlin.jvm.internal.Intrinsics.checkNotNullParameter(drawerValue2, "<anonymous parameter 1>");
+                                return new androidx.compose.material.FractionalThreshold(0.5f);
+                            }
+                        }, (r26 & 128) != 0 ? androidx.compose.material.SwipeableDefaults.resistanceConfig$default(androidx.compose.material.SwipeableDefaults.INSTANCE, mapOf.keySet(), 0.0f, 0.0f, 6, null) : null, (r26 & 256) != 0 ? androidx.compose.material.SwipeableDefaults.INSTANCE.m1520getVelocityThresholdD9Ej5fM() : f6);
+                        final androidx.compose.material.DrawerState drawerState7 = androidx.compose.material.DrawerState.this;
+                        final int i17 = i14222;
+                        long j13 = j12222;
+                        androidx.compose.ui.graphics.Shape shape6 = shape5222;
+                        long j14 = j9;
+                        long j15 = j10;
+                        float f9 = f5222;
+                        kotlin.jvm.functions.Function2<androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> function2 = content;
+                        final boolean z7 = z5222;
+                        final kotlinx.coroutines.CoroutineScope coroutineScope2222 = coroutineScope222;
+                        final kotlin.jvm.functions.Function3<? super androidx.compose.foundation.layout.ColumnScope, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, kotlin.Unit> function32222 = drawerContent;
+                        composer3.startReplaceableGroup(733328855);
+                        androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(Box)P(2,1,3)70@3267L67,71@3339L130:Box.kt#2w3rfo");
+                        androidx.compose.ui.layout.MeasurePolicy rememberBoxMeasurePolicy = androidx.compose.foundation.layout.BoxKt.rememberBoxMeasurePolicy(androidx.compose.ui.Alignment.INSTANCE.getTopStart(), false, composer3, 0);
+                        composer3.startReplaceableGroup(-1323940314);
+                        androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(Layout)P(!1,2)74@2915L7,75@2970L7,76@3029L7,77@3041L460:Layout.kt#80mrfh");
+                        androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.Density> localDensity = androidx.compose.ui.platform.CompositionLocalsKt.getLocalDensity();
+                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                        java.lang.Object consume2 = composer3.consume(localDensity);
+                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                        androidx.compose.ui.unit.Density density = (androidx.compose.ui.unit.Density) consume2;
+                        androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.LayoutDirection> localLayoutDirection2 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalLayoutDirection();
+                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                        java.lang.Object consume3 = composer3.consume(localLayoutDirection2);
+                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                        androidx.compose.ui.unit.LayoutDirection layoutDirection = (androidx.compose.ui.unit.LayoutDirection) consume3;
+                        androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.platform.ViewConfiguration> localViewConfiguration = androidx.compose.ui.platform.CompositionLocalsKt.getLocalViewConfiguration();
+                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                        java.lang.Object consume4 = composer3.consume(localViewConfiguration);
+                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                        androidx.compose.ui.platform.ViewConfiguration viewConfiguration = (androidx.compose.ui.platform.ViewConfiguration) consume4;
+                        kotlin.jvm.functions.Function0<androidx.compose.ui.node.ComposeUiNode> constructor = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getConstructor();
+                        kotlin.jvm.functions.Function3<androidx.compose.runtime.SkippableUpdater<androidx.compose.ui.node.ComposeUiNode>, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> materializerOf = androidx.compose.ui.layout.LayoutKt.materializerOf(m1521swipeablepPrIpRY);
+                        if (!(composer3.getApplier() instanceof androidx.compose.runtime.Applier)) {
+                            androidx.compose.runtime.ComposablesKt.invalidApplier();
+                        }
+                        composer3.startReusableNode();
+                        if (composer3.getInserting()) {
+                            composer3.createNode(constructor);
+                        } else {
+                            composer3.useNode();
+                        }
+                        composer3.disableReusing();
+                        androidx.compose.runtime.Composer m1641constructorimpl = androidx.compose.runtime.Updater.m1641constructorimpl(composer3);
+                        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, rememberBoxMeasurePolicy, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+                        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, density, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetDensity());
+                        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, layoutDirection, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetLayoutDirection());
+                        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, viewConfiguration, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetViewConfiguration());
+                        composer3.enableReusing();
+                        materializerOf.invoke(androidx.compose.runtime.SkippableUpdater.m1632boximpl(androidx.compose.runtime.SkippableUpdater.m1633constructorimpl(composer3)), composer3, 0);
+                        composer3.startReplaceableGroup(2058660585);
+                        composer3.startReplaceableGroup(-2137368960);
+                        androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C72@3384L9:Box.kt#2w3rfo");
+                        androidx.compose.foundation.layout.BoxScopeInstance boxScopeInstance = androidx.compose.foundation.layout.BoxScopeInstance.INSTANCE;
+                        composer3.startReplaceableGroup(-1263168067);
+                        androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C410@14358L45,423@14805L103,413@14416L542,428@14992L33,*430@15092L7,439@15556L55,429@15038L1487:Drawer.kt#jmzs0o");
+                        composer3.startReplaceableGroup(733328855);
+                        androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(Box)P(2,1,3)70@3267L67,71@3339L130:Box.kt#2w3rfo");
+                        androidx.compose.ui.Modifier.Companion companion3 = androidx.compose.ui.Modifier.INSTANCE;
+                        androidx.compose.ui.layout.MeasurePolicy rememberBoxMeasurePolicy2 = androidx.compose.foundation.layout.BoxKt.rememberBoxMeasurePolicy(androidx.compose.ui.Alignment.INSTANCE.getTopStart(), false, composer3, 0);
+                        composer3.startReplaceableGroup(-1323940314);
+                        androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(Layout)P(!1,2)74@2915L7,75@2970L7,76@3029L7,77@3041L460:Layout.kt#80mrfh");
+                        androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.Density> localDensity2 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalDensity();
+                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                        java.lang.Object consume5 = composer3.consume(localDensity2);
+                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                        androidx.compose.ui.unit.Density density2 = (androidx.compose.ui.unit.Density) consume5;
+                        androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.LayoutDirection> localLayoutDirection3 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalLayoutDirection();
+                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                        java.lang.Object consume6 = composer3.consume(localLayoutDirection3);
+                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                        androidx.compose.ui.unit.LayoutDirection layoutDirection2 = (androidx.compose.ui.unit.LayoutDirection) consume6;
+                        androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.platform.ViewConfiguration> localViewConfiguration2 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalViewConfiguration();
+                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                        java.lang.Object consume7 = composer3.consume(localViewConfiguration2);
+                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                        androidx.compose.ui.platform.ViewConfiguration viewConfiguration2 = (androidx.compose.ui.platform.ViewConfiguration) consume7;
+                        kotlin.jvm.functions.Function0<androidx.compose.ui.node.ComposeUiNode> constructor2 = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getConstructor();
+                        kotlin.jvm.functions.Function3<androidx.compose.runtime.SkippableUpdater<androidx.compose.ui.node.ComposeUiNode>, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> materializerOf2 = androidx.compose.ui.layout.LayoutKt.materializerOf(companion3);
+                        if (!(composer3.getApplier() instanceof androidx.compose.runtime.Applier)) {
+                            androidx.compose.runtime.ComposablesKt.invalidApplier();
+                        }
+                        composer3.startReusableNode();
+                        if (composer3.getInserting()) {
+                            composer3.createNode(constructor2);
+                        } else {
+                            composer3.useNode();
+                        }
+                        composer3.disableReusing();
+                        androidx.compose.runtime.Composer m1641constructorimpl2 = androidx.compose.runtime.Updater.m1641constructorimpl(composer3);
+                        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl2, rememberBoxMeasurePolicy2, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+                        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl2, density2, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetDensity());
+                        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl2, layoutDirection2, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetLayoutDirection());
+                        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl2, viewConfiguration2, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetViewConfiguration());
+                        composer3.enableReusing();
+                        materializerOf2.invoke(androidx.compose.runtime.SkippableUpdater.m1632boximpl(androidx.compose.runtime.SkippableUpdater.m1633constructorimpl(composer3)), composer3, 0);
+                        composer3.startReplaceableGroup(2058660585);
+                        composer3.startReplaceableGroup(-2137368960);
+                        androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C72@3384L9:Box.kt#2w3rfo");
+                        androidx.compose.foundation.layout.BoxScopeInstance boxScopeInstance2 = androidx.compose.foundation.layout.BoxScopeInstance.INSTANCE;
+                        composer3.startReplaceableGroup(32495683);
+                        androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C411@14380L9:Drawer.kt#jmzs0o");
+                        function2.invoke(composer3, java.lang.Integer.valueOf((i17 >> 27) & 14));
+                        composer3.endReplaceableGroup();
+                        composer3.endReplaceableGroup();
+                        composer3.endReplaceableGroup();
+                        composer3.endNode();
+                        composer3.endReplaceableGroup();
+                        composer3.endReplaceableGroup();
+                        boolean isOpen = drawerState7.isOpen();
+                        kotlin.jvm.functions.Function0<kotlin.Unit> function0 = new kotlin.jvm.functions.Function0<kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$2
+                            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                            {
+                                super(0);
+                            }
+
+                            @Override // kotlin.jvm.functions.Function0
+                            public /* bridge */ /* synthetic */ kotlin.Unit invoke() {
+                                invoke2();
+                                return kotlin.Unit.INSTANCE;
+                            }
+
+                            /* renamed from: invoke, reason: avoid collision after fix types in other method */
+                            public final void invoke2() {
+                                if (z7 && drawerState7.getSwipeableState$material_release().getConfirmStateChange$material_release().invoke(androidx.compose.material.DrawerValue.Closed).booleanValue()) {
+                                    kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(coroutineScope2222, null, null, new androidx.compose.material.DrawerKt$ModalDrawer$1$2$2.AnonymousClass1(drawerState7, null), 3, null);
+                                }
+                            }
+
+                            /* compiled from: Drawer.kt */
+                            @kotlin.Metadata(k = 3, mv = {1, 6, 0}, xi = 48)
+                            @kotlin.coroutines.jvm.internal.DebugMetadata(c = "androidx.compose.material.DrawerKt$ModalDrawer$1$2$2$1", f = "Drawer.kt", i = {}, l = {okhttp3.internal.http.StatusLine.HTTP_MISDIRECTED_REQUEST}, m = "invokeSuspend", n = {}, s = {})
+                            /* renamed from: androidx.compose.material.DrawerKt$ModalDrawer$1$2$2$1, reason: invalid class name */
+                            static final class AnonymousClass1 extends kotlin.coroutines.jvm.internal.SuspendLambda implements kotlin.jvm.functions.Function2<kotlinx.coroutines.CoroutineScope, kotlin.coroutines.Continuation<? super kotlin.Unit>, java.lang.Object> {
+                                final /* synthetic */ androidx.compose.material.DrawerState $drawerState;
+                                int label;
+
+                                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                AnonymousClass1(androidx.compose.material.DrawerState drawerState, kotlin.coroutines.Continuation<? super androidx.compose.material.DrawerKt$ModalDrawer$1$2$2.AnonymousClass1> continuation) {
+                                    super(2, continuation);
+                                    this.$drawerState = drawerState;
+                                }
+
+                                @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+                                public final kotlin.coroutines.Continuation<kotlin.Unit> create(java.lang.Object obj, kotlin.coroutines.Continuation<?> continuation) {
+                                    return new androidx.compose.material.DrawerKt$ModalDrawer$1$2$2.AnonymousClass1(this.$drawerState, continuation);
+                                }
+
+                                @Override // kotlin.jvm.functions.Function2
+                                public final java.lang.Object invoke(kotlinx.coroutines.CoroutineScope coroutineScope, kotlin.coroutines.Continuation<? super kotlin.Unit> continuation) {
+                                    return ((androidx.compose.material.DrawerKt$ModalDrawer$1$2$2.AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(kotlin.Unit.INSTANCE);
+                                }
+
+                                @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+                                public final java.lang.Object invokeSuspend(java.lang.Object obj) {
+                                    java.lang.Object coroutine_suspended = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED();
+                                    int i = this.label;
+                                    if (i == 0) {
+                                        kotlin.ResultKt.throwOnFailure(obj);
+                                        this.label = 1;
+                                        if (this.$drawerState.close(this) == coroutine_suspended) {
+                                            return coroutine_suspended;
+                                        }
+                                    } else {
+                                        if (i != 1) {
+                                            throw new java.lang.IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                                        }
+                                        kotlin.ResultKt.throwOnFailure(obj);
+                                    }
+                                    return kotlin.Unit.INSTANCE;
+                                }
+                            }
+                        };
+                        java.lang.Object valueOf = java.lang.Float.valueOf(f8);
+                        java.lang.Object valueOf2 = java.lang.Float.valueOf(0.0f);
+                        composer3.startReplaceableGroup(1618982084);
+                        androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(remember)P(1,2,3):Composables.kt#9igjgp");
+                        boolean changed = composer3.changed(valueOf) | composer3.changed(valueOf2) | composer3.changed(drawerState7);
+                        java.lang.Object rememberedValue2 = composer3.rememberedValue();
+                        if (changed || rememberedValue2 == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+                            final float f10 = 0.0f;
+                            rememberedValue2 = (kotlin.jvm.functions.Function0) new kotlin.jvm.functions.Function0<java.lang.Float>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$3$1
+                                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                {
+                                    super(0);
+                                }
+
+                                /* JADX WARN: Can't rename method to resolve collision */
+                                @Override // kotlin.jvm.functions.Function0
+                                public final java.lang.Float invoke() {
+                                    float calculateFraction;
+                                    calculateFraction = androidx.compose.material.DrawerKt.calculateFraction(f8, f10, drawerState7.getOffset().getValue().floatValue());
+                                    return java.lang.Float.valueOf(calculateFraction);
+                                }
+                            };
+                            composer3.updateRememberedValue(rememberedValue2);
+                        }
+                        composer3.endReplaceableGroup();
+                        androidx.compose.material.DrawerKt.m1365ScrimBx497Mc(isOpen, function0, (kotlin.jvm.functions.Function0) rememberedValue2, j13, composer3, (i17 >> 15) & 7168);
+                        final java.lang.String m1509getString4foXLRw = androidx.compose.material.Strings_androidKt.m1509getString4foXLRw(androidx.compose.material.Strings.INSTANCE.m1506getNavigationMenuUdPEhr4(), composer3, 6);
+                        androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.Density> localDensity3 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalDensity();
+                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                        java.lang.Object consume8 = composer3.consume(localDensity3);
+                        androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                        androidx.compose.ui.unit.Density density3 = (androidx.compose.ui.unit.Density) consume8;
+                        androidx.compose.ui.Modifier m620sizeInqDBjuR0 = androidx.compose.foundation.layout.SizeKt.m620sizeInqDBjuR0(androidx.compose.ui.Modifier.INSTANCE, density3.mo312toDpu2uoSUM(androidx.compose.ui.unit.Constraints.m4426getMinWidthimpl(mo504getConstraintsmsEJaDk)), density3.mo312toDpu2uoSUM(androidx.compose.ui.unit.Constraints.m4425getMinHeightimpl(mo504getConstraintsmsEJaDk)), density3.mo312toDpu2uoSUM(androidx.compose.ui.unit.Constraints.m4424getMaxWidthimpl(mo504getConstraintsmsEJaDk)), density3.mo312toDpu2uoSUM(androidx.compose.ui.unit.Constraints.m4423getMaxHeightimpl(mo504getConstraintsmsEJaDk)));
+                        composer3.startReplaceableGroup(1157296644);
+                        androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(remember)P(1):Composables.kt#9igjgp");
+                        boolean changed2 = composer3.changed(drawerState7);
+                        java.lang.Object rememberedValue3 = composer3.rememberedValue();
+                        if (changed2 || rememberedValue3 == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+                            rememberedValue3 = (kotlin.jvm.functions.Function1) new kotlin.jvm.functions.Function1<androidx.compose.ui.unit.Density, androidx.compose.ui.unit.IntOffset>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$5$1
+                                {
+                                    super(1);
+                                }
+
+                                @Override // kotlin.jvm.functions.Function1
+                                public /* bridge */ /* synthetic */ androidx.compose.ui.unit.IntOffset invoke(androidx.compose.ui.unit.Density density4) {
+                                    return androidx.compose.ui.unit.IntOffset.m4601boximpl(m1374invokeBjo55l4(density4));
+                                }
+
+                                /* renamed from: invoke-Bjo55l4, reason: not valid java name */
+                                public final long m1374invokeBjo55l4(androidx.compose.ui.unit.Density offset) {
+                                    kotlin.jvm.internal.Intrinsics.checkNotNullParameter(offset, "$this$offset");
+                                    return androidx.compose.ui.unit.IntOffsetKt.IntOffset(kotlin.math.MathKt.roundToInt(androidx.compose.material.DrawerState.this.getOffset().getValue().floatValue()), 0);
+                                }
+                            };
+                            composer3.updateRememberedValue(rememberedValue3);
+                        }
+                        composer3.endReplaceableGroup();
+                        androidx.compose.ui.Modifier offset = androidx.compose.foundation.layout.OffsetKt.offset(m620sizeInqDBjuR0, (kotlin.jvm.functions.Function1) rememberedValue3);
+                        f7 = androidx.compose.material.DrawerKt.EndDrawerPadding;
+                        int i18 = i17 >> 12;
+                        androidx.compose.material.SurfaceKt.m1511SurfaceFjzlyU(androidx.compose.ui.semantics.SemanticsModifierKt.semantics$default(androidx.compose.foundation.layout.PaddingKt.m572paddingqDBjuR0$default(offset, 0.0f, 0.0f, f7, 0.0f, 11, null), false, new kotlin.jvm.functions.Function1<androidx.compose.ui.semantics.SemanticsPropertyReceiver, kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$6
+                            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                            {
+                                super(1);
+                            }
+
+                            @Override // kotlin.jvm.functions.Function1
+                            public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.ui.semantics.SemanticsPropertyReceiver semanticsPropertyReceiver) {
+                                invoke2(semanticsPropertyReceiver);
+                                return kotlin.Unit.INSTANCE;
+                            }
+
+                            /* renamed from: invoke, reason: avoid collision after fix types in other method */
+                            public final void invoke2(androidx.compose.ui.semantics.SemanticsPropertyReceiver semantics) {
+                                kotlin.jvm.internal.Intrinsics.checkNotNullParameter(semantics, "$this$semantics");
+                                androidx.compose.ui.semantics.SemanticsPropertiesKt.setPaneTitle(semantics, m1509getString4foXLRw);
+                                if (drawerState7.isOpen()) {
+                                    final androidx.compose.material.DrawerState drawerState8 = drawerState7;
+                                    final kotlinx.coroutines.CoroutineScope coroutineScope3 = coroutineScope2222;
+                                    androidx.compose.ui.semantics.SemanticsPropertiesKt.dismiss$default(semantics, null, new kotlin.jvm.functions.Function0<java.lang.Boolean>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$6.1
+                                        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                        {
+                                            super(0);
+                                        }
+
+                                        /* JADX WARN: Can't rename method to resolve collision */
+                                        @Override // kotlin.jvm.functions.Function0
+                                        public final java.lang.Boolean invoke() {
+                                            if (androidx.compose.material.DrawerState.this.getSwipeableState$material_release().getConfirmStateChange$material_release().invoke(androidx.compose.material.DrawerValue.Closed).booleanValue()) {
+                                                kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(coroutineScope3, null, null, new androidx.compose.material.DrawerKt$ModalDrawer$1$2$6.AnonymousClass1.C00431(androidx.compose.material.DrawerState.this, null), 3, null);
+                                            }
+                                            return true;
+                                        }
+
+                                        /* compiled from: Drawer.kt */
+                                        @kotlin.Metadata(k = 3, mv = {1, 6, 0}, xi = 48)
+                                        @kotlin.coroutines.jvm.internal.DebugMetadata(c = "androidx.compose.material.DrawerKt$ModalDrawer$1$2$6$1$1", f = "Drawer.kt", i = {}, l = {450}, m = "invokeSuspend", n = {}, s = {})
+                                        /* renamed from: androidx.compose.material.DrawerKt$ModalDrawer$1$2$6$1$1, reason: invalid class name and collision with other inner class name */
+                                        static final class C00431 extends kotlin.coroutines.jvm.internal.SuspendLambda implements kotlin.jvm.functions.Function2<kotlinx.coroutines.CoroutineScope, kotlin.coroutines.Continuation<? super kotlin.Unit>, java.lang.Object> {
+                                            final /* synthetic */ androidx.compose.material.DrawerState $drawerState;
+                                            int label;
+
+                                            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                            C00431(androidx.compose.material.DrawerState drawerState, kotlin.coroutines.Continuation<? super androidx.compose.material.DrawerKt$ModalDrawer$1$2$6.AnonymousClass1.C00431> continuation) {
+                                                super(2, continuation);
+                                                this.$drawerState = drawerState;
+                                            }
+
+                                            @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+                                            public final kotlin.coroutines.Continuation<kotlin.Unit> create(java.lang.Object obj, kotlin.coroutines.Continuation<?> continuation) {
+                                                return new androidx.compose.material.DrawerKt$ModalDrawer$1$2$6.AnonymousClass1.C00431(this.$drawerState, continuation);
+                                            }
+
+                                            @Override // kotlin.jvm.functions.Function2
+                                            public final java.lang.Object invoke(kotlinx.coroutines.CoroutineScope coroutineScope, kotlin.coroutines.Continuation<? super kotlin.Unit> continuation) {
+                                                return ((androidx.compose.material.DrawerKt$ModalDrawer$1$2$6.AnonymousClass1.C00431) create(coroutineScope, continuation)).invokeSuspend(kotlin.Unit.INSTANCE);
+                                            }
+
+                                            @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+                                            public final java.lang.Object invokeSuspend(java.lang.Object obj) {
+                                                java.lang.Object coroutine_suspended = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED();
+                                                int i = this.label;
+                                                if (i == 0) {
+                                                    kotlin.ResultKt.throwOnFailure(obj);
+                                                    this.label = 1;
+                                                    if (this.$drawerState.close(this) == coroutine_suspended) {
+                                                        return coroutine_suspended;
+                                                    }
+                                                } else {
+                                                    if (i != 1) {
+                                                        throw new java.lang.IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                                                    }
+                                                    kotlin.ResultKt.throwOnFailure(obj);
+                                                }
+                                                return kotlin.Unit.INSTANCE;
+                                            }
+                                        }
+                                    }, 1, null);
+                                }
+                            }
+                        }, 1, null), shape6, j14, j15, null, f9, androidx.compose.runtime.internal.ComposableLambdaKt.composableLambda(composer3, -1941234439, true, new kotlin.jvm.functions.Function2<androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$7
+                            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                            /* JADX WARN: Multi-variable type inference failed */
+                            {
+                                super(2);
+                            }
+
+                            @Override // kotlin.jvm.functions.Function2
+                            public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.runtime.Composer composer4, java.lang.Integer num) {
+                                invoke(composer4, num.intValue());
+                                return kotlin.Unit.INSTANCE;
+                            }
+
+                            public final void invoke(androidx.compose.runtime.Composer composer4, int i19) {
+                                androidx.compose.runtime.ComposerKt.sourceInformation(composer4, "C459@16456L55:Drawer.kt#jmzs0o");
+                                if ((i19 & 11) == 2 && composer4.getSkipping()) {
+                                    composer4.skipToGroupEnd();
+                                    return;
+                                }
+                                androidx.compose.ui.Modifier fillMaxSize$default2222 = androidx.compose.foundation.layout.SizeKt.fillMaxSize$default(androidx.compose.ui.Modifier.INSTANCE, 0.0f, 1, null);
+                                kotlin.jvm.functions.Function3<androidx.compose.foundation.layout.ColumnScope, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> function33 = function32222;
+                                int i20 = ((i17 << 9) & 7168) | 6;
+                                composer4.startReplaceableGroup(-483455358);
+                                androidx.compose.runtime.ComposerKt.sourceInformation(composer4, "C(Column)P(2,3,1)77@3880L61,78@3946L133:Column.kt#2w3rfo");
+                                androidx.compose.ui.layout.MeasurePolicy columnMeasurePolicy = androidx.compose.foundation.layout.ColumnKt.columnMeasurePolicy(androidx.compose.foundation.layout.Arrangement.INSTANCE.getTop(), androidx.compose.ui.Alignment.INSTANCE.getStart(), composer4, 0);
+                                composer4.startReplaceableGroup(-1323940314);
+                                androidx.compose.runtime.ComposerKt.sourceInformation(composer4, "C(Layout)P(!1,2)74@2915L7,75@2970L7,76@3029L7,77@3041L460:Layout.kt#80mrfh");
+                                androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.Density> localDensity4 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalDensity();
+                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer4, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                java.lang.Object consume9 = composer4.consume(localDensity4);
+                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer4);
+                                androidx.compose.ui.unit.Density density4 = (androidx.compose.ui.unit.Density) consume9;
+                                androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.LayoutDirection> localLayoutDirection4 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalLayoutDirection();
+                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer4, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                java.lang.Object consume10 = composer4.consume(localLayoutDirection4);
+                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer4);
+                                androidx.compose.ui.unit.LayoutDirection layoutDirection3 = (androidx.compose.ui.unit.LayoutDirection) consume10;
+                                androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.platform.ViewConfiguration> localViewConfiguration3 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalViewConfiguration();
+                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer4, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                                java.lang.Object consume11 = composer4.consume(localViewConfiguration3);
+                                androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer4);
+                                androidx.compose.ui.platform.ViewConfiguration viewConfiguration3 = (androidx.compose.ui.platform.ViewConfiguration) consume11;
+                                kotlin.jvm.functions.Function0<androidx.compose.ui.node.ComposeUiNode> constructor3 = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getConstructor();
+                                kotlin.jvm.functions.Function3<androidx.compose.runtime.SkippableUpdater<androidx.compose.ui.node.ComposeUiNode>, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> materializerOf3 = androidx.compose.ui.layout.LayoutKt.materializerOf(fillMaxSize$default2222);
+                                if (!(composer4.getApplier() instanceof androidx.compose.runtime.Applier)) {
+                                    androidx.compose.runtime.ComposablesKt.invalidApplier();
+                                }
+                                composer4.startReusableNode();
+                                if (composer4.getInserting()) {
+                                    composer4.createNode(constructor3);
+                                } else {
+                                    composer4.useNode();
+                                }
+                                composer4.disableReusing();
+                                androidx.compose.runtime.Composer m1641constructorimpl3 = androidx.compose.runtime.Updater.m1641constructorimpl(composer4);
+                                androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl3, columnMeasurePolicy, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+                                androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl3, density4, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetDensity());
+                                androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl3, layoutDirection3, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetLayoutDirection());
+                                androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl3, viewConfiguration3, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetViewConfiguration());
+                                composer4.enableReusing();
+                                materializerOf3.invoke(androidx.compose.runtime.SkippableUpdater.m1632boximpl(androidx.compose.runtime.SkippableUpdater.m1633constructorimpl(composer4)), composer4, 0);
+                                composer4.startReplaceableGroup(2058660585);
+                                composer4.startReplaceableGroup(-1163856341);
+                                androidx.compose.runtime.ComposerKt.sourceInformation(composer4, "C79@3994L9:Column.kt#2w3rfo");
+                                function33.invoke(androidx.compose.foundation.layout.ColumnScopeInstance.INSTANCE, composer4, java.lang.Integer.valueOf(((i20 >> 6) & 112) | 6));
+                                composer4.endReplaceableGroup();
+                                composer4.endReplaceableGroup();
+                                composer4.endNode();
+                                composer4.endReplaceableGroup();
+                                composer4.endReplaceableGroup();
+                            }
+                        }), composer3, ((i17 >> 9) & 112) | 1572864 | (i18 & 896) | (i18 & 7168) | (458752 & i17), 16);
+                        composer3.endReplaceableGroup();
+                        composer3.endReplaceableGroup();
+                        composer3.endReplaceableGroup();
+                        composer3.endNode();
+                        composer3.endReplaceableGroup();
+                        composer3.endReplaceableGroup();
+                        return;
+                    }
+                    composer3.skipToGroupEnd();
+                }
+            };
+            composer2 = startRestartGroup;
+            androidx.compose.foundation.layout.BoxWithConstraintsKt.BoxWithConstraints(fillMaxSize$default222, null, false, androidx.compose.runtime.internal.ComposableLambdaKt.composableLambda(composer2, 816674999, true, function3222), composer2, 3072, 6);
+            drawerState5 = drawerState4;
+            z4 = z3;
+            shape4 = shape3;
+            f4 = f3;
+            j11 = j6;
+            modifier4 = modifier5222;
+            endRestartGroup = composer2.endRestartGroup();
+            if (endRestartGroup == null) {
+            }
+        }
+        modifier2 = modifier;
+        if ((i & 896) != 0) {
+        }
+        i4 = i2 & 8;
+        if (i4 == 0) {
+        }
+        z2 = z;
+        if ((57344 & i) == 0) {
+        }
+        i5 = i2 & 32;
+        if (i5 != 0) {
+        }
+        f2 = f;
+        if ((3670016 & i) != 0) {
+        }
+        if ((i & 29360128) == 0) {
+        }
+        if ((i & 234881024) == 0) {
+        }
+        if ((i2 & 512) != 0) {
+        }
+        i3 |= i7;
+        if ((1533916891 & i3) == 306783378) {
+        }
+        startRestartGroup.startDefaults();
+        if ((i & 1) != 0) {
+        }
+        if (i6 != 0) {
+        }
+        if ((i2 & 4) != 0) {
+        }
+        if (i4 != 0) {
+        }
+        if ((i2 & 16) != 0) {
+        }
+        if (i5 != 0) {
+        }
+        if ((i2 & 64) != 0) {
+        }
+        if ((i2 & 128) != 0) {
+        }
+        if ((i2 & 256) != 0) {
+        }
+        shape3 = cornerBasedShape;
+        z3 = z2;
+        final int i142222 = i3;
+        startRestartGroup.endDefaults();
+        startRestartGroup.startReplaceableGroup(773894976);
+        androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(rememberCoroutineScope)475@19849L144:Effects.kt#9igjgp");
+        startRestartGroup.startReplaceableGroup(-492369756);
+        androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(remember):Composables.kt#9igjgp");
+        rememberedValue = startRestartGroup.rememberedValue();
+        if (rememberedValue == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+        }
+        startRestartGroup.endReplaceableGroup();
+        final kotlinx.coroutines.CoroutineScope coroutineScope2222 = ((androidx.compose.runtime.CompositionScopedCoroutineScopeCanceller) rememberedValue).getCoroutineScope();
+        startRestartGroup.endReplaceableGroup();
+        androidx.compose.ui.Modifier fillMaxSize$default2222 = androidx.compose.foundation.layout.SizeKt.fillMaxSize$default(modifier3, 0.0f, 1, null);
+        final androidx.compose.material.DrawerState drawerState62222 = drawerState4;
+        final boolean z52222 = z3;
+        final long j122222 = j6;
+        final androidx.compose.ui.graphics.Shape shape52222 = shape3;
+        j9 = j7;
+        androidx.compose.ui.Modifier modifier52222 = modifier3;
+        j10 = j8;
+        final float f52222 = f3;
+        kotlin.jvm.functions.Function3<androidx.compose.foundation.layout.BoxWithConstraintsScope, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> function32222 = new kotlin.jvm.functions.Function3<androidx.compose.foundation.layout.BoxWithConstraintsScope, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* JADX WARN: Multi-variable type inference failed */
+            {
+                super(3);
+            }
+
+            @Override // kotlin.jvm.functions.Function3
+            public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.foundation.layout.BoxWithConstraintsScope boxWithConstraintsScope, androidx.compose.runtime.Composer composer3, java.lang.Integer num) {
+                invoke(boxWithConstraintsScope, composer3, num.intValue());
+                return kotlin.Unit.INSTANCE;
+            }
+
+            public final void invoke(androidx.compose.foundation.layout.BoxWithConstraintsScope BoxWithConstraints, androidx.compose.runtime.Composer composer3, int i15) {
+                int i16;
+                float f6;
+                androidx.compose.ui.Modifier m1521swipeablepPrIpRY;
+                float f7;
+                kotlin.jvm.internal.Intrinsics.checkNotNullParameter(BoxWithConstraints, "$this$BoxWithConstraints");
+                androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C397@13855L7,398@13894L2641:Drawer.kt#jmzs0o");
+                if ((i15 & 14) == 0) {
+                    i16 = i15 | (composer3.changed(BoxWithConstraints) ? 4 : 2);
+                } else {
+                    i16 = i15;
+                }
+                if ((i16 & 91) != 18 || !composer3.getSkipping()) {
+                    long mo504getConstraintsmsEJaDk = BoxWithConstraints.mo504getConstraintsmsEJaDk();
+                    if (!androidx.compose.ui.unit.Constraints.m4420getHasBoundedWidthimpl(mo504getConstraintsmsEJaDk)) {
+                        throw new java.lang.IllegalStateException("Drawer shouldn't have infinite width");
+                    }
+                    final float f8 = -androidx.compose.ui.unit.Constraints.m4424getMaxWidthimpl(mo504getConstraintsmsEJaDk);
+                    java.util.Map mapOf = kotlin.collections.MapsKt.mapOf(kotlin.TuplesKt.to(java.lang.Float.valueOf(f8), androidx.compose.material.DrawerValue.Closed), kotlin.TuplesKt.to(java.lang.Float.valueOf(0.0f), androidx.compose.material.DrawerValue.Open));
+                    androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.LayoutDirection> localLayoutDirection = androidx.compose.ui.platform.CompositionLocalsKt.getLocalLayoutDirection();
+                    androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                    java.lang.Object consume = composer3.consume(localLayoutDirection);
+                    androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                    boolean z6 = consume == androidx.compose.ui.unit.LayoutDirection.Rtl;
+                    androidx.compose.ui.Modifier.Companion companion2 = androidx.compose.ui.Modifier.INSTANCE;
+                    androidx.compose.material.SwipeableState<androidx.compose.material.DrawerValue> swipeableState$material_release = androidx.compose.material.DrawerState.this.getSwipeableState$material_release();
+                    androidx.compose.foundation.gestures.Orientation orientation = androidx.compose.foundation.gestures.Orientation.Horizontal;
+                    f6 = androidx.compose.material.DrawerKt.DrawerVelocityThreshold;
+                    m1521swipeablepPrIpRY = androidx.compose.material.SwipeableKt.m1521swipeablepPrIpRY(companion2, swipeableState$material_release, mapOf, orientation, (r26 & 8) != 0 ? true : z52222, (r26 & 16) != 0 ? false : z6, (r26 & 32) != 0 ? null : null, (r26 & 64) != 0 ? new kotlin.jvm.functions.Function2<T, T, androidx.compose.material.FixedThreshold>() { // from class: androidx.compose.material.SwipeableKt$swipeable$1
+                        /* JADX WARN: Can't rename method to resolve collision */
+                        @Override // kotlin.jvm.functions.Function2
+                        public final androidx.compose.material.FixedThreshold invoke(T t, T t2) {
+                            return new androidx.compose.material.FixedThreshold(androidx.compose.ui.unit.Dp.m4478constructorimpl(56), null);
+                        }
+                    } : new kotlin.jvm.functions.Function2<androidx.compose.material.DrawerValue, androidx.compose.material.DrawerValue, androidx.compose.material.ThresholdConfig>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1.1
+                        @Override // kotlin.jvm.functions.Function2
+                        public final androidx.compose.material.ThresholdConfig invoke(androidx.compose.material.DrawerValue drawerValue, androidx.compose.material.DrawerValue drawerValue2) {
+                            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(drawerValue, "<anonymous parameter 0>");
+                            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(drawerValue2, "<anonymous parameter 1>");
+                            return new androidx.compose.material.FractionalThreshold(0.5f);
+                        }
+                    }, (r26 & 128) != 0 ? androidx.compose.material.SwipeableDefaults.resistanceConfig$default(androidx.compose.material.SwipeableDefaults.INSTANCE, mapOf.keySet(), 0.0f, 0.0f, 6, null) : null, (r26 & 256) != 0 ? androidx.compose.material.SwipeableDefaults.INSTANCE.m1520getVelocityThresholdD9Ej5fM() : f6);
+                    final androidx.compose.material.DrawerState drawerState7 = androidx.compose.material.DrawerState.this;
+                    final int i17 = i142222;
+                    long j13 = j122222;
+                    androidx.compose.ui.graphics.Shape shape6 = shape52222;
+                    long j14 = j9;
+                    long j15 = j10;
+                    float f9 = f52222;
+                    kotlin.jvm.functions.Function2<androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> function2 = content;
+                    final boolean z7 = z52222;
+                    final kotlinx.coroutines.CoroutineScope coroutineScope22222 = coroutineScope2222;
+                    final kotlin.jvm.functions.Function3<? super androidx.compose.foundation.layout.ColumnScope, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, kotlin.Unit> function322222 = drawerContent;
+                    composer3.startReplaceableGroup(733328855);
+                    androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(Box)P(2,1,3)70@3267L67,71@3339L130:Box.kt#2w3rfo");
+                    androidx.compose.ui.layout.MeasurePolicy rememberBoxMeasurePolicy = androidx.compose.foundation.layout.BoxKt.rememberBoxMeasurePolicy(androidx.compose.ui.Alignment.INSTANCE.getTopStart(), false, composer3, 0);
+                    composer3.startReplaceableGroup(-1323940314);
+                    androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(Layout)P(!1,2)74@2915L7,75@2970L7,76@3029L7,77@3041L460:Layout.kt#80mrfh");
+                    androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.Density> localDensity = androidx.compose.ui.platform.CompositionLocalsKt.getLocalDensity();
+                    androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                    java.lang.Object consume2 = composer3.consume(localDensity);
+                    androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                    androidx.compose.ui.unit.Density density = (androidx.compose.ui.unit.Density) consume2;
+                    androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.LayoutDirection> localLayoutDirection2 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalLayoutDirection();
+                    androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                    java.lang.Object consume3 = composer3.consume(localLayoutDirection2);
+                    androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                    androidx.compose.ui.unit.LayoutDirection layoutDirection = (androidx.compose.ui.unit.LayoutDirection) consume3;
+                    androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.platform.ViewConfiguration> localViewConfiguration = androidx.compose.ui.platform.CompositionLocalsKt.getLocalViewConfiguration();
+                    androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                    java.lang.Object consume4 = composer3.consume(localViewConfiguration);
+                    androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                    androidx.compose.ui.platform.ViewConfiguration viewConfiguration = (androidx.compose.ui.platform.ViewConfiguration) consume4;
+                    kotlin.jvm.functions.Function0<androidx.compose.ui.node.ComposeUiNode> constructor = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getConstructor();
+                    kotlin.jvm.functions.Function3<androidx.compose.runtime.SkippableUpdater<androidx.compose.ui.node.ComposeUiNode>, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> materializerOf = androidx.compose.ui.layout.LayoutKt.materializerOf(m1521swipeablepPrIpRY);
+                    if (!(composer3.getApplier() instanceof androidx.compose.runtime.Applier)) {
+                        androidx.compose.runtime.ComposablesKt.invalidApplier();
+                    }
+                    composer3.startReusableNode();
+                    if (composer3.getInserting()) {
+                        composer3.createNode(constructor);
+                    } else {
+                        composer3.useNode();
+                    }
+                    composer3.disableReusing();
+                    androidx.compose.runtime.Composer m1641constructorimpl = androidx.compose.runtime.Updater.m1641constructorimpl(composer3);
+                    androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, rememberBoxMeasurePolicy, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+                    androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, density, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetDensity());
+                    androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, layoutDirection, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetLayoutDirection());
+                    androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, viewConfiguration, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetViewConfiguration());
+                    composer3.enableReusing();
+                    materializerOf.invoke(androidx.compose.runtime.SkippableUpdater.m1632boximpl(androidx.compose.runtime.SkippableUpdater.m1633constructorimpl(composer3)), composer3, 0);
+                    composer3.startReplaceableGroup(2058660585);
+                    composer3.startReplaceableGroup(-2137368960);
+                    androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C72@3384L9:Box.kt#2w3rfo");
+                    androidx.compose.foundation.layout.BoxScopeInstance boxScopeInstance = androidx.compose.foundation.layout.BoxScopeInstance.INSTANCE;
+                    composer3.startReplaceableGroup(-1263168067);
+                    androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C410@14358L45,423@14805L103,413@14416L542,428@14992L33,*430@15092L7,439@15556L55,429@15038L1487:Drawer.kt#jmzs0o");
+                    composer3.startReplaceableGroup(733328855);
+                    androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(Box)P(2,1,3)70@3267L67,71@3339L130:Box.kt#2w3rfo");
+                    androidx.compose.ui.Modifier.Companion companion3 = androidx.compose.ui.Modifier.INSTANCE;
+                    androidx.compose.ui.layout.MeasurePolicy rememberBoxMeasurePolicy2 = androidx.compose.foundation.layout.BoxKt.rememberBoxMeasurePolicy(androidx.compose.ui.Alignment.INSTANCE.getTopStart(), false, composer3, 0);
+                    composer3.startReplaceableGroup(-1323940314);
+                    androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(Layout)P(!1,2)74@2915L7,75@2970L7,76@3029L7,77@3041L460:Layout.kt#80mrfh");
+                    androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.Density> localDensity2 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalDensity();
+                    androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                    java.lang.Object consume5 = composer3.consume(localDensity2);
+                    androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                    androidx.compose.ui.unit.Density density2 = (androidx.compose.ui.unit.Density) consume5;
+                    androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.LayoutDirection> localLayoutDirection3 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalLayoutDirection();
+                    androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                    java.lang.Object consume6 = composer3.consume(localLayoutDirection3);
+                    androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                    androidx.compose.ui.unit.LayoutDirection layoutDirection2 = (androidx.compose.ui.unit.LayoutDirection) consume6;
+                    androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.platform.ViewConfiguration> localViewConfiguration2 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalViewConfiguration();
+                    androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                    java.lang.Object consume7 = composer3.consume(localViewConfiguration2);
+                    androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                    androidx.compose.ui.platform.ViewConfiguration viewConfiguration2 = (androidx.compose.ui.platform.ViewConfiguration) consume7;
+                    kotlin.jvm.functions.Function0<androidx.compose.ui.node.ComposeUiNode> constructor2 = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getConstructor();
+                    kotlin.jvm.functions.Function3<androidx.compose.runtime.SkippableUpdater<androidx.compose.ui.node.ComposeUiNode>, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> materializerOf2 = androidx.compose.ui.layout.LayoutKt.materializerOf(companion3);
+                    if (!(composer3.getApplier() instanceof androidx.compose.runtime.Applier)) {
+                        androidx.compose.runtime.ComposablesKt.invalidApplier();
+                    }
+                    composer3.startReusableNode();
+                    if (composer3.getInserting()) {
+                        composer3.createNode(constructor2);
+                    } else {
+                        composer3.useNode();
+                    }
+                    composer3.disableReusing();
+                    androidx.compose.runtime.Composer m1641constructorimpl2 = androidx.compose.runtime.Updater.m1641constructorimpl(composer3);
+                    androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl2, rememberBoxMeasurePolicy2, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+                    androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl2, density2, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetDensity());
+                    androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl2, layoutDirection2, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetLayoutDirection());
+                    androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl2, viewConfiguration2, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetViewConfiguration());
+                    composer3.enableReusing();
+                    materializerOf2.invoke(androidx.compose.runtime.SkippableUpdater.m1632boximpl(androidx.compose.runtime.SkippableUpdater.m1633constructorimpl(composer3)), composer3, 0);
+                    composer3.startReplaceableGroup(2058660585);
+                    composer3.startReplaceableGroup(-2137368960);
+                    androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C72@3384L9:Box.kt#2w3rfo");
+                    androidx.compose.foundation.layout.BoxScopeInstance boxScopeInstance2 = androidx.compose.foundation.layout.BoxScopeInstance.INSTANCE;
+                    composer3.startReplaceableGroup(32495683);
+                    androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C411@14380L9:Drawer.kt#jmzs0o");
+                    function2.invoke(composer3, java.lang.Integer.valueOf((i17 >> 27) & 14));
+                    composer3.endReplaceableGroup();
+                    composer3.endReplaceableGroup();
+                    composer3.endReplaceableGroup();
+                    composer3.endNode();
+                    composer3.endReplaceableGroup();
+                    composer3.endReplaceableGroup();
+                    boolean isOpen = drawerState7.isOpen();
+                    kotlin.jvm.functions.Function0<kotlin.Unit> function0 = new kotlin.jvm.functions.Function0<kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$2
+                        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                        {
+                            super(0);
+                        }
+
+                        @Override // kotlin.jvm.functions.Function0
+                        public /* bridge */ /* synthetic */ kotlin.Unit invoke() {
+                            invoke2();
+                            return kotlin.Unit.INSTANCE;
+                        }
+
+                        /* renamed from: invoke, reason: avoid collision after fix types in other method */
+                        public final void invoke2() {
+                            if (z7 && drawerState7.getSwipeableState$material_release().getConfirmStateChange$material_release().invoke(androidx.compose.material.DrawerValue.Closed).booleanValue()) {
+                                kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(coroutineScope22222, null, null, new androidx.compose.material.DrawerKt$ModalDrawer$1$2$2.AnonymousClass1(drawerState7, null), 3, null);
+                            }
+                        }
+
+                        /* compiled from: Drawer.kt */
+                        @kotlin.Metadata(k = 3, mv = {1, 6, 0}, xi = 48)
+                        @kotlin.coroutines.jvm.internal.DebugMetadata(c = "androidx.compose.material.DrawerKt$ModalDrawer$1$2$2$1", f = "Drawer.kt", i = {}, l = {okhttp3.internal.http.StatusLine.HTTP_MISDIRECTED_REQUEST}, m = "invokeSuspend", n = {}, s = {})
+                        /* renamed from: androidx.compose.material.DrawerKt$ModalDrawer$1$2$2$1, reason: invalid class name */
+                        static final class AnonymousClass1 extends kotlin.coroutines.jvm.internal.SuspendLambda implements kotlin.jvm.functions.Function2<kotlinx.coroutines.CoroutineScope, kotlin.coroutines.Continuation<? super kotlin.Unit>, java.lang.Object> {
+                            final /* synthetic */ androidx.compose.material.DrawerState $drawerState;
+                            int label;
+
+                            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                            AnonymousClass1(androidx.compose.material.DrawerState drawerState, kotlin.coroutines.Continuation<? super androidx.compose.material.DrawerKt$ModalDrawer$1$2$2.AnonymousClass1> continuation) {
+                                super(2, continuation);
+                                this.$drawerState = drawerState;
+                            }
+
+                            @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+                            public final kotlin.coroutines.Continuation<kotlin.Unit> create(java.lang.Object obj, kotlin.coroutines.Continuation<?> continuation) {
+                                return new androidx.compose.material.DrawerKt$ModalDrawer$1$2$2.AnonymousClass1(this.$drawerState, continuation);
+                            }
+
+                            @Override // kotlin.jvm.functions.Function2
+                            public final java.lang.Object invoke(kotlinx.coroutines.CoroutineScope coroutineScope, kotlin.coroutines.Continuation<? super kotlin.Unit> continuation) {
+                                return ((androidx.compose.material.DrawerKt$ModalDrawer$1$2$2.AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(kotlin.Unit.INSTANCE);
+                            }
+
+                            @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+                            public final java.lang.Object invokeSuspend(java.lang.Object obj) {
+                                java.lang.Object coroutine_suspended = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED();
+                                int i = this.label;
+                                if (i == 0) {
+                                    kotlin.ResultKt.throwOnFailure(obj);
+                                    this.label = 1;
+                                    if (this.$drawerState.close(this) == coroutine_suspended) {
+                                        return coroutine_suspended;
+                                    }
+                                } else {
+                                    if (i != 1) {
+                                        throw new java.lang.IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                                    }
+                                    kotlin.ResultKt.throwOnFailure(obj);
+                                }
+                                return kotlin.Unit.INSTANCE;
+                            }
+                        }
+                    };
+                    java.lang.Object valueOf = java.lang.Float.valueOf(f8);
+                    java.lang.Object valueOf2 = java.lang.Float.valueOf(0.0f);
+                    composer3.startReplaceableGroup(1618982084);
+                    androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(remember)P(1,2,3):Composables.kt#9igjgp");
+                    boolean changed = composer3.changed(valueOf) | composer3.changed(valueOf2) | composer3.changed(drawerState7);
+                    java.lang.Object rememberedValue2 = composer3.rememberedValue();
+                    if (changed || rememberedValue2 == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+                        final float f10 = 0.0f;
+                        rememberedValue2 = (kotlin.jvm.functions.Function0) new kotlin.jvm.functions.Function0<java.lang.Float>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$3$1
+                            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                            {
+                                super(0);
+                            }
+
+                            /* JADX WARN: Can't rename method to resolve collision */
+                            @Override // kotlin.jvm.functions.Function0
+                            public final java.lang.Float invoke() {
+                                float calculateFraction;
+                                calculateFraction = androidx.compose.material.DrawerKt.calculateFraction(f8, f10, drawerState7.getOffset().getValue().floatValue());
+                                return java.lang.Float.valueOf(calculateFraction);
+                            }
+                        };
+                        composer3.updateRememberedValue(rememberedValue2);
+                    }
+                    composer3.endReplaceableGroup();
+                    androidx.compose.material.DrawerKt.m1365ScrimBx497Mc(isOpen, function0, (kotlin.jvm.functions.Function0) rememberedValue2, j13, composer3, (i17 >> 15) & 7168);
+                    final java.lang.String m1509getString4foXLRw = androidx.compose.material.Strings_androidKt.m1509getString4foXLRw(androidx.compose.material.Strings.INSTANCE.m1506getNavigationMenuUdPEhr4(), composer3, 6);
+                    androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.Density> localDensity3 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalDensity();
+                    androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer3, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                    java.lang.Object consume8 = composer3.consume(localDensity3);
+                    androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer3);
+                    androidx.compose.ui.unit.Density density3 = (androidx.compose.ui.unit.Density) consume8;
+                    androidx.compose.ui.Modifier m620sizeInqDBjuR0 = androidx.compose.foundation.layout.SizeKt.m620sizeInqDBjuR0(androidx.compose.ui.Modifier.INSTANCE, density3.mo312toDpu2uoSUM(androidx.compose.ui.unit.Constraints.m4426getMinWidthimpl(mo504getConstraintsmsEJaDk)), density3.mo312toDpu2uoSUM(androidx.compose.ui.unit.Constraints.m4425getMinHeightimpl(mo504getConstraintsmsEJaDk)), density3.mo312toDpu2uoSUM(androidx.compose.ui.unit.Constraints.m4424getMaxWidthimpl(mo504getConstraintsmsEJaDk)), density3.mo312toDpu2uoSUM(androidx.compose.ui.unit.Constraints.m4423getMaxHeightimpl(mo504getConstraintsmsEJaDk)));
+                    composer3.startReplaceableGroup(1157296644);
+                    androidx.compose.runtime.ComposerKt.sourceInformation(composer3, "C(remember)P(1):Composables.kt#9igjgp");
+                    boolean changed2 = composer3.changed(drawerState7);
+                    java.lang.Object rememberedValue3 = composer3.rememberedValue();
+                    if (changed2 || rememberedValue3 == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+                        rememberedValue3 = (kotlin.jvm.functions.Function1) new kotlin.jvm.functions.Function1<androidx.compose.ui.unit.Density, androidx.compose.ui.unit.IntOffset>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$5$1
+                            {
+                                super(1);
+                            }
+
+                            @Override // kotlin.jvm.functions.Function1
+                            public /* bridge */ /* synthetic */ androidx.compose.ui.unit.IntOffset invoke(androidx.compose.ui.unit.Density density4) {
+                                return androidx.compose.ui.unit.IntOffset.m4601boximpl(m1374invokeBjo55l4(density4));
+                            }
+
+                            /* renamed from: invoke-Bjo55l4, reason: not valid java name */
+                            public final long m1374invokeBjo55l4(androidx.compose.ui.unit.Density offset) {
+                                kotlin.jvm.internal.Intrinsics.checkNotNullParameter(offset, "$this$offset");
+                                return androidx.compose.ui.unit.IntOffsetKt.IntOffset(kotlin.math.MathKt.roundToInt(androidx.compose.material.DrawerState.this.getOffset().getValue().floatValue()), 0);
+                            }
+                        };
+                        composer3.updateRememberedValue(rememberedValue3);
+                    }
+                    composer3.endReplaceableGroup();
+                    androidx.compose.ui.Modifier offset = androidx.compose.foundation.layout.OffsetKt.offset(m620sizeInqDBjuR0, (kotlin.jvm.functions.Function1) rememberedValue3);
+                    f7 = androidx.compose.material.DrawerKt.EndDrawerPadding;
+                    int i18 = i17 >> 12;
+                    androidx.compose.material.SurfaceKt.m1511SurfaceFjzlyU(androidx.compose.ui.semantics.SemanticsModifierKt.semantics$default(androidx.compose.foundation.layout.PaddingKt.m572paddingqDBjuR0$default(offset, 0.0f, 0.0f, f7, 0.0f, 11, null), false, new kotlin.jvm.functions.Function1<androidx.compose.ui.semantics.SemanticsPropertyReceiver, kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$6
+                        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                        {
+                            super(1);
+                        }
+
+                        @Override // kotlin.jvm.functions.Function1
+                        public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.ui.semantics.SemanticsPropertyReceiver semanticsPropertyReceiver) {
+                            invoke2(semanticsPropertyReceiver);
+                            return kotlin.Unit.INSTANCE;
+                        }
+
+                        /* renamed from: invoke, reason: avoid collision after fix types in other method */
+                        public final void invoke2(androidx.compose.ui.semantics.SemanticsPropertyReceiver semantics) {
+                            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(semantics, "$this$semantics");
+                            androidx.compose.ui.semantics.SemanticsPropertiesKt.setPaneTitle(semantics, m1509getString4foXLRw);
+                            if (drawerState7.isOpen()) {
+                                final androidx.compose.material.DrawerState drawerState8 = drawerState7;
+                                final kotlinx.coroutines.CoroutineScope coroutineScope3 = coroutineScope22222;
+                                androidx.compose.ui.semantics.SemanticsPropertiesKt.dismiss$default(semantics, null, new kotlin.jvm.functions.Function0<java.lang.Boolean>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$6.1
+                                    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                    {
+                                        super(0);
+                                    }
+
+                                    /* JADX WARN: Can't rename method to resolve collision */
+                                    @Override // kotlin.jvm.functions.Function0
+                                    public final java.lang.Boolean invoke() {
+                                        if (androidx.compose.material.DrawerState.this.getSwipeableState$material_release().getConfirmStateChange$material_release().invoke(androidx.compose.material.DrawerValue.Closed).booleanValue()) {
+                                            kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(coroutineScope3, null, null, new androidx.compose.material.DrawerKt$ModalDrawer$1$2$6.AnonymousClass1.C00431(androidx.compose.material.DrawerState.this, null), 3, null);
+                                        }
+                                        return true;
+                                    }
+
+                                    /* compiled from: Drawer.kt */
+                                    @kotlin.Metadata(k = 3, mv = {1, 6, 0}, xi = 48)
+                                    @kotlin.coroutines.jvm.internal.DebugMetadata(c = "androidx.compose.material.DrawerKt$ModalDrawer$1$2$6$1$1", f = "Drawer.kt", i = {}, l = {450}, m = "invokeSuspend", n = {}, s = {})
+                                    /* renamed from: androidx.compose.material.DrawerKt$ModalDrawer$1$2$6$1$1, reason: invalid class name and collision with other inner class name */
+                                    static final class C00431 extends kotlin.coroutines.jvm.internal.SuspendLambda implements kotlin.jvm.functions.Function2<kotlinx.coroutines.CoroutineScope, kotlin.coroutines.Continuation<? super kotlin.Unit>, java.lang.Object> {
+                                        final /* synthetic */ androidx.compose.material.DrawerState $drawerState;
+                                        int label;
+
+                                        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                        C00431(androidx.compose.material.DrawerState drawerState, kotlin.coroutines.Continuation<? super androidx.compose.material.DrawerKt$ModalDrawer$1$2$6.AnonymousClass1.C00431> continuation) {
+                                            super(2, continuation);
+                                            this.$drawerState = drawerState;
+                                        }
+
+                                        @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+                                        public final kotlin.coroutines.Continuation<kotlin.Unit> create(java.lang.Object obj, kotlin.coroutines.Continuation<?> continuation) {
+                                            return new androidx.compose.material.DrawerKt$ModalDrawer$1$2$6.AnonymousClass1.C00431(this.$drawerState, continuation);
+                                        }
+
+                                        @Override // kotlin.jvm.functions.Function2
+                                        public final java.lang.Object invoke(kotlinx.coroutines.CoroutineScope coroutineScope, kotlin.coroutines.Continuation<? super kotlin.Unit> continuation) {
+                                            return ((androidx.compose.material.DrawerKt$ModalDrawer$1$2$6.AnonymousClass1.C00431) create(coroutineScope, continuation)).invokeSuspend(kotlin.Unit.INSTANCE);
+                                        }
+
+                                        @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+                                        public final java.lang.Object invokeSuspend(java.lang.Object obj) {
+                                            java.lang.Object coroutine_suspended = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED();
+                                            int i = this.label;
+                                            if (i == 0) {
+                                                kotlin.ResultKt.throwOnFailure(obj);
+                                                this.label = 1;
+                                                if (this.$drawerState.close(this) == coroutine_suspended) {
+                                                    return coroutine_suspended;
+                                                }
+                                            } else {
+                                                if (i != 1) {
+                                                    throw new java.lang.IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                                                }
+                                                kotlin.ResultKt.throwOnFailure(obj);
+                                            }
+                                            return kotlin.Unit.INSTANCE;
+                                        }
+                                    }
+                                }, 1, null);
+                            }
+                        }
+                    }, 1, null), shape6, j14, j15, null, f9, androidx.compose.runtime.internal.ComposableLambdaKt.composableLambda(composer3, -1941234439, true, new kotlin.jvm.functions.Function2<androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$ModalDrawer$1$2$7
+                        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                        /* JADX WARN: Multi-variable type inference failed */
+                        {
+                            super(2);
+                        }
+
+                        @Override // kotlin.jvm.functions.Function2
+                        public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.runtime.Composer composer4, java.lang.Integer num) {
+                            invoke(composer4, num.intValue());
+                            return kotlin.Unit.INSTANCE;
+                        }
+
+                        public final void invoke(androidx.compose.runtime.Composer composer4, int i19) {
+                            androidx.compose.runtime.ComposerKt.sourceInformation(composer4, "C459@16456L55:Drawer.kt#jmzs0o");
+                            if ((i19 & 11) == 2 && composer4.getSkipping()) {
+                                composer4.skipToGroupEnd();
+                                return;
+                            }
+                            androidx.compose.ui.Modifier fillMaxSize$default22222 = androidx.compose.foundation.layout.SizeKt.fillMaxSize$default(androidx.compose.ui.Modifier.INSTANCE, 0.0f, 1, null);
+                            kotlin.jvm.functions.Function3<androidx.compose.foundation.layout.ColumnScope, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> function33 = function322222;
+                            int i20 = ((i17 << 9) & 7168) | 6;
+                            composer4.startReplaceableGroup(-483455358);
+                            androidx.compose.runtime.ComposerKt.sourceInformation(composer4, "C(Column)P(2,3,1)77@3880L61,78@3946L133:Column.kt#2w3rfo");
+                            androidx.compose.ui.layout.MeasurePolicy columnMeasurePolicy = androidx.compose.foundation.layout.ColumnKt.columnMeasurePolicy(androidx.compose.foundation.layout.Arrangement.INSTANCE.getTop(), androidx.compose.ui.Alignment.INSTANCE.getStart(), composer4, 0);
+                            composer4.startReplaceableGroup(-1323940314);
+                            androidx.compose.runtime.ComposerKt.sourceInformation(composer4, "C(Layout)P(!1,2)74@2915L7,75@2970L7,76@3029L7,77@3041L460:Layout.kt#80mrfh");
+                            androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.Density> localDensity4 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalDensity();
+                            androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer4, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                            java.lang.Object consume9 = composer4.consume(localDensity4);
+                            androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer4);
+                            androidx.compose.ui.unit.Density density4 = (androidx.compose.ui.unit.Density) consume9;
+                            androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.unit.LayoutDirection> localLayoutDirection4 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalLayoutDirection();
+                            androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer4, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                            java.lang.Object consume10 = composer4.consume(localLayoutDirection4);
+                            androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer4);
+                            androidx.compose.ui.unit.LayoutDirection layoutDirection3 = (androidx.compose.ui.unit.LayoutDirection) consume10;
+                            androidx.compose.runtime.ProvidableCompositionLocal<androidx.compose.ui.platform.ViewConfiguration> localViewConfiguration3 = androidx.compose.ui.platform.CompositionLocalsKt.getLocalViewConfiguration();
+                            androidx.compose.runtime.ComposerKt.sourceInformationMarkerStart(composer4, 2023513938, "C:CompositionLocal.kt#9igjgp");
+                            java.lang.Object consume11 = composer4.consume(localViewConfiguration3);
+                            androidx.compose.runtime.ComposerKt.sourceInformationMarkerEnd(composer4);
+                            androidx.compose.ui.platform.ViewConfiguration viewConfiguration3 = (androidx.compose.ui.platform.ViewConfiguration) consume11;
+                            kotlin.jvm.functions.Function0<androidx.compose.ui.node.ComposeUiNode> constructor3 = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getConstructor();
+                            kotlin.jvm.functions.Function3<androidx.compose.runtime.SkippableUpdater<androidx.compose.ui.node.ComposeUiNode>, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> materializerOf3 = androidx.compose.ui.layout.LayoutKt.materializerOf(fillMaxSize$default22222);
+                            if (!(composer4.getApplier() instanceof androidx.compose.runtime.Applier)) {
+                                androidx.compose.runtime.ComposablesKt.invalidApplier();
+                            }
+                            composer4.startReusableNode();
+                            if (composer4.getInserting()) {
+                                composer4.createNode(constructor3);
+                            } else {
+                                composer4.useNode();
+                            }
+                            composer4.disableReusing();
+                            androidx.compose.runtime.Composer m1641constructorimpl3 = androidx.compose.runtime.Updater.m1641constructorimpl(composer4);
+                            androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl3, columnMeasurePolicy, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+                            androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl3, density4, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetDensity());
+                            androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl3, layoutDirection3, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetLayoutDirection());
+                            androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl3, viewConfiguration3, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetViewConfiguration());
+                            composer4.enableReusing();
+                            materializerOf3.invoke(androidx.compose.runtime.SkippableUpdater.m1632boximpl(androidx.compose.runtime.SkippableUpdater.m1633constructorimpl(composer4)), composer4, 0);
+                            composer4.startReplaceableGroup(2058660585);
+                            composer4.startReplaceableGroup(-1163856341);
+                            androidx.compose.runtime.ComposerKt.sourceInformation(composer4, "C79@3994L9:Column.kt#2w3rfo");
+                            function33.invoke(androidx.compose.foundation.layout.ColumnScopeInstance.INSTANCE, composer4, java.lang.Integer.valueOf(((i20 >> 6) & 112) | 6));
+                            composer4.endReplaceableGroup();
+                            composer4.endReplaceableGroup();
+                            composer4.endNode();
+                            composer4.endReplaceableGroup();
+                            composer4.endReplaceableGroup();
+                        }
+                    }), composer3, ((i17 >> 9) & 112) | 1572864 | (i18 & 896) | (i18 & 7168) | (458752 & i17), 16);
+                    composer3.endReplaceableGroup();
+                    composer3.endReplaceableGroup();
+                    composer3.endReplaceableGroup();
+                    composer3.endNode();
+                    composer3.endReplaceableGroup();
+                    composer3.endReplaceableGroup();
+                    return;
+                }
+                composer3.skipToGroupEnd();
+            }
+        };
+        composer2 = startRestartGroup;
+        androidx.compose.foundation.layout.BoxWithConstraintsKt.BoxWithConstraints(fillMaxSize$default2222, null, false, androidx.compose.runtime.internal.ComposableLambdaKt.composableLambda(composer2, 816674999, true, function32222), composer2, 3072, 6);
+        drawerState5 = drawerState4;
+        z4 = z3;
+        shape4 = shape3;
+        f4 = f3;
+        j11 = j6;
+        modifier4 = modifier52222;
+        endRestartGroup = composer2.endRestartGroup();
+        if (endRestartGroup == null) {
+        }
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:101:0x01c2  */
+    /* JADX WARN: Removed duplicated region for block: B:104:0x01c7  */
+    /* JADX WARN: Removed duplicated region for block: B:106:0x01d9  */
+    /* JADX WARN: Removed duplicated region for block: B:109:0x01e5  */
+    /* JADX WARN: Removed duplicated region for block: B:10:0x0057  */
+    /* JADX WARN: Removed duplicated region for block: B:112:0x01f8  */
+    /* JADX WARN: Removed duplicated region for block: B:115:0x0209  */
+    /* JADX WARN: Removed duplicated region for block: B:116:0x0224  */
+    /* JADX WARN: Removed duplicated region for block: B:117:0x0203  */
+    /* JADX WARN: Removed duplicated region for block: B:118:0x01f2  */
+    /* JADX WARN: Removed duplicated region for block: B:119:0x01e0  */
+    /* JADX WARN: Removed duplicated region for block: B:120:0x01d6  */
+    /* JADX WARN: Removed duplicated region for block: B:121:0x01bf  */
+    /* JADX WARN: Removed duplicated region for block: B:122:0x01ae  */
+    /* JADX WARN: Removed duplicated region for block: B:123:0x0129  */
+    /* JADX WARN: Removed duplicated region for block: B:131:0x011f  */
+    /* JADX WARN: Removed duplicated region for block: B:134:0x0101  */
+    /* JADX WARN: Removed duplicated region for block: B:137:0x00e2  */
+    /* JADX WARN: Removed duplicated region for block: B:138:0x00af  */
+    /* JADX WARN: Removed duplicated region for block: B:147:0x00a5  */
+    /* JADX WARN: Removed duplicated region for block: B:148:0x0075  */
+    /* JADX WARN: Removed duplicated region for block: B:157:0x006c  */
+    /* JADX WARN: Removed duplicated region for block: B:18:0x0072  */
+    /* JADX WARN: Removed duplicated region for block: B:22:0x0090  */
+    /* JADX WARN: Removed duplicated region for block: B:30:0x00ab  */
+    /* JADX WARN: Removed duplicated region for block: B:34:0x00ca  */
+    /* JADX WARN: Removed duplicated region for block: B:42:0x00eb  */
+    /* JADX WARN: Removed duplicated region for block: B:50:0x0109  */
+    /* JADX WARN: Removed duplicated region for block: B:58:0x0125  */
+    /* JADX WARN: Removed duplicated region for block: B:62:0x0143  */
+    /* JADX WARN: Removed duplicated region for block: B:67:0x02d6  */
+    /* JADX WARN: Removed duplicated region for block: B:70:? A[RETURN, SYNTHETIC] */
+    /* JADX WARN: Removed duplicated region for block: B:73:0x016b  */
+    /* JADX WARN: Removed duplicated region for block: B:93:0x0259  */
+    /* JADX WARN: Removed duplicated region for block: B:96:0x01a9  */
+    /* JADX WARN: Removed duplicated region for block: B:99:0x01b4  */
+    @androidx.compose.material.ExperimentalMaterialApi
+    /* renamed from: BottomDrawer-Gs3lGvM, reason: not valid java name */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public static final void m1361BottomDrawerGs3lGvM(final kotlin.jvm.functions.Function3<? super androidx.compose.foundation.layout.ColumnScope, ? super androidx.compose.runtime.Composer, ? super java.lang.Integer, kotlin.Unit> drawerContent, androidx.compose.ui.Modifier modifier, androidx.compose.material.BottomDrawerState bottomDrawerState, boolean z, androidx.compose.ui.graphics.Shape shape, float f, long j, long j2, long j3, final kotlin.jvm.functions.Function2<? super androidx.compose.runtime.Composer, ? super java.lang.Integer, kotlin.Unit> content, androidx.compose.runtime.Composer composer, final int i, final int i2) {
+        int i3;
+        androidx.compose.ui.Modifier modifier2;
+        androidx.compose.material.BottomDrawerState bottomDrawerState2;
+        int i4;
+        boolean z2;
+        androidx.compose.ui.graphics.Shape shape2;
+        int i5;
+        float f2;
+        int i6;
+        androidx.compose.material.BottomDrawerState bottomDrawerState3;
+        androidx.compose.foundation.shape.CornerBasedShape cornerBasedShape;
+        long j4;
+        long j5;
+        long j6;
+        androidx.compose.ui.Modifier modifier3;
+        androidx.compose.material.BottomDrawerState bottomDrawerState4;
+        float f3;
+        long j7;
+        long j8;
+        int i7;
+        androidx.compose.ui.graphics.Shape shape3;
+        boolean z3;
+        java.lang.Object rememberedValue;
+        androidx.compose.runtime.Composer composer2;
+        final androidx.compose.material.BottomDrawerState bottomDrawerState5;
+        final boolean z4;
+        final androidx.compose.ui.graphics.Shape shape4;
+        final float f4;
+        final long j9;
+        final long j10;
+        final long j11;
+        final androidx.compose.ui.Modifier modifier4;
+        androidx.compose.runtime.ScopeUpdateScope endRestartGroup;
+        int i8;
+        int i9;
+        int i10;
+        int i11;
+        int i12;
+        int i13;
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(drawerContent, "drawerContent");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(content, "content");
+        androidx.compose.runtime.Composer startRestartGroup = composer.startRestartGroup(625649286);
+        androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(BottomDrawer)P(2,8,6,7,5,4:c#ui.unit.Dp,1:c#ui.graphics.Color,3:c#ui.graphics.Color,9:c#ui.graphics.Color)499@18420L51,501@18549L6,503@18664L6,504@18712L38,505@18791L10,508@18859L24,510@18889L3335:Drawer.kt#jmzs0o");
+        if ((i2 & 1) != 0) {
+            i3 = i | 6;
+        } else if ((i & 14) == 0) {
+            i3 = (startRestartGroup.changed(drawerContent) ? 4 : 2) | i;
+        } else {
+            i3 = i;
+        }
+        int i14 = i2 & 2;
+        if (i14 != 0) {
+            i3 |= 48;
+        } else if ((i & 112) == 0) {
+            modifier2 = modifier;
+            i3 |= startRestartGroup.changed(modifier2) ? 32 : 16;
+            if ((i & 896) != 0) {
+                if ((i2 & 4) == 0) {
+                    bottomDrawerState2 = bottomDrawerState;
+                    if (startRestartGroup.changed(bottomDrawerState2)) {
+                        i13 = 256;
+                        i3 |= i13;
+                    }
+                } else {
+                    bottomDrawerState2 = bottomDrawerState;
+                }
+                i13 = 128;
+                i3 |= i13;
+            } else {
+                bottomDrawerState2 = bottomDrawerState;
+            }
+            i4 = i2 & 8;
+            if (i4 == 0) {
+                i3 |= 3072;
+            } else if ((i & 7168) == 0) {
+                z2 = z;
+                i3 |= startRestartGroup.changed(z2) ? 2048 : 1024;
+                if ((57344 & i) == 0) {
+                    if ((i2 & 16) == 0) {
+                        shape2 = shape;
+                        if (startRestartGroup.changed(shape2)) {
+                            i12 = 16384;
+                            i3 |= i12;
+                        }
+                    } else {
+                        shape2 = shape;
+                    }
+                    i12 = 8192;
+                    i3 |= i12;
+                } else {
+                    shape2 = shape;
+                }
+                i5 = i2 & 32;
+                if (i5 != 0) {
+                    i3 |= androidx.profileinstaller.ProfileVerifier.CompilationStatus.RESULT_CODE_ERROR_CANT_WRITE_PROFILE_VERIFICATION_RESULT_CACHE_FILE;
+                } else if ((458752 & i) == 0) {
+                    f2 = f;
+                    i3 |= startRestartGroup.changed(f2) ? 131072 : 65536;
+                    if ((3670016 & i) != 0) {
+                        if ((i2 & 64) == 0) {
+                            i6 = i14;
+                            if (startRestartGroup.changed(j)) {
+                                i11 = 1048576;
+                                i3 |= i11;
+                            }
+                        } else {
+                            i6 = i14;
+                        }
+                        i11 = 524288;
+                        i3 |= i11;
+                    } else {
+                        i6 = i14;
+                    }
+                    if ((i & 29360128) == 0) {
+                        if ((i2 & 128) == 0 && startRestartGroup.changed(j2)) {
+                            i10 = 8388608;
+                            i3 |= i10;
+                        }
+                        i10 = 4194304;
+                        i3 |= i10;
+                    }
+                    if ((i & 234881024) == 0) {
+                        if ((i2 & 256) == 0 && startRestartGroup.changed(j3)) {
+                            i9 = androidx.core.view.accessibility.AccessibilityEventCompat.TYPE_VIEW_TARGETED_BY_SCROLL;
+                            i3 |= i9;
+                        }
+                        i9 = 33554432;
+                        i3 |= i9;
+                    }
+                    if ((i2 & 512) != 0) {
+                        i8 = (1879048192 & i) == 0 ? startRestartGroup.changed(content) ? 536870912 : 268435456 : 805306368;
+                        if ((1533916891 & i3) == 306783378 || !startRestartGroup.getSkipping()) {
+                            startRestartGroup.startDefaults();
+                            if ((i & 1) != 0 || startRestartGroup.getDefaultsInvalid()) {
+                                androidx.compose.ui.Modifier.Companion companion = i6 != 0 ? androidx.compose.ui.Modifier.INSTANCE : modifier2;
+                                if ((i2 & 4) != 0) {
+                                    bottomDrawerState3 = rememberBottomDrawerState(androidx.compose.material.BottomDrawerValue.Closed, null, startRestartGroup, 6, 2);
+                                    i3 &= -897;
+                                } else {
+                                    bottomDrawerState3 = bottomDrawerState2;
+                                }
+                                if (i4 != 0) {
+                                    z2 = true;
+                                }
+                                if ((i2 & 16) != 0) {
+                                    cornerBasedShape = androidx.compose.material.MaterialTheme.INSTANCE.getShapes(startRestartGroup, 6).getLarge();
+                                    i3 &= -57345;
+                                } else {
+                                    cornerBasedShape = shape2;
+                                }
+                                float m1360getElevationD9Ej5fM = i5 != 0 ? androidx.compose.material.DrawerDefaults.INSTANCE.m1360getElevationD9Ej5fM() : f2;
+                                if ((i2 & 64) != 0) {
+                                    j4 = androidx.compose.material.MaterialTheme.INSTANCE.getColors(startRestartGroup, 6).m1319getSurface0d7_KjU();
+                                    i3 &= -3670017;
+                                } else {
+                                    j4 = j;
+                                }
+                                if ((i2 & 128) != 0) {
+                                    j5 = androidx.compose.material.ColorsKt.m1333contentColorForek8zF_U(j4, startRestartGroup, (i3 >> 18) & 14);
+                                    i3 &= -29360129;
+                                } else {
+                                    j5 = j2;
+                                }
+                                if ((i2 & 256) != 0) {
+                                    modifier3 = companion;
+                                    bottomDrawerState4 = bottomDrawerState3;
+                                    f3 = m1360getElevationD9Ej5fM;
+                                    j8 = j5;
+                                    j6 = androidx.compose.material.DrawerDefaults.INSTANCE.getScrimColor(startRestartGroup, 6);
+                                    i7 = i3 & (-234881025);
+                                    shape3 = cornerBasedShape;
+                                    z3 = z2;
+                                    j7 = j4;
+                                } else {
+                                    j6 = j3;
+                                    modifier3 = companion;
+                                    bottomDrawerState4 = bottomDrawerState3;
+                                    f3 = m1360getElevationD9Ej5fM;
+                                    j7 = j4;
+                                    j8 = j5;
+                                    i7 = i3;
+                                    shape3 = cornerBasedShape;
+                                    z3 = z2;
+                                }
+                            } else {
+                                startRestartGroup.skipToGroupEnd();
+                                if ((i2 & 4) != 0) {
+                                    i3 &= -897;
+                                }
+                                if ((i2 & 16) != 0) {
+                                    i3 &= -57345;
+                                }
+                                if ((i2 & 64) != 0) {
+                                    i3 &= -3670017;
+                                }
+                                if ((i2 & 128) != 0) {
+                                    i3 &= -29360129;
+                                }
+                                if ((i2 & 256) != 0) {
+                                    i3 &= -234881025;
+                                }
+                                j7 = j;
+                                j8 = j2;
+                                j6 = j3;
+                                modifier3 = modifier2;
+                                bottomDrawerState4 = bottomDrawerState2;
+                                z3 = z2;
+                                shape3 = shape2;
+                                f3 = f2;
+                                i7 = i3;
+                            }
+                            startRestartGroup.endDefaults();
+                            startRestartGroup.startReplaceableGroup(773894976);
+                            androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(rememberCoroutineScope)475@19849L144:Effects.kt#9igjgp");
+                            startRestartGroup.startReplaceableGroup(-492369756);
+                            androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(remember):Composables.kt#9igjgp");
+                            rememberedValue = startRestartGroup.rememberedValue();
+                            if (rememberedValue == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+                                androidx.compose.runtime.CompositionScopedCoroutineScopeCanceller compositionScopedCoroutineScopeCanceller = new androidx.compose.runtime.CompositionScopedCoroutineScopeCanceller(androidx.compose.runtime.EffectsKt.createCompositionCoroutineScope(kotlin.coroutines.EmptyCoroutineContext.INSTANCE, startRestartGroup));
+                                startRestartGroup.updateRememberedValue(compositionScopedCoroutineScopeCanceller);
+                                rememberedValue = compositionScopedCoroutineScopeCanceller;
+                            }
+                            startRestartGroup.endReplaceableGroup();
+                            kotlinx.coroutines.CoroutineScope coroutineScope = ((androidx.compose.runtime.CompositionScopedCoroutineScopeCanceller) rememberedValue).getCoroutineScope();
+                            startRestartGroup.endReplaceableGroup();
+                            androidx.compose.ui.Modifier modifier5 = modifier3;
+                            composer2 = startRestartGroup;
+                            androidx.compose.foundation.layout.BoxWithConstraintsKt.BoxWithConstraints(androidx.compose.foundation.layout.SizeKt.fillMaxSize$default(modifier3, 0.0f, 1, null), null, false, androidx.compose.runtime.internal.ComposableLambdaKt.composableLambda(composer2, 1220102512, true, new androidx.compose.material.DrawerKt$BottomDrawer$1(z3, bottomDrawerState4, content, i7, j6, shape3, j7, j8, f3, coroutineScope, drawerContent)), composer2, 3072, 6);
+                            bottomDrawerState5 = bottomDrawerState4;
+                            z4 = z3;
+                            shape4 = shape3;
+                            f4 = f3;
+                            j9 = j7;
+                            j10 = j8;
+                            j11 = j6;
+                            modifier4 = modifier5;
+                        } else {
+                            startRestartGroup.skipToGroupEnd();
+                            j11 = j3;
+                            modifier4 = modifier2;
+                            bottomDrawerState5 = bottomDrawerState2;
+                            z4 = z2;
+                            shape4 = shape2;
+                            f4 = f2;
+                            composer2 = startRestartGroup;
+                            j9 = j;
+                            j10 = j2;
+                        }
+                        endRestartGroup = composer2.endRestartGroup();
+                        if (endRestartGroup == null) {
+                            return;
+                        }
+                        endRestartGroup.updateScope(new kotlin.jvm.functions.Function2<androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$BottomDrawer$2
+                            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                            /* JADX WARN: Multi-variable type inference failed */
+                            {
+                                super(2);
+                            }
+
+                            @Override // kotlin.jvm.functions.Function2
+                            public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.runtime.Composer composer3, java.lang.Integer num) {
+                                invoke(composer3, num.intValue());
+                                return kotlin.Unit.INSTANCE;
+                            }
+
+                            public final void invoke(androidx.compose.runtime.Composer composer3, int i15) {
+                                androidx.compose.material.DrawerKt.m1361BottomDrawerGs3lGvM(drawerContent, modifier4, bottomDrawerState5, z4, shape4, f4, j9, j10, j11, content, composer3, i | 1, i2);
+                            }
+                        });
+                        return;
+                    }
+                    i3 |= i8;
+                    if ((1533916891 & i3) == 306783378) {
+                    }
+                    startRestartGroup.startDefaults();
+                    if ((i & 1) != 0) {
+                    }
+                    if (i6 != 0) {
+                    }
+                    if ((i2 & 4) != 0) {
+                    }
+                    if (i4 != 0) {
+                    }
+                    if ((i2 & 16) != 0) {
+                    }
+                    if (i5 != 0) {
+                    }
+                    if ((i2 & 64) != 0) {
+                    }
+                    if ((i2 & 128) != 0) {
+                    }
+                    if ((i2 & 256) != 0) {
+                    }
+                    startRestartGroup.endDefaults();
+                    startRestartGroup.startReplaceableGroup(773894976);
+                    androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(rememberCoroutineScope)475@19849L144:Effects.kt#9igjgp");
+                    startRestartGroup.startReplaceableGroup(-492369756);
+                    androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(remember):Composables.kt#9igjgp");
+                    rememberedValue = startRestartGroup.rememberedValue();
+                    if (rememberedValue == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+                    }
+                    startRestartGroup.endReplaceableGroup();
+                    kotlinx.coroutines.CoroutineScope coroutineScope2 = ((androidx.compose.runtime.CompositionScopedCoroutineScopeCanceller) rememberedValue).getCoroutineScope();
+                    startRestartGroup.endReplaceableGroup();
+                    androidx.compose.ui.Modifier modifier52 = modifier3;
+                    composer2 = startRestartGroup;
+                    androidx.compose.foundation.layout.BoxWithConstraintsKt.BoxWithConstraints(androidx.compose.foundation.layout.SizeKt.fillMaxSize$default(modifier3, 0.0f, 1, null), null, false, androidx.compose.runtime.internal.ComposableLambdaKt.composableLambda(composer2, 1220102512, true, new androidx.compose.material.DrawerKt$BottomDrawer$1(z3, bottomDrawerState4, content, i7, j6, shape3, j7, j8, f3, coroutineScope2, drawerContent)), composer2, 3072, 6);
+                    bottomDrawerState5 = bottomDrawerState4;
+                    z4 = z3;
+                    shape4 = shape3;
+                    f4 = f3;
+                    j9 = j7;
+                    j10 = j8;
+                    j11 = j6;
+                    modifier4 = modifier52;
+                    endRestartGroup = composer2.endRestartGroup();
+                    if (endRestartGroup == null) {
+                    }
+                }
+                f2 = f;
+                if ((3670016 & i) != 0) {
+                }
+                if ((i & 29360128) == 0) {
+                }
+                if ((i & 234881024) == 0) {
+                }
+                if ((i2 & 512) != 0) {
+                }
+                i3 |= i8;
+                if ((1533916891 & i3) == 306783378) {
+                }
+                startRestartGroup.startDefaults();
+                if ((i & 1) != 0) {
+                }
+                if (i6 != 0) {
+                }
+                if ((i2 & 4) != 0) {
+                }
+                if (i4 != 0) {
+                }
+                if ((i2 & 16) != 0) {
+                }
+                if (i5 != 0) {
+                }
+                if ((i2 & 64) != 0) {
+                }
+                if ((i2 & 128) != 0) {
+                }
+                if ((i2 & 256) != 0) {
+                }
+                startRestartGroup.endDefaults();
+                startRestartGroup.startReplaceableGroup(773894976);
+                androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(rememberCoroutineScope)475@19849L144:Effects.kt#9igjgp");
+                startRestartGroup.startReplaceableGroup(-492369756);
+                androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(remember):Composables.kt#9igjgp");
+                rememberedValue = startRestartGroup.rememberedValue();
+                if (rememberedValue == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+                }
+                startRestartGroup.endReplaceableGroup();
+                kotlinx.coroutines.CoroutineScope coroutineScope22 = ((androidx.compose.runtime.CompositionScopedCoroutineScopeCanceller) rememberedValue).getCoroutineScope();
+                startRestartGroup.endReplaceableGroup();
+                androidx.compose.ui.Modifier modifier522 = modifier3;
+                composer2 = startRestartGroup;
+                androidx.compose.foundation.layout.BoxWithConstraintsKt.BoxWithConstraints(androidx.compose.foundation.layout.SizeKt.fillMaxSize$default(modifier3, 0.0f, 1, null), null, false, androidx.compose.runtime.internal.ComposableLambdaKt.composableLambda(composer2, 1220102512, true, new androidx.compose.material.DrawerKt$BottomDrawer$1(z3, bottomDrawerState4, content, i7, j6, shape3, j7, j8, f3, coroutineScope22, drawerContent)), composer2, 3072, 6);
+                bottomDrawerState5 = bottomDrawerState4;
+                z4 = z3;
+                shape4 = shape3;
+                f4 = f3;
+                j9 = j7;
+                j10 = j8;
+                j11 = j6;
+                modifier4 = modifier522;
+                endRestartGroup = composer2.endRestartGroup();
+                if (endRestartGroup == null) {
+                }
+            }
+            z2 = z;
+            if ((57344 & i) == 0) {
+            }
+            i5 = i2 & 32;
+            if (i5 != 0) {
+            }
+            f2 = f;
+            if ((3670016 & i) != 0) {
+            }
+            if ((i & 29360128) == 0) {
+            }
+            if ((i & 234881024) == 0) {
+            }
+            if ((i2 & 512) != 0) {
+            }
+            i3 |= i8;
+            if ((1533916891 & i3) == 306783378) {
+            }
+            startRestartGroup.startDefaults();
+            if ((i & 1) != 0) {
+            }
+            if (i6 != 0) {
+            }
+            if ((i2 & 4) != 0) {
+            }
+            if (i4 != 0) {
+            }
+            if ((i2 & 16) != 0) {
+            }
+            if (i5 != 0) {
+            }
+            if ((i2 & 64) != 0) {
+            }
+            if ((i2 & 128) != 0) {
+            }
+            if ((i2 & 256) != 0) {
+            }
+            startRestartGroup.endDefaults();
+            startRestartGroup.startReplaceableGroup(773894976);
+            androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(rememberCoroutineScope)475@19849L144:Effects.kt#9igjgp");
+            startRestartGroup.startReplaceableGroup(-492369756);
+            androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(remember):Composables.kt#9igjgp");
+            rememberedValue = startRestartGroup.rememberedValue();
+            if (rememberedValue == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+            }
+            startRestartGroup.endReplaceableGroup();
+            kotlinx.coroutines.CoroutineScope coroutineScope222 = ((androidx.compose.runtime.CompositionScopedCoroutineScopeCanceller) rememberedValue).getCoroutineScope();
+            startRestartGroup.endReplaceableGroup();
+            androidx.compose.ui.Modifier modifier5222 = modifier3;
+            composer2 = startRestartGroup;
+            androidx.compose.foundation.layout.BoxWithConstraintsKt.BoxWithConstraints(androidx.compose.foundation.layout.SizeKt.fillMaxSize$default(modifier3, 0.0f, 1, null), null, false, androidx.compose.runtime.internal.ComposableLambdaKt.composableLambda(composer2, 1220102512, true, new androidx.compose.material.DrawerKt$BottomDrawer$1(z3, bottomDrawerState4, content, i7, j6, shape3, j7, j8, f3, coroutineScope222, drawerContent)), composer2, 3072, 6);
+            bottomDrawerState5 = bottomDrawerState4;
+            z4 = z3;
+            shape4 = shape3;
+            f4 = f3;
+            j9 = j7;
+            j10 = j8;
+            j11 = j6;
+            modifier4 = modifier5222;
+            endRestartGroup = composer2.endRestartGroup();
+            if (endRestartGroup == null) {
+            }
+        }
+        modifier2 = modifier;
+        if ((i & 896) != 0) {
+        }
+        i4 = i2 & 8;
+        if (i4 == 0) {
+        }
+        z2 = z;
+        if ((57344 & i) == 0) {
+        }
+        i5 = i2 & 32;
+        if (i5 != 0) {
+        }
+        f2 = f;
+        if ((3670016 & i) != 0) {
+        }
+        if ((i & 29360128) == 0) {
+        }
+        if ((i & 234881024) == 0) {
+        }
+        if ((i2 & 512) != 0) {
+        }
+        i3 |= i8;
+        if ((1533916891 & i3) == 306783378) {
+        }
+        startRestartGroup.startDefaults();
+        if ((i & 1) != 0) {
+        }
+        if (i6 != 0) {
+        }
+        if ((i2 & 4) != 0) {
+        }
+        if (i4 != 0) {
+        }
+        if ((i2 & 16) != 0) {
+        }
+        if (i5 != 0) {
+        }
+        if ((i2 & 64) != 0) {
+        }
+        if ((i2 & 128) != 0) {
+        }
+        if ((i2 & 256) != 0) {
+        }
+        startRestartGroup.endDefaults();
+        startRestartGroup.startReplaceableGroup(773894976);
+        androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(rememberCoroutineScope)475@19849L144:Effects.kt#9igjgp");
+        startRestartGroup.startReplaceableGroup(-492369756);
+        androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(remember):Composables.kt#9igjgp");
+        rememberedValue = startRestartGroup.rememberedValue();
+        if (rememberedValue == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+        }
+        startRestartGroup.endReplaceableGroup();
+        kotlinx.coroutines.CoroutineScope coroutineScope2222 = ((androidx.compose.runtime.CompositionScopedCoroutineScopeCanceller) rememberedValue).getCoroutineScope();
+        startRestartGroup.endReplaceableGroup();
+        androidx.compose.ui.Modifier modifier52222 = modifier3;
+        composer2 = startRestartGroup;
+        androidx.compose.foundation.layout.BoxWithConstraintsKt.BoxWithConstraints(androidx.compose.foundation.layout.SizeKt.fillMaxSize$default(modifier3, 0.0f, 1, null), null, false, androidx.compose.runtime.internal.ComposableLambdaKt.composableLambda(composer2, 1220102512, true, new androidx.compose.material.DrawerKt$BottomDrawer$1(z3, bottomDrawerState4, content, i7, j6, shape3, j7, j8, f3, coroutineScope2222, drawerContent)), composer2, 3072, 6);
+        bottomDrawerState5 = bottomDrawerState4;
+        z4 = z3;
+        shape4 = shape3;
+        f4 = f3;
+        j9 = j7;
+        j10 = j8;
+        j11 = j6;
+        modifier4 = modifier52222;
+        endRestartGroup = composer2.endRestartGroup();
+        if (endRestartGroup == null) {
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final float calculateFraction(float f, float f2, float f3) {
+        return kotlin.ranges.RangesKt.coerceIn((f3 - f) / (f2 - f), 0.0f, 1.0f);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* renamed from: BottomDrawerScrim-3J-VO9M, reason: not valid java name */
+    public static final void m1362BottomDrawerScrim3JVO9M(final long j, final kotlin.jvm.functions.Function0<kotlin.Unit> function0, final boolean z, androidx.compose.runtime.Composer composer, final int i) {
+        int i2;
+        androidx.compose.ui.Modifier.Companion companion;
+        androidx.compose.runtime.Composer startRestartGroup = composer.startRestartGroup(-513067266);
+        androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(BottomDrawerScrim)P(0:c#ui.graphics.Color)625@22930L121,629@23078L30,647@23631L62,643@23522L171:Drawer.kt#jmzs0o");
+        if ((i & 14) == 0) {
+            i2 = (startRestartGroup.changed(j) ? 4 : 2) | i;
+        } else {
+            i2 = i;
+        }
+        if ((i & 112) == 0) {
+            i2 |= startRestartGroup.changed(function0) ? 32 : 16;
+        }
+        if ((i & 896) == 0) {
+            i2 |= startRestartGroup.changed(z) ? 256 : 128;
+        }
+        if ((i2 & 731) == 146 && startRestartGroup.getSkipping()) {
+            startRestartGroup.skipToGroupEnd();
+        } else if (j != androidx.compose.ui.graphics.Color.INSTANCE.m2149getUnspecified0d7_KjU()) {
+            final androidx.compose.runtime.State animateFloatAsState = androidx.compose.animation.core.AnimateAsStateKt.animateFloatAsState(z ? 1.0f : 0.0f, new androidx.compose.animation.core.TweenSpec(0, 0, null, 7, null), 0.0f, null, startRestartGroup, 0, 12);
+            final java.lang.String m1509getString4foXLRw = androidx.compose.material.Strings_androidKt.m1509getString4foXLRw(androidx.compose.material.Strings.INSTANCE.m1502getCloseDrawerUdPEhr4(), startRestartGroup, 6);
+            startRestartGroup.startReplaceableGroup(-1298949409);
+            androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "632@23216L73,635@23342L122");
+            if (z) {
+                androidx.compose.ui.Modifier.Companion companion2 = androidx.compose.ui.Modifier.INSTANCE;
+                startRestartGroup.startReplaceableGroup(1157296644);
+                androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(remember)P(1):Composables.kt#9igjgp");
+                boolean changed = startRestartGroup.changed(function0);
+                androidx.compose.material.DrawerKt$BottomDrawerScrim$dismissModifier$1$1 rememberedValue = startRestartGroup.rememberedValue();
+                if (changed || rememberedValue == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+                    rememberedValue = new androidx.compose.material.DrawerKt$BottomDrawerScrim$dismissModifier$1$1(function0, null);
+                    startRestartGroup.updateRememberedValue(rememberedValue);
+                }
+                startRestartGroup.endReplaceableGroup();
+                androidx.compose.ui.Modifier pointerInput = androidx.compose.ui.input.pointer.SuspendingPointerInputFilterKt.pointerInput(companion2, function0, (kotlin.jvm.functions.Function2<? super androidx.compose.ui.input.pointer.PointerInputScope, ? super kotlin.coroutines.Continuation<? super kotlin.Unit>, ? extends java.lang.Object>) rememberedValue);
+                startRestartGroup.startReplaceableGroup(511388516);
+                androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(remember)P(1,2):Composables.kt#9igjgp");
+                boolean changed2 = startRestartGroup.changed(m1509getString4foXLRw) | startRestartGroup.changed(function0);
+                java.lang.Object rememberedValue2 = startRestartGroup.rememberedValue();
+                if (changed2 || rememberedValue2 == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+                    rememberedValue2 = (kotlin.jvm.functions.Function1) new kotlin.jvm.functions.Function1<androidx.compose.ui.semantics.SemanticsPropertyReceiver, kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$BottomDrawerScrim$dismissModifier$2$1
+                        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                        {
+                            super(1);
+                        }
+
+                        @Override // kotlin.jvm.functions.Function1
+                        public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.ui.semantics.SemanticsPropertyReceiver semanticsPropertyReceiver) {
+                            invoke2(semanticsPropertyReceiver);
+                            return kotlin.Unit.INSTANCE;
+                        }
+
+                        /* renamed from: invoke, reason: avoid collision after fix types in other method */
+                        public final void invoke2(androidx.compose.ui.semantics.SemanticsPropertyReceiver semantics) {
+                            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(semantics, "$this$semantics");
+                            androidx.compose.ui.semantics.SemanticsPropertiesKt.setContentDescription(semantics, m1509getString4foXLRw);
+                            final kotlin.jvm.functions.Function0<kotlin.Unit> function02 = function0;
+                            androidx.compose.ui.semantics.SemanticsPropertiesKt.onClick$default(semantics, null, new kotlin.jvm.functions.Function0<java.lang.Boolean>() { // from class: androidx.compose.material.DrawerKt$BottomDrawerScrim$dismissModifier$2$1.1
+                                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                {
+                                    super(0);
+                                }
+
+                                /* JADX WARN: Can't rename method to resolve collision */
+                                @Override // kotlin.jvm.functions.Function0
+                                public final java.lang.Boolean invoke() {
+                                    function02.invoke();
+                                    return true;
+                                }
+                            }, 1, null);
+                        }
+                    };
+                    startRestartGroup.updateRememberedValue(rememberedValue2);
+                }
+                startRestartGroup.endReplaceableGroup();
+                companion = androidx.compose.ui.semantics.SemanticsModifierKt.semantics(pointerInput, true, (kotlin.jvm.functions.Function1) rememberedValue2);
+            } else {
+                companion = androidx.compose.ui.Modifier.INSTANCE;
+            }
+            startRestartGroup.endReplaceableGroup();
+            androidx.compose.ui.Modifier then = androidx.compose.foundation.layout.SizeKt.fillMaxSize$default(androidx.compose.ui.Modifier.INSTANCE, 0.0f, 1, null).then(companion);
+            androidx.compose.ui.graphics.Color m2103boximpl = androidx.compose.ui.graphics.Color.m2103boximpl(j);
+            startRestartGroup.startReplaceableGroup(511388516);
+            androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(remember)P(1,2):Composables.kt#9igjgp");
+            boolean changed3 = startRestartGroup.changed(m2103boximpl) | startRestartGroup.changed(animateFloatAsState);
+            java.lang.Object rememberedValue3 = startRestartGroup.rememberedValue();
+            if (changed3 || rememberedValue3 == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+                rememberedValue3 = (kotlin.jvm.functions.Function1) new kotlin.jvm.functions.Function1<androidx.compose.ui.graphics.drawscope.DrawScope, kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$BottomDrawerScrim$1$1
+                    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                    {
+                        super(1);
+                    }
+
+                    @Override // kotlin.jvm.functions.Function1
+                    public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.ui.graphics.drawscope.DrawScope drawScope) {
+                        invoke2(drawScope);
+                        return kotlin.Unit.INSTANCE;
+                    }
+
+                    /* renamed from: invoke, reason: avoid collision after fix types in other method */
+                    public final void invoke2(androidx.compose.ui.graphics.drawscope.DrawScope Canvas) {
+                        float m1363BottomDrawerScrim_3J_VO9M$lambda0;
+                        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(Canvas, "$this$Canvas");
+                        long j2 = j;
+                        m1363BottomDrawerScrim_3J_VO9M$lambda0 = androidx.compose.material.DrawerKt.m1363BottomDrawerScrim_3J_VO9M$lambda0(animateFloatAsState);
+                        androidx.compose.ui.graphics.drawscope.DrawScope.CC.m2672drawRectnJ9OG0$default(Canvas, j2, 0L, 0L, m1363BottomDrawerScrim_3J_VO9M$lambda0, null, null, 0, 118, null);
+                    }
+                };
+                startRestartGroup.updateRememberedValue(rememberedValue3);
+            }
+            startRestartGroup.endReplaceableGroup();
+            androidx.compose.foundation.CanvasKt.Canvas(then, (kotlin.jvm.functions.Function1) rememberedValue3, startRestartGroup, 0);
+        }
+        androidx.compose.runtime.ScopeUpdateScope endRestartGroup = startRestartGroup.endRestartGroup();
+        if (endRestartGroup == null) {
+            return;
+        }
+        endRestartGroup.updateScope(new kotlin.jvm.functions.Function2<androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$BottomDrawerScrim$2
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            {
+                super(2);
+            }
+
+            @Override // kotlin.jvm.functions.Function2
+            public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.runtime.Composer composer2, java.lang.Integer num) {
+                invoke(composer2, num.intValue());
+                return kotlin.Unit.INSTANCE;
+            }
+
+            public final void invoke(androidx.compose.runtime.Composer composer2, int i3) {
+                androidx.compose.material.DrawerKt.m1362BottomDrawerScrim3JVO9M(j, function0, z, composer2, i | 1);
+            }
+        });
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* renamed from: Scrim-Bx497Mc, reason: not valid java name */
+    public static final void m1365ScrimBx497Mc(final boolean z, final kotlin.jvm.functions.Function0<kotlin.Unit> function0, final kotlin.jvm.functions.Function0<java.lang.Float> function02, final long j, androidx.compose.runtime.Composer composer, final int i) {
+        int i2;
+        androidx.compose.ui.Modifier.Companion companion;
+        androidx.compose.runtime.Composer startRestartGroup = composer.startRestartGroup(1983403750);
+        androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(Scrim)P(3,2,1,0:c#ui.graphics.Color)660@23848L30,676@24292L51,672@24201L142:Drawer.kt#jmzs0o");
+        if ((i & 14) == 0) {
+            i2 = (startRestartGroup.changed(z) ? 4 : 2) | i;
+        } else {
+            i2 = i;
+        }
+        if ((i & 112) == 0) {
+            i2 |= startRestartGroup.changed(function0) ? 32 : 16;
+        }
+        if ((i & 896) == 0) {
+            i2 |= startRestartGroup.changed(function02) ? 256 : 128;
+        }
+        if ((i & 7168) == 0) {
+            i2 |= startRestartGroup.changed(j) ? 2048 : 1024;
+        }
+        if ((i2 & 5851) != 1170 || !startRestartGroup.getSkipping()) {
+            final java.lang.String m1509getString4foXLRw = androidx.compose.material.Strings_androidKt.m1509getString4foXLRw(androidx.compose.material.Strings.INSTANCE.m1502getCloseDrawerUdPEhr4(), startRestartGroup, 6);
+            startRestartGroup.startReplaceableGroup(1010554047);
+            androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "663@23967L35,664@24051L108");
+            if (z) {
+                androidx.compose.ui.Modifier.Companion companion2 = androidx.compose.ui.Modifier.INSTANCE;
+                startRestartGroup.startReplaceableGroup(1157296644);
+                androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(remember)P(1):Composables.kt#9igjgp");
+                boolean changed = startRestartGroup.changed(function0);
+                androidx.compose.material.DrawerKt$Scrim$dismissDrawer$1$1 rememberedValue = startRestartGroup.rememberedValue();
+                if (changed || rememberedValue == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+                    rememberedValue = new androidx.compose.material.DrawerKt$Scrim$dismissDrawer$1$1(function0, null);
+                    startRestartGroup.updateRememberedValue(rememberedValue);
+                }
+                startRestartGroup.endReplaceableGroup();
+                androidx.compose.ui.Modifier pointerInput = androidx.compose.ui.input.pointer.SuspendingPointerInputFilterKt.pointerInput(companion2, function0, (kotlin.jvm.functions.Function2<? super androidx.compose.ui.input.pointer.PointerInputScope, ? super kotlin.coroutines.Continuation<? super kotlin.Unit>, ? extends java.lang.Object>) rememberedValue);
+                startRestartGroup.startReplaceableGroup(511388516);
+                androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(remember)P(1,2):Composables.kt#9igjgp");
+                boolean changed2 = startRestartGroup.changed(m1509getString4foXLRw) | startRestartGroup.changed(function0);
+                java.lang.Object rememberedValue2 = startRestartGroup.rememberedValue();
+                if (changed2 || rememberedValue2 == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+                    rememberedValue2 = (kotlin.jvm.functions.Function1) new kotlin.jvm.functions.Function1<androidx.compose.ui.semantics.SemanticsPropertyReceiver, kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$Scrim$dismissDrawer$2$1
+                        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                        {
+                            super(1);
+                        }
+
+                        @Override // kotlin.jvm.functions.Function1
+                        public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.ui.semantics.SemanticsPropertyReceiver semanticsPropertyReceiver) {
+                            invoke2(semanticsPropertyReceiver);
+                            return kotlin.Unit.INSTANCE;
+                        }
+
+                        /* renamed from: invoke, reason: avoid collision after fix types in other method */
+                        public final void invoke2(androidx.compose.ui.semantics.SemanticsPropertyReceiver semantics) {
+                            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(semantics, "$this$semantics");
+                            androidx.compose.ui.semantics.SemanticsPropertiesKt.setContentDescription(semantics, m1509getString4foXLRw);
+                            final kotlin.jvm.functions.Function0<kotlin.Unit> function03 = function0;
+                            androidx.compose.ui.semantics.SemanticsPropertiesKt.onClick$default(semantics, null, new kotlin.jvm.functions.Function0<java.lang.Boolean>() { // from class: androidx.compose.material.DrawerKt$Scrim$dismissDrawer$2$1.1
+                                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                {
+                                    super(0);
+                                }
+
+                                /* JADX WARN: Can't rename method to resolve collision */
+                                @Override // kotlin.jvm.functions.Function0
+                                public final java.lang.Boolean invoke() {
+                                    function03.invoke();
+                                    return true;
+                                }
+                            }, 1, null);
+                        }
+                    };
+                    startRestartGroup.updateRememberedValue(rememberedValue2);
+                }
+                startRestartGroup.endReplaceableGroup();
+                companion = androidx.compose.ui.semantics.SemanticsModifierKt.semantics(pointerInput, true, (kotlin.jvm.functions.Function1) rememberedValue2);
+            } else {
+                companion = androidx.compose.ui.Modifier.INSTANCE;
+            }
+            startRestartGroup.endReplaceableGroup();
+            androidx.compose.ui.Modifier then = androidx.compose.foundation.layout.SizeKt.fillMaxSize$default(androidx.compose.ui.Modifier.INSTANCE, 0.0f, 1, null).then(companion);
+            androidx.compose.ui.graphics.Color m2103boximpl = androidx.compose.ui.graphics.Color.m2103boximpl(j);
+            startRestartGroup.startReplaceableGroup(511388516);
+            androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(remember)P(1,2):Composables.kt#9igjgp");
+            boolean changed3 = startRestartGroup.changed(m2103boximpl) | startRestartGroup.changed(function02);
+            java.lang.Object rememberedValue3 = startRestartGroup.rememberedValue();
+            if (changed3 || rememberedValue3 == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+                rememberedValue3 = (kotlin.jvm.functions.Function1) new kotlin.jvm.functions.Function1<androidx.compose.ui.graphics.drawscope.DrawScope, kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$Scrim$1$1
+                    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                    {
+                        super(1);
+                    }
+
+                    @Override // kotlin.jvm.functions.Function1
+                    public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.ui.graphics.drawscope.DrawScope drawScope) {
+                        invoke2(drawScope);
+                        return kotlin.Unit.INSTANCE;
+                    }
+
+                    /* renamed from: invoke, reason: avoid collision after fix types in other method */
+                    public final void invoke2(androidx.compose.ui.graphics.drawscope.DrawScope Canvas) {
+                        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(Canvas, "$this$Canvas");
+                        androidx.compose.ui.graphics.drawscope.DrawScope.CC.m2672drawRectnJ9OG0$default(Canvas, j, 0L, 0L, function02.invoke().floatValue(), null, null, 0, 118, null);
+                    }
+                };
+                startRestartGroup.updateRememberedValue(rememberedValue3);
+            }
+            startRestartGroup.endReplaceableGroup();
+            androidx.compose.foundation.CanvasKt.Canvas(then, (kotlin.jvm.functions.Function1) rememberedValue3, startRestartGroup, 0);
+        } else {
+            startRestartGroup.skipToGroupEnd();
+        }
+        androidx.compose.runtime.ScopeUpdateScope endRestartGroup = startRestartGroup.endRestartGroup();
+        if (endRestartGroup == null) {
+            return;
+        }
+        endRestartGroup.updateScope(new kotlin.jvm.functions.Function2<androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit>() { // from class: androidx.compose.material.DrawerKt$Scrim$2
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            {
+                super(2);
+            }
+
+            @Override // kotlin.jvm.functions.Function2
+            public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.runtime.Composer composer2, java.lang.Integer num) {
+                invoke(composer2, num.intValue());
+                return kotlin.Unit.INSTANCE;
+            }
+
+            public final void invoke(androidx.compose.runtime.Composer composer2, int i3) {
+                androidx.compose.material.DrawerKt.m1365ScrimBx497Mc(z, function0, function02, j, composer2, i | 1);
+            }
+        });
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* renamed from: BottomDrawerScrim_3J_VO9M$lambda-0, reason: not valid java name */
+    public static final float m1363BottomDrawerScrim_3J_VO9M$lambda0(androidx.compose.runtime.State<java.lang.Float> state) {
+        return state.getValue().floatValue();
+    }
+}

@@ -1,0 +1,22 @@
+package com.facebook.ads.redexgen.core;
+
+/* loaded from: assets/audience_network/classes2.dex */
+public class U1 implements com.facebook.ads.AudienceNetworkAds.InitResult {
+    public final java.lang.String A00;
+    public final boolean A01;
+
+    public U1(boolean z, java.lang.String str) {
+        this.A01 = z;
+        this.A00 = str;
+    }
+
+    @Override // com.facebook.ads.AudienceNetworkAds.InitResult
+    public final java.lang.String getMessage() {
+        return this.A00;
+    }
+
+    @Override // com.facebook.ads.AudienceNetworkAds.InitResult
+    public final boolean isSuccess() {
+        return this.A01;
+    }
+}

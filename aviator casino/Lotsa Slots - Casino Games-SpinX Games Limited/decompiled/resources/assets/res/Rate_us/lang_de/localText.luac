@@ -1,0 +1,45 @@
+
+
+ local translateConfig = {
+	Qusetion = {
+		[1] = {
+			[1] = {
+				Name = "Technisch",
+				Next = 2,
+			},
+			[2] = {
+				Name = "Auszahlungen",
+				Next = 3,
+			},
+			[3] = {
+				Name = "Spielerlebnis",
+				Next = 4,
+			},
+			[4] = "Sonstige (bitte angeben)",
+		},
+		[2] = {
+			[1] = "Das Spiel ist träge",
+			[2] = "Langsam laden",
+			[3] = "Kaufproblem",
+			[4] = "Grafik durcheinander",
+			[5] = "Sonstige (bitte angeben)"
+		},
+		[3] = {
+			[1] = "Nicht genug Big/Mega-wins",
+			[2] = "Nicht genug Münzen gewonnen",
+			[3] = "Zu schwer zu gewinnen",
+			[4] = "Nicht genug Bonusspiele",
+			[5] = "Sonstige (bitte angeben)"
+		},
+		[4] = {
+			[1] = "Die Themen sind nicht interessant.",
+			[2] = "Nicht genug Aktivitäten",
+			[3] = "Nicht genug Boni bei Aktivitäten",
+			[4] = "Einige Spielinhalte sind schwer zu verstehen.",
+			[5] = "Ich kann nicht mit meinen Freunden spielen",
+			[6] = "Sonstige (bitte angeben)"
+		}
+	}
+
+}
+return translateConfig 

@@ -1,0 +1,174 @@
+
+scratchactive_active.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+guaqi
+  rotate: false
+  xy: 428, 874
+  size: 422, 134
+  orig: 422, 134
+  offset: 0, 0
+  index: -1
+prize
+  rotate: false
+  xy: 783, 652
+  size: 175, 82
+  orig: 175, 82
+  offset: 0, 0
+  index: -1
+shuchu/1_00
+  rotate: false
+  xy: 2, 873
+  size: 424, 135
+  orig: 513, 480
+  offset: 49, 148
+  index: -1
+shuchu/1_01
+  rotate: false
+  xy: 2, 736
+  size: 424, 135
+  orig: 513, 480
+  offset: 49, 148
+  index: -1
+shuchu/1_02
+  rotate: false
+  xy: 2, 599
+  size: 416, 135
+  orig: 513, 480
+  offset: 49, 148
+  index: -1
+shuchu/1_03
+  rotate: false
+  xy: 428, 737
+  size: 398, 135
+  orig: 513, 480
+  offset: 49, 148
+  index: -1
+shuchu/1_04
+  rotate: false
+  xy: 2, 462
+  size: 398, 135
+  orig: 513, 480
+  offset: 49, 148
+  index: -1
+shuchu/1_05
+  rotate: false
+  xy: 2, 325
+  size: 398, 135
+  orig: 513, 480
+  offset: 49, 148
+  index: -1
+shuchu/1_06
+  rotate: false
+  xy: 2, 188
+  size: 398, 135
+  orig: 513, 480
+  offset: 49, 148
+  index: -1
+shuchu/1_07
+  rotate: false
+  xy: 2, 51
+  size: 327, 135
+  orig: 513, 480
+  offset: 49, 148
+  index: -1
+shuchu/1_08
+  rotate: true
+  xy: 402, 327
+  size: 270, 135
+  orig: 513, 480
+  offset: 49, 148
+  index: -1
+shuchu/1_09
+  rotate: true
+  xy: 402, 55
+  size: 270, 135
+  orig: 513, 480
+  offset: 49, 148
+  index: -1
+shuchu/1_10
+  rotate: false
+  xy: 428, 600
+  size: 270, 135
+  orig: 513, 480
+  offset: 49, 148
+  index: -1
+shuchu/1_11
+  rotate: true
+  xy: 539, 328
+  size: 270, 135
+  orig: 513, 480
+  offset: 49, 148
+  index: -1
+shuchu/1_12
+  rotate: true
+  xy: 539, 56
+  size: 270, 135
+  orig: 513, 480
+  offset: 49, 148
+  index: -1
+shuchu/1_13
+  rotate: true
+  xy: 676, 394
+  size: 204, 135
+  orig: 513, 480
+  offset: 49, 148
+  index: -1
+shuchu/1_14
+  rotate: false
+  xy: 852, 873
+  size: 158, 135
+  orig: 513, 480
+  offset: 49, 148
+  index: -1
+shuchu/1_15
+  rotate: false
+  xy: 828, 736
+  size: 153, 135
+  orig: 513, 480
+  offset: 49, 148
+  index: -1
+shuchu/1_16
+  rotate: true
+  xy: 676, 239
+  size: 153, 135
+  orig: 513, 480
+  offset: 49, 148
+  index: -1
+shuchu/1_17
+  rotate: true
+  xy: 676, 84
+  size: 153, 135
+  orig: 513, 480
+  offset: 49, 148
+  index: -1
+shuchu/1_18
+  rotate: true
+  xy: 813, 497
+  size: 153, 135
+  orig: 513, 480
+  offset: 49, 148
+  index: -1
+shuchu/1_19
+  rotate: false
+  xy: 700, 600
+  size: 81, 135
+  orig: 513, 480
+  offset: 49, 148
+  index: -1
+shuchu/1_20
+  rotate: true
+  xy: 2, 13
+  size: 36, 135
+  orig: 513, 480
+  offset: 49, 148
+  index: -1
+shuchu/1_21
+  rotate: false
+  xy: 331, 131
+  size: 25, 55
+  orig: 513, 480
+  offset: 49, 148
+  index: -1

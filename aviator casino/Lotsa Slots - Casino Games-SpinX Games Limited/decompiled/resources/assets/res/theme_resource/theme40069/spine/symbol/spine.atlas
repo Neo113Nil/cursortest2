@@ -1,0 +1,69 @@
+
+1-8.pkm
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 2, 4
+  size: 310, 333
+  orig: 442, 417
+  offset: 70, 30
+  index: -1
+2
+  rotate: false
+  xy: 2, 656
+  size: 437, 360
+  orig: 442, 417
+  offset: 0, 0
+  index: -1
+3
+  rotate: false
+  xy: 2, 339
+  size: 394, 315
+  orig: 442, 417
+  offset: 48, 39
+  index: -1
+4
+  rotate: false
+  xy: 441, 723
+  size: 401, 293
+  orig: 442, 417
+  offset: 0, 51
+  index: -1
+5
+  rotate: true
+  xy: 747, 431
+  size: 290, 239
+  orig: 442, 417
+  offset: 76, 89
+  index: -1
+6
+  rotate: false
+  xy: 441, 448
+  size: 304, 273
+  orig: 442, 417
+  offset: 68, 85
+  index: -1
+7
+  rotate: true
+  xy: 314, 2
+  size: 335, 254
+  orig: 442, 417
+  offset: 72, 80
+  index: -1
+8
+  rotate: false
+  xy: 570, 183
+  size: 231, 246
+  orig: 442, 417
+  offset: 95, 80
+  index: -1
+texiao/guang
+  rotate: false
+  xy: 844, 914
+  size: 102, 102
+  orig: 218, 218
+  offset: 58, 58
+  index: -1

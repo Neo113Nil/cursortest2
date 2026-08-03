@@ -1,0 +1,11 @@
+
+local translateConfig = {
+    a_header_unlockat = "DÉBLOQUÉ AU",
+    a_header_level = "NIVEAU",
+    a_header_scratcher_every15minutes = "TICKET À GRATTER GRATUIT TOUTES LES 15 MINUTES !",
+    a_header_scratcher_morespin = "PLUS DE TOURS = MULTIPLICATEUR PLUS ÉLEVÉ !",
+    a_header_scratcher_resetperday = "*Le multiplicateur se réinitialise une fois par jour",
+    a_header_scratcher_maxedout = "VOUS AVEZ ATTEINT VOTRE LIMITE DE GRATTAGE POUR AUJOURD'HUI ! GRATTEZ À NOUVEAU DANS",
+}
+
+return translateConfig

@@ -1,0 +1,12 @@
+
+
+ local translateConfig = {
+	a_header_unlockat = "UNLOCK AT",
+	a_header_level = "LEVEL",
+	a_header_scratcher_every15minutes = "FREE SCRATCHER EVERY 15 MINUTES!",
+	a_header_scratcher_morespin = "MORE SPINS = HIGHER MULTIPLIER!",
+	a_header_scratcher_resetperday = "*Multiplier will reset once per day",
+	a_header_scratcher_maxedout = "YOU MAXED OUT YOUR SCRATCHES FOR TODAY! SCRATCH AGAIN IN",
+
+}
+return translateConfig 

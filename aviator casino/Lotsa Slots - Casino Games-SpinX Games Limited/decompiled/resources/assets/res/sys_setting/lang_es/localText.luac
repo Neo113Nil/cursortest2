@@ -1,0 +1,31 @@
+
+
+ local translateConfig = {
+	a_setting_change = "El juego se reiniciará si cambias el",
+	a_setting_toenglish = "Cambiar a Inglés. ¿Continuar?",
+	a_setting_togerman = "Cambiar a Alemán. ¿Continuar?",
+	a_setting_tospanish = "Cambiar a Español. ¿Continuar?",
+	a_setting_connected = "CONECTADO",
+	a_setting_invitationcode_enter1 = "INGRESAR EL CÓDIGO DE INVITACIÓN",
+	a_setting_invitationcode_enter2 = "INGRESAR TU CÓDIGO DE INVITACIÓN EN LA CAJA",
+	a_setting_invitationcode_limited1 = "LO SIENTO, ESTE CÓDIGO ESTÁ LIMITADO A NUEVAS CUENTAS",
+	a_setting_invitationcode_limited2 = "Y CUENTAS REACTICADAS",
+	a_setting_deleteaccount1 = "ESTO ENVIARÁ TU SOLICITUD AL SOPORTE",
+	a_setting_deleteaccount2 = "AL CLIENTE. TU CUENTA Y TODOS TUS",
+	a_setting_deleteaccount3 = "DATOS SERÁN ELIMINADOS DE",
+	a_setting_deleteaccount4 = "MANERA PERMANENTE EN 15 DÍAS.",
+	a_setting_sms_enterphonenumber = "Ingresa el códig",
+	a_setting_sms_enterverificationcode = "Ingresa el código de verificación",
+	a_setting_sms_safeterms1 = "Estoy de acuerdo con los Términos de Servicio y la Política de Privacidad de Lotsa Slots.",
+	a_setting_sms_safeterms2 = "Acepto recibir mensajes de texto de Lotsa Slots. Permites que Lotsa Slots te envíe mensajes de texto al número de teléfono proporcionado. Pueden aplicarse tarifas de mensajes y datos. Puedes darte de baja en cualquier momento respondiendo STOP.",
+	a_setting_sms_verificationcodelimit = "Límite de código de verificación: 3 veces/día",
+	a_setting_sms_invalidvertificationcode = "Código inválido",
+	a_setting_sms_entercorrectnumber = "Ingresa el número correcto",
+	a_setting_sms_invalidphonenumber1 = "Número o código inválido",
+	a_setting_sms_reachedupperlimit1 = "El número o las solicitudes de hoy han alcanzado el límite superior. Por favor, intenta nuevamente después de 24 horas.",
+	a_setting_sms_hasbeenbinded1 = "Este número de teléfono ya está vinculado a una cuenta de juego.",
+	a_setting_sms_expired_code = "CÓDIGO DE VERIFICACIÓN CADUCADO",
+	a_setting_invitationcode_wrong = "Código incorrecto, por favor ingresa de nuevo",
+	a_setting_version = "Versión:"
+}
+return translateConfig

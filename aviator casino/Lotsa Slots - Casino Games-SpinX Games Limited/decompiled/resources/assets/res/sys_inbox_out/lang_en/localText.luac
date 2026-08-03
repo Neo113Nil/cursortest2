@@ -1,0 +1,7 @@
+
+
+ local translateConfig = {
+	a_Badge_Unlock = "UNLOCK AT LEVEL 100!",
+
+}
+return translateConfig 

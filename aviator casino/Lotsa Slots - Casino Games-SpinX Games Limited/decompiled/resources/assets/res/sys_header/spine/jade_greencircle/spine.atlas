@@ -1,0 +1,13 @@
+
+jade_greencircle.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+gfx_ring_191
+  rotate: false
+  xy: 2, 2
+  size: 254, 254
+  orig: 254, 254
+  offset: 0, 0
+  index: -1

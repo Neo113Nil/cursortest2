@@ -1,0 +1,151 @@
+
+jindu_light_effect.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bar_1/a_00
+  rotate: false
+  xy: 276, 2
+  size: 223, 110
+  orig: 360, 136
+  offset: 74, 13
+  index: -1
+bar_1/a_01
+  rotate: false
+  xy: 276, 114
+  size: 234, 120
+  orig: 360, 136
+  offset: 70, 8
+  index: -1
+bar_1/a_10
+  rotate: false
+  xy: 2, 98
+  size: 272, 136
+  orig: 360, 136
+  offset: 55, 0
+  index: -1
+bar_1/a_11
+  rotate: false
+  xy: 2, 374
+  size: 275, 136
+  orig: 360, 136
+  offset: 51, 0
+  index: -1
+bar_1/a_12
+  rotate: false
+  xy: 2, 236
+  size: 275, 136
+  orig: 360, 136
+  offset: 50, 0
+  index: -1
+bar_1/a_13
+  rotate: true
+  xy: 279, 237
+  size: 273, 136
+  orig: 360, 136
+  offset: 49, 0
+  index: -1
+
+jindu_light_effect2.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bar_1/a_05
+  rotate: false
+  xy: 272, 390
+  size: 234, 119
+  orig: 360, 136
+  offset: 67, 12
+  index: -1
+bar_1/a_06
+  rotate: true
+  xy: 402, 41
+  size: 223, 107
+  orig: 360, 136
+  offset: 70, 16
+  index: -1
+bar_1/a_08
+  rotate: false
+  xy: 2, 108
+  size: 256, 129
+  orig: 360, 136
+  offset: 62, 0
+  index: -1
+bar_1/a_09
+  rotate: false
+  xy: 2, 239
+  size: 266, 132
+  orig: 360, 136
+  offset: 58, 0
+  index: -1
+bar_1/a_14
+  rotate: false
+  xy: 2, 373
+  size: 268, 136
+  orig: 360, 136
+  offset: 52, 0
+  index: -1
+bar_1/a_15
+  rotate: true
+  xy: 270, 8
+  size: 256, 130
+  orig: 360, 136
+  offset: 52, 6
+  index: -1
+bar_1/a_16
+  rotate: false
+  xy: 272, 266
+  size: 224, 122
+  orig: 360, 136
+  offset: 61, 14
+  index: -1
+glow_00
+  rotate: false
+  xy: 2, 3
+  size: 102, 103
+  orig: 230, 230
+  offset: 64, 67
+  index: -1
+
+jindu_light_effect3.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bar_1/a_02
+  rotate: false
+  xy: 250, 368
+  size: 241, 123
+  orig: 360, 136
+  offset: 67, 7
+  index: -1
+bar_1/a_03
+  rotate: false
+  xy: 2, 366
+  size: 246, 125
+  orig: 360, 136
+  offset: 65, 6
+  index: -1
+bar_1/a_04
+  rotate: false
+  xy: 2, 242
+  size: 246, 122
+  orig: 360, 136
+  offset: 65, 9
+  index: -1
+bar_1/a_07
+  rotate: false
+  xy: 2, 117
+  size: 241, 123
+  orig: 360, 136
+  offset: 70, 5
+  index: -1
+bar_1/a_17
+  rotate: false
+  xy: 250, 254
+  size: 218, 112
+  orig: 360, 136
+  offset: 65, 17
+  index: -1

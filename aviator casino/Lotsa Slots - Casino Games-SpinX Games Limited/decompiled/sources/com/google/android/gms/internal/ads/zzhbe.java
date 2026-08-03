@@ -1,0 +1,7 @@
+package com.google.android.gms.internal.ads;
+
+/* compiled from: com.google.android.gms:play-services-ads@@25.2.0 */
+/* loaded from: classes4.dex */
+public interface zzhbe {
+    com.google.common.util.concurrent.ListenableFuture zza(java.lang.Object obj) throws java.lang.Exception;
+}

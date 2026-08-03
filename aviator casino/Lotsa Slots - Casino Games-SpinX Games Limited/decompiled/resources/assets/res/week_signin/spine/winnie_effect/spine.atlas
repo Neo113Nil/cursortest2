@@ -1,0 +1,124 @@
+
+winnie_effect.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/erhuan1
+  rotate: false
+  xy: 367, 11
+  size: 25, 58
+  orig: 25, 58
+  offset: 0, 0
+  index: -1
+images/erhuan2
+  rotate: false
+  xy: 394, 11
+  size: 25, 58
+  orig: 25, 58
+  offset: 0, 0
+  index: -1
+images/gai/tui
+  rotate: false
+  xy: 2, 102
+  size: 331, 401
+  orig: 334, 401
+  offset: 3, 0
+  index: -1
+images/shou1
+  rotate: true
+  xy: 335, 312
+  size: 191, 87
+  orig: 194, 87
+  offset: 3, 0
+  index: -1
+images/shou2
+  rotate: true
+  xy: 367, 71
+  size: 46, 35
+  orig: 46, 35
+  offset: 0, 0
+  index: -1
+images/shou3
+  rotate: true
+  xy: 194, 2
+  size: 98, 171
+  orig: 98, 171
+  offset: 0, 0
+  index: -1
+images/shou4
+  rotate: true
+  xy: 424, 337
+  size: 166, 69
+  orig: 166, 70
+  offset: 0, 0
+  index: -1
+images/shou5
+  rotate: true
+  xy: 335, 219
+  size: 91, 167
+  orig: 91, 167
+  offset: 0, 0
+  index: -1
+images/touying1
+  rotate: false
+  xy: 424, 313
+  size: 43, 22
+  orig: 43, 23
+  offset: 0, 0
+  index: -1
+images/touying2
+  rotate: false
+  xy: 2, 10
+  size: 190, 90
+  orig: 194, 94
+  offset: 2, 2
+  index: -1
+images/touying3
+  rotate: true
+  xy: 404, 79
+  size: 38, 31
+  orig: 38, 31
+  offset: 0, 0
+  index: -1
+images/zhang
+  rotate: false
+  xy: 335, 119
+  size: 77, 98
+  orig: 77, 98
+  offset: 0, 0
+  index: -1
+
+winnie_effect2.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+images/gai/shenti_g
+  rotate: false
+  xy: 249, 203
+  size: 183, 306
+  orig: 183, 307
+  offset: 0, 0
+  index: -1
+images/gai/tou
+  rotate: false
+  xy: 249, 2
+  size: 201, 199
+  orig: 201, 199
+  offset: 0, 0
+  index: -1
+images/toufa
+  rotate: false
+  xy: 2, 171
+  size: 245, 338
+  orig: 245, 338
+  offset: 0, 0
+  index: -1
+images/toufa1
+  rotate: false
+  xy: 434, 211
+  size: 45, 298
+  orig: 45, 302
+  offset: 0, 4
+  index: -1

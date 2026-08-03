@@ -1,0 +1,106 @@
+package com.google.firebase.sessions;
+
+/* compiled from: SessionFirelogPublisher.kt */
+@javax.inject.Singleton
+@kotlin.Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0004\b\u0001\u0018\u0000 \u00182\u00020\u0001:\u0001\u0018B1\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\t\u0012\b\b\u0001\u0010\n\u001a\u00020\u000b¢\u0006\u0002\u0010\fJ\u0010\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u0010H\u0002J\u0010\u0010\u0011\u001a\u00020\u000e2\u0006\u0010\u0012\u001a\u00020\u0013H\u0016J\b\u0010\u0014\u001a\u00020\u0015H\u0002J\u0011\u0010\u0016\u001a\u00020\u0015H\u0082@ø\u0001\u0000¢\u0006\u0002\u0010\u0017R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\tX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000\u0082\u0002\u0004\n\u0002\b\u0019¨\u0006\u0019"}, d2 = {"Lcom/google/firebase/sessions/SessionFirelogPublisherImpl;", "Lcom/google/firebase/sessions/SessionFirelogPublisher;", "firebaseApp", "Lcom/google/firebase/FirebaseApp;", "firebaseInstallations", "Lcom/google/firebase/installations/FirebaseInstallationsApi;", "sessionSettings", "Lcom/google/firebase/sessions/settings/SessionsSettings;", "eventGDTLogger", "Lcom/google/firebase/sessions/EventGDTLoggerInterface;", "backgroundDispatcher", "Lkotlin/coroutines/CoroutineContext;", "(Lcom/google/firebase/FirebaseApp;Lcom/google/firebase/installations/FirebaseInstallationsApi;Lcom/google/firebase/sessions/settings/SessionsSettings;Lcom/google/firebase/sessions/EventGDTLoggerInterface;Lkotlin/coroutines/CoroutineContext;)V", "attemptLoggingSessionEvent", "", "sessionEvent", "Lcom/google/firebase/sessions/SessionEvent;", "logSession", "sessionDetails", "Lcom/google/firebase/sessions/SessionDetails;", "shouldCollectEvents", "", "shouldLogSession", "(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", com.moloco.sdk.xenoss.sdkdevkit.android.adrenderer.internal.vast.k.M, "com.google.firebase-firebase-sessions"}, k = 1, mv = {1, 8, 0}, xi = 48)
+/* loaded from: classes3.dex */
+public final class SessionFirelogPublisherImpl implements com.google.firebase.sessions.SessionFirelogPublisher {
+    private static final java.lang.String TAG = "SessionFirelogPublisher";
+    private final kotlin.coroutines.CoroutineContext backgroundDispatcher;
+    private final com.google.firebase.sessions.EventGDTLoggerInterface eventGDTLogger;
+    private final com.google.firebase.FirebaseApp firebaseApp;
+    private final com.google.firebase.installations.FirebaseInstallationsApi firebaseInstallations;
+    private final com.google.firebase.sessions.settings.SessionsSettings sessionSettings;
+    private static final double randomValueForSampling = java.lang.Math.random();
+
+    @javax.inject.Inject
+    public SessionFirelogPublisherImpl(com.google.firebase.FirebaseApp firebaseApp, com.google.firebase.installations.FirebaseInstallationsApi firebaseInstallations, com.google.firebase.sessions.settings.SessionsSettings sessionSettings, com.google.firebase.sessions.EventGDTLoggerInterface eventGDTLogger, @com.google.firebase.annotations.concurrent.Background kotlin.coroutines.CoroutineContext backgroundDispatcher) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(firebaseApp, "firebaseApp");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(firebaseInstallations, "firebaseInstallations");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(sessionSettings, "sessionSettings");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(eventGDTLogger, "eventGDTLogger");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(backgroundDispatcher, "backgroundDispatcher");
+        this.firebaseApp = firebaseApp;
+        this.firebaseInstallations = firebaseInstallations;
+        this.sessionSettings = sessionSettings;
+        this.eventGDTLogger = eventGDTLogger;
+        this.backgroundDispatcher = backgroundDispatcher;
+    }
+
+    @Override // com.google.firebase.sessions.SessionFirelogPublisher
+    public void logSession(com.google.firebase.sessions.SessionDetails sessionDetails) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(sessionDetails, "sessionDetails");
+        kotlinx.coroutines.BuildersKt__Builders_commonKt.launch$default(kotlinx.coroutines.CoroutineScopeKt.CoroutineScope(this.backgroundDispatcher), null, null, new com.google.firebase.sessions.SessionFirelogPublisherImpl$logSession$1(this, sessionDetails, null), 3, null);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public final void attemptLoggingSessionEvent(com.google.firebase.sessions.SessionEvent sessionEvent) {
+        try {
+            this.eventGDTLogger.log(sessionEvent);
+            android.util.Log.d(TAG, "Successfully logged Session Start event.");
+        } catch (java.lang.RuntimeException e) {
+            android.util.Log.e(TAG, "Error logging Session Start event to DataTransport: ", e);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* JADX WARN: Removed duplicated region for block: B:12:0x0057  */
+    /* JADX WARN: Removed duplicated region for block: B:15:0x0061  */
+    /* JADX WARN: Removed duplicated region for block: B:23:0x0038  */
+    /* JADX WARN: Removed duplicated region for block: B:8:0x0026  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final java.lang.Object shouldLogSession(kotlin.coroutines.Continuation<? super java.lang.Boolean> continuation) {
+        com.google.firebase.sessions.SessionFirelogPublisherImpl$shouldLogSession$1 sessionFirelogPublisherImpl$shouldLogSession$1;
+        int i;
+        com.google.firebase.sessions.SessionFirelogPublisherImpl sessionFirelogPublisherImpl;
+        if (continuation instanceof com.google.firebase.sessions.SessionFirelogPublisherImpl$shouldLogSession$1) {
+            sessionFirelogPublisherImpl$shouldLogSession$1 = (com.google.firebase.sessions.SessionFirelogPublisherImpl$shouldLogSession$1) continuation;
+            if ((sessionFirelogPublisherImpl$shouldLogSession$1.label & Integer.MIN_VALUE) != 0) {
+                sessionFirelogPublisherImpl$shouldLogSession$1.label -= Integer.MIN_VALUE;
+                java.lang.Object obj = sessionFirelogPublisherImpl$shouldLogSession$1.result;
+                java.lang.Object coroutine_suspended = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED();
+                i = sessionFirelogPublisherImpl$shouldLogSession$1.label;
+                if (i != 0) {
+                    kotlin.ResultKt.throwOnFailure(obj);
+                    android.util.Log.d(TAG, "Data Collection is enabled for at least one Subscriber");
+                    com.google.firebase.sessions.settings.SessionsSettings sessionsSettings = this.sessionSettings;
+                    sessionFirelogPublisherImpl$shouldLogSession$1.L$0 = this;
+                    sessionFirelogPublisherImpl$shouldLogSession$1.label = 1;
+                    if (sessionsSettings.updateSettings(sessionFirelogPublisherImpl$shouldLogSession$1) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    sessionFirelogPublisherImpl = this;
+                } else {
+                    if (i != 1) {
+                        throw new java.lang.IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                    }
+                    sessionFirelogPublisherImpl = (com.google.firebase.sessions.SessionFirelogPublisherImpl) sessionFirelogPublisherImpl$shouldLogSession$1.L$0;
+                    kotlin.ResultKt.throwOnFailure(obj);
+                }
+                if (sessionFirelogPublisherImpl.sessionSettings.getSessionsEnabled()) {
+                    android.util.Log.d(TAG, "Sessions SDK disabled. Events will not be sent.");
+                    return kotlin.coroutines.jvm.internal.Boxing.boxBoolean(false);
+                }
+                if (!sessionFirelogPublisherImpl.shouldCollectEvents()) {
+                    android.util.Log.d(TAG, "Sessions SDK has dropped this session due to sampling.");
+                    return kotlin.coroutines.jvm.internal.Boxing.boxBoolean(false);
+                }
+                return kotlin.coroutines.jvm.internal.Boxing.boxBoolean(true);
+            }
+        }
+        sessionFirelogPublisherImpl$shouldLogSession$1 = new com.google.firebase.sessions.SessionFirelogPublisherImpl$shouldLogSession$1(this, continuation);
+        java.lang.Object obj2 = sessionFirelogPublisherImpl$shouldLogSession$1.result;
+        java.lang.Object coroutine_suspended2 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        i = sessionFirelogPublisherImpl$shouldLogSession$1.label;
+        if (i != 0) {
+        }
+        if (sessionFirelogPublisherImpl.sessionSettings.getSessionsEnabled()) {
+        }
+    }
+
+    private final boolean shouldCollectEvents() {
+        return randomValueForSampling <= this.sessionSettings.getSamplingRate();
+    }
+}

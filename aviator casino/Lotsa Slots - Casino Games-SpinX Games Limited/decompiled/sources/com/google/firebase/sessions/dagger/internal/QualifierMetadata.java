@@ -1,0 +1,8 @@
+package com.google.firebase.sessions.dagger.internal;
+
+@java.lang.annotation.Target({java.lang.annotation.ElementType.TYPE})
+@java.lang.annotation.Retention(java.lang.annotation.RetentionPolicy.CLASS)
+/* loaded from: classes3.dex */
+public @interface QualifierMetadata {
+    java.lang.String[] value() default {};
+}

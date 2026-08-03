@@ -1,0 +1,24 @@
+package io.ktor.http.cio;
+
+/* compiled from: Multipart.kt */
+@kotlin.Metadata(k = 3, mv = {2, 1, 0}, xi = 48)
+@kotlin.coroutines.jvm.internal.DebugMetadata(c = "io.ktor.http.cio.MultipartKt", f = "Multipart.kt", i = {0}, l = {143}, m = "skipIfFoundReadCount", n = {"prefix"}, s = {"L$0"})
+/* loaded from: classes6.dex */
+final class MultipartKt$skipIfFoundReadCount$1 extends kotlin.coroutines.jvm.internal.ContinuationImpl {
+    java.lang.Object L$0;
+    int label;
+    /* synthetic */ java.lang.Object result;
+
+    MultipartKt$skipIfFoundReadCount$1(kotlin.coroutines.Continuation<? super io.ktor.http.cio.MultipartKt$skipIfFoundReadCount$1> continuation) {
+        super(continuation);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final java.lang.Object invokeSuspend(java.lang.Object obj) {
+        java.lang.Object skipIfFoundReadCount;
+        this.result = obj;
+        this.label |= Integer.MIN_VALUE;
+        skipIfFoundReadCount = io.ktor.http.cio.MultipartKt.skipIfFoundReadCount(null, null, this);
+        return skipIfFoundReadCount;
+    }
+}

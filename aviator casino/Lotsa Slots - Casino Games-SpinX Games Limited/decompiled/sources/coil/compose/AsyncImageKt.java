@@ -1,0 +1,225 @@
+package coil.compose;
+
+/* compiled from: AsyncImage.kt */
+@kotlin.Metadata(d1 = {"\u0000\u0082\u0001\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\u001aé\u0001\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000b2\u0016\b\u0002\u0010\u000e\u001a\u0010\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u00020\u0001\u0018\u00010\u000f2\u0016\b\u0002\u0010\u0011\u001a\u0010\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u0001\u0018\u00010\u000f2\u0016\b\u0002\u0010\u0013\u001a\u0010\u0012\u0004\u0012\u00020\u0014\u0012\u0004\u0012\u00020\u0001\u0018\u00010\u000f2\b\b\u0002\u0010\u0015\u001a\u00020\u00162\b\b\u0002\u0010\u0017\u001a\u00020\u00182\b\b\u0002\u0010\u0019\u001a\u00020\u001a2\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u001c2\b\b\u0002\u0010\u001d\u001a\u00020\u001e2\b\b\u0002\u0010\u001f\u001a\u00020 2\b\b\u0002\u0010!\u001a\u00020\"H\u0007¢\u0006\u0004\b#\u0010$\u001aÕ\u0001\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u000b2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000b2\u0016\b\u0002\u0010\u000e\u001a\u0010\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u00020\u0001\u0018\u00010\u000f2\u0016\b\u0002\u0010\u0011\u001a\u0010\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u0001\u0018\u00010\u000f2\u0016\b\u0002\u0010\u0013\u001a\u0010\u0012\u0004\u0012\u00020\u0014\u0012\u0004\u0012\u00020\u0001\u0018\u00010\u000f2\b\b\u0002\u0010\u0015\u001a\u00020\u00162\b\b\u0002\u0010\u0017\u001a\u00020\u00182\b\b\u0002\u0010\u0019\u001a\u00020\u001a2\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u001c2\b\b\u0002\u0010\u001d\u001a\u00020\u001eH\u0007¢\u0006\u0004\b%\u0010&\u001a«\u0001\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\u0014\b\u0002\u0010'\u001a\u000e\u0012\u0004\u0012\u00020(\u0012\u0004\u0012\u00020(0\u000f2\u0016\b\u0002\u0010)\u001a\u0010\u0012\u0004\u0012\u00020(\u0012\u0004\u0012\u00020\u0001\u0018\u00010\u000f2\b\b\u0002\u0010\u0015\u001a\u00020\u00162\b\b\u0002\u0010\u0017\u001a\u00020\u00182\b\b\u0002\u0010\u0019\u001a\u00020\u001a2\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u001c2\b\b\u0002\u0010\u001d\u001a\u00020\u001e2\b\b\u0002\u0010\u001f\u001a\u00020 2\b\b\u0002\u0010!\u001a\u00020\"H\u0007¢\u0006\u0004\b*\u0010+\u001a\u0097\u0001\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\u0014\b\u0002\u0010'\u001a\u000e\u0012\u0004\u0012\u00020(\u0012\u0004\u0012\u00020(0\u000f2\u0016\b\u0002\u0010)\u001a\u0010\u0012\u0004\u0012\u00020(\u0012\u0004\u0012\u00020\u0001\u0018\u00010\u000f2\b\b\u0002\u0010\u0015\u001a\u00020\u00162\b\b\u0002\u0010\u0017\u001a\u00020\u00182\b\b\u0002\u0010\u0019\u001a\u00020\u001a2\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u001c2\b\b\u0002\u0010\u001d\u001a\u00020\u001eH\u0007¢\u0006\u0004\b,\u0010-\u001a\u0085\u0001\u0010\u0000\u001a\u00020\u00012\u0006\u0010.\u001a\u00020/2\b\u0010\u0004\u001a\u0004\u0018\u00010\u00052\u0006\u0010\b\u001a\u00020\t2\u0012\u0010'\u001a\u000e\u0012\u0004\u0012\u00020(\u0012\u0004\u0012\u00020(0\u000f2\u0014\u0010)\u001a\u0010\u0012\u0004\u0012\u00020(\u0012\u0004\u0012\u00020\u0001\u0018\u00010\u000f2\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001a2\b\u0010\u001b\u001a\u0004\u0018\u00010\u001c2\u0006\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020 H\u0003¢\u0006\u0004\b0\u00101\u001aQ\u00102\u001a\u00020\u00012\u0006\u0010\b\u001a\u00020\t2\u0006\u00103\u001a\u0002042\b\u0010\u0004\u001a\u0004\u0018\u00010\u00052\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001a2\b\u0010\u001b\u001a\u0004\u0018\u00010\u001c2\u0006\u0010\u001f\u001a\u00020 H\u0003¢\u0006\u0002\u00105¨\u00066"}, d2 = {"AsyncImage", "", "model", "", "contentDescription", "", "imageLoader", "Lcoil/ImageLoader;", "modifier", "Landroidx/compose/ui/Modifier;", "placeholder", "Landroidx/compose/ui/graphics/painter/Painter;", "error", "fallback", "onLoading", "Lkotlin/Function1;", "Lcoil/compose/AsyncImagePainter$State$Loading;", "onSuccess", "Lcoil/compose/AsyncImagePainter$State$Success;", "onError", "Lcoil/compose/AsyncImagePainter$State$Error;", "alignment", "Landroidx/compose/ui/Alignment;", "contentScale", "Landroidx/compose/ui/layout/ContentScale;", "alpha", "", "colorFilter", "Landroidx/compose/ui/graphics/ColorFilter;", "filterQuality", "Landroidx/compose/ui/graphics/FilterQuality;", "clipToBounds", "", "modelEqualityDelegate", "Lcoil/compose/EqualityDelegate;", "AsyncImage-J-FEaFM", "(Ljava/lang/Object;Ljava/lang/String;Lcoil/ImageLoader;Landroidx/compose/ui/Modifier;Landroidx/compose/ui/graphics/painter/Painter;Landroidx/compose/ui/graphics/painter/Painter;Landroidx/compose/ui/graphics/painter/Painter;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Alignment;Landroidx/compose/ui/layout/ContentScale;FLandroidx/compose/ui/graphics/ColorFilter;IZLcoil/compose/EqualityDelegate;Landroidx/compose/runtime/Composer;III)V", "AsyncImage-Q4Kwu38", "(Ljava/lang/Object;Ljava/lang/String;Lcoil/ImageLoader;Landroidx/compose/ui/Modifier;Landroidx/compose/ui/graphics/painter/Painter;Landroidx/compose/ui/graphics/painter/Painter;Landroidx/compose/ui/graphics/painter/Painter;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Alignment;Landroidx/compose/ui/layout/ContentScale;FLandroidx/compose/ui/graphics/ColorFilter;ILandroidx/compose/runtime/Composer;III)V", "transform", "Lcoil/compose/AsyncImagePainter$State;", "onState", "AsyncImage-QgsmV_s", "(Ljava/lang/Object;Ljava/lang/String;Lcoil/ImageLoader;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Alignment;Landroidx/compose/ui/layout/ContentScale;FLandroidx/compose/ui/graphics/ColorFilter;IZLcoil/compose/EqualityDelegate;Landroidx/compose/runtime/Composer;III)V", "AsyncImage-MvsnxeU", "(Ljava/lang/Object;Ljava/lang/String;Lcoil/ImageLoader;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Alignment;Landroidx/compose/ui/layout/ContentScale;FLandroidx/compose/ui/graphics/ColorFilter;ILandroidx/compose/runtime/Composer;III)V", "state", "Lcoil/compose/AsyncImageState;", "AsyncImage-76YX9Dk", "(Lcoil/compose/AsyncImageState;Ljava/lang/String;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Alignment;Landroidx/compose/ui/layout/ContentScale;FLandroidx/compose/ui/graphics/ColorFilter;IZLandroidx/compose/runtime/Composer;II)V", "Content", "painter", "Lcoil/compose/AsyncImagePainter;", "(Landroidx/compose/ui/Modifier;Lcoil/compose/AsyncImagePainter;Ljava/lang/String;Landroidx/compose/ui/Alignment;Landroidx/compose/ui/layout/ContentScale;FLandroidx/compose/ui/graphics/ColorFilter;ZLandroidx/compose/runtime/Composer;I)V", "coil-compose-base_release"}, k = 2, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes2.dex */
+public final class AsyncImageKt {
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final kotlin.Unit AsyncImage_76YX9Dk$lambda$0(coil.compose.AsyncImageState asyncImageState, java.lang.String str, androidx.compose.ui.Modifier modifier, kotlin.jvm.functions.Function1 function1, kotlin.jvm.functions.Function1 function12, androidx.compose.ui.Alignment alignment, androidx.compose.ui.layout.ContentScale contentScale, float f, androidx.compose.ui.graphics.ColorFilter colorFilter, int i, boolean z, int i2, int i3, androidx.compose.runtime.Composer composer, int i4) {
+        m4940AsyncImage76YX9Dk(asyncImageState, str, modifier, function1, function12, alignment, contentScale, f, colorFilter, i, z, composer, androidx.compose.runtime.RecomposeScopeImplKt.updateChangedFlags(i2 | 1), androidx.compose.runtime.RecomposeScopeImplKt.updateChangedFlags(i3));
+        return kotlin.Unit.INSTANCE;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final kotlin.Unit Content$lambda$2(androidx.compose.ui.Modifier modifier, coil.compose.AsyncImagePainter asyncImagePainter, java.lang.String str, androidx.compose.ui.Alignment alignment, androidx.compose.ui.layout.ContentScale contentScale, float f, androidx.compose.ui.graphics.ColorFilter colorFilter, boolean z, int i, androidx.compose.runtime.Composer composer, int i2) {
+        Content(modifier, asyncImagePainter, str, alignment, contentScale, f, colorFilter, z, composer, androidx.compose.runtime.RecomposeScopeImplKt.updateChangedFlags(i | 1));
+        return kotlin.Unit.INSTANCE;
+    }
+
+    /* renamed from: AsyncImage-J-FEaFM, reason: not valid java name */
+    public static final void m4941AsyncImageJFEaFM(java.lang.Object obj, java.lang.String str, coil.ImageLoader imageLoader, androidx.compose.ui.Modifier modifier, androidx.compose.ui.graphics.painter.Painter painter, androidx.compose.ui.graphics.painter.Painter painter2, androidx.compose.ui.graphics.painter.Painter painter3, kotlin.jvm.functions.Function1<? super coil.compose.AsyncImagePainter.State.Loading, kotlin.Unit> function1, kotlin.jvm.functions.Function1<? super coil.compose.AsyncImagePainter.State.Success, kotlin.Unit> function12, kotlin.jvm.functions.Function1<? super coil.compose.AsyncImagePainter.State.Error, kotlin.Unit> function13, androidx.compose.ui.Alignment alignment, androidx.compose.ui.layout.ContentScale contentScale, float f, androidx.compose.ui.graphics.ColorFilter colorFilter, int i, boolean z, coil.compose.EqualityDelegate equalityDelegate, androidx.compose.runtime.Composer composer, int i2, int i3, int i4) {
+        composer.startReplaceableGroup(-1481548872);
+        androidx.compose.ui.Modifier.Companion companion = (i4 & 8) != 0 ? androidx.compose.ui.Modifier.INSTANCE : modifier;
+        androidx.compose.ui.graphics.painter.Painter painter4 = (i4 & 16) != 0 ? null : painter;
+        androidx.compose.ui.graphics.painter.Painter painter5 = (i4 & 32) != 0 ? null : painter2;
+        androidx.compose.ui.graphics.painter.Painter painter6 = (i4 & 64) != 0 ? painter5 : painter3;
+        kotlin.jvm.functions.Function1<? super coil.compose.AsyncImagePainter.State.Loading, kotlin.Unit> function14 = (i4 & 128) != 0 ? null : function1;
+        kotlin.jvm.functions.Function1<? super coil.compose.AsyncImagePainter.State.Success, kotlin.Unit> function15 = (i4 & 256) != 0 ? null : function12;
+        kotlin.jvm.functions.Function1<? super coil.compose.AsyncImagePainter.State.Error, kotlin.Unit> function16 = (i4 & 512) != 0 ? null : function13;
+        int i5 = i3 << 15;
+        m4940AsyncImage76YX9Dk(new coil.compose.AsyncImageState(obj, (i4 & 65536) != 0 ? coil.compose.EqualityDelegateKt.getDefaultModelEqualityDelegate() : equalityDelegate, imageLoader), str, companion, coil.compose.UtilsKt.transformOf(painter4, painter5, painter6), coil.compose.UtilsKt.onStateOf(function14, function15, function16), (i4 & 1024) != 0 ? androidx.compose.ui.Alignment.INSTANCE.getCenter() : alignment, (i4 & 2048) != 0 ? androidx.compose.ui.layout.ContentScale.INSTANCE.getFit() : contentScale, (i4 & 4096) != 0 ? 1.0f : f, (i4 & 8192) == 0 ? colorFilter : null, (i4 & 16384) != 0 ? androidx.compose.ui.graphics.drawscope.DrawScope.INSTANCE.m2676getDefaultFilterQualityfv9h1I() : i, (32768 & i4) != 0 ? true : z, composer, (i2 & 112) | ((i2 >> 3) & 896) | (458752 & i5) | (3670016 & i5) | (29360128 & i5) | (234881024 & i5) | (i5 & 1879048192), (i3 >> 15) & 14);
+        composer.endReplaceableGroup();
+    }
+
+    @kotlin.Deprecated(level = kotlin.DeprecationLevel.HIDDEN, message = "Kept for binary compatibility.")
+    /* renamed from: AsyncImage-Q4Kwu38, reason: not valid java name */
+    public static final /* synthetic */ void m4943AsyncImageQ4Kwu38(java.lang.Object obj, java.lang.String str, coil.ImageLoader imageLoader, androidx.compose.ui.Modifier modifier, androidx.compose.ui.graphics.painter.Painter painter, androidx.compose.ui.graphics.painter.Painter painter2, androidx.compose.ui.graphics.painter.Painter painter3, kotlin.jvm.functions.Function1 function1, kotlin.jvm.functions.Function1 function12, kotlin.jvm.functions.Function1 function13, androidx.compose.ui.Alignment alignment, androidx.compose.ui.layout.ContentScale contentScale, float f, androidx.compose.ui.graphics.ColorFilter colorFilter, int i, androidx.compose.runtime.Composer composer, int i2, int i3, int i4) {
+        composer.startReplaceableGroup(-245964807);
+        androidx.compose.ui.Modifier modifier2 = (i4 & 8) != 0 ? androidx.compose.ui.Modifier.INSTANCE : modifier;
+        androidx.compose.ui.graphics.painter.Painter painter4 = (i4 & 16) != 0 ? null : painter;
+        androidx.compose.ui.graphics.painter.Painter painter5 = (i4 & 32) != 0 ? null : painter2;
+        androidx.compose.ui.graphics.painter.Painter painter6 = (i4 & 64) != 0 ? painter5 : painter3;
+        kotlin.jvm.functions.Function1 function14 = (i4 & 128) != 0 ? null : function1;
+        kotlin.jvm.functions.Function1 function15 = (i4 & 256) != 0 ? null : function12;
+        kotlin.jvm.functions.Function1 function16 = (i4 & 512) != 0 ? null : function13;
+        int i5 = i3 << 15;
+        m4940AsyncImage76YX9Dk(new coil.compose.AsyncImageState(obj, coil.compose.EqualityDelegateKt.getDefaultModelEqualityDelegate(), imageLoader), str, modifier2, coil.compose.UtilsKt.transformOf(painter4, painter5, painter6), coil.compose.UtilsKt.onStateOf(function14, function15, function16), (i4 & 1024) != 0 ? androidx.compose.ui.Alignment.INSTANCE.getCenter() : alignment, (i4 & 2048) != 0 ? androidx.compose.ui.layout.ContentScale.INSTANCE.getFit() : contentScale, (i4 & 4096) != 0 ? 1.0f : f, (i4 & 8192) != 0 ? null : colorFilter, (i4 & 16384) != 0 ? androidx.compose.ui.graphics.drawscope.DrawScope.INSTANCE.m2676getDefaultFilterQualityfv9h1I() : i, true, composer, (i2 & 112) | ((i2 >> 3) & 896) | (458752 & i5) | (3670016 & i5) | (29360128 & i5) | (234881024 & i5) | (i5 & 1879048192), 6);
+        composer.endReplaceableGroup();
+    }
+
+    /* renamed from: AsyncImage-QgsmV_s, reason: not valid java name */
+    public static final void m4944AsyncImageQgsmV_s(java.lang.Object obj, java.lang.String str, coil.ImageLoader imageLoader, androidx.compose.ui.Modifier modifier, kotlin.jvm.functions.Function1<? super coil.compose.AsyncImagePainter.State, ? extends coil.compose.AsyncImagePainter.State> function1, kotlin.jvm.functions.Function1<? super coil.compose.AsyncImagePainter.State, kotlin.Unit> function12, androidx.compose.ui.Alignment alignment, androidx.compose.ui.layout.ContentScale contentScale, float f, androidx.compose.ui.graphics.ColorFilter colorFilter, int i, boolean z, coil.compose.EqualityDelegate equalityDelegate, androidx.compose.runtime.Composer composer, int i2, int i3, int i4) {
+        composer.startReplaceableGroup(2032051394);
+        int i5 = i2 >> 3;
+        m4940AsyncImage76YX9Dk(new coil.compose.AsyncImageState(obj, (i4 & 4096) != 0 ? coil.compose.EqualityDelegateKt.getDefaultModelEqualityDelegate() : equalityDelegate, imageLoader), str, (i4 & 8) != 0 ? androidx.compose.ui.Modifier.INSTANCE : modifier, (i4 & 16) != 0 ? coil.compose.AsyncImagePainter.INSTANCE.getDefaultTransform() : function1, (i4 & 32) != 0 ? null : function12, (i4 & 64) != 0 ? androidx.compose.ui.Alignment.INSTANCE.getCenter() : alignment, (i4 & 128) != 0 ? androidx.compose.ui.layout.ContentScale.INSTANCE.getFit() : contentScale, (i4 & 256) != 0 ? 1.0f : f, (i4 & 512) != 0 ? null : colorFilter, (i4 & 1024) != 0 ? androidx.compose.ui.graphics.drawscope.DrawScope.INSTANCE.m2676getDefaultFilterQualityfv9h1I() : i, (i4 & 2048) != 0 ? true : z, composer, (i2 & 112) | (i5 & 896) | (i5 & 7168) | (57344 & i5) | (458752 & i5) | (3670016 & i5) | (29360128 & i5) | (i5 & 234881024) | ((i3 << 27) & 1879048192), (i3 >> 3) & 14);
+        composer.endReplaceableGroup();
+    }
+
+    @kotlin.Deprecated(level = kotlin.DeprecationLevel.HIDDEN, message = "Kept for binary compatibility.")
+    /* renamed from: AsyncImage-MvsnxeU, reason: not valid java name */
+    public static final /* synthetic */ void m4942AsyncImageMvsnxeU(java.lang.Object obj, java.lang.String str, coil.ImageLoader imageLoader, androidx.compose.ui.Modifier modifier, kotlin.jvm.functions.Function1 function1, kotlin.jvm.functions.Function1 function12, androidx.compose.ui.Alignment alignment, androidx.compose.ui.layout.ContentScale contentScale, float f, androidx.compose.ui.graphics.ColorFilter colorFilter, int i, androidx.compose.runtime.Composer composer, int i2, int i3, int i4) {
+        composer.startReplaceableGroup(-2030202961);
+        int i5 = i2 >> 3;
+        m4940AsyncImage76YX9Dk(new coil.compose.AsyncImageState(obj, coil.compose.EqualityDelegateKt.getDefaultModelEqualityDelegate(), imageLoader), str, (i4 & 8) != 0 ? androidx.compose.ui.Modifier.INSTANCE : modifier, (i4 & 16) != 0 ? coil.compose.AsyncImagePainter.INSTANCE.getDefaultTransform() : function1, (i4 & 32) != 0 ? null : function12, (i4 & 64) != 0 ? androidx.compose.ui.Alignment.INSTANCE.getCenter() : alignment, (i4 & 128) != 0 ? androidx.compose.ui.layout.ContentScale.INSTANCE.getFit() : contentScale, (i4 & 256) != 0 ? 1.0f : f, (i4 & 512) != 0 ? null : colorFilter, (i4 & 1024) != 0 ? androidx.compose.ui.graphics.drawscope.DrawScope.INSTANCE.m2676getDefaultFilterQualityfv9h1I() : i, true, composer, (i2 & 112) | (i5 & 896) | (i5 & 7168) | (57344 & i5) | (458752 & i5) | (3670016 & i5) | (29360128 & i5) | (i5 & 234881024) | ((i3 << 27) & 1879048192), 6);
+        composer.endReplaceableGroup();
+    }
+
+    /* renamed from: AsyncImage-76YX9Dk, reason: not valid java name */
+    private static final void m4940AsyncImage76YX9Dk(final coil.compose.AsyncImageState asyncImageState, final java.lang.String str, final androidx.compose.ui.Modifier modifier, final kotlin.jvm.functions.Function1<? super coil.compose.AsyncImagePainter.State, ? extends coil.compose.AsyncImagePainter.State> function1, final kotlin.jvm.functions.Function1<? super coil.compose.AsyncImagePainter.State, kotlin.Unit> function12, final androidx.compose.ui.Alignment alignment, final androidx.compose.ui.layout.ContentScale contentScale, final float f, final androidx.compose.ui.graphics.ColorFilter colorFilter, final int i, final boolean z, androidx.compose.runtime.Composer composer, final int i2, final int i3) {
+        int i4;
+        int i5;
+        androidx.compose.runtime.Composer startRestartGroup = composer.startRestartGroup(-421592773);
+        if ((i2 & 14) == 0) {
+            i4 = (startRestartGroup.changed(asyncImageState) ? 4 : 2) | i2;
+        } else {
+            i4 = i2;
+        }
+        if ((i2 & 112) == 0) {
+            i4 |= startRestartGroup.changed(str) ? 32 : 16;
+        }
+        if ((i2 & 896) == 0) {
+            i4 |= startRestartGroup.changed(modifier) ? 256 : 128;
+        }
+        if ((i2 & 7168) == 0) {
+            i4 |= startRestartGroup.changedInstance(function1) ? 2048 : 1024;
+        }
+        if ((i2 & 57344) == 0) {
+            i4 |= startRestartGroup.changedInstance(function12) ? 16384 : 8192;
+        }
+        if ((i2 & 458752) == 0) {
+            i4 |= startRestartGroup.changed(alignment) ? 131072 : 65536;
+        }
+        if ((i2 & 3670016) == 0) {
+            i4 |= startRestartGroup.changed(contentScale) ? 1048576 : 524288;
+        }
+        if ((i2 & 29360128) == 0) {
+            i4 |= startRestartGroup.changed(f) ? 8388608 : 4194304;
+        }
+        if ((234881024 & i2) == 0) {
+            i4 |= startRestartGroup.changed(colorFilter) ? androidx.core.view.accessibility.AccessibilityEventCompat.TYPE_VIEW_TARGETED_BY_SCROLL : 33554432;
+        }
+        if ((1879048192 & i2) == 0) {
+            i4 |= startRestartGroup.changed(i) ? 536870912 : 268435456;
+        }
+        int i6 = i4;
+        if ((i3 & 14) == 0) {
+            i5 = i3 | (startRestartGroup.changed(z) ? 4 : 2);
+        } else {
+            i5 = i3;
+        }
+        if ((i6 & 1533916891) != 306783378 || (i5 & 11) != 2 || !startRestartGroup.getSkipping()) {
+            coil.request.ImageRequest requestOfWithSizeResolver = coil.compose.UtilsKt.requestOfWithSizeResolver(asyncImageState.getModel(), contentScale, startRestartGroup, ((i6 >> 15) & 112) | 8);
+            int i7 = i6 >> 3;
+            int i8 = (i7 & 896) | 72 | (i7 & 7168);
+            int i9 = i6 >> 6;
+            int i10 = i9 & 57344;
+            coil.compose.AsyncImagePainter m4950rememberAsyncImagePainter0YpotYA = coil.compose.AsyncImagePainterKt.m4950rememberAsyncImagePainter0YpotYA(requestOfWithSizeResolver, asyncImageState.getImageLoader(), function1, function12, contentScale, i, asyncImageState.getModelEqualityDelegate(), startRestartGroup, i8 | i10 | ((i6 >> 12) & 458752), 0);
+            coil.size.SizeResolver sizeResolver = requestOfWithSizeResolver.getSizeResolver();
+            Content(sizeResolver instanceof coil.compose.ConstraintsSizeResolver ? modifier.then((androidx.compose.ui.Modifier) sizeResolver) : modifier, m4950rememberAsyncImagePainter0YpotYA, str, alignment, contentScale, f, colorFilter, z, startRestartGroup, ((i6 << 3) & 896) | (i9 & 7168) | i10 | (i9 & 458752) | (i9 & 3670016) | ((i5 << 21) & 29360128));
+        } else {
+            startRestartGroup.skipToGroupEnd();
+        }
+        androidx.compose.runtime.ScopeUpdateScope endRestartGroup = startRestartGroup.endRestartGroup();
+        if (endRestartGroup != null) {
+            endRestartGroup.updateScope(new kotlin.jvm.functions.Function2() { // from class: coil.compose.AsyncImageKt$$ExternalSyntheticLambda1
+                @Override // kotlin.jvm.functions.Function2
+                public final java.lang.Object invoke(java.lang.Object obj, java.lang.Object obj2) {
+                    kotlin.Unit AsyncImage_76YX9Dk$lambda$0;
+                    AsyncImage_76YX9Dk$lambda$0 = coil.compose.AsyncImageKt.AsyncImage_76YX9Dk$lambda$0(coil.compose.AsyncImageState.this, str, modifier, function1, function12, alignment, contentScale, f, colorFilter, i, z, i2, i3, (androidx.compose.runtime.Composer) obj, ((java.lang.Integer) obj2).intValue());
+                    return AsyncImage_76YX9Dk$lambda$0;
+                }
+            });
+        }
+    }
+
+    private static final void Content(final androidx.compose.ui.Modifier modifier, final coil.compose.AsyncImagePainter asyncImagePainter, final java.lang.String str, final androidx.compose.ui.Alignment alignment, final androidx.compose.ui.layout.ContentScale contentScale, final float f, final androidx.compose.ui.graphics.ColorFilter colorFilter, final boolean z, androidx.compose.runtime.Composer composer, final int i) {
+        int i2;
+        androidx.compose.runtime.Composer startRestartGroup = composer.startRestartGroup(777774312);
+        if ((i & 14) == 0) {
+            i2 = (startRestartGroup.changed(modifier) ? 4 : 2) | i;
+        } else {
+            i2 = i;
+        }
+        if ((i & 112) == 0) {
+            i2 |= startRestartGroup.changed(asyncImagePainter) ? 32 : 16;
+        }
+        if ((i & 896) == 0) {
+            i2 |= startRestartGroup.changed(str) ? 256 : 128;
+        }
+        if ((i & 7168) == 0) {
+            i2 |= startRestartGroup.changed(alignment) ? 2048 : 1024;
+        }
+        if ((57344 & i) == 0) {
+            i2 |= startRestartGroup.changed(contentScale) ? 16384 : 8192;
+        }
+        if ((458752 & i) == 0) {
+            i2 |= startRestartGroup.changed(f) ? 131072 : 65536;
+        }
+        if ((3670016 & i) == 0) {
+            i2 |= startRestartGroup.changed(colorFilter) ? 1048576 : 524288;
+        }
+        if ((29360128 & i) == 0) {
+            i2 |= startRestartGroup.changed(z) ? 8388608 : 4194304;
+        }
+        if ((i2 & 23967451) != 4793490 || !startRestartGroup.getSkipping()) {
+            androidx.compose.ui.Modifier contentDescription = coil.compose.UtilsKt.contentDescription(modifier, str);
+            if (z) {
+                contentDescription = androidx.compose.ui.draw.ClipKt.clipToBounds(contentDescription);
+            }
+            androidx.compose.ui.Modifier then = contentDescription.then(new coil.compose.ContentPainterElement(asyncImagePainter, alignment, contentScale, f, colorFilter));
+            coil.compose.AsyncImageKt$Content$2 asyncImageKt$Content$2 = coil.compose.AsyncImageKt$Content$2.INSTANCE;
+            startRestartGroup.startReplaceableGroup(544976794);
+            androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "CC(Layout)P(1)123@4784L23,126@4935L385:Layout.kt#80mrfh");
+            int currentCompositeKeyHash = androidx.compose.runtime.ComposablesKt.getCurrentCompositeKeyHash(startRestartGroup, 0);
+            androidx.compose.ui.Modifier materializeModifier = androidx.compose.ui.ComposedModifierKt.materializeModifier(startRestartGroup, then);
+            androidx.compose.runtime.CompositionLocalMap currentCompositionLocalMap = startRestartGroup.getCurrentCompositionLocalMap();
+            final kotlin.jvm.functions.Function0<androidx.compose.ui.node.ComposeUiNode> constructor = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getConstructor();
+            startRestartGroup.startReplaceableGroup(1405779621);
+            androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "CC(ReusableComposeNode):Composables.kt#9igjgp");
+            if (!(startRestartGroup.getApplier() instanceof androidx.compose.runtime.Applier)) {
+                androidx.compose.runtime.ComposablesKt.invalidApplier();
+            }
+            startRestartGroup.startReusableNode();
+            if (startRestartGroup.getInserting()) {
+                startRestartGroup.createNode(new kotlin.jvm.functions.Function0<androidx.compose.ui.node.ComposeUiNode>() { // from class: coil.compose.AsyncImageKt$Content$$inlined$Layout$1
+                    {
+                        super(0);
+                    }
+
+                    /* JADX WARN: Type inference failed for: r0v1, types: [androidx.compose.ui.node.ComposeUiNode, java.lang.Object] */
+                    @Override // kotlin.jvm.functions.Function0
+                    public final androidx.compose.ui.node.ComposeUiNode invoke() {
+                        return kotlin.jvm.functions.Function0.this.invoke();
+                    }
+                });
+            } else {
+                startRestartGroup.useNode();
+            }
+            androidx.compose.runtime.Composer m1641constructorimpl = androidx.compose.runtime.Updater.m1641constructorimpl(startRestartGroup);
+            androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, asyncImageKt$Content$2, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+            androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, currentCompositionLocalMap, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetResolvedCompositionLocals());
+            androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, materializeModifier, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetModifier());
+            kotlin.jvm.functions.Function2<androidx.compose.ui.node.ComposeUiNode, java.lang.Integer, kotlin.Unit> setCompositeKeyHash = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetCompositeKeyHash();
+            if (m1641constructorimpl.getInserting() || !kotlin.jvm.internal.Intrinsics.areEqual(m1641constructorimpl.rememberedValue(), java.lang.Integer.valueOf(currentCompositeKeyHash))) {
+                m1641constructorimpl.updateRememberedValue(java.lang.Integer.valueOf(currentCompositeKeyHash));
+                m1641constructorimpl.apply(java.lang.Integer.valueOf(currentCompositeKeyHash), setCompositeKeyHash);
+            }
+            startRestartGroup.endNode();
+            startRestartGroup.endReplaceableGroup();
+            startRestartGroup.endReplaceableGroup();
+        } else {
+            startRestartGroup.skipToGroupEnd();
+        }
+        androidx.compose.runtime.ScopeUpdateScope endRestartGroup = startRestartGroup.endRestartGroup();
+        if (endRestartGroup != null) {
+            endRestartGroup.updateScope(new kotlin.jvm.functions.Function2() { // from class: coil.compose.AsyncImageKt$$ExternalSyntheticLambda0
+                @Override // kotlin.jvm.functions.Function2
+                public final java.lang.Object invoke(java.lang.Object obj, java.lang.Object obj2) {
+                    kotlin.Unit Content$lambda$2;
+                    Content$lambda$2 = coil.compose.AsyncImageKt.Content$lambda$2(androidx.compose.ui.Modifier.this, asyncImagePainter, str, alignment, contentScale, f, colorFilter, z, i, (androidx.compose.runtime.Composer) obj, ((java.lang.Integer) obj2).intValue());
+                    return Content$lambda$2;
+                }
+            });
+        }
+    }
+}

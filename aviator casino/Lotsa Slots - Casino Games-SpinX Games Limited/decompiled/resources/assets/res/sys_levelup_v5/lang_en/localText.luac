@@ -1,0 +1,18 @@
+
+
+ local translateConfig = {
+	a_levelup_level = "LEVEL",
+	a_levelup_prize = "LEVEL UP PRIZE",
+	a_levelup_vip = "VIP POINTS",
+	a_levelup_hrc = "HRC POINTS",
+	a_levelup_info = "YOU WON ALL THESE!",
+	a_levelup_stamp = "LUCKY STAMPS",
+	a_levelup_unlock = "NEW SLOT UNLOCKED!",
+	a_levelup_button = "PLAY NOW!",
+	a_levelup_plus = "LEVEL UP PLUS",
+	a_levelup_text1 = "As a High Rollers Club member, you are now leveling up 10% faster!",
+	a_levelup_text2 = "TO LEVEL UP:",
+	a_levelup_text3 = "NEXT BONUS:",
+
+}
+return translateConfig 

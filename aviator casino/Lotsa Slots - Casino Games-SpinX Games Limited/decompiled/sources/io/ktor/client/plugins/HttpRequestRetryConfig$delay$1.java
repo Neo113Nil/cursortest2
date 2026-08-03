@@ -1,0 +1,49 @@
+package io.ktor.client.plugins;
+
+/* compiled from: HttpRequestRetry.kt */
+@kotlin.Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\t\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n"}, d2 = {"<anonymous>", "", "it", ""}, k = 3, mv = {2, 1, 0}, xi = 48)
+@kotlin.coroutines.jvm.internal.DebugMetadata(c = "io.ktor.client.plugins.HttpRequestRetryConfig$delay$1", f = "HttpRequestRetry.kt", i = {}, l = {42}, m = "invokeSuspend", n = {}, s = {})
+/* loaded from: classes6.dex */
+final class HttpRequestRetryConfig$delay$1 extends kotlin.coroutines.jvm.internal.SuspendLambda implements kotlin.jvm.functions.Function2<java.lang.Long, kotlin.coroutines.Continuation<? super kotlin.Unit>, java.lang.Object> {
+    /* synthetic */ long J$0;
+    int label;
+
+    HttpRequestRetryConfig$delay$1(kotlin.coroutines.Continuation<? super io.ktor.client.plugins.HttpRequestRetryConfig$delay$1> continuation) {
+        super(2, continuation);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final kotlin.coroutines.Continuation<kotlin.Unit> create(java.lang.Object obj, kotlin.coroutines.Continuation<?> continuation) {
+        io.ktor.client.plugins.HttpRequestRetryConfig$delay$1 httpRequestRetryConfig$delay$1 = new io.ktor.client.plugins.HttpRequestRetryConfig$delay$1(continuation);
+        httpRequestRetryConfig$delay$1.J$0 = ((java.lang.Number) obj).longValue();
+        return httpRequestRetryConfig$delay$1;
+    }
+
+    public final java.lang.Object invoke(long j, kotlin.coroutines.Continuation<? super kotlin.Unit> continuation) {
+        return ((io.ktor.client.plugins.HttpRequestRetryConfig$delay$1) create(java.lang.Long.valueOf(j), continuation)).invokeSuspend(kotlin.Unit.INSTANCE);
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public /* bridge */ /* synthetic */ java.lang.Object invoke(java.lang.Long l, kotlin.coroutines.Continuation<? super kotlin.Unit> continuation) {
+        return invoke(l.longValue(), continuation);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final java.lang.Object invokeSuspend(java.lang.Object obj) {
+        java.lang.Object coroutine_suspended = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = this.label;
+        if (i == 0) {
+            kotlin.ResultKt.throwOnFailure(obj);
+            this.label = 1;
+            if (kotlinx.coroutines.DelayKt.delay(this.J$0, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        } else {
+            if (i != 1) {
+                throw new java.lang.IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            kotlin.ResultKt.throwOnFailure(obj);
+        }
+        return kotlin.Unit.INSTANCE;
+    }
+}

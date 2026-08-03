@@ -1,0 +1,15 @@
+package com.amazon.device.iap.internal.util;
+
+/* compiled from: ReceiptVersion.java */
+/* loaded from: classes2.dex */
+public enum c {
+    LEGACY(0),
+    V1(1),
+    V2(2);
+
+    private int d;
+
+    c(int i) {
+        this.d = i;
+    }
+}

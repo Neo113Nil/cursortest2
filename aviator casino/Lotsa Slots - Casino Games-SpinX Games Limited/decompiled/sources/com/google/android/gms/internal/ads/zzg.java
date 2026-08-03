@@ -1,0 +1,22 @@
+package com.google.android.gms.internal.ads;
+
+/* compiled from: com.google.android.gms:play-services-ads@@25.2.0 */
+/* loaded from: classes4.dex */
+public final class zzg {
+    public static final java.util.UUID zza;
+    public static final java.util.UUID zzb;
+    public static final java.util.UUID zzc;
+    public static final java.util.UUID zzd;
+    public static final java.util.UUID zze;
+
+    static {
+        if (android.os.Build.VERSION.SDK_INT >= 30) {
+            android.os.IBinder.getSuggestedMaxIpcSizeBytes();
+        }
+        zza = new java.util.UUID(0L, 0L);
+        zzb = new java.util.UUID(1186680826959645954L, -5988876978535335093L);
+        zzc = new java.util.UUID(-2129748144642739255L, 8654423357094679310L);
+        zzd = new java.util.UUID(-1301668207276963122L, -6645017420763422227L);
+        zze = new java.util.UUID(-7348484286925749626L, -6083546864340672619L);
+    }
+}

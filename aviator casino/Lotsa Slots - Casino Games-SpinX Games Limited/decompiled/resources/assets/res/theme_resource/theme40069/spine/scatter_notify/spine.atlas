@@ -1,0 +1,195 @@
+
+scatter_tishi.pkm
+size: 2033,1211
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+guang
+  rotate: false
+  xy: 2, 215
+  size: 456, 480
+  orig: 456, 482
+  offset: 0, 0
+  index: -1
+image_scatter_tishi/a_00000
+  rotate: false
+  xy: 2030, 891
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+image_scatter_tishi/a_00024
+  rotate: false
+  xy: 2030, 891
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+image_scatter_tishi/a_00001
+  rotate: false
+  xy: 1002, 70
+  size: 97, 104
+  orig: 880, 880
+  offset: 243, 512
+  index: -1
+image_scatter_tishi/a_00002
+  rotate: true
+  xy: 814, 54
+  size: 120, 186
+  orig: 880, 880
+  offset: 221, 428
+  index: -1
+image_scatter_tishi/a_00003
+  rotate: false
+  xy: 1888, 655
+  size: 140, 237
+  orig: 880, 880
+  offset: 198, 374
+  index: -1
+image_scatter_tishi/a_00004
+  rotate: false
+  xy: 1892, 894
+  size: 139, 315
+  orig: 880, 880
+  offset: 196, 293
+  index: -1
+image_scatter_tishi/a_00005
+  rotate: true
+  xy: 2, 37
+  size: 176, 378
+  orig: 880, 880
+  offset: 194, 226
+  index: -1
+image_scatter_tishi/a_00006
+  rotate: true
+  xy: 1103, 668
+  size: 243, 394
+  orig: 880, 880
+  offset: 194, 205
+  index: -1
+image_scatter_tishi/a_00007
+  rotate: true
+  xy: 468, 537
+  size: 287, 397
+  orig: 880, 880
+  offset: 195, 197
+  index: -1
+image_scatter_tishi/a_00008
+  rotate: true
+  xy: 1103, 913
+  size: 296, 394
+  orig: 880, 880
+  offset: 196, 195
+  index: -1
+image_scatter_tishi/a_00009
+  rotate: true
+  xy: 1499, 910
+  size: 299, 391
+  orig: 880, 880
+  offset: 197, 192
+  index: -1
+image_scatter_tishi/a_00010
+  rotate: true
+  xy: 1499, 605
+  size: 303, 387
+  orig: 880, 880
+  offset: 198, 190
+  index: -1
+image_scatter_tishi/a_00011
+  rotate: false
+  xy: 468, 826
+  size: 314, 383
+  orig: 880, 880
+  offset: 199, 188
+  index: -1
+image_scatter_tishi/a_00012
+  rotate: false
+  xy: 784, 834
+  size: 317, 375
+  orig: 880, 880
+  offset: 202, 189
+  index: -1
+image_scatter_tishi/a_00013
+  rotate: true
+  xy: 460, 220
+  size: 315, 365
+  orig: 880, 880
+  offset: 205, 190
+  index: -1
+image_scatter_tishi/a_00014
+  rotate: false
+  xy: 827, 176
+  size: 313, 351
+  orig: 880, 880
+  offset: 208, 192
+  index: -1
+image_scatter_tishi/a_00015
+  rotate: false
+  xy: 1142, 347
+  size: 312, 319
+  orig: 880, 880
+  offset: 210, 193
+  index: -1
+image_scatter_tishi/a_00016
+  rotate: false
+  xy: 1456, 297
+  size: 308, 306
+  orig: 880, 880
+  offset: 214, 193
+  index: -1
+image_scatter_tishi/a_00017
+  rotate: false
+  xy: 1142, 65
+  size: 308, 280
+  orig: 880, 880
+  offset: 218, 194
+  index: -1
+image_scatter_tishi/a_00018
+  rotate: true
+  xy: 867, 529
+  size: 303, 220
+  orig: 880, 880
+  offset: 225, 196
+  index: -1
+image_scatter_tishi/a_00019
+  rotate: false
+  xy: 1452, 80
+  size: 292, 215
+  orig: 880, 880
+  offset: 239, 197
+  index: -1
+image_scatter_tishi/a_00020
+  rotate: true
+  xy: 1746, 2
+  size: 293, 210
+  orig: 880, 880
+  offset: 240, 199
+  index: -1
+image_scatter_tishi/a_00021
+  rotate: false
+  xy: 460, 14
+  size: 294, 204
+  orig: 880, 880
+  offset: 242, 200
+  index: -1
+image_scatter_tishi/a_00022
+  rotate: true
+  xy: 1766, 308
+  size: 295, 195
+  orig: 880, 880
+  offset: 244, 203
+  index: -1
+image_scatter_tishi/a_00023
+  rotate: true
+  xy: 756, 5
+  size: 213, 56
+  orig: 880, 880
+  offset: 327, 208
+  index: -1
+main
+  rotate: false
+  xy: 2, 697
+  size: 464, 512
+  orig: 464, 512
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,37 @@
+package com.ironsource;
+
+/* loaded from: classes5.dex */
+public class Q1 {
+
+    /* renamed from: a, reason: collision with root package name */
+    private int f5931a;
+    private int b;
+    private int c;
+    private boolean d;
+
+    public Q1() {
+    }
+
+    public int a() {
+        return this.c;
+    }
+
+    public int b() {
+        return this.b;
+    }
+
+    public int c() {
+        return this.f5931a;
+    }
+
+    public boolean d() {
+        return this.d;
+    }
+
+    public Q1(int i, int i2, int i3, boolean z) {
+        this.f5931a = i;
+        this.b = i2;
+        this.c = i3;
+        this.d = z;
+    }
+}

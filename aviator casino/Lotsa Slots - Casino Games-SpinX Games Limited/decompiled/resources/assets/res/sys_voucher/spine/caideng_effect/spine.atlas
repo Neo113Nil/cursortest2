@@ -1,0 +1,48 @@
+
+caideng_effect.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ef_xue
+  rotate: false
+  xy: 2, 146
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+ef_xue1
+  rotate: false
+  xy: 2, 2
+  size: 31, 34
+  orig: 31, 34
+  offset: 0, 0
+  index: -1
+hong
+  rotate: false
+  xy: 2, 92
+  size: 54, 52
+  orig: 54, 52
+  offset: 0, 0
+  index: -1
+jin
+  rotate: false
+  xy: 64, 154
+  size: 54, 52
+  orig: 54, 52
+  offset: 0, 0
+  index: -1
+lan
+  rotate: false
+  xy: 2, 38
+  size: 54, 52
+  orig: 54, 52
+  offset: 0, 0
+  index: -1
+lv
+  rotate: false
+  xy: 120, 154
+  size: 54, 52
+  orig: 54, 52
+  offset: 0, 0
+  index: -1

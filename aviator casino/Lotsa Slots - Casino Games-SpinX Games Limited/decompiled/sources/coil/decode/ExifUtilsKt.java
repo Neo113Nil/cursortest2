@@ -1,0 +1,54 @@
+package coil.decode;
+
+/* compiled from: ExifUtils.kt */
+@kotlin.Metadata(d1 = {"\u0000 \n\u0000\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\"\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a\u0016\u0010\b\u001a\u00020\u0001*\u00020\t2\b\u0010\n\u001a\u0004\u0018\u00010\u0007H\u0000\"\u0018\u0010\u0000\u001a\u00020\u0001*\u00020\u00028@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b\u0000\u0010\u0003\"\u0018\u0010\u0004\u001a\u00020\u0001*\u00020\u00028@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b\u0004\u0010\u0003\"\u0014\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u000b"}, d2 = {"isSwapped", "", "Lcoil/decode/ExifData;", "(Lcoil/decode/ExifData;)Z", "isRotated", "RESPECT_PERFORMANCE_MIME_TYPES", "", "", "supports", "Lcoil/decode/ExifOrientationPolicy;", "mimeType", "coil-base_release"}, k = 2, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes2.dex */
+public final class ExifUtilsKt {
+    private static final java.util.Set<java.lang.String> RESPECT_PERFORMANCE_MIME_TYPES = kotlin.collections.SetsKt.setOf((java.lang.Object[]) new java.lang.String[]{"image/jpeg", "image/webp", "image/heic", "image/heif"});
+
+    /* compiled from: ExifUtils.kt */
+    @kotlin.Metadata(k = 3, mv = {2, 0, 0}, xi = 48)
+    public /* synthetic */ class WhenMappings {
+        public static final /* synthetic */ int[] $EnumSwitchMapping$0;
+
+        static {
+            int[] iArr = new int[coil.decode.ExifOrientationPolicy.values().length];
+            try {
+                iArr[coil.decode.ExifOrientationPolicy.RESPECT_PERFORMANCE.ordinal()] = 1;
+            } catch (java.lang.NoSuchFieldError unused) {
+            }
+            try {
+                iArr[coil.decode.ExifOrientationPolicy.IGNORE.ordinal()] = 2;
+            } catch (java.lang.NoSuchFieldError unused2) {
+            }
+            try {
+                iArr[coil.decode.ExifOrientationPolicy.RESPECT_ALL.ordinal()] = 3;
+            } catch (java.lang.NoSuchFieldError unused3) {
+            }
+            $EnumSwitchMapping$0 = iArr;
+        }
+    }
+
+    public static final boolean isSwapped(coil.decode.ExifData exifData) {
+        return exifData.getRotationDegrees() == 90 || exifData.getRotationDegrees() == 270;
+    }
+
+    public static final boolean isRotated(coil.decode.ExifData exifData) {
+        return exifData.getRotationDegrees() > 0;
+    }
+
+    public static final boolean supports(coil.decode.ExifOrientationPolicy exifOrientationPolicy, java.lang.String str) {
+        int i = coil.decode.ExifUtilsKt.WhenMappings.$EnumSwitchMapping$0[exifOrientationPolicy.ordinal()];
+        if (i != 1) {
+            if (i == 2) {
+                return false;
+            }
+            if (i != 3) {
+                throw new kotlin.NoWhenBranchMatchedException();
+            }
+        } else if (str == null || !RESPECT_PERFORMANCE_MIME_TYPES.contains(str)) {
+            return false;
+        }
+        return true;
+    }
+}

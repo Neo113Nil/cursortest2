@@ -1,0 +1,207 @@
+
+feibiao.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: true
+  xy: 73, 3
+  size: 22, 47
+  orig: 22, 47
+  offset: 0, 0
+  index: -1
+bazi
+  rotate: true
+  xy: 408, 305
+  size: 99, 96
+  orig: 108, 110
+  offset: 7, 4
+  index: -1
+bazi_g
+  rotate: true
+  xy: 408, 406
+  size: 102, 98
+  orig: 512, 512
+  offset: 209, 207
+  index: -1
+biaoti12
+  rotate: false
+  xy: 197, 157
+  size: 306, 139
+  orig: 644, 142
+  offset: 338, 0
+  index: -1
+biaoti21
+  rotate: true
+  xy: 73, 27
+  size: 481, 122
+  orig: 481, 122
+  offset: 0, 0
+  index: -1
+ef_xx1
+  rotate: false
+  xy: 353, 15
+  size: 146, 140
+  orig: 160, 160
+  offset: 7, 10
+  index: -1
+kuosan
+  rotate: true
+  xy: 197, 298
+  size: 210, 209
+  orig: 256, 256
+  offset: 16, 20
+  index: -1
+ld
+  rotate: false
+  xy: 203, 7
+  size: 148, 148
+  orig: 256, 256
+  offset: 54, 57
+  index: -1
+missions
+  rotate: false
+  xy: 122, 10
+  size: 79, 15
+  orig: 79, 15
+  offset: 0, 0
+  index: -1
+mkbai
+  rotate: false
+  xy: 353, 3
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+shexian
+  rotate: false
+  xy: 2, 2
+  size: 69, 506
+  orig: 69, 512
+  offset: 0, 6
+  index: -1
+
+feibiao2.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1guangy
+  rotate: false
+  xy: 186, 40
+  size: 138, 138
+  orig: 138, 138
+  offset: 0, 0
+  index: -1
+ef_bao
+  rotate: false
+  xy: 186, 40
+  size: 138, 138
+  orig: 138, 138
+  offset: 0, 0
+  index: -1
+ef_dedian
+  rotate: false
+  xy: 186, 40
+  size: 138, 138
+  orig: 138, 138
+  offset: 0, 0
+  index: -1
+biaoti11
+  rotate: true
+  xy: 332, 141
+  size: 369, 139
+  orig: 644, 142
+  offset: 0, 3
+  index: -1
+ef_di
+  rotate: true
+  xy: 2, 2
+  size: 176, 182
+  orig: 256, 256
+  offset: 40, 37
+  index: -1
+g_yun
+  rotate: true
+  xy: 2, 2
+  size: 176, 182
+  orig: 256, 256
+  offset: 40, 37
+  index: -1
+lx
+  rotate: false
+  xy: 326, 2
+  size: 137, 137
+  orig: 300, 300
+  offset: 81, 80
+  index: -1
+mohu
+  rotate: false
+  xy: 2, 180
+  size: 328, 330
+  orig: 1280, 1280
+  offset: 479, 473
+  index: -1
+
+feibiao3.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+3xian
+  rotate: false
+  xy: 154, 339
+  size: 213, 71
+  orig: 213, 71
+  offset: 0, 0
+  index: -1
+feibiao
+  rotate: false
+  xy: 2, 191
+  size: 150, 315
+  orig: 500, 500
+  offset: 174, 76
+  index: -1
+feibiao_g
+  rotate: false
+  xy: 2, 2
+  size: 103, 187
+  orig: 250, 250
+  offset: 72, 24
+  index: -1
+guangdd
+  rotate: false
+  xy: 154, 209
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+guangx
+  rotate: false
+  xy: 154, 412
+  size: 232, 94
+  orig: 232, 94
+  offset: 0, 0
+  index: -1
+guangxian05
+  rotate: true
+  xy: 284, 209
+  size: 128, 127
+  orig: 128, 128
+  offset: 0, 1
+  index: -1
+guangxian06
+  rotate: true
+  xy: 107, 61
+  size: 128, 127
+  orig: 128, 128
+  offset: 0, 1
+  index: -1
+hongd
+  rotate: false
+  xy: 388, 398
+  size: 108, 108
+  orig: 108, 108
+  offset: 0, 0
+  index: -1

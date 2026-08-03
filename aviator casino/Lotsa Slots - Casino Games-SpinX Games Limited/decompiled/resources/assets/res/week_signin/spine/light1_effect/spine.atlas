@@ -1,0 +1,13 @@
+
+light1_effect.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+ef_guang1
+  rotate: false
+  xy: 2, 2
+  size: 169, 169
+  orig: 169, 169
+  offset: 0, 0
+  index: -1

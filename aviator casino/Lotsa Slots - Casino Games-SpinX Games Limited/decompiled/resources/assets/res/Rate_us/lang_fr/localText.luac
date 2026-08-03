@@ -1,0 +1,44 @@
+
+local translateConfig = {
+    Qusetion = {
+        [1] = {
+            [1] = {
+                Name = "Technique",
+                Next = 2,
+            },
+            [2] = {
+                Name = "Gains",
+                Next = 3,
+            },
+            [3] = {
+                Name = "Expérience de jeu",
+                Next = 4,
+            },
+            [4] = "Autre (veuillez préciser)",
+        },
+        [2] = {
+            [1] = "Le jeu est lent",
+            [2] = "Chargement lent",
+            [3] = "Problème d'achat",
+            [4] = "Problèmes d'affichage",
+            [5] = "Autre (veuillez préciser)"
+        },
+        [3] = {
+            [1] = "Pas assez de gains Big/Mega",
+            [2] = "Pas assez de pièces gagnées",
+            [3] = "Trop difficile de gagner",
+            [4] = "Pas assez de jeux Bonus",
+            [5] = "Autre (veuillez préciser)"
+        },
+        [4] = {
+            [1] = "Les thèmes ne sont pas intéressants",
+            [2] = "Pas assez d'événements",
+            [3] = "Pas assez de bonus dans les événements",
+            [4] = "Certains contenus difficiles à saisir",
+            [5] = "Impossible de jouer avec mes amis",
+            [6] = "Autre (veuillez préciser)"
+        }
+    }
+
+}
+return translateConfig

@@ -1,0 +1,26 @@
+
+1_hongdian.png
+size: 64,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+quan_00
+  rotate: false
+  xy: 2, 2
+  size: 54, 54
+  orig: 100, 100
+  offset: 23, 23
+  index: -1
+
+1_hongdian2.png
+size: 32,32
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+zhongxin_00
+  rotate: false
+  xy: 2, 2
+  size: 20, 20
+  orig: 100, 100
+  offset: 40, 40
+  index: -1

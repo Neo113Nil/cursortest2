@@ -1,0 +1,12 @@
+
+
+ local translateConfig = {
+	a_header_unlockat = "ENTSPERRE AUF",
+	a_header_level = "LEVEL",
+	a_header_scratcher_every15minutes = "GRATIS RUBBELLOSE ALLE 15 MINUTEN!",
+	a_header_scratcher_morespin = "MEHR DREHS = HÖHERER MULTIPLIKATOR!",
+	a_header_scratcher_resetperday = "*Multiplikator wird einmal pro Tag zurückgesetzt",
+	a_header_scratcher_maxedout = "Du hast deine Rubbeln für heute ausgeschöpft! Rubble wider in",
+
+}
+return translateConfig 

@@ -1,0 +1,110 @@
+package kotlinx.coroutines.flow.internal;
+
+/* compiled from: ChannelFlow.kt */
+@kotlin.Metadata(d1 = {"\u0000\\\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0010\u0000\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\b'\u0018\u0000*\u0004\b\u0000\u0010\u00012\b\u0012\u0004\u0012\u0002H\u00010\u0002B\u001f\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\b¢\u0006\u0004\b\t\u0010\nJ\u0010\u0010\u0016\u001a\n\u0012\u0004\u0012\u00028\u0000\u0018\u00010\u0017H\u0016J&\u0010\u0018\u001a\b\u0012\u0004\u0012\u00028\u00000\u00172\u0006\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bH\u0016J&\u0010\u0019\u001a\b\u0012\u0004\u0012\u00028\u00000\u00002\u0006\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bH$J\u001c\u0010\u001a\u001a\u00020\u000f2\f\u0010\u001b\u001a\b\u0012\u0004\u0012\u00028\u00000\rH¤@¢\u0006\u0002\u0010\u001cJ\u0016\u0010\u001d\u001a\b\u0012\u0004\u0012\u00028\u00000\u001e2\u0006\u0010\u001b\u001a\u00020\u001fH\u0016J\u001c\u0010 \u001a\u00020\u000f2\f\u0010!\u001a\b\u0012\u0004\u0012\u00028\u00000\"H\u0096@¢\u0006\u0002\u0010#J\n\u0010$\u001a\u0004\u0018\u00010%H\u0014J\b\u0010&\u001a\u00020%H\u0016R\u0010\u0010\u0003\u001a\u00020\u00048\u0006X\u0087\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u0005\u001a\u00020\u00068\u0006X\u0087\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u0007\u001a\u00020\b8\u0006X\u0087\u0004¢\u0006\u0002\n\u0000R6\u0010\u000b\u001a$\b\u0001\u0012\n\u0012\b\u0012\u0004\u0012\u00028\u00000\r\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u000f0\u000e\u0012\u0006\u0012\u0004\u0018\u00010\u00100\f8@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b\u0011\u0010\u0012R\u0014\u0010\u0013\u001a\u00020\u00068@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b\u0014\u0010\u0015¨\u0006'"}, d2 = {"Lkotlinx/coroutines/flow/internal/ChannelFlow;", "T", "Lkotlinx/coroutines/flow/internal/FusibleFlow;", "context", "Lkotlin/coroutines/CoroutineContext;", "capacity", "", "onBufferOverflow", "Lkotlinx/coroutines/channels/BufferOverflow;", "<init>", "(Lkotlin/coroutines/CoroutineContext;ILkotlinx/coroutines/channels/BufferOverflow;)V", "collectToFun", "Lkotlin/Function2;", "Lkotlinx/coroutines/channels/ProducerScope;", "Lkotlin/coroutines/Continuation;", "", "", "getCollectToFun$kotlinx_coroutines_core", "()Lkotlin/jvm/functions/Function2;", "produceCapacity", "getProduceCapacity$kotlinx_coroutines_core", "()I", "dropChannelOperators", "Lkotlinx/coroutines/flow/Flow;", "fuse", "create", "collectTo", "scope", "(Lkotlinx/coroutines/channels/ProducerScope;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "produceImpl", "Lkotlinx/coroutines/channels/ReceiveChannel;", "Lkotlinx/coroutines/CoroutineScope;", "collect", "collector", "Lkotlinx/coroutines/flow/FlowCollector;", "(Lkotlinx/coroutines/flow/FlowCollector;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "additionalToStringProps", "", "toString", "kotlinx-coroutines-core"}, k = 1, mv = {2, 1, 0}, xi = 48)
+/* loaded from: classes6.dex */
+public abstract class ChannelFlow<T> implements kotlinx.coroutines.flow.internal.FusibleFlow<T> {
+    public final int capacity;
+    public final kotlin.coroutines.CoroutineContext context;
+    public final kotlinx.coroutines.channels.BufferOverflow onBufferOverflow;
+
+    protected java.lang.String additionalToStringProps() {
+        return null;
+    }
+
+    @Override // kotlinx.coroutines.flow.Flow
+    public java.lang.Object collect(kotlinx.coroutines.flow.FlowCollector<? super T> flowCollector, kotlin.coroutines.Continuation<? super kotlin.Unit> continuation) {
+        return collect$suspendImpl(this, flowCollector, continuation);
+    }
+
+    protected abstract java.lang.Object collectTo(kotlinx.coroutines.channels.ProducerScope<? super T> producerScope, kotlin.coroutines.Continuation<? super kotlin.Unit> continuation);
+
+    protected abstract kotlinx.coroutines.flow.internal.ChannelFlow<T> create(kotlin.coroutines.CoroutineContext context, int capacity, kotlinx.coroutines.channels.BufferOverflow onBufferOverflow);
+
+    public kotlinx.coroutines.flow.Flow<T> dropChannelOperators() {
+        return null;
+    }
+
+    public ChannelFlow(kotlin.coroutines.CoroutineContext coroutineContext, int i, kotlinx.coroutines.channels.BufferOverflow bufferOverflow) {
+        this.context = coroutineContext;
+        this.capacity = i;
+        this.onBufferOverflow = bufferOverflow;
+        if (kotlinx.coroutines.DebugKt.getASSERTIONS_ENABLED() && i == -1) {
+            throw new java.lang.AssertionError();
+        }
+    }
+
+    public final kotlin.jvm.functions.Function2<kotlinx.coroutines.channels.ProducerScope<? super T>, kotlin.coroutines.Continuation<? super kotlin.Unit>, java.lang.Object> getCollectToFun$kotlinx_coroutines_core() {
+        return new kotlinx.coroutines.flow.internal.ChannelFlow$collectToFun$1(this, null);
+    }
+
+    public final int getProduceCapacity$kotlinx_coroutines_core() {
+        int i = this.capacity;
+        if (i == -3) {
+            return -2;
+        }
+        return i;
+    }
+
+    @Override // kotlinx.coroutines.flow.internal.FusibleFlow
+    public kotlinx.coroutines.flow.Flow<T> fuse(kotlin.coroutines.CoroutineContext context, int capacity, kotlinx.coroutines.channels.BufferOverflow onBufferOverflow) {
+        if (kotlinx.coroutines.DebugKt.getASSERTIONS_ENABLED() && capacity == -1) {
+            throw new java.lang.AssertionError();
+        }
+        kotlin.coroutines.CoroutineContext plus = context.plus(this.context);
+        if (onBufferOverflow == kotlinx.coroutines.channels.BufferOverflow.SUSPEND) {
+            int i = this.capacity;
+            if (i != -3) {
+                if (capacity != -3) {
+                    if (i != -2) {
+                        if (capacity != -2) {
+                            if (kotlinx.coroutines.DebugKt.getASSERTIONS_ENABLED() && this.capacity < 0) {
+                                throw new java.lang.AssertionError();
+                            }
+                            if (kotlinx.coroutines.DebugKt.getASSERTIONS_ENABLED() && capacity < 0) {
+                                throw new java.lang.AssertionError();
+                            }
+                            i = this.capacity + capacity;
+                            if (i < 0) {
+                                capacity = Integer.MAX_VALUE;
+                            }
+                        }
+                    }
+                }
+                capacity = i;
+            }
+            onBufferOverflow = this.onBufferOverflow;
+        }
+        if (kotlin.jvm.internal.Intrinsics.areEqual(plus, this.context) && capacity == this.capacity && onBufferOverflow == this.onBufferOverflow) {
+            return this;
+        }
+        return create(plus, capacity, onBufferOverflow);
+    }
+
+    public kotlinx.coroutines.channels.ReceiveChannel<T> produceImpl(kotlinx.coroutines.CoroutineScope scope) {
+        return kotlinx.coroutines.channels.ProduceKt.produce$default(scope, this.context, getProduceCapacity$kotlinx_coroutines_core(), this.onBufferOverflow, kotlinx.coroutines.CoroutineStart.ATOMIC, null, getCollectToFun$kotlinx_coroutines_core(), 16, null);
+    }
+
+    static /* synthetic */ <T> java.lang.Object collect$suspendImpl(kotlinx.coroutines.flow.internal.ChannelFlow<T> channelFlow, kotlinx.coroutines.flow.FlowCollector<? super T> flowCollector, kotlin.coroutines.Continuation<? super kotlin.Unit> continuation) {
+        java.lang.Object coroutineScope = kotlinx.coroutines.CoroutineScopeKt.coroutineScope(new kotlinx.coroutines.flow.internal.ChannelFlow$collect$2(flowCollector, channelFlow, null), continuation);
+        return coroutineScope == kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED() ? coroutineScope : kotlin.Unit.INSTANCE;
+    }
+
+    public java.lang.String toString() {
+        java.util.ArrayList arrayList = new java.util.ArrayList(4);
+        java.lang.String additionalToStringProps = additionalToStringProps();
+        if (additionalToStringProps != null) {
+            arrayList.add(additionalToStringProps);
+        }
+        if (this.context != kotlin.coroutines.EmptyCoroutineContext.INSTANCE) {
+            arrayList.add("context=" + this.context);
+        }
+        if (this.capacity != -3) {
+            arrayList.add("capacity=" + this.capacity);
+        }
+        if (this.onBufferOverflow != kotlinx.coroutines.channels.BufferOverflow.SUSPEND) {
+            arrayList.add("onBufferOverflow=" + this.onBufferOverflow);
+        }
+        return kotlinx.coroutines.DebugStringsKt.getClassSimpleName(this) + kotlinx.serialization.json.internal.AbstractJsonLexerKt.BEGIN_LIST + kotlin.collections.CollectionsKt.joinToString$default(arrayList, ", ", null, null, 0, null, null, 62, null) + kotlinx.serialization.json.internal.AbstractJsonLexerKt.END_LIST;
+    }
+}

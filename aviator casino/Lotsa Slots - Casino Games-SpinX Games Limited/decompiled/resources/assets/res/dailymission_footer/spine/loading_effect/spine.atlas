@@ -1,0 +1,13 @@
+
+loading_effect.png
+size: 64,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+pics/diandian
+  rotate: false
+  xy: 2, 2
+  size: 31, 32
+  orig: 32, 32
+  offset: 1, 0
+  index: -1

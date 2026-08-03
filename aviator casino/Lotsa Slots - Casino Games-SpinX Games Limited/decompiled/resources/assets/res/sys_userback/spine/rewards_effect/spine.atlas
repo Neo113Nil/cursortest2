@@ -1,0 +1,41 @@
+
+rewards _effect.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+dian
+  rotate: false
+  xy: 222, 188
+  size: 42, 42
+  orig: 72, 72
+  offset: 15, 15
+  index: -1
+dian1
+  rotate: false
+  xy: 294, 434
+  size: 64, 64
+  orig: 104, 104
+  offset: 20, 21
+  index: -1
+ef_gci
+  rotate: false
+  xy: 2, 232
+  size: 266, 266
+  orig: 266, 266
+  offset: 0, 0
+  index: -1
+ef_gg
+  rotate: false
+  xy: 2, 2
+  size: 218, 228
+  orig: 266, 266
+  offset: 24, 19
+  index: -1
+xian
+  rotate: false
+  xy: 270, 371
+  size: 22, 127
+  orig: 33, 133
+  offset: 6, 0
+  index: -1

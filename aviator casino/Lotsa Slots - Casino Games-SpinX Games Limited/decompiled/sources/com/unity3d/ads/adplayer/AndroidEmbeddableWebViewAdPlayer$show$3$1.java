@@ -1,0 +1,69 @@
+package com.unity3d.ads.adplayer;
+
+/* compiled from: AndroidEmbeddableWebViewAdPlayer.kt */
+@kotlin.Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 8, 0}, xi = 48)
+@kotlin.coroutines.jvm.internal.DebugMetadata(c = "com.unity3d.ads.adplayer.AndroidEmbeddableWebViewAdPlayer$show$3$1", f = "AndroidEmbeddableWebViewAdPlayer.kt", i = {}, l = {97, 98}, m = "invokeSuspend", n = {}, s = {})
+/* loaded from: classes5.dex */
+final class AndroidEmbeddableWebViewAdPlayer$show$3$1 extends kotlin.coroutines.jvm.internal.SuspendLambda implements kotlin.jvm.functions.Function2<kotlinx.coroutines.CoroutineScope, kotlin.coroutines.Continuation<? super kotlin.Unit>, java.lang.Object> {
+    final /* synthetic */ com.unity3d.ads.adplayer.ShowOptions $showOptions;
+    int label;
+    final /* synthetic */ com.unity3d.ads.adplayer.AndroidEmbeddableWebViewAdPlayer this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    AndroidEmbeddableWebViewAdPlayer$show$3$1(com.unity3d.ads.adplayer.AndroidEmbeddableWebViewAdPlayer androidEmbeddableWebViewAdPlayer, com.unity3d.ads.adplayer.ShowOptions showOptions, kotlin.coroutines.Continuation<? super com.unity3d.ads.adplayer.AndroidEmbeddableWebViewAdPlayer$show$3$1> continuation) {
+        super(2, continuation);
+        this.this$0 = androidEmbeddableWebViewAdPlayer;
+        this.$showOptions = showOptions;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final kotlin.coroutines.Continuation<kotlin.Unit> create(java.lang.Object obj, kotlin.coroutines.Continuation<?> continuation) {
+        return new com.unity3d.ads.adplayer.AndroidEmbeddableWebViewAdPlayer$show$3$1(this.this$0, this.$showOptions, continuation);
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final java.lang.Object invoke(kotlinx.coroutines.CoroutineScope coroutineScope, kotlin.coroutines.Continuation<? super kotlin.Unit> continuation) {
+        return ((com.unity3d.ads.adplayer.AndroidEmbeddableWebViewAdPlayer$show$3$1) create(coroutineScope, continuation)).invokeSuspend(kotlin.Unit.INSTANCE);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final java.lang.Object invokeSuspend(java.lang.Object obj) {
+        com.unity3d.ads.core.data.datasource.LifecycleDataSource lifecycleDataSource;
+        java.lang.Object coroutine_suspended = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = this.label;
+        if (i == 0) {
+            kotlin.ResultKt.throwOnFailure(obj);
+            this.label = 1;
+            if (this.this$0.webViewAdPlayer.requestShow(((com.unity3d.ads.adplayer.AndroidShowOptions) this.$showOptions).getUnityAdsShowOptions(), this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        } else {
+            if (i != 1) {
+                if (i != 2) {
+                    throw new java.lang.IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                }
+                kotlin.ResultKt.throwOnFailure(obj);
+                throw new kotlin.KotlinNothingValueException();
+            }
+            kotlin.ResultKt.throwOnFailure(obj);
+        }
+        lifecycleDataSource = this.this$0.lifecycleDataSource;
+        kotlinx.coroutines.flow.StateFlow<java.lang.Boolean> appActive = lifecycleDataSource.getAppActive();
+        final com.unity3d.ads.adplayer.AndroidEmbeddableWebViewAdPlayer androidEmbeddableWebViewAdPlayer = this.this$0;
+        this.label = 2;
+        if (appActive.collect(new kotlinx.coroutines.flow.FlowCollector() { // from class: com.unity3d.ads.adplayer.AndroidEmbeddableWebViewAdPlayer$show$3$1.1
+            @Override // kotlinx.coroutines.flow.FlowCollector
+            public /* bridge */ /* synthetic */ java.lang.Object emit(java.lang.Object obj2, kotlin.coroutines.Continuation continuation) {
+                return emit(((java.lang.Boolean) obj2).booleanValue(), (kotlin.coroutines.Continuation<? super kotlin.Unit>) continuation);
+            }
+
+            public final java.lang.Object emit(boolean z, kotlin.coroutines.Continuation<? super kotlin.Unit> continuation) {
+                java.lang.Object sendFocusChange = com.unity3d.ads.adplayer.AndroidEmbeddableWebViewAdPlayer.this.webViewAdPlayer.sendFocusChange(z, continuation);
+                return sendFocusChange == kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED() ? sendFocusChange : kotlin.Unit.INSTANCE;
+            }
+        }, this) == coroutine_suspended) {
+            return coroutine_suspended;
+        }
+        throw new kotlin.KotlinNothingValueException();
+    }
+}

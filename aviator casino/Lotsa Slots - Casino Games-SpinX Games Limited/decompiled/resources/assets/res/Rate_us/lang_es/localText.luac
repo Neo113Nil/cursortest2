@@ -1,0 +1,45 @@
+
+
+ local translateConfig = {
+	Qusetion = {
+		[1] = {
+			[1] = {
+				Name = "Técnico",
+				Next = 2,
+			},
+			[2] = {
+				Name = "Pagos",
+				Next = 3,
+			},
+			[3] = {
+				Name = "Experiencia de juego",
+				Next = 4,
+			},
+			[4] = "Otro (por favor especificar)",
+		},
+		[2] = {
+			[1] = "El juego está lento",
+			[2] = "Carga lenta",
+			[3] = "Problema de compra",
+			[4] = "Gráficos distorsionados/desordenados",
+			[5] = "Otro (por favor especificar)"
+		},
+		[3] = {
+			[1] = "No hay suficientes Big/Mega-wins",
+			[2] = "No se ganan suficientes monedas",
+			[3] = "Es muy difícil ganar",
+			[4] = "No hay suficientes juegos de bonificación",
+			[5] = "Otro (por favor especificar)"
+		},
+		[4] = {
+			[1] = "Los temas no son interesantes.",
+			[2] = "No hay suficientes actividades.",
+			[3] = "Insuficientes bonos en las actividades",
+			[4] = "Es difícil entender algunos contenidos",
+			[5] = "No puedo jugar con mis amigos.",
+			[6] = "Otro (por favor especificar)"
+		}
+	}
+
+}
+return translateConfig 

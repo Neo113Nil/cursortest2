@@ -1,0 +1,7 @@
+
+
+local translateConfig = {
+	failed_text = "¡YA HAS RECOGIDO ESTAS RECOMPENSAS!",
+	expire_text = "¡REGALOS EXPIRADOS! ¡NO TE PIERDAS EL PRÓXIMO!",
+}
+return translateConfig

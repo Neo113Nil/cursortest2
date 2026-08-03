@@ -1,0 +1,48 @@
+
+respin_kuang.pkm
+size: 1432,623
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+a_00000
+  rotate: false
+  xy: 2, 415
+  size: 713, 206
+  orig: 800, 240
+  offset: 42, 18
+  index: -1
+a_00001
+  rotate: false
+  xy: 717, 416
+  size: 713, 205
+  orig: 800, 240
+  offset: 42, 18
+  index: -1
+a_00002
+  rotate: false
+  xy: 717, 209
+  size: 713, 205
+  orig: 800, 240
+  offset: 41, 18
+  index: -1
+a_00003
+  rotate: false
+  xy: 2, 2
+  size: 712, 204
+  orig: 800, 240
+  offset: 42, 18
+  index: -1
+a_00004
+  rotate: false
+  xy: 717, 3
+  size: 712, 204
+  orig: 800, 240
+  offset: 42, 18
+  index: -1
+a_00005
+  rotate: false
+  xy: 2, 208
+  size: 713, 205
+  orig: 800, 240
+  offset: 43, 18
+  index: -1

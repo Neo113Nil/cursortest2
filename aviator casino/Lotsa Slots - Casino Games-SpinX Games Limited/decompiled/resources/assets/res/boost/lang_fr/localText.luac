@@ -1,0 +1,7 @@
+local translateConfig = {
+    a_boost_to_level = " POUR LE NIVEAU ",
+    a_boost_tips_lobby_bonus = "ACTIVEZ LE MODE BOOST\nPOUR DES BONUS EXPRESS x5 !",
+    a_boost_tips_wheel_inactive = "ACTIVEZ LE MODE BOOST\nPOUR OBTENIR x2 SUR TOUTE LA ROUE !",
+}
+
+return translateConfig

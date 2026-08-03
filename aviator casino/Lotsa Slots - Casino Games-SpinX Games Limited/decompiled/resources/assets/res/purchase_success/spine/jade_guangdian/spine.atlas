@@ -1,0 +1,13 @@
+
+jinbidui_guangdian.png
+size: 128,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+xx
+  rotate: false
+  xy: 2, 3
+  size: 81, 80
+  orig: 82, 82
+  offset: 1, 0
+  index: -1

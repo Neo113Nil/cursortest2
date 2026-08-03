@@ -1,0 +1,287 @@
+package androidx.collection;
+
+/* compiled from: FloatList.kt */
+@kotlin.Metadata(d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0007\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0010\u0014\n\u0002\b\u0011\u0018\u00002\u00020\u0001B\u000f\u0012\b\b\u0002\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u000e\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bJ\u0018\u0010\b\u001a\u00020\f2\b\b\u0001\u0010\r\u001a\u00020\u00032\u0006\u0010\n\u001a\u00020\u000bJ\u000e\u0010\u000e\u001a\u00020\t2\u0006\u0010\u000f\u001a\u00020\u0001J\u000e\u0010\u000e\u001a\u00020\t2\u0006\u0010\u000f\u001a\u00020\u0010J\u0018\u0010\u000e\u001a\u00020\t2\b\b\u0001\u0010\r\u001a\u00020\u00032\u0006\u0010\u000f\u001a\u00020\u0001J\u0018\u0010\u000e\u001a\u00020\t2\b\b\u0001\u0010\r\u001a\u00020\u00032\u0006\u0010\u000f\u001a\u00020\u0010J\u0006\u0010\u0011\u001a\u00020\fJ\u000e\u0010\u0012\u001a\u00020\f2\u0006\u0010\u0005\u001a\u00020\u0003J\u0011\u0010\u0013\u001a\u00020\f2\u0006\u0010\u000f\u001a\u00020\u0001H\u0086\u0002J\u0011\u0010\u0013\u001a\u00020\f2\u0006\u0010\n\u001a\u00020\u000bH\u0086\nJ\u0011\u0010\u0013\u001a\u00020\f2\u0006\u0010\u000f\u001a\u00020\u0010H\u0086\u0002J\u0011\u0010\u0014\u001a\u00020\f2\u0006\u0010\u000f\u001a\u00020\u0001H\u0086\u0002J\u0011\u0010\u0014\u001a\u00020\f2\u0006\u0010\n\u001a\u00020\u000bH\u0086\nJ\u0011\u0010\u0014\u001a\u00020\f2\u0006\u0010\u000f\u001a\u00020\u0010H\u0086\u0002J\u000e\u0010\u0015\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bJ\u000e\u0010\u0016\u001a\u00020\t2\u0006\u0010\u000f\u001a\u00020\u0001J\u000e\u0010\u0016\u001a\u00020\t2\u0006\u0010\u000f\u001a\u00020\u0010J\u0010\u0010\u0017\u001a\u00020\u000b2\b\b\u0001\u0010\r\u001a\u00020\u0003J\u001a\u0010\u0018\u001a\u00020\f2\b\b\u0001\u0010\u0019\u001a\u00020\u00032\b\b\u0001\u0010\u001a\u001a\u00020\u0003J\u000e\u0010\u001b\u001a\u00020\t2\u0006\u0010\u000f\u001a\u00020\u0001J\u000e\u0010\u001b\u001a\u00020\t2\u0006\u0010\u000f\u001a\u00020\u0010J\u001b\u0010\u001c\u001a\u00020\u000b2\b\b\u0001\u0010\r\u001a\u00020\u00032\u0006\u0010\n\u001a\u00020\u000bH\u0086\u0002J\u0006\u0010\u001d\u001a\u00020\fJ\u0006\u0010\u001e\u001a\u00020\fJ\u0010\u0010\u001f\u001a\u00020\f2\b\b\u0002\u0010 \u001a\u00020\u0003R\u0012\u0010\u0005\u001a\u00020\u00038Æ\u0002¢\u0006\u0006\u001a\u0004\b\u0006\u0010\u0007¨\u0006!"}, d2 = {"Landroidx/collection/MutableFloatList;", "Landroidx/collection/FloatList;", "initialCapacity", "", "(I)V", "capacity", "getCapacity", "()I", "add", "", "element", "", "", com.google.firebase.analytics.FirebaseAnalytics.Param.INDEX, "addAll", "elements", "", "clear", "ensureCapacity", "minusAssign", "plusAssign", "remove", "removeAll", "removeAt", "removeRange", "start", "end", "retainAll", "set", "sort", "sortDescending", "trim", "minCapacity", "collection"}, k = 1, mv = {1, 8, 0}, xi = 48)
+/* loaded from: classes.dex */
+public final class MutableFloatList extends androidx.collection.FloatList {
+    public MutableFloatList() {
+        this(0, 1, null);
+    }
+
+    public /* synthetic */ MutableFloatList(int i, int i2, kotlin.jvm.internal.DefaultConstructorMarker defaultConstructorMarker) {
+        this((i2 & 1) != 0 ? 16 : i);
+    }
+
+    public MutableFloatList(int i) {
+        super(i, null);
+    }
+
+    public final int getCapacity() {
+        return this.content.length;
+    }
+
+    public final boolean add(float element) {
+        ensureCapacity(this._size + 1);
+        this.content[this._size] = element;
+        this._size++;
+        return true;
+    }
+
+    public final void add(int index, float element) {
+        if (index < 0 || index > this._size) {
+            throw new java.lang.IndexOutOfBoundsException("Index " + index + " must be in 0.." + this._size);
+        }
+        ensureCapacity(this._size + 1);
+        float[] fArr = this.content;
+        if (index != this._size) {
+            kotlin.collections.ArraysKt.copyInto(fArr, fArr, index + 1, index, this._size);
+        }
+        fArr[index] = element;
+        this._size++;
+    }
+
+    public final boolean addAll(int index, float[] elements) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(elements, "elements");
+        if (index < 0 || index > this._size) {
+            throw new java.lang.IndexOutOfBoundsException("Index " + index + " must be in 0.." + this._size);
+        }
+        if (elements.length == 0) {
+            return false;
+        }
+        ensureCapacity(this._size + elements.length);
+        float[] fArr = this.content;
+        if (index != this._size) {
+            kotlin.collections.ArraysKt.copyInto(fArr, fArr, elements.length + index, index, this._size);
+        }
+        kotlin.collections.ArraysKt.copyInto$default(elements, fArr, index, 0, 0, 12, (java.lang.Object) null);
+        this._size += elements.length;
+        return true;
+    }
+
+    public final boolean addAll(int index, androidx.collection.FloatList elements) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(elements, "elements");
+        if (index < 0 || index > this._size) {
+            throw new java.lang.IndexOutOfBoundsException("Index " + index + " must be in 0.." + this._size);
+        }
+        if (elements.isEmpty()) {
+            return false;
+        }
+        ensureCapacity(this._size + elements._size);
+        float[] fArr = this.content;
+        if (index != this._size) {
+            kotlin.collections.ArraysKt.copyInto(fArr, fArr, elements._size + index, index, this._size);
+        }
+        kotlin.collections.ArraysKt.copyInto(elements.content, fArr, index, 0, elements._size);
+        this._size += elements._size;
+        return true;
+    }
+
+    public final boolean addAll(androidx.collection.FloatList elements) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(elements, "elements");
+        return addAll(this._size, elements);
+    }
+
+    public final boolean addAll(float[] elements) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(elements, "elements");
+        return addAll(this._size, elements);
+    }
+
+    public final void plusAssign(androidx.collection.FloatList elements) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(elements, "elements");
+        addAll(this._size, elements);
+    }
+
+    public final void plusAssign(float[] elements) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(elements, "elements");
+        addAll(this._size, elements);
+    }
+
+    public final void clear() {
+        this._size = 0;
+    }
+
+    public static /* synthetic */ void trim$default(androidx.collection.MutableFloatList mutableFloatList, int i, int i2, java.lang.Object obj) {
+        if ((i2 & 1) != 0) {
+            i = mutableFloatList._size;
+        }
+        mutableFloatList.trim(i);
+    }
+
+    public final void trim(int minCapacity) {
+        int max = java.lang.Math.max(minCapacity, this._size);
+        if (this.content.length > max) {
+            float[] copyOf = java.util.Arrays.copyOf(this.content, max);
+            kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(this, newSize)");
+            this.content = copyOf;
+        }
+    }
+
+    public final void ensureCapacity(int capacity) {
+        float[] fArr = this.content;
+        if (fArr.length < capacity) {
+            float[] copyOf = java.util.Arrays.copyOf(fArr, java.lang.Math.max(capacity, (fArr.length * 3) / 2));
+            kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(this, newSize)");
+            this.content = copyOf;
+        }
+    }
+
+    public final void plusAssign(float element) {
+        add(element);
+    }
+
+    public final void minusAssign(float element) {
+        remove(element);
+    }
+
+    public final boolean remove(float element) {
+        int indexOf = indexOf(element);
+        if (indexOf < 0) {
+            return false;
+        }
+        removeAt(indexOf);
+        return true;
+    }
+
+    public final boolean removeAll(float[] elements) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(elements, "elements");
+        int i = this._size;
+        for (float f : elements) {
+            remove(f);
+        }
+        return i != this._size;
+    }
+
+    public final boolean removeAll(androidx.collection.FloatList elements) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(elements, "elements");
+        int i = this._size;
+        int i2 = elements._size - 1;
+        if (i2 >= 0) {
+            int i3 = 0;
+            while (true) {
+                remove(elements.get(i3));
+                if (i3 == i2) {
+                    break;
+                }
+                i3++;
+            }
+        }
+        return i != this._size;
+    }
+
+    public final float removeAt(int index) {
+        if (index < 0 || index >= this._size) {
+            java.lang.StringBuilder sb = new java.lang.StringBuilder("Index ");
+            sb.append(index);
+            sb.append(" must be in 0..");
+            sb.append(this._size - 1);
+            throw new java.lang.IndexOutOfBoundsException(sb.toString());
+        }
+        float[] fArr = this.content;
+        float f = fArr[index];
+        if (index != this._size - 1) {
+            kotlin.collections.ArraysKt.copyInto(fArr, fArr, index, index + 1, this._size);
+        }
+        this._size--;
+        return f;
+    }
+
+    public final void removeRange(int start, int end) {
+        if (start < 0 || start > this._size || end < 0 || end > this._size) {
+            throw new java.lang.IndexOutOfBoundsException("Start (" + start + ") and end (" + end + ") must be in 0.." + this._size);
+        }
+        if (end >= start) {
+            if (end != start) {
+                if (end < this._size) {
+                    kotlin.collections.ArraysKt.copyInto(this.content, this.content, start, end, this._size);
+                }
+                this._size -= end - start;
+                return;
+            }
+            return;
+        }
+        throw new java.lang.IllegalArgumentException("Start (" + start + ") is more than end (" + end + ')');
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:11:0x0025, code lost:
+    
+        removeAt(r2);
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final boolean retainAll(float[] elements) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(elements, "elements");
+        int i = this._size;
+        float[] fArr = this.content;
+        int i2 = this._size - 1;
+        while (true) {
+            int i3 = 0;
+            if (-1 >= i2) {
+                break;
+            }
+            float f = fArr[i2];
+            int length = elements.length;
+            while (true) {
+                if (i3 >= length) {
+                    break;
+                }
+                if (elements[i3] != f) {
+                    i3++;
+                } else if (i3 >= 0) {
+                }
+            }
+            i2--;
+        }
+        return i != this._size;
+    }
+
+    public final boolean retainAll(androidx.collection.FloatList elements) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(elements, "elements");
+        int i = this._size;
+        float[] fArr = this.content;
+        for (int i2 = this._size - 1; -1 < i2; i2--) {
+            if (!elements.contains(fArr[i2])) {
+                removeAt(i2);
+            }
+        }
+        return i != this._size;
+    }
+
+    public final float set(int index, float element) {
+        if (index < 0 || index >= this._size) {
+            java.lang.StringBuilder sb = new java.lang.StringBuilder("set index ");
+            sb.append(index);
+            sb.append(" must be between 0 .. ");
+            sb.append(this._size - 1);
+            throw new java.lang.IndexOutOfBoundsException(sb.toString());
+        }
+        float[] fArr = this.content;
+        float f = fArr[index];
+        fArr[index] = element;
+        return f;
+    }
+
+    public final void sort() {
+        kotlin.collections.ArraysKt.sort(this.content, 0, this._size);
+    }
+
+    public final void sortDescending() {
+        kotlin.collections.ArraysKt.sortDescending(this.content, 0, this._size);
+    }
+
+    public final void minusAssign(float[] elements) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(elements, "elements");
+        for (float f : elements) {
+            remove(f);
+        }
+    }
+
+    public final void minusAssign(androidx.collection.FloatList elements) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(elements, "elements");
+        float[] fArr = elements.content;
+        int i = elements._size;
+        for (int i2 = 0; i2 < i; i2++) {
+            remove(fArr[i2]);
+        }
+    }
+}

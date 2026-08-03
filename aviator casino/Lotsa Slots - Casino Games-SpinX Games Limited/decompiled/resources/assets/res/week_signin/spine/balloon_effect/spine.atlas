@@ -1,0 +1,27 @@
+
+balloon_effect.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+qq23
+  rotate: false
+  xy: 2, 74
+  size: 99, 179
+  orig: 99, 179
+  offset: 0, 0
+  index: -1
+qq3
+  rotate: false
+  xy: 111, 62
+  size: 84, 191
+  orig: 84, 191
+  offset: 0, 0
+  index: -1
+qq5
+  rotate: true
+  xy: 2, 2
+  size: 70, 107
+  orig: 70, 107
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,26 @@
+
+newstore_coins.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+pics/effect/xingxing
+  rotate: false
+  xy: 2, 2
+  size: 204, 204
+  orig: 256, 256
+  offset: 26, 26
+  index: -1
+
+newstore_coins2.png
+size: 128,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+pics/effect/dian
+  rotate: false
+  xy: 2, 2
+  size: 106, 109
+  orig: 110, 110
+  offset: 4, 1
+  index: -1

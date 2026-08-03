@@ -1,0 +1,27 @@
+package com.google.android.gms.internal.ads;
+
+/* compiled from: com.google.android.gms:play-services-ads@@25.2.0 */
+/* loaded from: classes4.dex */
+final class zzdvy implements com.google.android.gms.internal.ads.zzbyh {
+    final /* synthetic */ com.google.android.gms.internal.ads.zzdwh zza;
+
+    zzdvy(com.google.android.gms.internal.ads.zzdwh zzdwhVar) {
+        java.util.Objects.requireNonNull(zzdwhVar);
+        this.zza = zzdwhVar;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbyh
+    public final void zza(int i, int i2, int i3, int i4) {
+        this.zza.zzg().zzc();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbyh
+    public final void zzb() {
+        this.zza.zzg().zza();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbyh
+    public final void zzc() {
+        this.zza.zzh().zza();
+    }
+}

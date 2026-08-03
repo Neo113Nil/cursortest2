@@ -1,0 +1,28 @@
+info face="Lotsa Fonts" size=-56 bold=0 italic=0 charset="" unicode=1 stretchH=100 smooth=1 aa=4 padding=5,5,5,5 spacing=5,5 outline=0
+common lineHeight=56 base=20 scaleW=300 scaleH=300 pages=1 packed=0 alphaChnl=1 redChnl=0 greenChnl=0 blueChnl=0
+page id=0 file="zitijp.png"
+chars count=24
+char id=32   x=63    y=183   width=15    height=56    xoffset=-5    yoffset=-5    xadvance=5     page=0  chnl=15
+char id=36   x=164   y=122   width=35    height=56    xoffset=-5    yoffset=-5    xadvance=25    page=0  chnl=15
+char id=43   x=244   y=122   width=34    height=56    xoffset=-5    yoffset=-5    xadvance=24    page=0  chnl=15
+char id=44   x=271   y=0     width=24    height=56    xoffset=-5    yoffset=-5    xadvance=14    page=0  chnl=15
+char id=46   x=34    y=183   width=24    height=56    xoffset=-5    yoffset=-5    xadvance=14    page=0  chnl=15
+char id=48   x=98    y=0     width=39    height=56    xoffset=-5    yoffset=-5    xadvance=29    page=0  chnl=15
+char id=49   x=0     y=183   width=29    height=56    xoffset=-5    yoffset=-5    xadvance=19    page=0  chnl=15
+char id=50   x=0     y=122   width=36    height=56    xoffset=-5    yoffset=-5    xadvance=26    page=0  chnl=15
+char id=51   x=41    y=122   width=36    height=56    xoffset=-5    yoffset=-5    xadvance=26    page=0  chnl=15
+char id=52   x=142   y=0     width=38    height=56    xoffset=-5    yoffset=-5    xadvance=28    page=0  chnl=15
+char id=53   x=82    y=122   width=36    height=56    xoffset=-5    yoffset=-5    xadvance=26    page=0  chnl=15
+char id=54   x=86    y=61    width=37    height=56    xoffset=-5    yoffset=-5    xadvance=27    page=0  chnl=15
+char id=55   x=204   y=122   width=35    height=56    xoffset=-5    yoffset=-5    xadvance=25    page=0  chnl=15
+char id=56   x=128   y=61    width=37    height=56    xoffset=-5    yoffset=-5    xadvance=27    page=0  chnl=15
+char id=57   x=185   y=0     width=38    height=56    xoffset=-5    yoffset=-5    xadvance=28    page=0  chnl=15
+char id=66   x=170   y=61    width=37    height=56    xoffset=-5    yoffset=-5    xadvance=27    page=0  chnl=15
+char id=71   x=228   y=0     width=38    height=56    xoffset=-5    yoffset=-5    xadvance=28    page=0  chnl=15
+char id=75   x=0     y=61    width=38    height=56    xoffset=-5    yoffset=-5    xadvance=28    page=0  chnl=15
+char id=77   x=0     y=0     width=47    height=56    xoffset=-5    yoffset=-5    xadvance=37    page=0  chnl=15
+char id=81   x=52    y=0     width=41    height=56    xoffset=-5    yoffset=-5    xadvance=31    page=0  chnl=15
+char id=83   x=123   y=122   width=36    height=56    xoffset=-5    yoffset=-5    xadvance=26    page=0  chnl=15
+char id=84   x=212   y=61    width=37    height=56    xoffset=-5    yoffset=-5    xadvance=27    page=0  chnl=15
+char id=85   x=43    y=61    width=38    height=56    xoffset=-5    yoffset=-5    xadvance=28    page=0  chnl=15
+char id=90   x=254   y=61    width=37    height=56    xoffset=-5    yoffset=-5    xadvance=27    page=0  chnl=15

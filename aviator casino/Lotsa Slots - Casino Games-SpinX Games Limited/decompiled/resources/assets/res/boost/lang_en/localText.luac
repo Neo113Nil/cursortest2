@@ -1,0 +1,7 @@
+local translateConfig = {
+    a_boost_to_level = " TO LEVEL ",
+    a_boost_tips_lobby_bonus = "TURN ON BOOST MODE \nTO MULTIPLY ALL EXPRESS BONUSES X5!",
+    a_boost_tips_wheel_inactive = "TURN BOOST MODE ON\nTO GET X2 ON ALL WHEEL WEDGES!",
+}
+
+return translateConfig

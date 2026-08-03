@@ -1,0 +1,368 @@
+package androidx.compose.ui.layout;
+
+/* compiled from: Layout.kt */
+@kotlin.Metadata(d1 = {"\u0000J\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\u001a8\u0010\u0002\u001a\u00020\u00032\u0016\u0010\u0004\u001a\u0012\u0012\u0004\u0012\u00020\u00030\u0005¢\u0006\u0002\b\u0006¢\u0006\u0002\b\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0087\b¢\u0006\u0002\u0010\f\u001a \u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0087\b¢\u0006\u0002\u0010\r\u001a>\u0010\u0002\u001a\u00020\u00032\u001c\u0010\u000e\u001a\u0018\u0012\u0014\u0012\u0012\u0012\u0004\u0012\u00020\u00030\u0005¢\u0006\u0002\b\u0006¢\u0006\u0002\b\u00070\u000f2\b\b\u0002\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u0010H\u0087\b¢\u0006\u0002\u0010\u0011\u001a7\u0010\u0012\u001a\u00020\u00032\b\b\u0002\u0010\b\u001a\u00020\t2\u0016\u0010\u0004\u001a\u0012\u0012\u0004\u0012\u00020\u00030\u0005¢\u0006\u0002\b\u0006¢\u0006\u0002\b\u00072\u0006\u0010\n\u001a\u00020\u000bH\u0007¢\u0006\u0002\u0010\u0013\u001a;\u0010\u0014\u001a\u0012\u0012\u0004\u0012\u00020\u00030\u0005¢\u0006\u0002\b\u0006¢\u0006\u0002\b\u00072\u001c\u0010\u000e\u001a\u0018\u0012\u0014\u0012\u0012\u0012\u0004\u0012\u00020\u00030\u0005¢\u0006\u0002\b\u0006¢\u0006\u0002\b\u00070\u000fH\u0001¢\u0006\u0002\u0010\u0015\u001a3\u0010\u0016\u001a\u001e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00190\u0018\u0012\u0004\u0012\u00020\u00030\u0017¢\u0006\u0002\b\u0006¢\u0006\u0002\b\u001a2\u0006\u0010\b\u001a\u00020\tH\u0001¢\u0006\u0004\b\u001b\u0010\u001c\u001a3\u0010\u001d\u001a\u001e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00190\u0018\u0012\u0004\u0012\u00020\u00030\u0017¢\u0006\u0002\b\u0006¢\u0006\u0002\b\u001a2\u0006\u0010\b\u001a\u00020\tH\u0001¢\u0006\u0004\b\u0016\u0010\u001c\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0080T¢\u0006\u0002\n\u0000¨\u0006\u001e"}, d2 = {"LargeDimension", "", "Layout", "", "content", "Lkotlin/Function0;", "Landroidx/compose/runtime/Composable;", "Landroidx/compose/ui/UiComposable;", "modifier", "Landroidx/compose/ui/Modifier;", "measurePolicy", "Landroidx/compose/ui/layout/MeasurePolicy;", "(Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/Modifier;Landroidx/compose/ui/layout/MeasurePolicy;Landroidx/compose/runtime/Composer;II)V", "(Landroidx/compose/ui/Modifier;Landroidx/compose/ui/layout/MeasurePolicy;Landroidx/compose/runtime/Composer;II)V", "contents", "", "Landroidx/compose/ui/layout/MultiContentMeasurePolicy;", "(Ljava/util/List;Landroidx/compose/ui/Modifier;Landroidx/compose/ui/layout/MultiContentMeasurePolicy;Landroidx/compose/runtime/Composer;II)V", "MultiMeasureLayout", "(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/layout/MeasurePolicy;Landroidx/compose/runtime/Composer;II)V", "combineAsVirtualLayouts", "(Ljava/util/List;)Lkotlin/jvm/functions/Function2;", "materializerOf", "Lkotlin/Function1;", "Landroidx/compose/runtime/SkippableUpdater;", "Landroidx/compose/ui/node/ComposeUiNode;", "Lkotlin/ExtensionFunctionType;", "modifierMaterializerOf", "(Landroidx/compose/ui/Modifier;)Lkotlin/jvm/functions/Function3;", "materializerOfWithCompositionLocalInjection", "ui_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
+/* loaded from: classes.dex */
+public final class LayoutKt {
+    public static final int LargeDimension = 32767;
+
+    public static final void Layout(kotlin.jvm.functions.Function2<? super androidx.compose.runtime.Composer, ? super java.lang.Integer, kotlin.Unit> function2, androidx.compose.ui.Modifier modifier, androidx.compose.ui.layout.MeasurePolicy measurePolicy, androidx.compose.runtime.Composer composer, int i, int i2) {
+        composer.startReplaceableGroup(-1323940314);
+        androidx.compose.runtime.ComposerKt.sourceInformation(composer, "CC(Layout)P(!1,2)78@3182L23,80@3272L420:Layout.kt#80mrfh");
+        if ((i2 & 2) != 0) {
+            modifier = androidx.compose.ui.Modifier.INSTANCE;
+        }
+        int currentCompositeKeyHash = androidx.compose.runtime.ComposablesKt.getCurrentCompositeKeyHash(composer, 0);
+        androidx.compose.runtime.CompositionLocalMap currentCompositionLocalMap = composer.getCurrentCompositionLocalMap();
+        kotlin.jvm.functions.Function0<androidx.compose.ui.node.ComposeUiNode> constructor = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getConstructor();
+        kotlin.jvm.functions.Function3<androidx.compose.runtime.SkippableUpdater<androidx.compose.ui.node.ComposeUiNode>, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> modifierMaterializerOf = modifierMaterializerOf(modifier);
+        int i3 = ((i << 9) & 7168) | 6;
+        if (!(composer.getApplier() instanceof androidx.compose.runtime.Applier)) {
+            androidx.compose.runtime.ComposablesKt.invalidApplier();
+        }
+        composer.startReusableNode();
+        if (composer.getInserting()) {
+            composer.createNode(constructor);
+        } else {
+            composer.useNode();
+        }
+        androidx.compose.runtime.Composer m1641constructorimpl = androidx.compose.runtime.Updater.m1641constructorimpl(composer);
+        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, measurePolicy, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, currentCompositionLocalMap, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetResolvedCompositionLocals());
+        kotlin.jvm.functions.Function2<androidx.compose.ui.node.ComposeUiNode, java.lang.Integer, kotlin.Unit> setCompositeKeyHash = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetCompositeKeyHash();
+        if (m1641constructorimpl.getInserting() || !kotlin.jvm.internal.Intrinsics.areEqual(m1641constructorimpl.rememberedValue(), java.lang.Integer.valueOf(currentCompositeKeyHash))) {
+            m1641constructorimpl.updateRememberedValue(java.lang.Integer.valueOf(currentCompositeKeyHash));
+            m1641constructorimpl.apply(java.lang.Integer.valueOf(currentCompositeKeyHash), setCompositeKeyHash);
+        }
+        modifierMaterializerOf.invoke(androidx.compose.runtime.SkippableUpdater.m1632boximpl(androidx.compose.runtime.SkippableUpdater.m1633constructorimpl(composer)), composer, 0);
+        composer.startReplaceableGroup(2058660585);
+        function2.invoke(composer, java.lang.Integer.valueOf((i3 >> 9) & 14));
+        composer.endReplaceableGroup();
+        composer.endNode();
+        composer.endReplaceableGroup();
+    }
+
+    public static final void Layout(androidx.compose.ui.Modifier modifier, androidx.compose.ui.layout.MeasurePolicy measurePolicy, androidx.compose.runtime.Composer composer, int i, int i2) {
+        composer.startReplaceableGroup(544976794);
+        androidx.compose.runtime.ComposerKt.sourceInformation(composer, "CC(Layout)P(1)123@4784L23,126@4935L385:Layout.kt#80mrfh");
+        if ((i2 & 1) != 0) {
+            modifier = androidx.compose.ui.Modifier.INSTANCE;
+        }
+        int currentCompositeKeyHash = androidx.compose.runtime.ComposablesKt.getCurrentCompositeKeyHash(composer, 0);
+        androidx.compose.ui.Modifier materializeModifier = androidx.compose.ui.ComposedModifierKt.materializeModifier(composer, modifier);
+        androidx.compose.runtime.CompositionLocalMap currentCompositionLocalMap = composer.getCurrentCompositionLocalMap();
+        final kotlin.jvm.functions.Function0<androidx.compose.ui.node.ComposeUiNode> constructor = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getConstructor();
+        composer.startReplaceableGroup(1405779621);
+        androidx.compose.runtime.ComposerKt.sourceInformation(composer, "CC(ReusableComposeNode):Composables.kt#9igjgp");
+        if (!(composer.getApplier() instanceof androidx.compose.runtime.Applier)) {
+            androidx.compose.runtime.ComposablesKt.invalidApplier();
+        }
+        composer.startReusableNode();
+        if (composer.getInserting()) {
+            composer.createNode(new kotlin.jvm.functions.Function0<androidx.compose.ui.node.ComposeUiNode>() { // from class: androidx.compose.ui.layout.LayoutKt$Layout$$inlined$ReusableComposeNode$1
+                {
+                    super(0);
+                }
+
+                /* JADX WARN: Type inference failed for: r0v1, types: [androidx.compose.ui.node.ComposeUiNode, java.lang.Object] */
+                @Override // kotlin.jvm.functions.Function0
+                public final androidx.compose.ui.node.ComposeUiNode invoke() {
+                    return kotlin.jvm.functions.Function0.this.invoke();
+                }
+            });
+        } else {
+            composer.useNode();
+        }
+        androidx.compose.runtime.Composer m1641constructorimpl = androidx.compose.runtime.Updater.m1641constructorimpl(composer);
+        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, measurePolicy, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, currentCompositionLocalMap, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetResolvedCompositionLocals());
+        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, materializeModifier, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetModifier());
+        kotlin.jvm.functions.Function2<androidx.compose.ui.node.ComposeUiNode, java.lang.Integer, kotlin.Unit> setCompositeKeyHash = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetCompositeKeyHash();
+        if (m1641constructorimpl.getInserting() || !kotlin.jvm.internal.Intrinsics.areEqual(m1641constructorimpl.rememberedValue(), java.lang.Integer.valueOf(currentCompositeKeyHash))) {
+            m1641constructorimpl.updateRememberedValue(java.lang.Integer.valueOf(currentCompositeKeyHash));
+            m1641constructorimpl.apply(java.lang.Integer.valueOf(currentCompositeKeyHash), setCompositeKeyHash);
+        }
+        composer.endNode();
+        composer.endReplaceableGroup();
+        composer.endReplaceableGroup();
+    }
+
+    public static final void Layout(java.util.List<? extends kotlin.jvm.functions.Function2<? super androidx.compose.runtime.Composer, ? super java.lang.Integer, kotlin.Unit>> list, androidx.compose.ui.Modifier modifier, androidx.compose.ui.layout.MultiContentMeasurePolicy multiContentMeasurePolicy, androidx.compose.runtime.Composer composer, int i, int i2) {
+        composer.startReplaceableGroup(1399185516);
+        androidx.compose.runtime.ComposerKt.sourceInformation(composer, "CC(Layout)P(!1,2)172@6924L62,169@6810L182:Layout.kt#80mrfh");
+        if ((i2 & 2) != 0) {
+            modifier = androidx.compose.ui.Modifier.INSTANCE;
+        }
+        kotlin.jvm.functions.Function2<androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> combineAsVirtualLayouts = combineAsVirtualLayouts(list);
+        composer.startReplaceableGroup(1157296644);
+        androidx.compose.runtime.ComposerKt.sourceInformation(composer, "CC(remember)P(1):Composables.kt#9igjgp");
+        boolean changed = composer.changed(multiContentMeasurePolicy);
+        java.lang.Object rememberedValue = composer.rememberedValue();
+        if (changed || rememberedValue == androidx.compose.runtime.Composer.INSTANCE.getEmpty()) {
+            rememberedValue = androidx.compose.ui.layout.MultiContentMeasurePolicyKt.createMeasurePolicy(multiContentMeasurePolicy);
+            composer.updateRememberedValue(rememberedValue);
+        }
+        composer.endReplaceableGroup();
+        androidx.compose.ui.layout.MeasurePolicy measurePolicy = (androidx.compose.ui.layout.MeasurePolicy) rememberedValue;
+        composer.startReplaceableGroup(-1323940314);
+        androidx.compose.runtime.ComposerKt.sourceInformation(composer, "CC(Layout)P(!1,2)78@3182L23,80@3272L420:Layout.kt#80mrfh");
+        int currentCompositeKeyHash = androidx.compose.runtime.ComposablesKt.getCurrentCompositeKeyHash(composer, 0);
+        androidx.compose.runtime.CompositionLocalMap currentCompositionLocalMap = composer.getCurrentCompositionLocalMap();
+        kotlin.jvm.functions.Function0<androidx.compose.ui.node.ComposeUiNode> constructor = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getConstructor();
+        kotlin.jvm.functions.Function3<androidx.compose.runtime.SkippableUpdater<androidx.compose.ui.node.ComposeUiNode>, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> modifierMaterializerOf = modifierMaterializerOf(modifier);
+        if (!(composer.getApplier() instanceof androidx.compose.runtime.Applier)) {
+            androidx.compose.runtime.ComposablesKt.invalidApplier();
+        }
+        composer.startReusableNode();
+        if (composer.getInserting()) {
+            composer.createNode(constructor);
+        } else {
+            composer.useNode();
+        }
+        androidx.compose.runtime.Composer m1641constructorimpl = androidx.compose.runtime.Updater.m1641constructorimpl(composer);
+        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, measurePolicy, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+        androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, currentCompositionLocalMap, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetResolvedCompositionLocals());
+        kotlin.jvm.functions.Function2<androidx.compose.ui.node.ComposeUiNode, java.lang.Integer, kotlin.Unit> setCompositeKeyHash = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetCompositeKeyHash();
+        if (m1641constructorimpl.getInserting() || !kotlin.jvm.internal.Intrinsics.areEqual(m1641constructorimpl.rememberedValue(), java.lang.Integer.valueOf(currentCompositeKeyHash))) {
+            m1641constructorimpl.updateRememberedValue(java.lang.Integer.valueOf(currentCompositeKeyHash));
+            m1641constructorimpl.apply(java.lang.Integer.valueOf(currentCompositeKeyHash), setCompositeKeyHash);
+        }
+        modifierMaterializerOf.invoke(androidx.compose.runtime.SkippableUpdater.m1632boximpl(androidx.compose.runtime.SkippableUpdater.m1633constructorimpl(composer)), composer, 0);
+        composer.startReplaceableGroup(2058660585);
+        combineAsVirtualLayouts.invoke(composer, 0);
+        composer.endReplaceableGroup();
+        composer.endNode();
+        composer.endReplaceableGroup();
+        composer.endReplaceableGroup();
+    }
+
+    public static final kotlin.jvm.functions.Function2<androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> combineAsVirtualLayouts(final java.util.List<? extends kotlin.jvm.functions.Function2<? super androidx.compose.runtime.Composer, ? super java.lang.Integer, kotlin.Unit>> list) {
+        return androidx.compose.runtime.internal.ComposableLambdaKt.composableLambdaInstance(-1953651383, true, new kotlin.jvm.functions.Function2<androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit>() { // from class: androidx.compose.ui.layout.LayoutKt$combineAsVirtualLayouts$1
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* JADX WARN: Multi-variable type inference failed */
+            {
+                super(2);
+            }
+
+            @Override // kotlin.jvm.functions.Function2
+            public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.runtime.Composer composer, java.lang.Integer num) {
+                invoke(composer, num.intValue());
+                return kotlin.Unit.INSTANCE;
+            }
+
+            public final void invoke(androidx.compose.runtime.Composer composer, int i) {
+                androidx.compose.runtime.ComposerKt.sourceInformation(composer, "C*181@7218L23,182@7250L298:Layout.kt#80mrfh");
+                if ((i & 11) != 2 || !composer.getSkipping()) {
+                    if (androidx.compose.runtime.ComposerKt.isTraceInProgress()) {
+                        androidx.compose.runtime.ComposerKt.traceEventStart(-1953651383, i, -1, "androidx.compose.ui.layout.combineAsVirtualLayouts.<anonymous> (Layout.kt:180)");
+                    }
+                    java.util.List<kotlin.jvm.functions.Function2<androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit>> list2 = list;
+                    int size = list2.size();
+                    for (int i2 = 0; i2 < size; i2++) {
+                        kotlin.jvm.functions.Function2<androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> function2 = list2.get(i2);
+                        int currentCompositeKeyHash = androidx.compose.runtime.ComposablesKt.getCurrentCompositeKeyHash(composer, 0);
+                        kotlin.jvm.functions.Function0<androidx.compose.ui.node.ComposeUiNode> virtualConstructor = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getVirtualConstructor();
+                        composer.startReplaceableGroup(-692256719);
+                        androidx.compose.runtime.ComposerKt.sourceInformation(composer, "CC(ReusableComposeNode)P(1,2)372@13941L9:Composables.kt#9igjgp");
+                        if (!(composer.getApplier() instanceof androidx.compose.runtime.Applier)) {
+                            androidx.compose.runtime.ComposablesKt.invalidApplier();
+                        }
+                        composer.startReusableNode();
+                        if (composer.getInserting()) {
+                            composer.createNode(virtualConstructor);
+                        } else {
+                            composer.useNode();
+                        }
+                        androidx.compose.runtime.Composer m1641constructorimpl = androidx.compose.runtime.Updater.m1641constructorimpl(composer);
+                        kotlin.jvm.functions.Function2<androidx.compose.ui.node.ComposeUiNode, java.lang.Integer, kotlin.Unit> setCompositeKeyHash = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetCompositeKeyHash();
+                        if (m1641constructorimpl.getInserting() || !kotlin.jvm.internal.Intrinsics.areEqual(m1641constructorimpl.rememberedValue(), java.lang.Integer.valueOf(currentCompositeKeyHash))) {
+                            m1641constructorimpl.updateRememberedValue(java.lang.Integer.valueOf(currentCompositeKeyHash));
+                            m1641constructorimpl.apply(java.lang.Integer.valueOf(currentCompositeKeyHash), setCompositeKeyHash);
+                        }
+                        function2.invoke(composer, 0);
+                        composer.endNode();
+                        composer.endReplaceableGroup();
+                    }
+                    if (androidx.compose.runtime.ComposerKt.isTraceInProgress()) {
+                        androidx.compose.runtime.ComposerKt.traceEventEnd();
+                        return;
+                    }
+                    return;
+                }
+                composer.skipToGroupEnd();
+            }
+        });
+    }
+
+    public static final kotlin.jvm.functions.Function3<androidx.compose.runtime.SkippableUpdater<androidx.compose.ui.node.ComposeUiNode>, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> modifierMaterializerOf(final androidx.compose.ui.Modifier modifier) {
+        return androidx.compose.runtime.internal.ComposableLambdaKt.composableLambdaInstance(-1586257396, true, new kotlin.jvm.functions.Function3<androidx.compose.runtime.SkippableUpdater<androidx.compose.ui.node.ComposeUiNode>, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit>() { // from class: androidx.compose.ui.layout.LayoutKt$materializerOf$1
+            {
+                super(3);
+            }
+
+            @Override // kotlin.jvm.functions.Function3
+            public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.runtime.SkippableUpdater<androidx.compose.ui.node.ComposeUiNode> skippableUpdater, androidx.compose.runtime.Composer composer, java.lang.Integer num) {
+                m3418invokeDeg8D_g(skippableUpdater.getComposer(), composer, num.intValue());
+                return kotlin.Unit.INSTANCE;
+            }
+
+            /* renamed from: invoke-Deg8D_g, reason: not valid java name */
+            public final void m3418invokeDeg8D_g(androidx.compose.runtime.Composer composer, androidx.compose.runtime.Composer composer2, int i) {
+                androidx.compose.runtime.ComposerKt.sourceInformation(composer2, "C203@8002L23:Layout.kt#80mrfh");
+                if (androidx.compose.runtime.ComposerKt.isTraceInProgress()) {
+                    androidx.compose.runtime.ComposerKt.traceEventStart(-1586257396, i, -1, "androidx.compose.ui.layout.materializerOf.<anonymous> (Layout.kt:203)");
+                }
+                int currentCompositeKeyHash = androidx.compose.runtime.ComposablesKt.getCurrentCompositeKeyHash(composer2, 0);
+                androidx.compose.ui.Modifier materializeModifier = androidx.compose.ui.ComposedModifierKt.materializeModifier(composer2, androidx.compose.ui.Modifier.this);
+                composer.startReplaceableGroup(509942095);
+                androidx.compose.runtime.Composer m1641constructorimpl = androidx.compose.runtime.Updater.m1641constructorimpl(composer);
+                androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, materializeModifier, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetModifier());
+                kotlin.jvm.functions.Function2<androidx.compose.ui.node.ComposeUiNode, java.lang.Integer, kotlin.Unit> setCompositeKeyHash = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetCompositeKeyHash();
+                if (m1641constructorimpl.getInserting() || !kotlin.jvm.internal.Intrinsics.areEqual(m1641constructorimpl.rememberedValue(), java.lang.Integer.valueOf(currentCompositeKeyHash))) {
+                    m1641constructorimpl.updateRememberedValue(java.lang.Integer.valueOf(currentCompositeKeyHash));
+                    m1641constructorimpl.apply(java.lang.Integer.valueOf(currentCompositeKeyHash), setCompositeKeyHash);
+                }
+                composer.endReplaceableGroup();
+                if (androidx.compose.runtime.ComposerKt.isTraceInProgress()) {
+                    androidx.compose.runtime.ComposerKt.traceEventEnd();
+                }
+            }
+        });
+    }
+
+    @kotlin.Deprecated(level = kotlin.DeprecationLevel.WARNING, message = "Needed only for backwards compatibility. Do not use.")
+    public static final kotlin.jvm.functions.Function3<androidx.compose.runtime.SkippableUpdater<androidx.compose.ui.node.ComposeUiNode>, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> materializerOf(final androidx.compose.ui.Modifier modifier) {
+        return androidx.compose.runtime.internal.ComposableLambdaKt.composableLambdaInstance(-55743822, true, new kotlin.jvm.functions.Function3<androidx.compose.runtime.SkippableUpdater<androidx.compose.ui.node.ComposeUiNode>, androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit>() { // from class: androidx.compose.ui.layout.LayoutKt$materializerOfWithCompositionLocalInjection$1
+            {
+                super(3);
+            }
+
+            @Override // kotlin.jvm.functions.Function3
+            public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.runtime.SkippableUpdater<androidx.compose.ui.node.ComposeUiNode> skippableUpdater, androidx.compose.runtime.Composer composer, java.lang.Integer num) {
+                m3419invokeDeg8D_g(skippableUpdater.getComposer(), composer, num.intValue());
+                return kotlin.Unit.INSTANCE;
+            }
+
+            /* renamed from: invoke-Deg8D_g, reason: not valid java name */
+            public final void m3419invokeDeg8D_g(androidx.compose.runtime.Composer composer, androidx.compose.runtime.Composer composer2, int i) {
+                androidx.compose.runtime.ComposerKt.sourceInformation(composer2, "C226@8842L23:Layout.kt#80mrfh");
+                if (androidx.compose.runtime.ComposerKt.isTraceInProgress()) {
+                    androidx.compose.runtime.ComposerKt.traceEventStart(-55743822, i, -1, "androidx.compose.ui.layout.materializerOfWithCompositionLocalInjection.<anonymous> (Layout.kt:226)");
+                }
+                int currentCompositeKeyHash = androidx.compose.runtime.ComposablesKt.getCurrentCompositeKeyHash(composer2, 0);
+                androidx.compose.ui.Modifier materializeWithCompositionLocalInjectionInternal = androidx.compose.ui.ComposedModifierKt.materializeWithCompositionLocalInjectionInternal(composer2, androidx.compose.ui.Modifier.this);
+                composer.startReplaceableGroup(509942095);
+                androidx.compose.runtime.Composer m1641constructorimpl = androidx.compose.runtime.Updater.m1641constructorimpl(composer);
+                androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, materializeWithCompositionLocalInjectionInternal, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetModifier());
+                kotlin.jvm.functions.Function2<androidx.compose.ui.node.ComposeUiNode, java.lang.Integer, kotlin.Unit> setCompositeKeyHash = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetCompositeKeyHash();
+                if (m1641constructorimpl.getInserting() || !kotlin.jvm.internal.Intrinsics.areEqual(m1641constructorimpl.rememberedValue(), java.lang.Integer.valueOf(currentCompositeKeyHash))) {
+                    m1641constructorimpl.updateRememberedValue(java.lang.Integer.valueOf(currentCompositeKeyHash));
+                    m1641constructorimpl.apply(java.lang.Integer.valueOf(currentCompositeKeyHash), setCompositeKeyHash);
+                }
+                composer.endReplaceableGroup();
+                if (androidx.compose.runtime.ComposerKt.isTraceInProgress()) {
+                    androidx.compose.runtime.ComposerKt.traceEventEnd();
+                }
+            }
+        });
+    }
+
+    @kotlin.Deprecated(message = "This API is unsafe for UI performance at scale - using it incorrectly will lead to exponential performance issues. This API should be avoided whenever possible.")
+    public static final void MultiMeasureLayout(androidx.compose.ui.Modifier modifier, final kotlin.jvm.functions.Function2<? super androidx.compose.runtime.Composer, ? super java.lang.Integer, kotlin.Unit> function2, final androidx.compose.ui.layout.MeasurePolicy measurePolicy, androidx.compose.runtime.Composer composer, final int i, final int i2) {
+        int i3;
+        androidx.compose.runtime.Composer startRestartGroup = composer.startRestartGroup(1949933075);
+        androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "C(MultiMeasureLayout)P(2)247@9566L23,251@9718L491:Layout.kt#80mrfh");
+        int i4 = i2 & 1;
+        if (i4 != 0) {
+            i3 = i | 6;
+        } else if ((i & 14) == 0) {
+            i3 = (startRestartGroup.changed(modifier) ? 4 : 2) | i;
+        } else {
+            i3 = i;
+        }
+        if ((i2 & 2) != 0) {
+            i3 |= 48;
+        } else if ((i & 112) == 0) {
+            i3 |= startRestartGroup.changedInstance(function2) ? 32 : 16;
+        }
+        if ((i2 & 4) != 0) {
+            i3 |= 384;
+        } else if ((i & 896) == 0) {
+            i3 |= startRestartGroup.changed(measurePolicy) ? 256 : 128;
+        }
+        if ((i3 & 731) != 146 || !startRestartGroup.getSkipping()) {
+            if (i4 != 0) {
+                modifier = androidx.compose.ui.Modifier.INSTANCE;
+            }
+            if (androidx.compose.runtime.ComposerKt.isTraceInProgress()) {
+                androidx.compose.runtime.ComposerKt.traceEventStart(1949933075, i3, -1, "androidx.compose.ui.layout.MultiMeasureLayout (Layout.kt:246)");
+            }
+            int currentCompositeKeyHash = androidx.compose.runtime.ComposablesKt.getCurrentCompositeKeyHash(startRestartGroup, 0);
+            androidx.compose.ui.Modifier materializeModifier = androidx.compose.ui.ComposedModifierKt.materializeModifier(startRestartGroup, modifier);
+            androidx.compose.runtime.CompositionLocalMap currentCompositionLocalMap = startRestartGroup.getCurrentCompositionLocalMap();
+            kotlin.jvm.functions.Function0<androidx.compose.ui.node.LayoutNode> constructor$ui_release = androidx.compose.ui.node.LayoutNode.INSTANCE.getConstructor$ui_release();
+            int i5 = ((i3 << 3) & 896) | 6;
+            startRestartGroup.startReplaceableGroup(-692256719);
+            androidx.compose.runtime.ComposerKt.sourceInformation(startRestartGroup, "CC(ReusableComposeNode)P(1,2)372@13941L9:Composables.kt#9igjgp");
+            if (!(startRestartGroup.getApplier() instanceof androidx.compose.runtime.Applier)) {
+                androidx.compose.runtime.ComposablesKt.invalidApplier();
+            }
+            startRestartGroup.startReusableNode();
+            if (startRestartGroup.getInserting()) {
+                startRestartGroup.createNode(constructor$ui_release);
+            } else {
+                startRestartGroup.useNode();
+            }
+            androidx.compose.runtime.Composer m1641constructorimpl = androidx.compose.runtime.Updater.m1641constructorimpl(startRestartGroup);
+            androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, measurePolicy, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+            androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, currentCompositionLocalMap, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetResolvedCompositionLocals());
+            androidx.compose.runtime.Updater.m1645initimpl(m1641constructorimpl, new kotlin.jvm.functions.Function1<androidx.compose.ui.node.LayoutNode, kotlin.Unit>() { // from class: androidx.compose.ui.layout.LayoutKt$MultiMeasureLayout$1$1
+                @Override // kotlin.jvm.functions.Function1
+                public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.ui.node.LayoutNode layoutNode) {
+                    invoke2(layoutNode);
+                    return kotlin.Unit.INSTANCE;
+                }
+
+                /* renamed from: invoke, reason: avoid collision after fix types in other method */
+                public final void invoke2(androidx.compose.ui.node.LayoutNode layoutNode) {
+                    layoutNode.setCanMultiMeasure$ui_release(true);
+                }
+            });
+            androidx.compose.runtime.Updater.m1648setimpl(m1641constructorimpl, materializeModifier, androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetModifier());
+            kotlin.jvm.functions.Function2<androidx.compose.ui.node.ComposeUiNode, java.lang.Integer, kotlin.Unit> setCompositeKeyHash = androidx.compose.ui.node.ComposeUiNode.INSTANCE.getSetCompositeKeyHash();
+            if (m1641constructorimpl.getInserting() || !kotlin.jvm.internal.Intrinsics.areEqual(m1641constructorimpl.rememberedValue(), java.lang.Integer.valueOf(currentCompositeKeyHash))) {
+                m1641constructorimpl.updateRememberedValue(java.lang.Integer.valueOf(currentCompositeKeyHash));
+                m1641constructorimpl.apply(java.lang.Integer.valueOf(currentCompositeKeyHash), setCompositeKeyHash);
+            }
+            function2.invoke(startRestartGroup, java.lang.Integer.valueOf((i5 >> 6) & 14));
+            startRestartGroup.endNode();
+            startRestartGroup.endReplaceableGroup();
+            if (androidx.compose.runtime.ComposerKt.isTraceInProgress()) {
+                androidx.compose.runtime.ComposerKt.traceEventEnd();
+            }
+        } else {
+            startRestartGroup.skipToGroupEnd();
+        }
+        final androidx.compose.ui.Modifier modifier2 = modifier;
+        androidx.compose.runtime.ScopeUpdateScope endRestartGroup = startRestartGroup.endRestartGroup();
+        if (endRestartGroup != null) {
+            endRestartGroup.updateScope(new kotlin.jvm.functions.Function2<androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit>() { // from class: androidx.compose.ui.layout.LayoutKt$MultiMeasureLayout$2
+                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                /* JADX WARN: Multi-variable type inference failed */
+                {
+                    super(2);
+                }
+
+                @Override // kotlin.jvm.functions.Function2
+                public /* bridge */ /* synthetic */ kotlin.Unit invoke(androidx.compose.runtime.Composer composer2, java.lang.Integer num) {
+                    invoke(composer2, num.intValue());
+                    return kotlin.Unit.INSTANCE;
+                }
+
+                public final void invoke(androidx.compose.runtime.Composer composer2, int i6) {
+                    androidx.compose.ui.layout.LayoutKt.MultiMeasureLayout(androidx.compose.ui.Modifier.this, function2, measurePolicy, composer2, androidx.compose.runtime.RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
+                }
+            });
+        }
+    }
+}
