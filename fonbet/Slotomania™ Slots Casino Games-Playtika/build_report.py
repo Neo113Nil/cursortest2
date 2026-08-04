@@ -125,107 +125,141 @@ PERMISSIONS = (
 )
 
 AD_NETWORKS = (
-    "AppLovin MAX (mediation + SafeDK), Google AdMob / GMS Ads, "
-    "ironSource / LevelPlay, Unity Ads, Vungle / Liftoff, Moloco, "
-    "Facebook Audience Network"
+    "AppLovin MAX (медиация + SafeDK-обёртка), Google AdMob / Google Mobile Ads "
+    "(ca-app-pub-6071022518005088~1031443399), Google Ad Manager (адаптер AppLovin), "
+    "ironSource / LevelPlay (Unity), Unity Ads (+ Unity Ad Quality), "
+    "Vungle / Liftoff, Moloco, Facebook Audience Network"
 )
 
 ANALYTICS = (
-    "Firebase Analytics, Firebase Cloud Messaging, Firebase Installations, "
-    "AppsFlyer (атрибуция / OneLink), Braze / Appboy (CRM, push, in-app), "
-    "Sentry (ошибки), Facebook SDK / App Events, "
-    "Google Ads Conversion Tracking / Install Referrer, Usercentrics (CMP)"
+    "Firebase Analytics (Google Analytics for Firebase), Firebase Cloud Messaging, "
+    "Firebase Installations / Instance ID, AppsFlyer (атрибуция, OneLink, "
+    "install referrer), Braze / Appboy (CRM, push, in-app сообщения, content cards), "
+    "Sentry (сбор ошибок и ANR, DSN o283670.ingest.sentry.io), Facebook SDK / "
+    "App Events, Google Ads Conversion Tracking, Google Play Install Referrer, "
+    "Usercentrics CMP и Google UMP (сбор согласий, IAB TCF)"
 )
 
 LIBRARIES = (
-    "Capacitor / Cordova (hybrid shell), air.com.playtika.android.common "
-    "(GameActivity, native-lib / OpenGL), com.playtika.pras (платежи), "
-    "com.playtika.sharedsdk, com.slotomania.plugins.widget, "
-    "Kotlin 2.1.21 / kotlinx-coroutines, androidx (appcompat, activity, "
-    "browser/Custom Tabs, webkit, lifecycle, work, compose, startup, "
-    "profileinstaller, preference, emoji2, media), OkHttp3, Okio, Coil, "
-    "Volley (PRAS), Braintree / PopupBridge / Browser Switch, "
-    "Google Play Billing, Google Play Services (ads, ads-identifier, "
-    "games, basements), Firebase, AppLovin / SafeDK, ironSource, Unity Ads, "
-    "Vungle, Moloco, Facebook / Audience Network, AppsFlyer, Braze, "
-    "Sentry (io.sentry), Usercentrics, me.leolin.shortcutbadger, "
-    "de.appplant.cordova.localnotification, by.chemerisuk.cordova.idfa, "
-    "Relinker (getkeepsafe), IAB TCF (com.iab)"
+    "Capacitor + Cordova (гибридная оболочка, com.getcapacitor / org.apache.cordova), "
+    "air.com.playtika.android.common (GameActivity, GameSurfaceView, OpenGL ES / EGL), "
+    "com.playtika.sharedsdk (нативный движок libSharedSdk.so, shaded OkHttp/Okio, "
+    "OkHttpTransport), com.playtika.pras (платёжный SDK, PaymentWidget, "
+    "RedirectionWebViewActivity), com.slotomania.plugins.widget (виджет рабочего стола), "
+    "Kotlin 2.1.21 + kotlinx-coroutines, androidx (appcompat, activity, fragment, "
+    "browser / Custom Tabs, webkit, lifecycle, work, room, datastore, compose, startup, "
+    "profileinstaller, preference, emoji2, media, recyclerview, privacysandbox-ads), "
+    "Google Material, OkHttp3, Okio, Volley, Coil, io.ktor, Gson, Protobuf, "
+    "ExoPlayer2, ZXing, FlexBox, Guava, Braintree + PopupBridge + Browser Switch, "
+    "Google Play Billing 8.3.0, Google Play Services (ads, ads-identifier, appset, "
+    "games v2, location, cronet, measurement, basement), Google Play Core, "
+    "Firebase, AppLovin + SafeDK, ironSource, Unity Ads, Vungle, Moloco, "
+    "Facebook / Audience Network, AppsFlyer, Braze (bo.app), Sentry (io.sentry, "
+    "libsentry.so), Usercentrics, Google UMP, IAB TCF (com.iab), ReLinker "
+    "(com.getkeepsafe), me.leolin.shortcutbadger, de.appplant.cordova.localnotification, "
+    "by.chemerisuk.cordova.advertising (IDFA/GAID), cordova-plugin-device / "
+    "extended-device-information / globalization / network-information / "
+    "screen-orientation / screensize / badge / launch-review / open-native-settings / "
+    "android-permissions / share, io.capawesome AgeSignals, "
+    "нативные libnative-lib.so, libc++_shared.so, libopenal.so, libavcodec/avformat/"
+    "avutil/swresample/swscale (FFmpeg), libapplovin-native-crash-reporter.so"
 )
 
+SUSPICIOUS_DOMAINS_NOTE = None  # заполняется из domain_checks
+
 SHARED_PREFS = (
-    "air.com.playtika.android.common.accountData — произвольные ключ/значение "
-    "аккаунта (в т.ч. из нативной/JS части; есть бэкап через "
-    "AccountPrefsBackupAgent). Default prefs: notificationsEnabled. "
-    "Sentry_ANR_Event / latestAnr — JSON последнего ANR. "
-    "UiAnrWatcher / delay_check_millis — отладочная задержка проверки ANR. "
-    "PREFS_WIDGET (виджет): состояние hourly bonus, image_url, deeplink, "
-    "время следующего бонуса. "
-    "com.braintreepayament.browserswitch.persistentstore — состояние "
-    "перехода в браузер при оплате Braintree. "
-    "Ключей offer_url / cloak / gate / white-page нет."
+    "air.com.playtika.android.common.accountData — универсальное хранилище «ключ/"
+    "значение» для данных аккаунта: пишет и читает нативная часть игры через "
+    "SetKeyValueToAccountStorage / GetKeyValueFromAccountStorage (например "
+    "SentryLogAttachNativePercent); содержимое дублируется в облачный бэкап Android "
+    "через AccountPrefsBackupAgent. Стандартные настройки приложения: "
+    "notificationsEnabled (разрешены ли уведомления). Sentry_ANR_Event / latestAnr — "
+    "JSON последнего зависания приложения. UiAnrWatcher / delay_check_millis — "
+    "отладочная задержка проверки зависаний. slotomania_widget — состояние виджета "
+    "(widget_state, hourly_bonus_state, next_hourly_bonus_time_millis, image_url, "
+    "cached_image_url, deeplink). com.braintreepayament.browserswitch.persistentstore — "
+    "состояние перехода в браузер при оплате Braintree. Плюс собственные хранилища "
+    "SDK (AppsFlyer, Braze, AppLovin, Vungle, Firebase) и localStorage веб-части "
+    "(stage, stage_config_url, stage_label, userLevel, debug-флаги). Ключей вида "
+    "offer_url / cloak / gate / white-page нет."
 )
 
 SUSPICIOUS_WORDS = (
-    "slots, casino, roulette, offer / personaloffers / ads_offer, "
-    "deposit, payout, redirect (RedirectionWebViewActivity / платежи), "
-    "whitelist (Cordova URL allow-list), blacklist, clickid (AppsFlyer), "
-    "postback (рекламные SDK), isBot (Braze), cloak "
-    "(только имя ассета story_cut_scene_cloak / Character_1_cloak, "
-    "не cloaking-логика)"
+    "casino, slots, roulette, poker, betting (названия игр и ресурсов самой игры), "
+    "offer / personaloffers / ads_offer / show-offer-on-login (внутриигровые "
+    "предложения покупок), deposit, payout, withdraw (платёжный модуль PRAS), "
+    "redirect / RedirectionWebViewActivity (возврат из платёжной страницы), "
+    "whitelist и blacklist (списки допустимых адресов в Cordova, "
+    "<access origin=\"*\"/>, и фильтры внутри рекламных SDK), clickid / click_id "
+    "(deeplink-параметры AppsFlyer), postback (обратные вызовы рекламных сетей), "
+    "bot / CAPTCHA (локальная страница captcha.html с Google reCAPTCHA против "
+    "автоматизации), is_bot (поле push-уведомлений Braze), landing "
+    "(имя звука card_landing_sound), cloak (имена ассетов персонажей "
+    "2girl_cloak / cloak_5, директива v-cloak во вью-шаблоне рекламного просмотрщика "
+    "и список root-программ com.devadvance.rootcloak в проверке рута у Sentry), "
+    "gambling / affiliate (слова из встроенного словаря сжатия Brotli). "
+    "Слов white page, preland, geo filter, forbidden country, dirty traffic нет."
 )
 
 DOMAIN_NOTES = {
     "api.braintreegateway.com": (
-        "Это рабочий API платёжного сервиса Braintree (PayPal). В приложении "
-        "он нужен модулю оплат Playtika PRAS: при покупке монет/товаров "
-        "телефон обращается к шлюзу для проведения платежа. VirusTotal без "
-        "вредоносных меток (0/91), страница снаружи отвечает 403 — так бывает "
-        "у защищённого API. На вид безопасно, к скрытой развилке «оффер / "
-        "обычное приложение» не относится."
+        "Это рабочий адрес платёжного сервиса Braintree, который принадлежит PayPal. "
+        "В приложении он нужен встроенному модулю оплат Playtika PRAS и библиотеке "
+        "com.braintreepayments: когда человек покупает монеты не через Google Play, "
+        "телефон обращается к этому шлюзу для проведения платежа. По готовой проверке "
+        "VirusTotal вредоносных меток нет (0 из 91), снаружи адрес отвечает «403 "
+        "Forbidden» — так обычно и ведёт себя закрытый платёжный интерфейс. Признаков "
+        "того, что через него решают, кому показать рекламную страницу, в коде нет."
     ),
     "api.sandbox.braintreegateway.com": (
-        "Тестовый (sandbox) адрес того же Braintree. Обычно используется "
-        "для проверки платежей в не-продакшен окружении. VirusTotal 0/91, "
-        "без редиректа, снаружи 403 Forbidden. Это платёжный тестовый хост, "
-        "а не gate для показа казино-лендинга посторонним."
+        "Тестовая («песочница») версия того же платёжного шлюза Braintree. Такой адрес "
+        "разработчики используют, чтобы проверять покупки без реальных денег, поэтому "
+        "он остался в коде рядом с боевым. Проверка показывает 0 детекций из 91, "
+        "переадресации нет, страница отдаёт «403 Forbidden». Это тестовый платёжный "
+        "хост, а не сервер, который раздаёт ссылки на казино-лендинги."
     ),
     "assets.braintreegateway.com": (
-        "CDN/статика Braintree (скрипты и ресурсы виджета оплаты). В проверке "
-        "страница закрыта Cloudflare («Attention Required»), детекции VT "
-        "нулевые. Приложение тянет отсюда служебные файлы платёжного окна, "
-        "а не рекламный оффер после фильтра трафика."
+        "Хранилище статических файлов Braintree: отсюда платёжное окно подтягивает свои "
+        "скрипты, стили и картинки. В момент проверки страницу закрыл защитный экран "
+        "Cloudflare («Attention Required», доступ к www.paypalobjects.com заблокирован), "
+        "детекции VirusTotal нулевые. Приложение берёт отсюда служебные файлы формы "
+        "оплаты, а не рекламное предложение после какой-либо проверки пользователя."
     ),
     "braintreegateway.com": (
-        "Корневой домен Braintree Gateway. Браузер уводит на страницу входа "
-        "PayPal Braintree; VirusTotal чистый. В APK фигурирует как часть "
-        "платёжного стека (вместе с PopupBridge / browser switch). Это "
-        "официальный платёжный продукт, не cloaking-хост."
+        "Корневой домен того же платёжного продукта. В браузере он уводит на страницу "
+        "входа «Braintree Gateway Login | PayPal Braintree», VirusTotal чистый. В APK "
+        "домен встречается как часть платёжного набора вместе с PopupBridge и "
+        "переключением в браузер при оплате. Это официальный сервис приёма платежей, "
+        "а не хост для скрытой подмены содержимого."
     ),
     "akm.ssacdn.com": (
-        "Хост семейства ssacdn.com — CDN рекламной сети ironSource / "
-        "SuperSonic (медиация рядом с AppLovin MAX). В момент проверки DNS "
-        "снаружи не резолвился; VT 0/91, регистратор Amazon. Нужен раздаче "
-        "рекламных креативов/ресурсов, а не тихой проверке «кому оффер»."
+        "Адрес из семейства ssacdn.com — это сеть доставки файлов рекламной платформы "
+        "ironSource / SuperSonic, которая в этом приложении работает вместе с медиацией "
+        "AppLovin MAX. Отсюда рекламные SDK забирают картинки и видео для показа "
+        "объявлений. В момент проверки имя не разрешалось в адрес (DNS не отвечал), "
+        "детекций VirusTotal нет, домен зарегистрирован через Amazon Registrar. К "
+        "выбору «кому показать оффер» этот хост отношения не имеет."
     ),
     "auroraoss.com": (
-        "Адрес сервиса Aurora OSS. В самой декомпиляции приложения он не "
-        "является игровым/клоакинг-бэкендом; попал в выборку пайплайна "
-        "(в meta.json фигурирует как dispenser при скачивании APK). "
-        "VirusTotal 0/91, сайт открывается как Aurora. К логике Slotomania "
-        "и клоаке не привязан."
+        "Это адрес сервиса Aurora, через который сам файл APK был скачан для анализа: "
+        "он указан в служебном файле meta.json как источник загрузки. В коде игры "
+        "Slotomania этот домен не используется — ни для настроек, ни для рекламы, ни "
+        "для платежей. VirusTotal показывает 0 детекций из 91, сайт открывается как "
+        "обычная страница Aurora."
     ),
     "braintree-api.com": (
-        "Домен API-зоны Braintree (в т.ч. payments.braintree-api.com в "
-        "связанных строках). Снаружи DNS в проверке не резолвился; VT без "
-        "детекций, регистратор MarkMonitor. Относится к платёжному SDK, "
-        "не к фильтрации пользователей на внешний оффер."
+        "Ещё один служебный домен платёжной системы Braintree (в коде встречаются "
+        "адреса payments.braintree-api.com и payments.sandbox.braintree-api.com). "
+        "Через него платёжная библиотека обменивается данными о транзакции. Во время "
+        "проверки имя не разрешалось в адрес, вредоносных меток нет, домен "
+        "зарегистрирован через MarkMonitor — регистратора крупных брендов."
     ),
     "braintreepayments.com": (
-        "Маркетинговый/продуктовый сайт Braintree. Редирект ведёт на "
-        "страницу PayPal Braintree; VirusTotal 0/91. В приложении связан с "
-        "библиотекой com.braintreepayments. На вид обычный легитимный "
-        "платёжный бренд, не gate клоаки."
+        "Витринный сайт Braintree; в приложении с ним связан пакет "
+        "com.braintreepayments. Проверка показывает переадресацию на страницу PayPal "
+        "о продукте Braintree и 0 детекций из 91. Это обычный домен известного "
+        "платёжного бренда, никакой скрытой развилки «оффер или обычное приложение» "
+        "за ним не стоит."
     ),
 }
 
@@ -262,9 +296,7 @@ MAIN_ROWS = [
 
 
 def build():
-    with open(CHECKS, "r", encoding="utf-8") as f:
-        checks = json.load(f)
-    by_domain = {c["domain"]: c for c in checks.get("checked", [])}
+    by_domain = {c["domain"]: c for c in CHECKS_DATA.get("checked", [])}
 
     doc = SimpleDocTemplate(
         OUT, pagesize=A4,
@@ -280,15 +312,21 @@ def build():
         "Slotomania™ Slots Casino Games &mdash; Playtika &mdash; "
         "air.com.playtika.slotomania (версия 77.163.07)", BODY))
     story.append(Paragraph(
-        "Разобраны: base APK и splits (arm64_v8a, en, xxhdpi, asset, "
-        "asset_pack / ASTC), apk/*, meta.json, domain_checks.json / "
-        "domain_checks.md, decompiled/resources/AndroidManifest.xml, "
-        "res/values/strings.xml, assets (capacitor.config.json, public/client), "
-        "исходники air.com.playtika.*, com.playtika.*, com.slotomania.*, "
-        "рекламные и аналитические SDK (AppLovin, ironSource, Unity, Vungle, "
-        "Moloco, FAN, AppsFlyer, Braze, Firebase, Sentry, Braintree). "
-        "Точка входа: SafeDKApplication → MainActivity "
-        "(GameActivity / Capacitor Bridge + OpenGL GameSurfaceView).", SMALL))
+        "Разобраны: базовый APK и все сплиты (config.arm64_v8a, config.en, "
+        "config.xxhdpi, asset, asset_pack, asset_pack.config.group_medium_"
+        "performance_astc) из корня папки и из apk/, meta.json, "
+        "domain_checks.json / domain_checks.md, decompiled/resources/"
+        "AndroidManifest.xml, res/values/strings.xml и res/xml (config.xml, "
+        "network_security_config.xml, backup_rules.xml), ассеты "
+        "(capacitor.config.json, public/index.html, captcha.html, "
+        "support-portal.html, vip-chat.html, one-reward.html, native-preloader.js, "
+        "late-preloader.js, client/modules.es2016/*), исходники jadx "
+        "(air.com.playtika.*, com.playtika.*, com.slotomania.*, capacitor/cordova, "
+        "рекламные и аналитические SDK), а также строки нативных библиотек "
+        "libSharedSdk.so и libnative-lib.so. Цепочка запуска: "
+        "com.safedk.android.SafeDKApplication → air.com.playtika.slotomania."
+        "MainActivity (наследник GameActivity: мост Capacitor + OpenGL-поверхность "
+        "GameSurfaceView + нативная библиотека native-lib).", SMALL))
 
     story.append(Paragraph("SDK / стек", H2))
     story.append(kv_table(
