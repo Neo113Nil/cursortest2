@@ -1,0 +1,303 @@
+*********
+NORMAL
+*********
+
+Angle Scale Daylight Shadow Filename                                        Description
+---------------------------------------------------------------------------------------------
+30     1.0      1      1     gfx\obj\nature\manty2.obj                 (000) Manty pieni
+30     1.1      1      1     gfx\obj\nature\manty.obj                        Manty iso
+30     1.0      1      1     gfx\obj\nature\kuusi2.obj                       Kuusi pieni
+30     1.1      1      1     gfx\obj\nature\koekuusi.obj                     Kuusi iso
+45     0.6      1      1     gfx\obj\nature\koivu.obj                        Koivu pieni
+45     1.0      1      1     gfx\obj\nature\koivu.obj                        Koivu iso
+30     2.0      1      1     gfx\obj\nature\paju.obj                         Paju
+00     3.0      1      1     gfx\obj\nature\kaisla.obj                       Kaisla
+30     2.2      1      1     gfx\obj\nature\tammi.obj                        Tammi iso
+30     1.3      1      1     gfx\obj\nature\tammi2.obj                       Tammi pieni
+30     1.5      1      1     gfx\obj\nature\manty3.obj                       Manty kakkyra
+30     2.0      1      1     gfx\obj\nature\paju2.obj                        Iso paju
+30     0.8      1      1     gfx\obj\nature\koekuusi.obj                     Kuusi keskikoko
+30     0.8      1      1     gfx\obj\nature\manty.obj                        Manty keskikoko
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                     --
+30     1.0      1      1     <automatic>                               (020) Jalanjälki oikea
+30     1.0      1      1     <automatic>                                     Jalanjälki vasen
+30     1.0      1      1     <automatic>                                     Pikkujälki oikea (linnut, koirat, yms.)
+30     1.0      1      1     <automatic>                                     Pikkujälki vasen
+30     1.0      1      1     <automatic>                                     Suksenjälki 1
+30     1.0      1      1     <automatic>                                     Suksenjälki 2
+30     1.0      1      1     <automatic>                                     Kelkanjälki 1
+30     1.0      1      1     <automatic>                                     Kelkanjälki 2
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                     --
+30     1.0      1      1     <automatic>                               (030) Valmis reikä  (4 tuumaa)
+30     1.0      1      1     <automatic>                                     Ei-valmis reikä (4 tuumaa)
+30     1.0      1      1     <automatic>                                     Valmis reikä  (6 tuumaa)
+30     1.0      1      1     <automatic>                                     Ei-valmis reikä (6 tuumaa)
+30     1.0      1      1     <automatic>                                     Tupakka
+30     1.0      1      1     <automatic>                                     Tupakka-aski
+30     1.0      1      1     <automatic>                                     Virtsaa
+30     1.0      1      1     <automatic>                                     Kalantappojälki
+30     1.0      1      1     <automatic>                                     PowerBait-jälki (vihreä)
+30     1.0      1      1     <automatic>                                     PowerBait-jälki (pinkki)
+30     1.0      1      1     <automatic>                                     Blue marker
+30     10.0     1      1     		                         	     Editor ruler
+30     1.0      1      1     <automatic>                                     Arrow green
+30     1.0      1      1     <automatic>                                     Arrow red
+30     1.0      1      1     <automatic>                                     Obstacle
+30     1.0      1      1     <automatic>                                     Pohjaan kairaus (4 tuumaa)
+30     1.0      1      1     <automatic>                                     Pohjaan kairaus (6 tuumaa)                                                --
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                     --
+30     1.2      1      1     gfx\obj\nature\kivi2.obj                  (050) Kivi pieni
+30     2.0      1      1     gfx\obj\nature\kivi.obj                         Kivi keskikoko 1
+30     1.0      1      1                                                     Kivi keskikoko 2
+30     1.0      1      1                                                     Kivi iso
+30     1.0      1      1                                                     Kanto 1
+30     1.0      1      1                                                     Kanto 2
+30     1.0      1      1                                                     Kanto 3
+30     1.5      1      1    gfx\obj\misc\sahko.obj                           Korkeajännite sähkötolppa 1
+30     2.8      1      1    gfx\obj\misc\sahko2.obj                          Korkeajännite sähkötolppa 2
+30     0.7      1      1    gfx\obj\misc\sahko3.obj                          Puhelinlinjatolppa
+30     1.0      1      1                                                     Aurauskeppi
+30     1.0      1      1                                                     Katuvalo 1
+30     1.0      1      1                                                     Katuvalo 2
+30     1.0      1      1     gfx\obj\misc\sahkok.obj                         Kyltti 1 (sahkovaara)
+30     2.5      1      1     gfx\obj\misc\kaapeli.obj                        Kyltti 2 (Kaapeli)
+30     3.0      1      1     gfx\obj\misc\tami.obj                           Kyltti 3
+30     1.6      1      1     gfx\obj\misc\Pkylt.obj                          P-kyltti
+30     1.6      1      1     gfx\obj\misc\kolmio.obj                         Kolmio
+30     1.6      1      1     gfx\obj\misc\kielto.obj                         Ajokielto
+30     2.0      1      1     gfx\obj\misc\start.obj                          Punnitus kyltti 1
+30     3.0      1      1     disabled			                     Mainos
+30     1.0      1      1                                                     Aita 1 (lauta)
+30     1.0      1      1                                                     Aita 2 (tiili)
+30     1.0      1      1                                                     Aita 3 (harva lehmiaita)
+30     1.0      1      1                                                     Aita 4
+30     1.1      1      1     gfx\obj\cars\car1.obj                           Parkkeerattu auto 1
+30     1.1      1      1     gfx\obj\cars\car2.obj                           Parkkeerattu auto 2
+30     1.3      1      1     gfx\obj\cars\car3.obj                           Parkkeerattu auto 3
+30     1.3      1      1     gfx\obj\cars\car4.obj                           Parkkeerattu auto 3
+30     1.0      0      0     gfx\obj\misc\nuotio.obj                         Nuotio
+30     0.7      1      1     gfx\obj\misc\poig.obj                           Poiju vihrea
+30     0.7      1      1     gfx\obj\misc\poir.obj                           Poiju punainen
+30     2.5      1      1     gfx\obj\misc\vene1.obj                          Vene1
+30     2.5      1      1     gfx\obj\misc\vene2.obj                          Vene2
+30     2.5      1      1     gfx\obj\misc\vene3.obj                          Vene3
+30     1.1      1      1     gfx\obj\misc\uima.obj                           Uimaranta
+30     0.8      1      1     gfx\obj\misc\kelkka1.obj                        Kelkka1
+30     0.8      1      1     gfx\obj\misc\kelkka2.obj                        Kelkka2
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                     --
+60     1.5      1      1     gfx\obj\buildings\mokki1.obj             (090)  Talo 1 
+60     1.5      1      1     gfx\obj\buildings\mokki2.obj                    Talo 2 
+30     2.1      1      1     gfx\obj\buildings\mokki3.obj                    Talo 3 
+30     1.7      1      1     gfx\obj\buildings\mokki4.obj                    Talo 4 
+30     2.1      1      1     gfx\obj\buildings\mokki5.obj                    Talo 5
+30     2.0      1      1     gfx\obj\buildings\majakka.obj                   Talo 6
+30     1.0      1      1                                                     Talo 7
+30     1.0      1      1                                                     Talo 8
+30     1.0      1      1                                                     Talo 9
+30     1.0      1      1                                                     Talo 10
+30     1.0      1      1                                                     Talo 11
+30     1.0      1      1                                                     Talo 12
+30     1.0      1      1                                                     Talo 13
+30     1.0      1      1                                                     Talo 14
+30     1.0      1      1                                                     Talo 15
+30     1.0      1      1                                                     Talo 16
+30     1.0      1      1                                                     Talo 17
+30     1.0      1      1                                                     Talo 18
+30     1.0      1      1                                                     Talo 19
+30     1.0      1      1                                                     Talo 20
+45     1.8      1      1     gfx\obj\buildings\koppi.obj              (110)  Ulkorakennus 1  (Kalteva koppi)
+45     1.5      1      1     gfx\obj\buildings\vaja.obj                      Ulkorakennus 2  (Vaja)
+30     1.0      1      1                                                     Ulkorakennus 3  (Huusi)
+30     1.0      1      1                                                     Ulkorakennus 4  (Maitolaituri)
+30     2.5      1      1     gfx\obj\buildings\laavu.obj                     Ulkorakennus 5  (laavu)
+30     2.0      1      1     gfx\obj\buildings\teltta1.obj                   Ulkorakennus 6  (teltta sininen)
+30     2.0      1      1     gfx\obj\buildings\teltta2.obj                   Ulkorakennus 7  (teltta punainen)
+30     2.0      1      1     gfx\obj\buildings\kota.obj                      Ulkorakennus 8  (kota)
+30     2.0      1      1     gfx\obj\buildings\teltta3.obj                   Ulkorakennus 9  (Procyon teltta)
+30     1.0      1      1                                                     Ulkorakennus 10
+30     1.0      1      1                                                     Ulkorakennus 11
+30     1.0      1      1                                                     Ulkorakennus 12
+30     1.0      1      1                                                     Ulkorakennus 13
+30     1.0      1      1                                                     Ulkorakennus 14
+30     1.0      1      1                                                     Ulkorakennus 15
+30     1.0      1      1                                                     Ulkorakennus 16
+30     1.0      1      1                                                     Ulkorakennus 17
+30     1.0      1      1                                                     Ulkorakennus 18
+30     1.0      1      1                                                     Ulkorakennus 19
+30     1.0      1      1                                                     Ulkorakennus 20
+30     1.0      1      1     gfx\obj\misc\laituri.obj                 (130)  Laituri 1
+30     1.0      1      1                                                     Laituri 2
+30     1.0      1      1                                                     Laituri 3
+30     1.0      1      1                                                     Laituri 4
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                      --
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                     --
+30     1.0      1      1                                              (140)  Silta 1
+30     1.0      1      1                                                     Silta 2
+30     1.0      1      1                                                     Silta 3
+30     1.0      1      1                                                     Silta 4
+
+
+*********
+SNOW
+*********
+
+Angle Scale Daylight Shadow Filename                                        Description
+---------------------------------------------------------------------------------------------
+30     1.0      1      1     gfx\obj\nature\manty2_sn.obj                 (000) Manty pieni
+30     1.1      1      1     gfx\obj\nature\manty_sn.obj                        Manty iso
+30     1.0      1      1     gfx\obj\nature\kuusi2_sn.obj                       Kuusi pieni
+30     1.1      1      1     gfx\obj\nature\koekuusi_sn.obj                     Kuusi iso
+45     0.6      1      1     gfx\obj\nature\koivu_sn.obj                     Koivu pieni
+45     1.0      1      1     gfx\obj\nature\koivu_sn.obj                     Koivu iso
+30     2.0      1      1     gfx\obj\nature\paju_sn.obj                      Paju
+00     3.0      1      1     gfx\obj\nature\kaisla.obj                       Kaisla
+30     2.2      1      1     gfx\obj\nature\tammi_sn.obj                     Tammi iso
+30     1.3      1      1     gfx\obj\nature\tammi2_sn.obj                    Tammi pieni
+30     1.5      1      1     gfx\obj\nature\manty3.obj                       Manty kakkyra
+30     2.0      1      1     gfx\obj\nature\paju2_sn.obj                     Iso paju
+30     0.8      1      1     gfx\obj\nature\koekuusi_sn.obj                  Kuusi keskikoko
+30     0.8      1      1     gfx\obj\nature\manty_sn.obj                     Manty keskikoko
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                     --
+30     1.0      1      1     <automatic>                               (020) Jalanjälki oikea
+30     1.0      1      1     <automatic>                                     Jalanjälki vasen
+30     1.0      1      1     <automatic>                                     Pikkujälki oikea (linnut, koirat, yms.)
+30     1.0      1      1     <automatic>                                     Pikkujälki vasen
+30     1.0      1      1     <automatic>                                     Suksenjälki 1
+30     1.0      1      1     <automatic>                                     Suksenjälki 2
+30     1.0      1      1     <automatic>                                     Kelkanjälki 1
+30     1.0      1      1     <automatic>                                     Kelkanjälki 2
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                     --
+30     1.0      1      1     <automatic>                               (030) Valmis reikä  (4 tuumaa)
+30     1.0      1      1     <automatic>                                     Ei-valmis reikä (4 tuumaa)
+30     1.0      1      1     <automatic>                                     Valmis reikä  (6 tuumaa)
+30     1.0      1      1     <automatic>                                     Ei-valmis reikä (6 tuumaa)
+30     1.0      1      1     <automatic>                                     Tupakka
+30     1.0      1      1     <automatic>                                     Tupakka-aski
+30     1.0      1      1     <automatic>                                     Virtsaa
+30     1.0      1      1     <automatic>                                     Kalantappojälki
+30     1.0      1      1     <automatic>                                     PowerBait-jälki (vihreä)
+30     1.0      1      1     <automatic>                                     PowerBait-jälki (pinkki)
+30     1.0      1      1     <automatic>                                     Blue marker
+30     10.0     1      1     			                             Editor ruler
+30     1.0      1      1     <automatic>                                     Arrow green
+30     1.0      1      1     <automatic>                                     Arrow red
+30     1.0      1      1     <automatic>                                     Obstacle
+30     1.0      1      1     <automatic>                                     Pohjaan kairaus (4 tuumaa)
+30     1.0      1      1     <automatic>                                     Pohjaan kairaus (6 tuumaa)                                                --
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                     --
+30     1.2      1      1     gfx\obj\nature\kivi2.obj                        (050) Kivi pieni
+30     2.0      1      1     gfx\obj\nature\kivi.obj                         Kivi keskikoko 1
+30     1.0      1      1                                                     Kivi keskikoko 2
+30     1.0      1      1                                                     Kivi iso
+30     1.0      1      1                                                     Kanto 1
+30     1.0      1      1                                                     Kanto 2
+30     1.0      1      1                                                     Kanto 3
+30     1.5      1      1    gfx\obj\misc\sahko.obj                           Korkeajännite sähkötolppa 1
+30     2.8      1      1    gfx\obj\misc\sahko2.obj                          Korkeajännite sähkötolppa 2
+30     0.7      1      1    gfx\obj\misc\sahko3.obj                          Puhelinlinjatolppa
+30     1.0      1      1                                                     Aurauskeppi
+30     1.0      1      1                                                     Katuvalo 1
+30     1.0      1      1                                                     Katuvalo 2
+30     1.0      1      1     gfx\obj\misc\sahkok.obj                         Kyltti 1 (sahkovaara)
+30     2.5      1      1     gfx\obj\misc\kaapeli.obj                        Kyltti 2 (Kaapeli)
+30     3.0      1      1     gfx\obj\misc\tami.obj                           Kyltti 3
+30     1.6      1      1     gfx\obj\misc\Pkylt.obj                          P-kyltti
+30     1.6      1      1     gfx\obj\misc\kolmio.obj                         Kolmio
+30     1.6      1      1     gfx\obj\misc\kielto.obj                         Ajokielto
+30     2.0      1      1     gfx\obj\misc\start.obj                          Punnitus kyltti 1
+30     3.0      1      1     disabled		                             Mainos
+30     1.0      1      1                                                     Aita 1 (lauta)
+30     1.0      1      1                                                     Aita 2 (tiili)
+30     1.0      1      1                                                     Aita 3 (harva lehmiaita)
+30     1.0      1      1                                                     Aita 4
+30     1.1      1      1     gfx\obj\cars\car1.obj                           Parkkeerattu auto 1
+30     1.1      1      1     gfx\obj\cars\car2.obj                           Parkkeerattu auto 2
+30     1.3      1      1     gfx\obj\cars\car3.obj                           Parkkeerattu auto 3
+30     1.3      1      1     gfx\obj\cars\car4.obj                           Parkkeerattu auto 3
+30     1.0      0      0     gfx\obj\misc\nuotio.obj                         Nuotio
+30     0.7      1      1     gfx\obj\misc\poig_sn.obj                        Poiju vihrea
+30     0.7      1      1     gfx\obj\misc\poir_sn.obj                        Poiju punainen
+30     2.5      1      1     gfx\obj\misc\vene1_sn.obj                       Vene1
+30     2.5      1      1     gfx\obj\misc\vene2_sn.obj                       Vene2
+30     2.5      1      1     gfx\obj\misc\vene3_sn.obj                       Vene3
+30     1.1      1      1     gfx\obj\misc\uima_sn.obj                        Uimaranta
+30     0.8      1      1     gfx\obj\misc\kelkka1.obj                        Kelkka1
+30     0.8      1      1     gfx\obj\misc\kelkka2.obj                        Kelkka2
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                     --
+60     1.5      1      1     gfx\obj\buildings\mokki1_sn.obj             (090)  Talo 1 
+60     1.5      1      1     gfx\obj\buildings\mokki2_sn.obj                    Talo 2 
+30     2.1      1      1     gfx\obj\buildings\mokki3_sn.obj                    Talo 3 
+30     1.7      1      1     gfx\obj\buildings\mokki4_sn.obj                    Talo 4 
+30     2.1      1      1     gfx\obj\buildings\mokki5_sn.obj                    Talo 5
+30     2.0      1      1     gfx\obj\buildings\majakka_sn.obj                   Talo 6
+30     1.0      1      1                                                     Talo 7
+30     1.0      1      1                                                     Talo 8
+30     1.0      1      1                                                     Talo 9
+30     1.0      1      1                                                     Talo 10
+30     1.0      1      1                                                     Talo 11
+30     1.0      1      1                                                     Talo 12
+30     1.0      1      1                                                     Talo 13
+30     1.0      1      1                                                     Talo 14
+30     1.0      1      1                                                     Talo 15
+30     1.0      1      1                                                     Talo 16
+30     1.0      1      1                                                     Talo 17
+30     1.0      1      1                                                     Talo 18
+30     1.0      1      1                                                     Talo 19
+30     1.0      1      1                                                     Talo 20
+45     1.8      1      1     gfx\obj\buildings\koppi_sn.obj              (110)Ulkorakennus 1  (Kalteva koppi)
+45     1.5      1      1     gfx\obj\buildings\vaja_sn.obj                   Ulkorakennus 2  (Vaja)
+30     1.0      1      1                                                     Ulkorakennus 3  (Huusi)
+30     1.0      1      1                                                     Ulkorakennus 4  (Maitolaituri)
+30     2.5      1      1     gfx\obj\buildings\laavu_sn.obj                  Ulkorakennus 5  (laavu)
+30     2.0      1      1     gfx\obj\buildings\teltta1_sn.obj                Ulkorakennus 6  (teltta sininen)
+30     2.0      1      1     gfx\obj\buildings\teltta2_sn.obj                Ulkorakennus 7  (teltta punainen)
+30     2.0      1      1     gfx\obj\buildings\kota.obj                      Ulkorakennus 8  (kota)
+30     2.0      1      1     gfx\obj\buildings\teltta3_sn.obj                Ulkorakennus 9  (Procyon teltta)
+30     1.0      1      1                                                     Ulkorakennus 10
+30     1.0      1      1                                                     Ulkorakennus 11
+30     1.0      1      1                                                     Ulkorakennus 12
+30     1.0      1      1                                                     Ulkorakennus 13
+30     1.0      1      1                                                     Ulkorakennus 14
+30     1.0      1      1                                                     Ulkorakennus 15
+30     1.0      1      1                                                     Ulkorakennus 16
+30     1.0      1      1                                                     Ulkorakennus 17
+30     1.0      1      1                                                     Ulkorakennus 18
+30     1.0      1      1                                                     Ulkorakennus 19
+30     1.0      1      1                                                     Ulkorakennus 20
+30     1.0      1      1     gfx\obj\misc\laituri_sn.obj                 (130)  Laituri 1
+30     1.0      1      1                                                     Laituri 2
+30     1.0      1      1                                                     Laituri 3
+30     1.0      1      1                                                     Laituri 4
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                      --
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                     --
+30     1.0      1      1                                                     --
+30     1.0      1      1                                              (140)  Silta 1
+30     1.0      1      1                                                     Silta 2
+30     1.0      1      1                                                     Silta 3
+30     1.0      1      1                                                     Silta 4
+

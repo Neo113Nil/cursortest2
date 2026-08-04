@@ -1,0 +1,1160 @@
+Manifest-Version: 1.0
+
+Name: AndroidManifest.xml
+SHA-256-Digest: cxYRFNkbp2xeTtJF50xxrTsfaH2tLK7f/0uGKcX/PIY=
+
+Name: DebugProbesKt.bin
+SHA-256-Digest: rooILdYJMTg1upPD70eaOvmQOXfXvcgd9Fu9IJ7H0No=
+
+Name: LICENSE-junit.txt
+SHA-256-Digest: lki7KJG5gTlwvdto1L6KXm7IKA0BgKU9+ykja1ecVbs=
+
+Name: META-INF/androidx.activity_activity.version
+SHA-256-Digest: 2C80rpqkG8Sgy1KaGsCJj+0J1rR5+xzETLZsNPFe6E0=
+
+Name: META-INF/androidx.annotation_annotation-experimental.version
+SHA-256-Digest: fQcrSFJrAjlQ5MSNsB6MJzVUpkARGfVpHnWJupvGXZ0=
+
+Name: META-INF/androidx.arch.core_core-runtime.version
+SHA-256-Digest: G3xgY3AYhTTaxVYfuispiAk4KWl/zp5uiDLpKR0k7QA=
+
+Name: META-INF/androidx.core_core-ktx.version
+SHA-256-Digest: Rggf2QVxonQWBAjryB/JG3j/ykBJ1HeZjjtpCawkXgU=
+
+Name: META-INF/androidx.core_core-viewtree.version
+SHA-256-Digest: WYVJhIUxBN9cNT4vaBoV/HkkdC+aLkaMKa8kjc5FzgM=
+
+Name: META-INF/androidx.core_core.version
+SHA-256-Digest: Rggf2QVxonQWBAjryB/JG3j/ykBJ1HeZjjtpCawkXgU=
+
+Name: META-INF/androidx.customview_customview.version
+SHA-256-Digest: WYVJhIUxBN9cNT4vaBoV/HkkdC+aLkaMKa8kjc5FzgM=
+
+Name: META-INF/androidx.fragment_fragment.version
+SHA-256-Digest: FXXhr0qV8S9wtO5qatzoFglT2T6hfcJhG5CIPMw607g=
+
+Name: META-INF/androidx.interpolator_interpolator.version
+SHA-256-Digest: WYVJhIUxBN9cNT4vaBoV/HkkdC+aLkaMKa8kjc5FzgM=
+
+Name: META-INF/androidx.lifecycle_lifecycle-livedata-core.version
+SHA-256-Digest: R0AG0MyBAPjfxo2SafIzo0fCnrSjbYWcIKSVOqQdTfw=
+
+Name: META-INF/androidx.lifecycle_lifecycle-livedata.version
+SHA-256-Digest: j7FsJMmJArqZkXWI2/0DjfDZv4aTySVuK6mVLHi0SzM=
+
+Name: META-INF/androidx.lifecycle_lifecycle-runtime.version
+SHA-256-Digest: QlfMy7o/eupSGkCTfRv91ZSfXz4e1onEAqTyl3EJAws=
+
+Name: META-INF/androidx.lifecycle_lifecycle-viewmodel-savedstate.versi
+ on
+SHA-256-Digest: Qh/GNSi1dBWfurmIOzdnuFxvBzQV5PWKFmrNk3BtuQw=
+
+Name: META-INF/androidx.lifecycle_lifecycle-viewmodel.version
+SHA-256-Digest: QF6fD4NlHKCX2slrU6nRSam28ciQ0jLh8+hrwD/MYrE=
+
+Name: META-INF/androidx.loader_loader.version
+SHA-256-Digest: WYVJhIUxBN9cNT4vaBoV/HkkdC+aLkaMKa8kjc5FzgM=
+
+Name: META-INF/androidx.profileinstaller_profileinstaller.version
+SHA-256-Digest: ZNI/hY71Gw+Zbklm1OJ8A3G0N+LSeHiQsfetItTsVmM=
+
+Name: META-INF/androidx.savedstate_savedstate.version
+SHA-256-Digest: bPTghLR/M8mwLveSedFXgzho+PcFFBaadovjU+4yj+o=
+
+Name: META-INF/androidx.startup_startup-runtime.version
+SHA-256-Digest: zFL2eISLgUNzdXtGA4O/YZYOSUPCA3Na3eCjULPlCYk=
+
+Name: META-INF/androidx.tracing_tracing.version
+SHA-256-Digest: HltRzeUVOWqfp2KQnPjKZYTMxWSzJdLuvup2F1/pXE0=
+
+Name: META-INF/androidx.versionedparcelable_versionedparcelable.versio
+ n
+SHA-256-Digest: zFL2eISLgUNzdXtGA4O/YZYOSUPCA3Na3eCjULPlCYk=
+
+Name: META-INF/androidx.viewpager_viewpager.version
+SHA-256-Digest: WYVJhIUxBN9cNT4vaBoV/HkkdC+aLkaMKa8kjc5FzgM=
+
+Name: META-INF/com/android/build/gradle/app-metadata.properties
+SHA-256-Digest: XQvsYHxzyTAj+DvFdRpt0ZIS8orOwZnbQLPRUV9VzGQ=
+
+Name: META-INF/kotlinx_coroutines_android.version
+SHA-256-Digest: GLo805azBMO/br10Plrb2bm1sqQvVT5/dOC8+1SVoh8=
+
+Name: META-INF/kotlinx_coroutines_core.version
+SHA-256-Digest: GLo805azBMO/br10Plrb2bm1sqQvVT5/dOC8+1SVoh8=
+
+Name: META-INF/services/kotlinx.coroutines.CoroutineExceptionHandler
+SHA-256-Digest: MSm47fbbB95vj/R2leIXfIu6Tu0pYtMIXHGeWsu1ijM=
+
+Name: META-INF/services/kotlinx.coroutines.internal.MainDispatcherFact
+ ory
+SHA-256-Digest: oep36o+T9Bkla25m8pcT+VDY1ukEQrYI2ICkgAO163I=
+
+Name: META-INF/version-control-info.textproto
+SHA-256-Digest: ONN3r6drY2Tlv1Uc9P/sGogaRhAqAEf1I/vxSODfaSg=
+
+Name: META-INF/versions/9/OSGI-INF/MANIFEST.MF
+SHA-256-Digest: qETWKwKp7v2dES50/WYIQ9kc2LgdzmzmCp6rpgX6k5w=
+
+Name: assets/LakeCache.bin
+SHA-256-Digest: PKamd6R1E2AvMMqcD1eQwC1vuxhemPQvRTRfT+3rQxY=
+
+Name: assets/data/NetHostAddress.dat
+SHA-256-Digest: GuZr7ckPmJvDUe0z9HXHXjD0/5Lx6+7wB+/FfjiLBkQ=
+
+Name: assets/data/ReleaseNote_EN.html
+SHA-256-Digest: jhWbj0V5V/EZK57kE349T6XOYsKHiEorfSm6Frzimk8=
+
+Name: assets/data/ReleaseNote_FI.html
+SHA-256-Digest: XC8eUP0iHz+799jZ7yxb8ZfglOJ9LWdDSNkTqh63NRI=
+
+Name: assets/data/autoscript_example.txt
+SHA-256-Digest: OlJxzDcDxp+Spwx1dg9yZhY8g4bmMwUCS8E3q4zCvzc=
+
+Name: assets/data/botinfo.dat
+SHA-256-Digest: IhKSTZ5CdZB7JiPmiA8aiA5jSHw+o7Asf2BUPD+SGjM=
+
+Name: assets/data/license_en.html
+SHA-256-Digest: YzSVCsrMIEo8kciTEBSd3/PVzp4aSmYjFSkJuEBtrjc=
+
+Name: assets/data/license_fi.html
+SHA-256-Digest: hHKjeTz/oSQRAPn94ta5rkj7IqiUQwl9CWxTeLk12IQ=
+
+Name: assets/data/nyky/data0.dat
+SHA-256-Digest: on2yF5/K0uJKToae5rdaZILD/6lM+ffgYhE9DmWYXJU=
+
+Name: assets/data/objects.dat
+SHA-256-Digest: EvLpEkvG/vMPrfccZgCaPZb9f8U2gvowXGrQv5CKjDI=
+
+Name: assets/dexopt/baseline.prof
+SHA-256-Digest: PyvVhM7XwAxC/V8rmhbEwhTdUGOvyZQWYOe1/sT5dQQ=
+
+Name: assets/dexopt/baseline.profm
+SHA-256-Digest: EvovK2DMX/TZ3ZdTdbn2jiOM9wHUIJeypthULgVAbC4=
+
+Name: assets/gfx.jpg
+SHA-256-Digest: 5ecup88oanbJDK+Ram7IGjC5TQe8gAkhNomyg6lCGBQ=
+
+Name: assets/lakes/Surrinlampi.ves
+SHA-256-Digest: 3jzkas9zvcF5jPAka5gU3sU6NsosVxPf3M9gsGKH3WM=
+
+Name: assets/lakes/haapolahti.ves
+SHA-256-Digest: sMkyEEl9qjdpVte/Ck5dkFyhLy7LXZac0kPv5l9M+ho=
+
+Name: assets/lakes/harjukankaanmonttu.ves
+SHA-256-Digest: sTontUybsuztDXXdUN2Qa6z5/gqL1fYrkbX5CIGR2vo=
+
+Name: assets/lakes/haukilahti.ves
+SHA-256-Digest: PXyQHV1zBmv8JukDVd82PHAiVWCdde6Cv0mg6IMipi0=
+
+Name: assets/lakes/hossalais.ves
+SHA-256-Digest: /kmeZJyARsYZJjS6ZNxd+WWMB4w4JL/019dwx2DgWEQ=
+
+Name: assets/lakes/isosoimi.ves
+SHA-256-Digest: qr098/KMKbo1FZzyD6tBsZSF7xPdbvRV4kcD2Cq80Tk=
+
+Name: assets/lakes/jormuanlahti.ves
+SHA-256-Digest: 3lROfqO7yhjKS0NPKWJ3miR4KLPCZlPwVVP+J82G0RI=
+
+Name: assets/lakes/kivijoki.ves
+SHA-256-Digest: A75tr0ivGfWlC5hbP4MnLNEohaC5VDn0wnZWnI9pobk=
+
+Name: assets/lakes/koivusaari.ves
+SHA-256-Digest: Q7Ynp/ujKm9kNx1IVZbXMEWfSMPVstA2Cet0vaWHeWo=
+
+Name: assets/lakes/kolmisoppi.ves
+SHA-256-Digest: km48mnlzK/7ITnWJdkNOJROqcs4XUdZ68AkE19lsTkI=
+
+Name: assets/lakes/korpipuro.ves
+SHA-256-Digest: ZsXNuSPv5zotr1lTTrq7yVAA7ZH9XTqBeQL2kCVaNQw=
+
+Name: assets/lakes/kortejarvi.ves
+SHA-256-Digest: uNvbYhVPDkRdRteHc1Zegr9MKsDwf5tj15d1W+PU7x8=
+
+Name: assets/lakes/kuikansalmi.ves
+SHA-256-Digest: 8Y5QfyB9KeJePxkT5DoCGtCN9oxSKYXUANto7fodt7Y=
+
+Name: assets/lakes/kuopionlahti.ves
+SHA-256-Digest: cpJmsQIbrRiOWESCn+VpfWpeiSj2JLzpAw6w1ZqaoqA=
+
+Name: assets/lakes/lahnalammet.ves
+SHA-256-Digest: wTLSJYa5d9xZ00aZNyeFj6NFp08KXA0vW+glwGxgCOo=
+
+Name: assets/lakes/lehmilampi.ves
+SHA-256-Digest: ceAJm3je0K3lY6U3rh3Vs+HqVyj+z43iLK46lx3k9lM=
+
+Name: assets/lakes/linlonlahti.ves
+SHA-256-Digest: 92eNgWx1umQtluh08MljjFO0BpmMvkC8dXhdYQiXGLI=
+
+Name: assets/lakes/lokkiluoto.ves
+SHA-256-Digest: TacHSnzyaze0gAEHcHPfkCwJBKhnpBNv65MoLtXfKEo=
+
+Name: assets/lakes/mantylahti.ves
+SHA-256-Digest: 9VnrSs7oc1QTq4M14DVYRIpgHlgDmbUeWbOD/H5Awlc=
+
+Name: assets/lakes/matojoki.ves
+SHA-256-Digest: P1fYV2i9ed3ha0kHbRfqmkKvXzrznWAghcag5IrtwdQ=
+
+Name: assets/lakes/meri.ves
+SHA-256-Digest: WNPbfQ6v0re+pODH8SMFj2lNFsRu1nwQ83ofdMedPr8=
+
+Name: assets/lakes/metsalampi.ves
+SHA-256-Digest: gL/ckMLv3gT2WHmbG9SQ2ohrKA/ZJOJtOPY03fZImj8=
+
+Name: assets/lakes/muddusjarvi.ves
+SHA-256-Digest: c7Z3n8g6NLfwaPNMX8p2je0PLoH9xRRVAjg1ZdNWwqs=
+
+Name: assets/lakes/mustalampi.ves
+SHA-256-Digest: 6Ez/Q0oUBplu92X5IVq7ceSud8eEeWYDmSJ+u2go9NM=
+
+Name: assets/lakes/niemisjarvet.ves
+SHA-256-Digest: L6mzt0ym86QBtTfQQdBNJntUt+QlSLnXJ8rhVcB7530=
+
+Name: assets/lakes/palusjarvi.ves
+SHA-256-Digest: 4EOQZv5yqElu18gLF2i+QZmPOah/sjszQi0OuQa0/LE=
+
+Name: assets/lakes/perajarvi.ves
+SHA-256-Digest: K7zpmlwhYHlwAzUvgXwFRDciJ+MnE3iZwWNiS8hxMKI=
+
+Name: assets/lakes/pienisarkinen.ves
+SHA-256-Digest: YBGk8lP4ZgYeXGJH+UFjVSgZ9U760DbykSuO1f6YNLA=
+
+Name: assets/lakes/pitkalampi.ves
+SHA-256-Digest: sOAKpjHDfQSKKZuV3KonbVV7DQfP0BIJDGQzHi1QW9A=
+
+Name: assets/lakes/pohjalampi.ves
+SHA-256-Digest: KvhoSz6tCQiSZPmJfHRcFMA9TSRtYBE7sQXCTeZyEso=
+
+Name: assets/lakes/rautupuro.ves
+SHA-256-Digest: Sl7VHH+5a0q9iPaNbXZN/LTqVcgBNwgaU0g3Hnb9elI=
+
+Name: assets/lakes/ravajarvi.ves
+SHA-256-Digest: SBSmlCcMN9aTz2UlKyVui3GBjoZ+V1x9XWwAFO2vhJs=
+
+Name: assets/lakes/ronttaoja.ves
+SHA-256-Digest: xr3pYzjWDRIKMJWkqDAcyRYlKDspidmD1sSnG+783RE=
+
+Name: assets/lakes/ruippo.ves
+SHA-256-Digest: m7pMraBWsGBqeE/bCHvGeHzDMYYp/RrTICmvv0gTwMY=
+
+Name: assets/lakes/ruuhijarvi.ves
+SHA-256-Digest: AnXD+OQboTMdqrrtRq1TaXlvFnGoM+6S+8RiKxkV62c=
+
+Name: assets/lakes/saarijarvi.ves
+SHA-256-Digest: Ix/ztjCe1kG4OB6/ZM/dNkKFa9FpcihV7/IJRKmEkuE=
+
+Name: assets/lakes/sarkijarvi.ves
+SHA-256-Digest: reV1Ujfg/EIMNrNHLjnu2DbYmKri0sY3JoUxuYf9bRQ=
+
+Name: assets/lakes/savilahti.ves
+SHA-256-Digest: gSAS3VIqUbL0JfX3+05xRY3uJ0Xv4a8wdkbrbyOWHeE=
+
+Name: assets/lakes/siikakoski.ves
+SHA-256-Digest: 5nkw9+fbqunqMihOwM0TsyHnqBvopOLLia/rXz2jjEw=
+
+Name: assets/lakes/siikavalkeinen.ves
+SHA-256-Digest: lUZIQVZOqbhKyJD+eZIz5fWFKLXNvjGjtsHYreAJwNY=
+
+Name: assets/lakes/taivallampi.ves
+SHA-256-Digest: x/jxKsDIvPXvFSjSeKeI6R+uv+MDUbiJjar4LZYCUqY=
+
+Name: assets/lakes/telkanlampi.ves
+SHA-256-Digest: NJxIDfS4nRblMdYjm/r+ANWR7vniGFRvFRwzMA3Hk1M=
+
+Name: assets/lakes/ullava.ves
+SHA-256-Digest: NtT957ksei6PfhLFW+NtyV12H0KymZ4a22hTAGmGpnE=
+
+Name: assets/lakes/venainlampi.ves
+SHA-256-Digest: nQh1d6KaZ8EGd9CmrqSB/09+2e/OLBrLKWiW83bGJz0=
+
+Name: assets/lakes/venetjarvi.ves
+SHA-256-Digest: taFJPvBBsXgDeTuzFmiozOoKprtNjJEZFsjWH3kk74g=
+
+Name: assets/lakes/viitalampi.ves
+SHA-256-Digest: fj8fkUZ2sSrOu9r231uVZbij/SwZoj4GAMxdNxo2Svw=
+
+Name: assets/lakes/vuolasniva.ves
+SHA-256-Digest: XIYNB5a8MX7+/FPiQ2pTnQNMzsBe0N123BstGEf4LVs=
+
+Name: assets/lakes/vuontele.ves
+SHA-256-Digest: EcBv0CQedlroc7C/10mvzPWM6DV1H7qcn2zk0bDylAQ=
+
+Name: assets/sfx/Ambient/Tuuli.sfo
+SHA-256-Digest: 9f5OEb2JFVTC8bo92hhWSSL+v8d+i1VM+Jm/DhwcTTs=
+
+Name: assets/sfx/Ambient/Tuuli2.sfo
+SHA-256-Digest: dYPT3Qbi6+MU4vZ8MIdvxjgiqjmmzpkYH3ml91zDGZ8=
+
+Name: assets/sfx/Ambient/bassloop.sfo
+SHA-256-Digest: GxrUPZmKG+q0R7/9impP7nNeTTl5V3St/nHa+l6lmrw=
+
+Name: assets/sfx/Ambient/koira2.sfx
+SHA-256-Digest: f6LFItHR2u1+YgIgeCgTigHtihKOOiBZ8Kwv9WBQlr4=
+
+Name: assets/sfx/Ambient/kuikka.sfo
+SHA-256-Digest: bkAqEFY/DhwidNiPAuEXct3BBVZGnswCKu9QME//zSM=
+
+Name: assets/sfx/Ambient/laukaus.sfx
+SHA-256-Digest: DEl+FSa2dRlGB9SMOseUg5m62z/dO1xv3EKp5VxaaS0=
+
+Name: assets/sfx/Ambient/raakku.sfx
+SHA-256-Digest: v4Vu4yEkK4d8UcZyIPPPKeoWbX1iDQIVM6p1l7DN8oU=
+
+Name: assets/sfx/Ambient/raakku2.sfx
+SHA-256-Digest: vGyTtnsuVd/bcA3kXJRu9jWGbYi56Y2h9KfnWadLUKs=
+
+Name: assets/sfx/Effects/KairausPlain.sfo
+SHA-256-Digest: VlDGC4/9dh5vJjlaH5eTl4AXhJ6DQML6RUGwpp6rIZM=
+
+Name: assets/sfx/Effects/NostoPlain.sfx
+SHA-256-Digest: 8/tSY3QVRSRfHbO2NUqTTwe5Ix3Bc/2WwRoNSj7FIGo=
+
+Name: assets/sfx/Effects/kuiva_askel1.sfx
+SHA-256-Digest: AOtQlmQQ9FEbfK82tNZFjWXcp3PvnqUgTTXpdXCg+AI=
+
+Name: assets/sfx/Effects/kuiva_askel2.sfx
+SHA-256-Digest: eqiKJsQtlyp2nqyMxNjeeIVQLxd26MMJfP1MxrhktzI=
+
+Name: assets/sfx/Effects/kuiva_askel3.sfx
+SHA-256-Digest: 1WXMSdxEzOTC2sKubV4ncTFU2Q24yyvh/Sto8pybL8I=
+
+Name: assets/sfx/Effects/kuiva_askel4.sfx
+SHA-256-Digest: zIw55yfBauBh92VJQDhsebue3+ZA3V0SpuFNgfv3+f8=
+
+Name: assets/sfx/Effects/pilkki_veteen_01.sfx
+SHA-256-Digest: Ab8gDd8GlCqcYBd9F4G7R+lUs4EpmYXIz8QP4fJpTqI=
+
+Name: assets/sfx/Effects/pilkki_veteen_02.sfx
+SHA-256-Digest: ik59xAv0v+yOql2zXb2LzTzXIz6QNVYNr+ABGpuFJew=
+
+Name: assets/sfx/Effects/pilkki_veteen_03.sfx
+SHA-256-Digest: y3eyLVs3TISeZ4w83QnEgk+mmLjgA+Ob7WFQhDab9g4=
+
+Name: assets/sfx/Effects/pilkki_veteen_04.sfx
+SHA-256-Digest: C/4kKdkG6xQYVsm/rErxvakSuV/+gqMwsuJ9HfneGN0=
+
+Name: assets/sfx/Effects/pilkki_veteen_05.sfx
+SHA-256-Digest: 6kjNGZF6WFyB47fe+Wo/j96IYk6Wv4/KrdmBDv0g7CE=
+
+Name: assets/sfx/Effects/pilkki_veteen_06.sfx
+SHA-256-Digest: 6FxDvopfWIhbUr0Xveg3QxJen5jvPPkyaiLMilg3VvU=
+
+Name: assets/sfx/Effects/pohja.sfx
+SHA-256-Digest: yFuPflHSr7S2cQFmrhRFCd/khwseggljWOjE7VpkUOY=
+
+Name: assets/sfx/Human/ambient/aivastus_01.sfo
+SHA-256-Digest: 95RUxL7k26++dd0Ce9utzDOOW80COVQp6WHao8Gzsbo=
+
+Name: assets/sfx/Human/ambient/aivastus_02.sfo
+SHA-256-Digest: yZigGDeIt8e7M2AlTJ5qmNtPRe1w1JgjrUnACZ3ZrpM=
+
+Name: assets/sfx/Human/ambient/haukotus_01.sfo
+SHA-256-Digest: 5SlmX7aox1WvzGleIoqxuEtqqDwnooZXBznyjAVMRWQ=
+
+Name: assets/sfx/Human/ambient/hengays_02.sfo
+SHA-256-Digest: 0i7NoMiL5dnprhXuZEtQ6ZBLVpQofzJMh+hES5mFHeo=
+
+Name: assets/sfx/Human/ambient/hengays_03.sfo
+SHA-256-Digest: CQWMJ7dAYZXCj/dhLPFJ1Y0K7d91x2nHYAZKrrYkCWQ=
+
+Name: assets/sfx/Human/ambient/kadet_01.sfo
+SHA-256-Digest: 9OC7EP1WiB1ouIfIk39GrsASEtYtginZzUHy7mRwpNU=
+
+Name: assets/sfx/Human/ambient/niistaa_01.sfo
+SHA-256-Digest: 5/ahI5zNdohWmzB1eUpYcL5+cQpO4gGVlGgoYwGitnE=
+
+Name: assets/sfx/Human/ambient/niistaa_02.sfo
+SHA-256-Digest: wkxiIxDrWyJFmL09vOUUaDmohekxJsJKs5y0nhj2sF4=
+
+Name: assets/sfx/Human/ambient/punnitus.sfo
+SHA-256-Digest: Ioxd4o2Qxq3ZwE1BEFFckMsY03iqXVdciko1bX8Z5Fc=
+
+Name: assets/sfx/Human/ambient/royhtaisy_01.sfo
+SHA-256-Digest: ewy7/Zchsh+JwmO74LJ4etc1VLChqYKLl1q8xSrtUSk=
+
+Name: assets/sfx/Human/ambient/royhtaisy_02.sfo
+SHA-256-Digest: x8zo1h/D1GiZn7IS67zTKyg9+5fqVDSJqgqFPRfOgzg=
+
+Name: assets/sfx/Human/ambient/royhtaisy_03.sfo
+SHA-256-Digest: lc2HPWC1NQ57SIRRx++98LWvmorGMLX/xVgTdm6kpSg=
+
+Name: assets/sfx/Human/ambient/rukkas_01.sfo
+SHA-256-Digest: FIVky+o3Flxfqzukbv2HIU+IDu73EnqNA+LPrrcW9jU=
+
+Name: assets/sfx/Human/ambient/siika.sfo
+SHA-256-Digest: Y+U40/IpRoNE4clJ2fz80qCpD8UwWRbWuLzfN1hT4EM=
+
+Name: assets/sfx/Human/ambient/sylkaisy_01.sfo
+SHA-256-Digest: DYvKKRj6VldY/N4A6OwPg3UaSX+LGhD/g8TxSiyaKIc=
+
+Name: assets/sfx/Human/ambient/sylkaisy_02.sfo
+SHA-256-Digest: vX40CWO0zQMqRMdEQ+eUdNp2g2WVuH5Y9hfzhTtoetw=
+
+Name: assets/sfx/Human/ambient/sylkaisy_03.sfo
+SHA-256-Digest: 4dBa8txCdnH/lsV2Ugr0N9jlMGb0JwUr4gN+BhEZ6TE=
+
+Name: assets/sfx/Human/ambient/tarra_01.sfo
+SHA-256-Digest: t65X0Gz3IzFz+ulhR3+jXWWDHF/NHA9bHdBU/Ps3Is4=
+
+Name: assets/sfx/Human/ambient/tarra_02.sfo
+SHA-256-Digest: bi6Hx+GUChTflI9ZU6Juj++TDDfPvPMmUu+Ecmrf8mM=
+
+Name: assets/sfx/Human/ambient/vetoketju_01.sfo
+SHA-256-Digest: og1XLvgy8jBsYhw+VcWgxOzFMcwcb+SIEdJdxMn7N8g=
+
+Name: assets/sfx/Human/ambient/yskahdys_01.sfo
+SHA-256-Digest: fL4LmFncWzJ9vPdNaiaDsfMjJOw/S2bKMZBBN5fHmIs=
+
+Name: assets/sfx/Human/ambient/yskahdys_02.sfo
+SHA-256-Digest: 8Uazgz4WAl788FzpPruwjB2rKhpP8jy60jhRmhOHrDE=
+
+Name: assets/sfx/Human/talk/ss1/Karvonen_metassa.sfo
+SHA-256-Digest: PIOzFNCgyZJjcXnymjsuLD3bbKc4wCSHvgBWAWUwZMw=
+
+Name: assets/sfx/Human/talk/ss1/Karvonen_tietaa_paikat.sfo
+SHA-256-Digest: RDAEHHt/TTAm9I/oT8+tDns2Ecvb+DzMeW8cP7+aupo=
+
+Name: assets/sfx/Human/talk/ss1/aija_tilittaa_01.sfo
+SHA-256-Digest: uOBmnKoUo3kzGsxPKU/6UOm3fQPI6hS09M3DhmWjsvU=
+
+Name: assets/sfx/Human/talk/ss1/aija_tilittaa_02.sfo
+SHA-256-Digest: PalCF0GoWaFklUdzr/auEsnsFGQDLGw1DsVTeTux28s=
+
+Name: assets/sfx/Human/talk/ss1/aurinko.sfo
+SHA-256-Digest: Y+Uzabv86SDsurEDXBWRfAEhxGugkoSY2SRDafCXwmQ=
+
+Name: assets/sfx/Human/talk/ss1/fish/Hauki_tuli_01.sfo
+SHA-256-Digest: cVQlqMQL9ESlJv7pBOe1RKRP+9ZpoMSlaX0pMpnV2o4=
+
+Name: assets/sfx/Human/talk/ss1/fish/Kala_tuli_01.sfo
+SHA-256-Digest: aHLZZXRkcbhDMDUgevxT8ySakymLMb/TyXBM6JWINK8=
+
+Name: assets/sfx/Human/talk/ss1/fish/Kala_tuli_02.sfo
+SHA-256-Digest: hjCxpcifSgLwpXb5vAoJjmT/dwHZrjVl64exxBDLz4E=
+
+Name: assets/sfx/Human/talk/ss1/fish/Kala_tuli_03.sfo
+SHA-256-Digest: xbtoCAJ3xzakhpozIe5lcofDc0Agw6h2gAd24hfLSRs=
+
+Name: assets/sfx/Human/talk/ss1/fish/Kiiski_tuli_01.sfo
+SHA-256-Digest: lpP3BRAQqNRNSll3xzekEy0GFoZoK0OIYbOAHfAamsk=
+
+Name: assets/sfx/Human/talk/ss1/hernekeittoa.sfo
+SHA-256-Digest: t/VkgV8nwUV0H54v5y+kVKWm+XsWcIiN1qyYG7JOAeM=
+
+Name: assets/sfx/Human/talk/ss1/jooh.sfo
+SHA-256-Digest: AyWCgdI5kYLI4jy2QCvEbsRCt/dT5QrYF/74MSF2Dyo=
+
+Name: assets/sfx/Human/talk/ss1/kalojen_saikyttelija.sfo
+SHA-256-Digest: K+Qzh3ieIzq3/eVT3GrdHp2UwvQ1Vg9+QCIwKTLxNzE=
+
+Name: assets/sfx/Human/talk/ss1/kavele_hiljempaa.sfo
+SHA-256-Digest: zqy7qvDnMmqWQxcR/Ur5SOGy3taw5l3ql+qd8pw0lM4=
+
+Name: assets/sfx/Human/talk/ss1/kello_on_paljon.sfo
+SHA-256-Digest: bjwfRBwn9crlV6/m6wm3kFSvnj9pVUQE3kd/LKU7Z94=
+
+Name: assets/sfx/Human/talk/ss1/kyllahan_tuota_on.sfo
+SHA-256-Digest: 8YvWqeupaT4zVxLBvbr0dR3DYgXuJTGGyQiIm70nFLo=
+
+Name: assets/sfx/Human/talk/ss1/mikapa_tasa_istuskellessa.sfo
+SHA-256-Digest: juHLgWHLj4I+KGlWdJR1a5/TjipJlNR4Sdg7BtKbUvw=
+
+Name: assets/sfx/Human/talk/ss1/mina_se_vaan_pilkin.sfo
+SHA-256-Digest: O8lAk1zOZbQScvzCEScxVqFvIoeiyrreNsVOPFsimZc=
+
+Name: assets/sfx/Human/talk/ss1/minun_kaloja.sfo
+SHA-256-Digest: ROjhCyWzynyeWR1PXjE1IUfu3Trqm21rIiITdA3sZ4A=
+
+Name: assets/sfx/Human/talk/ss1/mukavaa_aikaa.sfo
+SHA-256-Digest: UWBCGM6y9Ab3QqoGLxMiLQwkp6ZnTYvlSAAXQJBL2hE=
+
+Name: assets/sfx/Human/talk/ss1/nalka_jai.sfo
+SHA-256-Digest: thzy+WEH4PZdcumsCfYOJUXHuZVkj5N1eid62oSyepU=
+
+Name: assets/sfx/Human/talk/ss1/omat_apajas.sfo
+SHA-256-Digest: 3rWNg1FJkRV7Qiq5yH4kFKNHKYvDpNyQCzLDFJxwhuo=
+
+Name: assets/sfx/Human/talk/ss1/papparainen.sfo
+SHA-256-Digest: pIJcKfGytjQ74xjfzC1jk5h2Ud/Lop16QAeyHYDAVOY=
+
+Name: assets/sfx/Human/talk/ss1/potunkeitto.sfo
+SHA-256-Digest: WlG2J9WyRqtIUAC/2xWhNegSaK7494i7Esm9rCMBT+A=
+
+Name: assets/sfx/Human/talk/ss2/Kile_tuu_tannepain.sfo
+SHA-256-Digest: ZDfxnyRRS3xyAgkNFo2P8Dj0aBD2iHS+DEQ+Mw/U5Tc=
+
+Name: assets/sfx/Human/talk/ss2/aurinko_sais_paistaa.sfo
+SHA-256-Digest: L4NiaO4z+ifGRPwH/m0r9Guhfw4gq+8tQzZFdzohcJI=
+
+Name: assets/sfx/Human/talk/ss2/ei_toukat_ela.sfo
+SHA-256-Digest: vJxjlrknCbylpWN8UcCTtIYeebgRl8rueR0u8Hx5SEk=
+
+Name: assets/sfx/Human/talk/ss2/eikohan_taa_ollu_tassa.sfo
+SHA-256-Digest: qcEjDjK7AmW2om+dczR2eB4RG+Mzf9SbSDyT9dC+AmI=
+
+Name: assets/sfx/Human/talk/ss2/ettis_omat_paikkansa.sfo
+SHA-256-Digest: oA3SZ4+bleLAkiwyBBOR4eEOG/SL21jlhdSsoBU19AM=
+
+Name: assets/sfx/Human/talk/ss2/fish/ahven_on.sfo
+SHA-256-Digest: EhEUkDV0G0yll9jF5x80DHJ3cw959Gq5TReZNIn5Jvc=
+
+Name: assets/sfx/Human/talk/ss2/fish/hauki_tuli.sfo
+SHA-256-Digest: GrsLE3TX4Ckpc21S0bL+3eObPzkz12VeeSmN5/ilLeo=
+
+Name: assets/sfx/Human/talk/ss2/fish/iso_ahven.sfo
+SHA-256-Digest: 5jpI3oBcHmquBl+ZxNrfSi9YuQAfxx0YVwnDsh54xgs=
+
+Name: assets/sfx/Human/talk/ss2/fish/kala_karkuun.sfo
+SHA-256-Digest: KYkX0EZPoRURjeMqJzv7eLA9jv6ac7uwHNPhDNGBmck=
+
+Name: assets/sfx/Human/talk/ss2/fish/kala_tuli_01.sfo
+SHA-256-Digest: gCjHdOX1fJgnqsxTOGQWF48DimtSJ3MsRg60LPMZFjg=
+
+Name: assets/sfx/Human/talk/ss2/fish/kala_tuli_02.sfo
+SHA-256-Digest: yuls27aRXLs06fFq2RZf63wJTP4Y27CL5guPn3+Xi34=
+
+Name: assets/sfx/Human/talk/ss2/fish/kala_tuli_03.sfo
+SHA-256-Digest: CzWSAzxN/zUJvRRN9UNvHGAD6ToUYSF3KbthRk6UxY4=
+
+Name: assets/sfx/Human/talk/ss2/fish/oho_lahti_viemaan.sfo
+SHA-256-Digest: aStO1X6ltw7xfB0oFfGJsHRxJDoFdo02dkUjLyTNB60=
+
+Name: assets/sfx/Human/talk/ss2/fish/taa_mikaan_hauki_oo.sfo
+SHA-256-Digest: PQZENGm+9q1itBBEzk9+1QR5/Yiu5Nf5/rqPRQwF2YM=
+
+Name: assets/sfx/Human/talk/ss2/iltasuunitelmia.sfo
+SHA-256-Digest: lVCPIL1MSOKD7Y1JI9kBp2n4kBo8syRJ22IvSY18RuU=
+
+Name: assets/sfx/Human/talk/ss2/jainen_munkki_01.sfo
+SHA-256-Digest: /qbZ90SRLkDbmZ2CKLpegAjzGHjL773UQ/5TRlbZqkw=
+
+Name: assets/sfx/Human/talk/ss2/jainen_munkki_02.sfo
+SHA-256-Digest: kCsJvumzTHCC/nqoIkT8m80GJr69fpIAk6NEHez+Q88=
+
+Name: assets/sfx/Human/talk/ss2/joko_lahdetaan_meneen.sfo
+SHA-256-Digest: XiSsOQ8IQDWHSNfkzGMAwITHNV7DwXe/qKvUMhEni6U=
+
+Name: assets/sfx/Human/talk/ss2/joulu_02.sfo
+SHA-256-Digest: 48dWDCTM3T7H/Y/16tfFwR9dTvPe1Y2JH+tWmUv+kdM=
+
+Name: assets/sfx/Human/talk/ss2/kantaakohan_taa_jaa.sfo
+SHA-256-Digest: Wvjt/444buqvlvW1gmHTje1nlvrtmTq77unp/YuK5ls=
+
+Name: assets/sfx/Human/talk/ss2/kesan_kalastus_saa.sfo
+SHA-256-Digest: D3WCT2K4N8a1V8zyheZRr+PHZuUz4eDnyvXZf59B5iA=
+
+Name: assets/sfx/Human/talk/ss2/kestilan_tapio_ja_antti.sfo
+SHA-256-Digest: 1WhKGlYKu3vKM1fqfphgNKIgGnXSZpcwKy6niYTCMDA=
+
+Name: assets/sfx/Human/talk/ss2/kohta_sataa_lunta.sfo
+SHA-256-Digest: seBSCuSUmONUPjooNrW3R4IM9W0ZPgmygU26vpxtDpA=
+
+Name: assets/sfx/Human/talk/ss2/kylille.sfo
+SHA-256-Digest: vsV6wX3vSW1kOG7HMNdw2LfVEW79WRzWC1ZKpRBiGbc=
+
+Name: assets/sfx/Human/talk/ss2/nokun_antti_sano.sfo
+SHA-256-Digest: zcYxvaGVLArQ3/wvz2qU2nqefKKHJ+g1sHVy/fc+OX8=
+
+Name: assets/sfx/Human/talk/ss2/paikanvaihto.sfo
+SHA-256-Digest: W9iugJPiiLH+2SQq2L/7wUq+QLMN0WY9rGuu61qYnCw=
+
+Name: assets/sfx/Human/talk/ss2/pitaiskohan_sita_lahtee_meneen.sfo
+SHA-256-Digest: eCNx8HLTuO18jtg5Y5RXJztwJ2DFkO20s6rKf+FmN+w=
+
+Name: assets/sfx/Human/talk/ss2/rantaa_sataa.sfo
+SHA-256-Digest: kbP54tIyKegGa3qy054yKxN5bP2imalp8/GFS8Wk0Ho=
+
+Name: assets/sfx/Human/talk/ss2/taalla_mitaa_heikkoja_jaita_ole.sfo
+SHA-256-Digest: j+WXxoPUvlBopLnUFJUluTTJBw4T/qHbV+wSXF46ZqE=
+
+Name: assets/sfx/Human/talk/ss2/taidan_ottaa_kahvia.sfo
+SHA-256-Digest: 9lrYgULjn1xkreQtbOldZEpXhqLVHnHqrocMSwxyUII=
+
+Name: assets/sfx/Human/talk/ss2/taitaa_olla_heikkoa.sfo
+SHA-256-Digest: KOyQmt3z16Wx631RaxDEiuiC+mnGdQZ42lrmCxbyUFU=
+
+Name: assets/sfx/Human/talk/ss2/tuijottaa.sfo
+SHA-256-Digest: vej2KS8tYIaK7TcvyxRa7+DfA8yufextP3ev7jQLQt4=
+
+Name: assets/sfx/Human/talk/ss2/tulitullalei.sfo
+SHA-256-Digest: Zdg9NDMGRWmyyWptvV2eKn03J36utg+XC2/RnWGIEgY=
+
+Name: assets/sfx/Human/talk/ss2/vakee_lappaa.sfo
+SHA-256-Digest: xvaLvVeAxlJzJX/lJC7kT9DiSii+Gb6wf0/mEIVSVhw=
+
+Name: assets/sfx/Human/talk/ss2/voittokulkua.sfo
+SHA-256-Digest: VXl8VdbCUhilAIIKIPqkaMfrJOvHzD0wIE4d+LZq8Co=
+
+Name: assets/sfx/Human/talk/ss3/Tommi_kuis_tyo.sfo
+SHA-256-Digest: jLsf1ltgdecafS3e7VVhCLRFhE+OBg2GFTsJWO8WIlU=
+
+Name: assets/sfx/Human/talk/ss3/Yska.sfo
+SHA-256-Digest: ttQsW1ji1YiPjfWJIKDfYH83+/1TKmaXtrbZmBfzVuI=
+
+Name: assets/sfx/Human/talk/ss3/fish/Nykii_01.sfo
+SHA-256-Digest: UfbYyryXs3RBxkmkiwFl0XtDrXyHnpwhJ1SLCH9dLUU=
+
+Name: assets/sfx/Human/talk/ss3/fish/Nykii_02.sfo
+SHA-256-Digest: bIyD3TWoNrg56kT71cpNh8Og98hmAVEkreF+736Vfxc=
+
+Name: assets/sfx/Human/talk/ss3/fish/Nykii_03.sfo
+SHA-256-Digest: KEl3QLsb9cS1gIL9q3ZQALefn2zr5pTEbNn9Ol664yQ=
+
+Name: assets/sfx/Human/talk/ss3/fish/kala_tuli_01.sfo
+SHA-256-Digest: hFnDK3MyeUigItTAfDuQ/O4sEZ/y2F52gxBp3nGIUnQ=
+
+Name: assets/sfx/Human/talk/ss3/fish/kala_tuli_02.sfo
+SHA-256-Digest: U/nsiI6cocz7kBXWdptqwzXY+zwzEThQ7TSpNl600IY=
+
+Name: assets/sfx/Human/talk/ss3/fish/kala_tuli_03.sfo
+SHA-256-Digest: Sy3y5WGqYzgWcJuXpX+a5oG3MkkUYHtL2aax1EDREkk=
+
+Name: assets/sfx/Human/talk/ss3/fish/kala_tuli_04.sfo
+SHA-256-Digest: FgqPr+OTY+LhslpzzjNrmXuFnvEwnPrerdBhFWoeMdg=
+
+Name: assets/sfx/Human/talk/ss3/fish/kala_tuli_05.sfo
+SHA-256-Digest: QLeuHQ8ikw4i4tvza2c3dL6Bx+H6mfgoaTkt4GxdFhs=
+
+Name: assets/sfx/Human/talk/ss3/fish/kala_tuli_06.sfo
+SHA-256-Digest: jogzFiKxcqN37Gp/VS5xnvKCjddqdw8oWElFOlSOswA=
+
+Name: assets/sfx/Human/talk/ss3/fish/oho.sfo
+SHA-256-Digest: PpnlewpalQtoyVqAf63fjIxCBq8fiqxVxmZwHIraQcY=
+
+Name: assets/sfx/Human/talk/ss3/haluukko_hernekeittoo.sfo
+SHA-256-Digest: eD/hUvF/nsJdJ+bttMuslptqcT9jYCD457z/aN+PvB8=
+
+Name: assets/sfx/Human/talk/ss3/jainen_munkki.sfo
+SHA-256-Digest: 2wzDsHu6QM87NJHIDr2YMIGZHVO4FF2gVvShiquYbOU=
+
+Name: assets/sfx/Human/talk/ss3/juuuu_kato.sfo
+SHA-256-Digest: 8WOE1/V5PcMMTB7Kbc2rDNRJFQ50yg+r4qyJzWVts+U=
+
+Name: assets/sfx/Human/talk/ss3/mie_en_saa_yhtaan.sfo
+SHA-256-Digest: fJ2EyZwcmmIOlt67ApH/kSnCrm2Tn6K3kvWNuCStIdg=
+
+Name: assets/sfx/Human/talk/ss3/mita.sfo
+SHA-256-Digest: UmhZnNE/lvqIqgyYQFQi4OC1sKlhIPdhy4kbWM6MT5s=
+
+Name: assets/sfx/Human/talk/ss3/miten_siella.sfo
+SHA-256-Digest: inhprrUCShdBcfkOksVzpyfI2moo3Sd2LoQh+mBkxFE=
+
+Name: assets/sfx/Human/talk/ss3/moro.sfo
+SHA-256-Digest: mTdiKs3fET6dnmkLIHJOPVPE6GUd2kT0nlN7LRiZ1kY=
+
+Name: assets/sfx/Human/talk/ss3/paavo.sfo
+SHA-256-Digest: 39XBdpNnooB9Z2OL4hXhNuQPr3QPic+Cq+JDJz01NKo=
+
+Name: assets/sfx/Human/talk/ss3/pakkanen_puree.sfo
+SHA-256-Digest: QxEOmRsi7PpxuS0No5lPyE5SkwR3+2pLSYfibB3tCvM=
+
+Name: assets/sfx/Human/talk/ss3/pysy_loitompana.sfo
+SHA-256-Digest: DSZRiEa5CohSVARa2WRlZAXQa6HvUtZQEWKcBi2N718=
+
+Name: assets/sfx/Human/talk/ss3/tidititiitii.sfo
+SHA-256-Digest: uD2OMscbfdBiHIB45msK21lfQSE4VR3BWvjRqAskpdM=
+
+Name: assets/sfx/Human/talk/ss3/tuleeko_kalaa.sfo
+SHA-256-Digest: 4PVJHypE1p4f57MsTqxY6/tXmTqd5Yzi+NU+51V5wtE=
+
+Name: assets/sfx/Human/talk/ss3/tuu_tanne_vaan.sfo
+SHA-256-Digest: 4chNVIq1saMtF5bY97LggtIkhr3fdtIqJWfgF43GSz0=
+
+Name: assets/sfx/Human/talk/ss3/ukko_seuraa.sfo
+SHA-256-Digest: sCH+o/MzGTt9LuK0dqh76iimeubqBaR4w7IoxmWTW90=
+
+Name: assets/sfx/Human/talk/ss3/ylimaaraista_syotavaa.sfo
+SHA-256-Digest: /dx7QgvuFEEUh1Md9OOb8dLYErBVq+sroRJNpRIqzoM=
+
+Name: assets/sfx/Human/talk/ss4/Varokki.sfo
+SHA-256-Digest: lGs4owdj+m/yzEiBewwn/khZHQTC5CLHaVeS3+7THPw=
+
+Name: assets/sfx/Human/talk/ss4/ei_oo_toukkia.sfo
+SHA-256-Digest: +4aHB1yCe4Gq5CTWN5KzjpBbLlgsYyKcw0b74XdRPMk=
+
+Name: assets/sfx/Human/talk/ss4/eilen_tuli_hauki.sfo
+SHA-256-Digest: NkBCFHE6toGWvfErpWFxPhcH6fiFWaEkMrwmar0UuWI=
+
+Name: assets/sfx/Human/talk/ss4/fillarilla.sfo
+SHA-256-Digest: X9U8XGH76uk47G5pV6jteXbHGIc6dAH4uZI2LAA8KtU=
+
+Name: assets/sfx/Human/talk/ss4/fish/Nykii_01.sfo
+SHA-256-Digest: 14Fs/f4Gf5LQe/OenPgJ92mxPG7xflvXg2zA0ZWSHBE=
+
+Name: assets/sfx/Human/talk/ss4/fish/Nykii_02.sfo
+SHA-256-Digest: Fp4nq/mvZnFvrK1zSAAfWEflcNLAeO2JjFake7dp6Kk=
+
+Name: assets/sfx/Human/talk/ss4/fish/irtosi_01.sfo
+SHA-256-Digest: +G28lWZHEmhlT1bsf9XNDt8l2Inz4KI1CCgLwf5RIds=
+
+Name: assets/sfx/Human/talk/ss4/fish/kala_tuli_01.sfo
+SHA-256-Digest: X8C1iazsJs9tM57De9zuQLRfAiMeAFvHkQO5O59LcUc=
+
+Name: assets/sfx/Human/talk/ss4/fish/kala_tuli_02.sfo
+SHA-256-Digest: kckM0CX+uqZ5UD+nd/cbHfq5eBWcKgKBPYUBOs2G3Ws=
+
+Name: assets/sfx/Human/talk/ss4/fish/kala_tuli_03.sfo
+SHA-256-Digest: THqsle81WaIP7LCcWeIXooVg3gUorw/H+ZIBRCE3uaU=
+
+Name: assets/sfx/Human/talk/ss4/fish/kala_tuli_04.sfo
+SHA-256-Digest: qWvcfJvfv/1/h4Dm4YmGppP2n3WMSv5i3HCD318mwhc=
+
+Name: assets/sfx/Human/talk/ss4/fish/kala_tuli_05.sfo
+SHA-256-Digest: yWPNpwP9JFE4xudcmXQ8a82aaj4f/hcr3OsL0+Sr89w=
+
+Name: assets/sfx/Human/talk/ss4/fish/kala_tuli_06.sfo
+SHA-256-Digest: 9sWBdAFKP6XHAZqIayH0n3EWbMxCycTT8tAvK8s41H8=
+
+Name: assets/sfx/Human/talk/ss4/fish/kala_tuli_07.sfo
+SHA-256-Digest: pXs8DScaltwk2iTsX+5ZQINHyTZxpmZw0ZO3t6I95zs=
+
+Name: assets/sfx/Human/talk/ss4/irma_jailla.sfo
+SHA-256-Digest: sfjHU2dv/+dYscyNJbii3L9H+mJgg5BQSBDrbR4BJIs=
+
+Name: assets/sfx/Human/talk/ss4/mita.sfo
+SHA-256-Digest: vP2uH2NB/6vMGyBesHSjGk02D57DcdzdqmNOZRBSVvo=
+
+Name: assets/sfx/Human/talk/ss4/paasiaisena_pilkilla.sfo
+SHA-256-Digest: N/KxBrffBhGCSKDudKsla6FjPvih3SNvyNrq/xJ+IsM=
+
+Name: assets/sfx/Human/talk/ss4/pakko_lahtea.sfo
+SHA-256-Digest: wYPIzLluAEOBMYhPrG4WMdUDA87ItDpPZXi+fxzqyDo=
+
+Name: assets/sfx/Human/talk/ss4/paras_paikka.sfo
+SHA-256-Digest: 0hfeXXLlL5nRdgpieNTgoiKaI1DH5DnzsU1+hVnitOc=
+
+Name: assets/sfx/Human/talk/ss4/pitkasta_aikaa.sfo
+SHA-256-Digest: Xp++rrAf3o+yY9xfaoPrCCwYb0a+YzdGLuwGujma6cU=
+
+Name: assets/sfx/Human/talk/ss5/Matomatti.sfo
+SHA-256-Digest: rsKCfVfvSVPl68eD7N7LsixiH9RBOqJrSVY/0IHmUOo=
+
+Name: assets/sfx/Human/talk/ss5/Morrilla.sfo
+SHA-256-Digest: f0XW1RWP75VpzvkBdnQtpFWcYTHBh5RFhGqOeF/mW68=
+
+Name: assets/sfx/Human/talk/ss5/Oh_nyvi.sfo
+SHA-256-Digest: keKpYfe1W/E7EJE1ixnYjm/4RCSEapAuXyXPDa1Wx6A=
+
+Name: assets/sfx/Human/talk/ss5/elo.sfo
+SHA-256-Digest: QSu7gpVxXVpx0zxTUcyo3m6X65yB+4/f2IaZ2XcpB5o=
+
+Name: assets/sfx/Human/talk/ss5/fish/kala_01.sfo
+SHA-256-Digest: nMT7CixRmkUxmMacmohs9GfKGKGNZ2UmB2cfY8r3+HU=
+
+Name: assets/sfx/Human/talk/ss5/fish/kala_02.sfo
+SHA-256-Digest: 1se59/7bIc4BVGIDGs7fb1BkkzwSuyEIb8snP07usXo=
+
+Name: assets/sfx/Human/talk/ss5/fish/kala_03.sfo
+SHA-256-Digest: autMpWVCD8qMPkod4jVg+fm8t3VQAZZMzMlvzpiO8Tc=
+
+Name: assets/sfx/Human/talk/ss5/fish/kala_04.sfo
+SHA-256-Digest: uzKQvTzXZTgKsN0msH1WFVuxENXdsr8k6KwFRll1Nrs=
+
+Name: assets/sfx/Human/talk/ss5/fish/kala_05.sfo
+SHA-256-Digest: 7X89IsijlzIkkXkAQSf29Pa+jYISWTL0r+mBPRILBL8=
+
+Name: assets/sfx/Human/talk/ss5/fish/kala_06.sfo
+SHA-256-Digest: aJxbNmp+yC+q4rPHgnMZDdWRjqcovoH2LasaYQulbFs=
+
+Name: assets/sfx/Human/talk/ss5/fish/kala_07.sfo
+SHA-256-Digest: /Op9eLuVa4pivWY0BhH+t/BESMSFNcXlqmn2YrFoCSg=
+
+Name: assets/sfx/Human/talk/ss5/fish/kala_08.sfo
+SHA-256-Digest: xVCd4xEdLtADuU1LCcxGrtkWdldFw+LZ46TpIN+42Yc=
+
+Name: assets/sfx/Human/talk/ss5/fish/kala_09.sfo
+SHA-256-Digest: QTmlf/ZducaBpt8lKStBWj7PQ5u95KVxuOpcMF7/7hw=
+
+Name: assets/sfx/Human/talk/ss5/fish/kala_10.sfo
+SHA-256-Digest: KEEVgClpNpOk0aikZWO819RkC0/hf6HASyY9piPz0Vg=
+
+Name: assets/sfx/Human/talk/ss5/fish/kala_11.sfo
+SHA-256-Digest: NZejyl0bm+2PTacvZGfouxsneHrXs1K+wg7xizYTV1k=
+
+Name: assets/sfx/Human/talk/ss5/fish/kala_vei_01.sfo
+SHA-256-Digest: H+s/Rq9HzD7Xd0hsthpzJb2ZLiEGx4fbVdgCm5oN/Gw=
+
+Name: assets/sfx/Human/talk/ss5/fish/kala_vei_02.sfo
+SHA-256-Digest: bDqRRY+jUvh7fymnCrZ6m1ypX75IsPta3i4XoSOz7So=
+
+Name: assets/sfx/Human/talk/ss5/fish/kiinni_01.sfo
+SHA-256-Digest: NnbmPe9zt/uInUyQ/wnvV/GnylODMgero8MaITHJffA=
+
+Name: assets/sfx/Human/talk/ss5/hologrammilla.sfo
+SHA-256-Digest: UBQ680YjJs3DXcZUsWLGDg13Lw72g/QuN/9CESJ+uW4=
+
+Name: assets/sfx/Human/talk/ss5/karkkainen.sfo
+SHA-256-Digest: yTblRbVlZ1oj3l91PMLLlhyKOn5kuIqqy+qzIe28cKw=
+
+Name: assets/sfx/Human/talk/ss5/keltanen.sfo
+SHA-256-Digest: g+FkOA+XGVhf13HnBQGKcPd1vlzOjX90HKrnN3Vxwo4=
+
+Name: assets/sfx/Human/talk/ss5/kuparilla.sfo
+SHA-256-Digest: CyIloqZnJOg/OpqPv9uemtPyZ1y22XiTczgBL0Dl46Q=
+
+Name: assets/sfx/Human/talk/ss5/messut.sfo
+SHA-256-Digest: 3/sMR3l+df5RiMqJSB/bSaKbH9x51V89+cfe2fAEJrs=
+
+Name: assets/sfx/Human/talk/ss5/morrilla_pienia.sfo
+SHA-256-Digest: U6Y5fI7NOmSn/BWGmRcwhsNc+3lSnliMwFFJ+9ZKbLY=
+
+Name: assets/sfx/Human/talk/ss5/pista.sfo
+SHA-256-Digest: YOY7L8hdDbOyN6VdjMNTTbEDxRy4Kw6hWWGBonpPpbs=
+
+Name: assets/sfx/Human/talk/ss5/tasurilla.sfo
+SHA-256-Digest: WauTBsn+4GXe/3u8HbFLDgdsNBcPxKjMFXMOlPm1xss=
+
+Name: assets/sfx/Human/talk/ss5/toukkia.sfo
+SHA-256-Digest: Zt9U85bqn8bLo+3kPRjGy4D3jWfJ32Yffl44X/EF5mU=
+
+Name: assets/sfx/Human/talk/ss5/tulee_hyvin.sfo
+SHA-256-Digest: uqKGsfZ/6OlJxcwpNzKqVecP3FnJ3r4nat1a4L0FbAk=
+
+Name: assets/sfx/Human/talk/ss5/viherialla.sfo
+SHA-256-Digest: p83JvLY0vWmjwr8HxIfpe8PYLInOhb5Z3vMhJa6r2sg=
+
+Name: assets/sfx/Human/talk/ss6/180_ahventa.sfo
+SHA-256-Digest: h2du4ixl7UZL0D2Hqo+vkmUi/Mt7pjQtXz+Za7BfzV0=
+
+Name: assets/sfx/Human/talk/ss6/elakelaiset.sfo
+SHA-256-Digest: 51RbYMdZR7fpDn64TAgA1wuvennRwqyj96FASXoSi9g=
+
+Name: assets/sfx/Human/talk/ss6/hauki.sfo
+SHA-256-Digest: h6wgAx/BfqHARyx0UWA80MRpYeCXoCFIJYHcvXsqBCY=
+
+Name: assets/sfx/Human/talk/ss6/haukotus.sfo
+SHA-256-Digest: It//U6fTVNTXgfaMAuHe9zapFclJZKBlDeO5kyEiIx0=
+
+Name: assets/sfx/Human/talk/ss6/itatuuli.sfo
+SHA-256-Digest: MXrHapPtSsPtCLtU5KbGBAASfD5gAbJp0ipK7VCz4nA=
+
+Name: assets/sfx/Human/talk/ss6/kahviavaillevalmis.sfo
+SHA-256-Digest: e67f3Tibr7zjd9/C+/lc4p5FOpE+RBm2K1GSUDniNZs=
+
+Name: assets/sfx/Human/talk/ss6/kalamiehen_pitaa.sfo
+SHA-256-Digest: lUrc2Vv0jn6Hy/Lzyq50vu5CezUWU+5e1Imi5KzUjCw=
+
+Name: assets/sfx/Human/talk/ss6/kantriukko.sfo
+SHA-256-Digest: OlXCCw8BMfqyjCDxT4nD/rgElhVYwFokhDoqHoVyvUA=
+
+Name: assets/sfx/Human/talk/ss6/kasi_kay.sfo
+SHA-256-Digest: OkRdQ2YqQdQmFXmN/XhO+VtijgLTb7FA7lWCO6rrrGI=
+
+Name: assets/sfx/Human/talk/ss6/kiisket_syo.sfo
+SHA-256-Digest: P5qvRUEPvmxh1x+Ami5i3t9aWRXDktrPmkkAmwJsAHk=
+
+Name: assets/sfx/Human/talk/ss6/koiranilma.sfo
+SHA-256-Digest: Z0jTeQGpdJw3/awDOrAemF/Hx2uXELd8b4vz9e6AmiI=
+
+Name: assets/sfx/Human/talk/ss6/mane_siita_kauas.sfo
+SHA-256-Digest: ZMWuu/h1MMIq1PmEDX7s5JIhBFmE+IqUQCYiXSyE/wM=
+
+Name: assets/sfx/Human/talk/ss6/muovikassista_katkes.sfo
+SHA-256-Digest: LZ6aI7tu//Acc4kS8k1WOWj/nTmAWkj5zbj4XJU8NSA=
+
+Name: assets/sfx/Human/talk/ss6/muovipussi.sfo
+SHA-256-Digest: gzVm7xn4OWGTrBrbK0yzv9pg04rHRRy1h2m0usFuo+Q=
+
+Name: assets/sfx/Human/talk/ss6/naapurinkoira.sfo
+SHA-256-Digest: 6bUbi0ylZGv92I4MsLar54iK7l7KazdaQzSVmonEKCg=
+
+Name: assets/sfx/Human/talk/ss6/ny_nykkii.sfo
+SHA-256-Digest: Xw3usseDoDdPuzUmegxYaS0OkDhtwAio/lvd47J1+YY=
+
+Name: assets/sfx/Human/talk/ss6/ny_on_iso.sfo
+SHA-256-Digest: bUG9bwrTn3fp6k6pAsQD2Zj0reIKmtPL2dAfoCjOeew=
+
+Name: assets/sfx/Human/talk/ss6/nyt_ois_iso.sfo
+SHA-256-Digest: NyyRkeV2GAbRJQZkJplJfQtB+3DX+fPh12n6hrnLK8U=
+
+Name: assets/sfx/Human/talk/ss6/paavia_jaalla.sfo
+SHA-256-Digest: bI5C/c/srQk9EJQ8itmGEcDWmTDC38FI6LtX3GIv/6o=
+
+Name: assets/sfx/Human/talk/ss6/pieru.sfo
+SHA-256-Digest: ri/2rj5W4cKJpRVBuaFPaXcioT/4aKcRyo8SljCX0Qw=
+
+Name: assets/sfx/Human/talk/ss6/pimee_tulee.sfo
+SHA-256-Digest: HEb0mQu4hAwGHzOYzGTM5dRvl/Iw07pukCe3kI2NZxo=
+
+Name: assets/sfx/Human/talk/ss6/putous.sfo
+SHA-256-Digest: dQ89fOMJrNSF4yjlH/35SBCgX9LlMvX/gLKZUx9MJ0A=
+
+Name: assets/sfx/Human/talk/ss6/rillin_kautta_kotiin.sfo
+SHA-256-Digest: FVvmhk5Z3wlzeLpqc35hd1F3+N7jLqWb/YfKj9AAZDw=
+
+Name: assets/sfx/Human/talk/ss6/royh.sfo
+SHA-256-Digest: CkpGEacN7fPZ/v95YFA2RePWMk1SVYx9hYNEtyq4osk=
+
+Name: assets/sfx/Human/talk/ss6/samasta_reiasta.sfo
+SHA-256-Digest: Tyj7M3Fc/wWs4qCJoayB1U3o/+N9Ht9+vivSfz0XHdI=
+
+Name: assets/sfx/Human/talk/ss6/seleka_kippee.sfo
+SHA-256-Digest: XQxBqdVGNQICsmbFBLHyFfn1sieRbiMNeQ3rzk7xXQY=
+
+Name: assets/sfx/Human/talk/ss6/siima_katkes.sfo
+SHA-256-Digest: TkQ090W/iPLuso2GI3MEKpLIabroVxRL1Jsj958Nz1o=
+
+Name: assets/sfx/Human/talk/ss6/sinne_meni_pilkit.sfo
+SHA-256-Digest: jSzBoEfDXBMeVBNhgU4s/pg6IgD7Y1tUyHtDzjNTKfs=
+
+Name: assets/sfx/Human/talk/ss6/syva_ku_kaivo.sfo
+SHA-256-Digest: 0ePP3XNmfvvfM3ssNDcpWXDnMbM9VosV3CAGDE5IoK4=
+
+Name: assets/sfx/Human/talk/ss6/talla_saalla.sfo
+SHA-256-Digest: oC++eRH1WrPvUrVbUDZisZf/hWf/B9IXPgy+FjLCBfY=
+
+Name: assets/sfx/Human/talk/ss6/toukan_vaihtoa.sfo
+SHA-256-Digest: Xa+bKf2rWdWsgZXlE/lRbUgLiX8YPjiEU0WfJa9IEqE=
+
+Name: assets/sfx/Human/talk/ss6/tuu_kahtoon.sfo
+SHA-256-Digest: 8JY8ZHzDF5cC3vhUezQ2k1owp0S09H0HRGe04ZKyXxY=
+
+Name: assets/sfx/Human/talk/ss6/vei_koko_toukan.sfo
+SHA-256-Digest: sZLg4glTNc4IF8GvtN966w1PmYWX9UAwZs6y8BmNNKU=
+
+Name: assets/sfx/Human/talk/ss6/yskintaa.sfo
+SHA-256-Digest: u2tBZ5ed7UMEwBKpMrE+ES93h6CyphpS63IHgixem7M=
+
+Name: assets/sfx/Menu/click.sfx
+SHA-256-Digest: MitEIRzF3Rp1LTE4jDH2x46cth0Usm1cW4yV6Fn7h6U=
+
+Name: assets/sfx/Menu/glag.sfx
+SHA-256-Digest: RmHEWAznDg8CKxNoQzyhZM9cYPsPdW5plaWw6pAcDU4=
+
+Name: assets/sfx/Music/P2Load.mus
+SHA-256-Digest: QTWW5pIwFFuHjZha36+DCwR9nVtNjeVPZO7lBOP3jhU=
+
+Name: assets/sfx/Music/P2Menu.mus
+SHA-256-Digest: QOIYMawtFpWeAPDyJJe/eawtLvYA4Nb85OsclgkXLU0=
+
+Name: assets/sfx/Music/P2Menu2.mus
+SHA-256-Digest: Q99WxxuYwrsAqO9xlvqshXblkCqJBBAnYtSektqofUI=
+
+Name: assets/sfx/Music/P2Menu3.mus
+SHA-256-Digest: zf72WZfDexfpAUD3j8nqF5AyzXr/GWO0fE0fjwLCvI4=
+
+Name: assets/sfx/Music/P2Results.mus
+SHA-256-Digest: gBnYAoSIPB60nb0I9IhnIp257mkt250L4u7eELCdnuA=
+
+Name: billing.properties
+SHA-256-Digest: EFDsmPoPC6N3qulPQEl3vnHfsZnqjPncRylU8UCKD/c=
+
+Name: classes.dex
+SHA-256-Digest: 4lE+HvQc6JnIN/QLGnYPi+KZAJmci8VP0X/85UsK0Tk=
+
+Name: classes2.dex
+SHA-256-Digest: 8LUWgiiXW+wuvdWII/8EJwv/Oxj1ff/fk+8HOGmFqq4=
+
+Name: firebase-encoders-json.properties
+SHA-256-Digest: NU5N75UgTrmRuAXo+OIxllHg7VkNGtb/6KXNS57GXbc=
+
+Name: firebase-encoders-proto.properties
+SHA-256-Digest: 66eSvm6gPzttaOzP0l8/U6B2dlfsErG5CZa11bNKlog=
+
+Name: firebase-encoders.properties
+SHA-256-Digest: UnQ45SbnvvtsBNw5T042gkoRAZx9bWh8J3KkNdIsDp8=
+
+Name: junit/runner/logo.gif
+SHA-256-Digest: NFteIgelJOABl3nRPw+K5RNZ+JSiMEeUZ3YTMePRyhY=
+
+Name: junit/runner/smalllogo.gif
+SHA-256-Digest: tIGQCPGBvz4LRyVPchScYqVWpW/ANY0xQ+QFsZHeIIE=
+
+Name: kotlin/annotation/annotation.kotlin_builtins
+SHA-256-Digest: 98k+cGfKErqbPZTG5UDkwjy2/djJr/cEtVPKumUPw1c=
+
+Name: kotlin/collections/collections.kotlin_builtins
+SHA-256-Digest: U5uFwkA/bvBjgWGtmd97ESVkEulBEzXtLqOTGj79fHY=
+
+Name: kotlin/coroutines/coroutines.kotlin_builtins
+SHA-256-Digest: WabWMrip9duibyponDhl4ZU1HffDwIqhZp/g35+euIM=
+
+Name: kotlin/internal/internal.kotlin_builtins
+SHA-256-Digest: x2two9sezL5C6pGlNmfXZh7fxhVAnT1uV0tYQ7HioF4=
+
+Name: kotlin/kotlin.kotlin_builtins
+SHA-256-Digest: BjOsnDfpZVaSe9ciSl0xwJjhOxQW5IKQ1QvVAq7WLTs=
+
+Name: kotlin/ranges/ranges.kotlin_builtins
+SHA-256-Digest: tZwbWppJHfeZ7uICrZGTdgCb1Pgi1+n895wgs1BQOFI=
+
+Name: kotlin/reflect/reflect.kotlin_builtins
+SHA-256-Digest: 8AIcphQmJQ1rF+dt1fcyxZCM9n3K8zsEKaPq17GJQ4Y=
+
+Name: play-services-base.properties
+SHA-256-Digest: jT9nVKv6w3os00sItMUouqh1Tsn/WYeO89SsawH01Y8=
+
+Name: play-services-basement.properties
+SHA-256-Digest: tOsCIpVelw6mQ02IPInM8SiykhssDj45U7ZJHKFixy0=
+
+Name: play-services-location.properties
+SHA-256-Digest: gQR2mwjdlMTTzOD5gbwprpxfy6b33mjEckKB6HK+6Eo=
+
+Name: play-services-places-placereport.properties
+SHA-256-Digest: 3LmQtn5766cfvwxYqYydUQUcgCFVN/6K3TPNjLI4Gh4=
+
+Name: play-services-tasks.properties
+SHA-256-Digest: 6Csef1++N4iJVIj5Ku6HnxxDH8EA/H8zfUKfITlx3Yg=
+
+Name: res/color/common_google_signin_btn_text_dark.xml
+SHA-256-Digest: u9RsW9Z8LDN9m88tyPOlIxkY7dquR0ZVgrCf6VcctXM=
+
+Name: res/color/common_google_signin_btn_text_light.xml
+SHA-256-Digest: pLcQZ6DFBWy4/ACQuDX2PMZDZO05ao0fdyOejvD6ABc=
+
+Name: res/color/common_google_signin_btn_tint.xml
+SHA-256-Digest: wjDbPVQ9Miw1xgt0TBKwqnUm8cz/+7Vwyu5vR8mfliY=
+
+Name: res/drawable-hdpi-v4/notification_oversize_large_icon_bg.png
+SHA-256-Digest: qgAIjQ2f2XvZLtn/0ptUu2mkiphKpzRIzlU/udgSvkE=
+
+Name: res/drawable-v21/notification_action_background.xml
+SHA-256-Digest: L3aMCJzvoYz38f3n9gJBC/OJmN5fkHOhXqgxBsJePDA=
+
+Name: res/drawable-v24/icon1.png
+SHA-256-Digest: PzUcTS23xjZFGEFaX2Zuy4vrDi4U0qA/Qvoe3me1R00=
+
+Name: res/drawable-v24/icon2.png
+SHA-256-Digest: vfobvIMO0TPho4+c922XsUuXr9zofCQzfEPhdB4+q8g=
+
+Name: res/drawable/common_google_signin_btn_icon_dark.xml
+SHA-256-Digest: EVOADFu/TFrwqdrZq0LHkMG1iit7eIe78v8tpspws3w=
+
+Name: res/drawable/common_google_signin_btn_icon_dark_focused.xml
+SHA-256-Digest: 8Kfi0MDia5pSoNbNAGWqDHwpCF1l6YqBacOVo0JsX3U=
+
+Name: res/drawable/common_google_signin_btn_icon_dark_normal.xml
+SHA-256-Digest: MVEEpGrz66Y3aurT9rDLJQ2iYkPgV4KTyCFj73sfrD4=
+
+Name: res/drawable/common_google_signin_btn_icon_disabled.xml
+SHA-256-Digest: Dv1902HV3lDF+jpQfsccRj8uNtXoUOMf4Lq5Kr/q82s=
+
+Name: res/drawable/common_google_signin_btn_icon_light.xml
+SHA-256-Digest: t3gbAPGLRZhy4JdJMqRM6h0zswXsVd9qJVJyYFTyJX0=
+
+Name: res/drawable/common_google_signin_btn_icon_light_focused.xml
+SHA-256-Digest: px6OkE3gAIQAHwW3etqO0k+CDfgFRJT6+yyKJbYw8gU=
+
+Name: res/drawable/common_google_signin_btn_icon_light_normal.xml
+SHA-256-Digest: 2ct8xdcjtdawU9P/yo5YaRo7C3AIJ4EuTB3ZJGOsTco=
+
+Name: res/drawable/common_google_signin_btn_text_dark.xml
+SHA-256-Digest: nvGDcIPuvERTLzxoDuV5okFBkRxepyWA2eLvfiYbfY4=
+
+Name: res/drawable/common_google_signin_btn_text_dark_focused.xml
+SHA-256-Digest: ru2MJdjBH8RQUGFg3v2YdaHXsP7oh2sP3urTmkXC7Mg=
+
+Name: res/drawable/common_google_signin_btn_text_dark_normal.xml
+SHA-256-Digest: H1YeDdE9VrjEx1CxAdRT/KNZ0Fw76/f7hBILlmQPsg8=
+
+Name: res/drawable/common_google_signin_btn_text_disabled.xml
+SHA-256-Digest: ujdnbK7U7cPl6fgP+pNtI44wAxPxxEQoz5yKO9eMfzQ=
+
+Name: res/drawable/common_google_signin_btn_text_light.xml
+SHA-256-Digest: lBeE77K81DZlP3HisBR7iRMCccL5mVaZcEtnNgUaWKY=
+
+Name: res/drawable/common_google_signin_btn_text_light_focused.xml
+SHA-256-Digest: xf4Wy9QRGLkt6PkBk19sAnqUFV/EMSlEPy3OwSERg7Q=
+
+Name: res/drawable/common_google_signin_btn_text_light_normal.xml
+SHA-256-Digest: eKiJc5pg3pfI5Ph8JTDXISe5Uzvi1joDgOdrsEY2Ai4=
+
+Name: res/drawable/ic_call_answer.xml
+SHA-256-Digest: X2N23+GZ2KbkADPT5iOYnQUsmy+XTQDIJPu4t2/G/eg=
+
+Name: res/drawable/ic_call_answer_low.xml
+SHA-256-Digest: j5rKyrry37S7U9q3znvsnBRRzgoCGf+qQXYOqC2j0tY=
+
+Name: res/drawable/ic_call_answer_video.xml
+SHA-256-Digest: XUzarlg4rZRCwIX5UbdmsoCL/xO4yFoU4Lz4VxUUSSw=
+
+Name: res/drawable/ic_call_answer_video_low.xml
+SHA-256-Digest: SpWVgAgOux2CKiRZpCNNKr8N0LZdnCi9qMJY2vyIjFE=
+
+Name: res/drawable/ic_call_decline.xml
+SHA-256-Digest: LYJbeczmAgNJL/CaBIJtsKyNnrm8D7n7E5rhqlzeD2c=
+
+Name: res/drawable/ic_call_decline_low.xml
+SHA-256-Digest: yDITZIAkCbr0124qhOMDhxWFvclbA5UEDF7OoOIFEQU=
+
+Name: res/drawable/icon1.png
+SHA-256-Digest: PzUcTS23xjZFGEFaX2Zuy4vrDi4U0qA/Qvoe3me1R00=
+
+Name: res/drawable/icon2.png
+SHA-256-Digest: vfobvIMO0TPho4+c922XsUuXr9zofCQzfEPhdB4+q8g=
+
+Name: res/drawable/notification_bg.xml
+SHA-256-Digest: ay4ZHxOsilVRkyjbkFN2yG/FXiZBLG6M8voOO8NB0JM=
+
+Name: res/drawable/notification_bg_low.xml
+SHA-256-Digest: D6NuL8EU+9IFpMjgyd+6MBa/YmxDLhxeq1KyE2WPF2Y=
+
+Name: res/drawable/notification_icon_background.xml
+SHA-256-Digest: uQsncL746pxFHzWcBqHxaS4kIQ53J/iwJAXmockg0eY=
+
+Name: res/drawable/notification_tile_bg.xml
+SHA-256-Digest: qBwD9sclzb9Kj/LsLHP/fcZpKlwbLFwzg0tBSyTk3+k=
+
+Name: res/layout-v21/notification_action.xml
+SHA-256-Digest: EgND/qp5zVtHXiBWusnz0zYLNcLOm/UQI3HPvN03NBc=
+
+Name: res/layout-v21/notification_action_tombstone.xml
+SHA-256-Digest: wMQ3N8zgwvVo02xvRSe8ghtZVtU12faymqa54Mcp1XY=
+
+Name: res/layout-v21/notification_template_custom_big.xml
+SHA-256-Digest: jnMQ+UVazyjNCdycmmWvmUASj1tuBdk+BN8ECPgRZjA=
+
+Name: res/layout-v21/notification_template_icon_group.xml
+SHA-256-Digest: 9XqquyF+uTh5EHUE5K5vhiAemmQ/mupTjEp9vNwM1U8=
+
+Name: res/layout/custom_dialog.xml
+SHA-256-Digest: s+VWlYJNzzQAyjkTSvKeLhwCEUpUHVceghZTXSQhyuI=
+
+Name: res/layout/ime_base_split_test_activity.xml
+SHA-256-Digest: N/8EBZH5Z4a/r509k3/t8vL5fiGMBr6z5/6KJEKhgag=
+
+Name: res/layout/ime_secondary_split_test_activity.xml
+SHA-256-Digest: KTIUZ1XjMH34l8etjQh342jOk04mhceDrYAr2uqm2mQ=
+
+Name: res/layout/notification_template_part_chronometer.xml
+SHA-256-Digest: b7kUv0O9SUOpnD3dwAUaa7nPNVPoBg/poy7h4B/cwgc=
+
+Name: res/layout/notification_template_part_time.xml
+SHA-256-Digest: RCHrdl4MJtGP6RQJt+q0CzhNkK1tDnxVGQklle8wSMs=
+
+Name: res/mipmap-hdpi-v4/banner.jpg
+SHA-256-Digest: sWtW81qq3C4PF3ABdKhNtdJknHtGwn8SlEIBJFX4skU=
+
+Name: res/mipmap-xhdpi-v4/banner.jpg
+SHA-256-Digest: FdjdL5Fjy7MBCTJgXiT8GFFhQCwxyhmlapgk8ATqGkI=
+
+Name: res/raw/com_android_billingclient_heterodyne_info
+SHA-256-Digest: q2MP2l2V4Y5aql7+2S9cyNx0/jPb0lUItf4sUJjGNNc=
+
+Name: res/raw/com_android_billingclient_registration_info.binarypb
+SHA-256-Digest: 1YmDcmpVjp3/tPqThI9ksd4bJvGLgnvGadDCmALDs3E=
+
+Name: res/xml/com_android_billingclient_phenotype.xml
+SHA-256-Digest: vctKhM35hac7L81PRsKgb6FOkMoogaF02X4Kt68U8i4=
+
+Name: res/xml/filepaths.xml
+SHA-256-Digest: NlyJCrAx2fQKJl/4+a7093hSgSaRNKjOUL+1zZb1atU=
+
+Name: res/xml/splits0.xml
+SHA-256-Digest: rFwXUD0B/Btu50c6i/7HJEhNV1kwZsQ9faIFK/zIhZs=
+
+Name: resources.arsc
+SHA-256-Digest: Vfm7tUq/GTq1mJtAGGbfL7sNiH4JK5Eipxnz+zhA9z8=
+
+Name: stamp-cert-sha256
+SHA-256-Digest: HZwqAqk4Fv9ceuZPmq0Cwj3kncUUYg2xp61iTSqDZ5w=
+
+Name: transport-api.properties
+SHA-256-Digest: 518KQzCMFFxUcEGPMLdwVziEXDnIO9tpTKWEe1ahdbs=
+
+Name: transport-backend-cct.properties
+SHA-256-Digest: HtA57knw190QGWR3as7XPc3wsjNdJNtMpTMPfOYpstY=
+
+Name: transport-runtime.properties
+SHA-256-Digest: zJ/QtJFAtzC1Qa+bH7zsvnFCd6yAwgf3a7B/ldqjPBk=
+
