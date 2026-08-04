@@ -1,92 +1,13 @@
 {
-  "checked": [
-    {
-      "domain": "sqz.andromo.com",
-      "role": "Andromo squeeze/hosted web content base URL in libapp.so",
-      "cloak_gate": false,
-      "redirects_to": "",
-      "page_output": "Andromo platform CDN; no white/offer fork in app code",
-      "parked_at": "Andromo",
-      "virustotal": {
-        "vt_url": "https://www.virustotal.com/gui/domain/sqz.andromo.com",
-        "detections": "not queried in this run"
-      },
-      "table_rows": [
-        {"param": "Домен", "value": "sqz.andromo.com"},
-        {"param": "VirusTotal URL", "value": "https://www.virustotal.com/gui/domain/sqz.andromo.com"},
-        {"param": "Роль", "value": "Andromo squeeze host (libapp.so)"},
-        {"param": "Клоака-ворота", "value": "нет"},
-        {"param": "Куда редиректит", "value": "нет данных"},
-        {"param": "Что выводит (кратко)", "value": "hosted Andromo web content"},
-        {"param": "Где припаркован", "value": "Andromo"}
-      ]
-    },
-    {
-      "domain": "builder.andromo.com",
-      "role": "Andromo builder hub",
-      "cloak_gate": false,
-      "redirects_to": "нет",
-      "page_output": "HTTP 200 HTML hub",
-      "parked_at": "Andromo",
-      "virustotal": {
-        "vt_url": "https://www.virustotal.com/gui/domain/builder.andromo.com",
-        "detections": "not queried in this run"
-      },
-      "table_rows": [
-        {"param": "Домен", "value": "builder.andromo.com"},
-        {"param": "VirusTotal URL", "value": "https://www.virustotal.com/gui/domain/builder.andromo.com"},
-        {"param": "HTTP", "value": "200"},
-        {"param": "Клоака-ворота", "value": "нет"},
-        {"param": "Куда редиректит", "value": "нет"},
-        {"param": "Что выводит (кратко)", "value": "Andromo builder hub"},
-        {"param": "Где припаркован", "value": "Andromo"}
-      ]
-    },
-    {
-      "domain": "inapppurchase.andromo.com",
-      "role": "Andromo IAP verify",
-      "cloak_gate": false,
-      "redirects_to": "нет",
-      "page_output": "HTTP 404 on /",
-      "parked_at": "Andromo",
-      "table_rows": [
-        {"param": "Домен", "value": "inapppurchase.andromo.com"},
-        {"param": "Роль", "value": "/verify/ IAP"},
-        {"param": "Клоака-ворота", "value": "нет"},
-        {"param": "Куда редиректит", "value": "нет"},
-        {"param": "Что выводит (кратко)", "value": "404 на корне"},
-        {"param": "Где припаркован", "value": "Andromo"}
-      ]
-    },
-    {
-      "domain": "cfg.flurry.com",
-      "role": "Flurry SDK config",
-      "cloak_gate": false,
-      "table_rows": [
-        {"param": "Домен", "value": "cfg.flurry.com"},
-        {"param": "Роль", "value": "https://cfg.flurry.com/sdk/v1/config"},
-        {"param": "Клоака-ворота", "value": "нет"}
-      ]
-    },
-    {
-      "domain": "data.flurry.com",
-      "role": "Flurry event ingest",
-      "cloak_gate": false,
-      "table_rows": [
-        {"param": "Домен", "value": "data.flurry.com"},
-        {"param": "Роль", "value": "https://data.flurry.com/v1/flr.do"},
-        {"param": "Клоака-ворота", "value": "нет"}
-      ]
-    },
-    {
-      "domain": "o582999.ingest.sentry.io",
-      "role": "Sentry ingest",
-      "cloak_gate": false,
-      "table_rows": [
-        {"param": "Домен", "value": "o582999.ingest.sentry.io"},
-        {"param": "Роль", "value": "Sentry DSN"},
-        {"param": "Клоака-ворота", "value": "нет"}
-      ]
-    }
-  ]
+  "checked": [],
+  "suspicious_in_apk_but_known_platform_or_sdk": [
+    "sqz.andromo.com",
+    "builder.andromo.com",
+    "inapppurchase.andromo.com",
+    "inapppurchasestaging.andromo.com",
+    "cfg.flurry.com",
+    "data.flurry.com",
+    "o582999.ingest.sentry.io"
+  ],
+  "note": "Пайплайн VirusTotal для кастомных/неизвестных хостов пуст: в APK нет obscure gate-доменов. Andromo/Flurry/Sentry — известные платформа/SDK, в таблицу «Подозрительные домены» не включаются."
 }

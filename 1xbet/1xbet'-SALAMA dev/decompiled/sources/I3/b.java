@@ -1,0 +1,9 @@
+package I3;
+
+import java.util.concurrent.Executor;
+import java.util.concurrent.Future;
+
+/* JADX INFO: loaded from: classes2.dex */
+public interface b extends Future {
+    void addListener(Runnable runnable, Executor executor);
+}

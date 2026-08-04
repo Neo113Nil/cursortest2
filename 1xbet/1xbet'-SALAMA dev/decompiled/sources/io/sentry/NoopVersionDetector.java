@@ -1,0 +1,18 @@
+package io.sentry;
+
+/* JADX INFO: loaded from: classes2.dex */
+public final class NoopVersionDetector implements IVersionDetector {
+    private static final NoopVersionDetector instance = new NoopVersionDetector();
+
+    private NoopVersionDetector() {
+    }
+
+    public static NoopVersionDetector getInstance() {
+        return instance;
+    }
+
+    @Override // io.sentry.IVersionDetector
+    public boolean checkForMixedVersions() {
+        return false;
+    }
+}

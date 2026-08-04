@@ -1,0 +1,35 @@
+package androidx.preference;
+
+import android.content.Context;
+import android.content.res.TypedArray;
+import android.os.Handler;
+import android.os.Looper;
+import android.text.TextUtils;
+import android.util.AttributeSet;
+import android.util.Log;
+import com.google.android.gms.common.api.f;
+import java.util.ArrayList;
+import p137t0.b;
+
+/* JADX INFO: loaded from: classes.dex */
+public abstract class PreferenceGroup extends Preference {
+    public PreferenceGroup(Context context, AttributeSet attributeSet, int i7, int i8) {
+        super(context, attributeSet, i7, 0);
+        new Handler(Looper.getMainLooper());
+        new ArrayList();
+        TypedArray typedArrayObtainStyledAttributes = context.obtainStyledAttributes(attributeSet, b.f16273g, i7, 0);
+        typedArrayObtainStyledAttributes.getBoolean(2, typedArrayObtainStyledAttributes.getBoolean(2, true));
+        if (typedArrayObtainStyledAttributes.hasValue(1) && typedArrayObtainStyledAttributes.getInt(1, typedArrayObtainStyledAttributes.getInt(1, f.API_PRIORITY_OTHER)) != Integer.MAX_VALUE && TextUtils.isEmpty(this.f9664e)) {
+            Log.e("PreferenceGroup", getClass().getSimpleName().concat(" should have a key defined if it contains an expandable preference"));
+        }
+        typedArrayObtainStyledAttributes.recycle();
+    }
+
+    public PreferenceGroup(Context context, AttributeSet attributeSet, int i7) {
+        this(context, attributeSet, i7, 0);
+    }
+
+    public PreferenceGroup(Context context, AttributeSet attributeSet) {
+        this(context, attributeSet, 0);
+    }
+}
