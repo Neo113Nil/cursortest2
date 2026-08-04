@@ -1,0 +1,47 @@
+{
+  "app_id": "com.BanBanRunner.BanBanRunner.subwaysurfcom",
+  "title": "Chicken Road Real Money Game",
+  "developer": "Studio Gamers",
+  "developer_id": "",
+  "icon": "",
+  "url": "https://play.google.com/store/apps/details?id=com.BanBanRunner.BanBanRunner.subwaysurfcom",
+  "score": null,
+  "released": null,
+  "updated": null,
+  "version": "110.9",
+  "version_code": 110,
+  "apk_label": "Sudoku Easy to Hard",
+  "summary": "",
+  "keyword": "url-batch",
+  "folder": "Chicken Road Real Money Game-Studio Gamers",
+  "path": "url-batch/Chicken Road Real Money Game-Studio Gamers",
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.BanBanRunner.BanBanRunner.subwaysurfcom.xapk",
+    "apk/com.BanBanRunner.BanBanRunner.subwaysurfcom.apk",
+    "apk/config.armeabi_v7a.apk"
+  ],
+  "cloaking": "да",
+  "gate_url": "http://66.45.240.107/games/sudoku_analytic.txt",
+  "store_redirect_package": "huhyhz-gb-2312ii",
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "Chicken Road Real Money Game"},
+      {"param": "Android Gradle Plugin", "value": "7.4.2"},
+      {"param": "minSdk", "value": "22"},
+      {"param": "targetSdk", "value": "35"},
+      {"param": "Kotlin", "value": "нет"},
+      {"param": "Web View", "value": "нет"},
+      {"param": "Custom Tabs", "value": "нет"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "Unity Analytics"},
+      {"param": "Permissions", "value": "android.permission.INTERNET"},
+      {"param": "Libraries", "value": "Unity 2022.3 (IL2CPP), UnityEngine.*, Unity.TextMeshPro, Unity.Timeline, Unity.AI.Navigation, FMOD, Google Android Game SDK, bitter.jnibridge"},
+      {"param": "Подозрительные домены", "value": "66.45.240.107, curl.se"},
+      {"param": "SharedPreferences", "value": "Unity PlayerPrefs: настройки игры, флаги покупок/оценки/рекламы, баланс валюты (SavePrefs)"},
+      {"param": "Есть ли клоака", "value": "да"},
+      {"param": "Подозрительные слова", "value": "analytic, PushInfo, OpenURL, OpenStore, onLink2Store, androidPackageID, redirect"}
+    ]
+  }
+}
