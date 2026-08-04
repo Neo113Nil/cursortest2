@@ -1,0 +1,26 @@
+package com.google.android.gms.internal.ads;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
+/* compiled from: com.google.android.gms:play-services-ads@@24.6.0 */
+/* loaded from: classes2.dex */
+final class zzfzd extends zzfzq {
+    private final zzfui zza;
+
+    zzfzd(zzarw zzarwVar, zzfym zzfymVar, zzfui zzfuiVar, zzgea zzgeaVar) {
+        super("fYZiBk9qczTYZ4XbuTZP+yPWbtV6tDQSSdiXJtgkPteU+uECNiQz27SdXVm0ZoDV", "cWReJy6PGA8DXT8v/LLJX4GdS/i6yfZY3MOkA1+Ehd0=", zzarwVar, zzfymVar, zzgeaVar.zza(116));
+        this.zza = zzfuiVar;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfzq
+    protected final void zza(Method method, zzarw zzarwVar) throws IllegalAccessException, InvocationTargetException {
+        Object[] objArr = (Object[]) method.invoke("", this.zza.zzb());
+        objArr.getClass();
+        Object[] objArr2 = objArr;
+        synchronized (zzarwVar) {
+            zzarwVar.zzb((String) objArr2[0]);
+            zzarwVar.zzaa((String) objArr2[1]);
+        }
+    }
+}

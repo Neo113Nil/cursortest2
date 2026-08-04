@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "apks": [
+    "com.goalstrikeapp.apk",
+    "config.arm64_v8a.apk",
+    "config.armeabi_v7a.apk",
+    "config.en.apk",
+    "config.xxhdpi.apk"
+  ],
+  "base_apk": "com.goalstrikeapp.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "/workspace/melbet/Melbet Goal-Giesealet/decompiled",
+    "skipped": false,
+    "base_apk": "com.goalstrikeapp.apk"
+  },
+  "analysis_files": [
+    "com.goalstrikeapp_1.6.xapk",
+    "com.goalstrikeapp.apk",
+    "config.arm64_v8a.apk",
+    "config.armeabi_v7a.apk",
+    "config.en.apk",
+    "config.xxhdpi.apk",
+    "apk/com.goalstrikeapp.apk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.armeabi_v7a.apk",
+    "apk/config.en.apk",
+    "apk/config.xxhdpi.apk",
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/a/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/bolts/",
+    "decompiled/sources/co/",
+    "decompiled/sources/com/",
+    "decompiled/sources/io/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/okhttp3/",
+    "decompiled/sources/okio/",
+    "decompiled/sources/org/"
+  ]
+}

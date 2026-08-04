@@ -1,0 +1,380 @@
+{
+  "domains": [
+    {
+      "domain": "solid-hub-suite.top",
+      "virustotal_url": "https://www.virustotal.com/gui/domain/solid-hub-suite.top",
+      "detections": "0/91",
+      "malicious": 0,
+      "suspicious": 0,
+      "vendors": [
+        {
+          "name": "Abusix",
+          "verdict": "Clean"
+        },
+        {
+          "name": "ADMINUSLabs",
+          "verdict": "Clean"
+        },
+        {
+          "name": "AILabs (MONITORAPP)",
+          "verdict": "Clean"
+        },
+        {
+          "name": "AlienVault",
+          "verdict": "Clean"
+        },
+        {
+          "name": "alphaMountain.ai",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "AlphaSOC",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "Andy.AVL",
+          "verdict": "Clean"
+        },
+        {
+          "name": "Acronis",
+          "verdict": "Clean"
+        },
+        {
+          "name": "ArcSight Threat Intelligence",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "AutoShun",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "Axur",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "BitDefender",
+          "verdict": "Clean"
+        },
+        {
+          "name": "Bkav",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "Blore AI ProCrime",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "Blueliv",
+          "verdict": "Clean"
+        },
+        {
+          "name": "Certego",
+          "verdict": "Clean"
+        },
+        {
+          "name": "ChainPatrol",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "Chong Lua Dao",
+          "verdict": "Clean"
+        },
+        {
+          "name": "Cluster25",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "CMC Threat Intelligence",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "CNIS Army",
+          "verdict": "Clean"
+        },
+        {
+          "name": "CRDF",
+          "verdict": "Clean"
+        },
+        {
+          "name": "Criminal IP",
+          "verdict": "Clean"
+        },
+        {
+          "name": "CSIS Security Group",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "CTX AI",
+          "verdict": "Clean"
+        },
+        {
+          "name": "Cyan",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "Cyble",
+          "verdict": "Clean"
+        },
+        {
+          "name": "CyRadar",
+          "verdict": "Clean"
+        },
+        {
+          "name": "desenmascara.me",
+          "verdict": "Clean"
+        },
+        {
+          "name": "DNS8",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "Dr.Web",
+          "verdict": "Clean"
+        },
+        {
+          "name": "EmergingThreats",
+          "verdict": "Clean"
+        },
+        {
+          "name": "Emsisoft",
+          "verdict": "Clean"
+        },
+        {
+          "name": "Ermes",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "ESET",
+          "verdict": "Clean"
+        },
+        {
+          "name": "ESTsecurity",
+          "verdict": "Clean"
+        },
+        {
+          "name": "Forcepoint ThreatSeeker",
+          "verdict": "Clean"
+        },
+        {
+          "name": "Fortinet",
+          "verdict": "Clean"
+        },
+        {
+          "name": "Fortra",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "G-Data",
+          "verdict": "Clean"
+        },
+        {
+          "name": "GCF Abuse Intelligence",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "Google Safe Browsing",
+          "verdict": "Clean"
+        },
+        {
+          "name": "GreenSnow",
+          "verdict": "Clean"
+        },
+        {
+          "name": "GreyNoise",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "Gridinnsoft",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "Guardpot",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "Heimdal Security",
+          "verdict": "Clean"
+        },
+        {
+          "name": "Hunt.io Intelligence",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "IPsum",
+          "verdict": "Clean"
+        },
+        {
+          "name": "Juniper Networks",
+          "verdict": "Clean"
+        },
+        {
+          "name": "Kaspersky",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "LevelBlue",
+          "verdict": "Clean"
+        },
+        {
+          "name": "Lionic",
+          "verdict": "Clean"
+        },
+        {
+          "name": "Lumu",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "Malwared",
+          "verdict": "Clean"
+        },
+        {
+          "name": "MalwarePatrol",
+          "verdict": "Clean"
+        },
+        {
+          "name": "MalwareURL",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "Mimecast",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "Netcraft",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "0xSI_f334",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "OpenPhish",
+          "verdict": "Clean"
+        },
+        {
+          "name": "Phishing Database",
+          "verdict": "Clean"
+        },
+        {
+          "name": "PhishFort",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "Phishtank",
+          "verdict": "Clean"
+        },
+        {
+          "name": "PREBYTES",
+          "verdict": "Clean"
+        },
+        {
+          "name": "PrecisionSec",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "Quick Heal",
+          "verdict": "Clean"
+        },
+        {
+          "name": "Quttera",
+          "verdict": "Clean"
+        },
+        {
+          "name": "SafeToOpen",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "Sansec eComscan",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "Scantitan",
+          "verdict": "Clean"
+        },
+        {
+          "name": "Seclookup",
+          "verdict": "Clean"
+        },
+        {
+          "name": "SecRadar",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "SecureBrain",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "SCUMWARE.org",
+          "verdict": "Clean"
+        },
+        {
+          "name": "Snort IP sample list",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "Sophos",
+          "verdict": "Clean"
+        },
+        {
+          "name": "StopForumSpam",
+          "verdict": "Clean"
+        },
+        {
+          "name": "Sucuri SiteCheck",
+          "verdict": "Clean"
+        },
+        {
+          "name": "ThreatHive",
+          "verdict": "Clean"
+        },
+        {
+          "name": "URLhaus",
+          "verdict": "Clean"
+        },
+        {
+          "name": "URLQuery",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "Viettel Threat Intelligence",
+          "verdict": "Clean"
+        },
+        {
+          "name": "ViriBack",
+          "verdict": "Clean"
+        },
+        {
+          "name": "VIPRE",
+          "verdict": "Unrated"
+        },
+        {
+          "name": "VX Vault",
+          "verdict": "Clean"
+        },
+        {
+          "name": "Webroot",
+          "verdict": "Clean"
+        },
+        {
+          "name": "Xcitium Verdict Cloud",
+          "verdict": "Clean"
+        },
+        {
+          "name": "Yandex Safebrowsing",
+          "verdict": "Clean"
+        },
+        {
+          "name": "ZeroCERT",
+          "verdict": "Clean"
+        },
+        {
+          "name": "ZeroFox",
+          "verdict": "Unrated"
+        }
+      ],
+      "redirects_to": "нет (HTTP 404, редиректов нет; финальный URL остаётся https://solid-hub-suite.top/…)",
+      "content_brief": "title: 404 Not Found. Короткий ответ nginx/1.24.0: страница не найдена",
+      "parking": "нет (Cloudflare DNS + nginx origin; не парковка регистратора; сейчас отдаёт 404)"
+    }
+  ]
+}

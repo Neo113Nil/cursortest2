@@ -1,0 +1,47 @@
+{
+  "app_id": "com.goalstrikeapp",
+  "title": "Melbet Goal",
+  "developer": "Giesealet",
+  "developer_id": "",
+  "icon": "",
+  "url": "https://play.google.com/store/apps/details?id=com.goalstrikeapp&hl=en&gl=us",
+  "score": null,
+  "released": null,
+  "updated": null,
+  "version": "1.6",
+  "version_code": 6,
+  "summary": "Pick your zone, take the shot & win big! Football simulator with real FootCoins!",
+  "keyword": "melbet",
+  "folder": "Melbet Goal-Giesealet",
+  "path": "melbet/Melbet Goal-Giesealet",
+  "ok": true,
+  "source": "apkcombo",
+  "files": [
+    "com.goalstrikeapp_1.6.xapk",
+    "com.goalstrikeapp.apk",
+    "config.arm64_v8a.apk",
+    "config.armeabi_v7a.apk",
+    "config.en.apk",
+    "config.xxhdpi.apk"
+  ],
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "Melbet Goal"},
+      {"param": "Android Gradle Plugin", "value": "8.12.0"},
+      {"param": "minSdk", "value": "24"},
+      {"param": "targetSdk", "value": "36"},
+      {"param": "Kotlin", "value": "да, 2.1.20"},
+      {"param": "Web View", "value": "да"},
+      {"param": "Custom Tabs", "value": "да"},
+      {"param": "Рекламные сети", "value": "AdMob"},
+      {"param": "Аналитика", "value": "Google Play Install Referrer, Firebase Encoders (транспорт), Google UMP (consent)"},
+      {"param": "Permissions", "value": "android.permission.INTERNET, com.android.vending.BILLING, android.permission.WAKE_LOCK, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.FOREGROUND_SERVICE, com.goalstrikeapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"},
+      {"param": "Libraries", "value": "React Native / Hermes, androidx.*, okhttp3, okio, kotlinx.coroutines, com.facebook.react/fresco/soloader, com.google.android.gms.ads (AdMob), io.invertase.googlemobileads, com.android.billingclient, com.proyecto26.inappbrowser, com.swmansion.rnscreens, com.th3rdwave.safeareacontext, com.oblador.vectoricons, org.asyncstorage, com.uerceg.play_install_referrer, com.busfor (Google Pay), com.pairip.licensecheck, co.touchlab.kermit, bolts, org.greenrobot.eventbus"},
+      {"param": "Подозрительные домены", "value": "solid-hub-suite.top"},
+      {"param": "SharedPreferences", "value": "AsyncStorage: hasVisitedBefore (флаг первого запуска), baseLink (сохранённая ссылка после проверки)"},
+      {"param": "Есть ли клоака", "value": "да"},
+      {"param": "Подозрительные слова", "value": "IN_URL, URL_ID, useAg, baseLink, hasVisitedBefore, isFirstVisit, openLink, resolveUrl, redirect, payment, FootCoins, Melbet, license check"}
+    ]
+  }
+}

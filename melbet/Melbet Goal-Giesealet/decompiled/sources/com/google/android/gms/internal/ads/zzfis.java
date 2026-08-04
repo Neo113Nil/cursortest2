@@ -1,0 +1,78 @@
+package com.google.android.gms.internal.ads;
+
+/* compiled from: com.google.android.gms:play-services-ads@@24.6.0 */
+/* loaded from: classes2.dex */
+public final class zzfis implements zzfhr {
+    zzfis() {
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfhr
+    public final /* bridge */ /* synthetic */ zzfhr zza() {
+        return this;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfhr
+    public final synchronized boolean zzb() {
+        return false;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfhr
+    public final /* bridge */ /* synthetic */ zzfhr zzc() {
+        return this;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfhr
+    public final /* bridge */ /* synthetic */ zzfhr zzd(boolean z) {
+        return this;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfhr
+    public final /* bridge */ /* synthetic */ zzfhr zze(String str) {
+        return this;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfhr
+    public final zzfhr zzf(zzfig zzfigVar) {
+        return this;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfhr
+    public final /* bridge */ /* synthetic */ zzfhr zzg(zzfct zzfctVar) {
+        return this;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfhr
+    public final /* bridge */ /* synthetic */ zzfhr zzh(com.google.android.gms.ads.internal.client.zze zzeVar) {
+        return this;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfhr
+    public final /* bridge */ /* synthetic */ zzfhr zzi(String str) {
+        return this;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfhr
+    public final /* bridge */ /* synthetic */ zzfhr zzj(Throwable th) {
+        return this;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfhr
+    public final /* bridge */ /* synthetic */ zzfhr zzk(String str) {
+        return this;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfhr
+    public final synchronized boolean zzl() {
+        return true;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfhr
+    public final synchronized zzfhu zzm() {
+        return null;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfhr
+    public final /* bridge */ /* synthetic */ zzfhr zzp(int i) {
+        return this;
+    }
+}
