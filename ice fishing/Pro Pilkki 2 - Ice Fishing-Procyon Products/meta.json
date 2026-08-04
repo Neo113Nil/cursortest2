@@ -1,0 +1,24 @@
+{
+  "app_id": "com.procyon.propilkki",
+  "title": "Pro Pilkki 2 - Ice Fishing",
+  "developer": "Procyon Products",
+  "package": "com.procyon.propilkki",
+  "version_name": "2.0.7",
+  "version_code": "2000700",
+  "min_sdk": 23,
+  "target_sdk": 36,
+  "agp": "8.11.0",
+  "kotlin": "1.8.22",
+  "cloaking": "нет",
+  "folder": "Pro Pilkki 2 - Ice Fishing-Procyon Products",
+  "path": "ice fishing/Pro Pilkki 2 - Ice Fishing-Procyon Products",
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.procyon.propilkki.xapk",
+    "apk/com.procyon.propilkki.apk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.mdpi.apk",
+    "apk/config.en.apk",
+    "apk/config.fr.apk"
+  ]
+}
