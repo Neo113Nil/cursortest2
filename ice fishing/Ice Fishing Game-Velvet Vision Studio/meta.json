@@ -1,0 +1,24 @@
+{
+  "app_id": "com.gamericefishpro.space",
+  "title": "Ice Fishing Game",
+  "developer": "Velvet Vision Studio",
+  "package": "com.gamericefishpro.space",
+  "version_name": "1.0",
+  "version_code": "1",
+  "min_sdk": 26,
+  "target_sdk": 36,
+  "agp": "8.13.2",
+  "kotlin": "2.0.21",
+  "cloaking": "да",
+  "folder": "Ice Fishing Game-Velvet Vision Studio",
+  "path": "ice fishing/Ice Fishing Game-Velvet Vision Studio",
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.gamericefishpro.space.xapk",
+    "apk/com.gamericefishpro.space.apk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.mdpi.apk",
+    "apk/config.zh.apk",
+    "apk/config.en.apk"
+  ]
+}
