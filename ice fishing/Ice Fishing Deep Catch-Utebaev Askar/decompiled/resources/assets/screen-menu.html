@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Ice Fishing: Deep Catch</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { background: #111; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+    background: url(assets/background/menu_bg4.jpg) center/cover no-repeat;
+    height: 100vh;
+    max-width: 390px;
+    min-height: 844px;
+    box-shadow: 0 0 80px rgba(0,0,0,0.9);
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    color: white;
+  }
+
+  /* Aurora background */
+  .aurora {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 50%;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .aurora-band {
+    position: absolute;
+    width: 200%;
+    height: 120px;
+    border-radius: 50%;
+    filter: blur(40px);
+    opacity: 0.35;
+    animation: aurora-float 8s ease-in-out infinite;
+  }
+
+  .aurora-band:nth-child(1) {
+    background: linear-gradient(90deg, transparent, #22c55e, #10b981, transparent);
+    top: 20px; left: -50%;
+    animation-delay: 0s;
+  }
+
+  .aurora-band:nth-child(2) {
+    background: linear-gradient(90deg, transparent, #a855f7, #8b5cf6, transparent);
+    top: 60px; left: -20%;
+    animation-delay: 2s;
+  }
+
+  .aurora-band:nth-child(3) {
+    background: linear-gradient(90deg, transparent, #06b6d4, #0891b2, transparent);
+    top: 100px; left: -30%;
+    animation-delay: 4s;
+  }
+
+  @keyframes aurora-float {
+    0%, 100% { transform: translateX(0) scaleY(1); }
+    33% { transform: translateX(15%) scaleY(1.2); }
+    66% { transform: translateX(-10%) scaleY(0.9); }
+  }
+
+  /* Stars */
+  .stars {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+  }
+
+  .star {
+    position: absolute;
+    width: 2px; height: 2px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0;
+    animation: twinkle 3s ease-in-out infinite;
+  }
+
+  @keyframes twinkle {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 0.8; }
+  }
+
+  /* Water / ice bottom */
+  .water-bg {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 35%;
+    background: linear-gradient(180deg, transparent, rgba(6,182,212,0.08) 30%, rgba(10,22,40,0.9) 100%);
+  }
+
+  .ice-surface {
+    position: absolute;
+    bottom: 32%;
+    left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(6,182,212,0.6), rgba(255,255,255,0.5), rgba(6,182,212,0.6), transparent);
+    box-shadow: 0 0 20px rgba(6,182,212,0.4);
+    display: none; /* Removed horizontal line */
+  }
+
+  /* Snow particles */
+  .snow-container {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .snowflake {
+    position: absolute;
+    width: 4px; height: 4px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 50%;
+    animation: snow-fall linear infinite;
+  }
+
+  @keyframes snow-fall {
+    0% { transform: translateY(-20px) translateX(0); opacity: 0.8; }
+    100% { transform: translateY(100vh) translateX(30px); opacity: 0; }
+  }
+
+  /* Fish animations */
+  .fish {
+    position: absolute;
+    font-size: 28px;
+    animation: fish-swim linear infinite;
+    bottom: 10%;
+  }
+
+  @keyframes fish-swim {
+    0% { transform: translateX(-80px) scaleX(1); opacity: 0; }
+    10% { opacity: 0.7; }
+    90% { opacity: 0.7; }
+    100% { transform: translateX(430px) scaleX(1); opacity: 0; }
+  }
+
+  /* Main content */
+  .main-content {
+    position: relative;
+    z-index: 10;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  /* Top bar */
+  .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 52px 0 16px;
+  }
+
+  .currency-badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .currency-badge.gold { border-color: rgba(245,158,11,0.4); }
+  .currency-badge.cyan { border-color: rgba(6,182,212,0.4); }
+
+  .settings-btn {
+    width: 36px; height: 36px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  /* Logo */
+  .logo-section {
+    text-align: center;
+    padding: 24px 0 20px;
+    margin-top: 10vh; /* Moved title section down */
+  }
+
+  .game-logo {
+    font-size: 44px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    line-height: 1;
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 40%, #fcd34d 70%, #f59e0b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: none;
+    filter: drop-shadow(0 0 20px rgba(245,158,11,0.5));
+    animation: logo-glow 3s ease-in-out infinite;
+  }
+
+  @keyframes logo-glow {
+    0%, 100% { filter: drop-shadow(0 0 20px rgba(245,158,11,0.5)); }
+    50% { filter: drop-shadow(0 0 35px rgba(245,158,11,0.8)); }
+  }
+
+  .game-tagline {
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+    margin-top: 6px;
+    letter-spacing: 1px;
+  }
+
+  /* Player card */
+  .player-card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .player-avatar {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #06b6d4, #0284c7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+    border: 2px solid rgba(6,182,212,0.5);
+  }
+
+  .player-info { flex: 1; }
+  .player-name { font-size: 14px; font-weight: 700; }
+  .player-level {
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+    margin-top: 2px;
+  }
+
+  .xp-bar {
+    height: 3px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 2px;
+    margin-top: 6px;
+    overflow: hidden;
+  }
+
+  .xp-fill {
+    height: 100%;
+    width: 67%;
+    background: linear-gradient(90deg, #06b6d4, #22d3ee);
+    border-radius: 2px;
+  }
+
+  .player-rank {
+    text-align: right;
+  }
+
+  .rank-badge {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: #0a1628;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 800;
+  }
+
+  .rank-score {
+    font-size: 11px;
+    color: rgba(255,255,255,0.4);
+    margin-top: 4px;
+    text-align: center;
+  }
+
+  /* Daily reward strip */
+  .daily-strip {
+    background: linear-gradient(135deg, rgba(245,158,11,0.15), rgba(245,158,11,0.05));
+    border: 1px solid rgba(245,158,11,0.3);
+    border-radius: 12px;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .daily-strip:active { transform: scale(0.98); }
+
+  .daily-icon { font-size: 22px; }
+  .daily-info { flex: 1; }
+  .daily-title { font-size: 13px; font-weight: 700; color: #f59e0b; }
+  .daily-desc { font-size: 11px; color: rgba(255,255,255,0.5); margin-top: 1px; }
+  .daily-dots { display: flex; gap: 4px; }
+  .daily-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+  }
+  .daily-dot.claimed { background: #f59e0b; }
+
+  /* Main buttons */
+  .main-buttons {
+    padding: 0 0 50px;
+    margin-top: auto; /* Pushes content below to bottom */
+    margin-bottom: 25vh; /* Adjust to move button higher */
+  }
+
+  .btn-play {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    border: none;
+    border-radius: 18px;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 6px 30px rgba(245,158,11,0.5);
+    animation: btn-pulse 2s ease-in-out infinite;
+    text-decoration: none;
+    display: block;
+  }
+
+  @keyframes btn-pulse {
+    0%, 100% { box-shadow: 0 6px 30px rgba(245,158,11,0.5); transform: scale(1); }
+    50% { box-shadow: 0 8px 40px rgba(245,158,11,0.7); transform: scale(1.02); }
+  }
+
+  .btn-play-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 18px;
+    font-size: 22px;
+    font-weight: 900;
+    color: #0a1628;
+    letter-spacing: 0.5px;
+  }
+
+  .btn-play-fish { font-size: 26px; }
+
+  .btn-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .btn-secondary {
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 14px;
+    padding: 14px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .btn-secondary:active { transform: scale(0.95); background: rgba(255,255,255,0.1); }
+
+  .btn-sec-icon { font-size: 24px; }
+  .btn-sec-label { font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.8); }
+
+  .btn-secondary.cyan {
+    background: rgba(6,182,212,0.1);
+    border-color: rgba(6,182,212,0.25);
+  }
+
+  .btn-secondary.purple {
+    background: rgba(168,85,247,0.1);
+    border-color: rgba(168,85,247,0.25);
+  }
+
+  /* Bottom nav */
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0 32px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    margin-top: 12px;
+  }
+
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+    text-decoration: none;
+  }
+
+  .nav-item.active { opacity: 1; }
+  .nav-item-icon { font-size: 22px; }
+  .nav-item-label { font-size: 10px; color: rgba(255,255,255,0.7); font-weight: 600; }
+
+  .nav-item.active .nav-item-icon { filter: drop-shadow(0 0 8px #06b6d4); }
+</style>
+</head>
+<body>
+<!-- Background layers -->
+<div class="aurora">
+  <div class="aurora-band"></div>
+  <div class="aurora-band"></div>
+  <div class="aurora-band"></div>
+</div>
+
+<div class="stars">
+  <!-- Generated stars via JS below -->
+</div>
+
+<div class="snow-container" id="snow"></div>
+
+<div class="water-bg"></div>
+<div class="ice-surface"></div>
+
+<!-- Fish swimming -->
+<div class="fish" style="animation-duration: 12s; animation-delay: 2s; bottom: 14%;">🐟</div>
+<div class="fish" style="animation-duration: 18s; animation-delay: 8s; bottom: 8%;">🐠</div>
+
+<!-- MAIN CONTENT -->
+<div class="main-content">
+  <!-- Top bar -->
+  <div class="top-bar">
+    
+  </div>
+  
+
+  <!-- Logo -->
+  <div class="logo-section">
+    <div class="game-logo">ICE FISHING: DEEP CATCH</div>
+
+  </div>
+
+  <!-- Player card -->
+  
+
+  <!-- Daily reward -->
+  
+
+  <!-- Spacer pushes button down -->
+  
+
+  <!-- Main buttons -->
+  <div class="main-buttons">
+    <a href="javascript:void(0)" onclick="NativeActions.postMessage('play')" class="btn-play">
+      <div class="btn-play-inner">
+        <span class="btn-play-fish">🎣</span>
+        PLAY NOW
+      </div>
+    </a>
+
+    
+
+    
+  </div>
+
+  <!-- Bottom nav -->
+  
+
+</div>
+
+<script>
+// Generate stars
+const starsContainer = document.querySelector('.stars');
+for (let i = 0; i < 50; i++) {
+  const star = document.createElement('div');
+  star.className = 'star';
+  star.style.left = Math.random() * 100 + '%';
+  star.style.top = Math.random() * 60 + '%';
+  star.style.animationDelay = Math.random() * 4 + 's';
+  star.style.animationDuration = (2 + Math.random() * 3) + 's';
+  star.style.width = star.style.height = (1 + Math.random() * 2) + 'px';
+  starsContainer.appendChild(star);
+}
+
+// Generate snow
+const snowContainer = document.getElementById('snow');
+for (let i = 0; i < 20; i++) {
+  const flake = document.createElement('div');
+  flake.className = 'snowflake';
+  flake.style.left = Math.random() * 100 + '%';
+  flake.style.top = Math.random() * 100 + '%';
+  flake.style.animationDuration = (5 + Math.random() * 10) + 's';
+  flake.style.animationDelay = '-' + (Math.random() * 10) + 's';
+  flake.style.opacity = 0.3 + Math.random() * 0.5;
+  flake.style.width = flake.style.height = (2 + Math.random() * 4) + 'px';
+  snowContainer.appendChild(flake);
+}
+</script>
+</body>
+</html>

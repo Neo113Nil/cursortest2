@@ -1,0 +1,107 @@
+package com.appsflyer.share;
+
+import android.content.Context;
+import com.appsflyer.AFLogger;
+import com.appsflyer.AppsFlyerLib;
+import com.appsflyer.AppsFlyerProperties;
+import com.appsflyer.internal.AFb1rSDK;
+import com.appsflyer.internal.AFd1kSDK;
+import com.appsflyer.internal.AFe1aSDK;
+import com.appsflyer.internal.AFe1aSDK.AnonymousClass2;
+import com.appsflyer.internal.AFf1uSDK;
+import com.appsflyer.internal.AFh1vSDK;
+import com.appsflyer.internal.AFj1fSDK;
+import com.appsflyer.internal.AFk1wSDK;
+import java.io.UnsupportedEncodingException;
+import java.util.HashMap;
+import java.util.Map;
+
+/* JADX INFO: loaded from: classes.dex */
+public class CrossPromotionHelper {
+    private static String getCurrencyIso4217Code = "https://%simpression.%s";
+
+    private static LinkGenerator getMediationNetwork(Context context, String str, String str2, Map<String, String> map, String str3) {
+        LinkGenerator linkGenerator = new LinkGenerator("af_cross_promotion");
+        linkGenerator.getMediationNetwork = str3;
+        linkGenerator.AFAdRevenueData = str;
+        linkGenerator.addParameter("af_siteid", context.getPackageName());
+        if (str2 != null) {
+            linkGenerator.setCampaign(str2);
+        }
+        if (map != null) {
+            linkGenerator.addParameters(map);
+        }
+        return linkGenerator;
+    }
+
+    public static void logAndOpenStore(Context context, String str, String str2) throws UnsupportedEncodingException {
+        logAndOpenStore(context, str, str2, null);
+    }
+
+    public static void logCrossPromoteImpression(Context context, String str, String str2) throws UnsupportedEncodingException {
+        logCrossPromoteImpression(context, str, str2, null);
+    }
+
+    /* JADX WARN: Code duplicated, block: B:16:0x0044  */
+    public static void setUrl(Map<String, String> map) {
+        byte b2;
+        for (Map.Entry<String, String> entry : map.entrySet()) {
+            String value = entry.getValue();
+            String key = entry.getKey();
+            int iHashCode = key.hashCode();
+            if (iHashCode != 96801) {
+                if (iHashCode == 120623625 && key.equals("impression")) {
+                    b2 = 1;
+                } else {
+                    b2 = -1;
+                }
+            } else if (key.equals("app")) {
+                b2 = 0;
+            } else {
+                b2 = -1;
+            }
+            if (b2 == 0) {
+                AFj1fSDK.getCurrencyIso4217Code = value;
+            } else if (b2 == 1) {
+                getCurrencyIso4217Code = value;
+            }
+        }
+    }
+
+    private static void getMediationNetwork(String str, Context context, AFk1wSDK aFk1wSDK) throws UnsupportedEncodingException {
+        AFb1rSDK revenue = AFb1rSDK.getRevenue();
+        revenue.AFAdRevenueData(context);
+        AFd1kSDK monetizationNetwork = revenue.getMonetizationNetwork();
+        AFf1uSDK aFf1uSDK = new AFf1uSDK(monetizationNetwork, str, aFk1wSDK);
+        AFe1aSDK aFe1aSDKCopy = monetizationNetwork.copy();
+        aFe1aSDKCopy.AFAdRevenueData.execute(aFe1aSDKCopy.new AnonymousClass2(aFf1uSDK));
+    }
+
+    public static void logAndOpenStore(Context context, String str, String str2, Map<String, String> map) throws UnsupportedEncodingException {
+        LinkGenerator mediationNetwork = getMediationNetwork(context, str, str2, map, String.format(AFj1fSDK.getCurrencyIso4217Code, AppsFlyerLib.getInstance().getHostPrefix(), AFb1rSDK.getRevenue().getHostName()));
+        if (AppsFlyerProperties.getInstance().getBoolean(AppsFlyerProperties.AF_WAITFOR_CUSTOMERID, false)) {
+            AFLogger.INSTANCE.i(AFh1vSDK.CROSS_PROMOTION, "CustomerUserId not set, track And Open Store is disabled", true);
+            return;
+        }
+        if (AppsFlyerLib.getInstance().isStopped()) {
+            AFLogger.INSTANCE.i(AFh1vSDK.CROSS_PROMOTION, "SDK is stopped, track And Open Store is disabled", true);
+            return;
+        }
+        if (map == null) {
+            map = new HashMap<>();
+        }
+        map.put("af_campaign", str2);
+        AppsFlyerLib.getInstance().logEvent(context, "af_cross_promotion", map);
+        getMediationNetwork(mediationNetwork.generateLink(), context, new AFk1wSDK(context));
+    }
+
+    public static void logCrossPromoteImpression(Context context, String str, String str2, Map<String, String> map) throws UnsupportedEncodingException {
+        if (AppsFlyerProperties.getInstance().getBoolean(AppsFlyerProperties.AF_WAITFOR_CUSTOMERID, false)) {
+            AFLogger.INSTANCE.i(AFh1vSDK.CROSS_PROMOTION, "CustomerUserId not set, Promote Impression is disabled", true);
+        } else if (AppsFlyerLib.getInstance().isStopped()) {
+            AFLogger.INSTANCE.i(AFh1vSDK.CROSS_PROMOTION, "SDK is stopped, Promote Impression is disabled", true);
+        } else {
+            getMediationNetwork(getMediationNetwork(context, str, str2, map, String.format(getCurrencyIso4217Code, AppsFlyerLib.getInstance().getHostPrefix(), AFb1rSDK.getRevenue().getHostName())).generateLink(), context, null);
+        }
+    }
+}

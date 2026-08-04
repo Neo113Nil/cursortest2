@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Arctic Catch</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+  background: #050d1a;
+  height: 100dvh;
+  max-width: 430px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  touch-action: manipulation;
+  user-select: none;
+}
+canvas { display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
+
+.hud {
+  position: absolute; top: 12px; left: 12px; right: 12px; z-index: 30;
+  display: flex; justify-content: space-between; align-items: center;
+  background: rgba(5,13,26,0.75); backdrop-filter: blur(10px);
+  border: 1px solid rgba(100,200,255,0.25); border-radius: 14px;
+  padding: 8px 16px; pointer-events: none;
+}
+.hud-stat { display: flex; flex-direction: column; align-items: center; gap: 1px; }
+.hud-label { font-size: 9px; font-weight: 700; color: rgba(100,200,255,0.7); letter-spacing: 1.2px; text-transform: uppercase; }
+.hud-value { font-size: 20px; font-weight: 900; color: #fff; line-height: 1; }
+.hud-value.timer { color: #fbbf24; }
+.hud-value.timer.urgent { color: #ef4444; animation: blink 0.5s ease-in-out infinite; }
+.hud-divider { width: 1px; height: 28px; background: rgba(255,255,255,0.12); }
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
+
+.cast-btn {
+  position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%); z-index: 30;
+  background: linear-gradient(135deg, #ef4444, #dc2626); color: white;
+  font-size: 17px; font-weight: 900; letter-spacing: 3px; padding: 16px 52px;
+  border-radius: 50px; border: none; cursor: pointer;
+  box-shadow: 0 4px 24px rgba(239,68,68,0.55), 0 0 0 2px rgba(255,255,255,0.12);
+  transition: transform .1s, box-shadow .1s; touch-action: manipulation;
+}
+.cast-btn:active { transform: translateX(-50%) scale(.95); }
+.cast-btn.disabled { background: linear-gradient(135deg,#374151,#1f2937); box-shadow: 0 4px 12px rgba(0,0,0,.4); pointer-events: none; }
+
+.gameover {
+  position: absolute; inset: 0; z-index: 50;
+  display: none; flex-direction: column; align-items: center; justify-content: center;
+  background: rgba(5,13,26,0.92); backdrop-filter: blur(16px);
+}
+.gameover.show { display: flex; }
+.go-title { font-size: 36px; font-weight: 900; letter-spacing: 2px; background: linear-gradient(135deg,#60a5fa,#06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 8px; }
+.go-subtitle { font-size: 13px; color: rgba(255,255,255,.5); margin-bottom: 32px; letter-spacing: 1px; }
+.go-stats { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); border-radius: 16px; padding: 20px 36px; display: flex; flex-direction: column; gap: 10px; margin-bottom: 32px; min-width: 220px; }
+.go-stat { display: flex; justify-content: space-between; gap: 24px; align-items: center; }
+.go-stat-label { font-size: 11px; font-weight: 700; color: rgba(96,165,250,.7); letter-spacing: 1px; text-transform: uppercase; }
+.go-stat-value { font-size: 22px; font-weight: 900; }
+.go-play-btn { background: linear-gradient(135deg,#3b82f6,#06b6d4); color: white; font-size: 15px; font-weight: 800; letter-spacing: 2px; padding: 14px 48px; border-radius: 50px; border: none; cursor: pointer; box-shadow: 0 4px 24px rgba(59,130,246,.4); }
+</style>
+</head>
+<body>
+
+<div class="hud" id="hud">
+  <div class="hud-stat">
+    <div class="hud-label">Score</div>
+    <div class="hud-value" id="scoreVal">0</div>
+  </div>
+  <div class="hud-divider"></div>
+  <div class="hud-stat">
+    <div class="hud-label">Time</div>
+    <div class="hud-value timer" id="timerVal">60</div>
+  </div>
+  <div class="hud-divider"></div>
+  <div class="hud-stat">
+    <div class="hud-label">Caught</div>
+    <div class="hud-value" id="caughtVal">0</div>
+  </div>
+</div>
+
+<canvas id="c"></canvas>
+<button class="cast-btn" id="castBtn">CAST</button>
+
+<div class="gameover" id="gameOver">
+  <div class="go-title">GAME OVER</div>
+  <div class="go-subtitle">ARCTIC CATCH</div>
+  <div class="go-stats">
+    <div class="go-stat"><span class="go-stat-label">Score</span><span class="go-stat-value" id="goScore">0</span></div>
+    <div class="go-stat"><span class="go-stat-label">Caught</span><span class="go-stat-value" id="goCaught">0</span></div>
+    <div class="go-stat"><span class="go-stat-label">Best</span><span class="go-stat-value" id="goBest">0</span></div>
+  </div>
+  <button class="go-play-btn" id="goPlayBtn">PLAY AGAIN</button>
+</div>
+
+<script>
+(function(){
+'use strict';
+
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+
+let W, H, SKY_H, WATER_Y;
+
+function resize(){
+  W = canvas.width  = canvas.offsetWidth  || window.innerWidth;
+  H = canvas.height = canvas.offsetHeight || window.innerHeight;
+  SKY_H  = H * 0.38;
+  WATER_Y = SKY_H;
+}
+resize();
+window.addEventListener('resize', resize);
+
+// ─── SPRITE LOADING ───────────────────────────────────────────
+const IMG = {};
+let spritesReady = false;
+let spritesLoaded = 0;
+
+const BASE = 'assets/';
+
+const SPRITE_LIST = {
+  bg_sky:        BASE + 'background/bg_sky.png',
+  bg_water:      BASE + 'background/bg_water.png',
+  fish_cod:      BASE + 'fish/fish_cod.png',
+  fish_salmon:   BASE + 'fish/fish_salmon.png',
+  fish_trout:    BASE + 'fish/fish_trout.png',
+  fish_halibut:  BASE + 'fish/fish_halibut.png',
+  fish_herring:  BASE + 'fish/fish_herring.png',
+  fish_pike:     BASE + 'fish/fish_pike.png',
+  helicopter_ai: BASE + 'helicopter/helicopter_ai.png',
+};
+
+const totalSprites = Object.keys(SPRITE_LIST).length;
+
+function loadSprites(callback) {
+  Object.entries(SPRITE_LIST).forEach(([key, src]) => {
+    const img = new Image();
+    img.onload = img.onerror = () => {
+      spritesLoaded++;
+      if (spritesLoaded >= totalSprites) {
+        spritesReady = true;
+        callback();
+      }
+    };
+    img.src = src;
+    IMG[key] = img;
+  });
+}
+
+// ─── HELICOPTER CONFIG ────────────────────────────────────────
+// Helicopter sprite drawn at this display size
+const HELI_W = 120;   // display width in px
+const HELI_H = 70;    // display height in px
+// Hook hangs from bottom-center of sprite
+const HOOK_OFF_Y = HELI_H * 0.72;
+
+// ─── FISH TYPES → SPRITE MAPPING ──────────────────────────────
+// AI sprites are 800-1024px — sizes scaled down for display
+const fishTypes = [
+  { name:'Arctic Cod',    sprite:'fish_cod',     pts:15,  w:60,  h:40 },
+  { name:'Salmon',        sprite:'fish_salmon',  pts:40,  w:90,  h:55 },
+  { name:'Rainbow Trout', sprite:'fish_trout',   pts:25,  w:90,  h:55 },
+  { name:'Halibut',       sprite:'fish_halibut', pts:60,  w:120, h:70 },
+  { name:'Herring',       sprite:'fish_herring', pts:8,   w:60,  h:40 },
+  { name:'Arctic Pike',   sprite:'fish_pike',    pts:100, w:120, h:70 },
+];
+
+// ─── DRAW FISH WITH SPRITE ────────────────────────────────────
+function drawFish(x, y, type, scale, facing) {
+  // facing: 1 = right, -1 = left
+  const dw = type.w * scale;
+  const dh = type.h * scale;
+  const spr = IMG[type.sprite];
+  if (!spr || !spr.complete || spr.naturalWidth === 0) return;
+
+  ctx.save();
+  ctx.translate(x, y);
+  // Fish sprites face RIGHT by default.
+  // If moving LEFT (facing=-1), mirror horizontally.
+  if (facing === -1) {
+    ctx.scale(-1, 1);
+  }
+  ctx.drawImage(spr, -dw / 2, -dh / 2, dw, dh);
+  ctx.restore();
+}
+
+// ─── DRAW HELICOPTER WITH SPRITE ─────────────────────────────
+function drawHeliSprite(x, y, facingRight) {
+  const spr = IMG['helicopter_ai'];
+  if (!spr || !spr.complete || spr.naturalWidth === 0) return;
+
+  ctx.save();
+  ctx.translate(x, y);
+
+  // ── ROTOR — drawn BEFORE flip so X offset stays correct ──
+  const rotorHubX = facingRight ? -8 : 8;
+  const rotorHubY = -HELI_H * 0.18;
+  const bladeLen = 42;
+  const bladeW = 3;
+  const numBlades = 3;
+
+  ctx.save();
+  ctx.translate(rotorHubX, rotorHubY);
+  for (let i = 0; i < numBlades; i++) {
+    const angle = heli.rotor_angle + (i / numBlades) * Math.PI * 2;
+    const tipX = Math.cos(angle) * bladeLen;
+    const tipY = Math.sin(angle) * bladeLen * 0.25;
+    ctx.beginPath();
+    ctx.lineWidth = bladeW;
+    ctx.strokeStyle = 'rgba(200,200,200,0.65)';
+    ctx.lineCap = 'round';
+    ctx.moveTo(-tipX, -tipY);
+    ctx.lineTo(tipX, tipY);
+    ctx.stroke();
+  }
+  ctx.beginPath();
+  ctx.arc(0, 0, 2, 0, Math.PI * 2);
+  ctx.fillStyle = 'rgba(80,80,80,0.95)';
+  ctx.fill();
+  ctx.restore();
+
+  // Helicopter sprite — flip AFTER rotor
+  if (facingRight) {
+    ctx.scale(-1, 1);
+  }
+  ctx.drawImage(spr, -HELI_W / 2, -HELI_H / 2, HELI_W, HELI_H);
+  ctx.restore();
+}
+
+// ─── GAME STATE ───────────────────────────────────────────────
+let score=0, caught=0, timeLeft=60, best=0;
+let gameRunning = false;
+let timerInterval = null;
+
+// ─── HELICOPTER STATE ─────────────────────────────────────────
+const heli = {
+  x: 80, y: 0,
+  vx: 1.3,
+  hoverOff: 0,
+  hoverPhase: 0,
+  rotor_angle: 0,
+  lineState: 'idle', // idle | dropping | rising
+  lineY: 0,
+  lineTarget: 0,
+  caughtFish: null,
+};
+
+// ─── FISH STATE ───────────────────────────────────────────────
+const DEPTH_BANDS = [0.20, 0.48, 0.76];
+
+function makeFish(){
+  const depthIdx = Math.floor(Math.random()*3);
+  const depth = DEPTH_BANDS[depthIdx];
+  const type  = fishTypes[Math.floor(Math.random()*fishTypes.length)];
+  const scale = 0.72 + depth * 0.45;
+  const spd   = (0.45 + Math.random() * 1.0) * (Math.random()<0.5?1:-1);
+  return {
+    x: Math.random() * W,
+    baseY: 0,
+    depth, type, scale,
+    speed: spd,
+    facing: spd > 0 ? 1 : -1,
+    swimPhase: Math.random()*Math.PI*2,
+    dead: false,
+  };
+}
+
+let fishes = [];
+function initFishes(){
+  fishes = [];
+  for(let i=0;i<14;i++){
+    const f = makeFish();
+    f.baseY = WATER_Y + f.depth * (H - WATER_Y);
+    fishes.push(f);
+  }
+}
+
+// ─── STARS ────────────────────────────────────────────────────
+let stars = [];
+function initStars(){
+  stars = [];
+  for(let i=0;i<65;i++){
+    stars.push({
+      nx: Math.random(),
+      ny: Math.random() * 0.88,
+      r: Math.random()<0.12 ? 1.6 : 0.7,
+      twinkle: Math.random()*Math.PI*2,
+      tspd: 0.025 + Math.random()*0.04,
+    });
+  }
+}
+
+// ─── PARTICLES & POPUPS ───────────────────────────────────────
+let particles = [], popups = [];
+
+function spawnSparkles(x, y){
+  for(let i=0;i<18;i++){
+    const a = Math.random()*Math.PI*2;
+    const s = 1.5 + Math.random()*3.5;
+    particles.push({ x, y, vx: Math.cos(a)*s*1.5, vy: Math.sin(a)*s-2.5, r:2+Math.random()*4, life:1, col:'#fbbf24' });
+  }
+}
+
+function spawnPopup(x, y, txt){
+  popups.push({ x, y, txt, life:1, vy:-1.3 });
+}
+
+// ─── WAVE & AURORA TIME ───────────────────────────────────────
+let waveTime = 0;
+let auroraTime = 0;
+
+function waveY(x, t){
+  return Math.sin(x*0.018+t*1.2)*5 + Math.sin(x*0.033-t*0.8)*3 + Math.sin(x*0.008+t*0.5)*7;
+}
+
+// ─── ICEBERG DATA ─────────────────────────────────────────────
+const ICEBERGS = [
+  { rx:0.08, bw:30, bh:22 },
+  { rx:0.30, bw:40, bh:30 },
+  { rx:0.56, bw:28, bh:18 },
+  { rx:0.78, bw:45, bh:26 },
+  { rx:0.92, bw:22, bh:15 },
+];
+
+// ─── DRAW BACKGROUND WITH AI SPRITE ──────────────────────────
+function drawBackground(){
+  // Draw bg_sky.png for upper zone (top 38% of canvas)
+  const skyImg = IMG['bg_sky'];
+  if (skyImg && skyImg.complete && skyImg.naturalWidth > 0) {
+    ctx.drawImage(skyImg, 0, 0, W, SKY_H);
+  } else {
+    // Fallback gradient
+    const skyGrad = ctx.createLinearGradient(0, 0, 0, SKY_H);
+    skyGrad.addColorStop(0, '#0a0a2a');
+    skyGrad.addColorStop(0.55, '#1a2a4a');
+    skyGrad.addColorStop(1, '#2a4a6a');
+    ctx.fillStyle = skyGrad;
+    ctx.fillRect(0, 0, W, SKY_H);
+  }
+
+  // Stars overlay on sky
+  for(const s of stars){
+    s.twinkle += s.tspd;
+    const alpha = 0.30 + 0.50*Math.sin(s.twinkle);
+    ctx.beginPath();
+    ctx.arc(s.nx*W, s.ny*SKY_H, s.r, 0, Math.PI*2);
+    ctx.fillStyle = `rgba(255,255,255,${alpha*0.5})`;
+    ctx.fill();
+  }
+
+  // Aurora borealis overlay (subtle, on top of background image)
+  auroraTime += 0.006;
+  for(let a=0; a<3; a++){
+    const off = a * 1.4 + auroraTime;
+    const alpha = 0.040 + 0.018*Math.sin(auroraTime*1.8+a);
+    const aColors = [
+      `rgba(0,255,130,${alpha})`,
+      `rgba(70,40,255,${alpha*0.75})`,
+      `rgba(0,210,180,${alpha*0.85})`,
+    ];
+    const nlGrad = ctx.createLinearGradient(0,0,W,0);
+    nlGrad.addColorStop(0, 'transparent');
+    nlGrad.addColorStop(0.15+0.1*Math.sin(off),     aColors[a%3]);
+    nlGrad.addColorStop(0.45+0.15*Math.cos(off*0.7), aColors[(a+1)%3]);
+    nlGrad.addColorStop(0.75+0.05*Math.sin(off*1.3), aColors[(a+2)%3]);
+    nlGrad.addColorStop(1, 'transparent');
+    ctx.fillStyle = nlGrad;
+    const bandY = SKY_H * (0.12 + 0.09*a);
+    const bandH = SKY_H * 0.22;
+    ctx.beginPath();
+    ctx.moveTo(0, bandY);
+    for(let xi=0; xi<=W; xi+=10){
+      ctx.lineTo(xi, bandY + Math.sin(xi*0.014 + off*2.1)*14);
+    }
+    for(let xi=W; xi>=0; xi-=10){
+      ctx.lineTo(xi, bandY + bandH + Math.sin(xi*0.019 + off*1.6)*9);
+    }
+    ctx.closePath();
+    ctx.fill();
+  }
+
+  // Ice/snow surface at horizon
+  ctx.fillStyle = '#e8f4ff';
+  ctx.beginPath();
+  ctx.moveTo(0, SKY_H - 10);
+  for(let xi=0; xi<=W; xi+=12){
+    ctx.lineTo(xi, SKY_H - 10 + Math.sin(xi*0.1)*4 + Math.sin(xi*0.07)*3);
+  }
+  ctx.lineTo(W, SKY_H+4);
+  ctx.lineTo(0, SKY_H+4);
+  ctx.closePath();
+  ctx.fill();
+
+  // Icebergs
+  for(const ib of ICEBERGS){
+    const bx = ib.rx * W;
+    const bw = ib.bw, bh = ib.bh;
+    ctx.fillStyle = '#d0e8ff';
+    ctx.beginPath();
+    ctx.moveTo(bx-bw, SKY_H+2);
+    ctx.lineTo(bx-bw*0.25, SKY_H-bh);
+    ctx.lineTo(bx, SKY_H-bh-8);
+    ctx.lineTo(bx+bw*0.45, SKY_H-bh+4);
+    ctx.lineTo(bx+bw, SKY_H+2);
+    ctx.closePath();
+    ctx.fill();
+    ctx.fillStyle = 'rgba(140,190,230,0.4)';
+    ctx.beginPath();
+    ctx.moveTo(bx, SKY_H-bh-8);
+    ctx.lineTo(bx+bw*0.45, SKY_H-bh+4);
+    ctx.lineTo(bx+bw, SKY_H+2);
+    ctx.lineTo(bx+bw*0.1, SKY_H+2);
+    ctx.closePath();
+    ctx.fill();
+  }
+}
+
+// ─── DRAW WATER WITH AI SPRITE ────────────────────────────────
+function drawWater(){
+  // Draw bg_water.png for lower zone (bottom 62% of canvas)
+  const waterImg = IMG['bg_water'];
+  if (waterImg && waterImg.complete && waterImg.naturalWidth > 0) {
+    ctx.drawImage(waterImg, 0, WATER_Y, W, H - WATER_Y);
+  } else {
+    // Fallback gradient
+    const wGrad = ctx.createLinearGradient(0, WATER_Y, 0, H);
+    wGrad.addColorStop(0, '#1a4a7a');
+    wGrad.addColorStop(0.38, '#0d2a50');
+    wGrad.addColorStop(1, '#050d1a');
+    ctx.fillStyle = wGrad;
+    ctx.fillRect(0, WATER_Y, W, H-WATER_Y);
+  }
+
+  // Wave path fill (overlay on top of water image)
+  ctx.beginPath();
+  ctx.moveTo(0, WATER_Y + waveY(0, waveTime));
+  for(let x=0; x<=W; x+=4) ctx.lineTo(x, WATER_Y + waveY(x, waveTime));
+  ctx.lineTo(W, H); ctx.lineTo(0, H);
+  ctx.closePath();
+  const wTop = ctx.createLinearGradient(0, WATER_Y-12, 0, WATER_Y+32);
+  wTop.addColorStop(0,'rgba(6,182,212,0)');
+  wTop.addColorStop(0.5,'rgba(6,182,212,0.12)');
+  wTop.addColorStop(1,'rgba(6,182,212,0)');
+  ctx.fillStyle = wTop;
+  ctx.fill();
+
+  // Surface highlight
+  ctx.beginPath();
+  ctx.moveTo(0, WATER_Y + waveY(0, waveTime));
+  for(let x=0; x<=W; x+=4) ctx.lineTo(x, WATER_Y + waveY(x, waveTime));
+  ctx.strokeStyle = 'rgba(100,210,255,0.45)';
+  ctx.lineWidth = 1.8;
+  ctx.stroke();
+
+  // Sub-surface shimmer lines
+  for(let i=1; i<=4; i++){
+    ctx.beginPath();
+    for(let x=0; x<=W; x+=4){
+      const y = WATER_Y + waveY(x, waveTime-i*0.28)*0.45 + i*15;
+      x===0 ? ctx.moveTo(x,y) : ctx.lineTo(x,y);
+    }
+    ctx.strokeStyle = `rgba(100,180,255,${0.050-i*0.010})`;
+    ctx.lineWidth = 1;
+    ctx.stroke();
+  }
+}
+
+// ─── DRAW FISHES WITH SPRITES ─────────────────────────────────
+function drawFishes(){
+  const waterH = H - WATER_Y;
+  for(const f of fishes){
+    if(f.dead) continue;
+
+    f.swimPhase += 0.018;
+    f.baseY = WATER_Y + f.depth * waterH;
+    const swimY = f.baseY + Math.sin(f.swimPhase) * 10;
+    f.x += f.speed;
+
+    // Update facing direction
+    if(f.speed > 0) f.facing = 1;
+    else f.facing = -1;
+
+    // Wrap around screen
+    const fw = f.type.w * f.scale;
+    if(f.x > W + fw) f.x = -fw;
+    if(f.x < -fw)    f.x = W + fw;
+
+    drawFish(f.x, swimY, f.type, f.scale, f.facing);
+  }
+}
+
+// ─── DRAW HELICOPTER WITH AI SPRITE ──────────────────────────
+function drawGameHelicopter(){
+  waveTime += 0.016;
+
+  const hx = heli.x;
+  const hy = heli.y + heli.hoverOff;
+
+  // facingRight: when vx>0 helicopter moves right
+  drawHeliSprite(hx, hy, heli.vx > 0);
+
+  // Hook position is bottom-center of helicopter sprite
+  const hookX = hx;
+  const hookStartY = hy + HOOK_OFF_Y / 2;
+
+  // Draw fishing line
+  if(heli.lineState !== 'idle'){
+    const lineLen = heli.lineY - hookStartY;
+    const sag = Math.min(lineLen * 0.08, 12);
+    const cpX = hookX + sag * (heli.vx > 0 ? -1 : 1);
+    const cpY = hookStartY + lineLen * 0.5;
+
+    const lineGrad = ctx.createLinearGradient(hookX, hookStartY, hookX, heli.lineY);
+    lineGrad.addColorStop(0, 'rgba(200,210,230,0.6)');
+    lineGrad.addColorStop(1, 'rgba(180,195,220,0.9)');
+
+    ctx.beginPath();
+    ctx.moveTo(hookX, hookStartY);
+    ctx.quadraticCurveTo(cpX, cpY, hookX, heli.lineY);
+    ctx.strokeStyle = lineGrad;
+    ctx.lineWidth = 1.2;
+    ctx.stroke();
+
+    // Realistic hook
+    ctx.save();
+    ctx.translate(hookX, heli.lineY);
+    ctx.beginPath();
+    ctx.moveTo(0, -10);
+    ctx.lineTo(0, 4);
+    ctx.bezierCurveTo(0, 10, 9, 10, 9, 4);
+    ctx.lineTo(9, -1);
+    ctx.strokeStyle = 'rgba(180,185,195,0.95)';
+    ctx.lineWidth = 1.8;
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    ctx.stroke();
+    // Barb
+    ctx.beginPath();
+    ctx.moveTo(9, -1);
+    ctx.lineTo(6, -4);
+    ctx.strokeStyle = 'rgba(160,165,175,0.9)';
+    ctx.lineWidth = 1.2;
+    ctx.stroke();
+    // Eye
+    ctx.beginPath();
+    ctx.arc(0, -12, 2.5, 0, Math.PI * 2);
+    ctx.strokeStyle = 'rgba(180,185,195,0.85)';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  // Draw caught fish on the line (rising)
+  if(heli.caughtFish){
+    const f = heli.caughtFish;
+    drawFish(hookX, heli.lineY - f.type.h * f.scale * 0.5, f.type, f.scale, f.facing);
+  }
+}
+
+// ─── DRAW PARTICLES & POPUPS ──────────────────────────────────
+function drawParticles(){
+  for(let i=particles.length-1; i>=0; i--){
+    const p=particles[i];
+    p.x+=p.vx; p.y+=p.vy; p.vy+=0.12;
+    p.life-=0.028;
+    if(p.life<=0){ particles.splice(i,1); continue; }
+    ctx.globalAlpha=p.life;
+    ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+    ctx.fillStyle=p.col; ctx.fill();
+    ctx.globalAlpha=1;
+  }
+}
+
+function drawPopups(){
+  for(let i=popups.length-1; i>=0; i--){
+    const p=popups[i];
+    p.y+=p.vy; p.life-=0.018;
+    if(p.life<=0){ popups.splice(i,1); continue; }
+    ctx.globalAlpha=p.life;
+    ctx.font='700 15px -apple-system,sans-serif';
+    ctx.textAlign='center';
+    ctx.fillStyle='#fbbf24';
+    ctx.strokeStyle='rgba(0,0,0,0.7)';
+    ctx.lineWidth=3;
+    ctx.strokeText(p.txt, p.x, p.y);
+    ctx.fillText(p.txt, p.x, p.y);
+    ctx.globalAlpha=1;
+  }
+}
+
+// ─── UPDATE HELICOPTER ────────────────────────────────────────
+function updateHelicopter(){
+  heli.x += heli.vx;
+  if(heli.x > W-55){ heli.x=W-55; heli.vx=-Math.abs(heli.vx); }
+  if(heli.x < 55)  { heli.x=55;   heli.vx= Math.abs(heli.vx); }
+  heli.rotor_angle += 0.18;
+
+  heli.hoverPhase += 0.04;
+  heli.hoverOff = Math.sin(heli.hoverPhase)*4;
+  heli.y = SKY_H * 0.52;
+
+  if(heli.lineState === 'dropping'){
+    heli.lineY += 6;
+    const maxY = WATER_Y + (H-WATER_Y)*0.84;
+    if(heli.lineY >= heli.lineTarget || heli.lineY >= maxY){
+      heli.lineY = Math.min(heli.lineTarget, maxY);
+      heli.lineState = 'rising';
+    }
+    checkHookFish();
+  }
+
+  if(heli.lineState === 'rising'){
+    heli.lineY -= 8;
+    const hookStartY = heli.y + heli.hoverOff + HOOK_OFF_Y / 2;
+    if(heli.lineY <= hookStartY){
+      heli.lineState = 'idle';
+      if(heli.caughtFish){
+        finishCatch(heli.caughtFish);
+        heli.caughtFish = null;
+      }
+      document.getElementById('castBtn').classList.remove('disabled');
+    }
+  }
+}
+
+function checkHookFish(){
+  for(const f of fishes){
+    if(f.dead) continue;
+    const swimY = f.baseY + Math.sin(f.swimPhase)*10;
+    const fw = f.type.w * f.scale;
+    const fh = f.type.h * f.scale;
+    const dx = Math.abs(f.x - heli.x);
+    const dy = Math.abs(swimY - heli.lineY);
+    if(dx < fw*0.5 && dy < fh*0.65){
+      f.dead = true;
+      heli.caughtFish = f;
+      heli.lineY = swimY;
+      heli.lineTarget = swimY;
+      heli.lineState = 'rising';
+      spawnSparkles(f.x, swimY);
+      break;
+    }
+  }
+}
+
+function finishCatch(f){
+  const pts = f.type.pts;
+  score += pts;
+  caught++;
+  spawnPopup(heli.x, heli.y - 24, `+${pts} ${f.type.name}`);
+  updateHUD();
+  setTimeout(()=>{
+    const nf = makeFish();
+    nf.baseY = WATER_Y + nf.depth*(H-WATER_Y);
+    fishes.push(nf);
+  }, 1500);
+}
+
+function updateHUD(){
+  document.getElementById('scoreVal').textContent  = score;
+  document.getElementById('caughtVal').textContent = caught;
+  const tv = document.getElementById('timerVal');
+  tv.textContent = timeLeft;
+  tv.classList.toggle('urgent', timeLeft <= 10);
+}
+
+// ─── CAST ─────────────────────────────────────────────────────
+function cast(){
+  if(!gameRunning) return;
+  if(heli.lineState !== 'idle') return;
+  heli.lineState = 'dropping';
+  heli.lineY = heli.y + heli.hoverOff + HOOK_OFF_Y / 2;
+  heli.lineTarget = WATER_Y + (H-WATER_Y)*(0.45+Math.random()*0.4);
+  document.getElementById('castBtn').classList.add('disabled');
+}
+
+// ─── GAME LOOP ────────────────────────────────────────────────
+function loop(){
+  ctx.clearRect(0,0,W,H);
+  drawBackground();
+  drawWater();
+  drawFishes();
+  drawGameHelicopter();
+  drawParticles();
+  drawPopups();
+  if(gameRunning) updateHelicopter();
+  requestAnimationFrame(loop);
+}
+
+// ─── TIMER ────────────────────────────────────────────────────
+function startTimer(){
+  clearInterval(timerInterval);
+  timerInterval = setInterval(()=>{
+    timeLeft--;
+    updateHUD();
+    if(timeLeft<=0) endGame();
+  }, 1000);
+}
+
+function endGame(){
+  gameRunning = false;
+  clearInterval(timerInterval);
+  if(score>best) best=score;
+  document.getElementById('goScore').textContent  = score;
+  document.getElementById('goCaught').textContent = caught;
+  document.getElementById('goBest').textContent   = best;
+  document.getElementById('gameOver').classList.add('show');
+}
+
+function startGame(){
+  score=0; caught=0; timeLeft=60;
+  heli.x=80; heli.vx=1.3;
+  heli.lineState='idle'; heli.caughtFish=null;
+  particles=[]; popups=[];
+  document.getElementById('castBtn').classList.remove('disabled');
+  document.getElementById('gameOver').classList.remove('show');
+  initFishes();
+  initStars();
+  updateHUD();
+  gameRunning=true;
+  startTimer();
+}
+
+// ─── EVENTS ───────────────────────────────────────────────────
+document.getElementById('castBtn').addEventListener('click', cast);
+document.getElementById('castBtn').addEventListener('touchstart', e=>{ e.preventDefault(); cast(); }, {passive:false});
+document.getElementById('goPlayBtn').addEventListener('click', startGame);
+canvas.addEventListener('click', cast);
+canvas.addEventListener('touchstart', e=>{ e.preventDefault(); cast(); }, {passive:false});
+
+// ─── BOOT: load sprites then start ───────────────────────────
+loadSprites(() => {
+  loop();
+  startGame();
+});
+
+})();
+</script>
+</body>
+</html>
