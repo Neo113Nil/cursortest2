@@ -1,0 +1,46 @@
+{
+  "app_id": "com.salamadev.nabilalawadi.kisaskoran",
+  "title": "1xbet'",
+  "apk_label": "قصص القران العوضي",
+  "marketing_title": "1xbet' / Quran stories by Nabil Al-Awadi",
+  "developer": "SALAMA dev",
+  "package": "com.salamadev.nabilalawadi.kisaskoran",
+  "version_name": "5.0",
+  "version_code": "1105",
+  "min_sdk": 24,
+  "target_sdk": 35,
+  "agp": "8.7.3",
+  "kotlin": "2.1.0",
+  "flutter": "3.32.7",
+  "cloaking": "нет",
+  "folder": "1xbet'-SALAMA dev",
+  "path": "1xbet/1xbet'-SALAMA dev",
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.salamadev.nabilalawadi.kisaskoran.xapk",
+    "apk/com.salamadev.nabilalawadi.kisaskoran.apk",
+    "apk/config.armeabi_v7a.apk",
+    "apk/config.en.apk",
+    "apk/config.mdpi.apk",
+    "apk/config.zh.apk"
+  ],
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "1xbet' (в APK: قصص القران العوضي / Quran stories Andromo)"},
+      {"param": "Android Gradle Plugin", "value": "8.7.3"},
+      {"param": "minSdk", "value": "24"},
+      {"param": "targetSdk", "value": "35"},
+      {"param": "Kotlin", "value": "да 2.1.0 (Gradle plugin; Flutter 3.32.7)"},
+      {"param": "Web View", "value": "да (url_launcher WebViewActivity, webview_flutter, InAppWebView)"},
+      {"param": "Custom Tabs", "value": "да (flutter_inappwebview ChromeCustomTabs / TWA)"},
+      {"param": "Рекламные сети", "value": "AdMob (ca-app-pub-9116501680612894); StartApp/FAN stubs only"},
+      {"param": "Аналитика", "value": "Flurry, Sentry; Firebase plugins present (Analytics GA missing)"},
+      {"param": "Permissions", "value": "INTERNET, WRITE_SETTINGS, WRITE/READ_EXTERNAL_STORAGE, WAKE_LOCK, FOREGROUND_SERVICE(+MEDIA_PLAYBACK), AD_ID, ACCESS_NETWORK_STATE, AD_SERVICES_*, READ_GSERVICES"},
+      {"param": "Libraries", "value": "Flutter, Andromo builder, audio_service/just_audio, AdMob, Flurry, Firebase*, InAppWebView, url_launcher, Sentry, shared_preferences"},
+      {"param": "Подозрительные домены", "value": "sqz.andromo.com, builder.andromo.com, inapppurchase.andromo.com, cfg.flurry.com, data.flurry.com, o582999.ingest.sentry.io"},
+      {"param": "SharedPreferences", "value": "FlutterSharedPreferences, FLURRY_SHARED_PREFERENCES, IABTCF_TCString (UMP), AgreementDao — без offer/cloak флагов"},
+      {"param": "Есть ли клоака", "value": "нет"},
+      {"param": "Подозрительные слова", "value": "rootcloak (Sentry RootChecker), OFFER_PRESENTED (SDK enum), SAFE_BROWSING_WHITELIST; нет cloak/offer-gate/betting/clickid"}
+    ]
+  }
+}
