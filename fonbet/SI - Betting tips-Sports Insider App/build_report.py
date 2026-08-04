@@ -29,6 +29,9 @@ H2 = ParagraphStyle("H2", fontName="DJ-B", fontSize=12.5, leading=16,
                     textColor=colors.HexColor("#12263f"))
 BODY = ParagraphStyle("BODY", fontName="DJ", fontSize=9.3, leading=13.4,
                       alignment=TA_LEFT, spaceAfter=5)
+BULLET = ParagraphStyle("BULLET", fontName="DJ", fontSize=9.3, leading=13.4,
+                        alignment=TA_LEFT, spaceAfter=3,
+                        leftIndent=9, firstLineIndent=-9)
 CELL = ParagraphStyle("CELL", fontName="DJ", fontSize=8.2, leading=10.8)
 CELL_B = ParagraphStyle("CELL_B", fontName="DJ-B", fontSize=8.2, leading=10.8)
 SMALL = ParagraphStyle("SMALL", fontName="DJ", fontSize=8.4, leading=11.6,
@@ -104,11 +107,22 @@ PERMISSIONS = (
 AD_NETWORKS = "нет"
 
 ANALYTICS = (
-    "AppsFlyer (атрибуция), AppMetrica / Yandex (io.appmetrica), LogRocket "
-    "(session replay), Firebase Analytics / Google Analytics for Firebase "
-    "(measurement), Firebase Cloud Messaging, Firebase Remote Config, "
-    "Firebase Installations, Sentry (io.sentry, DSN sentry.sport-insights.com), "
-    "Google Play Install Referrer, Google Advertising ID / ads-identifier"
+    "AppsFlyer 6.17.5, AppMetrica (Yandex) 8.0.0 — включая модули "
+    "analytics-screenshot, analytics-identifiers, analytics-id-sync, "
+    "analytics-location, analytics-billing и analytics-ad-revenue, "
+    "LogRocket 1.57.4 (запись сессий), Sentry 8.30.0 "
+    "(sentry-android-replay, sentry-android-fragment, "
+    "sentry-android-navigation, sentry-okhttp, sentry-android-ndk; "
+    "DSN sentry.sport-insights.com, send-default-pii = true), "
+    "Firebase Analytics 23.0.0 / Google Analytics for Firebase "
+    "(play-services-measurement 23.0.0), Firebase Cloud Messaging 25.0.1, "
+    "Firebase Remote Config 23.0.1 + Firebase A/B Testing (abt), "
+    "Firebase Installations, Firebase datatransport, "
+    "Google Play Install Referrer 2.2, Xiaomi/MIUI home referrer 1.0.0.7, "
+    "Google Advertising ID (play-services-ads-identifier 18.2.0), "
+    "Google App Set ID, собственная аналитика приложения "
+    "(v10/metrics, v10/pushes, v10/live/view, v10/advert/{id}/view и "
+    "v10/advert/{id}/click)"
 )
 
 LIBRARIES = (
@@ -117,36 +131,39 @@ LIBRARIES = (
     "androidx.constraintlayout 2.2.1, androidx.coordinatorlayout, "
     "androidx.recyclerview, androidx.viewpager / viewpager2, "
     "androidx.cardview, androidx.drawerlayout, androidx.swiperefreshlayout, "
-    "androidx.biometric 1.1.0, androidx.credentials "
-    "(+ play-services-auth), androidx.datastore (preferences), "
-    "androidx.room 2.8.4, androidx.sqlite, androidx.work 2.11.0, "
-    "androidx.lifecycle, androidx.navigation, androidx.startup, "
-    "androidx.emoji2, androidx.exifinterface, androidx.profileinstaller, "
-    "androidx.privacysandbox.ads, androidx.print, "
-    "com.google.android.material, Kotlin stdlib 2.2.21, "
-    "kotlinx-coroutines 1.10.2, OkHttp3, Okio, Gson, "
-    "Koin (DI), Google Play Billing 7.1.1, "
-    "Google Play Services (ads-identifier 18.2.0, auth, base/basement 18.10.0, "
-    "appset, cloud-messaging, measurement, location, tasks, integrity, "
-    "fido, identity-credentials), Google Play app-update, "
-    "Firebase (analytics, messaging, remote-config, installations, "
-    "datatransport, common), AppsFlyer SDK, AppMetrica SDK, "
-    "LogRocket Android SDK, Sentry Android SDK, "
-    "androidx.webkit / систем WebView wrappers (ViewPageFragment)"
+    "androidx.biometric 1.1.0, androidx.credentials (+ play-services-auth), "
+    "androidx.datastore (preferences), androidx.room 2.8.4, androidx.sqlite, "
+    "androidx.work 2.11.0, androidx.lifecycle, androidx.navigation, "
+    "androidx.startup, androidx.emoji2, androidx.exifinterface, "
+    "androidx.profileinstaller, androidx.privacysandbox.ads, androidx.print, "
+    "androidx.databinding / viewbinding, com.google.android.material, "
+    "Kotlin stdlib 2.2.21, kotlinx-coroutines 1.10.2, OkHttp3, Okio, "
+    "Retrofit, Gson, Coil (загрузка изображений), Koin (внедрение "
+    "зависимостей), Google Play Billing 7.1.1, Google Play app-update, "
+    "Google Play Integrity, Google Play Services (ads-identifier 18.2.0, "
+    "auth, base / basement 18.10.0, appset, cloud-messaging, measurement, "
+    "location, tasks, fido, identity-credentials), Firebase (analytics, "
+    "messaging, remote-config, installations, datatransport, common), "
+    "AppsFlyer SDK, AppMetrica SDK (+ модули ad-revenue admob / applovin / "
+    "fyber / ironsource), LogRocket Android SDK, Sentry Android SDK, "
+    "системный android.webkit.WebView"
 )
 
 SHARED_PREFS = (
-    "файлы «user» и «settings»: gaid и advertising_id_saved_at "
-    "(рекламный номер устройства), language (язык интерфейса), "
-    "fbToken / fbTokenLastTime (токен Firebase Messaging), "
-    "firstStart (флаг первого запуска), DEPRECATED_VERSION_CODE, "
-    "rating, announcementId / announcementIdCreate / announcementIsRead, "
-    "pressed_close, push_on_channel / push_on_channel_live_passed, "
-    "alternativePaymentPriority, ExpiredForecastsOrder, "
-    "CPEnableSupportParams; плюс кэш ключей Remote Config "
-    "(rc_live_passage, rc_roi_live, rc_premium_*, rc_express_*, "
-    "rc_diamond_*, rc_sku_json, rc_version_deprecated, "
-    "min_odds_premium / min_odds_express, enable_clear_data, enable_expedited)"
+    "два файла настроек — «user» и «settings». Хранят: рекламный номер "
+    "устройства (gaid) и время его получения (advertising_id_saved_at), "
+    "язык интерфейса (language, langWorkKey), push-токен Firebase (fbToken, "
+    "fbTokenLastTime), флаг первого запуска (firstStart), готовую "
+    "HTML-страницу букмекерского «персонального бонуса» (rate) и время "
+    "следующей проверки этой страницы (rating), готовую HTML-страницу "
+    "объявления (announcement) вместе с announcementId, "
+    "announcementIdCreate, announcementIsRead, а также pressed_close, "
+    "push_on_channel / push_on_channel_live_passed, alternativePaymentPriority, "
+    "DEPRECATED_VERSION_CODE, ExpiredForecastsOrder, CPEnableSupportParams, "
+    "idPrediction, notifyId; отдельно кэш удалённого конфига Firebase "
+    "(rc_live_passage, rc_roi_live, rc_premium_*, rc_express_*, rc_diamond_*, "
+    "rc_sku_json, rc_version_deprecated, min_odds_premium / min_odds_express, "
+    "enable_clear_data, enable_expedited)"
 )
 
 SUSPICIOUS_DOMAINS = [
@@ -154,31 +171,17 @@ SUSPICIOUS_DOMAINS = [
     "sport-insider.club",
 ]
 
-DOMAIN_NOTES = {
-    "insider.sports.com": (
-        "В коде это базовый адрес для встроенного окна сайта: HTML-страницы "
-        "новостей и материалов подгружают с опорой на https://insider.sports.com/. "
-        "Сейчас DNS не отвечает, поэтому живая страница не открывается; "
-        "по VirusTotal детекций нет (0/91). Это свой контентный адрес приложения, "
-        "а не скрытый «gate» для оффера."
-    ),
-    "sport-insider.club": (
-        "Основной сервер приложения: базовый адрес API "
-        "https://sport-insider.club/api/ и BASE_URL в настройках AppMetrica / Sentry. "
-        "Сюда уходят обычные запросы прогнозов, подписок и онбординга. "
-        "По проверке пайплайна сейчас отдаёт 404, детекции VirusTotal 0/91; "
-        "выглядит как собственный бэкенд Sports Insider, а не чужой рекламный оффер."
-    ),
-}
-
 SUSPICIOUS_WORDS = (
-    "betting, Sports betting, betting_training, Betting_strategies, "
-    "Corridor_betting, hand_betting, Value_betting, "
-    "bonus, Bonuses, Get_bonus, how_to_get_a_bonus, personal_bonus, "
-    "premium_bonus, express_bonus, DelayStavkaBonus, one_bonus, "
-    "offer, offer_is_limited, offerId / offerIdStrike (SKU подписок), "
-    "ResponsibleGaming / gambling (кнопка ответственной игры), "
-    "gaid, redirect (навигация/открытие ссылок партнёров)"
+    "betting, Sports_betting, betting_training, Betting_strategies, "
+    "Corridor_betting, hand_betting, Value_betting, bookmaker, "
+    "open_bookmaker, recommendation_how_to_register_in_bookmaker_office, "
+    "bonus, Bonuses, Get_bonus, get_bonus, personal_bonus, onPersonalBonus, "
+    "onMyBonuses, DelayStavkaBonus («Place a bet and get a bonus»), "
+    "DelayStavkaBonus1 («Get bonus from partners»), partners, offer, "
+    "offer_is_limited, offerId / offerIdStrike, advert, urlBet, imageBet, "
+    "v10/advert/{id}/click, v10/advert/{id}/view, ResponsibleGaming, "
+    "gaid, region, rate, rating, openUrlByBrowser, AndroidMainInterface, "
+    "insightsapp://bonuses"
 )
 
 MAIN_ROWS = [
@@ -195,8 +198,166 @@ MAIN_ROWS = [
     ("Libraries", LIBRARIES),
     ("Подозрительные домены", ", ".join(SUSPICIOUS_DOMAINS)),
     ("SharedPreferences", SHARED_PREFS),
-    ("Есть ли клоака", "нет"),
+    ("Есть ли клоака", "да"),
     ("Подозрительные слова", SUSPICIOUS_WORDS),
+]
+
+DATA_ITEMS = [
+    ("постоянный номер телефона",
+     "служебный номер устройства, который Android выдаёт приложениям "
+     "(в запросе он называется device_id). По нему сервер узнаёт конкретный "
+     "телефон при каждом обращении, даже если человек ничего не вводил."),
+    ("прежний номер телефона",
+     "если служебный номер устройства поменялся, старое значение тоже "
+     "отправляется (device_id_old), чтобы сервер связал нового посетителя "
+     "со старой историей этого же человека."),
+    ("рекламный номер устройства",
+     "отдельный номер телефона для рекламы (gaid). Именно по нему "
+     "рекламные партнёры отличают одно устройство от другого и считают, "
+     "кто откуда пришёл."),
+    ("номер устройства в системе AppMetrica",
+     "собственный опознавательный номер, который телефону присваивает "
+     "счётчик посещаемости Яндекса (appmetrica_device_id)."),
+    ("номер устройства в системе AppsFlyer",
+     "опознавательный номер из системы учёта рекламных переходов "
+     "(appsflyer_id); по нему видно, по какой именно рекламе человек "
+     "установил приложение."),
+    ("ключ для присылки уведомлений",
+     "адрес телефона в службе уведомлений Google (firebase_token). "
+     "С ним сервер может в любой момент прислать человеку сообщение "
+     "прямо на экран."),
+    ("вид телефона и магазина",
+     "признак «android_google» (поле os) — то есть Android-телефон "
+     "из Google Play."),
+    ("версия приложения",
+     "текстовая версия 1.2.44.123 (version_client) и её внутренний "
+     "номер 123 (version_code)."),
+    ("язык телефона",
+     "на каком языке настроен телефон. Приложение приводит его к «ru» "
+     "или «en» и отправляет в заголовке запроса вместе с полным "
+     "обозначением языка и страны — именно по языку решается, "
+     "показывать ли человеку страницу букмекера."),
+    ("страна человека",
+     "название страны, взятое из настроек телефона; уходит в запрос "
+     "отдельным полем «region» перед показом страницы букмекера."),
+    ("личный пропуск в приложении",
+     "личный ключ учётной записи (token), который выдаёт сам сервер "
+     "и который подставляется в каждый запрос."),
+    ("марка и модель телефона",
+     "модель, производитель, название сборки и внутренние обозначения "
+     "железа (MODEL, PRODUCT, HARDWARE, DISPLAY) — уходят в служебных "
+     "сообщениях о работе приложения."),
+    ("версия Android",
+     "какая версия системы стоит на телефоне; отправляется вместе "
+     "с данными о модели."),
+    ("часовой пояс и время",
+     "смещение часового пояса и точное время обращения — по ним видно, "
+     "в каком примерно поясе находится человек."),
+    ("действия человека внутри приложения",
+     "названия событий, их значения и время (поля event, event_value, "
+     "created_at) уходят пачками на собственный адрес приложения; "
+     "отдельно уходит список полученных уведомлений и просмотренных "
+     "сообщений."),
+    ("запись работы экрана",
+     "встроенная система LogRocket пишет, что происходит на экране "
+     "и как человек нажимает, и отправляет это на свои адреса."),
+    ("сведения об ошибках вместе с личными данными",
+     "система отчётов об ошибках Sentry включена в режиме, при котором "
+     "разрешено передавать личные сведения о пользователе и структуру "
+     "экрана (send-default-pii = true, attach-view-hierarchy = true)."),
+]
+
+BLOCKS = [
+    ("Как собираются",
+     "Сбор начинается сразу после заставки, на самом первом шаге "
+     "знакомства приложения с телефоном, и человек об этом ничего "
+     "не спрашивается. Служебный номер устройства приложение читает "
+     "прямо из системных настроек Android, рекламный номер запрашивает "
+     "у сервисов Google и кладёт себе в память на сутки, чтобы не "
+     "дёргать систему каждый раз. Опознавательные номера из счётчиков "
+     "Яндекса и AppsFlyer, а также ключ для уведомлений приложение "
+     "получает у самих этих служб при запуске — все четыре запроса "
+     "делаются одновременно, с ожиданием не дольше половины секунды, "
+     "чтобы человек не заметил задержку. Язык и страну приложение берёт "
+     "из настроек телефона, версию и модель — у самой системы. Никаких "
+     "отдельных окон с просьбой разрешить это не показывается: с точки "
+     "зрения человека просто идёт заставка, а затем открывается обычный "
+     "экран с прогнозами. Отдельно, уже в фоне, работает служба записи "
+     "происходящего на экране и служба отчётов об ошибках — они "
+     "включаются в момент старта программы."),
+    ("Куда отправляются",
+     "Основной адрес один и тот же для всех запросов: https://sport-insider.club/api/ — "
+     "он зашит прямо в коде, запасных или собираемых по кусочкам адресов "
+     "там нет. На него уходит и первое «знакомство» с телефоном "
+     "(v10/user/identify), и запрос рекламных мест (v10/advert), и обе "
+     "проверки страницы букмекера (v10/rating/exist и v10/rating), и "
+     "статистика действий. Этот же адрес продублирован в настройках "
+     "счётчика Яндекса и в отчётах об ошибках как «BASE_URL», а сами "
+     "отчёты об ошибках уходят на отдельный адрес автора приложения — "
+     "sentry.sport-insights.com. Записи того, что происходит на экране, "
+     "уходят в службу LogRocket. Всё это происходит тихо, в фоне, без "
+     "какого-либо экрана или подтверждения. Полученную от сервера "
+     "страницу приложение сохраняет в собственную память телефона, "
+     "чтобы потом показать её уже без интернета."),
+    ("Как фильтруются пользователи",
+     "Первое сито стоит в самом приложении и работает по языку: перед "
+     "тем как вообще обратиться к серверу за страницей букмекера, "
+     "приложение сравнивает язык, который у него выбран, с языком "
+     "телефона, и если они не совпадают — сразу считает, что страницы "
+     "нет, и никуда не ходит. Язык телефона при этом приводится всего "
+     "к двум значениям: «ru» или «en», и это значение подставляется "
+     "в каждый запрос. Второе сито — географическое: в запрос кладётся "
+     "название страны человека, взятое из настроек телефона, и решение "
+     "«есть для этой страны страница или нет» принимает уже сервер. "
+     "Третье ограничение — по времени: результат проверки запоминается "
+     "на десять минут, чтобы не спрашивать сервер слишком часто. Никаких "
+     "списков стран, проверок на робота или на эмулятор внутри самого "
+     "приложения нет — в коде видно только отправку признаков (язык, "
+     "страна, номера устройства, версия), а окончательное решение, кому "
+     "показать букмекерскую страницу, а кому оставить обычное "
+     "приложение, принимает сервер по адресу sport-insider.club. "
+     "От этого же ответа зависит и меню: пункт «Personal bonus» "
+     "появляется в боковом меню только тогда, когда серверная проверка "
+     "прошла успешно, иначе на его месте оказывается обычный «Избранное»."),
+    ("Что возвращается",
+     "Сервер отвечает двумя разными способами. На первую, короткую "
+     "проверку он возвращает только числовой код: 200 означает "
+     "«для этого человека страница есть», 404 — «страницы нет», 401 — "
+     "«доступ закрыт». Если пришло «есть», приложение делает второй "
+     "запрос и получает уже готовую веб-страницу целиком — не ссылку, "
+     "а полный текст страницы, который сразу кладётся в память "
+     "телефона под именем «rate». Похожим образом приходят и "
+     "«объявления»: уведомление приносит номер объявления, приложение "
+     "скачивает по нему готовую страницу и сохраняет её под именем "
+     "«announcement». Отдельно есть ответ на запрос рекламных мест: "
+     "там сервер присылает список готовых блоков с картинкой, "
+     "внешней ссылкой и номером для каждого места в приложении "
+     "(шапка, нижнее меню, экраны прогнозов, кнопка «Live», экран "
+     "после оплаты). Если список пуст, блоки просто не появляются, "
+     "и человек видит обычные экраны без рекламных вставок."),
+    ("Как показывается оффер или белая версия",
+     "Когда сервер отдал страницу, она открывается внутри самого "
+     "приложения, во встроенном окне сайта — отдельного браузера "
+     "человек не видит, всё выглядит как обычный раздел программы. "
+     "Попасть туда можно двумя путями: через пункт бокового меню "
+     "«Personal bonus» или по служебной ссылке вида "
+     "insightsapp://bonuses, которая может прийти, например, из "
+     "уведомления. В момент открытия этого окна приложение само "
+     "записывает себе событие «open_bookmaker» — то есть по коду прямо "
+     "видно, что это страница букмекерской конторы, а не обычный "
+     "раздел с прогнозами. Дальше любое нажатие на этой странице "
+     "выводит человека наружу: приложение перехватывает переход и "
+     "открывает адрес во внешнем браузере телефона. Более того, "
+     "страница, пришедшая с сервера, может сама скомандовать "
+     "приложению открыть любой адрес в браузере и даже подставить "
+     "к нему свои служебные пометки — для этого во встроенном окне "
+     "специально оставлен канал связи с названиями "
+     "AndroidMainInterface и AndroidMainFunctionV1. Так же ведут "
+     "себя и рекламные блоки: нажатие на такой блок сначала "
+     "отмечается на сервере как «клик», а затем открывает "
+     "полученный адрес во внешнем браузере. Если же сервер ответил "
+     "«страницы нет» либо язык телефона не подошёл, ничего не "
+     "открывается и человеку просто остаётся обычное приложение."),
 ]
 
 
@@ -219,11 +380,14 @@ def build():
         "SI - Betting tips &mdash; Sports Insider App &mdash; com.sports.insider "
         "(версия 1.2.44.123)", BODY))
     story.append(Paragraph(
-        "Разобраны: xapk/apk-сплиты, meta.json, domain_checks, "
+        "Разобраны: xapk и apk-сплиты, meta.json, domain_checks, "
         "AndroidManifest.xml, strings.xml, network_security_config и "
-        "decompiled/sources (MyApp → SplashActivity → MainActivity, "
-        "WebView ViewPage*, API sport-insider.club, AppsFlyer / AppMetrica / "
-        "LogRocket / Firebase / Sentry).", SMALL))
+        "decompiled/sources — запуск (MyApp, SplashActivity, MainActivity, "
+        "онбординг), сетевой слой (Retrofit/OkHttp, sport-insider.club), "
+        "встроенные окна сайта (ViewPageFragment, ViewPageEventFragment, "
+        "ViewCloudFragment), каналы связи страницы с приложением, "
+        "сохранённые настройки и подключённые сервисы (AppsFlyer, "
+        "AppMetrica, LogRocket, Firebase, Sentry).", SMALL))
 
     story.append(Paragraph("SDK / стек", H2))
     story.append(kv_table(MAIN_ROWS, header=("Параметр", "Значение")))
@@ -242,10 +406,16 @@ def build():
         story.append(Paragraph("Проверка домена: %s" % esc(dom), H2))
         story.append(kv_table(rows, widths=(62 * mm, 108 * mm),
                               header=("Параметр / движок", "Значение / вердикт")))
-        note = DOMAIN_NOTES.get(dom)
-        if note:
-            story.append(Paragraph(esc(note), BODY))
         story.append(Spacer(1, 3 * mm))
+
+    story.append(Paragraph("Какие данные собираются", H2))
+    for name, descr in DATA_ITEMS:
+        story.append(Paragraph(
+            "&bull; %s &rarr; %s" % (esc(name), esc(descr)), BULLET))
+
+    for title, text in BLOCKS:
+        story.append(Paragraph(title, H2))
+        story.append(Paragraph(esc(text), BODY))
 
     doc.build(story)
     print("saved:", OUT)
