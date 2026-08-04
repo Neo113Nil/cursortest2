@@ -1,0 +1,16 @@
+package com.appsflyer.internal;
+
+import com.appsflyer.AFInAppEventType;
+
+/* JADX INFO: compiled from: r8-map-id-020a1517951ead57be77a6b773195444ecc812bf491d4c7c9fe6933b01540740 */
+/* JADX INFO: loaded from: classes.dex */
+public final class AFh1cSDK extends AFh1fSDK {
+    public AFh1cSDK() {
+        super(AFInAppEventType.PURCHASE, Boolean.TRUE);
+    }
+
+    @Override // com.appsflyer.internal.AFh1mSDK
+    public final AFe1pSDK AFAdRevenueData() {
+        return AFe1pSDK.PURCHASE_VALIDATE;
+    }
+}

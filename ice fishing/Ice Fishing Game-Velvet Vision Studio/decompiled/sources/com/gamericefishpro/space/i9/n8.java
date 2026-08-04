@@ -1,0 +1,14 @@
+package com.gamericefishpro.space.i9;
+
+/* JADX INFO: compiled from: r8-map-id-020a1517951ead57be77a6b773195444ecc812bf491d4c7c9fe6933b01540740 */
+/* JADX INFO: loaded from: classes.dex */
+public final class n8 implements m8 {
+    public static final k4 a;
+
+    static {
+        com.gamericefishpro.space.b4.f fVar = new com.gamericefishpro.space.b4.f(j4.a(), true, true);
+        fVar.d("measurement.sdk.collection.enable_extend_user_property_size", true);
+        a = fVar.d("measurement.sdk.collection.last_deep_link_referrer_campaign2", false);
+        fVar.c("measurement.id.sdk.collection.last_deep_link_referrer2", 0L);
+    }
+}

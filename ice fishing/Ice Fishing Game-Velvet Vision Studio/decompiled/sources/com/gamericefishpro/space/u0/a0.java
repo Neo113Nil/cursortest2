@@ -1,0 +1,22 @@
+package com.gamericefishpro.space.u0;
+
+import com.gamericefishpro.space.t0.h2;
+
+/* JADX INFO: compiled from: r8-map-id-020a1517951ead57be77a6b773195444ecc812bf491d4c7c9fe6933b01540740 */
+/* JADX INFO: loaded from: classes.dex */
+public final class a0 extends j0 {
+    public static final a0 c = new a0(0, 0, 3);
+
+    @Override // com.gamericefishpro.space.u0.j0
+    public final void a(com.gamericefishpro.space.d4.z zVar, com.gamericefishpro.space.t0.c cVar, h2 h2Var, com.gamericefishpro.space.u6.q qVar, k0 k0Var) {
+        if (h2Var.n != 0) {
+            com.gamericefishpro.space.t0.s.a("Cannot reset when inserting");
+        }
+        h2Var.G();
+        h2Var.t = 0;
+        h2Var.u = h2Var.o() - h2Var.h;
+        h2Var.i = 0;
+        h2Var.j = 0;
+        h2Var.o = 0;
+    }
+}

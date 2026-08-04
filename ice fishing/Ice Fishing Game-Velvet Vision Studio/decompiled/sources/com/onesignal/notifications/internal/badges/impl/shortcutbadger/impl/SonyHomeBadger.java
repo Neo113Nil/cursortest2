@@ -1,0 +1,94 @@
+package com.onesignal.notifications.internal.badges.impl.shortcutbadger.impl;
+
+import android.content.AsyncQueryHandler;
+import android.content.ComponentName;
+import android.content.ContentResolver;
+import android.content.ContentValues;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Looper;
+import java.util.Arrays;
+import java.util.List;
+
+/* JADX INFO: compiled from: r8-map-id-020a1517951ead57be77a6b773195444ecc812bf491d4c7c9fe6933b01540740 */
+/* JADX INFO: loaded from: classes.dex */
+public class SonyHomeBadger implements com.gamericefishpro.space.ff.a {
+    private static final String INTENT_ACTION = "com.sonyericsson.home.action.UPDATE_BADGE";
+    private static final String INTENT_EXTRA_ACTIVITY_NAME = "com.sonyericsson.home.intent.extra.badge.ACTIVITY_NAME";
+    private static final String INTENT_EXTRA_MESSAGE = "com.sonyericsson.home.intent.extra.badge.MESSAGE";
+    private static final String INTENT_EXTRA_PACKAGE_NAME = "com.sonyericsson.home.intent.extra.badge.PACKAGE_NAME";
+    private static final String INTENT_EXTRA_SHOW_MESSAGE = "com.sonyericsson.home.intent.extra.badge.SHOW_MESSAGE";
+    private static final String PROVIDER_COLUMNS_ACTIVITY_NAME = "activity_name";
+    private static final String PROVIDER_COLUMNS_BADGE_COUNT = "badge_count";
+    private static final String PROVIDER_COLUMNS_PACKAGE_NAME = "package_name";
+    private static final String PROVIDER_CONTENT_URI = "content://com.sonymobile.home.resourceprovider/badge";
+    private static final String SONY_HOME_PROVIDER_NAME = "com.sonymobile.home.resourceprovider";
+    private final Uri BADGE_CONTENT_URI = Uri.parse(PROVIDER_CONTENT_URI);
+    private AsyncQueryHandler mQueryHandler;
+
+    /* JADX INFO: compiled from: r8-map-id-020a1517951ead57be77a6b773195444ecc812bf491d4c7c9fe6933b01540740 */
+    public class a extends AsyncQueryHandler {
+        public a(ContentResolver contentResolver) {
+            super(contentResolver);
+        }
+    }
+
+    private ContentValues createContentValues(int i, ComponentName componentName) {
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(PROVIDER_COLUMNS_BADGE_COUNT, Integer.valueOf(i));
+        contentValues.put(PROVIDER_COLUMNS_PACKAGE_NAME, componentName.getPackageName());
+        contentValues.put(PROVIDER_COLUMNS_ACTIVITY_NAME, componentName.getClassName());
+        return contentValues;
+    }
+
+    private static void executeBadgeByBroadcast(Context context, ComponentName componentName, int i) {
+        Intent intent = new Intent(INTENT_ACTION);
+        intent.putExtra(INTENT_EXTRA_PACKAGE_NAME, componentName.getPackageName());
+        intent.putExtra(INTENT_EXTRA_ACTIVITY_NAME, componentName.getClassName());
+        intent.putExtra(INTENT_EXTRA_MESSAGE, String.valueOf(i));
+        intent.putExtra(INTENT_EXTRA_SHOW_MESSAGE, i > 0);
+        context.sendBroadcast(intent);
+    }
+
+    private void executeBadgeByContentProvider(Context context, ComponentName componentName, int i) {
+        if (i < 0) {
+            return;
+        }
+        ContentValues contentValuesCreateContentValues = createContentValues(i, componentName);
+        if (Looper.myLooper() != Looper.getMainLooper()) {
+            insertBadgeSync(context, contentValuesCreateContentValues);
+            return;
+        }
+        if (this.mQueryHandler == null) {
+            this.mQueryHandler = new a(context.getApplicationContext().getContentResolver());
+        }
+        insertBadgeAsync(contentValuesCreateContentValues);
+    }
+
+    private void insertBadgeAsync(ContentValues contentValues) {
+        this.mQueryHandler.startInsert(0, null, this.BADGE_CONTENT_URI, contentValues);
+    }
+
+    private void insertBadgeSync(Context context, ContentValues contentValues) {
+        context.getApplicationContext().getContentResolver().insert(this.BADGE_CONTENT_URI, contentValues);
+    }
+
+    private static boolean sonyBadgeContentProviderExists(Context context) {
+        return context.getPackageManager().resolveContentProvider(SONY_HOME_PROVIDER_NAME, 0) != null;
+    }
+
+    @Override // com.gamericefishpro.space.ff.a
+    public void executeBadge(Context context, ComponentName componentName, int i) {
+        if (sonyBadgeContentProviderExists(context)) {
+            executeBadgeByContentProvider(context, componentName, i);
+        } else {
+            executeBadgeByBroadcast(context, componentName, i);
+        }
+    }
+
+    @Override // com.gamericefishpro.space.ff.a
+    public List<String> getSupportLaunchers() {
+        return Arrays.asList("com.sonyericsson.home", "com.sonymobile.home");
+    }
+}

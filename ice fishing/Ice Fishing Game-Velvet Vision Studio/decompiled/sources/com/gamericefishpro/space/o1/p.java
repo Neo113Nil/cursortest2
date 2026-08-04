@@ -1,0 +1,18 @@
+package com.gamericefishpro.space.o1;
+
+import android.graphics.Shader;
+
+/* JADX INFO: compiled from: r8-map-id-020a1517951ead57be77a6b773195444ecc812bf491d4c7c9fe6933b01540740 */
+/* JADX INFO: loaded from: classes.dex */
+public final class p extends i0 {
+    public final /* synthetic */ Shader h;
+
+    public p(Shader shader) {
+        this.h = shader;
+    }
+
+    @Override // com.gamericefishpro.space.o1.i0
+    public final Shader H(long j) {
+        return this.h;
+    }
+}
