@@ -1,0 +1,10 @@
+package defpackage;
+
+/* compiled from: r8-map-id-3663cbcef52f1a493ceac7deeb6c50e305d4d0c9f83e91180cb6ce540f71d6b5 */
+/* loaded from: classes.dex */
+public final /* synthetic */ class uf0 implements dx {
+    @Override // defpackage.dx
+    public final c9 qoPGr6Ce(c9 c9Var) {
+        return c9Var;
+    }
+}

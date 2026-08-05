@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_nav_bench"
+        android:id="@+id/fragment_sauce_bench"
+        android:title="@string/nav_sauce_bench"/>
+    <item
+        android:icon="@drawable/ic_nav_shelf"
+        android:id="@+id/fragment_pair_shelf"
+        android:title="@string/nav_pair_shelf"/>
+    <item
+        android:icon="@drawable/ic_nav_sprint"
+        android:id="@+id/fragment_sort_sprint"
+        android:title="@string/nav_sort_sprint"/>
+    <item
+        android:icon="@drawable/ic_nav_ledger"
+        android:id="@+id/fragment_taste_ledger"
+        android:title="@string/nav_taste_ledger"/>
+</menu>

@@ -1,0 +1,12 @@
+package defpackage;
+
+/* compiled from: r8-map-id-3663cbcef52f1a493ceac7deeb6c50e305d4d0c9f83e91180cb6ce540f71d6b5 */
+/* loaded from: classes.dex */
+public abstract class b10 {
+    public static final amk52bBQ NCTxEWno;
+
+    static {
+        Integer num = pn.qoPGr6Ce;
+        NCTxEWno = (num == null || num.intValue() >= 34) ? new nz() : new pg();
+    }
+}
