@@ -91,6 +91,22 @@ def parse_domain_checks_md(path):
 
 
 def main():
+    domain_tables = parse_domain_checks_md(CHECKS_MD)
+    # Кастомные/неочевидные из domain_checks (без крупных SDK: Яндекс AppMetrica/Varioqub, GitHub).
+    # config.ru — имя language-split в APK; dispatchers.io — совпадение с Kotlin Dispatchers.IO;
+    # оба попали в пайплайн проверки и остаются как неочевидные хосты из артефактов.
+    suspicious = [
+        d
+        for d, _ in domain_tables
+        if d
+        not in {
+            "api.githubcopilot.com",
+            "app.uaas.yandex.ru",
+            "appmetrica.io",
+        }
+    ]
+    suspicious_cell = ", ".join(suspicious) if suspicious else "нет"
+
     sdk_rows = [
         ("Название приложения", "Chicken Road 2"),
         ("Android Gradle Plugin", "8.6.0"),
@@ -116,10 +132,7 @@ def main():
             "com.google.android.gms (ads-identifier, basement, tasks), "
             "kotlinx-coroutines",
         ),
-        (
-            "Подозрительные домены",
-            "api.githubcopilot.com, app.uaas.yandex.ru, appmetrica.io, config.ru, dispatchers.io",
-        ),
+        ("Подозрительные домены", suspicious_cell),
         (
             "SharedPreferences",
             "FlutterSharedPreferences (игровые значения и флаги); "
@@ -132,7 +145,7 @@ def main():
         ("Есть ли клоака", "да"),
         (
             "Подозрительные слова",
-            "openCrossing, trail, lane_crossing, fetchConfig, activateConfig, getString, url, uri",
+            "openCrossing, trail, lane_crossing, fetchConfig, activateConfig",
         ),
     ]
 
@@ -148,8 +161,10 @@ def main():
     story.append(Paragraph("SDK / стек", H1))
     story.append(kv_table(sdk_rows, header=("Параметр", "Значение")))
 
-    domain_tables = parse_domain_checks_md(CHECKS_MD)
+    suspicious_set = set(suspicious)
     for domain, rows in domain_tables:
+        if domain not in suspicious_set:
+            continue
         story.append(Paragraph("Проверка домена: %s" % esc(domain), H2))
         story.append(kv_table(rows, header=("Параметр / движок", "Значение / вердикт")))
 
