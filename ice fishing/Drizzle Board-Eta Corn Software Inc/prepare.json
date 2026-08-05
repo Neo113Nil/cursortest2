@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "source": "apkcombo:playwright",
+  "package": "com.kolosta.rejin.jilosa",
+  "version_name": "1.0",
+  "version_code": 1,
+  "xapk": "com.kolosta.rejin.jilosa_1.0.xapk",
+  "apks": [
+    "com.kolosta.rejin.jilosa-1.apk",
+    "com.kolosta.rejin.jilosa-1-config.xxhdpi.apk",
+    "apk/com.kolosta.rejin.jilosa.apk",
+    "apk/config.xxhdpi.apk",
+    "apk/com.kolosta.rejin.jilosa-1.apk",
+    "apk/com.kolosta.rejin.jilosa-1-config.xxhdpi.apk"
+  ],
+  "base_apk": "apk/com.kolosta.rejin.jilosa.apk",
+  "jadx": {
+    "ok": true,
+    "out_dir": "decompiled"
+  },
+  "cloaking": "нет",
+  "notes": "Downloaded via Playwright from APKCombo (APKPure/CLI blocked). No INTERNET permission; local Room DB app (Drizzle Board food pairings). Kotlin Dispatchers.IO is not a network domain."
+}
