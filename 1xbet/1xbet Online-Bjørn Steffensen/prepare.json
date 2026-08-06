@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "apks": [
+    "com.neonBubblePop-3-asset.apk",
+    "com.neonBubblePop-3-config.arm64_v8a.apk",
+    "com.neonBubblePop-3.apk",
+    "com.neonBubblePop-3-config.xxhdpi.apk",
+    "com.neonBubblePop-3-config.en.apk"
+  ],
+  "base_apk": "com.neonBubblePop-3.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": " 0 of 5923 (0%)\nINFO  - progress: 868 of 5923 (14%)\nINFO  - progress: 875 of 5923 (14%)\nINFO  - progress: 893 of 5923 (15%)\nINFO  - progress: 954 of 5923 (16%)\nINFO  - progress: 1327 of 5923 (22%)\nINFO  - progress: 1671 of 5923 (28%)\nINFO  - progress: 1973 of 5923 (33%)\nINFO  - progress: 2177 of 5923 (36%)\nINFO  - progress: 2363 of 5923 (39%)\nINFO  - progress: 2489 of 5923 (42%)\nINFO  - progress: 2636 of 5923 (44%)\nINFO  - progress: 2761 of 5923 (46%)\nINFO  - progress: 2845 of 5923 (48%)\nINFO  - progress: 2979 of 5923 (50%)\nINFO  - progress: 3037 of 5923 (51%)\nINFO  - progress: 3042 of 5923 (51%)\nINFO  - progress: 3042 of 5923 (51%)\nINFO  - progress: 3047 of 5923 (51%)\nINFO  - progress: 3053 of 5923 (51%)\nINFO  - progress: 3056 of 5923 (51%)\nINFO  - progress: 3083 of 5923 (52%)\nINFO  - progress: 3114 of 5923 (52%)\nINFO  - progress: 3120 of 5923 (52%)\nINFO  - progress: 3135 of 5923 (52%)\nINFO  - progress: 3198 of 5923 (53%)\nINFO  - progress: 3233 of 5923 (54%)\nINFO  - progress: 3341 of 5923 (56%)\nINFO  - progress: 3481 of 5923 (58%)\nINFO  - progress: 3736 of 5923 (63%)\nINFO  - progress: 3896 of 5923 (65%)\nINFO  - progress: 3978 of 5923 (67%)\nINFO  - progress: 3986 of 5923 (67%)\nINFO  - progress: 4011 of 5923 (67%)\nINFO  - progress: 4051 of 5923 (68%)\nINFO  - progress: 4077 of 5923 (68%)\nINFO  - progress: 4086 of 5923 (68%)\nINFO  - progress: 4091 of 5923 (69%)\nINFO  - progress: 4119 of 5923 (69%)\nINFO  - progress: 4150 of 5923 (70%)\nINFO  - progress: 4186 of 5923 (70%)\nINFO  - progress: 4203 of 5923 (70%)\nINFO  - progress: 4231 of 5923 (71%)\nINFO  - progress: 4243 of 5923 (71%)\nINFO  - progress: 4277 of 5923 (72%)\nINFO  - progress: 4309 of 5923 (72%)\nINFO  - progress: 4313 of 5923 (72%)\nINFO  - progress: 4313 of 5923 (72%)\nINFO  - progress: 4475 of 5923 (75%)\nINFO  - progress: 4598 of 5923 (77%)\nINFO  - progress: 4598 of 5923 (77%)\nINFO  - progress: 4599 of 5923 (77%)\nINFO  - progress: 4621 of 5923 (78%)\nINFO  - progress: 4643 of 5923 (78%)\nINFO  - progress: 4656 of 5923 (78%)\nINFO  - progress: 4675 of 5923 (78%)\nINFO  - progress: 4683 of 5923 (79%)\nINFO  - progress: 4694 of 5923 (79%)\nINFO  - progress: 4695 of 5923 (79%)\nINFO  - progress: 4713 of 5923 (79%)\nINFO  - progress: 4729 of 5923 (79%)\nINFO  - progress: 4899 of 5923 (82%)\nINFO  - progress: 5100 of 5923 (86%)\nINFO  - progress: 5135 of 5923 (86%)\nINFO  - progress: 5147 of 5923 (86%)\nINFO  - progress: 5169 of 5923 (87%)\nINFO  - progress: 5270 of 5923 (88%)\nINFO  - progress: 5334 of 5923 (90%)\nINFO  - progress: 5339 of 5923 (90%)\nINFO  - progress: 5578 of 5923 (94%)\nINFO  - progress: 5751 of 5923 (97%)\nINFO  - progress: 5816 of 5923 (98%)\nINFO  - progress: 5831 of 5923 (98%)\nINFO  - progress: 5856 of 5923 (98%)\nINFO  - progress: 5864 of 5923 (99%)\nINFO  - progress: 5872 of 5923 (99%)\nINFO  - progress: 5883 of 5923 (99%)\nINFO  - progress: 5892 of 5923 (99%)\nINFO  - progress: 5897 of 5923 (99%)\n                                                             \nERROR - finished with errors, count: 12\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/1xbet/1xbet Online-Bjørn Steffensen/decompiled",
+    "skipped": false,
+    "base_apk": "com.neonBubblePop-3.apk"
+  },
+  "analysis_files": [
+    "com.neonBubblePop-3-asset.apk",
+    "com.neonBubblePop-3-config.arm64_v8a.apk",
+    "com.neonBubblePop-3.apk",
+    "com.neonBubblePop-3-config.xxhdpi.apk",
+    "com.neonBubblePop-3-config.en.apk",
+    "apk/com.neonBubblePop-3-asset.apk",
+    "apk/com.neonBubblePop-3-config.arm64_v8a.apk",
+    "apk/com.neonBubblePop-3.apk",
+    "apk/com.neonBubblePop-3-config.xxhdpi.apk",
+    "apk/com.neonBubblePop-3-config.en.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/a/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/bolts/",
+    "decompiled/sources/com/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/okhttp3/",
+    "decompiled/sources/okio/",
+    "decompiled/sources/org/"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "app_id": "com.neonBubblePop",
+  "title": "1xbet Online",
+  "developer": "Bjørn Steffensen",
+  "score": null,
+  "icon": "/static/app-icons/com_neonBubblePop.png",
+  "url": "https://play.google.com/store/apps/details?id=com.neonBubblePop&hl=en&gl=us",
+  "keyword": "1xBet",
+  "country": "Italy",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260806_171332_Italy_1xBet_search",
+  "search_title": "1xbet Online (Early Access)",
+  "search_developer": "Bjørn Steffensen",
+  "rank": 3,
+  "developer_id": "4851869579904690157",
+  "released": "",
+  "updated": "Aug 5, 2026",
+  "version": "Varies with device",
+  "summary": "Pop glowing neon bubbles in a deep-blue cosmos. No ads, just pure flow.`",
+  "folder": "1xbet Online-Bjørn Steffensen",
+  "path": "1xbet/1xbet Online-Bjørn Steffensen",
+  "updates_count": 1,
+  "ok": true,
+  "files": [
+    "com.neonBubblePop-3-asset.apk",
+    "com.neonBubblePop-3-config.arm64_v8a.apk",
+    "com.neonBubblePop-3-config.en.apk",
+    "com.neonBubblePop-3-config.xxhdpi.apk",
+    "com.neonBubblePop-3.apk"
+  ],
+  "target": "/root/play-collector/загрузки/1xbet/1xbet Online-Bjørn Steffensen",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.neonBubblePop...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.neonBubblePop...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.neonBubblePop ─╮\n│ 1xbet Online        │\n│ 5.20.2  (vc 3)      │\n╰─────────────────────╯\n\nDownloading 5 files  (62.7 MB)\n  com.neonBubblePop-3.apk                  ━━━━━━━ 100% 25.6/2… 34.2     0:00:00\n                                                        MB      MB/s            \n  com.neonBubblePop-3-config.arm64_v8a.apk ━━━━━━━ 100% 28.5/2… 26.0     0:00:00\n                                                        MB      MB/s            \n  com.neonBubblePop-3-config.en.apk        ━━━━━━━ 100% 78.2/7… 2.5 MB/s 0:00:00\n                                                        kB                      \n  com.neonBubblePop-3-config.xxhdpi.apk    ━━━━━━━ 100% 104.4/… 3.2 MB/s 0:00:00\n                                                        kB                      \n  com.neonBubblePop-3-asset.apk            ━━━━━━━ 100% 11.4/1… 7.5 MB/s 0:00:00\n                                                        MB                      \n\n                   Downloaded files                    \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                     ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.neonBubblePop-3.apk                  │  24.4 MB │\n│ com.neonBubblePop-3-config.arm64_v8a.apk │  27.2 MB │\n│ com.neonBubblePop-3-config.en.apk        │  76.4 KB │\n│ com.neonBubblePop-3-config.xxhdpi.apk    │ 101.9 KB │\n│ com.neonBubblePop-3-asset.apk            │  24.4 MB │\n└──────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n"
+    }
+  ],
+  "stdout": "╭─ com.neonBubblePop ─╮\n│ 1xbet Online        │\n│ 5.20.2  (vc 3)      │\n╰─────────────────────╯\n\nDownloading 5 files  (62.7 MB)\n  com.neonBubblePop-3.apk                  ━━━━━━━ 100% 25.6/2… 34.2     0:00:00\n                                                        MB      MB/s            \n  com.neonBubblePop-3-config.arm64_v8a.apk ━━━━━━━ 100% 28.5/2… 26.0     0:00:00\n                                                        MB      MB/s            \n  com.neonBubblePop-3-config.en.apk        ━━━━━━━ 100% 78.2/7… 2.5 MB/s 0:00:00\n                                                        kB                      \n  com.neonBubblePop-3-config.xxhdpi.apk    ━━━━━━━ 100% 104.4/… 3.2 MB/s 0:00:00\n                                                        kB                      \n  com.neonBubblePop-3-asset.apk            ━━━━━━━ 100% 11.4/1… 7.5 MB/s 0:00:00\n                                                        MB                      \n\n                   Downloaded files                    \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                     ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.neonBubblePop-3.apk                  │  24.4 MB │\n│ com.neonBubblePop-3-config.arm64_v8a.apk │  27.2 MB │\n│ com.neonBubblePop-3-config.en.apk        │  76.4 KB │\n│ com.neonBubblePop-3-config.xxhdpi.apk    │ 101.9 KB │\n│ com.neonBubblePop-3-asset.apk            │  24.4 MB │\n└──────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+  "exit_code": 0
+}
