@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "source": "apkcombo:playwright",
+  "package": "com.watchfacestudio.spraktum",
+  "version_name": "1157.0",
+  "version_code": 1157,
+  "xapk": "com.watchfacestudio.spraktum.xapk",
+  "apks": [
+    "apk/com.watchfacestudio.spraktum.apk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.armeabi_v7a.apk",
+    "apk/config.en.apk",
+    "apk/config.fr.apk",
+    "apk/config.xxhdpi.apk"
+  ],
+  "base_apk": "apk/com.watchfacestudio.spraktum.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "note": "jadx 1.5.1 finished with 2 errors; sources usable",
+    "out_dir": "decompiled"
+  },
+  "cloaking": "да",
+  "notes": "Flutter Wear OS watch-face shell. Varioqub gate POST https://app.uaas.yandex.ru/v1/app?client_id=appmetrica.6334447; AppMetrica analytics; offer opened via Custom Tabs channel glacier.drift/unfurl method unfurlPassage. No embedded WebView for offer."
+}

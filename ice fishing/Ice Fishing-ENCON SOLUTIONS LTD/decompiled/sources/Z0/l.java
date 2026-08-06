@@ -1,0 +1,23 @@
+package Z0;
+
+import android.util.DisplayMetrics;
+
+/* loaded from: classes.dex */
+public final class l {
+
+    /* renamed from: c, reason: collision with root package name */
+    public static int f2002c = Integer.MIN_VALUE;
+
+    /* renamed from: a, reason: collision with root package name */
+    public final int f2003a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final DisplayMetrics f2004b;
+
+    public l(DisplayMetrics displayMetrics) {
+        int i2 = f2002c;
+        f2002c = i2 + 1;
+        this.f2003a = i2;
+        this.f2004b = displayMetrics;
+    }
+}

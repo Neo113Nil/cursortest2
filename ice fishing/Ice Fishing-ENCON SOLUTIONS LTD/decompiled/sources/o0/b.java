@@ -1,0 +1,99 @@
+package o0;
+
+import android.app.Activity;
+import android.app.Application;
+import android.content.ComponentCallbacks2;
+import android.content.res.Configuration;
+import android.os.Bundle;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.concurrent.atomic.AtomicBoolean;
+
+/* loaded from: classes.dex */
+public final class b implements Application.ActivityLifecycleCallbacks, ComponentCallbacks2 {
+
+    /* renamed from: e, reason: collision with root package name */
+    public static final b f8248e = new b();
+
+    /* renamed from: a, reason: collision with root package name */
+    public final AtomicBoolean f8249a = new AtomicBoolean();
+
+    /* renamed from: b, reason: collision with root package name */
+    public final AtomicBoolean f8250b = new AtomicBoolean();
+
+    /* renamed from: c, reason: collision with root package name */
+    public final ArrayList f8251c = new ArrayList();
+
+    /* renamed from: d, reason: collision with root package name */
+    public boolean f8252d = false;
+
+    public final void a(boolean z2) {
+        synchronized (f8248e) {
+            try {
+                Iterator it = this.f8251c.iterator();
+                while (it.hasNext()) {
+                    A0.a aVar = ((j) it.next()).f8271a.f8269m;
+                    aVar.sendMessage(aVar.obtainMessage(1, Boolean.valueOf(z2)));
+                }
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+    }
+
+    @Override // android.app.Application.ActivityLifecycleCallbacks
+    public final void onActivityCreated(Activity activity, Bundle bundle) {
+        AtomicBoolean atomicBoolean = this.f8250b;
+        boolean compareAndSet = this.f8249a.compareAndSet(true, false);
+        atomicBoolean.set(true);
+        if (compareAndSet) {
+            a(false);
+        }
+    }
+
+    @Override // android.app.Application.ActivityLifecycleCallbacks
+    public final void onActivityResumed(Activity activity) {
+        AtomicBoolean atomicBoolean = this.f8250b;
+        boolean compareAndSet = this.f8249a.compareAndSet(true, false);
+        atomicBoolean.set(true);
+        if (compareAndSet) {
+            a(false);
+        }
+    }
+
+    @Override // android.content.ComponentCallbacks2
+    public final void onTrimMemory(int i2) {
+        if (i2 == 20 && this.f8249a.compareAndSet(false, true)) {
+            this.f8250b.set(true);
+            a(true);
+        }
+    }
+
+    @Override // android.content.ComponentCallbacks
+    public final void onLowMemory() {
+    }
+
+    @Override // android.app.Application.ActivityLifecycleCallbacks
+    public final void onActivityDestroyed(Activity activity) {
+    }
+
+    @Override // android.app.Application.ActivityLifecycleCallbacks
+    public final void onActivityPaused(Activity activity) {
+    }
+
+    @Override // android.app.Application.ActivityLifecycleCallbacks
+    public final void onActivityStarted(Activity activity) {
+    }
+
+    @Override // android.app.Application.ActivityLifecycleCallbacks
+    public final void onActivityStopped(Activity activity) {
+    }
+
+    @Override // android.content.ComponentCallbacks
+    public final void onConfigurationChanged(Configuration configuration) {
+    }
+
+    @Override // android.app.Application.ActivityLifecycleCallbacks
+    public final void onActivitySaveInstanceState(Activity activity, Bundle bundle) {
+    }
+}
