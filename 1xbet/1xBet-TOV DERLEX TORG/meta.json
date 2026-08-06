@@ -1,0 +1,43 @@
+{
+  "app_id": "com.playbookprism.relayquiz",
+  "title": "1xBet",
+  "developer": "TOV DERLEX TORG",
+  "score": null,
+  "icon": "/static/app-icons/com_playbookprism_relayquiz.webp",
+  "url": "https://play.google.com/store/apps/details?id=com.playbookprism.relayquiz&hl=en&gl=us",
+  "keyword": "1xBet",
+  "country": "Italy",
+  "source": "apkeep:apk-pure",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260806_171332_Italy_1xBet_search",
+  "search_title": "1xBet",
+  "search_developer": "TOV DERLEX TORG",
+  "rank": 1,
+  "developer_id": "TOV+DERLEX+TORG",
+  "released": "Jul 8, 2026",
+  "updated": "Jul 9, 2026",
+  "version": "Varies with device",
+  "summary": "1xBet - Bet on sports, games, and more!",
+  "folder": "1xBet-TOV DERLEX TORG",
+  "path": "1xbet/1xBet-TOV DERLEX TORG",
+  "updates_count": 1,
+  "ok": true,
+  "files": [
+    "com.playbookprism.relayquiz.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/1xbet/1xBet-TOV DERLEX TORG",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.playbookprism.relayquiz...\ncom.playbookprism.relayquiz downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.playbookprism.relayquiz...\ncom.playbookprism.relayquiz downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}
