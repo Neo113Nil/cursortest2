@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "source": "apkcombo:playwright",
+  "package": "com.combinations.spin.balbi",
+  "version_name": "1.0",
+  "version_code": 1,
+  "xapk": "com.combinations.spin.balbi.xapk",
+  "apks": [
+    "apk/com.combinations.spin.balbi.apk",
+    "apk/config.armeabi_v7a.apk",
+    "apk/config.en.apk",
+    "apk/config.fr.apk"
+  ],
+  "base_apk": "apk/com.combinations.spin.balbi.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "note": "jadx 1.5.1 finished with 13 errors; sources usable",
+    "out_dir": "decompiled"
+  },
+  "cloaking": "нет",
+  "notes": "Play/APKCombo listing Ice Fishing / Polar Wager System Works (APKCombo UI also showed Chicken Road); in-app label Corsair's Ledger (offline pirate relic/ledger Compose game). No INTERNET permission. No WebView/Custom Tabs/HttpURLConnection/OkHttp/GAID and no offer/white server fork. PairIP Play license check only. config.ru = language split in splits0.xml; dispatchers.io = Kotlin Dispatchers.IO; lineheightstyle.alignment.top = Compose LineHeightStyle.Alignment.Top — all pipeline false positives."
+}

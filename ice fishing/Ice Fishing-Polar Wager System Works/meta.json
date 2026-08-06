@@ -1,0 +1,119 @@
+{
+  "app_id": "com.combinations.spin.balbi",
+  "title": "Ice Fishing",
+  "apk_label": "Corsair's Ledger",
+  "developer": "Polar Wager System Works",
+  "developer_id": "",
+  "url": "https://play.google.com/store/apps/details?id=com.combinations.spin.balbi&hl=en&gl=us",
+  "version": "1.0",
+  "version_code": 1,
+  "min_sdk": 32,
+  "target_sdk": 36,
+  "compile_sdk": 37,
+  "agp": "9.2.1",
+  "kotlin": "2.1+",
+  "summary": "Offline Compose pirate ledger game (Corsair's Ledger) with Google Play PairIP license check; no INTERNET, no WebView/ads/cloaking fork",
+  "keyword": "ice fishing",
+  "folder": "Ice Fishing-Polar Wager System Works",
+  "path": "ice fishing/Ice Fishing-Polar Wager System Works",
+  "ok": true,
+  "source": "apkcombo:playwright",
+  "cloak": false,
+  "cloaking": "нет",
+  "files": [
+    "com.combinations.spin.balbi.xapk",
+    "com.combinations.spin.balbi-1.apk",
+    "com.combinations.spin.balbi-1-config.en.apk",
+    "com.combinations.spin.balbi-1-config.fr.apk",
+    "com.combinations.spin.balbi-1-config.armeabi_v7a.apk",
+    "apk/com.combinations.spin.balbi.apk",
+    "apk/com.combinations.spin.balbi-1.apk",
+    "apk/config.en.apk",
+    "apk/config.fr.apk",
+    "apk/config.armeabi_v7a.apk"
+  ],
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing (в самом приложении: Corsair's Ledger)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.2.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1+"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.VIBRATE, com.combinations.spin.balbi.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.1+ / kotlinx-coroutines 1.9.0, Jetpack Compose 1.10.4–1.11.0 / Material3 1.4.0, AndroidX DataStore/Navigation/Lifecycle/Room, Hilt/Dagger 2.60.1, Google Play PairIP licensecheck"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru, dispatchers.io, lineheightstyle.alignment.top"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "DataStore Preferences settings.preferences_pb — локальные настройки игры; прогресс в Room (corsair_ledger.db)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "offer, redirect, slots, license check"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "lineheightstyle.alignment.top",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
+}
