@@ -1,0 +1,23 @@
+package defpackage;
+
+/* compiled from: r8-map-id-f07502904ffb6c7cfc104556b013e0e48cd078697d1e7ebb5294e50317be4258 */
+/* loaded from: classes.dex */
+public final class kj extends wg {
+    public final /* synthetic */ lj JFJ3QoxA;
+    public nt0 encWxUiV2;
+    public /* synthetic */ Object mOu10nynGul;
+    public int rQPn8YBR;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public kj(lj ljVar, wg wgVar) {
+        super(wgVar);
+        this.JFJ3QoxA = ljVar;
+    }
+
+    @Override // defpackage.h6
+    public final Object WIEu4Ya2g8(Object obj) {
+        this.mOu10nynGul = obj;
+        this.rQPn8YBR |= Integer.MIN_VALUE;
+        return this.JFJ3QoxA.Yi7zF1RB1(this);
+    }
+}

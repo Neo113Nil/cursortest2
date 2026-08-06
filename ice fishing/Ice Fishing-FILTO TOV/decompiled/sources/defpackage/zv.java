@@ -1,0 +1,19 @@
+package defpackage;
+
+/* compiled from: r8-map-id-f07502904ffb6c7cfc104556b013e0e48cd078697d1e7ebb5294e50317be4258 */
+/* loaded from: classes.dex */
+public final class zv implements dw {
+    public static final zv GWasM1elztuh = new zv();
+
+    public final boolean equals(Object obj) {
+        return this == obj || (obj instanceof zv);
+    }
+
+    public final int hashCode() {
+        return -117191797;
+    }
+
+    public final String toString() {
+        return "NavigateBack";
+    }
+}

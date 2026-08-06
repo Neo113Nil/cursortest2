@@ -1,0 +1,52 @@
+{
+  "app_id": "com.combinations.level.experts",
+  "title": "Ice Fishing",
+  "apk_label": "Xenoloop",
+  "developer": "FILTO TOV",
+  "developer_id": "",
+  "url": "https://play.google.com/store/apps/details?id=com.combinations.level.experts&hl=en&gl=us",
+  "version": "1.0",
+  "version_code": 1,
+  "min_sdk": 32,
+  "target_sdk": 36,
+  "compile_sdk": 37,
+  "agp": "9.2.1",
+  "kotlin": "2.1+",
+  "summary": "Offline Compose puzzle (Xenoloop) with Google Play PairIP license check; no INTERNET, no WebView/ads cloaking fork",
+  "keyword": "ice fishing",
+  "folder": "Ice Fishing-FILTO TOV",
+  "path": "ice fishing/Ice Fishing-FILTO TOV",
+  "ok": true,
+  "source": "apkcombo:playwright",
+  "cloak": false,
+  "cloaking": "нет",
+  "files": [
+    "com.combinations.level.experts.xapk",
+    "com.combinations.level.experts-1.apk",
+    "com.combinations.level.experts-1-config.en.apk",
+    "apk/com.combinations.level.experts.apk",
+    "apk/com.combinations.level.experts-1.apk",
+    "apk/com.combinations.level.experts-1-config.en.apk",
+    "apk/config.en.apk",
+    "apk/config.armeabi_v7a.apk"
+  ],
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "Ice Fishing"},
+      {"param": "Android Gradle Plugin", "value": "9.2.1"},
+      {"param": "minSdk", "value": "32"},
+      {"param": "targetSdk", "value": "36"},
+      {"param": "Kotlin", "value": "да, 2.1+"},
+      {"param": "Web View", "value": "нет"},
+      {"param": "Custom Tabs", "value": "нет"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "нет"},
+      {"param": "Permissions", "value": "android.permission.VIBRATE, com.combinations.level.experts.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"},
+      {"param": "Libraries", "value": "Kotlin 2.1+ / kotlinx-coroutines 1.9.0, Jetpack Compose 1.11.4 / Material3 1.4.0, AndroidX DataStore/Navigation/Lifecycle, Koin, Google Play PairIP licensecheck"},
+      {"param": "Подозрительные домены", "value": "config.ru"},
+      {"param": "SharedPreferences", "value": "DataStore Preferences xenoloop.preferences_pb — прогресс и настройки игры"},
+      {"param": "Есть ли клоака", "value": "нет"},
+      {"param": "Подозрительные слова", "value": "license check"}
+    ]
+  }
+}

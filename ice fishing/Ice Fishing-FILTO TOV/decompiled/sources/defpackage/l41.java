@@ -1,0 +1,8 @@
+package defpackage;
+
+/* compiled from: r8-map-id-f07502904ffb6c7cfc104556b013e0e48cd078697d1e7ebb5294e50317be4258 */
+/* loaded from: classes.dex */
+public abstract /* synthetic */ class l41 {
+    public static final f4 GWasM1elztuh = new f4(15);
+    public static final f4 Yi7zF1RB1 = new f4(15);
+}
