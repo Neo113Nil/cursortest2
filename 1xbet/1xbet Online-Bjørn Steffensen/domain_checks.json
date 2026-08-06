@@ -404,7 +404,7 @@
           "Cloudflare Radar: 20000"
         ],
         "creation_date": null,
-        "last_modification_date": 1786038743,
+        "last_modification_date": 1786040135,
         "last_analysis_date": 1786008400,
         "registrar": "нет",
         "whois": "DNSSEC:N",
@@ -1233,23 +1233,23 @@
           "Cisco Umbrella: 985788"
         ],
         "creation_date": 1362771670,
-        "last_modification_date": 1786039431,
-        "last_analysis_date": 1786038823,
+        "last_modification_date": 1786045663,
+        "last_analysis_date": 1786041315,
         "registrar": "MarkMonitor Inc.",
         "whois": "Admin City: REDACTED\nAdmin Country: REDACTED\nAdmin Organization: REDACTED\nAdmin Postal Code: REDACTED\nAdmin State/Province: REDACTED\nCreation Date: 2013-03-08T19:12:48Z\nCreation Date: 2013-03-08T19:41:10+0000\nDNSSEC: unsigned\nDomain Name: github.io\nDomain Status: clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: dns1.p05.nsone.net\nName Server: dns2.p05.nsone.net\nName Server: dns3.p05.nsone.net\nName Server: ns-1622.awsdns-10.co.uk\nName Server: ns-692.awsdns-22.net\nRegistrant City: 3495bcf1839c6374\nRegistrant Country: US\nRegistrant Email: 5779f178b3e0e3c7s@\nRegistrant Email: fb6ff66ef97c0518s@\nRegistrant Fax Ext: 3495bcf1839c6374\nRegistrant Fax: 3495bcf1839c6374\nRegistrant Name: 3495bcf1839c6374\nRegistrant Organization: e9cfc3ab0c85f792\nRegistrant Phone Ext: 3495bcf1839c6374\nRegistrant Phone: 3495bcf1839c6374\nRegistrant Postal Code: 3495bcf1839c6374\nRegistrant State/Province: b1952dfc047df18a\nRegistrant Street: 3495bcf1839c6374\nRegistrar Abuse Contact Email: abusecomplaints@markmonitor.com\nRegistrar Abuse Contact Phone: +1.2083895740\nRegistrar Abuse Contact Phone: +1.2086851750\nRegistrar Abuse Contact: https://corp.markmonitor.com/domain/ui/abuse-report\nRegistrar IANA ID: 292\nRegistrar Registration Expiration Date: 2027-03-08T00:00:00+0000\nRegistrar URL: http://www.markmonitor.com\nRegistrar WHOIS Server: whois.markmonitor.com\nRegistrar: MarkMonitor Inc.\nRegistrar: MarkMonitor, Inc.\nRegistry Admin ID: REDACTED\nRegistry Domain ID: REDACTED\nRegistry Domain ID: ed6bb85607724679a294e61f95bc4bff-DONUTS\nRegistry Expiry Date: 2027-03-08T19:12:48Z\nRegistry Registrant ID: REDACTED\nRegistry Tech ID: REDACTED\nTech City: REDACTED\nTech Country: REDACTED\nTech Organization: REDACTED\nTech Postal Code: REDACTED\nTech State/Province: REDACTED\nUpdated Date: 2025-02-09T09:19:16Z\nUpdated Date: 2025-02-25T20:53:31+0000",
         "dns_records": [
-          "A 185.199.111.153",
+          "A 185.199.108.153",
+          "CAA letsencrypt.org",
           "AAAA 2606:50c0:8001::153",
-          "AAAA 2606:50c0:8002::153",
+          "CAA letsencrypt.org",
+          "AAAA 2606:50c0:8003::153",
+          "A 185.199.109.153",
+          "A 185.199.111.153",
           "CAA digicert.com",
           "CAA sectigo.com",
-          "AAAA 2606:50c0:8003::153",
-          "CAA letsencrypt.org",
           "CAA sectigo.com",
-          "A 185.199.109.153",
-          "A 185.199.110.153",
-          "CAA letsencrypt.org",
-          "A 185.199.108.153"
+          "AAAA 2606:50c0:8002::153",
+          "AAAA 2606:50c0:8000::153"
         ],
         "https_subject": {
           "CN": "*.github.io"
