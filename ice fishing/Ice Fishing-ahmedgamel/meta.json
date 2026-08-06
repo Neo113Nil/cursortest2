@@ -1,21 +1,28 @@
 {
-  "app_id": "com.icefishinglive.icefishing",
+  "app_id": "com.icefishinggame.icefishinggamemultigames",
   "title": "Ice Fishing",
   "developer": "ahmedgamel",
   "score": null,
-  "icon": "https://play-lh.googleusercontent.com/Pos09SuDnwRYQ-BFjzFhW8Dndo1sTMb4ImBxA65iV-qJpLf1V5G12lwoCcPCvz0Nc4uM1blluIcmkUlcM9qu1Q",
-  "url": "https://play.google.com/store/apps/details?id=com.icefishinglive.icefishing&hl=en&gl=us",
+  "icon": "/static/app-icons/com_icefishinggame_icefishinggamemultigames.png",
+  "url": "https://play.google.com/store/apps/details?id=com.icefishinggame.icefishinggamemultigames&hl=en&gl=us",
   "keyword": "ice fishing",
+  "country": "Italy",
+  "source": "apkeep:apk-pure",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260805_222219_Italy_ice fishing_search",
+  "search_title": "Ice Fishing",
+  "search_developer": "ahmedgamel",
+  "rank": 11,
   "developer_id": "ahmedgamel",
   "released": "",
   "updated": "Jun 22, 2026",
   "version": "Varies with device",
-  "summary": "Melt ice fast and climb through tougher levels each run.",
+  "summary": "Thrilling game with levels and record-breaking fun!",
   "folder": "Ice Fishing-ahmedgamel",
   "path": "ice fishing/Ice Fishing-ahmedgamel",
   "updates_count": 1,
   "ok": true,
-  "source": "apkeep:apk-pure",
   "files": [
     "com.IceFishing.LiveIceFishing-1-asset.apk",
     "com.IceFishing.LiveIceFishing-1-config.arm64_v8a.apk",
@@ -37,11 +44,11 @@
       "try": 1,
       "ok": true,
       "exit_code": 0,
-      "stdout": "Downloading com.icefishinglive.icefishing...\ncom.icefishinglive.icefishing downloaded successfully!\n",
+      "stdout": "Downloading com.icefishinggame.icefishinggamemultigames...\ncom.icefishinggame.icefishinggamemultigames downloaded successfully!\n",
       "stderr": ""
     }
   ],
-  "stdout": "Downloading com.icefishinglive.icefishing...\ncom.icefishinglive.icefishing downloaded successfully!\n",
+  "stdout": "Downloading com.icefishinggame.icefishinggamemultigames...\ncom.icefishinggame.icefishinggamemultigames downloaded successfully!\n",
   "stderr": "",
   "exit_code": 0,
   "cloaking": "да",
@@ -151,12 +158,10 @@
       }
     ],
     "collected_data": [
-      "имя приложения в системе → техническое имя пакета com.IceFishing.LiveIceFishing уже",
-      "вписано в адрес тихого запроса; по нему скачивается файл настроек именно этой программы.",
-      "Других полей (язык, страна, рекламный номер, модель, версия Android) в параметрах и теле",
-      "этого запроса проверки нет — уходит только получение файла по готовому адресу"
+      "Имя приложения в системе — техническое имя",
+      "Этого запроса проверки нет — уходит только"
     ],
     "cloaking": "да",
-    "cloaking_brief": "Какие данные собираются:\n• имя приложения в системе → техническое имя пакета com.IceFishing.LiveIceFishing уже\n• вписано в адрес тихого запроса; по нему скачивается файл настроек именно этой программы.\n• Других полей (язык, страна, рекламный номер, модель, версия Android) в параметрах и теле\n• этого запроса проверки нет — уходит только получение файла по готовому адресу\n\nКак собираются: Сразу после запуска открывается экран-заставка (SplashActivity). Сначала приложение проверяет, есть ли интернет, затем при необходимости показывает окно согласия на рекламу (стандартный механизм Google). Как только это пройдено, без спроса у человека запускается тихий запрос: скачивается текстовый файл настроек с адреса на GitHub, в котором уже зашито имя этой программы. Отдельные поля вроде языка телефона, модели или рекламного номера в этот запрос проверки не дописываются — уходит простое получение файла. Человек этого обычно не замечает: никакого окна «разрешить сбор данных для проверки» нет, на экране крутится обычная заставка.…\n\nКуда отправляются: Тихий запрос уходит на точный адрес https://raw.githubusercontent.com/smtpatel9211/2026/refs/heads/main/com.IceFishing.LiveIceFishing — это не страница магазина и не обычная рекламная сеть, а удалённый файл настроек, который разработчик может менять без обновления программы в магазине. Запасных адресов для этой проверки в коде не видно: адрес зашит одной строкой в экране ApplinkActivity, от которого наследуется заставка. Сам ответ потом живёт в памяти приложения (MyPref), чтобы при следующих запусках и показах рекламы уже не ждать сеть заново. Отдельно, уже не как «проверка кого пускать», а как обычная игра-витрина,…\n\nКак фильтруются пользователи: В самом приложении нет жёсткого списка стран, языков или «ботов», по которому решают «этому человеку оффер, а этому — нет». Экраны выбора страны, языка, возраста и пола — обычные шаги знакомства после первого запуска, а не скрытый фильтр трафика для оффера. Решение «кому показать внешнюю страницу» зашито в удалённом файле на GitHub: разработчик выставляет splash_redirect и link_redirect в 0 или 1 и подставляет актуальные link1 / link2 / link3. Приложение лишь читает эти числа и ссылки. То…"
+    "cloaking_brief": "Какие данные собираются:\n• Имя приложения в системе — техническое имя\n• Этого запроса проверки нет — уходит только\n\nКак собираются: Сразу после запуска открывается экран-заставка (SplashActivity). Сначала приложение проверяет, есть ли интернет, затем при необходимости показывает окно согласия на рекламу (стандартный механизм Google). Как только это пройдено, без спроса у человека запускается тихий запрос: скачивается текстовый файл настроек с адреса на GitHub, в котором уже зашито имя этой программы. Отдельные поля вроде языка телефона, модели или рекламного номера в этот запрос проверки не дописываются — уходит простое получение файла. Человек этого обычно не замечает: никакого окна «разрешить сбор данных для проверки» нет, на экране крутится обычная заставка.…\n\nКуда отправляются: Тихий запрос уходит на точный адрес https://raw.githubusercontent.com/smtpatel9211/2026/refs/heads/main/com.IceFishing.LiveIceFishing — это не страница магазина и не обычная рекламная сеть, а удалённый файл настроек, который разработчик может менять без обновления программы в магазине. Запасных адресов для этой проверки в коде не видно: адрес зашит одной строкой в экране ApplinkActivity, от которого наследуется заставка. Сам ответ потом живёт в памяти приложения (MyPref), чтобы при следующих запусках и показах рекламы уже не ждать сеть заново. Отдельно, уже не как «проверка кого пускать», а как обычная игра-витрина,…\n\nКак фильтруются пользователи: В самом приложении нет жёсткого списка стран, языков или «ботов», по которому решают «этому человеку оффер, а этому — нет». Экраны выбора страны, языка, возраста и пола — обычные шаги знакомства после первого запуска, а не скрытый фильтр трафика для оффера. Решение «кому показать внешнюю страницу» зашито в удалённом файле на GitHub: разработчик выставляет splash_redirect и link_redirect в 0 или 1 и подставляет актуальные link1 / link2 / link3. Приложение лишь читает эти числа и ссылки. То есть фильтр по сути делает тот, кто правит файл на сервере, а не код на телефоне по гео или «боту».…\n\nЧто возвращается: С адреса на GitHub приходит текстовый ответ в виде списка полей. Приложение читает из него, в частности: splash_inter (показывать ли полн…"
   }
 }

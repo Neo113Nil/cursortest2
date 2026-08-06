@@ -13,7 +13,10 @@
         "detections": "0/91 (malicious=0, suspicious=0)",
         "last_analysis_stats": {
           "malicious": 0,
-          "suspicious": 0
+          "suspicious": 0,
+          "undetected": 91,
+          "harmless": 0,
+          "timeout": 0
         },
         "vendor_rows": [
           [
@@ -380,11 +383,40 @@
             "ZeroFox",
             "Unrated"
           ]
-        ]
+        ],
+        "reputation": 0,
+        "community_votes": {
+          "harmless": 0,
+          "malicious": 0
+        },
+        "categories": {},
+        "popularity_ranks": [
+          "Alexa: 265666"
+        ],
+        "creation_date": null,
+        "last_modification_date": 1785707499,
+        "last_analysis_date": 1785707164,
+        "registrar": "нет",
+        "whois": "нет",
+        "dns_records": [
+          "нет"
+        ],
+        "https_subject": "нет",
+        "https_issuer": "нет",
+        "malicious_engines": [
+          "нет"
+        ],
+        "suspicious_engines": [
+          "нет"
+        ],
+        "tags": []
       },
       "redirects_to": "нет (DNS не резолвится)",
+      "redirect_chain": [],
       "page_output": "нет (DNS не резолвится)",
       "parked_at": "нет данных",
+      "final_url": "",
+      "http_status": null,
       "table_rows": [
         {
           "param": "Домен",
@@ -788,7 +820,10 @@
         "detections": "1/91 (malicious=0, suspicious=1)",
         "last_analysis_stats": {
           "malicious": 0,
-          "suspicious": 1
+          "suspicious": 1,
+          "undetected": 36,
+          "harmless": 54,
+          "timeout": 0
         },
         "vendor_rows": [
           [
@@ -1155,11 +1190,40 @@
             "ZeroFox",
             "Unrated"
           ]
-        ]
+        ],
+        "reputation": 0,
+        "community_votes": {
+          "harmless": 0,
+          "malicious": 0
+        },
+        "categories": {
+          "Forcepoint ThreatSeeker": "elevated exposure"
+        },
+        "popularity_ranks": "нет",
+        "creation_date": null,
+        "last_modification_date": 1758129483,
+        "last_analysis_date": 1755710039,
+        "registrar": "нет",
+        "whois": "Domain Name: ICU.ICU",
+        "dns_records": [
+          "нет"
+        ],
+        "https_subject": "нет",
+        "https_issuer": "нет",
+        "malicious_engines": [
+          "нет"
+        ],
+        "suspicious_engines": [
+          "Forcepoint ThreatSeeker: Suspicious"
+        ],
+        "tags": []
       },
       "redirects_to": "нет (DNS не резолвится)",
+      "redirect_chain": [],
       "page_output": "нет (DNS не резолвится)",
       "parked_at": "нет данных",
+      "final_url": "",
+      "http_status": null,
       "table_rows": [
         {
           "param": "Домен",
@@ -1563,7 +1627,10 @@
         "detections": "0/91 (malicious=0, suspicious=0)",
         "last_analysis_stats": {
           "malicious": 0,
-          "suspicious": 0
+          "suspicious": 0,
+          "undetected": 37,
+          "harmless": 54,
+          "timeout": 0
         },
         "vendor_rows": [
           [
@@ -1930,11 +1997,40 @@
             "ZeroFox",
             "Unrated"
           ]
-        ]
+        ],
+        "reputation": 0,
+        "community_votes": {
+          "harmless": 0,
+          "malicious": 0
+        },
+        "categories": {
+          "Forcepoint ThreatSeeker": "financial data and services"
+        },
+        "popularity_ranks": "нет",
+        "creation_date": null,
+        "last_modification_date": 1785707463,
+        "last_analysis_date": 1785707162,
+        "registrar": "нет",
+        "whois": "нет",
+        "dns_records": [
+          "нет"
+        ],
+        "https_subject": "нет",
+        "https_issuer": "нет",
+        "malicious_engines": [
+          "нет"
+        ],
+        "suspicious_engines": [
+          "нет"
+        ],
+        "tags": []
       },
       "redirects_to": "нет (DNS не резолвится)",
+      "redirect_chain": [],
       "page_output": "нет (DNS не резолвится)",
       "parked_at": "нет данных",
+      "final_url": "",
+      "http_status": null,
       "table_rows": [
         {
           "param": "Домен",
@@ -2330,5 +2426,7 @@
         }
       ]
     }
-  ]
+  ],
+  "count": 3,
+  "vt_configured": true
 }

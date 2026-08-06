@@ -1,5 +1,7 @@
 # Проверка подозрительных доменов
 
+<<<<<<< HEAD
+=======
 ## Проверка домена: jokerseven.store
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
@@ -14,6 +16,7 @@
 | Что выводит (кратко) | title: Privacy & Policies \| Joker & Sevens. Белая страница политик приложения (Privacy / Retention / Rights / Content / Ads), Cloudflare |
 | Где припаркован | Cloudflare (NS: vera.ns.cloudflare.com, aaden.ns.cloudflare.com) |
 
+>>>>>>> 3b27aac65d085041be5d61eeaabb1a672504b2ca
 ## Проверка домена: config.ru
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.

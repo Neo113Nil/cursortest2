@@ -1,39 +1,85 @@
 {
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing Deep Catch"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.1.4"
+      },
+      {
+        "param": "minSdk",
+        "value": "26"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 1.9.10"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "AppsFlyer 6.15.2, Google Play Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, com.samsung.android.mapsagent.permission.READ_APP_INFO, com.huawei.ap pmarket.service.commondata.permission.GET_COMMON_DATA, com.protoclaw.airfishing.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, c om.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "AppsFlyer 6.15.2, Play Install Referrer, com.pairip (Play licensing), androidx.core (+ktx), androidx.lifecycle, androidx.annotation, androidx.versionedparcelable, androidx.arch.core, androidx.interpolator, Kotlin stdlib 1.9.10, kotlinx-coroutines"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "deepaircatch.online"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "ac_gs: st_f (флаг «оставить обычное приложение»), dl_v (сохранённая ссылка после проверки на deepaircatch.online); appsflyer-data (служебные данные AppsFlyer)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "deepaircatch.online, shwCntnt, bundle, afid, devkey, referrer, dl_v, st_f, privacyCanon, loadUrl, NativeActions, accept, play, AppsFlyer, onelink, clickid"
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "Имя приложения в системе — техническое имя",
+      "Номер установки AppsFlyer — служебный",
+      "Ключ разработчика AppsFlyer — секретный",
+      "Метка установки из магазина — текст",
+      "Строка браузера встроенного — как система",
+      "Язык телефона — язык"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Имя приложения в системе — техническое имя\n• Номер установки AppsFlyer — служебный\n• Ключ разработчика AppsFlyer — секретный\n• Метка установки из магазина — текст\n• Строка браузера встроенного — как система\n• Язык телефона — язык\n\nКак собираются: Сразу при запуске приложение само, без отдельного окна с разрешением, включает AppsFlyer и подключается к службе меток установки Google Play. Номер установки AppsFlyer и метка из магазина сохраняются в памяти программы ещё до того, как человек нажмёт кнопку. Когда человек нажимает «PLAY NOW» на стартовом экране, приложение собирает эти сведения в одну ссылку и открывает её во встроенном окне сайта внутри приложения. Человек обычно видит только экран «Loading...» и не понимает, что уходит тихая проверка. Имя приложения берётся из системы Android.…\n\nКуда отправляются: Проверка уходит на адрес https://deepaircatch.online во встроенном окне сайта внутри приложения. К адресу добавляются параметры bundle, afid, devkey и при наличии referrer. Это не обычный показ рекламного баннера на экране, а тихая проверка «что показать этому человеку». Запасных адресов в коде приложения не видно: базовый адрес зашит одной строкой. Параллельно AppsFlyer шлёт свои служебные данные на свои серверы аналитики, но развилка «оффер или обычное приложение» завязана именно на deepaircatch.online. Если после проверки открывается другой адрес, приложение сохраняет его в памяти под ключом dl_v. При следующем запуске этот сохранённый адрес открывают сразу,…\n\nКак фильтруются пользователи: В самом приложении нет жёсткого списка стран или языков: на проверку уходят имя приложения, номер установки AppsFlyer, ключ разработчика и метка установки из магазина. Решение «кому показать внешнюю страницу, а кому оставить обычный режим» делает сервер deepaircatch.online по этим признакам и по тому, как ответит на запрос. На телефоне есть только простой локальный флаг st_f: если он включён (через служебное сообщение accept), приложение больше не гонит человека на проверку и открывает локальный экран обычного приложения. В обычном меню кнопки accept нет — туда уводит нажатие «PLAY NOW», пока флаг не выставлен и пока нет сохранённой ссылки. Ит…"
+  },
   "app_id": "com.protoclaw.airfishing",
   "title": "Ice Fishing Deep Catch",
-  "apk_label": "Ice Fishing: Deep Catch",
   "developer": "Utebaev Askar",
-  "package": "com.protoclaw.airfishing",
-  "version_name": "1.3",
-  "version_code": "4",
-  "min_sdk": 26,
-  "target_sdk": 35,
-  "agp": "8.1.4",
-  "kotlin": "1.9.10",
-  "cloaking": "да",
-  "folder": "Ice Fishing Deep Catch-Utebaev Askar",
-  "path": "ice fishing/Ice Fishing Deep Catch-Utebaev Askar",
-  "source": "apkeep:apk-pure",
-  "files": [
-    "com.protoclaw.airfishing.xapk",
-    "apk/com.protoclaw.airfishing.apk",
-    "apk/config.ar.apk",
-    "apk/config.de.apk",
-    "apk/config.en.apk",
-    "apk/config.es.apk",
-    "apk/config.fr.apk",
-    "apk/config.hi.apk",
-    "apk/config.in.apk",
-    "apk/config.it.apk",
-    "apk/config.ja.apk",
-    "apk/config.ko.apk",
-    "apk/config.my.apk",
-    "apk/config.pt.apk",
-    "apk/config.ru.apk",
-    "apk/config.th.apk",
-    "apk/config.tr.apk",
-    "apk/config.vi.apk",
-    "apk/config.xxxhdpi.apk",
-    "apk/config.zh.apk"
-  ]
+  "icon": "/static/app-icons/com_protoclaw_airfishing.png",
+  "url": "https://play.google.com/store/apps/details?id=com.protoclaw.airfishing&hl=en&gl=us",
+  "updated": "May 31, 2026",
+  "version": "Varies with device"
 }

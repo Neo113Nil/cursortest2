@@ -1,5 +1,67 @@
 {
   "ok": true,
+<<<<<<< HEAD
+  "apks": [
+    "com.watchfacestudio.spraktum-1157-config.arm64_v8a.apk",
+    "com.watchfacestudio.spraktum-1157-config.en.apk",
+    "com.watchfacestudio.spraktum-1157.apk",
+    "com.watchfacestudio.spraktum-1157-asset.apk",
+    "com.watchfacestudio.spraktum-1157-config.lt.apk",
+    "com.watchfacestudio.spraktum-1157-config.xxhdpi.apk",
+    "com.watchfacestudio.spraktum-1157-config.ru.apk"
+  ],
+  "base_apk": "com.watchfacestudio.spraktum-1157.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 2423 (0%)\nINFO  - progress: 238 of 2423 (9%)\nINFO  - progress: 390 of 2423 (16%)\nINFO  - progress: 809 of 2423 (33%)\nINFO  - progress: 1106 of 2423 (45%)\nINFO  - progress: 1307 of 2423 (53%)\nINFO  - progress: 1529 of 2423 (63%)\nINFO  - progress: 1821 of 2423 (75%)\nINFO  - progress: 2058 of 2423 (84%)\n                                                             \nERROR - finished with errors, count: 2\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/ice fishing/Ice Fishing-ENCON SOLUTIONS LTD/decompiled",
+    "skipped": false,
+    "base_apk": "com.watchfacestudio.spraktum-1157.apk"
+  },
+  "analysis_files": [
+    "com.watchfacestudio.spraktum-1157-config.arm64_v8a.apk",
+    "com.watchfacestudio.spraktum-1157-config.en.apk",
+    "com.watchfacestudio.spraktum-1157.apk",
+    "com.watchfacestudio.spraktum-1157-asset.apk",
+    "com.watchfacestudio.spraktum-1157-config.lt.apk",
+    "com.watchfacestudio.spraktum-1157-config.xxhdpi.apk",
+    "com.watchfacestudio.spraktum-1157-config.ru.apk",
+    "apk/com.watchfacestudio.spraktum-1157-config.arm64_v8a.apk",
+    "apk/com.watchfacestudio.spraktum-1157-config.en.apk",
+    "apk/com.watchfacestudio.spraktum-1157.apk",
+    "apk/com.watchfacestudio.spraktum-1157-asset.apk",
+    "apk/com.watchfacestudio.spraktum-1157-config.lt.apk",
+    "apk/com.watchfacestudio.spraktum-1157-config.xxhdpi.apk",
+    "apk/com.watchfacestudio.spraktum-1157-config.ru.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/A/",
+    "decompiled/sources/A0/",
+    "decompiled/sources/A1/",
+    "decompiled/sources/B/",
+    "decompiled/sources/B0/",
+    "decompiled/sources/B1/",
+    "decompiled/sources/C/",
+    "decompiled/sources/C0/",
+    "decompiled/sources/C1/",
+    "decompiled/sources/D/",
+    "decompiled/sources/D0/",
+    "decompiled/sources/D1/",
+    "decompiled/sources/E/",
+    "decompiled/sources/E0/",
+    "decompiled/sources/E1/",
+    "decompiled/sources/F/",
+    "decompiled/sources/F0/",
+    "decompiled/sources/F1/",
+    "decompiled/sources/G0/",
+    "decompiled/sources/H/"
+  ]
+}
+=======
   "source": "apkcombo:playwright",
   "package": "com.watchfacestudio.spraktum",
   "version_name": "1157.0",
@@ -23,3 +85,4 @@
   "cloaking": "да",
   "notes": "Flutter Wear OS watch-face shell. Varioqub gate POST https://app.uaas.yandex.ru/v1/app?client_id=appmetrica.6334447; AppMetrica analytics; offer opened via Custom Tabs channel glacier.drift/unfurl method unfurlPassage. No embedded WebView for offer."
 }
+>>>>>>> 5c84047b655e3dd609b60b8451f4a55d6b64ba16

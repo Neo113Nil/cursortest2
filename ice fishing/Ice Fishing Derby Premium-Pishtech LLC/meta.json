@@ -1,0 +1,81 @@
+{
+  "app_id": "com.pishtech.mifdp",
+  "title": "Ice Fishing Derby Premium",
+  "developer": "Pishtech LLC",
+  "score": 4.3472223,
+  "icon": "/static/app-icons/com_pishtech_mifdp.png",
+  "url": "https://play.google.com/store/apps/details?id=com.pishtech.mifdp&hl=en&gl=us",
+  "keyword": "ice fishing",
+  "country": "India",
+  "source": "",
+  "sponsored": false,
+  "match_via": "web-strict",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260804_174629_India_ice fishing_search",
+  "search_title": "Ice Fishing Derby Premium",
+  "search_developer": "Pishtech LLC",
+  "developer_id": "Pishtech+LLC",
+  "released": "Mar 4, 2013",
+  "updated": "2025-07-22",
+  "version": "1.52",
+  "summary": "Ice Fishing Derby - It's the fun of ice fishing without the frostbite",
+  "folder": "Ice Fishing Derby Premium-Pishtech LLC",
+  "path": "ice fishing/Ice Fishing Derby Premium-Pishtech LLC",
+  "updates_count": 1,
+  "ok": false,
+  "files": [],
+  "target": "/root/play-collector/загрузки/ice fishing/Ice Fishing Derby Premium-Pishtech LLC",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.pishtech.mifdp...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.pishtech.mifdp...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\nNo download URL returned. The app may require purchase or is unavailable for \nthis device.\n"
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.twelve@gmail.com           │\n│ GSF ID : 3a708efaa5965c0c                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n"
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : zelnanaicon@gmail.com                 │\n│ GSF ID : 35bf0fa6d73357d2                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n"
+    }
+  ],
+  "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : zelnanaicon@gmail.com                 │\n│ GSF ID : 35bf0fa6d73357d2                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+  "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+  "exit_code": 1
+}

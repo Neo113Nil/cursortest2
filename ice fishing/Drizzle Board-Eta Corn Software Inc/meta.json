@@ -1,49 +1,79 @@
 {
-  "app_id": "com.kolosta.rejin.jilosa",
-  "title": "Ice Fishing",
-  "apk_label": "Drizzle Board",
-  "developer": "Eta Corn Software Inc",
-  "developer_id": "",
-  "icon": "https://play-lh.googleusercontent.com/XtgPC66tqkmkS1ooUsKDfugosRqwx5gCrIfaBidCE6qu3tLlvdNJlodNIfMTYliDmU2W76etV6YMSGXqA8IwWhE",
-  "url": "https://play.google.com/store/apps/details?id=com.kolosta.rejin.jilosa&hl=en&gl=us",
-  "score": null,
-  "released": null,
-  "updated": null,
-  "version": "1.0",
-  "version_code": 1,
-  "summary": "Drizzle Board: Explore dish and sauce pairings.",
-  "keyword": "ice fishing",
-  "folder": "Drizzle Board-Eta Corn Software Inc",
-  "path": "ice fishing/Drizzle Board-Eta Corn Software Inc",
-  "ok": true,
-  "source": "apkcombo:playwright",
-  "files": [
-    "com.kolosta.rejin.jilosa_1.0.xapk",
-    "com.kolosta.rejin.jilosa-1.apk",
-    "com.kolosta.rejin.jilosa-1-config.xxhdpi.apk",
-    "apk/com.kolosta.rejin.jilosa.apk",
-    "apk/com.kolosta.rejin.jilosa-1.apk",
-    "apk/config.xxhdpi.apk",
-    "apk/com.kolosta.rejin.jilosa-1-config.xxhdpi.apk"
-  ],
   "cloaking": "нет",
   "brief_report": {
     "table": [
-      {"param": "Название приложения", "value": "Ice Fishing"},
-      {"param": "Android Gradle Plugin", "value": "9.3.1"},
-      {"param": "minSdk", "value": "32"},
-      {"param": "targetSdk", "value": "37"},
-      {"param": "Kotlin", "value": "да, 2.1+"},
-      {"param": "Web View", "value": "нет"},
-      {"param": "Custom Tabs", "value": "нет"},
-      {"param": "Рекламные сети", "value": "нет"},
-      {"param": "Аналитика", "value": "нет"},
-      {"param": "Permissions", "value": "com.kolosta.rejin.jilosa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"},
-      {"param": "Libraries", "value": "Kotlin / kotlinx-coroutines 1.9.0, AndroidX (appcompat 1.7.1, activity, fragment, core, lifecycle, navigation 2.9.8, room 2.8.4, recyclerview, constraintlayout, coordinatorlayout, viewpager2, emoji2, profileinstaller, startup, sqlite, savedstate, window), Material Components 1.14.0, Hilt/Dagger 2.60.1, Pairip licensecheck (com.pairip.application / licensecheck)"},
-      {"param": "Подозрительные домены", "value": "dispatchers.io"},
-      {"param": "SharedPreferences", "value": "нет"},
-      {"param": "Есть ли клоака", "value": "нет"},
-      {"param": "Подозрительные слова", "value": "нет"}
-    ]
-  }
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.3.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "37"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1+"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.kolosta.rejin.jilosa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin / kotlinx-coroutines 1.9.0, AndroidX (appcompat 1.7.1, activity, fragment, core, lifecycle, navigation 2.9.8, room 2.8.4, recyclerview, constraintlayout, coordinatorlayout, viewpager2, emoji2, profileinstaller, startup, sqlite, savedstate, window), Material Components 1.14.0, Hilt/Dagger 2.60.1, Pairip licensecheck (com.pairip.application / licensecheck)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "dispatchers.io"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "нет"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  },
+  "app_id": "com.kolosta.rejin.jilosa",
+  "title": "Drizzle Board",
+  "developer": "Eta Corn Software Inc",
+  "icon": "/static/app-icons/com_kolosta_rejin_jilosa.webp",
+  "url": "https://play.google.com/store/apps/details?id=com.kolosta.rejin.jilosa&hl=en&gl=us",
+  "released": "Aug 1, 2026",
+  "updated": "Aug 1, 2026",
+  "version": "Varies with device"
 }

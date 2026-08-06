@@ -1,0 +1,39 @@
+{
+  "app_id": "com.melele.sevens",
+  "title": "Sevens",
+  "developer": "Melele",
+  "score": 3.8333333,
+  "icon": "/static/app-icons/com_melele_sevens.png",
+  "url": "https://play.google.com/store/apps/details?id=com.melele.sevens&hl=en&gl=us",
+  "keyword": "ice fishing",
+  "country": "Germany",
+  "source": "apkeep:apk-pure",
+  "sponsored": true,
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260803_134012_Germany_ice fishing_search",
+  "developer_id": "Melele",
+  "released": "Aug 9, 2016",
+  "updated": "2026-07-12",
+  "version": "Varies with device",
+  "summary": "Play out your cards to form a layout of sequences from the sevens",
+  "folder": "Sevens-Melele",
+  "path": "ice fishing/Sevens-Melele",
+  "updates_count": 1,
+  "ok": true,
+  "files": [
+    "com.melele.sevens.apk"
+  ],
+  "target": "/root/play-collector/загрузки/ice fishing/Sevens-Melele",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.melele.sevens...\ncom.melele.sevens downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.melele.sevens...\ncom.melele.sevens downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

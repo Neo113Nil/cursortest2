@@ -1,15 +1,15 @@
 {
-  "app_id": "com.chicken.road.cerman.fixs",
+  "app_id": "com.chicken.road.kedro.laqer",
   "title": "Chicken road game",
   "developer": "Sakura Institute",
   "developer_id": "Sakura+Institute",
-  "icon": "https://play-lh.googleusercontent.com/YI2QgW7y-K97q4OZfoZT45Dou-nEar3dPuLd9kAe6MhS0gPFEiaj4N_JVUynnJoLQUtOt4J0X07ILHXKBReo",
-  "url": "https://play.google.com/store/apps/details?id=com.chicken.road.cerman.fixs&hl=en&gl=us",
+  "icon": "/static/app-icons/com_chicken_road_kedro_laqer.png",
+  "url": "https://play.google.com/store/apps/details?id=com.chicken.road.kedro.laqer&hl=en&gl=us",
   "score": null,
   "released": "",
   "updated": "Jul 27, 2026",
   "version": "Varies with device",
-  "summary": "Analyze flock metrics and egg production trends in Chicken road game.",
+  "summary": "Execute multi lane stopwatch timing and track field events in Chicken road game.",
   "keyword": "url-batch",
   "folder": "Chicken road game-Sakura Institute",
   "path": "url-batch/Chicken road game-Sakura Institute",
@@ -17,7 +17,8 @@
   "ok": true,
   "source": "apkeep:apk-pure",
   "files": [
-    "com.chicken.road.cerman.fixs.xapk"
+    "com.chicken.road.cerman.fixs.xapk",
+    "com.chicken.road.kedro.laqer.xapk"
   ],
   "target": "/root/play-collector/загрузки/url-batch/Chicken road game-Sakura Institute",
   "attempts": [
@@ -26,11 +27,11 @@
       "try": 1,
       "ok": true,
       "exit_code": 0,
-      "stdout": "Downloading com.chicken.road.cerman.fixs...\ncom.chicken.road.cerman.fixs downloaded successfully!\n",
+      "stdout": "Downloading com.chicken.road.kedro.laqer...\ncom.chicken.road.kedro.laqer downloaded successfully!\n",
       "stderr": ""
     }
   ],
-  "stdout": "Downloading com.chicken.road.cerman.fixs...\ncom.chicken.road.cerman.fixs downloaded successfully!\n",
+  "stdout": "Downloading com.chicken.road.kedro.laqer...\ncom.chicken.road.kedro.laqer downloaded successfully!\n",
   "stderr": "",
   "exit_code": 0,
   "cloaking": "да",
@@ -74,7 +75,7 @@
       },
       {
         "param": "Permissions",
-        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.CAMERA, android.permission.POST_NOTIFICATIONS, com.chicken.road.cerman.fixs.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.CAMERA, android.permission.POST_NOTIFICATIONS, com.chicken.road.cerman.fixs.DYNA MIC_RECEIVER_NOT_EXPORTED_PERMISSION, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
       },
       {
         "param": "Libraries",
@@ -99,28 +100,39 @@
     ],
     "domains": [
       {
+        "domain": "alphamountain.ai",
+        "redirects_to": "https://www.alphamountain.ai/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "bfore.ai",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Key-Systems GmbH"
+      },
+      {
         "domain": "config.ru",
         "redirects_to": "нет",
         "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "desenmascara.me",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
       }
     ],
     "collected_data": [
-      "рекламный номер устройства → служебный номер телефона для рекламы (GAID); по нему",
-      "сервер отличает одно устройство от другого",
-      "свой номер устройства → постоянный код, который приложение собирает из системного",
-      "идентификатора телефона и технического имени программы",
-      "источник установки → откуда поставили приложение (метка из магазина Google Play /",
-      "рекламной ссылки)",
-      "номер AppsFlyer → служебный номер учёта установок; уходит в проверку, если его удалось",
-      "получить",
-      "строка «как представился браузер» → текст, которым телефон обычно представляется",
-      "сайтам; перед отправкой приложение ещё подчищает пометку встроенного окна",
-      "техническое имя приложения → имя этой программы в системе; участвует в расчёте своего",
-      "номера устройства",
-      "системный идентификатор телефона → внутренний код устройства Android; сам по себе в",
-      "запрос не кладётся, но из него делают свой номер устройства"
+      "Рекламный номер устройства — служебный",
+      "Свой номер устройства — постоянный код",
+      "Источник установки — откуда поставили",
+      "Номер учёта установок — служебный номер",
+      "Строка «как представился — текст которым",
+      "Техническое имя приложения — имя этой",
+      "Системный идентификатор — внутренний код",
+      "Адрес проверки с сервера — ссылка проверки",
+      "Флаг включения схемы — признак active",
+      "Ключ учёта установок — строка title"
     ],
     "cloaking": "да",
-    "cloaking_brief": "Какие данные собираются:\n• рекламный номер устройства → служебный номер телефона для рекламы (GAID); по нему\n• сервер отличает одно устройство от другого\n• свой номер устройства → постоянный код, который приложение собирает из системного\n• идентификатора телефона и технического имени программы\n• источник установки → откуда поставили приложение (метка из магазина Google Play /\n• рекламной ссылки)\n• номер AppsFlyer → служебный номер учёта установок; уходит в проверку, если его удалось\n• получить\n• строка «как представился браузер» → текст, которым телефон обычно представляется\n• сайтам; перед отправкой приложение ещё подчищает пометку встроенного окна\n• техническое имя приложения → имя этой программы в системе; участвует в расчёте своего\n• номера устройства\n• системный идентификатор телефона → внутренний код устройства Android; сам по себе в\n• запрос не кладётся, но из него делают свой номер устройства\n\nКак собираются: Сразу после открытия, ещё на экране заставки, приложение само запускает скрытую проверку. Человек ничего специально не нажимает и отдельного окна с разрешением на эти сведения обычно не видит. Рекламный номер и системный идентификатор приложение читает из служб Android на телефоне. Источник установки оно спрашивает у магазина Google Play. Строку браузера берёт из настроек встроенного окна сайта и перед отправкой немного подчищает. Если в удалённой настройке есть ключ учёта установок, приложение тихо запускает AppsFlyer и забирает его номер. Параллельно оно читает из облачной базы Firebase,…\n\nКуда отправляются: Сначала настройки схемы приходят из Firebase Realti…"
+    "cloaking_brief": "Какие данные собираются:\n• Рекламный номер устройства — служебный\n• Свой номер устройства — постоянный код\n• Источник установки — откуда поставили\n• Номер учёта установок — служебный номер\n• Строка «как представился — текст которым\n• Техническое имя приложения — имя этой\n• Системный идентификатор — внутренний код\n• Адрес проверки с сервера — ссылка проверки\n• Флаг включения схемы — признак active\n• Ключ учёта установок — строка title\n\nКак собираются: Сразу после открытия, ещё на экране заставки, приложение само запускает скрытую проверку. Человек ничего специально не нажимает и отдельного окна с разрешением на эти сведения обычно не видит. Сначала приложение читает удалённые настройки из облачной базы Firebase: включена ли схема, какой адрес проверки использовать и есть ли ключ учёта установок. Рекламный номер и системный идентификатор оно берёт из служб Android на телефоне. Из системного идентификатора и технического имени программы оно собирает свой постоянный номер устройства. Источник установки приложение спрашивает у магазина Google Play.…\n\nКуда отправляются: Сначала настройки схемы приходят из Firebase Realtime Database проекта chicken-3453 (адрес базы: https://chicken-3453-default-rtdb.europe-west1.firebasedatabase.app). Имена полей и путь к записи в коде спрятаны во встроенной библиотеке roostio и читаются по номерам. Если схема включена и в настройках есть адрес проверки, сведения о телефоне незаметно уходят GET-запросом на этот адрес (checkUrl из облака). Точный адрес проверки в коде не зашит жёстко: его каждый раз подставляют из удалённой настройки. Запрос идёт тихо в фоне через обычный сетевой клиент, с заголовком, что ждут ответ в формате данных, и с подчищенной строкой браузера. Если сервер вернул ссылку,…\n\nКак фильтруются пользователи: На проверку уходят рекламный номер устройства, свой номер устройства, источник установки, при наличии — номер AppsFlyer, а также строка браузера в заголовке. Жёсткого списка стран или языков прямо в приложении нет: оно само не решает «пускать / не пускать» по таблице на телефоне. Решение «кому показать внешнюю страницу, а кому оставить обычное приложение» делает сервер по ответу на адрес проверки. Если в облачных на…"
   }
 }

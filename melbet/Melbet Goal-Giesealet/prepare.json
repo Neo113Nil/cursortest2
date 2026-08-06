@@ -1,6 +1,42 @@
 {
   "ok": true,
   "apks": [
+<<<<<<< HEAD
+    "com.goalstrikeapp-6-asset.apk",
+    "com.goalstrikeapp-6-config.arm64_v8a.apk",
+    "com.goalstrikeapp-6-config.lt.apk",
+    "com.goalstrikeapp-6-config.ru.apk",
+    "com.goalstrikeapp-6-config.en.apk",
+    "com.goalstrikeapp-6.apk",
+    "com.goalstrikeapp-6-config.xxhdpi.apk"
+  ],
+  "base_apk": "com.goalstrikeapp-6.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 10617 (0%)\nINFO  - progress: 944 of 10617 (8%)\nINFO  - progress: 953 of 10617 (8%)\nINFO  - progress: 977 of 10617 (9%)\nINFO  - progress: 1093 of 10617 (10%)\nINFO  - progress: 1490 of 10617 (14%)\nINFO  - progress: 2012 of 10617 (18%)\nINFO  - progress: 2802 of 10617 (26%)\nINFO  - progress: 3247 of 10617 (30%)\nINFO  - progress: 3499 of 10617 (32%)\nINFO  - progress: 3791 of 10617 (35%)\nINFO  - progress: 4014 of 10617 (37%)\nINFO  - progress: 4341 of 10617 (40%)\nINFO  - progress: 4875 of 10617 (45%)\nINFO  - progress: 5169 of 10617 (48%)\nINFO  - progress: 5463 of 10617 (51%)\nINFO  - progress: 5712 of 10617 (53%)\nINFO  - progress: 5817 of 10617 (54%)\nINFO  - progress: 6060 of 10617 (57%)\nINFO  - progress: 6317 of 10617 (59%)\nINFO  - progress: 6544 of 10617 (61%)\nINFO  - progress: 6747 of 10617 (63%)\nINFO  - progress: 6755 of 10617 (63%)\nINFO  - progress: 6790 of 10617 (63%)\nINFO  - progress: 6791 of 10617 (63%)\nINFO  - progress: 6808 of 10617 (64%)\nINFO  - progress: 6866 of 10617 (64%)\nINFO  - progress: 6884 of 10617 (64%)\nINFO  - progress: 6972 of 10617 (65%)\nINFO  - progress: 7315 of 10617 (68%)\nINFO  - progress: 7539 of 10617 (71%)\nINFO  - progress: 7877 of 10617 (74%)\nINFO  - progress: 7941 of 10617 (74%)\nINFO  - progress: 7941 of 10617 (74%)\nINFO  - progress: 8199 of 10617 (77%)\nINFO  - progress: 8513 of 10617 (80%)\nINFO  - progress: 8865 of 10617 (83%)\nINFO  - progress: 9300 of 10617 (87%)\nINFO  - progress: 9478 of 10617 (89%)\nINFO  - progress: 9524 of 10617 (89%)\nINFO  - progress: 9941 of 10617 (93%)\nINFO  - progress: 10390 of 10617 (97%)\nINFO  - progress: 10584 of 10617 (99%)\n                                                             \nERROR - finished with errors, count: 26\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/melbet/Melbet Goal-Giesealet/decompiled",
+    "skipped": false,
+    "base_apk": "com.goalstrikeapp-6.apk"
+  },
+  "analysis_files": [
+    "com.goalstrikeapp-6-asset.apk",
+    "com.goalstrikeapp-6-config.arm64_v8a.apk",
+    "com.goalstrikeapp-6-config.lt.apk",
+    "com.goalstrikeapp-6-config.ru.apk",
+    "com.goalstrikeapp-6-config.en.apk",
+    "com.goalstrikeapp-6.apk",
+    "com.goalstrikeapp-6-config.xxhdpi.apk",
+    "apk/com.goalstrikeapp-6-asset.apk",
+    "apk/com.goalstrikeapp-6-config.arm64_v8a.apk",
+    "apk/com.goalstrikeapp-6-config.lt.apk",
+    "apk/com.goalstrikeapp-6-config.ru.apk",
+    "apk/com.goalstrikeapp-6-config.en.apk",
+    "apk/com.goalstrikeapp-6.apk",
+    "apk/com.goalstrikeapp-6-config.xxhdpi.apk",
+    "meta.json",
+=======
     "com.goalstrikeapp.apk",
     "config.arm64_v8a.apk",
     "config.armeabi_v7a.apk",
@@ -30,6 +66,7 @@
     "meta.json",
     "domain_checks.json",
     "domain_checks.md",
+>>>>>>> 821ba9c212e9bab33aef4c68ed41eb67ef83ce04
     "decompiled/resources/AndroidManifest.xml",
     "decompiled/resources/res/values/strings.xml",
     "decompiled/sources/",
@@ -48,4 +85,8 @@
     "decompiled/sources/okio/",
     "decompiled/sources/org/"
   ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 821ba9c212e9bab33aef4c68ed41eb67ef83ce04

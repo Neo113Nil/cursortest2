@@ -1,0 +1,65 @@
+{
+  "app_id": "com.lucky.multiplier.varken",
+  "title": "Ice Fishing",
+  "developer": "Planettrch",
+  "score": null,
+  "icon": "/static/app-icons/com_lucky_multiplier_varken.png",
+  "url": "https://play.google.com/store/apps/details?id=com.lucky.multiplier.varken&hl=en&gl=us",
+  "keyword": "ice fishing",
+  "country": "Italy",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260805_222219_Italy_ice fishing_search",
+  "search_title": "Ice Fishing",
+  "search_developer": "Planettrch",
+  "rank": 12,
+  "developer_id": "Planettrch",
+  "released": "Jul 8, 2026",
+  "updated": "Jul 8, 2026",
+  "version": "Varies with device",
+  "summary": "Ice Fishing: Mythical creatures guide with quiz and collection",
+  "folder": "Ice Fishing-Planettrch",
+  "path": "ice fishing/Ice Fishing-Planettrch",
+  "updates_count": 1,
+  "ok": true,
+  "files": [
+    "com.lucky.multiplier.varken-1-asset.apk",
+    "com.lucky.multiplier.varken-1-config.arm64_v8a.apk",
+    "com.lucky.multiplier.varken-1-config.xxhdpi.apk",
+    "com.lucky.multiplier.varken-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/ice fishing/Ice Fishing-Planettrch",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.lucky.multiplier.varken...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.lucky.multiplier.varken...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.lucky.multiplier.varken ─╮\n│ Ice Fishing                   │\n│ 1.0  (vc 1)                   │\n╰───────────────────────────────╯\n\nDownloading 4 files  (4.7 MB)\n  com.lucky.multiplier.varken-1.apk                  ━━━━ 100% 3.1/… 7.3  0:00:…\n                                                               MB    MB/s       \n  com.lucky.multiplier.varken-1-config.arm64_v8a.apk ━━━━ 100% 41.2… ?    0:00:…\n                                                               kB               \n  com.lucky.multiplier.varken-1-config.xxhdpi.apk    ━━━━ 100% 48.9… ?    0:00:…\n                                                               kB               \n  com.lucky.multiplier.varken-1-asset.apk            ━━━━ 100% 1.7/… 16.7 0:00:…\n                                                               MB    MB/s       \n\n                        Downloaded files                        \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.lucky.multiplier.varken-1.apk                  │  2.9 MB │\n│ com.lucky.multiplier.varken-1-config.arm64_v8a.apk │ 40.2 KB │\n│ com.lucky.multiplier.varken-1-config.xxhdpi.apk    │ 47.7 KB │\n│ com.lucky.multiplier.varken-1-asset.apk            │  2.9 MB │\n└────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n"
+    }
+  ],
+  "stdout": "╭─ com.lucky.multiplier.varken ─╮\n│ Ice Fishing                   │\n│ 1.0  (vc 1)                   │\n╰───────────────────────────────╯\n\nDownloading 4 files  (4.7 MB)\n  com.lucky.multiplier.varken-1.apk                  ━━━━ 100% 3.1/… 7.3  0:00:…\n                                                               MB    MB/s       \n  com.lucky.multiplier.varken-1-config.arm64_v8a.apk ━━━━ 100% 41.2… ?    0:00:…\n                                                               kB               \n  com.lucky.multiplier.varken-1-config.xxhdpi.apk    ━━━━ 100% 48.9… ?    0:00:…\n                                                               kB               \n  com.lucky.multiplier.varken-1-asset.apk            ━━━━ 100% 1.7/… 16.7 0:00:…\n                                                               MB    MB/s       \n\n                        Downloaded files                        \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.lucky.multiplier.varken-1.apk                  │  2.9 MB │\n│ com.lucky.multiplier.varken-1-config.arm64_v8a.apk │ 40.2 KB │\n│ com.lucky.multiplier.varken-1-config.xxhdpi.apk    │ 47.7 KB │\n│ com.lucky.multiplier.varken-1-asset.apk            │  2.9 MB │\n└────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+  "exit_code": 0
+}

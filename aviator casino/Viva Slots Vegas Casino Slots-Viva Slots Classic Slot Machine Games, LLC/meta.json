@@ -1,0 +1,42 @@
+{
+  "app_id": "com.RocketGames.ClassicSlots",
+  "title": "Viva Slots Vegas Casino Slots",
+  "developer": "Viva Slots Classic Slot Machine Games, LLC",
+  "score": 4.6965632,
+  "icon": "/static/app-icons/com_RocketGames_ClassicSlots.png",
+  "url": "https://play.google.com/store/apps/details?id=com.RocketGames.ClassicSlots&hl=en&gl=us",
+  "keyword": "aviator casino",
+  "country": "Italy",
+  "source": "apkeep:apk-pure",
+  "sponsored": false,
+  "match_via": "phone-share",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260803_203351_Italy_aviator casino_search",
+  "search_title": "Viva Slots Vegas: Casino Slots",
+  "search_developer": "Viva Slots Classic Slot Machine Games, LLC",
+  "developer_id": "Viva+Slots+Classic+Slot+Machine+Games,+LLC",
+  "released": "Jul 16, 2015",
+  "updated": "2026-05-06",
+  "version": "4.3.01",
+  "summary": "Jackpot fun! Classic slots, online or offline, from the safety of your home!",
+  "folder": "Viva Slots Vegas Casino Slots-Viva Slots Classic Slot Machine Games, LLC",
+  "path": "aviator casino/Viva Slots Vegas Casino Slots-Viva Slots Classic Slot Machine Games, LLC",
+  "updates_count": 1,
+  "ok": true,
+  "files": [
+    "com.RocketGames.ClassicSlots.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/aviator casino/Viva Slots Vegas Casino Slots-Viva Slots Classic Slot Machine Games, LLC",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.RocketGames.ClassicSlots...\ncom.RocketGames.ClassicSlots downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.RocketGames.ClassicSlots...\ncom.RocketGames.ClassicSlots downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

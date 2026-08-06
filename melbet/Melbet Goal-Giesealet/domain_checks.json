@@ -1,4 +1,10 @@
 {
+<<<<<<< HEAD
+  "all_custom_domains": [],
+  "checked": [],
+  "count": 0,
+  "vt_configured": true
+=======
   "domains": [
     {
       "domain": "solid-hub-suite.top",
@@ -377,4 +383,5 @@
       "parking": "нет (Cloudflare DNS + nginx origin; не парковка регистратора; сейчас отдаёт 404)"
     }
   ]
+>>>>>>> 821ba9c212e9bab33aef4c68ed41eb67ef83ce04
 }

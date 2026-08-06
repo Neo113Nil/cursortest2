@@ -1,24 +1,85 @@
 {
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing Game"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.13.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "26"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "AppsFlyer, Firebase Analytics / Measurement, Firebase Cloud Messaging, Firebase Installations, OneSignal (App ID 9fe1abaf-2409-4644-a3f8-f1524d43f2c6), Google Play Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.VIBRATE, android.permission.INTERNET, android.permission.POST_NOTIFICATIONS, com.google.android.gms.permission.AD_ID, com.gamericefishpro.space.permission.C2D_MESSAGE, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, android.permission.RECEIVE_BOOT_COMPLETED, com.sec.android.provider.badge.permission.READ, com.sec.android.provider.badge.permission.WRITE, com.htc.launcher.permission.READ_SETTINGS, com.htc.launcher.permission.UPDATE_SHORTCUT, com.sonyericsson.home.permission.BROADCAST_BADGE, com.sonymobile.home.permission.PROVIDER_INSERT_BADGE, com.anddoes.launcher.permission.UPDATE_COUNT, com.majeur.launcher.permission.UPDATE_BADGE, com.huawei.android.launcher.permission.CHANGE_BADGE, com.huawei.android.launcher.permission.READ_SETTINGS, com.huawei.android.launcher.permission.WRITE_SETTINGS, android.permission.READ_APP_BADGE, com.oppo.launcher.permission.READ_SETTINGS, com.oppo.launcher.permission.WRITE_SETTINGS, me.everything.badger.permission.BADGE_COUNT_READ, me.everything.badger.permission.BADGE_COUNT_WRITE, android.permission.ACCESS_NETWORK_STATE, com.google.android.finsky.per mission.BIND_GET_INSTALL_REFERRER_SERVICE, android.permiss…"
+      },
+      {
+        "param": "Libraries",
+        "value": "Jetpack Compose (ui/foundation/material3/runtime/animation), androidx.activity (+compose/ktx), androidx.appcompat, androidx.browser (Custom Tabs), androidx.core (+ktx, splashscreen, viewtree), androidx.lifecycle, androidx.navigation (+compose), androidx.room, androidx.datastore, androidx.work, androidx.startup, androidx.profileinstaller, androidx.privacysandbox.ads, Kotlin 2.0.21 + kotlinx-coroutines, Koin (DI), AppsFlyer, OneSignal, Firebase Analytics / Messaging / Installations, Google Play Services (ads-identifier, measurement, basemement, tasks, appset), Play Install Referrer, Play Integrity, Play License Check (com.pairip)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "icegamerfishingpro.online"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Room-таблица ice_startup_params (iceId, fishSource, fishData, fishId, iceFishingApp, isOnboarded, флаги запроса уведомлений); DataStore настроек игры; служебные prefs OneSignal (GT_PLAYER_ID и др.), AppsFlyer, Firebase Messaging / Installations Параметр Значение"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "start_ice, profish_onboarding, iceId, fishSource, fishData, fishId, IceFishingApp, isOnboarded, onNavigateToWebView, onNavigateToDashboard, player_id, install_time, organic, icegamerfishingpro.online, loadUrl, WebView, advertising id / GAID, AppsFlyer conversion data"
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "Рекламный номер устройства — уникальный",
+      "Метка установки из магазина — текст",
+      "Данные о рекламном — длинная служебна",
+      "Номер AppsFlyer — служебный номер",
+      "Номер экземпляра приложения — служебный",
+      "Случайный номер — новый номер"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Рекламный номер устройства — уникальный\n• Метка установки из магазина — текст\n• Данные о рекламном — длинная служебна\n• Номер AppsFlyer — служебный номер\n• Номер экземпляра приложения — служебный\n• Случайный номер — новый номер\n\nКак собираются: Сразу после запуска открывается заставка. Отдельного окна с разрешением на сбор данных человек не видит: приложение само, в фоне, читает из своей базы сохранённые параметры запуска. Если записи ещё нет — параллельно собирает всё заново. Рекламный номер устройства тихо спрашивают у сервисов Google на телефоне. Метку установки берут через сервис Google Play (Install Referrer), с ожиданием до примерно десяти секунд. Номер AppsFlyer и данные о рекламном источнике ждут от уже запущенного AppsFlyer. Номер экземпляра Firebase берут из аналитики Google. Случайный номер для уведомлений создают сами и сразу передают в OneSignal. Человек в этот момент обычно видит только заставку с названием игры.…\n\nКуда отправляются: Собранные сведения не уходят отдельным «тихим» POST на скрытый шлюз. Их дописывают прямо в адрес встроенного окна сайта: https://icegamerfishingpro.online/profish_onboarding? плюс параметры iceId, fishSource, fishData, fishId и IceFishingApp. Запасного адреса для этой проверки в коде нет. Открытие происходит незаметно для человека как часть заставки: сначала крутится загрузка, затем либо остаётся обычное приложение, либо показывается внешняя страница внутри программы. Параллельно AppsFlyer и OneSignal сами обмениваются данными со своими серверами, но развилку «оффер или обычное приложение» ведёт именно адрес icegamerfishingpro.online.\n\nКак фильтруются пользователи: На телефоне видно один явный локальный признак развилки: флаг «уже прошёл онбординг» (isOnboarded) в базе приложения. Если флаг уже стоит — человеку сразу оставляют обычное приложение и внешнюю страницу больше не открывают. Если флага ещё нет, приложение открывает страницу проверки и передаёт туда рекламный номер устройства, метку установки, данные AppsFlyer, номер AppsFlyer и номер экземпляра Firebase. Отдельного жёсткого списка стран, языков или «ботов» в коде на телефоне нет: само решение «кому показать рекламную страницу, а ком…"
+  },
   "app_id": "com.gamericefishpro.space",
   "title": "Ice Fishing Game",
   "developer": "Velvet Vision Studio",
-  "package": "com.gamericefishpro.space",
-  "version_name": "1.0",
-  "version_code": "1",
-  "min_sdk": 26,
-  "target_sdk": 36,
-  "agp": "8.13.2",
-  "kotlin": "2.0.21",
-  "cloaking": "да",
-  "folder": "Ice Fishing Game-Velvet Vision Studio",
-  "path": "ice fishing/Ice Fishing Game-Velvet Vision Studio",
-  "source": "apkeep:apk-pure",
-  "files": [
-    "com.gamericefishpro.space.xapk",
-    "apk/com.gamericefishpro.space.apk",
-    "apk/config.arm64_v8a.apk",
-    "apk/config.mdpi.apk",
-    "apk/config.zh.apk",
-    "apk/config.en.apk"
-  ]
+  "icon": "/static/app-icons/com_gamericefishpro_space.png",
+  "url": "https://play.google.com/store/apps/details?id=com.gamericefishpro.space&hl=en&gl=us",
+  "updated": "May 28, 2026",
+  "version": "Varies with device"
 }

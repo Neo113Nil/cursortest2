@@ -2,14 +2,61 @@
   "ok": true,
   "apks": [
     "org.fortheloss.st.apk",
+<<<<<<< HEAD
+    "config.xxhdpi.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.fr.apk"
+=======
     "config.arm64_v8a.apk",
     "config.fr.apk",
     "config.xxhdpi.apk",
     "config.en.apk"
+>>>>>>> 3b27aac65d085041be5d61eeaabb1a672504b2ca
   ],
   "base_apk": "org.fortheloss.st.apk",
   "jadx": {
     "ok": true,
+<<<<<<< HEAD
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 2486 (0%)\nINFO  - progress: 272 of 2486 (10%)\nINFO  - progress: 290 of 2486 (11%)\nINFO  - progress: 333 of 2486 (13%)\nINFO  - progress: 636 of 2486 (25%)\nINFO  - progress: 735 of 2486 (29%)\nINFO  - progress: 846 of 2486 (34%)\nINFO  - progress: 965 of 2486 (38%)\nINFO  - progress: 1079 of 2486 (43%)\nINFO  - progress: 1184 of 2486 (47%)\nINFO  - progress: 1259 of 2486 (50%)\nINFO  - progress: 1370 of 2486 (55%)\nINFO  - progress: 1553 of 2486 (62%)\nINFO  - progress: 1707 of 2486 (68%)\nINFO  - progress: 1797 of 2486 (72%)\nINFO  - progress: 1940 of 2486 (78%)\nINFO  - progress: 2068 of 2486 (83%)\nINFO  - progress: 2268 of 2486 (91%)\nINFO  - progress: 2418 of 2486 (97%)\n                                                             \nERROR - finished with errors, count: 6\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/ice fishing/Joker & Sevens-Zevael Studios/decompiled",
+    "skipped": false,
+    "base_apk": "org.fortheloss.st.apk"
+  },
+  "analysis_files": [
+    "org.fortheloss.st.xapk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.fr.apk",
+    "apk/org.fortheloss.st.apk",
+    "apk/config.xxhdpi.apk",
+    "apk/config.en.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/a/",
+    "decompiled/sources/a0/",
+    "decompiled/sources/a1/",
+    "decompiled/sources/a2/",
+    "decompiled/sources/a3/",
+    "decompiled/sources/a4/",
+    "decompiled/sources/a5/",
+    "decompiled/sources/a7/",
+    "decompiled/sources/a9/",
+    "decompiled/sources/aa/",
+    "decompiled/sources/ab/",
+    "decompiled/sources/ac/",
+    "decompiled/sources/ad/",
+    "decompiled/sources/ae/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/b/",
+    "decompiled/sources/b0/",
+    "decompiled/sources/b1/",
+    "decompiled/sources/b3/"
+=======
     "exit_code": 0,
     "note": "self-prepared via apkeep binary + apkpure xapk + jadx 1.5.1; jadx finished with 6 errors",
     "out_dir": "decompiled",
@@ -29,5 +76,6 @@
     "decompiled/resources/AndroidManifest.xml",
     "decompiled/resources/res/values/strings.xml",
     "decompiled/sources/"
+>>>>>>> 3b27aac65d085041be5d61eeaabb1a672504b2ca
   ]
 }

@@ -6,7 +6,11 @@
   "base_apk": "com.dogearn.dogemoney.apk",
   "jadx": {
     "ok": true,
-    "out_dir": "/workspace/1xbet/1xBet-AppToolio Soft/decompiled",
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 3244 (0%)\nINFO  - progress: 407 of 3244 (12%)\nINFO  - progress: 461 of 3244 (14%)\nINFO  - progress: 461 of 3244 (14%)\nINFO  - progress: 465 of 3244 (14%)\nINFO  - progress: 480 of 3244 (14%)\nINFO  - progress: 635 of 3244 (19%)\nINFO  - progress: 827 of 3244 (25%)\nINFO  - progress: 831 of 3244 (25%)\nINFO  - progress: 925 of 3244 (28%)\nINFO  - progress: 1057 of 3244 (32%)\nINFO  - progress: 1085 of 3244 (33%)\nINFO  - progress: 1130 of 3244 (34%)\nINFO  - progress: 1151 of 3244 (35%)\nINFO  - progress: 1162 of 3244 (35%)\nINFO  - progress: 1184 of 3244 (36%)\nINFO  - progress: 1210 of 3244 (37%)\nINFO  - progress: 1247 of 3244 (38%)\nINFO  - progress: 1460 of 3244 (45%)\nINFO  - progress: 1591 of 3244 (49%)\nINFO  - progress: 1703 of 3244 (52%)\nINFO  - progress: 1765 of 3244 (54%)\nINFO  - progress: 1783 of 3244 (54%)\nINFO  - progress: 1823 of 3244 (56%)\nINFO  - progress: 1837 of 3244 (56%)\nINFO  - progress: 1959 of 3244 (60%)\nINFO  - progress: 1960 of 3244 (60%)\nINFO  - progress: 1981 of 3244 (61%)\nINFO  - progress: 1999 of 3244 (61%)\nINFO  - progress: 2011 of 3244 (61%)\nINFO  - progress: 2048 of 3244 (63%)\nINFO  - progress: 2073 of 3244 (63%)\nINFO  - progress: 2103 of 3244 (64%)\nINFO  - progress: 2131 of 3244 (65%)\nINFO  - progress: 2441 of 3244 (75%)\nINFO  - progress: 2629 of 3244 (81%)\nINFO  - progress: 2653 of 3244 (81%)\nINFO  - progress: 2667 of 3244 (82%)\nINFO  - progress: 2683 of 3244 (82%)\nINFO  - progress: 2724 of 3244 (83%)\nINFO  - progress: 2758 of 3244 (85%)\nINFO  - progress: 2819 of 3244 (86%)\nINFO  - progress: 2836 of 3244 (87%)\nINFO  - progress: 2854 of 3244 (87%)\nINFO  - progress: 2867 of 3244 (88%)\nINFO  - progress: 3186 of 3244 (98%)\n                                                             \nERROR - finished with errors, count: 5\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/1xbet/1xBet-AppToolio Soft/decompiled",
+    "skipped": false,
     "base_apk": "com.dogearn.dogemoney.apk"
   },
   "analysis_files": [

@@ -522,7 +522,7 @@
 | ZeroCERT | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | title: Live Cricket Scores, Match Schedules &amp; News \| Criczop. Live Cricket Scores, Match Schedules &amp; News \| Criczop Schedule Cricket Videos Cricket News ICC Rankings Logout All Matches ZIM vs IND T100 2026 WI vs PAK LPL 2026 WI vs NZ ICC CWC League 2 ALL Latest Cricket Fixtures View All Fixtures Advertisement Latest Cricket News All Cri |
+| Что выводит (кратко) | title: Live Cricket Scores, Match Schedules &amp; News \| Criczop. Live Cricket Scores, Match Schedules &amp; News \| Criczop Schedule Cricket Videos Cricket News ICC Rankings Logout All Matches WI vs PAK ZIM vs IND T100 2026 LPL 2026 WI vs NZ TNPL 2026 ICC CWC League 2 Latest Cricket Fixtures View All Fixtures Latest Cricket News All Cricket New |
 | Где припаркован | регистратор: NAMECHEAP INC |
 
 ## Проверка домена: adx.anythinktech.com

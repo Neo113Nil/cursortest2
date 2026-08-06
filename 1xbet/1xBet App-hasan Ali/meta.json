@@ -1,20 +1,86 @@
 {
-  "app_id": "game.betting133.sports1xbet",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "1xBet App (в приложении: 1xBet Guide)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "23"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob (Google Mobile Ads: app open, native, banner, interstitial)"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Google Play Services Measurement (measurement-base / measurement-sdk-api), рекламный идентификатор / App Set ID"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.READ_PHONE_STATE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.WAKE_LOCK, android.permission.FOREGROUND_SERVICE, game.betting133.sports1xbet.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSI ON, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.0.21 + kotlinx-coroutines 1.9.0, Jetpack Compose (ui/material3/foundation/animation/runtime 1.7–1.9), androidx.activity 1.13.0, androidx.appcompat 1.7.1, androidx.core 1.18.0, androidx.browser 1.8.0, androidx.webkit 1.11.0-alpha02, androidx.navigation 2.8.9, androidx.lifecycle 2.10.0, androidx.work 2.7.0, androidx.room 2.2.5, androidx.startup, Coil, OkHttp3, Retrofit2 (встроенный клиент), Gson, Google Play Services Ads / Ads Identifier / AppSet / Basement / Tasks / Measurement, Google Mobile Ads (AdMob), Google Pairip licensecheck"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "vlt7vk43axcwg6zhr7m63cwawi0ltfof.lambda-url.ap-southeast-1.on.aws, 316.multigamezone.com, media.api-sports.io, config.ru"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "admob_user_agent / admob / google_ads_flags / app_set_id_storage — служебные настройки Google Ads и App Set ID; результат удалённого конфига (landingUrl, returnUrl, adMarker, adUnitId) хранится в оперативной памяти процесса, не в именованных SharedPreferences приложения"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "betting, slots, offer, landing, landingUrl, returnUrl, partnerConfig, adMarker, adMarkerQureka, adMarkerAdx, gatekeeper, language, redirect, webview, loadUrl, whitelist, bot, Config URL Проверка подозрительных доменов Данные ниже взяты как есть из готовых проверок пайплайна (domain_checks.json / domain_checks.md): сводка VirusTotal, полный список Security vendors' analysis и три дополнительных пункта в конце."
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "Код страны SIM-карты — двухбуквенный",
+      "Адрес проверки зашифрованный",
+      "Маркер режима — метка",
+      "Ссылка на рекламную",
+      "Обратная ссылка — запасной адрес",
+      "Идентификаторы рекламных блоков",
+      "Состояние сети — есть ли"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Код страны SIM-карты — двухбуквенный\n• Адрес проверки зашифрованный\n• Маркер режима — метка\n• Ссылка на рекламную\n• Обратная ссылка — запасной адрес\n• Идентификаторы рекламных блоков\n• Состояние сети — есть ли\n\nКак собираются: Сразу после открытия стартового экрана приложение само, без отдельного окна с вопросом, проверяет, есть ли интернет. Если сеть есть, через примерно две с половиной секунды в фоне запускается тихая проверка: из зашифрованной строки достаётся адрес «ворот», из системы Android читается код страны SIM-карты, и эти сведения уходят на сервер. Человек этого обычно не замечает: отдельного экрана согласия на эту проверку нет. После ответа серверные поля просто запоминаются в памяти запущенного приложения. Позже, уже внутри обычного режима спортивного гида, приложение отдельно подтягивает расписания матчей и картинки клубов с сервиса спортивных данных — это уже работа «белой» части,…\n\nКуда отправляются: Тихий запрос уходит на расшифрованный адрес https://vlt7vk43axcwg6zhr7m63cwawi0ltfof.lambda-url.ap-southeast-1.on.aws/hasali02. К нему дописывают параметр language с кодом страны SIM. Это не показ рекламы на экране, а фоновая проверка «что показать этому человеку». Запасной зашитый адрес для открытия страницы без ответа сервера — https://316.multigamezone.com/action-game.html (открывается во вкладке Chrome). Сам адрес «ворот» в открытом виде в ресурсах не лежит: он спрятан шифрованием и расшифровывается только перед запросом. Отдельно спортивные данные идут на api-football через RapidAPI и картинки — на media.api-sports.io; эти адреса нужны гиду по матчам,…\n\nКак фильтруются пользователи: На проверку уходит код страны SIM-карты (в запросе он назван language). В самом приложении нет жёсткого списка «разрешённых» или «запрещённых» стран: оно лишь отправляет этот признак и читает ответ. Само решение «кому оффер, кому рекламный режим, кому обычный гид» делает сервер по полю-маркеру и наличию ссылки на страницу. Дальше телефон сам разбирает маркер: партнёрский режим (adMarkerQureka) ведёт на внешнюю страницу; рекламный режим (adMarkerAdx) оставляет спортивный гид и включает блоки AdMob; если маркер не совпал — открывается обычный…"
+  },
   "title": "1xBet App",
-  "developer": "hasan Ali",
-  "score": null,
+  "developer": "в приложении: 1xBet Guide",
+  "icon": "/static/app-icons/game_betting133_sports1xbet.png",
+  "app_id": "game.betting133.sports1xbet",
   "url": "https://play.google.com/store/apps/details?id=game.betting133.sports1xbet&hl=en&gl=us",
-  "keyword": "1xbet",
-  "developer_id": "hasan+Ali",
-  "version": "1.0",
-  "version_code": 1,
-  "summary": "1xBet App / in-app name 1xBet Guide; sports guide with remote config gate",
-  "folder": "1xBet App-hasan Ali",
-  "path": "1xbet/1xBet App-hasan Ali",
-  "ok": true,
-  "source": "apkeep:apk-pure",
-  "files": [
-    "game.betting133.sports1xbet.xapk"
-  ],
-  "cloaking": "да"
+  "updated": "Jul 15, 2026",
+  "version": "Varies with device"
 }

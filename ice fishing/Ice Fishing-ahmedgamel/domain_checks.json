@@ -408,23 +408,23 @@
         "categories": {},
         "popularity_ranks": "нет",
         "creation_date": 1347345735,
-        "last_modification_date": 1785525069,
-        "last_analysis_date": 1785524684,
+        "last_modification_date": 1785789048,
+        "last_analysis_date": 1785788742,
         "registrar": "NAMECHEAP INC",
         "whois": "Admin City: Reykjavik\nAdmin Country: IS\nAdmin Email: 73ac69979274514fs@withheldforprivacy.com\nAdmin Organization: Privacy service provided by Withheld for Privacy ehf\nAdmin Postal Code: 101\nAdmin State/Province: Capital Region\nCreation Date: 2012-09-11T06:42:15.00Z\nCreation Date: 2012-09-11T06:42:15Z\nDNSSEC: unsigned\nDomain Name: GAMEZOP.COM\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain name: gamezop.com\nName Server: TERIN.NS.CLOUDFLARE.COM\nName Server: VIDA.NS.CLOUDFLARE.COM\nName Server: terin.ns.cloudflare.com\nName Server: vida.ns.cloudflare.com\nRegistrant City: ddbf76e4e8cee320\nRegistrant Country: IS\nRegistrant Email: 73ac69979274514fs@withheldforprivacy.com\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 3432650ec337c945\nRegistrant Name: 37bfbc24cafea5d2\nRegistrant Organization: 4b7a0912c26a13e2\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: 1c9a7bcdeaf95e9f\nRegistrant Postal Code: f206c9d9737ad45d\nRegistrant State/Province: 3e0204199d8ebf9c\nRegistrant Street: c6523241936df1ba\nRegistrar Abuse Contact Email: abuse@namecheap.com\nRegistrar Abuse Contact Phone: +1.6613102107\nRegistrar Abuse Contact Phone: +1.9854014545\nRegistrar IANA ID: 1068\nRegistrar Registration Expiration Date: 2028-09-11T06:42:15.00Z\nRegistrar URL: http://www.namecheap.com\nRegistrar WHOIS Server: whois.namecheap.com\nRegistrar: NAMECHEAP INC\nRegistrar: NameCheap, Inc.\nRegistry Domain ID: 1744148105_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2028-09-11T06:42:15Z\nTech City: Reykjavik\nTech Country: IS\nTech Email: 73ac69979274514fs@withheldforprivacy.com\nTech Organization: Privacy service provided by Withheld for Privacy ehf\nTech Postal Code: 101\nTech State/Province: Capital Region\nUpdated Date: 2025-08-12T17:07:00.82Z\nUpdated Date: 2025-08-12T17:07:00Z",
         "dns_records": [
-          "AAAA 2600:9000:24d1:de00:17:e24:8e80:93a1",
+          "AAAA 2600:9000:24ce:200:17:e24:8e80:93a1",
+          "AAAA 2600:9000:24ce:3a00:17:e24:8e80:93a1",
+          "A 18.160.143.125",
+          "A 18.160.143.102",
+          "NS ns-1308.awsdns-35.org",
           "NS ns-807.awsdns-36.net",
-          "NS ns-2029.awsdns-61.co.uk",
-          "AAAA 2600:9000:24d1:3000:17:e24:8e80:93a1",
-          "AAAA 2600:9000:24d1:2000:17:e24:8e80:93a1",
-          "A 18.64.183.81",
           "NS ns-467.awsdns-58.com",
-          "AAAA 2600:9000:24d1:6000:17:e24:8e80:93a1",
-          "A 18.64.183.127",
-          "A 18.64.183.76",
-          "AAAA 2600:9000:24d1:8600:17:e24:8e80:93a1",
-          "AAAA 2600:9000:24d1:7e00:17:e24:8e80:93a1"
+          "AAAA 2600:9000:24ce:fa00:17:e24:8e80:93a1",
+          "SOA ns-2029.awsdns-61.co.uk",
+          "AAAA 2600:9000:24ce:f800:17:e24:8e80:93a1",
+          "NS ns-2029.awsdns-61.co.uk",
+          "AAAA 2600:9000:24ce:8600:17:e24:8e80:93a1"
         ],
         "https_subject": {
           "CN": "gamezop.com"
@@ -2873,8 +2873,8 @@
         "categories": {},
         "popularity_ranks": "нет",
         "creation_date": 1724835262,
-        "last_modification_date": 1784853312,
-        "last_analysis_date": 1784852301,
+        "last_modification_date": 1785708774,
+        "last_analysis_date": 1785708433,
         "registrar": "Realtime Register B.V.",
         "whois": "Creation Date: 2024-08-28T08:54:22Z\nDNSSEC: unsigned\nDomain Name: GAMESCRITIQUE.COM\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: NS1.DNS-PARKING.COM\nName Server: NS2.DNS-PARKING.COM\nRegistrar Abuse Contact Email: rtr-security-threats@realtimeregister.com\nRegistrar Abuse Contact Phone: +31.384530759\nRegistrar IANA ID: 839\nRegistrar URL: http://www.realtimeregister.com\nRegistrar WHOIS Server: whois.yoursrs.com\nRegistrar: Realtime Register B.V.\nRegistry Domain ID: 2911799973_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2026-08-28T08:54:22Z\nUpdated Date: 2025-08-12T09:06:23Z",
         "dns_records": [
@@ -3725,7 +3725,7 @@
       "redirect_chain": [
         "https://9455.read.criczop.com/"
       ],
-      "page_output": "title: Live Cricket Scores, Match Schedules &amp; News | Criczop. Live Cricket Scores, Match Schedules &amp; News | Criczop Schedule Cricket Videos Cricket News ICC Rankings Logout All Matches ZIM vs IND T100 2026 WI vs PAK LPL 2026 WI vs NZ ICC CWC League 2 ALL Latest Cricket Fixtures View All Fixtures Advertisement Latest Cricket News All Cri",
+      "page_output": "title: Live Cricket Scores, Match Schedules &amp; News | Criczop. Live Cricket Scores, Match Schedules &amp; News | Criczop Schedule Cricket Videos Cricket News ICC Rankings Logout All Matches WI vs PAK ZIM vs IND T100 2026 LPL 2026 WI vs NZ TNPL 2026 ICC CWC League 2 Latest Cricket Fixtures View All Fixtures Latest Cricket News All Cricket New",
       "parked_at": "регистратор: NAMECHEAP INC",
       "final_url": "https://9455.read.criczop.com/",
       "http_status": 200,
@@ -4116,7 +4116,7 @@
         },
         {
           "param": "Что выводит (кратко)",
-          "value": "title: Live Cricket Scores, Match Schedules &amp; News | Criczop. Live Cricket Scores, Match Schedules &amp; News | Criczop Schedule Cricket Videos Cricket News ICC Rankings Logout All Matches ZIM vs IND T100 2026 WI vs PAK LPL 2026 WI vs NZ ICC CWC League 2 ALL Latest Cricket Fixtures View All Fixtures Advertisement Latest Cricket News All Cri"
+          "value": "title: Live Cricket Scores, Match Schedules &amp; News | Criczop. Live Cricket Scores, Match Schedules &amp; News | Criczop Schedule Cricket Videos Cricket News ICC Rankings Logout All Matches WI vs PAK ZIM vs IND T100 2026 LPL 2026 WI vs NZ TNPL 2026 ICC CWC League 2 Latest Cricket Fixtures View All Fixtures Latest Cricket News All Cricket New"
         },
         {
           "param": "Где припаркован",
@@ -4513,8 +4513,8 @@
           "Cisco Umbrella: 965105"
         ],
         "creation_date": 1572854891,
-        "last_modification_date": 1785678781,
-        "last_analysis_date": 1785675690,
+        "last_modification_date": 1785972311,
+        "last_analysis_date": 1785970756,
         "registrar": "Alibaba Cloud Computing (Beijing) Co., Ltd.",
         "whois": "Creation Date: 2019-11-04T08:08:11Z\nDNSSEC: unsigned\nDomain Name: ANYTHINKTECH.COM\nDomain Name: anythinktech.com\nDomain Status: ok https://icann.org/epp#ok\nName Server: NS-1334.AWSDNS-38.ORG\nName Server: NS-1991.AWSDNS-56.CO.UK\nName Server: NS-300.AWSDNS-37.COM\nName Server: NS-910.AWSDNS-49.NET\nRegistrant City: 3432650ec337c945\nRegistrant Country: CN\nRegistrant Email: 6aacf85c31f44448s@\nRegistrant State/Province: 82d23503866c2fea\nRegistrar Abuse Contact Email: DomainAbuse@service.aliyun.com\nRegistrar Abuse Contact Phone: +86.95187\nRegistrar IANA ID: 420\nRegistrar Registration Expiration Date: 2026-11-04T08:08:11Z\nRegistrar URL: http://www.net.cn\nRegistrar WHOIS Server: grs-whois.hichina.com\nRegistrar: Alibaba Cloud Computing (Beijing) Co., Ltd.\nRegistry Domain ID: 2451252614_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2026-11-04T08:08:11Z\nRegistry Registrant ID: Not Available From Registry\nUpdated Date: 2025-09-18T03:37:23Z",
         "dns_records": [
@@ -5327,8 +5327,8 @@
         "categories": {},
         "popularity_ranks": "нет",
         "creation_date": 1572854891,
-        "last_modification_date": 1785645312,
-        "last_analysis_date": 1785644686,
+        "last_modification_date": 1785687912,
+        "last_analysis_date": 1785687271,
         "registrar": "Alibaba Cloud Computing (Beijing) Co., Ltd.",
         "whois": "Creation Date: 2019-11-04T08:08:11Z\nDNSSEC: unsigned\nDomain Name: ANYTHINKTECH.COM\nDomain Name: anythinktech.com\nDomain Status: ok https://icann.org/epp#ok\nName Server: NS-1334.AWSDNS-38.ORG\nName Server: NS-1991.AWSDNS-56.CO.UK\nName Server: NS-300.AWSDNS-37.COM\nName Server: NS-910.AWSDNS-49.NET\nRegistrant City: 3432650ec337c945\nRegistrant Country: CN\nRegistrant Email: 6aacf85c31f44448s@\nRegistrant State/Province: 82d23503866c2fea\nRegistrar Abuse Contact Email: DomainAbuse@service.aliyun.com\nRegistrar Abuse Contact Phone: +86.95187\nRegistrar IANA ID: 420\nRegistrar Registration Expiration Date: 2026-11-04T08:08:11Z\nRegistrar URL: http://www.net.cn\nRegistrar WHOIS Server: grs-whois.hichina.com\nRegistrar: Alibaba Cloud Computing (Beijing) Co., Ltd.\nRegistry Domain ID: 2451252614_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2026-11-04T08:08:11Z\nRegistry Registrant ID: Not Available From Registry\nUpdated Date: 2025-09-18T03:37:23Z",
         "dns_records": [
@@ -6137,7 +6137,7 @@
           "Cloudflare Radar: 1000000"
         ],
         "creation_date": 1588950458,
-        "last_modification_date": 1785605279,
+        "last_modification_date": 1785954255,
         "last_analysis_date": 1785506524,
         "registrar": "NAMECHEAP INC",
         "whois": "Admin City: Reykjavik\nAdmin Country: IS\nAdmin Email: 252526798e882e7fs@withheldforprivacy.com\nAdmin Organization: Privacy service provided by Withheld for Privacy ehf\nAdmin Postal Code: 101\nAdmin State/Province: Capital Region\nCreation Date: 2020-05-08T15:07:38.00Z\nCreation Date: 2020-05-08T15:07:38Z\nDNSSEC: unsigned\nDomain Name: alphamountain.ai\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain name: alphamountain.ai\nName Server: ns-1345.awsdns-40.org\nName Server: ns-1835.awsdns-37.co.uk\nName Server: ns-365.awsdns-45.com\nName Server: ns-678.awsdns-20.net\nRegistrant City: ddbf76e4e8cee320\nRegistrant Country: IS\nRegistrant Email: 252526798e882e7fs@withheldforprivacy.com\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 3432650ec337c945\nRegistrant Name: 37bfbc24cafea5d2\nRegistrant Organization: 4b7a0912c26a13e2\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: 1c9a7bcdeaf95e9f\nRegistrant Postal Code: f206c9d9737ad45d\nRegistrant State/Province: 3e0204199d8ebf9c\nRegistrant Street: c6523241936df1ba\nRegistrar Abuse Contact Email: abuse@namecheap.com\nRegistrar Abuse Contact Phone: +1.9854014545\nRegistrar IANA ID: 1068\nRegistrar Registration Expiration Date: 2028-05-08T15:07:39.00Z\nRegistrar URL: http://www.namecheap.com\nRegistrar URL: https://www.namecheap.com/\nRegistrar WHOIS Server: whois.namecheap.com\nRegistrar: NAMECHEAP INC\nRegistrar: NameCheap, Inc.\nRegistry Admin ID: 9f655f79842d4f2a826c59e0f7151531-DONUTS\nRegistry Domain ID: 0f5f36a6423640419eb14b063cb1abf7-DONUTS\nRegistry Expiry Date: 2028-05-08T15:07:39Z\nRegistry Registrant ID: 18c45b6396eb4c50b1af0e0f15466921-DONUTS\nRegistry Tech ID: 4e060f608c944b539f660cc8b5a573f5-DONUTS\nTech City: Reykjavik\nTech Country: IS\nTech Email: 252526798e882e7fs@withheldforprivacy.com\nTech Organization: Privacy service provided by Withheld for Privacy ehf\nTech Postal Code: 101\nTech State/Province: Capital Region\nUpdated Date: 2026-04-08T05:53:16.95Z\nUpdated Date: 2026-04-13T05:53:47Z",

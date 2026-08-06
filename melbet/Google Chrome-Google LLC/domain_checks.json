@@ -1,8 +1,0 @@
-{
-  "checks": [],
-  "checked": [],
-  "count": 0,
-  "all_custom_domains": [],
-  "vt_configured": true,
-  "note": "Prompt VT hosts excluded: aomedia.org (Alliance for Open Media AV1 emsg namespace — known standards), chromium.org / chromestatus.com (Google Chrome/Chromium), bit.ly (known shortener, not present in APK strings), bar.com (not present in APK strings). No custom/unknown suspicious hosts remain per report rules."
-}
