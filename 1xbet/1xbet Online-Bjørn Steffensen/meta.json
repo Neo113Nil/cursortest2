@@ -62,5 +62,85 @@
   ],
   "stdout": "╭─ com.neonBubblePop ─╮\n│ 1xbet Online        │\n│ 5.20.2  (vc 3)      │\n╰─────────────────────╯\n\nDownloading 5 files  (62.7 MB)\n  com.neonBubblePop-3.apk                  ━━━━━━━ 100% 25.6/2… 34.2     0:00:00\n                                                        MB      MB/s            \n  com.neonBubblePop-3-config.arm64_v8a.apk ━━━━━━━ 100% 28.5/2… 26.0     0:00:00\n                                                        MB      MB/s            \n  com.neonBubblePop-3-config.en.apk        ━━━━━━━ 100% 78.2/7… 2.5 MB/s 0:00:00\n                                                        kB                      \n  com.neonBubblePop-3-config.xxhdpi.apk    ━━━━━━━ 100% 104.4/… 3.2 MB/s 0:00:00\n                                                        kB                      \n  com.neonBubblePop-3-asset.apk            ━━━━━━━ 100% 11.4/1… 7.5 MB/s 0:00:00\n                                                        MB                      \n\n                   Downloaded files                    \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                     ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.neonBubblePop-3.apk                  │  24.4 MB │\n│ com.neonBubblePop-3-config.arm64_v8a.apk │  27.2 MB │\n│ com.neonBubblePop-3-config.en.apk        │  76.4 KB │\n│ com.neonBubblePop-3-config.xxhdpi.apk    │ 101.9 KB │\n│ com.neonBubblePop-3-asset.apk            │  24.4 MB │\n└──────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "1xbet Online (в приложении: Bluewave: Neon Bubble Pop)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.12.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1.20"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "OneSignal, Firebase Messaging, Firebase Installations, Play Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.CAMERA, android.permission.RECORD_AUDIO, android.permission.MODIFY_AUDIO_SETTINGS, com.google.android.gms.permission.AD_ID, com.neonBubblePop.permission.C2D_MESSAGE, android.permission.POST_NOTIFICATIONS, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, android.permission.VIBRATE, android.permission.RECEIVE_BOOT_COMPLETED, com.sec.android.provider.badge.permission.READ, com.sec.android.provider.badge.permission.WRITE, com.htc.launcher.permission.READ_SETTINGS, com.htc.launcher.permission.UPDATE_SHORTCUT, com.sonyericsson.home.permission.BROADCAST_BADGE, com.sonymobile.home.permission.PROVIDER_INSERT_BADGE, com.anddoes.launcher.permission.UPDATE_COUNT, com.majeur.launcher.permission.UPDATE_BADGE, com.huawei.android.launcher.permission.CHANGE_BADGE, com.huawei.android.launcher.permission.READ_SETTINGS, com.huawei.android.launcher.permission.WRITE_SETTINGS, android.permission.READ_APP_BADGE, com.oppo.launcher.permission.READ_SETTINGS, com.oppo.launcher.permission.WRITE_SETTINGS, me.everything.badger.permission.BADGE_COUNT_READ, me.everything.badger.permission.BADGE_COUNT_WRITE, android.permission.ACCESS_NETWORK_S…"
+      },
+      {
+        "param": "Libraries",
+        "value": "React Native 0.85.3 (Hermes, New Architecture), Kotlin 2.1.20, kotlinx-coroutines 1.8.1, OkHttp3, Okio, Bolts, react-native-webview, react-native-async-storage, react-native-skia (@shopify), react-native-reanimated, react-native-gesture-handler, react-native-screens, react-native-worklets, react-native-safe-area-context, react-native-linear-gradient, react-native-device-info, react-native-idfa-aaid, react-native-orientation-locker, react-native-play-install-referrer, OneSignal 5.6.2, Firebase Messaging / Installations / Components, Google Play Services (ads-identifier 18.0.1, basement, cloud-messaging, tasks), AndroidX (appcompat 1.7.1, core 1.17.0, browser 1.3.0, webkit 1.14.0, work 2.8.1, room 2.5.0, lifecycle, material 1.13.0), Google Pairip licensecheck"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "iec.ch, shopify.github.io"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "AsyncStorage (БД RKStorage): прогресс игры и настройки (лучшие очки, флаг интро, звук/музыка, статистика); OneSignal SharedPreferences «OneSignal» и «GTPlayerPurchases»: id установки, состояние подписки, кэш in-app сообщений, click id; служебные prefs Firebase Installations / WorkManager"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "webview, whitelist, adid, click_id, clickid, install_referrer"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "iec.ch",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "shopify.github.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }

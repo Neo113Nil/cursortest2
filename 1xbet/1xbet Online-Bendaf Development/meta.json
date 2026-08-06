@@ -62,5 +62,111 @@
   ],
   "stdout": "╭─ com.plzehc.dsmcw ─╮\n│ 1xbet Online       │\n│ 2.0.0  (vc 2)      │\n╰────────────────────╯\n\nDownloading 5 files  (59.9 MB)\n  com.plzehc.dsmcw-2.apk                  ━━━━━━━━ 100% 23.1/2… 10.9     0:00:00\n                                                        MB      MB/s            \n  com.plzehc.dsmcw-2-config.arm64_v8a.apk ━━━━━━━━ 100% 17.9/1… 13.8     0:00:00\n                                                        MB      MB/s            \n  com.plzehc.dsmcw-2-config.en.apk        ━━━━━━━━ 100% 57.8/5… ?        0:00:00\n                                                        kB                      \n  com.plzehc.dsmcw-2-config.xxhdpi.apk    ━━━━━━━━ 100% 96.3/9… 1.8 MB/s 0:00:00\n                                                        kB                      \n  com.plzehc.dsmcw-2-asset.apk            ━━━━━━━━ 100% 21.7/2… 15.6     0:00:00\n                                                        MB      MB/s            \n\n                  Downloaded files                   \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                    ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.plzehc.dsmcw-2.apk                  │ 22.0 MB │\n│ com.plzehc.dsmcw-2-config.arm64_v8a.apk │ 17.1 MB │\n│ com.plzehc.dsmcw-2-config.en.apk        │ 56.4 KB │\n│ com.plzehc.dsmcw-2-config.xxhdpi.apk    │ 94.0 KB │\n│ com.plzehc.dsmcw-2-asset.apk            │ 22.0 MB │\n└─────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "1xbet Online"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.13.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "27"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.3.20"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, com.google.android.gms.permission.AD_ID, co m.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE, com.plzehc.dsmcw.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Flutter (io.flutter), Kotlin 2.3.20 / kotlinx-coroutines, androidx.appcompat, androidx.activity, androidx.fragment, androidx.core, androidx.browser (Custom Tabs), androidx.webkit, androidx.datastore, androidx.lifecycle, androidx.profileinstaller, androidx.window, webview_flutter / webview_flutter_android, url_launcher / url_launcher_android, flutter_custom_tabs / flutter_custom_tabs_android, shared_preferences / shared_preferences_android, advertising_id (com.os.operando), android_id (dev.fluttercommunity), device_info_plus, play_install_referrer (com.android.installreferrer), share_plus, android_intent_plus, external_app_launcher, permission_handler, path_provider, package:http (dart:io IOClient), flutter_bloc / bloc / provider, jni / jni_flutter, Google Play services ads-identifier 18.1.0, basement, tasks, Play Core (app-update, review, feature-delivery), com.pairip (Play Integrity / license check), font_awesome_flutter, google_fonts, cupertino_icons"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "com.chrome.dev, config.ru, dispatchers.io, termsfeed.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Flutter SharedPreferences: should_show_white_app (флаг «оставить обычное приложение»), privacy_gate_pending / privacy_accepted (состояние проверки и согласия), url_web (сохранённая ссылка на внешнюю страницу), url_flow_mode (режим показа: встроенное окно / вкладки Chrome / внешний браузер), custom_user_id и timestamp_user_id (служебный номер пользователя и метка времени), navigated_to_store (флаг перехода в магазин приложений)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "should_show_white_app, privacy_gate_pending, privacy_accepted, Filter_Processed, mainOffer, offer, privacyOnly, url_flow_mode, url_web, UrlWebViewApp, openUrlInApp, Opening page in Chrome Tabs, extractPrivacyUrlFromBody, extractFallbackUrl, LaunchFlowMode, PolicyDisplayMode, _openPolicyGate, _onPolicyAccepted, advertising_id, install_referrer, package_name, custom_user_id, redirect, casinoidApp, webview, playid"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "com.chrome.dev",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "termsfeed.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      }
+    ],
+    "collected_data": [
+      "Рекламный номер устройства — служебный",
+      "Строка установки из магазина — служебная",
+      "Признак первого запуска — было ли",
+      "Имя приложения в системе — техническое имя",
+      "Как представился браузер — длинная",
+      "Язык телефона — на каком",
+      "Код страны / региона — страна",
+      "Полное имя языка и региона — связка языка",
+      "Версия системы Android — какая версия",
+      "Служебный номер пользователя",
+      "Метка времени пользователя — сохранённая",
+      "Режим показа ссылки — как именно",
+      "Сохранённая ссылка — адрес",
+      "Флаг «оставить обычное — сохранённый отве",
+      "Состояние проверки политики — идёт ли"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Рекламный номер устройства — служебный\n• Строка установки из магазина — служебная\n• Признак первого запуска — было ли\n• Имя приложения в системе — техническое имя\n• Как представился браузер — длинная\n• Язык телефона — на каком\n• Код страны / региона — страна\n• Полное имя языка и региона — связка языка\n• Версия системы Android — какая версия\n• Служебный номер пользователя\n• Метка времени пользователя — сохранённая\n• Режим показа ссылки — как именно\n• Сохранённая ссылка — адрес\n• Флаг «оставить обычное — сохранённый отве\n• Состояние проверки политики — идёт ли\n\nКак собираются: Сразу после запуска открывается главный экран программы (внутри это белая оболочка гостиничного приложения «Admiral Stay Hub»). Отдельного окна с вопросом «разрешить сбор данных?» нет: приложение само читает сведения из системы Android и из своей памяти. Человек обычно видит только обычный старт и не замечает фоновой проверки. Рекламный номер берётся из служб Google Play. Строка установки — из сервиса магазина приложений, который помнит, откуда поставили программу. Как представился браузер — из системной строки Android, которую главный экран отдаёт внутренней части приложения по запросу. Язык, страна и полное имя региона — из настроек языка телефона.…\n\nКуда отправляются: Тихий запрос уходит в интернет на адрес sharp-cloud-plus.top — это не показ баннера на экране, а фоновая проверка «что показать этому человеку». В коде рядом с этим адресом лежат поля ответа Filter_Processed, source и failed: по ним видно, что сервер отвечает результатом фильтрации, а не обычной рекламной сетью. Запрос уходит незаметно в фоне через обычный интернет-клиент программы. Полный адрес одной длинной строкой в открытом виде не склеен — хост sharp-cloud-plus.top задан отдельно и подставляется в сетевой вызов. Запасного «боевого» адреса-ворот в коде не видно: именно этот хост связан с полями фильтрации Filter_Processed.…\n\nКак фильтруются пользователи: На проверку уходят рекламный номер устройства, строка установки, имя программы, язык и страна телефона, версия системы, как представился браузер и служебные номера пользователя. В самом приложении нет жёсткого списка стран или языков вида «толь…"
+  }
 }
