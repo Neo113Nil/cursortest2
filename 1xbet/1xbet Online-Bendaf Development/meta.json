@@ -1,0 +1,66 @@
+{
+  "app_id": "com.plzehc.dsmcw",
+  "title": "1xbet Online",
+  "developer": "Bendaf Development",
+  "score": null,
+  "icon": "/static/app-icons/com_plzehc_dsmcw.png",
+  "url": "https://play.google.com/store/apps/details?id=com.plzehc.dsmcw&hl=en&gl=us",
+  "keyword": "1xBet",
+  "country": "Italy",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260806_171332_Italy_1xBet_search",
+  "search_title": "1xbet Online",
+  "search_developer": "Bendaf Development",
+  "rank": 5,
+  "developer_id": "8117095369880556863",
+  "released": "Jul 18, 2026",
+  "updated": "2026-08-04",
+  "version": "2.0.0",
+  "summary": "Premium hotel stay — room service, events, climate & parking hub.",
+  "folder": "1xbet Online-Bendaf Development",
+  "path": "1xbet/1xbet Online-Bendaf Development",
+  "updates_count": 1,
+  "ok": true,
+  "files": [
+    "com.plzehc.dsmcw-2-asset.apk",
+    "com.plzehc.dsmcw-2-config.arm64_v8a.apk",
+    "com.plzehc.dsmcw-2-config.en.apk",
+    "com.plzehc.dsmcw-2-config.xxhdpi.apk",
+    "com.plzehc.dsmcw-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/1xbet/1xbet Online-Bendaf Development",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.plzehc.dsmcw...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.plzehc.dsmcw...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.plzehc.dsmcw ─╮\n│ 1xbet Online       │\n│ 2.0.0  (vc 2)      │\n╰────────────────────╯\n\nDownloading 5 files  (59.9 MB)\n  com.plzehc.dsmcw-2.apk                  ━━━━━━━━ 100% 23.1/2… 10.9     0:00:00\n                                                        MB      MB/s            \n  com.plzehc.dsmcw-2-config.arm64_v8a.apk ━━━━━━━━ 100% 17.9/1… 13.8     0:00:00\n                                                        MB      MB/s            \n  com.plzehc.dsmcw-2-config.en.apk        ━━━━━━━━ 100% 57.8/5… ?        0:00:00\n                                                        kB                      \n  com.plzehc.dsmcw-2-config.xxhdpi.apk    ━━━━━━━━ 100% 96.3/9… 1.8 MB/s 0:00:00\n                                                        kB                      \n  com.plzehc.dsmcw-2-asset.apk            ━━━━━━━━ 100% 21.7/2… 15.6     0:00:00\n                                                        MB      MB/s            \n\n                  Downloaded files                   \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                    ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.plzehc.dsmcw-2.apk                  │ 22.0 MB │\n│ com.plzehc.dsmcw-2-config.arm64_v8a.apk │ 17.1 MB │\n│ com.plzehc.dsmcw-2-config.en.apk        │ 56.4 KB │\n│ com.plzehc.dsmcw-2-config.xxhdpi.apk    │ 94.0 KB │\n│ com.plzehc.dsmcw-2-asset.apk            │ 22.0 MB │\n└─────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.plzehc.dsmcw ─╮\n│ 1xbet Online       │\n│ 2.0.0  (vc 2)      │\n╰────────────────────╯\n\nDownloading 5 files  (59.9 MB)\n  com.plzehc.dsmcw-2.apk                  ━━━━━━━━ 100% 23.1/2… 10.9     0:00:00\n                                                        MB      MB/s            \n  com.plzehc.dsmcw-2-config.arm64_v8a.apk ━━━━━━━━ 100% 17.9/1… 13.8     0:00:00\n                                                        MB      MB/s            \n  com.plzehc.dsmcw-2-config.en.apk        ━━━━━━━━ 100% 57.8/5… ?        0:00:00\n                                                        kB                      \n  com.plzehc.dsmcw-2-config.xxhdpi.apk    ━━━━━━━━ 100% 96.3/9… 1.8 MB/s 0:00:00\n                                                        kB                      \n  com.plzehc.dsmcw-2-asset.apk            ━━━━━━━━ 100% 21.7/2… 15.6     0:00:00\n                                                        MB      MB/s            \n\n                  Downloaded files                   \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                    ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.plzehc.dsmcw-2.apk                  │ 22.0 MB │\n│ com.plzehc.dsmcw-2-config.arm64_v8a.apk │ 17.1 MB │\n│ com.plzehc.dsmcw-2-config.en.apk        │ 56.4 KB │\n│ com.plzehc.dsmcw-2-config.xxhdpi.apk    │ 94.0 KB │\n│ com.plzehc.dsmcw-2-asset.apk            │ 22.0 MB │\n└─────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0
+}
