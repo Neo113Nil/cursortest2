@@ -1,0 +1,67 @@
+{
+  "app_id": "com.balancemap.controlstability",
+  "title": "Melbet",
+  "developer": "KATARA-TOV",
+  "score": null,
+  "icon": "/static/app-icons/com_balancemap_controlstability.png",
+  "url": "https://play.google.com/store/apps/details?id=com.balancemap.controlstability&hl=en&gl=us",
+  "keyword": "melbet",
+  "country": "Italy",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260806_211029_Italy_melbet_search",
+  "search_title": "Melbet",
+  "search_developer": "KATARA-TOV",
+  "rank": 5,
+  "developer_id": "KATARA-TOV",
+  "released": "",
+  "updated": "2026-08-03",
+  "version": "4",
+  "summary": "Explore balance through calm movement and a minimalist map.",
+  "folder": "Melbet-KATARA-TOV",
+  "path": "melbet/Melbet-KATARA-TOV",
+  "updates_count": 1,
+  "ok": true,
+  "files": [
+    "com.balancemap.controlstability-4-asset.apk",
+    "com.balancemap.controlstability-4-config.en.apk",
+    "com.balancemap.controlstability-4-config.lt.apk",
+    "com.balancemap.controlstability-4-config.ru.apk",
+    "com.balancemap.controlstability-4-config.xxhdpi.apk",
+    "com.balancemap.controlstability-4.apk"
+  ],
+  "target": "/root/play-collector/загрузки/melbet/Melbet-KATARA-TOV",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.balancemap.controlstability...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.balancemap.controlstability...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.balancemap.controlstability ─╮\n│ Melbet                            │\n│ 4  (vc 4)                         │\n╰───────────────────────────────────╯\n\nDownloading 6 files  (3.3 MB)\n  com.balancemap.controlstability-4.apk               ━━━━ 100% 1.8… 16.2 0:00:…\n                                                                MB   MB/s       \n  com.balancemap.controlstability-4-config.en.apk     ━━━━ 100% 29.… ?    0:00:…\n                                                                kB              \n  com.balancemap.controlstability-4-config.lt.apk     ━━━━ 100% 20.… ?    0:00:…\n                                                                kB              \n  com.balancemap.controlstability-4-config.ru.apk     ━━━━ 100% 20.… ?    0:00:…\n                                                                kB              \n  com.balancemap.controlstability-4-config.xxhdpi.apk ━━━━ 100% 667… 8.3  0:00:…\n                                                                kB   MB/s       \n  com.balancemap.controlstability-4-asset.apk         ━━━━ 100% 965… 10.6 0:00:…\n                                                                kB   MB/s       \n\n                         Downloaded files                         \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.balancemap.controlstability-4.apk               │   1.7 MB │\n│ com.balancemap.controlstability-4-config.en.apk     │  28.4 KB │\n│ com.balancemap.controlstability-4-config.lt.apk     │  20.4 KB │\n│ com.balancemap.controlstability-4-config.ru.apk     │  20.4 KB │\n│ com.balancemap.controlstability-4-config.xxhdpi.apk │ 652.1 KB │\n│ com.balancemap.controlstability-4-asset.apk         │   1.7 MB │\n└─────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n"
+    }
+  ],
+  "stdout": "╭─ com.balancemap.controlstability ─╮\n│ Melbet                            │\n│ 4  (vc 4)                         │\n╰───────────────────────────────────╯\n\nDownloading 6 files  (3.3 MB)\n  com.balancemap.controlstability-4.apk               ━━━━ 100% 1.8… 16.2 0:00:…\n                                                                MB   MB/s       \n  com.balancemap.controlstability-4-config.en.apk     ━━━━ 100% 29.… ?    0:00:…\n                                                                kB              \n  com.balancemap.controlstability-4-config.lt.apk     ━━━━ 100% 20.… ?    0:00:…\n                                                                kB              \n  com.balancemap.controlstability-4-config.ru.apk     ━━━━ 100% 20.… ?    0:00:…\n                                                                kB              \n  com.balancemap.controlstability-4-config.xxhdpi.apk ━━━━ 100% 667… 8.3  0:00:…\n                                                                kB   MB/s       \n  com.balancemap.controlstability-4-asset.apk         ━━━━ 100% 965… 10.6 0:00:…\n                                                                kB   MB/s       \n\n                         Downloaded files                         \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.balancemap.controlstability-4.apk               │   1.7 MB │\n│ com.balancemap.controlstability-4-config.en.apk     │  28.4 KB │\n│ com.balancemap.controlstability-4-config.lt.apk     │  20.4 KB │\n│ com.balancemap.controlstability-4-config.ru.apk     │  20.4 KB │\n│ com.balancemap.controlstability-4-config.xxhdpi.apk │ 652.1 KB │\n│ com.balancemap.controlstability-4-asset.apk         │   1.7 MB │\n└─────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+  "exit_code": 0
+}
