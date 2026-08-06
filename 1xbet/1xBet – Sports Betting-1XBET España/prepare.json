@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "apks": [
+    "com.obelis.xbetspain.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.xxhdpi.apk"
+  ],
+  "base_apk": "com.obelis.xbetspain.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "9827 (70%)\nINFO  - progress: 35077 of 49827 (70%)\nINFO  - progress: 35119 of 49827 (70%)\nINFO  - progress: 35149 of 49827 (70%)\nINFO  - progress: 35157 of 49827 (70%)\nINFO  - progress: 35171 of 49827 (70%)\nINFO  - progress: 35193 of 49827 (70%)\nINFO  - progress: 35218 of 49827 (70%)\nINFO  - progress: 35229 of 49827 (70%)\nINFO  - progress: 35243 of 49827 (70%)\nINFO  - progress: 35252 of 49827 (70%)\nINFO  - progress: 35279 of 49827 (70%)\nINFO  - progress: 35293 of 49827 (70%)\nINFO  - progress: 35451 of 49827 (71%)\nINFO  - progress: 35630 of 49827 (71%)\nINFO  - progress: 35806 of 49827 (71%)\nINFO  - progress: 35966 of 49827 (72%)\nINFO  - progress: 36117 of 49827 (72%)\nINFO  - progress: 36236 of 49827 (72%)\nINFO  - progress: 36412 of 49827 (73%)\nINFO  - progress: 36590 of 49827 (73%)\nINFO  - progress: 36734 of 49827 (73%)\nINFO  - progress: 36869 of 49827 (73%)\nINFO  - progress: 37040 of 49827 (74%)\nINFO  - progress: 37429 of 49827 (75%)\nINFO  - progress: 37744 of 49827 (75%)\nINFO  - progress: 38069 of 49827 (76%)\nINFO  - progress: 38418 of 49827 (77%)\nINFO  - progress: 38680 of 49827 (77%)\nINFO  - progress: 38984 of 49827 (78%)\nINFO  - progress: 39233 of 49827 (78%)\nINFO  - progress: 39642 of 49827 (79%)\nINFO  - progress: 39916 of 49827 (80%)\nINFO  - progress: 40219 of 49827 (80%)\nINFO  - progress: 40560 of 49827 (81%)\nINFO  - progress: 40949 of 49827 (82%)\nINFO  - progress: 41268 of 49827 (82%)\nINFO  - progress: 41605 of 49827 (83%)\nINFO  - progress: 41917 of 49827 (84%)\nINFO  - progress: 42245 of 49827 (84%)\nINFO  - progress: 42462 of 49827 (85%)\nINFO  - progress: 42766 of 49827 (85%)\nINFO  - progress: 43154 of 49827 (86%)\nINFO  - progress: 43582 of 49827 (87%)\nINFO  - progress: 43931 of 49827 (88%)\nINFO  - progress: 44348 of 49827 (89%)\nINFO  - progress: 44745 of 49827 (89%)\nINFO  - progress: 45144 of 49827 (90%)\nINFO  - progress: 45704 of 49827 (91%)\nINFO  - progress: 46057 of 49827 (92%)\nINFO  - progress: 46418 of 49827 (93%)\nINFO  - progress: 46745 of 49827 (93%)\nINFO  - progress: 46990 of 49827 (94%)\nINFO  - progress: 47232 of 49827 (94%)\nINFO  - progress: 47464 of 49827 (95%)\nINFO  - progress: 47738 of 49827 (95%)\nINFO  - progress: 47893 of 49827 (96%)\nINFO  - progress: 48058 of 49827 (96%)\nINFO  - progress: 48229 of 49827 (96%)\nINFO  - progress: 48456 of 49827 (97%)\nINFO  - progress: 48500 of 49827 (97%)\nINFO  - progress: 48532 of 49827 (97%)\nINFO  - progress: 48608 of 49827 (97%)\nINFO  - progress: 48608 of 49827 (97%)\nINFO  - progress: 48612 of 49827 (97%)\nINFO  - progress: 48623 of 49827 (97%)\nINFO  - progress: 48635 of 49827 (97%)\nINFO  - progress: 48796 of 49827 (97%)\nINFO  - progress: 49090 of 49827 (98%)\nINFO  - progress: 49350 of 49827 (99%)\nINFO  - progress: 49552 of 49827 (99%)\nINFO  - progress: 49682 of 49827 (99%)\nINFO  - progress: 49755 of 49827 (99%)\nINFO  - progress: 49826 of 49827 (99%)\nINFO  - progress: 49826 of 49827 (99%)\n                                                             \nERROR - finished with errors, count: 133\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/1xbet/1xBet – Sports Betting-1XBET España/decompiled",
+    "skipped": false,
+    "base_apk": "com.obelis.xbetspain.apk"
+  },
+  "analysis_files": [
+    "com.obelis.xbetspain.xapk",
+    "apk/config.arm64_v8a.apk",
+    "apk/com.obelis.xbetspain.apk",
+    "apk/config.xxhdpi.apk",
+    "apk/config.en.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/a/",
+    "decompiled/sources/a0/",
+    "decompiled/sources/a00/",
+    "decompiled/sources/a01/",
+    "decompiled/sources/a02/",
+    "decompiled/sources/a04/",
+    "decompiled/sources/a1/",
+    "decompiled/sources/a10/",
+    "decompiled/sources/a11/",
+    "decompiled/sources/a12/",
+    "decompiled/sources/a2/",
+    "decompiled/sources/a20/",
+    "decompiled/sources/a21/",
+    "decompiled/sources/a22/",
+    "decompiled/sources/a23/",
+    "decompiled/sources/a24/",
+    "decompiled/sources/a3/",
+    "decompiled/sources/a30/",
+    "decompiled/sources/a31/",
+    "decompiled/sources/a32/"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "app_id": "com.obelis.xbetspain",
+  "title": "1xBet – Sports Betting",
+  "developer": "1XBET España",
+  "score": null,
+  "icon": "/static/app-icons/com_obelis_xbetspain.webp",
+  "url": "https://play.google.com/store/apps/details?id=com.obelis.xbetspain&hl=en&gl=us",
+  "keyword": "1xBet",
+  "country": "Spain",
+  "source": "apkeep:apk-pure",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260806_184217_Spain_1xBet_search",
+  "search_title": "1xBet – Sports Betting",
+  "search_developer": "1XBET España",
+  "rank": 1,
+  "developer_id": "1XBET+Espa%C3%B1a",
+  "released": "",
+  "updated": "Jun 29, 2026",
+  "version": "Varies with device",
+  "summary": "Live match score: Football, Tennis, Basketball |Sports Statistics",
+  "folder": "1xBet – Sports Betting-1XBET España",
+  "path": "1xbet/1xBet – Sports Betting-1XBET España",
+  "updates_count": 1,
+  "ok": true,
+  "files": [
+    "com.obelis.xbetspain.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/1xbet/1xBet – Sports Betting-1XBET España",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.obelis.xbetspain...\ncom.obelis.xbetspain downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.obelis.xbetspain...\ncom.obelis.xbetspain downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}
