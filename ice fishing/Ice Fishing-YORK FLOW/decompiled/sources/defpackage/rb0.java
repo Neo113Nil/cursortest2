@@ -1,0 +1,9 @@
+package defpackage;
+
+/* compiled from: r8-map-id-5e15bf382d9e1cc682b2b5d208f848646545054061ee84effb1e415a0540fc32 */
+/* loaded from: classes.dex */
+public interface rb0 {
+    void ZpBGe2uQfcn8(defpackage.up0 up0Var, java.lang.Object obj);
+
+    defpackage.hc1 giKS3J6vZuNy();
+}
