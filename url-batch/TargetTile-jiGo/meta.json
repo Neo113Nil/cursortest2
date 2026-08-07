@@ -32,5 +32,80 @@
   ],
   "stdout": "Downloading com.jiGo.Trafficcarturn...\ncom.jiGo.Trafficcarturn downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "TargetTile (в приложении: Traffic Car)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "нет"
+      },
+      {
+        "param": "minSdk",
+        "value": "22"
+      },
+      {
+        "param": "targetSdk",
+        "value": "34"
+      },
+      {
+        "param": "Kotlin",
+        "value": "нет"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Google Analytics for Firebase (play-services-measurement), Unity Analytics"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.VIBRATE, android.permission.ACCESS_NETWORK_STATE, android.permission.WAKE_LOCK, com.google.android.gms.permission.AD_ID, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.FOREGROUND_SERVICE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity 2021.3.20f1 (IL2CPP), Google Mobile Ads / AdMob Unity (GoogleMobileAds.dll, Banner/Interstitial/Rewarded/AppOpen), play-services-ads 21.3.0, play-services-ads-lite/base 21.3.0, play-services-ads-identifier 18.0.0, user-messaging-platform 2.0.0, play-services-measurement-base/sdk-api 20.1.2, play-services-base/basement 18.0.0, play-services-tasks 18.0.1, play-services-appset 16.0.1, androidx.browser 1.4.0, androidx.work 2.7.0, androidx.room 2.2.5, androidx.lifecycle, androidx.core 1.6.0, androidx.fragment, androidx.startup, Unity Analytics (UnityEngine.UnityAnalyticsModule), UnityWebRequest modules, bitter.jnibridge, org.fmod, com.google.unity.ads, com.google.common"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "libcore.icu.icu"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Unity PlayerPrefs: unlockLvlPref (прогресс уровней), MusicPref/настройки звука и вибрации; служебные prefs Google Mobile Ads"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "нет"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "libcore.icu.icu",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }
