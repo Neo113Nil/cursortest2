@@ -32,5 +32,80 @@
   ],
   "stdout": "Downloading com.jiGo.Trafficcarturn...\ncom.jiGo.Trafficcarturn downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "TargetTile"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "нет"
+      },
+      {
+        "param": "minSdk",
+        "value": "22"
+      },
+      {
+        "param": "targetSdk",
+        "value": "34"
+      },
+      {
+        "param": "Kotlin",
+        "value": "нет"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Unity Analytics, Google Measurement"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.VIBRATE, android.permission.ACCESS_NETWORK_STATE, android.permission.WAKE_LOCK, com.google.android.gms.permission.AD_ID, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.FOREGROUND_SERVICE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity 2021.3.20f1 (IL2CPP), UnityEngine.*, Unity.TextMeshPro, Unity.Timeline, UnityEngine.UI / UIElements, Google Mobile Ads 21.3.0 (GoogleMobileAds.* / com.google.unity.ads), Google User Messaging Platform 2.0.0, play-services-ads 21.3.0, play-services-ads-identifier 18.0.0, play-services-measurement-base/sdk-api 20.1.2, play-services-base/basement/tasks/appset, androidx.browser 1.4.0 (Custom Tabs), androidx.work 2.7.0, androidx.room 2.2.5, androidx.core 1.6.0, androidx.lifecycle, androidx.startup, android.support.customtabs, bitter.jnibridge, org.fmod, MoreMountains.NiceVibrations, Google Android Game SDK"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "libcore.icu.icu"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Unity PlayerPrefs: таймер ежедневной награды (NextRewardTimePPK), флаги прогресса/разблокировок (unlockFromLvlPref), настройки звука/музыки/вибрации, служебные флаги первого запуска и рекламы (isFirst)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "нет"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "libcore.icu.icu",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }
