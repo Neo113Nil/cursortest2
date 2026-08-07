@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "apks": [
+    "com.jiGo.Trafficcarturn.apk",
+    "config.arm64_v8a.apk"
+  ],
+  "base_apk": "com.jiGo.Trafficcarturn.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 4322 (0%)\nINFO  - progress: 153 of 4322 (3%)\nINFO  - progress: 180 of 4322 (4%)\nINFO  - progress: 384 of 4322 (8%)\nINFO  - progress: 754 of 4322 (17%)\nINFO  - progress: 1308 of 4322 (30%)\nINFO  - progress: 1774 of 4322 (41%)\nINFO  - progress: 2270 of 4322 (52%)\nINFO  - progress: 2730 of 4322 (63%)\nINFO  - progress: 3123 of 4322 (72%)\nINFO  - progress: 3552 of 4322 (82%)\nINFO  - progress: 3943 of 4322 (91%)\nINFO  - progress: 4281 of 4322 (99%)\n                                                             \nERROR - finished with errors, count: 8\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/url-batch/TargetTile-jiGo/decompiled",
+    "skipped": false,
+    "base_apk": "com.jiGo.Trafficcarturn.apk"
+  },
+  "analysis_files": [
+    "com.jiGo.Trafficcarturn.xapk",
+    "apk/config.arm64_v8a.apk",
+    "apk/com.jiGo.Trafficcarturn.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/bitter/",
+    "decompiled/sources/com/",
+    "decompiled/sources/org/"
+  ]
+}

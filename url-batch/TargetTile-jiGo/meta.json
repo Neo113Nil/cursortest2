@@ -1,0 +1,36 @@
+{
+  "app_id": "com.jiGo.Trafficcarturn",
+  "title": "TargetTile",
+  "developer": "jiGo",
+  "developer_id": "jiGo",
+  "icon": "/static/app-icons/com_jiGo_Trafficcarturn.png",
+  "url": "https://play.google.com/store/apps/details?id=com.jiGo.Trafficcarturn&hl=en&gl=us",
+  "score": 3.2857144,
+  "released": "Jul 22, 2020",
+  "updated": "2026-08-03",
+  "version": "1102",
+  "summary": "Fit shapes perfectly, solve puzzles, and enjoy fun offline brain challenges.",
+  "keyword": "url-batch",
+  "folder": "TargetTile-jiGo",
+  "path": "url-batch/TargetTile-jiGo",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.jiGo.Trafficcarturn.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/TargetTile-jiGo",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.jiGo.Trafficcarturn...\ncom.jiGo.Trafficcarturn downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.jiGo.Trafficcarturn...\ncom.jiGo.Trafficcarturn downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}
