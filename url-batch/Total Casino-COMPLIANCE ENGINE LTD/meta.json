@@ -2,9 +2,9 @@
   "app_id": "com.CauHoiViSao.ViSao",
   "title": "Total Casino",
   "developer": "COMPLIANCE ENGINE LTD",
-  "url": "https://play.google.com/store/apps/details?id=com.CauHoiViSao.ViSao&hl=en&gl=us",
   "developer_id": "5107258170276040104",
   "icon": "/static/app-icons/com_CauHoiViSao_ViSao.png",
+  "url": "https://play.google.com/store/apps/details?id=com.CauHoiViSao.ViSao&hl=en&gl=us",
   "score": null,
   "released": "Jun 25, 2019",
   "updated": "Aug 6, 2026",
@@ -14,13 +14,13 @@
   "folder": "Total Casino-COMPLIANCE ENGINE LTD",
   "path": "url-batch/Total Casino-COMPLIANCE ENGINE LTD",
   "updates_count": 1,
-  "apk_label_note": "зеркало «Mười Vạn Câu Hỏi Vì Sao ?» ≠ Play «Total Casino»; скачать с Google Play не удалось — возможен старый APK",
-  "apk_title": "Mười Vạn Câu Hỏi Vì Sao ?",
-  "store_title_mismatch": true,
+  "apk_label_note": "Play«Total Casino» ≠ зеркало/скачанное«Mười Vạn Câu Hỏi Vì Sao ?» → взяли с GeeLark «Total Casino»",
+  "apk_title": "Total Casino",
+  "store_title_mismatch": false,
+  "source": "geelark-play-install",
   "ok": true,
-  "source": "apkeep:apk-pure",
   "files": [
-    "com.CauHoiViSao.ViSao.xapk"
+    "com.CauHoiViSao.ViSao.apk"
   ],
   "target": "/root/play-collector/загрузки/url-batch/Total Casino-COMPLIANCE ENGINE LTD",
   "attempts": [
@@ -33,7 +33,7 @@
       "ok": false,
       "exit_code": 1,
       "stdout": "\ncached",
-      "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\nNo download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
       "apk_label": ""
     },
     {
@@ -44,7 +44,7 @@
       },
       "ok": false,
       "exit_code": 1,
-      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss4harry@gmail.com            │\n│ GSF ID : 353191c2a53a66ec                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.droelf@gmail.com           │\n│ GSF ID : 36c485e4a1a40293                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
       "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
       "apk_label": ""
     },
@@ -56,7 +56,7 @@
       },
       "ok": false,
       "exit_code": 1,
-      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.store.uno@gmail.com            │\n│ GSF ID : 349eda8ba1e2d49d                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : oss.accs.or.aura.572@gmail.com        │\n│ GSF ID : 3c6f40c4773ed59e                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
       "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
       "apk_label": ""
     },
@@ -89,8 +89,8 @@
       },
       "ok": false,
       "exit_code": 1,
-      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.seven@gmail.com            │\n│ GSF ID : 3ed3ed93f4730501                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
-      "stderr": "Delivery failed (HTTP 429).\n",
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.fifteen@gmail.com          │\n│ GSF ID : 31c632fd6ce64816                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
       "apk_label": ""
     },
     {
@@ -101,7 +101,7 @@
       },
       "ok": false,
       "exit_code": 1,
-      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : edyrschmittew@gmail.com               │\n│ GSF ID : 348378a838c507ac                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : bilbert039@gmail.com                  │\n│ GSF ID : 3e26f1bf244bc81f                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
       "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
       "apk_label": ""
     },
