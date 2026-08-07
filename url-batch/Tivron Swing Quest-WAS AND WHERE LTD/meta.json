@@ -1,0 +1,61 @@
+{
+  "app_id": "com.ozato.mountain.jeep.racing",
+  "title": "Tivron Swing Quest",
+  "developer": "WAS AND WHERE LTD",
+  "developer_id": "WAS+AND+WHERE+LTD",
+  "icon": "/static/app-icons/com_ozato_mountain_jeep_racing.png",
+  "url": "https://play.google.com/store/apps/details?id=com.ozato.mountain.jeep.racing&hl=en&gl=us",
+  "score": null,
+  "released": "Oct 9, 2014",
+  "updated": "2026-07-28",
+  "version": "1.8",
+  "summary": "Try the Tivron Swing Quest, we hope you have fun!",
+  "keyword": "url-batch",
+  "folder": "Tivron Swing Quest-WAS AND WHERE LTD",
+  "path": "url-batch/Tivron Swing Quest-WAS AND WHERE LTD",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.ozato.mountain.jeep.racing-111-asset.apk",
+    "com.ozato.mountain.jeep.racing-111-config.arm64_v8a.apk",
+    "com.ozato.mountain.jeep.racing-111-config.en.apk",
+    "com.ozato.mountain.jeep.racing-111-config.lt.apk",
+    "com.ozato.mountain.jeep.racing-111-config.ru.apk",
+    "com.ozato.mountain.jeep.racing-111-config.xxhdpi.apk",
+    "com.ozato.mountain.jeep.racing-111.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Tivron Swing Quest-WAS AND WHERE LTD",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.ozato.mountain.jeep.racing...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.ozato.mountain.jeep.racing...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.ozato.mountain.jeep.racing ─╮\n│ Tivron Swing Quest               │\n│ 1.8  (vc 111)                    │\n╰──────────────────────────────────╯\n\nDownloading 7 files  (8.5 MB)\n  com.ozato.mountain.jeep.racing-111.apk                  ━━━ 100% 5.… 14.6 0:0…\n                                                                   MB  MB/s     \n  com.ozato.mountain.jeep.racing-111-config.arm64_v8a.apk ━━━ 100% 37… ?    0:0…\n                                                                   kB           \n  com.ozato.mountain.jeep.racing-111-config.en.apk        ━━━ 100% 73… 1.7  0:0…\n                                                                   kB  MB/s     \n  com.ozato.mountain.jeep.racing-111-config.lt.apk        ━━━ 100% 24… ?    0:0…\n                                                                   kB           \n  com.ozato.mountain.jeep.racing-111-config.ru.apk        ━━━ 100% 28… ?    0:0…\n                                                                   kB           \n  com.ozato.mountain.jeep.racing-111-config.xxhdpi.apk    ━━━ 100% 67… 359… 0:0…\n                                                                   kB  kB/s     \n  com.ozato.mountain.jeep.racing-111-asset.apk            ━━━ 100% 2.… 12.3 0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                           \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                    ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.ozato.mountain.jeep.racing-111.apk                  │  5.4 MB │\n│ com.ozato.mountain.jeep.racing-111-config.arm64_v8a.apk │ 36.2 KB │\n│ com.ozato.mountain.jeep.racing-111-config.en.apk        │ 72.2 KB │\n│ com.ozato.mountain.jeep.racing-111-config.lt.apk        │ 24.2 KB │\n│ com.ozato.mountain.jeep.racing-111-config.ru.apk        │ 28.2 KB │\n│ com.ozato.mountain.jeep.racing-111-config.xxhdpi.apk    │ 66.0 KB │\n│ com.ozato.mountain.jeep.racing-111-asset.apk            │  5.4 MB │\n└─────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n"
+    }
+  ],
+  "stdout": "╭─ com.ozato.mountain.jeep.racing ─╮\n│ Tivron Swing Quest               │\n│ 1.8  (vc 111)                    │\n╰──────────────────────────────────╯\n\nDownloading 7 files  (8.5 MB)\n  com.ozato.mountain.jeep.racing-111.apk                  ━━━ 100% 5.… 14.6 0:0…\n                                                                   MB  MB/s     \n  com.ozato.mountain.jeep.racing-111-config.arm64_v8a.apk ━━━ 100% 37… ?    0:0…\n                                                                   kB           \n  com.ozato.mountain.jeep.racing-111-config.en.apk        ━━━ 100% 73… 1.7  0:0…\n                                                                   kB  MB/s     \n  com.ozato.mountain.jeep.racing-111-config.lt.apk        ━━━ 100% 24… ?    0:0…\n                                                                   kB           \n  com.ozato.mountain.jeep.racing-111-config.ru.apk        ━━━ 100% 28… ?    0:0…\n                                                                   kB           \n  com.ozato.mountain.jeep.racing-111-config.xxhdpi.apk    ━━━ 100% 67… 359… 0:0…\n                                                                   kB  kB/s     \n  com.ozato.mountain.jeep.racing-111-asset.apk            ━━━ 100% 2.… 12.3 0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                           \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                    ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.ozato.mountain.jeep.racing-111.apk                  │  5.4 MB │\n│ com.ozato.mountain.jeep.racing-111-config.arm64_v8a.apk │ 36.2 KB │\n│ com.ozato.mountain.jeep.racing-111-config.en.apk        │ 72.2 KB │\n│ com.ozato.mountain.jeep.racing-111-config.lt.apk        │ 24.2 KB │\n│ com.ozato.mountain.jeep.racing-111-config.ru.apk        │ 28.2 KB │\n│ com.ozato.mountain.jeep.racing-111-config.xxhdpi.apk    │ 66.0 KB │\n│ com.ozato.mountain.jeep.racing-111-asset.apk            │  5.4 MB │\n└─────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+  "exit_code": 0
+}
