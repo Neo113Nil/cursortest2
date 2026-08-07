@@ -8,7 +8,7 @@
   "jadx": {
     "ok": true,
     "exit_code": 1,
-    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 4322 (0%)\nINFO  - progress: 156 of 4322 (3%)\nINFO  - progress: 257 of 4322 (5%)\nINFO  - progress: 750 of 4322 (17%)\nINFO  - progress: 1243 of 4322 (28%)\nINFO  - progress: 1772 of 4322 (40%)\nINFO  - progress: 2167 of 4322 (50%)\nINFO  - progress: 2598 of 4322 (60%)\nINFO  - progress: 3075 of 4322 (71%)\nINFO  - progress: 3646 of 4322 (84%)\nINFO  - progress: 3985 of 4322 (92%)\nINFO  - progress: 4273 of 4322 (98%)\n                                                             \nERROR - finished with errors, count: 9\n",
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 4322 (0%)\nINFO  - progress: 156 of 4322 (3%)\nINFO  - progress: 234 of 4322 (5%)\nINFO  - progress: 751 of 4322 (17%)\nINFO  - progress: 1084 of 4322 (25%)\nINFO  - progress: 1538 of 4322 (35%)\nINFO  - progress: 2024 of 4322 (46%)\nINFO  - progress: 2451 of 4322 (56%)\nINFO  - progress: 2850 of 4322 (65%)\nINFO  - progress: 3295 of 4322 (76%)\nINFO  - progress: 3748 of 4322 (86%)\nINFO  - progress: 4150 of 4322 (96%)\n                                                             \nERROR - finished with errors, count: 16\n",
     "stderr": "",
     "out_dir": "/root/play-collector/загрузки/url-batch/TargetTile-jiGo/decompiled",
     "skipped": false,
@@ -19,6 +19,8 @@
     "apk/config.arm64_v8a.apk",
     "apk/com.jiGo.Trafficcarturn.apk",
     "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
     "decompiled/resources/AndroidManifest.xml",
     "decompiled/resources/res/values/strings.xml",
     "decompiled/sources/",
