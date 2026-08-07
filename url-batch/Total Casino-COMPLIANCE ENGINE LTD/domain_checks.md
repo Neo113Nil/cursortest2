@@ -230,7 +230,6 @@
 | BitDefender | Clean |
 | Blueliv | Clean |
 | Certego | Clean |
-| Chong Lua Dao | Clean |
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
@@ -287,6 +286,7 @@
 | Bfore.Ai PreCrime | Unrated |
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
+| Chong Lua Dao | Unrated |
 | Cluster25 | Unrated |
 | Criminal IP | Unrated |
 | CSIS Security Group | Unrated |

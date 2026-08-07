@@ -396,23 +396,23 @@
         "categories": {},
         "popularity_ranks": "нет",
         "creation_date": 1326255132,
-        "last_modification_date": 1786109368,
-        "last_analysis_date": 1786108688,
+        "last_modification_date": 1786112657,
+        "last_analysis_date": 1786111514,
         "registrar": "1API GmbH",
         "whois": "Admin City: REDACTED FOR PRIVACY\nAdmin Country: REDACTED FOR PRIVACY\nAdmin Email: 4babf6fcc6f7794as@domain-contact.org\nAdmin Organization: REDACTED FOR PRIVACY\nAdmin Postal Code: REDACTED FOR PRIVACY\nAdmin State/Province: REDACTED FOR PRIVACY\nBilling City: REDACTED FOR PRIVACY\nBilling Country: REDACTED FOR PRIVACY\nBilling Email: 4babf6fcc6f7794as@domain-contact.org\nBilling Organization: REDACTED FOR PRIVACY\nBilling Postal Code: REDACTED FOR PRIVACY\nBilling State/Province: REDACTED FOR PRIVACY\nCreation Date: 2012-01-11T04:12:12Z\nDNSSEC: unsigned\nDomain Name: ALEXMACCAW.COM\nDomain Name: alexmaccaw.com\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: NS1.DNSIMPLE-EDGE.COM\nName Server: NS2.DNSIMPLE-EDGE.NET\nName Server: NS3.DNSIMPLE-EDGE.IO\nName Server: NS4.DNSIMPLE-EDGE.ORG\nName Server: ns1.dnsimple-edge.com\nName Server: ns2.dnsimple-edge.net\nName Server: ns3.dnsimple-edge.io\nName Server: ns4.dnsimple-edge.org\nRegistrant City: 1f8f4166599d23ee\nRegistrant Country: US\nRegistrant Email: 4babf6fcc6f7794as@domain-contact.org\nRegistrant Fax Ext: 1f8f4166599d23ee\nRegistrant Fax: 1f8f4166599d23ee\nRegistrant Name: 1f8f4166599d23ee\nRegistrant Organization: 1f8f4166599d23ee\nRegistrant Phone Ext: 1f8f4166599d23ee\nRegistrant Phone: 1f8f4166599d23ee\nRegistrant Postal Code: 1f8f4166599d23ee\nRegistrant State/Province: 84d65baeffe9b182\nRegistrant Street: 1f8f4166599d23ee\nRegistrar Abuse Contact Email: abuse@1api.net\nRegistrar Abuse Contact Phone: +49.68949396850\nRegistrar IANA ID: 1387\nRegistrar Registration Expiration Date: 2027-01-11T04:12:12Z\nRegistrar URL: http://www.1api.net\nRegistrar URL: https://dnsimple.com\nRegistrar WHOIS Server: whois.1api.net\nRegistrar: 1API GmbH\nRegistry Admin ID: REDACTED FOR PRIVACY\nRegistry Billing ID: REDACTED FOR PRIVACY\nRegistry Domain ID: 1696427369_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2027-01-11T04:12:12Z\nRegistry Registrant ID: REDACTED FOR PRIVACY\nRegistry Tech ID: REDACTED FOR PRIVACY\nTech City: REDACTED FOR PRIVACY\nTech Country: REDACTED FOR PRIVACY\nTech Email: 4babf6fcc6f7794as@domain-contact.org\nTech Organization: REDACTED FOR PRIVACY\nTech Postal Code: REDACTED FOR PRIVACY\nTech State/Province: REDACTED FOR PRIVACY\nUpdated Date: 2026-05-13T17:43:54Z",
         "dns_records": [
-          "A 151.101.67.7",
-          "AAAA 2a04:4e42:200::775",
-          "CAA sectigo.com",
           "AAAA 2a04:4e42:400::775",
-          "CNAME ghost.map.fastly.net",
-          "AAAA 2a04:4e42:600::775",
-          "CAA digicert.com",
           "CNAME captains-log.ghost.io",
-          "CAA certainly.com",
-          "A 151.101.131.7",
           "A 151.101.195.7",
-          "A 151.101.3.7"
+          "CAA letsencrypt.org",
+          "A 151.101.3.7",
+          "CNAME ghost.map.fastly.net",
+          "CAA certainly.com",
+          "A 151.101.67.7",
+          "CAA sectigo.com",
+          "AAAA 2a04:4e42:600::775",
+          "CNAME captains-log.ghost.io",
+          "CNAME ghost.map.fastly.net"
         ],
         "https_subject": {
           "CN": "blog.alexmaccaw.com"
@@ -1659,8 +1659,8 @@
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
-          "undetected": 32,
-          "harmless": 59,
+          "undetected": 33,
+          "harmless": 58,
           "timeout": 0
         },
         "vendor_rows": [
@@ -1702,10 +1702,6 @@
           ],
           [
             "Certego",
-            "Clean"
-          ],
-          [
-            "Chong Lua Dao",
             "Clean"
           ],
           [
@@ -1933,6 +1929,10 @@
             "Unrated"
           ],
           [
+            "Chong Lua Dao",
+            "Unrated"
+          ],
+          [
             "Cluster25",
             "Unrated"
           ],
@@ -2044,23 +2044,23 @@
           "Cloudflare Radar: 50000"
         ],
         "creation_date": 1326153600,
-        "last_modification_date": 1786109713,
-        "last_analysis_date": 1786107466,
+        "last_modification_date": 1786112847,
+        "last_analysis_date": 1786111514,
         "registrar": "нет",
         "whois": "Create date: 2012-01-10 00:00:00\nDomain name: getbootstrap.com\nDomain registrar id: 146.0\nDomain registrar url: https://rdap.godaddy.com/v1/\nExpiry date: 2027-01-10 00:00:00\nName server 1: IRIS.NS.CLOUDFLARE.COM\nName server 2: TOM.NS.CLOUDFLARE.COM\nQuery time: 2026-01-13 01:39:47\nUpdate date: 2026-01-11 00:00:00",
         "dns_records": [
-          "MX aspmx.l.google.com",
-          "A 104.20.26.6",
-          "MX alt4.aspmx.l.google.com",
           "AAAA 2606:4700:10::6814:1a06",
-          "MX alt3.aspmx.l.google.com",
+          "SOA iris.ns.cloudflare.com",
+          "MX alt4.aspmx.l.google.com",
           "A 172.66.169.22",
-          "NS iris.ns.cloudflare.com",
-          "MX alt2.aspmx.l.google.com",
           "NS tom.ns.cloudflare.com",
-          "AAAA 2606:4700:10::ac42:a916",
+          "TXT yandex-verification: 92333f69985eb59b",
+          "MX alt3.aspmx.l.google.com",
+          "MX alt2.aspmx.l.google.com",
           "MX alt1.aspmx.l.google.com",
-          "TXT yandex-verification: 92333f69985eb59b"
+          "NS iris.ns.cloudflare.com",
+          "MX aspmx.l.google.com",
+          "AAAA 2606:4700:10::ac42:a916"
         ],
         "https_subject": {
           "CN": "getbootstrap.com"
@@ -2141,10 +2141,6 @@
         },
         {
           "param": "Certego",
-          "value": "Clean"
-        },
-        {
-          "param": "Chong Lua Dao",
           "value": "Clean"
         },
         {
@@ -2369,6 +2365,10 @@
         },
         {
           "param": "ChainPatrol",
+          "value": "Unrated"
+        },
+        {
+          "param": "Chong Lua Dao",
           "value": "Unrated"
         },
         {
@@ -3697,21 +3697,21 @@
           "Cloudflare Radar: 1000000"
         ],
         "creation_date": 1232136577,
-        "last_modification_date": 1786109640,
-        "last_analysis_date": 1786109177,
+        "last_modification_date": 1786112569,
+        "last_analysis_date": 1786111091,
         "registrar": "NAMECHEAP INC",
         "whois": "Admin City: Reykjavik\nAdmin Country: IS\nAdmin Email: 73d667bac445d382s@withheldforprivacy.com\nAdmin Organization: Privacy service provided by Withheld for Privacy ehf\nAdmin Postal Code: 101\nAdmin State/Province: Capital Region\nCreation Date: 2009-01-16T20:09:37.00Z\nCreation Date: 2009-01-16T20:09:37Z\nDNSSEC: signedDelegation\nDNSSEC: unsigned\nDomain Name: MODERNIZR.COM\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain name: modernizr.com\nName Server: DNS1.REGISTRAR-SERVERS.COM\nName Server: DNS2.REGISTRAR-SERVERS.COM\nName Server: dns1.registrar-servers.com\nName Server: dns2.registrar-servers.com\nRegistrant City: ddbf76e4e8cee320\nRegistrant Country: IS\nRegistrant Email: 73d667bac445d382s@withheldforprivacy.com\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 3432650ec337c945\nRegistrant Name: 37bfbc24cafea5d2\nRegistrant Organization: 4b7a0912c26a13e2\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: 1c9a7bcdeaf95e9f\nRegistrant Postal Code: f206c9d9737ad45d\nRegistrant State/Province: 3e0204199d8ebf9c\nRegistrant Street: c6523241936df1ba\nRegistrar Abuse Contact Email: abuse@namecheap.com\nRegistrar Abuse Contact Phone: +1.6613102107\nRegistrar Abuse Contact Phone: +1.9854014545\nRegistrar IANA ID: 1068\nRegistrar Registration Expiration Date: 2035-01-16T20:09:37.00Z\nRegistrar URL: http://www.namecheap.com\nRegistrar WHOIS Server: whois.namecheap.com\nRegistrar: NAMECHEAP INC\nRegistrar: NameCheap, Inc.\nRegistry Domain ID: 1537757924_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2035-01-16T20:09:37Z\nTech City: Reykjavik\nTech Country: IS\nTech Email: 73d667bac445d382s@withheldforprivacy.com\nTech Organization: Privacy service provided by Withheld for Privacy ehf\nTech Postal Code: 101\nTech State/Province: Capital Region\nUpdated Date: 2025-01-29T20:08:03.54Z\nUpdated Date: 2025-01-29T20:08:03Z",
         "dns_records": [
-          "MX eforward3.registrar-servers.com",
-          "MX eforward2.registrar-servers.com",
-          "MX eforward5.registrar-servers.com",
           "NS dns1.registrar-servers.com",
-          "SOA dns1.registrar-servers.com",
-          "A 75.2.60.5",
-          "NS dns2.registrar-servers.com",
           "TXT v=spf1 include:spf.efwd.registrar-servers.com ~all",
-          "MX eforward1.registrar-servers.com",
-          "MX eforward4.registrar-servers.com"
+          "NS dns2.registrar-servers.com",
+          "MX eforward5.registrar-servers.com",
+          "MX eforward2.registrar-servers.com",
+          "SOA dns1.registrar-servers.com",
+          "MX eforward4.registrar-servers.com",
+          "A 75.2.60.5",
+          "MX eforward3.registrar-servers.com",
+          "MX eforward1.registrar-servers.com"
         ],
         "https_subject": {
           "CN": "modernizr.com"
