@@ -1,26 +1,22 @@
 {
   "all_custom_domains": [
-    "libcore.icu.icu"
+    "api.uca.cloud"
   ],
   "checked": [
     {
-      "domain": "libcore.icu.icu",
+      "domain": "api.uca.cloud",
       "virustotal": {
         "ok": true,
-        "vt_url": "https://www.virustotal.com/gui/domain/libcore.icu.icu",
-        "detections": "1/91 (malicious=0, suspicious=1)",
+        "vt_url": "https://www.virustotal.com/gui/domain/api.uca.cloud",
+        "detections": "0/91 (malicious=0, suspicious=0)",
         "last_analysis_stats": {
           "malicious": 0,
-          "suspicious": 1,
+          "suspicious": 0,
           "undetected": 36,
-          "harmless": 54,
+          "harmless": 55,
           "timeout": 0
         },
         "vendor_rows": [
-          [
-            "Forcepoint ThreatSeeker",
-            "Suspicious"
-          ],
           [
             "Abusix",
             "Clean"
@@ -71,10 +67,6 @@
           ],
           [
             "CRDF",
-            "Clean"
-          ],
-          [
-            "Criminal IP",
             "Clean"
           ],
           [
@@ -139,6 +131,10 @@
           ],
           [
             "Juniper Networks",
+            "Clean"
+          ],
+          [
+            "Kaspersky",
             "Clean"
           ],
           [
@@ -230,6 +226,10 @@
             "Clean"
           ],
           [
+            "Xcitium Verdict Cloud",
+            "Clean"
+          ],
+          [
             "Yandex Safebrowsing",
             "Clean"
           ],
@@ -278,6 +278,10 @@
             "Unrated"
           ],
           [
+            "Criminal IP",
+            "Unrated"
+          ],
+          [
             "CSIS Security Group",
             "Unrated"
           ],
@@ -291,6 +295,10 @@
           ],
           [
             "Ermes",
+            "Unrated"
+          ],
+          [
+            "Forcepoint ThreatSeeker",
             "Unrated"
           ],
           [
@@ -315,10 +323,6 @@
           ],
           [
             "Hunt.io Intelligence",
-            "Unrated"
-          ],
-          [
-            "Kaspersky",
             "Unrated"
           ],
           [
@@ -374,10 +378,6 @@
             "Unrated"
           ],
           [
-            "Xcitium Verdict Cloud",
-            "Unrated"
-          ],
-          [
             "ZeroFox",
             "Unrated"
           ]
@@ -387,15 +387,13 @@
           "harmless": 0,
           "malicious": 0
         },
-        "categories": {
-          "Forcepoint ThreatSeeker": "elevated exposure"
-        },
+        "categories": {},
         "popularity_ranks": "нет",
-        "creation_date": null,
-        "last_modification_date": 1758129483,
-        "last_analysis_date": 1755710039,
-        "registrar": "нет",
-        "whois": "Domain Name: ICU.ICU",
+        "creation_date": 1455643559,
+        "last_modification_date": 1786110746,
+        "last_analysis_date": 1786110414,
+        "registrar": "TUCOWS.COM, CO.",
+        "whois": "Creation Date: 2016-02-16T17:25:59\nCreation Date: 2016-02-16T17:25:59.864Z\nDNSSEC: unsigned\nDomain Name: UCA.CLOUD\nDomain Name: uca.cloud\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: dns.technorail.com\nName Server: dns2.technorail.com\nName Server: dns3.arubadns.net\nName Server: dns4.arubadns.cz\nRegistrant City: 1f8f4166599d23ee\nRegistrant Country: IT\nRegistrant Email: fc4407e0f51c9856s@\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 1f8f4166599d23ee\nRegistrant Name: 1f8f4166599d23ee\nRegistrant Organization: 1f8f4166599d23ee\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: 1f8f4166599d23ee\nRegistrant Postal Code: 1f8f4166599d23ee\nRegistrant State/Province: 43df2d074c3d59ce\nRegistrant Street: 1f8f4166599d23ee\nRegistrar Abuse Contact Email: domainabuse@tucows.com\nRegistrar Abuse Contact Phone: +1.4165350123\nRegistrar Abuse Contact Phone: +1.4165530123\nRegistrar IANA ID: 69\nRegistrar Registration Expiration Date: 2027-02-16T17:25:59\nRegistrar URL: http://tucowsdomains.com\nRegistrar URL: www.tucowsdomains.com\nRegistrar WHOIS Server: whois.tucows.com\nRegistrar: TUCOWS.COM, CO.\nRegistrar: Tucows Domains Inc.\nRegistry Domain ID: D8B6D6A2D0E924843800F18C3E5D7D0D0-ARI\nRegistry Expiry Date: 2027-02-16T17:25:59.864Z\nUpdated Date: 2026-05-25T13:52:08.235Z\nUpdated Date: 2026-05-26T10:57:29",
         "dns_records": [
           "нет"
         ],
@@ -405,36 +403,32 @@
           "нет"
         ],
         "suspicious_engines": [
-          "Forcepoint ThreatSeeker: Suspicious"
+          "нет"
         ],
         "tags": []
       },
       "redirects_to": "нет (DNS не резолвится)",
       "redirect_chain": [],
       "page_output": "нет (DNS не резолвится)",
-      "parked_at": "нет данных",
+      "parked_at": "регистратор: TUCOWS.COM, CO.",
       "final_url": "",
       "http_status": null,
       "table_rows": [
         {
           "param": "Домен",
-          "value": "libcore.icu.icu"
+          "value": "api.uca.cloud"
         },
         {
           "param": "VirusTotal URL",
-          "value": "https://www.virustotal.com/gui/domain/libcore.icu.icu"
+          "value": "https://www.virustotal.com/gui/domain/api.uca.cloud"
         },
         {
           "param": "Детекции",
-          "value": "1/91 (malicious=0, suspicious=1)"
+          "value": "0/91 (malicious=0, suspicious=0)"
         },
         {
           "param": "Security vendors' analysis",
           "value": "ниже построчно, как на VirusTotal"
-        },
-        {
-          "param": "Forcepoint ThreatSeeker",
-          "value": "Suspicious"
         },
         {
           "param": "Abusix",
@@ -486,10 +480,6 @@
         },
         {
           "param": "CRDF",
-          "value": "Clean"
-        },
-        {
-          "param": "Criminal IP",
           "value": "Clean"
         },
         {
@@ -554,6 +544,10 @@
         },
         {
           "param": "Juniper Networks",
+          "value": "Clean"
+        },
+        {
+          "param": "Kaspersky",
           "value": "Clean"
         },
         {
@@ -645,6 +639,10 @@
           "value": "Clean"
         },
         {
+          "param": "Xcitium Verdict Cloud",
+          "value": "Clean"
+        },
+        {
           "param": "Yandex Safebrowsing",
           "value": "Clean"
         },
@@ -693,6 +691,10 @@
           "value": "Unrated"
         },
         {
+          "param": "Criminal IP",
+          "value": "Unrated"
+        },
+        {
           "param": "CSIS Security Group",
           "value": "Unrated"
         },
@@ -706,6 +708,10 @@
         },
         {
           "param": "Ermes",
+          "value": "Unrated"
+        },
+        {
+          "param": "Forcepoint ThreatSeeker",
           "value": "Unrated"
         },
         {
@@ -730,10 +736,6 @@
         },
         {
           "param": "Hunt.io Intelligence",
-          "value": "Unrated"
-        },
-        {
-          "param": "Kaspersky",
           "value": "Unrated"
         },
         {
@@ -789,10 +791,6 @@
           "value": "Unrated"
         },
         {
-          "param": "Xcitium Verdict Cloud",
-          "value": "Unrated"
-        },
-        {
           "param": "ZeroFox",
           "value": "Unrated"
         },
@@ -806,7 +804,7 @@
         },
         {
           "param": "Где припаркован",
-          "value": "нет данных"
+          "value": "регистратор: TUCOWS.COM, CO."
         }
       ]
     }

@@ -1,16 +1,15 @@
 # Проверка подозрительных доменов
 
-## Проверка домена: libcore.icu.icu
+## Проверка домена: api.uca.cloud
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
 
 | Параметр / движок | Значение / вердикт |
 |---|---|
-| Домен | libcore.icu.icu |
-| VirusTotal URL | https://www.virustotal.com/gui/domain/libcore.icu.icu |
-| Детекции | 1/91 (malicious=0, suspicious=1) |
+| Домен | api.uca.cloud |
+| VirusTotal URL | https://www.virustotal.com/gui/domain/api.uca.cloud |
+| Детекции | 0/91 (malicious=0, suspicious=0) |
 | Security vendors' analysis | ниже построчно, как на VirusTotal |
-| Forcepoint ThreatSeeker | Suspicious |
 | Abusix | Clean |
 | Acronis | Clean |
 | ADMINUSLabs | Clean |
@@ -24,7 +23,6 @@
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
-| Criminal IP | Clean |
 | Cyble | Clean |
 | CyRadar | Clean |
 | desenmascara.me | Clean |
@@ -41,6 +39,7 @@
 | Heimdal Security | Clean |
 | IPsum | Clean |
 | Juniper Networks | Clean |
+| Kaspersky | Clean |
 | Lionic | Clean |
 | Malwared | Clean |
 | MalwarePatrol | Clean |
@@ -63,6 +62,7 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+| Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -75,17 +75,18 @@
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
 | Cluster25 | Unrated |
+| Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
 | CTX AI | Unrated |
 | Cyan | Unrated |
 | Ermes | Unrated |
+| Forcepoint ThreatSeeker | Unrated |
 | Fortra | Unrated |
 | GCP Abuse Intelligence | Unrated |
 | GreyNoise | Unrated |
 | Gridinsoft | Unrated |
 | Guardpot | Unrated |
 | Hunt.io Intelligence | Unrated |
-| Kaspersky | Unrated |
 | LevelBlue | Unrated |
 | Lumu | Unrated |
 | MalwareURL | Unrated |
@@ -99,8 +100,7 @@
 | SOCRadar | Unrated |
 | URLQuery | Unrated |
 | VIPRE | Unrated |
-| Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (DNS не резолвится) |
 | Что выводит (кратко) | нет (DNS не резолвится) |
-| Где припаркован | нет данных |
+| Где припаркован | регистратор: TUCOWS.COM, CO. |
