@@ -1,0 +1,36 @@
+{
+  "app_id": "net.wifi.connect",
+  "title": "Turbo Track",
+  "developer": "BASE GLASGOW OPCO LIMITED",
+  "developer_id": "BASE+GLASGOW+OPCO+LIMITED",
+  "icon": "/static/app-icons/net_wifi_connect.png",
+  "url": "https://play.google.com/store/apps/details?id=net.wifi.connect&hl=en&gl=us",
+  "score": 4.02,
+  "released": "Jul 22, 2021",
+  "updated": "2026-07-17",
+  "version": "18.2.5",
+  "summary": "Turbo Track — get ready for the race!",
+  "keyword": "url-batch",
+  "folder": "Turbo Track-BASE GLASGOW OPCO LIMITED",
+  "path": "url-batch/Turbo Track-BASE GLASGOW OPCO LIMITED",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "net.wifi.connect.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Turbo Track-BASE GLASGOW OPCO LIMITED",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading net.wifi.connect...\nnet.wifi.connect downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading net.wifi.connect...\nnet.wifi.connect downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}
