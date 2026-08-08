@@ -1,0 +1,23 @@
+{
+  "app_id": "com.quolvexarroll.mobile.app",
+  "title": "Total Casino",
+  "developer": "Kanvail Studio",
+  "application_label": "Quolvexar Roll",
+  "version": "1.0",
+  "version_code": 1,
+  "min_sdk": 32,
+  "target_sdk": 36,
+  "folder": "Total Casino-Kanvail Studio",
+  "path": "total casino/Total Casino-Kanvail Studio",
+  "source": "apkcombo",
+  "ok": true,
+  "files": [
+    "com.quolvexarroll.mobile.app.apk",
+    "com.quolvexarroll.mobile.app.xapk",
+    "com.quolvexarroll.mobile.app-split_config.arm64_v8a.apk",
+    "com.quolvexarroll.mobile.app-split_config.en.apk",
+    "com.quolvexarroll.mobile.app-split_config.xxhdpi.apk"
+  ],
+  "sha256_xapk": "6059a85d521023eba3255d38aca280fbeb3e6f9af80ac8f1dda9f2809eeb3aac",
+  "updated_at": "2026-08-08T22:47:28.792756+00:00"
+}
