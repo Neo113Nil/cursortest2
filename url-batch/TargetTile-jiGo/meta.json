@@ -1,5 +1,44 @@
 {
+  "app_id": "com.jiGo.Trafficcarturn",
   "title": "TargetTile",
   "developer": "jiGo",
-  "app_id": "com.jiGo.Trafficcarturn"
+  "developer_id": "jiGo",
+  "icon": "/static/app-icons/com_jiGo_Trafficcarturn.png",
+  "url": "https://play.google.com/store/apps/details?id=com.jiGo.Trafficcarturn&hl=en&gl=us",
+  "score": 3.2857144,
+  "released": "Jul 22, 2020",
+  "updated": "2026-08-03",
+  "version": "1102",
+  "summary": "Fit shapes perfectly, solve puzzles, and enjoy fun offline brain challenges.",
+  "keyword": "url-batch",
+  "folder": "TargetTile-jiGo",
+  "path": "url-batch/TargetTile-jiGo",
+  "updates_count": 1,
+  "apk_title": "Total C Mobile",
+  "store_title_mismatch": true,
+  "source": "geelark-play-install",
+  "apk_label_note": "Play«TargetTile» ≠ было«?» → GeeLark«Total C Mobile» geo=us",
+  "ok": true,
+  "files": [
+    "com.jiGo.Trafficcarturn.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/TargetTile-jiGo",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.jiGo.Trafficcarturn ─╮\n│ TargetTile                │\n│ 1102  (vc 1102)           │\n╰───────────────────────────╯\n\nDownloading 3 files  (42.2 MB)\n  com.jiGo.Trafficcarturn-1102.apk                  ━━━━━ 100% 14.5… 22.5 0:00:…\n                                                               MB    MB/s       \n  com.jiGo.Trafficcarturn-1102-config.arm64_v8a.apk ━━━━━ 100% 20.6… 32.4 0:00:…\n                                                               MB    MB/s       \n  com.jiGo.Trafficcarturn-1102-asset.apk            ━━━━━ 100% 9.2/… 16.4 0:00:…\n                                                               MB    MB/s       \n\n                       Downloaded files                        \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                              ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.jiGo.Trafficcarturn-1102.apk                  │ 13.8 MB │\n│ com.jiGo.Trafficcarturn-1102-config.arm64_v8a.apk │ 19.6 MB │\n│ com.jiGo.Trafficcarturn-1102-asset.apk            │ 13.8 MB │\n└───────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.jiGo.Trafficcarturn ─╮\n│ TargetTile                │\n│ 1102  (vc 1102)           │\n╰───────────────────────────╯\n\nDownloading 3 files  (42.2 MB)\n  com.jiGo.Trafficcarturn-1102.apk                  ━━━━━ 100% 14.5… 22.5 0:00:…\n                                                               MB    MB/s       \n  com.jiGo.Trafficcarturn-1102-config.arm64_v8a.apk ━━━━━ 100% 20.6… 32.4 0:00:…\n                                                               MB    MB/s       \n  com.jiGo.Trafficcarturn-1102-asset.apk            ━━━━━ 100% 9.2/… 16.4 0:00:…\n                                                               MB    MB/s       \n\n                       Downloaded files                        \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                              ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.jiGo.Trafficcarturn-1102.apk                  │ 13.8 MB │\n│ com.jiGo.Trafficcarturn-1102-config.arm64_v8a.apk │ 19.6 MB │\n│ com.jiGo.Trafficcarturn-1102-asset.apk            │ 13.8 MB │\n└───────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
 }
