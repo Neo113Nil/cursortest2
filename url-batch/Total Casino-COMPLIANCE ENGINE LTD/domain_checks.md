@@ -15,11 +15,11 @@
 | ADMINUSLabs | Clean |
 | AILabs (MONITORAPP) | Clean |
 | AlienVault | Clean |
+| alphaMountain.ai | Clean |
 | Antiy-AVL | Clean |
 | BitDefender | Clean |
 | Blueliv | Clean |
 | Certego | Clean |
-| Chong Lua Dao | Clean |
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
@@ -41,10 +41,10 @@
 | IPsum | Clean |
 | Juniper Networks | Clean |
 | Kaspersky | Clean |
+| LevelBlue | Clean |
 | Lionic | Clean |
 | Malwared | Clean |
 | MalwarePatrol | Clean |
-| Netcraft | Clean |
 | OpenPhish | Clean |
 | Phishing Database | Clean |
 | Phishtank | Clean |
@@ -63,11 +63,9 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
-| Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
-| alphaMountain.ai | Unrated |
 | AlphaSOC | Unrated |
 | ArcSight Threat Intelligence | Unrated |
 | AutoShun | Unrated |
@@ -75,6 +73,7 @@
 | Bfore.Ai PreCrime | Unrated |
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
+| Chong Lua Dao | Unrated |
 | Cluster25 | Unrated |
 | Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
@@ -87,10 +86,10 @@
 | Gridinsoft | Unrated |
 | Guardpot | Unrated |
 | Hunt.io Intelligence | Unrated |
-| LevelBlue | Unrated |
 | Lumu | Unrated |
 | MalwareURL | Unrated |
 | Mimecast | Unrated |
+| Netcraft | Unrated |
 | PhishFort | Unrated |
 | PrecisionSec | Unrated |
 | SafeToOpen | Unrated |
@@ -100,6 +99,7 @@
 | SOCRadar | Unrated |
 | URLQuery | Unrated |
 | VIPRE | Unrated |
+| Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Aurora. Aurora |
