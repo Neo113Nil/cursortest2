@@ -19,5 +19,8 @@
     "com.quolvexarroll.mobile.app-split_config.xxhdpi.apk"
   ],
   "sha256_xapk": "6059a85d521023eba3255d38aca280fbeb3e6f9af80ac8f1dda9f2809eeb3aac",
-  "updated_at": "2026-08-08T22:47:28.792756+00:00"
+  "updated_at": "2026-08-08T22:47:28.792756+00:00",
+  "icon": "/static/app-icons/com_quolvexarroll_mobile_app.png",
+  "url": "https://play.google.com/store/apps/details?id=com.quolvexarroll.mobile.app&hl=en&gl=us",
+  "updated": "2026-07-17"
 }
