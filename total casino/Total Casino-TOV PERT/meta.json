@@ -81,7 +81,7 @@
       },
       {
         "param": "Подозрительные слова",
-        "value": "workers.dev, status, rurl, betsson, Win, casino"
+        "value": "workers.dev, status, rurl, betsson, Win"
       }
     ],
     "domains": [
