@@ -1,0 +1,37 @@
+{
+  "ok": true,
+  "apks": [
+    "com.watchfacestudio.vantur01-split_config.en.apk",
+    "com.watchfacestudio.vantur01.apk",
+    "com.watchfacestudio.vantur01-split_config.xhdpi.apk"
+  ],
+  "base_apk": "com.watchfacestudio.vantur01.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 3601 (0%)\nINFO  - progress: 850 of 3601 (23%)\nINFO  - progress: 857 of 3601 (23%)\nINFO  - progress: 888 of 3601 (24%)\nINFO  - progress: 1153 of 3601 (32%)\nINFO  - progress: 1407 of 3601 (39%)\nINFO  - progress: 1613 of 3601 (44%)\nINFO  - progress: 1767 of 3601 (49%)\nINFO  - progress: 1928 of 3601 (53%)\nINFO  - progress: 2223 of 3601 (61%)\nINFO  - progress: 2344 of 3601 (65%)\nINFO  - progress: 2434 of 3601 (67%)\nINFO  - progress: 2514 of 3601 (69%)\nINFO  - progress: 2609 of 3601 (72%)\nINFO  - progress: 2732 of 3601 (75%)\nINFO  - progress: 2897 of 3601 (80%)\nINFO  - progress: 3062 of 3601 (85%)\nINFO  - progress: 3112 of 3601 (86%)\nINFO  - progress: 3244 of 3601 (90%)\nINFO  - progress: 3305 of 3601 (91%)\nINFO  - progress: 3368 of 3601 (93%)\nINFO  - progress: 3476 of 3601 (96%)\n                                                             \nERROR - finished with errors, count: 8\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/total casino/Total Casino-Sakib it/decompiled",
+    "skipped": false,
+    "base_apk": "com.watchfacestudio.vantur01.apk"
+  },
+  "analysis_files": [
+    "com.watchfacestudio.vantur01-split_config.en.apk",
+    "com.watchfacestudio.vantur01.apk",
+    "com.watchfacestudio.vantur01-split_config.xhdpi.apk",
+    "apk/com.watchfacestudio.vantur01-split_config.en.apk",
+    "apk/com.watchfacestudio.vantur01.apk",
+    "apk/com.watchfacestudio.vantur01-split_config.xhdpi.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/org/"
+  ]
+}

@@ -125,11 +125,9 @@
 | BitDefender | Clean |
 | Blueliv | Clean |
 | Certego | Clean |
-| Chong Lua Dao | Clean |
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
-| Criminal IP | Clean |
 | CTX AI | Clean |
 | Cyble | Clean |
 | CyRadar | Clean |
@@ -180,7 +178,9 @@
 | Bfore.Ai PreCrime | Unrated |
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
+| Chong Lua Dao | Unrated |
 | Cluster25 | Unrated |
+| Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
 | Cyan | Unrated |
 | DNS8 | Unrated |
@@ -522,7 +522,7 @@
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | title: Access Denied. Access Denied Access Denied You don't have permission to access "http&#58;&#47;&#47;p16&#45;sign&#45;sg&#46;tiktokcdn&#46;com&#47;" on this server. Reference&#32;&#35;18&#46;4d430f54&#46;1785579110&#46;23cd6035 https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;4d430f54& |
+| Что выводит (кратко) | title: Access Denied. Access Denied Access Denied You don't have permission to access "http&#58;&#47;&#47;p16&#45;sign&#45;sg&#46;tiktokcdn&#46;com&#47;" on this server. Reference&#32;&#35;18&#46;eaba1702&#46;1786231701&#46;14e86fab https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;eaba1702& |
 | Где припаркован | регистратор: GANDI SAS |
 
 ## Проверка домена: pangleglobal.com
@@ -548,6 +548,7 @@
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
+| Criminal IP | Clean |
 | CTX AI | Clean |
 | Cyble | Clean |
 | CyRadar | Clean |
@@ -601,7 +602,6 @@
 | ChainPatrol | Unrated |
 | Chong Lua Dao | Unrated |
 | Cluster25 | Unrated |
-| Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
 | Cyan | Unrated |
 | DNS8 | Unrated |
