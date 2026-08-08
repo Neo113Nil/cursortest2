@@ -1,5 +1,122 @@
 {
+  "app_id": "com.CauHoiViSao.ViSao",
   "title": "Total Casino",
   "developer": "COMPLIANCE ENGINE LTD",
-  "app_id": "com.CauHoiViSao.ViSao"
+  "developer_id": "5107258170276040104",
+  "icon": "/static/app-icons/com_CauHoiViSao_ViSao.png",
+  "url": "https://play.google.com/store/apps/details?id=com.CauHoiViSao.ViSao&hl=en&gl=us",
+  "score": null,
+  "released": "Jun 25, 2019",
+  "updated": "Aug 6, 2026",
+  "version": "Varies with device",
+  "summary": "Total Casin app: 777 slot machines, free spins and huge jackpot games!",
+  "keyword": "url-batch",
+  "folder": "Total Casino-COMPLIANCE ENGINE LTD",
+  "path": "url-batch/Total Casino-COMPLIANCE ENGINE LTD",
+  "updates_count": 1,
+  "apk_label_note": "Play«Total Casino» ≠ было«Mười Vạn Câu Hỏi Vì Sao ?» → GeeLark«Total Casino» geo=Germany",
+  "apk_title": "Total Casino",
+  "store_title_mismatch": false,
+  "source": "geelark-play-install",
+  "ok": true,
+  "files": [
+    "com.CauHoiViSao.ViSao.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Total Casino-COMPLIANCE ENGINE LTD",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\nNo download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : h61180594@gmail.com                   │\n│ GSF ID : 391d6e4e0c71553b                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.zeronine@gmail.com         │\n│ GSF ID : 3fb00e6c373fad1d                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.CauHoiViSao.ViSao...\ncom.CauHoiViSao.ViSao downloaded successfully!\n",
+      "stderr": "",
+      "apk_label": "Mười Vạn Câu Hỏi Vì Sao ?"
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : accs.aww.aura.191@gmail.com           │\n│ GSF ID : 30efc63a2a960fe1                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.bpear@gmail.com            │\n│ GSF ID : 3324272e29c1411e                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.CauHoiViSao.ViSao...\ncom.CauHoiViSao.ViSao downloaded successfully!\n",
+      "stderr": "",
+      "apk_label": "Mười Vạn Câu Hỏi Vì Sao ?"
+    }
+  ],
+  "stdout": "Downloading com.CauHoiViSao.ViSao...\ncom.CauHoiViSao.ViSao downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
 }
