@@ -1,5 +1,0 @@
-package androidx.interpolator;
-
-/* loaded from: classes14.dex */
-public final class R {
-}

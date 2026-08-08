@@ -1,7 +1,0 @@
-package com.facebook.ads.redexgen.core;
-
-/* renamed from: com.facebook.ads.redexgen.X.Qs, reason: case insensitive filesystem */
-/* loaded from: assets/audience_network/classes2.dex */
-public abstract class AbstractC2002Qs {
-    public abstract void A00();
-}

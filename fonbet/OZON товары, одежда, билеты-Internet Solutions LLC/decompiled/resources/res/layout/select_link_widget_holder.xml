@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ru.ozon.app.android.uikit.view.atoms.select.SelectView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/selectLink"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"/>

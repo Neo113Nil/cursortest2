@@ -1,6 +1,0 @@
-package androidx.transition;
-
-/* compiled from: R8$$SyntheticClass */
-/* loaded from: classes3.dex */
-public abstract /* synthetic */ class ViewUtilsApi19$Api29Impl$$ExternalSyntheticApiModelOutline1 {
-}

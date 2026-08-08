@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ru.ozon.composer.ui.view.issue.PageIssueStateView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@color/oz_white_1"
-    android:padding="20dp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"/>

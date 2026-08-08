@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
-    <corners android:radius="10dp"/>
-    <solid android:color="?attr/vk_legacy_content_tint_background"/>
-    <stroke
-        android:width="0.33dp"
-        android:color="?attr/vk_legacy_image_border"/>
-</shape>

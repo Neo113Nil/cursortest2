@@ -1,6 +1,0 @@
-package com.google.android.gms.internal.ads;
-
-/* loaded from: classes.dex */
-public interface zzat {
-    String zzg(String str);
-}

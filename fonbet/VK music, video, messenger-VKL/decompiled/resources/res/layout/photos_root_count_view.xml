@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:textColor="?attr/vk_ui_text_secondary"
-    android:id="@+id/tv_count"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    style="@style/PhotosRoot.CountText"/>

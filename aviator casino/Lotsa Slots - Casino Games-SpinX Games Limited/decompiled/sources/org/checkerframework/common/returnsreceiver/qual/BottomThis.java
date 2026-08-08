@@ -1,9 +1,0 @@
-package org.checkerframework.common.returnsreceiver.qual;
-
-@java.lang.annotation.Target({java.lang.annotation.ElementType.TYPE_USE, java.lang.annotation.ElementType.TYPE_PARAMETER})
-@org.checkerframework.framework.qual.TargetLocations({org.checkerframework.framework.qual.TypeUseLocation.EXPLICIT_LOWER_BOUND, org.checkerframework.framework.qual.TypeUseLocation.EXPLICIT_UPPER_BOUND})
-@java.lang.annotation.Retention(java.lang.annotation.RetentionPolicy.RUNTIME)
-@org.checkerframework.framework.qual.SubtypeOf({org.checkerframework.common.returnsreceiver.qual.UnknownThis.class})
-/* loaded from: classes6.dex */
-public @interface BottomThis {
-}

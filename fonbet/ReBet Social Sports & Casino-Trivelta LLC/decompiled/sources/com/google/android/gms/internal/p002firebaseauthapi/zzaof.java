@@ -1,8 +1,0 @@
-package com.google.android.gms.internal.p002firebaseauthapi;
-
-/* loaded from: classes2.dex */
-enum zzaof extends zzaog {
-    private zzaof(String str, int i10, zzaoj zzaojVar, int i11) {
-        super(str, 8, zzaojVar, 2);
-    }
-}

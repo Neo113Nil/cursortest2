@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.vk.photo.editor.views.RotatingView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:focusable="true"
-    android:layout_width="280dp"
-    android:layout_height="68dp"
-    android:contentDescription="@string/editor_crop_rotation_degree"
-    android:importantForAccessibility="yes"
-    style="?attr/editorRotatingViewStyle"/>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Spinner xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@drawable/vk_search_spinner_bg"
-    android:paddingRight="32dp"
-    android:layout_width="100dp"
-    android:layout_height="40dp"
-    android:minWidth="100dp"
-    android:popupBackground="@drawable/vk_bg_modal_dialog"
-    android:layout_weight="1"/>

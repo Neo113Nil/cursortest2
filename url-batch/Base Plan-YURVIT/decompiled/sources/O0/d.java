@@ -1,5 +1,0 @@
-package O0;
-
-/* loaded from: classes.dex */
-public interface d extends D0.a {
-}

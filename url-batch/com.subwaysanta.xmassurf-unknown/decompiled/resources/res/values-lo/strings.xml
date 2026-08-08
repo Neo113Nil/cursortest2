@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="copy_toast_msg">ສຳເນົາລິ້ງໃສ່ຄລິບບອດແລ້ວ</string>
-    <string name="fallback_menu_item_copy_link">ສຳເນົາລິ້ງ</string>
-    <string name="fallback_menu_item_open_in_browser">ເປີດໃນໂປຣແກຣມທ່ອງເວັບ</string>
-    <string name="fallback_menu_item_share_link">ແບ່ງປັນລິ້ງ</string>
-    <string name="status_bar_notification_info_overflow">999+</string>
-</resources>

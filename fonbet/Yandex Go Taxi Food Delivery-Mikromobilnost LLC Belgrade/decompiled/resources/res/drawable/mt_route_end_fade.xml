@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <gradient
-        android:startColor="?attr/bgTransparent"
-        android:endColor="?attr/bgMain"
-        android:angle="@integer/rtl_support_angle_for_image_mirrored"
-        android:centerX="0.88"
-        android:centerColor="?attr/bgMain"/>
-</shape>

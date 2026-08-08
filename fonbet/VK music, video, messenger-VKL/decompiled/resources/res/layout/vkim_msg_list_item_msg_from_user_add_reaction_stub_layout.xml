@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/add_reaction_floating"
-    android:padding="2dp"
-    android:layout_width="24dp"
-    android:layout_height="24dp"
-    android:contentDescription="@string/vkim_accessibility_floating_reactions_btn"
-    android:layout_marginStart="12dp"/>

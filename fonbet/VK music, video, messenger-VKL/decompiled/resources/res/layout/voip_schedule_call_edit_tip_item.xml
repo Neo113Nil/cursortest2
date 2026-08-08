@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@drawable/voip_schedule_divider"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/voip_scheduled_call_edit_tip"
-    android:layout_marginHorizontal="16dp"
-    android:paddingVertical="12dp"
-    style="@style/VkLegacyTypography.Caption1.Regular"/>

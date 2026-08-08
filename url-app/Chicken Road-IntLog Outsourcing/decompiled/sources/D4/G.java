@@ -1,6 +1,0 @@
-package D4;
-
-/* loaded from: classes.dex */
-public interface G {
-    void b();
-}

@@ -1,8 +1,0 @@
-package com.paypal.oslo.feature.onboarding.signup.phone.ui;
-
-@kotlin.Metadata(d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\"\u0014\u0010\u0001\u001a\u00020\u00008\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0001\u0010\u0002\"\u0014\u0010\u0004\u001a\u00020\u00038\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0004\u0010\u0005"}, d2 = {"Lcom/paypal/oslo/core/i18n/domain/model/CountryCode;", "getHighSpeedVideoFpsRanges", "Ljava/lang/String;", "Lcom/paypal/oslo/feature/onboarding/api/signup/domain/model/InternationalDialingCode;", "getHighSpeedVideoFpsRangesFor", com.visa.cbp.getEncExpo.warmup}, k = 2, mv = {2, 3, 0}, xi = 48)
-/* loaded from: classes13.dex */
-public final class PhoneOtpVerificationViewModelKt {
-    private static final java.lang.String getHighSpeedVideoFpsRanges = com.paypal.oslo.core.i18n.domain.model.CountryCode.m11364constructorimpl("US");
-    private static final int getHighSpeedVideoFpsRangesFor = com.paypal.oslo.feature.onboarding.api.signup.domain.model.InternationalDialingCode.m15961constructorimpl(1);
-}

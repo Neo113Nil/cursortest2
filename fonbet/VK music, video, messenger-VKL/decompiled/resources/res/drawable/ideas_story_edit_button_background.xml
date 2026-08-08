@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/vk_white_alpha20">
-    <item>
-        <shape android:shape="rectangle">
-            <solid android:color="?attr/vk_ui_overlay_primary"/>
-            <corners android:radius="@dimen/vk_ui_border_radius"/>
-        </shape>
-    </item>
-</ripple>

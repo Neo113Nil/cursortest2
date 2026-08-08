@@ -1,6 +1,0 @@
-
-!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="547f1450-e2c5-522d-89d3-278c21975aa6")}catch(e){}}();
-define(["exports","./playtika/core-legacy-586f780f","./playtika/std-legacy-12b02668","./playtika/monosyne-e5151f3b","./slotomania/machine-core-legacy-e333ecb3"],function(r,s,h,n,e){"use strict";class i extends e.T{constructor(t){super();this._machinesEventAggregator=t}onStart(){const t=s.u.as(this.stateMachine,e.lZ);t!=null&&(s.bK.subscribeWithCancellation(this._machinesEventAggregator.spin,()=>{(t.beginRespins.status==n.eb.Entered||t.respinsRecovery.status==n.eb.Entered)&&t.resume()},this.stopToken),s.bK.subscribeWithCancellation(this._machinesEventAggregator.stop,()=>{this.currentResponse.respin.wasLastRespin&&t.resume()},this.stopToken))}static callPostponedTypeInfo(){i.typeInfo=new s.T(s.a.bi(17317)).__initialize__(s.a.ci([s.a.ai(11403,"machinesEventAggregator",0)]),[s.a.ii(25),s.a.ii(258),s.a.ii(26),s.a.ii(11320),s.a.ii(11321)],[])}static __instantiate__(t,u){return new i(u[0])}}h.C.register(17317,i),r.S=i});
-//# sourceMappingURL=StateMachineResumeComponent-b786e5b6.js.map
-
-//# debugId=547f1450-e2c5-522d-89d3-278c21975aa6

@@ -1,6 +1,0 @@
-
-!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="e479f8cb-0ae8-5af8-a490-e301e1c2d745")}catch(e){}}();
-define(["exports","./playtika/core-legacy-586f780f","./playtika/std-legacy-12b02668","./slotomania/machine-core-legacy-e333ecb3","./RobinHoodBonusDataBuilder-f2e1dfb5"],function(u,i,t,s,r){"use strict";class n extends s.ce{constructor(){super()}initScenarios(){this.addScenario(0,t.g.bind(this,this.createBonusGameScenario)),this.addScenario(1,t.g.bind(this,this.createBonusGameScenario))}createBonusGameScenario(c,o,S,h,d){const w=new r.R,e=new s.cc(c,o,S,t.g.bind(this,this.setSharing),h,d);return e.withActionSource(new r.a),e.withDataBuilder(w),e.withView(new r.b(i.$.formatSingle(s.C.BONUS_ROUND_SCENE_PATH_PATTERN,0))),e}static callPostponedTypeInfo(){n.typeInfo=new i.T(i.a.bi(15612)).__initialize__(i.a.ci(null),[i.a.ii(25),i.a.ii(26),i.a.ii(11730)],[])}static __instantiate__(c,o){return new n}}t.C.register(15612,n),u.RobinHoodBonusScenario=n});
-//# sourceMappingURL=RobinHoodBonusScenario-24b44b6a.js.map
-
-//# debugId=e479f8cb-0ae8-5af8-a490-e301e1c2d745

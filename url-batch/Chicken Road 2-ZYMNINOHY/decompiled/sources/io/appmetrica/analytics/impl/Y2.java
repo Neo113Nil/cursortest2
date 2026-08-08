@@ -1,8 +1,0 @@
-package io.appmetrica.analytics.impl;
-
-/* loaded from: classes.dex */
-public abstract class Y2 {
-    public static boolean a(Boolean bool) {
-        return Boolean.TRUE.equals(bool);
-    }
-}

@@ -1,6 +1,0 @@
-
-!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="a22785ca-a6a1-5e7d-8d79-4a659f8cab81")}catch(e){}}();
-define(["exports","./playtika/core-legacy-586f780f","./playtika/std-legacy-12b02668","./SlotComponents472-a855a894","./slotomania/machine-core-legacy-e333ecb3"],function(o,t,r,l,i){"use strict";const a={PERSONAL_JACKPOT_KEYS_BY_MACHINE_ID:new Map([[497,new i.P("libertyDream","LibertyDream","libertyDream_","gd")],[11497,new i.P("libertyDreamSlotoQuest","LibertyDreamSlotoQuest","libertyDreamSlotoQuest_","gd")]])};class e extends l.SlotComponents472{constructor(s,n=void 0){super(s,n);this._personalJackpotKeysByMachineId=a.PERSONAL_JACKPOT_KEYS_BY_MACHINE_ID}static callPostponedTypeInfo(){e.typeInfo=new t.T(t.a.bi(21464)).__initialize__(t.a.ci([t.a.ai(11691,"controllerContext",0),t.a.ai(11703,"slotContext",1,!0)]),[t.a.ii(12032),t.a.ii(12033),t.a.ii(25)],[])}static __instantiate__(s,n){return new e(n[0],n[1])}}r.C.register(21464,e),o.SlotComponents497=e});
-//# sourceMappingURL=SlotComponents497-377449c1.js.map
-
-//# debugId=a22785ca-a6a1-5e7d-8d79-4a659f8cab81

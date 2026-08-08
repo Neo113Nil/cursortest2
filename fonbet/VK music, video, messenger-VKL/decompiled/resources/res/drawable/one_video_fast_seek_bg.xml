@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/one_video_fast_seek_bg">
-    <item android:id="@android:id/mask">
-        <shape android:shape="oval">
-            <solid android:color="@color/one_video_fast_seek_bg"/>
-        </shape>
-    </item>
-</ripple>

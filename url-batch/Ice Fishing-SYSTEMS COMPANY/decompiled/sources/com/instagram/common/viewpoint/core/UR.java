@@ -1,8 +1,0 @@
-package com.instagram.common.viewpoint.core;
-
-/* loaded from: assets/audience_network/classes2.dex */
-public interface UR {
-    void A51();
-
-    void AL6(V7 v72, UO<String> uo);
-}

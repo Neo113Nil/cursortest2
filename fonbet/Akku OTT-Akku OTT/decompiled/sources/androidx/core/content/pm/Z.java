@@ -1,7 +1,0 @@
-package androidx.core.content.pm;
-
-/* loaded from: classes.dex */
-public final /* synthetic */ class Z {
-    public static /* synthetic */ void b() {
-    }
-}

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
-        android:icon="@drawable/ic_m_reload_filled"
-        android:id="@+id/reload"
-        android:title="Home"
-        app:showAsAction="always"/>
-</menu>

@@ -1,8 +1,0 @@
-package com.iab.omid.library.chartboost.walking;
-
-/* loaded from: classes12.dex */
-public enum c {
-    PARENT_VIEW,
-    OBSTRUCTION_VIEW,
-    UNDERLYING_VIEW
-}

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="copy_toast_msg">ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ಲಿಂಕ್ ಅನ್ನು ನಕಲಿಸಲಾಗಿದೆ</string>
-    <string name="fallback_menu_item_copy_link">ಲಿಂಕ್ ನಕಲಿಸಿ</string>
-    <string name="fallback_menu_item_open_in_browser">ಬ್ರೌಸರ್‌ನಲ್ಲಿ ತೆರೆಯಿರಿ</string>
-    <string name="fallback_menu_item_share_link">ಲಿಂಕ್ ಹಂಚಿರಿ</string>
-    <string name="status_bar_notification_info_overflow">999+</string>
-</resources>

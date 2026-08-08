@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.tabs.TabLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/tabsTl"
-    app:tabPaddingEnd="10dp"
-    app:tabPaddingStart="10dp"
-    style="@style/TabLayout"/>

@@ -1,9 +1,0 @@
-package com.facebook.react.viewmanagers;
-
-import android.view.View;
-import com.facebook.react.uimanager.ViewManagerWithGeneratedInterface;
-
-/* loaded from: classes2.dex */
-public interface BrazeBannerViewManagerInterface<T extends View> extends ViewManagerWithGeneratedInterface {
-    void setPlacementID(T t10, String str);
-}

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
-    android:src="@drawable/vk_icon_deprecated_ic_cancel_24"
-    android:tint="?attr/vk_ui_icon_accent_themed"/>

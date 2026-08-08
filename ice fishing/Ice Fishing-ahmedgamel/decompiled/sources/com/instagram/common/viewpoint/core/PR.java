@@ -1,8 +1,0 @@
-package com.instagram.common.viewpoint.core;
-
-import android.view.View;
-
-/* loaded from: assets/audience_network/classes2.dex */
-public interface PR {
-    C1191Py ACw(View view, C1191Py c1191Py);
-}

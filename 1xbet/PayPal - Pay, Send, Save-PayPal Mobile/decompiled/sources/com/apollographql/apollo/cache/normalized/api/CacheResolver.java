@@ -1,7 +1,0 @@
-package com.apollographql.apollo.cache.normalized.api;
-
-@kotlin.Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0002\b\u0004\bf\u0018\u00002\u00020\u0001JD\u0010\u000b\u001a\u0004\u0018\u00010\u00012\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u00042\u0019\u0010\t\u001a\u0015\u0012\u0004\u0012\u00020\u0007\u0012\u000b\u0012\t\u0018\u00010\u0001¢\u0006\u0002\b\b0\u00062\u0006\u0010\n\u001a\u00020\u0007H&¢\u0006\u0004\b\u000b\u0010\fø\u0001\u0000\u0082\u0002\u0006\n\u0004\b!0\u0001À\u0006\u0001"}, d2 = {"Lcom/apollographql/apollo/cache/normalized/api/CacheResolver;", "", "Lcom/apollographql/apollo/api/CompiledField;", "field", "Lcom/apollographql/apollo/api/Executable$Variables;", "variables", "", "", "Lkotlin/jvm/JvmSuppressWildcards;", "parent", "parentId", "resolveField", "(Lcom/apollographql/apollo/api/CompiledField;Lcom/apollographql/apollo/api/Executable$Variables;Ljava/util/Map;Ljava/lang/String;)Ljava/lang/Object;"}, k = 1, mv = {2, 0, 0}, xi = 48)
-/* loaded from: classes.dex */
-public interface CacheResolver {
-    java.lang.Object resolveField(com.apollographql.apollo.api.CompiledField field, com.apollographql.apollo.api.Executable.Variables variables, java.util.Map<java.lang.String, java.lang.Object> parent, java.lang.String parentId);
-}

@@ -1,7 +1,0 @@
-
-
-local translateConfig = {
-	failed_text = "VOUS AVEZ DÉJÀ RÉCUPÉRÉ CES RÉCOMPENSES !",
-	expire_text = "CADEAUX EXPIRÉS ! NE RATEZ PAS LE PROCHAIN !",
-}
-return translateConfig

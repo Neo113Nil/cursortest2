@@ -1,8 +1,0 @@
-package android.media;
-
-/* loaded from: classes4.dex */
-public /* synthetic */ class AudioTrack$StreamEventCallback {
-    static {
-        throw new NoClassDefFoundError();
-    }
-}

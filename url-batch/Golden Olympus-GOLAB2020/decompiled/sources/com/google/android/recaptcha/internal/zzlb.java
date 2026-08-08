@@ -1,7 +1,0 @@
-package com.google.android.recaptcha.internal;
-
-/* loaded from: classes.dex */
-abstract class zzlb extends zzle {
-    /* synthetic */ zzlb(zzld zzldVar) {
-    }
-}

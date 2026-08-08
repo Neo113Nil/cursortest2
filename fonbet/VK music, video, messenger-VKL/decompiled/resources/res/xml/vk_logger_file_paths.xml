@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<paths>
-    <cache-path
-        name="cache_logs"
-        path="superapp/sak_logs"/>
-    <external-cache-path
-        name="cache_logs_external"
-        path="superapp/sak_logs"/>
-</paths>

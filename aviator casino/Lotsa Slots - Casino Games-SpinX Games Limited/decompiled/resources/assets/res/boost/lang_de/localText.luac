@@ -1,7 +1,0 @@
-local translateConfig = {
-    a_boost_to_level = " ZU LEVEL ",
-    a_boost_tips_lobby_bonus = "SCHALTE BOOST MODUS EIN, UM ALLE STUNDENSBONI MIT 5 ZU MULTIPLIZIEREN!",
-    a_boost_tips_wheel_inactive = "SCHALTE BOOST MODUS EIN, UM X2 FÜR ALLE RADKEILE ZU ERHALTEN!",
-}
-
-return translateConfig

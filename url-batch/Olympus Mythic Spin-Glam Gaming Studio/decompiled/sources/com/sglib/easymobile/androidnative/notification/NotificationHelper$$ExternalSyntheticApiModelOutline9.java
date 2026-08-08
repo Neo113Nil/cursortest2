@@ -1,8 +1,0 @@
-package com.sglib.easymobile.androidnative.notification;
-
-/* compiled from: R8$$SyntheticClass */
-/* loaded from: classes12.dex */
-public abstract /* synthetic */ class NotificationHelper$$ExternalSyntheticApiModelOutline9 {
-    public static /* synthetic */ void m() {
-    }
-}

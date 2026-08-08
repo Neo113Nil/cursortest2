@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item>
-        <color android:color="?attr/vk_ui_background_content"/>
-    </item>
-    <item
-        android:gravity="center"
-        android:drawable="@drawable/vk_icon_logo_vk_me_icon_96"/>
-</layer-list>

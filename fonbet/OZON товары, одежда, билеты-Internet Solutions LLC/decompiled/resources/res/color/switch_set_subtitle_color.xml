@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:color="?attr/oz_semantic_text_secondary"
-        android:state_activated="false"/>
-    <item
-        android:color="?attr/oz_semantic_bg_secondary"
-        android:state_activated="true"/>
-</selector>

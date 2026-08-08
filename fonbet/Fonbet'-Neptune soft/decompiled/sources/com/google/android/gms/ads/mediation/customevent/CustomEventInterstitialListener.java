@@ -1,8 +1,0 @@
-package com.google.android.gms.ads.mediation.customevent;
-
-/* compiled from: com.google.android.gms:play-services-ads-api@@24.5.0 */
-@Deprecated
-/* loaded from: classes3.dex */
-public interface CustomEventInterstitialListener extends CustomEventListener {
-    void onAdLoaded();
-}

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        color="@color/_2131099824_res_0x7f0600b0"
-        state_accelerated="false"/>
-    <item color="@android:color/transparent"/>
-</selector>

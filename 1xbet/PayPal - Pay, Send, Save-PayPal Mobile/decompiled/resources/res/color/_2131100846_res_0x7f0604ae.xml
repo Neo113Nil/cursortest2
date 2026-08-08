@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        state_enabled="true"
-        state_checked="true"
-        color="?attr/_2130968898_res_0x7f040142"/>
-    <item color="?attr/_2130968858_res_0x7f04011a"/>
-</selector>

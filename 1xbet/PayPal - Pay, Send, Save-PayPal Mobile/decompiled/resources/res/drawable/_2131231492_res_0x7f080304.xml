@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        id="@+id/_2131428107_res_0x7f0b030b"
-        drawable="@drawable/_2131231493_res_0x7f080305"/>
-    <item
-        id="@+id/_2131428108_res_0x7f0b030c"
-        drawable="@drawable/_2131231494_res_0x7f080306"/>
-</layer-list>

@@ -1,9 +1,0 @@
-package com.google.android.gms.internal.ads;
-
-/* renamed from: com.google.android.gms.internal.ads.tm, reason: case insensitive filesystem */
-/* loaded from: classes2.dex */
-public final class C3981tm {
-
-    /* renamed from: a, reason: collision with root package name */
-    public InterfaceC3755pb f35164a;
-}

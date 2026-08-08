@@ -1,6 +1,0 @@
-
-!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="08f7e5df-a487-5f74-9250-836ee1c2603f")}catch(e){}}();
-define(["exports","./playtika/core-legacy-586f780f","./playtika/std-legacy-12b02668","./playtika/monosyne-e5151f3b","./slotomania/monosyne-ext-d5d2a46f","./slotomania/machine-core-legacy-e333ecb3"],function(r,t,d,o,n,s){"use strict";class i extends s.qE{constructor(){super()}onInitialize(){this._fsCounterHolder=this.gameEnvironment.rootScene.findByIdAs(o.a,"counter"),super.onInitialize()}showIndicator(){n.m.toState(this._fsCounterHolder,s.C.SHOW_STATE),super.showIndicator()}updateIndicator1(e){n.d.changeText(this._fsCounterHolder,t.O.toString(e.spin.freeSpinsLeft))}hideIndicator(){n.m.toState(this._fsCounterHolder,s.C.HIDE_STATE)}static callPostponedTypeInfo(){i.typeInfo=new t.T(t.a.bi(19853)).__initialize__(t.a.ci(null),[t.a.ii(25),t.a.ii(258),t.a.ii(26),t.a.ii(11320),t.a.ii(11321)],[])}static __instantiate__(e,u){return new i}}d.C.register(19853,i),r.F=i});
-//# sourceMappingURL=FortunesOfGoldCustomFreeSpinIndicator-20237797.js.map
-
-//# debugId=08f7e5df-a487-5f74-9250-836ee1c2603f

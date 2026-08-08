@@ -1,6 +1,0 @@
-package yads;
-
-/* loaded from: classes10.dex */
-public interface t62 {
-    q62 a();
-}

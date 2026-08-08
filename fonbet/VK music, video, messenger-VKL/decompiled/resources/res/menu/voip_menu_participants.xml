@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
-        android:icon="@drawable/vk_icon_add_outline_28"
-        android:id="@+id/add"
-        android:title="@string/voip_add"
-        app:iconTint="?attr/vk_ui_icon_accent_themed"
-        app:showAsAction="always"/>
-</menu>

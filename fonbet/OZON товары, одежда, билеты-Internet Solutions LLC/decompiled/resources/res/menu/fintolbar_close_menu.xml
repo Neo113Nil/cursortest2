@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item
-        android:icon="@drawable/ic_m_cross"
-        android:id="@+id/fintech_menu_close"
-        android:title=""
-        app:iconTint="@color/oz_semantic_text_primary"
-        app:showAsAction="always"/>
-</menu>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <gradient
-        android:startColor="?attr/vk_ui_vkontakte_color_snippet_background"
-        android:endColor="@android:color/transparent"
-        android:angle="90"/>
-</shape>

@@ -1,6 +1,0 @@
-package androidx.datastore.preferences.protobuf;
-
-/* loaded from: classes.dex */
-interface W {
-    AbstractC5376w newInstance(Object obj);
-}

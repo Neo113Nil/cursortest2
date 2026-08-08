@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/ic_circle_gallery_full_view"/>
-    <item
-        android:gravity="center"
-        android:drawable="@drawable/ic_m_play_sign_filled_gallery_full_view"/>
-</layer-list>

@@ -1,9 +1,0 @@
-package com.google.android.gms.ads.internal;
-
-/* compiled from: com.google.android.gms:play-services-ads@@25.4.0 */
-/* loaded from: classes4.dex */
-public interface zzn {
-    void zzdk();
-
-    void zzdl();
-}

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <drawable name="splash_logo">@drawable/ic_logo_with_text_light_36h</drawable>
-    <drawable name="splash_s_animated">@drawable/vk_ru_light</drawable>
-</resources>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="copy_toast_msg">লিঙ্ক ক্লিপবোর্ডে কপি করা হয়েছে</string>
-    <string name="fallback_menu_item_copy_link">লিঙ্ক কপি করুন</string>
-    <string name="fallback_menu_item_open_in_browser">ব্রাউজারে খুলুন</string>
-    <string name="fallback_menu_item_share_link">লিঙ্ক শেয়ার করুন</string>
-    <string name="status_bar_notification_info_overflow">৯৯৯+</string>
-</resources>

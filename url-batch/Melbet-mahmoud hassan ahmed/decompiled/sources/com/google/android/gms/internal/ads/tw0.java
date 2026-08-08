@@ -1,8 +1,0 @@
-package com.google.android.gms.internal.ads;
-
-/* loaded from: classes.dex */
-final class tw0 {
-
-    /* renamed from: a, reason: collision with root package name */
-    private static final uw0 f12392a = new uw0();
-}

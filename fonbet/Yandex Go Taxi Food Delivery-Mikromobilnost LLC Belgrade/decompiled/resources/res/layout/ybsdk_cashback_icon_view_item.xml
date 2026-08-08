@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.AppCompatImageView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/cashbackItemImage"
-    android:background="@drawable/ybsdk_icon_background"
-    android:padding="2dp"
-    android:layout_width="@dimen/ybsdk_item_image_size"
-    android:layout_height="@dimen/ybsdk_item_image_size"
-    app:srcCompat="@drawable/ybsdk_cashback_item_placeholder"/>

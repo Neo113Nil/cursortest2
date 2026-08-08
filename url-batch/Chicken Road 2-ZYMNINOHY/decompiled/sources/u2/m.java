@@ -1,6 +1,0 @@
-package u2;
-
-/* loaded from: classes.dex */
-public interface m {
-    Object get();
-}

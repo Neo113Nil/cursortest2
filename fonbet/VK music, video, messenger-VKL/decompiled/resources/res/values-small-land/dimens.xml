@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="subtitles_bottom_margin">16dp</dimen>
-    <dimen name="subtitles_horizontal_margin_percent">0.16</dimen>
-</resources>

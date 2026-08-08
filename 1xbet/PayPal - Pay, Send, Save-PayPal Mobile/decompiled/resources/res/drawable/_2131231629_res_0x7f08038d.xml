@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" drawable="@drawable/_2131231669_res_0x7f0803b5">
-    <target
-        name="check"
-        animation="@animator/_2130837558_res_0x7f020036"/>
-</animated-vector>

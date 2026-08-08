@@ -1,6 +1,0 @@
-
-!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="e5b08e80-2f24-5dbd-b672-450859b14655")}catch(e){}}();
-define(["exports","./playtika/std-legacy-12b02668","./playtika/core-legacy-586f780f","./slotomania/bonusgamecore-1adc3422","./slotomania/sf-6e5149f2","./slotomania/piggydeliverybonus-beabbb83"],function(i,P,e,T,D,t){"use strict";class S{register(s){const h=["PiggyDelivery","PiggyDeliverySlotoQuest"];h.forEach(r=>e.R.registerType(s,t.P).as([P.r(22688)]).withMetadata("type",r)),e.R.registerType(s,T.z).externallyOwned();for(let r=0;r<t.a.JACKPOTS_COUNT;r++)this.registerEndPopup(s,h,e.$.formatSingle(t.a.END_POPUP_PATH_PATTERN,r),e.$.formatSingle(t.a.END_POPUP_ID_PATTERN,r))}registerEndPopup(s,h,r,f){e.R.register(s,T.y,E=>new T.y(T.z,e.k.resolve(E,P.r(1069)),e.k.resolve(E,D.bk),e.k.resolve(E,P.r(625)),t.a.END_POPUP_ASSETS_TAG,r,D.g.snapshotWithFadeBackShowingBehavior())).as([P.r(22689)]).withMetadata("id",f).withMetadata("types",h)}}P.C.register(34556,S),i.PiggyDeliveryBonusModule=S});
-//# sourceMappingURL=PiggyDeliveryBonusModule-5ed5268a.js.map
-
-//# debugId=e5b08e80-2f24-5dbd-b672-450859b14655

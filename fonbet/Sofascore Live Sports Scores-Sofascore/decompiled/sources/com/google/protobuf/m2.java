@@ -1,9 +1,0 @@
-package com.google.protobuf;
-
-import com.google.protobuf.WireFormat;
-
-/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
-/* loaded from: classes3.dex */
-public abstract class m2 {
-    public static final MapEntryLite a = MapEntryLite.newDefaultInstance(WireFormat.FieldType.STRING, "", WireFormat.FieldType.MESSAGE, Value.getDefaultInstance());
-}

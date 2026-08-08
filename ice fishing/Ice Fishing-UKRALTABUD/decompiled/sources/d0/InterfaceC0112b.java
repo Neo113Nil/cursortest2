@@ -1,9 +1,0 @@
-package d0;
-
-/* renamed from: d0.b, reason: case insensitive filesystem */
-/* loaded from: classes.dex */
-public interface InterfaceC0112b {
-    void a();
-
-    void b();
-}

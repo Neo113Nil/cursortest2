@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="copy_toast_msg">Povezava je kopirana v odložišče</string>
-    <string name="fallback_menu_item_copy_link">Kopiraj povezavo</string>
-    <string name="fallback_menu_item_open_in_browser">Odpri v brskalniku</string>
-    <string name="fallback_menu_item_share_link">Deli povezavo</string>
-    <string name="status_bar_notification_info_overflow">999+</string>
-</resources>

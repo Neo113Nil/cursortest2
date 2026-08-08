@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.vk.im.ui.components.viewcontrollers.msg_list.adapter.skelton.MsgSkeletonViewRedesign xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/msg_skeleton_view"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"/>

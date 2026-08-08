@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
-    <solid android:color="?attr/vk_ui_avatar_overlay"/>
-    <corners
-        android:topLeftRadius="@dimen/vk_video_live_counter_border_radius"
-        android:topRightRadius="@dimen/vk_video_live_counter_border_radius"
-        android:bottomLeftRadius="@dimen/vk_video_live_counter_border_radius"
-        android:bottomRightRadius="@dimen/vk_video_live_counter_border_radius"/>
-</shape>

@@ -1,7 +1,0 @@
-package com.zettle.sdk.feature.taptopay.core.attestation.usecase;
-
-@kotlin.Metadata(d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0006\bà\u0080\u0001\u0018\u00002 \u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00050\u0001J0\u0010\n\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00022\u0006\u0010\u0007\u001a\u00020\u00032\u0006\u0010\b\u001a\u00020\u00032\u0006\u0010\t\u001a\u00020\u0004H¦\u0002¢\u0006\u0004\b\n\u0010\u000b"}, d2 = {"Lcom/zettle/sdk/feature/taptopay/core/attestation/usecase/FullAttestationUseCase;", "Lkotlin/Function4;", "Landroid/content/Context;", "", "Lcom/zettle/sdk/feature/taptopay/core/attestation/AttestationResultListener;", "", "context", "fullProvisioning", "fullAttestation", "attestationResult", "invoke", "(Landroid/content/Context;ZZLcom/zettle/sdk/feature/taptopay/core/attestation/AttestationResultListener;)V"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes17.dex */
-public interface FullAttestationUseCase extends kotlin.jvm.functions.Function4<android.content.Context, java.lang.Boolean, java.lang.Boolean, com.zettle.sdk.feature.taptopay.core.attestation.AttestationResultListener, kotlin.Unit> {
-    void invoke(android.content.Context context, boolean fullProvisioning, boolean fullAttestation, com.zettle.sdk.feature.taptopay.core.attestation.AttestationResultListener attestationResult);
-}

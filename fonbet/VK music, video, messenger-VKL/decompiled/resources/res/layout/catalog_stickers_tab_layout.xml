@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.vk.core.view.VKTabLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/tabs"
-    android:background="?attr/vk_ui_background_content"
-    android:layout_width="match_parent"
-    android:layout_height="48dp"
-    app:tabMaxWidth="0dp"
-    app:tabMode="scrollable"
-    style="@style/TabBarTheme"/>

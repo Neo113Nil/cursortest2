@@ -1,9 +1,0 @@
-package com.google.android.gms.internal.measurement;
-
-/* compiled from: com.google.android.gms:play-services-measurement-base@@23.0.0 */
-/* loaded from: classes8.dex */
-interface zznk {
-    boolean zzb(Class cls);
-
-    zznj zzc(Class cls);
-}

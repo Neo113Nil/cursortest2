@@ -1,6 +1,0 @@
-
-!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="a1e29206-04a7-590f-8ee4-d3fef3f9a2dd")}catch(e){}}();
-define(["require","exports","./playtika/core-legacy-586f780f","./playtika/std-legacy-12b02668","./slotomania/hooks-900c4028","./slotomania/orchestrator-faam2-8e4e03fe","./slotomania/segmentation-api-8a569861"],function(n,a,t,r,p,e,u){"use strict";class o extends e.a{constructor(i){super(i)}importBootstrapper(){return new Promise(function(i,s){n(["./SocialStreakModuleBootstrapper-3bb581c4"],i,s)})}setupBootstrapperImport(){this.activatorsController=e.u(this.featureName,this._parentScope,r.g.bind(this,this.runBootstrapperImport)),this.activatorsController.useLobbyActivator(i=>p.w(i,u.G.SocialStreak))}dispose(){var i;(i=this.activatorsController)===null||i===void 0||i.complete(),super.dispose()}static callPostponedTypeInfo(){o.typeInfo=new t.T(t.a.bi(9076)).__initialize__(t.a.ci([t.a.ai(1,"_parentScope",0)]),[t.a.ii(877),t.a.ii(388),t.a.ii(25),t.a.ii(23),t.a.ii(24),t.a.ii(26)],[])}static __instantiate__(i,s){return new o(s[0])}}r.C.register(9076,o),a.SocialStreakModuleApi=o});
-//# sourceMappingURL=SocialStreakModuleApi-bb8aa02c.js.map
-
-//# debugId=a1e29206-04a7-590f-8ee4-d3fef3f9a2dd

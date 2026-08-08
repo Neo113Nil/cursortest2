@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.vk.imageloader.view.VKCircleImageView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/item_recommendation_onboarding_image"
-    android:layout_width="@dimen/music_recommendation_on_boarding_finish_image_size"
-    android:layout_height="@dimen/music_recommendation_on_boarding_finish_image_size"/>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="copy_toast_msg">Linken er kopiert til utklippstavlen</string>
-    <string name="fallback_menu_item_copy_link">Kopiér linken</string>
-    <string name="fallback_menu_item_open_in_browser">Åpne i nettleseren</string>
-    <string name="fallback_menu_item_share_link">Del link</string>
-    <string name="status_bar_notification_info_overflow">999+</string>
-</resources>

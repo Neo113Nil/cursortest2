@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<paths>
-    <files-path
-        name="share_image"
-        path="images"/>
-    <external-cache-path
-        name="images"
-        path="images/"/>
-</paths>

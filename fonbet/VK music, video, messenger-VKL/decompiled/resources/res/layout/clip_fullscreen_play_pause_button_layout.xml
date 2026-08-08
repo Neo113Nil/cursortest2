@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.vk.clips.design.view.component.play.ClipPlayPauseView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/fullscreen_clip_overlay_play_pause_button"
-    android:visibility="gone"
-    android:layout_width="64dp"
-    android:layout_height="64dp"
-    app:srcCompat="@drawable/vk_icon_play_button_64"/>

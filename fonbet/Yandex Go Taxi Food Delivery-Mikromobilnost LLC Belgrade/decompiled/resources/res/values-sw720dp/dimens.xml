@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="card_info_expiry_text_size">29dp</dimen>
-    <dimen name="card_info_number_margin_top">203dp</dimen>
-    <dimen name="card_info_padding_bottom">41dp</dimen>
-    <dimen name="card_info_padding_horizontal">17dp</dimen>
-</resources>

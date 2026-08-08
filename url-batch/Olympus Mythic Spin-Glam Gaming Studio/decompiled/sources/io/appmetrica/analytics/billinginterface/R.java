@@ -1,7 +1,0 @@
-package io.appmetrica.analytics.billinginterface;
-
-/* loaded from: classes10.dex */
-public final class R {
-    private R() {
-    }
-}

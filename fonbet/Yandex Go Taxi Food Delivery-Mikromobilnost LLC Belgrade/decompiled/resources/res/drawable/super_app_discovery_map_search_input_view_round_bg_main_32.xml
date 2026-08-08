@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
-    <corners android:radius="@dimen/super_app_discovery_map_organizations_search_header_radius"/>
-    <solid android:color="?attr/bgMain"/>
-</shape>

@@ -1,8 +1,0 @@
-package com.facebook.react.viewmanagers;
-
-import android.view.View;
-import com.facebook.react.uimanager.ViewManagerWithGeneratedInterface;
-
-/* loaded from: classes6.dex */
-public interface RNSentryReplayMaskManagerInterface<T extends View> extends ViewManagerWithGeneratedInterface {
-}

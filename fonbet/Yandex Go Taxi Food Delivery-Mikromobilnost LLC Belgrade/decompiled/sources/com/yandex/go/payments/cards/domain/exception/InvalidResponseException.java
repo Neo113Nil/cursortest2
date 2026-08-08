@@ -1,8 +1,0 @@
-package com.yandex.go.payments.cards.domain.exception;
-
-import kotlin.Metadata;
-
-@Metadata(d1 = {"\u0000\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0007\u0018\u00002\u00060\u0001j\u0002`\u0002¨\u0006\u0003"}, d2 = {"Lcom/yandex/go/payments/cards/domain/exception/InvalidResponseException;", "Ljava/lang/RuntimeException;", "Lkotlin/RuntimeException;", "impl"}, k = 1, mv = {2, 4, 0}, xi = 48)
-/* loaded from: classes13.dex */
-public final class InvalidResponseException extends RuntimeException {
-}

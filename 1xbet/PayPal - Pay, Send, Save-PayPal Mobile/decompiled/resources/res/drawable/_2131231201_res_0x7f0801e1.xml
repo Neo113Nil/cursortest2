@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" drawable="@drawable/_2131231241_res_0x7f080209">
-    <target
-        name="cross1Path"
-        animation="@anim/_2130772002_res_0x7f010022"/>
-    <target
-        name="cross2Path"
-        animation="@anim/_2130772003_res_0x7f010023"/>
-</animated-vector>

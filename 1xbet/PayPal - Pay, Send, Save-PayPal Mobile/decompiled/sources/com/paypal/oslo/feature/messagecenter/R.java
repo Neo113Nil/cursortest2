@@ -1,7 +1,0 @@
-package com.paypal.oslo.feature.messagecenter;
-
-/* loaded from: classes13.dex */
-public final class R {
-    private R() {
-    }
-}

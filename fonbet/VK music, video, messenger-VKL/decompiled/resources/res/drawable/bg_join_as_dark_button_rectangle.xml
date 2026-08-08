@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/vk_white_alpha60">
-    <item android:drawable="@drawable/voip_dark_button_secondary_normal_rectangle"/>
-</ripple>

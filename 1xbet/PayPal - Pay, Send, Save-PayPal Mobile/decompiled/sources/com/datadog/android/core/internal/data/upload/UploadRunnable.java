@@ -1,6 +1,0 @@
-package com.datadog.android.core.internal.data.upload;
-
-@kotlin.Metadata(d1 = {"\u0000\b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\b`\u0018\u00002\u00020\u0001"}, d2 = {"Lcom/datadog/android/core/internal/data/upload/UploadRunnable;", "Ljava/lang/Runnable;"}, k = 1, mv = {1, 8, 0}, xi = 48)
-/* loaded from: classes7.dex */
-public interface UploadRunnable extends java.lang.Runnable {
-}

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="?attr/iconMinor">
-    <item
-        android:height="48dp"
-        android:drawable="@drawable/fab_rectangle_background_shape"/>
-</ripple>

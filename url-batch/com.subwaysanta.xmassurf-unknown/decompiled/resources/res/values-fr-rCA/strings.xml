@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="copy_toast_msg">Lien copié dans le presse-papiers</string>
-    <string name="fallback_menu_item_copy_link">Copier le lien</string>
-    <string name="fallback_menu_item_open_in_browser">Ouvrir dans le navigateur</string>
-    <string name="fallback_menu_item_share_link">Partager le lien</string>
-    <string name="status_bar_notification_info_overflow">999+</string>
-</resources>

@@ -1,6 +1,0 @@
-package com.instagram.common.viewpoint.core;
-
-/* loaded from: assets/audience_network.dex */
-public interface WO extends Ti, InterfaceC0785Tj {
-    public static final String A00 = WO.class.getSimpleName();
-}

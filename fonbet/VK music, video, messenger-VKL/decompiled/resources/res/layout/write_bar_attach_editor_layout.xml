@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.vk.writebar.attach.AttachmentsEditorView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/write_bar_attach_editor"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:visibility="gone"
-    android:layout_width="match_parent"
-    android:layout_height="91dp"/>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ru.ozon.app.android.ads.widgets.advVideoBannerV2.presentation.view.AdvVideoBannerV2ViewNew xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/advVideoBannerContainerNew"
-    android:background="@drawable/bg_player_v2"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"/>

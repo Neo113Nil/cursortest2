@@ -1,7 +1,0 @@
-package androidx.camera.viewfinder.compose.internal;
-
-@kotlin.Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b`\u0018\u00002\u00020\u0001JC\u0010\t\u001a\u00020\u000722\u0010\t\u001a.\b\u0001\u0012\u0004\u0012\u00020\u0003\u0012\t\u0012\u00070\u0004¢\u0006\u0002\b\u0005\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00070\u0006\u0012\u0006\u0012\u0004\u0018\u00010\u00010\u0002¢\u0006\u0002\b\bH&¢\u0006\u0004\b\t\u0010\nø\u0001\u0000\u0082\u0002\u0006\n\u0004\b!0\u0001À\u0006\u0001"}, d2 = {"Landroidx/camera/viewfinder/compose/internal/ViewfinderExternalSurfaceScope;", "", "Lkotlin/Function3;", "Landroidx/camera/viewfinder/compose/internal/ViewfinderSurfaceCoroutineScope;", "Landroidx/camera/viewfinder/compose/internal/ViewfinderSurfaceHolder;", "Lkotlin/ParameterName;", "Lkotlin/coroutines/Continuation;", "", "Lkotlin/ExtensionFunctionType;", "onSurface", "(Lkotlin/jvm/functions/Function3;)V"}, k = 1, mv = {2, 1, 0}, xi = 48)
-/* loaded from: classes6.dex */
-public interface ViewfinderExternalSurfaceScope {
-    void onSurface(kotlin.jvm.functions.Function3<? super androidx.camera.viewfinder.compose.internal.ViewfinderSurfaceCoroutineScope, ? super androidx.camera.viewfinder.compose.internal.ViewfinderSurfaceHolder, ? super kotlin.coroutines.Continuation<? super kotlin.Unit>, ? extends java.lang.Object> onSurface);
-}

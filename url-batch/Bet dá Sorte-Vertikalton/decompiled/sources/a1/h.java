@@ -1,5 +1,0 @@
-package a1;
-
-/* loaded from: classes.dex */
-public interface h extends S0.a {
-}

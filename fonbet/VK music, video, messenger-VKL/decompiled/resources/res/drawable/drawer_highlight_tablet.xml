@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="#323d4a">
-    <item android:id="@android:id/mask">
-        <shape>
-            <solid android:color="?attr/vk_ui_vkontakte_palette_black"/>
-        </shape>
-    </item>
-</ripple>

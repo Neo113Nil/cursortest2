@@ -1,5 +1,0 @@
-package J7;
-
-/* loaded from: classes2.dex */
-public interface c extends b {
-}

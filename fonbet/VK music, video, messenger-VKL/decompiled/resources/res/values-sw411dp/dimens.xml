@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="msg_bubble_max_width">340dp</dimen>
-    <dimen name="vkim_dialogs_title_text_size">28sp</dimen>
-    <dimen name="vkim_video_attach_large_max_width">304dp</dimen>
-    <dimen name="vkim_video_attach_large_min_width">280dp</dimen>
-    <dimen name="vkim_video_attach_small_max_width">289dp</dimen>
-    <dimen name="vkim_video_attach_small_min_width">265dp</dimen>
-</resources>

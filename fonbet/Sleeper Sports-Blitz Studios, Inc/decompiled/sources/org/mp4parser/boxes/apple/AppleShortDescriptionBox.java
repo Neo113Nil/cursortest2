@@ -1,8 +1,0 @@
-package org.mp4parser.boxes.apple;
-
-/* loaded from: classes10.dex */
-public class AppleShortDescriptionBox extends Utf8AppleDataBox {
-    public AppleShortDescriptionBox() {
-        super("sdes");
-    }
-}

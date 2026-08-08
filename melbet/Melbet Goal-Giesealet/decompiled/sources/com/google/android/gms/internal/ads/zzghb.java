@@ -1,9 +1,0 @@
-package com.google.android.gms.internal.ads;
-
-/* compiled from: com.google.android.gms:play-services-ads-api@@24.6.0 */
-/* loaded from: classes2.dex */
-final class zzghb {
-    static boolean zza(String str) {
-        return str == null || str.isEmpty();
-    }
-}

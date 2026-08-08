@@ -1,7 +1,0 @@
-package com.airbnb.lottie.model.content;
-
-/* loaded from: classes7.dex */
-public enum TextRangeUnits {
-    PERCENT,
-    INDEX
-}

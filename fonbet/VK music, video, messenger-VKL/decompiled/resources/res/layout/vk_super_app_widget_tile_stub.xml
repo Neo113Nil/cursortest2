@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@drawable/vk_bg_radius_12"
-    android:layout_width="match_parent"
-    android:layout_height="220dp"
-    android:backgroundTint="?attr/vk_ui_background_tertiary">
-    <include layout="@layout/vk_super_app_widget_default_tile_stub"/>
-    <include layout="@layout/vk_super_app_widget_tile_grid_stub"/>
-</FrameLayout>

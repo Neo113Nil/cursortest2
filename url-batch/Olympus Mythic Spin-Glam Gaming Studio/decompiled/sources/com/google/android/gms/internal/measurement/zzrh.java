@@ -1,7 +1,0 @@
-package com.google.android.gms.internal.measurement;
-
-/* compiled from: com.google.android.gms:play-services-measurement-impl@@22.4.0 */
-/* loaded from: classes14.dex */
-public interface zzrh {
-    boolean zza();
-}

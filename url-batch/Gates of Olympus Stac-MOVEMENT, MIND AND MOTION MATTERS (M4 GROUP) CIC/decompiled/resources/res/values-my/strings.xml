@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="copy_toast_msg">လင့်ခ်ကို ကလစ်ဘုတ်သို့ ကူးပြီးပါပြီ</string>
-    <string name="fallback_menu_item_copy_link">လင့်ခ်ကို ကူးယူရန်</string>
-    <string name="fallback_menu_item_open_in_browser">ဘရောင်ဇာတွင် ဖွင့်ရန်</string>
-    <string name="fallback_menu_item_share_link">လင့်ခ်ကို မျှဝေရန်</string>
-    <string name="status_bar_notification_info_overflow">၉၉၉+</string>
-</resources>

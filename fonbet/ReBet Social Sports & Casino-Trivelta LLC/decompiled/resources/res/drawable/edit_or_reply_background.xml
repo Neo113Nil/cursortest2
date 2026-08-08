@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:tint="?attr/siq_edit_reply_layout_background"
-    android:shape="rectangle">
-    <corners
-        android:topLeftRadius="@dimen/siq_12"
-        android:topRightRadius="@dimen/siq_12"/>
-</shape>

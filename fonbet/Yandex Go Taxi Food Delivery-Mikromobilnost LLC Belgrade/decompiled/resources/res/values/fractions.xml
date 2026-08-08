@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <fraction name="ybsdk_button_accent_shimmer_highlight_alpha">0.25</fraction>
-    <fraction name="ybsdk_button_default_shimmer_highlight_alpha">0.6</fraction>
-    <fraction name="ybsdk_error_view_vertical_bias">0.37</fraction>
-    <fraction name="ybsdk_qr_error_view_vertical_bias">0.26</fraction>
-    <fraction name="ybsdk_transfers_dashboard_error_view_vertical_bias">0.37</fraction>
-</resources>

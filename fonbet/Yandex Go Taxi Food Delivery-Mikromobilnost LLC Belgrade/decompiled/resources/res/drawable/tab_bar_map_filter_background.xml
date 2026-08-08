@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="?attr/controlPressed">
-    <item>
-        <shape android:shape="rectangle">
-            <corners android:radius="@dimen/discovery_organizations_chip_corner_radius"/>
-            <solid android:color="?attr/bgMain"/>
-        </shape>
-    </item>
-</ripple>

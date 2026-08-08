@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ru.ozon.app.android.cscore.adultimage.DeliveryAdultImageView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/itemIv"
-    android:background="?attr/bgLightKey"
-    android:layout_width="@dimen/order_list_item_width"
-    android:layout_height="@dimen/order_list_item_width"
-    app:cornerRoundRadius="8dp"/>

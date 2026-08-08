@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:textColor="@color/vk_ui_text_title_color"
-    android:paddingTop="16dp"
-    android:paddingBottom="4dp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:paddingStart="16dp"
-    style="@style/VkUiTypography.Title2Medium"/>

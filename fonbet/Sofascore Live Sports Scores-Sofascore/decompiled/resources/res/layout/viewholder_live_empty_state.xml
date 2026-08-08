@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sofascore.results.redesign.emptystateblocks.GraphicLarge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:graphicLargeDrawable="@drawable/no_events_1"
-    app:graphicLargeSubtitle="@string/empty_no_live_events_body_text_no_upcoming"
-    app:graphicLargeTitle="@string/no_live_moment"/>

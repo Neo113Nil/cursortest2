@@ -1,9 +1,0 @@
-package com.moloco.sdk.internal.services;
-
-/* renamed from: com.moloco.sdk.internal.services.f, reason: case insensitive filesystem */
-/* loaded from: classes5.dex */
-public interface InterfaceC3435f {
-    void a();
-
-    void b();
-}

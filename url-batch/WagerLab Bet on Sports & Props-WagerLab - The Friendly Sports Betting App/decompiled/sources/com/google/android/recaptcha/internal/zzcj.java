@@ -1,9 +1,0 @@
-package com.google.android.recaptcha.internal;
-
-/* compiled from: com.google.android.recaptcha:recaptcha@@18.6.1 */
-/* loaded from: classes4.dex */
-public final class zzcj extends zzcm {
-    public zzcj() {
-        super(null);
-    }
-}

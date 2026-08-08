@@ -1,5 +1,0 @@
-package ru.CryptoPro.CAdES.exception;
-
-/* loaded from: classes4.dex */
-public class EnvelopedWrongRecipientException extends Exception {
-}

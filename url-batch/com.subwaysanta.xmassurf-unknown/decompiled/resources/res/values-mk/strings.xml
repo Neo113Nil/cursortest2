@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="copy_toast_msg">Линкот е копиран во привремена меморија</string>
-    <string name="fallback_menu_item_copy_link">Копирај го линкот</string>
-    <string name="fallback_menu_item_open_in_browser">Отвори во прелистувач</string>
-    <string name="fallback_menu_item_share_link">Сподели линк</string>
-    <string name="status_bar_notification_info_overflow">999+</string>
-</resources>

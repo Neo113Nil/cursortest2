@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.textview.MaterialTextView xmlns:android="http://schemas.android.com/apk/res/android"
-    background="@drawable/_2131231576_res_0x7f080358"
-    layout_width="match_parent"
-    layout_height="wrap_content"
-    layout_marginBottom="8dp"
-    paddingStart="8dp"
-    paddingEnd="8dp"
-    style="@style/_2132148643_res_0x7f1601a3"/>

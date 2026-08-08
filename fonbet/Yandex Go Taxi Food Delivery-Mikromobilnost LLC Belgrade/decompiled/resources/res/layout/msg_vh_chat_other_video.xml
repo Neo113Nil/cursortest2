@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.yandex.messaging.internal.view.chat.ChatItemFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <include layout="@layout/msg_base_other_video"/>
-</com.yandex.messaging.internal.view.chat.ChatItemFrameLayout>

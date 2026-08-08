@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="copy_toast_msg">Հղումը պատճենվեց սեղմատախտակին</string>
-    <string name="fallback_menu_item_copy_link">Պատճենել հղումը</string>
-    <string name="fallback_menu_item_open_in_browser">Բացել դիտարկիչում</string>
-    <string name="fallback_menu_item_share_link">Կիսվել հղումով</string>
-    <string name="status_bar_notification_info_overflow">999+</string>
-</resources>

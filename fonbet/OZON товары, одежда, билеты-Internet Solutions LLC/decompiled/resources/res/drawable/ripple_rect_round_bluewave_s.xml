@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/bg_action_secondary">
-    <item android:id="@android:id/mask">
-        <shape android:shape="rectangle">
-            <corners android:radius="@dimen/design_default_s_button_radius"/>
-            <solid android:color="?attr/layerFloor1"/>
-        </shape>
-    </item>
-</ripple>

@@ -1,8 +1,0 @@
-package android.text;
-
-/* loaded from: classes11.dex */
-public /* synthetic */ class SegmentFinder {
-    static {
-        throw new NoClassDefFoundError();
-    }
-}

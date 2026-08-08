@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<layer-list>
-    <item>
-        <ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="?attr/vk_legacy_music_playback_icon">
-            <item android:drawable="@drawable/vk_pay_checkout_buy_with_googlepay_background"/>
-        </ripple>
-    </item>
-</layer-list>

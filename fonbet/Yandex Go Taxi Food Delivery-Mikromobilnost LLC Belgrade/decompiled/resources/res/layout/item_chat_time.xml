@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ru.yandex.taxi.widget.RobotoTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:textSize="@dimen/component_text_size_caption"
-    android:textColor="?attr/textMinor"
-    android:id="@+id/time"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="4dp"
-    app:robotoFontStyle="medium"/>

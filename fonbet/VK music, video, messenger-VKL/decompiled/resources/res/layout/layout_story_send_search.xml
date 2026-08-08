@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.vk.core.view.components.search.VkSearchView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="52dp"/>

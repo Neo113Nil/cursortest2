@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_msg_anim_poll_vote_btn_progress__0_res_0x7f080222">
-    <target
-        android:name="spinner_rotate"
-        android:animation="@drawable/_msg_anim_poll_vote_btn_progress__1_res_0x7f080223"/>
-</animated-vector>

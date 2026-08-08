@@ -1,9 +1,0 @@
-package com.google.android.gms.internal.measurement;
-
-/* compiled from: com.google.android.gms:play-services-measurement@@23.0.0 */
-/* loaded from: classes5.dex */
-public final class zzd extends Exception {
-    public zzd(Throwable th) {
-        super(th);
-    }
-}

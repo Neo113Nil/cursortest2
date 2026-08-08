@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ru.yandex.taxi.design.ListItemComponent xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/menu_item_business_to_business"
-    android:background="@drawable/bg_main_ripple"
-    android:visibility="gone"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    style="@style/MainMenuItem"/>

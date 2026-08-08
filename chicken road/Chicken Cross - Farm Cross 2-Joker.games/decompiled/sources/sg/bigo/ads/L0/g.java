@@ -1,5 +1,0 @@
-package sg.bigo.ads.L0;
-
-/* loaded from: classes3.dex */
-public interface g {
-}

@@ -1,7 +1,0 @@
-package com.google.android.gms.internal.measurement;
-
-/* compiled from: com.google.android.gms:play-services-measurement-base@@22.4.0 */
-/* loaded from: classes15.dex */
-public interface zzmh extends zzmj {
-    zzmh zzg(int i);
-}

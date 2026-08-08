@@ -1,9 +1,0 @@
-package u;
-
-/* renamed from: u.F, reason: case insensitive filesystem */
-/* loaded from: classes.dex */
-public interface InterfaceC0924F {
-    void a();
-
-    void cancel();
-}

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ru.ozon.android.composerCommonViewKit.islandSeparator.presentation.IslandSeparatorView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/islandSeparatorV"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:elevation="1dp"
-    android:outlineProvider="none"/>

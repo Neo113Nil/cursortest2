@@ -1,8 +1,0 @@
-package io.appmetrica.analytics.impl;
-
-import android.content.Intent;
-
-/* loaded from: classes9.dex */
-public interface V1 {
-    void a(Intent intent);
-}

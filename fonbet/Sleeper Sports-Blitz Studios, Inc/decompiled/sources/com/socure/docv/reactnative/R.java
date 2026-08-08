@@ -1,7 +1,0 @@
-package com.socure.docv.reactnative;
-
-/* loaded from: classes8.dex */
-public final class R {
-    private R() {
-    }
-}

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.sofascore.results.view.graph.networkanimation.PassingNetworkAnimationView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/passing_network_view"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:impression_location="commentary"
-    app:pitch_corner_radius="8dp"/>

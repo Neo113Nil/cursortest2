@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:drawable="@drawable/bg_rounded_6_stroke_accent_primary_2"
-        android:state_activated="true"/>
-    <item
-        android:drawable="@drawable/bg_rounded_6_stroke_primary_2"
-        android:state_activated="false"/>
-</selector>

@@ -1,9 +1,0 @@
-package com.google.android.gms.internal.measurement;
-
-/* compiled from: com.google.android.gms:play-services-measurement-impl@@22.2.0 */
-/* loaded from: classes2.dex */
-public enum zzcp {
-    READ_AND_WRITE,
-    READ_ONLY,
-    WRITE_ONLY
-}

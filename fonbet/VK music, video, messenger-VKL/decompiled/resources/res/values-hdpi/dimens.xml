@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="camera_qr_gradient_height">128dp</dimen>
-    <dimen name="camera_target_bottom_margin">20dp</dimen>
-    <dimen name="toolbar_separator_height">0.5dp</dimen>
-    <dimen name="vk_camera_target_bottom_margin">20dp</dimen>
-    <dimen name="vk_camera_target_size">180dp</dimen>
-    <dimen name="vk_toolbar_separator_height">0.5dp</dimen>
-</resources>

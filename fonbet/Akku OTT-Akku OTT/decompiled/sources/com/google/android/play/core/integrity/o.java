@@ -1,9 +1,0 @@
-package com.google.android.play.core.integrity;
-
-/* loaded from: classes4.dex */
-public final class o implements com.google.android.play.integrity.internal.ay {
-    @Override // com.google.android.play.integrity.internal.bd, com.google.android.play.integrity.internal.bc
-    public final /* synthetic */ Object a() {
-        return new j();
-    }
-}

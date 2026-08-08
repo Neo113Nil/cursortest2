@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.vk.libvideo.ui.VideoAuthorView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/video_author_view"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:contrast_btn_background="@drawable/author_notifications_btn_background"
-    app:contrast_btn_tint="?attr/vk_ui_icon_primary"/>

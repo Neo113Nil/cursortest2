@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.vk.dialogslist.view.ViewPager2NestedRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/managed_groups_recycler"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"/>

@@ -1,6 +1,0 @@
-package com.google.firebase.installations.internal;
-
-/* loaded from: classes4.dex */
-public interface FidListener {
-    void onFidChanged(java.lang.String str);
-}

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.vk.photo.editor.views.ToolButton xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/tool_button_crop_format"
-    android:layout_width="64dp"
-    android:layout_height="64dp"
-    android:layout_marginLeft="6dp"
-    android:layout_marginRight="6dp"/>

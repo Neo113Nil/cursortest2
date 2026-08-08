@@ -1,7 +1,0 @@
-package com.google.android.gms.internal.ads;
-
-/* compiled from: com.google.android.gms:play-services-ads-api@@25.1.0 */
-/* loaded from: classes5.dex */
-public final class zzbki {
-    public static final zzbjo zza = zzbjo.zzb("gads:parallel_rendering:max_renderers", 0);
-}

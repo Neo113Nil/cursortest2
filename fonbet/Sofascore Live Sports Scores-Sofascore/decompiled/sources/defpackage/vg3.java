@@ -1,8 +1,0 @@
-package defpackage;
-
-/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
-/* loaded from: classes.dex */
-public final class vg3 {
-    public static final /* synthetic */ vg3 a = new vg3();
-    public static final aee b = aee.g;
-}

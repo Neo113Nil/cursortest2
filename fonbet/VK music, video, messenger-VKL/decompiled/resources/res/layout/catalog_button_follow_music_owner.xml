@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.vk.core.view.components.button.VkButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/button"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="12dp"
-    app:buttonAppearance="accent"
-    app:buttonMode="secondary"
-    app:buttonSizeType="medium"/>

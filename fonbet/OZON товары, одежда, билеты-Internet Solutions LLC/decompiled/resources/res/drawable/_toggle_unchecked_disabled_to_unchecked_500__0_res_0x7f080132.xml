@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
-    <objectAnimator
-        android:duration="100"
-        android:valueFrom="?attr/bgSecondary"
-        android:valueTo="?attr/graphicNeutral"
-        android:propertyName="fillColor"/>
-</set>

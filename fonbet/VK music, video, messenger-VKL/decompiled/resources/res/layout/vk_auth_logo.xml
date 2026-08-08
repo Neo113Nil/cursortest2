@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ImageView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/logo"
-    android:layout_width="@dimen/vk_auth_logo_size"
-    android:layout_height="@dimen/vk_auth_logo_size"
-    android:contentDescription="@string/vk_auth_accessibility_logo"
-    app:srcCompat="@drawable/vk_ic_logo_80"/>

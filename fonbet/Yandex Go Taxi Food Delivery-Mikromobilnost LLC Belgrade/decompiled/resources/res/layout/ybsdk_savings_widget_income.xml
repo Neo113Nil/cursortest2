@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.ybsdk.feature.savings.internal.screens.account.view.SavingsIncomeProgressView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@drawable/ybsdk_savings_widget_background"
-    android:padding="20dp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginHorizontal="@dimen/ybsdk_savings_account_widget_margin_horizontal"/>

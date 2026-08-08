@@ -1,5 +1,0 @@
-package defpackage;
-
-/* loaded from: classes7.dex */
-public final class z08 extends fni0 {
-}

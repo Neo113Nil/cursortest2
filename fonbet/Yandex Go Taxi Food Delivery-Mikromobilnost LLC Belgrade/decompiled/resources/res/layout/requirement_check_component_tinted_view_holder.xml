@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ru.yandex.taxi.design.ListItemComponent xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/bg_transparent_ripple"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:component_lead_image_tint="?attr/textMain"
-    app:component_title_text_color="?attr/textMain"
-    app:component_trail_image_tint="?attr/textMain"/>

@@ -1,9 +1,0 @@
-package com.unity3d.ads.core.data.repository;
-
-import gatewayprotocol.v1.DeveloperConsentOuterClass;
-
-/* compiled from: DeveloperConsentRepository.kt */
-/* loaded from: classes14.dex */
-public interface DeveloperConsentRepository {
-    DeveloperConsentOuterClass.DeveloperConsent getDeveloperConsent();
-}

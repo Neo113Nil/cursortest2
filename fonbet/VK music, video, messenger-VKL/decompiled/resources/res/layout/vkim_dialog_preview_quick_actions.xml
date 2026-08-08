@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.vk.im.ui.views.chat.QuickActionsListView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/dialog_preview_fast_actions_view"
-    android:background="?attr/vk_legacy_background_content"
-    android:layout_width="match_parent"
-    android:layout_height="48dp"
-    android:layout_alignParentBottom="true"
-    android:elevation="2dp"/>

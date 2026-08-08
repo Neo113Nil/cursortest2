@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="copy_toast_msg">Шилтеме буферге көчүрүлдү</string>
-    <string name="fallback_menu_item_copy_link">Шилтемени көчүрүү</string>
-    <string name="fallback_menu_item_open_in_browser">Серепчиден ачуу</string>
-    <string name="fallback_menu_item_share_link">Шилтемени бөлүшүү</string>
-    <string name="status_bar_notification_info_overflow">999+</string>
-</resources>

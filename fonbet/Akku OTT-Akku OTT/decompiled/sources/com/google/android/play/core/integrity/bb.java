@@ -1,6 +1,0 @@
-package com.google.android.play.core.integrity;
-
-/* loaded from: classes4.dex */
-final class bb {
-    private static final bc a = new bc();
-}

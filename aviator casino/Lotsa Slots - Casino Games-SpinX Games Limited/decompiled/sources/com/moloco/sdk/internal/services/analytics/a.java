@@ -1,8 +1,0 @@
-package com.moloco.sdk.internal.services.analytics;
-
-/* loaded from: classes5.dex */
-public interface a {
-    void a(long j);
-
-    void a(long j, long j2);
-}

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.vk.core.view.infiniteviewpager.ViewPagerInfinite xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/banners_pager"
-    android:clipToPadding="false"
-    android:layout_width="match_parent"
-    android:layout_height="@dimen/catalog_big_banners_height"
-    app:layout_scrollFlags="enterAlwaysCollapsed|scroll"
-    app:nextPeriodSec="3"/>

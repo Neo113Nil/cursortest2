@@ -1,6 +1,0 @@
-package Z0;
-
-/* loaded from: classes.dex */
-public interface b {
-    b e();
-}

@@ -1,5 +1,0 @@
-package com.vk.clips.viewer.impl;
-
-/* loaded from: classes17.dex */
-public final class R$plurals {
-}

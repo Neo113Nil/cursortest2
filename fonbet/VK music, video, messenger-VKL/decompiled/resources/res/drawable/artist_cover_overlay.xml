@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
-    <solid android:color="@color/vk_black_alpha35"/>
-    <corners
-        android:bottomLeftRadius="@dimen/music_recommended_playlist_corner_radius"
-        android:bottomRightRadius="@dimen/music_recommended_playlist_corner_radius"/>
-</shape>

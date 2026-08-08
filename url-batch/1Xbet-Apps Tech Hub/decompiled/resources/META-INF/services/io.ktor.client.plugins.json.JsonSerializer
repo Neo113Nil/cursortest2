@@ -1,2 +1,0 @@
-io.ktor.client.plugins.gson.GsonSerializer
-io.ktor.client.plugins.kotlinx.serializer.KotlinxSerializer

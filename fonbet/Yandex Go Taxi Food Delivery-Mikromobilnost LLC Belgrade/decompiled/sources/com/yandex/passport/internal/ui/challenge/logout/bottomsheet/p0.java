@@ -1,6 +1,0 @@
-package com.yandex.passport.internal.ui.challenge.logout.bottomsheet;
-
-/* loaded from: classes2.dex */
-public final class p0 implements t0 {
-    public static final p0 a = new p0();
-}

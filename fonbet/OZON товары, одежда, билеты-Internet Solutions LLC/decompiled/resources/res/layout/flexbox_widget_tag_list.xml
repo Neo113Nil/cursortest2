@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ru.ozon.uni.atoms.af.layout.HorizontalFlexAtomsLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/flexboxTagsAtomLayout"
-    android:paddingTop="8dp"
-    android:paddingBottom="16dp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"/>

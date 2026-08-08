@@ -1,5 +1,0 @@
-package com.yandex.pulse.metrics;
-
-/* loaded from: classes2.dex */
-public final class o0 extends com.google.protobuf.n implements r0 {
-}

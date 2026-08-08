@@ -1,6 +1,0 @@
-package k;
-
-/* renamed from: k.c, reason: case insensitive filesystem */
-/* loaded from: classes.dex */
-public interface InterfaceC4626c {
-}

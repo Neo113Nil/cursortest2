@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:color="@color/oz_text_secondary"
-        android:state_activated="false"/>
-    <item
-        android:color="@color/ozdt_text_primary_negative"
-        android:state_activated="true"/>
-</selector>

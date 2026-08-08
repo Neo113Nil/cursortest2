@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<set xmlns:android="http://schemas.android.com/apk/res/android" android:duration="@integer/music_recommendation_finish_anim_artist_length_ms">
-    <translate
-        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
-        android:fromYDelta="500%"
-        android:toYDelta="0"/>
-</set>

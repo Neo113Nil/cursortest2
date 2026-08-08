@@ -1,6 +1,0 @@
-
-!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="c99bebea-4ba0-5f11-957b-a19922c6cb08")}catch(e){}}();
-define(["exports","./playtika/std-legacy-12b02668","./playtika/core-legacy-586f780f","./slotomania/lucky8dicebonus-daf6ffb9"],function(u,s,e,t){"use strict";class r{constructor(){}register(n){e.R.withParameter(e.R.withParameter(e.R.withParameter(e.R.registerType(n,t.L),new e.aH("assetTag","dice_bonus_game")),new e.aH("resourcePath","DiceModule/Lucky8DiceBonus/game/scene@.object")),new e.aH("personalJackpotPanelInfo",t.a.JACKPOT_PANEL_INFO)).as([s.r(22688)]).withMetadata("types",["AmazeMeDice","AmazeMeDiceSlotoQuest","AmazeMeDice_mfe"]),e.R.withParameter(e.R.withParameter(e.R.withParameter(e.R.registerType(n,t.L),new e.aH("assetTag","dice_space_bonus_game")),new e.aH("resourcePath","DiceModule/Lucky8SpaceDiceBonus/game/scene@.object")),new e.aH("personalJackpotPanelInfo",t.a.JACKPOT_PANEL_OUTER_SPACE_INFO)).as([s.r(22688)]).withMetadata("types",["OuterSpaceDice","OuterSpaceDiceSlotoQuest","OuterSpaceDice_mfe"])}}s.C.register(34475,r),u.Lucky8DiceBonusModule=r});
-//# sourceMappingURL=Lucky8DiceBonusModule-a8c87550.js.map
-
-//# debugId=c99bebea-4ba0-5f11-957b-a19922c6cb08

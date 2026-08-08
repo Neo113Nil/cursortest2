@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_msg_ic_connection_progress_chat_list__0_res_0x7f080224">
-    <target
-        android:name="spinner"
-        android:animation="@drawable/_msg_ic_connection_progress_chat_list__1_res_0x7f080225"/>
-</animated-vector>

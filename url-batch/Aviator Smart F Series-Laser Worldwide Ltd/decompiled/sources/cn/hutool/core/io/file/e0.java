@@ -1,5 +1,0 @@
-package cn.hutool.core.io.file;
-
-/* loaded from: classes.dex */
-public abstract /* synthetic */ class e0 {
-}
