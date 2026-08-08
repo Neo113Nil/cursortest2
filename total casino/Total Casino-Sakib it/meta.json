@@ -2,52 +2,92 @@
   "app_id": "com.watchfacestudio.vantur01",
   "title": "Total Casino",
   "developer": "Sakib it",
-  "score": null,
-  "icon": "/static/app-icons/com_watchfacestudio_vantur01.png",
-  "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.vantur01&hl=en&gl=us",
-  "keyword": "Total casino",
-  "country": "India",
-  "source": "geelark-play-install",
-  "sponsored": false,
-  "match_via": "phone-install",
-  "geelark_search_dir": "/root/play-collector/geelark_poc/20260808_205123_India_Total casino_search",
-  "search_title": "Total Casino",
-  "search_developer": "Sakib it",
-  "rank": 2,
-  "developer_id": "Sakib+it",
-  "released": "Jun 8, 2026",
-  "updated": "Jun 13, 2026",
-  "version": "Varies with device",
-  "summary": "Watch face for Wear OS",
+  "application_label": "Hybrid VANTUR Watch face",
+  "version": "1.0.2",
+  "version_code": 2,
+  "min_sdk": 25,
+  "target_sdk": 35,
   "folder": "Total Casino-Sakib it",
   "path": "total casino/Total Casino-Sakib it",
-  "updates_count": 1,
-  "apk_title": "Hybrid VANTUR Watch face",
-  "store_title_mismatch": true,
-  "apk_label_note": "Play«Total Casino» ≠ было«?» → GeeLark«Hybrid VANTUR Watch face» geo=USA",
+  "source": "apkeep:apk-pure",
   "ok": true,
   "files": [
+    "com.watchfacestudio.vantur01.apk",
+    "com.watchfacestudio.vantur01.xapk",
     "com.watchfacestudio.vantur01-split_config.en.apk",
-    "com.watchfacestudio.vantur01-split_config.xhdpi.apk",
-    "com.watchfacestudio.vantur01.apk"
+    "com.watchfacestudio.vantur01-split_config.mdpi.apk",
+    "config.en.apk",
+    "config.mdpi.apk"
   ],
-  "target": "/root/play-collector/загрузки/total casino/Total Casino-Sakib it",
-  "attempts": [
-    {
-      "method": "gplaydl",
-      "try": {
-        "force_auth": false,
-        "no_splits": false
+  "sha256_xapk": "c2140d33842d52ff3e925cdfeb39ba84a5aa86127dbf5b596c28d910c67e9982",
+  "updated_at": "2026-08-08T23:05:00+00:00",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Total Casino (в приложении: Hybrid VANTUR Watch face)"
       },
-      "ok": true,
-      "exit_code": 0,
-      "stdout": "╭─ com.watchfacestudio.vantur01 ─╮\n│ Total Casino                   │\n│ 1.0.2  (vc 2)                  │\n╰────────────────────────────────╯\n\nDownloading 6 files  (16.8 MB)\n  com.watchfacestudio.vantur01-2.apk               ━━━━━ 100% 12.6… 24.8  0:00:…\n                                                              MB    MB/s        \n  com.watchfacestudio.vantur01-2-config.en.apk     ━━━━━ 100% 49.6… ?     0:00:…\n                                                              kB                \n  com.watchfacestudio.vantur01-2-config.lt.apk     ━━━━━ 100% 33.2… ?     0:00:…\n                                                              kB                \n  com.watchfacestudio.vantur01-2-config.ru.apk     ━━━━━ 100% 37.3… ?     0:00:…\n                                                              kB                \n  com.watchfacestudio.vantur01-2-config.xxhdpi.apk ━━━━━ 100% 74.9… 2.7   0:00:…\n                                                              kB    MB/s        \n  com.watchfacestudio.vantur01-2-asset.apk         ━━━━━ 100% 4.9/… 24.8  0:00:…\n                                                              MB    MB/s        \n\n                       Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                             ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.watchfacestudio.vantur01-2.apk               │ 12.0 MB │\n│ com.watchfacestudio.vantur01-2-config.en.apk     │ 48.4 KB │\n│ com.watchfacestudio.vantur01-2-config.lt.apk     │ 32.4 KB │\n│ com.watchfacestudio.vantur01-2-config.ru.apk     │ 36.4 KB │\n│ com.watchfacestudio.vantur01-2-config.xxhdpi.apk │ 73.2 KB │\n│ com.watchfacestudio.vantur01-2-asset.apk         │ 12.0 MB │\n└──────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
-      "stderr": "",
-      "apk_label": ""
-    }
-  ],
-  "stdout": "╭─ com.watchfacestudio.vantur01 ─╮\n│ Total Casino                   │\n│ 1.0.2  (vc 2)                  │\n╰────────────────────────────────╯\n\nDownloading 6 files  (16.8 MB)\n  com.watchfacestudio.vantur01-2.apk               ━━━━━ 100% 12.6… 24.8  0:00:…\n                                                              MB    MB/s        \n  com.watchfacestudio.vantur01-2-config.en.apk     ━━━━━ 100% 49.6… ?     0:00:…\n                                                              kB                \n  com.watchfacestudio.vantur01-2-config.lt.apk     ━━━━━ 100% 33.2… ?     0:00:…\n                                                              kB                \n  com.watchfacestudio.vantur01-2-config.ru.apk     ━━━━━ 100% 37.3… ?     0:00:…\n                                                              kB                \n  com.watchfacestudio.vantur01-2-config.xxhdpi.apk ━━━━━ 100% 74.9… 2.7   0:00:…\n                                                              kB    MB/s        \n  com.watchfacestudio.vantur01-2-asset.apk         ━━━━━ 100% 4.9/… 24.8  0:00:…\n                                                              MB    MB/s        \n\n                       Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                             ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.watchfacestudio.vantur01-2.apk               │ 12.0 MB │\n│ com.watchfacestudio.vantur01-2-config.en.apk     │ 48.4 KB │\n│ com.watchfacestudio.vantur01-2-config.lt.apk     │ 32.4 KB │\n│ com.watchfacestudio.vantur01-2-config.ru.apk     │ 36.4 KB │\n│ com.watchfacestudio.vantur01-2-config.xxhdpi.apk │ 73.2 KB │\n│ com.watchfacestudio.vantur01-2-asset.apk         │ 12.0 MB │\n└──────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
-  "stderr": "",
-  "exit_code": 0,
-  "error": ""
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.6.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.watchfacestudio.vantur01.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.0.21 / kotlinx-coroutines 1.9.0, AndroidX (appcompat 1.7.1, activity 1.8.0, fragment 1.5.4, core/core-ktx 1.16.0, lifecycle, constraintlayout 2.2.1, coordinatorlayout 1.1.0, recyclerview 1.2.1, cardview 1.0.0, viewpager2 1.0.0, emoji2 1.3.0, profileinstaller 1.4.0, startup 1.1.1, savedstate 1.2.1, transition 1.5.0, wear-remote-interactions 1.2.0, wear-core 1.0.0), Material Components 1.14.0, Google Play services (wearable 20.0.1, base 18.5.0, basement 18.10.0, tasks 18.2.0)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "нет"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }

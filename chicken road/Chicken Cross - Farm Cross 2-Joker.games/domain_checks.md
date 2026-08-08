@@ -207,7 +207,7 @@
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | AccessDenied The bucket you access does not belong to you. 6A6E3740E9011935359F2E7B ad-host-backup-america.oss-us-west-1.aliyuncs.com 0003-00000905 https://api.alibabacloud.com/troubleshoot?q=0003-00000905 |
+| Что выводит (кратко) | AccessDenied The bucket you access does not belong to you. 6A77BC4D9191FB3231718A90 ad-host-backup-america.oss-us-west-1.aliyuncs.com 0003-00000905 https://api.alibabacloud.com/troubleshoot?q=0003-00000905 |
 | Где припаркован | нет данных |
 
 ## Проверка домена: ad-host-backup-asia.oss-ap-southeast-1.aliyuncs.com
@@ -312,7 +312,7 @@
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | AccessDenied The bucket you access does not belong to you. 6A6E3751A05E3639355BDE77 ad-host-backup-asia.oss-ap-southeast-1.aliyuncs.com 0003-00000905 https://api.alibabacloud.com/troubleshoot?q=0003-00000905 |
+| Что выводит (кратко) | AccessDenied The bucket you access does not belong to you. 6A77BC5E65E66730326A8B17 ad-host-backup-asia.oss-ap-southeast-1.aliyuncs.com 0003-00000905 https://api.alibabacloud.com/troubleshoot?q=0003-00000905 |
 | Где припаркован | нет данных |
 
 ## Проверка домена: ad-host-backup-europe.oss-eu-central-1.aliyuncs.com
@@ -417,7 +417,7 @@
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | AccessDenied The bucket you access does not belong to you. 6A6E3763BA970F3334C27C16 ad-host-backup-europe.oss-eu-central-1.aliyuncs.com 0003-00000905 https://api.alibabacloud.com/troubleshoot?q=0003-00000905 |
+| Что выводит (кратко) | AccessDenied The bucket you access does not belong to you. 6A77BC6FBA970F31398BB522 ad-host-backup-europe.oss-eu-central-1.aliyuncs.com 0003-00000905 https://api.alibabacloud.com/troubleshoot?q=0003-00000905 |
 | Где припаркован | нет данных |
 
 ## Проверка домена: adsbigo.com
@@ -735,34 +735,34 @@
 | Что выводит (кратко) | title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story Members Organization  |
 | Где припаркован | регистратор: Squarespace Domains II LLC |
 
-## Проверка домена: api16-access-ttp.tiktokpangle.us
+## Проверка домена: api.alibabacloud.com
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
 
 | Параметр / движок | Значение / вердикт |
 |---|---|
-| Домен | api16-access-ttp.tiktokpangle.us |
-| VirusTotal URL | https://www.virustotal.com/gui/domain/api16-access-ttp.tiktokpangle.us |
-| Детекции | 1/91 (malicious=1, suspicious=0) |
+| Домен | api.alibabacloud.com |
+| VirusTotal URL | https://www.virustotal.com/gui/domain/api.alibabacloud.com |
+| Детекции | 0/91 (malicious=0, suspicious=0) |
 | Security vendors' analysis | ниже построчно, как на VirusTotal |
-| Chong Lua Dao | Malicious |
 | Abusix | Clean |
 | Acronis | Clean |
 | ADMINUSLabs | Clean |
 | AILabs (MONITORAPP) | Clean |
 | AlienVault | Clean |
-| alphaMountain.ai | Clean |
 | Antiy-AVL | Clean |
 | BitDefender | Clean |
 | Blueliv | Clean |
 | Certego | Clean |
+| Chong Lua Dao | Clean |
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
-| CTX AI | Clean |
+| Criminal IP | Clean |
 | Cyble | Clean |
 | CyRadar | Clean |
 | desenmascara.me | Clean |
+| DNS8 | Clean |
 | Dr.Web | Clean |
 | EmergingThreats | Clean |
 | Emsisoft | Clean |
@@ -776,7 +776,7 @@
 | Heimdal Security | Clean |
 | IPsum | Clean |
 | Juniper Networks | Clean |
-| LevelBlue | Clean |
+| Kaspersky | Clean |
 | Lionic | Clean |
 | Malwared | Clean |
 | MalwarePatrol | Clean |
@@ -789,12 +789,12 @@
 | Scantitan | Clean |
 | SCUMWARE.org | Clean |
 | Seclookup | Clean |
+| Snort IP sample list | Clean |
 | Sophos | Clean |
 | StopForumSpam | Clean |
 | Sucuri SiteCheck | Clean |
 | ThreatHive | Clean |
 | URLhaus | Clean |
-| URLQuery | Clean |
 | Viettel Threat Intelligence | Clean |
 | ViriBack | Clean |
 | VX Vault | Clean |
@@ -802,6 +802,7 @@
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
+| alphaMountain.ai | Unrated |
 | AlphaSOC | Unrated |
 | ArcSight Threat Intelligence | Unrated |
 | AutoShun | Unrated |
@@ -810,10 +811,9 @@
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
 | Cluster25 | Unrated |
-| Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
+| CTX AI | Unrated |
 | Cyan | Unrated |
-| DNS8 | Unrated |
 | Ermes | Unrated |
 | Fortra | Unrated |
 | GCP Abuse Intelligence | Unrated |
@@ -821,7 +821,7 @@
 | Gridinsoft | Unrated |
 | Guardpot | Unrated |
 | Hunt.io Intelligence | Unrated |
-| Kaspersky | Unrated |
+| LevelBlue | Unrated |
 | Lumu | Unrated |
 | MalwareURL | Unrated |
 | Mimecast | Unrated |
@@ -831,11 +831,11 @@
 | SafeToOpen | Unrated |
 | Sansec eComscan | Unrated |
 | SecureBrain | Unrated |
-| Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
+| URLQuery | Unrated |
 | VIPRE | Unrated |
 | Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | title: 404 Not Found. 404 Not Found 404 Not Found nginx |
-| Где припаркован | регистратор: Gandi SAS |
+| Что выводит (кратко) | title: 阿里云OpenAPI开发者门户. Terraform Explorer 正式发布上线，支持在线运行 Terraform 和资源管理。 \n \t - 访问入口：OpenAPI 门户 -> 工具中心 -> Terraform - 调试工具 \n\n - **通过IDE插件体验阿里云OpenAPI的高效集成， 精品礼品等你来拿！** **>>>直达活动链接** 。 \n\n **VS Code 插件** \n\n Alibaba Cloud API Toolkit -> 安装 。\n\n Alibaba Cloud CLI Tools -> 安装 。\n\n **JetBrains 插件** |
+| Где припаркован | нет данных |
