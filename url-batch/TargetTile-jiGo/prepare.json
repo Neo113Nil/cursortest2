@@ -9,7 +9,7 @@
   "jadx": {
     "ok": true,
     "exit_code": 1,
-    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 2189 (0%)\nINFO  - progress: 410 of 2189 (18%)\nINFO  - progress: 463 of 2189 (21%)\nINFO  - progress: 789 of 2189 (36%)\nINFO  - progress: 945 of 2189 (43%)\nINFO  - progress: 1084 of 2189 (49%)\nINFO  - progress: 1312 of 2189 (59%)\nINFO  - progress: 1381 of 2189 (63%)\nINFO  - progress: 1439 of 2189 (65%)\nINFO  - progress: 1593 of 2189 (72%)\nINFO  - progress: 1735 of 2189 (79%)\nINFO  - progress: 1909 of 2189 (87%)\nINFO  - progress: 2006 of 2189 (91%)\n                                                             \nERROR - finished with errors, count: 1\n",
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 2189 (0%)\nINFO  - progress: 297 of 2189 (13%)\nINFO  - progress: 408 of 2189 (18%)\nINFO  - progress: 418 of 2189 (19%)\nINFO  - progress: 528 of 2189 (24%)\nINFO  - progress: 768 of 2189 (35%)\nINFO  - progress: 910 of 2189 (41%)\nINFO  - progress: 987 of 2189 (45%)\nINFO  - progress: 1081 of 2189 (49%)\nINFO  - progress: 1258 of 2189 (57%)\nINFO  - progress: 1343 of 2189 (61%)\nINFO  - progress: 1381 of 2189 (63%)\nINFO  - progress: 1406 of 2189 (64%)\nINFO  - progress: 1406 of 2189 (64%)\nINFO  - progress: 1499 of 2189 (68%)\nINFO  - progress: 1658 of 2189 (75%)\nINFO  - progress: 1739 of 2189 (79%)\nINFO  - progress: 1843 of 2189 (84%)\nINFO  - progress: 1962 of 2189 (89%)\nINFO  - progress: 1974 of 2189 (90%)\nINFO  - progress: 2041 of 2189 (93%)\nINFO  - progress: 2117 of 2189 (96%)\nINFO  - progress: 2150 of 2189 (98%)\nINFO  - progress: 2163 of 2189 (98%)\nINFO  - progress: 2172 of 2189 (99%)\nINFO  - progress: 2181 of 2189 (99%)\nINFO  - progress: 2188 of 2189 (99%)\n                                                             \nERROR - finished with errors, count: 1\n",
     "stderr": "",
     "out_dir": "/root/play-collector/загрузки/url-batch/TargetTile-jiGo/decompiled",
     "skipped": false,
@@ -22,7 +22,6 @@
     "apk/com.jiGo.Trafficcarturn-1102-config.arm64_v8a.apk",
     "apk/com.jiGo.Trafficcarturn-1102-asset.apk",
     "apk/com.jiGo.Trafficcarturn-1102.apk",
-    "report.pdf",
     "meta.json",
     "domain_checks.json",
     "domain_checks.md",
