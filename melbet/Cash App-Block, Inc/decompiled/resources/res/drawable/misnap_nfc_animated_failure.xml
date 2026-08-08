@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" android:drawable="@drawable/misnap_nfc_failure">
-    <target
-        android:name="check"
-        android:animation="@animator/misnap_nfc_failure"/>
-</animated-vector>

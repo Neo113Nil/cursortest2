@@ -1,7 +1,0 @@
-[Host and Proxy Settings]
-
----- NetProxy         = proxy.dial.inet.fi
----- NetProxyPort     = 800
----- NetProxyUser     = username
----- NetProxyPassword = password
-

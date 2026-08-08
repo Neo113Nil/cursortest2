@@ -1,7 +1,0 @@
-package com.nimbusds.jose.jwk.source;
-
-import com.nimbusds.jose.KeySourceException;
-
-/* loaded from: classes5.dex */
-public class JWKSetUnavailableException extends KeySourceException {
-}

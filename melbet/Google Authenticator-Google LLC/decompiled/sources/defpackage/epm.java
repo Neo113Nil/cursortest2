@@ -1,9 +1,0 @@
-package defpackage;
-
-/* compiled from: PG */
-/* loaded from: classes2.dex */
-public final /* synthetic */ class epm implements epo {
-    @Override // defpackage.epo
-    public final void a(int i, String str) {
-    }
-}

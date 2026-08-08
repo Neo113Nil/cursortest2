@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.withpersona.sdk2.inquiry.shared.ui.PersonaTextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/text_view"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    style="?attr/textAppearanceSubtitle1"/>

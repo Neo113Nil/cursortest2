@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="amount_view_text_size">96dp</dimen>
-    <dimen name="payment_pad_amount_text_size">96dp</dimen>
-</resources>

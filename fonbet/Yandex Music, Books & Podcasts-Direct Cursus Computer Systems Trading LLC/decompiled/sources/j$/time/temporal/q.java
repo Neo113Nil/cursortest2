@@ -1,8 +1,0 @@
-package j$.time.temporal;
-
-/* loaded from: classes2.dex */
-public interface q {
-    long between(Temporal temporal, Temporal temporal2);
-
-    Temporal u(Temporal temporal, long j);
-}

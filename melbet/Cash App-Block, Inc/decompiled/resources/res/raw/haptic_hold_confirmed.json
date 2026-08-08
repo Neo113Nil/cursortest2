@@ -1,6 +1,0 @@
-{
-  "name": "hold_confirmed",
-  "timings": [0, 40, 60, 30],
-  "amplitudes": [0, 255, 100, 0],
-  "repeat": -1
-}

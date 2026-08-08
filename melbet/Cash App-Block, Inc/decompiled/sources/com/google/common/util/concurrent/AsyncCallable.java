@@ -1,6 +1,0 @@
-package com.google.common.util.concurrent;
-
-/* loaded from: classes4.dex */
-public interface AsyncCallable {
-    ListenableFuture call();
-}

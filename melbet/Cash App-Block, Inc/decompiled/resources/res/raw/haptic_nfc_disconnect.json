@@ -1,6 +1,0 @@
-{
-  "name": "nfc_disconnect",
-  "timings": [0, 30, 40, 50, 60],
-  "amplitudes": [0, 255, 180, 80, 0],
-  "repeat": -1
-}

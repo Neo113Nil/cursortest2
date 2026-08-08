@@ -1,9 +1,0 @@
-package com.appsflyer.internal;
-
-import java.util.Map;
-import org.jetbrains.annotations.NotNull;
-
-/* loaded from: classes.dex */
-public interface AFf1eSDK {
-    void getMediationNetwork(@NotNull Map<String, Object> map, @NotNull AFe1uSDK aFe1uSDK);
-}

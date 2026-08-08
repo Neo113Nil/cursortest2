@@ -1,6 +1,0 @@
-package io.appmetrica.analytics.impl;
-
-/* renamed from: io.appmetrica.analytics.impl.ea, reason: case insensitive filesystem */
-/* loaded from: classes5.dex */
-public abstract class AbstractC0226ea {
-}

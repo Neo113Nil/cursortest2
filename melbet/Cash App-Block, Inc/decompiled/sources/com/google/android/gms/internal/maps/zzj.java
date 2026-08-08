@@ -1,6 +1,0 @@
-package com.google.android.gms.internal.maps;
-
-/* loaded from: classes4.dex */
-public abstract class zzj extends zzb implements zzk {
-    public static final /* synthetic */ int $r8$clinit = 0;
-}

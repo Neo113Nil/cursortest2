@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<inset xmlns:android="http://schemas.android.com/apk/res/android"
-    android:insetLeft="@dimen/recycler_view_start_end_padding"
-    android:insetRight="@dimen/recycler_view_start_end_padding">
-    <shape>
-        <size android:height="1dp"/>
-        <solid android:color="?attr/colorSurfaceVariant"/>
-    </shape>
-</inset>
