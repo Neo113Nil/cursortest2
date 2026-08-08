@@ -40,5 +40,82 @@
   "stdout": "╭─ com.jiGo.Trafficcarturn ─╮\n│ TargetTile                │\n│ 1102  (vc 1102)           │\n╰───────────────────────────╯\n\nDownloading 3 files  (42.2 MB)\n  com.jiGo.Trafficcarturn-1102.apk                  ━━━━━ 100% 14.5… 22.5 0:00:…\n                                                               MB    MB/s       \n  com.jiGo.Trafficcarturn-1102-config.arm64_v8a.apk ━━━━━ 100% 20.6… 32.4 0:00:…\n                                                               MB    MB/s       \n  com.jiGo.Trafficcarturn-1102-asset.apk            ━━━━━ 100% 9.2/… 16.4 0:00:…\n                                                               MB    MB/s       \n\n                       Downloaded files                        \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                              ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.jiGo.Trafficcarturn-1102.apk                  │ 13.8 MB │\n│ com.jiGo.Trafficcarturn-1102-config.arm64_v8a.apk │ 19.6 MB │\n│ com.jiGo.Trafficcarturn-1102-asset.apk            │ 13.8 MB │\n└───────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "TargetTile (в приложении: Total C Mobile)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да (kotlinx.coroutines 1.6.1)"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Unity Analytics, Unity Crash Reporting"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, com.jiGo.Trafficcarturn.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity 6000.3.8f1 (IL2CPP), UniWebView (com.onevcat.uniwebview), Assembly-CSharp (AppLoaderNewGameMobileScript / ShapeHavoc), UniTask (Cysharp), Unity Analytics / CrashReporting modules, androidx.appcompat, androidx.browser (Custom Tabs), androidx.core, androidx.fragment, androidx.activity, androidx.lifecycle, androidx.emoji2, androidx.startup, kotlinx.coroutines 1.6.1, bitter.jnibridge, org.fmod, com.google.androidgamesdk (swappy), Google Guava (common.util.concurrent)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "api.uca.cloud"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "поля загрузчика startedWeb / possibleLink / isLoading в памяти объекта; Unity PlayerPrefs присутствует в движке"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "requestUrl, possibleLink, TryGetLink, StartTryingLink, startedWeb, EnableView, FastLoadGame, LoadNextScene, fallbackTime, redirect, webview, UniWebView, SafeBrowsing, outage-donates, url, link, Loading Total, Total C Mobile"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "api.uca.cloud",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: TUCOWS.COM, CO."
+      }
+    ],
+    "collected_data": [
+      "В коде не"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• В коде не\n\nКак собираются: Сразу после запуска, ещё на экране загрузки, приложение само запускает скрытую проверку через скрипт загрузчика AppLoaderNewGameMobileScript. Человек ничего специально не нажимает: на экране крутится полоска прогресса около тринадцати секунд, а в фоне уже идёт сетевой запрос. В коде загрузчика видны шаги StartTryingLink и TryGetLink: приложение берёт заранее заданный адрес проверки (поле requestUrl) и тихо обращается к нему через обычный сетевой запрос движка Unity. Отдельного окна с разрешением на сбор данных для этой проверки нет. После тщательного разбора манифеста, строк, метаданных IL2CPP и полей загрузчика не видно, чтобы в этот запрос проверки клали язык, страну,…\n\nКуда отправляются: Запрос проверки уходит на адрес https://outage-donates.com — это строка из встроенных данных приложения, связанная с полем requestUrl загрузчика. Запасных адресов проверки в коде не видно. Запрос идёт тихо в фоне, пока человек смотрит экран загрузки. Это не показ рекламного баннера на экране, а скрытая проверка «что показать дальше». Рядом в строках есть ещё https://policy.outage-donates.com/df2879d7 — страница политики, на неё завязана кнопка Privacy в обычном режиме приложения.…\n\nКак фильтруются пользователи: В самом приложении нет жёсткого списка стран, языков или «белых» и «грязных» посетителей, по которому телефон сам решал бы исход. Загрузчик только отправляет запрос на адрес проверки и смотрит, пришла ли обратно ссылка. Решение «кому показать внешнюю страницу, а кому оставить обычное приложение» делает сервер: если в ответе есть ссылка, приложение считает это «боевым» путём; если ссылки нет или сработал запасной таймер ожидания (fallbackTime), остаётся обычный режим. В приложении видно только отправку на адрес проверки и чтение ответа; само решение «кого пустить» делает сервер.\n\nЧто возвращается: Ответ проверки читается в поле possibleLink — это ссылка, которую загрузчик получает после TryGetLink. Если ссылка есть и не пустая, приложение считает, что можно показать внешнюю страницу. Если ссылки нет, ответ пустой, запрос не удался или вышло время ожидания, срабатывает «белый» исход: загрузчик переходит к FastLoadGame…"
+  }
 }
