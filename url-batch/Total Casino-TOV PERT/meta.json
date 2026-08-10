@@ -1,0 +1,46 @@
+{
+  "app_id": "com.ddolop.fadoookp.betsson",
+  "title": "Total Casino",
+  "developer": "TOV PERT",
+  "developer_id": "TOV+PERT",
+  "icon": "/static/app-icons/com_ddolop_fadoookp_betsson.png",
+  "url": "https://play.google.com/store/apps/details?id=com.ddolop.fadoookp.betsson&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 24, 2026",
+  "updated": "Jul 24, 2026",
+  "version": "Varies with device",
+  "summary": "Office mood tracker with burnout level, streaks and daily challenges",
+  "keyword": "url-batch",
+  "folder": "Total Casino-TOV PERT",
+  "path": "url-batch/Total Casino-TOV PERT",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.ddolop.fadoookp.betsson-1-asset.apk",
+    "com.ddolop.fadoookp.betsson-1-config.en.apk",
+    "com.ddolop.fadoookp.betsson-1-config.xxhdpi.apk",
+    "com.ddolop.fadoookp.betsson-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Total Casino-TOV PERT",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.ddolop.fadoookp.betsson ─╮\n│ Total Casino                  │\n│ 1.0  (vc 1)                   │\n╰───────────────────────────────╯\n\nDownloading 4 files  (5.4 MB)\n  com.ddolop.fadoookp.betsson-1.apk               ━━━━━ 100% 3.5/… 13.0   0:00:…\n                                                             MB    MB/s         \n  com.ddolop.fadoookp.betsson-1-config.en.apk     ━━━━━ 100% 74.1… 4.0    0:00:…\n                                                             kB    MB/s         \n  com.ddolop.fadoookp.betsson-1-config.xxhdpi.apk ━━━━━ 100% 86.4… 4.6    0:00:…\n                                                             kB    MB/s         \n  com.ddolop.fadoookp.betsson-1-asset.apk         ━━━━━ 100% 2.0/… 17.6   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.ddolop.fadoookp.betsson-1.apk               │  3.4 MB │\n│ com.ddolop.fadoookp.betsson-1-config.en.apk     │ 72.4 KB │\n│ com.ddolop.fadoookp.betsson-1-config.xxhdpi.apk │ 84.4 KB │\n│ com.ddolop.fadoookp.betsson-1-asset.apk         │  3.4 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.ddolop.fadoookp.betsson ─╮\n│ Total Casino                  │\n│ 1.0  (vc 1)                   │\n╰───────────────────────────────╯\n\nDownloading 4 files  (5.4 MB)\n  com.ddolop.fadoookp.betsson-1.apk               ━━━━━ 100% 3.5/… 13.0   0:00:…\n                                                             MB    MB/s         \n  com.ddolop.fadoookp.betsson-1-config.en.apk     ━━━━━ 100% 74.1… 4.0    0:00:…\n                                                             kB    MB/s         \n  com.ddolop.fadoookp.betsson-1-config.xxhdpi.apk ━━━━━ 100% 86.4… 4.6    0:00:…\n                                                             kB    MB/s         \n  com.ddolop.fadoookp.betsson-1-asset.apk         ━━━━━ 100% 2.0/… 17.6   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.ddolop.fadoookp.betsson-1.apk               │  3.4 MB │\n│ com.ddolop.fadoookp.betsson-1-config.en.apk     │ 72.4 KB │\n│ com.ddolop.fadoookp.betsson-1-config.xxhdpi.apk │ 84.4 KB │\n│ com.ddolop.fadoookp.betsson-1-asset.apk         │  3.4 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
