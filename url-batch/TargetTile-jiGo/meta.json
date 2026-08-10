@@ -40,5 +40,82 @@
   "stdout": "╭─ com.jiGo.Trafficcarturn ─╮\n│ TargetTile                │\n│ 1102  (vc 1102)           │\n╰───────────────────────────╯\n\nDownloading 3 files  (42.2 MB)\n  com.jiGo.Trafficcarturn-1102.apk                  ━━━━━ 100% 14.5… 22.5 0:00:…\n                                                               MB    MB/s       \n  com.jiGo.Trafficcarturn-1102-config.arm64_v8a.apk ━━━━━ 100% 20.6… 32.4 0:00:…\n                                                               MB    MB/s       \n  com.jiGo.Trafficcarturn-1102-asset.apk            ━━━━━ 100% 9.2/… 16.4 0:00:…\n                                                               MB    MB/s       \n\n                       Downloaded files                        \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                              ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.jiGo.Trafficcarturn-1102.apk                  │ 13.8 MB │\n│ com.jiGo.Trafficcarturn-1102-config.arm64_v8a.apk │ 19.6 MB │\n│ com.jiGo.Trafficcarturn-1102-asset.apk            │ 13.8 MB │\n└───────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "TargetTile (в приложении: Total C Mobile)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да (kotlinx.coroutines 1.6.1, kotlin stdlib)"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Unity Analytics (Unity Connect, UnityEngine.UnityAnalyticsModule), Unity Crash Reporting (UnityEngine.CrashReportingModule), Unity Performance Reporting"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, com.jiGo.Trafficcarturn.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity 6000.3.8f1 (IL2CPP, com.unity3d.player), UniWebView (com.onevcat.uniwebview), UniTask / Cysharp.Threading.Tasks, Unity.VisualScripting, Unity.TextMeshPro, Unity.Timeline, Assembly-CSharp (AppLoaderNewGameMobileScript, GameManager, ScoreManager, Spawner, Obstacle, ObstacleMovement, ObjectDestroyer, Player, Collision, AudioManager), androidx.appcompat 1.6.1, androidx.browser, androidx.core 1.9.0 + core-ktx, androidx.activity 1.6.0, androidx.fragment 1.3.6, androidx.lifecycle 2.5.1, androidx.savedstate 1.2.0, androidx.emoji2 1.2.0, androidx.startup 1.1.1, androidx.tracing 1.0.0, androidx.vectordrawable 1.1.0, androidx.viewpager 1.0.0, androidx.drawerlayout, androidx.customview, androidx.cursoradapter, androidx.loader, androidx.constraintlayout, androidx.versionedparcelable 1.1.1, kotlinx.coroutines 1.6.1, com.google.androidgamesdk (Swappy), com.google.common (Guava), org.fmod, bitter.jnibridge, org.jetbrains.annotations"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "outage-donates.com, policy.outage-donates.com, api.uca.cloud"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Unity PlayerPrefs — сохраняются только числа (в сборке остались только SetInt/GetInt), ключ HighScore; отдельного файла настроек с адресами или результатом проверки нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "requestUrl, possibleLink, StartTryingLinkNewGameMobileScript, TryGetLinkNewGameMobileScript, startedWeb, EnableView, fallbackTime, lastCheckTime, isLoading, FastLoadGameNewGameMobileScript, LoadNextSceneNewGameMobileScript, outage-donates.com, policy.outage-donates.com, df2879d7, redirect, redirect_uri, «Received redirect url:», «which is already redirected», url, link, ChangeUrl, addUrlScheme, getUrl, loadUrl, setUserAgent, getDefaultUserAgent, setOpenLinksInExternalBrowser, safeBrowsingShow, safeBrowsingChangeUrl, shouldOverrideUrlLoading, CustomTabsIntent, Total C Mobile TargetTile — com.jiGo.Trafficcarturn стр. 2"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "api.uca.cloud",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: TUCOWS.COM, CO."
+      }
+    ],
+    "collected_data": [
+      "В коде не"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• В коде не\n\nКак собираются: Проверка начинается сразу при запуске, на экране загрузки: им управляет скрипт загрузчика AppLoaderNewGameMobileScript, который висит на объекте загрузки первой сцены. Человек ничего не нажимает и ничего не подтверждает — окна с вопросом о согласии нет, на экране просто идёт полоска загрузки (в настройках объекта на неё заложено 13 секунд), а в это же время в фоне уходит сетевой запрос. В коде загрузчика на это заведены отдельные шаги: StartTryingLinkNewGameMobileScript запускает попытку получить ссылку, TryGetLinkNewGameMobileScript забирает ответ, а поля startedWeb, isLoading, lastCheckTime и fallbackTime отвечают за то,…\n\nКуда отправляются: TargetTile — com.jiGo.Trafficcarturn стр. 5 Адрес проверки зашит прямо в приложение, а не приходит откуда-то со стороны: в коде лежит готовая строка https://outage-donates.com, и именно она связана с полем загрузчика requestUrl (в настройках сцены у загрузчика никакой строки с адресом не сохранено, то есть адрес берётся из самого кода). Рядом в коде лежат ещё две связанные строки: https://policy.outage-donates.com/df2879d7 — страница «политики», на неё выводит кнопка Privacy в обычном режиме, и отдельная короткая метка df2879d7, похожая на опознавательный номер этой сборки у владельца схемы. Запасных адресов проверки в приложении не видно — адрес один. Запрос уходит тихо в фоне,…\n\nКак фильтруются пользователи: Внутри приложения нет ни списка стран, ни списка языков, ни перечня «плохих» и «хороших» посетителей — телефон сам никого не отсеивает. Нет и проверок на эмулятор, на робота или на проверяющего из магазина: таких сравнений в коде загрузчика не встречается. Единственное, что приложение делает само, — это ждёт: поля lastCheckTime и fallbackTime задают, сколько времени можно потратить на ожидание ответа, а FastLoadGameNewGameMobileScript позволяет не тянуть время и сразу пустить человека дальше. Значит, решение «кому показать чужую страницу, а кому оставить обычное приложение» принимает сервер на стороне владельца схемы, а не сама программа. Что именно сервер учитывает — сетевой адрес,…\n\nЧто возвращается: Обратно приходит ссылка — по коду это одна строка, которую заг…"
+  }
 }
