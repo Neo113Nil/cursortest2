@@ -1,0 +1,49 @@
+{
+  "app_id": "com.batchwatermark.studio",
+  "title": "Batch Watermark Ink stamp",
+  "developer": "lovren-tov",
+  "developer_id": "5987303093808588222",
+  "icon": "/static/app-icons/com_batchwatermark_studio.png",
+  "url": "https://play.google.com/store/apps/details?id=com.batchwatermark.studio&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 9, 2026",
+  "updated": "Jul 16, 2026",
+  "version": "Varies with device",
+  "summary": "Add text watermarks to multiple images with live preview and export.",
+  "keyword": "url-batch",
+  "folder": "Batch Watermark Ink stamp-lovren-tov",
+  "path": "url-batch/Batch Watermark Ink stamp-lovren-tov",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.batchwatermark.studio-2-asset.apk",
+    "com.batchwatermark.studio-2-config.arm64_v8a.apk",
+    "com.batchwatermark.studio-2-config.en.apk",
+    "com.batchwatermark.studio-2-config.lt.apk",
+    "com.batchwatermark.studio-2-config.ru.apk",
+    "com.batchwatermark.studio-2-config.xxhdpi.apk",
+    "com.batchwatermark.studio-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Batch Watermark Ink stamp-lovren-tov",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.batchwatermark.studio ─╮\n│ Batch Watermark: Ink stamp  │\n│ 2  (vc 2)                   │\n╰─────────────────────────────╯\n\nDownloading 7 files  (3.8 MB)\n  com.batchwatermark.studio-2.apk                  ━━━━━ 100% 2.5/… 20.7  0:00:…\n                                                              MB    MB/s        \n  com.batchwatermark.studio-2-config.arm64_v8a.apk ━━━━━ 100% 41.2… ?     0:00:…\n                                                              kB                \n  com.batchwatermark.studio-2-config.en.apk        ━━━━━ 100% 24.8… ?     0:00:…\n                                                              kB                \n  com.batchwatermark.studio-2-config.lt.apk        ━━━━━ 100% 20.7… ?     0:00:…\n                                                              kB                \n  com.batchwatermark.studio-2-config.ru.apk        ━━━━━ 100% 20.7… ?     0:00:…\n                                                              kB                \n  com.batchwatermark.studio-2-config.xxhdpi.apk    ━━━━━ 100% 16.7… ?     0:00:…\n                                                              kB                \n  com.batchwatermark.studio-2-asset.apk            ━━━━━ 100% 1.4/… 12.8  0:00:…\n                                                              MB    MB/s        \n\n                       Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                             ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.batchwatermark.studio-2.apk                  │  2.4 MB │\n│ com.batchwatermark.studio-2-config.arm64_v8a.apk │ 40.2 KB │\n│ com.batchwatermark.studio-2-config.en.apk        │ 24.2 KB │\n│ com.batchwatermark.studio-2-config.lt.apk        │ 20.2 KB │\n│ com.batchwatermark.studio-2-config.ru.apk        │ 20.2 KB │\n│ com.batchwatermark.studio-2-config.xxhdpi.apk    │ 16.3 KB │\n│ com.batchwatermark.studio-2-asset.apk            │  2.4 MB │\n└──────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.batchwatermark.studio ─╮\n│ Batch Watermark: Ink stamp  │\n│ 2  (vc 2)                   │\n╰─────────────────────────────╯\n\nDownloading 7 files  (3.8 MB)\n  com.batchwatermark.studio-2.apk                  ━━━━━ 100% 2.5/… 20.7  0:00:…\n                                                              MB    MB/s        \n  com.batchwatermark.studio-2-config.arm64_v8a.apk ━━━━━ 100% 41.2… ?     0:00:…\n                                                              kB                \n  com.batchwatermark.studio-2-config.en.apk        ━━━━━ 100% 24.8… ?     0:00:…\n                                                              kB                \n  com.batchwatermark.studio-2-config.lt.apk        ━━━━━ 100% 20.7… ?     0:00:…\n                                                              kB                \n  com.batchwatermark.studio-2-config.ru.apk        ━━━━━ 100% 20.7… ?     0:00:…\n                                                              kB                \n  com.batchwatermark.studio-2-config.xxhdpi.apk    ━━━━━ 100% 16.7… ?     0:00:…\n                                                              kB                \n  com.batchwatermark.studio-2-asset.apk            ━━━━━ 100% 1.4/… 12.8  0:00:…\n                                                              MB    MB/s        \n\n                       Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                             ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.batchwatermark.studio-2.apk                  │  2.4 MB │\n│ com.batchwatermark.studio-2-config.arm64_v8a.apk │ 40.2 KB │\n│ com.batchwatermark.studio-2-config.en.apk        │ 24.2 KB │\n│ com.batchwatermark.studio-2-config.lt.apk        │ 20.2 KB │\n│ com.batchwatermark.studio-2-config.ru.apk        │ 20.2 KB │\n│ com.batchwatermark.studio-2-config.xxhdpi.apk    │ 16.3 KB │\n│ com.batchwatermark.studio-2-asset.apk            │  2.4 MB │\n└──────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
