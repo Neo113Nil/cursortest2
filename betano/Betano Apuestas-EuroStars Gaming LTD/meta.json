@@ -1,0 +1,56 @@
+{
+  "app_id": "com.gkichelshoyasim.bulubpofnacdva.lighttrail",
+  "title": "Betano Apuestas",
+  "developer": "EuroStars Gaming LTD",
+  "score": null,
+  "icon": "/static/app-icons/com_gkichelshoyasim_bulubpofnacdva_lighttrail.png",
+  "url": "https://play.google.com/store/apps/details?id=com.gkichelshoyasim.bulubpofnacdva.lighttrail&hl=en&gl=us",
+  "keyword": "betano",
+  "country": "Italy",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260810_210842_Italy_betano_search",
+  "search_title": "Betano Apuestas",
+  "search_developer": "EuroStars Gaming LTD",
+  "rank": 10,
+  "developer_id": "EuroStars+Gaming+LTD",
+  "released": "Jun 9, 2026",
+  "updated": "Aug 1, 2026",
+  "version": "Varies with device",
+  "summary": "Engage in thrilling light trail challenges.",
+  "folder": "Betano Apuestas-EuroStars Gaming LTD",
+  "path": "betano/Betano Apuestas-EuroStars Gaming LTD",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-asset.apk",
+    "com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.arm64_v8a.apk",
+    "com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.en.apk",
+    "com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.lt.apk",
+    "com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.ru.apk",
+    "com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.xxhdpi.apk",
+    "com.gkichelshoyasim.bulubpofnacdva.lighttrail-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/betano/Betano Apuestas-EuroStars Gaming LTD",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.gkichelshoyasim.bulubpofnacdva.lighttrail ─╮\n│ Betano Apuestas                                 │\n│ 1.1  (vc 2)                                     │\n╰─────────────────────────────────────────────────╯\n\nDownloading 7 files  (8.1 MB)\n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2.apk                   100%  … …\n                                                                             …  \n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.arm64_v8a.apk  100%  ? …\n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.en.apk         100%  ? …\n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.lt.apk         100%  ? …\n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.ru.apk         100%  ? …\n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.xxhdpi.apk     100%  ? …\n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-asset.apk             100%  … …\n                                                                             …  \n\n                                Downloaded files                                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2.apk                │  4.8 MB │\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.arm64_v8a.… │ 44.4 KB │\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.en.apk      │ 44.4 KB │\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.lt.apk      │ 24.4 KB │\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.ru.apk      │ 24.4 KB │\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.xxhdpi.apk  │ 60.4 KB │\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-asset.apk          │  4.8 MB │\n└────────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.gkichelshoyasim.bulubpofnacdva.lighttrail ─╮\n│ Betano Apuestas                                 │\n│ 1.1  (vc 2)                                     │\n╰─────────────────────────────────────────────────╯\n\nDownloading 7 files  (8.1 MB)\n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2.apk                   100%  … …\n                                                                             …  \n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.arm64_v8a.apk  100%  ? …\n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.en.apk         100%  ? …\n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.lt.apk         100%  ? …\n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.ru.apk         100%  ? …\n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.xxhdpi.apk     100%  ? …\n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-asset.apk             100%  … …\n                                                                             …  \n\n                                Downloaded files                                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2.apk                │  4.8 MB │\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.arm64_v8a.… │ 44.4 KB │\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.en.apk      │ 44.4 KB │\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.lt.apk      │ 24.4 KB │\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.ru.apk      │ 24.4 KB │\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.xxhdpi.apk  │ 60.4 KB │\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-asset.apk          │  4.8 MB │\n└────────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
