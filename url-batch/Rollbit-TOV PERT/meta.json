@@ -1,0 +1,48 @@
+{
+  "app_id": "com.fatum.rollbit.mortis",
+  "title": "Rollbit",
+  "developer": "TOV PERT",
+  "developer_id": "TOV+PERT",
+  "icon": "/static/app-icons/com_fatum_rollbit_mortis.png",
+  "url": "https://play.google.com/store/apps/details?id=com.fatum.rollbit.mortis&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 21, 2026",
+  "updated": "Jul 21, 2026",
+  "version": "Varies with device",
+  "summary": "Rollbit Win habit tracker with progress and rewards",
+  "keyword": "url-batch",
+  "folder": "Rollbit-TOV PERT",
+  "path": "url-batch/Rollbit-TOV PERT",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.fatum.rollbit.mortis-1-asset.apk",
+    "com.fatum.rollbit.mortis-1-config.en.apk",
+    "com.fatum.rollbit.mortis-1-config.lt.apk",
+    "com.fatum.rollbit.mortis-1-config.ru.apk",
+    "com.fatum.rollbit.mortis-1-config.xxhdpi.apk",
+    "com.fatum.rollbit.mortis-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Rollbit-TOV PERT",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.fatum.rollbit.mortis ─╮\n│ Rollbit                    │\n│ 1.0  (vc 1)                │\n╰────────────────────────────╯\n\nDownloading 6 files  (5.8 MB)\n  com.fatum.rollbit.mortis-1.apk               ━━━━━━ 100% 3.7/3… 13.7   0:00:00\n                                                           MB     MB/s          \n  com.fatum.rollbit.mortis-1-config.en.apk     ━━━━━━ 100% 41.2/… ?      0:00:00\n                                                           kB                   \n  com.fatum.rollbit.mortis-1-config.lt.apk     ━━━━━━ 100% 28.9/… ?      0:00:00\n                                                           kB                   \n  com.fatum.rollbit.mortis-1-config.ru.apk     ━━━━━━ 100% 28.9/… ?      0:00:00\n                                                           kB                   \n  com.fatum.rollbit.mortis-1-config.xxhdpi.apk ━━━━━━ 100% 53.5/… ?      0:00:00\n                                                           kB                   \n  com.fatum.rollbit.mortis-1-asset.apk         ━━━━━━ 100% 2.3/2… 11.4   0:00:00\n                                                           MB     MB/s          \n\n                     Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                         ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.fatum.rollbit.mortis-1.apk               │  3.5 MB │\n│ com.fatum.rollbit.mortis-1-config.en.apk     │ 40.2 KB │\n│ com.fatum.rollbit.mortis-1-config.lt.apk     │ 28.2 KB │\n│ com.fatum.rollbit.mortis-1-config.ru.apk     │ 28.2 KB │\n│ com.fatum.rollbit.mortis-1-config.xxhdpi.apk │ 52.2 KB │\n│ com.fatum.rollbit.mortis-1-asset.apk         │  3.5 MB │\n└──────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.fatum.rollbit.mortis ─╮\n│ Rollbit                    │\n│ 1.0  (vc 1)                │\n╰────────────────────────────╯\n\nDownloading 6 files  (5.8 MB)\n  com.fatum.rollbit.mortis-1.apk               ━━━━━━ 100% 3.7/3… 13.7   0:00:00\n                                                           MB     MB/s          \n  com.fatum.rollbit.mortis-1-config.en.apk     ━━━━━━ 100% 41.2/… ?      0:00:00\n                                                           kB                   \n  com.fatum.rollbit.mortis-1-config.lt.apk     ━━━━━━ 100% 28.9/… ?      0:00:00\n                                                           kB                   \n  com.fatum.rollbit.mortis-1-config.ru.apk     ━━━━━━ 100% 28.9/… ?      0:00:00\n                                                           kB                   \n  com.fatum.rollbit.mortis-1-config.xxhdpi.apk ━━━━━━ 100% 53.5/… ?      0:00:00\n                                                           kB                   \n  com.fatum.rollbit.mortis-1-asset.apk         ━━━━━━ 100% 2.3/2… 11.4   0:00:00\n                                                           MB     MB/s          \n\n                     Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                         ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.fatum.rollbit.mortis-1.apk               │  3.5 MB │\n│ com.fatum.rollbit.mortis-1-config.en.apk     │ 40.2 KB │\n│ com.fatum.rollbit.mortis-1-config.lt.apk     │ 28.2 KB │\n│ com.fatum.rollbit.mortis-1-config.ru.apk     │ 28.2 KB │\n│ com.fatum.rollbit.mortis-1-config.xxhdpi.apk │ 52.2 KB │\n│ com.fatum.rollbit.mortis-1-asset.apk         │  3.5 MB │\n└──────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
