@@ -1,0 +1,55 @@
+{
+  "app_id": "com.inception.kickoff.strategy.nexus",
+  "title": "Betano Apuestas Online",
+  "developer": "Blue Bicycle",
+  "score": null,
+  "icon": "/static/app-icons/com_inception_kickoff_strategy_nexus.png",
+  "url": "https://play.google.com/store/apps/details?id=com.inception.kickoff.strategy.nexus&hl=en&gl=us",
+  "keyword": "betano",
+  "country": "India",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260810_214322_India_betano_search",
+  "search_title": "Betano Apuestas Online",
+  "search_developer": "Blue Bicycle",
+  "rank": 4,
+  "developer_id": "Blue+Bicycle",
+  "released": "Jul 19, 2026",
+  "updated": "Jul 19, 2026",
+  "version": "Varies with device",
+  "summary": "Football runner, match challenges and stadium companion",
+  "folder": "Betano Apuestas Online-Blue Bicycle",
+  "path": "betano/Betano Apuestas Online-Blue Bicycle",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.inception.kickoff.strategy.nexus-1-asset.apk",
+    "com.inception.kickoff.strategy.nexus-1-config.en.apk",
+    "com.inception.kickoff.strategy.nexus-1-config.lt.apk",
+    "com.inception.kickoff.strategy.nexus-1-config.ru.apk",
+    "com.inception.kickoff.strategy.nexus-1-config.xxhdpi.apk",
+    "com.inception.kickoff.strategy.nexus-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/betano/Betano Apuestas Online-Blue Bicycle",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.inception.kickoff.strategy.nexus ─╮\n│ Betano Apuestas Online                 │\n│ 1.0  (vc 1)                            │\n╰────────────────────────────────────────╯\n\nDownloading 6 files  (17.8 MB)\n  com.inception.kickoff.strategy.nexus-1.apk               ━━━ 100% 13… 23… 0:0…\n                                                                    MB  MB…     \n  com.inception.kickoff.strategy.nexus-1-config.en.apk     ━━━ 100% 49… ?   0:0…\n                                                                    kB          \n  com.inception.kickoff.strategy.nexus-1-config.lt.apk     ━━━ 100% 33… ?   0:0…\n                                                                    kB          \n  com.inception.kickoff.strategy.nexus-1-config.ru.apk     ━━━ 100% 33… ?   0:0…\n                                                                    kB          \n  com.inception.kickoff.strategy.nexus-1-config.xxhdpi.apk ━━━ 100% 61… ?   0:0…\n                                                                    kB          \n  com.inception.kickoff.strategy.nexus-1-asset.apk         ━━━ 100% 5.… 19… 0:0…\n                                                                    MB  MB…     \n\n                           Downloaded files                           \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                     ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.inception.kickoff.strategy.nexus-1.apk               │ 12.7 MB │\n│ com.inception.kickoff.strategy.nexus-1-config.en.apk     │ 48.4 KB │\n│ com.inception.kickoff.strategy.nexus-1-config.lt.apk     │ 32.4 KB │\n│ com.inception.kickoff.strategy.nexus-1-config.ru.apk     │ 32.4 KB │\n│ com.inception.kickoff.strategy.nexus-1-config.xxhdpi.apk │ 60.4 KB │\n│ com.inception.kickoff.strategy.nexus-1-asset.apk         │ 12.7 MB │\n└──────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.inception.kickoff.strategy.nexus ─╮\n│ Betano Apuestas Online                 │\n│ 1.0  (vc 1)                            │\n╰────────────────────────────────────────╯\n\nDownloading 6 files  (17.8 MB)\n  com.inception.kickoff.strategy.nexus-1.apk               ━━━ 100% 13… 23… 0:0…\n                                                                    MB  MB…     \n  com.inception.kickoff.strategy.nexus-1-config.en.apk     ━━━ 100% 49… ?   0:0…\n                                                                    kB          \n  com.inception.kickoff.strategy.nexus-1-config.lt.apk     ━━━ 100% 33… ?   0:0…\n                                                                    kB          \n  com.inception.kickoff.strategy.nexus-1-config.ru.apk     ━━━ 100% 33… ?   0:0…\n                                                                    kB          \n  com.inception.kickoff.strategy.nexus-1-config.xxhdpi.apk ━━━ 100% 61… ?   0:0…\n                                                                    kB          \n  com.inception.kickoff.strategy.nexus-1-asset.apk         ━━━ 100% 5.… 19… 0:0…\n                                                                    MB  MB…     \n\n                           Downloaded files                           \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                     ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.inception.kickoff.strategy.nexus-1.apk               │ 12.7 MB │\n│ com.inception.kickoff.strategy.nexus-1-config.en.apk     │ 48.4 KB │\n│ com.inception.kickoff.strategy.nexus-1-config.lt.apk     │ 32.4 KB │\n│ com.inception.kickoff.strategy.nexus-1-config.ru.apk     │ 32.4 KB │\n│ com.inception.kickoff.strategy.nexus-1-config.xxhdpi.apk │ 60.4 KB │\n│ com.inception.kickoff.strategy.nexus-1-asset.apk         │ 12.7 MB │\n└──────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
