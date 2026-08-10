@@ -1,0 +1,55 @@
+{
+  "app_id": "com.strVex7ul.footbAll5ra.manag8lix",
+  "title": "Betano Apuestas Online",
+  "developer": "Galaxy Whisper",
+  "score": null,
+  "icon": "/static/app-icons/com_strVex7ul_footbAll5ra_manag8lix.png",
+  "url": "https://play.google.com/store/apps/details?id=com.strVex7ul.footbAll5ra.manag8lix&hl=en&gl=us",
+  "keyword": "betano",
+  "country": "India",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260810_214322_India_betano_search",
+  "search_title": "Betano Apuestas Online",
+  "search_developer": "Galaxy Whisper",
+  "rank": 3,
+  "developer_id": "Galaxy+Whisper",
+  "released": "Jun 4, 2026",
+  "updated": "Jul 1, 2026",
+  "version": "Varies with device",
+  "summary": "Manage football matches, teams, payments, stats and fields",
+  "folder": "Betano Apuestas Online-Galaxy Whisper",
+  "path": "betano/Betano Apuestas Online-Galaxy Whisper",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.strVex7ul.footbAll5ra.manag8lix-2-asset.apk",
+    "com.strVex7ul.footbAll5ra.manag8lix-2-config.en.apk",
+    "com.strVex7ul.footbAll5ra.manag8lix-2-config.lt.apk",
+    "com.strVex7ul.footbAll5ra.manag8lix-2-config.ru.apk",
+    "com.strVex7ul.footbAll5ra.manag8lix-2-config.xxhdpi.apk",
+    "com.strVex7ul.footbAll5ra.manag8lix-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/betano/Betano Apuestas Online-Galaxy Whisper",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.strVex7ul.footbAll5ra.manag8lix ─╮\n│ Betano Apuestas Online                │\n│ 2.0  (vc 2)                           │\n╰───────────────────────────────────────╯\n\nDownloading 6 files  (111.3 MB)\n  com.strVex7ul.footbAll5ra.manag8lix-2.apk               ━━━ 100% 63… 25.3 0:0…\n                                                                   MB  MB/s     \n  com.strVex7ul.footbAll5ra.manag8lix-2-config.en.apk     ━━━ 100% 45… ?    0:0…\n                                                                   kB           \n  com.strVex7ul.footbAll5ra.manag8lix-2-config.lt.apk     ━━━ 100% 33… ?    0:0…\n                                                                   kB           \n  com.strVex7ul.footbAll5ra.manag8lix-2-config.ru.apk     ━━━ 100% 33… ?    0:0…\n                                                                   kB           \n  com.strVex7ul.footbAll5ra.manag8lix-2-config.xxhdpi.apk ━━━ 100% 62… ?    0:0…\n                                                                   kB           \n  com.strVex7ul.footbAll5ra.manag8lix-2-asset.apk         ━━━ 100% 53… 27.9 0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                           \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                    ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.strVex7ul.footbAll5ra.manag8lix-2.apk               │ 60.6 MB │\n│ com.strVex7ul.footbAll5ra.manag8lix-2-config.en.apk     │ 44.2 KB │\n│ com.strVex7ul.footbAll5ra.manag8lix-2-config.lt.apk     │ 32.2 KB │\n│ com.strVex7ul.footbAll5ra.manag8lix-2-config.ru.apk     │ 32.2 KB │\n│ com.strVex7ul.footbAll5ra.manag8lix-2-config.xxhdpi.apk │ 61.0 KB │\n│ com.strVex7ul.footbAll5ra.manag8lix-2-asset.apk         │ 60.6 MB │\n└─────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.strVex7ul.footbAll5ra.manag8lix ─╮\n│ Betano Apuestas Online                │\n│ 2.0  (vc 2)                           │\n╰───────────────────────────────────────╯\n\nDownloading 6 files  (111.3 MB)\n  com.strVex7ul.footbAll5ra.manag8lix-2.apk               ━━━ 100% 63… 25.3 0:0…\n                                                                   MB  MB/s     \n  com.strVex7ul.footbAll5ra.manag8lix-2-config.en.apk     ━━━ 100% 45… ?    0:0…\n                                                                   kB           \n  com.strVex7ul.footbAll5ra.manag8lix-2-config.lt.apk     ━━━ 100% 33… ?    0:0…\n                                                                   kB           \n  com.strVex7ul.footbAll5ra.manag8lix-2-config.ru.apk     ━━━ 100% 33… ?    0:0…\n                                                                   kB           \n  com.strVex7ul.footbAll5ra.manag8lix-2-config.xxhdpi.apk ━━━ 100% 62… ?    0:0…\n                                                                   kB           \n  com.strVex7ul.footbAll5ra.manag8lix-2-asset.apk         ━━━ 100% 53… 27.9 0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                           \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                    ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.strVex7ul.footbAll5ra.manag8lix-2.apk               │ 60.6 MB │\n│ com.strVex7ul.footbAll5ra.manag8lix-2-config.en.apk     │ 44.2 KB │\n│ com.strVex7ul.footbAll5ra.manag8lix-2-config.lt.apk     │ 32.2 KB │\n│ com.strVex7ul.footbAll5ra.manag8lix-2-config.ru.apk     │ 32.2 KB │\n│ com.strVex7ul.footbAll5ra.manag8lix-2-config.xxhdpi.apk │ 61.0 KB │\n│ com.strVex7ul.footbAll5ra.manag8lix-2-asset.apk         │ 60.6 MB │\n└─────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}

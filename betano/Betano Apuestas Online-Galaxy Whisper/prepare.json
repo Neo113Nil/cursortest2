@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "apks": [
+    "com.strVex7ul.footbAll5ra.manag8lix-2.apk",
+    "com.strVex7ul.footbAll5ra.manag8lix-2-config.en.apk",
+    "com.strVex7ul.footbAll5ra.manag8lix-2-config.ru.apk",
+    "com.strVex7ul.footbAll5ra.manag8lix-2-asset.apk",
+    "com.strVex7ul.footbAll5ra.manag8lix-2-config.lt.apk",
+    "com.strVex7ul.footbAll5ra.manag8lix-2-config.xxhdpi.apk"
+  ],
+  "base_apk": "com.strVex7ul.footbAll5ra.manag8lix-2.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 5151 (0%)\nINFO  - progress: 640 of 5151 (12%)\nINFO  - progress: 1118 of 5151 (21%)\nINFO  - progress: 1119 of 5151 (21%)\nINFO  - progress: 1124 of 5151 (21%)\nINFO  - progress: 1162 of 5151 (22%)\nINFO  - progress: 1477 of 5151 (28%)\nINFO  - progress: 1561 of 5151 (30%)\nINFO  - progress: 1613 of 5151 (31%)\nINFO  - progress: 1657 of 5151 (32%)\nINFO  - progress: 1684 of 5151 (32%)\nINFO  - progress: 1702 of 5151 (33%)\nINFO  - progress: 1723 of 5151 (33%)\nINFO  - progress: 1765 of 5151 (34%)\nINFO  - progress: 1823 of 5151 (35%)\nINFO  - progress: 1872 of 5151 (36%)\nINFO  - progress: 1919 of 5151 (37%)\nINFO  - progress: 1953 of 5151 (37%)\nINFO  - progress: 1992 of 5151 (38%)\nINFO  - progress: 2029 of 5151 (39%)\nINFO  - progress: 2073 of 5151 (40%)\nINFO  - progress: 2095 of 5151 (40%)\nINFO  - progress: 2343 of 5151 (45%)\nINFO  - progress: 2473 of 5151 (48%)\nINFO  - progress: 2791 of 5151 (54%)\nINFO  - progress: 2927 of 5151 (56%)\nINFO  - progress: 2962 of 5151 (57%)\nINFO  - progress: 2986 of 5151 (57%)\nINFO  - progress: 2999 of 5151 (58%)\nINFO  - progress: 3000 of 5151 (58%)\nINFO  - progress: 3022 of 5151 (58%)\nINFO  - progress: 3028 of 5151 (58%)\nINFO  - progress: 3042 of 5151 (59%)\nINFO  - progress: 3047 of 5151 (59%)\nINFO  - progress: 3068 of 5151 (59%)\nINFO  - progress: 3274 of 5151 (63%)\nINFO  - progress: 3313 of 5151 (64%)\nINFO  - progress: 3336 of 5151 (64%)\nINFO  - progress: 3347 of 5151 (64%)\nINFO  - progress: 3357 of 5151 (65%)\nINFO  - progress: 3363 of 5151 (65%)\nINFO  - progress: 3395 of 5151 (65%)\nINFO  - progress: 3402 of 5151 (66%)\nINFO  - progress: 3412 of 5151 (66%)\nINFO  - progress: 3442 of 5151 (66%)\nINFO  - progress: 3611 of 5151 (70%)\nINFO  - progress: 3847 of 5151 (74%)\nINFO  - progress: 3942 of 5151 (76%)\nINFO  - progress: 3958 of 5151 (76%)\nINFO  - progress: 3972 of 5151 (77%)\nINFO  - progress: 3985 of 5151 (77%)\nINFO  - progress: 3990 of 5151 (77%)\nINFO  - progress: 4011 of 5151 (77%)\nINFO  - progress: 4024 of 5151 (78%)\nINFO  - progress: 4049 of 5151 (78%)\nINFO  - progress: 4068 of 5151 (78%)\nINFO  - progress: 4100 of 5151 (79%)\nINFO  - progress: 4111 of 5151 (79%)\nINFO  - progress: 4134 of 5151 (80%)\nINFO  - progress: 4195 of 5151 (81%)\nINFO  - progress: 4263 of 5151 (82%)\nINFO  - progress: 4523 of 5151 (87%)\nINFO  - progress: 4676 of 5151 (90%)\nINFO  - progress: 4739 of 5151 (92%)\nINFO  - progress: 5038 of 5151 (97%)\n                                                             \nERROR - finished with errors, count: 12\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/betano/Betano Apuestas Online-Galaxy Whisper/decompiled",
+    "skipped": false,
+    "base_apk": "com.strVex7ul.footbAll5ra.manag8lix-2.apk"
+  },
+  "analysis_files": [
+    "com.strVex7ul.footbAll5ra.manag8lix-2.apk",
+    "com.strVex7ul.footbAll5ra.manag8lix-2-config.en.apk",
+    "com.strVex7ul.footbAll5ra.manag8lix-2-config.ru.apk",
+    "com.strVex7ul.footbAll5ra.manag8lix-2-asset.apk",
+    "com.strVex7ul.footbAll5ra.manag8lix-2-config.lt.apk",
+    "com.strVex7ul.footbAll5ra.manag8lix-2-config.xxhdpi.apk",
+    "apk/com.strVex7ul.footbAll5ra.manag8lix-2.apk",
+    "apk/com.strVex7ul.footbAll5ra.manag8lix-2-config.en.apk",
+    "apk/com.strVex7ul.footbAll5ra.manag8lix-2-config.ru.apk",
+    "apk/com.strVex7ul.footbAll5ra.manag8lix-2-asset.apk",
+    "apk/com.strVex7ul.footbAll5ra.manag8lix-2-config.lt.apk",
+    "apk/com.strVex7ul.footbAll5ra.manag8lix-2-config.xxhdpi.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/okhttp3/",
+    "decompiled/sources/okio/",
+    "decompiled/sources/org/",
+    "decompiled/sources/retrofit2/"
+  ],
+  "errors": []
+}
