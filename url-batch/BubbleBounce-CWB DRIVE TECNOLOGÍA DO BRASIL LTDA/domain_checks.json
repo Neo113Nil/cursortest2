@@ -1,9 +1,825 @@
 {
   "all_custom_domains": [
+    "cwb-drive-tecnolog-a-do-brasil-ltda-a3027383.surge.sh",
     "accepter-earhart.com",
     "com.chrome.dev"
   ],
   "checked": [
+    {
+      "domain": "cwb-drive-tecnolog-a-do-brasil-ltda-a3027383.surge.sh",
+      "virustotal": {
+        "ok": true,
+        "vt_url": "https://www.virustotal.com/gui/domain/cwb-drive-tecnolog-a-do-brasil-ltda-a3027383.surge.sh",
+        "detections": "0/91 (malicious=0, suspicious=0)",
+        "last_analysis_stats": {
+          "malicious": 0,
+          "suspicious": 0,
+          "undetected": 91,
+          "harmless": 0,
+          "timeout": 0
+        },
+        "vendor_rows": [
+          [
+            "0xSI_f33d",
+            "Unrated"
+          ],
+          [
+            "Abusix",
+            "Unrated"
+          ],
+          [
+            "Acronis",
+            "Unrated"
+          ],
+          [
+            "ADMINUSLabs",
+            "Unrated"
+          ],
+          [
+            "AILabs (MONITORAPP)",
+            "Unrated"
+          ],
+          [
+            "AlienVault",
+            "Unrated"
+          ],
+          [
+            "alphaMountain.ai",
+            "Unrated"
+          ],
+          [
+            "AlphaSOC",
+            "Unrated"
+          ],
+          [
+            "Antiy-AVL",
+            "Unrated"
+          ],
+          [
+            "ArcSight Threat Intelligence",
+            "Unrated"
+          ],
+          [
+            "AutoShun",
+            "Unrated"
+          ],
+          [
+            "Axur",
+            "Unrated"
+          ],
+          [
+            "Bfore.Ai PreCrime",
+            "Unrated"
+          ],
+          [
+            "BitDefender",
+            "Unrated"
+          ],
+          [
+            "Bkav",
+            "Unrated"
+          ],
+          [
+            "Blueliv",
+            "Unrated"
+          ],
+          [
+            "Certego",
+            "Unrated"
+          ],
+          [
+            "ChainPatrol",
+            "Unrated"
+          ],
+          [
+            "Chong Lua Dao",
+            "Unrated"
+          ],
+          [
+            "CINS Army",
+            "Unrated"
+          ],
+          [
+            "Cluster25",
+            "Unrated"
+          ],
+          [
+            "CMC Threat Intelligence",
+            "Unrated"
+          ],
+          [
+            "CRDF",
+            "Unrated"
+          ],
+          [
+            "Criminal IP",
+            "Unrated"
+          ],
+          [
+            "CSIS Security Group",
+            "Unrated"
+          ],
+          [
+            "CTX AI",
+            "Unrated"
+          ],
+          [
+            "Cyan",
+            "Unrated"
+          ],
+          [
+            "Cyble",
+            "Unrated"
+          ],
+          [
+            "CyRadar",
+            "Unrated"
+          ],
+          [
+            "desenmascara.me",
+            "Unrated"
+          ],
+          [
+            "DNS8",
+            "Unrated"
+          ],
+          [
+            "Dr.Web",
+            "Unrated"
+          ],
+          [
+            "EmergingThreats",
+            "Unrated"
+          ],
+          [
+            "Emsisoft",
+            "Unrated"
+          ],
+          [
+            "Ermes",
+            "Unrated"
+          ],
+          [
+            "ESET",
+            "Unrated"
+          ],
+          [
+            "ESTsecurity",
+            "Unrated"
+          ],
+          [
+            "Forcepoint ThreatSeeker",
+            "Unrated"
+          ],
+          [
+            "Fortinet",
+            "Unrated"
+          ],
+          [
+            "Fortra",
+            "Unrated"
+          ],
+          [
+            "G-Data",
+            "Unrated"
+          ],
+          [
+            "GCP Abuse Intelligence",
+            "Unrated"
+          ],
+          [
+            "Google Safe Browsing",
+            "Unrated"
+          ],
+          [
+            "GreenSnow",
+            "Unrated"
+          ],
+          [
+            "GreyNoise",
+            "Unrated"
+          ],
+          [
+            "Gridinsoft",
+            "Unrated"
+          ],
+          [
+            "Guardpot",
+            "Unrated"
+          ],
+          [
+            "Heimdal Security",
+            "Unrated"
+          ],
+          [
+            "Hunt.io Intelligence",
+            "Unrated"
+          ],
+          [
+            "IPsum",
+            "Unrated"
+          ],
+          [
+            "Juniper Networks",
+            "Unrated"
+          ],
+          [
+            "Kaspersky",
+            "Unrated"
+          ],
+          [
+            "LevelBlue",
+            "Unrated"
+          ],
+          [
+            "Lionic",
+            "Unrated"
+          ],
+          [
+            "Lumu",
+            "Unrated"
+          ],
+          [
+            "Malwared",
+            "Unrated"
+          ],
+          [
+            "MalwarePatrol",
+            "Unrated"
+          ],
+          [
+            "MalwareURL",
+            "Unrated"
+          ],
+          [
+            "Mimecast",
+            "Unrated"
+          ],
+          [
+            "Netcraft",
+            "Unrated"
+          ],
+          [
+            "OpenPhish",
+            "Unrated"
+          ],
+          [
+            "PhishFort",
+            "Unrated"
+          ],
+          [
+            "Phishing Database",
+            "Unrated"
+          ],
+          [
+            "Phishtank",
+            "Unrated"
+          ],
+          [
+            "PREBYTES",
+            "Unrated"
+          ],
+          [
+            "PrecisionSec",
+            "Unrated"
+          ],
+          [
+            "Quick Heal",
+            "Unrated"
+          ],
+          [
+            "Quttera",
+            "Unrated"
+          ],
+          [
+            "SafeToOpen",
+            "Unrated"
+          ],
+          [
+            "Sansec eComscan",
+            "Unrated"
+          ],
+          [
+            "Scantitan",
+            "Unrated"
+          ],
+          [
+            "SCUMWARE.org",
+            "Unrated"
+          ],
+          [
+            "Seclookup",
+            "Unrated"
+          ],
+          [
+            "SecureBrain",
+            "Unrated"
+          ],
+          [
+            "Snort IP sample list",
+            "Unrated"
+          ],
+          [
+            "SOCRadar",
+            "Unrated"
+          ],
+          [
+            "Sophos",
+            "Unrated"
+          ],
+          [
+            "StopForumSpam",
+            "Unrated"
+          ],
+          [
+            "Sucuri SiteCheck",
+            "Unrated"
+          ],
+          [
+            "ThreatHive",
+            "Unrated"
+          ],
+          [
+            "URLhaus",
+            "Unrated"
+          ],
+          [
+            "URLQuery",
+            "Unrated"
+          ],
+          [
+            "Viettel Threat Intelligence",
+            "Unrated"
+          ],
+          [
+            "VIPRE",
+            "Unrated"
+          ],
+          [
+            "ViriBack",
+            "Unrated"
+          ],
+          [
+            "VX Vault",
+            "Unrated"
+          ],
+          [
+            "Webroot",
+            "Unrated"
+          ],
+          [
+            "Xcitium Verdict Cloud",
+            "Unrated"
+          ],
+          [
+            "Yandex Safebrowsing",
+            "Unrated"
+          ],
+          [
+            "ZeroCERT",
+            "Unrated"
+          ],
+          [
+            "ZeroFox",
+            "Unrated"
+          ]
+        ],
+        "reputation": 0,
+        "community_votes": {
+          "harmless": 0,
+          "malicious": 0
+        },
+        "categories": {},
+        "popularity_ranks": "нет",
+        "creation_date": 1406329853,
+        "last_modification_date": 1786376554,
+        "last_analysis_date": 1786376538,
+        "registrar": "Porkbun LLC",
+        "whois": "Admin City: REDACTED\nAdmin Country: REDACTED\nAdmin Organization: REDACTED\nAdmin Postal Code: REDACTED\nAdmin State/Province: REDACTED\nCreation Date: 2014-07-25T23:10:53Z\nDNSSEC: unsigned\nDomain Name: surge.sh\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: ns1.surge.world\nName Server: ns2.surge.world\nName Server: ns3.surge.world\nName Server: ns4.surge.world\nRegistrant City: 3495bcf1839c6374\nRegistrant Country: US\nRegistrant Email: fb6ff66ef97c0518s@\nRegistrant Fax Ext: 3495bcf1839c6374\nRegistrant Fax: 3495bcf1839c6374\nRegistrant Name: 3495bcf1839c6374\nRegistrant Organization: 0c0ae3ca894d74a0\nRegistrant Phone Ext: 3495bcf1839c6374\nRegistrant Phone: 3495bcf1839c6374\nRegistrant Postal Code: 3495bcf1839c6374\nRegistrant State/Province: b5ccaeb3c805e2cb\nRegistrant Street: 3495bcf1839c6374\nRegistrar Abuse Contact Email: abuse+registry@porkbun.com\nRegistrar Abuse Contact Phone: +1.8557675286\nRegistrar IANA ID: 1861\nRegistrar URL: http://porkbun.com\nRegistrar WHOIS Server: whois.porkbun.com\nRegistrar: Porkbun LLC\nRegistry Admin ID: REDACTED\nRegistry Domain ID: REDACTED\nRegistry Expiry Date: 2026-07-25T23:10:53Z\nRegistry Registrant ID: REDACTED\nRegistry Tech ID: REDACTED\nTech City: REDACTED\nTech Country: REDACTED\nTech Organization: REDACTED\nTech Postal Code: REDACTED\nTech State/Province: REDACTED\nUpdated Date: 2025-07-11T07:10:57Z",
+        "dns_records": [
+          "A 138.197.235.123"
+        ],
+        "https_subject": {
+          "CN": "*.surge.sh"
+        },
+        "https_issuer": {
+          "C": "GB",
+          "O": "Sectigo Limited",
+          "CN": "Sectigo Public Server Authentication CA DV R36"
+        },
+        "malicious_engines": [
+          "нет"
+        ],
+        "suspicious_engines": [
+          "нет"
+        ],
+        "tags": [
+          "hex"
+        ]
+      },
+      "redirects_to": "нет (без редиректа)",
+      "redirect_chain": [
+        "https://cwb-drive-tecnolog-a-do-brasil-ltda-a3027383.surge.sh/"
+      ],
+      "page_output": "title: page not found. page not found page not found powered by surge.sh",
+      "parked_at": "регистратор: Porkbun LLC",
+      "final_url": "https://cwb-drive-tecnolog-a-do-brasil-ltda-a3027383.surge.sh/",
+      "http_status": 404,
+      "table_rows": [
+        {
+          "param": "Домен",
+          "value": "cwb-drive-tecnolog-a-do-brasil-ltda-a3027383.surge.sh"
+        },
+        {
+          "param": "VirusTotal URL",
+          "value": "https://www.virustotal.com/gui/domain/cwb-drive-tecnolog-a-do-brasil-ltda-a3027383.surge.sh"
+        },
+        {
+          "param": "Детекции",
+          "value": "0/91 (malicious=0, suspicious=0)"
+        },
+        {
+          "param": "Security vendors' analysis",
+          "value": "ниже построчно, как на VirusTotal"
+        },
+        {
+          "param": "0xSI_f33d",
+          "value": "Unrated"
+        },
+        {
+          "param": "Abusix",
+          "value": "Unrated"
+        },
+        {
+          "param": "Acronis",
+          "value": "Unrated"
+        },
+        {
+          "param": "ADMINUSLabs",
+          "value": "Unrated"
+        },
+        {
+          "param": "AILabs (MONITORAPP)",
+          "value": "Unrated"
+        },
+        {
+          "param": "AlienVault",
+          "value": "Unrated"
+        },
+        {
+          "param": "alphaMountain.ai",
+          "value": "Unrated"
+        },
+        {
+          "param": "AlphaSOC",
+          "value": "Unrated"
+        },
+        {
+          "param": "Antiy-AVL",
+          "value": "Unrated"
+        },
+        {
+          "param": "ArcSight Threat Intelligence",
+          "value": "Unrated"
+        },
+        {
+          "param": "AutoShun",
+          "value": "Unrated"
+        },
+        {
+          "param": "Axur",
+          "value": "Unrated"
+        },
+        {
+          "param": "Bfore.Ai PreCrime",
+          "value": "Unrated"
+        },
+        {
+          "param": "BitDefender",
+          "value": "Unrated"
+        },
+        {
+          "param": "Bkav",
+          "value": "Unrated"
+        },
+        {
+          "param": "Blueliv",
+          "value": "Unrated"
+        },
+        {
+          "param": "Certego",
+          "value": "Unrated"
+        },
+        {
+          "param": "ChainPatrol",
+          "value": "Unrated"
+        },
+        {
+          "param": "Chong Lua Dao",
+          "value": "Unrated"
+        },
+        {
+          "param": "CINS Army",
+          "value": "Unrated"
+        },
+        {
+          "param": "Cluster25",
+          "value": "Unrated"
+        },
+        {
+          "param": "CMC Threat Intelligence",
+          "value": "Unrated"
+        },
+        {
+          "param": "CRDF",
+          "value": "Unrated"
+        },
+        {
+          "param": "Criminal IP",
+          "value": "Unrated"
+        },
+        {
+          "param": "CSIS Security Group",
+          "value": "Unrated"
+        },
+        {
+          "param": "CTX AI",
+          "value": "Unrated"
+        },
+        {
+          "param": "Cyan",
+          "value": "Unrated"
+        },
+        {
+          "param": "Cyble",
+          "value": "Unrated"
+        },
+        {
+          "param": "CyRadar",
+          "value": "Unrated"
+        },
+        {
+          "param": "desenmascara.me",
+          "value": "Unrated"
+        },
+        {
+          "param": "DNS8",
+          "value": "Unrated"
+        },
+        {
+          "param": "Dr.Web",
+          "value": "Unrated"
+        },
+        {
+          "param": "EmergingThreats",
+          "value": "Unrated"
+        },
+        {
+          "param": "Emsisoft",
+          "value": "Unrated"
+        },
+        {
+          "param": "Ermes",
+          "value": "Unrated"
+        },
+        {
+          "param": "ESET",
+          "value": "Unrated"
+        },
+        {
+          "param": "ESTsecurity",
+          "value": "Unrated"
+        },
+        {
+          "param": "Forcepoint ThreatSeeker",
+          "value": "Unrated"
+        },
+        {
+          "param": "Fortinet",
+          "value": "Unrated"
+        },
+        {
+          "param": "Fortra",
+          "value": "Unrated"
+        },
+        {
+          "param": "G-Data",
+          "value": "Unrated"
+        },
+        {
+          "param": "GCP Abuse Intelligence",
+          "value": "Unrated"
+        },
+        {
+          "param": "Google Safe Browsing",
+          "value": "Unrated"
+        },
+        {
+          "param": "GreenSnow",
+          "value": "Unrated"
+        },
+        {
+          "param": "GreyNoise",
+          "value": "Unrated"
+        },
+        {
+          "param": "Gridinsoft",
+          "value": "Unrated"
+        },
+        {
+          "param": "Guardpot",
+          "value": "Unrated"
+        },
+        {
+          "param": "Heimdal Security",
+          "value": "Unrated"
+        },
+        {
+          "param": "Hunt.io Intelligence",
+          "value": "Unrated"
+        },
+        {
+          "param": "IPsum",
+          "value": "Unrated"
+        },
+        {
+          "param": "Juniper Networks",
+          "value": "Unrated"
+        },
+        {
+          "param": "Kaspersky",
+          "value": "Unrated"
+        },
+        {
+          "param": "LevelBlue",
+          "value": "Unrated"
+        },
+        {
+          "param": "Lionic",
+          "value": "Unrated"
+        },
+        {
+          "param": "Lumu",
+          "value": "Unrated"
+        },
+        {
+          "param": "Malwared",
+          "value": "Unrated"
+        },
+        {
+          "param": "MalwarePatrol",
+          "value": "Unrated"
+        },
+        {
+          "param": "MalwareURL",
+          "value": "Unrated"
+        },
+        {
+          "param": "Mimecast",
+          "value": "Unrated"
+        },
+        {
+          "param": "Netcraft",
+          "value": "Unrated"
+        },
+        {
+          "param": "OpenPhish",
+          "value": "Unrated"
+        },
+        {
+          "param": "PhishFort",
+          "value": "Unrated"
+        },
+        {
+          "param": "Phishing Database",
+          "value": "Unrated"
+        },
+        {
+          "param": "Phishtank",
+          "value": "Unrated"
+        },
+        {
+          "param": "PREBYTES",
+          "value": "Unrated"
+        },
+        {
+          "param": "PrecisionSec",
+          "value": "Unrated"
+        },
+        {
+          "param": "Quick Heal",
+          "value": "Unrated"
+        },
+        {
+          "param": "Quttera",
+          "value": "Unrated"
+        },
+        {
+          "param": "SafeToOpen",
+          "value": "Unrated"
+        },
+        {
+          "param": "Sansec eComscan",
+          "value": "Unrated"
+        },
+        {
+          "param": "Scantitan",
+          "value": "Unrated"
+        },
+        {
+          "param": "SCUMWARE.org",
+          "value": "Unrated"
+        },
+        {
+          "param": "Seclookup",
+          "value": "Unrated"
+        },
+        {
+          "param": "SecureBrain",
+          "value": "Unrated"
+        },
+        {
+          "param": "Snort IP sample list",
+          "value": "Unrated"
+        },
+        {
+          "param": "SOCRadar",
+          "value": "Unrated"
+        },
+        {
+          "param": "Sophos",
+          "value": "Unrated"
+        },
+        {
+          "param": "StopForumSpam",
+          "value": "Unrated"
+        },
+        {
+          "param": "Sucuri SiteCheck",
+          "value": "Unrated"
+        },
+        {
+          "param": "ThreatHive",
+          "value": "Unrated"
+        },
+        {
+          "param": "URLhaus",
+          "value": "Unrated"
+        },
+        {
+          "param": "URLQuery",
+          "value": "Unrated"
+        },
+        {
+          "param": "Viettel Threat Intelligence",
+          "value": "Unrated"
+        },
+        {
+          "param": "VIPRE",
+          "value": "Unrated"
+        },
+        {
+          "param": "ViriBack",
+          "value": "Unrated"
+        },
+        {
+          "param": "VX Vault",
+          "value": "Unrated"
+        },
+        {
+          "param": "Webroot",
+          "value": "Unrated"
+        },
+        {
+          "param": "Xcitium Verdict Cloud",
+          "value": "Unrated"
+        },
+        {
+          "param": "Yandex Safebrowsing",
+          "value": "Unrated"
+        },
+        {
+          "param": "ZeroCERT",
+          "value": "Unrated"
+        },
+        {
+          "param": "ZeroFox",
+          "value": "Unrated"
+        },
+        {
+          "param": "Куда редиректит",
+          "value": "нет (без редиректа)"
+        },
+        {
+          "param": "Что выводит (кратко)",
+          "value": "title: page not found. page not found page not found powered by surge.sh"
+        },
+        {
+          "param": "Где припаркован",
+          "value": "регистратор: Porkbun LLC"
+        }
+      ]
+    },
     {
       "domain": "accepter-earhart.com",
       "virustotal": {
@@ -1638,6 +2454,6 @@
       ]
     }
   ],
-  "count": 2,
+  "count": 3,
   "vt_configured": true
 }
