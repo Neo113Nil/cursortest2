@@ -1,0 +1,45 @@
+{
+  "app_id": "com.milodix.ranat_hatif",
+  "title": "BeatBattle",
+  "developer": "HEBODA STUDIO",
+  "developer_id": "6428422885038998769",
+  "icon": "/static/app-icons/com_milodix_ranat_hatif.png",
+  "url": "https://play.google.com/store/apps/details?id=com.milodix.ranat_hatif&hl=en&gl=us",
+  "score": 2.8,
+  "released": "Oct 4, 2015",
+  "updated": "2026-07-23",
+  "version": "992",
+  "summary": "Race downhill, dodge obstacles, collect coins, and master every thrilling ride.",
+  "keyword": "url-batch",
+  "folder": "BeatBattle-HEBODA STUDIO",
+  "path": "url-batch/BeatBattle-HEBODA STUDIO",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.milodix.ranat_hatif-992-asset.apk",
+    "com.milodix.ranat_hatif-992-config.arm64_v8a.apk",
+    "com.milodix.ranat_hatif-992.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/BeatBattle-HEBODA STUDIO",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.milodix.ranat_hatif ─╮\n│ BeatBattle                │\n│ 992  (vc 992)             │\n╰───────────────────────────╯\n\nDownloading 3 files  (38.1 MB)\n  com.milodix.ranat_hatif-992.apk                  ━━━━━ 100% 13.7… 9.0   0:00:…\n                                                              MB    MB/s        \n  com.milodix.ranat_hatif-992-config.arm64_v8a.apk ━━━━━ 100% 18.3… 11.1  0:00:…\n                                                              MB    MB/s        \n  com.milodix.ranat_hatif-992-asset.apk            ━━━━━ 100% 8.0/… 7.0   0:00:…\n                                                              MB    MB/s        \n\n                       Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                             ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.milodix.ranat_hatif-992.apk                  │ 13.0 MB │\n│ com.milodix.ranat_hatif-992-config.arm64_v8a.apk │ 17.4 MB │\n│ com.milodix.ranat_hatif-992-asset.apk            │ 13.0 MB │\n└──────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.milodix.ranat_hatif ─╮\n│ BeatBattle                │\n│ 992  (vc 992)             │\n╰───────────────────────────╯\n\nDownloading 3 files  (38.1 MB)\n  com.milodix.ranat_hatif-992.apk                  ━━━━━ 100% 13.7… 9.0   0:00:…\n                                                              MB    MB/s        \n  com.milodix.ranat_hatif-992-config.arm64_v8a.apk ━━━━━ 100% 18.3… 11.1  0:00:…\n                                                              MB    MB/s        \n  com.milodix.ranat_hatif-992-asset.apk            ━━━━━ 100% 8.0/… 7.0   0:00:…\n                                                              MB    MB/s        \n\n                       Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                             ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.milodix.ranat_hatif-992.apk                  │ 13.0 MB │\n│ com.milodix.ranat_hatif-992-config.arm64_v8a.apk │ 17.4 MB │\n│ com.milodix.ranat_hatif-992-asset.apk            │ 13.0 MB │\n└──────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
