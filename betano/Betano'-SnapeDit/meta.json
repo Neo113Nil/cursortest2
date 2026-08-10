@@ -1,0 +1,55 @@
+{
+  "app_id": "com.goal.rush.betano.tapper",
+  "title": "Betano'",
+  "developer": "SnapeDit",
+  "score": null,
+  "icon": "/static/app-icons/com_goal_rush_betano_tapper.png",
+  "url": "https://play.google.com/store/apps/details?id=com.goal.rush.betano.tapper&hl=en&gl=us",
+  "keyword": "betano",
+  "country": "Italy",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260810_210842_Italy_betano_search",
+  "search_title": "Betano'",
+  "search_developer": "SnapeDit",
+  "rank": 5,
+  "developer_id": "5044278313214288613",
+  "released": "Jul 15, 2026",
+  "updated": "Jul 15, 2026",
+  "version": "Varies with device",
+  "summary": "¡Calcula probabilidades, analiza cuotas de fútbol y simula apuestas con Betano!",
+  "folder": "Betano'-SnapeDit",
+  "path": "betano/Betano'-SnapeDit",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.goal.rush.betano.tapper-2-asset.apk",
+    "com.goal.rush.betano.tapper-2-config.en.apk",
+    "com.goal.rush.betano.tapper-2-config.lt.apk",
+    "com.goal.rush.betano.tapper-2-config.ru.apk",
+    "com.goal.rush.betano.tapper-2-config.xxhdpi.apk",
+    "com.goal.rush.betano.tapper-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/betano/Betano'-SnapeDit",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.goal.rush.betano.tapper ─╮\n│ Betano'                       │\n│ 2  (vc 2)                     │\n╰───────────────────────────────╯\n\nDownloading 6 files  (8.4 MB)\n  com.goal.rush.betano.tapper-2.apk               ━━━━━ 100% 6.3/… 32.6   0:00:…\n                                                             MB    MB/s         \n  com.goal.rush.betano.tapper-2-config.en.apk     ━━━━━ 100% 37.3… ?      0:00:…\n                                                             kB                 \n  com.goal.rush.betano.tapper-2-config.lt.apk     ━━━━━ 100% 20.9… ?      0:00:…\n                                                             kB                 \n  com.goal.rush.betano.tapper-2-config.ru.apk     ━━━━━ 100% 20.9… ?      0:00:…\n                                                             kB                 \n  com.goal.rush.betano.tapper-2-config.xxhdpi.apk ━━━━━ 100% 66.5… 1.3    0:00:…\n                                                             kB    MB/s         \n  com.goal.rush.betano.tapper-2-asset.apk         ━━━━━ 100% 2.4/… 14.5   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.goal.rush.betano.tapper-2.apk               │  6.0 MB │\n│ com.goal.rush.betano.tapper-2-config.en.apk     │ 36.4 KB │\n│ com.goal.rush.betano.tapper-2-config.lt.apk     │ 20.4 KB │\n│ com.goal.rush.betano.tapper-2-config.ru.apk     │ 20.4 KB │\n│ com.goal.rush.betano.tapper-2-config.xxhdpi.apk │ 64.9 KB │\n│ com.goal.rush.betano.tapper-2-asset.apk         │  6.0 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.goal.rush.betano.tapper ─╮\n│ Betano'                       │\n│ 2  (vc 2)                     │\n╰───────────────────────────────╯\n\nDownloading 6 files  (8.4 MB)\n  com.goal.rush.betano.tapper-2.apk               ━━━━━ 100% 6.3/… 32.6   0:00:…\n                                                             MB    MB/s         \n  com.goal.rush.betano.tapper-2-config.en.apk     ━━━━━ 100% 37.3… ?      0:00:…\n                                                             kB                 \n  com.goal.rush.betano.tapper-2-config.lt.apk     ━━━━━ 100% 20.9… ?      0:00:…\n                                                             kB                 \n  com.goal.rush.betano.tapper-2-config.ru.apk     ━━━━━ 100% 20.9… ?      0:00:…\n                                                             kB                 \n  com.goal.rush.betano.tapper-2-config.xxhdpi.apk ━━━━━ 100% 66.5… 1.3    0:00:…\n                                                             kB    MB/s         \n  com.goal.rush.betano.tapper-2-asset.apk         ━━━━━ 100% 2.4/… 14.5   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.goal.rush.betano.tapper-2.apk               │  6.0 MB │\n│ com.goal.rush.betano.tapper-2-config.en.apk     │ 36.4 KB │\n│ com.goal.rush.betano.tapper-2-config.lt.apk     │ 20.4 KB │\n│ com.goal.rush.betano.tapper-2-config.ru.apk     │ 20.4 KB │\n│ com.goal.rush.betano.tapper-2-config.xxhdpi.apk │ 64.9 KB │\n│ com.goal.rush.betano.tapper-2-asset.apk         │  6.0 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
