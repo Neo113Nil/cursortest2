@@ -1,0 +1,49 @@
+{
+  "app_id": "com.gust.at.sea",
+  "title": "Marisync",
+  "developer": "Torg Active",
+  "developer_id": "Torg+Active",
+  "icon": "/static/app-icons/com_gust_at_sea.png",
+  "url": "https://play.google.com/store/apps/details?id=com.gust.at.sea&hl=en&gl=us",
+  "score": null,
+  "released": "",
+  "updated": "Apr 3, 2026",
+  "version": "Varies with device",
+  "summary": "Marisync is a mobile puzzle game that invites players to dive deep",
+  "keyword": "url-batch",
+  "folder": "Marisync-Torg Active",
+  "path": "url-batch/Marisync-Torg Active",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.gust.at.sea-2-asset.apk",
+    "com.gust.at.sea-2-config.arm64_v8a.apk",
+    "com.gust.at.sea-2-config.en.apk",
+    "com.gust.at.sea-2-config.lt.apk",
+    "com.gust.at.sea-2-config.ru.apk",
+    "com.gust.at.sea-2-config.xxhdpi.apk",
+    "com.gust.at.sea-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Marisync-Torg Active",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.gust.at.sea ─╮\n│ Marisync          │\n│ 1.2.0  (vc 2)     │\n╰───────────────────╯\n\nDownloading 7 files  (18.2 MB)\n  com.gust.at.sea-2.apk                  ━━━━━━━━ 100% 2.4/2.4  10.7     0:00:00\n                                                       MB       MB/s            \n  com.gust.at.sea-2-config.arm64_v8a.apk ━━━━━━━━ 100% 14.9/14… 12.2     0:00:00\n                                                       MB       MB/s            \n  com.gust.at.sea-2-config.en.apk        ━━━━━━━━ 100% 29.1/29… ?        0:00:00\n                                                       kB                       \n  com.gust.at.sea-2-config.lt.apk        ━━━━━━━━ 100% 20.9/20… ?        0:00:00\n                                                       kB                       \n  com.gust.at.sea-2-config.ru.apk        ━━━━━━━━ 100% 20.9/20… ?        0:00:00\n                                                       kB                       \n  com.gust.at.sea-2-config.xxhdpi.apk    ━━━━━━━━ 100% 66.5/66… 805.3    0:00:00\n                                                       kB       kB/s            \n  com.gust.at.sea-2-asset.apk            ━━━━━━━━ 100% 1.7/1.7  15.9     0:00:00\n                                                       MB       MB/s            \n\n                  Downloaded files                  \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                   ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.gust.at.sea-2.apk                  │  2.3 MB │\n│ com.gust.at.sea-2-config.arm64_v8a.apk │ 14.2 MB │\n│ com.gust.at.sea-2-config.en.apk        │ 28.4 KB │\n│ com.gust.at.sea-2-config.lt.apk        │ 20.4 KB │\n│ com.gust.at.sea-2-config.ru.apk        │ 20.4 KB │\n│ com.gust.at.sea-2-config.xxhdpi.apk    │ 64.9 KB │\n│ com.gust.at.sea-2-asset.apk            │  2.3 MB │\n└────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.gust.at.sea ─╮\n│ Marisync          │\n│ 1.2.0  (vc 2)     │\n╰───────────────────╯\n\nDownloading 7 files  (18.2 MB)\n  com.gust.at.sea-2.apk                  ━━━━━━━━ 100% 2.4/2.4  10.7     0:00:00\n                                                       MB       MB/s            \n  com.gust.at.sea-2-config.arm64_v8a.apk ━━━━━━━━ 100% 14.9/14… 12.2     0:00:00\n                                                       MB       MB/s            \n  com.gust.at.sea-2-config.en.apk        ━━━━━━━━ 100% 29.1/29… ?        0:00:00\n                                                       kB                       \n  com.gust.at.sea-2-config.lt.apk        ━━━━━━━━ 100% 20.9/20… ?        0:00:00\n                                                       kB                       \n  com.gust.at.sea-2-config.ru.apk        ━━━━━━━━ 100% 20.9/20… ?        0:00:00\n                                                       kB                       \n  com.gust.at.sea-2-config.xxhdpi.apk    ━━━━━━━━ 100% 66.5/66… 805.3    0:00:00\n                                                       kB       kB/s            \n  com.gust.at.sea-2-asset.apk            ━━━━━━━━ 100% 1.7/1.7  15.9     0:00:00\n                                                       MB       MB/s            \n\n                  Downloaded files                  \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                   ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.gust.at.sea-2.apk                  │  2.3 MB │\n│ com.gust.at.sea-2-config.arm64_v8a.apk │ 14.2 MB │\n│ com.gust.at.sea-2-config.en.apk        │ 28.4 KB │\n│ com.gust.at.sea-2-config.lt.apk        │ 20.4 KB │\n│ com.gust.at.sea-2-config.ru.apk        │ 20.4 KB │\n│ com.gust.at.sea-2-config.xxhdpi.apk    │ 64.9 KB │\n│ com.gust.at.sea-2-asset.apk            │  2.3 MB │\n└────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
