@@ -1,0 +1,48 @@
+{
+  "app_id": "com.dsgamesolutions.cargaragetoolspuzzle",
+  "title": "Car Garage Tools Puzzle",
+  "developer": "Pooja Game Solutions",
+  "developer_id": "Pooja+Game+Solutions",
+  "icon": "/static/app-icons/com_dsgamesolutions_cargaragetoolspuzzle.png",
+  "url": "https://play.google.com/store/apps/details?id=com.dsgamesolutions.cargaragetoolspuzzle&hl=en&gl=us",
+  "score": null,
+  "released": "Dec 26, 2025",
+  "updated": "Dec 27, 2025",
+  "version": "Varies with device",
+  "summary": "Match tyres, engines and tools to clear garage puzzles before the timer ends!",
+  "keyword": "url-batch",
+  "folder": "Car Garage Tools Puzzle-Pooja Game Solutions",
+  "path": "url-batch/Car Garage Tools Puzzle-Pooja Game Solutions",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.dsgamesolutions.cargaragetoolspuzzle-1-asset.apk",
+    "com.dsgamesolutions.cargaragetoolspuzzle-1-config.en.apk",
+    "com.dsgamesolutions.cargaragetoolspuzzle-1-config.lt.apk",
+    "com.dsgamesolutions.cargaragetoolspuzzle-1-config.ru.apk",
+    "com.dsgamesolutions.cargaragetoolspuzzle-1-config.xxhdpi.apk",
+    "com.dsgamesolutions.cargaragetoolspuzzle-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Car Garage Tools Puzzle-Pooja Game Solutions",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.dsgamesolutions.cargaragetoolspuzzle ─╮\n│ Car Garage Tools Puzzle                    │\n│ 1.0.0.0  (vc 1)                            │\n╰────────────────────────────────────────────╯\n\nDownloading 6 files  (122.7 MB)\n  com.dsgamesolutions.cargaragetoolspuzzle-1.apk               ━━ 100% 6… 1… 0:…\n                                                                       MB M…    \n  com.dsgamesolutions.cargaragetoolspuzzle-1-config.en.apk     ━━ 100% 3… ?  0:…\n                                                                       kB       \n  com.dsgamesolutions.cargaragetoolspuzzle-1-config.lt.apk     ━━ 100% 2… ?  0:…\n                                                                       kB       \n  com.dsgamesolutions.cargaragetoolspuzzle-1-config.ru.apk     ━━ 100% 2… ?  0:…\n                                                                       kB       \n  com.dsgamesolutions.cargaragetoolspuzzle-1-config.xxhdpi.apk ━━ 100% 6… 4… 0:…\n                                                                       kB k…    \n  com.dsgamesolutions.cargaragetoolspuzzle-1-asset.apk         ━━ 100% 6… 1… 0:…\n                                                                       MB M…    \n\n                             Downloaded files                             \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                         ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.dsgamesolutions.cargaragetoolspuzzle-1.apk               │ 63.5 MB │\n│ com.dsgamesolutions.cargaragetoolspuzzle-1-config.en.apk     │ 36.4 KB │\n│ com.dsgamesolutions.cargaragetoolspuzzle-1-config.lt.apk     │ 20.4 KB │\n│ com.dsgamesolutions.cargaragetoolspuzzle-1-config.ru.apk     │ 20.4 KB │\n│ com.dsgamesolutions.cargaragetoolspuzzle-1-config.xxhdpi.apk │ 64.9 KB │\n│ com.dsgamesolutions.cargaragetoolspuzzle-1-asset.apk         │ 63.5 MB │\n└──────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.dsgamesolutions.cargaragetoolspuzzle ─╮\n│ Car Garage Tools Puzzle                    │\n│ 1.0.0.0  (vc 1)                            │\n╰────────────────────────────────────────────╯\n\nDownloading 6 files  (122.7 MB)\n  com.dsgamesolutions.cargaragetoolspuzzle-1.apk               ━━ 100% 6… 1… 0:…\n                                                                       MB M…    \n  com.dsgamesolutions.cargaragetoolspuzzle-1-config.en.apk     ━━ 100% 3… ?  0:…\n                                                                       kB       \n  com.dsgamesolutions.cargaragetoolspuzzle-1-config.lt.apk     ━━ 100% 2… ?  0:…\n                                                                       kB       \n  com.dsgamesolutions.cargaragetoolspuzzle-1-config.ru.apk     ━━ 100% 2… ?  0:…\n                                                                       kB       \n  com.dsgamesolutions.cargaragetoolspuzzle-1-config.xxhdpi.apk ━━ 100% 6… 4… 0:…\n                                                                       kB k…    \n  com.dsgamesolutions.cargaragetoolspuzzle-1-asset.apk         ━━ 100% 6… 1… 0:…\n                                                                       MB M…    \n\n                             Downloaded files                             \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                         ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.dsgamesolutions.cargaragetoolspuzzle-1.apk               │ 63.5 MB │\n│ com.dsgamesolutions.cargaragetoolspuzzle-1-config.en.apk     │ 36.4 KB │\n│ com.dsgamesolutions.cargaragetoolspuzzle-1-config.lt.apk     │ 20.4 KB │\n│ com.dsgamesolutions.cargaragetoolspuzzle-1-config.ru.apk     │ 20.4 KB │\n│ com.dsgamesolutions.cargaragetoolspuzzle-1-config.xxhdpi.apk │ 64.9 KB │\n│ com.dsgamesolutions.cargaragetoolspuzzle-1-asset.apk         │ 63.5 MB │\n└──────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
