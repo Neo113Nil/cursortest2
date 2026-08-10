@@ -1,0 +1,55 @@
+{
+  "app_id": "com.winNexa.tournRealm.cupBlaze",
+  "title": "Betano Apuestas Online",
+  "developer": "Hard Choice",
+  "score": null,
+  "icon": "/static/app-icons/com_winNexa_tournRealm_cupBlaze.png",
+  "url": "https://play.google.com/store/apps/details?id=com.winNexa.tournRealm.cupBlaze&hl=en&gl=us",
+  "keyword": "betano",
+  "country": "Italy",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260810_210842_Italy_betano_search",
+  "search_title": "Betano Apuestas Online",
+  "search_developer": "Hard Choice",
+  "rank": 6,
+  "developer_id": "Hard+Choice",
+  "released": "Jul 2, 2026",
+  "updated": "Jul 2, 2026",
+  "version": "Varies with device",
+  "summary": "Gaming lounge booking, room filters, tournaments and QR confirmations",
+  "folder": "Betano Apuestas Online-Hard Choice",
+  "path": "betano/Betano Apuestas Online-Hard Choice",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.winNexa.tournRealm.cupBlaze-1-asset.apk",
+    "com.winNexa.tournRealm.cupBlaze-1-config.en.apk",
+    "com.winNexa.tournRealm.cupBlaze-1-config.lt.apk",
+    "com.winNexa.tournRealm.cupBlaze-1-config.ru.apk",
+    "com.winNexa.tournRealm.cupBlaze-1-config.xxhdpi.apk",
+    "com.winNexa.tournRealm.cupBlaze-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/betano/Betano Apuestas Online-Hard Choice",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.winNexa.tournRealm.cupBlaze ─╮\n│ Betano Apuestas Online            │\n│ 1.0  (vc 1)                       │\n╰───────────────────────────────────╯\n\nDownloading 6 files  (36.5 MB)\n  com.winNexa.tournRealm.cupBlaze-1.apk               ━━━━ 100% 23.… 33.0 0:00:…\n                                                                MB   MB/s       \n  com.winNexa.tournRealm.cupBlaze-1-config.en.apk     ━━━━ 100% 45.… ?    0:00:…\n                                                                kB              \n  com.winNexa.tournRealm.cupBlaze-1-config.lt.apk     ━━━━ 100% 33.… ?    0:00:…\n                                                                kB              \n  com.winNexa.tournRealm.cupBlaze-1-config.ru.apk     ━━━━ 100% 33.… ?    0:00:…\n                                                                kB              \n  com.winNexa.tournRealm.cupBlaze-1-config.xxhdpi.apk ━━━━ 100% 62.… ?    0:00:…\n                                                                kB              \n  com.winNexa.tournRealm.cupBlaze-1-asset.apk         ━━━━ 100% 14.… 12.7 0:00:…\n                                                                MB   MB/s       \n\n                        Downloaded files                         \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.winNexa.tournRealm.cupBlaze-1.apk               │ 22.7 MB │\n│ com.winNexa.tournRealm.cupBlaze-1-config.en.apk     │ 44.2 KB │\n│ com.winNexa.tournRealm.cupBlaze-1-config.lt.apk     │ 32.2 KB │\n│ com.winNexa.tournRealm.cupBlaze-1-config.ru.apk     │ 32.2 KB │\n│ com.winNexa.tournRealm.cupBlaze-1-config.xxhdpi.apk │ 61.0 KB │\n│ com.winNexa.tournRealm.cupBlaze-1-asset.apk         │ 22.7 MB │\n└─────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.winNexa.tournRealm.cupBlaze ─╮\n│ Betano Apuestas Online            │\n│ 1.0  (vc 1)                       │\n╰───────────────────────────────────╯\n\nDownloading 6 files  (36.5 MB)\n  com.winNexa.tournRealm.cupBlaze-1.apk               ━━━━ 100% 23.… 33.0 0:00:…\n                                                                MB   MB/s       \n  com.winNexa.tournRealm.cupBlaze-1-config.en.apk     ━━━━ 100% 45.… ?    0:00:…\n                                                                kB              \n  com.winNexa.tournRealm.cupBlaze-1-config.lt.apk     ━━━━ 100% 33.… ?    0:00:…\n                                                                kB              \n  com.winNexa.tournRealm.cupBlaze-1-config.ru.apk     ━━━━ 100% 33.… ?    0:00:…\n                                                                kB              \n  com.winNexa.tournRealm.cupBlaze-1-config.xxhdpi.apk ━━━━ 100% 62.… ?    0:00:…\n                                                                kB              \n  com.winNexa.tournRealm.cupBlaze-1-asset.apk         ━━━━ 100% 14.… 12.7 0:00:…\n                                                                MB   MB/s       \n\n                        Downloaded files                         \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.winNexa.tournRealm.cupBlaze-1.apk               │ 22.7 MB │\n│ com.winNexa.tournRealm.cupBlaze-1-config.en.apk     │ 44.2 KB │\n│ com.winNexa.tournRealm.cupBlaze-1-config.lt.apk     │ 32.2 KB │\n│ com.winNexa.tournRealm.cupBlaze-1-config.ru.apk     │ 32.2 KB │\n│ com.winNexa.tournRealm.cupBlaze-1-config.xxhdpi.apk │ 61.0 KB │\n│ com.winNexa.tournRealm.cupBlaze-1-asset.apk         │ 22.7 MB │\n└─────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
