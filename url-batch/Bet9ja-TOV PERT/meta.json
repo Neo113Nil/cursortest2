@@ -1,0 +1,48 @@
+{
+  "app_id": "com.chupinoki.bordoser.betfair",
+  "title": "Bet9ja",
+  "developer": "TOV PERT",
+  "developer_id": "TOV+PERT",
+  "icon": "/static/app-icons/com_chupinoki_bordoser_betfair.png",
+  "url": "https://play.google.com/store/apps/details?id=com.chupinoki.bordoser.betfair&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 20, 2026",
+  "updated": "Jul 20, 2026",
+  "version": "Varies with device",
+  "summary": "Organize tasks, set priorities and track your progress with Win.",
+  "keyword": "url-batch",
+  "folder": "Bet9ja-TOV PERT",
+  "path": "url-batch/Bet9ja-TOV PERT",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.chupinoki.bordoser.betfair-1-asset.apk",
+    "com.chupinoki.bordoser.betfair-1-config.en.apk",
+    "com.chupinoki.bordoser.betfair-1-config.lt.apk",
+    "com.chupinoki.bordoser.betfair-1-config.ru.apk",
+    "com.chupinoki.bordoser.betfair-1-config.xxhdpi.apk",
+    "com.chupinoki.bordoser.betfair-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Bet9ja-TOV PERT",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.chupinoki.bordoser.betfair ─╮\n│ Bet9ja                           │\n│ 1.0  (vc 1)                      │\n╰──────────────────────────────────╯\n\nDownloading 6 files  (5.8 MB)\n  com.chupinoki.bordoser.betfair-1.apk               ━━━━ 100% 3.7/… 16.4 0:00:…\n                                                               MB    MB/s       \n  com.chupinoki.bordoser.betfair-1-config.en.apk     ━━━━ 100% 41.2… ?    0:00:…\n                                                               kB               \n  com.chupinoki.bordoser.betfair-1-config.lt.apk     ━━━━ 100% 28.9… ?    0:00:…\n                                                               kB               \n  com.chupinoki.bordoser.betfair-1-config.ru.apk     ━━━━ 100% 28.9… ?    0:00:…\n                                                               kB               \n  com.chupinoki.bordoser.betfair-1-config.xxhdpi.apk ━━━━ 100% 53.5… ?    0:00:…\n                                                               kB               \n  com.chupinoki.bordoser.betfair-1-asset.apk         ━━━━ 100% 2.2/… 9.6  0:00:…\n                                                               MB    MB/s       \n\n                        Downloaded files                        \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.chupinoki.bordoser.betfair-1.apk               │  3.6 MB │\n│ com.chupinoki.bordoser.betfair-1-config.en.apk     │ 40.2 KB │\n│ com.chupinoki.bordoser.betfair-1-config.lt.apk     │ 28.2 KB │\n│ com.chupinoki.bordoser.betfair-1-config.ru.apk     │ 28.2 KB │\n│ com.chupinoki.bordoser.betfair-1-config.xxhdpi.apk │ 52.2 KB │\n│ com.chupinoki.bordoser.betfair-1-asset.apk         │  3.6 MB │\n└────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.chupinoki.bordoser.betfair ─╮\n│ Bet9ja                           │\n│ 1.0  (vc 1)                      │\n╰──────────────────────────────────╯\n\nDownloading 6 files  (5.8 MB)\n  com.chupinoki.bordoser.betfair-1.apk               ━━━━ 100% 3.7/… 16.4 0:00:…\n                                                               MB    MB/s       \n  com.chupinoki.bordoser.betfair-1-config.en.apk     ━━━━ 100% 41.2… ?    0:00:…\n                                                               kB               \n  com.chupinoki.bordoser.betfair-1-config.lt.apk     ━━━━ 100% 28.9… ?    0:00:…\n                                                               kB               \n  com.chupinoki.bordoser.betfair-1-config.ru.apk     ━━━━ 100% 28.9… ?    0:00:…\n                                                               kB               \n  com.chupinoki.bordoser.betfair-1-config.xxhdpi.apk ━━━━ 100% 53.5… ?    0:00:…\n                                                               kB               \n  com.chupinoki.bordoser.betfair-1-asset.apk         ━━━━ 100% 2.2/… 9.6  0:00:…\n                                                               MB    MB/s       \n\n                        Downloaded files                        \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.chupinoki.bordoser.betfair-1.apk               │  3.6 MB │\n│ com.chupinoki.bordoser.betfair-1-config.en.apk     │ 40.2 KB │\n│ com.chupinoki.bordoser.betfair-1-config.lt.apk     │ 28.2 KB │\n│ com.chupinoki.bordoser.betfair-1-config.ru.apk     │ 28.2 KB │\n│ com.chupinoki.bordoser.betfair-1-config.xxhdpi.apk │ 52.2 KB │\n│ com.chupinoki.bordoser.betfair-1-asset.apk         │  3.6 MB │\n└────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+  "exit_code": 0,
+  "error": ""
+}
