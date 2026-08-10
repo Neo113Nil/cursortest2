@@ -1,0 +1,55 @@
+{
+  "app_id": "com.btWr6vex.ballOon5za.pop8lora",
+  "title": "Betano Apuestas",
+  "developer": "Galaxy Whisper",
+  "score": null,
+  "icon": "/static/app-icons/com_btWr6vex_ballOon5za_pop8lora.png",
+  "url": "https://play.google.com/store/apps/details?id=com.btWr6vex.ballOon5za.pop8lora&hl=en&gl=us",
+  "keyword": "betano",
+  "country": "India",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260810_214322_India_betano_search",
+  "search_title": "Betano Apuestas",
+  "search_developer": "Galaxy Whisper",
+  "rank": 6,
+  "developer_id": "Galaxy+Whisper",
+  "released": "Jun 4, 2026",
+  "updated": "Jun 5, 2026",
+  "version": "Varies with device",
+  "summary": "Match colored spheres, choose modes and track your score",
+  "folder": "Betano Apuestas-Galaxy Whisper",
+  "path": "betano/Betano Apuestas-Galaxy Whisper",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.btWr6vex.ballOon5za.pop8lora-1-asset.apk",
+    "com.btWr6vex.ballOon5za.pop8lora-1-config.en.apk",
+    "com.btWr6vex.ballOon5za.pop8lora-1-config.lt.apk",
+    "com.btWr6vex.ballOon5za.pop8lora-1-config.ru.apk",
+    "com.btWr6vex.ballOon5za.pop8lora-1-config.xxhdpi.apk",
+    "com.btWr6vex.ballOon5za.pop8lora-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/betano/Betano Apuestas-Galaxy Whisper",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.btWr6vex.ballOon5za.pop8lora ─╮\n│ Betano Apuestas                    │\n│ 1.0  (vc 1)                        │\n╰────────────────────────────────────╯\n\nDownloading 6 files  (58.3 MB)\n  com.btWr6vex.ballOon5za.pop8lora-1.apk               ━━━━ 100% 34.… 40.2 0:00…\n                                                                 MB   MB/s      \n  com.btWr6vex.ballOon5za.pop8lora-1-config.en.apk     ━━━━ 100% 45.… ?    0:00…\n                                                                 kB             \n  com.btWr6vex.ballOon5za.pop8lora-1-config.lt.apk     ━━━━ 100% 29.… ?    0:00…\n                                                                 kB             \n  com.btWr6vex.ballOon5za.pop8lora-1-config.ru.apk     ━━━━ 100% 29.… ?    0:00…\n                                                                 kB             \n  com.btWr6vex.ballOon5za.pop8lora-1-config.xxhdpi.apk ━━━━ 100% 61.… ?    0:00…\n                                                                 kB             \n  com.btWr6vex.ballOon5za.pop8lora-1-asset.apk         ━━━━ 100% 26.… 40.2 0:00…\n                                                                 MB   MB/s      \n\n                         Downloaded files                         \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                 ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.btWr6vex.ballOon5za.pop8lora-1.apk               │ 32.9 MB │\n│ com.btWr6vex.ballOon5za.pop8lora-1-config.en.apk     │ 44.4 KB │\n│ com.btWr6vex.ballOon5za.pop8lora-1-config.lt.apk     │ 28.4 KB │\n│ com.btWr6vex.ballOon5za.pop8lora-1-config.ru.apk     │ 28.4 KB │\n│ com.btWr6vex.ballOon5za.pop8lora-1-config.xxhdpi.apk │ 60.4 KB │\n│ com.btWr6vex.ballOon5za.pop8lora-1-asset.apk         │ 32.9 MB │\n└──────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.btWr6vex.ballOon5za.pop8lora ─╮\n│ Betano Apuestas                    │\n│ 1.0  (vc 1)                        │\n╰────────────────────────────────────╯\n\nDownloading 6 files  (58.3 MB)\n  com.btWr6vex.ballOon5za.pop8lora-1.apk               ━━━━ 100% 34.… 40.2 0:00…\n                                                                 MB   MB/s      \n  com.btWr6vex.ballOon5za.pop8lora-1-config.en.apk     ━━━━ 100% 45.… ?    0:00…\n                                                                 kB             \n  com.btWr6vex.ballOon5za.pop8lora-1-config.lt.apk     ━━━━ 100% 29.… ?    0:00…\n                                                                 kB             \n  com.btWr6vex.ballOon5za.pop8lora-1-config.ru.apk     ━━━━ 100% 29.… ?    0:00…\n                                                                 kB             \n  com.btWr6vex.ballOon5za.pop8lora-1-config.xxhdpi.apk ━━━━ 100% 61.… ?    0:00…\n                                                                 kB             \n  com.btWr6vex.ballOon5za.pop8lora-1-asset.apk         ━━━━ 100% 26.… 40.2 0:00…\n                                                                 MB   MB/s      \n\n                         Downloaded files                         \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                 ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.btWr6vex.ballOon5za.pop8lora-1.apk               │ 32.9 MB │\n│ com.btWr6vex.ballOon5za.pop8lora-1-config.en.apk     │ 44.4 KB │\n│ com.btWr6vex.ballOon5za.pop8lora-1-config.lt.apk     │ 28.4 KB │\n│ com.btWr6vex.ballOon5za.pop8lora-1-config.ru.apk     │ 28.4 KB │\n│ com.btWr6vex.ballOon5za.pop8lora-1-config.xxhdpi.apk │ 60.4 KB │\n│ com.btWr6vex.ballOon5za.pop8lora-1-asset.apk         │ 32.9 MB │\n└──────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
