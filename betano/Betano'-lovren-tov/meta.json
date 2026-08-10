@@ -1,0 +1,52 @@
+{
+  "app_id": "com.gamified.taskplanner",
+  "title": "Betano'",
+  "developer": "lovren-tov",
+  "score": null,
+  "icon": "/static/app-icons/com_gamified_taskplanner.png",
+  "url": "https://play.google.com/store/apps/details?id=com.gamified.taskplanner&hl=en&gl=us",
+  "keyword": "betano",
+  "country": "India",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260810_214322_India_betano_search",
+  "search_title": "Betano' (Early Access)",
+  "search_developer": "lovren-tov",
+  "rank": 1,
+  "developer_id": "5987303093808588222",
+  "released": "",
+  "updated": "Jul 16, 2026",
+  "version": "Varies with device",
+  "summary": "Turn your daily tasks into a motivating RPG-style progress adventure.",
+  "folder": "Betano'-lovren-tov",
+  "path": "betano/Betano'-lovren-tov",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.gamified.taskplanner-4-asset.apk",
+    "com.gamified.taskplanner-4-config.arm64_v8a.apk",
+    "com.gamified.taskplanner-4.apk"
+  ],
+  "target": "/root/play-collector/загрузки/betano/Betano'-lovren-tov",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.gamified.taskplanner ─╮\n│ Betano'                    │\n│ 4  (vc 4)                  │\n╰────────────────────────────╯\n\nDownloading 3 files  (71.5 MB)\n  com.gamified.taskplanner-4.apk                  ━━━━━ 100% 23.3… 11.9   0:00:…\n                                                             MB    MB/s         \n  com.gamified.taskplanner-4-config.arm64_v8a.apk ━━━━━ 100% 35.6… 14.3   0:00:…\n                                                             MB    MB/s         \n  com.gamified.taskplanner-4-asset.apk            ━━━━━ 100% 16.1… 9.0    0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.gamified.taskplanner-4.apk                  │ 22.2 MB │\n│ com.gamified.taskplanner-4-config.arm64_v8a.apk │ 33.9 MB │\n│ com.gamified.taskplanner-4-asset.apk            │ 22.2 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.gamified.taskplanner ─╮\n│ Betano'                    │\n│ 4  (vc 4)                  │\n╰────────────────────────────╯\n\nDownloading 3 files  (71.5 MB)\n  com.gamified.taskplanner-4.apk                  ━━━━━ 100% 23.3… 11.9   0:00:…\n                                                             MB    MB/s         \n  com.gamified.taskplanner-4-config.arm64_v8a.apk ━━━━━ 100% 35.6… 14.3   0:00:…\n                                                             MB    MB/s         \n  com.gamified.taskplanner-4-asset.apk            ━━━━━ 100% 16.1… 9.0    0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.gamified.taskplanner-4.apk                  │ 22.2 MB │\n│ com.gamified.taskplanner-4-config.arm64_v8a.apk │ 33.9 MB │\n│ com.gamified.taskplanner-4-asset.apk            │ 22.2 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
