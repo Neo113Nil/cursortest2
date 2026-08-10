@@ -1,0 +1,68 @@
+{
+  "app_id": "xyz.total.poker.casino.pooja",
+  "title": "Total Poker Casino",
+  "developer": "Pooja Game Solutions",
+  "developer_id": "Pooja+Game+Solutions",
+  "icon": "/static/app-icons/xyz_total_poker_casino_pooja.png",
+  "url": "https://play.google.com/store/apps/details?id=xyz.total.poker.casino.pooja&hl=en&gl=us",
+  "score": null,
+  "released": "Mar 6, 2026",
+  "updated": "Mar 6, 2026",
+  "version": "Varies with device",
+  "summary": "Experience Texas Hold'em & Five Card Draw against smart AI. Play now!",
+  "keyword": "url-batch",
+  "folder": "Total Poker Casino-Pooja Game Solutions",
+  "path": "url-batch/Total Poker Casino-Pooja Game Solutions",
+  "updates_count": 1,
+  "apk_title": "Total Poker Casino",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "xyz.total.poker.casino.pooja-7-asset.apk",
+    "xyz.total.poker.casino.pooja-7.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Total Poker Casino-Pooja Game Solutions",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.three@gmail.com            │\n│ GSF ID : 3e5438009fd3091d                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ xyz.total.poker.casino.pooja ─╮\n│ Total Poker Casino             │\n│ 1.0.7  (vc 7)                  │\n╰────────────────────────────────╯\n\nDownloading 2 files  (33.7 MB)\n  xyz.total.poker.casino.pooja-7.apk       ━━━━━━━ 100% 24.5/2… 12.3     0:00:00\n                                                        MB      MB/s            \n  xyz.total.poker.casino.pooja-7-asset.apk ━━━━━━━ 100% 10.8/1… 26.0     0:00:00\n                                                        MB      MB/s            \n\n                   Downloaded files                   \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                     ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ xyz.total.poker.casino.pooja-7.apk       │ 23.4 MB │\n│ xyz.total.poker.casino.pooja-7-asset.apk │ 23.4 MB │\n└──────────────────────────────────────────┴─────────┘\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.00@gmail.com               │\n│ GSF ID : 3500d34e77b1df6f                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "",
+      "apk_label": "Total Poker Casino"
+    }
+  ],
+  "stdout": "╭─ xyz.total.poker.casino.pooja ─╮\n│ Total Poker Casino             │\n│ 1.0.7  (vc 7)                  │\n╰────────────────────────────────╯\n\nDownloading 2 files  (33.7 MB)\n  xyz.total.poker.casino.pooja-7.apk       ━━━━━━━ 100% 24.5/2… 12.3     0:00:00\n                                                        MB      MB/s            \n  xyz.total.poker.casino.pooja-7-asset.apk ━━━━━━━ 100% 10.8/1… 26.0     0:00:00\n                                                        MB      MB/s            \n\n                   Downloaded files                   \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                     ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ xyz.total.poker.casino.pooja-7.apk       │ 23.4 MB │\n│ xyz.total.poker.casino.pooja-7-asset.apk │ 23.4 MB │\n└──────────────────────────────────────────┴─────────┘\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.00@gmail.com               │\n│ GSF ID : 3500d34e77b1df6f                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
