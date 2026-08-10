@@ -1,0 +1,47 @@
+{
+  "app_id": "com.betano.finance",
+  "title": "Betano Finance",
+  "developer": "The Veranda Story LTD",
+  "developer_id": "The+Veranda+Story+LTD",
+  "icon": "/static/app-icons/com_betano_finance.png",
+  "url": "https://play.google.com/store/apps/details?id=com.betano.finance&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 31, 2026",
+  "updated": "Jul 31, 2026",
+  "version": "Varies with device",
+  "summary": "Personal finance tracker for budgets, expenses, income, and financial insights.",
+  "keyword": "url-batch",
+  "folder": "Betano Finance-The Veranda Story LTD",
+  "path": "url-batch/Betano Finance-The Veranda Story LTD",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.betano.finance-1-asset.apk",
+    "com.betano.finance-1-config.arm64_v8a.apk",
+    "com.betano.finance-1-config.en.apk",
+    "com.betano.finance-1-config.xxhdpi.apk",
+    "com.betano.finance-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Betano Finance-The Veranda Story LTD",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.betano.finance ─╮\n│ Betano Finance       │\n│ 1.0  (vc 1)          │\n╰──────────────────────╯\n\nDownloading 5 files  (19.2 MB)\n  com.betano.finance-1.apk                  ━━━━━━━ 100% 10.6/1… 10.1    0:00:00\n                                                         MB      MB/s           \n  com.betano.finance-1-config.arm64_v8a.apk ━━━━━━━ 100% 5.2/5.2 11.5    0:00:00\n                                                         MB      MB/s           \n  com.betano.finance-1-config.en.apk        ━━━━━━━ 100% 65.9/6… 29.7    0:00:00\n                                                         kB      kB/s           \n  com.betano.finance-1-config.xxhdpi.apk    ━━━━━━━ 100% 107.2/… 1.8     0:00:00\n                                                         kB      MB/s           \n  com.betano.finance-1-asset.apk            ━━━━━━━ 100% 4.1/4.1 6.9     0:00:00\n                                                         MB      MB/s           \n\n                    Downloaded files                    \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                      ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.betano.finance-1.apk                  │  10.1 MB │\n│ com.betano.finance-1-config.arm64_v8a.apk │   5.0 MB │\n│ com.betano.finance-1-config.en.apk        │  64.4 KB │\n│ com.betano.finance-1-config.xxhdpi.apk    │ 104.7 KB │\n│ com.betano.finance-1-asset.apk            │  10.1 MB │\n└───────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.betano.finance ─╮\n│ Betano Finance       │\n│ 1.0  (vc 1)          │\n╰──────────────────────╯\n\nDownloading 5 files  (19.2 MB)\n  com.betano.finance-1.apk                  ━━━━━━━ 100% 10.6/1… 10.1    0:00:00\n                                                         MB      MB/s           \n  com.betano.finance-1-config.arm64_v8a.apk ━━━━━━━ 100% 5.2/5.2 11.5    0:00:00\n                                                         MB      MB/s           \n  com.betano.finance-1-config.en.apk        ━━━━━━━ 100% 65.9/6… 29.7    0:00:00\n                                                         kB      kB/s           \n  com.betano.finance-1-config.xxhdpi.apk    ━━━━━━━ 100% 107.2/… 1.8     0:00:00\n                                                         kB      MB/s           \n  com.betano.finance-1-asset.apk            ━━━━━━━ 100% 4.1/4.1 6.9     0:00:00\n                                                         MB      MB/s           \n\n                    Downloaded files                    \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                      ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.betano.finance-1.apk                  │  10.1 MB │\n│ com.betano.finance-1-config.arm64_v8a.apk │   5.0 MB │\n│ com.betano.finance-1-config.en.apk        │  64.4 KB │\n│ com.betano.finance-1-config.xxhdpi.apk    │ 104.7 KB │\n│ com.betano.finance-1-asset.apk            │  10.1 MB │\n└───────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
