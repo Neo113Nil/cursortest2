@@ -389,7 +389,7 @@
         },
         "categories": {},
         "popularity_ranks": [
-          "Majestic: 142042",
+          "Majestic: 138556",
           "Statvoo: 170630",
           "Alexa: 170630",
           "Cisco Umbrella: 744231",
@@ -397,23 +397,23 @@
           "Cloudflare Radar: 200000"
         ],
         "creation_date": 1097097153,
-        "last_modification_date": 1786363079,
-        "last_analysis_date": 1786359352,
+        "last_modification_date": 1786377957,
+        "last_analysis_date": 1786375943,
         "registrar": "Squarespace Domains II LLC",
         "whois": "Creation Date: 2004-10-06T21:12:33Z\nDNSSEC: unsigned\nDomain Name: ESOTERICSOFTWARE.COM\nDomain Name: esotericsoftware.com\nDomain Status: client delete prohibited http://www.icann.org/epp#client delete prohibited\nDomain Status: client transfer prohibited http://www.icann.org/epp#client transfer prohibited\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: NS11.CONSTELLIX.COM\nName Server: NS21.CONSTELLIX.COM\nName Server: NS31.CONSTELLIX.COM\nName Server: NS41.CONSTELLIX.NET\nName Server: NS51.CONSTELLIX.NET\nName Server: NS61.CONSTELLIX.NET\nName Server: ns11.constellix.com\nName Server: ns21.constellix.com\nName Server: ns31.constellix.com\nName Server: ns41.constellix.net\nName Server: ns51.constellix.net\nName Server: ns61.constellix.net\nRegistrant City: 1f8f4166599d23ee\nRegistrant Country: US\nRegistrant Email: 3bae71a42530df7ds@\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 1f8f4166599d23ee\nRegistrant Name: 1f8f4166599d23ee\nRegistrant Organization: 6f9747afd6f74b0c\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: 1f8f4166599d23ee\nRegistrant Postal Code: 1f8f4166599d23ee\nRegistrant State/Province: 163b5dbd6196f461\nRegistrant Street: 1f8f4166599d23ee\nRegistrar Abuse Contact Email: abuse-complaints@squarespace.com\nRegistrar Abuse Contact Phone: +1.646-693-5324\nRegistrar Abuse Contact Phone: +1.6466935324\nRegistrar IANA ID: 895\nRegistrar Registration Expiration Date: 2032-10-06T21:12:33Z\nRegistrar URL: http://domains2.squarespace.com\nRegistrar URL: https://domains2.squarespace.com\nRegistrar WHOIS Server: whois.squarespace.domains\nRegistrar: Squarespace Domains II LLC\nRegistry Domain ID: 132019388_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2032-10-06T21:12:33Z\nUpdated Date: 2024-04-23T04:48:54.086517Z\nUpdated Date: 2024-04-23T04:48:54Z",
         "dns_records": [
           "NS ns51.constellix.net",
-          "NS ns61.constellix.net",
-          "NS ns41.constellix.net",
-          "NS ns11.constellix.com",
           "MX aspmx.l.google.com",
-          "NS ns21.constellix.com",
+          "TXT v=spf1 include:_spf.google.com include:sendgrid.net -all",
+          "A 198.58.124.9",
+          "NS ns11.constellix.com",
           "NS ns31.constellix.com",
-          "MX alt4.aspmx.l.google.com",
           "TXT stripe-verification=3b2a6d5c0bff1ee1640086b49d183affffd71e9e73eb966bebea675f37b2a53b",
+          "NS ns41.constellix.net",
+          "NS ns61.constellix.net",
           "MX alt2.aspmx.l.google.com",
-          "MX alt3.aspmx.l.google.com",
-          "TXT v=spf1 include:_spf.google.com include:sendgrid.net -all"
+          "MX alt4.aspmx.l.google.com",
+          "SOA ns11.constellix.com"
         ],
         "https_subject": {
           "CN": "*.esotericsoftware.com"
