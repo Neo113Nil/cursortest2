@@ -41,5 +41,30 @@
   "stdout": "╭─ com.gamified.taskplanner ─╮\n│ Betano'                    │\n│ 4  (vc 4)                  │\n╰────────────────────────────╯\n\nDownloading 3 files  (71.5 MB)\n  com.gamified.taskplanner-4.apk                  ━━━━━ 100% 23.3… 27.6   0:00:…\n                                                             MB    MB/s         \n  com.gamified.taskplanner-4-config.arm64_v8a.apk ━━━━━ 100% 35.6… 31.4   0:00:…\n                                                             MB    MB/s         \n  com.gamified.taskplanner-4-asset.apk            ━━━━━ 100% 16.1… 20.4   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.gamified.taskplanner-4.apk                  │ 22.2 MB │\n│ com.gamified.taskplanner-4-config.arm64_v8a.apk │ 33.9 MB │\n│ com.gamified.taskplanner-4-asset.apk            │ 22.2 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [],
+    "domains": [
+      {
+        "domain": "gamified-task-planner.firebasestorage.app",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет"
+      }
+    ],
+    "collected_data": [
+      "Идентификатор AppsFlyer",
+      "Рекламный номер устройства",
+      "Модель телефона",
+      "Версия системы",
+      "Идентификатор игрока",
+      "Номер выпуска Android",
+      "Идентификатор сборки",
+      "Версия приложения",
+      "Реферер установки",
+      "Время установки"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Идентификатор AppsFlyer\n• Рекламный номер устройства\n• Модель телефона\n• Версия системы\n• Идентификатор игрока\n• Номер выпуска Android\n• Идентификатор сборки\n• Версия приложения\n• Реферер установки\n• Время установки\n\nКак собираются: Сразу после запуска Unity-игры, ещё до обычного экрана планировщика задач, встроенный модуль UpdateTool сам читает сведения об устройстве. Человек этого обычно не замечает: отдельного окна с разрешением на этот сбор нет. Рекламный номер устройства берут через Android Advertising Id (класс AndroidAdvertisingIdHelper и пакет MiniIT AdvertisingIdFetcher). Модель телефона и версию системы читают из сведений Android. Реферер установки и время установки запрашивают у службы Google Play (Install Referrer): в коде есть GetReferrer, GetInstallTime, GetInstallInfo и обработчики onInstallReferrerSetupFinished. Все эти значения складывают в объект RequestParams с типами RequestParameter (AppsFlyerId,…\n\nКуда отправляются: Собранные сведения уходят в инфраструктуру Firebase проекта gamified-task-planner. В приложении прописано хранилище gamified-task-planner.firebasestorage.app (строка google_storage_bucket и google-services.json). Модуль TagCollectKey97 лежит в UpdateTool.CodeBase.Components.FireBase — то есть проверка завязана на Firebase. Перед запросом приложение поднимает служебные токены Firebase (App Check и Auth) через HttpHelpers.SetRequestHeaders и потом проверяет ответ ValidateHttpResponse. Точный полный URL собран из обфусцированных кусков рядом с RequestParams (строки вроде wvqqch7bplpujgp, hapop5o и другие), поэтому открытым текстом в коде он не лежит,…\n\nКак фильтруются пользователи: На проверку уходят рекламный номер устройства, модель телефона, версии системы и приложения, реферер установки и время установки. По этим признакам сервер может отличать живой трафик магазина от «грязного», смотреть источник установки и решать, кому дать внешнюю ссылку. В самом приложении на телефоне нет явного списка стран или языков «кого пускать». Локально видны только сбор признаков и разбор ответа. Решение «кому оффер, кому обычное приложение» делает удалённая сторона (Firebase / ответ HTTP). Дополнительный сигнал схемы: в…"
+  }
 }

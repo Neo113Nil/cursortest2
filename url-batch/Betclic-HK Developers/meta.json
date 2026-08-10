@@ -41,5 +41,82 @@
   "stdout": "╭─ com.salonparlor.thehuntedhotel ─╮\n│ Betclic                          │\n│ 1.1.0  (vc 10)                   │\n╰──────────────────────────────────╯\n\nDownloading 3 files  (140.5 MB)\n  com.salonparlor.thehuntedhotel-10.apk                  ━━━━ 100% 67… 10.0 0:0…\n                                                                   MB  MB/s     \n  com.salonparlor.thehuntedhotel-10-config.arm64_v8a.apk ━━━━ 100% 26… 9.0  0:0…\n                                                                   MB  MB/s     \n  com.salonparlor.thehuntedhotel-10-asset.apk            ━━━━ 100% 53… 10.0 0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                   ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.salonparlor.thehuntedhotel-10.apk                  │ 64.0 MB │\n│ com.salonparlor.thehuntedhotel-10-config.arm64_v8a.apk │ 25.2 MB │\n│ com.salonparlor.thehuntedhotel-10-asset.apk            │ 64.0 MB │\n└────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Betclic"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.0.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 1.6"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob (Google Mobile Ads), Google UMP"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Google Play Services Measurement, Unity Analytics"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.WAKE_LOCK, android.permission.FOREGROUND_SERVICE, com.salonparlor.thehuntedhotel.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity 6000.4.9f1, IL2CPP, UniWebView (com.onevcat.uniwebview), Google Mobile Ads / AdMob 25.0.0, Google UMP, play-services-ads-identifier 18.0.0, play-services-measurement 20.1.2, Android Install Referrer, androidx.browser 1.8.0, androidx.webkit 1.12.1, androidx.appcompat 1.2.0, androidx.core/core-ktx 1.10.1, androidx.work 2.7.0, androidx.room 2.2.5, androidx.datastore 1.0.0, kotlinx-coroutines 1.8.0, Spine (esotericsoftware), NativeShare (yasirkula), U4/TerraOnyx (AlpineXenon.Core, MarbleUmber.VectorIvory, KineticFalcon.Surface)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "luppaobje.sbs, esotericsoftware.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Unity PlayerPrefs: K_InstallReferrerChecked (флаг, что установочный реферер уже читали), K_Cancelled (флаг отмены / ухода в обычное приложение)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "offerUrl, linkUrl, url, offer, redirect, webview, UniWebView, TargetUrl, AppendQuery, OpenWebView, LoadHostScene, install referrer, referrer, sentinel, host scene, pp-decline-cta, bridge, SafeBrowsing, luppaobje"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "esotericsoftware.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Squarespace Domains II LLC"
+      }
+    ],
+    "collected_data": [
+      "Установочный реферер"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Установочный реферер\n\nКак собираются: Сразу при запуске, ещё до обычного экрана игры, служебный модуль TerraOnyx / U4 сам поднимается в фоне. При первом запуске он тихо спрашивает у Google Play установочный реферер — служебную строку о том, откуда поставили приложение. Отдельного окна с разрешением для человека нет, это происходит незаметно. Результат помечают во внутренней памяти приложения флагом «реферер уже проверен», чтобы не дергать сервис установки каждый раз. Дальше эта строка подмешивается к адресу проверки перед открытием встроенного окна сайта.\n\nКуда отправляются: Проверка уходит на адрес https://luppaobje.sbs/service. Это не обычная реклама на экране, а тихий служебный адрес: приложение открывает его во встроенном окне сайта и дописывает к нему установочный реферер через AppendQuery. Запасных адресов в коде не видно — целевой адрес зашит в конфиге рядом с ключами вроде u4-fg3d1z и кнопкой отмены pp-decline-cta. Человек обычно не замечает, что сначала открывается именно эта проверка, а не игра.\n\nКак фильтруются пользователи: В самом приложении нет жёсткого списка стран или языков на телефоне. На проверку уходит установочный реферер, а дальше решение делает сервер по ответу страницы. Если человек нажал кнопку отмены (pp-decline-cta) или уже стоит флаг отмены во внутренней памяти, приложение само уводит в обычный режим без повторной «боевой» страницы. Похожесть на проверку магазина или «грязный» трафик в локальном коде не прописаны отдельными списками — их может учитывать только сервер, глядя на реферер и обычные сведения браузера во встроенном окне сайта.\n\nЧто возвращается: Страница проверки может отдать обычный текст в виде JSON. Встроенный скрипт читает тело страницы и ищет ссылку в полях offerUrl, linkUrl, url или data.item. Если значение не похоже на обычную ссылку http/https, программа пробует раскодировать его из Base64. Когда получается нормальная ссылка, встроенное окно сайта сразу переходит на неё. Если JSON пустой, ссылки нет или страница не в нужном формате — перехода на оффер нет, остаётся путь к обычному приложению (в том числе через кнопку отмены или сохранённый флаг).\n\nКак показывается оффер или белая версия: Е…"
+  }
 }

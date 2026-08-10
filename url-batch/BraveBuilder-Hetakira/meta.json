@@ -41,5 +41,87 @@
   "stdout": "╭─ com.vrx.farming.tractor.simulator.game ─╮\n│ BraveBuilder                             │\n│ 0.41  (vc 41)                            │\n╰──────────────────────────────────────────╯\n\nDownloading 3 files  (112.8 MB)\n  com.vrx.farming.tractor.simulator.game-41.apk                  ━━ 100% … 1… 0…\n                                                                         … M…   \n  com.vrx.farming.tractor.simulator.game-41-config.arm64_v8a.apk ━━ 100% … 9… 0…\n                                                                         … M…   \n  com.vrx.farming.tractor.simulator.game-41-asset.apk            ━━ 100% … 1… 0…\n                                                                         … M…   \n\n                              Downloaded files                              \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                           ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.vrx.farming.tractor.simulator.game-41.apk                  │ 52.1 MB │\n│ com.vrx.farming.tractor.simulator.game-41-config.arm64_v8a.apk │ 19.0 MB │\n│ com.vrx.farming.tractor.simulator.game-41-asset.apk            │ 52.1 MB │\n└────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "BraveBuilder (в Google Play); внутри APK app_name = Bclic App"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 1.6.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity 6000.3.8f1 (IL2CPP), UniWebView (com.onevcat.uniwebview), Assembly-CSharp (Splash, GameManager), UniWebView-CSharp, DOTween, TextMeshPro, Cinemachine, Unity Input System, Kotlin stdlib 1.6.21, AndroidX Browser 1.2.0 (Custom Tabs), AndroidX Core 1.1.0, AndroidX Lifecycle Runtime 2.0.0, AndroidX Interpolator 1.0.0, AndroidX VersionedParcelable 1.1.0, android.support.customtabs, bitter.jnibridge, org.fmod (FMOD), com.google.androidgamesdk (Swappy), libil2cpp, libunity, libmain, lib_burst_generated, BoneCracker Games RCC"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "hetakira-7c48792c.surge.sh, bonecrackergames.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Unity PlayerPrefs (обёртка над SharedPreferences): MusicToggle/SoundToggle и профиль; поля проверки клоаки cachedEndpoint и bypassContent держатся в Splash/GameManager; отдельных открытых имён ключей prefs для клоаки в метаданных нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "Bclic App, bypassContent, cachedEndpoint, QueryingRemote, EvaluatingResponse, RenderingContent, RestoringConnection, VerifyingNetwork, RetrieveEndpoint, AnalyzeResponse, DecodeTargetUrl, DecodePlayStoreUrl, VerifyConnectivity, AUTHORIZED Splash Loading, DENIED Splash Loading, UniWebView, webview, redirect, GamePhase, HandleFailure"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "hetakira-7c48792c.surge.sh",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Porkbun LLC"
+      },
+      {
+        "domain": "bonecrackergames.com",
+        "redirects_to": "https://www.bonecrackergames.com/",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      }
+    ],
+    "collected_data": [
+      "В коде не"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• В коде не\n\nКак собираются: Сразу после запуска открывается экран-заставка Splash. Ещё до обычной игровой сцены приложение само, без отдельного окна с вопросом к человеку, запускает служебную проверку. Человек обычно видит только загрузку и не замечает, что параллельно уходит запрос в интернет. Сначала проверяется, есть ли сеть (шаг VerifyingNetwork). Затем идёт тихий запрос на заранее зашитый адрес (шаг QueryingRemote). В открытом коде после разбора метаданных не видно, чтобы перед отправкой читали язык телефона, рекламный номер, модель или другие сведения об устройстве и клали их отдельными полями в запрос: проверка устроена как обращение по готовому адресу через встроенный сетевой запрос движка игры.…\n\nКуда отправляются: Тихая проверка уходит на адрес https://hetakira-7c48792c.surge.sh/com.vrx.farming.tractor.simulator.game/50e2bb39 — это константа, зашитая в данных игрового движка. В пути уже стоят имя пакета приложения и служебный код сборки 50e2bb39. Запасных зеркал этого адреса в открытых строках не видно: используется одна эта запись. Запрос уходит в фоне во время заставки, человек его кнопкой не запускает. Это не показ рекламы на экране, а служебная проверка «что показать этому человеку». Рядом в ресурсах есть сайт BoneCracker Games — это страница автора физического контроллера машин для Unity, а не адрес проверки. Если проверка вернула рабочую ссылку, её кладут в поле cachedEndpoint,…\n\nКак фильтруются пользователи: В самом приложении нет списка стран, языков или «белых» и «грязных» посетителей, по которому телефон сам отсеивал бы людей. Нет и явных проверок на робота или эмулятор в открытых именах шагов загрузчика. На проверку уходит обращение к серверу по адресу на hetakira-…surge.sh. Дальше решение «кому показать внешнюю страницу, а кому оставить обычное приложение» делает сервер: клиент вызывает AnalyzeResponse и смотрит, получилась ли пригодная ссылка (DecodeTargetUrl / DecodePlayStoreUrl). В приложении видно только отправку на шлюз и разбор ответа. Отдельно важно, что в магазине приложение называется BraveBuilder, а внутри APK ярлык — Bclic App.…\n\nЧто возвращается: Сервер отвечает на проверку. Приложение разбирает ответ:…"
+  }
 }

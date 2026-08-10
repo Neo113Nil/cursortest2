@@ -41,5 +41,82 @@
   "stdout": "╭─ com.milodix.ranat_hatif ─╮\n│ BeatBattle                │\n│ 992  (vc 992)             │\n╰───────────────────────────╯\n\nDownloading 3 files  (38.1 MB)\n  com.milodix.ranat_hatif-992.apk                  ━━━━━ 100% 13.7… 9.0   0:00:…\n                                                              MB    MB/s        \n  com.milodix.ranat_hatif-992-config.arm64_v8a.apk ━━━━━ 100% 18.3… 11.1  0:00:…\n                                                              MB    MB/s        \n  com.milodix.ranat_hatif-992-asset.apk            ━━━━━ 100% 8.0/… 7.0   0:00:…\n                                                              MB    MB/s        \n\n                       Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                             ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.milodix.ranat_hatif-992.apk                  │ 13.0 MB │\n│ com.milodix.ranat_hatif-992-config.arm64_v8a.apk │ 17.4 MB │\n│ com.milodix.ranat_hatif-992-asset.apk            │ 13.0 MB │\n└──────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "BeatBattle (в APK app_name = BClic Mobile)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 1.6 (kotlinx-coroutines 1.6.1)"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, com.milodix.ranat_hatif.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "AGP 8.10.0; Unity 6000.3.11f1 (IL2CPP, com.unity3d.player / UnityPlayerGameActivity); Kotlin 1.6 / kotlinx-coroutines 1.6.1; UniWebView (com.onevcat.uniwebview); AndroidX AppCompat 1.6.1, Browser 1.2.0 (Custom Tabs), Core/Core-KTX 1.9.0, Activity 1.6.0, Fragment 1.3.6, Lifecycle 2.5.1, Emoji2 1.2.0, Startup 1.1.1, SavedState 1.2.0, DrawerLayout, ViewPager, Vectordrawable, CursorAdapter, CustomView, Loader, Interpolator, Tracing, VersionedParcelable, Arch Core; Assembly-CSharp (ProgressingController, Ilumisoft Downhill Ride); UniWebView-CSharp; Unity.TextMeshPro; Unity.Timeline; Unity.VisualScripting; Google Android Game SDK / GameActivity; bitter.jnibridge; org.fmod; libil2cpp, libunity, libgame"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "fewmets-upcoil.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "память приложения (Unity PlayerPrefs / SharedPreferences): громкость музыки и звуков (MusicVolumeKey, SfxVolumeKey), рекорд (Highscore); после проверки загрузчик может сохранить флаг (PersistLazFlag)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "ResolveEntryPoint, MatchesBundlePolicy, GuardUrl, LogNetworkProbeStart, LogNetworkProbeProgress, AttachWebView, OpenW, PersistLazFlag, _currentLP, LaunchGame, EnterGameFlow, RestoreAudioAndLoadScene, MuteAllAudioSources, webview, UniWebView, loadUrl, SafeBrowsing, redirect, fewmets-upcoil.com, BClic Mobile, ProgressingController"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "fewmets-upcoil.com",
+        "redirects_to": "https://sites.google.com/view/downhill-ride-game/home",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      }
+    ],
+    "collected_data": [
+      "В коде не"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• В коде не\n\nКак собираются: Сразу после запуска открывается экран загрузки. Ещё до обычной игры специальный загрузчик сам, без отдельного окна с вопросом к человеку, запускает служебную проверку в интернете. Человек обычно видит только заставку и не замечает, что параллельно уходит запрос. На время проверки приложение само приглушает звук. В открытом коде не видно, чтобы перед отправкой читали язык телефона, рекламный номер, модель или другие сведения об устройстве и клали их в запрос: проверка устроена как обращение по заранее записанному адресу. Отдельно на телефоне есть сверка имени пакета приложения с внутренней политикой. Это локальная проверка на устройстве, а не список полей,…\n\nКуда отправляются: Тихая проверка уходит на адрес http://fewmets-upcoil.com/4 — эта ссылка зашита в данных приложения. Запасных адресов проверки в коде не видно: используется одна эта запись. Запрос уходит в фоне во время заставки, человек его кнопкой не запускает. Это не показ рекламы на экране, а служебная проверка «что показать этому человеку». Рядом лежит страница политики https://sites.google.com/view/downhill-ride-game/hom — её открывают отдельно как формальный текст, а не как ответ проверочного адреса. Если сервер вернул ссылку, приложение сохраняет её у себя в памяти загрузчика, чтобы сразу открыть встроенное окно сайта или уйти в обычный режим.…\n\nКак фильтруются пользователи: В самом приложении нет списка стран, языков или «белых» и «грязных» посетителей, по которому телефон сам отсеивал бы людей. Нет и явных проверок на робота или эмулятор в открытых именах шагов загрузчика. Локально видно только сверку имени пакета приложения. Дальше решение «кому показать внешнюю страницу, а кому оставить обычное приложение» делает сервер: приложение стучится на проверочный адрес и смотрит, получилась ли пригодная ссылка. Что именно сервер учитывает по сети — по коду клиента не определяется: в запросе нет явного набора полей фильтрации. В приложении видно только отправку на шлюз и разбор ответа.\n\nЧто возвращается: Сервер отвечает на проверку. Если из ответа получается нормальный адрес внешней страницы, приложение сохраняет его и считает, что можно показать эту…"
+  }
 }

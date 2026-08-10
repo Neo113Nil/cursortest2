@@ -45,5 +45,95 @@
   "stdout": "╭─ com.batchwatermark.studio ─╮\n│ Batch Watermark: Ink stamp  │\n│ 2  (vc 2)                   │\n╰─────────────────────────────╯\n\nDownloading 7 files  (3.8 MB)\n  com.batchwatermark.studio-2.apk                  ━━━━━ 100% 2.5/… 20.7  0:00:…\n                                                              MB    MB/s        \n  com.batchwatermark.studio-2-config.arm64_v8a.apk ━━━━━ 100% 41.2… ?     0:00:…\n                                                              kB                \n  com.batchwatermark.studio-2-config.en.apk        ━━━━━ 100% 24.8… ?     0:00:…\n                                                              kB                \n  com.batchwatermark.studio-2-config.lt.apk        ━━━━━ 100% 20.7… ?     0:00:…\n                                                              kB                \n  com.batchwatermark.studio-2-config.ru.apk        ━━━━━ 100% 20.7… ?     0:00:…\n                                                              kB                \n  com.batchwatermark.studio-2-config.xxhdpi.apk    ━━━━━ 100% 16.7… ?     0:00:…\n                                                              kB                \n  com.batchwatermark.studio-2-asset.apk            ━━━━━ 100% 1.4/… 12.8  0:00:…\n                                                              MB    MB/s        \n\n                       Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                             ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.batchwatermark.studio-2.apk                  │  2.4 MB │\n│ com.batchwatermark.studio-2-config.arm64_v8a.apk │ 40.2 KB │\n│ com.batchwatermark.studio-2-config.en.apk        │ 24.2 KB │\n│ com.batchwatermark.studio-2-config.lt.apk        │ 20.2 KB │\n│ com.batchwatermark.studio-2-config.ru.apk        │ 20.2 KB │\n│ com.batchwatermark.studio-2-config.xxhdpi.apk    │ 16.3 KB │\n│ com.batchwatermark.studio-2-asset.apk            │  2.4 MB │\n└──────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Batch Watermark: Ink stamp"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.1.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да + 2.1.0"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.google.android.gms.permission.AD_ID, com.android.vending.CHECK_LICENSE, com.batchwatermark.studio.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.activity (1.10.1), androidx.compose.* (1.7.0 / runtime 1.7.1), androidx.compose.material3 (1.3.0), androidx.core / core-ktx (1.18.0), androidx.lifecycle (2.8.7), androidx.room (2.7.0), androidx.sqlite (2.5.0), androidx.savedstate (1.2.1), androidx.emoji2 (1.3.0), androidx.profileinstaller (1.4.0), androidx.startup (1.1.1), kotlinx-coroutines (1.10.2), play-services-ads-identifier (18.3.0), play-services-base (18.5.0), play-services-basement (18.9.0), play-services-tasks (18.2.0), com.pairip.licensecheck"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "frostyfishj.frostyfishjourney.com, config.ru, dispatchers.io"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "файл bwqzvpmx, ключ bwpxmqvzdl — флаг после возврата по ссылке aasfasf; также com.google.android.gms.signin"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "offer, license check"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "https://cakhiatv1.net/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "frostyfishj.frostyfishjourney.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      }
+    ],
+    "collected_data": [
+      "Имя пакета приложения",
+      "Рекламный номер устройства",
+      "Уровень версии Android",
+      "Модель телефона"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Имя пакета приложения\n• Рекламный номер устройства\n• Уровень версии Android\n• Модель телефона\n\nКак собираются: Сразу после запуска главного экрана приложение само, без отдельного окна с разрешением, читает рекламный номер устройства через службы Google на телефоне. Если номер получить не удалось, вместо него подставляется случайный идентификатор. Параллельно из системы Android берутся номер версии системы и модель аппарата. Имя пакета уже зашито в адрес проверки. Человек этого обычно не замечает: сбор идёт в фоне, пока на экране ещё служебное состояние запуска.\n\nКуда отправляются: Сведения уходят не отдельным скрытым сетевым запросом из самого приложения, а встраиваются в адрес страницы проверки https://frostyfishj.frostyfishjourney.com/ с параметрами gofoergk (имя пакета), wiowg (рекламный номер), mrgnerng (номер версии Android) и qwef (модель телефона). Этот адрес открывают во внешнем браузере телефона. Запасных адресов в коде не видно. Флаг результата потом сохраняется в памяти приложения (настройки bwqzvpmx).\n\nКак фильтруются пользователи: В самом приложении нет списка стран, языков или «белых» и «грязных» пользователей. На проверку уходят имя пакета, рекламный номер устройства, версия Android и модель телефона — дальше решение принимает сервер по ответу страницы в браузере. На телефоне видно только развилку: либо человека сначала отправляют на внешнюю страницу проверки, либо после возврата по специальной ссылке ему остаётся обычное приложение. Локально приложение лишь читает сохранённый флаг и реагирует на возврат по схеме aasfasf.\n\nЧто возвращается: Приложение не разбирает ответ сервера как набор полей вроде ссылки внутри структурированного ответа. Внешняя страница открывается в браузере; по проверке домена она отдаёт заголовок MyApplication и без дальнейшего редиректа. «Боевой» для схемы возврат в приложение идёт через специальную ссылку со схемой aasfasf: тогда в настройках ставится флаг bwpxmqvzdl. Если этого возврата нет, человек остаётся на внешней странице или при следующих запусках снова проходит ту же проверку, пока флаг не будет сохранён.\n\nКак показывается оффер или белая версия: После сбора данных приложение открывает с…"
+  }
 }

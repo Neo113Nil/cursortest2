@@ -41,5 +41,85 @@
   "stdout": "╭─ com.ud.army.cargo.transport.simulator.games ─╮\n│ BubbleBounce                                  │\n│ 1012  (vc 1012)                               │\n╰───────────────────────────────────────────────╯\n\nDownloading 3 files  (48.9 MB)\n com.ud.army.cargo.transport.simulator.games-1012.apk                   100%   …\n com.ud.army.cargo.transport.simulator.games-1012-config.arm64_v8a.apk  100%   …\n com.ud.army.cargo.transport.simulator.games-1012-asset.apk             100%   …\n\n                                Downloaded files                                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.ud.army.cargo.transport.simulator.games-1012.apk               │ 14.7 MB │\n│ com.ud.army.cargo.transport.simulator.games-1012-config.arm64_v8a… │ 22.3 MB │\n│ com.ud.army.cargo.transport.simulator.games-1012-asset.apk         │ 14.7 MB │\n└────────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "BubbleBounce (в Google Play); внутри APK app_name = Веtаnо Аpр"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "нет"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity 6000.3.8f1 (IL2CPP), UniWebView (com.onevcat.uniwebview), androidx.browser, androidx.core, androidx.lifecycle, androidx.versionedparcelable, androidx.interpolator, org.fmod, bitter.jnibridge, libil2cpp, libunity, libmain, lib_burst_generated"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "accepter-earhart.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "redirect, url, white, webview, load, Betano"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "accepter-earhart.com",
+        "redirects_to": "https://cwb-drive-tecnolog-a-do-brasil-ltda-a3027383.surge.sh/com.ud.army.cargo.transport.simulator.games/badbd536/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "com.chrome.dev",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "да",
+    "cloaking_brief": "Как собираются: Сразу после запуска игрового экрана приложение само, без спроса у человека, стартует скрытую проверку. Отдельного окна с разрешением нет: человек обычно видит только заставку или игру. В коде проверки не читают язык телефона, рекламный номер, модель и другие сведения об устройстве, чтобы положить их в запрос. Проверка устроена как обычный тихий переход по заранее прошитому адресу. Таймаут ожидания ответа в коде выставлен на 11 секунд. Пока идёт проверка, звук в приложении приглушается.\n\nКуда отправляются: Тихий запрос уходит на адрес https://accepter-earhart.com — это встроенная константа в игровом менеджере. Запасных адресов в коде не видно: используется одна эта ссылка. Запрос уходит в фоне сразу при старте, человек его не запускает кнопкой. После ответа приложение сохраняет итоговую ссылку (уже с учётом переадресаций сервера) в память приложения и дальше решает, что показать. Отдельно есть путь открыть сохранённую ссылку через встроенный режим браузера Chrome (Custom Tabs), если вызывается соответствующий метод.\n\nКак фильтруются пользователи: В самом приложении нет списка стран, языков или «белых» и «грязных» правил на телефоне. На проверку уходит только обращение к серверу по адресу проверки; решение «кого пустить» делает сервер через переадресацию. После ответа приложение смотрит на итоговый адрес: если в нём всё ещё есть accepter-earhart.com, считается «белый» путь. Если итоговый адрес другой (сервер куда-то перенаправил), включается показ внешнего содержимого. Если запрос не удался, тоже остаётся обычное приложение. Повторно уже «открытый» режим запоминается флагом, чтобы снова не гонять проверку.\n\nЧто возвращается: Сервер отвечает на обычный GET-запрос. Приложение читает итоговый адрес после возможных переадресаций и признак успеха запроса. Этот итоговый адрес сохраняется как рабочая ссылка для показа. Если запрос успешен и итоговый адрес всё ещё указывает на accepter-earhart.com, приложение считает ответ «белым». Если запрос успешен, но адрес уже другой — это сигнал показать внешнюю страницу. Если запрос прошёл с ошибкой, выбирается обычный режим приложения без внешней страницы.\n\nКак показывается оффер или белая версия: Если ответ «боево…"
+  }
 }
