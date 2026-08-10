@@ -388,28 +388,33 @@
           "harmless": 0,
           "malicious": 0
         },
-        "categories": {
-          "Sophos": "information technology",
-          "Forcepoint ThreatSeeker": "information technology"
-        },
+        "categories": {},
         "popularity_ranks": "нет",
         "creation_date": 1406329853,
-        "last_modification_date": 1786364361,
-        "last_analysis_date": null,
+        "last_modification_date": 1786365546,
+        "last_analysis_date": 1786364349,
         "registrar": "Porkbun LLC",
         "whois": "Admin City: REDACTED\nAdmin Country: REDACTED\nAdmin Organization: REDACTED\nAdmin Postal Code: REDACTED\nAdmin State/Province: REDACTED\nCreation Date: 2014-07-25T23:10:53Z\nDNSSEC: unsigned\nDomain Name: surge.sh\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: ns1.surge.world\nName Server: ns2.surge.world\nName Server: ns3.surge.world\nName Server: ns4.surge.world\nRegistrant City: 3495bcf1839c6374\nRegistrant Country: US\nRegistrant Email: fb6ff66ef97c0518s@\nRegistrant Fax Ext: 3495bcf1839c6374\nRegistrant Fax: 3495bcf1839c6374\nRegistrant Name: 3495bcf1839c6374\nRegistrant Organization: 0c0ae3ca894d74a0\nRegistrant Phone Ext: 3495bcf1839c6374\nRegistrant Phone: 3495bcf1839c6374\nRegistrant Postal Code: 3495bcf1839c6374\nRegistrant State/Province: b5ccaeb3c805e2cb\nRegistrant Street: 3495bcf1839c6374\nRegistrar Abuse Contact Email: abuse+registry@porkbun.com\nRegistrar Abuse Contact Phone: +1.8557675286\nRegistrar IANA ID: 1861\nRegistrar URL: http://porkbun.com\nRegistrar WHOIS Server: whois.porkbun.com\nRegistrar: Porkbun LLC\nRegistry Admin ID: REDACTED\nRegistry Domain ID: REDACTED\nRegistry Expiry Date: 2026-07-25T23:10:53Z\nRegistry Registrant ID: REDACTED\nRegistry Tech ID: REDACTED\nTech City: REDACTED\nTech Country: REDACTED\nTech Organization: REDACTED\nTech Postal Code: REDACTED\nTech State/Province: REDACTED\nUpdated Date: 2025-07-11T07:10:57Z",
         "dns_records": [
-          "нет"
+          "A 159.203.159.100"
         ],
-        "https_subject": "нет",
-        "https_issuer": "нет",
+        "https_subject": {
+          "CN": "*.surge.sh"
+        },
+        "https_issuer": {
+          "C": "GB",
+          "O": "Sectigo Limited",
+          "CN": "Sectigo Public Server Authentication CA DV R36"
+        },
         "malicious_engines": [
           "нет"
         ],
         "suspicious_engines": [
           "нет"
         ],
-        "tags": []
+        "tags": [
+          "hex"
+        ]
       },
       "redirects_to": "нет (без редиректа)",
       "redirect_chain": [

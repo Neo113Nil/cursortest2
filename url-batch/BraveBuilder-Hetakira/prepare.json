@@ -9,7 +9,7 @@
   "jadx": {
     "ok": true,
     "exit_code": 0,
-    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 914 (0%)\nINFO  - progress: 78 of 914 (8%)\nINFO  - progress: 89 of 914 (9%)\nINFO  - progress: 111 of 914 (12%)\nINFO  - progress: 249 of 914 (27%)\nINFO  - progress: 338 of 914 (36%)\nINFO  - progress: 415 of 914 (45%)\nINFO  - progress: 478 of 914 (52%)\nINFO  - progress: 561 of 914 (61%)\nINFO  - progress: 611 of 914 (66%)\nINFO  - progress: 611 of 914 (66%)\nINFO  - progress: 662 of 914 (72%)\nINFO  - progress: 691 of 914 (75%)\nINFO  - progress: 833 of 914 (91%)\nINFO  - progress: 873 of 914 (95%)\nINFO  - progress: 874 of 914 (95%)\n                                                             \nINFO  - done\n",
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 914 (0%)\nINFO  - progress: 71 of 914 (7%)\nINFO  - progress: 72 of 914 (7%)\nINFO  - progress: 72 of 914 (7%)\nINFO  - progress: 78 of 914 (8%)\nINFO  - progress: 92 of 914 (10%)\nINFO  - progress: 327 of 914 (35%)\nINFO  - progress: 462 of 914 (50%)\nINFO  - progress: 598 of 914 (65%)\nINFO  - progress: 611 of 914 (66%)\nINFO  - progress: 611 of 914 (66%)\nINFO  - progress: 646 of 914 (70%)\nINFO  - progress: 735 of 914 (80%)\nINFO  - progress: 874 of 914 (95%)\nINFO  - progress: 911 of 914 (99%)\n                                                             \nINFO  - done\n",
     "stderr": "",
     "out_dir": "/root/play-collector/загрузки/url-batch/BraveBuilder-Hetakira/decompiled",
     "skipped": false,
@@ -23,6 +23,8 @@
     "apk/com.vrx.farming.tractor.simulator.game-41-asset.apk",
     "apk/com.vrx.farming.tractor.simulator.game-41-config.arm64_v8a.apk",
     "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
     "decompiled/resources/AndroidManifest.xml",
     "decompiled/resources/res/values/strings.xml",
     "decompiled/sources/",
