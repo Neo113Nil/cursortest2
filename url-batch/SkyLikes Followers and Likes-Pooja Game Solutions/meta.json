@@ -1,0 +1,49 @@
+{
+  "app_id": "app.skylikes.dsgames.shop",
+  "title": "SkyLikes Followers and Likes",
+  "developer": "Pooja Game Solutions",
+  "developer_id": "Pooja+Game+Solutions",
+  "icon": "/static/app-icons/app_skylikes_dsgames_shop.png",
+  "url": "https://play.google.com/store/apps/details?id=app.skylikes.dsgames.shop&hl=en&gl=us",
+  "score": null,
+  "released": "May 20, 2026",
+  "updated": "Jun 3, 2026",
+  "version": "Varies with device",
+  "summary": "Creator hub for profile growth, engagement tools and social discovery",
+  "keyword": "url-batch",
+  "folder": "SkyLikes Followers and Likes-Pooja Game Solutions",
+  "path": "url-batch/SkyLikes Followers and Likes-Pooja Game Solutions",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "app.skylikes.dsgames.shop-3-asset.apk",
+    "app.skylikes.dsgames.shop-3-config.arm64_v8a.apk",
+    "app.skylikes.dsgames.shop-3-config.en.apk",
+    "app.skylikes.dsgames.shop-3-config.lt.apk",
+    "app.skylikes.dsgames.shop-3-config.ru.apk",
+    "app.skylikes.dsgames.shop-3-config.xxhdpi.apk",
+    "app.skylikes.dsgames.shop-3.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/SkyLikes Followers and Likes-Pooja Game Solutions",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ app.skylikes.dsgames.shop ──╮\n│ SkyLikes Followers and Likes │\n│ 1.0.2  (vc 3)                │\n╰──────────────────────────────╯\n\nDownloading 7 files  (53.4 MB)\n  app.skylikes.dsgames.shop-3.apk                  ━━━━━ 100% 44.1… 16.0  0:00:…\n                                                              MB    MB/s        \n  app.skylikes.dsgames.shop-3-config.arm64_v8a.apk ━━━━━ 100% 41.4… ?     0:00:…\n                                                              kB                \n  app.skylikes.dsgames.shop-3-config.en.apk        ━━━━━ 100% 65.9… 601.0 0:00:…\n                                                              kB    kB/s        \n  app.skylikes.dsgames.shop-3-config.lt.apk        ━━━━━ 100% 29.1… ?     0:00:…\n                                                              kB                \n  app.skylikes.dsgames.shop-3-config.ru.apk        ━━━━━ 100% 29.1… ?     0:00:…\n                                                              kB                \n  app.skylikes.dsgames.shop-3-config.xxhdpi.apk    ━━━━━ 100% 26.0… ?     0:00:…\n                                                              kB                \n  app.skylikes.dsgames.shop-3-asset.apk            ━━━━━ 100% 11.7… 10.6  0:00:…\n                                                              MB    MB/s        \n\n                       Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                             ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ app.skylikes.dsgames.shop-3.apk                  │ 42.1 MB │\n│ app.skylikes.dsgames.shop-3-config.arm64_v8a.apk │ 40.4 KB │\n│ app.skylikes.dsgames.shop-3-config.en.apk        │ 64.4 KB │\n│ app.skylikes.dsgames.shop-3-config.lt.apk        │ 28.4 KB │\n│ app.skylikes.dsgames.shop-3-config.ru.apk        │ 28.4 KB │\n│ app.skylikes.dsgames.shop-3-config.xxhdpi.apk    │ 25.4 KB │\n│ app.skylikes.dsgames.shop-3-asset.apk            │ 42.1 MB │\n└──────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ app.skylikes.dsgames.shop ──╮\n│ SkyLikes Followers and Likes │\n│ 1.0.2  (vc 3)                │\n╰──────────────────────────────╯\n\nDownloading 7 files  (53.4 MB)\n  app.skylikes.dsgames.shop-3.apk                  ━━━━━ 100% 44.1… 16.0  0:00:…\n                                                              MB    MB/s        \n  app.skylikes.dsgames.shop-3-config.arm64_v8a.apk ━━━━━ 100% 41.4… ?     0:00:…\n                                                              kB                \n  app.skylikes.dsgames.shop-3-config.en.apk        ━━━━━ 100% 65.9… 601.0 0:00:…\n                                                              kB    kB/s        \n  app.skylikes.dsgames.shop-3-config.lt.apk        ━━━━━ 100% 29.1… ?     0:00:…\n                                                              kB                \n  app.skylikes.dsgames.shop-3-config.ru.apk        ━━━━━ 100% 29.1… ?     0:00:…\n                                                              kB                \n  app.skylikes.dsgames.shop-3-config.xxhdpi.apk    ━━━━━ 100% 26.0… ?     0:00:…\n                                                              kB                \n  app.skylikes.dsgames.shop-3-asset.apk            ━━━━━ 100% 11.7… 10.6  0:00:…\n                                                              MB    MB/s        \n\n                       Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                             ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ app.skylikes.dsgames.shop-3.apk                  │ 42.1 MB │\n│ app.skylikes.dsgames.shop-3-config.arm64_v8a.apk │ 40.4 KB │\n│ app.skylikes.dsgames.shop-3-config.en.apk        │ 64.4 KB │\n│ app.skylikes.dsgames.shop-3-config.lt.apk        │ 28.4 KB │\n│ app.skylikes.dsgames.shop-3-config.ru.apk        │ 28.4 KB │\n│ app.skylikes.dsgames.shop-3-config.xxhdpi.apk    │ 25.4 KB │\n│ app.skylikes.dsgames.shop-3-asset.apk            │ 42.1 MB │\n└──────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
