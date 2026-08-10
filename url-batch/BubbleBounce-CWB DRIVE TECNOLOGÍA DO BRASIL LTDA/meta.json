@@ -1,0 +1,45 @@
+{
+  "app_id": "com.ud.army.cargo.transport.simulator.games",
+  "title": "BubbleBounce",
+  "developer": "CWB DRIVE TECNOLOGÍA DO BRASIL LTDA",
+  "developer_id": "CWB+DRIVE+TECNOLOG%C3%8DA+DO+BRASIL+LTDA",
+  "icon": "/static/app-icons/com_ud_army_cargo_transport_simulator_games.png",
+  "url": "https://play.google.com/store/apps/details?id=com.ud.army.cargo.transport.simulator.games&hl=en&gl=us",
+  "score": 4.1538463,
+  "released": "Jan 29, 2021",
+  "updated": "2026-08-06",
+  "version": "1012",
+  "summary": "Match, aim, and pop colorful bubbles to clear every level offline!",
+  "keyword": "url-batch",
+  "folder": "BubbleBounce-CWB DRIVE TECNOLOGÍA DO BRASIL LTDA",
+  "path": "url-batch/BubbleBounce-CWB DRIVE TECNOLOGÍA DO BRASIL LTDA",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.ud.army.cargo.transport.simulator.games-1012-asset.apk",
+    "com.ud.army.cargo.transport.simulator.games-1012-config.arm64_v8a.apk",
+    "com.ud.army.cargo.transport.simulator.games-1012.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/BubbleBounce-CWB DRIVE TECNOLOGÍA DO BRASIL LTDA",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.ud.army.cargo.transport.simulator.games ─╮\n│ BubbleBounce                                  │\n│ 1012  (vc 1012)                               │\n╰───────────────────────────────────────────────╯\n\nDownloading 3 files  (48.9 MB)\n com.ud.army.cargo.transport.simulator.games-1012.apk                   100%   …\n com.ud.army.cargo.transport.simulator.games-1012-config.arm64_v8a.apk  100%   …\n com.ud.army.cargo.transport.simulator.games-1012-asset.apk             100%   …\n\n                                Downloaded files                                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.ud.army.cargo.transport.simulator.games-1012.apk               │ 14.7 MB │\n│ com.ud.army.cargo.transport.simulator.games-1012-config.arm64_v8a… │ 22.3 MB │\n│ com.ud.army.cargo.transport.simulator.games-1012-asset.apk         │ 14.7 MB │\n└────────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.ud.army.cargo.transport.simulator.games ─╮\n│ BubbleBounce                                  │\n│ 1012  (vc 1012)                               │\n╰───────────────────────────────────────────────╯\n\nDownloading 3 files  (48.9 MB)\n com.ud.army.cargo.transport.simulator.games-1012.apk                   100%   …\n com.ud.army.cargo.transport.simulator.games-1012-config.arm64_v8a.apk  100%   …\n com.ud.army.cargo.transport.simulator.games-1012-asset.apk             100%   …\n\n                                Downloaded files                                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.ud.army.cargo.transport.simulator.games-1012.apk               │ 14.7 MB │\n│ com.ud.army.cargo.transport.simulator.games-1012-config.arm64_v8a… │ 22.3 MB │\n│ com.ud.army.cargo.transport.simulator.games-1012-asset.apk         │ 14.7 MB │\n└────────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
