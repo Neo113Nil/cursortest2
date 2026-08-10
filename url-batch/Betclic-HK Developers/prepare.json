@@ -1,0 +1,41 @@
+{
+  "ok": true,
+  "apks": [
+    "com.salonparlor.thehuntedhotel-10-asset.apk",
+    "com.salonparlor.thehuntedhotel-10-config.arm64_v8a.apk",
+    "com.salonparlor.thehuntedhotel-10.apk"
+  ],
+  "base_apk": "com.salonparlor.thehuntedhotel-10.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 8334 (0%)\nINFO  - progress: 262 of 8334 (3%)\nINFO  - progress: 827 of 8334 (9%)\nINFO  - progress: 828 of 8334 (9%)\nINFO  - progress: 832 of 8334 (9%)\nINFO  - progress: 842 of 8334 (10%)\nINFO  - progress: 907 of 8334 (10%)\nINFO  - progress: 975 of 8334 (11%)\nINFO  - progress: 1173 of 8334 (14%)\nINFO  - progress: 1672 of 8334 (20%)\nINFO  - progress: 2090 of 8334 (25%)\nINFO  - progress: 2268 of 8334 (27%)\nINFO  - progress: 2447 of 8334 (29%)\nINFO  - progress: 2852 of 8334 (34%)\nINFO  - progress: 3159 of 8334 (37%)\nINFO  - progress: 3445 of 8334 (41%)\nINFO  - progress: 3631 of 8334 (43%)\nINFO  - progress: 3733 of 8334 (44%)\nINFO  - progress: 3790 of 8334 (45%)\nINFO  - progress: 3844 of 8334 (46%)\nINFO  - progress: 3901 of 8334 (46%)\nINFO  - progress: 3928 of 8334 (47%)\nINFO  - progress: 3941 of 8334 (47%)\nINFO  - progress: 3987 of 8334 (47%)\nINFO  - progress: 4008 of 8334 (48%)\nINFO  - progress: 4028 of 8334 (48%)\nINFO  - progress: 4056 of 8334 (48%)\nINFO  - progress: 4108 of 8334 (49%)\nINFO  - progress: 4125 of 8334 (49%)\nINFO  - progress: 4141 of 8334 (49%)\nINFO  - progress: 4160 of 8334 (49%)\nINFO  - progress: 4198 of 8334 (50%)\nINFO  - progress: 4260 of 8334 (51%)\nINFO  - progress: 4338 of 8334 (52%)\nINFO  - progress: 4508 of 8334 (54%)\nINFO  - progress: 4627 of 8334 (55%)\nINFO  - progress: 4757 of 8334 (57%)\nINFO  - progress: 5013 of 8334 (60%)\nINFO  - progress: 5269 of 8334 (63%)\nINFO  - progress: 5781 of 8334 (69%)\nINFO  - progress: 5998 of 8334 (71%)\nINFO  - progress: 6317 of 8334 (75%)\nINFO  - progress: 6368 of 8334 (76%)\nINFO  - progress: 6370 of 8334 (76%)\nINFO  - progress: 6375 of 8334 (76%)\nINFO  - progress: 6393 of 8334 (76%)\nINFO  - progress: 6404 of 8334 (76%)\nINFO  - progress: 6535 of 8334 (78%)\nINFO  - progress: 6535 of 8334 (78%)\nINFO  - progress: 6554 of 8334 (78%)\nINFO  - progress: 6554 of 8334 (78%)\nINFO  - progress: 6554 of 8334 (78%)\nINFO  - progress: 6554 of 8334 (78%)\nINFO  - progress: 6554 of 8334 (78%)\nINFO  - progress: 6554 of 8334 (78%)\nINFO  - progress: 6554 of 8334 (78%)\nINFO  - progress: 6560 of 8334 (78%)\nINFO  - progress: 6589 of 8334 (79%)\nINFO  - progress: 6612 of 8334 (79%)\nINFO  - progress: 6644 of 8334 (79%)\nINFO  - progress: 6681 of 8334 (80%)\nINFO  - progress: 6768 of 8334 (81%)\nINFO  - progress: 7154 of 8334 (85%)\nINFO  - progress: 7373 of 8334 (88%)\nINFO  - progress: 7548 of 8334 (90%)\nINFO  - progress: 7590 of 8334 (91%)\nINFO  - progress: 7592 of 8334 (91%)\nINFO  - progress: 7626 of 8334 (91%)\nINFO  - progress: 7918 of 8334 (95%)\nINFO  - progress: 8245 of 8334 (98%)\n                                                             \nERROR - finished with errors, count: 14\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/url-batch/Betclic-HK Developers/decompiled",
+    "skipped": false,
+    "base_apk": "com.salonparlor.thehuntedhotel-10.apk"
+  },
+  "analysis_files": [
+    "com.salonparlor.thehuntedhotel-10-asset.apk",
+    "com.salonparlor.thehuntedhotel-10-config.arm64_v8a.apk",
+    "com.salonparlor.thehuntedhotel-10.apk",
+    "apk/com.salonparlor.thehuntedhotel-10-asset.apk",
+    "apk/com.salonparlor.thehuntedhotel-10-config.arm64_v8a.apk",
+    "apk/com.salonparlor.thehuntedhotel-10.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/a/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/bitter/",
+    "decompiled/sources/com/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/org/"
+  ],
+  "errors": []
+}

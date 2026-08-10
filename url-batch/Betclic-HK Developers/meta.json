@@ -1,0 +1,45 @@
+{
+  "app_id": "com.salonparlor.thehuntedhotel",
+  "title": "Betclic",
+  "developer": "HK Developers",
+  "developer_id": "HK+Developers",
+  "icon": "/static/app-icons/com_salonparlor_thehuntedhotel.png",
+  "url": "https://play.google.com/store/apps/details?id=com.salonparlor.thehuntedhotel&hl=en&gl=us",
+  "score": 4.42,
+  "released": "Mar 17, 2017",
+  "updated": "2026-07-31",
+  "version": "1.1.0",
+  "summary": "hidden object game for story lovers everywhere.",
+  "keyword": "url-batch",
+  "folder": "Betclic-HK Developers",
+  "path": "url-batch/Betclic-HK Developers",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.salonparlor.thehuntedhotel-10-asset.apk",
+    "com.salonparlor.thehuntedhotel-10-config.arm64_v8a.apk",
+    "com.salonparlor.thehuntedhotel-10.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Betclic-HK Developers",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.salonparlor.thehuntedhotel ─╮\n│ Betclic                          │\n│ 1.1.0  (vc 10)                   │\n╰──────────────────────────────────╯\n\nDownloading 3 files  (140.5 MB)\n  com.salonparlor.thehuntedhotel-10.apk                  ━━━━ 100% 67… 10.0 0:0…\n                                                                   MB  MB/s     \n  com.salonparlor.thehuntedhotel-10-config.arm64_v8a.apk ━━━━ 100% 26… 9.0  0:0…\n                                                                   MB  MB/s     \n  com.salonparlor.thehuntedhotel-10-asset.apk            ━━━━ 100% 53… 10.0 0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                   ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.salonparlor.thehuntedhotel-10.apk                  │ 64.0 MB │\n│ com.salonparlor.thehuntedhotel-10-config.arm64_v8a.apk │ 25.2 MB │\n│ com.salonparlor.thehuntedhotel-10-asset.apk            │ 64.0 MB │\n└────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.salonparlor.thehuntedhotel ─╮\n│ Betclic                          │\n│ 1.1.0  (vc 10)                   │\n╰──────────────────────────────────╯\n\nDownloading 3 files  (140.5 MB)\n  com.salonparlor.thehuntedhotel-10.apk                  ━━━━ 100% 67… 10.0 0:0…\n                                                                   MB  MB/s     \n  com.salonparlor.thehuntedhotel-10-config.arm64_v8a.apk ━━━━ 100% 26… 9.0  0:0…\n                                                                   MB  MB/s     \n  com.salonparlor.thehuntedhotel-10-asset.apk            ━━━━ 100% 53… 10.0 0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                   ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.salonparlor.thehuntedhotel-10.apk                  │ 64.0 MB │\n│ com.salonparlor.thehuntedhotel-10-config.arm64_v8a.apk │ 25.2 MB │\n│ com.salonparlor.thehuntedhotel-10-asset.apk            │ 64.0 MB │\n└────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
