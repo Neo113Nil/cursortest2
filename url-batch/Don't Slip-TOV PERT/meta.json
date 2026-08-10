@@ -41,5 +41,24 @@
   "stdout": "╭─ com.glowfoxInteractive.dontslip ─╮\n│ Don't Slip                        │\n│ 1.0.0  (vc 1)                     │\n╰───────────────────────────────────╯\n\nDownloading 3 files  (39.7 MB)\n  com.glowfoxInteractive.dontslip-1.apk                  ━━━━ 100% 11… 13.8 0:0…\n                                                                   MB  MB/s     \n  com.glowfoxInteractive.dontslip-1-config.arm64_v8a.apk ━━━━ 100% 21… 13.6 0:0…\n                                                                   MB  MB/s     \n  com.glowfoxInteractive.dontslip-1-asset.apk            ━━━━ 100% 9.… 9.4  0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                   ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.glowfoxInteractive.dontslip-1.apk                  │ 10.9 MB │\n│ com.glowfoxInteractive.dontslip-1-config.arm64_v8a.apk │ 20.1 MB │\n│ com.glowfoxInteractive.dontslip-1-asset.apk            │ 10.9 MB │\n└────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [],
+    "domains": [
+      {
+        "domain": "james.newtonking.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "nuget.org",
+        "redirects_to": "https://www.nuget.org/",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }

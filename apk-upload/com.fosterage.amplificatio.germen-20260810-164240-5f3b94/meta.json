@@ -9,5 +9,113 @@
   "icon": "/static/app-icons/com_fosterage_amplificatio_germen.png",
   "url": "https://play.google.com/store/apps/details?id=com.fosterage.amplificatio.germen&hl=en&gl=us",
   "updated": "Jul 24, 2026",
-  "version": "Varies with device"
+  "version": "Varies with device",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Eternal Ember"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.11.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.2.20"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, com.fosterage.amplificatio.germen.DYNAMIC_RECEIV ER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Flutter (io.flutter.embedding, libflutter.so, libapp.so), kotlin-stdlib 2.2.20, kotlinx-coroutines-core 1.7.3, kotlinx-coroutines-android 1.7.3, androidx.activity 1.8.1, androidx.appcompat 1.1.0, androidx.browser 1.8.0, androidx.core 1.13.1, androidx.datastore 1.1.7, androidx.exifinterface 1.4.1, androidx.fragment 1.7.1, androidx.lifecycle 2.7.0, androidx.preference 1.2.1, androidx.profileinstaller 1.3.1, androidx.recyclerview 1.0.0, androidx.savedstate 1.2.1, androidx.startup 1.1.1, androidx.transition 1.4.1, androidx.window 1.2.0, com.github.dart_lang.jni, com.github.dart_lang.jni_flutter, io.flutter.plugins.sharedpreferences, cupertino_icons, org.json Подозрительные домены porcupinecrest.com, dispatchers.io, systemuioverlay.top"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "хранилище shared_preferences (в коде игры — EmberLocalStorage): прогресс обычного приложения — ember_coins, unlocked_levels_count, level_stars_map, unlocked_achievements, purchased_skins, selected_skin, first_run_status; результат скрытой расшифровки и открытый адрес в настройках не сохраняются"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "index.php, unfurl, policy (com.fosterage.amplificatio.germen/policy), Accept-Language, AES/GCM/NoPadding, android.support.customtabs.extra.SESSION, androidx.browser.customtabs.extra.SHARE_STATE, com.android.browser.headers"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "api.githubcopilot.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "cakhiatv1.net",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "https://cakhiatv1.net/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "github.blog",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: MarkMonitor, Inc (TLDs)"
+      },
+      {
+        "domain": "github.githubassets.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "githubstatus.com",
+        "redirects_to": "https://www.githubstatus.com",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "systemuioverlay.top",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "twitch.tv",
+        "redirects_to": "https://www.twitch.tv/",
+        "parked_at": "регистратор: MarkMonitor, Inc."
+      }
+    ],
+    "collected_data": [
+      "Язык телефона"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Язык телефона\n\nКак собираются: Сразу при открытии главного экрана, ещё до того как человек успел что-то нажать, приложение спрашивает у системы Android список языков телефона и берёт из него первый язык в виде короткой пометки вроде «pt-BR». Никакого окна с вопросом «разрешить?» при этом не появляется, шаг проходит полностью незаметно. В тот же момент приложение открывает свой собственный встроенный файл с именем index.php. По имени он выглядит как кусочек обычного сайта, но внутри лежит не текст, а зашифрованные данные. Приложение сначала снимает с файла простую маскировку (каждый байт меняется по одному и тому же правилу), потом складывает ключ из двух длинных строк, зашитых прямо в код,…\n\nКуда отправляются: После расшифровки получается один-единственный адрес: https://porcupinecrest.com/WMWjLZ8q. Он лежит внутри приложения целиком в зашифрованном виде — его не собирают из кусочков на лету и не подгружают откуда-то со стороны, запасных адресов в этом месте кода нет. Перед использованием приложение проверяет только одно: что расшифрованная строка не пустая и начинается с «https://». Если проверка прошла, страницу по этому адресу открывают тут же. Язык телефона уходит на этот адрес не отдельным сообщением, а прикладывается к самому открытию страницы: приложение кладёт его в запрос браузера как пожелание языка страницы (заголовок Accept-Language).…\n\nКак фильтруются пользователи: Внутри приложения нет ни списка стран, ни разрешённых и запрещённых языков, ни проверки на бота, магазинную проверку или эмулятор. Никаких условий вида «если страна такая — показать, иначе не показывать» в коде запуска нет. Единственный признак, который приложение само добавляет к обращению, — язык телефона. Вместе с ним сайт, как и при любом заходе браузера, видит адрес выхода в сеть и строку с описанием браузера, то есть по этим признакам вполне можно отличить живого человека из нужной страны от проверяющего. Решение «кому показать рекламную страницу, а кому что-то безобидное» полностью принимает сторона сайта.…\n\nЧто возвращается: Ответ сайта приложение не разбирает совсем: в коде нет ни чтения поля со ссылкой, ни поля «можно/нельзя», ни разбора текста ответа,…"
+  }
 }

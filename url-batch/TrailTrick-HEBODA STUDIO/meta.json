@@ -41,5 +41,93 @@
   "stdout": "╭─ com.milodix.ranat_nachita ─╮\n│ TrailTrick                  │\n│ 991  (vc 991)               │\n╰─────────────────────────────╯\n\nDownloading 3 files  (38.0 MB)\n  com.milodix.ranat_nachita-991.apk                  ━━━━ 100% 10.5… 22.4 0:00:…\n                                                               MB    MB/s       \n  com.milodix.ranat_nachita-991-config.arm64_v8a.apk ━━━━ 100% 21.8… 11.5 0:00:…\n                                                               MB    MB/s       \n  com.milodix.ranat_nachita-991-asset.apk            ━━━━ 100% 7.6/… 13.1 0:00:…\n                                                               MB    MB/s       \n\n                        Downloaded files                        \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.milodix.ranat_nachita-991.apk                  │ 10.0 MB │\n│ com.milodix.ranat_nachita-991-config.arm64_v8a.apk │ 20.8 MB │\n│ com.milodix.ranat_nachita-991-asset.apk            │ 10.0 MB │\n└────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Total C App (label внутри APK; в Google Play карточка называется TrailTrick)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да (1.6.0)"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Unity Analytics, Unity Services Analytics 6.2.0"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity 6000.3.8f1 (IL2CPP), UniWebView (com.onevcat.uniwebview), FMOD (org.fmod), TextMeshPro, Unity Timeline, Play Asset Delivery (com.unity3d.player.PlayAssetDeliveryUnityWrapper), Guava ListenableFuture (com.google.common.util.concurrent), Newtonsoft.Json, Unity Services Core 1.16.0, Unity Services Analytics 6.2.0, Unity Analytics Tracker/StandardEvents/DataPrivacy, EZCameraShake, GameManager/TrignometricMovement (Assembly-CSharp), kotlin-stdlib 1.6.0, androidx.browser 1.2.0, androidx.core 1.1.0, androidx.lifecycle-runtime 2.0.0, androidx.interpolator 1.0.0, androidx.versionedparcelable 1.1.0, androidx.collection, androidx.annotation, androidx.arch.core, androidx.concurrent, bitter.jnibridge, org.jetbrains Подозрительные домены api.uca.cloud, james.newtonking.com, muggiest-suo.com, nuget.org"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "PlayerPrefs через Android SharedPreferences: Laz (метка, пишется при запуске), GameStarted (флаг «игра запущена»), LastLaunchTime (дата и время последнего запуска), UnnecessaryString и UnnecessaryFloat (служебные значения-пустышки)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "sites.google, ProgressingController, ResolveEntryPoint, MatchesBundlePolicy, GuardUrl, OpenW, AttachWebView, EnterGameFlow, LP, _currentLP, PersistLazFlag, Laz, SeedInternalState, LogNetworkProbeStart, LogNetworkProbeProgress, \"Starting network check at: \", \"Network request in progress...\", \"URL is empty\", \"URL is too long\", GameStarted, LastLaunchTime, Unused_, Temp_, TemporaryObject, \"Unnecessary screen validation\", \"Redundant debug triggered at: \", UnnecessaryString, UnnecessaryFloat, Gate, Gate Rusher"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "api.uca.cloud",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: TUCOWS.COM, CO."
+      },
+      {
+        "domain": "james.newtonking.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "muggiest-suo.com",
+        "redirects_to": "https://policy.muggiest-suo.com/37a6e2a0",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "nuget.org",
+        "redirects_to": "https://www.nuget.org/",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      }
+    ],
+    "collected_data": [
+      "Имя пакета приложения"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Имя пакета приложения\n\nКак собираются: Приложение делает это само, сразу при старте: как только открывается первый экран с крутящимся индикатором загрузки, скрипт запуска (в коде он называется ProgressingController) в методе Start запускает фоновую проверку и одновременно выключает звук у всех игровых источников звука. Никаких окон с вопросами и никаких разрешений человек не видит — у приложения из разрешений есть только доступ в интернет. Имя пакета (внутренний адрес приложения, com.milodix.ranat_nachita) приложение берёт у самой системы Android через встроенный вызов Unity, уже после того как пришёл ответ от сервера: оно нужно, чтобы сравнить его с полученной ссылкой.…\n\nКуда отправляются: Запрос тихо уходит в интернет на один адрес — http://muggiest-suo.com/. Этого адреса нет среди обычных текстовых строк программы: он спрятан внутри игрового файла сцены (data.unity3d) как настройка скрипта запуска, поэтому при простом поиске по коду он не находится. Запасных адресов нет, ссылка не собирается из кусков и к ней не приписываются никакие дополнительные параметры — уходит именно этот короткий адрес. Обращение выполняется обычным сетевым запросом Unity в фоне, человек его не видит и остановить не может. Запрос умеет следовать за перебросами с адреса на адрес, и именно конечная точка этой цепочки перебросов интересует приложение.…\n\nКак фильтруются пользователи: Само приложение никого не отбирает и никаких признаков человека на сервер не передаёт: в запросе нет ни языка, ни страны, ни модели телефона, ни рекламного номера устройства. Решение «кому что показать» полностью принимает сервер на стороне muggiest-suo.com — он видит только сетевой адрес (IP) телефона и те служебные заголовки, которые Unity подставляет в любой запрос сам. По этим данным сервер либо перебрасывает приложение на безобидную страницу, либо на целевую рекламную ссылку. На телефоне остаётся лишь одно короткое правило-проверка (в коде метод MatchesBundlePolicy): приложение смотрит, куда его в итоге перебросили,…\n\nЧто возвращается: Приложение не читает текст страницы, который присылает сервер, — оно смотрит только на две вещи. Первая: успешно ли вообще прошёл запрос. Вторая…"
+  }
 }

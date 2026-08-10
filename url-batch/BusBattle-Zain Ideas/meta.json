@@ -41,5 +41,44 @@
   "stdout": "╭─ com.tgg.eurobusdriving.bus.game.bus ─╮\n│ BusBattle                             │\n│ 51  (vc 51)                           │\n╰───────────────────────────────────────╯\n\nDownloading 3 files  (134.5 MB)\n  com.tgg.eurobusdriving.bus.game.bus-51.apk                  ━━ 100% 6… 1… 0:0…\n                                                                      MB M…     \n  com.tgg.eurobusdriving.bus.game.bus-51-config.arm64_v8a.apk ━━ 100% 2… 8… 0:0…\n                                                                      MB M…     \n  com.tgg.eurobusdriving.bus.game.bus-51-asset.apk            ━━ 100% 5… 1… 0:0…\n                                                                      MB M…     \n\n                            Downloaded files                             \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                        ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.tgg.eurobusdriving.bus.game.bus-51.apk                  │ 57.5 MB │\n│ com.tgg.eurobusdriving.bus.game.bus-51-config.arm64_v8a.apk │ 22.0 MB │\n│ com.tgg.eurobusdriving.bus.game.bus-51-asset.apk            │ 57.5 MB │\n└─────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [],
+    "domains": [
+      {
+        "domain": "zain-ideas-9030e0ac.surge.sh",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Porkbun LLC"
+      },
+      {
+        "domain": "bonecrackergames.com",
+        "redirects_to": "https://www.bonecrackergames.com/",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "euro--bus-driving-city-bus-3d.firebasestorage.app",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "james.newtonking.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "newtonsoft.com",
+        "redirects_to": "https://www.newtonsoft.com/ → https://www.newtonsoft.com/json",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "nuget.org",
+        "redirects_to": "https://www.nuget.org/",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "да",
+    "cloaking_brief": "Как собираются: Проверка запускается в первой же сцене приложения — «Assets/Loading new game scene/Load.unity», это тот самый экран загрузки с полоской, который человек видит сразу после нажатия на иконку. Метод Start у объекта AppLoaderNewGameScene ничего не ждёт: он тут же запускает фоновую задачу RequestMoonstoneWebGate, то есть обращение к постороннему сайту происходит в первые доли секунды работы приложения. Когда ответ приходит, приложение спрашивает у системы Android собственное техническое имя (Application.identiﬁer — то самое com.tgg.eurobusdriving.bus.game.bus, под которым приложение числится в телефоне) и держит это значение в памяти для сравнения.…\n\nКуда отправляются: Обращение уходит на один жёстко вписанный в программу адрес — https://chagrins-gauzy.com. Этот адрес лежит в двоичных данных приложения (файл global-metadata.dat) целой строкой, он не собирается из кусков и не расшифровывается, запасных или вторых адресов для этой проверки в коде нет. Запрос обычный, «прочитать страницу» (UnityWebRequest.Get), и приложение не добавляет к нему ни одного своего параметра: ни в самой ссылке, ни в дополнительных полях запроса ничего не дописывается — то есть техническое имя приложения на сервер не отправляют, оно нужно уже потом, при разборе ответа. Запрос идёт молча, в фоне, во время экрана загрузки: никакой надписи,…\n\nКак фильтруются пользователи: В самом приложении никаких списков стран, языков, операторов или признаков «робота» нет — проверены весь код запуска, сетевая часть, строки и сохранённые настройки. Решение «кому что показать» целиком принимает сервер chagrins-gauzy.com: приложение не подсказывает ему ни одного признака, сервер отвечает по своим собственным правилам, которых в приложении не видно. На стороне телефона работает одно единственное правило-пропуск: приложение берёт своё техническое имя и ищет его в ответе сервера — и в тексте страницы, и в итоговом адресе, на который сервер в конце перевёл запрос; поиск идёт без учёта заглавных и строчных букв, а перед поиском из ответа вычищаются пробелы,…\n\nЧто возвращается: Обратно приходит обыкновенная веб-страница, и приложение забирает из неё всего две вещи: текст ответа и итоговый адрес, на кот…"
+  }
 }

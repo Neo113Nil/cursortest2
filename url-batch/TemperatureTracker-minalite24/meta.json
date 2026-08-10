@@ -44,5 +44,97 @@
   "stdout": "╭─ com.thermometerforroom ─╮\n│ TemperatureTracker       │\n│ 15.0  (vc 15)            │\n╰──────────────────────────╯\n\nDownloading 6 files  (22.9 MB)\n  com.thermometerforroom-15.apk               ━━━━━━ 100% 17.0/1… 19.9   0:00:00\n                                                          MB      MB/s          \n  com.thermometerforroom-15-config.en.apk     ━━━━━━ 100% 41.2/4… ?      0:00:00\n                                                          kB                    \n  com.thermometerforroom-15-config.lt.apk     ━━━━━━ 100% 28.9/2… ?      0:00:00\n                                                          kB                    \n  com.thermometerforroom-15-config.ru.apk     ━━━━━━ 100% 28.9/2… ?      0:00:00\n                                                          kB                    \n  com.thermometerforroom-15-config.xxhdpi.apk ━━━━━━ 100% 58.4/5… ?      0:00:00\n                                                          kB                    \n  com.thermometerforroom-15-asset.apk         ━━━━━━ 100% 6.9/6.9 13.0   0:00:00\n                                                          MB      MB/s          \n\n                    Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                        ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.thermometerforroom-15.apk               │ 16.2 MB │\n│ com.thermometerforroom-15-config.en.apk     │ 40.2 KB │\n│ com.thermometerforroom-15-config.lt.apk     │ 28.2 KB │\n│ com.thermometerforroom-15-config.ru.apk     │ 28.2 KB │\n│ com.thermometerforroom-15-config.xxhdpi.apk │ 57.0 KB │\n│ com.thermometerforroom-15-asset.apk         │ 16.2 MB │\n└─────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "TemperatureTracker"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.3.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "37"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да + 2.2.10"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "Vungle"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_FINE_LOCATION, android.permission.ACCESS_COARSE_LOCATION, com.google.android.gms.permission.AD_ID, com.android.vending.BILLING, android.permission.ACCESS_NETWORK_STATE, com.amazon.privacypass.ATTEST, com.thermometerforroom.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.2.10, kotlinx-coroutines 1.7.3, OkHttp 4.12.0, Retrofit2, Gson, Glide, AndroidX (AppCompat 1.7.1, Activity 1.8.0, Core/Core-KTX 1.16.0, Fragment, Lifecycle, ConstraintLayout, RecyclerView, ViewPager2, CardView, CoordinatorLayout, DrawerLayout, Emoji2, Startup, ProfileInstaller, SwipeRefreshLayout, Transition, Vectordrawable, SavedState), Google Material 1.14.0, Play Billing 9.1.0, play-services-location 21.4.0, play-services-base 18.9.0, play-services-ads-identifier 18.3.0, Vungle Ads / Liftoff, IAB OM SDK (omid), firebase-encoders"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "api.weatherapi.com, openweathermap.org, policy.heils-oghamic.com, tizen.org"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "policy_data/policy_url — сохранённый адрес «политики» после редиректа на тот же домен; roomtemp_settings — единица температуры и настройки обновления; weather_prefs — сохранённые локации; temp_history — история измерений; reward_prefs — награды за рекламу; ads_manager_prefs — реклама; premium_prefs — премиум и отключение рекламы"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "redirect, webview, loadUrl, User-Agent"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "api.weatherapi.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "openweathermap.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "policy.heils-oghamic.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "tizen.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: 1API GmbH"
+      }
+    ],
+    "collected_data": [
+      "Строка User-Agent"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Строка User-Agent\n\nКак собираются: Сразу после запуска, ещё на экране заставки, приложение само и без спроса у человека начинает тихую проверку в фоне. Отдельного окна с разрешением на эту проверку нет — человек обычно ничего не замечает. В запрос проверки приложение не подставляет живые данные с телефона вроде языка или рекламного номера. Вместо этого оно само записывает в заголовок заранее зашитую строку User-Agent, будто это обычный мобильный Chrome на Android. Сбор и отправка занимают обычно не больше нескольких секунд, пока крутится заставка (не меньше примерно полутора секунд).\n\nКуда отправляются: Тихий запрос уходит на адрес https://heils-oghamic.com — это значение из встроенной строки redirect_domain, к которому спереди добавляют https://. Запасных адресов для этой проверки в коде не видно. Запрос идёт в фоне обычным сетевым соединением телефона, без показа страницы человеку. Если сервер отвечает переходом, который остаётся на том же домене heils-oghamic.com, полученный адрес сохраняют во внутренней памяти приложения как ссылку «политики» (ключ policy_url). Если переход ведёт на другой сайт, этот внешний адрес дальше открывают как оффер.\n\nКак фильтруются пользователи: В самом приложении нет списка стран, языков или «запрещённых» регионов. На проверку уходит только заранее прописанная строка User-Agent; остальное, что сервер может видеть по самому соединению, решает уже удалённая сторона. После ответа приложение смотрит только на заголовок перенаправления Location. Если ссылка из Location всё ещё содержит домен heils-oghamic.com — человеку оставляют обычное приложение. Если ссылка ведёт куда-то ещё — считают, что нужно показать внешнюю страницу. Если заголовка Location нет или запрос сломался — тоже остаётся обычное приложение. То есть признаки «кого пустить» на стороне телефона сводятся к проверке, ушёл ли редирект с домена проверки; само решение,…\n\nЧто возвращается: Сервер отвечает не текстом в теле, а служебным заголовком Location — то есть адресом, куда «перекинуть» дальше. Если в Location приходит ссылка на тот же домен heils-oghamic.com, приложение сохраняет её как адрес политики и считает ответ «белым». Если в Location пр…"
+  }
 }

@@ -41,5 +41,70 @@
   "stdout": "╭─ com.milodix.ranat_hatif ─╮\n│ BeatBattle                │\n│ 992  (vc 992)             │\n╰───────────────────────────╯\n\nDownloading 3 files  (38.1 MB)\n  com.milodix.ranat_hatif-992.apk                  ━━━━━ 100% 13.7… 9.0   0:00:…\n                                                              MB    MB/s        \n  com.milodix.ranat_hatif-992-config.arm64_v8a.apk ━━━━━ 100% 18.3… 11.1  0:00:…\n                                                              MB    MB/s        \n  com.milodix.ranat_hatif-992-asset.apk            ━━━━━ 100% 8.0/… 7.0   0:00:…\n                                                              MB    MB/s        \n\n                       Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                             ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.milodix.ranat_hatif-992.apk                  │ 13.0 MB │\n│ com.milodix.ranat_hatif-992-config.arm64_v8a.apk │ 17.4 MB │\n│ com.milodix.ranat_hatif-992-asset.apk            │ 13.0 MB │\n└──────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да (kotlinx-coroutines 1.6.1)"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, com.milodix.ranat_hatif.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity 6000.3.11f1 (IL2CPP, GameActivity), UniWebView (com.onevcat.uniwebview), Google Android Game SDK (com.google.androidgamesdk: GameActivity, GameTextInput, Swappy), FMOD (org.fmod), TextMeshPro, Unity Timeline, Unity Visual Scripting, Play Asset Delivery (com.unity3d.player.PlayAssetDeliveryUnityWrapper), Guava ListenableFuture (com.google.common.util.concurrent), Ilumisoft.Audio, Ilumisoft.SceneManagement, kotlin-stdlib, kotlinx-coroutines 1.6.1, androidx.activity 1.6.0, androidx.annotation-experimental 1.3.0, androidx.appcompat 1.6.1, androidx.appcompat-resources 1.6.1, androidx.arch.core-runtime 2.1.0, androidx.browser 1.2.0, androidx.core 1.9.0, androidx.core-ktx 1.9.0, androidx.cursoradapter 1.0.0, androidx.customview 1.0.0, androidx.drawerlayout 1.0.0, androidx.emoji2 1.2.0, androidx.emoji2-views-helper 1.2.0, androidx.fragment 1.3.6, androidx.interpolator 1.0.0, androidx.lifecycle 2.5.1, androidx.lifecycle-process 2.4.1, androidx.lifecycle-livedata 2.0.0, androidx.loader 1.0.0, androidx.savedstate 1.2.0, androidx.startup-runtime 1.1.1, androidx.tracing 1.0.0, androidx.vectordrawable 1.1.0, androidx.vectordrawable-animated 1.1.0, androidx.versionedparcelable 1.1.1, androi…"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "PlayerPrefs через Android SharedPreferences: Laz (метка, пишется при запуске), GameStarted (флаг «игра запущена»), LastLaunchTime (дата и время последнего запуска), UnnecessaryString и UnnecessaryFloat (служебные значения-пустышки), Score и Highscore (счёт и рекорд), MusicVolume и SfxVolume (громкость музыки и звуков)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да Подозрительные слова sites.google, ProgressingController, ResolveEntryPoint, MatchesBundlePolicy, GuardUrl, OpenW, AttachWebView, EnterGameFlow, LP, _currentLP, PersistLazFlag, Laz, SeedInternalState, LogNetworkProbeStart, LogNetworkProbeProgress, \"Starting network check at: \", \"Network request in progress...\", \"URL is empty\", \"URL is too long\", GameStarted, LastLaunchTime, Unused_, Temp_, TemporaryObject, \"Unnecessary screen validation\", \"Redundant debug triggered at: \", UnnecessaryString, UnnecessaryFloat"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "fewmets-upcoil.com",
+        "redirects_to": "https://sites.google.com/view/downhill-ride-game/home",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      }
+    ],
+    "collected_data": [
+      "Имя пакета приложения"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Имя пакета приложения\n\nКак собираются: Приложение делает это само, сразу при старте: как только открывается первый экран с крутящимся индикатором загрузки, скрипт запуска (в коде он называется ProgressingController) в методе Start запускает фоновую проверку и одновременно выключает звук у всех игровых источников звука. Никаких окон с вопросами и никаких разрешений человек не видит — у приложения из разрешений есть только доступ в интернет. Имя пакета (внутренний адрес приложения, com.milodix.ranat_hatif) приложение берёт у самой системы Android через встроенный вызов Unity, уже после того как пришёл ответ от сервера: оно нужно, чтобы сравнить его с полученной ссылкой.…\n\nКуда отправляются: Запрос тихо уходит в интернет на один адрес — http://fewmets-upcoil.com/. Этого адреса нет среди обычных текстовых строк программы: он спрятан внутри игрового файла сцены (data.unity3d) как настройка того самого скрипта запуска, поэтому при простом поиске по коду он не находится. Запасных адресов нет, ссылка не собирается из кусков и к ней не приписываются никакие дополнительные параметры — уходит именно этот короткий адрес. Обращение выполняется обычным сетевым запросом Unity в фоне, человек его не видит и остановить не может. Приложению разрешено пройти до десяти перебросов с адреса на адрес (в коде это ограничение выставлено числом 10),…\n\nКак фильтруются пользователи: Само приложение никого не отбирает и никаких признаков человека на сервер не передаёт: в запросе нет ни языка, ни страны, ни модели телефона, ни рекламного номера устройства. Решение «кому что показать» полностью принимает сервер на стороне fewmets-upcoil.com — он видит только сетевой адрес (IP) телефона и те служебные заголовки, которые Unity подставляет в любой запрос сам. По этим данным сервер либо перебрасывает приложение на безобидную страницу, либо на целевую рекламную ссылку. На телефоне остаётся лишь одно короткое правило-проверка (в коде метод MatchesBundlePolicy): приложение смотрит, куда его в итоге перебросили,…\n\nЧто возвращается: Приложение не читает текст страницы, который присылает сервер, — оно смотрит только на две вещи. Первая: успешно ли вообще прошёл запрос. Вторая…"
+  }
 }

@@ -42,5 +42,75 @@
   "stdout": "╭─ com.titus.nordicbet.avrelius ─╮\n│ NordicBet                      │\n│ 1.0  (vc 1)                    │\n╰────────────────────────────────╯\n\nDownloading 4 files  (5.8 MB)\n  com.titus.nordicbet.avrelius-1.apk               ━━━━━ 100% 3.6/… 13.1  0:00:…\n                                                              MB    MB/s        \n  com.titus.nordicbet.avrelius-1-config.en.apk     ━━━━━ 100% 65.7… 281.9 0:00:…\n                                                              kB    kB/s        \n  com.titus.nordicbet.avrelius-1-config.xxhdpi.apk ━━━━━ 100% 78.0… 2.1   0:00:…\n                                                              kB    MB/s        \n  com.titus.nordicbet.avrelius-1-asset.apk         ━━━━━ 100% 2.2/… 8.2   0:00:…\n                                                              MB    MB/s        \n\n                       Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                             ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.titus.nordicbet.avrelius-1.apk               │  3.5 MB │\n│ com.titus.nordicbet.avrelius-1-config.en.apk     │ 64.2 KB │\n│ com.titus.nordicbet.avrelius-1-config.xxhdpi.apk │ 76.2 KB │\n│ com.titus.nordicbet.avrelius-1-asset.apk         │  3.5 MB │\n└──────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "NordicBet (APK-label: Win)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.1.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "37"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, ~2.1"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_WIFI_STATE, android.permission.ACCESS_NETWORK_STATE, com.titus.nordicbet.avrelius.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin (~2.1), kotlinx-coroutines 1.9.0, OkHttp 4.12.0, AndroidX (AppCompat 1.7.1, Activity 1.13.0, ConstraintLayout 2.2.1, Core/Core-KTX 1.19.0, Fragment 1.5.4, Lifecycle, RecyclerView 1.2.1, ViewPager2, Emoji2 1.3.0, Startup 1.1.1, ProfileInstaller 1.4.0, CardView, CoordinatorLayout, DrawerLayout, Transition, Vectordrawable, SavedState, Loader, CustomView, Interpolator, Tracing, Dynamicanimation, Graphics-shapes, NavigationEvent, Databinding/ViewBinding, Compose Runtime Annotation), Google Material Components 1.14.0, Pairip licensecheck (com.pairip.licensecheck) Подозрительные домены нет"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "файл «cfg», ключ «rurl» — сохраняет внешнюю ссылку после перенаправления с сервера; при следующем запуске сразу открывает её во внешнем браузере; также «tracker_prefs» / «transactions» — операции учёта доходов и расходов белого приложения Win"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "rurl, User-Agent, X-Device-Model, Accept-Language, workers.dev, nordicbet, license check, redirect, status\":\"ok, Win, betting"
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "Имя пакета приложения",
+      "Модель телефона",
+      "Язык в заголовке",
+      "Строка User-Agent браузера"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Имя пакета приложения\n• Модель телефона\n• Язык в заголовке\n• Строка User-Agent браузера\n\nКак собираются: Сразу после открытия главного экрана приложение само, без спроса у человека, читает имя пакета этой программы, модель телефона и строку, которой обычный браузер телефона представляется сайтам. Отдельного окна с разрешением нет — человек обычно этого не замечает. Язык в заголовке из настроек телефона не берут: в программе уже зашито английское значение en-US,en;q=0.9. Перед сетевой проверкой приложение ещё смотрит свою внутреннюю память: если раньше уже сохраняли внешнюю ссылку, новый сбор и запрос к серверу могут не понадобиться. Всё это происходит в фоне в первые мгновения после запуска, пока на экране только индикатор загрузки, а обычное содержимое приложения ещё не показано.\n\nКуда отправляются: Собранные сведения незаметно уходят в интернет на адрес https://shrill-glade-5c1c.tiakaviktoriia.workers.dev?app=com.titus.nordicbet.avrelius. Это не показ рекламы на экране, а тихая проверка, что именно показать этому человеку. Адрес в программе спрятан и собирается из зашифрованных кусков; запасных адресов в коде не видно. Запрос уходит тихо в фоне через сетевую библиотеку приложения. Если сервер потом перенаправит на другой сайт, итоговый адрес сохраняют во внутренней памяти приложения под ключом rurl, чтобы при следующем запуске сразу открыть его снова, уже без повторного вопроса к серверу.\n\nКак фильтруются пользователи: На проверку уходят имя пакета, модель телефона, заранее прописанный английский язык в заголовке и строка User-Agent. В самом приложении нет отдельного списка стран, языков или «белых» и «грязных» пользователей: жёстких локальных правил фильтрации на телефоне не видно. Решение «кому показать внешнюю страницу, а кому обычное приложение» делает сервер. Приложение лишь смотрит, остался ли итоговый адрес на том же служебном сайте workers.dev или сервер перенаправил человека на другой адрес. По названию в магазине NordicBet и ярлыку внутри APK Win видно белую оболочку учёта доходов и расходов поверх гемблинг-бренда.\n\nЧто возвращается: Приложение смотрит не столько на текст ответа, сколько на то, остался ли адрес тем же или с…"
+  }
 }
