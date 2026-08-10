@@ -1,0 +1,48 @@
+{
+  "app_id": "com.spuki.kuki.sportingbet",
+  "title": "Melbet",
+  "developer": "TOV PERT",
+  "developer_id": "TOV+PERT",
+  "icon": "/static/app-icons/com_spuki_kuki_sportingbet.png",
+  "url": "https://play.google.com/store/apps/details?id=com.spuki.kuki.sportingbet&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 20, 2026",
+  "updated": "Jul 20, 2026",
+  "version": "Varies with device",
+  "summary": "Accurate timer and stopwatch for workouts, work, and everyday use.",
+  "keyword": "url-batch",
+  "folder": "Melbet-TOV PERT",
+  "path": "url-batch/Melbet-TOV PERT",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.spuki.kuki.sportingbet-1-asset.apk",
+    "com.spuki.kuki.sportingbet-1-config.en.apk",
+    "com.spuki.kuki.sportingbet-1-config.lt.apk",
+    "com.spuki.kuki.sportingbet-1-config.ru.apk",
+    "com.spuki.kuki.sportingbet-1-config.xxhdpi.apk",
+    "com.spuki.kuki.sportingbet-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Melbet-TOV PERT",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.spuki.kuki.sportingbet ─╮\n│ Melbet                       │\n│ 1.0  (vc 1)                  │\n╰──────────────────────────────╯\n\nDownloading 6 files  (5.7 MB)\n  com.spuki.kuki.sportingbet-1.apk               ━━━━━━ 100% 3.7/… 16.0   0:00:…\n                                                             MB    MB/s         \n  com.spuki.kuki.sportingbet-1-config.en.apk     ━━━━━━ 100% 49.6… ?      0:00:…\n                                                             kB                 \n  com.spuki.kuki.sportingbet-1-config.lt.apk     ━━━━━━ 100% 33.2… ?      0:00:…\n                                                             kB                 \n  com.spuki.kuki.sportingbet-1-config.ru.apk     ━━━━━━ 100% 33.2… ?      0:00:…\n                                                             kB                 \n  com.spuki.kuki.sportingbet-1-config.xxhdpi.apk ━━━━━━ 100% 61.9… ?      0:00:…\n                                                             kB                 \n  com.spuki.kuki.sportingbet-1-asset.apk         ━━━━━━ 100% 2.1/… 10.0   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                           ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.spuki.kuki.sportingbet-1.apk               │  3.5 MB │\n│ com.spuki.kuki.sportingbet-1-config.en.apk     │ 48.4 KB │\n│ com.spuki.kuki.sportingbet-1-config.lt.apk     │ 32.4 KB │\n│ com.spuki.kuki.sportingbet-1-config.ru.apk     │ 32.4 KB │\n│ com.spuki.kuki.sportingbet-1-config.xxhdpi.apk │ 60.4 KB │\n│ com.spuki.kuki.sportingbet-1-asset.apk         │  3.5 MB │\n└────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.spuki.kuki.sportingbet ─╮\n│ Melbet                       │\n│ 1.0  (vc 1)                  │\n╰──────────────────────────────╯\n\nDownloading 6 files  (5.7 MB)\n  com.spuki.kuki.sportingbet-1.apk               ━━━━━━ 100% 3.7/… 16.0   0:00:…\n                                                             MB    MB/s         \n  com.spuki.kuki.sportingbet-1-config.en.apk     ━━━━━━ 100% 49.6… ?      0:00:…\n                                                             kB                 \n  com.spuki.kuki.sportingbet-1-config.lt.apk     ━━━━━━ 100% 33.2… ?      0:00:…\n                                                             kB                 \n  com.spuki.kuki.sportingbet-1-config.ru.apk     ━━━━━━ 100% 33.2… ?      0:00:…\n                                                             kB                 \n  com.spuki.kuki.sportingbet-1-config.xxhdpi.apk ━━━━━━ 100% 61.9… ?      0:00:…\n                                                             kB                 \n  com.spuki.kuki.sportingbet-1-asset.apk         ━━━━━━ 100% 2.1/… 10.0   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                           ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.spuki.kuki.sportingbet-1.apk               │  3.5 MB │\n│ com.spuki.kuki.sportingbet-1-config.en.apk     │ 48.4 KB │\n│ com.spuki.kuki.sportingbet-1-config.lt.apk     │ 32.4 KB │\n│ com.spuki.kuki.sportingbet-1-config.ru.apk     │ 32.4 KB │\n│ com.spuki.kuki.sportingbet-1-config.xxhdpi.apk │ 60.4 KB │\n│ com.spuki.kuki.sportingbet-1-asset.apk         │  3.5 MB │\n└────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
