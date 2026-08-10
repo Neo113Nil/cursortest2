@@ -1,0 +1,56 @@
+{
+  "app_id": "com.penaltyking.jhunify.penaltsik.joernu",
+  "title": "Betano Apuestas",
+  "developer": "SVIZHI LLC",
+  "score": 5,
+  "icon": "/static/app-icons/com_penaltyking_jhunify_penaltsik_joernu.png",
+  "url": "https://play.google.com/store/apps/details?id=com.penaltyking.jhunify.penaltsik.joernu&hl=en&gl=us",
+  "keyword": "betano",
+  "country": "India",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260810_214322_India_betano_search",
+  "search_title": "Betano Apuestas",
+  "search_developer": "SVIZHI LLC",
+  "rank": 2,
+  "developer_id": "SVIZHI+LLC",
+  "released": "Jul 12, 2026",
+  "updated": "2026-08-04",
+  "version": "1.2",
+  "summary": "Experience thrilling penalty shootouts!",
+  "folder": "Betano Apuestas-SVIZHI LLC",
+  "path": "betano/Betano Apuestas-SVIZHI LLC",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.penaltyking.jhunify.penaltsik.joernu-3-asset.apk",
+    "com.penaltyking.jhunify.penaltsik.joernu-3-config.arm64_v8a.apk",
+    "com.penaltyking.jhunify.penaltsik.joernu-3-config.en.apk",
+    "com.penaltyking.jhunify.penaltsik.joernu-3-config.lt.apk",
+    "com.penaltyking.jhunify.penaltsik.joernu-3-config.ru.apk",
+    "com.penaltyking.jhunify.penaltsik.joernu-3-config.xxhdpi.apk",
+    "com.penaltyking.jhunify.penaltsik.joernu-3.apk"
+  ],
+  "target": "/root/play-collector/загрузки/betano/Betano Apuestas-SVIZHI LLC",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.penaltyking.jhunify.penaltsik.joernu ─╮\n│ Betano Apuestas                            │\n│ 1.2  (vc 3)                                │\n╰────────────────────────────────────────────╯\n\nDownloading 7 files  (10.4 MB)\n  com.penaltyking.jhunify.penaltsik.joernu-3.apk                  ━ 100% … 3… 0…\n                                                                         … M…   \n  com.penaltyking.jhunify.penaltsik.joernu-3-config.arm64_v8a.apk ━ 100% … ?  0…\n                                                                         …      \n  com.penaltyking.jhunify.penaltsik.joernu-3-config.en.apk        ━ 100% … ?  0…\n                                                                         …      \n  com.penaltyking.jhunify.penaltsik.joernu-3-config.lt.apk        ━ 100% … ?  0…\n                                                                         …      \n  com.penaltyking.jhunify.penaltsik.joernu-3-config.ru.apk        ━ 100% … ?  0…\n                                                                         …      \n  com.penaltyking.jhunify.penaltsik.joernu-3-config.xxhdpi.apk    ━ 100% … ?  0…\n                                                                         …      \n  com.penaltyking.jhunify.penaltsik.joernu-3-asset.apk            ━ 100% … 2… 0…\n                                                                         … M…   \n\n                              Downloaded files                               \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.penaltyking.jhunify.penaltsik.joernu-3.apk                  │  6.1 MB │\n│ com.penaltyking.jhunify.penaltsik.joernu-3-config.arm64_v8a.apk │ 44.4 KB │\n│ com.penaltyking.jhunify.penaltsik.joernu-3-config.en.apk        │ 48.4 KB │\n│ com.penaltyking.jhunify.penaltsik.joernu-3-config.lt.apk        │ 24.4 KB │\n│ com.penaltyking.jhunify.penaltsik.joernu-3-config.ru.apk        │ 24.4 KB │\n│ com.penaltyking.jhunify.penaltsik.joernu-3-config.xxhdpi.apk    │ 60.4 KB │\n│ com.penaltyking.jhunify.penaltsik.joernu-3-asset.apk            │  6.1 MB │\n└─────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.penaltyking.jhunify.penaltsik.joernu ─╮\n│ Betano Apuestas                            │\n│ 1.2  (vc 3)                                │\n╰────────────────────────────────────────────╯\n\nDownloading 7 files  (10.4 MB)\n  com.penaltyking.jhunify.penaltsik.joernu-3.apk                  ━ 100% … 3… 0…\n                                                                         … M…   \n  com.penaltyking.jhunify.penaltsik.joernu-3-config.arm64_v8a.apk ━ 100% … ?  0…\n                                                                         …      \n  com.penaltyking.jhunify.penaltsik.joernu-3-config.en.apk        ━ 100% … ?  0…\n                                                                         …      \n  com.penaltyking.jhunify.penaltsik.joernu-3-config.lt.apk        ━ 100% … ?  0…\n                                                                         …      \n  com.penaltyking.jhunify.penaltsik.joernu-3-config.ru.apk        ━ 100% … ?  0…\n                                                                         …      \n  com.penaltyking.jhunify.penaltsik.joernu-3-config.xxhdpi.apk    ━ 100% … ?  0…\n                                                                         …      \n  com.penaltyking.jhunify.penaltsik.joernu-3-asset.apk            ━ 100% … 2… 0…\n                                                                         … M…   \n\n                              Downloaded files                               \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.penaltyking.jhunify.penaltsik.joernu-3.apk                  │  6.1 MB │\n│ com.penaltyking.jhunify.penaltsik.joernu-3-config.arm64_v8a.apk │ 44.4 KB │\n│ com.penaltyking.jhunify.penaltsik.joernu-3-config.en.apk        │ 48.4 KB │\n│ com.penaltyking.jhunify.penaltsik.joernu-3-config.lt.apk        │ 24.4 KB │\n│ com.penaltyking.jhunify.penaltsik.joernu-3-config.ru.apk        │ 24.4 KB │\n│ com.penaltyking.jhunify.penaltsik.joernu-3-config.xxhdpi.apk    │ 60.4 KB │\n│ com.penaltyking.jhunify.penaltsik.joernu-3-asset.apk            │  6.1 MB │\n└─────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
