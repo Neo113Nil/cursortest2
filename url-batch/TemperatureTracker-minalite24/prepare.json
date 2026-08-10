@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "apks": [
+    "com.thermometerforroom-15-config.lt.apk",
+    "com.thermometerforroom-15-config.en.apk",
+    "com.thermometerforroom-15-config.xxhdpi.apk",
+    "com.thermometerforroom-15.apk",
+    "com.thermometerforroom-15-asset.apk",
+    "com.thermometerforroom-15-config.ru.apk"
+  ],
+  "base_apk": "com.thermometerforroom-15.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 5058 (0%)\nINFO  - progress: 917 of 5058 (18%)\nINFO  - progress: 924 of 5058 (18%)\nINFO  - progress: 951 of 5058 (18%)\nINFO  - progress: 1124 of 5058 (22%)\nINFO  - progress: 1234 of 5058 (24%)\nINFO  - progress: 1355 of 5058 (26%)\nINFO  - progress: 1387 of 5058 (27%)\nINFO  - progress: 1425 of 5058 (28%)\nINFO  - progress: 1742 of 5058 (34%)\nINFO  - progress: 1919 of 5058 (37%)\nINFO  - progress: 1977 of 5058 (39%)\nINFO  - progress: 2049 of 5058 (40%)\nINFO  - progress: 2082 of 5058 (41%)\nINFO  - progress: 2122 of 5058 (41%)\nINFO  - progress: 2168 of 5058 (42%)\nINFO  - progress: 2196 of 5058 (43%)\nINFO  - progress: 2199 of 5058 (43%)\nINFO  - progress: 2411 of 5058 (47%)\nINFO  - progress: 2461 of 5058 (48%)\nINFO  - progress: 2485 of 5058 (49%)\nINFO  - progress: 2558 of 5058 (50%)\nINFO  - progress: 2578 of 5058 (50%)\nINFO  - progress: 2605 of 5058 (51%)\nINFO  - progress: 2827 of 5058 (55%)\nINFO  - progress: 2906 of 5058 (57%)\nINFO  - progress: 2936 of 5058 (58%)\nINFO  - progress: 2942 of 5058 (58%)\nINFO  - progress: 2954 of 5058 (58%)\nINFO  - progress: 2960 of 5058 (58%)\nINFO  - progress: 2988 of 5058 (59%)\nINFO  - progress: 3013 of 5058 (59%)\nINFO  - progress: 3055 of 5058 (60%)\nINFO  - progress: 3060 of 5058 (60%)\nINFO  - progress: 3067 of 5058 (60%)\nINFO  - progress: 3074 of 5058 (60%)\nINFO  - progress: 3261 of 5058 (64%)\nINFO  - progress: 3385 of 5058 (66%)\nINFO  - progress: 3479 of 5058 (68%)\nINFO  - progress: 3579 of 5058 (70%)\nINFO  - progress: 3785 of 5058 (74%)\nINFO  - progress: 3807 of 5058 (75%)\nINFO  - progress: 3826 of 5058 (75%)\nINFO  - progress: 3833 of 5058 (75%)\nINFO  - progress: 3837 of 5058 (75%)\nINFO  - progress: 3848 of 5058 (76%)\nINFO  - progress: 3869 of 5058 (76%)\nINFO  - progress: 3892 of 5058 (76%)\nINFO  - progress: 3896 of 5058 (77%)\nINFO  - progress: 3927 of 5058 (77%)\nINFO  - progress: 3927 of 5058 (77%)\nINFO  - progress: 4121 of 5058 (81%)\nINFO  - progress: 4121 of 5058 (81%)\nINFO  - progress: 4244 of 5058 (83%)\nINFO  - progress: 4426 of 5058 (87%)\nINFO  - progress: 4645 of 5058 (91%)\nINFO  - progress: 4671 of 5058 (92%)\nINFO  - progress: 4952 of 5058 (97%)\n                                                             \nERROR - finished with errors, count: 11\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/url-batch/TemperatureTracker-minalite24/decompiled",
+    "skipped": false,
+    "base_apk": "com.thermometerforroom-15.apk"
+  },
+  "analysis_files": [
+    "com.thermometerforroom-15-config.lt.apk",
+    "com.thermometerforroom-15-config.en.apk",
+    "com.thermometerforroom-15-config.xxhdpi.apk",
+    "com.thermometerforroom-15.apk",
+    "com.thermometerforroom-15-asset.apk",
+    "com.thermometerforroom-15-config.ru.apk",
+    "apk/com.thermometerforroom-15-config.lt.apk",
+    "apk/com.thermometerforroom-15-config.en.apk",
+    "apk/com.thermometerforroom-15-config.xxhdpi.apk",
+    "apk/com.thermometerforroom-15.apk",
+    "apk/com.thermometerforroom-15-asset.apk",
+    "apk/com.thermometerforroom-15-config.ru.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/okhttp3/",
+    "decompiled/sources/okio/",
+    "decompiled/sources/org/",
+    "decompiled/sources/retrofit2/"
+  ],
+  "errors": []
+}
