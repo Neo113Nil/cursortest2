@@ -1,0 +1,56 @@
+{
+  "app_id": "com.zsagar.freenevillegoddardbookspdf",
+  "title": "Betano Kick",
+  "developer": "Sagar Basnet",
+  "score": null,
+  "icon": "/static/app-icons/com_zsagar_freenevillegoddardbookspdf.png",
+  "url": "https://play.google.com/store/apps/details?id=com.zsagar.freenevillegoddardbookspdf&hl=en&gl=us",
+  "keyword": "betano",
+  "country": "India",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260810_214322_India_betano_search",
+  "search_title": "Betano Kick",
+  "search_developer": "Sagar Basnet",
+  "rank": 8,
+  "developer_id": "Sagar+Basnet",
+  "released": "Jul 19, 2020",
+  "updated": "Aug 7, 2026",
+  "version": "Varies with device",
+  "summary": "An engaging game where you have to match pairs of tiles!",
+  "folder": "Betano Kick-Sagar Basnet",
+  "path": "betano/Betano Kick-Sagar Basnet",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.zsagar.freenevillegoddardbookspdf-7-asset.apk",
+    "com.zsagar.freenevillegoddardbookspdf-7-config.arm64_v8a.apk",
+    "com.zsagar.freenevillegoddardbookspdf-7-config.en.apk",
+    "com.zsagar.freenevillegoddardbookspdf-7-config.lt.apk",
+    "com.zsagar.freenevillegoddardbookspdf-7-config.ru.apk",
+    "com.zsagar.freenevillegoddardbookspdf-7-config.xxhdpi.apk",
+    "com.zsagar.freenevillegoddardbookspdf-7.apk"
+  ],
+  "target": "/root/play-collector/загрузки/betano/Betano Kick-Sagar Basnet",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.zsagar.freenevillegoddardbookspdf ─╮\n│ Betano Kick                             │\n│ 7.6.6  (vc 7)                           │\n╰─────────────────────────────────────────╯\n\nDownloading 7 files  (30.4 MB)\n  com.zsagar.freenevillegoddardbookspdf-7.apk                  ━━ 100% 8… 3… 0:…\n                                                                       MB M…    \n  com.zsagar.freenevillegoddardbookspdf-7-config.arm64_v8a.apk ━━ 100% 1… 3… 0:…\n                                                                       MB M…    \n  com.zsagar.freenevillegoddardbookspdf-7-config.en.apk        ━━ 100% 3… ?  0:…\n                                                                       kB       \n  com.zsagar.freenevillegoddardbookspdf-7-config.lt.apk        ━━ 100% 2… ?  0:…\n                                                                       kB       \n  com.zsagar.freenevillegoddardbookspdf-7-config.ru.apk        ━━ 100% 2… ?  0:…\n                                                                       kB       \n  com.zsagar.freenevillegoddardbookspdf-7-config.xxhdpi.apk    ━━ 100% 1… 3… 0:…\n                                                                       kB M…    \n  com.zsagar.freenevillegoddardbookspdf-7-asset.apk            ━━ 100% 7… 2… 0:…\n                                                                       MB M…    \n\n                             Downloaded files                              \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                         ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.zsagar.freenevillegoddardbookspdf-7.apk                  │   8.0 MB │\n│ com.zsagar.freenevillegoddardbookspdf-7-config.arm64_v8a.apk │  15.4 MB │\n│ com.zsagar.freenevillegoddardbookspdf-7-config.en.apk        │  32.4 KB │\n│ com.zsagar.freenevillegoddardbookspdf-7-config.lt.apk        │  20.4 KB │\n│ com.zsagar.freenevillegoddardbookspdf-7-config.ru.apk        │  20.4 KB │\n│ com.zsagar.freenevillegoddardbookspdf-7-config.xxhdpi.apk    │ 153.5 KB │\n│ com.zsagar.freenevillegoddardbookspdf-7-asset.apk            │   8.0 MB │\n└──────────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.zsagar.freenevillegoddardbookspdf ─╮\n│ Betano Kick                             │\n│ 7.6.6  (vc 7)                           │\n╰─────────────────────────────────────────╯\n\nDownloading 7 files  (30.4 MB)\n  com.zsagar.freenevillegoddardbookspdf-7.apk                  ━━ 100% 8… 3… 0:…\n                                                                       MB M…    \n  com.zsagar.freenevillegoddardbookspdf-7-config.arm64_v8a.apk ━━ 100% 1… 3… 0:…\n                                                                       MB M…    \n  com.zsagar.freenevillegoddardbookspdf-7-config.en.apk        ━━ 100% 3… ?  0:…\n                                                                       kB       \n  com.zsagar.freenevillegoddardbookspdf-7-config.lt.apk        ━━ 100% 2… ?  0:…\n                                                                       kB       \n  com.zsagar.freenevillegoddardbookspdf-7-config.ru.apk        ━━ 100% 2… ?  0:…\n                                                                       kB       \n  com.zsagar.freenevillegoddardbookspdf-7-config.xxhdpi.apk    ━━ 100% 1… 3… 0:…\n                                                                       kB M…    \n  com.zsagar.freenevillegoddardbookspdf-7-asset.apk            ━━ 100% 7… 2… 0:…\n                                                                       MB M…    \n\n                             Downloaded files                              \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                         ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.zsagar.freenevillegoddardbookspdf-7.apk                  │   8.0 MB │\n│ com.zsagar.freenevillegoddardbookspdf-7-config.arm64_v8a.apk │  15.4 MB │\n│ com.zsagar.freenevillegoddardbookspdf-7-config.en.apk        │  32.4 KB │\n│ com.zsagar.freenevillegoddardbookspdf-7-config.lt.apk        │  20.4 KB │\n│ com.zsagar.freenevillegoddardbookspdf-7-config.ru.apk        │  20.4 KB │\n│ com.zsagar.freenevillegoddardbookspdf-7-config.xxhdpi.apk    │ 153.5 KB │\n│ com.zsagar.freenevillegoddardbookspdf-7-asset.apk            │   8.0 MB │\n└──────────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
