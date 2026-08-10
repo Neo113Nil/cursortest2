@@ -1,0 +1,46 @@
+{
+  "app_id": "com.kavik.mekber.spillehallen",
+  "title": "Spillehallen",
+  "developer": "TOV PERT",
+  "developer_id": "TOV+PERT",
+  "icon": "/static/app-icons/com_kavik_mekber_spillehallen.png",
+  "url": "https://play.google.com/store/apps/details?id=com.kavik.mekber.spillehallen&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 25, 2026",
+  "updated": "Jul 25, 2026",
+  "version": "Varies with device",
+  "summary": "Spillehallen Win is a simple and accurate stopwatch for everyday use.",
+  "keyword": "url-batch",
+  "folder": "Spillehallen-TOV PERT",
+  "path": "url-batch/Spillehallen-TOV PERT",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.kavik.mekber.spillehallen-1-asset.apk",
+    "com.kavik.mekber.spillehallen-1-config.en.apk",
+    "com.kavik.mekber.spillehallen-1-config.xxhdpi.apk",
+    "com.kavik.mekber.spillehallen-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Spillehallen-TOV PERT",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.kavik.mekber.spillehallen ─╮\n│ Spillehallen                    │\n│ 1.0  (vc 1)                     │\n╰─────────────────────────────────╯\n\nDownloading 4 files  (5.3 MB)\n  com.kavik.mekber.spillehallen-1.apk               ━━━━━ 100% 3.5/… 20.2 0:00:…\n                                                               MB    MB/s       \n  com.kavik.mekber.spillehallen-1-config.en.apk     ━━━━━ 100% 74.1… 2.8  0:00:…\n                                                               kB    MB/s       \n  com.kavik.mekber.spillehallen-1-config.xxhdpi.apk ━━━━━ 100% 86.4… 2.3  0:00:…\n                                                               kB    MB/s       \n  com.kavik.mekber.spillehallen-1-asset.apk         ━━━━━ 100% 2.0/… 16.6 0:00:…\n                                                               MB    MB/s       \n\n                       Downloaded files                        \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                              ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.kavik.mekber.spillehallen-1.apk               │  3.3 MB │\n│ com.kavik.mekber.spillehallen-1-config.en.apk     │ 72.4 KB │\n│ com.kavik.mekber.spillehallen-1-config.xxhdpi.apk │ 84.4 KB │\n│ com.kavik.mekber.spillehallen-1-asset.apk         │  3.3 MB │\n└───────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.kavik.mekber.spillehallen ─╮\n│ Spillehallen                    │\n│ 1.0  (vc 1)                     │\n╰─────────────────────────────────╯\n\nDownloading 4 files  (5.3 MB)\n  com.kavik.mekber.spillehallen-1.apk               ━━━━━ 100% 3.5/… 20.2 0:00:…\n                                                               MB    MB/s       \n  com.kavik.mekber.spillehallen-1-config.en.apk     ━━━━━ 100% 74.1… 2.8  0:00:…\n                                                               kB    MB/s       \n  com.kavik.mekber.spillehallen-1-config.xxhdpi.apk ━━━━━ 100% 86.4… 2.3  0:00:…\n                                                               kB    MB/s       \n  com.kavik.mekber.spillehallen-1-asset.apk         ━━━━━ 100% 2.0/… 16.6 0:00:…\n                                                               MB    MB/s       \n\n                       Downloaded files                        \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                              ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.kavik.mekber.spillehallen-1.apk               │  3.3 MB │\n│ com.kavik.mekber.spillehallen-1-config.en.apk     │ 72.4 KB │\n│ com.kavik.mekber.spillehallen-1-config.xxhdpi.apk │ 84.4 KB │\n│ com.kavik.mekber.spillehallen-1-asset.apk         │  3.3 MB │\n└───────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
