@@ -1,0 +1,49 @@
+{
+  "app_id": "xyz.silasmem",
+  "title": "Betclie",
+  "developer": "Pooja Game Solutions",
+  "developer_id": "Pooja+Game+Solutions",
+  "icon": "/static/app-icons/xyz_silasmem.png",
+  "url": "https://play.google.com/store/apps/details?id=xyz.silasmem&hl=en&gl=us",
+  "score": null,
+  "released": "Mar 3, 2026",
+  "updated": "Jun 10, 2026",
+  "version": "Varies with device",
+  "summary": "Flip cards to test your memory skills in Betclie .",
+  "keyword": "url-batch",
+  "folder": "Betclie-Pooja Game Solutions",
+  "path": "url-batch/Betclie-Pooja Game Solutions",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "xyz.silasmem-16-asset.apk",
+    "xyz.silasmem-16-config.arm64_v8a.apk",
+    "xyz.silasmem-16-config.en.apk",
+    "xyz.silasmem-16-config.lt.apk",
+    "xyz.silasmem-16-config.ru.apk",
+    "xyz.silasmem-16-config.xxhdpi.apk",
+    "xyz.silasmem-16.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Betclie-Pooja Game Solutions",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ xyz.silasmem ──╮\n│ Betclie         │\n│ 1.0.16  (vc 16) │\n╰─────────────────╯\n\nDownloading 7 files  (36.1 MB)\n  xyz.silasmem-16.apk                  ━━━━━━━━━ 100% 25.7/25… 11.8 MB/s 0:00:00\n                                                      MB                        \n  xyz.silasmem-16-config.arm64_v8a.apk ━━━━━━━━━ 100% 45.5/45… ?         0:00:00\n                                                      kB                        \n  xyz.silasmem-16-config.en.apk        ━━━━━━━━━ 100% 74.1/74… 493.4     0:00:00\n                                                      kB       kB/s             \n  xyz.silasmem-16-config.lt.apk        ━━━━━━━━━ 100% 29.1/29… ?         0:00:00\n                                                      kB                        \n  xyz.silasmem-16-config.ru.apk        ━━━━━━━━━ 100% 29.1/29… ?         0:00:00\n                                                      kB                        \n  xyz.silasmem-16-config.xxhdpi.apk    ━━━━━━━━━ 100% 66.5/66… 697.2     0:00:00\n                                                      kB       kB/s             \n  xyz.silasmem-16-asset.apk            ━━━━━━━━━ 100% 11.9/11… 12.6 MB/s 0:00:00\n                                                      MB                        \n\n                 Downloaded files                 \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                 ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ xyz.silasmem-16.apk                  │ 24.5 MB │\n│ xyz.silasmem-16-config.arm64_v8a.apk │ 44.4 KB │\n│ xyz.silasmem-16-config.en.apk        │ 72.4 KB │\n│ xyz.silasmem-16-config.lt.apk        │ 28.4 KB │\n│ xyz.silasmem-16-config.ru.apk        │ 28.4 KB │\n│ xyz.silasmem-16-config.xxhdpi.apk    │ 64.9 KB │\n│ xyz.silasmem-16-asset.apk            │ 24.5 MB │\n└──────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ xyz.silasmem ──╮\n│ Betclie         │\n│ 1.0.16  (vc 16) │\n╰─────────────────╯\n\nDownloading 7 files  (36.1 MB)\n  xyz.silasmem-16.apk                  ━━━━━━━━━ 100% 25.7/25… 11.8 MB/s 0:00:00\n                                                      MB                        \n  xyz.silasmem-16-config.arm64_v8a.apk ━━━━━━━━━ 100% 45.5/45… ?         0:00:00\n                                                      kB                        \n  xyz.silasmem-16-config.en.apk        ━━━━━━━━━ 100% 74.1/74… 493.4     0:00:00\n                                                      kB       kB/s             \n  xyz.silasmem-16-config.lt.apk        ━━━━━━━━━ 100% 29.1/29… ?         0:00:00\n                                                      kB                        \n  xyz.silasmem-16-config.ru.apk        ━━━━━━━━━ 100% 29.1/29… ?         0:00:00\n                                                      kB                        \n  xyz.silasmem-16-config.xxhdpi.apk    ━━━━━━━━━ 100% 66.5/66… 697.2     0:00:00\n                                                      kB       kB/s             \n  xyz.silasmem-16-asset.apk            ━━━━━━━━━ 100% 11.9/11… 12.6 MB/s 0:00:00\n                                                      MB                        \n\n                 Downloaded files                 \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                 ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ xyz.silasmem-16.apk                  │ 24.5 MB │\n│ xyz.silasmem-16-config.arm64_v8a.apk │ 44.4 KB │\n│ xyz.silasmem-16-config.en.apk        │ 72.4 KB │\n│ xyz.silasmem-16-config.lt.apk        │ 28.4 KB │\n│ xyz.silasmem-16-config.ru.apk        │ 28.4 KB │\n│ xyz.silasmem-16-config.xxhdpi.apk    │ 64.9 KB │\n│ xyz.silasmem-16-asset.apk            │ 24.5 MB │\n└──────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
