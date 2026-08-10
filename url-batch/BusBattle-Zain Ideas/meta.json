@@ -1,0 +1,45 @@
+{
+  "app_id": "com.tgg.eurobusdriving.bus.game.bus",
+  "title": "BusBattle",
+  "developer": "Zain Ideas",
+  "developer_id": "Zain+Ideas",
+  "icon": "/static/app-icons/com_tgg_eurobusdriving_bus_game_bus.png",
+  "url": "https://play.google.com/store/apps/details?id=com.tgg.eurobusdriving.bus.game.bus&hl=en&gl=us",
+  "score": 3.4166667,
+  "released": "Nov 17, 2024",
+  "updated": "2026-07-22",
+  "version": "51",
+  "summary": "Enjoy the journey of city bus driving!",
+  "keyword": "url-batch",
+  "folder": "BusBattle-Zain Ideas",
+  "path": "url-batch/BusBattle-Zain Ideas",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.tgg.eurobusdriving.bus.game.bus-51-asset.apk",
+    "com.tgg.eurobusdriving.bus.game.bus-51-config.arm64_v8a.apk",
+    "com.tgg.eurobusdriving.bus.game.bus-51.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/BusBattle-Zain Ideas",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.tgg.eurobusdriving.bus.game.bus ─╮\n│ BusBattle                             │\n│ 51  (vc 51)                           │\n╰───────────────────────────────────────╯\n\nDownloading 3 files  (134.5 MB)\n  com.tgg.eurobusdriving.bus.game.bus-51.apk                  ━━ 100% 6… 1… 0:0…\n                                                                      MB M…     \n  com.tgg.eurobusdriving.bus.game.bus-51-config.arm64_v8a.apk ━━ 100% 2… 8… 0:0…\n                                                                      MB M…     \n  com.tgg.eurobusdriving.bus.game.bus-51-asset.apk            ━━ 100% 5… 1… 0:0…\n                                                                      MB M…     \n\n                            Downloaded files                             \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                        ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.tgg.eurobusdriving.bus.game.bus-51.apk                  │ 57.5 MB │\n│ com.tgg.eurobusdriving.bus.game.bus-51-config.arm64_v8a.apk │ 22.0 MB │\n│ com.tgg.eurobusdriving.bus.game.bus-51-asset.apk            │ 57.5 MB │\n└─────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.tgg.eurobusdriving.bus.game.bus ─╮\n│ BusBattle                             │\n│ 51  (vc 51)                           │\n╰───────────────────────────────────────╯\n\nDownloading 3 files  (134.5 MB)\n  com.tgg.eurobusdriving.bus.game.bus-51.apk                  ━━ 100% 6… 1… 0:0…\n                                                                      MB M…     \n  com.tgg.eurobusdriving.bus.game.bus-51-config.arm64_v8a.apk ━━ 100% 2… 8… 0:0…\n                                                                      MB M…     \n  com.tgg.eurobusdriving.bus.game.bus-51-asset.apk            ━━ 100% 5… 1… 0:0…\n                                                                      MB M…     \n\n                            Downloaded files                             \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                        ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.tgg.eurobusdriving.bus.game.bus-51.apk                  │ 57.5 MB │\n│ com.tgg.eurobusdriving.bus.game.bus-51-config.arm64_v8a.apk │ 22.0 MB │\n│ com.tgg.eurobusdriving.bus.game.bus-51-asset.apk            │ 57.5 MB │\n└─────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
