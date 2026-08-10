@@ -1,0 +1,34 @@
+{
+  "ok": true,
+  "apks": [
+    "com.dsgamesolutions.spacegrowerbattle-1-config.ru.apk",
+    "com.dsgamesolutions.spacegrowerbattle-1-config.lt.apk",
+    "com.dsgamesolutions.spacegrowerbattle-1.apk",
+    "com.dsgamesolutions.spacegrowerbattle-1-config.en.apk",
+    "com.dsgamesolutions.spacegrowerbattle-1-config.xxhdpi.apk"
+  ],
+  "base_apk": "com.dsgamesolutions.spacegrowerbattle-1.apk",
+  "jadx": {
+    "ok": false,
+    "exit_code": 1,
+    "stdout": "uential(ReduceOps.java:921)\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\n\tat java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)\n\tat jadx.plugins.input.java.JavaInputLoader.collectFiles(JavaInputLoader.java:37)\n\tat jadx.plugins.input.java.JavaInputPlugin.loadClassFiles(JavaInputPlugin.java:36)\n\tat jadx.plugins.input.java.JavaInputPlugin.loadClassFiles(JavaInputPlugin.java:32)\n\tat jadx.api.JadxDecompiler.loadInputFiles(JadxDecompiler.java:156)\n\tat jadx.api.JadxDecompiler.load(JadxDecompiler.java:120)\n\tat jadx.cli.JadxCLI.processAndSave(JadxCLI.java:59)\n\tat jadx.cli.JadxCLI.execute(JadxCLI.java:37)\n\tat jadx.cli.JadxCLI.main(JadxCLI.java:27)\nCaused by: java.util.zip.ZipException: zip END header not found\n\tat java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1649)\n\tat java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1657)\n\tat java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1495)\n\tat java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1458)\n\tat java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:724)\n\tat java.base/java.util.zip.ZipFile.<init>(ZipFile.java:251)\n\tat jadx.core.utils.files.ZipFile.<init>(ZipFile.java:30)\n\tat jadx.core.utils.files.ZipFile.<init>(ZipFile.java:18)\n\tat jadx.core.utils.files.ZipFile.<init>(ZipFile.java:14)\n\tat jadx.api.plugins.utils.ZipSecurity.visitZipEntries(ZipSecurity.java:130)\n\t... 20 common frames omitted\nERROR - Process error:\njadx.core.utils.exceptions.JadxRuntimeException: Failed to process zip file: /root/play-collector/загрузки/url-batch/Space Grower Battle-Pooja Game Solutions/apk/com.dsgamesolutions.spacegrowerbattle-1.apk\n\tat jadx.api.plugins.utils.ZipSecurity.visitZipEntries(ZipSecurity.java:148)\n\tat jadx.api.ResourcesLoader.defaultLoadFile(ResourcesLoader.java:211)\n\tat jadx.api.ResourcesLoader.loadFile(ResourcesLoader.java:206)\n\tat jadx.api.ResourcesLoader.load(ResourcesLoader.java:59)\n\tat jadx.api.JadxDecompiler.getResources(JadxDecompiler.java:435)\n\tat jadx.api.JadxDecompiler.load(JadxDecompiler.java:128)\n\tat jadx.cli.JadxCLI.processAndSave(JadxCLI.java:59)\n\tat jadx.cli.JadxCLI.execute(JadxCLI.java:37)\n\tat jadx.cli.JadxCLI.main(JadxCLI.java:27)\nCaused by: java.util.zip.ZipException: zip END header not found\n\tat java.base/java.util.zip.ZipFile$Source.findEND(ZipFile.java:1649)\n\tat java.base/java.util.zip.ZipFile$Source.initCEN(ZipFile.java:1657)\n\tat java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1495)\n\tat java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1458)\n\tat java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:724)\n\tat java.base/java.util.zip.ZipFile.<init>(ZipFile.java:251)\n\tat jadx.core.utils.files.ZipFile.<init>(ZipFile.java:30)\n\tat jadx.core.utils.files.ZipFile.<init>(ZipFile.java:18)\n\tat jadx.core.utils.files.ZipFile.<init>(ZipFile.java:14)\n\tat jadx.api.plugins.utils.ZipSecurity.visitZipEntries(ZipSecurity.java:130)\n\t... 8 common frames omitted\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/url-batch/Space Grower Battle-Pooja Game Solutions/decompiled",
+    "skipped": false,
+    "base_apk": "com.dsgamesolutions.spacegrowerbattle-1.apk"
+  },
+  "analysis_files": [
+    "com.dsgamesolutions.spacegrowerbattle-1-config.ru.apk",
+    "com.dsgamesolutions.spacegrowerbattle-1-config.lt.apk",
+    "com.dsgamesolutions.spacegrowerbattle-1.apk",
+    "com.dsgamesolutions.spacegrowerbattle-1-config.en.apk",
+    "com.dsgamesolutions.spacegrowerbattle-1-config.xxhdpi.apk",
+    "apk/com.dsgamesolutions.spacegrowerbattle-1-config.ru.apk",
+    "apk/com.dsgamesolutions.spacegrowerbattle-1-config.lt.apk",
+    "apk/com.dsgamesolutions.spacegrowerbattle-1.apk",
+    "apk/com.dsgamesolutions.spacegrowerbattle-1-config.en.apk",
+    "apk/com.dsgamesolutions.spacegrowerbattle-1-config.xxhdpi.apk",
+    "meta.json"
+  ],
+  "errors": []
+}
