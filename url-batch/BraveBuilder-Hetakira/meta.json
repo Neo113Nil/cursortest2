@@ -1,0 +1,45 @@
+{
+  "app_id": "com.vrx.farming.tractor.simulator.game",
+  "title": "BraveBuilder",
+  "developer": "Hetakira",
+  "developer_id": "Hetakira",
+  "icon": "/static/app-icons/com_vrx_farming_tractor_simulator_game.png",
+  "url": "https://play.google.com/store/apps/details?id=com.vrx.farming.tractor.simulator.game&hl=en&gl=us",
+  "score": 3.17,
+  "released": "Nov 29, 2017",
+  "updated": "2026-06-29",
+  "version": "0.41",
+  "summary": "Enjoy tractor driving games as farmer simulator as pro tractor driver and enjoy",
+  "keyword": "url-batch",
+  "folder": "BraveBuilder-Hetakira",
+  "path": "url-batch/BraveBuilder-Hetakira",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.vrx.farming.tractor.simulator.game-41-asset.apk",
+    "com.vrx.farming.tractor.simulator.game-41-config.arm64_v8a.apk",
+    "com.vrx.farming.tractor.simulator.game-41.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/BraveBuilder-Hetakira",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.vrx.farming.tractor.simulator.game ─╮\n│ BraveBuilder                             │\n│ 0.41  (vc 41)                            │\n╰──────────────────────────────────────────╯\n\nDownloading 3 files  (112.8 MB)\n  com.vrx.farming.tractor.simulator.game-41.apk                  ━━ 100% … 1… 0…\n                                                                         … M…   \n  com.vrx.farming.tractor.simulator.game-41-config.arm64_v8a.apk ━━ 100% … 9… 0…\n                                                                         … M…   \n  com.vrx.farming.tractor.simulator.game-41-asset.apk            ━━ 100% … 1… 0…\n                                                                         … M…   \n\n                              Downloaded files                              \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                           ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.vrx.farming.tractor.simulator.game-41.apk                  │ 52.1 MB │\n│ com.vrx.farming.tractor.simulator.game-41-config.arm64_v8a.apk │ 19.0 MB │\n│ com.vrx.farming.tractor.simulator.game-41-asset.apk            │ 52.1 MB │\n└────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.vrx.farming.tractor.simulator.game ─╮\n│ BraveBuilder                             │\n│ 0.41  (vc 41)                            │\n╰──────────────────────────────────────────╯\n\nDownloading 3 files  (112.8 MB)\n  com.vrx.farming.tractor.simulator.game-41.apk                  ━━ 100% … 1… 0…\n                                                                         … M…   \n  com.vrx.farming.tractor.simulator.game-41-config.arm64_v8a.apk ━━ 100% … 9… 0…\n                                                                         … M…   \n  com.vrx.farming.tractor.simulator.game-41-asset.apk            ━━ 100% … 1… 0…\n                                                                         … M…   \n\n                              Downloaded files                              \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                           ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.vrx.farming.tractor.simulator.game-41.apk                  │ 52.1 MB │\n│ com.vrx.farming.tractor.simulator.game-41-config.arm64_v8a.apk │ 19.0 MB │\n│ com.vrx.farming.tractor.simulator.game-41-asset.apk            │ 52.1 MB │\n└────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
