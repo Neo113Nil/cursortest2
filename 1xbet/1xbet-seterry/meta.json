@@ -1,0 +1,55 @@
+{
+  "app_id": "com.varniq.match.app",
+  "title": "1xbet",
+  "developer": "seterry",
+  "score": null,
+  "icon": "/static/app-icons/com_varniq_match_app.png",
+  "url": "https://play.google.com/store/apps/details?id=com.varniq.match.app&hl=en&gl=us",
+  "keyword": "1xBet",
+  "country": "Spain",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260810_221310_Spain_1xBet_search",
+  "search_title": "1xbet",
+  "search_developer": "seterry",
+  "rank": 3,
+  "developer_id": "seterry",
+  "released": "",
+  "updated": "Jul 21, 2026",
+  "version": "Varies with device",
+  "summary": "Sea Battle: a sharp puzzle round with local records.",
+  "folder": "1xbet-seterry",
+  "path": "1xbet/1xbet-seterry",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.varniq.match.app-2-asset.apk",
+    "com.varniq.match.app-2-config.arm64_v8a.apk",
+    "com.varniq.match.app-2-config.en.apk",
+    "com.varniq.match.app-2-config.lt.apk",
+    "com.varniq.match.app-2-config.xxhdpi.apk",
+    "com.varniq.match.app-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/1xbet/1xbet-seterry",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.varniq.match.app ─╮\n│ 1xbet                  │\n│ 1.1  (vc 2)            │\n╰────────────────────────╯\n\nDownloading 6 files  (71.2 MB)\n  com.varniq.match.app-2.apk                  ━━━━━━ 100% 57.4/5… 14.3   0:00:00\n                                                          MB      MB/s          \n  com.varniq.match.app-2-config.arm64_v8a.apk ━━━━━━ 100% 41.2/4… ?      0:00:00\n                                                          kB                    \n  com.varniq.match.app-2-config.en.apk        ━━━━━━ 100% 86.2/8… 13.8   0:00:00\n                                                          kB      MB/s          \n  com.varniq.match.app-2-config.lt.apk        ━━━━━━ 100% 37.1/3… ?      0:00:00\n                                                          kB                    \n  com.varniq.match.app-2-config.xxhdpi.apk    ━━━━━━ 100% 62.6/6… ?      0:00:00\n                                                          kB                    \n  com.varniq.match.app-2-asset.apk            ━━━━━━ 100% 17.0/1… 9.8    0:00:00\n                                                          MB      MB/s          \n\n                    Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                        ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.varniq.match.app-2.apk                  │ 54.8 MB │\n│ com.varniq.match.app-2-config.arm64_v8a.apk │ 40.2 KB │\n│ com.varniq.match.app-2-config.en.apk        │ 84.2 KB │\n│ com.varniq.match.app-2-config.lt.apk        │ 36.2 KB │\n│ com.varniq.match.app-2-config.xxhdpi.apk    │ 61.1 KB │\n│ com.varniq.match.app-2-asset.apk            │ 54.8 MB │\n└─────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.varniq.match.app ─╮\n│ 1xbet                  │\n│ 1.1  (vc 2)            │\n╰────────────────────────╯\n\nDownloading 6 files  (71.2 MB)\n  com.varniq.match.app-2.apk                  ━━━━━━ 100% 57.4/5… 14.3   0:00:00\n                                                          MB      MB/s          \n  com.varniq.match.app-2-config.arm64_v8a.apk ━━━━━━ 100% 41.2/4… ?      0:00:00\n                                                          kB                    \n  com.varniq.match.app-2-config.en.apk        ━━━━━━ 100% 86.2/8… 13.8   0:00:00\n                                                          kB      MB/s          \n  com.varniq.match.app-2-config.lt.apk        ━━━━━━ 100% 37.1/3… ?      0:00:00\n                                                          kB                    \n  com.varniq.match.app-2-config.xxhdpi.apk    ━━━━━━ 100% 62.6/6… ?      0:00:00\n                                                          kB                    \n  com.varniq.match.app-2-asset.apk            ━━━━━━ 100% 17.0/1… 9.8    0:00:00\n                                                          MB      MB/s          \n\n                    Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                        ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.varniq.match.app-2.apk                  │ 54.8 MB │\n│ com.varniq.match.app-2-config.arm64_v8a.apk │ 40.2 KB │\n│ com.varniq.match.app-2-config.en.apk        │ 84.2 KB │\n│ com.varniq.match.app-2-config.lt.apk        │ 36.2 KB │\n│ com.varniq.match.app-2-config.xxhdpi.apk    │ 61.1 KB │\n│ com.varniq.match.app-2-asset.apk            │ 54.8 MB │\n└─────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
