@@ -94,11 +94,15 @@
       },
       {
         "param": "Permissions",
-        "value": "android.permission.ACCESS_NETWORK_STATE, com.zsagar.freenevillegoddardbookspdf.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+        "value": "android.permission.ACCESS_NETWORK_STATE, com.zsagar.freenevillegoddardbookspdf.DYN AMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
       },
       {
         "param": "Libraries",
-        "value": "Flutter embedding v2, Dart 3.11.3 (libapp.so / libflutter.so), Kotlin 2.2.20, kotlinx-coroutines 1.7.3, AndroidX: activity 1.8.1, appcompat 1.1.0, core/core-ktx 1.13.1, datastore/datastore-preferences 1.1.7, fragment 1.7.1, lifecycle 2.7.0, media 1.7.0, preference 1.2.1, profileinstaller 1.3.1, startup-runtime 1.1.1, window 1.2.0, recyclerview, coordinatorlayout, drawerlayout, viewpager, swiperefreshlayout, slidingpanelayout, vectordrawable, transition, tracing; androidx.media3 / ExoPlayer (через just_audio); just_audio + audio_session (com.ryanheise), shared_preferences / shared_preferences_android, jni + jni_flutter (com.github.dart_lang), flutter_svg / vector_graphics / vector_graphics_compiler, cupertino_icons, path_provider, uuid, equatable, stop_watch_timer, defer_pointer, outlined_text, petitparser, xml, rxdart, collection, ffi, synchronized, Google Play PairIP (com.pairip.application.Application, com.pairip.licensecheck) Подозрительные домены aomedia.org, config.ru, dashif.org, dispatchers.io, systemuioverlay.top"
+        "value": "Flutter embedding v2, Dart 3.11.3 (libapp.so / libflutter.so), Kotlin 2.2.20, kotlinx-coroutines 1.7.3, AndroidX: activity 1.8.1, appcompat 1.1.0, core/core-ktx 1.13.1, datastore/datastore-preferences 1.1.7, fragment 1.7.1, lifecycle 2.7.0, media 1.7.0, preference 1.2.1, profileinstaller 1.3.1, startup-runtime 1.1.1, window 1.2.0, recyclerview, coordinatorlayout, drawerlayout, viewpager, swiperefreshlayout, slidingpanelayout, vectordrawable, transition, tracing; androidx.media3 / ExoPlayer (через just_audio); just_audio + audio_session (com.ryanheise), shared_preferences / shared_preferences_android, jni + jni_flutter (com.github.dart_lang), flutter_svg / vector_graphics / vector_graphics_compiler, cupertino_icons, path_provider, uuid, equatable, stop_watch_timer, defer_pointer, outlined_text, petitparser, xml, rxdart, collection, ffi, synchronized, Google Play PairIP (com.pairip.application.Application, com.pairip.licensecheck)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет"
       },
       {
         "param": "SharedPreferences",
@@ -115,9 +119,24 @@
     ],
     "domains": [
       {
+        "domain": "alphamountain.ai",
+        "redirects_to": "https://www.alphamountain.ai/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
         "domain": "aomedia.org",
         "redirects_to": "нет (без редиректа)",
         "parked_at": "регистратор: Squarespace Domains II LLC"
+      },
+      {
+        "domain": "bfore.ai",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Key-Systems GmbH"
+      },
+      {
+        "domain": "cakhiatv1.net",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
       },
       {
         "domain": "config.ru",
@@ -130,14 +149,14 @@
         "parked_at": "регистратор/whois связан с парковкой: godaddy"
       },
       {
+        "domain": "desenmascara.me",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
         "domain": "dispatchers.io",
         "redirects_to": "https://cakhiatv1.net/",
         "parked_at": "регистратор: NAMECHEAP INC"
-      },
-      {
-        "domain": "systemuioverlay.top",
-        "redirects_to": "нет (DNS не резолвится)",
-        "parked_at": "нет данных"
       }
     ],
     "collected_data": [],

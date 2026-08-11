@@ -97,7 +97,7 @@
       },
       {
         "param": "Libraries",
-        "value": "Kotlin 2.0.21, kotlinx-coroutines-core/android 1.9.0, OkHttp 4.12.0, Okio, Retrofit2, Gson, androidx.appcompat 1.7.1, androidx.activity 1.13.0, androidx.fragment 1.5.4, androidx.constraintlayout 2.2.1, androidx.coordinatorlayout 1.1.0, androidx.recyclerview 1.3.2, androidx.viewpager2 1.1.0-beta02, androidx.swiperefreshlayout 1.1.0, androidx.cardview 1.0.0, androidx.core/core-ktx 1.18.0, androidx.lifecycle 2.8.7, androidx.emoji2 1.3.0, androidx.profileinstaller 1.4.0, androidx.startup 1.1.1, androidx.databinding/viewbinding 8.13.2, androidx.transition 1.5.0, androidx.drawerlayout 1.1.0, androidx.dynamicanimation 1.1.0, com.google.android.material 1.14.0, Google Play Pairip (com.pairip.application.Application, com.pairip.licensecheck)"
+        "value": "Kotlin 2.0.21, kotlinx-coroutines-core/android 1.9.0, OkHttp 4.12.0, Okio, Retrofit2, Gson 2.10.1, androidx.appcompat 1.7.1, androidx.activity 1.13.0, androidx.fragment 1.5.4, androidx.constraintlayout 2.2.1, androidx.coordinatorlayout 1.1.0, androidx.recyclerview 1.3.2, androidx.viewpager2 1.1.0-beta02, androidx.swiperefreshlayout 1.1.0, androidx.cardview 1.0.0, androidx.core/core-ktx 1.18.0, androidx.lifecycle 2.8.7, androidx.emoji2 1.3.0, androidx.profileinstaller 1.4.0, androidx.startup 1.1.1, androidx.databinding/viewbinding 8.13.2, androidx.transition 1.5.0, androidx.drawerlayout 1.1.1, androidx.dynamicanimation 1.1.0, com.google.android.material 1.14.0, Google Play Pairip (com.pairip.application.Application, com.pairip.licensecheck)"
       },
       {
         "param": "Подозрительные домены",
@@ -113,14 +113,29 @@
       },
       {
         "param": "Подозрительные слова",
-        "value": "token, Base64, force_game, offer, loadPrivacyPolicyUrl, openUrl, item_001, TWFzdGVy, privacy"
+        "value": "token, Base64, force_game, loadPrivacyPolicyUrl, openUrl, item_001, TWFzdGVy, privacy"
       }
     ],
     "domains": [
       {
+        "domain": "alphamountain.ai",
+        "redirects_to": "https://www.alphamountain.ai/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
         "domain": "api.open-meteo.com",
         "redirects_to": "нет (без редиректа)",
         "parked_at": "нет данных"
+      },
+      {
+        "domain": "bfore.ai",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Key-Systems GmbH"
+      },
+      {
+        "domain": "desenmascara.me",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
       },
       {
         "domain": "geocoding-api.open-meteo.com",

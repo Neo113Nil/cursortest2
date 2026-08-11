@@ -92,7 +92,7 @@
       },
       {
         "param": "Permissions",
-        "value": "android.permission.INTERNET, android.permission.USE_BIOMETRIC, android.permission.USE_FINGERPRINT, com.betano.finance.DYNAMIC_RECEIVER_NOT_ EXPORTED_PERMISSION"
+        "value": "android.permission.INTERNET, android.permission.USE_BIOMETRIC, android.permission.USE_FINGERPRINT, com.betano.finance.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       },
       {
         "param": "Libraries",
@@ -100,11 +100,11 @@
       },
       {
         "param": "Подозрительные домены",
-        "value": "capacitorjs.com, chat.stenciljs.com, config.ru, issues.chromium.org, mozilla.github.io, stackoverflow.com, stenciljs.com, stuk.github.io"
+        "value": "нет"
       },
       {
         "param": "SharedPreferences",
-        "value": "CapWebViewSettings: serverBasePath, lastBinaryVersionCode, lastBinaryVersionName; preferences приложения: CapacitorAppUUID; PERMISSION_PREFS_NAME — кэш разрешений Capacitor"
+        "value": "CapWebViewSettings: serverBasePath, lastBinaryVersionCode, lastBinaryVersionName; preferences приложения: CapacitorAppUUID; PluginPermStates — кэш разрешений Capacitor"
       },
       {
         "param": "Есть ли клоака",
@@ -116,6 +116,16 @@
       }
     ],
     "domains": [
+      {
+        "domain": "alphamountain.ai",
+        "redirects_to": "https://www.alphamountain.ai/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "bfore.ai",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Key-Systems GmbH"
+      },
       {
         "domain": "capacitorjs.com",
         "redirects_to": "нет (без редиректа)",
@@ -132,27 +142,17 @@
         "parked_at": "регистратор: RU-CENTER-RU"
       },
       {
+        "domain": "desenmascara.me",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
         "domain": "issues.chromium.org",
         "redirects_to": "https://issues.chromium.org/issues",
         "parked_at": "регистратор: MarkMonitor Inc."
       },
       {
         "domain": "mozilla.github.io",
-        "redirects_to": "нет (без редиректа)",
-        "parked_at": "регистратор: MarkMonitor Inc."
-      },
-      {
-        "domain": "stackoverflow.com",
-        "redirects_to": "https://stackoverflow.com/questions",
-        "parked_at": "нет данных"
-      },
-      {
-        "domain": "stenciljs.com",
-        "redirects_to": "нет (без редиректа)",
-        "parked_at": "регистратор: SafeNames Ltd."
-      },
-      {
-        "domain": "stuk.github.io",
         "redirects_to": "нет (без редиректа)",
         "parked_at": "регистратор: MarkMonitor Inc."
       }

@@ -115,9 +115,29 @@
     ],
     "domains": [
       {
+        "domain": "alphamountain.ai",
+        "redirects_to": "https://www.alphamountain.ai/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "bfore.ai",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Key-Systems GmbH"
+      },
+      {
+        "domain": "desenmascara.me",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
         "domain": "gamified-task-planner.firebasestorage.app",
         "redirects_to": "нет (DNS не резолвится)",
         "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "ge.app",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: 101domain, Inc."
       }
     ],
     "collected_data": [
@@ -133,6 +153,6 @@
       "Время установки"
     ],
     "cloaking": "да",
-    "cloaking_brief": "Какие данные собираются:\n• Идентификатор AppsFlyer\n• Рекламный номер устройства\n• Модель телефона\n• Версия системы\n• Идентификатор игрока\n• Номер выпуска Android\n• Идентификатор сборки\n• Версия приложения\n• Реферер установки\n• Время установки\n\nКак собираются: Сразу после запуска Unity-игры, ещё до обычного экрана планировщика задач, встроенный модуль UpdateTool сам читает сведения об устройстве. Человек этого обычно не замечает: отдельного окна с разрешением на этот сбор нет. Рекламный номер устройства берут через Android Advertising Id (класс AndroidAdvertisingIdHelper и пакет MiniIT AdvertisingIdFetcher). Модель телефона и версию системы читают из сведений Android. Реферер установки и время установки запрашивают у службы Google Play (Install Referrer): в коде есть GetReferrer, GetInstallTime, GetInstallInfo и обработчики onInstallReferrerSetupFinished. Все эти значения складывают в объект RequestParams с типами RequestParameter (AppsFlyerId,…\n\nКуда отправляются: Собранные сведения уходят в инфраструктуру Firebase проекта gamified-task-planner. В приложении прописано хранилище gamified-task-planner.firebasestorage.app (строка google_storage_bucket и файл google-services.json). Модуль TagCollectKey97 лежит в UpdateTool.CodeBase.Components.FireBase — то есть проверка завязана на Firebase. Перед запросом приложение поднимает служебные токены Firebase (App Check и Auth) через HttpHelpers.SetRequestHeaders и потом проверяет ответ ValidateHttpResponse. Точный полный URL собран из обфусцированных кусков рядом с RequestParams, поэтому открытым текстом в коде он не лежит, но направление — Firebase Storage / HTTP к этому проекту.…\n\nКак фильтруются пользователи: На проверку уходят рекламный номер устройства, модель телефона, версии системы и приложения, реферер установки и время установки. По этим признакам сервер может отличать живой трафик магазина от «грязного», смотреть источник установки и решать, кому дать внешнюю ссылку. В самом приложении на телефоне нет явного списка стран или языков «кого пускать». Локально видны только сбор признаков и разбор ответа. Решение «кому оффер, кому обычное приложение» делает удалённая сторона (Firebase / ответ HTTP). Дополнительный с…"
+    "cloaking_brief": "Какие данные собираются:\n• Идентификатор AppsFlyer\n• Рекламный номер устройства\n• Модель телефона\n• Версия системы\n• Идентификатор игрока\n• Номер выпуска Android\n• Идентификатор сборки\n• Версия приложения\n• Реферер установки\n• Время установки\n\nКак собираются: Сразу после запуска приложения, ещё до обычного экрана планировщика задач, встроенный модуль UpdateTool сам читает сведения об устройстве. Человек этого обычно не замечает: отдельного окна с разрешением на этот сбор нет. Рекламный номер устройства берут из системы Android через Android Advertising Id (класс AndroidAdvertisingIdHelper и пакет MiniIT AdvertisingIdFetcher). Модель телефона и версию системы читают из сведений об устройстве. Реферер установки и время установки запрашивают у службы Google Play (Install Referrer): в коде есть GetReferrer, GetInstallTime, GetInstallInfo и обработчики onInstallReferrerSetupFinished.…\n\nКуда отправляются: Собранные сведения уходят в инфраструктуру Firebase проекта gamified-task-planner. В приложении прописано хранилище gamified-task-planner.firebasestorage.app (строка google_storage_bucket и файл google-services.json). Модуль TagCollectKey97 лежит в UpdateTool.CodeBase.Components.FireBase — проверка завязана на Firebase. Перед запросом приложение поднимает служебные токены Firebase (App Check и Auth) через HttpHelpers.SetRequestHeaders и потом проверяет ответ ValidateHttpResponse. Точный полный адрес собран из обфусцированных кусков рядом с RequestParams, поэтому открытым текстом в коде он не лежит, но направление — HTTP к этому Firebase-проекту / хранилищу.…\n\nКак фильтруются пользователи: На проверку уходят рекламный номер устройства, модель телефона, версии системы и приложения, реферер установки и время установки. По этим признакам удалённая сторона может смотреть источник установки и решать, кому дать внешнюю ссылку. В самом приложении на телефоне нет явного списка стран или языков «кого пускать». Локально видны только сбор признаков и разбор ответа. Решение «кому оффер, кому обычное приложение» делает сервер. Дополнительный сигнал схемы: в Google Play приложение называется Betano', а внутри APK подпись (application-label) — Your Task Planner. Это белая оболочка п…"
   }
 }

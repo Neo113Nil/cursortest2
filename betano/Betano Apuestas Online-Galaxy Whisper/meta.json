@@ -93,7 +93,7 @@
       },
       {
         "param": "Permissions",
-        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.CAMERA, android.permission.ACCESS_FINE_LOCATION, android.permission.ACCESS_COARSE_LOCATION, com.strVex7ul.footbAll5ra.manag8lix.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSI ON, com.android.vending.CHECK_LICENSE"
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.CAMERA, android.permission.ACCESS_FINE_LOCATION, android.permission.ACCESS_COARSE_LOCATION, com.strVex7ul.footbAll5ra.manag8li x.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
       },
       {
         "param": "Libraries",
@@ -101,11 +101,11 @@
       },
       {
         "param": "Подозрительные домены",
-        "value": "api.foursquare.com, journeyapps.com, vorenemin.info"
+        "value": "vorenemin.info"
       },
       {
         "param": "SharedPreferences",
-        "value": "файл имени пакета: флаг первого запуска is_first_time; локальные данные команд/игроков/матчей/наград/стадионов (JSON); ключ name_save для строки через save/getUrl (в цепочке проверки оффера на заставке не используется — ссылка держится в памяти)"
+        "value": "файл имени пакета: флаг is_first_time; JSON команд/игроков/матчей/наград/стадионов; ключ name_save через save/getUrl (в цепочке проверки оффера на заставке не используется — ссылка держится в памяти)"
       },
       {
         "param": "Есть ли клоака",
@@ -118,8 +118,28 @@
     ],
     "domains": [
       {
+        "domain": "alphamountain.ai",
+        "redirects_to": "https://www.alphamountain.ai/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
         "domain": "api.foursquare.com",
         "redirects_to": "https://foursquare.com/developer/",
+        "parked_at": "регистратор: GANDI SAS"
+      },
+      {
+        "domain": "bfore.ai",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Key-Systems GmbH"
+      },
+      {
+        "domain": "desenmascara.me",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "foursquare.com",
+        "redirects_to": "нет (без редиректа)",
         "parked_at": "регистратор: GANDI SAS"
       },
       {
