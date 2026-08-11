@@ -3,14 +3,14 @@
   "title": "1xBet – Sports Betting",
   "developer": "1XBET España",
   "score": null,
-  "icon": "/static/app-icons/com_obelis_xbetspain.webp",
+  "icon": "/static/app-icons/com_obelis_xbetspain.png",
   "url": "https://play.google.com/store/apps/details?id=com.obelis.xbetspain&hl=en&gl=us",
   "keyword": "1xBet",
   "country": "Spain",
   "source": "apkeep:apk-pure",
-  "sponsored": false,
+  "sponsored": true,
   "match_via": "phone-install",
-  "geelark_search_dir": "/root/play-collector/geelark_poc/20260806_184217_Spain_1xBet_search",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260810_221310_Spain_1xBet_search",
   "search_title": "1xBet – Sports Betting",
   "search_developer": "1XBET España",
   "rank": 1,
@@ -22,6 +22,8 @@
   "folder": "1xBet – Sports Betting-1XBET España",
   "path": "1xbet/1xBet – Sports Betting-1XBET España",
   "updates_count": 1,
+  "apk_title": "1xBet",
+  "store_title_mismatch": false,
   "ok": true,
   "files": [
     "com.obelis.xbetspain.xapk"
@@ -29,15 +31,53 @@
   "target": "/root/play-collector/загрузки/1xbet/1xBet – Sports Betting-1XBET España",
   "attempts": [
     {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\nNo download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : mariobart292@gmail.com                │\n│ GSF ID : 3221b6dc2d717e1f                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.bpear@gmail.com            │\n│ GSF ID : 38832baa91c75a7b                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+      "apk_label": ""
+    },
+    {
       "method": "apkeep",
       "try": 1,
       "ok": true,
       "exit_code": 0,
       "stdout": "Downloading com.obelis.xbetspain...\ncom.obelis.xbetspain downloaded successfully!\n",
-      "stderr": ""
+      "stderr": "",
+      "apk_label": "1xBet"
     }
   ],
   "stdout": "Downloading com.obelis.xbetspain...\ncom.obelis.xbetspain downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "error": ""
 }
