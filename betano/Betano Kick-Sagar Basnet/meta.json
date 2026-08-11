@@ -52,5 +52,96 @@
   "stdout": "╭─ com.zsagar.freenevillegoddardbookspdf ─╮\n│ Betano Kick                             │\n│ 7.6.6  (vc 7)                           │\n╰─────────────────────────────────────────╯\n\nDownloading 7 files  (30.4 MB)\n  com.zsagar.freenevillegoddardbookspdf-7.apk                  ━━ 100% 8… 3… 0:…\n                                                                       MB M…    \n  com.zsagar.freenevillegoddardbookspdf-7-config.arm64_v8a.apk ━━ 100% 1… 3… 0:…\n                                                                       MB M…    \n  com.zsagar.freenevillegoddardbookspdf-7-config.en.apk        ━━ 100% 3… ?  0:…\n                                                                       kB       \n  com.zsagar.freenevillegoddardbookspdf-7-config.lt.apk        ━━ 100% 2… ?  0:…\n                                                                       kB       \n  com.zsagar.freenevillegoddardbookspdf-7-config.ru.apk        ━━ 100% 2… ?  0:…\n                                                                       kB       \n  com.zsagar.freenevillegoddardbookspdf-7-config.xxhdpi.apk    ━━ 100% 1… 3… 0:…\n                                                                       kB M…    \n  com.zsagar.freenevillegoddardbookspdf-7-asset.apk            ━━ 100% 7… 2… 0:…\n                                                                       MB M…    \n\n                             Downloaded files                              \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                         ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.zsagar.freenevillegoddardbookspdf-7.apk                  │   8.0 MB │\n│ com.zsagar.freenevillegoddardbookspdf-7-config.arm64_v8a.apk │  15.4 MB │\n│ com.zsagar.freenevillegoddardbookspdf-7-config.en.apk        │  32.4 KB │\n│ com.zsagar.freenevillegoddardbookspdf-7-config.lt.apk        │  20.4 KB │\n│ com.zsagar.freenevillegoddardbookspdf-7-config.ru.apk        │  20.4 KB │\n│ com.zsagar.freenevillegoddardbookspdf-7-config.xxhdpi.apk    │ 153.5 KB │\n│ com.zsagar.freenevillegoddardbookspdf-7-asset.apk            │   8.0 MB │\n└──────────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Betano Kick"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.11.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.2.20"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.ACCESS_NETWORK_STATE, com.zsagar.freenevillegoddardbookspdf.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Flutter embedding v2, Dart 3.11.3 (libapp.so / libflutter.so), Kotlin 2.2.20, kotlinx-coroutines 1.7.3, AndroidX: activity 1.8.1, appcompat 1.1.0, core/core-ktx 1.13.1, datastore/datastore-preferences 1.1.7, fragment 1.7.1, lifecycle 2.7.0, media 1.7.0, preference 1.2.1, profileinstaller 1.3.1, startup-runtime 1.1.1, window 1.2.0, recyclerview, coordinatorlayout, drawerlayout, viewpager, swiperefreshlayout, slidingpanelayout, vectordrawable, transition, tracing; androidx.media3 / ExoPlayer (через just_audio); just_audio + audio_session (com.ryanheise), shared_preferences / shared_preferences_android, jni + jni_flutter (com.github.dart_lang), flutter_svg / vector_graphics / vector_graphics_compiler, cupertino_icons, path_provider, uuid, equatable, stop_watch_timer, defer_pointer, outlined_text, petitparser, xml, rxdart, collection, ffi, synchronized, Google Play PairIP (com.pairip.application.Application, com.pairip.licensecheck) Подозрительные домены aomedia.org, config.ru, dashif.org, dispatchers.io, systemuioverlay.top"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Flutter shared_preferences (plugins.flutter.io/shared_preferences) через SettingsService: сохраняет настройки звука/музыки (music, sound, toggleMusic, toggleSound, playMusic, playSound) и прогресс уровней (level, setLevel, LevelPage)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "redirect, license check"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "aomedia.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Squarespace Domains II LLC"
+      },
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "dashif.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "https://cakhiatv1.net/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "systemuioverlay.top",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }
