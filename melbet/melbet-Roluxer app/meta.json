@@ -1,0 +1,53 @@
+{
+  "app_id": "com.doter.seryk.melbet",
+  "title": "melbet",
+  "developer": "Roluxer app",
+  "score": null,
+  "icon": "/static/app-icons/com_doter_seryk_melbet.png",
+  "url": "https://play.google.com/store/apps/details?id=com.doter.seryk.melbet&hl=en&gl=us",
+  "keyword": "melbet",
+  "country": "Italy",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260812_102642_Italy_melbet_search",
+  "search_title": "melbet",
+  "search_developer": "Roluxer app",
+  "rank": 4,
+  "developer_id": "Roluxer+app",
+  "released": "Aug 7, 2026",
+  "updated": "Aug 7, 2026",
+  "version": "Varies with device",
+  "summary": "melbet Track salon income, expenses, goals and daily financial activity.",
+  "folder": "melbet-Roluxer app",
+  "path": "melbet/melbet-Roluxer app",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.doter.seryk.melbet-1-asset.apk",
+    "com.doter.seryk.melbet-1-config.en.apk",
+    "com.doter.seryk.melbet-1-config.xxhdpi.apk",
+    "com.doter.seryk.melbet-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/melbet/melbet-Roluxer app",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.doter.seryk.melbet ─╮\n│ melbet                   │\n│ 1.0  (vc 1)              │\n╰──────────────────────────╯\n\nDownloading 4 files  (5.3 MB)\n  com.doter.seryk.melbet-1.apk               ━━━━━━━ 100% 3.5/3.5 5.1    0:00:00\n                                                          MB      MB/s          \n  com.doter.seryk.melbet-1-config.en.apk     ━━━━━━━ 100% 74.1/7… 1.4    0:00:00\n                                                          kB      MB/s          \n  com.doter.seryk.melbet-1-config.xxhdpi.apk ━━━━━━━ 100% 86.4/8… 2.6    0:00:00\n                                                          kB      MB/s          \n  com.doter.seryk.melbet-1-asset.apk         ━━━━━━━ 100% 1.9/1.9 16.3   0:00:00\n                                                          MB      MB/s          \n\n                    Downloaded files                    \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                       ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.doter.seryk.melbet-1.apk               │  3.3 MB │\n│ com.doter.seryk.melbet-1-config.en.apk     │ 72.4 KB │\n│ com.doter.seryk.melbet-1-config.xxhdpi.apk │ 84.4 KB │\n│ com.doter.seryk.melbet-1-asset.apk         │  3.3 MB │\n└────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.doter.seryk.melbet ─╮\n│ melbet                   │\n│ 1.0  (vc 1)              │\n╰──────────────────────────╯\n\nDownloading 4 files  (5.3 MB)\n  com.doter.seryk.melbet-1.apk               ━━━━━━━ 100% 3.5/3.5 5.1    0:00:00\n                                                          MB      MB/s          \n  com.doter.seryk.melbet-1-config.en.apk     ━━━━━━━ 100% 74.1/7… 1.4    0:00:00\n                                                          kB      MB/s          \n  com.doter.seryk.melbet-1-config.xxhdpi.apk ━━━━━━━ 100% 86.4/8… 2.6    0:00:00\n                                                          kB      MB/s          \n  com.doter.seryk.melbet-1-asset.apk         ━━━━━━━ 100% 1.9/1.9 16.3   0:00:00\n                                                          MB      MB/s          \n\n                    Downloaded files                    \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                       ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.doter.seryk.melbet-1.apk               │  3.3 MB │\n│ com.doter.seryk.melbet-1-config.en.apk     │ 72.4 KB │\n│ com.doter.seryk.melbet-1-config.xxhdpi.apk │ 84.4 KB │\n│ com.doter.seryk.melbet-1-asset.apk         │  3.3 MB │\n└────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
