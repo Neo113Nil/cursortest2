@@ -94,7 +94,7 @@
       },
       {
         "param": "Permissions",
-        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.CAMERA, android.permission.POST_NOTIFICATIONS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.WAKE_LOCK, android.permission.FOREGROUND_SERVICE, com.translator22.frenchswahili.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.CAMERA, android.permission.POST_NOTIFICATIONS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.WAKE_LOCK, android.permission.FOREGROUND_SERVICE, com.translator22.frenchswahili.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISS ION"
       },
       {
         "param": "Libraries",
@@ -119,9 +119,34 @@
     ],
     "domains": [
       {
+        "domain": "studiocleartrack.site",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "alphamountain.ai",
+        "redirects_to": "https://www.alphamountain.ai/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
         "domain": "apm.com",
         "redirects_to": "https://www.macom.com/",
         "parked_at": "регистратор: Amazon Registrar, Inc."
+      },
+      {
+        "domain": "bfore.ai",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Key-Systems GmbH"
+      },
+      {
+        "domain": "desenmascara.me",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "macom.com",
+        "redirects_to": "https://www.macom.com/",
+        "parked_at": "регистратор: Imperial Registrations, Inc"
       },
       {
         "domain": "ua.gov.diia.app",
