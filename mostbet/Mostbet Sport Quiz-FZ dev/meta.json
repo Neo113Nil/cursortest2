@@ -1,0 +1,55 @@
+{
+  "app_id": "app.fzferozi.quizappuser",
+  "title": "Mostbet Sport Quiz",
+  "developer": "FZ dev",
+  "score": null,
+  "icon": "/static/app-icons/app_fzferozi_quizappuser.png",
+  "url": "https://play.google.com/store/apps/details?id=app.fzferozi.quizappuser&hl=en&gl=us",
+  "keyword": "mostbet",
+  "country": "Italy",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260812_101608_Italy_mostbet_search",
+  "search_title": "Mostbet Sport Quiz",
+  "search_developer": "FZ dev",
+  "rank": 1,
+  "developer_id": "FZ+dev",
+  "released": "Sep 18, 2022",
+  "updated": "Feb 6, 2026",
+  "version": "Varies with device",
+  "summary": "Mostbet Sports trivia, educational tests, and rewards. By MostBet team.",
+  "folder": "Mostbet Sport Quiz-FZ dev",
+  "path": "mostbet/Mostbet Sport Quiz-FZ dev",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "app.fzferozi.quizappuser-12-asset.apk",
+    "app.fzferozi.quizappuser-12-config.en.apk",
+    "app.fzferozi.quizappuser-12-config.lt.apk",
+    "app.fzferozi.quizappuser-12-config.ru.apk",
+    "app.fzferozi.quizappuser-12-config.xxhdpi.apk",
+    "app.fzferozi.quizappuser-12.apk"
+  ],
+  "target": "/root/play-collector/загрузки/mostbet/Mostbet Sport Quiz-FZ dev",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ app.fzferozi.quizappuser ─╮\n│ Mostbet Sport Quiz         │\n│ 2.0.12  (vc 12)            │\n╰────────────────────────────╯\n\nDownloading 6 files  (14.3 MB)\n  app.fzferozi.quizappuser-12.apk               ━━━━━━ 100% 9.7/9… 35.9   0:00:…\n                                                            MB     MB/s         \n  app.fzferozi.quizappuser-12-config.en.apk     ━━━━━━ 100% 53.7/… ?      0:00:…\n                                                            kB                  \n  app.fzferozi.quizappuser-12-config.lt.apk     ━━━━━━ 100% 33.2/… ?      0:00:…\n                                                            kB                  \n  app.fzferozi.quizappuser-12-config.ru.apk     ━━━━━━ 100% 37.3/… ?      0:00:…\n                                                            kB                  \n  app.fzferozi.quizappuser-12-config.xxhdpi.apk ━━━━━━ 100% 92.7/… 2.4    0:00:…\n                                                            kB     MB/s         \n  app.fzferozi.quizappuser-12-asset.apk         ━━━━━━ 100% 5.2/5… 14.0   0:00:…\n                                                            MB     MB/s         \n\n                     Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                          ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ app.fzferozi.quizappuser-12.apk               │  9.2 MB │\n│ app.fzferozi.quizappuser-12-config.en.apk     │ 52.4 KB │\n│ app.fzferozi.quizappuser-12-config.lt.apk     │ 32.4 KB │\n│ app.fzferozi.quizappuser-12-config.ru.apk     │ 36.4 KB │\n│ app.fzferozi.quizappuser-12-config.xxhdpi.apk │ 90.5 KB │\n│ app.fzferozi.quizappuser-12-asset.apk         │  9.2 MB │\n└───────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ app.fzferozi.quizappuser ─╮\n│ Mostbet Sport Quiz         │\n│ 2.0.12  (vc 12)            │\n╰────────────────────────────╯\n\nDownloading 6 files  (14.3 MB)\n  app.fzferozi.quizappuser-12.apk               ━━━━━━ 100% 9.7/9… 35.9   0:00:…\n                                                            MB     MB/s         \n  app.fzferozi.quizappuser-12-config.en.apk     ━━━━━━ 100% 53.7/… ?      0:00:…\n                                                            kB                  \n  app.fzferozi.quizappuser-12-config.lt.apk     ━━━━━━ 100% 33.2/… ?      0:00:…\n                                                            kB                  \n  app.fzferozi.quizappuser-12-config.ru.apk     ━━━━━━ 100% 37.3/… ?      0:00:…\n                                                            kB                  \n  app.fzferozi.quizappuser-12-config.xxhdpi.apk ━━━━━━ 100% 92.7/… 2.4    0:00:…\n                                                            kB     MB/s         \n  app.fzferozi.quizappuser-12-asset.apk         ━━━━━━ 100% 5.2/5… 14.0   0:00:…\n                                                            MB     MB/s         \n\n                     Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                          ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ app.fzferozi.quizappuser-12.apk               │  9.2 MB │\n│ app.fzferozi.quizappuser-12-config.en.apk     │ 52.4 KB │\n│ app.fzferozi.quizappuser-12-config.lt.apk     │ 32.4 KB │\n│ app.fzferozi.quizappuser-12-config.ru.apk     │ 36.4 KB │\n│ app.fzferozi.quizappuser-12-config.xxhdpi.apk │ 90.5 KB │\n│ app.fzferozi.quizappuser-12-asset.apk         │  9.2 MB │\n└───────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+  "exit_code": 0,
+  "error": ""
+}
