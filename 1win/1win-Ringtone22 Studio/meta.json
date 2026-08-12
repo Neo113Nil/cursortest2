@@ -52,5 +52,88 @@
   "stdout": "╭─ com.translator22.frenchswahili ─╮\n│ 1win                             │\n│ 3.0  (vc 3)                      │\n╰──────────────────────────────────╯\n\nDownloading 7 files  (15.4 MB)\n  com.translator22.frenchswahili-3.apk                  ━━━━ 100% 10.… 39.7 0:0…\n                                                                  MB   MB/s     \n  com.translator22.frenchswahili-3-config.arm64_v8a.apk ━━━━ 100% 41.… ?    0:0…\n                                                                  kB            \n  com.translator22.frenchswahili-3-config.en.apk        ━━━━ 100% 49.… ?    0:0…\n                                                                  kB            \n  com.translator22.frenchswahili-3-config.lt.apk        ━━━━ 100% 33.… ?    0:0…\n                                                                  kB            \n  com.translator22.frenchswahili-3-config.ru.apk        ━━━━ 100% 33.… ?    0:0…\n                                                                  kB            \n  com.translator22.frenchswahili-3-config.xxhdpi.apk    ━━━━ 100% 101… 1.6  0:0…\n                                                                  kB   MB/s     \n  com.translator22.frenchswahili-3-asset.apk            ━━━━ 100% 5.1… 25.8 0:0…\n                                                                  MB   MB/s     \n\n                         Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                  ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.translator22.frenchswahili-3.apk                  │ 10.3 MB │\n│ com.translator22.frenchswahili-3-config.arm64_v8a.apk │ 40.4 KB │\n│ com.translator22.frenchswahili-3-config.en.apk        │ 48.4 KB │\n│ com.translator22.frenchswahili-3-config.lt.apk        │ 32.4 KB │\n│ com.translator22.frenchswahili-3-config.ru.apk        │ 32.4 KB │\n│ com.translator22.frenchswahili-3-config.xxhdpi.apk    │ 98.6 KB │\n│ com.translator22.frenchswahili-3-asset.apk            │ 10.3 MB │\n└───────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "1win (Google Play); внутри APK app_name = 1w Mobile (переводчик fr↔sw)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.12.3"
+      },
+      {
+        "param": "minSdk",
+        "value": "30"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1.0"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.CAMERA, android.permission.POST_NOTIFICATIONS, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.WAKE_LOCK, android.permission.FOREGROUND_SERVICE, com.translator22.frenchswahili.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.1.0, kotlinx-coroutines-android/core 1.8.1, OkHttp 4.x, Google Mobile Ads / AdMob (play-services-ads 23.5.0), play-services-basement 18.4.0, play-services-base 17.4.0, play-services-tasks 17.2.0, play-services-measurement-base/sdk-api 20.1.2, play-services-vision 20.1.3, user-messaging-platform 3.0.0, Google Material 1.12.0, Glide, Room 2.2.5, DataStore 1.1.1, androidx.webkit 1.9.0, androidx.work 2.7.0, androidx.appcompat 1.7.0, androidx.activity 1.8.0, androidx.core/core-ktx 1.15.0, androidx.fragment 1.5.4, androidx.lifecycle 2.8.7, androidx.recyclerview 1.1.0, androidx.viewpager2 1.0.0, androidx.emoji2 1.3.0, androidx.startup 1.1.1, androidx.profileinstaller 1.3.1, viewbinding 8.12.3, com.github.dhaval2404.imagepicker, com.yalantis.ucrop, org.apache.http.legacy"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "studiocleartrack.site, apm.com, ua.gov.diia.app"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "prefs: ключ uuid — постоянный идентификатор пользователя для проверки; TranslatorApp.preferences_pb — настройки белого переводчика (DataStore)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "gate, Gate, ViewBridge, bridge, webview, _openWebView, loadUrl, none, aes256gcm, user, ua, DataSyncProvider, ds.bin, diia, bankid, privat24, monobank"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "apm.com",
+        "redirects_to": "https://www.macom.com/",
+        "parked_at": "регистратор: Amazon Registrar, Inc."
+      },
+      {
+        "domain": "ua.gov.diia.app",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      }
+    ],
+    "collected_data": [
+      "Идентификатор пользователя",
+      "Строка браузера телефона"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Идентификатор пользователя\n• Строка браузера телефона\n\nКак собираются: Сразу после запуска открывается стартовый экран со значком загрузки. Ещё до любых нажатий приложение само создаёт или достаёт из памяти постоянный номер пользователя (случайный uuid) и читает обычную строку браузера телефона из системы Android. Отдельного окна с вопросом «разрешить?» нет: человек видит только заставку, а сбор идёт незаметно. Номер пользователя берут из настроек приложения с именем prefs и ключом uuid. Если номера ещё нет, приложение само придумывает новый и сразу сохраняет его туда же. Строку браузера берут через стандартные настройки встроенного окна сайта Android. Это делается в фоне на стартовом экране.…\n\nКуда отправляются: Сведения уходят тихим запросом в интернет на адрес https://studiocleartrack.site/knp4. Сам адрес в коде лежит в зашифрованном виде (aes256gcm) и перед отправкой расшифровывается. Запасных адресов для этой проверки в коде не видно. К адресу добавляют параметр user с номером пользователя. Тем же номером заполняют заголовок user, а в заголовок User-Agent кладут строку браузера телефона. Запрос идёт методом POST в фоне через обычное сетевое соединение Android, человек отдельного экрана «проверка» не видит. Адрес проверки в настройки после ответа отдельно не сохраняют.\n\nКак фильтруются пользователи: В самом приложении нет списка стран, языков, «белых» или «грязных» пользователей и нет отдельной проверки на бота или эмулятор. На проверку уходят только идентификатор пользователя и строка браузера. Дальше решение принимает сервер. Приложение смотрит только на ответ: если после расшифровки приходит ссылка, которая начинается с http и при этом не содержит слова none или null, человека считают «боевым» и открывают внешнюю страницу. Если ответ пустой, содержит none/null, не расшифровывается или не похож на ссылку — остаётся обычное приложение. То есть жёстких локальных фильтров на телефоне не видно: развилку делает сервер по ответу.\n\nЧто возвращается: Сервер при успешной проверке (код ответа 200) присылает текст. Этот текст приложение пытается расшифровать тем же ключом aes256gcm. В «хорошем» для схемы варианте после расшифровки получаетс…"
+  }
 }
