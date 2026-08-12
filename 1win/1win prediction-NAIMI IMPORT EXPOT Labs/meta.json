@@ -92,19 +92,15 @@
       },
       {
         "param": "Permissions",
-        "value": "android.permission.INTERNET, naimi.predictionquiz.official.DYNAMIC_RECEIVER_NOT_EXPORTE D_PERMISSION, com.android.vending.CHECK_LICENSE"
+        "value": "android.permission.INTERNET, naimi.predictionquiz.official.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
       },
       {
         "param": "Libraries",
-        "value": "Kotlin 2.3.21, kotlinx-coroutines 1.10.2, OkHttp 4.12.0, Okio, Coil3 (+ coil-network-okhttp), Koin (org.koin), Jetpack Compose (UI/Foundation/Material3/Animation/Runtime 1.11.0, Material icons 1.7.8), AndroidX: activity 1.13.0, appcompat 1.7.1, core/core-ktx 1.18.0, datastore 1.2.0, lifecycle 2.10.0, navigation 2.9.7, room 2.8.4, sqlite 2.6.2, fragment 1.8.9, constraintlayout-compose 1.1.1, profileinstaller 1.4.1, startup-runtime 1.1.1, emoji2 1.4.0, window 1.5.0, savedstate 1.4.0, tracing 1.2.0; Google Accompanist drawablepainter; Google Play PairIP (com.pairip.application, com.pairip.licensecheck)"
-      },
-      {
-        "param": "Подозрительные домены",
-        "value": "blog.topix.de, blueprint-recruitment.co.uk, cdn1-www.bureauveritas.co.in, config.ru, digitalworkforce.com, dlhcorp.com, energybak.com, framerusercontent.com, jencapgroup.com"
+        "value": "Kotlin 2.3.21, kotlinx-coroutines 1.10.2, OkHttp 4.12.0, Okio, Coil3 (+ coil-network-okhttp), Koin (org.koin), Jetpack Compose (UI/Foundation/Material3/Animation/Runtime 1.11.0, Material icons 1.7.8, Material3 1.4.0), AndroidX: activity 1.13.0, appcompat 1.7.1, core/core-ktx 1.18.0, datastore 1.2.0, lifecycle 2.10.0, navigation 2.9.7, room 2.8.4, sqlite 2.6.2, fragment 1.8.9, constraintlayout-compose 1.1.1, profileinstaller 1.4.1, startup-runtime 1.1.1, emoji2 1.4.0, window 1.5.0, savedstate 1.4.0; Google Accompanist drawablepainter; Google Play PairIP (com.pairip.application, com.pairip.licensecheck) Подозрительные домены blog.topix.de, blueprint-recruitment.co.uk, cdn1-www.bureauveritas.co.in, champ.aero, digitalworkforce.com, dlhcorp.com, energybak.com, framerusercontent.com, immerse.education, jencapgroup.com, usfq.edu.ec"
       },
       {
         "param": "SharedPreferences",
-        "value": "DataStore prqz_prefs: ключ onboardedState (флаг прохождения онбординга); заявки хранятся локально в Room"
+        "value": "DataStore prqz_prefs: ключ onboardedState (флаг прохождения онбординга); заявки на консультации хранятся локально в Room"
       },
       {
         "param": "Есть ли клоака",
@@ -112,10 +108,25 @@
       },
       {
         "param": "Подозрительные слова",
-        "value": "1win, prediction, WinPredictionQuiz, license check"
+        "value": "1win, prediction, predictionquiz, WinPredictionQuiz, license check"
       }
     ],
     "domains": [
+      {
+        "domain": "agentacademy.ai",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "alphamountain.ai",
+        "redirects_to": "https://www.alphamountain.ai/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "bfore.ai",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Key-Systems GmbH"
+      },
       {
         "domain": "blog.topix.de",
         "redirects_to": "https://blog.topix.de/de/enjoy-working",
@@ -137,24 +148,9 @@
         "parked_at": "регистратор: RU-CENTER-RU"
       },
       {
-        "domain": "digitalworkforce.com",
+        "domain": "desenmascara.me",
         "redirects_to": "нет (без редиректа)",
         "parked_at": "регистратор/whois связан с парковкой: godaddy"
-      },
-      {
-        "domain": "dlhcorp.com",
-        "redirects_to": "https://www.dlhcorp.com/",
-        "parked_at": "регистратор: NAMECHEAP INC"
-      },
-      {
-        "domain": "energybak.com",
-        "redirects_to": "нет (без редиректа)",
-        "parked_at": "регистратор: PDR Ltd. d/b/a PublicDomainRegistry.com"
-      },
-      {
-        "domain": "framerusercontent.com",
-        "redirects_to": "https://www.framer.com",
-        "parked_at": "регистратор: CSC Corporate Domains, Inc."
       }
     ],
     "collected_data": [],

@@ -1,6 +1,5 @@
 {
   "all_custom_domains": [
-    "agentacademy.ai",
     "alphamountain.ai",
     "bfore.ai",
     "blog.topix.de",
@@ -11,832 +10,10 @@
     "digitalworkforce.com",
     "dlhcorp.com",
     "energybak.com",
-    "framer.com",
     "framerusercontent.com",
-    "jencapgroup.com",
-    "publicdomainregistry.com"
+    "jencapgroup.com"
   ],
   "checked": [
-    {
-      "domain": "agentacademy.ai",
-      "virustotal": {
-        "ok": true,
-        "vt_url": "https://www.virustotal.com/gui/domain/agentacademy.ai",
-        "detections": "0/91 (malicious=0, suspicious=0)",
-        "last_analysis_stats": {
-          "malicious": 0,
-          "suspicious": 0,
-          "undetected": 35,
-          "harmless": 56,
-          "timeout": 0
-        },
-        "vendor_rows": [
-          [
-            "Abusix",
-            "Clean"
-          ],
-          [
-            "Acronis",
-            "Clean"
-          ],
-          [
-            "ADMINUSLabs",
-            "Clean"
-          ],
-          [
-            "AILabs (MONITORAPP)",
-            "Clean"
-          ],
-          [
-            "AlienVault",
-            "Clean"
-          ],
-          [
-            "Antiy-AVL",
-            "Clean"
-          ],
-          [
-            "BitDefender",
-            "Clean"
-          ],
-          [
-            "Blueliv",
-            "Clean"
-          ],
-          [
-            "Certego",
-            "Clean"
-          ],
-          [
-            "Chong Lua Dao",
-            "Clean"
-          ],
-          [
-            "CINS Army",
-            "Clean"
-          ],
-          [
-            "CMC Threat Intelligence",
-            "Clean"
-          ],
-          [
-            "CRDF",
-            "Clean"
-          ],
-          [
-            "CTX AI",
-            "Clean"
-          ],
-          [
-            "Cyble",
-            "Clean"
-          ],
-          [
-            "CyRadar",
-            "Clean"
-          ],
-          [
-            "desenmascara.me",
-            "Clean"
-          ],
-          [
-            "Dr.Web",
-            "Clean"
-          ],
-          [
-            "EmergingThreats",
-            "Clean"
-          ],
-          [
-            "Emsisoft",
-            "Clean"
-          ],
-          [
-            "ESET",
-            "Clean"
-          ],
-          [
-            "ESTsecurity",
-            "Clean"
-          ],
-          [
-            "Forcepoint ThreatSeeker",
-            "Clean"
-          ],
-          [
-            "Fortinet",
-            "Clean"
-          ],
-          [
-            "G-Data",
-            "Clean"
-          ],
-          [
-            "Google Safe Browsing",
-            "Clean"
-          ],
-          [
-            "GreenSnow",
-            "Clean"
-          ],
-          [
-            "Heimdal Security",
-            "Clean"
-          ],
-          [
-            "IPsum",
-            "Clean"
-          ],
-          [
-            "Juniper Networks",
-            "Clean"
-          ],
-          [
-            "Kaspersky",
-            "Clean"
-          ],
-          [
-            "LevelBlue",
-            "Clean"
-          ],
-          [
-            "Lionic",
-            "Clean"
-          ],
-          [
-            "Malwared",
-            "Clean"
-          ],
-          [
-            "MalwarePatrol",
-            "Clean"
-          ],
-          [
-            "OpenPhish",
-            "Clean"
-          ],
-          [
-            "Phishing Database",
-            "Clean"
-          ],
-          [
-            "Phishtank",
-            "Clean"
-          ],
-          [
-            "PREBYTES",
-            "Clean"
-          ],
-          [
-            "Quick Heal",
-            "Clean"
-          ],
-          [
-            "Quttera",
-            "Clean"
-          ],
-          [
-            "Scantitan",
-            "Clean"
-          ],
-          [
-            "SCUMWARE.org",
-            "Clean"
-          ],
-          [
-            "Seclookup",
-            "Clean"
-          ],
-          [
-            "Sophos",
-            "Clean"
-          ],
-          [
-            "StopForumSpam",
-            "Clean"
-          ],
-          [
-            "Sucuri SiteCheck",
-            "Clean"
-          ],
-          [
-            "ThreatHive",
-            "Clean"
-          ],
-          [
-            "URLhaus",
-            "Clean"
-          ],
-          [
-            "Viettel Threat Intelligence",
-            "Clean"
-          ],
-          [
-            "ViriBack",
-            "Clean"
-          ],
-          [
-            "VX Vault",
-            "Clean"
-          ],
-          [
-            "Webroot",
-            "Clean"
-          ],
-          [
-            "Xcitium Verdict Cloud",
-            "Clean"
-          ],
-          [
-            "Yandex Safebrowsing",
-            "Clean"
-          ],
-          [
-            "ZeroCERT",
-            "Clean"
-          ],
-          [
-            "0xSI_f33d",
-            "Unrated"
-          ],
-          [
-            "alphaMountain.ai",
-            "Unrated"
-          ],
-          [
-            "AlphaSOC",
-            "Unrated"
-          ],
-          [
-            "ArcSight Threat Intelligence",
-            "Unrated"
-          ],
-          [
-            "AutoShun",
-            "Unrated"
-          ],
-          [
-            "Axur",
-            "Unrated"
-          ],
-          [
-            "Bfore.Ai PreCrime",
-            "Unrated"
-          ],
-          [
-            "Bkav",
-            "Unrated"
-          ],
-          [
-            "ChainPatrol",
-            "Unrated"
-          ],
-          [
-            "Cluster25",
-            "Unrated"
-          ],
-          [
-            "Criminal IP",
-            "Unrated"
-          ],
-          [
-            "CSIS Security Group",
-            "Unrated"
-          ],
-          [
-            "Cyan",
-            "Unrated"
-          ],
-          [
-            "DNS8",
-            "Unrated"
-          ],
-          [
-            "Ermes",
-            "Unrated"
-          ],
-          [
-            "Fortra",
-            "Unrated"
-          ],
-          [
-            "GCP Abuse Intelligence",
-            "Unrated"
-          ],
-          [
-            "GreyNoise",
-            "Unrated"
-          ],
-          [
-            "Gridinsoft",
-            "Unrated"
-          ],
-          [
-            "Guardpot",
-            "Unrated"
-          ],
-          [
-            "Hunt.io Intelligence",
-            "Unrated"
-          ],
-          [
-            "Lumu",
-            "Unrated"
-          ],
-          [
-            "MalwareURL",
-            "Unrated"
-          ],
-          [
-            "Mimecast",
-            "Unrated"
-          ],
-          [
-            "Netcraft",
-            "Unrated"
-          ],
-          [
-            "PhishFort",
-            "Unrated"
-          ],
-          [
-            "PrecisionSec",
-            "Unrated"
-          ],
-          [
-            "SafeToOpen",
-            "Unrated"
-          ],
-          [
-            "Sansec eComscan",
-            "Unrated"
-          ],
-          [
-            "SecureBrain",
-            "Unrated"
-          ],
-          [
-            "Snort IP sample list",
-            "Unrated"
-          ],
-          [
-            "SOCRadar",
-            "Unrated"
-          ],
-          [
-            "URLQuery",
-            "Unrated"
-          ],
-          [
-            "VIPRE",
-            "Unrated"
-          ],
-          [
-            "ZeroFox",
-            "Unrated"
-          ]
-        ],
-        "reputation": 0,
-        "community_votes": {
-          "harmless": 0,
-          "malicious": 0
-        },
-        "categories": {},
-        "popularity_ranks": "нет",
-        "creation_date": 1726834142,
-        "last_modification_date": 1786012842,
-        "last_analysis_date": 1783593452,
-        "registrar": "GoDaddy.com, LLC",
-        "whois": "Admin City: Tempe\nAdmin Country: US\nAdmin Email: b84fa8be11acfabes@domainsbyproxy.com\nAdmin Organization: Domains By Proxy, LLC\nAdmin Postal Code: 85281\nAdmin State/Province: Arizona\nCreation Date: 2024-09-20T12:09:02Z\nDNSSEC: unsigned\nDomain Name: agentacademy.ai\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: ns69.domaincontrol.com\nName Server: ns70.domaincontrol.com\nRegistrant City: a7319ae5e6c95df5\nRegistrant Country: US\nRegistrant Email: b84fa8be11acfabes@domainsbyproxy.com\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 3432650ec337c945\nRegistrant Name: 80315b2e6ac1a801\nRegistrant Organization: b46a98a26fe2fd9f\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: d5f66d3a005b000d\nRegistrant Postal Code: d869d3b215ab9645\nRegistrant State/Province: 30bdd2917a604c83\nRegistrant Street: b69e4faac236b255\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: +1.4806242505\nRegistrar IANA ID: 146\nRegistrar URL: http://www.godaddy.com/domains/search.aspx?ci=8990\nRegistrar WHOIS Server: whois.godaddy.com\nRegistrar: GoDaddy.com, LLC\nRegistry Admin ID: c7e50d9eab3c44fe87011ec448698b40-DONUTS\nRegistry Domain ID: 8791a13d33d643218f6798052994c021-DONUTS\nRegistry Expiry Date: 2026-09-20T12:09:06Z\nRegistry Registrant ID: e8766540a17b4f038bbbe22009ba9055-DONUTS\nRegistry Tech ID: c2c84c29a532495295e7e3c2e34159e2-DONUTS\nTech City: Tempe\nTech Country: US\nTech Email: b84fa8be11acfabes@domainsbyproxy.com\nTech Organization: Domains By Proxy, LLC\nTech Postal Code: 85281\nTech State/Province: Arizona\nUpdated Date: 2025-04-02T20:51:30Z",
-        "dns_records": [
-          "NS ns70.domaincontrol.com",
-          "TXT lw=6703b609f0c30eee6bcbbb4f",
-          "NS ns69.domaincontrol.com",
-          "A 141.193.213.11",
-          "A 141.193.213.10",
-          "MX agentacademy-ai.mail.protection.outlook.com",
-          "TXT v=spf1 include:spf.protection.outlook.com include:mailgun.org -all",
-          "SOA ns69.domaincontrol.com"
-        ],
-        "https_subject": {
-          "CN": "agentacademy.ai"
-        },
-        "https_issuer": {
-          "C": "US",
-          "O": "Let's Encrypt",
-          "CN": "YE1"
-        },
-        "malicious_engines": [
-          "нет"
-        ],
-        "suspicious_engines": [
-          "нет"
-        ],
-        "tags": []
-      },
-      "redirects_to": "нет (без редиректа)",
-      "redirect_chain": [
-        "https://agentacademy.ai/"
-      ],
-      "page_output": "title: AI Agents Academy - AI Agent Online Training &amp; Certification. AI Agents Academy - AI Agent Online Training &amp; Certification Skip to content Menu Courses Understanding Agentic AI – Get started with the fundamentals of AI Agents and explore practical applications for business and workflow automation. Price: FREE Level: Beginner (Agent-curi",
-      "parked_at": "регистратор/whois связан с парковкой: godaddy",
-      "final_url": "https://agentacademy.ai/",
-      "http_status": 200,
-      "table_rows": [
-        {
-          "param": "Домен",
-          "value": "agentacademy.ai"
-        },
-        {
-          "param": "VirusTotal URL",
-          "value": "https://www.virustotal.com/gui/domain/agentacademy.ai"
-        },
-        {
-          "param": "Детекции",
-          "value": "0/91 (malicious=0, suspicious=0)"
-        },
-        {
-          "param": "Security vendors' analysis",
-          "value": "ниже построчно, как на VirusTotal"
-        },
-        {
-          "param": "Abusix",
-          "value": "Clean"
-        },
-        {
-          "param": "Acronis",
-          "value": "Clean"
-        },
-        {
-          "param": "ADMINUSLabs",
-          "value": "Clean"
-        },
-        {
-          "param": "AILabs (MONITORAPP)",
-          "value": "Clean"
-        },
-        {
-          "param": "AlienVault",
-          "value": "Clean"
-        },
-        {
-          "param": "Antiy-AVL",
-          "value": "Clean"
-        },
-        {
-          "param": "BitDefender",
-          "value": "Clean"
-        },
-        {
-          "param": "Blueliv",
-          "value": "Clean"
-        },
-        {
-          "param": "Certego",
-          "value": "Clean"
-        },
-        {
-          "param": "Chong Lua Dao",
-          "value": "Clean"
-        },
-        {
-          "param": "CINS Army",
-          "value": "Clean"
-        },
-        {
-          "param": "CMC Threat Intelligence",
-          "value": "Clean"
-        },
-        {
-          "param": "CRDF",
-          "value": "Clean"
-        },
-        {
-          "param": "CTX AI",
-          "value": "Clean"
-        },
-        {
-          "param": "Cyble",
-          "value": "Clean"
-        },
-        {
-          "param": "CyRadar",
-          "value": "Clean"
-        },
-        {
-          "param": "desenmascara.me",
-          "value": "Clean"
-        },
-        {
-          "param": "Dr.Web",
-          "value": "Clean"
-        },
-        {
-          "param": "EmergingThreats",
-          "value": "Clean"
-        },
-        {
-          "param": "Emsisoft",
-          "value": "Clean"
-        },
-        {
-          "param": "ESET",
-          "value": "Clean"
-        },
-        {
-          "param": "ESTsecurity",
-          "value": "Clean"
-        },
-        {
-          "param": "Forcepoint ThreatSeeker",
-          "value": "Clean"
-        },
-        {
-          "param": "Fortinet",
-          "value": "Clean"
-        },
-        {
-          "param": "G-Data",
-          "value": "Clean"
-        },
-        {
-          "param": "Google Safe Browsing",
-          "value": "Clean"
-        },
-        {
-          "param": "GreenSnow",
-          "value": "Clean"
-        },
-        {
-          "param": "Heimdal Security",
-          "value": "Clean"
-        },
-        {
-          "param": "IPsum",
-          "value": "Clean"
-        },
-        {
-          "param": "Juniper Networks",
-          "value": "Clean"
-        },
-        {
-          "param": "Kaspersky",
-          "value": "Clean"
-        },
-        {
-          "param": "LevelBlue",
-          "value": "Clean"
-        },
-        {
-          "param": "Lionic",
-          "value": "Clean"
-        },
-        {
-          "param": "Malwared",
-          "value": "Clean"
-        },
-        {
-          "param": "MalwarePatrol",
-          "value": "Clean"
-        },
-        {
-          "param": "OpenPhish",
-          "value": "Clean"
-        },
-        {
-          "param": "Phishing Database",
-          "value": "Clean"
-        },
-        {
-          "param": "Phishtank",
-          "value": "Clean"
-        },
-        {
-          "param": "PREBYTES",
-          "value": "Clean"
-        },
-        {
-          "param": "Quick Heal",
-          "value": "Clean"
-        },
-        {
-          "param": "Quttera",
-          "value": "Clean"
-        },
-        {
-          "param": "Scantitan",
-          "value": "Clean"
-        },
-        {
-          "param": "SCUMWARE.org",
-          "value": "Clean"
-        },
-        {
-          "param": "Seclookup",
-          "value": "Clean"
-        },
-        {
-          "param": "Sophos",
-          "value": "Clean"
-        },
-        {
-          "param": "StopForumSpam",
-          "value": "Clean"
-        },
-        {
-          "param": "Sucuri SiteCheck",
-          "value": "Clean"
-        },
-        {
-          "param": "ThreatHive",
-          "value": "Clean"
-        },
-        {
-          "param": "URLhaus",
-          "value": "Clean"
-        },
-        {
-          "param": "Viettel Threat Intelligence",
-          "value": "Clean"
-        },
-        {
-          "param": "ViriBack",
-          "value": "Clean"
-        },
-        {
-          "param": "VX Vault",
-          "value": "Clean"
-        },
-        {
-          "param": "Webroot",
-          "value": "Clean"
-        },
-        {
-          "param": "Xcitium Verdict Cloud",
-          "value": "Clean"
-        },
-        {
-          "param": "Yandex Safebrowsing",
-          "value": "Clean"
-        },
-        {
-          "param": "ZeroCERT",
-          "value": "Clean"
-        },
-        {
-          "param": "0xSI_f33d",
-          "value": "Unrated"
-        },
-        {
-          "param": "alphaMountain.ai",
-          "value": "Unrated"
-        },
-        {
-          "param": "AlphaSOC",
-          "value": "Unrated"
-        },
-        {
-          "param": "ArcSight Threat Intelligence",
-          "value": "Unrated"
-        },
-        {
-          "param": "AutoShun",
-          "value": "Unrated"
-        },
-        {
-          "param": "Axur",
-          "value": "Unrated"
-        },
-        {
-          "param": "Bfore.Ai PreCrime",
-          "value": "Unrated"
-        },
-        {
-          "param": "Bkav",
-          "value": "Unrated"
-        },
-        {
-          "param": "ChainPatrol",
-          "value": "Unrated"
-        },
-        {
-          "param": "Cluster25",
-          "value": "Unrated"
-        },
-        {
-          "param": "Criminal IP",
-          "value": "Unrated"
-        },
-        {
-          "param": "CSIS Security Group",
-          "value": "Unrated"
-        },
-        {
-          "param": "Cyan",
-          "value": "Unrated"
-        },
-        {
-          "param": "DNS8",
-          "value": "Unrated"
-        },
-        {
-          "param": "Ermes",
-          "value": "Unrated"
-        },
-        {
-          "param": "Fortra",
-          "value": "Unrated"
-        },
-        {
-          "param": "GCP Abuse Intelligence",
-          "value": "Unrated"
-        },
-        {
-          "param": "GreyNoise",
-          "value": "Unrated"
-        },
-        {
-          "param": "Gridinsoft",
-          "value": "Unrated"
-        },
-        {
-          "param": "Guardpot",
-          "value": "Unrated"
-        },
-        {
-          "param": "Hunt.io Intelligence",
-          "value": "Unrated"
-        },
-        {
-          "param": "Lumu",
-          "value": "Unrated"
-        },
-        {
-          "param": "MalwareURL",
-          "value": "Unrated"
-        },
-        {
-          "param": "Mimecast",
-          "value": "Unrated"
-        },
-        {
-          "param": "Netcraft",
-          "value": "Unrated"
-        },
-        {
-          "param": "PhishFort",
-          "value": "Unrated"
-        },
-        {
-          "param": "PrecisionSec",
-          "value": "Unrated"
-        },
-        {
-          "param": "SafeToOpen",
-          "value": "Unrated"
-        },
-        {
-          "param": "Sansec eComscan",
-          "value": "Unrated"
-        },
-        {
-          "param": "SecureBrain",
-          "value": "Unrated"
-        },
-        {
-          "param": "Snort IP sample list",
-          "value": "Unrated"
-        },
-        {
-          "param": "SOCRadar",
-          "value": "Unrated"
-        },
-        {
-          "param": "URLQuery",
-          "value": "Unrated"
-        },
-        {
-          "param": "VIPRE",
-          "value": "Unrated"
-        },
-        {
-          "param": "ZeroFox",
-          "value": "Unrated"
-        },
-        {
-          "param": "Куда редиректит",
-          "value": "нет (без редиректа)"
-        },
-        {
-          "param": "Что выводит (кратко)",
-          "value": "title: AI Agents Academy - AI Agent Online Training &amp; Certification. AI Agents Academy - AI Agent Online Training &amp; Certification Skip to content Menu Courses Understanding Agentic AI – Get started with the fundamentals of AI Agents and explore practical applications for business and workflow automation. Price: FREE Level: Beginner (Agent-curi"
-        },
-        {
-          "param": "Где припаркован",
-          "value": "регистратор/whois связан с парковкой: godaddy"
-        }
-      ]
-    },
     {
       "domain": "alphamountain.ai",
       "virustotal": {
@@ -2057,10 +1234,10 @@
           "Alexa: 837293",
           "Cisco Umbrella: 943593",
           "Cloudflare Radar: 500000",
-          "Majestic: 667625"
+          "Majestic: 681311"
         ],
         "creation_date": 1589789971,
-        "last_modification_date": 1786541989,
+        "last_modification_date": 1786547010,
         "last_analysis_date": 1786537959,
         "registrar": "Key-Systems GmbH",
         "whois": "Admin City: LUNEL\nAdmin Country: FR\nAdmin Email: 142009b855ac8689s@bfore.ai\nAdmin Organization: BforeAI\nAdmin Postal Code: 34400\nCreation Date: 2020-05-18T08:19:31Z\nDNSSEC: unsigned\nDomain Name: bfore.ai\nDomain Status: ok https://icann.org/epp#ok\nName Server: gannon.ns.cloudflare.com\nName Server: joan.ns.cloudflare.com\nRegistrant City: 35bc51b08d6157ac\nRegistrant Country: FR\nRegistrant Email: 1b111f016998b8a5s@bfore.ai\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 3432650ec337c945\nRegistrant Name: 859eb95e6c19379b\nRegistrant Organization: a92ce43020c74c2d\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: cbe2f81ea0f3d324\nRegistrant Postal Code: 142f27c6efee25c9\nRegistrant State/Province: 5e748b960a832663\nRegistrant Street: a3bafb9d1917a61e\nRegistrar Abuse Contact Email: abuse@key-systems.net\nRegistrar Abuse Contact Phone: +49.68949396850\nRegistrar IANA ID: 269\nRegistrar URL: http://key-systems.net\nRegistrar WHOIS Server: whois.rrpproxy.net\nRegistrar: Key-Systems GmbH\nRegistry Admin ID: 49266c63f333482585da97c9604a7dee-DONUTS\nRegistry Domain ID: 7fd17e72329c40e28470a0297206bc76-DONUTS\nRegistry Expiry Date: 2030-05-18T08:19:31Z\nRegistry Registrant ID: 5fea896286f742c4b03a01b2dd3a7924-DONUTS\nRegistry Tech ID: ae212174345a41199b163f6b1193f9ad-DONUTS\nTech City: arinsal\nTech Country: AD\nTech Email: 220e5ddaaf1cc53fs@gmail.com\nTech Organization: EVENTOURI\nTech Postal Code: ad400\nTech State/Province: la massana\nUpdated Date: 2025-11-24T22:53:42Z",
@@ -6621,6 +5798,835 @@
         {
           "param": "Что выводит (кратко)",
           "value": "title: Desenmascara.me — Detecta fraude y scams en cualquier web. Desenmascara.me — Detecta fraude y scams en cualquier web Trust Intelligence Live Log in Pricing Resources Problem API Signals History Contact X / Twitter Log in Explore pricing Website and phone fraud check Unmask a suspicious link or number. Paste what you received. We return a"
+        },
+        {
+          "param": "Где припаркован",
+          "value": "регистратор/whois связан с парковкой: godaddy"
+        }
+      ]
+    },
+    {
+      "domain": "digitalworkforce.com",
+      "virustotal": {
+        "ok": true,
+        "vt_url": "https://www.virustotal.com/gui/domain/digitalworkforce.com",
+        "detections": "2/91 (malicious=1, suspicious=1)",
+        "last_analysis_stats": {
+          "malicious": 1,
+          "suspicious": 1,
+          "undetected": 34,
+          "harmless": 55,
+          "timeout": 0
+        },
+        "vendor_rows": [
+          [
+            "CRDF",
+            "Malicious"
+          ],
+          [
+            "Gridinsoft",
+            "Suspicious"
+          ],
+          [
+            "Abusix",
+            "Clean"
+          ],
+          [
+            "Acronis",
+            "Clean"
+          ],
+          [
+            "ADMINUSLabs",
+            "Clean"
+          ],
+          [
+            "AILabs (MONITORAPP)",
+            "Clean"
+          ],
+          [
+            "AlienVault",
+            "Clean"
+          ],
+          [
+            "alphaMountain.ai",
+            "Clean"
+          ],
+          [
+            "Antiy-AVL",
+            "Clean"
+          ],
+          [
+            "BitDefender",
+            "Clean"
+          ],
+          [
+            "Blueliv",
+            "Clean"
+          ],
+          [
+            "Certego",
+            "Clean"
+          ],
+          [
+            "CINS Army",
+            "Clean"
+          ],
+          [
+            "CMC Threat Intelligence",
+            "Clean"
+          ],
+          [
+            "CTX AI",
+            "Clean"
+          ],
+          [
+            "Cyble",
+            "Clean"
+          ],
+          [
+            "CyRadar",
+            "Clean"
+          ],
+          [
+            "desenmascara.me",
+            "Clean"
+          ],
+          [
+            "Dr.Web",
+            "Clean"
+          ],
+          [
+            "EmergingThreats",
+            "Clean"
+          ],
+          [
+            "Emsisoft",
+            "Clean"
+          ],
+          [
+            "ESET",
+            "Clean"
+          ],
+          [
+            "ESTsecurity",
+            "Clean"
+          ],
+          [
+            "Forcepoint ThreatSeeker",
+            "Clean"
+          ],
+          [
+            "Fortinet",
+            "Clean"
+          ],
+          [
+            "G-Data",
+            "Clean"
+          ],
+          [
+            "Google Safe Browsing",
+            "Clean"
+          ],
+          [
+            "GreenSnow",
+            "Clean"
+          ],
+          [
+            "Heimdal Security",
+            "Clean"
+          ],
+          [
+            "IPsum",
+            "Clean"
+          ],
+          [
+            "Juniper Networks",
+            "Clean"
+          ],
+          [
+            "Kaspersky",
+            "Clean"
+          ],
+          [
+            "LevelBlue",
+            "Clean"
+          ],
+          [
+            "Lionic",
+            "Clean"
+          ],
+          [
+            "Malwared",
+            "Clean"
+          ],
+          [
+            "MalwarePatrol",
+            "Clean"
+          ],
+          [
+            "OpenPhish",
+            "Clean"
+          ],
+          [
+            "Phishing Database",
+            "Clean"
+          ],
+          [
+            "Phishtank",
+            "Clean"
+          ],
+          [
+            "PREBYTES",
+            "Clean"
+          ],
+          [
+            "Quick Heal",
+            "Clean"
+          ],
+          [
+            "Quttera",
+            "Clean"
+          ],
+          [
+            "Scantitan",
+            "Clean"
+          ],
+          [
+            "SCUMWARE.org",
+            "Clean"
+          ],
+          [
+            "Seclookup",
+            "Clean"
+          ],
+          [
+            "Sophos",
+            "Clean"
+          ],
+          [
+            "StopForumSpam",
+            "Clean"
+          ],
+          [
+            "Sucuri SiteCheck",
+            "Clean"
+          ],
+          [
+            "ThreatHive",
+            "Clean"
+          ],
+          [
+            "URLhaus",
+            "Clean"
+          ],
+          [
+            "Viettel Threat Intelligence",
+            "Clean"
+          ],
+          [
+            "ViriBack",
+            "Clean"
+          ],
+          [
+            "VX Vault",
+            "Clean"
+          ],
+          [
+            "Webroot",
+            "Clean"
+          ],
+          [
+            "Xcitium Verdict Cloud",
+            "Clean"
+          ],
+          [
+            "Yandex Safebrowsing",
+            "Clean"
+          ],
+          [
+            "ZeroCERT",
+            "Clean"
+          ],
+          [
+            "0xSI_f33d",
+            "Unrated"
+          ],
+          [
+            "AlphaSOC",
+            "Unrated"
+          ],
+          [
+            "ArcSight Threat Intelligence",
+            "Unrated"
+          ],
+          [
+            "AutoShun",
+            "Unrated"
+          ],
+          [
+            "Axur",
+            "Unrated"
+          ],
+          [
+            "Bfore.Ai PreCrime",
+            "Unrated"
+          ],
+          [
+            "Bkav",
+            "Unrated"
+          ],
+          [
+            "ChainPatrol",
+            "Unrated"
+          ],
+          [
+            "Chong Lua Dao",
+            "Unrated"
+          ],
+          [
+            "Cluster25",
+            "Unrated"
+          ],
+          [
+            "Criminal IP",
+            "Unrated"
+          ],
+          [
+            "CSIS Security Group",
+            "Unrated"
+          ],
+          [
+            "Cyan",
+            "Unrated"
+          ],
+          [
+            "DNS8",
+            "Unrated"
+          ],
+          [
+            "Ermes",
+            "Unrated"
+          ],
+          [
+            "Fortra",
+            "Unrated"
+          ],
+          [
+            "GCP Abuse Intelligence",
+            "Unrated"
+          ],
+          [
+            "GreyNoise",
+            "Unrated"
+          ],
+          [
+            "Guardpot",
+            "Unrated"
+          ],
+          [
+            "Hunt.io Intelligence",
+            "Unrated"
+          ],
+          [
+            "Lumu",
+            "Unrated"
+          ],
+          [
+            "MalwareURL",
+            "Unrated"
+          ],
+          [
+            "Mimecast",
+            "Unrated"
+          ],
+          [
+            "Netcraft",
+            "Unrated"
+          ],
+          [
+            "PhishFort",
+            "Unrated"
+          ],
+          [
+            "PrecisionSec",
+            "Unrated"
+          ],
+          [
+            "SafeToOpen",
+            "Unrated"
+          ],
+          [
+            "Sansec eComscan",
+            "Unrated"
+          ],
+          [
+            "SecureBrain",
+            "Unrated"
+          ],
+          [
+            "Snort IP sample list",
+            "Unrated"
+          ],
+          [
+            "SOCRadar",
+            "Unrated"
+          ],
+          [
+            "URLQuery",
+            "Unrated"
+          ],
+          [
+            "VIPRE",
+            "Unrated"
+          ],
+          [
+            "ZeroFox",
+            "Unrated"
+          ]
+        ],
+        "reputation": 0,
+        "community_votes": {
+          "harmless": 0,
+          "malicious": 0
+        },
+        "categories": {},
+        "popularity_ranks": [
+          "Majestic: 641624",
+          "Statvoo: 793043",
+          "Alexa: 793043",
+          "Cisco Umbrella: 596851"
+        ],
+        "creation_date": 1170664246,
+        "last_modification_date": 1786463971,
+        "last_analysis_date": 1786314214,
+        "registrar": "GoDaddy.com, LLC",
+        "whois": "Creation Date: 2007-02-05T08:30:46Z\nDNSSEC: unsigned\nDomain Name: DIGITALWORKFORCE.COM\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: VAL.NS.CLOUDFLARE.COM\nName Server: VICKY.NS.CLOUDFLARE.COM\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: 480-624-2505\nRegistrar IANA ID: 146\nRegistrar URL: http://www.godaddy.com\nRegistrar WHOIS Server: whois.godaddy.com\nRegistrar: GoDaddy.com, LLC\nRegistry Domain ID: 795674333_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2030-02-05T08:30:46Z\nUpdated Date: 2026-07-13T11:54:37Z",
+        "dns_records": [
+          "TXT atlassian-domain-verification=U9BRrfbVceUY8aC2jEL3AdphoaX0HMy9Xr7nLDqWYfAQvGioBQb/pciOYO46dPE2",
+          "NS val.ns.cloudflare.com",
+          "SOA val.ns.cloudflare.com",
+          "TXT _3ssc57p6e2l21tkjou9dibegiiv2vnq",
+          "TXT ms85578082",
+          "MX digitalworkforce-com.mail.protection.outlook.com",
+          "AAAA 2606:4700:3037::6815:5252",
+          "TXT miro-verification=c9849f8847dbad03c86fa2759fbe4bb2e2a6f63e",
+          "TXT DomainVerification=607RY801UXRSB1W3J4R3ZCG1JAJM5MF0JAKRTGLCNZPA3AYKOFTHR0KKRWVGEEFN",
+          "A 172.67.155.59",
+          "A 104.21.82.82",
+          "AAAA 2606:4700:3037::ac43:9b3b"
+        ],
+        "https_subject": {
+          "CN": "digitalworkforce.com"
+        },
+        "https_issuer": {
+          "C": "US",
+          "O": "Let's Encrypt",
+          "CN": "YE2"
+        },
+        "malicious_engines": [
+          "CRDF: Malicious"
+        ],
+        "suspicious_engines": [
+          "Gridinsoft: Suspicious"
+        ],
+        "tags": []
+      },
+      "redirects_to": "нет (без редиректа)",
+      "redirect_chain": [
+        "https://digitalworkforce.com/"
+      ],
+      "page_output": "title: Digital Workforce | AI Agents | Business Automation | RPA. Digital Workforce | AI Agents | Business Automation | RPA Skip to content agentacademy.ai is Now Live! Start your free course today! Enroll now for free Careers agentacademy.ai Investors Contact English English Suomi Svenska Polski Digital Worker Digital Workers What are Digital ",
+      "parked_at": "регистратор/whois связан с парковкой: godaddy",
+      "final_url": "https://digitalworkforce.com/",
+      "http_status": 200,
+      "table_rows": [
+        {
+          "param": "Домен",
+          "value": "digitalworkforce.com"
+        },
+        {
+          "param": "VirusTotal URL",
+          "value": "https://www.virustotal.com/gui/domain/digitalworkforce.com"
+        },
+        {
+          "param": "Детекции",
+          "value": "2/91 (malicious=1, suspicious=1)"
+        },
+        {
+          "param": "Security vendors' analysis",
+          "value": "ниже построчно, как на VirusTotal"
+        },
+        {
+          "param": "CRDF",
+          "value": "Malicious"
+        },
+        {
+          "param": "Gridinsoft",
+          "value": "Suspicious"
+        },
+        {
+          "param": "Abusix",
+          "value": "Clean"
+        },
+        {
+          "param": "Acronis",
+          "value": "Clean"
+        },
+        {
+          "param": "ADMINUSLabs",
+          "value": "Clean"
+        },
+        {
+          "param": "AILabs (MONITORAPP)",
+          "value": "Clean"
+        },
+        {
+          "param": "AlienVault",
+          "value": "Clean"
+        },
+        {
+          "param": "alphaMountain.ai",
+          "value": "Clean"
+        },
+        {
+          "param": "Antiy-AVL",
+          "value": "Clean"
+        },
+        {
+          "param": "BitDefender",
+          "value": "Clean"
+        },
+        {
+          "param": "Blueliv",
+          "value": "Clean"
+        },
+        {
+          "param": "Certego",
+          "value": "Clean"
+        },
+        {
+          "param": "CINS Army",
+          "value": "Clean"
+        },
+        {
+          "param": "CMC Threat Intelligence",
+          "value": "Clean"
+        },
+        {
+          "param": "CTX AI",
+          "value": "Clean"
+        },
+        {
+          "param": "Cyble",
+          "value": "Clean"
+        },
+        {
+          "param": "CyRadar",
+          "value": "Clean"
+        },
+        {
+          "param": "desenmascara.me",
+          "value": "Clean"
+        },
+        {
+          "param": "Dr.Web",
+          "value": "Clean"
+        },
+        {
+          "param": "EmergingThreats",
+          "value": "Clean"
+        },
+        {
+          "param": "Emsisoft",
+          "value": "Clean"
+        },
+        {
+          "param": "ESET",
+          "value": "Clean"
+        },
+        {
+          "param": "ESTsecurity",
+          "value": "Clean"
+        },
+        {
+          "param": "Forcepoint ThreatSeeker",
+          "value": "Clean"
+        },
+        {
+          "param": "Fortinet",
+          "value": "Clean"
+        },
+        {
+          "param": "G-Data",
+          "value": "Clean"
+        },
+        {
+          "param": "Google Safe Browsing",
+          "value": "Clean"
+        },
+        {
+          "param": "GreenSnow",
+          "value": "Clean"
+        },
+        {
+          "param": "Heimdal Security",
+          "value": "Clean"
+        },
+        {
+          "param": "IPsum",
+          "value": "Clean"
+        },
+        {
+          "param": "Juniper Networks",
+          "value": "Clean"
+        },
+        {
+          "param": "Kaspersky",
+          "value": "Clean"
+        },
+        {
+          "param": "LevelBlue",
+          "value": "Clean"
+        },
+        {
+          "param": "Lionic",
+          "value": "Clean"
+        },
+        {
+          "param": "Malwared",
+          "value": "Clean"
+        },
+        {
+          "param": "MalwarePatrol",
+          "value": "Clean"
+        },
+        {
+          "param": "OpenPhish",
+          "value": "Clean"
+        },
+        {
+          "param": "Phishing Database",
+          "value": "Clean"
+        },
+        {
+          "param": "Phishtank",
+          "value": "Clean"
+        },
+        {
+          "param": "PREBYTES",
+          "value": "Clean"
+        },
+        {
+          "param": "Quick Heal",
+          "value": "Clean"
+        },
+        {
+          "param": "Quttera",
+          "value": "Clean"
+        },
+        {
+          "param": "Scantitan",
+          "value": "Clean"
+        },
+        {
+          "param": "SCUMWARE.org",
+          "value": "Clean"
+        },
+        {
+          "param": "Seclookup",
+          "value": "Clean"
+        },
+        {
+          "param": "Sophos",
+          "value": "Clean"
+        },
+        {
+          "param": "StopForumSpam",
+          "value": "Clean"
+        },
+        {
+          "param": "Sucuri SiteCheck",
+          "value": "Clean"
+        },
+        {
+          "param": "ThreatHive",
+          "value": "Clean"
+        },
+        {
+          "param": "URLhaus",
+          "value": "Clean"
+        },
+        {
+          "param": "Viettel Threat Intelligence",
+          "value": "Clean"
+        },
+        {
+          "param": "ViriBack",
+          "value": "Clean"
+        },
+        {
+          "param": "VX Vault",
+          "value": "Clean"
+        },
+        {
+          "param": "Webroot",
+          "value": "Clean"
+        },
+        {
+          "param": "Xcitium Verdict Cloud",
+          "value": "Clean"
+        },
+        {
+          "param": "Yandex Safebrowsing",
+          "value": "Clean"
+        },
+        {
+          "param": "ZeroCERT",
+          "value": "Clean"
+        },
+        {
+          "param": "0xSI_f33d",
+          "value": "Unrated"
+        },
+        {
+          "param": "AlphaSOC",
+          "value": "Unrated"
+        },
+        {
+          "param": "ArcSight Threat Intelligence",
+          "value": "Unrated"
+        },
+        {
+          "param": "AutoShun",
+          "value": "Unrated"
+        },
+        {
+          "param": "Axur",
+          "value": "Unrated"
+        },
+        {
+          "param": "Bfore.Ai PreCrime",
+          "value": "Unrated"
+        },
+        {
+          "param": "Bkav",
+          "value": "Unrated"
+        },
+        {
+          "param": "ChainPatrol",
+          "value": "Unrated"
+        },
+        {
+          "param": "Chong Lua Dao",
+          "value": "Unrated"
+        },
+        {
+          "param": "Cluster25",
+          "value": "Unrated"
+        },
+        {
+          "param": "Criminal IP",
+          "value": "Unrated"
+        },
+        {
+          "param": "CSIS Security Group",
+          "value": "Unrated"
+        },
+        {
+          "param": "Cyan",
+          "value": "Unrated"
+        },
+        {
+          "param": "DNS8",
+          "value": "Unrated"
+        },
+        {
+          "param": "Ermes",
+          "value": "Unrated"
+        },
+        {
+          "param": "Fortra",
+          "value": "Unrated"
+        },
+        {
+          "param": "GCP Abuse Intelligence",
+          "value": "Unrated"
+        },
+        {
+          "param": "GreyNoise",
+          "value": "Unrated"
+        },
+        {
+          "param": "Guardpot",
+          "value": "Unrated"
+        },
+        {
+          "param": "Hunt.io Intelligence",
+          "value": "Unrated"
+        },
+        {
+          "param": "Lumu",
+          "value": "Unrated"
+        },
+        {
+          "param": "MalwareURL",
+          "value": "Unrated"
+        },
+        {
+          "param": "Mimecast",
+          "value": "Unrated"
+        },
+        {
+          "param": "Netcraft",
+          "value": "Unrated"
+        },
+        {
+          "param": "PhishFort",
+          "value": "Unrated"
+        },
+        {
+          "param": "PrecisionSec",
+          "value": "Unrated"
+        },
+        {
+          "param": "SafeToOpen",
+          "value": "Unrated"
+        },
+        {
+          "param": "Sansec eComscan",
+          "value": "Unrated"
+        },
+        {
+          "param": "SecureBrain",
+          "value": "Unrated"
+        },
+        {
+          "param": "Snort IP sample list",
+          "value": "Unrated"
+        },
+        {
+          "param": "SOCRadar",
+          "value": "Unrated"
+        },
+        {
+          "param": "URLQuery",
+          "value": "Unrated"
+        },
+        {
+          "param": "VIPRE",
+          "value": "Unrated"
+        },
+        {
+          "param": "ZeroFox",
+          "value": "Unrated"
+        },
+        {
+          "param": "Куда редиректит",
+          "value": "нет (без редиректа)"
+        },
+        {
+          "param": "Что выводит (кратко)",
+          "value": "title: Digital Workforce | AI Agents | Business Automation | RPA. Digital Workforce | AI Agents | Business Automation | RPA Skip to content agentacademy.ai is Now Live! Start your free course today! Enroll now for free Careers agentacademy.ai Investors Contact English English Suomi Svenska Polski Digital Worker Digital Workers What are Digital "
         },
         {
           "param": "Где припаркован",
