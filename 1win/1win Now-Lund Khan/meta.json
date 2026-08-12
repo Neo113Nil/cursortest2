@@ -1,0 +1,54 @@
+{
+  "app_id": "com.play1win.sports",
+  "title": "1win Now",
+  "developer": "Lund Khan",
+  "score": null,
+  "icon": "/static/app-icons/com_play1win_sports.png",
+  "url": "https://play.google.com/store/apps/details?id=com.play1win.sports&hl=en&gl=us",
+  "keyword": "1win",
+  "country": "Spain",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260812_132238_Spain_1win_search",
+  "search_title": "1win: Now (Early Access)",
+  "search_developer": "Lund Khan",
+  "rank": 4,
+  "developer_id": "Lund+Khan",
+  "released": "",
+  "updated": "Jul 27, 2026",
+  "version": "Varies with device",
+  "summary": "1Win Now: Play exciting sports trivia quizzes and test your sports IQ!",
+  "folder": "1win Now-Lund Khan",
+  "path": "1win/1win Now-Lund Khan",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.play1win.sports-2-asset.apk",
+    "com.play1win.sports-2-config.arm64_v8a.apk",
+    "com.play1win.sports-2-config.en.apk",
+    "com.play1win.sports-2-config.xxhdpi.apk",
+    "com.play1win.sports-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/1win/1win Now-Lund Khan",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.play1win.sports ─╮\n│ 1win: Now             │\n│ 1.1.1  (vc 2)         │\n╰───────────────────────╯\n\nDownloading 5 files  (65.7 MB)\n  com.play1win.sports-2.apk                  ━━━━━━━ 100% 46.0/4… 19.7   0:00:00\n                                                          MB      MB/s          \n  com.play1win.sports-2-config.arm64_v8a.apk ━━━━━━━ 100% 1.2/1.2 9.4    0:00:00\n                                                          MB      MB/s          \n  com.play1win.sports-2-config.en.apk        ━━━━━━━ 100% 127.4/… 2.9    0:00:00\n                                                          kB      MB/s          \n  com.play1win.sports-2-config.xxhdpi.apk    ━━━━━━━ 100% 380.3/… 5.3    0:00:00\n                                                          kB      MB/s          \n  com.play1win.sports-2-asset.apk            ━━━━━━━ 100% 21.1/2… 11.6   0:00:00\n                                                          MB      MB/s          \n\n                    Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                       ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.play1win.sports-2.apk                  │  43.9 MB │\n│ com.play1win.sports-2-config.arm64_v8a.apk │   1.2 MB │\n│ com.play1win.sports-2-config.en.apk        │ 124.4 KB │\n│ com.play1win.sports-2-config.xxhdpi.apk    │ 371.4 KB │\n│ com.play1win.sports-2-asset.apk            │  43.9 MB │\n└────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.play1win.sports ─╮\n│ 1win: Now             │\n│ 1.1.1  (vc 2)         │\n╰───────────────────────╯\n\nDownloading 5 files  (65.7 MB)\n  com.play1win.sports-2.apk                  ━━━━━━━ 100% 46.0/4… 19.7   0:00:00\n                                                          MB      MB/s          \n  com.play1win.sports-2-config.arm64_v8a.apk ━━━━━━━ 100% 1.2/1.2 9.4    0:00:00\n                                                          MB      MB/s          \n  com.play1win.sports-2-config.en.apk        ━━━━━━━ 100% 127.4/… 2.9    0:00:00\n                                                          kB      MB/s          \n  com.play1win.sports-2-config.xxhdpi.apk    ━━━━━━━ 100% 380.3/… 5.3    0:00:00\n                                                          kB      MB/s          \n  com.play1win.sports-2-asset.apk            ━━━━━━━ 100% 21.1/2… 11.6   0:00:00\n                                                          MB      MB/s          \n\n                    Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                       ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.play1win.sports-2.apk                  │  43.9 MB │\n│ com.play1win.sports-2-config.arm64_v8a.apk │   1.2 MB │\n│ com.play1win.sports-2-config.en.apk        │ 124.4 KB │\n│ com.play1win.sports-2-config.xxhdpi.apk    │ 371.4 KB │\n│ com.play1win.sports-2-asset.apk            │  43.9 MB │\n└────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
