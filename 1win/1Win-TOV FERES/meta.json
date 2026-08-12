@@ -1,0 +1,55 @@
+{
+  "app_id": "com.fretyu.popolo.dydyr",
+  "title": "1Win",
+  "developer": "TOV FERES",
+  "score": null,
+  "icon": "/static/app-icons/com_fretyu_popolo_dydyr.png",
+  "url": "https://play.google.com/store/apps/details?id=com.fretyu.popolo.dydyr&hl=en&gl=us",
+  "keyword": "1win",
+  "country": "Spain",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260812_132238_Spain_1win_search",
+  "search_title": "1Win",
+  "search_developer": "TOV FERES",
+  "rank": 3,
+  "developer_id": "TOV+FERES",
+  "released": "Jul 22, 2026",
+  "updated": "Jul 22, 2026",
+  "version": "Varies with device",
+  "summary": "Win: coffee brewing timer and order tracker",
+  "folder": "1Win-TOV FERES",
+  "path": "1win/1Win-TOV FERES",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.fretyu.popolo.dydyr-1-asset.apk",
+    "com.fretyu.popolo.dydyr-1-config.en.apk",
+    "com.fretyu.popolo.dydyr-1-config.lt.apk",
+    "com.fretyu.popolo.dydyr-1-config.ru.apk",
+    "com.fretyu.popolo.dydyr-1-config.xxhdpi.apk",
+    "com.fretyu.popolo.dydyr-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/1win/1Win-TOV FERES",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.fretyu.popolo.dydyr ─╮\n│ 1Win                      │\n│ 1.0  (vc 1)               │\n╰───────────────────────────╯\n\nDownloading 6 files  (5.1 MB)\n  com.fretyu.popolo.dydyr-1.apk               ━━━━━━ 100% 3.4/3.4 25.6   0:00:00\n                                                          MB      MB/s          \n  com.fretyu.popolo.dydyr-1-config.en.apk     ━━━━━━ 100% 49.6/4… ?      0:00:00\n                                                          kB                    \n  com.fretyu.popolo.dydyr-1-config.lt.apk     ━━━━━━ 100% 33.2/3… ?      0:00:00\n                                                          kB                    \n  com.fretyu.popolo.dydyr-1-config.ru.apk     ━━━━━━ 100% 33.2/3… ?      0:00:00\n                                                          kB                    \n  com.fretyu.popolo.dydyr-1-config.xxhdpi.apk ━━━━━━ 100% 61.9/6… ?      0:00:00\n                                                          kB                    \n  com.fretyu.popolo.dydyr-1-asset.apk         ━━━━━━ 100% 1.8/1.8 15.5   0:00:00\n                                                          MB      MB/s          \n\n                    Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                        ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.fretyu.popolo.dydyr-1.apk               │  3.2 MB │\n│ com.fretyu.popolo.dydyr-1-config.en.apk     │ 48.4 KB │\n│ com.fretyu.popolo.dydyr-1-config.lt.apk     │ 32.4 KB │\n│ com.fretyu.popolo.dydyr-1-config.ru.apk     │ 32.4 KB │\n│ com.fretyu.popolo.dydyr-1-config.xxhdpi.apk │ 60.4 KB │\n│ com.fretyu.popolo.dydyr-1-asset.apk         │  3.2 MB │\n└─────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.fretyu.popolo.dydyr ─╮\n│ 1Win                      │\n│ 1.0  (vc 1)               │\n╰───────────────────────────╯\n\nDownloading 6 files  (5.1 MB)\n  com.fretyu.popolo.dydyr-1.apk               ━━━━━━ 100% 3.4/3.4 25.6   0:00:00\n                                                          MB      MB/s          \n  com.fretyu.popolo.dydyr-1-config.en.apk     ━━━━━━ 100% 49.6/4… ?      0:00:00\n                                                          kB                    \n  com.fretyu.popolo.dydyr-1-config.lt.apk     ━━━━━━ 100% 33.2/3… ?      0:00:00\n                                                          kB                    \n  com.fretyu.popolo.dydyr-1-config.ru.apk     ━━━━━━ 100% 33.2/3… ?      0:00:00\n                                                          kB                    \n  com.fretyu.popolo.dydyr-1-config.xxhdpi.apk ━━━━━━ 100% 61.9/6… ?      0:00:00\n                                                          kB                    \n  com.fretyu.popolo.dydyr-1-asset.apk         ━━━━━━ 100% 1.8/1.8 15.5   0:00:00\n                                                          MB      MB/s          \n\n                    Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                        ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.fretyu.popolo.dydyr-1.apk               │  3.2 MB │\n│ com.fretyu.popolo.dydyr-1-config.en.apk     │ 48.4 KB │\n│ com.fretyu.popolo.dydyr-1-config.lt.apk     │ 32.4 KB │\n│ com.fretyu.popolo.dydyr-1-config.ru.apk     │ 32.4 KB │\n│ com.fretyu.popolo.dydyr-1-config.xxhdpi.apk │ 60.4 KB │\n│ com.fretyu.popolo.dydyr-1-asset.apk         │  3.2 MB │\n└─────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
