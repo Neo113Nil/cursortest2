@@ -57,6 +57,7 @@
     "pokkt.com",
     "privacy.centro.net",
     "pubnative.net",
+    "pulsepoint.com",
     "reactjs.org",
     "risecodes.com",
     "se7en.es",
@@ -1280,10 +1281,10 @@
           "Statvoo: 88055",
           "Alexa: 88055",
           "Cisco Umbrella: 27002",
-          "Cloudflare Radar: 5000"
+          "Cloudflare Radar: 500000"
         ],
         "creation_date": 1357257600,
-        "last_modification_date": 1786526102,
+        "last_modification_date": 1786546263,
         "last_analysis_date": 1785958957,
         "registrar": "нет",
         "whois": "Administrative city: REDACTED FOR PRIVACY\nAdministrative country: United States\nAdministrative email: 0e4fd42886d4e9fas@contact.gandi.net\nAdministrative state: REDACTED FOR PRIVACY\nBilling city: REDACTED FOR PRIVACY\nBilling country: United States\nBilling email: 0e4fd42886d4e9fas@contact.gandi.net\nBilling state: REDACTED FOR PRIVACY\nCreate date: 2013-01-04 00:00:00\nDomain name: adikteev.com\nDomain registrar id: 81.0\nDomain registrar url: whois.gandi.net\nExpiry date: 2027-01-04 00:00:00\nQuery time: 2025-12-11 10:21:04\nRegistrant address: 1f8f4166599d23ee\nRegistrant city: 1f8f4166599d23ee\nRegistrant company: a677fd2da4b65f8a\nRegistrant country: France\nRegistrant email: 0e4fd42886d4e9fas@contact.gandi.net\nRegistrant name: 1f8f4166599d23ee\nRegistrant state: 5af5df6ecd8e8fb1\nRegistrant zip: 1f8f4166599d23ee\nTechnical city: REDACTED FOR PRIVACY\nTechnical country: United States\nTechnical email: 0e4fd42886d4e9fas@contact.gandi.net\nTechnical state: REDACTED FOR PRIVACY\nUpdate date: 2025-12-04 00:00:00",
@@ -4601,23 +4602,23 @@
           "Cloudflare Radar: 10000"
         ],
         "creation_date": 964009807,
-        "last_modification_date": 1786545042,
-        "last_analysis_date": 1786544281,
+        "last_modification_date": 1786547805,
+        "last_analysis_date": 1786545906,
         "registrar": "GoDaddy.com, LLC",
         "whois": "Creation Date: 2000-07-19T12:30:07Z\nDNSSEC: unsigned\nDomain Name: ADMIXER.COM\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: JOHNNY.NS.CLOUDFLARE.COM\nName Server: TREASURE.NS.CLOUDFLARE.COM\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: 480-624-2505\nRegistrar IANA ID: 146\nRegistrar URL: http://www.godaddy.com\nRegistrar WHOIS Server: whois.godaddy.com\nRegistrar: GoDaddy.com, LLC\nRegistry Domain ID: 31582740_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2027-09-20T03:59:59Z\nUpdated Date: 2026-07-02T12:33:14Z",
         "dns_records": [
-          "MX aspmx3.googlemail.com",
-          "TXT _globalsign-domain-verification=l5FoRm-Wx1IdZXIQHIKNLMVOQubQQsbEvtHK0InPnW",
-          "TXT google-site-verification=0gCkvXWcAPMfvx7H2dEdnwPhZir_Z5Jx0GtC6oQeg3E",
-          "TXT google-site-verification=UKkxrNfHWkgnEpZIUagjDIZMGFUEHcltGf1WD92uG18",
-          "TXT esputnik-verification=RVNQX0RWS19WMQAA37cAAAFv8XlAwSnnnutKdngP",
-          "TXT v=spf1 include:spf2.esputnik.com include:_spf.google.com include:spf.tipalti.com -all",
+          "A 85.195.76.86",
           "TXT _globalsign-domain-verification=nl5umTpwwqOunDJYz9VEHSBzfQDqC7GBSRKh2LZ-E0",
-          "MX aspmx.l.google.com",
-          "NS johnny.ns.cloudflare.com",
+          "TXT _globalsign-domain-verification=l_ZqEt7D8m4CWQ-hHnbtAaJpkRiRodx7RkdaQxUnB3",
+          "TXT google-site-verification=UKkxrNfHWkgnEpZIUagjDIZMGFUEHcltGf1WD92uG18",
           "TXT google-site-verification=cFS7YzM7-2m0yBMeK6KTcJo9UFsyNgRpdPDnaHiPUu4",
-          "MX alt1.aspmx.l.google.com",
-          "NS treasure.ns.cloudflare.com"
+          "TXT v=spf1 include:spf2.esputnik.com include:_spf.google.com include:spf.tipalti.com -all",
+          "NS johnny.ns.cloudflare.com",
+          "MX aspmx2.googlemail.com",
+          "TXT esputnik-verification=RVNQX0RWS19WMQAA37cAAAFv8XlAwSnnnutKdngP",
+          "NS treasure.ns.cloudflare.com",
+          "TXT _globalsign-domain-verification=dBZZKuR-cd2K7oghnhfupP61UEp--tcaQvZrMoArK4",
+          "MX aspmx3.googlemail.com"
         ],
         "https_subject": {
           "CN": "*.admixer.com"
@@ -5431,7 +5432,7 @@
           "Cloudflare Radar: 500000"
         ],
         "creation_date": 1586390400,
-        "last_modification_date": 1786545040,
+        "last_modification_date": 1786547809,
         "last_analysis_date": 1786544281,
         "registrar": "нет",
         "whois": "Create date: 2020-04-09 00:00:00\nDomain name: admixplay.com\nDomain registrar id: 1068.0\nDomain registrar url: https://rdap.namecheap.com/\nExpiry date: 2027-04-09 00:00:00\nName server 1: dns1.registrar-servers.com\nName server 2: dns2.registrar-servers.com\nQuery time: 2026-04-13 01:45:11\nRegistrant address: c6523241936df1ba\nRegistrant city: ddbf76e4e8cee320\nRegistrant company: 4b7a0912c26a13e2\nRegistrant country: Iceland\nRegistrant email: 976f4d404d081cf5s@withheldforprivacy.com\nRegistrant phone: ef7c9ebdb324979a\nRegistrant state: 3e0204199d8ebf9c\nRegistrant zip: f206c9d9737ad45d\nTechnical city: Reykjavik\nTechnical country: Iceland\nTechnical email: 976f4d404d081cf5s@withheldforprivacy.com\nTechnical state: Capital Region\nUpdate date: 2026-04-09 00:00:00",
