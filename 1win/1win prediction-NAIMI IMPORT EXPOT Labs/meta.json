@@ -50,5 +50,115 @@
   "stdout": "╭─ naimi.predictionquiz.official ─╮\n│ 1win prediction                 │\n│ 2.0  (vc 2)                     │\n╰─────────────────────────────────╯\n\nDownloading 5 files  (65.0 MB)\n  naimi.predictionquiz.official-2.apk                  ━━━━ 100% 52.… 34.5 0:00…\n                                                                 MB   MB/s      \n  naimi.predictionquiz.official-2-config.arm64_v8a.apk ━━━━ 100% 127… 3.0  0:00…\n                                                                 kB   MB/s      \n  naimi.predictionquiz.official-2-config.en.apk        ━━━━ 100% 102… 2.6  0:00…\n                                                                 kB   MB/s      \n  naimi.predictionquiz.official-2-config.xxhdpi.apk    ━━━━ 100% 82.… 2.2  0:00…\n                                                                 kB   MB/s      \n  naimi.predictionquiz.official-2-asset.apk            ━━━━ 100% 14.… 21.2 0:00…\n                                                                 MB   MB/s      \n\n                         Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                 ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ naimi.predictionquiz.official-2.apk                  │  50.5 MB │\n│ naimi.predictionquiz.official-2-config.arm64_v8a.apk │ 124.5 KB │\n│ naimi.predictionquiz.official-2-config.en.apk        │ 100.4 KB │\n│ naimi.predictionquiz.official-2-config.xxhdpi.apk    │  80.4 KB │\n│ naimi.predictionquiz.official-2-asset.apk            │  50.5 MB │\n└──────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "1win prediction"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.13.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "29"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.3.21"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, naimi.predictionquiz.official.DYNAMIC_RECEIVER_NOT_EXPORTE D_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.3.21, kotlinx-coroutines 1.10.2, OkHttp 4.12.0, Okio, Coil3 (+ coil-network-okhttp), Koin (org.koin), Jetpack Compose (UI/Foundation/Material3/Animation/Runtime 1.11.0, Material icons 1.7.8), AndroidX: activity 1.13.0, appcompat 1.7.1, core/core-ktx 1.18.0, datastore 1.2.0, lifecycle 2.10.0, navigation 2.9.7, room 2.8.4, sqlite 2.6.2, fragment 1.8.9, constraintlayout-compose 1.1.1, profileinstaller 1.4.1, startup-runtime 1.1.1, emoji2 1.4.0, window 1.5.0, savedstate 1.4.0, tracing 1.2.0; Google Accompanist drawablepainter; Google Play PairIP (com.pairip.application, com.pairip.licensecheck)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "blog.topix.de, blueprint-recruitment.co.uk, cdn1-www.bureauveritas.co.in, config.ru, digitalworkforce.com, dlhcorp.com, energybak.com, framerusercontent.com, jencapgroup.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "DataStore prqz_prefs: ключ onboardedState (флаг прохождения онбординга); заявки хранятся локально в Room"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "1win, prediction, WinPredictionQuiz, license check"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "blog.topix.de",
+        "redirects_to": "https://blog.topix.de/de/enjoy-working",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "blueprint-recruitment.co.uk",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "cdn1-www.bureauveritas.co.in",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: CSC Corporate Domains, Inc."
+      },
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "digitalworkforce.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "dlhcorp.com",
+        "redirects_to": "https://www.dlhcorp.com/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "energybak.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: PDR Ltd. d/b/a PublicDomainRegistry.com"
+      },
+      {
+        "domain": "framerusercontent.com",
+        "redirects_to": "https://www.framer.com",
+        "parked_at": "регистратор: CSC Corporate Domains, Inc."
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }
