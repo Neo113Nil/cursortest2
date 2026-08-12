@@ -51,5 +51,78 @@
   "stdout": "╭─ com.fretyu.popolo.dydyr ─╮\n│ 1Win                      │\n│ 1.0  (vc 1)               │\n╰───────────────────────────╯\n\nDownloading 6 files  (5.1 MB)\n  com.fretyu.popolo.dydyr-1.apk               ━━━━━━ 100% 3.4/3.4 25.6   0:00:00\n                                                          MB      MB/s          \n  com.fretyu.popolo.dydyr-1-config.en.apk     ━━━━━━ 100% 49.6/4… ?      0:00:00\n                                                          kB                    \n  com.fretyu.popolo.dydyr-1-config.lt.apk     ━━━━━━ 100% 33.2/3… ?      0:00:00\n                                                          kB                    \n  com.fretyu.popolo.dydyr-1-config.ru.apk     ━━━━━━ 100% 33.2/3… ?      0:00:00\n                                                          kB                    \n  com.fretyu.popolo.dydyr-1-config.xxhdpi.apk ━━━━━━ 100% 61.9/6… ?      0:00:00\n                                                          kB                    \n  com.fretyu.popolo.dydyr-1-asset.apk         ━━━━━━ 100% 1.8/1.8 15.5   0:00:00\n                                                          MB      MB/s          \n\n                    Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                        ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.fretyu.popolo.dydyr-1.apk               │  3.2 MB │\n│ com.fretyu.popolo.dydyr-1-config.en.apk     │ 48.4 KB │\n│ com.fretyu.popolo.dydyr-1-config.lt.apk     │ 32.4 KB │\n│ com.fretyu.popolo.dydyr-1-config.ru.apk     │ 32.4 KB │\n│ com.fretyu.popolo.dydyr-1-config.xxhdpi.apk │ 60.4 KB │\n│ com.fretyu.popolo.dydyr-1-asset.apk         │  3.2 MB │\n└─────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "1Win (Google Play); внутри APK app_name = Win / Brew Station (таймер варки кофе)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.13.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "26"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_WIFI_STATE, android.permission.ACCESS_NETWORK_STATE, com.fretyu.popolo.dydyr.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.0.21, kotlinx-coroutines-core / kotlinx-coroutines-android 1.9.0, OkHttp 4.12.0, Google Material 1.14.0, AndroidX: activity 1.13.0, appcompat 1.7.1, cardview 1.0.0, constraintlayout 2.2.1, coordinatorlayout 1.1.0, core / core-ktx 1.18.0, core-viewtree 1.0.0, cursoradapter 1.0.0, customview 1.2.0, customview-poolingcontainer 1.0.0, drawerlayout 1.1.1, dynamicanimation 1.1.0, emoji2 / emoji2-views-helper 1.3.0, fragment 1.5.4, graphics-shapes 1.0.1, interpolator 1.0.0, lifecycle (livedata / process / runtime / viewmodel / viewmodel-savedstate), loader 1.0.0, navigationevent 1.0.0, profileinstaller 1.4.0, recyclerview 1.3.2, savedstate 1.2.1, startup-runtime 1.1.1, tracing 1.2.0, transition 1.5.0, vectordrawable / vectordrawable-animated 1.1.0, versionedparcelable 1.1.1, viewpager 1.0.0, viewpager2 1.1.0-beta02, viewbinding 8.13.2, annotation-experimental 1.4.1, arch.core-runtime, compose.runtime-annotation 1.9.0; Google Play PairIP: com.pairip.application.Application, com.pairip.licensecheck"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "cfg: ключ rurl — сохранённая ссылка после проверки; win_brew_station: history (журнал варок), orders / perfect / score / best_ms / best_delta (статистика смены)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "rurl, workers.dev, status\":\"ok\", license check, 1Win, Accept-Language, User-Agent, X-Device-Model"
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "Имя пакета приложения",
+      "Модель телефона",
+      "Строка браузера телефона"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Имя пакета приложения\n• Модель телефона\n• Строка браузера телефона\n\nКак собираются: Сразу при открытии стартового экрана, ещё до того как человек успел что‑то нажать, приложение само читает из системы Android имя своего пакета, модель телефона и обычную строку браузера (как будто страницу открыли во встроенном браузере телефона). Отдельного окна с вопросом «разрешить?» при этом нет: шаг проходит незаметно, на экране только полоска загрузки. Если раньше проверка уже прошла и ссылка сохранилась в памяти приложения, эти сведения заново не собирают: приложение сразу достаёт сохранённую ссылку и открывает её. Если сохранённой ссылки нет, как раз тогда и читают пакет, модель и строку браузера для тихого запроса в интернет.…\n\nКуда отправляются: Сведения уходят тихим запросом в интернет на адрес https://withered-cloud-bc5b.rieznikvaleriia.workers.dev?app=…, где вместо многоточия подставляется имя пакета приложения. Адрес собран из зашифрованных кусочков внутри кода: сначала расшифровывается основа на workers.dev, затем добавляется «?app=», затем имя пакета. Запасных адресов для этой проверки в коде не видно. Вместе с адресом уходят заголовки: модель телефона (X-Device-Model), строка браузера (User-Agent) и фиксированная пометка языка (Accept-Language). Запрос идёт в фоне со стартового экрана, человек отдельного экрана «проверка» не видит. Если в ответ приходит уже «боевая» ссылка (не на workers.dev),…\n\nКак фильтруются пользователи: В самом приложении нет списка стран, языков, «белых» или «запрещённых» пользователей и нет проверки на бота или эмулятор. На проверку уходят имя пакета, модель телефона и строка браузера; язык в заголовке всегда один и тот же и из настроек телефона не берётся. Решение «кому показать внешнюю страницу, а кому обычное приложение» принимает сервер: приложение смотрит только на итоговый адрес после перехода. Если адрес всё ещё содержит workers.dev — считают, что оффер не дали, и открывают обычное приложение. Если итоговый адрес уже другой — считают, что пришла ссылка на оффер, сохраняют её и открывают снаружи. В коде есть ещё проверка текста ответа на кусок «\"status\":\"ok\"»,…\n\nЧто возвращается: После тихого запроса прилож…"
+  }
 }
