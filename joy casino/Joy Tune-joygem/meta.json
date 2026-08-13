@@ -1,0 +1,56 @@
+{
+  "app_id": "com.joytune.app",
+  "title": "Joy Tune",
+  "developer": "joygem",
+  "score": 2.6,
+  "icon": "/static/app-icons/com_joytune_app.png",
+  "url": "https://play.google.com/store/apps/details?id=com.joytune.app&hl=en&gl=us",
+  "keyword": "Joy Casino",
+  "country": "India",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260813_181659_India_Joy Casino_search",
+  "search_title": "Joy Tune",
+  "search_developer": "joygem",
+  "rank": 7,
+  "developer_id": "joygem",
+  "released": "Aug 15, 2025",
+  "updated": "2026-01-03",
+  "version": "1.3.16",
+  "summary": "Joy Tune APP is a dedicated app designed for our company's Bluetooth devices.",
+  "folder": "Joy Tune-joygem",
+  "path": "joy casino/Joy Tune-joygem",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.joytune.app-116-asset.apk",
+    "com.joytune.app-116-config.arm64_v8a.apk",
+    "com.joytune.app-116-config.en.apk",
+    "com.joytune.app-116-config.lt.apk",
+    "com.joytune.app-116-config.ru.apk",
+    "com.joytune.app-116-config.xxhdpi.apk",
+    "com.joytune.app-116.apk"
+  ],
+  "target": "/root/play-collector/загрузки/joy casino/Joy Tune-joygem",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.joytune.app ─╮\n│ Joy Tune          │\n│ 1.3.16  (vc 116)  │\n╰───────────────────╯\n\nDownloading 7 files  (138.7 MB)\n  com.joytune.app-116.apk                  ━━━━━━━ 100% 53.3/53… 10.2    0:00:00\n                                                        MB       MB/s           \n  com.joytune.app-116-config.arm64_v8a.apk ━━━━━━━ 100% 53.1/53… 6.6     0:00:00\n                                                        MB       MB/s           \n  com.joytune.app-116-config.en.apk        ━━━━━━━ 100% 45.5/45… ?       0:00:00\n                                                        kB                      \n  com.joytune.app-116-config.lt.apk        ━━━━━━━ 100% 25.0/25… ?       0:00:00\n                                                        kB                      \n  com.joytune.app-116-config.ru.apk        ━━━━━━━ 100% 29.1/29… ?       0:00:00\n                                                        kB                      \n  com.joytune.app-116-config.xxhdpi.apk    ━━━━━━━ 100% 89.2/89… 945.3   0:00:00\n                                                        kB       kB/s           \n  com.joytune.app-116-asset.apk            ━━━━━━━ 100% 38.8/38… 10.2    0:00:00\n                                                        MB       MB/s           \n\n                   Downloaded files                   \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                     ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.joytune.app-116.apk                  │ 50.9 MB │\n│ com.joytune.app-116-config.arm64_v8a.apk │ 50.6 MB │\n│ com.joytune.app-116-config.en.apk        │ 44.4 KB │\n│ com.joytune.app-116-config.lt.apk        │ 24.4 KB │\n│ com.joytune.app-116-config.ru.apk        │ 28.4 KB │\n│ com.joytune.app-116-config.xxhdpi.apk    │ 87.1 KB │\n│ com.joytune.app-116-asset.apk            │ 50.9 MB │\n└──────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.joytune.app ─╮\n│ Joy Tune          │\n│ 1.3.16  (vc 116)  │\n╰───────────────────╯\n\nDownloading 7 files  (138.7 MB)\n  com.joytune.app-116.apk                  ━━━━━━━ 100% 53.3/53… 10.2    0:00:00\n                                                        MB       MB/s           \n  com.joytune.app-116-config.arm64_v8a.apk ━━━━━━━ 100% 53.1/53… 6.6     0:00:00\n                                                        MB       MB/s           \n  com.joytune.app-116-config.en.apk        ━━━━━━━ 100% 45.5/45… ?       0:00:00\n                                                        kB                      \n  com.joytune.app-116-config.lt.apk        ━━━━━━━ 100% 25.0/25… ?       0:00:00\n                                                        kB                      \n  com.joytune.app-116-config.ru.apk        ━━━━━━━ 100% 29.1/29… ?       0:00:00\n                                                        kB                      \n  com.joytune.app-116-config.xxhdpi.apk    ━━━━━━━ 100% 89.2/89… 945.3   0:00:00\n                                                        kB       kB/s           \n  com.joytune.app-116-asset.apk            ━━━━━━━ 100% 38.8/38… 10.2    0:00:00\n                                                        MB       MB/s           \n\n                   Downloaded files                   \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                     ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.joytune.app-116.apk                  │ 50.9 MB │\n│ com.joytune.app-116-config.arm64_v8a.apk │ 50.6 MB │\n│ com.joytune.app-116-config.en.apk        │ 44.4 KB │\n│ com.joytune.app-116-config.lt.apk        │ 24.4 KB │\n│ com.joytune.app-116-config.ru.apk        │ 28.4 KB │\n│ com.joytune.app-116-config.xxhdpi.apk    │ 87.1 KB │\n│ com.joytune.app-116-asset.apk            │ 50.9 MB │\n└──────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
