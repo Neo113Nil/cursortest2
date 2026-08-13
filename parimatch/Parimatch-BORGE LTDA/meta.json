@@ -1,0 +1,52 @@
+{
+  "app_id": "com.arena.legendsarena",
+  "title": "Parimatch",
+  "developer": "BORGE LTDA",
+  "score": null,
+  "icon": "/static/app-icons/com_arena_legendsarena.png",
+  "url": "https://play.google.com/store/apps/details?id=com.arena.legendsarena&hl=en&gl=us",
+  "keyword": "Parimatch",
+  "country": "Spain",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260813_174703_Spain_Parimatch_search",
+  "search_title": "Parimatch",
+  "search_developer": "BORGE LTDA",
+  "rank": 2,
+  "developer_id": "BORGE+LTDA",
+  "released": "Jul 27, 2026",
+  "updated": "2026-07-27",
+  "version": "1",
+  "summary": "Defend the stadium as a legendary footballer in endless waves of foes.",
+  "folder": "Parimatch-BORGE LTDA",
+  "path": "parimatch/Parimatch-BORGE LTDA",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.arena.legendsarena-1-asset.apk",
+    "com.arena.legendsarena-1-config.arm64_v8a.apk",
+    "com.arena.legendsarena-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/parimatch/Parimatch-BORGE LTDA",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.arena.legendsarena ─╮\n│ Parimatch                │\n│ 1  (vc 1)                │\n╰──────────────────────────╯\n\nDownloading 3 files  (98.0 MB)\n  com.arena.legendsarena-1.apk                  ━━━━━━ 100% 36.9/… 10.0   0:00:…\n                                                            MB     MB/s         \n  com.arena.legendsarena-1-config.arm64_v8a.apk ━━━━━━ 100% 34.3/… 11.1   0:00:…\n                                                            MB     MB/s         \n  com.arena.legendsarena-1-asset.apk            ━━━━━━ 100% 31.5/… 11.4   0:00:…\n                                                            MB     MB/s         \n\n                     Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                          ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.arena.legendsarena-1.apk                  │ 35.2 MB │\n│ com.arena.legendsarena-1-config.arm64_v8a.apk │ 32.7 MB │\n│ com.arena.legendsarena-1-asset.apk            │ 35.2 MB │\n└───────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.arena.legendsarena ─╮\n│ Parimatch                │\n│ 1  (vc 1)                │\n╰──────────────────────────╯\n\nDownloading 3 files  (98.0 MB)\n  com.arena.legendsarena-1.apk                  ━━━━━━ 100% 36.9/… 10.0   0:00:…\n                                                            MB     MB/s         \n  com.arena.legendsarena-1-config.arm64_v8a.apk ━━━━━━ 100% 34.3/… 11.1   0:00:…\n                                                            MB     MB/s         \n  com.arena.legendsarena-1-asset.apk            ━━━━━━ 100% 31.5/… 11.4   0:00:…\n                                                            MB     MB/s         \n\n                     Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                          ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.arena.legendsarena-1.apk                  │ 35.2 MB │\n│ com.arena.legendsarena-1-config.arm64_v8a.apk │ 32.7 MB │\n│ com.arena.legendsarena-1-asset.apk            │ 35.2 MB │\n└───────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
