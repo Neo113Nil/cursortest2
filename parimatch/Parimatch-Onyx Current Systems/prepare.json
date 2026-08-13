@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "apks": [
+    "com.krevoltanrush.casual.app-1-config.xxhdpi.apk",
+    "com.krevoltanrush.casual.app-1-config.arm64_v8a.apk",
+    "com.krevoltanrush.casual.app-1-asset.apk",
+    "com.krevoltanrush.casual.app-1.apk",
+    "com.krevoltanrush.casual.app-1-config.en.apk"
+  ],
+  "base_apk": "com.krevoltanrush.casual.app-1.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 9435 (0%)\nINFO  - progress: 999 of 9435 (10%)\nINFO  - progress: 1003 of 9435 (10%)\nINFO  - progress: 1025 of 9435 (10%)\nINFO  - progress: 1064 of 9435 (11%)\nINFO  - progress: 1146 of 9435 (12%)\nINFO  - progress: 1678 of 9435 (17%)\nINFO  - progress: 2057 of 9435 (21%)\nINFO  - progress: 2432 of 9435 (25%)\nINFO  - progress: 2713 of 9435 (28%)\nINFO  - progress: 3029 of 9435 (32%)\nINFO  - progress: 3207 of 9435 (33%)\nINFO  - progress: 3349 of 9435 (35%)\nINFO  - progress: 3402 of 9435 (36%)\nINFO  - progress: 3561 of 9435 (37%)\nINFO  - progress: 3851 of 9435 (40%)\nINFO  - progress: 4195 of 9435 (44%)\nINFO  - progress: 4442 of 9435 (47%)\nINFO  - progress: 4693 of 9435 (49%)\nINFO  - progress: 4909 of 9435 (52%)\nINFO  - progress: 5183 of 9435 (54%)\nINFO  - progress: 5363 of 9435 (56%)\nINFO  - progress: 5708 of 9435 (60%)\nINFO  - progress: 5922 of 9435 (62%)\nINFO  - progress: 6099 of 9435 (64%)\nINFO  - progress: 6388 of 9435 (67%)\nINFO  - progress: 6449 of 9435 (68%)\nINFO  - progress: 6449 of 9435 (68%)\nINFO  - progress: 6704 of 9435 (71%)\nINFO  - progress: 6961 of 9435 (73%)\nINFO  - progress: 7148 of 9435 (75%)\nINFO  - progress: 7532 of 9435 (79%)\nINFO  - progress: 7662 of 9435 (81%)\nINFO  - progress: 7706 of 9435 (81%)\nINFO  - progress: 7882 of 9435 (83%)\nINFO  - progress: 8259 of 9435 (87%)\nINFO  - progress: 8725 of 9435 (92%)\nINFO  - progress: 8976 of 9435 (95%)\nINFO  - progress: 9171 of 9435 (97%)\nINFO  - progress: 9296 of 9435 (98%)\nINFO  - progress: 9363 of 9435 (99%)\nINFO  - progress: 9379 of 9435 (99%)\nINFO  - progress: 9382 of 9435 (99%)\nINFO  - progress: 9386 of 9435 (99%)\nINFO  - progress: 9394 of 9435 (99%)\nINFO  - progress: 9403 of 9435 (99%)\nINFO  - progress: 9407 of 9435 (99%)\nINFO  - progress: 9413 of 9435 (99%)\nINFO  - progress: 9416 of 9435 (99%)\nINFO  - progress: 9421 of 9435 (99%)\nINFO  - progress: 9430 of 9435 (99%)\nINFO  - progress: 9434 of 9435 (99%)\n                                                             \nERROR - finished with errors, count: 41\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/parimatch/Parimatch-Onyx Current Systems/decompiled",
+    "skipped": false,
+    "base_apk": "com.krevoltanrush.casual.app-1.apk"
+  },
+  "analysis_files": [
+    "com.krevoltanrush.casual.app-1-config.xxhdpi.apk",
+    "com.krevoltanrush.casual.app-1-config.arm64_v8a.apk",
+    "com.krevoltanrush.casual.app-1-asset.apk",
+    "com.krevoltanrush.casual.app-1.apk",
+    "com.krevoltanrush.casual.app-1-config.en.apk",
+    "apk/com.krevoltanrush.casual.app-1-config.xxhdpi.apk",
+    "apk/com.krevoltanrush.casual.app-1-config.arm64_v8a.apk",
+    "apk/com.krevoltanrush.casual.app-1-asset.apk",
+    "apk/com.krevoltanrush.casual.app-1.apk",
+    "apk/com.krevoltanrush.casual.app-1-config.en.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/",
+    "decompiled/sources/de/",
+    "decompiled/sources/io/",
+    "decompiled/sources/java9/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/okhttp/",
+    "decompiled/sources/okhttp3/",
+    "decompiled/sources/okio/",
+    "decompiled/sources/org/"
+  ],
+  "errors": []
+}

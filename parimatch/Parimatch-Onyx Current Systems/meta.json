@@ -1,0 +1,54 @@
+{
+  "app_id": "com.krevoltanrush.casual.app",
+  "title": "Parimatch",
+  "developer": "Onyx Current Systems",
+  "score": null,
+  "icon": "/static/app-icons/com_krevoltanrush_casual_app.png",
+  "url": "https://play.google.com/store/apps/details?id=com.krevoltanrush.casual.app&hl=en&gl=us",
+  "keyword": "Parimatch",
+  "country": "Spain",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260813_174703_Spain_Parimatch_search",
+  "search_title": "Parimatch",
+  "search_developer": "Onyx Current Systems",
+  "rank": 3,
+  "developer_id": "Onyx+Current+Systems",
+  "released": "",
+  "updated": "2026-07-23",
+  "version": "1.0",
+  "summary": "Volcanic gate breach rush stages",
+  "folder": "Parimatch-Onyx Current Systems",
+  "path": "parimatch/Parimatch-Onyx Current Systems",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.krevoltanrush.casual.app-1-asset.apk",
+    "com.krevoltanrush.casual.app-1-config.arm64_v8a.apk",
+    "com.krevoltanrush.casual.app-1-config.en.apk",
+    "com.krevoltanrush.casual.app-1-config.xxhdpi.apk",
+    "com.krevoltanrush.casual.app-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/parimatch/Parimatch-Onyx Current Systems",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.krevoltanrush.casual.app ─╮\n│ Parimatch                      │\n│ 1.0  (vc 1)                    │\n╰────────────────────────────────╯\n\nDownloading 5 files  (45.7 MB)\n  com.krevoltanrush.casual.app-1.apk                  ━━━━ 100% 34.… 17.4 0:00:…\n                                                                MB   MB/s       \n  com.krevoltanrush.casual.app-1-config.arm64_v8a.apk ━━━━ 100% 65.… 480… 0:00:…\n                                                                kB   kB/s       \n  com.krevoltanrush.casual.app-1-config.en.apk        ━━━━ 100% 110… 2.8  0:00:…\n                                                                kB   MB/s       \n  com.krevoltanrush.casual.app-1-config.xxhdpi.apk    ━━━━ 100% 87.… 2.5  0:00:…\n                                                                kB   MB/s       \n  com.krevoltanrush.casual.app-1-asset.apk            ━━━━ 100% 12.… 27.1 0:00:…\n                                                                MB   MB/s       \n\n                         Downloaded files                         \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.krevoltanrush.casual.app-1.apk                  │  33.3 MB │\n│ com.krevoltanrush.casual.app-1-config.arm64_v8a.apk │  64.2 KB │\n│ com.krevoltanrush.casual.app-1-config.en.apk        │ 108.2 KB │\n│ com.krevoltanrush.casual.app-1-config.xxhdpi.apk    │  85.1 KB │\n│ com.krevoltanrush.casual.app-1-asset.apk            │  33.3 MB │\n└─────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.krevoltanrush.casual.app ─╮\n│ Parimatch                      │\n│ 1.0  (vc 1)                    │\n╰────────────────────────────────╯\n\nDownloading 5 files  (45.7 MB)\n  com.krevoltanrush.casual.app-1.apk                  ━━━━ 100% 34.… 17.4 0:00:…\n                                                                MB   MB/s       \n  com.krevoltanrush.casual.app-1-config.arm64_v8a.apk ━━━━ 100% 65.… 480… 0:00:…\n                                                                kB   kB/s       \n  com.krevoltanrush.casual.app-1-config.en.apk        ━━━━ 100% 110… 2.8  0:00:…\n                                                                kB   MB/s       \n  com.krevoltanrush.casual.app-1-config.xxhdpi.apk    ━━━━ 100% 87.… 2.5  0:00:…\n                                                                kB   MB/s       \n  com.krevoltanrush.casual.app-1-asset.apk            ━━━━ 100% 12.… 27.1 0:00:…\n                                                                MB   MB/s       \n\n                         Downloaded files                         \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.krevoltanrush.casual.app-1.apk                  │  33.3 MB │\n│ com.krevoltanrush.casual.app-1-config.arm64_v8a.apk │  64.2 KB │\n│ com.krevoltanrush.casual.app-1-config.en.apk        │ 108.2 KB │\n│ com.krevoltanrush.casual.app-1-config.xxhdpi.apk    │  85.1 KB │\n│ com.krevoltanrush.casual.app-1-asset.apk            │  33.3 MB │\n└─────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
