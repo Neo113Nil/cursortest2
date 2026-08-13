@@ -1,0 +1,53 @@
+{
+  "app_id": "com.ndvrthbd.betsson",
+  "title": "JoyCasino",
+  "developer": "SADA labs",
+  "score": null,
+  "icon": "/static/app-icons/com_ndvrthbd_betsson.png",
+  "url": "https://play.google.com/store/apps/details?id=com.ndvrthbd.betsson&hl=en&gl=us",
+  "keyword": "Joy Casino",
+  "country": "Spain",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260813_184715_Spain_Joy Casino_search",
+  "search_title": "JoyCasino",
+  "search_developer": "SADA labs",
+  "rank": 2,
+  "developer_id": "SADA+labs",
+  "released": "Aug 5, 2026",
+  "updated": "Aug 5, 2026",
+  "version": "Varies with device",
+  "summary": "JoyCasino - vendos blloqet me saktësi dhe ndërto kullën deri në majë.",
+  "folder": "JoyCasino-SADA labs",
+  "path": "joy casino/JoyCasino-SADA labs",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.ndvrthbd.betsson-1-asset.apk",
+    "com.ndvrthbd.betsson-1-config.en.apk",
+    "com.ndvrthbd.betsson-1-config.xxhdpi.apk",
+    "com.ndvrthbd.betsson-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/joy casino/JoyCasino-SADA labs",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.ndvrthbd.betsson ─╮\n│ JoyCasino              │\n│ Rovelis1.0  (vc 1)     │\n╰────────────────────────╯\n\nDownloading 4 files  (17.2 MB)\n  com.ndvrthbd.betsson-1.apk               ━━━━━━━ 100% 9.6/9.6  10.6    0:00:00\n                                                        MB       MB/s           \n  com.ndvrthbd.betsson-1-config.en.apk     ━━━━━━━ 100% 65.7/65… 272.3   0:00:00\n                                                        kB       kB/s           \n  com.ndvrthbd.betsson-1-config.xxhdpi.apk ━━━━━━━ 100% 78.0/78… 2.0     0:00:00\n                                                        kB       MB/s           \n  com.ndvrthbd.betsson-1-asset.apk         ━━━━━━━ 100% 8.3/8.3  5.3     0:00:00\n                                                        MB       MB/s           \n\n                   Downloaded files                   \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                     ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.ndvrthbd.betsson-1.apk               │  9.1 MB │\n│ com.ndvrthbd.betsson-1-config.en.apk     │ 64.2 KB │\n│ com.ndvrthbd.betsson-1-config.xxhdpi.apk │ 76.2 KB │\n│ com.ndvrthbd.betsson-1-asset.apk         │  9.1 MB │\n└──────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.ndvrthbd.betsson ─╮\n│ JoyCasino              │\n│ Rovelis1.0  (vc 1)     │\n╰────────────────────────╯\n\nDownloading 4 files  (17.2 MB)\n  com.ndvrthbd.betsson-1.apk               ━━━━━━━ 100% 9.6/9.6  10.6    0:00:00\n                                                        MB       MB/s           \n  com.ndvrthbd.betsson-1-config.en.apk     ━━━━━━━ 100% 65.7/65… 272.3   0:00:00\n                                                        kB       kB/s           \n  com.ndvrthbd.betsson-1-config.xxhdpi.apk ━━━━━━━ 100% 78.0/78… 2.0     0:00:00\n                                                        kB       MB/s           \n  com.ndvrthbd.betsson-1-asset.apk         ━━━━━━━ 100% 8.3/8.3  5.3     0:00:00\n                                                        MB       MB/s           \n\n                   Downloaded files                   \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                     ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.ndvrthbd.betsson-1.apk               │  9.1 MB │\n│ com.ndvrthbd.betsson-1-config.en.apk     │ 64.2 KB │\n│ com.ndvrthbd.betsson-1-config.xxhdpi.apk │ 76.2 KB │\n│ com.ndvrthbd.betsson-1-asset.apk         │  9.1 MB │\n└──────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
