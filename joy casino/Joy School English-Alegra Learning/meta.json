@@ -1,0 +1,52 @@
+{
+  "app_id": "com.alegralearning.joyschoolkinder",
+  "title": "Joy School English",
+  "developer": "Alegra Learning",
+  "score": 4.3125,
+  "icon": "/static/app-icons/com_alegralearning_joyschoolkinder.png",
+  "url": "https://play.google.com/store/apps/details?id=com.alegralearning.joyschoolkinder&hl=en&gl=us",
+  "keyword": "Joy Casino",
+  "country": "India",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260813_181659_India_Joy Casino_search",
+  "search_title": "Joy School English",
+  "search_developer": "Alegra Learning",
+  "rank": 8,
+  "developer_id": "Alegra+Learning",
+  "released": "Sep 8, 2022",
+  "updated": "2026-08-12",
+  "version": "2026.2.2",
+  "summary": "Teaches English and values to kids age 4-6 using games, songs and stories.",
+  "folder": "Joy School English-Alegra Learning",
+  "path": "joy casino/Joy School English-Alegra Learning",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.alegralearning.joyschoolkinder-395-asset.apk",
+    "com.alegralearning.joyschoolkinder-395-config.arm64_v8a.apk",
+    "com.alegralearning.joyschoolkinder-395.apk"
+  ],
+  "target": "/root/play-collector/загрузки/joy casino/Joy School English-Alegra Learning",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.alegralearning.joyschoolkinder ─╮\n│ Joy School English                   │\n│ 2026.2.2  (vc 395)                   │\n╰──────────────────────────────────────╯\n\nDownloading 3 files  (268.4 MB)\n  com.alegralearning.joyschoolkinder-395.apk                  ━━ 100% 1… 1… 0:0…\n                                                                      MB M…     \n  com.alegralearning.joyschoolkinder-395-config.arm64_v8a.apk ━━ 100% 4… 1… 0:0…\n                                                                      MB M…     \n  com.alegralearning.joyschoolkinder-395-asset.apk            ━━ 100% 7… 5… 0:0…\n                                                                      MB M…     \n\n                             Downloaded files                             \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                        ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.alegralearning.joyschoolkinder-395.apk                  │ 149.4 MB │\n│ com.alegralearning.joyschoolkinder-395-config.arm64_v8a.apk │  43.3 MB │\n│ com.alegralearning.joyschoolkinder-395-asset.apk            │ 149.4 MB │\n└─────────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.alegralearning.joyschoolkinder ─╮\n│ Joy School English                   │\n│ 2026.2.2  (vc 395)                   │\n╰──────────────────────────────────────╯\n\nDownloading 3 files  (268.4 MB)\n  com.alegralearning.joyschoolkinder-395.apk                  ━━ 100% 1… 1… 0:0…\n                                                                      MB M…     \n  com.alegralearning.joyschoolkinder-395-config.arm64_v8a.apk ━━ 100% 4… 1… 0:0…\n                                                                      MB M…     \n  com.alegralearning.joyschoolkinder-395-asset.apk            ━━ 100% 7… 5… 0:0…\n                                                                      MB M…     \n\n                             Downloaded files                             \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                        ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.alegralearning.joyschoolkinder-395.apk                  │ 149.4 MB │\n│ com.alegralearning.joyschoolkinder-395-config.arm64_v8a.apk │  43.3 MB │\n│ com.alegralearning.joyschoolkinder-395-asset.apk            │ 149.4 MB │\n└─────────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
