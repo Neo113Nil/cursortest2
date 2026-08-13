@@ -50,5 +50,100 @@
   "stdout": "╭─ com.parimatch.spm2759 ─╮\n│ Parimatch Play          │\n│ 1.0  (vc 1)             │\n╰─────────────────────────╯\n\nDownloading 5 files  (39.6 MB)\n  com.parimatch.spm2759-1.apk                  ━━━━━━ 100% 19.6/… 8.0    0:00:00\n                                                           MB     MB/s          \n  com.parimatch.spm2759-1-config.arm64_v8a.apk ━━━━━━ 100% 12.1/… 9.8    0:00:00\n                                                           MB     MB/s          \n  com.parimatch.spm2759-1-config.en.apk        ━━━━━━ 100% 74.1/… 2.0    0:00:00\n                                                           kB     MB/s          \n  com.parimatch.spm2759-1-config.xxhdpi.apk    ━━━━━━ 100% 918.0… 8.2    0:00:00\n                                                           kB     MB/s          \n  com.parimatch.spm2759-1-asset.apk            ━━━━━━ 100% 8.9/8… 29.7   0:00:00\n                                                           MB     MB/s          \n\n                     Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                         ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.parimatch.spm2759-1.apk                  │  18.7 MB │\n│ com.parimatch.spm2759-1-config.arm64_v8a.apk │  11.5 MB │\n│ com.parimatch.spm2759-1-config.en.apk        │  72.4 KB │\n│ com.parimatch.spm2759-1-config.xxhdpi.apk    │ 896.5 KB │\n│ com.parimatch.spm2759-1-asset.apk            │  18.7 MB │\n└──────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "ParikaMatchPlay (Play: Parimatch Play)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "нет"
+      },
+      {
+        "param": "minSdk",
+        "value": "21"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.2.0"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.android.vending.CHECK_LICENSE, com.parimatch.spm2759.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Microsoft.Maui / Microsoft.Maui.Controls / Microsoft.Maui.Essentials / Microsoft.Maui.Graphics; Mono.Android; .NET (System.Net.Http, System.Text.Json и др.); Xamarin.AndroidX.* (AppCompat, Activity, Core, Fragment, Lifecycle, Navigation, RecyclerView, ViewPager/2, CoordinatorLayout, SwipeRefreshLayout, Material); Xamarin.Kotlin.StdLib / Kotlin 2.2.0; kotlinx-coroutines 1.10.2; Glide (com.bumptech.glide); Gson; Google Play PairIP (com.pairip.application, com.pairip.licensecheck); androidx.browser"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "bnd.bndtools.org, findbugs.sourceforge.net, gexf.net, mono-project.com, oss.sonatype.org"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "PreferenceScoreArchive через Microsoft.Maui.Storage.IPreferences: ключи parika_best_* и parika_meta_* — локальные лучшие результаты секторов"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "license check, PAYWALL_INTENT, WebAuthenticator, MauiWebView, HybridWebView, Preferences"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "bnd.bndtools.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: easyDNS Technologies Inc."
+      },
+      {
+        "domain": "findbugs.sourceforge.net",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "gexf.net",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: GANDI SAS"
+      },
+      {
+        "domain": "mono-project.com",
+        "redirects_to": "https://www.mono-project.com/",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "oss.sonatype.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Amazon Registrar, Inc."
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }
