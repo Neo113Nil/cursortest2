@@ -98,7 +98,7 @@
       },
       {
         "param": "Подозрительные домены",
-        "value": "123.com, ad-host-backup-america.oss-us-west-1.aliyuncs.com, ad-host-backup-asia.oss-ap-southeast-1.aliyuncs.com, ad-host-backup-europe.oss-eu-central-1.aliyuncs.com, adsbigo.com, akm.ssacdn.com, aomedia.org, api16-access-ttp.tiktokpangle.us"
+        "value": "123.com, ad-host-backup-america.oss-us-west-1.aliyuncs.com, ad-host-backup-asia.oss-ap-southeast-1.aliyuncs.com, ad-host-backup-europe.oss-eu-central-1.aliyuncs.com, adsbigo.com, akm.ssacdn.com, aomedia.org"
       },
       {
         "param": "SharedPreferences",
@@ -148,23 +148,19 @@
         "domain": "aomedia.org",
         "redirects_to": "нет (без редиректа)",
         "parked_at": "регистратор: Squarespace Domains II LLC"
-      },
-      {
-        "domain": "api16-access-ttp.tiktokpangle.us",
-        "redirects_to": "нет (без редиректа)",
-        "parked_at": "регистратор: Gandi SAS"
       }
     ],
     "collected_data": [
-      "Рекламный номер устройства",
-      "Идентификатор устройства idfv",
-      "Имя пакета приложения",
-      "Токен push-уведомлений Firebase",
-      "Страна",
-      "Признак VPN",
-      "Данные атрибуции Adjust"
+      "рекламный номер устройства",
+      "идентификатор устройства idfv",
+      "имя пакета приложения",
+      "токен push-уведомлений Firebase",
+      "идентификатор Adjust",
+      "страна",
+      "признак VPN",
+      "данные атрибуции Adjust"
     ],
     "cloaking": "да",
-    "cloaking_brief": "Какие данные собираются:\n• Рекламный номер устройства\n• Идентификатор устройства idfv\n• Имя пакета приложения\n• Токен push-уведомлений Firebase\n• Страна\n• Признак VPN\n• Данные атрибуции Adjust\n\nКак собираются: Сразу при запуске, ещё на экране загрузки, приложение само читает рекламный номер устройства (в коде advertisingId / ifa / gaid) через системный запрос Android. Отдельного окна с разрешением на этот шаг нет: номер берут незаметно и кладут во внутренние поля загрузки и RealKey. Там же готовят идентификатор idfv, имя пакета приложения и токен push Firebase, если он уже получен. Страну берут через GetCountry и из ответа проверки IP. Признак VPN считают на телефоне (IsVPNConnected / CheckVpnAndIpWhile). Данные атрибуции Adjust читают после старта Adjust SDK (CheckAdjustAttribution / AdjustOrganicType). Человек обычно видит только заставку и игру.…\n\nКуда отправляются: На загрузке приложение тихо запрашивает удалённый конфиг https://fastfingersfuns.s3.us-west-2.amazonaws.com/andconfig.json (для Android; в коде есть и iosconfig.json). Это фоновая подгрузка настроек, а не показ рекламы на экране. Модуль RealKey собирает адреса из базового URL и путей GetIpData_Url, Init_PostUrl, CheckAccount_Url, GetPoint_Url и других. Точная строка базы в открытом виде спрятана и собирается через SDK2_BuildUrlWithParams с AES-ключами SDK2_AES_Key / SDK2_Post_Key. Запросы уходят в фоне. Отдельно Firebase Remote Config подтягивает поля через LoadRemoteConfig.…\n\nКак фильтруются пользователи: В приложении явно видно разветвление по «белому» IP: CheckIpWhite / CheckVpnAndIpWhile, флаги ipOnWhite и onWhite, подсказки IpTipsObj и VPNTipsObj. При VPN путь к меню может измениться или остановиться. Есть разделение на пакеты A/B (Get_Keep_PackB / Set_Keep_isPackB, ключ Keep_PackB_Key) и признаки IsAL / IsBL. Отдельно учитывают органический или рекламный трафик через Adjust (AdjustOrganicType). Страну берут локально (GetCountry) и из ответа проверки IP (поле country). Жёсткого списка стран на телефоне в открытом виде нет: на сервер уходят признаки (в том числе через GetIpData и init RealKey), а решение «белый / не белый» вместе с Remote Config и S3-конфигом задаёт дальнейшее поведение.…\n\nЧто…"
+    "cloaking_brief": "Какие данные собираются:\n• рекламный номер устройства\n• идентификатор устройства idfv\n• имя пакета приложения\n• токен push-уведомлений Firebase\n• идентификатор Adjust\n• страна\n• признак VPN\n• данные атрибуции Adjust\n\nКак собираются: Сразу при запуске…\n\nКуда отправляются: andconfig.json / RealKey / Remote Config…\n\nКак фильтруются пользователи: CheckIpWhite / VPN / PackB / AdjustOrganicType…\n\nЧто возвращается: ad_*_fast_fun, country, uid/region/amounts…\n\nКак показывается: обычное приложение или урезанный путь при IP/VPN."
   }
 }
