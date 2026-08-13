@@ -99,7 +99,7 @@
       },
       {
         "param": "Подозрительные домены",
-        "value": "нет"
+        "value": "still-recipe-2886.sadalabs7.workers.dev"
       },
       {
         "param": "SharedPreferences",
@@ -114,7 +114,13 @@
         "value": "url, mode=resolve, workers.dev, license check, Accept-Language, User-Agent, X-Device-Model, casino, betsson, Rovelis"
       }
     ],
-    "domains": [],
+    "domains": [
+      {
+        "domain": "still-recipe-2886.sadalabs7.workers.dev",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет"
+      }
+    ],
     "collected_data": [
       "Имя пакета приложения",
       "Идентификатор установки",

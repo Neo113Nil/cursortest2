@@ -50,5 +50,111 @@
   "stdout": "╭─ com.onyx.grid.game.kzv ─╮\n│ Parimatch                │\n│ 3.0  (vc 3)              │\n╰──────────────────────────╯\n\nDownloading 5 files  (40.0 MB)\n  com.onyx.grid.game.kzv-3.apk                  ━━━━━━ 100% 30.5/… 20.3   0:00:…\n                                                            MB     MB/s         \n  com.onyx.grid.game.kzv-3-config.arm64_v8a.apk ━━━━━━ 100% 70.1/… 1.9    0:00:…\n                                                            kB     MB/s         \n  com.onyx.grid.game.kzv-3-config.en.apk        ━━━━━━ 100% 111.0… 2.6    0:00:…\n                                                            kB     MB/s         \n  com.onyx.grid.game.kzv-3-config.xxhdpi.apk    ━━━━━━ 100% 138.3… 2.2    0:00:…\n                                                            kB     MB/s         \n  com.onyx.grid.game.kzv-3-asset.apk            ━━━━━━ 100% 11.1/… 10.5   0:00:…\n                                                            MB     MB/s         \n\n                      Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                          ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.onyx.grid.game.kzv-3.apk                  │  29.1 MB │\n│ com.onyx.grid.game.kzv-3-config.arm64_v8a.apk │  68.4 KB │\n│ com.onyx.grid.game.kzv-3-config.en.apk        │ 108.4 KB │\n│ com.onyx.grid.game.kzv-3-config.xxhdpi.apk    │ 135.0 KB │\n│ com.onyx.grid.game.kzv-3-asset.apk            │  29.1 MB │\n└───────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Parimatch"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.11.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "26"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "AppsFlyer, OneSignal, Firebase Cloud Messaging, Facebook SDK (App Links), Google Advertising ID / Play Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.VIBRATE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_NETWORK_STATE, android.permission.INTERNET, android.permission.CAMERA, com.onyx.grid.game.kzv.permission.C2D_MESSAGE, android.permission.POST_NOTIFICATIONS, com.google.android.c2dm.permission.RECEIVE, android.permission.WAKE_LOCK, android.permission.RECEIVE_BOOT_COMPLETED, com.sec.android.provider.badge.permission.READ, com.sec.android.provider.badge.permission.WRITE, com.htc.launcher.permission.READ_SETTINGS, com.htc.launcher.permission.UPDATE_SHORTCUT, com.sonyericsson.home.permission.BROADCAST_BADGE, com.sonymobile.home.permission.PROVIDER_INSERT_BADGE, com.anddoes.launcher.permission.UPDATE_COUNT, com.majeur.launcher.permission.UPDATE_BADGE, com.huawei.android.launcher.permission.CHANGE_BADGE, com.huawei.android.launcher.permission.READ_SETTINGS, com.huawei.android.launcher.permission.WRITE_SETTINGS, android.permission.READ_APP_BADGE, com.oppo.launcher.permission.READ_SETTINGS, com.oppo.launcher.permission.WRITE_SETTINGS, me.everything.badger.permission.BADGE_COUNT_READ, me.everything.badger.permission.BADGE_COUNT_WRITE, android.permission.FOREGROUND_SERVICE, android.permission.ACCESS…"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.0.21 / kotlin-stdlib; kotlinx-coroutines-core / kotlinx-coroutines-android 1.9.0; Jetpack Compose (ui / foundation / animation / runtime 1.7.0–1.9.2), Material3 1.3.0, material-icons-core / material-ripple 1.7.0; AndroidX: activity / activity-compose / activity-ktx 1.13.0, appcompat 1.7.0, browser 1.0.0, core / core-ktx 1.18.0, core-viewtree 1.0.0, fragment, lifecycle 2.10.0, navigationevent 1.0.0, savedstate 1.4.0, startup-runtime 1.1.1, profileinstaller 1.4.0, room-runtime 2.2.5, work-runtime 2.7.1, recyclerview, viewpager / viewpager2, coordinatorlayout, constraintlayout, swiperefreshlayout, emoji2 1.4.0, tracing 1.2.0, transition 1.5.0, viewbinding 8.11.2, material Google 1.12.0; com.kevinnzou.web (Accompanist WebView); com.android.volley; AppsFlyer 6.16.2; OneSignal 4.8.9 (040809); Facebook SDK 18.0.2 (core / applinks / CustomTab); Firebase (common, components, installations, messaging, datatransport, encoders); Google Play Services Ads Identifier 18.2.0; Google Play PairIP (com.pairip.application.Application, licensecheck); Gson; ZXing"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "682-onyx-grid.vercel.app"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "onyx_grid_prefs: монеты, уровни/звёзды, лучший счёт, темы, музыка/звук/вибрация/уведомления, достижения; результат клоаки в prefs не сохраняется"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "gaid, external_id, af_status, Non-organic, media_source, campaign, deep_link_value, webview, exclusionList, isInspected, adb_enabled, xposed, frida, lsposed, redirect, click_time, is_retargeting, sub_id_, fetchConfig, PrivacyBridge"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "682-onyx-grid.vercel.app",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Tucows Domains Inc"
+      },
+      {
+        "domain": "fb.gg",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "privacy-sandbox.appsflyersdk.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Amazon Registrar, Inc."
+      }
+    ],
+    "collected_data": [
+      "Рекламный номер устройства",
+      "Номер установки AppsFlyer",
+      "Источник рекламы",
+      "Название кампании",
+      "Номер кампании",
+      "Идентификатор площадки",
+      "Рекламный набор",
+      "Номер рекламного набора",
+      "Название объявления",
+      "Номер объявления",
+      "Канал AppsFlyer",
+      "Признак первого запуска",
+      "Время установки",
+      "Статус атрибуции AppsFlyer",
+      "Признак ретаргетинга",
+      "Тип конверсии ретаргетинга",
+      "Время клика",
+      "Значение глубокой ссылки",
+      "Тип совпадения",
+      "Тип конверсии"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Рекламный номер устройства\n• Номер установки AppsFlyer\n• Источник рекламы\n• Название кампании\n• Номер кампании\n• Идентификатор площадки\n• Рекламный набор\n• Номер рекламного набора\n• Название объявления\n• Номер объявления\n• Канал AppsFlyer\n• Признак первого запуска\n• Время установки\n• Статус атрибуции AppsFlyer\n• Признак ретаргетинга\n• Тип конверсии ретаргетинга\n• Время клика\n• Значение глубокой ссылки\n• Тип совпадения\n• Тип конверсии\n\nКак собираются: Сразу после открытия стартового экрана приложение само, без спроса у человека, запускает служебную проверку. Сначала оно тихо читает рекламный номер устройства из системы Android и номер установки из службы учёта AppsFlyer. Отдельного окна с разрешением для этого шага нет: на экране видна только заставка с полоской загрузки. Если на телефоне включена отладка по кабелю, подключён отладчик или видны следы подмены системы (например, xposed или frida), приложение сразу уводит человека в обычный режим и сетевую проверку не продолжает. Иначе оно ждёт появления интернета и делает тихий запрос за удалёнными настройками, а после ответа дополнительно забирает у AppsFlyer сведения о том,…\n\nКуда отправляются: Тихий запрос за настройками уходит на адрес https://682-onyx-grid.vercel.app/api/data. Адрес зашит в коде целиком, запасных адресов для этой проверки не видно. В сам этот запрос приложение не подставляет собранные номера и поля — это простой запрос «дай настройки». После ответа сервера включаются AppsFlyer и Facebook, а собранные сведения о рекламном источнике и рекламный номер устройства приклеивают уже к ссылке на внешнюю страницу как параметры адреса. Готовый адрес открывают внутри приложения во встроенном окне сайта. Сам адрес проверки и итоговую ссылку в постоянной памяти приложения для клоаки не сохраняют.\n\nКак фильтруются пользователи: На телефоне есть локальный отбор «похоже ли это на проверку или взлом»: смотрят отладку по кабелю, подключённый отладчик, режим отладки у приложения и следы подмены вроде xposed, frida или lsposed. Если такой признак есть — человеку сразу оставляют обычное приложение, без внешней страницы. Список стран, языков или «белых» пользователей в самом приложении не…"
+  }
 }

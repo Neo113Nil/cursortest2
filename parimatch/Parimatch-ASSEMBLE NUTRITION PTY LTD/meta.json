@@ -101,7 +101,7 @@
       },
       {
         "param": "Подозрительные домены",
-        "value": "нет"
+        "value": "farm711.online"
       },
       {
         "param": "SharedPreferences",
@@ -116,7 +116,13 @@
         "value": "offer, offer_url, offer_enabled, redirect, keitaro, campaign_url, tracker, gaid, license check, resolve, SafeLocal"
       }
     ],
-    "domains": [],
+    "domains": [
+      {
+        "domain": "farm711.online",
+        "redirects_to": "http://farm711.online/CrystalPathKeeper/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      }
+    ],
     "collected_data": [
       "Язык телефона",
       "Строка браузера устройства",

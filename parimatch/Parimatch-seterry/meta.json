@@ -51,5 +51,105 @@
   "stdout": "╭─ com.rovexa.arcade.game ─╮\n│ Parimatch                │\n│ 1.1  (vc 2)              │\n╰──────────────────────────╯\n\nDownloading 6 files  (71.1 MB)\n  com.rovexa.arcade.game-2.apk                  ━━━━━━ 100% 57.4/… 12.9   0:00:…\n                                                            MB     MB/s         \n  com.rovexa.arcade.game-2-config.arm64_v8a.apk ━━━━━━ 100% 41.2/… ?      0:00:…\n                                                            kB                  \n  com.rovexa.arcade.game-2-config.en.apk        ━━━━━━ 100% 86.2/… 2.7    0:00:…\n                                                            kB     MB/s         \n  com.rovexa.arcade.game-2-config.lt.apk        ━━━━━━ 100% 37.1/… ?      0:00:…\n                                                            kB                  \n  com.rovexa.arcade.game-2-config.xxhdpi.apk    ━━━━━━ 100% 62.6/… ?      0:00:…\n                                                            kB                  \n  com.rovexa.arcade.game-2-asset.apk            ━━━━━━ 100% 17.0/… 8.4    0:00:…\n                                                            MB     MB/s         \n\n                     Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                          ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.rovexa.arcade.game-2.apk                  │ 54.7 MB │\n│ com.rovexa.arcade.game-2-config.arm64_v8a.apk │ 40.2 KB │\n│ com.rovexa.arcade.game-2-config.en.apk        │ 84.2 KB │\n│ com.rovexa.arcade.game-2-config.lt.apk        │ 36.2 KB │\n│ com.rovexa.arcade.game-2-config.xxhdpi.apk    │ 61.1 KB │\n│ com.rovexa.arcade.game-2-asset.apk            │ 54.7 MB │\n└───────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Rovexa (в Google Play: Parimatch)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.1.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.2.0"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "OneSignal, Firebase"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.POST_NOTIFICATIONS, android.permission.WAKE_LOCK, android.permission.VIBRATE, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.FOREGROUND_SERVICE, android.permission.READ_APP_BADGE, com.google.android.c2dm.permission.RECEIVE, com.rovexa.arcade.game.permission.C2D_MESSAGE, com.rovexa.arcade.game.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE, com.sec.android.provider.badge.permission.READ, com.sec.android.provider.badge.permission.WRITE, com.htc.launcher.permission.READ_SETTINGS, com.htc.launcher.permission.UPDATE_SHORTCUT, com.sonyericsson.home.permission.BROADCAST_BADGE, com.sonymobile.home.permission.PROVIDER_INSERT_BADGE, com.anddoes.launcher.permission.UPDATE_COUNT, com.majeur.launcher.permission.UPDATE_BADGE, com.huawei.android.launcher.permission.CHANGE_BADGE, com.huawei.android.launcher.permission.READ_SETTINGS, com.huawei.android.launcher.permission.WRITE_SETTINGS, com.oppo.launcher.permission.READ_SETTINGS, com.oppo.launcher.permission.WRITE_SETTINGS, me.everything.badger.permission.BADGE_COUNT_READ, me.everything.badger.permission.BADGE_COUNT_…"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.appcompat, androidx.activity, androidx.browser (Custom Tabs), androidx.compose.*, androidx.lifecycle, androidx.work, androidx.room, androidx.startup, com.google.android.material, com.google.android.gms, com.google.firebase (messaging, installations, analytics connector), com.configcat, com.onesignal, com.kaakyire.kaaky.rie.trafitui, com.pairip (licensecheck), okhttp3, okio, kotlin / kotlinx.coroutines, io.opentelemetry, org.slf4j, java9.util.concurrent"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "app.configcat.com, cdn-eu.configcat.com, cdn-global.configcat.com, configcat.com, opentelemetry.io, slf4j.org"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "кэш удалённого конфига ConfigCat (configcat_preferences); настройки игры music/sfx/coins/skins/skin_active (com.rovexa.arcade.game_settings); данные OneSignal"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "gate, redirect, license check"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "app.configcat.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "cdn-eu.configcat.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "cdn-global.configcat.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "configcat.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "opentelemetry.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: 1API GmbH"
+      },
+      {
+        "domain": "slf4j.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "да",
+    "cloaking_brief": "Как собираются: Сразу после запуска человек попадает на стартовый экран проверки, а не сразу в обычное меню приложения. Отдельного окна с просьбой разрешить доступ к языку, модели телефона или рекламному номеру для этой проверки нет: такие сведения с телефона перед проверкой приложение не читает. Тихо в фоне оно обращается к службе удалённых настроек ConfigCat с заранее вшитым ключом и именем настройки «xqwddxqw». Заодно может включиться служба пуш-уведомлений OneSignal — это не те поля, по которым решается «кого пустить на оффер». Человек обычно видит только анимацию загрузки и не замечает саму проверку.\n\nКуда отправляются: Служебный запрос уходит в интернет на адреса ConfigCat: https://cdn-global.configcat.com и при необходимости https://cdn-eu.configcat.com. Путь к файлу настроек собирается из кусков: configuration-files, вшитый ключ доступа и имя файла config_v6.json. В служебном заголовке библиотека пишет свою метку ConfigCat-Droid; при повторном запросе может уйти метка «конфиг не менялся». Полученный ответ сохраняют во внутренней памяти приложения (файл настроек configcat_preferences). Это тихая фоновая проверка, а не рекламный баннер на экране.\n\nКак фильтруются пользователи: На телефоне нет жёсткого списка стран, языков или «похож на бота», по которому приложение само отсекало бы людей. С сервера приходит одна текстовая строка по ключу «xqwddxqw». Дальше простая развилка на устройстве: если строка совпадает с текстом кнопки «Play Game» — показывают белый путь; если строка другая и это адрес сайта — открывают внешнюю страницу. Кого именно считать «боевым» трафиком, решает удалённая панель ConfigCat; в приложении видно только сравнение ответа с «Play Game» и открытие ссылки.\n\nЧто возвращается: С сервера приходит набор удалённых настроек; приложение берёт из него одну строку с ключом «xqwddxqw». Если строка пустая — проверка считается неудачной, оффер не открывают. Если строка равна «Play Game» — это сигнал оставить человека в обычном приложении: показывают кнопку входа. Если строка выглядит как адрес сайта — приложение считает, что нужно показать оффер и открыть эту страницу. При сбое сети человеку показывают короткое сообщение об ошибке, а внешний сайт не…"
+  }
 }

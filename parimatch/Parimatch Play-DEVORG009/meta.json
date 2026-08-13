@@ -72,7 +72,7 @@
       },
       {
         "param": "Kotlin",
-        "value": "да 2.2.0"
+        "value": "да"
       },
       {
         "param": "Web View",
@@ -96,7 +96,7 @@
       },
       {
         "param": "Libraries",
-        "value": "Microsoft.Maui / Microsoft.Maui.Controls / Microsoft.Maui.Essentials / Microsoft.Maui.Graphics; Mono.Android; .NET (System.Net.Http, System.Text.Json и др.); Xamarin.AndroidX.* (AppCompat, Activity, Core, Fragment, Lifecycle, Navigation, RecyclerView, ViewPager/2, CoordinatorLayout, SwipeRefreshLayout, Material); Xamarin.Kotlin.StdLib / Kotlin 2.2.0; kotlinx-coroutines 1.10.2; Glide (com.bumptech.glide); Gson; Google Play PairIP (com.pairip.application, com.pairip.licensecheck); androidx.browser"
+        "value": "Microsoft.Maui / Microsoft.Maui.Controls / Microsoft.Maui.Essentials / Microsoft.Maui.Graphics; Mono.Android; .NET (System.Net.Http, System.Text.Json и др.); Xamarin.AndroidX.* (AppCompat, Activity, Core, Fragment, Lifecycle, Navigation, RecyclerView, ViewPager/2, CoordinatorLayout, SwipeRefreshLayout, Material); Xamarin.Kotlin.StdLib; kotlinx-coroutines 1.10.2; Glide (com.bumptech.glide); Gson; Google Play PairIP (com.pairip.application, com.pairip.licensecheck); androidx.browser"
       },
       {
         "param": "Подозрительные домены",
@@ -104,7 +104,7 @@
       },
       {
         "param": "SharedPreferences",
-        "value": "PreferenceScoreArchive через Microsoft.Maui.Storage.IPreferences: ключи parika_best_* и parika_meta_* — локальные лучшие результаты секторов"
+        "value": "API SharedPreferences / Microsoft.Maui.Storage Preferences фреймворка; отдельных ключей игровой логики в открытом виде нет (сборки под PairIP)"
       },
       {
         "param": "Есть ли клоака",
@@ -117,9 +117,24 @@
     ],
     "domains": [
       {
+        "domain": "alphamountain.ai",
+        "redirects_to": "https://www.alphamountain.ai/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "bfore.ai",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Key-Systems GmbH"
+      },
+      {
         "domain": "bnd.bndtools.org",
         "redirects_to": "нет (без редиректа)",
         "parked_at": "регистратор: easyDNS Technologies Inc."
+      },
+      {
+        "domain": "desenmascara.me",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
       },
       {
         "domain": "findbugs.sourceforge.net",

@@ -52,73 +52,37 @@
   "error": "",
   "cloaking": "да",
   "brief_report": {
-    "table": [
-      {
-        "param": "Название приложения",
-        "value": "Ink Canary Lumina (Play: Parimatch Ink)"
-      },
-      {
-        "param": "Android Gradle Plugin",
-        "value": "8.13.2"
-      },
-      {
-        "param": "minSdk",
-        "value": "24"
-      },
-      {
-        "param": "targetSdk",
-        "value": "36"
-      },
-      {
-        "param": "Kotlin",
-        "value": "да 2.0.21"
-      },
-      {
-        "param": "Web View",
-        "value": "да"
-      },
-      {
-        "param": "Custom Tabs",
-        "value": "нет"
-      },
-      {
-        "param": "Рекламные сети",
-        "value": "нет"
-      },
-      {
-        "param": "Аналитика",
-        "value": "нет"
-      },
-      {
-        "param": "Permissions",
-        "value": "android.permission.VIBRATE, android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.inkstartcanary.luminadreande.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
-      },
-      {
-        "param": "Libraries",
-        "value": "Kotlin 2.0.21, kotlinx-coroutines 1.9.0, Jetpack Compose (ui/foundation/material3/animation/runtime) 1.7–1.9, androidx.activity / activity-compose 1.13.0, androidx.core / core-ktx 1.18.0, androidx.lifecycle 2.10.0, androidx.navigation / navigation-compose 2.8.4, androidx.emoji2 1.4.0, androidx.profileinstaller 1.4.0, androidx.startup 1.1.1, androidx.savedstate 1.4.0, androidx.graphics.path 1.0.1, com.pairip.licensecheck, libandroidx.graphics.path.so"
-      },
-      {
-        "param": "Подозрительные домены",
-        "value": "inkcanary.shop, config.ru"
-      },
-      {
-        "param": "SharedPreferences",
-        "value": "reef_state: allowed_bool, saved_destination; lumina_abyss_state: state_json"
-      },
-      {
-        "param": "Есть ли клоака",
-        "value": "да"
-      },
-      {
-        "param": "Подозрительные слова",
-        "value": "Social Casino 18+, casino, policy, saved_destination, allowed_bool, current/, 30kedvhx, license check, redirect, slot"
-      }
-    ],
+    "table": [],
     "domains": [
+      {
+        "domain": "alphamountain.ai",
+        "redirects_to": "https://www.alphamountain.ai/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "bfore.ai",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Key-Systems GmbH"
+      },
       {
         "domain": "config.ru",
         "redirects_to": "нет",
         "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "desenmascara.me",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "inkcanary.shop",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "libandroidx.graphics.path.so",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: afternic"
       }
     ],
     "collected_data": [
