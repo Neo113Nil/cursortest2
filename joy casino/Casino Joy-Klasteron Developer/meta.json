@@ -49,5 +49,70 @@
   "stdout": "╭─ com.base.ultra.spark.meta.nexus.casinojoy ─╮\n│ Casino Joy                                  │\n│ 1.0  (vc 1)                                 │\n╰─────────────────────────────────────────────╯\n\nDownloading 4 files  (13.1 MB)\n  com.base.ultra.spark.meta.nexus.casinojoy-1.apk               ━━ 100% 9… 2… 0…\n                                                                        MB k…   \n  com.base.ultra.spark.meta.nexus.casinojoy-1-config.en.apk     ━━ 100% 7… 2… 0…\n                                                                        kB M…   \n  com.base.ultra.spark.meta.nexus.casinojoy-1-config.xxhdpi.apk ━━ 100% 8… 2… 0…\n                                                                        kB M…   \n  com.base.ultra.spark.meta.nexus.casinojoy-1-asset.apk         ━━ 100% 3… 2… 0…\n                                                                        MB M…   \n\n                             Downloaded files                              \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                          ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.base.ultra.spark.meta.nexus.casinojoy-1.apk               │  9.3 MB │\n│ com.base.ultra.spark.meta.nexus.casinojoy-1-config.en.apk     │ 72.4 KB │\n│ com.base.ultra.spark.meta.nexus.casinojoy-1-config.xxhdpi.apk │ 84.4 KB │\n│ com.base.ultra.spark.meta.nexus.casinojoy-1-asset.apk         │  9.3 MB │\n└───────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Casino Joy (Google Play); внутри APK app_name = Win (учёт полива / «Мой сад»)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.13.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "26"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, com.base.ultra.spark.meta.nexus.casinojoy.DYNAMIC_RECE IVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.0.21, kotlinx-coroutines-core / kotlinx-coroutines-android 1.9.0, OkHttp 4.12.0, Google Material 1.14.0, AndroidX: activity 1.13.0, appcompat / appcompat-resources 1.7.1, cardview 1.0.0, constraintlayout 2.2.1, coordinatorlayout 1.1.0, core / core-ktx 1.18.0, core-viewtree 1.0.0, cursoradapter 1.0.0, customview 1.2.0, drawerlayout 1.1.1, dynamicanimation 1.1.0, emoji2 / emoji2-views-helper 1.3.0, fragment 1.5.4, graphics-shapes 1.0.1, interpolator 1.0.0, lifecycle (livedata / process / runtime / viewmodel / viewmodel-savedstate), loader 1.0.0, navigationevent 1.0.0, profileinstaller 1.4.0, recyclerview 1.2.1, savedstate 1.2.1, startup-runtime 1.1.1, tracing 1.2.0, transition 1.5.0, vectordrawable / vectordrawable-animated 1.1.0, versionedparcelable 1.1.1, viewpager 1.0.0, viewpager2 1.0.0, viewbinding 8.13.2, annotation-experimental 1.4.1, compose.runtime-annotation 1.9.0; Google Play PairIP: com.pairip.application.Application, com.pairip.licensecheck Подозрительные домены нет"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "prefs: ключ goto — сохранённая ссылка после проверки; garden_prefs: plants / watering_log / interval_unit / general_care — данные белого учёта полива"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да Подозрительные слова goto, redirectUrl, workers.dev, \"status\":\"ok\", license check, Accept-Language, User-Agent, X-Device-Model, casino"
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "Имя пакета приложения",
+      "Модель телефона",
+      "Строка браузера телефона"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Имя пакета приложения\n• Модель телефона\n• Строка браузера телефона\n\nКак собираются: Сразу при открытии стартового экрана, ещё до любых нажатий, приложение само читает из системы Android имя своего пакета, модель телефона и обычную строку браузера телефона. Отдельного окна с вопросом «разрешить?» нет: на экране только полоска загрузки, шаг проходит незаметно. Если раньше проверка уже прошла и ссылка сохранилась в памяти приложения (настройки с именем prefs, ключ goto), эти сведения заново не собирают: приложение сразу достаёт сохранённую ссылку и открывает её снаружи. Если сохранённой ссылки нет, тогда как раз читают пакет, модель и строку браузера для тихого запроса в интернет. Модель берут из системного поля телефона,…\n\nКуда отправляются: Сведения уходят тихим запросом в интернет на адрес https://yellow-surf-9093.bohghdankkca-podzzr ey1y.workers.dev/?app=com.base.ultra.spark.meta.nexus.casinojoy. Адрес собран из зашифрованных кусочков внутри кода: сначала расшифровывается основа на workers.dev, затем добавляется «?app=», затем имя пакета. Запасных адресов для этой проверки в коде не видно. Вместе с адресом уходят заголовки: модель телефона (подпись X-Device-Model), строка браузера (подпись User-Agent) и фиксированная пометка языка Accept-Language со значением en-US,en;q=0.9 — её не читают из настроек телефона, она всегда одна и та же. Запрос идёт в фоне со стартового экрана. Человек отдельного экрана «проверка» не видит.…\n\nКак фильтруются пользователи: В самом приложении нет списка стран, языков, «белых» или «запрещённых» пользователей и нет отдельной проверки на бота или эмулятор. На проверку уходят имя пакета, модель телефона и строка браузера; язык в заголовке всегда один и тот же. Решение «кому показать внешнюю страницу, а кому обычное приложение» принимает сервер. Приложение смотрит только на итоговый адрес после возможных переходов: если адрес всё ещё содержит workers.dev — считают, что внешнюю ссылку не дали, и открывают обычное приложение; если итоговый адрес уже другой — считают, что пришла ссылка на оффер. Если запрос в интернет не удался, приложение тоже переводит человека в обычный режим, без внешней страницы.…\n\nЧто возвра…"
+  }
 }
