@@ -1,0 +1,55 @@
+{
+  "app_id": "com.rovexa.arcade.game",
+  "title": "Parimatch",
+  "developer": "seterry",
+  "score": null,
+  "icon": "/static/app-icons/com_rovexa_arcade_game.png",
+  "url": "https://play.google.com/store/apps/details?id=com.rovexa.arcade.game&hl=en&gl=us",
+  "keyword": "Parimatch",
+  "country": "Italy",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260813_172125_Italy_Parimatch_search",
+  "search_title": "Parimatch",
+  "search_developer": "seterry",
+  "rank": 4,
+  "developer_id": "seterry",
+  "released": "",
+  "updated": "Jul 21, 2026",
+  "version": "Varies with device",
+  "summary": "Memory Pairs: a sharp puzzle round with local records.",
+  "folder": "Parimatch-seterry",
+  "path": "parimatch/Parimatch-seterry",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.rovexa.arcade.game-2-asset.apk",
+    "com.rovexa.arcade.game-2-config.arm64_v8a.apk",
+    "com.rovexa.arcade.game-2-config.en.apk",
+    "com.rovexa.arcade.game-2-config.lt.apk",
+    "com.rovexa.arcade.game-2-config.xxhdpi.apk",
+    "com.rovexa.arcade.game-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/parimatch/Parimatch-seterry",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.rovexa.arcade.game ─╮\n│ Parimatch                │\n│ 1.1  (vc 2)              │\n╰──────────────────────────╯\n\nDownloading 6 files  (71.1 MB)\n  com.rovexa.arcade.game-2.apk                  ━━━━━━ 100% 57.4/… 12.9   0:00:…\n                                                            MB     MB/s         \n  com.rovexa.arcade.game-2-config.arm64_v8a.apk ━━━━━━ 100% 41.2/… ?      0:00:…\n                                                            kB                  \n  com.rovexa.arcade.game-2-config.en.apk        ━━━━━━ 100% 86.2/… 2.7    0:00:…\n                                                            kB     MB/s         \n  com.rovexa.arcade.game-2-config.lt.apk        ━━━━━━ 100% 37.1/… ?      0:00:…\n                                                            kB                  \n  com.rovexa.arcade.game-2-config.xxhdpi.apk    ━━━━━━ 100% 62.6/… ?      0:00:…\n                                                            kB                  \n  com.rovexa.arcade.game-2-asset.apk            ━━━━━━ 100% 17.0/… 8.4    0:00:…\n                                                            MB     MB/s         \n\n                     Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                          ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.rovexa.arcade.game-2.apk                  │ 54.7 MB │\n│ com.rovexa.arcade.game-2-config.arm64_v8a.apk │ 40.2 KB │\n│ com.rovexa.arcade.game-2-config.en.apk        │ 84.2 KB │\n│ com.rovexa.arcade.game-2-config.lt.apk        │ 36.2 KB │\n│ com.rovexa.arcade.game-2-config.xxhdpi.apk    │ 61.1 KB │\n│ com.rovexa.arcade.game-2-asset.apk            │ 54.7 MB │\n└───────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.rovexa.arcade.game ─╮\n│ Parimatch                │\n│ 1.1  (vc 2)              │\n╰──────────────────────────╯\n\nDownloading 6 files  (71.1 MB)\n  com.rovexa.arcade.game-2.apk                  ━━━━━━ 100% 57.4/… 12.9   0:00:…\n                                                            MB     MB/s         \n  com.rovexa.arcade.game-2-config.arm64_v8a.apk ━━━━━━ 100% 41.2/… ?      0:00:…\n                                                            kB                  \n  com.rovexa.arcade.game-2-config.en.apk        ━━━━━━ 100% 86.2/… 2.7    0:00:…\n                                                            kB     MB/s         \n  com.rovexa.arcade.game-2-config.lt.apk        ━━━━━━ 100% 37.1/… ?      0:00:…\n                                                            kB                  \n  com.rovexa.arcade.game-2-config.xxhdpi.apk    ━━━━━━ 100% 62.6/… ?      0:00:…\n                                                            kB                  \n  com.rovexa.arcade.game-2-asset.apk            ━━━━━━ 100% 17.0/… 8.4    0:00:…\n                                                            MB     MB/s         \n\n                     Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                          ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.rovexa.arcade.game-2.apk                  │ 54.7 MB │\n│ com.rovexa.arcade.game-2-config.arm64_v8a.apk │ 40.2 KB │\n│ com.rovexa.arcade.game-2-config.en.apk        │ 84.2 KB │\n│ com.rovexa.arcade.game-2-config.lt.apk        │ 36.2 KB │\n│ com.rovexa.arcade.game-2-config.xxhdpi.apk    │ 61.1 KB │\n│ com.rovexa.arcade.game-2-asset.apk            │ 54.7 MB │\n└───────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
