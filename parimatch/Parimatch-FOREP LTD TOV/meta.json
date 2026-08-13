@@ -1,0 +1,53 @@
+{
+  "app_id": "com.gefecekanol.app",
+  "title": "Parimatch",
+  "developer": "FOREP LTD TOV",
+  "score": null,
+  "icon": "/static/app-icons/com_gefecekanol_app.png",
+  "url": "https://play.google.com/store/apps/details?id=com.gefecekanol.app&hl=en&gl=us",
+  "keyword": "Parimatch",
+  "country": "Spain",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260813_174703_Spain_Parimatch_search",
+  "search_title": "Parimatch",
+  "search_developer": "FOREP LTD TOV",
+  "rank": 6,
+  "developer_id": "FOREP+LTD+TOV",
+  "released": "Jul 27, 2026",
+  "updated": "Jul 27, 2026",
+  "version": "Varies with device",
+  "summary": "Parimatch Game",
+  "folder": "Parimatch-FOREP LTD TOV",
+  "path": "parimatch/Parimatch-FOREP LTD TOV",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.gefecekanol.app-1-asset.apk",
+    "com.gefecekanol.app-1-config.en.apk",
+    "com.gefecekanol.app-1-config.xxhdpi.apk",
+    "com.gefecekanol.app-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/parimatch/Parimatch-FOREP LTD TOV",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.gefecekanol.app ─╮\n│ Parimatch             │\n│ 1.0  (vc 1)           │\n╰───────────────────────╯\n\nDownloading 4 files  (3.4 MB)\n  com.gefecekanol.app-1.apk               ━━━━━━━━ 100% 2.4/2.4 18.9     0:00:00\n                                                        MB      MB/s            \n  com.gefecekanol.app-1-config.en.apk     ━━━━━━━━ 100% 70.0/7… 2.0 MB/s 0:00:00\n                                                        kB                      \n  com.gefecekanol.app-1-config.xxhdpi.apk ━━━━━━━━ 100% 86.4/8… 2.7 MB/s 0:00:00\n                                                        kB                      \n  com.gefecekanol.app-1-asset.apk         ━━━━━━━━ 100% 978.9/… 10.3     0:00:00\n                                                        kB      MB/s            \n\n                  Downloaded files                   \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                    ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.gefecekanol.app-1.apk               │  2.3 MB │\n│ com.gefecekanol.app-1-config.en.apk     │ 68.4 KB │\n│ com.gefecekanol.app-1-config.xxhdpi.apk │ 84.4 KB │\n│ com.gefecekanol.app-1-asset.apk         │  2.3 MB │\n└─────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.gefecekanol.app ─╮\n│ Parimatch             │\n│ 1.0  (vc 1)           │\n╰───────────────────────╯\n\nDownloading 4 files  (3.4 MB)\n  com.gefecekanol.app-1.apk               ━━━━━━━━ 100% 2.4/2.4 18.9     0:00:00\n                                                        MB      MB/s            \n  com.gefecekanol.app-1-config.en.apk     ━━━━━━━━ 100% 70.0/7… 2.0 MB/s 0:00:00\n                                                        kB                      \n  com.gefecekanol.app-1-config.xxhdpi.apk ━━━━━━━━ 100% 86.4/8… 2.7 MB/s 0:00:00\n                                                        kB                      \n  com.gefecekanol.app-1-asset.apk         ━━━━━━━━ 100% 978.9/… 10.3     0:00:00\n                                                        kB      MB/s            \n\n                  Downloaded files                   \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                    ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.gefecekanol.app-1.apk               │  2.3 MB │\n│ com.gefecekanol.app-1-config.en.apk     │ 68.4 KB │\n│ com.gefecekanol.app-1-config.xxhdpi.apk │ 84.4 KB │\n│ com.gefecekanol.app-1-asset.apk         │  2.3 MB │\n└─────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
