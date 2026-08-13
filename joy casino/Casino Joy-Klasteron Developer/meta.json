@@ -1,0 +1,53 @@
+{
+  "app_id": "com.base.ultra.spark.meta.nexus.casinojoy",
+  "title": "Casino Joy",
+  "developer": "Klasteron Developer",
+  "score": null,
+  "icon": "/static/app-icons/com_base_ultra_spark_meta_nexus_casinojoy.png",
+  "url": "https://play.google.com/store/apps/details?id=com.base.ultra.spark.meta.nexus.casinojoy&hl=en&gl=us",
+  "keyword": "Joy Casino",
+  "country": "Spain",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260813_184715_Spain_Joy Casino_search",
+  "search_title": "Casino Joy",
+  "search_developer": "Klasteron Developer",
+  "rank": 1,
+  "developer_id": "Klasteron+Developer",
+  "released": "Jul 23, 2026",
+  "updated": "Jul 23, 2026",
+  "version": "Varies with device",
+  "summary": "Casino Joy Win keeps records of watering and plant care",
+  "folder": "Casino Joy-Klasteron Developer",
+  "path": "joy casino/Casino Joy-Klasteron Developer",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.base.ultra.spark.meta.nexus.casinojoy-1-asset.apk",
+    "com.base.ultra.spark.meta.nexus.casinojoy-1-config.en.apk",
+    "com.base.ultra.spark.meta.nexus.casinojoy-1-config.xxhdpi.apk",
+    "com.base.ultra.spark.meta.nexus.casinojoy-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/joy casino/Casino Joy-Klasteron Developer",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.base.ultra.spark.meta.nexus.casinojoy ─╮\n│ Casino Joy                                  │\n│ 1.0  (vc 1)                                 │\n╰─────────────────────────────────────────────╯\n\nDownloading 4 files  (13.1 MB)\n  com.base.ultra.spark.meta.nexus.casinojoy-1.apk               ━━ 100% 9… 2… 0…\n                                                                        MB k…   \n  com.base.ultra.spark.meta.nexus.casinojoy-1-config.en.apk     ━━ 100% 7… 2… 0…\n                                                                        kB M…   \n  com.base.ultra.spark.meta.nexus.casinojoy-1-config.xxhdpi.apk ━━ 100% 8… 2… 0…\n                                                                        kB M…   \n  com.base.ultra.spark.meta.nexus.casinojoy-1-asset.apk         ━━ 100% 3… 2… 0…\n                                                                        MB M…   \n\n                             Downloaded files                              \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                          ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.base.ultra.spark.meta.nexus.casinojoy-1.apk               │  9.3 MB │\n│ com.base.ultra.spark.meta.nexus.casinojoy-1-config.en.apk     │ 72.4 KB │\n│ com.base.ultra.spark.meta.nexus.casinojoy-1-config.xxhdpi.apk │ 84.4 KB │\n│ com.base.ultra.spark.meta.nexus.casinojoy-1-asset.apk         │  9.3 MB │\n└───────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.base.ultra.spark.meta.nexus.casinojoy ─╮\n│ Casino Joy                                  │\n│ 1.0  (vc 1)                                 │\n╰─────────────────────────────────────────────╯\n\nDownloading 4 files  (13.1 MB)\n  com.base.ultra.spark.meta.nexus.casinojoy-1.apk               ━━ 100% 9… 2… 0…\n                                                                        MB k…   \n  com.base.ultra.spark.meta.nexus.casinojoy-1-config.en.apk     ━━ 100% 7… 2… 0…\n                                                                        kB M…   \n  com.base.ultra.spark.meta.nexus.casinojoy-1-config.xxhdpi.apk ━━ 100% 8… 2… 0…\n                                                                        kB M…   \n  com.base.ultra.spark.meta.nexus.casinojoy-1-asset.apk         ━━ 100% 3… 2… 0…\n                                                                        MB M…   \n\n                             Downloaded files                              \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                          ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.base.ultra.spark.meta.nexus.casinojoy-1.apk               │  9.3 MB │\n│ com.base.ultra.spark.meta.nexus.casinojoy-1-config.en.apk     │ 72.4 KB │\n│ com.base.ultra.spark.meta.nexus.casinojoy-1-config.xxhdpi.apk │ 84.4 KB │\n│ com.base.ultra.spark.meta.nexus.casinojoy-1-asset.apk         │  9.3 MB │\n└───────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
