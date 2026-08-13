@@ -1,0 +1,54 @@
+{
+  "app_id": "com.onyx.grid.game.kzv",
+  "title": "Parimatch",
+  "developer": "TRX LIMITED",
+  "score": null,
+  "icon": "/static/app-icons/com_onyx_grid_game_kzv.png",
+  "url": "https://play.google.com/store/apps/details?id=com.onyx.grid.game.kzv&hl=en&gl=us",
+  "keyword": "Parimatch",
+  "country": "Italy",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260813_172125_Italy_Parimatch_search",
+  "search_title": "Parimatch",
+  "search_developer": "TRX LIMITED",
+  "rank": 1,
+  "developer_id": "TRX+LIMITED",
+  "released": "",
+  "updated": "2026-07-28",
+  "version": "2.0",
+  "summary": "Swap and match colorful symbols on a grid to hit target goals.",
+  "folder": "Parimatch-TRX LIMITED",
+  "path": "parimatch/Parimatch-TRX LIMITED",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.onyx.grid.game.kzv-3-asset.apk",
+    "com.onyx.grid.game.kzv-3-config.arm64_v8a.apk",
+    "com.onyx.grid.game.kzv-3-config.en.apk",
+    "com.onyx.grid.game.kzv-3-config.xxhdpi.apk",
+    "com.onyx.grid.game.kzv-3.apk"
+  ],
+  "target": "/root/play-collector/загрузки/parimatch/Parimatch-TRX LIMITED",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.onyx.grid.game.kzv ─╮\n│ Parimatch                │\n│ 3.0  (vc 3)              │\n╰──────────────────────────╯\n\nDownloading 5 files  (40.0 MB)\n  com.onyx.grid.game.kzv-3.apk                  ━━━━━━ 100% 30.5/… 20.3   0:00:…\n                                                            MB     MB/s         \n  com.onyx.grid.game.kzv-3-config.arm64_v8a.apk ━━━━━━ 100% 70.1/… 1.9    0:00:…\n                                                            kB     MB/s         \n  com.onyx.grid.game.kzv-3-config.en.apk        ━━━━━━ 100% 111.0… 2.6    0:00:…\n                                                            kB     MB/s         \n  com.onyx.grid.game.kzv-3-config.xxhdpi.apk    ━━━━━━ 100% 138.3… 2.2    0:00:…\n                                                            kB     MB/s         \n  com.onyx.grid.game.kzv-3-asset.apk            ━━━━━━ 100% 11.1/… 10.5   0:00:…\n                                                            MB     MB/s         \n\n                      Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                          ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.onyx.grid.game.kzv-3.apk                  │  29.1 MB │\n│ com.onyx.grid.game.kzv-3-config.arm64_v8a.apk │  68.4 KB │\n│ com.onyx.grid.game.kzv-3-config.en.apk        │ 108.4 KB │\n│ com.onyx.grid.game.kzv-3-config.xxhdpi.apk    │ 135.0 KB │\n│ com.onyx.grid.game.kzv-3-asset.apk            │  29.1 MB │\n└───────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.onyx.grid.game.kzv ─╮\n│ Parimatch                │\n│ 3.0  (vc 3)              │\n╰──────────────────────────╯\n\nDownloading 5 files  (40.0 MB)\n  com.onyx.grid.game.kzv-3.apk                  ━━━━━━ 100% 30.5/… 20.3   0:00:…\n                                                            MB     MB/s         \n  com.onyx.grid.game.kzv-3-config.arm64_v8a.apk ━━━━━━ 100% 70.1/… 1.9    0:00:…\n                                                            kB     MB/s         \n  com.onyx.grid.game.kzv-3-config.en.apk        ━━━━━━ 100% 111.0… 2.6    0:00:…\n                                                            kB     MB/s         \n  com.onyx.grid.game.kzv-3-config.xxhdpi.apk    ━━━━━━ 100% 138.3… 2.2    0:00:…\n                                                            kB     MB/s         \n  com.onyx.grid.game.kzv-3-asset.apk            ━━━━━━ 100% 11.1/… 10.5   0:00:…\n                                                            MB     MB/s         \n\n                      Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                          ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.onyx.grid.game.kzv-3.apk                  │  29.1 MB │\n│ com.onyx.grid.game.kzv-3-config.arm64_v8a.apk │  68.4 KB │\n│ com.onyx.grid.game.kzv-3-config.en.apk        │ 108.4 KB │\n│ com.onyx.grid.game.kzv-3-config.xxhdpi.apk    │ 135.0 KB │\n│ com.onyx.grid.game.kzv-3-asset.apk            │  29.1 MB │\n└───────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+  "exit_code": 0,
+  "error": ""
+}

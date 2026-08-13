@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "apks": [
+    "com.onyx.grid.game.kzv-3-asset.apk",
+    "com.onyx.grid.game.kzv-3-config.en.apk",
+    "com.onyx.grid.game.kzv-3-config.arm64_v8a.apk",
+    "com.onyx.grid.game.kzv-3-config.xxhdpi.apk",
+    "com.onyx.grid.game.kzv-3.apk"
+  ],
+  "base_apk": "com.onyx.grid.game.kzv-3.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": " 7764 (37%)\nINFO  - progress: 2886 of 7764 (37%)\nINFO  - progress: 2913 of 7764 (37%)\nINFO  - progress: 2914 of 7764 (37%)\nINFO  - progress: 2914 of 7764 (37%)\nINFO  - progress: 3031 of 7764 (39%)\nINFO  - progress: 3202 of 7764 (41%)\nINFO  - progress: 3383 of 7764 (43%)\nINFO  - progress: 3413 of 7764 (43%)\nINFO  - progress: 3431 of 7764 (44%)\nINFO  - progress: 3451 of 7764 (44%)\nINFO  - progress: 3494 of 7764 (45%)\nINFO  - progress: 3528 of 7764 (45%)\nINFO  - progress: 3554 of 7764 (45%)\nINFO  - progress: 3589 of 7764 (46%)\nINFO  - progress: 3598 of 7764 (46%)\nINFO  - progress: 3608 of 7764 (46%)\nINFO  - progress: 3609 of 7764 (46%)\nINFO  - progress: 3611 of 7764 (46%)\nINFO  - progress: 3638 of 7764 (46%)\nINFO  - progress: 3788 of 7764 (48%)\nINFO  - progress: 3788 of 7764 (48%)\nINFO  - progress: 3988 of 7764 (51%)\nINFO  - progress: 4123 of 7764 (53%)\nINFO  - progress: 4148 of 7764 (53%)\nINFO  - progress: 4176 of 7764 (53%)\nINFO  - progress: 4190 of 7764 (53%)\nINFO  - progress: 4203 of 7764 (54%)\nINFO  - progress: 4218 of 7764 (54%)\nINFO  - progress: 4236 of 7764 (54%)\nINFO  - progress: 4246 of 7764 (54%)\nINFO  - progress: 4263 of 7764 (54%)\nINFO  - progress: 4277 of 7764 (55%)\nINFO  - progress: 4287 of 7764 (55%)\nINFO  - progress: 4307 of 7764 (55%)\nINFO  - progress: 4337 of 7764 (55%)\nINFO  - progress: 4366 of 7764 (56%)\nINFO  - progress: 4389 of 7764 (56%)\nINFO  - progress: 4666 of 7764 (60%)\nINFO  - progress: 4766 of 7764 (61%)\nINFO  - progress: 4887 of 7764 (62%)\nINFO  - progress: 4959 of 7764 (63%)\nINFO  - progress: 5026 of 7764 (64%)\nINFO  - progress: 5109 of 7764 (65%)\nINFO  - progress: 5304 of 7764 (68%)\nINFO  - progress: 5307 of 7764 (68%)\nINFO  - progress: 5313 of 7764 (68%)\nINFO  - progress: 5315 of 7764 (68%)\nINFO  - progress: 5315 of 7764 (68%)\nINFO  - progress: 5345 of 7764 (68%)\nINFO  - progress: 5355 of 7764 (68%)\nINFO  - progress: 5389 of 7764 (69%)\nINFO  - progress: 5491 of 7764 (70%)\nINFO  - progress: 5713 of 7764 (73%)\nINFO  - progress: 5774 of 7764 (74%)\nINFO  - progress: 5912 of 7764 (76%)\nINFO  - progress: 6083 of 7764 (78%)\nINFO  - progress: 6169 of 7764 (79%)\nINFO  - progress: 6179 of 7764 (79%)\nINFO  - progress: 6489 of 7764 (83%)\nINFO  - progress: 6650 of 7764 (85%)\nINFO  - progress: 6673 of 7764 (85%)\nINFO  - progress: 6706 of 7764 (86%)\nINFO  - progress: 6739 of 7764 (86%)\nINFO  - progress: 6762 of 7764 (87%)\nINFO  - progress: 6949 of 7764 (89%)\nINFO  - progress: 7176 of 7764 (92%)\nINFO  - progress: 7379 of 7764 (95%)\nINFO  - progress: 7422 of 7764 (95%)\nINFO  - progress: 7449 of 7764 (95%)\nINFO  - progress: 7463 of 7764 (96%)\nINFO  - progress: 7471 of 7764 (96%)\nINFO  - progress: 7478 of 7764 (96%)\nINFO  - progress: 7487 of 7764 (96%)\nINFO  - progress: 7496 of 7764 (96%)\nINFO  - progress: 7508 of 7764 (96%)\nINFO  - progress: 7553 of 7764 (97%)\nINFO  - progress: 7623 of 7764 (98%)\nINFO  - progress: 7717 of 7764 (99%)\n                                                             \nERROR - finished with errors, count: 30\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/parimatch/Parimatch-TRX LIMITED/decompiled",
+    "skipped": false,
+    "base_apk": "com.onyx.grid.game.kzv-3.apk"
+  },
+  "analysis_files": [
+    "com.onyx.grid.game.kzv-3-asset.apk",
+    "com.onyx.grid.game.kzv-3-config.en.apk",
+    "com.onyx.grid.game.kzv-3-config.arm64_v8a.apk",
+    "com.onyx.grid.game.kzv-3-config.xxhdpi.apk",
+    "com.onyx.grid.game.kzv-3.apk",
+    "apk/com.onyx.grid.game.kzv-3-asset.apk",
+    "apk/com.onyx.grid.game.kzv-3-config.en.apk",
+    "apk/com.onyx.grid.game.kzv-3-config.arm64_v8a.apk",
+    "apk/com.onyx.grid.game.kzv-3-config.xxhdpi.apk",
+    "apk/com.onyx.grid.game.kzv-3.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/org/"
+  ],
+  "errors": []
+}
