@@ -1,0 +1,52 @@
+{
+  "app_id": "com.dreamx.joy.slots.funny.game",
+  "title": "Joy Slots - Play & Earn Cash",
+  "developer": "Play to Earn Media",
+  "score": null,
+  "icon": "/static/app-icons/com_dreamx_joy_slots_funny_game.png",
+  "url": "https://play.google.com/store/apps/details?id=com.dreamx.joy.slots.funny.game&hl=en&gl=us",
+  "keyword": "Joy Casino",
+  "country": "Spain",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260813_184715_Spain_Joy Casino_search",
+  "search_title": "Joy Slots - Play & Earn Cash (Early Access)",
+  "search_developer": "Play to Earn Media",
+  "rank": 4,
+  "developer_id": "Play+to+Earn+Media",
+  "released": "",
+  "updated": "Mar 20, 2026",
+  "version": "Varies with device",
+  "summary": "Slot machine games for BIG WINS in Vegas style slots!",
+  "folder": "Joy Slots - Play & Earn Cash-Play to Earn Media",
+  "path": "joy casino/Joy Slots - Play & Earn Cash-Play to Earn Media",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.dreamx.joy.slots.funny.game-8-asset.apk",
+    "com.dreamx.joy.slots.funny.game-8-config.arm64_v8a.apk",
+    "com.dreamx.joy.slots.funny.game-8.apk"
+  ],
+  "target": "/root/play-collector/загрузки/joy casino/Joy Slots - Play & Earn Cash-Play to Earn Media",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.dreamx.joy.slots.funny.game ─╮\n│ Joy Slots - Play & Earn Cash      │\n│ 1.7  (vc 8)                       │\n╰───────────────────────────────────╯\n\nDownloading 3 files  (325.7 MB)\n  com.dreamx.joy.slots.funny.game-8.apk                  ━━━━ 100% 18… 12.0 0:0…\n                                                                   MB  MB/s     \n  com.dreamx.joy.slots.funny.game-8-config.arm64_v8a.apk ━━━━ 100% 24… 4.8  0:0…\n                                                                   MB  MB/s     \n  com.dreamx.joy.slots.funny.game-8-asset.apk            ━━━━ 100% 13… 11.4 0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                           \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                   ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.dreamx.joy.slots.funny.game-8.apk                  │ 174.0 MB │\n│ com.dreamx.joy.slots.funny.game-8-config.arm64_v8a.apk │  23.1 MB │\n│ com.dreamx.joy.slots.funny.game-8-asset.apk            │ 174.0 MB │\n└────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.dreamx.joy.slots.funny.game ─╮\n│ Joy Slots - Play & Earn Cash      │\n│ 1.7  (vc 8)                       │\n╰───────────────────────────────────╯\n\nDownloading 3 files  (325.7 MB)\n  com.dreamx.joy.slots.funny.game-8.apk                  ━━━━ 100% 18… 12.0 0:0…\n                                                                   MB  MB/s     \n  com.dreamx.joy.slots.funny.game-8-config.arm64_v8a.apk ━━━━ 100% 24… 4.8  0:0…\n                                                                   MB  MB/s     \n  com.dreamx.joy.slots.funny.game-8-asset.apk            ━━━━ 100% 13… 11.4 0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                           \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                   ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.dreamx.joy.slots.funny.game-8.apk                  │ 174.0 MB │\n│ com.dreamx.joy.slots.funny.game-8-config.arm64_v8a.apk │  23.1 MB │\n│ com.dreamx.joy.slots.funny.game-8-asset.apk            │ 174.0 MB │\n└────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
