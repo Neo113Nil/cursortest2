@@ -1,0 +1,54 @@
+{
+  "app_id": "com.parimatch.spm2759",
+  "title": "Parimatch Play",
+  "developer": "DEVORG009",
+  "score": null,
+  "icon": "/static/app-icons/com_parimatch_spm2759.png",
+  "url": "https://play.google.com/store/apps/details?id=com.parimatch.spm2759&hl=en&gl=us",
+  "keyword": "Parimatch",
+  "country": "Spain",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260813_174703_Spain_Parimatch_search",
+  "search_title": "Parimatch Play",
+  "search_developer": "DEVORG009",
+  "rank": 10,
+  "developer_id": "DEVORG009",
+  "released": "Aug 1, 2026",
+  "updated": "Aug 1, 2026",
+  "version": "Varies with device",
+  "summary": "Parimatch Play is a fast neon conduit puzzle that challenges",
+  "folder": "Parimatch Play-DEVORG009",
+  "path": "parimatch/Parimatch Play-DEVORG009",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.parimatch.spm2759-1-asset.apk",
+    "com.parimatch.spm2759-1-config.arm64_v8a.apk",
+    "com.parimatch.spm2759-1-config.en.apk",
+    "com.parimatch.spm2759-1-config.xxhdpi.apk",
+    "com.parimatch.spm2759-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/parimatch/Parimatch Play-DEVORG009",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.parimatch.spm2759 ─╮\n│ Parimatch Play          │\n│ 1.0  (vc 1)             │\n╰─────────────────────────╯\n\nDownloading 5 files  (39.6 MB)\n  com.parimatch.spm2759-1.apk                  ━━━━━━ 100% 19.6/… 8.0    0:00:00\n                                                           MB     MB/s          \n  com.parimatch.spm2759-1-config.arm64_v8a.apk ━━━━━━ 100% 12.1/… 9.8    0:00:00\n                                                           MB     MB/s          \n  com.parimatch.spm2759-1-config.en.apk        ━━━━━━ 100% 74.1/… 2.0    0:00:00\n                                                           kB     MB/s          \n  com.parimatch.spm2759-1-config.xxhdpi.apk    ━━━━━━ 100% 918.0… 8.2    0:00:00\n                                                           kB     MB/s          \n  com.parimatch.spm2759-1-asset.apk            ━━━━━━ 100% 8.9/8… 29.7   0:00:00\n                                                           MB     MB/s          \n\n                     Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                         ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.parimatch.spm2759-1.apk                  │  18.7 MB │\n│ com.parimatch.spm2759-1-config.arm64_v8a.apk │  11.5 MB │\n│ com.parimatch.spm2759-1-config.en.apk        │  72.4 KB │\n│ com.parimatch.spm2759-1-config.xxhdpi.apk    │ 896.5 KB │\n│ com.parimatch.spm2759-1-asset.apk            │  18.7 MB │\n└──────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.parimatch.spm2759 ─╮\n│ Parimatch Play          │\n│ 1.0  (vc 1)             │\n╰─────────────────────────╯\n\nDownloading 5 files  (39.6 MB)\n  com.parimatch.spm2759-1.apk                  ━━━━━━ 100% 19.6/… 8.0    0:00:00\n                                                           MB     MB/s          \n  com.parimatch.spm2759-1-config.arm64_v8a.apk ━━━━━━ 100% 12.1/… 9.8    0:00:00\n                                                           MB     MB/s          \n  com.parimatch.spm2759-1-config.en.apk        ━━━━━━ 100% 74.1/… 2.0    0:00:00\n                                                           kB     MB/s          \n  com.parimatch.spm2759-1-config.xxhdpi.apk    ━━━━━━ 100% 918.0… 8.2    0:00:00\n                                                           kB     MB/s          \n  com.parimatch.spm2759-1-asset.apk            ━━━━━━ 100% 8.9/8… 29.7   0:00:00\n                                                           MB     MB/s          \n\n                     Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                         ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.parimatch.spm2759-1.apk                  │  18.7 MB │\n│ com.parimatch.spm2759-1-config.arm64_v8a.apk │  11.5 MB │\n│ com.parimatch.spm2759-1-config.en.apk        │  72.4 KB │\n│ com.parimatch.spm2759-1-config.xxhdpi.apk    │ 896.5 KB │\n│ com.parimatch.spm2759-1-asset.apk            │  18.7 MB │\n└──────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
