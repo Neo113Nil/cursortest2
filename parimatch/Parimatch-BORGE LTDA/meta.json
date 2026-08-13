@@ -48,5 +48,92 @@
   "stdout": "╭─ com.arena.legendsarena ─╮\n│ Parimatch                │\n│ 1  (vc 1)                │\n╰──────────────────────────╯\n\nDownloading 3 files  (98.0 MB)\n  com.arena.legendsarena-1.apk                  ━━━━━━ 100% 36.9/… 10.0   0:00:…\n                                                            MB     MB/s         \n  com.arena.legendsarena-1-config.arm64_v8a.apk ━━━━━━ 100% 34.3/… 11.1   0:00:…\n                                                            MB     MB/s         \n  com.arena.legendsarena-1-asset.apk            ━━━━━━ 100% 31.5/… 11.4   0:00:…\n                                                            MB     MB/s         \n\n                     Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                          ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.arena.legendsarena-1.apk                  │ 35.2 MB │\n│ com.arena.legendsarena-1-config.arm64_v8a.apk │ 32.7 MB │\n│ com.arena.legendsarena-1-asset.apk            │ 35.2 MB │\n└───────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Arena Legends"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.7.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "нет"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Google Advertising ID (play-services-ads-identifier), Play Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.google.android.gms.permission.AD_ID, android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity 6000.0.60f1 (IL2CPP); UnityEngine modules (AndroidJNI, UnityWebRequest, JSONSerialize, InputSystem, Addressables, URP, 2D Animation/SpriteShape, Burst, Collections, TextMeshPro); Assembly-CSharp (CodeBase, UpdateTool.CodeBase); MiniIT.AdvertisingIdFetcher; UniTask; Zenject; DOTween; Newtonsoft.Json; AndroidX (core, fragment, lifecycle, legacy-support-v4, media, coordinatorlayout, drawerlayout, viewpager, swiperefreshlayout, asynclayoutinflater, localbroadcastmanager, documentfile, print, versionedparcelable); Google Play Services ads-identifier 16.0.0; play-services-basement 16.0.1; Google Play PairIP (com.pairip.application.Application, licensecheck); bitter.jnibridge; FMOD"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "libcore.icu.icu"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Unity PlayerPrefs: целочисленный флаг режима/прохождения проверки и строковый идентификатор игрока"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "VerifScreen, UpdateTool, RequestParams, FilterLoadChain, referrer, AdvertisingId, AppsFlyerId, Locale, InstallTime, OpenURL, gate, redirect, white, black"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "libcore.icu.icu",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      }
+    ],
+    "collected_data": [
+      "Номер AppsFlyer",
+      "Рекламный номер устройства",
+      "Модель телефона",
+      "Версия ОС",
+      "Идентификатор игрока",
+      "Номер выпуска Android",
+      "Идентификатор сборки",
+      "Локаль телефона",
+      "Версия приложения",
+      "Источник установки referrer",
+      "Время установки"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Номер AppsFlyer\n• Рекламный номер устройства\n• Модель телефона\n• Версия ОС\n• Идентификатор игрока\n• Номер выпуска Android\n• Идентификатор сборки\n• Локаль телефона\n• Версия приложения\n• Источник установки referrer\n• Время установки\n\nКак собираются: Сразу после запуска приложение само, без спроса у человека, поднимает служебный экран проверки. Оно тихо читает локаль телефона, модель и сведения о версии Android из системы, рекламный номер устройства через службы Google, а также источник установки и время установки через сервис магазина Play Install Referrer. Отдельного окна «разрешите доступ» для этого шага нет. Какие именно поля попадут в проверочный адрес, задаёт встроенный список параметров запроса. Для каждого пункта приложение берёт значение и подставляет его в ссылку. Часть данных дополнительно записывает в свою память на телефоне: идентификатор игрока и флаг, что проверка уже проходилась.…\n\nКуда отправляются: Собранные сведения склеивают в адрес тихой проверки и не показывают как обычную рекламу на экране. Сам базовый адрес в приложении лежит в зашифрованном виде, поэтому полный открытый URL в ресурсах не читается глазами. Параметры к нему добавляют через экранирование и склейку строки. В готовых проверках доменов для этого приложения указан хост libcore.icu.icu: по данным проверки DNS не резолвится, страница и редирект недоступны. Других открытых запасных адресов проверки в коде не видно. Флаг результата и часть служебных строк сохраняют в памяти приложения на телефоне.\n\nКак фильтруются пользователи: На проверку уходят локаль, рекламный номер, модель телефона, версии системы и приложения, источник и время установки и связанные идентификаторы. В самом приложении нет отдельного жёсткого списка стран или языков, по которому сразу режут людей. Признаки собирают и встраивают в адрес проверки; решение «кому оффер, кому обычное приложение» по смыслу схемы делает сервер. Локально приложение ещё смотрит, есть ли интернет, читает свой флаг в памяти и проверяет возврат по глубокой ссылке arenal://open. Экран подтверждения VerifScreen и кнопки на нём — это развилка интерфейса: дальше либо внешняя ссылка, либо обычное приложение. Точного «бело…"
+  }
 }
