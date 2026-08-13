@@ -1,6 +1,46 @@
 {
-  "all_custom_domains": [],
-  "checked": [],
-  "count": 0,
+  "all_custom_domains": [
+    "still-recipe-2886.sadalabs7.workers.dev"
+  ],
+  "checked": [
+    {
+      "domain": "still-recipe-2886.sadalabs7.workers.dev",
+      "virustotal": {
+        "ok": false,
+        "error": "домен не найден в VirusTotal"
+      },
+      "redirects_to": "нет (без редиректа)",
+      "redirect_chain": [
+        "https://still-recipe-2886.sadalabs7.workers.dev/"
+      ],
+      "page_output": "нет",
+      "parked_at": "нет",
+      "final_url": "https://still-recipe-2886.sadalabs7.workers.dev/",
+      "http_status": 204,
+      "table_rows": [
+        {
+          "param": "Домен",
+          "value": "still-recipe-2886.sadalabs7.workers.dev"
+        },
+        {
+          "param": "VirusTotal",
+          "value": "ошибка: домен не найден в VirusTotal"
+        },
+        {
+          "param": "Куда редиректит",
+          "value": "нет (без редиректа)"
+        },
+        {
+          "param": "Что выводит (кратко)",
+          "value": "нет"
+        },
+        {
+          "param": "Где припаркован",
+          "value": "нет"
+        }
+      ]
+    }
+  ],
+  "count": 1,
   "vt_configured": true
 }
