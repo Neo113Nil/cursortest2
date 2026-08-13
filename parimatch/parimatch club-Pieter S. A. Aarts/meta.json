@@ -1,0 +1,55 @@
+{
+  "app_id": "co.median.android.dywjmep",
+  "title": "parimatch club",
+  "developer": "Pieter S. A. Aarts",
+  "score": null,
+  "icon": "/static/app-icons/co_median_android_dywjmep.png",
+  "url": "https://play.google.com/store/apps/details?id=co.median.android.dywjmep&hl=en&gl=us",
+  "keyword": "Parimatch",
+  "country": "Spain",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260813_174703_Spain_Parimatch_search",
+  "search_title": "parimatch club",
+  "search_developer": "Pieter S. A. Aarts",
+  "rank": 8,
+  "developer_id": "Pieter+S.+A.+Aarts",
+  "released": "Jul 10, 2026",
+  "updated": "Aug 7, 2026",
+  "version": "Varies with device",
+  "summary": "Board Game Rentals",
+  "folder": "parimatch club-Pieter S. A. Aarts",
+  "path": "parimatch/parimatch club-Pieter S. A. Aarts",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "co.median.android.dywjmep-5-asset.apk",
+    "co.median.android.dywjmep-5-config.en.apk",
+    "co.median.android.dywjmep-5-config.lt.apk",
+    "co.median.android.dywjmep-5-config.ru.apk",
+    "co.median.android.dywjmep-5-config.xxhdpi.apk",
+    "co.median.android.dywjmep-5.apk"
+  ],
+  "target": "/root/play-collector/загрузки/parimatch/parimatch club-Pieter S. A. Aarts",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ co.median.android.dywjmep ─╮\n│ parimatch club              │\n│ 1.0.1  (vc 5)               │\n╰─────────────────────────────╯\n\nDownloading 6 files  (13.5 MB)\n  co.median.android.dywjmep-5.apk               ━━━━━━ 100% 7.9/7… 18.9   0:00:…\n                                                            MB     MB/s         \n  co.median.android.dywjmep-5-config.en.apk     ━━━━━━ 100% 49.4/… ?      0:00:…\n                                                            kB                  \n  co.median.android.dywjmep-5-config.lt.apk     ━━━━━━ 100% 33.0/… ?      0:00:…\n                                                            kB                  \n  co.median.android.dywjmep-5-config.ru.apk     ━━━━━━ 100% 33.0/… ?      0:00:…\n                                                            kB                  \n  co.median.android.dywjmep-5-config.xxhdpi.apk ━━━━━━ 100% 891.1… 9.2    0:00:…\n                                                            kB     MB/s         \n  co.median.android.dywjmep-5-asset.apk         ━━━━━━ 100% 5.3/5… 24.7   0:00:…\n                                                            MB     MB/s         \n\n                      Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                          ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ co.median.android.dywjmep-5.apk               │   7.5 MB │\n│ co.median.android.dywjmep-5-config.en.apk     │  48.2 KB │\n│ co.median.android.dywjmep-5-config.lt.apk     │  32.2 KB │\n│ co.median.android.dywjmep-5-config.ru.apk     │  32.2 KB │\n│ co.median.android.dywjmep-5-config.xxhdpi.apk │ 870.2 KB │\n│ co.median.android.dywjmep-5-asset.apk         │   7.5 MB │\n└───────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ co.median.android.dywjmep ─╮\n│ parimatch club              │\n│ 1.0.1  (vc 5)               │\n╰─────────────────────────────╯\n\nDownloading 6 files  (13.5 MB)\n  co.median.android.dywjmep-5.apk               ━━━━━━ 100% 7.9/7… 18.9   0:00:…\n                                                            MB     MB/s         \n  co.median.android.dywjmep-5-config.en.apk     ━━━━━━ 100% 49.4/… ?      0:00:…\n                                                            kB                  \n  co.median.android.dywjmep-5-config.lt.apk     ━━━━━━ 100% 33.0/… ?      0:00:…\n                                                            kB                  \n  co.median.android.dywjmep-5-config.ru.apk     ━━━━━━ 100% 33.0/… ?      0:00:…\n                                                            kB                  \n  co.median.android.dywjmep-5-config.xxhdpi.apk ━━━━━━ 100% 891.1… 9.2    0:00:…\n                                                            kB     MB/s         \n  co.median.android.dywjmep-5-asset.apk         ━━━━━━ 100% 5.3/5… 24.7   0:00:…\n                                                            MB     MB/s         \n\n                      Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                          ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ co.median.android.dywjmep-5.apk               │   7.5 MB │\n│ co.median.android.dywjmep-5-config.en.apk     │  48.2 KB │\n│ co.median.android.dywjmep-5-config.lt.apk     │  32.2 KB │\n│ co.median.android.dywjmep-5-config.ru.apk     │  32.2 KB │\n│ co.median.android.dywjmep-5-config.xxhdpi.apk │ 870.2 KB │\n│ co.median.android.dywjmep-5-asset.apk         │   7.5 MB │\n└───────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
