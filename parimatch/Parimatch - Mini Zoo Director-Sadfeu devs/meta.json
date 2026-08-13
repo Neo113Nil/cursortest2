@@ -1,0 +1,56 @@
+{
+  "app_id": "com.pb72ee08f.complete_first_called_mini",
+  "title": "Parimatch - Mini Zoo Director",
+  "developer": "Sadfeu devs",
+  "score": null,
+  "icon": "/static/app-icons/com_pb72ee08f_complete_first_called_mini.png",
+  "url": "https://play.google.com/store/apps/details?id=com.pb72ee08f.complete_first_called_mini&hl=en&gl=us",
+  "keyword": "Parimatch",
+  "country": "Spain",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260813_174703_Spain_Parimatch_search",
+  "search_title": "Parimatch - Mini Zoo Director",
+  "search_developer": "Sadfeu devs",
+  "rank": 9,
+  "developer_id": "8242128070073464162",
+  "released": "Jul 14, 2026",
+  "updated": "Jul 14, 2026",
+  "version": "Varies with device",
+  "summary": "Manage habitats, care for animals, and build your dream mini zoo.",
+  "folder": "Parimatch - Mini Zoo Director-Sadfeu devs",
+  "path": "parimatch/Parimatch - Mini Zoo Director-Sadfeu devs",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.pb72ee08f.complete_first_called_mini-1-asset.apk",
+    "com.pb72ee08f.complete_first_called_mini-1-config.arm64_v8a.apk",
+    "com.pb72ee08f.complete_first_called_mini-1-config.en.apk",
+    "com.pb72ee08f.complete_first_called_mini-1-config.lt.apk",
+    "com.pb72ee08f.complete_first_called_mini-1-config.ru.apk",
+    "com.pb72ee08f.complete_first_called_mini-1-config.xxhdpi.apk",
+    "com.pb72ee08f.complete_first_called_mini-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/parimatch/Parimatch - Mini Zoo Director-Sadfeu devs",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.pb72ee08f.complete_first_called_mini ─╮\n│ Parimatch - Mini Zoo Director              │\n│ 1.0  (vc 1)                                │\n╰────────────────────────────────────────────╯\n\nDownloading 7 files  (53.8 MB)\n  com.pb72ee08f.complete_first_called_mini-1.apk                  ━ 100% … 1… 0…\n                                                                         … M…   \n  com.pb72ee08f.complete_first_called_mini-1-config.arm64_v8a.apk ━ 100% … ?  0…\n                                                                         …      \n  com.pb72ee08f.complete_first_called_mini-1-config.en.apk        ━ 100% … ?  0…\n                                                                         …      \n  com.pb72ee08f.complete_first_called_mini-1-config.lt.apk        ━ 100% … ?  0…\n                                                                         …      \n  com.pb72ee08f.complete_first_called_mini-1-config.ru.apk        ━ 100% … ?  0…\n                                                                         …      \n  com.pb72ee08f.complete_first_called_mini-1-config.xxhdpi.apk    ━ 100% … ?  0…\n                                                                         …      \n  com.pb72ee08f.complete_first_called_mini-1-asset.apk            ━ 100% … 2… 0…\n                                                                         … M…   \n\n                              Downloaded files                               \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.pb72ee08f.complete_first_called_mini-1.apk                  │ 41.7 MB │\n│ com.pb72ee08f.complete_first_called_mini-1-config.arm64_v8a.apk │ 44.4 KB │\n│ com.pb72ee08f.complete_first_called_mini-1-config.en.apk        │ 60.4 KB │\n│ com.pb72ee08f.complete_first_called_mini-1-config.lt.apk        │ 24.4 KB │\n│ com.pb72ee08f.complete_first_called_mini-1-config.ru.apk        │ 24.4 KB │\n│ com.pb72ee08f.complete_first_called_mini-1-config.xxhdpi.apk    │ 29.5 KB │\n│ com.pb72ee08f.complete_first_called_mini-1-asset.apk            │ 41.7 MB │\n└─────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.pb72ee08f.complete_first_called_mini ─╮\n│ Parimatch - Mini Zoo Director              │\n│ 1.0  (vc 1)                                │\n╰────────────────────────────────────────────╯\n\nDownloading 7 files  (53.8 MB)\n  com.pb72ee08f.complete_first_called_mini-1.apk                  ━ 100% … 1… 0…\n                                                                         … M…   \n  com.pb72ee08f.complete_first_called_mini-1-config.arm64_v8a.apk ━ 100% … ?  0…\n                                                                         …      \n  com.pb72ee08f.complete_first_called_mini-1-config.en.apk        ━ 100% … ?  0…\n                                                                         …      \n  com.pb72ee08f.complete_first_called_mini-1-config.lt.apk        ━ 100% … ?  0…\n                                                                         …      \n  com.pb72ee08f.complete_first_called_mini-1-config.ru.apk        ━ 100% … ?  0…\n                                                                         …      \n  com.pb72ee08f.complete_first_called_mini-1-config.xxhdpi.apk    ━ 100% … ?  0…\n                                                                         …      \n  com.pb72ee08f.complete_first_called_mini-1-asset.apk            ━ 100% … 2… 0…\n                                                                         … M…   \n\n                              Downloaded files                               \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.pb72ee08f.complete_first_called_mini-1.apk                  │ 41.7 MB │\n│ com.pb72ee08f.complete_first_called_mini-1-config.arm64_v8a.apk │ 44.4 KB │\n│ com.pb72ee08f.complete_first_called_mini-1-config.en.apk        │ 60.4 KB │\n│ com.pb72ee08f.complete_first_called_mini-1-config.lt.apk        │ 24.4 KB │\n│ com.pb72ee08f.complete_first_called_mini-1-config.ru.apk        │ 24.4 KB │\n│ com.pb72ee08f.complete_first_called_mini-1-config.xxhdpi.apk    │ 29.5 KB │\n│ com.pb72ee08f.complete_first_called_mini-1-asset.apk            │ 41.7 MB │\n└─────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
