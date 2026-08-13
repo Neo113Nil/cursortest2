@@ -1,0 +1,56 @@
+{
+  "app_id": "com.zelenizmaj.joyo",
+  "title": "JOY-O",
+  "developer": "ZELENI ZMAJ d.o.o",
+  "score": null,
+  "icon": "/static/app-icons/com_zelenizmaj_joyo.png",
+  "url": "https://play.google.com/store/apps/details?id=com.zelenizmaj.joyo&hl=en&gl=us",
+  "keyword": "Joy Casino",
+  "country": "India",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260813_181659_India_Joy Casino_search",
+  "search_title": "JOY-O",
+  "search_developer": "ZELENI ZMAJ d.o.o.",
+  "rank": 6,
+  "developer_id": "ZELENI+ZMAJ+d.o.o.",
+  "released": "Dec 19, 2025",
+  "updated": "Jan 27, 2026",
+  "version": "Varies with device",
+  "summary": "Joy-o eSIM. Stay connected. No borders, no limits",
+  "folder": "JOY-O-ZELENI ZMAJ d.o.o",
+  "path": "joy casino/JOY-O-ZELENI ZMAJ d.o.o",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.zelenizmaj.joyo-12-asset.apk",
+    "com.zelenizmaj.joyo-12-config.arm64_v8a.apk",
+    "com.zelenizmaj.joyo-12-config.en.apk",
+    "com.zelenizmaj.joyo-12-config.lt.apk",
+    "com.zelenizmaj.joyo-12-config.ru.apk",
+    "com.zelenizmaj.joyo-12-config.xxhdpi.apk",
+    "com.zelenizmaj.joyo-12.apk"
+  ],
+  "target": "/root/play-collector/загрузки/joy casino/JOY-O-ZELENI ZMAJ d.o.o",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.zelenizmaj.joyo ─╮\n│ JOY-O                 │\n│ 2.0.12  (vc 12)       │\n╰───────────────────────╯\n\nDownloading 7 files  (41.5 MB)\n  com.zelenizmaj.joyo-12.apk                  ━━━━━━ 100% 17.2/1… 13.6   0:00:00\n                                                          MB      MB/s          \n  com.zelenizmaj.joyo-12-config.arm64_v8a.apk ━━━━━━ 100% 18.4/1… 14.2   0:00:00\n                                                          MB      MB/s          \n  com.zelenizmaj.joyo-12-config.en.apk        ━━━━━━ 100% 45.5/4… ?      0:00:00\n                                                          kB                    \n  com.zelenizmaj.joyo-12-config.lt.apk        ━━━━━━ 100% 25.0/2… ?      0:00:00\n                                                          kB                    \n  com.zelenizmaj.joyo-12-config.ru.apk        ━━━━━━ 100% 29.1/2… ?      0:00:00\n                                                          kB                    \n  com.zelenizmaj.joyo-12-config.xxhdpi.apk    ━━━━━━ 100% 119.2/… 2.2    0:00:00\n                                                          kB      MB/s          \n  com.zelenizmaj.joyo-12-asset.apk            ━━━━━━ 100% 7.7/7.7 8.7    0:00:00\n                                                          MB      MB/s          \n\n                     Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                        ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.zelenizmaj.joyo-12.apk                  │  16.4 MB │\n│ com.zelenizmaj.joyo-12-config.arm64_v8a.apk │  17.6 MB │\n│ com.zelenizmaj.joyo-12-config.en.apk        │  44.4 KB │\n│ com.zelenizmaj.joyo-12-config.lt.apk        │  24.4 KB │\n│ com.zelenizmaj.joyo-12-config.ru.apk        │  28.4 KB │\n│ com.zelenizmaj.joyo-12-config.xxhdpi.apk    │ 116.4 KB │\n│ com.zelenizmaj.joyo-12-asset.apk            │  16.4 MB │\n└─────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.zelenizmaj.joyo ─╮\n│ JOY-O                 │\n│ 2.0.12  (vc 12)       │\n╰───────────────────────╯\n\nDownloading 7 files  (41.5 MB)\n  com.zelenizmaj.joyo-12.apk                  ━━━━━━ 100% 17.2/1… 13.6   0:00:00\n                                                          MB      MB/s          \n  com.zelenizmaj.joyo-12-config.arm64_v8a.apk ━━━━━━ 100% 18.4/1… 14.2   0:00:00\n                                                          MB      MB/s          \n  com.zelenizmaj.joyo-12-config.en.apk        ━━━━━━ 100% 45.5/4… ?      0:00:00\n                                                          kB                    \n  com.zelenizmaj.joyo-12-config.lt.apk        ━━━━━━ 100% 25.0/2… ?      0:00:00\n                                                          kB                    \n  com.zelenizmaj.joyo-12-config.ru.apk        ━━━━━━ 100% 29.1/2… ?      0:00:00\n                                                          kB                    \n  com.zelenizmaj.joyo-12-config.xxhdpi.apk    ━━━━━━ 100% 119.2/… 2.2    0:00:00\n                                                          kB      MB/s          \n  com.zelenizmaj.joyo-12-asset.apk            ━━━━━━ 100% 7.7/7.7 8.7    0:00:00\n                                                          MB      MB/s          \n\n                     Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                        ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.zelenizmaj.joyo-12.apk                  │  16.4 MB │\n│ com.zelenizmaj.joyo-12-config.arm64_v8a.apk │  17.6 MB │\n│ com.zelenizmaj.joyo-12-config.en.apk        │  44.4 KB │\n│ com.zelenizmaj.joyo-12-config.lt.apk        │  24.4 KB │\n│ com.zelenizmaj.joyo-12-config.ru.apk        │  28.4 KB │\n│ com.zelenizmaj.joyo-12-config.xxhdpi.apk    │ 116.4 KB │\n│ com.zelenizmaj.joyo-12-asset.apk            │  16.4 MB │\n└─────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
