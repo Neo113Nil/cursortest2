@@ -417,7 +417,7 @@
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | AccessDenied Access Denied PGADY57Y2QNWG53V SNxpDJXle2rE9/bVa7+3dJv1eVX4jXGMHOrN6c4/azvfLFFBcswh/CPQa9saGZgJEkxWD/4hSYnMHpidYQ0CJXnCJZU/037B |
+| Что выводит (кратко) | AccessDenied Access Denied PYSQZA0FG1P0SVG8 2uy9BW/XtXjY+DEbgAvW6ZxfAAINFEZKqLWa3NR1D/71FwkrMKb14fSWyp7JA2fHxBKy5OiZhug= |
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
 
 ## Проверка домена: id.yandex.com
