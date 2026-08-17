@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "apks": [
+    "com.serceg.ufcdrop.astro.apk"
+  ],
+  "base_apk": "com.serceg.ufcdrop.astro.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "NFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 4911 (0%)\nINFO  - progress: 37 of 4911 (0%)\nINFO  - progress: 72 of 4911 (1%)\nINFO  - progress: 317 of 4911 (6%)\nINFO  - progress: 627 of 4911 (12%)\nINFO  - progress: 627 of 4911 (12%)\nINFO  - progress: 628 of 4911 (12%)\nINFO  - progress: 631 of 4911 (12%)\nINFO  - progress: 634 of 4911 (12%)\nINFO  - progress: 635 of 4911 (12%)\nINFO  - progress: 640 of 4911 (13%)\nINFO  - progress: 642 of 4911 (13%)\nINFO  - progress: 647 of 4911 (13%)\nINFO  - progress: 651 of 4911 (13%)\nINFO  - progress: 654 of 4911 (13%)\nINFO  - progress: 662 of 4911 (13%)\nINFO  - progress: 679 of 4911 (13%)\nINFO  - progress: 687 of 4911 (13%)\nINFO  - progress: 695 of 4911 (14%)\nINFO  - progress: 703 of 4911 (14%)\nINFO  - progress: 786 of 4911 (16%)\nINFO  - progress: 871 of 4911 (17%)\nINFO  - progress: 1207 of 4911 (24%)\nINFO  - progress: 1320 of 4911 (26%)\nINFO  - progress: 1360 of 4911 (27%)\nINFO  - progress: 1379 of 4911 (28%)\nINFO  - progress: 1433 of 4911 (29%)\nINFO  - progress: 1513 of 4911 (30%)\nINFO  - progress: 1726 of 4911 (35%)\nINFO  - progress: 1791 of 4911 (36%)\nINFO  - progress: 1816 of 4911 (36%)\nINFO  - progress: 1842 of 4911 (37%)\nINFO  - progress: 1894 of 4911 (38%)\nINFO  - progress: 1942 of 4911 (39%)\nINFO  - progress: 2137 of 4911 (43%)\nINFO  - progress: 2194 of 4911 (44%)\nINFO  - progress: 2228 of 4911 (45%)\nINFO  - progress: 2242 of 4911 (45%)\nINFO  - progress: 2259 of 4911 (45%)\nINFO  - progress: 2279 of 4911 (46%)\nINFO  - progress: 2321 of 4911 (47%)\nINFO  - progress: 2343 of 4911 (47%)\nINFO  - progress: 2368 of 4911 (48%)\nINFO  - progress: 2383 of 4911 (48%)\nINFO  - progress: 2403 of 4911 (48%)\nINFO  - progress: 2458 of 4911 (50%)\nINFO  - progress: 2483 of 4911 (50%)\nINFO  - progress: 2521 of 4911 (51%)\nINFO  - progress: 2535 of 4911 (51%)\nINFO  - progress: 2569 of 4911 (52%)\nINFO  - progress: 2585 of 4911 (52%)\nINFO  - progress: 2616 of 4911 (53%)\nINFO  - progress: 2635 of 4911 (53%)\nINFO  - progress: 2823 of 4911 (57%)\nINFO  - progress: 2970 of 4911 (60%)\nINFO  - progress: 3049 of 4911 (62%)\nINFO  - progress: 3086 of 4911 (62%)\nINFO  - progress: 3110 of 4911 (63%)\nINFO  - progress: 3159 of 4911 (64%)\nINFO  - progress: 3186 of 4911 (64%)\nINFO  - progress: 3239 of 4911 (65%)\nINFO  - progress: 3271 of 4911 (66%)\nINFO  - progress: 3286 of 4911 (66%)\nINFO  - progress: 3476 of 4911 (70%)\nINFO  - progress: 3760 of 4911 (76%)\nINFO  - progress: 3809 of 4911 (77%)\nINFO  - progress: 3845 of 4911 (78%)\nINFO  - progress: 3864 of 4911 (78%)\nINFO  - progress: 3906 of 4911 (79%)\nINFO  - progress: 3931 of 4911 (80%)\nINFO  - progress: 3946 of 4911 (80%)\nINFO  - progress: 3985 of 4911 (81%)\nINFO  - progress: 4007 of 4911 (81%)\nINFO  - progress: 4047 of 4911 (82%)\nINFO  - progress: 4070 of 4911 (82%)\nINFO  - progress: 4087 of 4911 (83%)\nINFO  - progress: 4458 of 4911 (90%)\nINFO  - progress: 4685 of 4911 (95%)\n                                                             \nERROR - finished with errors, count: 12\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/apk-upload/com.serceg.ufcdrop.astro-20260817-110438-41aa99/decompiled",
+    "skipped": false,
+    "base_apk": "com.serceg.ufcdrop.astro.apk"
+  },
+  "analysis_files": [
+    "com.serceg.ufcdrop.astro.apk",
+    "apk/com.serceg.ufcdrop.astro.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/A/",
+    "decompiled/sources/A0/",
+    "decompiled/sources/A1/",
+    "decompiled/sources/A2/",
+    "decompiled/sources/A3/",
+    "decompiled/sources/A4/",
+    "decompiled/sources/A5/",
+    "decompiled/sources/A6/",
+    "decompiled/sources/A7/",
+    "decompiled/sources/B/",
+    "decompiled/sources/B0/",
+    "decompiled/sources/B1/",
+    "decompiled/sources/B2/",
+    "decompiled/sources/B3/",
+    "decompiled/sources/B4/",
+    "decompiled/sources/B5/",
+    "decompiled/sources/B6/",
+    "decompiled/sources/B7/",
+    "decompiled/sources/C0/",
+    "decompiled/sources/C1/"
+  ],
+  "errors": []
+}
