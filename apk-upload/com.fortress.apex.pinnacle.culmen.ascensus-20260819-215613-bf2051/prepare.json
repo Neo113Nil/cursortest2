@@ -7,7 +7,7 @@
   "jadx": {
     "ok": true,
     "exit_code": 1,
-    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 2860 (0%)\nINFO  - progress: 492 of 2860 (17%)\nINFO  - progress: 518 of 2860 (18%)\nINFO  - progress: 915 of 2860 (31%)\nINFO  - progress: 1186 of 2860 (41%)\nINFO  - progress: 1453 of 2860 (50%)\nINFO  - progress: 1652 of 2860 (57%)\nINFO  - progress: 1828 of 2860 (63%)\nINFO  - progress: 2083 of 2860 (72%)\nINFO  - progress: 2403 of 2860 (84%)\nINFO  - progress: 2718 of 2860 (95%)\n                                                             \nERROR - finished with errors, count: 6\n",
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 2860 (0%)\nINFO  - progress: 493 of 2860 (17%)\nINFO  - progress: 759 of 2860 (26%)\nINFO  - progress: 950 of 2860 (33%)\nINFO  - progress: 1329 of 2860 (46%)\nINFO  - progress: 1579 of 2860 (55%)\nINFO  - progress: 1706 of 2860 (59%)\nINFO  - progress: 1987 of 2860 (69%)\nINFO  - progress: 2190 of 2860 (76%)\nINFO  - progress: 2502 of 2860 (87%)\n                                                             \nERROR - finished with errors, count: 6\n",
     "stderr": "",
     "out_dir": "/root/play-collector/загрузки/apk-upload/com.fortress.apex.pinnacle.culmen.ascensus-20260819-215613-bf2051/decompiled",
     "skipped": false,
@@ -17,6 +17,8 @@
     "com.fortress.apex.pinnacle.culmen.ascensus.apk",
     "apk/com.fortress.apex.pinnacle.culmen.ascensus.apk",
     "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
     "decompiled/resources/AndroidManifest.xml",
     "decompiled/resources/res/values/strings.xml",
     "decompiled/sources/",
