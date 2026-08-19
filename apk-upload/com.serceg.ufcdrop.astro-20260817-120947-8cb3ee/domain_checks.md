@@ -229,6 +229,7 @@
 | BitDefender | Clean |
 | Blueliv | Clean |
 | Certego | Clean |
+| Chong Lua Dao | Clean |
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
@@ -241,6 +242,7 @@
 | Emsisoft | Clean |
 | ESET | Clean |
 | ESTsecurity | Clean |
+| Forcepoint ThreatSeeker | Clean |
 | Fortinet | Clean |
 | G-Data | Clean |
 | Google Safe Browsing | Clean |
@@ -249,10 +251,10 @@
 | IPsum | Clean |
 | Juniper Networks | Clean |
 | Kaspersky | Clean |
-| LevelBlue | Clean |
 | Lionic | Clean |
 | Malwared | Clean |
 | MalwarePatrol | Clean |
+| Netcraft | Clean |
 | OpenPhish | Clean |
 | Phishing Database | Clean |
 | Phishtank | Clean |
@@ -271,6 +273,7 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+| Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -282,24 +285,22 @@
 | Bfore.Ai PreCrime | Unrated |
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
-| Chong Lua Dao | Unrated |
 | Cluster25 | Unrated |
 | Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
 | Cyan | Unrated |
 | DNS8 | Unrated |
 | Ermes | Unrated |
-| Forcepoint ThreatSeeker | Unrated |
 | Fortra | Unrated |
 | GCP Abuse Intelligence | Unrated |
 | GreyNoise | Unrated |
 | Gridinsoft | Unrated |
 | Guardpot | Unrated |
 | Hunt.io Intelligence | Unrated |
+| LevelBlue | Unrated |
 | Lumu | Unrated |
 | MalwareURL | Unrated |
 | Mimecast | Unrated |
-| Netcraft | Unrated |
 | PhishFort | Unrated |
 | PrecisionSec | Unrated |
 | SafeToOpen | Unrated |
@@ -309,7 +310,6 @@
 | SOCRadar | Unrated |
 | URLQuery | Unrated |
 | VIPRE | Unrated |
-| Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | https://passport.yandex.com/auth?retpath=https%3A%2F%2Fappmetrica.yandex.com%2Foverview&lang=en |
 | Что выводит (кратко) | title: Log in. Log in Log in with ID Email Phone number Next Face or fingerprint login QR code Create ID Yandex ID. The key for all your services Learn more |
@@ -417,7 +417,7 @@
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | AccessDenied Access Denied PYSQZA0FG1P0SVG8 2uy9BW/XtXjY+DEbgAvW6ZxfAAINFEZKqLWa3NR1D/71FwkrMKb14fSWyp7JA2fHxBKy5OiZhug= |
+| Что выводит (кратко) | AccessDenied Access Denied 6S9P9ZCS1ZF2R9NG ondSKRnpHsdx9UKAKTsvalaPPktuaZrylbxsAYJdk2j51sshbTKCsyZrnGnQrabLyMqacORu2bjJtDps27tQknIs9DejLX8h |
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
 
 ## Проверка домена: id.yandex.com
