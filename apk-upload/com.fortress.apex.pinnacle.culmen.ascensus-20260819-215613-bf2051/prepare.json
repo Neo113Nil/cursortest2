@@ -7,7 +7,7 @@
   "jadx": {
     "ok": true,
     "exit_code": 1,
-    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 2860 (0%)\nINFO  - progress: 493 of 2860 (17%)\nINFO  - progress: 759 of 2860 (26%)\nINFO  - progress: 950 of 2860 (33%)\nINFO  - progress: 1329 of 2860 (46%)\nINFO  - progress: 1579 of 2860 (55%)\nINFO  - progress: 1706 of 2860 (59%)\nINFO  - progress: 1987 of 2860 (69%)\nINFO  - progress: 2190 of 2860 (76%)\nINFO  - progress: 2502 of 2860 (87%)\n                                                             \nERROR - finished with errors, count: 6\n",
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 2860 (0%)\nINFO  - progress: 497 of 2860 (17%)\nINFO  - progress: 818 of 2860 (28%)\nINFO  - progress: 1160 of 2860 (40%)\nINFO  - progress: 1471 of 2860 (51%)\nINFO  - progress: 1685 of 2860 (58%)\nINFO  - progress: 1938 of 2860 (67%)\nINFO  - progress: 2182 of 2860 (76%)\nINFO  - progress: 2473 of 2860 (86%)\n                                                             \nERROR - finished with errors, count: 6\n",
     "stderr": "",
     "out_dir": "/root/play-collector/загрузки/apk-upload/com.fortress.apex.pinnacle.culmen.ascensus-20260819-215613-bf2051/decompiled",
     "skipped": false,
