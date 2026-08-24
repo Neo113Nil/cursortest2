@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "apks": [
+    "lynx.parlayscrorepro.app-2.apk",
+    "lynx.parlayscrorepro.app-2-config.armeabi_v7a.apk",
+    "lynx.parlayscrorepro.app-2-config.en.apk",
+    "lynx.parlayscrorepro.app-2-config.mdpi.apk"
+  ],
+  "base_apk": "lynx.parlayscrorepro.app-2.apk",
+  "source": "apkcombo-manual",
+  "errors": []
+}
