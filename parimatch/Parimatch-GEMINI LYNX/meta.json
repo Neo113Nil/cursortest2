@@ -50,5 +50,85 @@
   "stdout": "╭─ lynx.parlayscrorepro.app ─╮\n│ Parimatch                  │\n│ 2.0  (vc 2)                │\n╰────────────────────────────╯\n\nDownloading 5 files  (62.5 MB)\n  lynx.parlayscrorepro.app-2.apk                  ━━━━━ 100% 50.6… 26.8   0:00:…\n                                                             MB    MB/s         \n  lynx.parlayscrorepro.app-2-config.arm64_v8a.apk ━━━━━ 100% 82.4… 2.3    0:00:…\n                                                             kB    MB/s         \n  lynx.parlayscrorepro.app-2-config.en.apk        ━━━━━ 100% 106.… 2.6    0:00:…\n                                                             kB    MB/s         \n  lynx.parlayscrorepro.app-2-config.xxhdpi.apk    ━━━━━ 100% 91.1… 2.3    0:00:…\n                                                             kB    MB/s         \n  lynx.parlayscrorepro.app-2-asset.apk            ━━━━━ 100% 14.6… 9.2    0:00:…\n                                                             MB    MB/s         \n\n                       Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                            ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ lynx.parlayscrorepro.app-2.apk                  │  48.3 MB │\n│ lynx.parlayscrorepro.app-2-config.arm64_v8a.apk │  80.5 KB │\n│ lynx.parlayscrorepro.app-2-config.en.apk        │ 104.4 KB │\n│ lynx.parlayscrorepro.app-2-config.xxhdpi.apk    │  88.9 KB │\n│ lynx.parlayscrorepro.app-2-asset.apk            │  48.3 MB │\n└─────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Parimatch"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.7.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 1.9.24"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.WAKE_LOCK, android.permission.ACCESS_NETWORK_STATE, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.FOREGROUND_SERVICE, lynx.parlayscrorepro.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.compose (ui/material3/foundation/animation/runtime), androidx.activity, androidx.appcompat, androidx.core, androidx.navigation, androidx.lifecycle, androidx.room, androidx.datastore, androidx.work, androidx.startup, androidx.emoji2, androidx.profileinstaller, coil, okhttp3, okio, kotlinx-coroutines, kotlinx-serialization, com.google.android.material, com.pairip.licensecheck"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "lynx.parlayscrorepro.app, images.unsplash.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "DataStore onboarding_prefs: ключ onboarding_complete (флаг прохождения онбординга); локальная БД Room parlayscorepro.db для корзины и заказов"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "parlay, Parimatch"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "images.unsplash.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: 1API GmbH"
+      },
+      {
+        "domain": "lynx.parlayscrorepro.app",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }

@@ -10,5 +10,91 @@
   "url": "https://play.google.com/store/apps/details?id=com.fortress.apex.pinnacle.culmen.ascensus&hl=en&gl=us",
   "released": "Aug 12, 2026",
   "updated": "2026-08-12",
-  "version": "1.0"
+  "version": "1.0",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "BB44"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.6.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1.0"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "OneSignal 5.9.8 (push-уведомления, in-app сообщения, сессии, outcomes/custom_events, обработчик сбоев, отправка логов через OpenTelemetry), Firebase Cloud Messaging 24.0.0, Firebase Installations 17.2.0, Firebase Common 21.0.0, Google Android Datatransport (cct)"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.POST_NOTIFICATIONS, android.permission.WAKE_LOCK, android.permission.VIBRATE, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.ACCESS_NETWORK_STATE, android.permission.FOREGROUND_SERVICE, android.permission.READ_APP_BADGE, com.google.android.c2dm.permission.RECEIVE, com.fortress.apex.pinnacle.culmen.ascensus.permission.C2D_MESSAGE, com.fo rtress.apex.pinnacle.culmen.ascensus.DYNAMIC_RECEIVER_NOT_EXPORTED_PE RMISSION, com.sec.android.provider.badge.permission.READ, com.sec.android.provider.badge.permission.WRITE, com.htc.launcher.permission.READ_SETTINGS, com.htc.launcher.permission.UPDATE_SHORTCUT, com.sonyericsson.home.permission.BROADCAST_BADGE, com.sonymobile.home.permission.PROVIDER_INSERT_BADGE, com.anddoes.launcher.permission.UPDATE_COUNT, com.majeur.launcher.permission.UPDATE_BADGE, com.huawei.android.launcher.permission.CHANGE_BADGE, com.huawei.android.launcher.permission.READ_SETTINGS, com.huawei.android.launcher.permission.WRITE_SETTINGS, com.oppo.launcher.permission.READ_SETTINGS, com.oppo.launcher.permission.WRITE_SETTINGS, me.everything.badger.permission.BADGE_COUNT_READ, me.everything.badger.permission.BADGE…"
+      },
+      {
+        "param": "Libraries",
+        "value": "Flutter (io.flutter.embedding, libflutter.so, libapp.so), Kotlin 2.1.0, kotlinx-coroutines-core 1.7.3, kotlinx-coroutines-android 1.7.3, kotlinx-coroutines-play-services 1.7.3, OneSignal Android SDK 5.9.8 (com.onesignal), onesignal_flutter, shared_preferences_android (io.flutter.plugins.sharedpreferences), firebase-messaging 24.0.0, firebase-installations 17.2.0, firebase-common 21.0.0, firebase-datatransport / com.google.android.datatransport (cct), Google Play services base, basement, tasks, OkHttp 5.2.1 + Okio, OpenTelemetry SDK и OTLP-HTTP exporter 1.55.0, androidx.activity 1.8.1, androidx.appcompat 1.1.0, androidx.browser 1.3.0, androidx.cardview 1.0.0, androidx.core 1.13.1, androidx.datastore 1.1.7, androidx.exifinterface 1.4.1, androidx.fragment 1.7.1, androidx.lifecycle 2.7.0, androidx.preference 1.2.1, androidx.profileinstaller 1.3.1, androidx.recyclerview 1.0.0, androidx.room-runtime 2.5.0, androidx.savedstate 1.2.1, androidx.sqlite 2.3.0, androidx.startup 1.2.0, androidx.tracing 1.2.0, androidx.transition 1.4.1, androidx.window 1.2.0, androidx.work-runtime 2.8.1, equatable (Dart), cupertino_icons (Dart) Подозрительные домены нет"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Игровой прогресс через Flutter shared_preferences: seen_welcome, coins, highscore_, equipped_crane_skin, equipped_material, unlocked_*, lvl_*, ach_progress_, ach_claimed_, ach_coins_2000, ach_levels_5/25/50, ach_max_height_12, ach_perfect_10/50. Отдельно служебные ключи OneSignal: PREFS_OS_INSTALL_ID, PREFS_OS_JWT_TOKENS, PREFS_OS_LAST_IAMS_RECEIVED, PREFS_OS_DISPLAYED_IAMS, PREFS_OS_IMPRESSIONED_IAMS, PREFS_OS_PAGE_IMPRESSIONED_IAMS, PREFS_OS_CLICKED_CLICK_IDS_IAMS, PREFS_OS_IAM_LAST_DISMISSED_TIME, PREFS_OS_LAST_NOTIFICATIONS_RECEIVED, PREFS_OS_LAST_ATTRIBUTED_NOTIFICATION_OPEN, PREFS_OS_OUTCOMES_CURRENT_SESSION, PREFS_OS_OUTCOMES_CURRENT_IAM_INFLUENCE, PREFS_OS_UNATTRIBUTED_UNIQUE_OUTCOME_EVENTS_SENT, PREFS_OS_ETAG_PREFIX_, PREFS_OS_HTTP_CACHE_PREFIX_ (кэш ответов сервера и список уже показанных сообщений)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "url, url_target, webview, browser, in_app_messages, iams, click_id, click_ids, redirect"
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "Язык телефона",
+      "Часовой пояс телефона",
+      "Модель телефона",
+      "Производитель телефона",
+      "Версия Android",
+      "Идентификатор сборки Android",
+      "Признак наличия root-прав",
+      "Тип подключения",
+      "Название оператора связи",
+      "Имя пакета приложения",
+      "Версия приложения",
+      "Push-номер устройства",
+      "Статус разрешения",
+      "Тип подписки",
+      "Идентификатор установки приложения",
+      "Идентификатор подписки устройства",
+      "Версия встроенного модуля",
+      "Версия обёртки Flutter",
+      "Состояние приложения открыто",
+      "Время работы процесса"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Язык телефона\n• Часовой пояс телефона\n• Модель телефона\n• Производитель телефона\n• Версия Android\n• Идентификатор сборки Android\n• Признак наличия root-прав\n• Тип подключения\n• Название оператора связи\n• Имя пакета приложения\n• Версия приложения\n• Push-номер устройства\n• Статус разрешения\n• Тип подписки\n• Идентификатор установки приложения\n• Идентификатор подписки устройства\n• Версия встроенного модуля\n• Версия обёртки Flutter\n• Состояние приложения открыто\n• Время работы процесса\n\nКак собираются: Сбор начинается сразу при запуске: приложение само включает встроенный модуль рассылок OneSignal, его номер (e1f284aa-fb17-45a1-98c8-ddc9b97ec36f) вписан прямо в скомпилированный код игры, поэтому никакой настройки от человека не требуется. Дальше модуль спрашивает у системы Android настройки телефона: язык, часовой пояс, модель и производитель, версию системы и номер её сборки, название оператора связи и тип подключения (Wi-Fi или мобильный интернет), а также имя пакета и версию самого приложения. Отдельно код проверяет, есть ли на телефоне признаки взлома системы (ищет файл su в системных папках) — это готовый ответ на вопрос «настоящий телефон или подготовленный для проверок».…\n\nКуда отправляются: Все собранные сведения уходят на один и тот же адрес — https://api.onesignal.com/. Он не собирается из кусков и не спрятан в шифровке: базовый адрес записан в коде целиком, к нему подставляется номер приложения. Обращений несколько: apps/<номер приложения>/users — регистрация устройства со всеми перечисленными сведениями; apps/<номер приложения>/android_params.js?player_id=... — получение настроек; apps/<номер приложения>/sdk/features/android/<версия> — получение списка включённых возможностей; apps/<номер приложения>/subscriptions/<номер устройства>/iams — получение списка сообщений именно для этого телефона; outcomes/measure и apps/<номер приложения>/custom_events — отчёты о действиях;…\n\nКак фильтруются пользователи: В самом приложении нет ни списка стран, ни списка запрещённых сетей, ни проверки на «робот или человек». На телефоне лежит только сбор признаков и их отправка. Решение принимает сервер: в ответ он присылает готовый список сообщений…"
+  }
 }
