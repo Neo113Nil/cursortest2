@@ -1,0 +1,30 @@
+{
+  "app_id": "com.zinc.forge.game.rvm",
+  "title": "Parimatch",
+  "developer": "GRR PROPERTIES LTD",
+  "url": "https://play.google.com/store/apps/details?id=com.zinc.forge.game.rvm&hl=en&gl=us",
+  "keyword": "Parimatch",
+  "source": "apkcombo",
+  "search_title": "Parimatch",
+  "search_developer": "GRR PROPERTIES LTD",
+  "version": "1.0.0",
+  "version_code": "5098581",
+  "summary": "Swap colourful symbol tiles with and clear challenging grids.",
+  "folder": "Parimatch-GRR PROPERTIES LTD",
+  "path": "parimatch/Parimatch-GRR PROPERTIES LTD",
+  "ok": true,
+  "files": [
+    "com.zinc.forge.game.rvm-5098581.apk",
+    "com.zinc.forge.game.rvm-5098581-config.arm64_v8a.apk",
+    "com.zinc.forge.game.rvm-5098581-config.en.apk",
+    "com.zinc.forge.game.rvm-5098581-config.xxhdpi.apk",
+    "com.zinc.forge.game.rvm-5098581.xapk"
+  ],
+  "apk_label": "Parimatch",
+  "cloaking": "да",
+  "minSdk": 32,
+  "targetSdk": 36,
+  "agp": "9.2.1",
+  "kotlin": "да 2.2.0",
+  "gate_url": "https://802-zinc-forge.vercel.app/api/data"
+}
