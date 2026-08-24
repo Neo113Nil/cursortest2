@@ -6,14 +6,14 @@
   "icon": "/static/app-icons/com_dreamx_joy_slots_funny_game.png",
   "url": "https://play.google.com/store/apps/details?id=com.dreamx.joy.slots.funny.game&hl=en&gl=us",
   "keyword": "Joy Casino",
-  "country": "Spain",
+  "country": "India",
   "source": "gplaydl",
   "sponsored": false,
   "match_via": "web-strict-after-install-miss",
-  "geelark_search_dir": "/root/play-collector/geelark_poc/20260813_184715_Spain_Joy Casino_search",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260824_135248_India_Joy Casino_search",
   "search_title": "Joy Slots - Play & Earn Cash (Early Access)",
   "search_developer": "Play to Earn Media",
-  "rank": 4,
+  "rank": 1,
   "developer_id": "Play+to+Earn+Media",
   "released": "",
   "updated": "Mar 20, 2026",
@@ -40,132 +40,13 @@
       },
       "ok": true,
       "exit_code": 0,
-      "stdout": "╭─ com.dreamx.joy.slots.funny.game ─╮\n│ Joy Slots - Play & Earn Cash      │\n│ 1.7  (vc 8)                       │\n╰───────────────────────────────────╯\n\nDownloading 3 files  (325.7 MB)\n  com.dreamx.joy.slots.funny.game-8.apk                  ━━━━ 100% 18… 12.0 0:0…\n                                                                   MB  MB/s     \n  com.dreamx.joy.slots.funny.game-8-config.arm64_v8a.apk ━━━━ 100% 24… 4.8  0:0…\n                                                                   MB  MB/s     \n  com.dreamx.joy.slots.funny.game-8-asset.apk            ━━━━ 100% 13… 11.4 0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                           \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                   ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.dreamx.joy.slots.funny.game-8.apk                  │ 174.0 MB │\n│ com.dreamx.joy.slots.funny.game-8-config.arm64_v8a.apk │  23.1 MB │\n│ com.dreamx.joy.slots.funny.game-8-asset.apk            │ 174.0 MB │\n└────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
-      "stderr": "",
+      "stdout": "╭─ com.dreamx.joy.slots.funny.game ─╮\n│ Joy Slots - Play & Earn Cash      │\n│ 1.7  (vc 8)                       │\n╰───────────────────────────────────╯\n\nDownloading 3 files  (325.7 MB)\n  com.dreamx.joy.slots.funny.game-8.apk                  ━━━━ 100% 18… 10.5 0:0…\n                                                                   MB  MB/s     \n  com.dreamx.joy.slots.funny.game-8-config.arm64_v8a.apk ━━━━ 100% 24… 10.2 0:0…\n                                                                   MB  MB/s     \n  com.dreamx.joy.slots.funny.game-8-asset.apk            ━━━━ 100% 13… 7.7  0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                           \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                   ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.dreamx.joy.slots.funny.game-8.apk                  │ 174.0 MB │\n│ com.dreamx.joy.slots.funny.game-8-config.arm64_v8a.apk │  23.1 MB │\n│ com.dreamx.joy.slots.funny.game-8-asset.apk            │ 174.0 MB │\n└────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
       "apk_label": ""
     }
   ],
-  "stdout": "╭─ com.dreamx.joy.slots.funny.game ─╮\n│ Joy Slots - Play & Earn Cash      │\n│ 1.7  (vc 8)                       │\n╰───────────────────────────────────╯\n\nDownloading 3 files  (325.7 MB)\n  com.dreamx.joy.slots.funny.game-8.apk                  ━━━━ 100% 18… 12.0 0:0…\n                                                                   MB  MB/s     \n  com.dreamx.joy.slots.funny.game-8-config.arm64_v8a.apk ━━━━ 100% 24… 4.8  0:0…\n                                                                   MB  MB/s     \n  com.dreamx.joy.slots.funny.game-8-asset.apk            ━━━━ 100% 13… 11.4 0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                           \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                   ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.dreamx.joy.slots.funny.game-8.apk                  │ 174.0 MB │\n│ com.dreamx.joy.slots.funny.game-8-config.arm64_v8a.apk │  23.1 MB │\n│ com.dreamx.joy.slots.funny.game-8-asset.apk            │ 174.0 MB │\n└────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
-  "stderr": "",
+  "stdout": "╭─ com.dreamx.joy.slots.funny.game ─╮\n│ Joy Slots - Play & Earn Cash      │\n│ 1.7  (vc 8)                       │\n╰───────────────────────────────────╯\n\nDownloading 3 files  (325.7 MB)\n  com.dreamx.joy.slots.funny.game-8.apk                  ━━━━ 100% 18… 10.5 0:0…\n                                                                   MB  MB/s     \n  com.dreamx.joy.slots.funny.game-8-config.arm64_v8a.apk ━━━━ 100% 24… 10.2 0:0…\n                                                                   MB  MB/s     \n  com.dreamx.joy.slots.funny.game-8-asset.apk            ━━━━ 100% 13… 7.7  0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                           \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                   ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.dreamx.joy.slots.funny.game-8.apk                  │ 174.0 MB │\n│ com.dreamx.joy.slots.funny.game-8-config.arm64_v8a.apk │  23.1 MB │\n│ com.dreamx.joy.slots.funny.game-8-asset.apk            │ 174.0 MB │\n└────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
   "exit_code": 0,
-  "error": "",
-  "cloaking": "да",
-  "brief_report": {
-    "table": [
-      {
-        "param": "Название приложения",
-        "value": "JoySlots (в Google Play: Joy Slots - Play & Earn Cash)"
-      },
-      {
-        "param": "Android Gradle Plugin",
-        "value": "7.4.2"
-      },
-      {
-        "param": "minSdk",
-        "value": "26"
-      },
-      {
-        "param": "targetSdk",
-        "value": "36"
-      },
-      {
-        "param": "Kotlin",
-        "value": "да, 2.1+ (stdlib / kotlinx-coroutines 1.10.1)"
-      },
-      {
-        "param": "Web View",
-        "value": "да"
-      },
-      {
-        "param": "Custom Tabs",
-        "value": "да"
-      },
-      {
-        "param": "Рекламные сети",
-        "value": "AppLovin MAX, AdMob, Pangle, Chartboost, InMobi, ironSource/Unity Ads, Mintegral, Vungle, Bigo Ads"
-      },
-      {
-        "param": "Аналитика",
-        "value": "Firebase Analytics, Firebase Messaging, Google Measurement, Adjust, AppLovin Ad Quality"
-      },
-      {
-        "param": "Permissions",
-        "value": "android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.FOREGROUND_SERVICE, android.permission.INTERNET, android.permission.POST_NOTIFICATIONS, android.permission.VIBRATE, android.permission.WAKE_LOCK, com.android.vending.CHECK_LICENSE, com.dreamx.joy.slots.funny.game.DYNAMIC_R ECEIVER_NOT_EXPORTED_PERMISSION, com.dreamx.joy.slots.funny.game.permission. C2D_MESSAGE, com.google.android.c2dm.permission.RECEIVE, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.google.android.gms.permission.AD_ID"
-      },
-      {
-        "param": "Libraries",
-        "value": "Unity 2022.3.52f1 (IL2CPP), Firebase (Analytics, Messaging, Remote Config), Adjust SDK, AppLovin MAX, Google Mobile Ads (AdMob), Pangle/ByteDance, Chartboost, InMobi, ironSource/LevelPlay/Unity Ads, Mintegral, Vungle, Bigo Ads, Google Play Services (ads, ads-identifier, appset, auth, measurement, cloud-messaging), UMP, AndroidX (activity, appcompat, browser/customtabs, core, fragment, lifecycle, recyclerview, room, startup, webkit, work-runtime, ads-adservices), Kotlin stdlib / kotlinx-coroutines 1.10.1, OkHttp, Picasso, IAB OM SDK, PairIP licensecheck, RealKeySDK, UrbanBeach/Joy_Manager"
-      },
-      {
-        "param": "Подозрительные домены",
-        "value": "123.com, ad-host-backup-america.oss-us-west-1.aliyuncs.com, ad-host-backup-asia.oss-ap-southeast-1.aliyuncs.com, ad-host-backup-europe.oss-eu-central-1.aliyuncs.com, adsbigo.com, akm.ssacdn.com, aomedia.org"
-      },
-      {
-        "param": "SharedPreferences",
-        "value": "Unity PlayerPrefs: Keep_PackB_Key; SDK2_RK_Uid, SDK2_RK_UserToken, SDK2_RK_Gaid_Str, SDK2_RK_FireBaseMessageToken, SDK2_RK_GamePoint, SDK2_RK_RewardAmount и др.; игровые Keep_* (золото/кэш/слоты/гайд). Плюс служебные SharedPreferences Firebase/Adjust/AppLovin/Google Ads."
-      },
-      {
-        "param": "Есть ли клоака",
-        "value": "да"
-      },
-      {
-        "param": "Подозрительные слова",
-        "value": "slots, poker, redirect, landing, gaid, advertisingId, CheckIpWhite, ipOnWhite, onWhite, PackB, IsAL, IsBL, AdjustOrganicType, RemoteConfig, GetIpData, OpenURL, withdraw, VPN, webview"
-      }
-    ],
-    "domains": [
-      {
-        "domain": "123.com",
-        "redirects_to": "нет (DNS не резолвится)",
-        "parked_at": "нет данных"
-      },
-      {
-        "domain": "ad-host-backup-america.oss-us-west-1.aliyuncs.com",
-        "redirects_to": "нет (без редиректа)",
-        "parked_at": "нет данных"
-      },
-      {
-        "domain": "ad-host-backup-asia.oss-ap-southeast-1.aliyuncs.com",
-        "redirects_to": "нет (без редиректа)",
-        "parked_at": "нет данных"
-      },
-      {
-        "domain": "ad-host-backup-europe.oss-eu-central-1.aliyuncs.com",
-        "redirects_to": "нет (без редиректа)",
-        "parked_at": "нет данных"
-      },
-      {
-        "domain": "adsbigo.com",
-        "redirects_to": "нет (DNS не резолвится)",
-        "parked_at": "регистратор: Alibaba Cloud Computing (Beijing) Co., Ltd."
-      },
-      {
-        "domain": "akm.ssacdn.com",
-        "redirects_to": "нет (DNS не резолвится)",
-        "parked_at": "регистратор: Amazon Registrar, Inc."
-      },
-      {
-        "domain": "alphamountain.ai",
-        "redirects_to": "https://www.alphamountain.ai/",
-        "parked_at": "регистратор: NAMECHEAP INC"
-      },
-      {
-        "domain": "aomedia.org",
-        "redirects_to": "нет (без редиректа)",
-        "parked_at": "регистратор: Squarespace Domains II LLC"
-      }
-    ],
-    "collected_data": [
-      "Рекламный номер устройства",
-      "Идентификатор устройства idfv",
-      "Имя пакета приложения",
-      "Токен push-уведомлений Firebase",
-      "Идентификатор Adjust",
-      "Страна",
-      "Признак VPN",
-      "Данные атрибуции Adjust"
-    ],
-    "cloaking": "да",
-    "cloaking_brief": "Какие данные собираются:\n• Рекламный номер устройства\n• Идентификатор устройства idfv\n• Имя пакета приложения\n• Токен push-уведомлений Firebase\n• Идентификатор Adjust\n• Страна\n• Признак VPN\n• Данные атрибуции Adjust\n\nКак собираются: Сразу при запуске, ещё на экране загрузки, приложение само читает рекламный номер устройства (в коде advertisingId / ifa / gaid) через системный запрос Android. Отдельного окна с разрешением на этот шаг нет: номер берут незаметно и кладут во внутренние поля загрузки и модуля RealKey. Там же готовят идентификатор idfv, имя пакета приложения и токен push Firebase, если он уже получен. Рядом с запросом инициализации RealKey в коде видны поля adjustId и idfa. Страну берут через GetCountry и из ответа проверки IP. Признак VPN считают на телефоне (IsVPNConnected / CheckVpnAndIpWhile). Данные атрибуции Adjust читают после старта Adjust SDK (CheckAdjustAttribution / AdjustOrganicType).…\n\nКуда отправляются: На загрузке приложение тихо запрашивает удалённый конфиг https://fastfingersfuns.s3.us-west-2.amazonaws.com/andconfig.json (для Android; в коде есть и iosconfig.json). Это фоновая подгрузка настроек, а не показ рекламы на экране. Модуль RealKey собирает адреса из базового URL и путей GetIpData_Url, Init_PostUrl, CheckAccount_Url, GetPoint_Url и других. Точная строка базы в открытом виде спрятана и собирается через SDK2_BuildUrlWithParams с AES-ключами SDK2_AES_Key / SDK2_Post_Key. Запросы уходят в фоне. Отдельно Firebase Remote Config подтягивает поля через LoadRemoteConfig.…\n\nКак фильтруются пользователи: В приложении явно видно разветвление по «белому» IP: CheckIpWhite / CheckVpnAndIpWhile, флаги ipOnWhite и onWhite, подсказки IpTipsObj и VPNTipsObj. При VPN путь к меню может измениться или остановиться. Есть разделение на пакеты A/B (Get_Keep_PackB / Set_Keep_isPackB, ключ Keep_PackB_Key) и признаки IsAL / IsBL. Отдельно учитывают органический или рекламный трафик через Adjust (AdjustOrganicType). Страну берут локально (GetCountry) и из ответа проверки IP (поле country). Жёсткого списка стран на телефоне в открытом виде нет: на сервер уходят признаки (в том числе через GetIpData и init RealKey), а решение «белый / не белый» вместе с Rem…"
-  }
+  "error": ""
 }

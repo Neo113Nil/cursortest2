@@ -125,6 +125,7 @@
 | BitDefender | Clean |
 | Blueliv | Clean |
 | Certego | Clean |
+| Chong Lua Dao | Clean |
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
@@ -179,7 +180,6 @@
 | Bfore.Ai PreCrime | Unrated |
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
-| Chong Lua Dao | Unrated |
 | Cluster25 | Unrated |
 | Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
@@ -207,7 +207,7 @@
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | AccessDenied The bucket you access does not belong to you. 6A7E4F805EDFF636363DF0D7 ad-host-backup-america.oss-us-west-1.aliyuncs.com 0003-00000905 https://api.alibabacloud.com/troubleshoot?q=0003-00000905 |
+| Что выводит (кратко) | AccessDenied The bucket you access does not belong to you. 6A8C944B8F28BD38305E4D11 ad-host-backup-america.oss-us-west-1.aliyuncs.com 0003-00000905 https://api.alibabacloud.com/troubleshoot?q=0003-00000905 |
 | Где припаркован | нет данных |
 
 ## Проверка домена: ad-host-backup-asia.oss-ap-southeast-1.aliyuncs.com
@@ -218,6 +218,111 @@
 |---|---|
 | Домен | ad-host-backup-asia.oss-ap-southeast-1.aliyuncs.com |
 | VirusTotal URL | https://www.virustotal.com/gui/domain/ad-host-backup-asia.oss-ap-southeast-1.aliyuncs.com |
+| Детекции | 0/91 (malicious=0, suspicious=0) |
+| Security vendors' analysis | ниже построчно, как на VirusTotal |
+| Abusix | Clean |
+| Acronis | Clean |
+| ADMINUSLabs | Clean |
+| AILabs (MONITORAPP) | Clean |
+| AlienVault | Clean |
+| alphaMountain.ai | Clean |
+| Antiy-AVL | Clean |
+| BitDefender | Clean |
+| Blueliv | Clean |
+| Certego | Clean |
+| ChainPatrol | Clean |
+| Chong Lua Dao | Clean |
+| CINS Army | Clean |
+| CMC Threat Intelligence | Clean |
+| CRDF | Clean |
+| CTX AI | Clean |
+| Cyble | Clean |
+| CyRadar | Clean |
+| desenmascara.me | Clean |
+| Dr.Web | Clean |
+| EmergingThreats | Clean |
+| Emsisoft | Clean |
+| ESET | Clean |
+| ESTsecurity | Clean |
+| Forcepoint ThreatSeeker | Clean |
+| Fortinet | Clean |
+| G-Data | Clean |
+| Google Safe Browsing | Clean |
+| GreenSnow | Clean |
+| Heimdal Security | Clean |
+| IPsum | Clean |
+| Juniper Networks | Clean |
+| Lionic | Clean |
+| Malwared | Clean |
+| MalwarePatrol | Clean |
+| OpenPhish | Clean |
+| Phishing Database | Clean |
+| Phishtank | Clean |
+| PREBYTES | Clean |
+| Quick Heal | Clean |
+| Quttera | Clean |
+| Scantitan | Clean |
+| SCUMWARE.org | Clean |
+| Seclookup | Clean |
+| Sophos | Clean |
+| StopForumSpam | Clean |
+| Sucuri SiteCheck | Clean |
+| ThreatHive | Clean |
+| URLhaus | Clean |
+| Viettel Threat Intelligence | Clean |
+| ViriBack | Clean |
+| VX Vault | Clean |
+| Webroot | Clean |
+| Xcitium Verdict Cloud | Clean |
+| Yandex Safebrowsing | Clean |
+| ZeroCERT | Clean |
+| 0xSI_f33d | Unrated |
+| AlphaSOC | Unrated |
+| ArcSight Threat Intelligence | Unrated |
+| AutoShun | Unrated |
+| Axur | Unrated |
+| Bfore.Ai PreCrime | Unrated |
+| Bkav | Unrated |
+| Cluster25 | Unrated |
+| Criminal IP | Unrated |
+| CSIS Security Group | Unrated |
+| Cyan | Unrated |
+| DNS8 | Unrated |
+| Ermes | Unrated |
+| Fortra | Unrated |
+| GCP Abuse Intelligence | Unrated |
+| GreyNoise | Unrated |
+| Gridinsoft | Unrated |
+| Guardpot | Unrated |
+| Hunt.io Intelligence | Unrated |
+| Kaspersky | Unrated |
+| LevelBlue | Unrated |
+| Lumu | Unrated |
+| MalwareURL | Unrated |
+| Mimecast | Unrated |
+| Netcraft | Unrated |
+| PhishFort | Unrated |
+| PrecisionSec | Unrated |
+| SafeToOpen | Unrated |
+| Sansec eComscan | Unrated |
+| SecureBrain | Unrated |
+| Snort IP sample list | Unrated |
+| SOCRadar | Unrated |
+| URLQuery | Unrated |
+| VIPRE | Unrated |
+| ZeroFox | Unrated |
+| Куда редиректит | нет (без редиректа) |
+| Что выводит (кратко) | AccessDenied The bucket you access does not belong to you. 6A8C945DA87B9A32322E3691 ad-host-backup-asia.oss-ap-southeast-1.aliyuncs.com 0003-00000905 https://api.alibabacloud.com/troubleshoot?q=0003-00000905 |
+| Где припаркован | нет данных |
+
+## Проверка домена: ad-host-backup-europe.oss-eu-central-1.aliyuncs.com
+
+Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
+
+| Параметр / движок | Значение / вердикт |
+|---|---|
+| Домен | ad-host-backup-europe.oss-eu-central-1.aliyuncs.com |
+| VirusTotal URL | https://www.virustotal.com/gui/domain/ad-host-backup-europe.oss-eu-central-1.aliyuncs.com |
 | Детекции | 0/91 (malicious=0, suspicious=0) |
 | Security vendors' analysis | ниже построчно, как на VirusTotal |
 | Abusix | Clean |
@@ -270,6 +375,7 @@
 | Sucuri SiteCheck | Clean |
 | ThreatHive | Clean |
 | URLhaus | Clean |
+| URLQuery | Clean |
 | Viettel Threat Intelligence | Clean |
 | ViriBack | Clean |
 | VX Vault | Clean |
@@ -308,116 +414,10 @@
 | SecureBrain | Unrated |
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
-| URLQuery | Unrated |
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | AccessDenied The bucket you access does not belong to you. 6A7E4F91108AF530356D97AB ad-host-backup-asia.oss-ap-southeast-1.aliyuncs.com 0003-00000905 https://api.alibabacloud.com/troubleshoot?q=0003-00000905 |
-| Где припаркован | нет данных |
-
-## Проверка домена: ad-host-backup-europe.oss-eu-central-1.aliyuncs.com
-
-Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
-
-| Параметр / движок | Значение / вердикт |
-|---|---|
-| Домен | ad-host-backup-europe.oss-eu-central-1.aliyuncs.com |
-| VirusTotal URL | https://www.virustotal.com/gui/domain/ad-host-backup-europe.oss-eu-central-1.aliyuncs.com |
-| Детекции | 0/91 (malicious=0, suspicious=0) |
-| Security vendors' analysis | ниже построчно, как на VirusTotal |
-| Abusix | Clean |
-| Acronis | Clean |
-| ADMINUSLabs | Clean |
-| AILabs (MONITORAPP) | Clean |
-| AlienVault | Clean |
-| alphaMountain.ai | Clean |
-| Antiy-AVL | Clean |
-| BitDefender | Clean |
-| Blueliv | Clean |
-| Certego | Clean |
-| ChainPatrol | Clean |
-| CINS Army | Clean |
-| CMC Threat Intelligence | Clean |
-| CRDF | Clean |
-| Criminal IP | Clean |
-| CTX AI | Clean |
-| Cyble | Clean |
-| CyRadar | Clean |
-| desenmascara.me | Clean |
-| DNS8 | Clean |
-| Dr.Web | Clean |
-| EmergingThreats | Clean |
-| Emsisoft | Clean |
-| ESET | Clean |
-| ESTsecurity | Clean |
-| Forcepoint ThreatSeeker | Clean |
-| Fortinet | Clean |
-| G-Data | Clean |
-| Google Safe Browsing | Clean |
-| GreenSnow | Clean |
-| Heimdal Security | Clean |
-| IPsum | Clean |
-| Juniper Networks | Clean |
-| Kaspersky | Clean |
-| LevelBlue | Clean |
-| Lionic | Clean |
-| Malwared | Clean |
-| MalwarePatrol | Clean |
-| OpenPhish | Clean |
-| Phishing Database | Clean |
-| Phishtank | Clean |
-| PREBYTES | Clean |
-| Quick Heal | Clean |
-| Quttera | Clean |
-| Scantitan | Clean |
-| SCUMWARE.org | Clean |
-| Seclookup | Clean |
-| Sophos | Clean |
-| StopForumSpam | Clean |
-| Sucuri SiteCheck | Clean |
-| ThreatHive | Clean |
-| URLhaus | Clean |
-| URLQuery | Clean |
-| Viettel Threat Intelligence | Clean |
-| ViriBack | Clean |
-| VX Vault | Clean |
-| Webroot | Clean |
-| Xcitium Verdict Cloud | Clean |
-| Yandex Safebrowsing | Clean |
-| ZeroCERT | Clean |
-| 0xSI_f33d | Unrated |
-| AlphaSOC | Unrated |
-| ArcSight Threat Intelligence | Unrated |
-| AutoShun | Unrated |
-| Axur | Unrated |
-| Bfore.Ai PreCrime | Unrated |
-| Bkav | Unrated |
-| Chong Lua Dao | Unrated |
-| Cluster25 | Unrated |
-| CSIS Security Group | Unrated |
-| Cyan | Unrated |
-| Ermes | Unrated |
-| Fortra | Unrated |
-| GCP Abuse Intelligence | Unrated |
-| GreyNoise | Unrated |
-| Gridinsoft | Unrated |
-| Guardpot | Unrated |
-| Hunt.io Intelligence | Unrated |
-| Lumu | Unrated |
-| MalwareURL | Unrated |
-| Mimecast | Unrated |
-| Netcraft | Unrated |
-| PhishFort | Unrated |
-| PrecisionSec | Unrated |
-| SafeToOpen | Unrated |
-| Sansec eComscan | Unrated |
-| SecureBrain | Unrated |
-| Snort IP sample list | Unrated |
-| SOCRadar | Unrated |
-| VIPRE | Unrated |
-| ZeroFox | Unrated |
-| Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | AccessDenied The bucket you access does not belong to you. 6A7E4FA2D546093234672B5A ad-host-backup-europe.oss-eu-central-1.aliyuncs.com 0003-00000905 https://api.alibabacloud.com/troubleshoot?q=0003-00000905 |
+| Что выводит (кратко) | AccessDenied The bucket you access does not belong to you. 6A8C946D1621A43437BFDB36 ad-host-backup-europe.oss-eu-central-1.aliyuncs.com 0003-00000905 https://api.alibabacloud.com/troubleshoot?q=0003-00000905 |
 | Где припаркован | нет данных |
 
 ## Проверка домена: adsbigo.com
@@ -651,6 +651,7 @@
 | Blueliv | Clean |
 | Certego | Clean |
 | ChainPatrol | Clean |
+| Chong Lua Dao | Clean |
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
@@ -676,7 +677,6 @@
 | Lionic | Clean |
 | Malwared | Clean |
 | MalwarePatrol | Clean |
-| Netcraft | Clean |
 | OpenPhish | Clean |
 | Phishing Database | Clean |
 | Phishtank | Clean |
@@ -705,7 +705,6 @@
 | Axur | Unrated |
 | Bfore.Ai PreCrime | Unrated |
 | Bkav | Unrated |
-| Chong Lua Dao | Unrated |
 | Cluster25 | Unrated |
 | Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
@@ -721,6 +720,7 @@
 | Lumu | Unrated |
 | MalwareURL | Unrated |
 | Mimecast | Unrated |
+| Netcraft | Unrated |
 | PhishFort | Unrated |
 | PrecisionSec | Unrated |
 | SafeToOpen | Unrated |
@@ -837,5 +837,5 @@
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story Members Organization  |
+| Что выводит (кратко) | title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story FAQ Members Organizat |
 | Где припаркован | регистратор: Squarespace Domains II LLC |
