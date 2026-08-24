@@ -1,0 +1,54 @@
+{
+  "app_id": "com.zinc.forge.game.rvm",
+  "title": "Parimatch",
+  "developer": "GRR PROPERTIES LTD",
+  "score": null,
+  "icon": "/static/app-icons/com_zinc_forge_game_rvm.png",
+  "url": "https://play.google.com/store/apps/details?id=com.zinc.forge.game.rvm&hl=en&gl=us",
+  "keyword": "Parimatch",
+  "country": "Germany",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260824_184122_Germany_Parimatch_search",
+  "search_title": "Parimatch",
+  "search_developer": "GRR PROPERTIES LTD",
+  "rank": 1,
+  "developer_id": "GRR+PROPERTIES+LTD",
+  "released": "",
+  "updated": "2026-08-14",
+  "version": "1.0.0",
+  "summary": "Swap colourful symbol tiles with and clear challenging grids.",
+  "folder": "Parimatch-GRR PROPERTIES LTD",
+  "path": "parimatch/Parimatch-GRR PROPERTIES LTD",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.zinc.forge.game.rvm-5098581-asset.apk",
+    "com.zinc.forge.game.rvm-5098581-config.arm64_v8a.apk",
+    "com.zinc.forge.game.rvm-5098581-config.en.apk",
+    "com.zinc.forge.game.rvm-5098581-config.xxhdpi.apk",
+    "com.zinc.forge.game.rvm-5098581.apk"
+  ],
+  "target": "/root/play-collector/загрузки/parimatch/Parimatch-GRR PROPERTIES LTD",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.zinc.forge.game.rvm ─╮\n│ Parimatch                 │\n│ 1.0.0  (vc 5098581)       │\n╰───────────────────────────╯\n\nDownloading 5 files  (12.0 MB)\n  com.zinc.forge.game.rvm-5098581.apk                  ━━━━ 100% 7.9… 13.9 0:00…\n                                                                 MB   MB/s      \n  com.zinc.forge.game.rvm-5098581-config.arm64_v8a.apk ━━━━ 100% 78.… 2.1  0:00…\n                                                                 kB   MB/s      \n  com.zinc.forge.game.rvm-5098581-config.en.apk        ━━━━ 100% 106… 2.8  0:00…\n                                                                 kB   MB/s      \n  com.zinc.forge.game.rvm-5098581-config.xxhdpi.apk    ━━━━ 100% 125… 2.9  0:00…\n                                                                 kB   MB/s      \n  com.zinc.forge.game.rvm-5098581-asset.apk            ━━━━ 100% 4.4… 10.5 0:00…\n                                                                 MB   MB/s      \n\n                         Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                 ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.zinc.forge.game.rvm-5098581.apk                  │   7.5 MB │\n│ com.zinc.forge.game.rvm-5098581-config.arm64_v8a.apk │  76.3 KB │\n│ com.zinc.forge.game.rvm-5098581-config.en.apk        │ 104.2 KB │\n│ com.zinc.forge.game.rvm-5098581-config.xxhdpi.apk    │ 122.8 KB │\n│ com.zinc.forge.game.rvm-5098581-asset.apk            │   7.5 MB │\n└──────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.zinc.forge.game.rvm ─╮\n│ Parimatch                 │\n│ 1.0.0  (vc 5098581)       │\n╰───────────────────────────╯\n\nDownloading 5 files  (12.0 MB)\n  com.zinc.forge.game.rvm-5098581.apk                  ━━━━ 100% 7.9… 13.9 0:00…\n                                                                 MB   MB/s      \n  com.zinc.forge.game.rvm-5098581-config.arm64_v8a.apk ━━━━ 100% 78.… 2.1  0:00…\n                                                                 kB   MB/s      \n  com.zinc.forge.game.rvm-5098581-config.en.apk        ━━━━ 100% 106… 2.8  0:00…\n                                                                 kB   MB/s      \n  com.zinc.forge.game.rvm-5098581-config.xxhdpi.apk    ━━━━ 100% 125… 2.9  0:00…\n                                                                 kB   MB/s      \n  com.zinc.forge.game.rvm-5098581-asset.apk            ━━━━ 100% 4.4… 10.5 0:00…\n                                                                 MB   MB/s      \n\n                         Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                 ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.zinc.forge.game.rvm-5098581.apk                  │   7.5 MB │\n│ com.zinc.forge.game.rvm-5098581-config.arm64_v8a.apk │  76.3 KB │\n│ com.zinc.forge.game.rvm-5098581-config.en.apk        │ 104.2 KB │\n│ com.zinc.forge.game.rvm-5098581-config.xxhdpi.apk    │ 122.8 KB │\n│ com.zinc.forge.game.rvm-5098581-asset.apk            │   7.5 MB │\n└──────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+  "exit_code": 0,
+  "error": ""
+}
