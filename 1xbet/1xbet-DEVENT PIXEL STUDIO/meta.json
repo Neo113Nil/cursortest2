@@ -1,0 +1,55 @@
+{
+  "app_id": "com.scorelanta.goalforge.pitchzone",
+  "title": "1xbet",
+  "developer": "DEVENT PIXEL STUDIO",
+  "score": null,
+  "icon": "/static/app-icons/com_scorelanta_goalforge_pitchzone.png",
+  "url": "https://play.google.com/store/apps/details?id=com.scorelanta.goalforge.pitchzone&hl=en&gl=us",
+  "keyword": "1xBet",
+  "country": "India",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260824_150026_India_1xBet_search",
+  "search_title": "1xbet",
+  "search_developer": "DEVENT PIXEL STUDIO",
+  "rank": 1,
+  "developer_id": "DEVENT+PIXEL+STUDIO",
+  "released": "Jun 17, 2026",
+  "updated": "Jun 17, 2026",
+  "version": "Varies with device",
+  "summary": "Football rival duels, ranks, skills, achievements and settings",
+  "folder": "1xbet-DEVENT PIXEL STUDIO",
+  "path": "1xbet/1xbet-DEVENT PIXEL STUDIO",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.scorelanta.goalforge.pitchzone-1-asset.apk",
+    "com.scorelanta.goalforge.pitchzone-1-config.en.apk",
+    "com.scorelanta.goalforge.pitchzone-1-config.lt.apk",
+    "com.scorelanta.goalforge.pitchzone-1-config.ru.apk",
+    "com.scorelanta.goalforge.pitchzone-1-config.xxhdpi.apk",
+    "com.scorelanta.goalforge.pitchzone-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/1xbet/1xbet-DEVENT PIXEL STUDIO",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.scorelanta.goalforge.pitchzone ─╮\n│ 1xbet                                │\n│ 1.0  (vc 1)                          │\n╰──────────────────────────────────────╯\n\nDownloading 6 files  (13.5 MB)\n  com.scorelanta.goalforge.pitchzone-1.apk               ━━━━ 100% 10… 10.0 0:0…\n                                                                   MB  MB/s     \n  com.scorelanta.goalforge.pitchzone-1-config.en.apk     ━━━━ 100% 49… ?    0:0…\n                                                                   kB           \n  com.scorelanta.goalforge.pitchzone-1-config.lt.apk     ━━━━ 100% 33… ?    0:0…\n                                                                   kB           \n  com.scorelanta.goalforge.pitchzone-1-config.ru.apk     ━━━━ 100% 33… ?    0:0…\n                                                                   kB           \n  com.scorelanta.goalforge.pitchzone-1-config.xxhdpi.apk ━━━━ 100% 61… ?    0:0…\n                                                                   kB           \n  com.scorelanta.goalforge.pitchzone-1-asset.apk         ━━━━ 100% 3.… 14.4 0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                   ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.scorelanta.goalforge.pitchzone-1.apk               │  9.6 MB │\n│ com.scorelanta.goalforge.pitchzone-1-config.en.apk     │ 48.4 KB │\n│ com.scorelanta.goalforge.pitchzone-1-config.lt.apk     │ 32.4 KB │\n│ com.scorelanta.goalforge.pitchzone-1-config.ru.apk     │ 32.4 KB │\n│ com.scorelanta.goalforge.pitchzone-1-config.xxhdpi.apk │ 60.4 KB │\n│ com.scorelanta.goalforge.pitchzone-1-asset.apk         │  9.6 MB │\n└────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.scorelanta.goalforge.pitchzone ─╮\n│ 1xbet                                │\n│ 1.0  (vc 1)                          │\n╰──────────────────────────────────────╯\n\nDownloading 6 files  (13.5 MB)\n  com.scorelanta.goalforge.pitchzone-1.apk               ━━━━ 100% 10… 10.0 0:0…\n                                                                   MB  MB/s     \n  com.scorelanta.goalforge.pitchzone-1-config.en.apk     ━━━━ 100% 49… ?    0:0…\n                                                                   kB           \n  com.scorelanta.goalforge.pitchzone-1-config.lt.apk     ━━━━ 100% 33… ?    0:0…\n                                                                   kB           \n  com.scorelanta.goalforge.pitchzone-1-config.ru.apk     ━━━━ 100% 33… ?    0:0…\n                                                                   kB           \n  com.scorelanta.goalforge.pitchzone-1-config.xxhdpi.apk ━━━━ 100% 61… ?    0:0…\n                                                                   kB           \n  com.scorelanta.goalforge.pitchzone-1-asset.apk         ━━━━ 100% 3.… 14.4 0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                   ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.scorelanta.goalforge.pitchzone-1.apk               │  9.6 MB │\n│ com.scorelanta.goalforge.pitchzone-1-config.en.apk     │ 48.4 KB │\n│ com.scorelanta.goalforge.pitchzone-1-config.lt.apk     │ 32.4 KB │\n│ com.scorelanta.goalforge.pitchzone-1-config.ru.apk     │ 32.4 KB │\n│ com.scorelanta.goalforge.pitchzone-1-config.xxhdpi.apk │ 60.4 KB │\n│ com.scorelanta.goalforge.pitchzone-1-asset.apk         │  9.6 MB │\n└────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
