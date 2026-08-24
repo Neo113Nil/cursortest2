@@ -1,0 +1,54 @@
+{
+  "app_id": "com.pari.maker.parimatch.game",
+  "title": "Parimatch Game",
+  "developer": "HIGHGATE PARTNERS LTD",
+  "score": null,
+  "icon": "/static/app-icons/com_pari_maker_parimatch_game.png",
+  "url": "https://play.google.com/store/apps/details?id=com.pari.maker.parimatch.game&hl=en&gl=us",
+  "keyword": "Parimatch",
+  "country": "Germany",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260824_184122_Germany_Parimatch_search",
+  "search_title": "Parimatch Game",
+  "search_developer": "HIGHGATE PARTNERS LTD",
+  "rank": 3,
+  "developer_id": "HIGHGATE+PARTNERS+LTD",
+  "released": "Aug 7, 2026",
+  "updated": "Aug 7, 2026",
+  "version": "Varies with device",
+  "summary": "Spot Patterns in Your Athletic Performance. A Secure, Account-free Workout.",
+  "folder": "Parimatch Game-HIGHGATE PARTNERS LTD",
+  "path": "parimatch/Parimatch Game-HIGHGATE PARTNERS LTD",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.pari.maker.parimatch.game-2-asset.apk",
+    "com.pari.maker.parimatch.game-2-config.arm64_v8a.apk",
+    "com.pari.maker.parimatch.game-2-config.en.apk",
+    "com.pari.maker.parimatch.game-2-config.xxhdpi.apk",
+    "com.pari.maker.parimatch.game-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/parimatch/Parimatch Game-HIGHGATE PARTNERS LTD",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.pari.maker.parimatch.game ─╮\n│ Parimatch Game                  │\n│ 1.0.1  (vc 2)                   │\n╰─────────────────────────────────╯\n\nDownloading 5 files  (67.0 MB)\n  com.pari.maker.parimatch.game-2.apk                  ━━━━ 100% 35.… 9.0  0:00…\n                                                                 MB   MB/s      \n  com.pari.maker.parimatch.game-2-config.arm64_v8a.apk ━━━━ 100% 18.… 7.7  0:00…\n                                                                 MB   MB/s      \n  com.pari.maker.parimatch.game-2-config.en.apk        ━━━━ 100% 70.… 1.6  0:00…\n                                                                 kB   MB/s      \n  com.pari.maker.parimatch.game-2-config.xxhdpi.apk    ━━━━ 100% 291… 4.1  0:00…\n                                                                 kB   MB/s      \n  com.pari.maker.parimatch.game-2-asset.apk            ━━━━ 100% 16.… 7.2  0:00…\n                                                                 MB   MB/s      \n\n                         Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                 ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.pari.maker.parimatch.game-2.apk                  │  33.5 MB │\n│ com.pari.maker.parimatch.game-2-config.arm64_v8a.apk │  17.8 MB │\n│ com.pari.maker.parimatch.game-2-config.en.apk        │  68.4 KB │\n│ com.pari.maker.parimatch.game-2-config.xxhdpi.apk    │ 285.1 KB │\n│ com.pari.maker.parimatch.game-2-asset.apk            │  33.5 MB │\n└──────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.pari.maker.parimatch.game ─╮\n│ Parimatch Game                  │\n│ 1.0.1  (vc 2)                   │\n╰─────────────────────────────────╯\n\nDownloading 5 files  (67.0 MB)\n  com.pari.maker.parimatch.game-2.apk                  ━━━━ 100% 35.… 9.0  0:00…\n                                                                 MB   MB/s      \n  com.pari.maker.parimatch.game-2-config.arm64_v8a.apk ━━━━ 100% 18.… 7.7  0:00…\n                                                                 MB   MB/s      \n  com.pari.maker.parimatch.game-2-config.en.apk        ━━━━ 100% 70.… 1.6  0:00…\n                                                                 kB   MB/s      \n  com.pari.maker.parimatch.game-2-config.xxhdpi.apk    ━━━━ 100% 291… 4.1  0:00…\n                                                                 kB   MB/s      \n  com.pari.maker.parimatch.game-2-asset.apk            ━━━━ 100% 16.… 7.2  0:00…\n                                                                 MB   MB/s      \n\n                         Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                 ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.pari.maker.parimatch.game-2.apk                  │  33.5 MB │\n│ com.pari.maker.parimatch.game-2-config.arm64_v8a.apk │  17.8 MB │\n│ com.pari.maker.parimatch.game-2-config.en.apk        │  68.4 KB │\n│ com.pari.maker.parimatch.game-2-config.xxhdpi.apk    │ 285.1 KB │\n│ com.pari.maker.parimatch.game-2-asset.apk            │  33.5 MB │\n└──────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
