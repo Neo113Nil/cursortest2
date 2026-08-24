@@ -1,0 +1,32 @@
+{
+  "app_id": "com.pari.maker.parimatch.game",
+  "title": "Parimatch Game",
+  "developer": "HIGHGATE PARTNERS LTD",
+  "url": "https://play.google.com/store/apps/details?id=com.pari.maker.parimatch.game&hl=en&gl=us",
+  "keyword": "Parimatch",
+  "source": "apkcombo",
+  "search_title": "Parimatch Game",
+  "search_developer": "HIGHGATE PARTNERS LTD",
+  "version": "1.0.1",
+  "version_code": "2",
+  "summary": "Spot Patterns in Your Athletic Performance. A Secure, Account-free Workout.",
+  "folder": "Parimatch Game-HIGHGATE PARTNERS LTD",
+  "path": "parimatch/Parimatch Game-HIGHGATE PARTNERS LTD",
+  "ok": true,
+  "files": [
+    "com.pari.maker.parimatch.game_1.0.1.xapk",
+    "com.pari.maker.parimatch.game-2.apk",
+    "com.pari.maker.parimatch.game-2-config.arm64_v8a.apk",
+    "com.pari.maker.parimatch.game-2-config.armeabi_v7a.apk",
+    "com.pari.maker.parimatch.game-2-config.en.apk",
+    "com.pari.maker.parimatch.game-2-config.xxhdpi.apk"
+  ],
+  "apk_label": "Pari Makers",
+  "internal_brand": "AthleteDiary / Pari Makers",
+  "cloaking": "да",
+  "minSdk": 24,
+  "targetSdk": 36,
+  "agp": "8.11.0",
+  "kotlin": "да 2.1.20",
+  "suspicious_domains": []
+}

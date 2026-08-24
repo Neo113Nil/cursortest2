@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "apks": [
+    "com.pari.maker.parimatch.game-2.apk",
+    "com.pari.maker.parimatch.game-2-config.arm64_v8a.apk",
+    "com.pari.maker.parimatch.game-2-config.armeabi_v7a.apk",
+    "com.pari.maker.parimatch.game-2-config.en.apk",
+    "com.pari.maker.parimatch.game-2-config.xxhdpi.apk"
+  ],
+  "base_apk": "com.pari.maker.parimatch.game-2.apk",
+  "source": "apkcombo-manual",
+  "errors": []
+}
