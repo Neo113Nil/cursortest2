@@ -1,0 +1,27 @@
+{
+  "app_id": "com.luminance.color.alchemy",
+  "title": "Chicken Road 2",
+  "developer": "SB Svarog",
+  "score": null,
+  "url": "https://play.google.com/store/apps/details?id=com.luminance.color.alchemy&hl=en&gl=us",
+  "keyword": "chicken road official app",
+  "source": "apkpure",
+  "search_title": "Chicken Road Official App",
+  "search_developer": "SB Svarog",
+  "version": "1.2.0",
+  "summary": "Welcome to the World of Chicken Road 2",
+  "folder": "Chicken Road 2-SB Svarog",
+  "path": "chicken road 2/Chicken Road 2-SB Svarog",
+  "ok": true,
+  "files": [
+    "com.luminance.color.alchemy-3.apk",
+    "com.luminance.color.alchemy-3-config.arm64_v8a.apk",
+    "com.luminance.color.alchemy.xapk"
+  ],
+  "apk_label": "Color Alchemy",
+  "cloaking": "нет",
+  "minSdk": 25,
+  "targetSdk": 36,
+  "agp": "8.6.0",
+  "kotlin": "да 2.1.0"
+}
