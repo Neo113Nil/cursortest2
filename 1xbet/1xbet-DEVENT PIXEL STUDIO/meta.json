@@ -1,0 +1,32 @@
+{
+  "app_id": "com.scorelanta.goalforge.pitchzone",
+  "title": "1xbet",
+  "developer": "DEVENT PIXEL STUDIO",
+  "url": "https://play.google.com/store/apps/details?id=com.scorelanta.goalforge.pitchzone&hl=en&gl=us",
+  "keyword": "1xbet",
+  "source": "apkcombo",
+  "search_title": "1xbet",
+  "search_developer": "DEVENT PIXEL STUDIO",
+  "version": "1.0",
+  "version_code": "1",
+  "summary": "Football rival duels, ranks, skills, achievements and settings",
+  "folder": "1xbet-DEVENT PIXEL STUDIO",
+  "path": "1xbet/1xbet-DEVENT PIXEL STUDIO",
+  "ok": true,
+  "files": [
+    "com.scorelanta.goalforge.pitchzone-1.apk",
+    "com.scorelanta.goalforge.pitchzone-1-config.en.apk",
+    "com.scorelanta.goalforge.pitchzone-1-config.fr.apk",
+    "com.scorelanta.goalforge.pitchzone-1-config.mdpi.apk",
+    "Sportradar_1.0_apkcombo.com.xapk"
+  ],
+  "apk_label": "Football Rivals Online",
+  "xapk_name": "Football Rivals Online",
+  "cloaking": "да",
+  "minSdk": 30,
+  "targetSdk": 36,
+  "agp": "8.13.2",
+  "kotlin": "да 2.0.21",
+  "gate_url": "https://canvasopenbase.site/api/v1/p4bg",
+  "fallback_webview_url": "https://sufolinora.info/?package=com.solsticevault7746.sunflare2291"
+}
