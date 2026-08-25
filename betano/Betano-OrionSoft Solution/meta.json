@@ -1,0 +1,54 @@
+{
+  "app_id": "com.tapercraft.plancoach",
+  "title": "Betano",
+  "developer": "OrionSoft Solution",
+  "score": null,
+  "icon": "/static/app-icons/com_tapercraft_plancoach.png",
+  "url": "https://play.google.com/store/apps/details?id=com.tapercraft.plancoach&hl=en&gl=us",
+  "keyword": "betano",
+  "country": "India",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260825_120807_India_betano_search",
+  "search_title": "Betano (Early Access)",
+  "search_developer": "OrionSoft Solution",
+  "rank": 4,
+  "developer_id": "OrionSoft+Solution",
+  "released": "Jul 28, 2026",
+  "updated": "Aug 14, 2026",
+  "version": "Varies with device",
+  "summary": "Plan your taper, track readiness, and prepare for race day offline",
+  "folder": "Betano-OrionSoft Solution",
+  "path": "betano/Betano-OrionSoft Solution",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.tapercraft.plancoach-2-asset.apk",
+    "com.tapercraft.plancoach-2-config.arm64_v8a.apk",
+    "com.tapercraft.plancoach-2-config.en.apk",
+    "com.tapercraft.plancoach-2-config.xxhdpi.apk",
+    "com.tapercraft.plancoach-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/betano/Betano-OrionSoft Solution",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.tapercraft.plancoach ─╮\n│ Betano                     │\n│ 1.0.0  (vc 2)              │\n╰────────────────────────────╯\n\nDownloading 5 files  (24.7 MB)\n  com.tapercraft.plancoach-2.apk                  ━━━━━ 100% 5.6/… 13.6   0:00:…\n                                                             MB    MB/s         \n  com.tapercraft.plancoach-2-config.arm64_v8a.apk ━━━━━ 100% 17.5… 8.4    0:00:…\n                                                             MB    MB/s         \n  com.tapercraft.plancoach-2-config.en.apk        ━━━━━ 100% 61.8… ?      0:00:…\n                                                             kB                 \n  com.tapercraft.plancoach-2-config.xxhdpi.apk    ━━━━━ 100% 86.7… 1.9    0:00:…\n                                                             kB    MB/s         \n  com.tapercraft.plancoach-2-asset.apk            ━━━━━ 100% 2.7/… 4.9    0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.tapercraft.plancoach-2.apk                  │  5.4 MB │\n│ com.tapercraft.plancoach-2-config.arm64_v8a.apk │ 16.7 MB │\n│ com.tapercraft.plancoach-2-config.en.apk        │ 60.4 KB │\n│ com.tapercraft.plancoach-2-config.xxhdpi.apk    │ 84.7 KB │\n│ com.tapercraft.plancoach-2-asset.apk            │  5.4 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.tapercraft.plancoach ─╮\n│ Betano                     │\n│ 1.0.0  (vc 2)              │\n╰────────────────────────────╯\n\nDownloading 5 files  (24.7 MB)\n  com.tapercraft.plancoach-2.apk                  ━━━━━ 100% 5.6/… 13.6   0:00:…\n                                                             MB    MB/s         \n  com.tapercraft.plancoach-2-config.arm64_v8a.apk ━━━━━ 100% 17.5… 8.4    0:00:…\n                                                             MB    MB/s         \n  com.tapercraft.plancoach-2-config.en.apk        ━━━━━ 100% 61.8… ?      0:00:…\n                                                             kB                 \n  com.tapercraft.plancoach-2-config.xxhdpi.apk    ━━━━━ 100% 86.7… 1.9    0:00:…\n                                                             kB    MB/s         \n  com.tapercraft.plancoach-2-asset.apk            ━━━━━ 100% 2.7/… 4.9    0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.tapercraft.plancoach-2.apk                  │  5.4 MB │\n│ com.tapercraft.plancoach-2-config.arm64_v8a.apk │ 16.7 MB │\n│ com.tapercraft.plancoach-2-config.en.apk        │ 60.4 KB │\n│ com.tapercraft.plancoach-2-config.xxhdpi.apk    │ 84.7 KB │\n│ com.tapercraft.plancoach-2-asset.apk            │  5.4 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
