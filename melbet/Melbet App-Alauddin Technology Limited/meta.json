@@ -1,0 +1,54 @@
+{
+  "app_id": "net.livesports.melbet",
+  "title": "Melbet App",
+  "developer": "Alauddin Technology Limited",
+  "score": null,
+  "icon": "/static/app-icons/net_livesports_melbet.png",
+  "url": "https://play.google.com/store/apps/details?id=net.livesports.melbet&hl=en&gl=us",
+  "keyword": "melbet",
+  "country": "India",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260825_103734_India_melbet_search",
+  "search_title": "Melbet App (Early Access)",
+  "search_developer": "Alauddin Technology Limited",
+  "rank": 4,
+  "developer_id": "Alauddin+Technology+Limited",
+  "released": "",
+  "updated": "Aug 4, 2026",
+  "version": "Varies with device",
+  "summary": "This allows Melbet fans to stay informed about scores and team statistics.",
+  "folder": "Melbet App-Alauddin Technology Limited",
+  "path": "melbet/Melbet App-Alauddin Technology Limited",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "net.livesports.melbet-1-asset.apk",
+    "net.livesports.melbet-1-config.arm64_v8a.apk",
+    "net.livesports.melbet-1-config.en.apk",
+    "net.livesports.melbet-1-config.xxhdpi.apk",
+    "net.livesports.melbet-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/melbet/Melbet App-Alauddin Technology Limited",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ net.livesports.melbet ─╮\n│ Melbet App              │\n│ 1.0  (vc 1)             │\n╰─────────────────────────╯\n\nDownloading 5 files  (9.6 MB)\n  net.livesports.melbet-1.apk                  ━━━━━━ 100% 6.6/6… 13.1   0:00:00\n                                                           MB     MB/s          \n  net.livesports.melbet-1-config.arm64_v8a.apk ━━━━━━ 100% 70.1/… 2.3    0:00:00\n                                                           kB     MB/s          \n  net.livesports.melbet-1-config.en.apk        ━━━━━━ 100% 70.0/… 1.8    0:00:00\n                                                           kB     MB/s          \n  net.livesports.melbet-1-config.xxhdpi.apk    ━━━━━━ 100% 90.7/… 2.7    0:00:00\n                                                           kB     MB/s          \n  net.livesports.melbet-1-asset.apk            ━━━━━━ 100% 3.3/3… 10.7   0:00:00\n                                                           MB     MB/s          \n\n                     Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                         ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ net.livesports.melbet-1.apk                  │  6.3 MB │\n│ net.livesports.melbet-1-config.arm64_v8a.apk │ 68.4 KB │\n│ net.livesports.melbet-1-config.en.apk        │ 68.4 KB │\n│ net.livesports.melbet-1-config.xxhdpi.apk    │ 88.6 KB │\n│ net.livesports.melbet-1-asset.apk            │  6.3 MB │\n└──────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ net.livesports.melbet ─╮\n│ Melbet App              │\n│ 1.0  (vc 1)             │\n╰─────────────────────────╯\n\nDownloading 5 files  (9.6 MB)\n  net.livesports.melbet-1.apk                  ━━━━━━ 100% 6.6/6… 13.1   0:00:00\n                                                           MB     MB/s          \n  net.livesports.melbet-1-config.arm64_v8a.apk ━━━━━━ 100% 70.1/… 2.3    0:00:00\n                                                           kB     MB/s          \n  net.livesports.melbet-1-config.en.apk        ━━━━━━ 100% 70.0/… 1.8    0:00:00\n                                                           kB     MB/s          \n  net.livesports.melbet-1-config.xxhdpi.apk    ━━━━━━ 100% 90.7/… 2.7    0:00:00\n                                                           kB     MB/s          \n  net.livesports.melbet-1-asset.apk            ━━━━━━ 100% 3.3/3… 10.7   0:00:00\n                                                           MB     MB/s          \n\n                     Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                         ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ net.livesports.melbet-1.apk                  │  6.3 MB │\n│ net.livesports.melbet-1-config.arm64_v8a.apk │ 68.4 KB │\n│ net.livesports.melbet-1-config.en.apk        │ 68.4 KB │\n│ net.livesports.melbet-1-config.xxhdpi.apk    │ 88.6 KB │\n│ net.livesports.melbet-1-asset.apk            │  6.3 MB │\n└──────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
