@@ -1,0 +1,27 @@
+{
+  "app_id": "com.tapercraft.plancoach",
+  "title": "Betano",
+  "developer": "OrionSoft Solution",
+  "url": "https://play.google.com/store/apps/details?id=com.tapercraft.plancoach&hl=en&gl=us",
+  "keyword": "betano",
+  "source": "apkcombo",
+  "version": "1.0.0",
+  "version_code": "2",
+  "summary": "TaperSync Race Readiness (Play title: Betano)",
+  "folder": "Betano-OrionSoft Solution",
+  "path": "betano/Betano-OrionSoft Solution",
+  "apk_title": "Betano",
+  "play_description_title": "Betano",
+  "apk_label": "App",
+  "apkcombo_title": "TaperSync: Race Readiness",
+  "store_title_mismatch": true,
+  "ok": true,
+  "files": [
+    "com.tapercraft.plancoach-2.apk",
+    "com.tapercraft.plancoach-2-config.arm64_v8a.apk",
+    "com.tapercraft.plancoach-2-config.armeabi_v7a.apk",
+    "com.tapercraft.plancoach-2-config.en.apk",
+    "com.tapercraft.plancoach-2-config.xxhdpi.apk",
+    "com.tapercraft.plancoach_1.0.0.xapk"
+  ]
+}
