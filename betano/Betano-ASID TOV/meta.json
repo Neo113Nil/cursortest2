@@ -2,6 +2,7 @@
   "app_id": "com.foi.custck",
   "title": "Betano",
   "developer": "ASID TOV",
+<<<<<<< HEAD
   "score": null,
   "icon": "/static/app-icons/com_foi_custck.png",
   "url": "https://play.google.com/store/apps/details?id=com.foi.custck&hl=en&gl=us",
@@ -129,3 +130,31 @@
     "cloaking_brief": ""
   }
 }
+=======
+  "url": "https://play.google.com/store/apps/details?id=com.foi.custck&hl=en&gl=us",
+  "keyword": "betano",
+  "source": "apkcombo",
+  "version": "1.0",
+  "version_code": "1",
+  "summary": "Simple timer for deep work and focused sessions",
+  "folder": "Betano-ASID TOV",
+  "path": "betano/Betano-ASID TOV",
+  "apk_title": "Focus Tick",
+  "play_description_title": "Betano",
+  "store_title_mismatch": true,
+  "ok": true,
+  "files": [
+    "com.foi.custck.apk",
+    "config.armeabi_v7a.apk",
+    "config.en.apk",
+    "config.mdpi.apk",
+    "config.zh.apk",
+    "com.foi.custck.xapk"
+  ],
+  "cloaking": "нет",
+  "min_sdk": 24,
+  "target_sdk": 36,
+  "agp": "8.13.2",
+  "kotlin": "2.0.21"
+}
+>>>>>>> origin/main

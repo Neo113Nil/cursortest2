@@ -521,8 +521,13 @@
 | URLQuery | Unrated |
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
+<<<<<<< HEAD
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | 404 page not found |
+=======
+| Куда редиректит | нет (DNS не резолвится) |
+| Что выводит (кратко) | нет (DNS не резолвится) |
+>>>>>>> origin/main
 | Где припаркован | регистратор: Alibaba Cloud Computing (Beijing) Co., Ltd. |
 
 ## Проверка домена: img.anythinktech.com

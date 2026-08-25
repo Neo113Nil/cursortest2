@@ -456,8 +456,8 @@
           "Cloudflare Radar: 500000"
         ],
         "creation_date": 816220800,
-        "last_modification_date": 1787640791,
-        "last_analysis_date": 1787636549,
+        "last_modification_date": 1787697047,
+        "last_analysis_date": 1787694282,
         "registrar": "нет",
         "whois": "Administrative city: REDACTED FOR PRIVACY\nAdministrative country: United States\nAdministrative email: 19a7f876f1595d7cs@anonymised.email\nAdministrative state: REDACTED FOR PRIVACY\nCreate date: 1995-11-13 00:00:00\nDomain name: 123.com\nDomain registrar id: 470.0\nDomain registrar url: whois.comlaude.com\nExpiry date: 2029-11-12 00:00:00\nQuery time: 2026-03-06 14:53:40\nRegistrant address: 1f8f4166599d23ee\nRegistrant city: 1f8f4166599d23ee\nRegistrant company: 827e5a10f090bc89\nRegistrant country: United Kingdom\nRegistrant email: 2b1bb323f0cedd8as@anonymised.email\nRegistrant name: 1f8f4166599d23ee\nRegistrant zip: 1f8f4166599d23ee\nTechnical city: REDACTED FOR PRIVACY\nTechnical country: United States\nTechnical email: 4f64dae613bbbd72s@anonymised.email\nTechnical state: REDACTED FOR PRIVACY\nUpdate date: 2026-03-04 00:00:00",
         "dns_records": [
@@ -1269,7 +1269,7 @@
           "Cisco Umbrella: 5165"
         ],
         "creation_date": null,
-        "last_modification_date": 1787694557,
+        "last_modification_date": 1787698624,
         "last_analysis_date": 1787681959,
         "registrar": "RU-CENTER-RU",
         "whois": "Last updated on 2026-08-15T00:23:01Z\ncreated: 1997-09-27T14:33:26Z\ndomain: MAIL.RU\nnserver: ns1.mail.ru. 217.69.139.112\nnserver: ns2.mail.ru. 94.100.180.138\npaid-till: 2026-09-30T21:00:00Z\nregistrar: RU-CENTER-RU\nsource: TCI\nstate: REGISTERED, DELEGATED, VERIFIED",
@@ -2892,7 +2892,7 @@
           "Cisco Umbrella: 29218"
         ],
         "creation_date": 1323712278,
-        "last_modification_date": 1787694541,
+        "last_modification_date": 1787698661,
         "last_analysis_date": 1787685081,
         "registrar": "GoDaddy.com, LLC",
         "whois": "Creation Date: 2011-12-12T17:51:18Z\nDNSSEC: unsigned\nDomain Name: MOBILEADEXCHANGE.NET\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: DNS1.P05.NSONE.NET\nName Server: DNS2.P05.NSONE.NET\nName Server: DNS3.P05.NSONE.NET\nName Server: DNS4.P05.NSONE.NET\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: 480-624-2505\nRegistrar IANA ID: 146\nRegistrar URL: http://www.godaddy.com\nRegistrar WHOIS Server: whois.godaddy.com\nRegistrar: GoDaddy.com, LLC\nRegistry Domain ID: 1691748794_DOMAIN_NET-VRSN\nRegistry Expiry Date: 2026-12-12T17:51:18Z\nUpdated Date: 2024-12-13T13:11:08Z",
@@ -3719,7 +3719,7 @@
           "Cisco Umbrella: 8980"
         ],
         "creation_date": 1382346862,
-        "last_modification_date": 1787694541,
+        "last_modification_date": 1787698660,
         "last_analysis_date": 1787689601,
         "registrar": "GoDaddy.com, LLC",
         "whois": "Domain Name: STARTAPPSERVICE.COM\nRegistry Domain ID: 1831888533_DOMAIN_COM-VRSN\nRegistrar WHOIS Server: whois.godaddy.com\nRegistrar URL: http://www.godaddy.com\nUpdated Date: 2017-10-22T11:20:45Z\nCreation Date: 2013-10-21T09:14:22Z\nRegistry Expiry Date: 2018-10-21T09:14:22Z\nRegistrar: GoDaddy.com, LLC\nRegistrar IANA ID: 146\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: 480-624-2505\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: NS1.P05.DYNECT.NET\nName Server: NS2.P05.DYNECT.NET\nName Server: NS3.P05.DYNECT.NET\nName Server: NS4.P05.DYNECT.NET\nDNSSEC: unsigned\nUpdated Date: 2017-10-22T11:20:44Z\nRegistrar Registration Expiration Date: 2018-10-21T09:14:22Z\nRegistrar Abuse Contact Phone: +1.4806242505\nDomain Status: clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited http://www.icann.org/epp#clientUpdateProhibited\nDomain Status: clientRenewProhibited http://www.icann.org/epp#clientRenewProhibited\nDomain Status: clientDeleteProhibited http://www.icann.org/epp#clientDeleteProhibited\nRegistrant Country: US",
@@ -4547,7 +4547,7 @@
           "Cloudflare Radar: 200000"
         ],
         "creation_date": 1440425251,
-        "last_modification_date": 1787694599,
+        "last_modification_date": 1787698770,
         "last_analysis_date": 1787651647,
         "registrar": "Squarespace Domains II LLC",
         "whois": "Creation Date: 2015-08-24T14:07:31.607Z\nCreation Date: 2015-08-24T14:07:31Z\nDNSSEC: unsigned\nDomain Name: aomedia.org\nDomain Status: client delete prohibited http://www.icann.org/epp#client delete prohibited\nDomain Status: client transfer prohibited http://www.icann.org/epp#client transfer prohibited\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: ns-cloud-a1.googledomains.com\nName Server: ns-cloud-a2.googledomains.com\nName Server: ns-cloud-a3.googledomains.com\nName Server: ns-cloud-a4.googledomains.com\nRegistrant City: 1f8f4166599d23ee\nRegistrant Country: US\nRegistrant Email: 3bae71a42530df7ds@\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 1f8f4166599d23ee\nRegistrant Name: 1f8f4166599d23ee\nRegistrant Organization: 63e9119f4bc4ba6a\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: 1f8f4166599d23ee\nRegistrant Postal Code: 1f8f4166599d23ee\nRegistrant State/Province: b1952dfc047df18a\nRegistrant Street: 1f8f4166599d23ee\nRegistrar Abuse Contact Email: abuse-complaints@squarespace.com\nRegistrar Abuse Contact Phone: +1.646-693-5324\nRegistrar Abuse Contact Phone: +1.6466935324\nRegistrar IANA ID: 895\nRegistrar Registration Expiration Date: 2028-08-24T14:07:31.607Z\nRegistrar URL: https://domains.squarespace.com\nRegistrar URL: https://domains2.squarespace.com\nRegistrar WHOIS Server: whois.squarespace.domains\nRegistrar: Squarespace Domains II LLC\nRegistry Domain ID: 845b247fe2144e3e965924b2c891e0dd-LROR\nRegistry Domain ID: REDACTED\nRegistry Expiry Date: 2028-08-24T14:07:31Z\nUpdated Date: 2025-07-18T02:52:32Z\nUpdated Date: 2026-06-24T19:25:16.590500Z",
@@ -5373,23 +5373,23 @@
           "Cisco Umbrella: 1834"
         ],
         "creation_date": 1730711565,
-        "last_modification_date": 1787692856,
-        "last_analysis_date": 1787689012,
+        "last_modification_date": 1787695434,
+        "last_analysis_date": 1787692856,
         "registrar": "Gandi SAS",
         "whois": "Admin City: Sheng Mo Ni Qia\nAdmin Country: US\nAdmin Email: d55607eac8b3222as@contact.gandi.net\nAdmin Organization: Tiktok Inc.\nAdmin Postal Code: 90230\nAdmin State/Province: CA\nCreation Date: 2024-11-04T09:12:45Z\nDNSSEC: unsigned\nDomain Name: tiktokpangle.us\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: a1-156.akam.net\nName Server: a12-65.akam.net\nName Server: a16-66.akam.net\nName Server: a2-67.akam.net\nName Server: a3-64.akam.net\nName Server: a7-65.akam.net\nRegistrant Application Purpose: 97f9aa8e7c9dcd53\nRegistrant City: bbb0b65c5d7f24f9\nRegistrant Country: US\nRegistrant Email: d55607eac8b3222as@contact.gandi.net\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 3432650ec337c945\nRegistrant Name: 88cd41f095a0fa31\nRegistrant Nexus Category: 6f022d9a63c06b94\nRegistrant Organization: 8f837c690736385e\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: 652dd6ab93ecf766\nRegistrant Postal Code: 26d712cf3c7b7a06\nRegistrant State/Province: b1952dfc047df18a\nRegistrant Street: 3432650ec337c945\nRegistrant Street: 90792a4f1a71db7b\nRegistrar Abuse Contact Email: abuse@support.gandi.net\nRegistrar Abuse Contact Phone: +33.170377661\nRegistrar IANA ID: 81\nRegistrar URL: whois.gandi.net\nRegistrar: Gandi SAS\nRegistry Admin ID: C61F501E8AA79470EBB4A686A4746D08A-GDREG\nRegistry Domain ID: DB45D3239B79746C284FA605E1CA85C47-GDREG\nRegistry Expiry Date: 2026-11-04T09:12:45Z\nRegistry Registrant ID: C61F501E8AA79470EBB4A686A4746D08A-GDREG\nRegistry Tech ID: C61F501E8AA79470EBB4A686A4746D08A-GDREG\nTech City: Sheng Mo Ni Qia\nTech Country: US\nTech Email: d55607eac8b3222as@contact.gandi.net\nTech Organization: Tiktok Inc.\nTech Postal Code: 90230\nTech State/Province: CA\nUpdated Date: 2026-06-03T05:19:22Z",
         "dns_records": [
           "CNAME pangle-shared-api.bytewlb.akadns.net",
-          "A 23.62.182.88",
           "CNAME api16-access-ttp.tiktokpangle.us.edgesuite.net",
-          "A 23.62.182.97",
-          "CNAME api16-access-ttp.tiktokpangle.us.edgesuite.net",
-          "A 23.62.182.99",
-          "CNAME api16-access-ttp.tiktokpangle.us.edgesuite.net",
-          "A 23.62.182.94",
-          "CNAME pangle-shared-api.bytewlb.akadns.net",
-          "A 23.62.182.78",
           "A 23.62.182.75",
-          "CNAME a2047.api4.akamai.net"
+          "A 23.62.182.97",
+          "CNAME a2047.t.akamai.net",
+          "CNAME pangle-shared-api.bytewlb.akadns.net",
+          "CNAME api16-access-ttp.tiktokpangle.us.edgesuite.net",
+          "CNAME a2047.api8.akamai.net",
+          "CNAME api16-access-ttp.tiktokpangle.us.edgesuite.net",
+          "CNAME a2047.api7.akamai.net",
+          "A 23.62.182.100",
+          "CNAME a2047.api2.akamai.net"
         ],
         "https_subject": {
           "CN": "*.tiktokpangle.us"
@@ -6200,15 +6200,15 @@
           "Cisco Umbrella: 978601"
         ],
         "creation_date": 1367485222,
-        "last_modification_date": 1787694542,
-        "last_analysis_date": 1787692914,
+        "last_modification_date": 1787697744,
+        "last_analysis_date": 1787697062,
         "registrar": "GoDaddy.com, LLC",
         "whois": "Creation Date: 2013-05-02T09:00:22Z\nDNSSEC: unsigned\nDomain Name: APPODEAL.COM\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: NITIN.NS.CLOUDFLARE.COM\nName Server: PAT.NS.CLOUDFLARE.COM\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: 480-624-2505\nRegistrar IANA ID: 146\nRegistrar URL: http://www.godaddy.com\nRegistrar WHOIS Server: whois.godaddy.com\nRegistrar: GoDaddy.com, LLC\nRegistry Domain ID: 1798319030_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2028-05-02T09:00:22Z\nUpdated Date: 2026-05-03T12:51:16Z",
         "dns_records": [
-          "A 188.42.139.41",
+          "A 23.109.148.60",
           "CNAME k8s-ingress.appodeal.com",
           "A 188.42.141.249",
-          "A 23.109.148.60"
+          "A 188.42.139.41"
         ],
         "https_subject": {
           "CN": "*.appodeal.com"

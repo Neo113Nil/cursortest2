@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "all_custom_domains": [
     "aomedia.org",
     "aviatornation.com",
@@ -448,6 +449,12 @@
       "final_url": "https://aomedia.org/",
       "http_status": 200,
       "table_rows": [
+=======
+  "domains": [
+    {
+      "domain": "aomedia.org",
+      "rows": [
+>>>>>>> origin/main
         {
           "param": "Домен",
           "value": "aomedia.org"
@@ -844,6 +851,7 @@
     },
     {
       "domain": "aviatornation.com",
+<<<<<<< HEAD
       "virustotal": {
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/aviatornation.com",
@@ -1285,6 +1293,9 @@
       "final_url": "https://www.aviatornation.com/",
       "http_status": 200,
       "table_rows": [
+=======
+      "rows": [
+>>>>>>> origin/main
         {
           "param": "Домен",
           "value": "aviatornation.com"
@@ -1671,7 +1682,11 @@
         },
         {
           "param": "Что выводит (кратко)",
+<<<<<<< HEAD
           "value": "title: Aviator Nation. Aviator Nation Skip to content THE COTTON LUXE CAPSULE SHOP NEW ARRIVALS New Best Sellers Hoodies Sweatpants Cotton Luxe Capsule Cotton Luxe Capsule Shop the Full Capsule Shop the Full Capsule Shop All Resort Shirts Wide Leg Pants Unisex Relaxed PantS Women's Shorts Men's Shorts "
+=======
+          "value": "title: Aviator Nation. Aviator Nation Skip to content THE COTTON LUXE CAPSULE SHOP NEW ARRIVALS New Best Sellers Hoodies Sweatpants Cotton Luxe Capsule Cotton Luxe Capsule Shop the Full Capsule Shop the Full Capsule Shop All Resort Shirts Wide Leg Pants Unisex Relaxed PantS Women's Shorts Men's Shorts"
+>>>>>>> origin/main
         },
         {
           "param": "Где припаркован",
@@ -1681,6 +1696,7 @@
     },
     {
       "domain": "dashif.org",
+<<<<<<< HEAD
       "virustotal": {
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/dashif.org",
@@ -2115,6 +2131,9 @@
       "final_url": "https://dashif.org/",
       "http_status": 200,
       "table_rows": [
+=======
+      "rows": [
+>>>>>>> origin/main
         {
           "param": "Домен",
           "value": "dashif.org"
@@ -2501,7 +2520,11 @@
         },
         {
           "param": "Что выводит (кратко)",
+<<<<<<< HEAD
           "value": "title: DASH Industry Forum | Catalyzing the adoption of MPEG-DASH. DASH Industry Forum | Catalyzing the adoption of MPEG-DASH &nbsp; Home About guidelines IOP version 5 Earlier Versions IPR Declarations Specifications Other Publications and Position Papers tools Introduction Reference Tools dash.js Reference Client Conformance Validator Test Ass"
+=======
+          "value": "title: DASH Industry Forum \\"
+>>>>>>> origin/main
         },
         {
           "param": "Где припаркован",
@@ -2511,6 +2534,7 @@
     },
     {
       "domain": "developers.klaviyo.com",
+<<<<<<< HEAD
       "virustotal": {
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/developers.klaviyo.com",
@@ -2942,6 +2966,9 @@
       "final_url": "https://developers.klaviyo.com/en",
       "http_status": 200,
       "table_rows": [
+=======
+      "rows": [
+>>>>>>> origin/main
         {
           "param": "Домен",
           "value": "developers.klaviyo.com"
@@ -3328,6 +3355,7 @@
         },
         {
           "param": "Что выводит (кратко)",
+<<<<<<< HEAD
           "value": "title: API Reference &amp; Technical Guides | Klaviyo Developers. API Reference &amp; Technical Guides | Klaviyo Developers Jump to Content Home Guides API Reference legacy v2022-10-17 v2023-01-24 v2023-02-22 v2023-06-15 v2023-07-15 v2023-08-15 v2023-09-15 v2023-10-15 v2023-12-15 v2024-02-15 v2024-05-15 v2024-06-15 v2024-07-15 v2024-10-15 v2025"
         },
         {
@@ -4159,12 +4187,16 @@
         {
           "param": "Что выводит (кратко)",
           "value": "title: Error. Error Sorry, something went wrong. We&#039;re working on getting this fixed as soon as we can. Go back Meta &#169; 2026 &#183; Help > -->"
+=======
+          "value": "title: API Reference &amp; Technical Guides \\"
+>>>>>>> origin/main
         },
         {
           "param": "Где припаркован",
           "value": "нет данных"
         }
       ]
+<<<<<<< HEAD
     },
     {
       "domain": "notifee.app",
@@ -6634,4 +6666,8 @@
   ],
   "count": 8,
   "vt_configured": true
+=======
+    }
+  ]
+>>>>>>> origin/main
 }

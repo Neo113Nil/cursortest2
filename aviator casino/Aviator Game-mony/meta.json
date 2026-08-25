@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "app_id": "com.theaviatorgame.realmoneyaviatorgame",
   "title": "Aviator Game",
   "developer": "mony",
@@ -164,5 +165,69 @@
     ],
     "cloaking": "да",
     "cloaking_brief": "Какие данные собираются:\n• Имя пакета приложения\n\nКак собираются: Сразу после запуска, на экране заставки, приложение само проверяет интернет и тихо запрашивает удалённый текстовый файл с настройками. Отдельного окна с просьбой «разрешить сбор» для этой проверки нет: человек видит только заставку. В адрес запроса уже вписано имя пакета этого приложения — других сведений о телефоне в этот запрос код не добавляет. Ответ потом кладут в память приложения, чтобы не тянуть файл заново при каждом шаге.\n\nКуда отправляются: Запрос уходит на адрес https://raw.githubusercontent.com/smtpatel9211/PandyaTech/refs/heads/main/com.t heaviatorgame.realmoneyaviatorgame — это обычная «сырая» ссылка на файл в интернете. По коду видно, что это не показ рекламы на экране, а тихая проверка настроек: что показать этому запуску. Запасных адресов для этой проверки в приложении не видно. Полученный текст сохраняют в памяти приложения под именем response.\n\nКак фильтруются пользователи: В самом телефоне нет жёсткого списка стран или языков для этой развилки. Решение зашито в ответе с сервера: поля вроде «делать ли редирект при запуске» и три готовые ссылки. Если редирект включён и связанные флаги позволяют, приложение случайно выбирает одну из трёх ссылок. Само «кого пустить на оффер» делает тот, кто правит удалённый файл настроек; приложение лишь читает флаги и открывает то, что там написано.\n\nЧто возвращается: Сервер отдаёт текстовый ответ в виде списка настроек. Из него читают, среди прочего: splash_redirect, splash_link_all, link1, link2, link3, настройки рекламных сетей (TopOn, AdMob, Facebook) и служебные поля вроде livetv. Если splash_redirect включён и есть рабочие link1–link3, приложение считает, что можно открыть внешнюю страницу. Если редирект выключен или ссылок нет — остаётся обычный режим приложения с играми и рекламой. На момент проверки в живом файле редирект был включён, а ссылки вели на страницы вроде mark.qureka.com и go.gamescritique.com.\n\nКак показывается оффер или белая версия: Если по настройкам нужно показать оффер, ссылку открывают во внешнем окне браузера телефона через встроенные вкладки Chrome (Custom Tabs), а если это не вышло — через обычный переход в браузер. Ч…"
+=======
+  "app_name_play": "Aviator Game",
+  "app_label_apk": "Aviator Game",
+  "package": "com.theaviatorgame.realmoneyaviatorgame",
+  "developer": "mony",
+  "versionName": "1.0",
+  "versionCode": 1,
+  "minSdk": 24,
+  "targetSdk": 35,
+  "agp": "8.9.0",
+  "kotlin": "да (coroutines 1.8.0)",
+  "cloaking": true,
+  "webview": true,
+  "custom_tabs": true,
+  "ads": [
+    "AdMob / Google Ad Manager",
+    "TopOn / AnyThink",
+    "Facebook Audience Network",
+    "Qureka"
+  ],
+  "analytics": [
+    "OneSignal",
+    "Firebase (messaging/measurement)"
+  ],
+  "suspicious_domains": [
+    "10761.play.gamezop.com",
+    "adx.anythinktech.com",
+    "adxtk.anythinktech.com",
+    "api.anythinktech.com",
+    "da.anythinktech.com",
+    "img.anythinktech.com",
+    "img.toponad.com",
+    "se.zxcvbnmpo.com"
+  ],
+  "remote_config_url": "https://raw.githubusercontent.com/smtpatel9211/PandyaTech/refs/heads/main/com.theaviatorgame.realmoneyaviatorgame",
+  "remote_config_live": {
+    "splash_link_all": "0",
+    "link1": "http://1084.mark.qureka.com/intro/question",
+    "link2": "https://24.go.gamescritique.com/dashboard",
+    "link3": "http://1086.mark.qureka.com/intro/question",
+    "banner_native_all": "0",
+    "livetv": "https://9455.read.criczop.com/cricket-videos?session-start-screen=home-page&int-nav=1",
+    "splash_redirect": "1",
+    "adposition": "0",
+    "admob_showAdStatus": "0",
+    "AppID": "ca-app-pub-5517092987757413~8240781391",
+    "Admob_Banner": "/6499/example/banner",
+    "Admob_Interstitial": "/6499/example/interstitial",
+    "Admob_Native": "/6499/example/native",
+    "topon_showStatus": "1",
+    "topon_appid": "a6a742de7b8ce6",
+    "topon_appkey": "a237b79b5c82250e770dda05acb61f8a0",
+    "topon_banner": "b6a742dfa41428",
+    "topon_inter1": "b6a742dfc0e51f",
+    "topon_inter2": "b6a742dfc0e51f",
+    "topon_native": "b6a742dfd072fe",
+    "FB_showAdStatus": "0",
+    "FB_bannernative": "0",
+    "FB_banner": "IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID",
+    "FB_inter1": "IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID",
+    "FB_inter2": "IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID",
+    "FB_native": "IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID",
+    "FB_nativebanner": "IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID"
+>>>>>>> origin/main
   }
 }

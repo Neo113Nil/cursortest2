@@ -1,6 +1,7 @@
 {
   "ok": true,
   "apks": [
+<<<<<<< HEAD
     "com.aviatorassistant.aviatorassistant-241-config.lt.apk",
     "com.aviatorassistant.aviatorassistant-241-config.en.apk",
     "com.aviatorassistant.aviatorassistant-241-config.ru.apk",
@@ -55,4 +56,26 @@
     "decompiled/sources/org/"
   ],
   "errors": []
+=======
+    "com.aviatorassistant.aviatorassistant.apk",
+    "config.armeabi_v7a.apk",
+    "config.en.apk",
+    "config.mdpi.apk"
+  ],
+  "base_apk": "com.aviatorassistant.aviatorassistant.apk",
+  "jadx": {
+    "ok": true,
+    "out_dir": "decompiled",
+    "skipped": false,
+    "base_apk": "com.aviatorassistant.aviatorassistant.apk"
+  },
+  "source": "apkeep:apk-pure",
+  "xapk": "com.aviatorassistant.aviatorassistant.xapk",
+  "analysis_files": [
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "report.pdf"
+  ]
+>>>>>>> origin/main
 }

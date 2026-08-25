@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "all_custom_domains": [
     "config.ru"
   ],
@@ -827,3 +828,8 @@
   "count": 1,
   "vt_configured": true
 }
+=======
+  "domains": [],
+  "notes": "No custom/unknown suspicious hosts found in APK code, strings, or resources. Play stamp https://play.google.com/store and framework/JetBrains URLs excluded."
+}
+>>>>>>> origin/main

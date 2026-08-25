@@ -2,6 +2,7 @@
   "app_id": "com.crane.slab.beam",
   "title": "Chicken Road",
   "developer": "YURVIT",
+<<<<<<< HEAD
   "score": null,
   "icon": "/static/app-icons/com_crane_slab_beam.png",
   "url": "https://play.google.com/store/apps/details?id=com.crane.slab.beam&hl=en&gl=us",
@@ -53,6 +54,39 @@
   "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
   "exit_code": 0,
   "error": "",
+=======
+  "developer_id": "YURVIT",
+  "icon": "/static/app-icons/com_crane_slab_beam.png",
+  "url": "https://play.google.com/store/apps/details?id=com.crane.slab.beam&hl=en&gl=us",
+  "score": null,
+  "released": "",
+  "updated": "May 8, 2026",
+  "version": "Varies with device",
+  "summary": "Base Plan is an innovative memory game",
+  "keyword": "chicken road",
+  "folder": "Chicken Road-YURVIT",
+  "path": "chicken road/Chicken Road-YURVIT",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.crane.slab.beam.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Base Plan-YURVIT",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.crane.slab.beam...\ncom.crane.slab.beam downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.crane.slab.beam...\ncom.crane.slab.beam downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+>>>>>>> origin/main
   "cloaking": "нет",
   "brief_report": {
     "table": [
@@ -117,6 +151,7 @@
         "value": "license check"
       }
     ],
+<<<<<<< HEAD
     "domains": [
       {
         "domain": "com.chrome.dev",
@@ -142,5 +177,10 @@
     "collected_data": [],
     "cloaking": "нет",
     "cloaking_brief": ""
+=======
+    "cloaking": "нет",
+    "cloaking_brief": "",
+    "collected_data": []
+>>>>>>> origin/main
   }
 }

@@ -1,5 +1,6 @@
 # Проверка подозрительных доменов
 
+<<<<<<< HEAD
 ## Проверка домена: aaa.pro
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
@@ -467,3 +468,8 @@
 | Куда редиректит | https://www.alwaysdata.com/fr/ |
 | Что выводит (кратко) | title: alwaysdata, le cloud européen. alwaysdata, le cloud européen m-0 p-1"> Accueil m-0 p-1"> Offres m-0 p-1"> Environnement m-0 p-1"> Domaines m-0 p-1"> Marketplace m-0 p-1"> Documentation nav-section \| m-0 pb-1 pis-3 pie-1"> Contact m-0 p-1"> English Connexion button-icon d-inline-flex ai-center jc-center ratio-s |
 | Где припаркован | регистратор: GANDI SAS |
+=======
+Подозрительных доменов не найдено.
+
+Хосты вроде aaa.pro / adobeaemcloud.com / altervista.org встречаются только в Public Suffix List внутри `umd-tough-cookie.js` (библиотека cookie), а не как сетевые адреса приложения. Рабочие хосты приложения (aviatorassistant.com и поддомены, openfreemap.org, weather.gov и т.п.) относятся к собственному бэкенду/картам/погоде и к крупным известным сервисам — в таблицу подозрительных не включаются.
+>>>>>>> origin/main

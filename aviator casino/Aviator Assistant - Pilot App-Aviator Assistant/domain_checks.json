@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "all_custom_domains": [
     "aaa.pro",
     "ac.me",
@@ -3519,4 +3520,8 @@
   ],
   "count": 8,
   "vt_configured": true
+=======
+  "suspicious_domains": [],
+  "note": "PSL noise filtered; no custom cloak/gate hosts"
+>>>>>>> origin/main
 }

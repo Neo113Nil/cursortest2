@@ -418,6 +418,7 @@
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Not Found. Not Found Error 404 Object not found This object does not exist or is not publicly accessible at this URL. Check the URL of the object that you're looking for or contact the owner to enable Public access. Is this your bucket? Learn how to enable Public Access |
+<<<<<<< HEAD
 | Где припаркован | регистратор: NameCheap, Inc. |
 
 ## Проверка домена: atmegame.com
@@ -839,3 +840,6 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Zygomatic Default Webpage. Zygomatic Default Webpage |
 | Где припаркован | регистратор: InterNetX GmbH |
+=======
+| Где припаркован | регистратор: NameCheap |
+>>>>>>> origin/main

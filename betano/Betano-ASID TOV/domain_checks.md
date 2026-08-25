@@ -1,5 +1,6 @@
 # Проверка подозрительных доменов
 
+<<<<<<< HEAD
 ## Проверка домена: config.ru
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
@@ -104,3 +105,7 @@
 | Куда редиректит | https://config.ru/en/ |
 | Что выводит (кратко) | title: config.ru is for sale. config.ru is for sale en ru en config.ru This domain is for sale The domain is actually the site name and its correct choice influences greatly on the your endeavors success. Often, cost of the domain change during the project running is comparable with the re-branding, so the be |
 | Где припаркован | похоже на парковку (domain is for sale) |
+=======
+Подозрительных (кастомных/неизвестных) доменов в приложении не найдено.
+Крупные SDK/Google/Android-хосты в отчёт не включаются.
+>>>>>>> origin/main

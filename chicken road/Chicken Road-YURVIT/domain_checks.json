@@ -393,6 +393,7 @@
         "categories": {},
         "popularity_ranks": "нет",
         "creation_date": 1547669556,
+<<<<<<< HEAD
         "last_modification_date": 1787696600,
         "last_analysis_date": 1787696278,
         "registrar": "MarkMonitor Inc.",
@@ -405,6 +406,20 @@
           "AAAA 2001:4860:4802:32::15",
           "AAAA 2001:4860:4802:36::15",
           "AAAA 2001:4860:4802:34::15",
+=======
+        "last_modification_date": 1785203951,
+        "last_analysis_date": 1785200512,
+        "registrar": "MarkMonitor Inc.",
+        "whois": "Admin City: REDACTED FOR PRIVACY\nAdmin Country: REDACTED FOR PRIVACY\nAdmin Organization: REDACTED FOR PRIVACY\nAdmin Postal Code: REDACTED FOR PRIVACY\nAdmin State/Province: REDACTED FOR PRIVACY\nBilling City: REDACTED FOR PRIVACY\nBilling Country: REDACTED FOR PRIVACY\nBilling Organization: REDACTED FOR PRIVACY\nBilling Postal Code: REDACTED FOR PRIVACY\nBilling State/Province: REDACTED FOR PRIVACY\nCreation Date: 2019-01-16T20:12:36Z\nDNSSEC: unsigned\nDomain Name: chrome.dev\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: ns1.googledomains.com\nName Server: ns2.googledomains.com\nName Server: ns3.googledomains.com\nName Server: ns4.googledomains.com\nRegistrant City: 1f8f4166599d23ee\nRegistrant Country: US\nRegistrant Email: d807ea723facd141s@\nRegistrant Fax: 1f8f4166599d23ee\nRegistrant Name: 1f8f4166599d23ee\nRegistrant Organization: 3307059bbb3149c4\nRegistrant Phone: 1f8f4166599d23ee\nRegistrant Postal Code: 1f8f4166599d23ee\nRegistrant State/Province: b1952dfc047df18a\nRegistrant Street: 1f8f4166599d23ee\nRegistrar Abuse Contact Email: abusecomplaints@markmonitor.com\nRegistrar Abuse Contact Phone: +1.2083895740\nRegistrar IANA ID: 292\nRegistrar URL: http://www.markmonitor.com\nRegistrar WHOIS Server: whois.nic.google\nRegistrar: MarkMonitor Inc.\nRegistry Admin ID: REDACTED FOR PRIVACY\nRegistry Billing ID: REDACTED FOR PRIVACY\nRegistry Domain ID: 30718AF2B-DEV\nRegistry Expiry Date: 2026-01-16T20:12:36Z\nRegistry Registrant ID: REDACTED FOR PRIVACY\nRegistry Tech ID: REDACTED FOR PRIVACY\nTech City: REDACTED FOR PRIVACY\nTech Country: REDACTED FOR PRIVACY\nTech Organization: REDACTED FOR PRIVACY\nTech Postal Code: REDACTED FOR PRIVACY\nTech State/Province: REDACTED FOR PRIVACY\nUpdated Date: 2024-12-20T10:29:49Z",
+        "dns_records": [
+          "AAAA 2001:4860:4802:36::15",
+          "A 216.239.38.21",
+          "A 216.239.36.21",
+          "A 216.239.34.21",
+          "AAAA 2001:4860:4802:38::15",
+          "AAAA 2001:4860:4802:34::15",
+          "AAAA 2001:4860:4802:32::15",
+>>>>>>> origin/main
           "A 216.239.32.21"
         ],
         "https_subject": "нет",
@@ -1210,7 +1225,11 @@
           "Alexa: 154787"
         ],
         "creation_date": null,
+<<<<<<< HEAD
         "last_modification_date": 1787378690,
+=======
+        "last_modification_date": 1784963134,
+>>>>>>> origin/main
         "last_analysis_date": 1784959043,
         "registrar": "RU-CENTER-RU",
         "whois": "Last updated on 2026-07-25T06:23:01Z\ncreated: 1998-01-21T09:17:54Z\ndomain: CONFIG.RU\nnserver: ns1.domainparking.ru.\nnserver: ns2.domainparking.ru.\npaid-till: 2027-01-31T21:00:00Z\nregistrar: RU-CENTER-RU\nsource: TCI\nstate: REGISTERED, DELEGATED, VERIFIED",
@@ -1234,6 +1253,7 @@
         ],
         "tags": []
       },
+<<<<<<< HEAD
       "redirects_to": "https://config.ru/en/",
       "redirect_chain": [
         "https://config.ru/",
@@ -1243,6 +1263,14 @@
       "parked_at": "похоже на парковку (domain is for sale)",
       "final_url": "https://config.ru/en/",
       "http_status": 200,
+=======
+      "redirects_to": "нет",
+      "redirect_chain": [],
+      "page_output": "не удалось открыть (ReadTimeout)",
+      "parked_at": "регистратор: RU-CENTER-RU",
+      "final_url": "",
+      "http_status": null,
+>>>>>>> origin/main
       "table_rows": [
         {
           "param": "Домен",
@@ -1626,6 +1654,7 @@
         },
         {
           "param": "Куда редиректит",
+<<<<<<< HEAD
           "value": "https://config.ru/en/"
         },
         {
@@ -1635,6 +1664,17 @@
         {
           "param": "Где припаркован",
           "value": "похоже на парковку (domain is for sale)"
+=======
+          "value": "нет"
+        },
+        {
+          "param": "Что выводит (кратко)",
+          "value": "не удалось открыть (ReadTimeout)"
+        },
+        {
+          "param": "Где припаркован",
+          "value": "регистратор: RU-CENTER-RU"
+>>>>>>> origin/main
         }
       ]
     },
@@ -1647,8 +1687,13 @@
         "last_analysis_stats": {
           "malicious": 6,
           "suspicious": 0,
+<<<<<<< HEAD
           "undetected": 35,
           "harmless": 50,
+=======
+          "undetected": 33,
+          "harmless": 52,
+>>>>>>> origin/main
           "timeout": 0
         },
         "vendor_rows": [
@@ -1717,6 +1762,13 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
+=======
+            "Criminal IP",
+            "Clean"
+          ],
+          [
+>>>>>>> origin/main
             "CTX AI",
             "Clean"
           ],
@@ -1869,6 +1921,13 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
+=======
+            "Xcitium Verdict Cloud",
+            "Clean"
+          ],
+          [
+>>>>>>> origin/main
             "Yandex Safebrowsing",
             "Clean"
           ],
@@ -1913,10 +1972,13 @@
             "Unrated"
           ],
           [
+<<<<<<< HEAD
             "Criminal IP",
             "Unrated"
           ],
           [
+=======
+>>>>>>> origin/main
             "CSIS Security Group",
             "Unrated"
           ],
@@ -2009,10 +2071,13 @@
             "Unrated"
           ],
           [
+<<<<<<< HEAD
             "Xcitium Verdict Cloud",
             "Unrated"
           ],
           [
+=======
+>>>>>>> origin/main
             "ZeroFox",
             "Unrated"
           ]
@@ -2025,6 +2090,7 @@
         "categories": {},
         "popularity_ranks": "нет",
         "creation_date": 1779603366,
+<<<<<<< HEAD
         "last_modification_date": 1787429384,
         "last_analysis_date": 1787389544,
         "registrar": "NAMECHEAP INC",
@@ -2037,6 +2103,20 @@
           "NS clay.ns.cloudflare.com",
           "AAAA 2606:4700:3037::ac43:d429",
           "A 172.67.212.41"
+=======
+        "last_modification_date": 1785229377,
+        "last_analysis_date": 1785228603,
+        "registrar": "NAMECHEAP INC",
+        "whois": "Admin City: REDACTED\nAdmin City: Reykjavik\nAdmin Country: IS\nAdmin Country: REDACTED\nAdmin Email: d9a8dd86a12ac9f2s@withheldforprivacy.com\nAdmin Organization: Privacy service provided by Withheld for Privacy ehf\nAdmin Organization: REDACTED\nAdmin Postal Code: 101\nAdmin Postal Code: REDACTED\nAdmin State/Province: Capital Region\nAdmin State/Province: REDACTED\nCreation Date: 2026-05-24T06:16:06.85Z\nCreation Date: 2026-05-24T06:16:06Z\nDNSSEC: unsigned\nDomain Name: dispatchers.io\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain name: dispatchers.io\nName Server: clay.ns.cloudflare.com\nName Server: fish.ns.cloudflare.com\nRegistrant City: 3495bcf1839c6374\nRegistrant City: ddbf76e4e8cee320\nRegistrant Country: IS\nRegistrant Email: d9a8dd86a12ac9f2s@withheldforprivacy.com\nRegistrant Email: fb6ff66ef97c0518s@\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax Ext: 3495bcf1839c6374\nRegistrant Fax: 3432650ec337c945\nRegistrant Fax: 3495bcf1839c6374\nRegistrant Name: 3495bcf1839c6374\nRegistrant Name: 37bfbc24cafea5d2\nRegistrant Organization: 4b7a0912c26a13e2\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone Ext: 3495bcf1839c6374\nRegistrant Phone: 1c9a7bcdeaf95e9f\nRegistrant Phone: 3495bcf1839c6374\nRegistrant Postal Code: 3495bcf1839c6374\nRegistrant Postal Code: f206c9d9737ad45d\nRegistrant State/Province: 3e0204199d8ebf9c\nRegistrant Street: 3495bcf1839c6374\nRegistrant Street: c6523241936df1ba\nRegistrar Abuse Contact Email: abuse@namecheap.com\nRegistrar Abuse Contact Phone: +1.9854014545\nRegistrar IANA ID: 1068\nRegistrar Registration Expiration Date: 2027-05-24T06:16:06.85Z\nRegistrar URL: http://www.namecheap.com\nRegistrar URL: https://www.namecheap.com/\nRegistrar WHOIS Server: whois.namecheap.com\nRegistrar: NAMECHEAP INC\nRegistrar: NameCheap, Inc.\nRegistry Admin ID: REDACTED\nRegistry Domain ID: REDACTED\nRegistry Domain ID: c0e28c3ed35a49e59d9c18f727e31c45-DONUTS\nRegistry Expiry Date: 2027-05-24T06:16:06Z\nRegistry Registrant ID: REDACTED\nRegistry Tech ID: REDACTED\nTech City: REDACTED\nTech City: Reykjavik\nTech Country: IS\nTech Country: REDACTED\nTech Email: d9a8dd86a12ac9f2s@withheldforprivacy.com\nTech Organization: Privacy service provided by Withheld for Privacy ehf\nTech Organization: REDACTED\nTech Postal Code: 101\nTech Postal Code: REDACTED\nTech State/Province: Capital Region\nTech State/Province: REDACTED\nUpdated Date: 0001-01-01T00:00:00.00Z\nUpdated Date: 2026-05-29T06:16:15Z",
+        "dns_records": [
+          "NS clay.ns.cloudflare.com",
+          "A 104.21.61.164",
+          "SOA clay.ns.cloudflare.com",
+          "NS fish.ns.cloudflare.com",
+          "AAAA 2606:4700:3037::ac43:d429",
+          "A 172.67.212.41",
+          "AAAA 2606:4700:3037::6815:3da4"
+>>>>>>> origin/main
         ],
         "https_subject": {
           "CN": "dispatchers.io"
@@ -2059,12 +2139,24 @@
         ],
         "tags": []
       },
+<<<<<<< HEAD
       "redirects_to": "нет",
       "redirect_chain": [],
       "page_output": "не удалось открыть (ReadTimeout)",
       "parked_at": "регистратор: NAMECHEAP INC",
       "final_url": "",
       "http_status": null,
+=======
+      "redirects_to": "https://cakhiatv1.net/",
+      "redirect_chain": [
+        "https://dispatchers.io/",
+        "https://cakhiatv1.net/"
+      ],
+      "page_output": "title: CakhiaTV cakhiatv1.net - Trực tiếp bóng đá AFF Cup 2026 Việt Nam. CakhiaTV cakhiatv1.net - Trực tiếp bóng đá AFF Cup 2026 Việt Nam Bỏ qua nội dung World Cup 2026 CakhiaTV Bảng xếp hạng Kết quả bóng đá Lịch Thi Đấu Nhận Định Tin Tức Bóng Đá Danh Thủ Bóng Đá CakhiaTV – Trực tiếp bóng đá xuyên suốt World Cup 2026 Tất cả 0 Trực tiếp 0 Trận hot 0 Hô",
+      "parked_at": "регистратор: NAMECHEAP INC",
+      "final_url": "https://cakhiatv1.net/",
+      "http_status": 200,
+>>>>>>> origin/main
       "table_rows": [
         {
           "param": "Домен",
@@ -2147,6 +2239,13 @@
           "value": "Clean"
         },
         {
+<<<<<<< HEAD
+=======
+          "param": "Criminal IP",
+          "value": "Clean"
+        },
+        {
+>>>>>>> origin/main
           "param": "CTX AI",
           "value": "Clean"
         },
@@ -2299,6 +2398,13 @@
           "value": "Clean"
         },
         {
+<<<<<<< HEAD
+=======
+          "param": "Xcitium Verdict Cloud",
+          "value": "Clean"
+        },
+        {
+>>>>>>> origin/main
           "param": "Yandex Safebrowsing",
           "value": "Clean"
         },
@@ -2343,10 +2449,13 @@
           "value": "Unrated"
         },
         {
+<<<<<<< HEAD
           "param": "Criminal IP",
           "value": "Unrated"
         },
         {
+=======
+>>>>>>> origin/main
           "param": "CSIS Security Group",
           "value": "Unrated"
         },
@@ -2439,20 +2548,31 @@
           "value": "Unrated"
         },
         {
+<<<<<<< HEAD
           "param": "Xcitium Verdict Cloud",
           "value": "Unrated"
         },
         {
+=======
+>>>>>>> origin/main
           "param": "ZeroFox",
           "value": "Unrated"
         },
         {
           "param": "Куда редиректит",
+<<<<<<< HEAD
           "value": "нет"
         },
         {
           "param": "Что выводит (кратко)",
           "value": "не удалось открыть (ReadTimeout)"
+=======
+          "value": "https://cakhiatv1.net/"
+        },
+        {
+          "param": "Что выводит (кратко)",
+          "value": "title: CakhiaTV cakhiatv1.net - Trực tiếp bóng đá AFF Cup 2026 Việt Nam. CakhiaTV cakhiatv1.net - Trực tiếp bóng đá AFF Cup 2026 Việt Nam Bỏ qua nội dung World Cup 2026 CakhiaTV Bảng xếp hạng Kết quả bóng đá Lịch Thi Đấu Nhận Định Tin Tức Bóng Đá Danh Thủ Bóng Đá CakhiaTV – Trực tiếp bóng đá xuyên suốt World Cup 2026 Tất cả 0 Trực tiếp 0 Trận hot 0 Hô"
+>>>>>>> origin/main
         },
         {
           "param": "Где припаркован",

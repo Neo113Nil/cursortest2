@@ -206,9 +206,15 @@
 | URLQuery | Unrated |
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
+<<<<<<< HEAD
 | Куда редиректит | https://config.ru/en/ |
 | Что выводит (кратко) | title: config.ru is for sale. config.ru is for sale en ru en config.ru This domain is for sale The domain is actually the site name and its correct choice influences greatly on the your endeavors success. Often, cost of the domain change during the project running is comparable with the re-branding, so the be |
 | Где припаркован | похоже на парковку (domain is for sale) |
+=======
+| Куда редиректит | нет |
+| Что выводит (кратко) | не удалось открыть (ReadTimeout) |
+| Где припаркован | регистратор: RU-CENTER-RU |
+>>>>>>> origin/main
 
 ## Проверка домена: dispatchers.io
 
@@ -236,6 +242,10 @@
 | Certego | Clean |
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
+<<<<<<< HEAD
+=======
+| Criminal IP | Clean |
+>>>>>>> origin/main
 | CTX AI | Clean |
 | Cyble | Clean |
 | CyRadar | Clean |
@@ -274,6 +284,10 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+<<<<<<< HEAD
+=======
+| Xcitium Verdict Cloud | Clean |
+>>>>>>> origin/main
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -285,7 +299,10 @@
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
 | Cluster25 | Unrated |
+<<<<<<< HEAD
 | Criminal IP | Unrated |
+=======
+>>>>>>> origin/main
 | CSIS Security Group | Unrated |
 | Cyan | Unrated |
 | DNS8 | Unrated |
@@ -309,10 +326,16 @@
 | SOCRadar | Unrated |
 | URLQuery | Unrated |
 | VIPRE | Unrated |
+<<<<<<< HEAD
 | Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет |
 | Что выводит (кратко) | не удалось открыть (ReadTimeout) |
+=======
+| ZeroFox | Unrated |
+| Куда редиректит | https://cakhiatv1.net/ |
+| Что выводит (кратко) | title: CakhiaTV cakhiatv1.net - Trực tiếp bóng đá AFF Cup 2026 Việt Nam. CakhiaTV cakhiatv1.net - Trực tiếp bóng đá AFF Cup 2026 Việt Nam Bỏ qua nội dung World Cup 2026 CakhiaTV Bảng xếp hạng Kết quả bóng đá Lịch Thi Đấu Nhận Định Tin Tức Bóng Đá Danh Thủ Bóng Đá CakhiaTV – Trực tiếp bóng đá xuyên suốt World Cup 2026 Tất cả 0 Trực tiếp 0 Trận hot 0 Hô |
+>>>>>>> origin/main
 | Где припаркован | регистратор: NAMECHEAP INC |
 
 ## Проверка домена: systemuioverlay.top

@@ -417,6 +417,7 @@
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | https://developers.klaviyo.com/en |
+<<<<<<< HEAD
 | Что выводит (кратко) | title: API Reference &amp; Technical Guides \| Klaviyo Developers. API Reference &amp; Technical Guides \| Klaviyo Developers Jump to Content Home Guides API Reference legacy v2022-10-17 v2023-01-24 v2023-02-22 v2023-06-15 v2023-07-15 v2023-08-15 v2023-09-15 v2023-10-15 v2023-12-15 v2024-02-15 v2024-05-15 v2024-06-15 v2024-07-15 v2024-10-15 v2025 |
 | Где припаркован | регистратор: NAMECHEAP INC |
 
@@ -839,3 +840,7 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | klaviyo-onsite-api-cache 1000 true fonts/api/v1/64vewd/custom_fonts.css 2022-01-25T18:27:52.000Z &quot;d41d8cd98f00b204e9800998ecf8427e&quot; 0 STANDARD fonts/api/v1/8S7f64/custom_fonts.css 2025-09-18T15:02:20.000Z &quot;07bc1bdba5bdaa86bdfcbc41c9d993fd&quot; CRC32 FULL_OBJECT 26 |
 | Где припаркован | регистратор: NAMECHEAP INC |
+=======
+| Что выводит (кратко) | title: API Reference &amp; Technical Guides \| Klaviyo Devel |
+| Где припаркован | нет данных |
+>>>>>>> origin/main

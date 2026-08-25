@@ -1,5 +1,6 @@
 # Проверка подозрительных доменов
 
+<<<<<<< HEAD
 ## Проверка домена: config.ru
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
@@ -314,3 +315,17 @@
 | Куда редиректит | нет (DNS не резолвится) |
 | Что выводит (кратко) | нет (DNS не резолвится) |
 | Где припаркован | регистратор: Dynadot Inc |
+=======
+Полный VirusTotal Security vendors' analysis для этих хостов в пакете отсутствует.
+Домены взяты из расшифрованного кода клоаки (gate / оффер).
+
+## gamebriefing.xyz
+- Gate: https://www.gamebriefing.xyz/aladio02
+- Ответ: JSON remote-config (campaign.tag, runtime.links, adsCenter, remoteService)
+- Редирект HTML: нет
+
+## multigamezone.com
+- Оффер: https://207.multigamezone.com/action-game.html
+- Контент: MultiGameZone — free online games landing
+- Редирект: страница оффера
+>>>>>>> origin/main

@@ -1,6 +1,7 @@
 {
   "ok": true,
   "apks": [
+<<<<<<< HEAD
     "com.zenithlabs.aviatorgame-1-config.en.apk",
     "com.zenithlabs.aviatorgame-1-config.xxhdpi.apk",
     "com.zenithlabs.aviatorgame-1-config.lt.apk",
@@ -50,4 +51,26 @@
     "decompiled/sources/pl/"
   ],
   "errors": []
+=======
+    "com.zenithlabs.aviatorgame.apk",
+    "config.armeabi_v7a.apk",
+    "config.en.apk",
+    "config.mdpi.apk"
+  ],
+  "base_apk": "com.zenithlabs.aviatorgame.apk",
+  "jadx": {
+    "ok": true,
+    "out_dir": "decompiled",
+    "skipped": false,
+    "base_apk": "com.zenithlabs.aviatorgame.apk"
+  },
+  "source": "apkeep-fail; apkcombo xapk via browser",
+  "xapk": "com.zenithlabs.aviatorgame.xapk",
+  "analysis_files": [
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "report.pdf"
+  ]
+>>>>>>> origin/main
 }

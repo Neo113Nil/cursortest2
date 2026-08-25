@@ -1,23 +1,35 @@
 {
   "ok": true,
   "apks": [
+<<<<<<< HEAD
     "net.livesports.melbet-1-config.xxhdpi.apk",
     "net.livesports.melbet-1-config.arm64_v8a.apk",
     "net.livesports.melbet-1-asset.apk",
     "net.livesports.melbet-1-config.en.apk",
     "net.livesports.melbet-1.apk"
+=======
+    "net.livesports.melbet-1.apk",
+    "net.livesports.melbet-1-config.arm64_v8a.apk",
+    "net.livesports.melbet-1-config.en.apk",
+    "net.livesports.melbet-1-config.mdpi.apk"
+>>>>>>> origin/main
   ],
   "base_apk": "net.livesports.melbet-1.apk",
   "jadx": {
     "ok": true,
+<<<<<<< HEAD
     "exit_code": 1,
     "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 4359 (0%)\nINFO  - progress: 297 of 4359 (6%)\nINFO  - progress: 448 of 4359 (10%)\nINFO  - progress: 844 of 4359 (19%)\nINFO  - progress: 1037 of 4359 (23%)\nINFO  - progress: 1164 of 4359 (26%)\nINFO  - progress: 1445 of 4359 (33%)\nINFO  - progress: 1593 of 4359 (36%)\nINFO  - progress: 1877 of 4359 (43%)\nINFO  - progress: 2066 of 4359 (47%)\nINFO  - progress: 2218 of 4359 (50%)\nINFO  - progress: 2516 of 4359 (57%)\nINFO  - progress: 2716 of 4359 (62%)\nINFO  - progress: 3008 of 4359 (69%)\nINFO  - progress: 3310 of 4359 (75%)\nINFO  - progress: 3663 of 4359 (84%)\nINFO  - progress: 3852 of 4359 (88%)\nINFO  - progress: 4046 of 4359 (92%)\nINFO  - progress: 4081 of 4359 (93%)\nINFO  - progress: 4144 of 4359 (95%)\nINFO  - progress: 4297 of 4359 (98%)\n                                                             \nERROR - finished with errors, count: 47\n",
     "stderr": "",
     "out_dir": "/root/play-collector/загрузки/melbet/Melbet App-Alauddin Technology Limited/decompiled",
+=======
+    "out_dir": "decompiled",
+>>>>>>> origin/main
     "skipped": false,
     "base_apk": "net.livesports.melbet-1.apk"
   },
   "analysis_files": [
+<<<<<<< HEAD
     "net.livesports.melbet-1-config.xxhdpi.apk",
     "net.livesports.melbet-1-config.arm64_v8a.apk",
     "net.livesports.melbet-1-asset.apk",
@@ -54,4 +66,12 @@
     "decompiled/sources/D1/"
   ],
   "errors": []
+=======
+    "net.livesports.melbet.xapk",
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "report.pdf"
+  ]
+>>>>>>> origin/main
 }

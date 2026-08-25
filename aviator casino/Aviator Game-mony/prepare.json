@@ -1,6 +1,7 @@
 {
   "ok": true,
   "apks": [
+<<<<<<< HEAD
     "com.theaviatorgame.realmoneyaviatorgame-1-config.xxhdpi.apk",
     "com.theaviatorgame.realmoneyaviatorgame-1-asset.apk",
     "com.theaviatorgame.realmoneyaviatorgame-1-config.arm64_v8a.apk",
@@ -60,4 +61,26 @@
     "decompiled/sources/C/"
   ],
   "errors": []
+=======
+    "com.theaviatorgame.realmoneyaviatorgame.apk",
+    "config.armeabi_v7a.apk",
+    "config.en.apk",
+    "config.mdpi.apk"
+  ],
+  "base_apk": "com.theaviatorgame.realmoneyaviatorgame.apk",
+  "jadx": {
+    "ok": true,
+    "out_dir": "decompiled",
+    "skipped": false,
+    "base_apk": "com.theaviatorgame.realmoneyaviatorgame.apk"
+  },
+  "source": "apkeep:apk-pure",
+  "xapk": "com.theaviatorgame.realmoneyaviatorgame.xapk",
+  "analysis_files": [
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "report.pdf"
+  ]
+>>>>>>> origin/main
 }
