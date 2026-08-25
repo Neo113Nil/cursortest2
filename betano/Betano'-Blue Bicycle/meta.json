@@ -1,0 +1,24 @@
+{
+  "app_id": "com.resistance.blocker.defense.tactical",
+  "title": "Betano'",
+  "developer": "Blue Bicycle",
+  "developer_id": "Blue+Bicycle",
+  "url": "https://play.google.com/store/apps/details?id=com.resistance.blocker.defense.tactical&hl=en&gl=us",
+  "keyword": "betano",
+  "source": "apkcombo",
+  "updated": "Jul 19, 2026",
+  "version": "1.0",
+  "version_code": "1",
+  "summary": "Football chase game with weather and survival",
+  "folder": "Betano'-Blue Bicycle",
+  "path": "betano/Betano'-Blue Bicycle",
+  "apk_title": "Victory Blocker",
+  "store_title_mismatch": true,
+  "ok": true,
+  "files": [
+    "com.resistance.blocker.defense.tactical-1.apk",
+    "com.resistance.blocker.defense.tactical-1-config.en.apk",
+    "com.resistance.blocker.defense.tactical-1-config.fr.apk",
+    "com.resistance.blocker.defense.tactical-1-config.xxhdpi.apk"
+  ]
+}
