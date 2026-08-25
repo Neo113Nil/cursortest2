@@ -1,0 +1,56 @@
+{
+  "app_id": "com.foi.custck",
+  "title": "Betano",
+  "developer": "ASID TOV",
+  "score": null,
+  "icon": "/static/app-icons/com_foi_custck.png",
+  "url": "https://play.google.com/store/apps/details?id=com.foi.custck&hl=en&gl=us",
+  "keyword": "betano",
+  "country": "India",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260825_120807_India_betano_search",
+  "search_title": "Betano",
+  "search_developer": "ASID TOV",
+  "rank": 5,
+  "developer_id": "ASID+TOV",
+  "released": "Apr 19, 2026",
+  "updated": "Apr 19, 2026",
+  "version": "Varies with device",
+  "summary": "Simple timer for deep work and focused sessions",
+  "folder": "Betano-ASID TOV",
+  "path": "betano/Betano-ASID TOV",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.foi.custck-1-asset.apk",
+    "com.foi.custck-1-config.arm64_v8a.apk",
+    "com.foi.custck-1-config.en.apk",
+    "com.foi.custck-1-config.lt.apk",
+    "com.foi.custck-1-config.ru.apk",
+    "com.foi.custck-1-config.xxhdpi.apk",
+    "com.foi.custck-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/betano/Betano-ASID TOV",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.foi.custck ─╮\n│ Betano           │\n│ 1.0  (vc 1)      │\n╰──────────────────╯\n\nDownloading 7 files  (26.7 MB)\n  com.foi.custck-1.apk                  ━━━━━━━━ 100% 20.4/20.4 7.6 MB/s 0:00:00\n                                                      MB                        \n  com.foi.custck-1-config.arm64_v8a.apk ━━━━━━━━ 100% 45.5/45.5 ?        0:00:00\n                                                      kB                        \n  com.foi.custck-1-config.en.apk        ━━━━━━━━ 100% 61.8/61.8 ?        0:00:00\n                                                      kB                        \n  com.foi.custck-1-config.lt.apk        ━━━━━━━━ 100% 25.0/25.0 ?        0:00:00\n                                                      kB                        \n  com.foi.custck-1-config.ru.apk        ━━━━━━━━ 100% 25.0/25.0 ?        0:00:00\n                                                      kB                        \n  com.foi.custck-1-config.xxhdpi.apk    ━━━━━━━━ 100% 21.4/21.4 ?        0:00:00\n                                                      kB                        \n  com.foi.custck-1-asset.apk            ━━━━━━━━ 100% 7.4/7.4   8.3 MB/s 0:00:00\n                                                      MB                        \n\n                 Downloaded files                  \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                  ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.foi.custck-1.apk                  │ 19.4 MB │\n│ com.foi.custck-1-config.arm64_v8a.apk │ 44.4 KB │\n│ com.foi.custck-1-config.en.apk        │ 60.4 KB │\n│ com.foi.custck-1-config.lt.apk        │ 24.4 KB │\n│ com.foi.custck-1-config.ru.apk        │ 24.4 KB │\n│ com.foi.custck-1-config.xxhdpi.apk    │ 20.9 KB │\n│ com.foi.custck-1-asset.apk            │ 19.4 MB │\n└───────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.foi.custck ─╮\n│ Betano           │\n│ 1.0  (vc 1)      │\n╰──────────────────╯\n\nDownloading 7 files  (26.7 MB)\n  com.foi.custck-1.apk                  ━━━━━━━━ 100% 20.4/20.4 7.6 MB/s 0:00:00\n                                                      MB                        \n  com.foi.custck-1-config.arm64_v8a.apk ━━━━━━━━ 100% 45.5/45.5 ?        0:00:00\n                                                      kB                        \n  com.foi.custck-1-config.en.apk        ━━━━━━━━ 100% 61.8/61.8 ?        0:00:00\n                                                      kB                        \n  com.foi.custck-1-config.lt.apk        ━━━━━━━━ 100% 25.0/25.0 ?        0:00:00\n                                                      kB                        \n  com.foi.custck-1-config.ru.apk        ━━━━━━━━ 100% 25.0/25.0 ?        0:00:00\n                                                      kB                        \n  com.foi.custck-1-config.xxhdpi.apk    ━━━━━━━━ 100% 21.4/21.4 ?        0:00:00\n                                                      kB                        \n  com.foi.custck-1-asset.apk            ━━━━━━━━ 100% 7.4/7.4   8.3 MB/s 0:00:00\n                                                      MB                        \n\n                 Downloaded files                  \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                  ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.foi.custck-1.apk                  │ 19.4 MB │\n│ com.foi.custck-1-config.arm64_v8a.apk │ 44.4 KB │\n│ com.foi.custck-1-config.en.apk        │ 60.4 KB │\n│ com.foi.custck-1-config.lt.apk        │ 24.4 KB │\n│ com.foi.custck-1-config.ru.apk        │ 24.4 KB │\n│ com.foi.custck-1-config.xxhdpi.apk    │ 20.9 KB │\n│ com.foi.custck-1-asset.apk            │ 19.4 MB │\n└───────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
