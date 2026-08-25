@@ -26,5 +26,8 @@
   "target_sdk": 36,
   "agp": "8.7.3",
   "kotlin": "2.0.21",
-  "gate_url": "https://misty-moon-76b0.sinyavitttsky-s.workers.dev/?app=com.wincatch.neon"
+  "gate_url": "https://misty-moon-76b0.sinyavitttsky-s.workers.dev/?app=com.wincatch.neon",
+  "suspicious_domains": [
+    "misty-moon-76b0.sinyavitttsky-s.workers.dev"
+  ]
 }
