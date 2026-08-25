@@ -48,5 +48,113 @@
   "stdout": "╭─ com.Budge.KickGoalFever ─╮\n│ Betano                    │\n│ 61.0  (vc 61)             │\n╰───────────────────────────╯\n\nDownloading 3 files  (39.3 MB)\n  com.Budge.KickGoalFever-61.apk                  ━━━━━ 100% 11.6… 7.5    0:00:…\n                                                             MB    MB/s         \n  com.Budge.KickGoalFever-61-config.arm64_v8a.apk ━━━━━ 100% 19.7… 6.8    0:00:…\n                                                             MB    MB/s         \n  com.Budge.KickGoalFever-61-asset.apk            ━━━━━ 100% 9.9/… 8.1    0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.Budge.KickGoalFever-61.apk                  │ 11.1 MB │\n│ com.Budge.KickGoalFever-61-config.arm64_v8a.apk │ 18.8 MB │\n│ com.Budge.KickGoalFever-61-asset.apk            │ 11.1 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Betano"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "28"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.ACCESS_NETWORK_STATE, android.permission.INTERNET, com.Budge.KickGoalFever.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity, UniWebView (com.onevcat.uniwebview), androidx.appcompat, androidx.browser, androidx.core, kotlinx.coroutines, com.calcmetric.bridge, com.pairip, FMOD, org.json"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "kick-goal-fever.store, doc-hosting.flycricket.io, api.uca.cloud, dispatchers.io"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "файл ewrqrrer6, ключ hgnnnbbnnb7 — сохраняет ссылку оффера после проверки сервера"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "emulator, vpn, redirect, webview"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "api.uca.cloud",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: TUCOWS.COM, CO."
+      },
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "doc-hosting.flycricket.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: GANDI SAS"
+      },
+      {
+        "domain": "kick-goal-fever.store",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      }
+    ],
+    "collected_data": [
+      "Имя пакета приложения",
+      "Метка времени",
+      "Случайный одноразовый код",
+      "Цифровая подпись запроса",
+      "Строка User-Agent фиксированная",
+      "Страна SIM-карты",
+      "Модель телефона",
+      "Производитель телефона",
+      "Бренд устройства",
+      "Имя устройства",
+      "Продукт устройства",
+      "Аппаратная платформа",
+      "Плата устройства",
+      "Загрузчик устройства",
+      "Отпечаток прошивки",
+      "Признак VPN",
+      "Признаки эмулятора"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Имя пакета приложения\n• Метка времени\n• Случайный одноразовый код\n• Цифровая подпись запроса\n• Строка User-Agent фиксированная\n• Страна SIM-карты\n• Модель телефона\n• Производитель телефона\n• Бренд устройства\n• Имя устройства\n• Продукт устройства\n• Аппаратная платформа\n• Плата устройства\n• Загрузчик устройства\n• Отпечаток прошивки\n• Признак VPN\n• Признаки эмулятора\n\nКак собираются: Сразу после запуска игровой части приложение само вызывает скрытую проверку через встроенный служебный мост к Android-коду. Человек этого обычно не замечает: отдельного окна с разрешением нет. Приложение само читает из системы Android страну SIM-карты, сведения о телефоне (модель, производитель, отпечаток прошивки и похожие поля) и проверяет, нет ли VPN или признаков эмулятора. Это делается в фоне на отдельном потоке. Для сетевого запроса приложение само собирает метку времени, случайный одноразовый код и цифровую подпись, а в заголовки кладёт имя пакета com.Budge.KickGoalFever и фиксированную строку User-Agent.\n\nКуда отправляются: Сначала уходит тихий GET-запрос на адрес https://kick-goal-fever.store/reireir-wreqewrq/index.php — без параметров в ссылке, просто проверка ответа сервера. Если первый ответ подходит, следом уходит POST на https://kick-goal-fever.store/eriiortoitoitro/rqqwreererrere.php. В теле отправляются метка времени, одноразовый код и подпись; в заголовках — имя пакета и фиксированный User-Agent. Это не показ рекламы на экране, а скрытая проверка «что показать этому человеку». Если сервер вернул ссылку, приложение сохраняет её в памяти приложения (SharedPreferences, файл ewrqrrer6) и потом открывает.\n\nКак фильтруются пользователи: Сначала решение принимает само приложение на телефоне. Если устройство похоже на эмулятор, SIM-карты нет, страна SIM не из разрешённого набора (в коде: it, ar, br, pe, cl, pt, ru) или при «разрешённой» стране включён VPN — человеку сразу оставляют обычное приложение. Если локальные проверки пройдены, дальше решает сервер. На первый адрес ждут ответ ровно в виде пустого объекта {}. Любой другой или пустой ответ снова ведёт к обычному приложению. После успешного первого ответа сервер по второму запросу решает, дать сс…"
+  }
 }

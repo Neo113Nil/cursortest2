@@ -114,7 +114,13 @@
         "value": "workers.dev, rurl, status"
       }
     ],
-    "domains": [],
+    "domains": [
+      {
+        "domain": "misty-moon-76b0.sinyavitttsky-s.workers.dev",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: CloudFlare, Inc."
+      }
+    ],
     "collected_data": [
       "Имя пакета приложения",
       "Модель телефона",

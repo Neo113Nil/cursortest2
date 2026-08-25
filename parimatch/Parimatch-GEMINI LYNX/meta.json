@@ -1,57 +1,6 @@
 {
-  "app_id": "lynx.parlayscrorepro.app",
   "title": "Parimatch",
   "developer": "GEMINI LYNX",
-<<<<<<< HEAD
-  "score": null,
-  "icon": "/static/app-icons/lynx_parlayscrorepro_app.png",
-  "url": "https://play.google.com/store/apps/details?id=lynx.parlayscrorepro.app&hl=en&gl=us",
-  "keyword": "Parimatch",
-  "country": "Germany",
-  "source": "gplaydl",
-  "sponsored": false,
-  "match_via": "phone-install",
-  "geelark_search_dir": "/root/play-collector/geelark_poc/20260824_184122_Germany_Parimatch_search",
-  "search_title": "Parimatch",
-  "search_developer": "GEMINI LYNX",
-  "rank": 2,
-  "developer_id": "GEMINI+LYNX",
-  "released": "Aug 5, 2026",
-  "updated": "Aug 12, 2026",
-  "version": "Varies with device",
-  "summary": "Browse household goods and reserve items easily with the ParlayScore Pro app.",
-  "folder": "Parimatch-GEMINI LYNX",
-  "path": "parimatch/Parimatch-GEMINI LYNX",
-  "updates_count": 1,
-  "apk_title": "",
-  "store_title_mismatch": false,
-  "ok": true,
-  "files": [
-    "lynx.parlayscrorepro.app-2-asset.apk",
-    "lynx.parlayscrorepro.app-2-config.arm64_v8a.apk",
-    "lynx.parlayscrorepro.app-2-config.en.apk",
-    "lynx.parlayscrorepro.app-2-config.xxhdpi.apk",
-    "lynx.parlayscrorepro.app-2.apk"
-  ],
-  "target": "/root/play-collector/загрузки/parimatch/Parimatch-GEMINI LYNX",
-  "attempts": [
-    {
-      "method": "gplaydl",
-      "try": {
-        "force_auth": false,
-        "no_splits": false
-      },
-      "ok": true,
-      "exit_code": 0,
-      "stdout": "╭─ lynx.parlayscrorepro.app ─╮\n│ Parimatch                  │\n│ 2.0  (vc 2)                │\n╰────────────────────────────╯\n\nDownloading 5 files  (62.5 MB)\n  lynx.parlayscrorepro.app-2.apk                  ━━━━━ 100% 50.6… 26.8   0:00:…\n                                                             MB    MB/s         \n  lynx.parlayscrorepro.app-2-config.arm64_v8a.apk ━━━━━ 100% 82.4… 2.3    0:00:…\n                                                             kB    MB/s         \n  lynx.parlayscrorepro.app-2-config.en.apk        ━━━━━ 100% 106.… 2.6    0:00:…\n                                                             kB    MB/s         \n  lynx.parlayscrorepro.app-2-config.xxhdpi.apk    ━━━━━ 100% 91.1… 2.3    0:00:…\n                                                             kB    MB/s         \n  lynx.parlayscrorepro.app-2-asset.apk            ━━━━━ 100% 14.6… 9.2    0:00:…\n                                                             MB    MB/s         \n\n                       Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                            ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ lynx.parlayscrorepro.app-2.apk                  │  48.3 MB │\n│ lynx.parlayscrorepro.app-2-config.arm64_v8a.apk │  80.5 KB │\n│ lynx.parlayscrorepro.app-2-config.en.apk        │ 104.4 KB │\n│ lynx.parlayscrorepro.app-2-config.xxhdpi.apk    │  88.9 KB │\n│ lynx.parlayscrorepro.app-2-asset.apk            │  48.3 MB │\n└─────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
-      "stderr": "",
-      "apk_label": ""
-    }
-  ],
-  "stdout": "╭─ lynx.parlayscrorepro.app ─╮\n│ Parimatch                  │\n│ 2.0  (vc 2)                │\n╰────────────────────────────╯\n\nDownloading 5 files  (62.5 MB)\n  lynx.parlayscrorepro.app-2.apk                  ━━━━━ 100% 50.6… 26.8   0:00:…\n                                                             MB    MB/s         \n  lynx.parlayscrorepro.app-2-config.arm64_v8a.apk ━━━━━ 100% 82.4… 2.3    0:00:…\n                                                             kB    MB/s         \n  lynx.parlayscrorepro.app-2-config.en.apk        ━━━━━ 100% 106.… 2.6    0:00:…\n                                                             kB    MB/s         \n  lynx.parlayscrorepro.app-2-config.xxhdpi.apk    ━━━━━ 100% 91.1… 2.3    0:00:…\n                                                             kB    MB/s         \n  lynx.parlayscrorepro.app-2-asset.apk            ━━━━━ 100% 14.6… 9.2    0:00:…\n                                                             MB    MB/s         \n\n                       Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                            ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ lynx.parlayscrorepro.app-2.apk                  │  48.3 MB │\n│ lynx.parlayscrorepro.app-2-config.arm64_v8a.apk │  80.5 KB │\n│ lynx.parlayscrorepro.app-2-config.en.apk        │ 104.4 KB │\n│ lynx.parlayscrorepro.app-2-config.xxhdpi.apk    │  88.9 KB │\n│ lynx.parlayscrorepro.app-2-asset.apk            │  48.3 MB │\n└─────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
-  "stderr": "",
-  "exit_code": 0,
-  "error": "",
   "cloaking": "нет",
   "brief_report": {
     "table": [
@@ -116,52 +65,15 @@
         "value": "parlay, Parimatch"
       }
     ],
-    "domains": [
-      {
-        "domain": "images.unsplash.com",
-        "redirects_to": "нет (без редиректа)",
-        "parked_at": "регистратор: 1API GmbH"
-      },
-      {
-        "domain": "lynx.parlayscrorepro.app",
-        "redirects_to": "нет (DNS не резолвится)",
-        "parked_at": "нет данных"
-      }
-    ],
+    "domains": [],
     "collected_data": [],
     "cloaking": "нет",
     "cloaking_brief": ""
-  }
-}
-=======
+  },
+  "app_id": "lynx.parlayscrorepro.app",
+  "icon": "/static/app-icons/lynx_parlayscrorepro_app.png",
   "url": "https://play.google.com/store/apps/details?id=lynx.parlayscrorepro.app&hl=en&gl=us",
-  "keyword": "Parimatch",
-  "source": "apkcombo",
-  "search_title": "Parimatch",
-  "search_developer": "GEMINI LYNX",
-  "version": "2.0",
-  "version_code": "2",
-  "summary": "Browse household goods and reserve items easily with the ParlayScore Pro app.",
-  "folder": "Parimatch-GEMINI LYNX",
-  "path": "parimatch/Parimatch-GEMINI LYNX",
-  "ok": true,
-  "files": [
-    "lynx.parlayscrorepro.app-2.apk",
-    "lynx.parlayscrorepro.app-2-config.armeabi_v7a.apk",
-    "lynx.parlayscrorepro.app-2-config.en.apk",
-    "lynx.parlayscrorepro.app-2-config.mdpi.apk",
-    "lynx.parlayscrorepro.app-2.xapk"
-  ],
-  "apk_label": "Parimatch",
-  "internal_brand": "ParlayScore Pro — Household Goods Trading",
-  "cloaking": "нет",
-  "minSdk": 24,
-  "targetSdk": 35,
-  "agp": "8.7.0",
-  "kotlin": "да 1.9.24",
-  "suspicious_domains": [
-    "images.unsplash.com",
-    "lynx.parlayscrorepro.app"
-  ]
+  "released": "Aug 5, 2026",
+  "updated": "Aug 12, 2026",
+  "version": "Varies with device"
 }
->>>>>>> origin/main

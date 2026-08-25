@@ -1,0 +1,133 @@
+{
+  "app_id": "com.goldenboot.saga.zone",
+  "title": "Chicken Road 2",
+  "developer": "LEGION DIGITAL",
+  "score": null,
+  "icon": "/static/app-icons/com_goldenboot_saga_zone.png",
+  "url": "https://play.google.com/store/apps/details?id=com.goldenboot.saga.zone&hl=en&gl=us",
+  "keyword": "chicken road 2",
+  "country": "Germany",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260825_123454_Germany_chicken road 2_search",
+  "search_title": "Chicken Road 2 (Early Access)",
+  "search_developer": "LEGION DIGITAL",
+  "rank": 3,
+  "developer_id": "LEGION+DIGITAL",
+  "released": "",
+  "updated": "Aug 12, 2026",
+  "version": "Varies with device",
+  "summary": "Football tile-matching puzzles, levels, boosters, trophies and daily rewards",
+  "folder": "Chicken Road 2-LEGION DIGITAL",
+  "path": "chicken road 2/Chicken Road 2-LEGION DIGITAL",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.goldenboot.saga.zone-1-asset.apk",
+    "com.goldenboot.saga.zone-1-config.arm64_v8a.apk",
+    "com.goldenboot.saga.zone-1-config.en.apk",
+    "com.goldenboot.saga.zone-1-config.xxhdpi.apk",
+    "com.goldenboot.saga.zone-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/chicken road 2/Chicken Road 2-LEGION DIGITAL",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.goldenboot.saga.zone ─╮\n│ Chicken Road 2             │\n│ 1.0  (vc 1)                │\n╰────────────────────────────╯\n\nDownloading 5 files  (14.3 MB)\n  com.goldenboot.saga.zone-1.apk                  ━━━━━ 100% 10.5… 16.3   0:00:…\n                                                             MB    MB/s         \n  com.goldenboot.saga.zone-1-config.arm64_v8a.apk ━━━━━ 100% 82.4… 1.9    0:00:…\n                                                             kB    MB/s         \n  com.goldenboot.saga.zone-1-config.en.apk        ━━━━━ 100% 74.1… 2.2    0:00:…\n                                                             kB    MB/s         \n  com.goldenboot.saga.zone-1-config.xxhdpi.apk    ━━━━━ 100% 86.4… 2.2    0:00:…\n                                                             kB    MB/s         \n  com.goldenboot.saga.zone-1-asset.apk            ━━━━━ 100% 4.2/… 17.0   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.goldenboot.saga.zone-1.apk                  │ 10.0 MB │\n│ com.goldenboot.saga.zone-1-config.arm64_v8a.apk │ 80.5 KB │\n│ com.goldenboot.saga.zone-1-config.en.apk        │ 72.4 KB │\n│ com.goldenboot.saga.zone-1-config.xxhdpi.apk    │ 84.4 KB │\n│ com.goldenboot.saga.zone-1-asset.apk            │ 10.0 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.goldenboot.saga.zone ─╮\n│ Chicken Road 2             │\n│ 1.0  (vc 1)                │\n╰────────────────────────────╯\n\nDownloading 5 files  (14.3 MB)\n  com.goldenboot.saga.zone-1.apk                  ━━━━━ 100% 10.5… 16.3   0:00:…\n                                                             MB    MB/s         \n  com.goldenboot.saga.zone-1-config.arm64_v8a.apk ━━━━━ 100% 82.4… 1.9    0:00:…\n                                                             kB    MB/s         \n  com.goldenboot.saga.zone-1-config.en.apk        ━━━━━ 100% 74.1… 2.2    0:00:…\n                                                             kB    MB/s         \n  com.goldenboot.saga.zone-1-config.xxhdpi.apk    ━━━━━ 100% 86.4… 2.2    0:00:…\n                                                             kB    MB/s         \n  com.goldenboot.saga.zone-1-asset.apk            ━━━━━ 100% 4.2/… 17.0   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.goldenboot.saga.zone-1.apk                  │ 10.0 MB │\n│ com.goldenboot.saga.zone-1-config.arm64_v8a.apk │ 80.5 KB │\n│ com.goldenboot.saga.zone-1-config.en.apk        │ 72.4 KB │\n│ com.goldenboot.saga.zone-1-config.xxhdpi.apk    │ 84.4 KB │\n│ com.goldenboot.saga.zone-1-asset.apk            │ 10.0 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+  "exit_code": 0,
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Chicken Road 2 (в Google Play); внутри APK label = Goldenboot Saga"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.13.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "30"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.VIBRATE, android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.goldenboot.saga.zone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE , com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.appcompat, androidx.activity, androidx.compose, androidx.core, androidx.datastore, androidx.fragment, androidx.lifecycle, androidx.navigation, androidx.profileinstaller, androidx.startup, com.google.android.material, kotlinx-coroutines, com.pairip.licensecheck, Play Install Referrer client"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "anchorsolidgrid.site"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "файл underground_football_save: policy_game_reached (флаг белого пути), policy_user_uuid (случайный id пользователя), last_referer (реферер установки)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "referer, User-Agent, loadUrl, webview, url, item, data, policy_game_reached, policy_user_uuid, last_referer, aes256gcm, intent://"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "anchorsolidgrid.site",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      }
+    ],
+    "collected_data": [
+      "Строка браузера",
+      "Реферер установки",
+      "Идентификатор пользователя"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Строка браузера\n• Реферер установки\n• Идентификатор пользователя\n\nКак собираются: Сразу при открытии запускается экран загрузки. Без отдельного окна с вопросом приложение само готовит проверку в фоне. Человек обычно видит только короткую заставку и не замечает, что телефон уже собирает сведения для тихого запроса. Строку браузера приложение берёт из системных настроек встроенного окна сайта (стандартная строка User-Agent). Реферер установки спрашивает у магазина Google Play через службу Install Referrer: это текст о том, откуда поставили программу. Идентификатор пользователя — случайный номер, который приложение само создаёт при первом запуске и кладёт в свою память. Если реферер уже сохраняли раньше, повторно в магазин не ходят — берут значение из памяти.…\n\nКуда отправляются: Тихий запрос уходит на адрес https://anchorsolidgrid.site/api/v1/9jh8. Сам адрес в приложении лежит в зашифрованном виде и расшифровывается только перед отправкой. К адресу дописывают параметр user с идентификатором пользователя. В заголовках уходят строка браузера и реферер установки (поле Referer). Запрос идёт методом GET в фоне, пока на экране ещё заставка. Это не показ баннера, а проверка «что показать этому человеку». Отдельных запасных адресов в коде не видно: используется один расшифрованный адрес. Реферер после получения сохраняют в памяти приложения под ключом last_referer, чтобы в следующий раз не ходить в магазин заново. Идентификатор пользователя тоже хранится постоянно.…\n\nКак фильтруются пользователи: В самом приложении нет списка стран или языков, по которым на телефоне решают «кому оффер». На проверку уходят строка браузера, реферер установки и идентификатор пользователя. Само решение «кого пустить» делает сервер по ответу. Есть локальный флаг policy_game_reached в памяти приложения. Если он уже стоит, повторную сетевую проверку не делают и сразу оставляют обычное приложение. Этот флаг ставят, когда проверка не дала рабочую ссылку или произошла ошибка. Отдельной проверки «бот / эмулятор» именно перед показом оффера в этой цепочке не видно: фильтр по ответу сервера и по сохранённому флагу белого пути. Название в магазине — Chicken Road 2,…\n\nЧто возв…"
+  }
+}

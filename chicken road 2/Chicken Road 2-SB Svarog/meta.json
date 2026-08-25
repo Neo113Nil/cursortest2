@@ -1,103 +1,78 @@
 {
-  "app_id": "com.luminance.color.alchemy",
   "title": "Chicken Road 2",
   "developer": "SB Svarog",
-  "score": null,
-<<<<<<< HEAD
-  "icon": "/static/app-icons/com_luminance_color_alchemy.png",
-  "url": "https://play.google.com/store/apps/details?id=com.luminance.color.alchemy&hl=en&gl=us",
-  "keyword": "chicken road 2",
-  "country": "India",
-  "source": "gplaydl",
-  "sponsored": false,
-  "match_via": "web-strict-after-install-miss",
-  "geelark_search_dir": "/root/play-collector/geelark_poc/20260824_140335_India_chicken road 2_search",
-  "search_title": "Chicken Road: Official App",
-  "search_developer": "SB Svarog",
-  "rank": 8,
-  "developer_id": "SB+Svarog",
-  "released": "",
-  "updated": "Aug 18, 2026",
-  "version": "Varies with device",
-  "summary": "Welcome to the World of Chicken Road 2",
-  "folder": "Chicken Road 2-SB Svarog",
-  "path": "chicken road 2/Chicken Road 2-SB Svarog",
-  "updates_count": 1,
-  "apk_title": "",
-  "store_title_mismatch": false,
-  "ok": true,
-  "files": [
-    "com.luminance.color.alchemy-3-asset.apk",
-    "com.luminance.color.alchemy-3-config.arm64_v8a.apk",
-    "com.luminance.color.alchemy-3-config.en.apk",
-    "com.luminance.color.alchemy-3-config.lt.apk",
-    "com.luminance.color.alchemy-3-config.ru.apk",
-    "com.luminance.color.alchemy-3.apk"
-  ],
-  "target": "/root/play-collector/загрузки/chicken road 2/Chicken Road 2-SB Svarog",
-  "attempts": [
-    {
-      "method": "gplaydl",
-      "try": {
-        "force_auth": false,
-        "no_splits": false
-      },
-      "ok": true,
-      "exit_code": 0,
-      "stdout": "╭─ com.luminance.color.alchemy ─╮\n│ Chicken Road: Official App    │\n│ 1.3.0  (vc 3)                 │\n╰───────────────────────────────╯\n\nDownloading 6 files  (22.4 MB)\n  com.luminance.color.alchemy-3.apk                  ━━━━ 100% 4.4/… 8.8  0:00:…\n                                                               MB    MB/s       \n  com.luminance.color.alchemy-3-config.arm64_v8a.apk ━━━━ 100% 15.0… 24.1 0:00:…\n                                                               MB    MB/s       \n  com.luminance.color.alchemy-3-config.en.apk        ━━━━ 100% 20.9… ?    0:00:…\n                                                               kB               \n  com.luminance.color.alchemy-3-config.lt.apk        ━━━━ 100% 20.9… ?    0:00:…\n                                                               kB               \n  com.luminance.color.alchemy-3-config.ru.apk        ━━━━ 100% 20.9… ?    0:00:…\n                                                               kB               \n  com.luminance.color.alchemy-3-asset.apk            ━━━━ 100% 4.0/… 12.6 0:00:…\n                                                               MB    MB/s       \n\n                        Downloaded files                        \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.luminance.color.alchemy-3.apk                  │  4.2 MB │\n│ com.luminance.color.alchemy-3-config.arm64_v8a.apk │ 14.3 MB │\n│ com.luminance.color.alchemy-3-config.en.apk        │ 20.4 KB │\n│ com.luminance.color.alchemy-3-config.lt.apk        │ 20.4 KB │\n│ com.luminance.color.alchemy-3-config.ru.apk        │ 20.4 KB │\n│ com.luminance.color.alchemy-3-asset.apk            │  4.2 MB │\n└────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
-      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
-      "apk_label": ""
-    }
-  ],
-  "stdout": "╭─ com.luminance.color.alchemy ─╮\n│ Chicken Road: Official App    │\n│ 1.3.0  (vc 3)                 │\n╰───────────────────────────────╯\n\nDownloading 6 files  (22.4 MB)\n  com.luminance.color.alchemy-3.apk                  ━━━━ 100% 4.4/… 8.8  0:00:…\n                                                               MB    MB/s       \n  com.luminance.color.alchemy-3-config.arm64_v8a.apk ━━━━ 100% 15.0… 24.1 0:00:…\n                                                               MB    MB/s       \n  com.luminance.color.alchemy-3-config.en.apk        ━━━━ 100% 20.9… ?    0:00:…\n                                                               kB               \n  com.luminance.color.alchemy-3-config.lt.apk        ━━━━ 100% 20.9… ?    0:00:…\n                                                               kB               \n  com.luminance.color.alchemy-3-config.ru.apk        ━━━━ 100% 20.9… ?    0:00:…\n                                                               kB               \n  com.luminance.color.alchemy-3-asset.apk            ━━━━ 100% 4.0/… 12.6 0:00:…\n                                                               MB    MB/s       \n\n                        Downloaded files                        \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.luminance.color.alchemy-3.apk                  │  4.2 MB │\n│ com.luminance.color.alchemy-3-config.arm64_v8a.apk │ 14.3 MB │\n│ com.luminance.color.alchemy-3-config.en.apk        │ 20.4 KB │\n│ com.luminance.color.alchemy-3-config.lt.apk        │ 20.4 KB │\n│ com.luminance.color.alchemy-3-config.ru.apk        │ 20.4 KB │\n│ com.luminance.color.alchemy-3-asset.apk            │  4.2 MB │\n└────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
-  "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
-  "exit_code": 0,
-  "error": "",
   "cloaking": "нет",
   "brief_report": {
-    "table": [],
-    "domains": [
+    "table": [
       {
-        "domain": "config.ru",
-        "redirects_to": "https://config.ru/en/",
-        "parked_at": "похоже на парковку (domain is for sale)"
+        "param": "Название приложения",
+        "value": "Chicken Road 2 (в Google Play); внутри APK label = Color Alchemy"
       },
       {
-        "domain": "dispatchers.io",
-        "redirects_to": "нет",
-        "parked_at": "регистратор: NAMECHEAP INC"
+        "param": "Android Gradle Plugin",
+        "value": "8.6.0"
       },
       {
-        "domain": "systemuioverlay.top",
-        "redirects_to": "нет (DNS не резолвится)",
-        "parked_at": "нет данных"
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.1.0"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.luminance.color.alchemy.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Flutter, io.flutter, androidx.activity, androidx.core, androidx.fragment, androidx.lifecycle, androidx.profileinstaller, androidx.savedstate, androidx.startup, androidx.window, androidx.customview, androidx.viewpager, androidx.tracing, androidx.versionedparcelable, kotlinx-coroutines, com.pairip.licensecheck, path_provider, cupertino_icons"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru, dispatchers.io, systemuioverlay.top"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "нет"
       }
     ],
+    "domains": [],
     "collected_data": [],
     "cloaking": "нет",
     "cloaking_brief": ""
-  }
-=======
+  },
+  "app_id": "com.luminance.color.alchemy",
+  "icon": "/static/app-icons/com_luminance_color_alchemy.png",
   "url": "https://play.google.com/store/apps/details?id=com.luminance.color.alchemy&hl=en&gl=us",
-  "keyword": "chicken road official app",
-  "source": "apkpure",
-  "search_title": "Chicken Road Official App",
-  "search_developer": "SB Svarog",
-  "version": "1.2.0",
-  "summary": "Welcome to the World of Chicken Road 2",
-  "folder": "Chicken Road 2-SB Svarog",
-  "path": "chicken road 2/Chicken Road 2-SB Svarog",
-  "ok": true,
-  "files": [
-    "com.luminance.color.alchemy-3.apk",
-    "com.luminance.color.alchemy-3-config.arm64_v8a.apk",
-    "com.luminance.color.alchemy.xapk"
-  ],
-  "apk_label": "Color Alchemy",
-  "cloaking": "нет",
-  "minSdk": 25,
-  "targetSdk": 36,
-  "agp": "8.6.0",
-  "kotlin": "да 2.1.0"
->>>>>>> origin/main
+  "updated": "Aug 18, 2026",
+  "version": "Varies with device"
 }

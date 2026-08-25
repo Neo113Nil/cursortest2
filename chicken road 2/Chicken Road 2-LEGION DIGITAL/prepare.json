@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "apks": [
+    "com.goldenboot.saga.zone-1-config.xxhdpi.apk",
+    "com.goldenboot.saga.zone-1-config.arm64_v8a.apk",
+    "com.goldenboot.saga.zone-1-asset.apk",
+    "com.goldenboot.saga.zone-1-config.en.apk",
+    "com.goldenboot.saga.zone-1.apk"
+  ],
+  "base_apk": "com.goldenboot.saga.zone-1.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 3662 (0%)\nINFO  - progress: 738 of 3662 (20%)\nINFO  - progress: 741 of 3662 (20%)\nINFO  - progress: 753 of 3662 (20%)\nINFO  - progress: 788 of 3662 (21%)\nINFO  - progress: 1068 of 3662 (29%)\nINFO  - progress: 1321 of 3662 (36%)\nINFO  - progress: 1576 of 3662 (43%)\nINFO  - progress: 1768 of 3662 (48%)\nINFO  - progress: 1962 of 3662 (53%)\nINFO  - progress: 2069 of 3662 (56%)\nINFO  - progress: 2229 of 3662 (60%)\nINFO  - progress: 2330 of 3662 (63%)\nINFO  - progress: 2554 of 3662 (69%)\nINFO  - progress: 2764 of 3662 (75%)\nINFO  - progress: 2940 of 3662 (80%)\nINFO  - progress: 3064 of 3662 (83%)\nINFO  - progress: 3236 of 3662 (88%)\nINFO  - progress: 3358 of 3662 (91%)\nINFO  - progress: 3508 of 3662 (95%)\nINFO  - progress: 3629 of 3662 (99%)\nINFO  - progress: 3661 of 3662 (99%)\n                                                             \nERROR - finished with errors, count: 9\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/chicken road 2/Chicken Road 2-LEGION DIGITAL/decompiled",
+    "skipped": false,
+    "base_apk": "com.goldenboot.saga.zone-1.apk"
+  },
+  "analysis_files": [
+    "com.goldenboot.saga.zone-1-config.xxhdpi.apk",
+    "com.goldenboot.saga.zone-1-config.arm64_v8a.apk",
+    "com.goldenboot.saga.zone-1-asset.apk",
+    "com.goldenboot.saga.zone-1-config.en.apk",
+    "com.goldenboot.saga.zone-1.apk",
+    "apk/com.goldenboot.saga.zone-1-config.xxhdpi.apk",
+    "apk/com.goldenboot.saga.zone-1-config.arm64_v8a.apk",
+    "apk/com.goldenboot.saga.zone-1-asset.apk",
+    "apk/com.goldenboot.saga.zone-1-config.en.apk",
+    "apk/com.goldenboot.saga.zone-1.apk",
+    "report.pdf",
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/",
+    "decompiled/sources/kotlin/"
+  ],
+  "errors": []
+}

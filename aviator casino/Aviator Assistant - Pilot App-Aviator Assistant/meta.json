@@ -1,0 +1,166 @@
+{
+  "app_id": "com.aviatorassistant.aviatorassistant",
+  "title": "Aviator Assistant - Pilot App",
+  "developer": "Aviator Assistant",
+  "score": 4.57,
+  "icon": "/static/app-icons/com_aviatorassistant_aviatorassistant.png",
+  "url": "https://play.google.com/store/apps/details?id=com.aviatorassistant.aviatorassistant&hl=en&gl=us",
+  "keyword": "aviator casino",
+  "country": "India",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260825_110746_India_aviator casino_search",
+  "search_title": "Aviator Assistant - Pilot App",
+  "search_developer": "Aviator Assistant",
+  "rank": 2,
+  "developer_id": "Aviator+Assistant",
+  "released": "May 22, 2021",
+  "updated": "2026-08-19",
+  "version": "4.6.0",
+  "summary": "Try Aviator Assistant today and experience the future of flight planning.",
+  "folder": "Aviator Assistant - Pilot App-Aviator Assistant",
+  "path": "aviator casino/Aviator Assistant - Pilot App-Aviator Assistant",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.aviatorassistant.aviatorassistant-241-asset.apk",
+    "com.aviatorassistant.aviatorassistant-241-config.arm64_v8a.apk",
+    "com.aviatorassistant.aviatorassistant-241-config.en.apk",
+    "com.aviatorassistant.aviatorassistant-241-config.lt.apk",
+    "com.aviatorassistant.aviatorassistant-241-config.ru.apk",
+    "com.aviatorassistant.aviatorassistant-241-config.xxhdpi.apk",
+    "com.aviatorassistant.aviatorassistant-241.apk"
+  ],
+  "target": "/root/play-collector/загрузки/aviator casino/Aviator Assistant - Pilot App-Aviator Assistant",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.aviatorassistant.aviatorassistant ─╮\n│ Aviator Assistant - Pilot App           │\n│ 4.6.0  (vc 241)                         │\n╰─────────────────────────────────────────╯\n\nDownloading 7 files  (399.5 MB)\n  com.aviatorassistant.aviatorassistant-241.apk                  ━━ 100% … 2… 0…\n                                                                         … M…   \n  com.aviatorassistant.aviatorassistant-241-config.arm64_v8a.apk ━━ 100% … 9… 0…\n                                                                         … M…   \n  com.aviatorassistant.aviatorassistant-241-config.en.apk        ━━ 100% … ?  0…\n                                                                         …      \n  com.aviatorassistant.aviatorassistant-241-config.lt.apk        ━━ 100% … ?  0…\n                                                                         …      \n  com.aviatorassistant.aviatorassistant-241-config.ru.apk        ━━ 100% … ?  0…\n                                                                         …      \n  com.aviatorassistant.aviatorassistant-241-config.xxhdpi.apk    ━━ 100% … 2… 0…\n                                                                         … M…   \n  com.aviatorassistant.aviatorassistant-241-asset.apk            ━━ 100% … 1… 0…\n                                                                         … M…   \n\n                              Downloaded files                               \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                           ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.aviatorassistant.aviatorassistant-241.apk                  │ 203.4 MB │\n│ com.aviatorassistant.aviatorassistant-241-config.arm64_v8a.apk │  10.5 MB │\n│ com.aviatorassistant.aviatorassistant-241-config.en.apk        │  56.4 KB │\n│ com.aviatorassistant.aviatorassistant-241-config.lt.apk        │  32.4 KB │\n│ com.aviatorassistant.aviatorassistant-241-config.ru.apk        │  32.4 KB │\n│ com.aviatorassistant.aviatorassistant-241-config.xxhdpi.apk    │ 182.0 KB │\n│ com.aviatorassistant.aviatorassistant-241-asset.apk            │ 203.4 MB │\n└────────────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.aviatorassistant.aviatorassistant ─╮\n│ Aviator Assistant - Pilot App           │\n│ 4.6.0  (vc 241)                         │\n╰─────────────────────────────────────────╯\n\nDownloading 7 files  (399.5 MB)\n  com.aviatorassistant.aviatorassistant-241.apk                  ━━ 100% … 2… 0…\n                                                                         … M…   \n  com.aviatorassistant.aviatorassistant-241-config.arm64_v8a.apk ━━ 100% … 9… 0…\n                                                                         … M…   \n  com.aviatorassistant.aviatorassistant-241-config.en.apk        ━━ 100% … ?  0…\n                                                                         …      \n  com.aviatorassistant.aviatorassistant-241-config.lt.apk        ━━ 100% … ?  0…\n                                                                         …      \n  com.aviatorassistant.aviatorassistant-241-config.ru.apk        ━━ 100% … ?  0…\n                                                                         …      \n  com.aviatorassistant.aviatorassistant-241-config.xxhdpi.apk    ━━ 100% … 2… 0…\n                                                                         … M…   \n  com.aviatorassistant.aviatorassistant-241-asset.apk            ━━ 100% … 1… 0…\n                                                                         … M…   \n\n                              Downloaded files                               \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                           ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.aviatorassistant.aviatorassistant-241.apk                  │ 203.4 MB │\n│ com.aviatorassistant.aviatorassistant-241-config.arm64_v8a.apk │  10.5 MB │\n│ com.aviatorassistant.aviatorassistant-241-config.en.apk        │  56.4 KB │\n│ com.aviatorassistant.aviatorassistant-241-config.lt.apk        │  32.4 KB │\n│ com.aviatorassistant.aviatorassistant-241-config.ru.apk        │  32.4 KB │\n│ com.aviatorassistant.aviatorassistant-241-config.xxhdpi.apk    │ 182.0 KB │\n│ com.aviatorassistant.aviatorassistant-241-asset.apk            │ 203.4 MB │\n└────────────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": "",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Aviator Assistant - Pilot App (Play); APK label = Aviator Assistant"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.7.3"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.3.20"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Firebase Cloud Messaging, Mixpanel"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION, android.permission.ACCESS_BACKGROUND_LOCATION, com.android.vending.BILLING, android.permission.BLUETOOTH_SCAN, com.google.android.gms.permission.AD_ID, android.permission.READ_EXTERNAL_STORAGE, android.permission.FOREGROUND_SERVICE, android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE, android.permission.VIBRATE, android.permission.ACCESS_NETWORK_STATE, android.permission.USE_CREDENTIALS, android.permission.WAKE_LOCK, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_WIFI_STATE, android.permission.USE_BIOMETRIC, android.permission.USE_FINGERPRINT, android.permission.POST_NOTIFICATIONS, com.google.android.c2dm.permission.RECEIVE, com.aviatorassistant.aviatorassistant. DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Capacitor (BridgeActivity / WebView), Cordova plugins, androidx.appcompat / androidx.browser (Custom Tabs) / androidx.webkit, com.google.firebase (Messaging, Installations, Analytics connector), com.google.android.gms (auth, location, cloudmessaging, tasks), Google Play Billing 7.1.1, com.codetrixstudio.capacitor.GoogleAuth, @capacitor/browser, preferences, device, geolocation, push-notifications, filesystem, camera, share, splash-screen, keyboard, network, haptics, dialog, action-sheet, status-bar, @capacitor-community/http, sqlite, keep-awake, file-opener, text-to-speech, apple-sign-in, com.aviatorassistant (AAGeolocation, AAPDFViewer, AAStorage), com.purchases.aviatorassistant (Play Billing wrapper), com.tom_roush.pdfbox, org.bouncycastle, net.zetetic, ai.unitree.udp, de.mindlib.sendIntent, de.appplant, io.capawesome.screenorientation, Mixpanel (JS)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Capacitor Preferences (группа CapacitorStorage): ключ-значение настроек и состояния веб-приложения"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "gambling, offer, affiliate, casino, betting, blacklist, whitelist"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "aaa.pro",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет"
+      },
+      {
+        "domain": "ac.me",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет"
+      },
+      {
+        "domain": "aca.pro",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет"
+      },
+      {
+        "domain": "acct.pro",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет"
+      },
+      {
+        "domain": "adobeaemcloud.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NOM-IQ Ltd dba Com Laude"
+      },
+      {
+        "domain": "adobeaemcloud.net",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: NOM-IQ Ltd dba Com Laude"
+      },
+      {
+        "domain": "altervista.org",
+        "redirects_to": "https://en.altervista.org/",
+        "parked_at": "регистратор: TUCOWS.COM, CO."
+      },
+      {
+        "domain": "alwaysdata.net",
+        "redirects_to": "https://www.alwaysdata.com/fr/",
+        "parked_at": "регистратор: GANDI SAS"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
+}
