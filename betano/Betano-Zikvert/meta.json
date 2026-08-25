@@ -1,0 +1,53 @@
+{
+  "app_id": "com.wincatch.neon",
+  "title": "Betano",
+  "developer": "Zikvert",
+  "score": null,
+  "icon": "/static/app-icons/com_wincatch_neon.png",
+  "url": "https://play.google.com/store/apps/details?id=com.wincatch.neon&hl=en&gl=us",
+  "keyword": "betano",
+  "country": "Italy",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260825_164850_Italy_betano_search",
+  "search_title": "Betano",
+  "search_developer": "Zikvert",
+  "rank": 4,
+  "developer_id": "Zikvert",
+  "released": "Aug 7, 2026",
+  "updated": "Aug 7, 2026",
+  "version": "Varies with device",
+  "summary": "Bet live on football, basketball & more. Best odds & free streams!",
+  "folder": "Betano-Zikvert",
+  "path": "betano/Betano-Zikvert",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.wincatch.neon-1-asset.apk",
+    "com.wincatch.neon-1-config.en.apk",
+    "com.wincatch.neon-1-config.xxhdpi.apk",
+    "com.wincatch.neon-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/betano/Betano-Zikvert",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.wincatch.neon ─╮\n│ Betano              │\n│ 1.0  (vc 1)         │\n╰─────────────────────╯\n\nDownloading 4 files  (6.3 MB)\n  com.wincatch.neon-1.apk               ━━━━━━━━ 100% 3.9/3.9   14.0     0:00:00\n                                                      MB        MB/s            \n  com.wincatch.neon-1-config.en.apk     ━━━━━━━━ 100% 70.0/70.0 1.2 MB/s 0:00:00\n                                                      kB                        \n  com.wincatch.neon-1-config.xxhdpi.apk ━━━━━━━━ 100% 91.1/91.1 2.8 MB/s 0:00:00\n                                                      kB                        \n  com.wincatch.neon-1-asset.apk         ━━━━━━━━ 100% 2.5/2.5   20.7     0:00:00\n                                                      MB        MB/s            \n\n                 Downloaded files                  \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                  ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.wincatch.neon-1.apk               │  3.7 MB │\n│ com.wincatch.neon-1-config.en.apk     │ 68.4 KB │\n│ com.wincatch.neon-1-config.xxhdpi.apk │ 88.9 KB │\n│ com.wincatch.neon-1-asset.apk         │  3.7 MB │\n└───────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.wincatch.neon ─╮\n│ Betano              │\n│ 1.0  (vc 1)         │\n╰─────────────────────╯\n\nDownloading 4 files  (6.3 MB)\n  com.wincatch.neon-1.apk               ━━━━━━━━ 100% 3.9/3.9   14.0     0:00:00\n                                                      MB        MB/s            \n  com.wincatch.neon-1-config.en.apk     ━━━━━━━━ 100% 70.0/70.0 1.2 MB/s 0:00:00\n                                                      kB                        \n  com.wincatch.neon-1-config.xxhdpi.apk ━━━━━━━━ 100% 91.1/91.1 2.8 MB/s 0:00:00\n                                                      kB                        \n  com.wincatch.neon-1-asset.apk         ━━━━━━━━ 100% 2.5/2.5   20.7     0:00:00\n                                                      MB        MB/s            \n\n                 Downloaded files                  \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                  ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.wincatch.neon-1.apk               │  3.7 MB │\n│ com.wincatch.neon-1-config.en.apk     │ 68.4 KB │\n│ com.wincatch.neon-1-config.xxhdpi.apk │ 88.9 KB │\n│ com.wincatch.neon-1-asset.apk         │  3.7 MB │\n└───────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+  "exit_code": 0,
+  "error": ""
+}
