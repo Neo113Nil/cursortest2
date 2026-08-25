@@ -1,0 +1,23 @@
+{
+  "app_id": "com.Budge.KickGoalFever",
+  "title": "Betano",
+  "developer": "Ofeliia",
+  "url": "https://play.google.com/store/apps/details?id=com.Budge.KickGoalFever&hl=en&gl=us",
+  "keyword": "betano",
+  "source": "apkcombo",
+  "updated": "Jul 28, 2026",
+  "version": "61.0",
+  "version_code": "61",
+  "summary": "Pass the ball, avoid the wall, score points",
+  "folder": "Betano-Ofeliia",
+  "path": "betano/Betano-Ofeliia",
+  "apk_title": "Betano",
+  "play_description_title": "Kick Goal Fever",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.Budge.KickGoalFever-61.apk",
+    "com.Budge.KickGoalFever-61-config.arm64_v8a.apk",
+    "Kick+Goal+Fever_61.0_apkcombo.com.xapk"
+  ]
+}
