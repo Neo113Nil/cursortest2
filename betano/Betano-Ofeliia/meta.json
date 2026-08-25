@@ -1,0 +1,52 @@
+{
+  "app_id": "com.Budge.KickGoalFever",
+  "title": "Betano",
+  "developer": "Ofeliia",
+  "score": null,
+  "icon": "/static/app-icons/com_Budge_KickGoalFever.png",
+  "url": "https://play.google.com/store/apps/details?id=com.Budge.KickGoalFever&hl=en&gl=us",
+  "keyword": "betano",
+  "country": "India",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260825_120807_India_betano_search",
+  "search_title": "Betano",
+  "search_developer": "Ofeliia",
+  "rank": 3,
+  "developer_id": "Ofeliia",
+  "released": "Jul 1, 2026",
+  "updated": "Jul 28, 2026",
+  "version": "Varies with device",
+  "summary": "Pass the ball, avoid the wall, score points",
+  "folder": "Betano-Ofeliia",
+  "path": "betano/Betano-Ofeliia",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.Budge.KickGoalFever-61-asset.apk",
+    "com.Budge.KickGoalFever-61-config.arm64_v8a.apk",
+    "com.Budge.KickGoalFever-61.apk"
+  ],
+  "target": "/root/play-collector/загрузки/betano/Betano-Ofeliia",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.Budge.KickGoalFever ─╮\n│ Betano                    │\n│ 61.0  (vc 61)             │\n╰───────────────────────────╯\n\nDownloading 3 files  (39.3 MB)\n  com.Budge.KickGoalFever-61.apk                  ━━━━━ 100% 11.6… 7.5    0:00:…\n                                                             MB    MB/s         \n  com.Budge.KickGoalFever-61-config.arm64_v8a.apk ━━━━━ 100% 19.7… 6.8    0:00:…\n                                                             MB    MB/s         \n  com.Budge.KickGoalFever-61-asset.apk            ━━━━━ 100% 9.9/… 8.1    0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.Budge.KickGoalFever-61.apk                  │ 11.1 MB │\n│ com.Budge.KickGoalFever-61-config.arm64_v8a.apk │ 18.8 MB │\n│ com.Budge.KickGoalFever-61-asset.apk            │ 11.1 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.Budge.KickGoalFever ─╮\n│ Betano                    │\n│ 61.0  (vc 61)             │\n╰───────────────────────────╯\n\nDownloading 3 files  (39.3 MB)\n  com.Budge.KickGoalFever-61.apk                  ━━━━━ 100% 11.6… 7.5    0:00:…\n                                                             MB    MB/s         \n  com.Budge.KickGoalFever-61-config.arm64_v8a.apk ━━━━━ 100% 19.7… 6.8    0:00:…\n                                                             MB    MB/s         \n  com.Budge.KickGoalFever-61-asset.apk            ━━━━━ 100% 9.9/… 8.1    0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.Budge.KickGoalFever-61.apk                  │ 11.1 MB │\n│ com.Budge.KickGoalFever-61-config.arm64_v8a.apk │ 18.8 MB │\n│ com.Budge.KickGoalFever-61-asset.apk            │ 11.1 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
