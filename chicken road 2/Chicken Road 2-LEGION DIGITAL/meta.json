@@ -1,0 +1,14 @@
+{
+  "app_name_play": "Chicken Road 2",
+  "app_label_apk": "Goldenboot Saga",
+  "package": "com.goldenboot.saga.zone",
+  "developer": "LEGION DIGITAL",
+  "versionName": "1.0",
+  "versionCode": 1,
+  "minSdk": 30,
+  "targetSdk": 36,
+  "agp": "8.13.2",
+  "kotlin": "2.0.21",
+  "gate_url": "https://anchorsolidgrid.site/api/v1/9jh8",
+  "cloaking": true
+}
