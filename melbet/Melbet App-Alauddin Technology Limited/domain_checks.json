@@ -1,0 +1,25 @@
+{
+  "domains": [
+    "gamebriefing.xyz",
+    "multigamezone.com"
+  ],
+  "note": "Gate and offer hosts from decompiled cloak flow. VT vendor pipeline not run for these hosts in this package.",
+  "results": [
+    {
+      "domain": "gamebriefing.xyz",
+      "vt_url": "https://www.virustotal.com/gui/domain/gamebriefing.xyz",
+      "detections": null,
+      "redirect": null,
+      "content_brief": "JSON remote-config at /aladio02 with campaign.tag, runtime.links, adsCenter, remoteService",
+      "parking": null
+    },
+    {
+      "domain": "multigamezone.com",
+      "vt_url": "https://www.virustotal.com/gui/domain/multigamezone.com",
+      "detections": null,
+      "redirect": "https://207.multigamezone.com/action-game.html",
+      "content_brief": "MultiGameZone free online games landing",
+      "parking": null
+    }
+  ]
+}

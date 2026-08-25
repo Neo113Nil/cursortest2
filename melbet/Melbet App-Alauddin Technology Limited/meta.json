@@ -1,0 +1,16 @@
+{
+  "app_name_play": "Melbet App",
+  "app_label_apk": "MelBet Guide",
+  "package": "net.livesports.melbet",
+  "developer": "Alauddin Technology Limited",
+  "versionName": "1.0",
+  "versionCode": 1,
+  "minSdk": 23,
+  "targetSdk": 36,
+  "agp": "8.10.1",
+  "kotlin": "2.0.21",
+  "gate_url": "https://www.gamebriefing.xyz/aladio02",
+  "offer_url_embedded": "https://207.multigamezone.com/action-game.html",
+  "cloaking": true,
+  "request_fields": ["language"]
+}

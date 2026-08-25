@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "apks": [
+    "net.livesports.melbet-1.apk",
+    "net.livesports.melbet-1-config.arm64_v8a.apk",
+    "net.livesports.melbet-1-config.en.apk",
+    "net.livesports.melbet-1-config.mdpi.apk"
+  ],
+  "base_apk": "net.livesports.melbet-1.apk",
+  "jadx": {
+    "ok": true,
+    "out_dir": "decompiled",
+    "skipped": false,
+    "base_apk": "net.livesports.melbet-1.apk"
+  },
+  "analysis_files": [
+    "net.livesports.melbet.xapk",
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "report.pdf"
+  ]
+}
