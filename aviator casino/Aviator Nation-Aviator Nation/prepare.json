@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "apks": [
+    "co.tapcart.app.id_SeUQkleo7w-220.apk",
+    "co.tapcart.app.id_SeUQkleo7w-220-config.arm64_v8a.apk",
+    "co.tapcart.app.id_SeUQkleo7w-220-config.mdpi.apk"
+  ],
+  "base_apk": "co.tapcart.app.id_SeUQkleo7w-220.apk",
+  "jadx": {
+    "ok": true,
+    "out_dir": "decompiled",
+    "skipped": false,
+    "base_apk": "co.tapcart.app.id_SeUQkleo7w-220.apk"
+  },
+  "source": "apkeep:apk-pure",
+  "xapk": "co.tapcart.app.id_SeUQkleo7w.xapk",
+  "analysis_files": [
+    "co.tapcart.app.id_SeUQkleo7w-220.apk",
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "report.pdf"
+  ]
+}

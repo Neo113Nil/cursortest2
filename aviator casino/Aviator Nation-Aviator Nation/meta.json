@@ -1,0 +1,33 @@
+{
+  "app_name_play": "Aviator Nation",
+  "app_label_apk": "Aviator Nation",
+  "package": "co.tapcart.app.id_SeUQkleo7w",
+  "developer": "Aviator Nation",
+  "versionName": "220",
+  "versionCode": 220,
+  "minSdk": 25,
+  "targetSdk": 36,
+  "agp": "8.12.0",
+  "kotlin": "2.1.20",
+  "cloaking": false,
+  "webview": true,
+  "custom_tabs": true,
+  "ads": [],
+  "analytics": [
+    "Firebase Analytics",
+    "Mixpanel",
+    "Facebook App Events",
+    "Sentry",
+    "Klaviyo",
+    "Google Play Install Referrer",
+    "Notifee"
+  ],
+  "suspicious_domains": [
+    "aomedia.org",
+    "aviatornation.com",
+    "dashif.org",
+    "developers.klaviyo.com"
+  ],
+  "ota_url": "https://ota.tapcart.com/api/v1/manifest/SeUQkleo7w",
+  "store_host": "www.aviatornation.com"
+}
