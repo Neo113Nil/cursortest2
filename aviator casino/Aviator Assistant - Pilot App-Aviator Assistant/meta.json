@@ -1,0 +1,25 @@
+{
+  "app_name_play": "Aviator Assistant - Pilot App",
+  "app_label_apk": "Aviator Assistant",
+  "package": "com.aviatorassistant.aviatorassistant",
+  "developer": "Aviator Assistant",
+  "versionName": "4.6.0",
+  "versionCode": 241,
+  "minSdk": 24,
+  "targetSdk": 35,
+  "agp": "8.7.3",
+  "kotlin": "2.3.20",
+  "cloaking": false,
+  "webview": true,
+  "custom_tabs": true,
+  "ads": [],
+  "analytics": [
+    "Firebase Analytics",
+    "Firebase Cloud Messaging",
+    "Mixpanel",
+    "custom server aa_log_analytics_event"
+  ],
+  "suspicious_domains": [],
+  "backend_live": "https://fotei1eeoke2ieh1.aviatorassistant.com:443",
+  "backend_testing": "https://apps.fabtg.com:8443"
+}

@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "apks": [
+    "com.aviatorassistant.aviatorassistant.apk",
+    "config.armeabi_v7a.apk",
+    "config.en.apk",
+    "config.mdpi.apk"
+  ],
+  "base_apk": "com.aviatorassistant.aviatorassistant.apk",
+  "jadx": {
+    "ok": true,
+    "out_dir": "decompiled",
+    "skipped": false,
+    "base_apk": "com.aviatorassistant.aviatorassistant.apk"
+  },
+  "source": "apkeep:apk-pure",
+  "xapk": "com.aviatorassistant.aviatorassistant.xapk",
+  "analysis_files": [
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "report.pdf"
+  ]
+}
