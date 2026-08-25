@@ -1,5 +1,9 @@
 {
   "all_custom_domains": [
+<<<<<<< HEAD
+=======
+    "802-zinc-forge.vercel.app",
+>>>>>>> origin/main
     "com.chrome.dev",
     "privacy-sandbox.appsflyersdk.com"
   ],
@@ -12,10 +16,14 @@
         "detections": "0/91 (malicious=0, suspicious=0)",
         "last_analysis_stats": {
           "malicious": 0,
+<<<<<<< HEAD
           "suspicious": 0,
           "undetected": 35,
           "harmless": 56,
           "timeout": 0
+=======
+          "suspicious": 0
+>>>>>>> origin/main
         },
         "vendor_rows": [
           [
@@ -382,6 +390,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -815,6 +824,13 @@
           "value": "регистратор: MarkMonitor Inc."
         }
       ]
+=======
+        ]
+      },
+      "redirects_to": "нет",
+      "page_snippet": "не удалось открыть (SSLError)",
+      "parked_at": "регистратор: MarkMonitor Inc."
+>>>>>>> origin/main
     },
     {
       "domain": "privacy-sandbox.appsflyersdk.com",
@@ -824,10 +840,14 @@
         "detections": "0/91 (malicious=0, suspicious=0)",
         "last_analysis_stats": {
           "malicious": 0,
+<<<<<<< HEAD
           "suspicious": 0,
           "undetected": 33,
           "harmless": 58,
           "timeout": 0
+=======
+          "suspicious": 0
+>>>>>>> origin/main
         },
         "vendor_rows": [
           [
@@ -1194,6 +1214,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -1635,6 +1656,18 @@
       ]
     }
   ],
+=======
+        ]
+      },
+      "redirects_to": "нет (без редиректа)",
+      "page_snippet": "MissingKey Missing Key-Pair-Id query parameter or cookie value",
+      "parked_at": "регистратор: Amazon Registrar, Inc."
+    }
+  ],
+  "suspicious_for_report": [
+    "802-zinc-forge.vercel.app"
+  ],
+>>>>>>> origin/main
   "count": 2,
   "vt_configured": true
 }

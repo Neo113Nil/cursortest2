@@ -2,6 +2,7 @@
   "app_id": "lynx.parlayscrorepro.app",
   "title": "Parimatch",
   "developer": "GEMINI LYNX",
+<<<<<<< HEAD
   "score": null,
   "icon": "/static/app-icons/lynx_parlayscrorepro_app.png",
   "url": "https://play.google.com/store/apps/details?id=lynx.parlayscrorepro.app&hl=en&gl=us",
@@ -132,3 +133,35 @@
     "cloaking_brief": ""
   }
 }
+=======
+  "url": "https://play.google.com/store/apps/details?id=lynx.parlayscrorepro.app&hl=en&gl=us",
+  "keyword": "Parimatch",
+  "source": "apkcombo",
+  "search_title": "Parimatch",
+  "search_developer": "GEMINI LYNX",
+  "version": "2.0",
+  "version_code": "2",
+  "summary": "Browse household goods and reserve items easily with the ParlayScore Pro app.",
+  "folder": "Parimatch-GEMINI LYNX",
+  "path": "parimatch/Parimatch-GEMINI LYNX",
+  "ok": true,
+  "files": [
+    "lynx.parlayscrorepro.app-2.apk",
+    "lynx.parlayscrorepro.app-2-config.armeabi_v7a.apk",
+    "lynx.parlayscrorepro.app-2-config.en.apk",
+    "lynx.parlayscrorepro.app-2-config.mdpi.apk",
+    "lynx.parlayscrorepro.app-2.xapk"
+  ],
+  "apk_label": "Parimatch",
+  "internal_brand": "ParlayScore Pro — Household Goods Trading",
+  "cloaking": "нет",
+  "minSdk": 24,
+  "targetSdk": 35,
+  "agp": "8.7.0",
+  "kotlin": "да 1.9.24",
+  "suspicious_domains": [
+    "images.unsplash.com",
+    "lynx.parlayscrorepro.app"
+  ]
+}
+>>>>>>> origin/main

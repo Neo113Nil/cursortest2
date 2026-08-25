@@ -13,10 +13,14 @@
         "detections": "0/91 (malicious=0, suspicious=0)",
         "last_analysis_stats": {
           "malicious": 0,
+<<<<<<< HEAD
           "suspicious": 0,
           "undetected": 34,
           "harmless": 57,
           "timeout": 0
+=======
+          "suspicious": 0
+>>>>>>> origin/main
         },
         "vendor_rows": [
           [
@@ -383,6 +387,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -824,6 +829,13 @@
           "value": "похоже на парковку (domain is for sale)"
         }
       ]
+=======
+        ]
+      },
+      "redirect": "https://config.ru/en/",
+      "content_brief": "title: config.ru is for sale. config.ru is for sale en ru en config.ru This domain is for sale The domain is actually the site name and its correct choice influences greatly on the your endeavors success. Often, cost of the domain change during the project running is comparable with the re-branding, so the be",
+      "parking": "похоже на парковку (domain is for sale)"
+>>>>>>> origin/main
     },
     {
       "domain": "dispatchers.io",
@@ -833,10 +845,14 @@
         "detections": "6/91 (malicious=6, suspicious=0)",
         "last_analysis_stats": {
           "malicious": 6,
+<<<<<<< HEAD
           "suspicious": 0,
           "undetected": 35,
           "harmless": 50,
           "timeout": 0
+=======
+          "suspicious": 0
+>>>>>>> origin/main
         },
         "vendor_rows": [
           [
@@ -1203,6 +1219,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -1646,6 +1663,13 @@
           "value": "регистратор: NAMECHEAP INC"
         }
       ]
+=======
+        ]
+      },
+      "redirect": "нет",
+      "content_brief": "не удалось открыть (ReadTimeout)",
+      "parking": "регистратор: NAMECHEAP INC"
+>>>>>>> origin/main
     },
     {
       "domain": "systemuioverlay.top",
@@ -1655,10 +1679,14 @@
         "detections": "0/91 (malicious=0, suspicious=0)",
         "last_analysis_stats": {
           "malicious": 0,
+<<<<<<< HEAD
           "suspicious": 0,
           "undetected": 91,
           "harmless": 0,
           "timeout": 0
+=======
+          "suspicious": 0
+>>>>>>> origin/main
         },
         "vendor_rows": [
           [
@@ -2025,6 +2053,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -2457,4 +2486,18 @@
   ],
   "count": 3,
   "vt_configured": true
+=======
+        ]
+      },
+      "redirect": "нет (DNS не резолвится)",
+      "content_brief": "нет (DNS не резолвится)",
+      "parking": "нет данных"
+    }
+  ],
+  "suspicious_for_report": [
+    "config.ru",
+    "dispatchers.io",
+    "systemuioverlay.top"
+  ]
+>>>>>>> origin/main
 }

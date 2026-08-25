@@ -12,10 +12,14 @@
         "detections": "0/91 (malicious=0, suspicious=0)",
         "last_analysis_stats": {
           "malicious": 0,
+<<<<<<< HEAD
           "suspicious": 0,
           "undetected": 35,
           "harmless": 56,
           "timeout": 0
+=======
+          "suspicious": 0
+>>>>>>> origin/main
         },
         "vendor_rows": [
           [
@@ -382,6 +386,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -830,6 +835,19 @@
           "value": "регистратор: 1API GmbH"
         }
       ]
+=======
+        ]
+      },
+      "redirect": {
+        "summary": "нет (без редиректа)"
+      },
+      "content": {
+        "summary": "title: Imgix - Image Processing On-Demand, Served By CDN. Imgix - Image Processing On-Demand, Served By CDN Dashboard Website"
+      },
+      "parking": {
+        "summary": "регистратор: 1API GmbH"
+      }
+>>>>>>> origin/main
     },
     {
       "domain": "lynx.parlayscrorepro.app",
@@ -839,10 +857,14 @@
         "detections": "0/91 (malicious=0, suspicious=0)",
         "last_analysis_stats": {
           "malicious": 0,
+<<<<<<< HEAD
           "suspicious": 0,
           "undetected": 38,
           "harmless": 53,
           "timeout": 0
+=======
+          "suspicious": 0
+>>>>>>> origin/main
         },
         "vendor_rows": [
           [
@@ -1209,6 +1231,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -1639,4 +1662,19 @@
   ],
   "count": 2,
   "vt_configured": true
+=======
+        ]
+      },
+      "redirect": {
+        "summary": "нет (DNS не резолвится)"
+      },
+      "content": {
+        "summary": "нет (DNS не резолвится)"
+      },
+      "parking": {
+        "summary": "нет данных"
+      }
+    }
+  ]
+>>>>>>> origin/main
 }
