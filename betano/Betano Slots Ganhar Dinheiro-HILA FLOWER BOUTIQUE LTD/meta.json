@@ -1,0 +1,52 @@
+{
+  "app_id": "com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels",
+  "title": "Betano Slots Ganhar Dinheiro",
+  "developer": "HILA FLOWER BOUTIQUE LTD",
+  "score": null,
+  "icon": "/static/app-icons/com_betanoslots_betanoslotsapp_betanoslotsbetanoslotsapp_reels.png",
+  "url": "https://play.google.com/store/apps/details?id=com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels&hl=en&gl=us",
+  "keyword": "betano",
+  "country": "India",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260825_120807_India_betano_search",
+  "search_title": "Betano:Slots Ganhar Dinheiro",
+  "search_developer": "HILA FLOWER BOUTIQUE LTD",
+  "rank": 7,
+  "developer_id": "HILA+FLOWER+BOUTIQUE+LTD",
+  "released": "Aug 8, 2026",
+  "updated": "Aug 9, 2026",
+  "version": "Varies with device",
+  "summary": "Betano:Slots Ganhar Dinheiro offers smooth and engaging mobile fun.",
+  "folder": "Betano Slots Ganhar Dinheiro-HILA FLOWER BOUTIQUE LTD",
+  "path": "betano/Betano Slots Ganhar Dinheiro-HILA FLOWER BOUTIQUE LTD",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1-asset.apk",
+    "com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1-config.arm64_v8a.apk",
+    "com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/betano/Betano Slots Ganhar Dinheiro-HILA FLOWER BOUTIQUE LTD",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels ─╮\n│ Betano:Slots Ganhar Dinheiro                                     │\n│ 1  (vc 1)                                                        │\n╰──────────────────────────────────────────────────────────────────╯\n\nDownloading 3 files  (267.5 MB)\ncom.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1.apk          … \ncom.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1-config.arm6… … \ncom.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1-asset.apk    … \n\n                                Downloaded files                                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                              ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1… │ 155.0 MB │\n│ com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1… │  26.2 MB │\n│ com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1… │ 155.0 MB │\n└───────────────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels ─╮\n│ Betano:Slots Ganhar Dinheiro                                     │\n│ 1  (vc 1)                                                        │\n╰──────────────────────────────────────────────────────────────────╯\n\nDownloading 3 files  (267.5 MB)\ncom.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1.apk          … \ncom.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1-config.arm6… … \ncom.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1-asset.apk    … \n\n                                Downloaded files                                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                              ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1… │ 155.0 MB │\n│ com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1… │  26.2 MB │\n│ com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1… │ 155.0 MB │\n└───────────────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
