@@ -2,16 +2,15 @@
   "app_id": "com.scorelanta.goalforge.pitchzone",
   "title": "1xbet",
   "developer": "DEVENT PIXEL STUDIO",
-<<<<<<< HEAD
   "score": null,
   "icon": "/static/app-icons/com_scorelanta_goalforge_pitchzone.png",
   "url": "https://play.google.com/store/apps/details?id=com.scorelanta.goalforge.pitchzone&hl=en&gl=us",
   "keyword": "1xBet",
-  "country": "India",
+  "country": "Germany",
   "source": "gplaydl",
   "sponsored": false,
   "match_via": "web-strict-after-install-miss",
-  "geelark_search_dir": "/root/play-collector/geelark_poc/20260824_150026_India_1xBet_search",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260825_135834_Germany_1xBet_search",
   "search_title": "1xbet",
   "search_developer": "DEVENT PIXEL STUDIO",
   "rank": 1,
@@ -44,131 +43,13 @@
       },
       "ok": true,
       "exit_code": 0,
-      "stdout": "╭─ com.scorelanta.goalforge.pitchzone ─╮\n│ 1xbet                                │\n│ 1.0  (vc 1)                          │\n╰──────────────────────────────────────╯\n\nDownloading 6 files  (13.5 MB)\n  com.scorelanta.goalforge.pitchzone-1.apk               ━━━━ 100% 10… 10.0 0:0…\n                                                                   MB  MB/s     \n  com.scorelanta.goalforge.pitchzone-1-config.en.apk     ━━━━ 100% 49… ?    0:0…\n                                                                   kB           \n  com.scorelanta.goalforge.pitchzone-1-config.lt.apk     ━━━━ 100% 33… ?    0:0…\n                                                                   kB           \n  com.scorelanta.goalforge.pitchzone-1-config.ru.apk     ━━━━ 100% 33… ?    0:0…\n                                                                   kB           \n  com.scorelanta.goalforge.pitchzone-1-config.xxhdpi.apk ━━━━ 100% 61… ?    0:0…\n                                                                   kB           \n  com.scorelanta.goalforge.pitchzone-1-asset.apk         ━━━━ 100% 3.… 14.4 0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                   ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.scorelanta.goalforge.pitchzone-1.apk               │  9.6 MB │\n│ com.scorelanta.goalforge.pitchzone-1-config.en.apk     │ 48.4 KB │\n│ com.scorelanta.goalforge.pitchzone-1-config.lt.apk     │ 32.4 KB │\n│ com.scorelanta.goalforge.pitchzone-1-config.ru.apk     │ 32.4 KB │\n│ com.scorelanta.goalforge.pitchzone-1-config.xxhdpi.apk │ 60.4 KB │\n│ com.scorelanta.goalforge.pitchzone-1-asset.apk         │  9.6 MB │\n└────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stdout": "╭─ com.scorelanta.goalforge.pitchzone ─╮\n│ 1xbet                                │\n│ 1.0  (vc 1)                          │\n╰──────────────────────────────────────╯\n\nDownloading 6 files  (13.5 MB)\n  com.scorelanta.goalforge.pitchzone-1.apk               ━━━━ 100% 10… 22.6 0:0…\n                                                                   MB  MB/s     \n  com.scorelanta.goalforge.pitchzone-1-config.en.apk     ━━━━ 100% 49… ?    0:0…\n                                                                   kB           \n  com.scorelanta.goalforge.pitchzone-1-config.lt.apk     ━━━━ 100% 33… ?    0:0…\n                                                                   kB           \n  com.scorelanta.goalforge.pitchzone-1-config.ru.apk     ━━━━ 100% 33… ?    0:0…\n                                                                   kB           \n  com.scorelanta.goalforge.pitchzone-1-config.xxhdpi.apk ━━━━ 100% 61… ?    0:0…\n                                                                   kB           \n  com.scorelanta.goalforge.pitchzone-1-asset.apk         ━━━━ 100% 3.… 19.3 0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                   ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.scorelanta.goalforge.pitchzone-1.apk               │  9.6 MB │\n│ com.scorelanta.goalforge.pitchzone-1-config.en.apk     │ 48.4 KB │\n│ com.scorelanta.goalforge.pitchzone-1-config.lt.apk     │ 32.4 KB │\n│ com.scorelanta.goalforge.pitchzone-1-config.ru.apk     │ 32.4 KB │\n│ com.scorelanta.goalforge.pitchzone-1-config.xxhdpi.apk │ 60.4 KB │\n│ com.scorelanta.goalforge.pitchzone-1-asset.apk         │  9.6 MB │\n└────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
       "stderr": "",
       "apk_label": ""
     }
   ],
-  "stdout": "╭─ com.scorelanta.goalforge.pitchzone ─╮\n│ 1xbet                                │\n│ 1.0  (vc 1)                          │\n╰──────────────────────────────────────╯\n\nDownloading 6 files  (13.5 MB)\n  com.scorelanta.goalforge.pitchzone-1.apk               ━━━━ 100% 10… 10.0 0:0…\n                                                                   MB  MB/s     \n  com.scorelanta.goalforge.pitchzone-1-config.en.apk     ━━━━ 100% 49… ?    0:0…\n                                                                   kB           \n  com.scorelanta.goalforge.pitchzone-1-config.lt.apk     ━━━━ 100% 33… ?    0:0…\n                                                                   kB           \n  com.scorelanta.goalforge.pitchzone-1-config.ru.apk     ━━━━ 100% 33… ?    0:0…\n                                                                   kB           \n  com.scorelanta.goalforge.pitchzone-1-config.xxhdpi.apk ━━━━ 100% 61… ?    0:0…\n                                                                   kB           \n  com.scorelanta.goalforge.pitchzone-1-asset.apk         ━━━━ 100% 3.… 14.4 0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                   ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.scorelanta.goalforge.pitchzone-1.apk               │  9.6 MB │\n│ com.scorelanta.goalforge.pitchzone-1-config.en.apk     │ 48.4 KB │\n│ com.scorelanta.goalforge.pitchzone-1-config.lt.apk     │ 32.4 KB │\n│ com.scorelanta.goalforge.pitchzone-1-config.ru.apk     │ 32.4 KB │\n│ com.scorelanta.goalforge.pitchzone-1-config.xxhdpi.apk │ 60.4 KB │\n│ com.scorelanta.goalforge.pitchzone-1-asset.apk         │  9.6 MB │\n└────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stdout": "╭─ com.scorelanta.goalforge.pitchzone ─╮\n│ 1xbet                                │\n│ 1.0  (vc 1)                          │\n╰──────────────────────────────────────╯\n\nDownloading 6 files  (13.5 MB)\n  com.scorelanta.goalforge.pitchzone-1.apk               ━━━━ 100% 10… 22.6 0:0…\n                                                                   MB  MB/s     \n  com.scorelanta.goalforge.pitchzone-1-config.en.apk     ━━━━ 100% 49… ?    0:0…\n                                                                   kB           \n  com.scorelanta.goalforge.pitchzone-1-config.lt.apk     ━━━━ 100% 33… ?    0:0…\n                                                                   kB           \n  com.scorelanta.goalforge.pitchzone-1-config.ru.apk     ━━━━ 100% 33… ?    0:0…\n                                                                   kB           \n  com.scorelanta.goalforge.pitchzone-1-config.xxhdpi.apk ━━━━ 100% 61… ?    0:0…\n                                                                   kB           \n  com.scorelanta.goalforge.pitchzone-1-asset.apk         ━━━━ 100% 3.… 19.3 0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                   ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.scorelanta.goalforge.pitchzone-1.apk               │  9.6 MB │\n│ com.scorelanta.goalforge.pitchzone-1-config.en.apk     │ 48.4 KB │\n│ com.scorelanta.goalforge.pitchzone-1-config.lt.apk     │ 32.4 KB │\n│ com.scorelanta.goalforge.pitchzone-1-config.ru.apk     │ 32.4 KB │\n│ com.scorelanta.goalforge.pitchzone-1-config.xxhdpi.apk │ 60.4 KB │\n│ com.scorelanta.goalforge.pitchzone-1-asset.apk         │  9.6 MB │\n└────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": "",
-  "cloaking": "да",
-  "brief_report": {
-    "table": [
-      {
-        "param": "Название приложения",
-        "value": "1xbet (в Google Play); внутри APK label = Football Rivals Online"
-      },
-      {
-        "param": "Android Gradle Plugin",
-        "value": "8.13.2"
-      },
-      {
-        "param": "minSdk",
-        "value": "30"
-      },
-      {
-        "param": "targetSdk",
-        "value": "36"
-      },
-      {
-        "param": "Kotlin",
-        "value": "да 2.0.21"
-      },
-      {
-        "param": "Web View",
-        "value": "да"
-      },
-      {
-        "param": "Custom Tabs",
-        "value": "нет"
-      },
-      {
-        "param": "Рекламные сети",
-        "value": "нет"
-      },
-      {
-        "param": "Аналитика",
-        "value": "нет"
-      },
-      {
-        "param": "Permissions",
-        "value": "android.permission.INTERNET, android.permission.VIBRATE, com.scorelanta.goalforge.pitchzone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
-      },
-      {
-        "param": "Libraries",
-        "value": "androidx.activity, androidx.appcompat, androidx.constraintlayout, androidx.core, androidx.emoji2, androidx.fragment, androidx.lifecycle, androidx.profileinstaller, androidx.recyclerview, androidx.savedstate, androidx.startup, androidx.viewpager2, com.google.android.material, okhttp3, okio, kotlinx-coroutines, com.pairip.licensecheck"
-      },
-      {
-        "param": "Подозрительные домены",
-        "value": "scorebat.com, thesportsdb.com, ua.gov.diia.app"
-      },
-      {
-        "param": "SharedPreferences",
-        "value": "underground_football_save — policy_user_uuid; football_rivals_prefs — настройки и прогресс игры"
-      },
-      {
-        "param": "Есть ли клоака",
-        "value": "да"
-      },
-      {
-        "param": "Подозрительные слова",
-        "value": "offer, webview, loadUrl, intent://, browser_fallback_url, aes256gcm, item, package, policy_user_uuid, acceptAgreement"
-      }
-    ],
-    "domains": [
-      {
-        "domain": "scorebat.com",
-        "redirects_to": "https://www.scorebat.com/",
-        "parked_at": "нет данных"
-      },
-      {
-        "domain": "thesportsdb.com",
-        "redirects_to": "https://www.thesportsdb.com/",
-        "parked_at": "регистратор: Cloudflare, Inc."
-      },
-      {
-        "domain": "ua.gov.diia.app",
-        "redirects_to": "нет (DNS не резолвится)",
-        "parked_at": "регистратор/whois связан с парковкой: godaddy"
-      }
-    ],
-    "collected_data": [
-      "Идентификатор пользователя",
-      "Строка User-Agent телефона"
-    ],
-    "cloaking": "да",
-    "cloaking_brief": "Какие данные собираются:\n• Идентификатор пользователя\n• Строка User-Agent телефона\n\nКак собираются: Сразу после запуска, на экране загрузки, приложение само создаёт или читает из своей памяти случайный идентификатор пользователя (ключ policy_user_uuid). Отдельного окна с запросом разрешения для этого нет: человек обычно ничего не замечает. Перед тихим запросом к серверу проверки приложение берёт стандартную строку User-Agent из системных настроек встроенного окна сайта Android. Это делается в фоне, без нажатий и без отдельного экрана согласия. Параллельно приложение ещё делает короткие фоновые обращения к спортивным сайтам, но это не основная проверка «кому что показать». Основная проверка начинается примерно через полторы секунды после открытия заставки.\n\nКуда отправляются: Сведения уходят тихим GET-запросом на адрес https://canvasopenbase.site/api/v1/p4bg. К адресу добавляется параметр user с идентификатором пользователя из памяти приложения. В заголовке запроса передаётся строка User-Agent телефона. Сам адрес проверки в коде хранится в зашифрованном виде и расшифровывается только перед отправкой. Это не показ рекламы на экране, а скрытая проверка, что показать этому человеку дальше. Дополнительно приложение фоном обращается к https://www.thesportsdb.com/api/v1/json/3/all_leagues.php и https://www.scorebat.com/video-api/v3/ — по коду ответы этих запросов не решают показ оффера.\n\nКак фильтруются пользователи: В самом приложении на телефоне нет жёсткого списка стран или языков, по которому сразу решают судьбу пользователя. На проверку уходит идентификатор пользователя и строка User-Agent; решение «кому ссылку, кому обычное приложение» делает сервер. Если сервер вернул ответ, который приложение понимает как интернет-ссылку (начинается с http:// или https://), человека ведут на путь с внешним содержимым. Если ссылки нет или запрос сломался — остаётся обычное приложение. Отдельно в коде есть проверка, установлено ли на телефоне приложение «Дія» (пакет ua.gov.diia.app), и особая обработка ссылок diia.app / diia.page.link при показе страницы во встроенном окне сайта.…\n\nЧто возвращается: Сервер отвечает текстом. Если это JSON-объект, приложение читает поле data.item.…"
-  }
+  "error": ""
 }
-=======
-  "url": "https://play.google.com/store/apps/details?id=com.scorelanta.goalforge.pitchzone&hl=en&gl=us",
-  "keyword": "1xbet",
-  "source": "apkcombo",
-  "search_title": "1xbet",
-  "search_developer": "DEVENT PIXEL STUDIO",
-  "version": "1.0",
-  "version_code": "1",
-  "summary": "Football rival duels, ranks, skills, achievements and settings",
-  "folder": "1xbet-DEVENT PIXEL STUDIO",
-  "path": "1xbet/1xbet-DEVENT PIXEL STUDIO",
-  "ok": true,
-  "files": [
-    "com.scorelanta.goalforge.pitchzone-1.apk",
-    "com.scorelanta.goalforge.pitchzone-1-config.en.apk",
-    "com.scorelanta.goalforge.pitchzone-1-config.fr.apk",
-    "com.scorelanta.goalforge.pitchzone-1-config.mdpi.apk",
-    "Sportradar_1.0_apkcombo.com.xapk"
-  ],
-  "apk_label": "Football Rivals Online",
-  "xapk_name": "Football Rivals Online",
-  "cloaking": "да",
-  "minSdk": 30,
-  "targetSdk": 36,
-  "agp": "8.13.2",
-  "kotlin": "да 2.0.21",
-  "gate_url": "https://canvasopenbase.site/api/v1/p4bg",
-  "fallback_webview_url": "https://sufolinora.info/?package=com.solsticevault7746.sunflare2291"
-}
->>>>>>> origin/main
