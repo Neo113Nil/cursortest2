@@ -1,0 +1,4 @@
+{
+  "suspicious_domains": [],
+  "note": "Кастомных/неизвестных хостов (не google/android и не крупные рекламные/аналитические SDK) в коде, строках и ресурсах не найдено. Встречающиеся хосты относятся к Appodeal/AppLovin mediation, StartApp, Ogury, myTarget, InMobi (в т.ч. placeholder https://www.123.com), Unity Remote Config и аналогичным крупным сервисам."
+}

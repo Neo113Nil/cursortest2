@@ -1,0 +1,28 @@
+{
+  "app_id": "com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels",
+  "title": "Betano:Slots Ganhar Dinheiro",
+  "developer": "HILA FLOWER BOUTIQUE LTD",
+  "url": "https://play.google.com/store/apps/details?id=com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels&hl=en&gl=us",
+  "keyword": "betano",
+  "source": "apkcombo",
+  "updated": "Aug 12, 2026",
+  "version": "1",
+  "version_code": "1",
+  "summary": "Betano:Slots Ganhar Dinheiro offers smooth and engaging mobile fun.",
+  "folder": "Betano Slots Ganhar Dinheiro-HILA FLOWER BOUTIQUE LTD",
+  "path": "betano/Betano Slots Ganhar Dinheiro-HILA FLOWER BOUTIQUE LTD",
+  "apk_title": "Betano:Slots Ganhar Dinheiro",
+  "play_description_title": "Betano:Slots Ganhar Dinheiro",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1.apk",
+    "com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1-config.arm64_v8a.apk",
+    "Betano-Slots-Ganhar-Dinheiro.xapk"
+  ],
+  "cloaking": "нет",
+  "min_sdk": 25,
+  "target_sdk": 36,
+  "agp": "8.7.2",
+  "kotlin": "2.1.21"
+}
