@@ -1,0 +1,28 @@
+{
+  "app_id": "com.domikaw.dajkenhg.mostbet",
+  "title": "Mostbet",
+  "developer": "Kanvilcleb",
+  "package": "com.domikaw.dajkenhg.mostbet",
+  "version_name": "1.0",
+  "version_code": 1,
+  "apk_label": "Win",
+  "store_title_mismatch": true,
+  "min_sdk": 26,
+  "target_sdk": 36,
+  "agp": "8.13.2",
+  "kotlin": "да, 2.0.21",
+  "url": "https://play.google.com/store/apps/details?id=com.domikaw.dajkenhg.mostbet&hl=en&gl=us",
+  "folder": "Mostbet-Kanvilcleb",
+  "path": "mostbet/Mostbet-Kanvilcleb",
+  "cloaking": "да",
+  "gate_url": "https://throbbing-hall-a2de.tatiyjnavsjkk00.workers.dev?app=com.domikaw.dajkenhg.mostbet",
+  "suspicious_domains": [
+    "throbbing-hall-a2de.tatiyjnavsjkk00.workers.dev"
+  ],
+  "files": [
+    "com.domikaw.dajkenhg.mostbet-1.apk",
+    "com.domikaw.dajkenhg.mostbet-1-config.en.apk",
+    "com.domikaw.dajkenhg.mostbet-1-config.xxhdpi.apk"
+  ],
+  "ok": true
+}

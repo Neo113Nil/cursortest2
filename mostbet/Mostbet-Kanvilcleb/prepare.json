@@ -1,0 +1,36 @@
+{
+  "ok": true,
+  "apks": [
+    "com.domikaw.dajkenhg.mostbet-1.apk",
+    "com.domikaw.dajkenhg.mostbet-1-config.en.apk",
+    "com.domikaw.dajkenhg.mostbet-1-config.xxhdpi.apk"
+  ],
+  "base_apk": "com.domikaw.dajkenhg.mostbet-1.apk",
+  "source": "apkcombo",
+  "package": "com.domikaw.dajkenhg.mostbet",
+  "version_name": "1.0",
+  "version_code": 1,
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "/workspace/mostbet/Mostbet-Kanvilcleb/decompiled",
+    "skipped": false,
+    "base_apk": "com.domikaw.dajkenhg.mostbet-1.apk",
+    "note": "finished with errors, count: 4"
+  },
+  "analysis_files": [
+    "com.domikaw.dajkenhg.mostbet-1-config.en.apk",
+    "com.domikaw.dajkenhg.mostbet-1-config.xxhdpi.apk",
+    "com.domikaw.dajkenhg.mostbet-1.apk",
+    "apk/com.domikaw.dajkenhg.mostbet-1-config.en.apk",
+    "apk/com.domikaw.dajkenhg.mostbet-1-config.xxhdpi.apk",
+    "apk/com.domikaw.dajkenhg.mostbet-1.apk",
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/"
+  ],
+  "errors": []
+}
