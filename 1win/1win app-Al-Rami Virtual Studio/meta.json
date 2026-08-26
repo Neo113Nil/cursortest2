@@ -1,0 +1,26 @@
+{
+  "app_id": "com.goal.superstar.arena",
+  "title": "1win app",
+  "developer": "Al-Rami Virtual Studio",
+  "package": "com.goal.superstar.arena",
+  "version_name": "2.0",
+  "version_code": 2,
+  "apk_label": "Goal Superstar",
+  "store_title_mismatch": true,
+  "min_sdk": 30,
+  "target_sdk": 36,
+  "agp": "8.10.1",
+  "kotlin": "2.1.21",
+  "url": "https://play.google.com/store/apps/details?id=com.goal.superstar.arena&hl=en&gl=us",
+  "folder": "1win app-Al-Rami Virtual Studio",
+  "path": "1win/1win app-Al-Rami Virtual Studio",
+  "cloaking": "да",
+  "gate_url": "https://routesummitstack.site/xarl",
+  "suspicious_domains": ["routesummitstack.site"],
+  "files": [
+    "com.goal.superstar.arena-2.apk",
+    "com.goal.superstar.arena-2-config.arm64_v8a.apk",
+    "com.goal.superstar.arena-2-config.en.apk"
+  ],
+  "ok": true
+}

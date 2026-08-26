@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "apks": [
+    "com.goal.superstar.arena-2.apk",
+    "com.goal.superstar.arena-2-config.arm64_v8a.apk",
+    "com.goal.superstar.arena-2-config.en.apk"
+  ],
+  "source": "apkcombo",
+  "package": "com.goal.superstar.arena",
+  "version_name": "2.0",
+  "version_code": 2
+}
