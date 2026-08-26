@@ -1,0 +1,28 @@
+{
+  "app_id": "com.tttttr.ass.ladbrokes",
+  "title": "1Win",
+  "developer": "neoaro",
+  "package": "com.tttttr.ass.ladbrokes",
+  "version_name": "1.0",
+  "version_code": 1,
+  "apk_label": "Win",
+  "store_title_mismatch": true,
+  "min_sdk": 26,
+  "target_sdk": 36,
+  "agp": "8.13.2",
+  "kotlin": "2.0.21",
+  "url": "https://play.google.com/store/apps/details?id=com.tttttr.ass.ladbrokes&hl=en&gl=us",
+  "folder": "1Win-neoaro",
+  "path": "1win/1Win-neoaro",
+  "cloaking": "да",
+  "gate_url": "https://icy-band-585f.work-lupashcenko98.workers.dev?app=com.tttttr.ass.ladbrokes",
+  "suspicious_domains": [
+    "icy-band-585f.work-lupashcenko98.workers.dev"
+  ],
+  "files": [
+    "com.tttttr.ass.ladbrokes-1.apk",
+    "com.tttttr.ass.ladbrokes-1-config.en.apk",
+    "com.tttttr.ass.ladbrokes-1-config.xxhdpi.apk"
+  ],
+  "ok": true
+}

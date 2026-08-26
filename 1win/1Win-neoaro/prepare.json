@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "apks": [
+    "com.tttttr.ass.ladbrokes-1.apk",
+    "com.tttttr.ass.ladbrokes-1-config.en.apk",
+    "com.tttttr.ass.ladbrokes-1-config.xxhdpi.apk"
+  ],
+  "source": "apkcombo",
+  "package": "com.tttttr.ass.ladbrokes",
+  "version_name": "1.0",
+  "version_code": 1
+}
