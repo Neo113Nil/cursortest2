@@ -1,0 +1,22 @@
+{
+  "app_id": "com.icefishing.icefishinglive4",
+  "title": "Ice Fishing",
+  "developer": "BLACKDEAR APPS",
+  "version": "1.0",
+  "version_code": "1",
+  "min_sdk": 24,
+  "target_sdk": 36,
+  "agp": "8.9.0",
+  "folder": "Ice Fishing-BLACKDEAR APPS",
+  "path": "ice fishing/Ice Fishing-BLACKDEAR APPS",
+  "source": "apkcombo",
+  "files": [
+    "Ice+Fishing_1.0_apkcombo.com.xapk",
+    "apk/com.icefishing.icefishinglive4.apk",
+    "apk/config.armeabi_v7a.apk",
+    "apk/config.en.apk",
+    "apk/config.mdpi.apk"
+  ],
+  "remote_config_url": "https://raw.githubusercontent.com/smtpatel9211/PandyaTech/refs/heads/main/com.icefishing.icefishinglive4",
+  "cloak": true
+}
