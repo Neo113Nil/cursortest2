@@ -1,0 +1,24 @@
+{
+  "app_id": "com.crazytime.worldapp",
+  "title": "Crazy Time Live World",
+  "developer": "Аliме",
+  "package": "com.crazytime.worldapp",
+  "version_name": "1.4",
+  "version_code": 4,
+  "apk_label": "Crazy Time",
+  "store_title_mismatch": true,
+  "min_sdk": 24,
+  "target_sdk": 35,
+  "agp": "8.11.0",
+  "kotlin": "да, 1.9.23",
+  "url": "https://play.google.com/store/apps/details?id=com.crazytime.worldapp&hl=en&gl=us",
+  "folder": "Crazy Time Live World-Аliме",
+  "path": "crazy time/Crazy Time Live World-Аliме",
+  "cloaking": "да",
+  "gate_url": "Firebase Cloud Function init (project misha-1)",
+  "suspicious_domains": [
+    "api.timezonedb.com",
+    "config.ru"
+  ],
+  "ok": true
+}
