@@ -1,0 +1,53 @@
+{
+  "app_id": "com.goal.superstar.arena",
+  "title": "1win app",
+  "developer": "Al-Rami Virtual Studio",
+  "score": null,
+  "icon": "/static/app-icons/com_goal_superstar_arena.png",
+  "url": "https://play.google.com/store/apps/details?id=com.goal.superstar.arena&hl=en&gl=us",
+  "keyword": "1win",
+  "country": "India",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260826_110935_India_1win_search",
+  "search_title": "1win app (Early Access)",
+  "search_developer": "Al-Rami Virtual Studio",
+  "rank": 1,
+  "developer_id": "Al-Rami+Virtual+Studio",
+  "released": "",
+  "updated": "Aug 18, 2026",
+  "version": "Varies with device",
+  "summary": "Football arcade runner with coins, upgrades, skins and detailed statistics",
+  "folder": "1win app-Al-Rami Virtual Studio",
+  "path": "1win/1win app-Al-Rami Virtual Studio",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.goal.superstar.arena-2-asset.apk",
+    "com.goal.superstar.arena-2-config.arm64_v8a.apk",
+    "com.goal.superstar.arena-2-config.en.apk",
+    "com.goal.superstar.arena-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/1win/1win app-Al-Rami Virtual Studio",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.goal.superstar.arena ─╮\n│ 1win app                   │\n│ 2.0  (vc 2)                │\n╰────────────────────────────╯\n\nDownloading 4 files  (14.3 MB)\n  com.goal.superstar.arena-2.apk                  ━━━━━ 100% 8.3/… 22.0   0:00:…\n                                                             MB    MB/s         \n  com.goal.superstar.arena-2-config.arm64_v8a.apk ━━━━━ 100% 82.4… 2.4    0:00:…\n                                                             kB    MB/s         \n  com.goal.superstar.arena-2-config.en.apk        ━━━━━ 100% 53.7… ?      0:00:…\n                                                             kB                 \n  com.goal.superstar.arena-2-asset.apk            ━━━━━ 100% 6.6/… 12.0   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.goal.superstar.arena-2.apk                  │  7.9 MB │\n│ com.goal.superstar.arena-2-config.arm64_v8a.apk │ 80.5 KB │\n│ com.goal.superstar.arena-2-config.en.apk        │ 52.4 KB │\n│ com.goal.superstar.arena-2-asset.apk            │  7.9 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Samsung F34 5G\n",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.goal.superstar.arena ─╮\n│ 1win app                   │\n│ 2.0  (vc 2)                │\n╰────────────────────────────╯\n\nDownloading 4 files  (14.3 MB)\n  com.goal.superstar.arena-2.apk                  ━━━━━ 100% 8.3/… 22.0   0:00:…\n                                                             MB    MB/s         \n  com.goal.superstar.arena-2-config.arm64_v8a.apk ━━━━━ 100% 82.4… 2.4    0:00:…\n                                                             kB    MB/s         \n  com.goal.superstar.arena-2-config.en.apk        ━━━━━ 100% 53.7… ?      0:00:…\n                                                             kB                 \n  com.goal.superstar.arena-2-asset.apk            ━━━━━ 100% 6.6/… 12.0   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.goal.superstar.arena-2.apk                  │  7.9 MB │\n│ com.goal.superstar.arena-2-config.arm64_v8a.apk │ 80.5 KB │\n│ com.goal.superstar.arena-2-config.en.apk        │ 52.4 KB │\n│ com.goal.superstar.arena-2-asset.apk            │  7.9 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "Token expired — refreshing...\n  Authenticated with profile: Samsung F34 5G\n",
+  "exit_code": 0,
+  "error": ""
+}
