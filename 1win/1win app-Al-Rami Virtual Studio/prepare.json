@@ -3,6 +3,7 @@
   "apks": [
     "com.goal.superstar.arena-2.apk",
     "com.goal.superstar.arena-2-config.arm64_v8a.apk",
+<<<<<<< HEAD
     "com.goal.superstar.arena-2-config.en.apk",
     "com.goal.superstar.arena-2-asset.apk"
   ],
@@ -38,3 +39,12 @@
   ],
   "errors": []
 }
+=======
+    "com.goal.superstar.arena-2-config.en.apk"
+  ],
+  "source": "apkcombo",
+  "package": "com.goal.superstar.arena",
+  "version_name": "2.0",
+  "version_code": 2
+}
+>>>>>>> 601e5bebc56c70231fa77a7a8aed7da13886a81a

@@ -1,0 +1,149 @@
+{
+  "app_id": "topgaingldbal.actionpickstats.app",
+  "title": "Mostbet",
+  "developer": "topgainglobalcode",
+  "score": null,
+  "icon": "/static/app-icons/topgaingldbal_actionpickstats_app.png",
+  "url": "https://play.google.com/store/apps/details?id=topgaingldbal.actionpickstats.app&hl=en&gl=us",
+  "keyword": "MostBet",
+  "country": "India",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260826_114928_India_MostBet_search",
+  "search_title": "Mostbet",
+  "search_developer": "topgainglobalcode",
+  "rank": 1,
+  "developer_id": "topgainglobalcode",
+  "released": "Aug 6, 2026",
+  "updated": "Aug 17, 2026",
+  "version": "Varies with device",
+  "summary": "Upgrade your home effortlessly with the new ActionPick Stats shopping catalog.",
+  "folder": "Mostbet-topgainglobalcode",
+  "path": "mostbet/Mostbet-topgainglobalcode",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "topgaingldbal.actionpickstats.app-2-asset.apk",
+    "topgaingldbal.actionpickstats.app-2-config.arm64_v8a.apk",
+    "topgaingldbal.actionpickstats.app-2-config.en.apk",
+    "topgaingldbal.actionpickstats.app-2-config.xxhdpi.apk",
+    "topgaingldbal.actionpickstats.app-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/mostbet/Mostbet-topgainglobalcode",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ topgaingldbal.actionpickstats.app ─╮\n│ Mostbet                             │\n│ 2.0  (vc 2)                         │\n╰─────────────────────────────────────╯\n\nDownloading 5 files  (56.4 MB)\n  topgaingldbal.actionpickstats.app-2.apk                  ━━━ 100% 46… 18… 0:0…\n                                                                    MB  MB…     \n  topgaingldbal.actionpickstats.app-2-config.arm64_v8a.apk ━━━ 100% 82… 2.3 0:0…\n                                                                    kB  MB…     \n  topgaingldbal.actionpickstats.app-2-config.en.apk        ━━━ 100% 98… 2.3 0:0…\n                                                                    kB  MB…     \n  topgaingldbal.actionpickstats.app-2-config.xxhdpi.apk    ━━━ 100% 91… 2.7 0:0…\n                                                                    kB  MB…     \n  topgaingldbal.actionpickstats.app-2-asset.apk            ━━━ 100% 12… 7.9 0:0…\n                                                                    MB  MB…     \n\n                           Downloaded files                           \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                     ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ topgaingldbal.actionpickstats.app-2.apk                  │ 44.1 MB │\n│ topgaingldbal.actionpickstats.app-2-config.arm64_v8a.apk │ 80.5 KB │\n│ topgaingldbal.actionpickstats.app-2-config.en.apk        │ 96.4 KB │\n│ topgaingldbal.actionpickstats.app-2-config.xxhdpi.apk    │ 88.9 KB │\n│ topgaingldbal.actionpickstats.app-2-asset.apk            │ 44.1 MB │\n└──────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ topgaingldbal.actionpickstats.app ─╮\n│ Mostbet                             │\n│ 2.0  (vc 2)                         │\n╰─────────────────────────────────────╯\n\nDownloading 5 files  (56.4 MB)\n  topgaingldbal.actionpickstats.app-2.apk                  ━━━ 100% 46… 18… 0:0…\n                                                                    MB  MB…     \n  topgaingldbal.actionpickstats.app-2-config.arm64_v8a.apk ━━━ 100% 82… 2.3 0:0…\n                                                                    kB  MB…     \n  topgaingldbal.actionpickstats.app-2-config.en.apk        ━━━ 100% 98… 2.3 0:0…\n                                                                    kB  MB…     \n  topgaingldbal.actionpickstats.app-2-config.xxhdpi.apk    ━━━ 100% 91… 2.7 0:0…\n                                                                    kB  MB…     \n  topgaingldbal.actionpickstats.app-2-asset.apk            ━━━ 100% 12… 7.9 0:0…\n                                                                    MB  MB…     \n\n                           Downloaded files                           \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                     ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ topgaingldbal.actionpickstats.app-2.apk                  │ 44.1 MB │\n│ topgaingldbal.actionpickstats.app-2-config.arm64_v8a.apk │ 80.5 KB │\n│ topgaingldbal.actionpickstats.app-2-config.en.apk        │ 96.4 KB │\n│ topgaingldbal.actionpickstats.app-2-config.xxhdpi.apk    │ 88.9 KB │\n│ topgaingldbal.actionpickstats.app-2-asset.apk            │ 44.1 MB │\n└──────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": "",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Mostbet"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.13.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.POST_NOTIFICATIONS, topgaingldbal.actionpickstats.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.compose (ui, foundation, material3, animation, runtime), androidx.activity, androidx.appcompat, androidx.core, androidx.lifecycle, androidx.navigation, androidx.room, androidx.datastore, androidx.startup, androidx.emoji2, androidx.profileinstaller, androidx.sqlite, coil, okhttp3, okio, org.koin, kotlinx.coroutines, kotlinx.serialization, co.touchlab.stately, com.google.accompanist, com.google.common.util.concurrent, com.pairip.licensecheck"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "cdn.comfy.ua, config.ru, images.unsplash.com, img2.ans-media.com, topgaingldbal.actionpickstats.app"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "DataStore Preferences: ключ onboarding_completed (флаг, что человек уже прошёл стартовый экран знакомства)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "нет"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "cdn.comfy.ua",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: ua.imena"
+      },
+      {
+        "domain": "config.ru",
+        "redirects_to": "https://config.ru/en/",
+        "parked_at": "похоже на парковку (domain is for sale)"
+      },
+      {
+        "domain": "images.unsplash.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: 1API GmbH"
+      },
+      {
+        "domain": "img2.ans-media.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Key-Systems GmbH"
+      },
+      {
+        "domain": "topgaingldbal.actionpickstats.app",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
+}

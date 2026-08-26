@@ -1238,10 +1238,10 @@
           "Alexa: 837293",
           "Cisco Umbrella: 943593",
           "Cloudflare Radar: 1000000",
-          "Majestic: 681604"
+          "Majestic: 667397"
         ],
         "creation_date": 1589789971,
-        "last_modification_date": 1787692023,
+        "last_modification_date": 1787763812,
         "last_analysis_date": 1786711043,
         "registrar": "Key-Systems GmbH",
         "whois": "Admin City: LUNEL\nAdmin Country: FR\nAdmin Email: 142009b855ac8689s@bfore.ai\nAdmin Organization: BforeAI\nAdmin Postal Code: 34400\nCreation Date: 2020-05-18T08:19:31Z\nDNSSEC: unsigned\nDomain Name: bfore.ai\nDomain Status: ok https://icann.org/epp#ok\nName Server: gannon.ns.cloudflare.com\nName Server: joan.ns.cloudflare.com\nRegistrant City: 35bc51b08d6157ac\nRegistrant Country: FR\nRegistrant Email: 1b111f016998b8a5s@bfore.ai\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 3432650ec337c945\nRegistrant Name: 859eb95e6c19379b\nRegistrant Organization: a92ce43020c74c2d\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: cbe2f81ea0f3d324\nRegistrant Postal Code: 142f27c6efee25c9\nRegistrant State/Province: 5e748b960a832663\nRegistrant Street: a3bafb9d1917a61e\nRegistrar Abuse Contact Email: abuse@key-systems.net\nRegistrar Abuse Contact Phone: +49.68949396850\nRegistrar IANA ID: 269\nRegistrar URL: http://key-systems.net\nRegistrar WHOIS Server: whois.rrpproxy.net\nRegistrar: Key-Systems GmbH\nRegistry Admin ID: 49266c63f333482585da97c9604a7dee-DONUTS\nRegistry Domain ID: 7fd17e72329c40e28470a0297206bc76-DONUTS\nRegistry Expiry Date: 2030-05-18T08:19:31Z\nRegistry Registrant ID: 5fea896286f742c4b03a01b2dd3a7924-DONUTS\nRegistry Tech ID: ae212174345a41199b163f6b1193f9ad-DONUTS\nTech City: arinsal\nTech Country: AD\nTech Email: 220e5ddaaf1cc53fs@gmail.com\nTech Organization: EVENTOURI\nTech Postal Code: ad400\nTech State/Province: la massana\nUpdated Date: 2025-11-24T22:53:42Z",
@@ -3714,28 +3714,28 @@
         },
         "categories": {},
         "popularity_ranks": [
-          "Majestic: 591101",
+          "Majestic: 612614",
           "Statvoo: 485519",
           "Alexa: 485519",
           "Cisco Umbrella: 706728",
           "Cloudflare Radar: 1000000"
         ],
         "creation_date": 1573131732,
-        "last_modification_date": 1787684639,
-        "last_analysis_date": 1787684328,
+        "last_modification_date": 1787778649,
+        "last_analysis_date": 1787778338,
         "registrar": "GoDaddy.com, LLC",
         "whois": "Admin City: REDACTED FOR PRIVACY\nAdmin Country: REDACTED FOR PRIVACY\nAdmin Organization: REDACTED FOR PRIVACY\nAdmin Postal Code: REDACTED FOR PRIVACY\nAdmin State/Province: REDACTED FOR PRIVACY\nBilling City: REDACTED FOR PRIVACY\nBilling Country: REDACTED FOR PRIVACY\nBilling Organization: REDACTED FOR PRIVACY\nBilling Postal Code: REDACTED FOR PRIVACY\nBilling State/Province: REDACTED FOR PRIVACY\nCreation Date: 2019-11-07T13:02:12Z\nDNSSEC: unsigned\nDomain Name: diia.app\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: ns-1526.awsdns-62.org\nName Server: ns-1930.awsdns-49.co.uk\nName Server: ns-390.awsdns-48.com\nName Server: ns-567.awsdns-06.net\nRegistrant City: 1f8f4166599d23ee\nRegistrant Country: US\nRegistrant Email: d807ea723facd141s@\nRegistrant Name: 1f8f4166599d23ee\nRegistrant Organization: b46a98a26fe2fd9f\nRegistrant Phone: 1f8f4166599d23ee\nRegistrant Postal Code: 1f8f4166599d23ee\nRegistrant State/Province: 30bdd2917a604c83\nRegistrant Street: 1f8f4166599d23ee\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: +1.4806242505\nRegistrar IANA ID: 146\nRegistrar URL: https://www.godaddy.com/\nRegistrar WHOIS Server: whois.godaddy.com\nRegistrar: GoDaddy.com, LLC\nRegistry Admin ID: REDACTED FOR PRIVACY\nRegistry Billing ID: REDACTED FOR PRIVACY\nRegistry Domain ID: 403D77663-APP\nRegistry Expiry Date: 2025-11-07T13:02:12Z\nRegistry Registrant ID: REDACTED FOR PRIVACY\nRegistry Tech ID: REDACTED FOR PRIVACY\nTech City: REDACTED FOR PRIVACY\nTech Country: REDACTED FOR PRIVACY\nTech Organization: REDACTED FOR PRIVACY\nTech Postal Code: REDACTED FOR PRIVACY\nTech State/Province: REDACTED FOR PRIVACY\nUpdated Date: 2024-06-28T05:28:29Z",
         "dns_records": [
-          "A 195.189.240.62",
-          "A 195.189.240.61",
-          "NS ns-390.awsdns-48.com",
           "TXT google-site-verification=ORxTZksdjUvA4rKD8zam38QFPrzzsH7dRGXeVtN_27E",
+          "NS ns-567.awsdns-06.net",
+          "A 195.189.240.61",
           "NS ns-1526.awsdns-62.org",
-          "SOA ns-1930.awsdns-49.co.uk",
+          "A 195.189.240.62",
+          "NS ns-390.awsdns-48.com",
           "TXT g6nbmzb28f5qt7ryhk8b6qt1jmsq5txt",
           "TXT _aijb78m3r7ihxxw62lc25m3ncfoegm8",
-          "NS ns-1930.awsdns-49.co.uk",
-          "NS ns-567.awsdns-06.net"
+          "SOA ns-1930.awsdns-49.co.uk",
+          "NS ns-1930.awsdns-49.co.uk"
         ],
         "https_subject": {
           "CN": "*.diia.app"
@@ -4542,14 +4542,14 @@
         },
         "categories": {},
         "popularity_ranks": [
-          "Majestic: 107076",
+          "Majestic: 110481",
           "Statvoo: 673994",
           "Alexa: 673994",
           "Cisco Umbrella: 571197",
           "Cloudflare Radar: 200000"
         ],
         "creation_date": 1485043200,
-        "last_modification_date": 1787680116,
+        "last_modification_date": 1787758631,
         "last_analysis_date": 1787421591,
         "registrar": "нет",
         "whois": "Administrative city: Reykjavik\nAdministrative country: Iceland\nAdministrative email: f83f971149671682s@withheldforprivacy.com\nAdministrative state: Capital Region\nBilling city: Reykjavik\nBilling country: Iceland\nBilling email: f83f971149671682s@withheldforprivacy.com\nBilling state: Capital Region\nCreate date: 2017-01-22 00:00:00\nDomain name: scorebat.com\nDomain registrar id: 1068.0\nDomain registrar url: whois.namecheap.com\nExpiry date: 2027-01-22 00:00:00\nQuery time: 2026-01-09 02:37:58\nRegistrant address: c6523241936df1ba\nRegistrant city: ddbf76e4e8cee320\nRegistrant company: 4b7a0912c26a13e2\nRegistrant country: Iceland\nRegistrant email: f83f971149671682s@withheldforprivacy.com\nRegistrant name: 37bfbc24cafea5d2\nRegistrant phone: ef7c9ebdb324979a\nRegistrant state: 3e0204199d8ebf9c\nRegistrant zip: f206c9d9737ad45d\nTechnical city: Reykjavik\nTechnical country: Iceland\nTechnical email: f83f971149671682s@withheldforprivacy.com\nTechnical state: Capital Region\nUpdate date: 2026-01-06 00:00:00",
@@ -6197,14 +6197,14 @@
           "Google": "sports"
         },
         "popularity_ranks": [
-          "Majestic: 205773",
+          "Majestic: 208141",
           "Statvoo: 536603",
           "Alexa: 536603",
-          "Cisco Umbrella: 216756",
+          "Cisco Umbrella: 224692",
           "Cloudflare Radar: 20000"
         ],
         "creation_date": 1380614559,
-        "last_modification_date": 1787683727,
+        "last_modification_date": 1787777785,
         "last_analysis_date": 1787221203,
         "registrar": "Cloudflare, Inc.",
         "whois": "Admin City: DATA REDACTED\nAdmin Country: DATA REDACTED\nAdmin Organization: DATA REDACTED\nAdmin Postal Code: DATA REDACTED\nAdmin State/Province: DATA REDACTED\nBilling City: DATA REDACTED\nBilling Country: DATA REDACTED\nBilling Organization: DATA REDACTED\nBilling Postal Code: DATA REDACTED\nBilling State/Province: DATA REDACTED\nCreation Date: 2013-10-01T08:02:39Z\nDNSSEC: unsigned\nDomain Name: THESPORTSDB.COM\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clienttransferprohibited https://icann.org/epp#clienttransferprohibited\nName Server: ASHLEY.NS.CLOUDFLARE.COM\nName Server: MARK.NS.CLOUDFLARE.COM\nName Server: ashley.ns.cloudflare.com\nName Server: mark.ns.cloudflare.com\nRegistrant City: acfd0ee3752cd95d\nRegistrant Country: GB\nRegistrant Email: f2516f9df352d3f6s@\nRegistrant Fax Ext: acfd0ee3752cd95d\nRegistrant Fax: acfd0ee3752cd95d\nRegistrant Name: acfd0ee3752cd95d\nRegistrant Organization: acfd0ee3752cd95d\nRegistrant Phone Ext: acfd0ee3752cd95d\nRegistrant Phone: acfd0ee3752cd95d\nRegistrant Postal Code: acfd0ee3752cd95d\nRegistrant State/Province: 694b4fbc4cb326df\nRegistrant Street: acfd0ee3752cd95d\nRegistrar Abuse Contact Email: registrar-abuse@cloudflare.com\nRegistrar Abuse Contact Phone: +1.4153197517\nRegistrar Abuse Contact Phone: +1.6503198930\nRegistrar IANA ID: 1910\nRegistrar Registration Expiration Date: 2033-10-01T08:02:39Z\nRegistrar URL: http://www.cloudflare.com\nRegistrar URL: https://www.cloudflare.com\nRegistrar WHOIS Server: whois.cloudflare.com\nRegistrar: Cloudflare, Inc.\nRegistry Domain ID: 1829494401_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2033-10-01T08:02:39Z\nTech City: DATA REDACTED\nTech Country: DATA REDACTED\nTech Organization: DATA REDACTED\nTech Postal Code: DATA REDACTED\nTech State/Province: DATA REDACTED\nUpdated Date: 2024-08-19T11:08:13Z",

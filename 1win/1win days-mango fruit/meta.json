@@ -1,0 +1,55 @@
+{
+  "app_id": "fit.donblestandartsathletics.winnerdays",
+  "title": "1win days",
+  "developer": "mango fruit",
+  "score": null,
+  "icon": "/static/app-icons/fit_donblestandartsathletics_winnerdays.png",
+  "url": "https://play.google.com/store/apps/details?id=fit.donblestandartsathletics.winnerdays&hl=en&gl=us",
+  "keyword": "1win",
+  "country": "India",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260826_110935_India_1win_search",
+  "search_title": "1win days",
+  "search_developer": "mango fruit",
+  "rank": 8,
+  "developer_id": "mango+fruit",
+  "released": "Aug 10, 2026",
+  "updated": "Aug 11, 2026",
+  "version": "Varies with device",
+  "summary": "Build & track a 100‑day personalized workout plan. Offline, simple, powerful.",
+  "folder": "1win days-mango fruit",
+  "path": "1win/1win days-mango fruit",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "fit.donblestandartsathletics.winnerdays-5-asset.apk",
+    "fit.donblestandartsathletics.winnerdays-5-config.en.apk",
+    "fit.donblestandartsathletics.winnerdays-5-config.lt.apk",
+    "fit.donblestandartsathletics.winnerdays-5-config.ru.apk",
+    "fit.donblestandartsathletics.winnerdays-5-config.xxhdpi.apk",
+    "fit.donblestandartsathletics.winnerdays-5.apk"
+  ],
+  "target": "/root/play-collector/загрузки/1win/1win days-mango fruit",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ fit.donblestandartsathletics.winnerdays ─╮\n│ 1win days                                 │\n│ 5  (vc 5)                                 │\n╰───────────────────────────────────────────╯\n\nDownloading 6 files  (1.8 MB)\n  fit.donblestandartsathletics.winnerdays-5.apk               ━━ 100% 1… 1… 0:0…\n                                                                      MB M…     \n  fit.donblestandartsathletics.winnerdays-5-config.en.apk     ━━ 100% 3… ?  0:0…\n                                                                      kB        \n  fit.donblestandartsathletics.winnerdays-5-config.lt.apk     ━━ 100% 2… ?  0:0…\n                                                                      kB        \n  fit.donblestandartsathletics.winnerdays-5-config.ru.apk     ━━ 100% 2… ?  0:0…\n                                                                      kB        \n  fit.donblestandartsathletics.winnerdays-5-config.xxhdpi.apk ━━ 100% 1… 2… 0:0…\n                                                                      kB M…     \n  fit.donblestandartsathletics.winnerdays-5-asset.apk         ━━ 100% 5… 6… 0:0…\n                                                                      kB M…     \n\n                             Downloaded files                             \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                        ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ fit.donblestandartsathletics.winnerdays-5.apk               │   1.1 MB │\n│ fit.donblestandartsathletics.winnerdays-5-config.en.apk     │  36.4 KB │\n│ fit.donblestandartsathletics.winnerdays-5-config.lt.apk     │  20.4 KB │\n│ fit.donblestandartsathletics.winnerdays-5-config.ru.apk     │  20.4 KB │\n│ fit.donblestandartsathletics.winnerdays-5-config.xxhdpi.apk │ 145.2 KB │\n│ fit.donblestandartsathletics.winnerdays-5-asset.apk         │   1.1 MB │\n└─────────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ fit.donblestandartsathletics.winnerdays ─╮\n│ 1win days                                 │\n│ 5  (vc 5)                                 │\n╰───────────────────────────────────────────╯\n\nDownloading 6 files  (1.8 MB)\n  fit.donblestandartsathletics.winnerdays-5.apk               ━━ 100% 1… 1… 0:0…\n                                                                      MB M…     \n  fit.donblestandartsathletics.winnerdays-5-config.en.apk     ━━ 100% 3… ?  0:0…\n                                                                      kB        \n  fit.donblestandartsathletics.winnerdays-5-config.lt.apk     ━━ 100% 2… ?  0:0…\n                                                                      kB        \n  fit.donblestandartsathletics.winnerdays-5-config.ru.apk     ━━ 100% 2… ?  0:0…\n                                                                      kB        \n  fit.donblestandartsathletics.winnerdays-5-config.xxhdpi.apk ━━ 100% 1… 2… 0:0…\n                                                                      kB M…     \n  fit.donblestandartsathletics.winnerdays-5-asset.apk         ━━ 100% 5… 6… 0:0…\n                                                                      kB M…     \n\n                             Downloaded files                             \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                        ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ fit.donblestandartsathletics.winnerdays-5.apk               │   1.1 MB │\n│ fit.donblestandartsathletics.winnerdays-5-config.en.apk     │  36.4 KB │\n│ fit.donblestandartsathletics.winnerdays-5-config.lt.apk     │  20.4 KB │\n│ fit.donblestandartsathletics.winnerdays-5-config.ru.apk     │  20.4 KB │\n│ fit.donblestandartsathletics.winnerdays-5-config.xxhdpi.apk │ 145.2 KB │\n│ fit.donblestandartsathletics.winnerdays-5-asset.apk         │   1.1 MB │\n└─────────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}

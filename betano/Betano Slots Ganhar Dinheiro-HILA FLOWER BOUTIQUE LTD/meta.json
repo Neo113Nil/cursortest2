@@ -6,5 +6,132 @@
   "url": "https://play.google.com/store/apps/details?id=com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels&hl=en&gl=us",
   "released": "Aug 8, 2026",
   "updated": "Aug 9, 2026",
-  "version": "Varies with device"
+  "version": "Varies with device",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Betano:Slots Ganhar Dinheiro"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.7.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да + 2.1.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "Appodeal, AppLovin MAX, AdMob, Google Ad Manager, Unity Ads, ironSource, Mintegral (mbridge), Vungle (Liftoff), Chartboost, InMobi, Fyber / DT Exchange, Smaato, Pangle (ByteDance), Meta Audience Network, myTarget, Ogury, BIGO Ads, Amazon Publisher Services (APS/DTB), BidMachine, Moloco, MobileFuse, PubMatic OpenWrap, Verve / PubNative, Yandex Mobile Ads, Start.io (StartApp), TaurusX, Bidon, Google User Messaging Platform"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Firebase Remote Config, Firebase Installations, AppsFlyer, Adjust, Unity Analytics, Unity Remote Config, Unity Authentication, AppMetrica (Yandex), Sentry (sentry.appodeal.com), OneSignal, ByteDance APM Insight, ru.ok.tracer"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.VIBRATE, com.google.android.gms.permission.AD_ID, com.android.vending.CHECK_LICENSE, android.permission.WAKE_LOCK, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, com.samsung.android.mapsagent.permission.READ_APP_INFO, com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA, com.android.vending.BILLING, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE, android.permission.FOREGROUND_SERVICE, com.betanoslots.betanoslotsapp.betanoslotsbet anoslotsapp.reels.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity 6000.3.0b4 (IL2CPP, libil2cpp.so, libunity.so, libgame.so), Unity Input System, TextMesh Pro, Unity Purchasing (Play Billing 8.0.0), Unity Services Core, Newtonsoft.Json (в управляемом коде), FMOD (org.fmod), Kotlin 2.1.21, kotlinx-coroutines 1.10.2, OkHttp / Okio, Ktor, Coil, Picasso, Gson, Protobuf, Cronet (org.chromium), androidx.appcompat, androidx.core, androidx.compose, androidx.browser 1.8.0, androidx.datastore, androidx.work, androidx.media3, androidx.webkit, androidx.room, Google Play Services (ads, ads-identifier, appset, measurement, auth, location, base), Google Play Core / Review / Integrity, Appodeal SDK, AppLovin SDK + 22 adapter-модуля медиации, BidMachine, Explorestack, Bidon, StartApp, TaurusX, Ogury, myTarget, Mintegral, ironSource, Unity Ads, Vungle, Chartboost, InMobi, Fyber / Digital Turbine, Smaato, Pangle / ByteDance, Facebook SDK, BIGO Ads, Amazon APS, Moloco, MobileFuse, PubMatic, Verve / PubNative, Yandex Ads, IAB TCF, OMSDK, AppsFlyer, Adjust, AppMetrica, Sentry, PairIP licensecheck, NativeShare (com.yasirkula.unity), caverock AndroidSVG, multidex Подозрительные домены нет"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Unity PlayerPrefs (файл настроек приложения): mk_slot_coins, mk_slot_level, mk_slot_level_progress, mk_slot_statistic, _mk_slot_jackpot_, spinscount, wincoinsamount, gift_timer, daysrow, slot_daysrowachievement_timer, _fbfirstlogined_; ответ удалённых настроек кладётся в файл RemoteConfigCache.json в папке приложения; свои отдельные хранилища ведут AppLovin, Appodeal, AppsFlyer, Adjust, Unity Ads, AppMetrica, Sentry, Firebase, Start.io, TaurusX"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да Параметр Значение"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "gowebview, Webview, gamelink1, gamelink2, gamelink3, gamelink4, Lad1–Lad8, Ladimage1–Ladimage8, Pad1–Pad8, Padimage1–Padimage8, promo1_link, promo1_image, promo2_link, promo2_image, casino, slots, roulette, poker, jackpot, bet, payout, «Gambling addiction warning: Play responsibly...», «Connecting to the casino floor...», «Spinning the roulette wheel...»"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "123.com",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "ad.mail.ru",
+        "redirects_to": "https://target.vk.ru/?utm_source=ad.mail.ru&utm_medium=redir&utm_campaign=index",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "ads-test.st.ogury.com",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: GANDI SAS"
+      },
+      {
+        "domain": "adsmetadata.mobileadexchange.net",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "adsmetadata.startappservice.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "aomedia.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Squarespace Domains II LLC"
+      },
+      {
+        "domain": "api16-access-ttp.tiktokpangle.us",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Gandi SAS"
+      },
+      {
+        "domain": "app.appodeal.com",
+        "redirects_to": "https://app.appodeal.com/signin",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      }
+    ],
+    "collected_data": [
+      "Идентификатор проекта приложения",
+      "Идентификатор среды настроек",
+      "Идентификатор пользователя",
+      "Идентификатор игрока",
+      "Аналитический идентификатор пользователя",
+      "Свой идентификатор пользователя",
+      "Ключ набора настроек",
+      "Тип набора настроек",
+      "Идентификатор схемы настроек",
+      "Тип запрашиваемых настроек",
+      "Отпечаток ранее выданных",
+      "Название службы-источника запроса",
+      "Признак отладочной сборки",
+      "Версия пакета приложения",
+      "Сведения об источнике",
+      "Название приложения",
+      "Версия приложения",
+      "Версия Android",
+      "Модель телефона",
+      "Признак рут-доступа"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Идентификатор проекта приложения\n• Идентификатор среды настроек\n• Идентификатор пользователя\n• Идентификатор игрока\n• Аналитический идентификатор пользователя\n• Свой идентификатор пользователя\n• Ключ набора настроек\n• Тип набора настроек\n• Идентификатор схемы настроек\n• Тип запрашиваемых настроек\n• Отпечаток ранее выданных\n• Название службы-источника запроса\n• Признак отладочной сборки\n• Версия пакета приложения\n• Сведения об источнике\n• Название приложения\n• Версия приложения\n• Версия Android\n• Модель телефона\n• Признак рут-доступа\n\nКак собираются: Сбор начинается сразу при запуске, ещё до того как человек увидит игровой экран. Первой открывается служебная сцена загрузки (в проекте она называется loder), и висящий на ней объект RemoteManager в самом начале своей жизни (метод Awake) запускает скрытую процедуру InitializeRemoteConfigAsync — обращение к удалённым настройкам. Все сведения о телефоне приложение не спрашивает у человека, а берёт само: часть — у системы Android через игровой движок (модель, версия Android, язык, память, экран, процессор, признак рут-доступа, магазин и способ установки), часть — из своих собственных данных (название и версия приложения, номера пользователя и проекта).…\n\nКуда отправляются: Запрос уходит на адрес https://config.services.api.unity.com/settings — это служба удалённых настроек Unity, то есть чужой «пульт управления», который разработчик заполняет сам через свою панель. Своего собственного сервера-проверки у приложения нет, роль такого сервера здесь играет именно эта служба. В запросе указан номер проекта 49e286d2-c9a2-4e57-a547-5dd901a3a398 и рабочая среда production, то есть боевые, а не тестовые настройки. Адрес зашит в приложении целиком, из кусков он не собирается, запасных адресов для этой проверки в коде нет. Уходит всё это тихо, в фоне, во время заставки, без каких-либо сообщений человеку.…\n\nКак фильтруются пользователи: Разделение людей делает не телефон, а сервер. В самом приложении нет ни списка стран, ни списка языков, ни проверок «свой/чужой» — есть только отправка признаков и покорное применение того, что пришло в ответ. На проверку уходят как раз те признаки, по которым удобно отсека…"
+  }
 }
