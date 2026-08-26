@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "apks": [
+    "com.retopi.defrowit.mostbet-1.apk",
+    "com.retopi.defrowit.mostbet-1-config.en.apk",
+    "com.retopi.defrowit.mostbet-1-config.xxhdpi.apk"
+  ],
+  "base_apk": "com.retopi.defrowit.mostbet-1.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "out_dir": "/workspace/mostbet/Mostbet-TOV PODMAH/decompiled",
+    "skipped": false,
+    "base_apk": "com.retopi.defrowit.mostbet-1.apk"
+  },
+  "analysis_files": [
+    "com.retopi.defrowit.mostbet-1.apk",
+    "com.retopi.defrowit.mostbet-1-config.en.apk",
+    "com.retopi.defrowit.mostbet-1-config.xxhdpi.apk",
+    "apk/com.retopi.defrowit.mostbet-1.apk",
+    "apk/com.retopi.defrowit.mostbet-1-config.en.apk",
+    "apk/com.retopi.defrowit.mostbet-1-config.xxhdpi.apk",
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/",
+    "decompiled/sources/defpackage/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/okhttp3/"
+  ],
+  "errors": [],
+  "source": "apkcombo"
+}

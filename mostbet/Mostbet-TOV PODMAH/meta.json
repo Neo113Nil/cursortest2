@@ -1,0 +1,28 @@
+{
+  "app_id": "com.retopi.defrowit.mostbet",
+  "title": "Mostbet",
+  "developer": "TOV PODMAH",
+  "package": "com.retopi.defrowit.mostbet",
+  "version_name": "1.0",
+  "version_code": 1,
+  "apk_label": "Win",
+  "store_title_mismatch": true,
+  "min_sdk": 32,
+  "target_sdk": 35,
+  "agp": "9.1.1",
+  "kotlin": "да",
+  "url": "https://play.google.com/store/apps/details?id=com.retopi.defrowit.mostbet&hl=en&gl=us",
+  "folder": "Mostbet-TOV PODMAH",
+  "path": "mostbet/Mostbet-TOV PODMAH",
+  "cloaking": "да",
+  "gate_url": "https://summer-lake-1bb4.malaniimariana5.workers.dev?app=com.retopi.defrowit.mostbet",
+  "suspicious_domains": [
+    "summer-lake-1bb4.malaniimariana5.workers.dev"
+  ],
+  "files": [
+    "com.retopi.defrowit.mostbet-1.apk",
+    "com.retopi.defrowit.mostbet-1-config.en.apk",
+    "com.retopi.defrowit.mostbet-1-config.xxhdpi.apk"
+  ],
+  "ok": true
+}
