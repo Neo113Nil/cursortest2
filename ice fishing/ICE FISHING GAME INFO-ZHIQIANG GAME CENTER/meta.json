@@ -1,0 +1,76 @@
+{
+  "app_id": "com.events.gpointercomfishice",
+  "title": "ICE FISHING:GAME INFO",
+  "developer": "ZHIQIANG GAME CENTER",
+  "version": "1.0.1",
+  "version_code": "1",
+  "min_sdk": 24,
+  "target_sdk": 35,
+  "cloaking": "нет",
+  "url": "https://play.google.com/store/apps/details?id=com.events.gpointercomfishice",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "ICE FISHING:GAME INFO"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.5.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 1.8.10"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Tenjin, Firebase Analytics, Google Analytics / Measurement, Play Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.google.android.gms.permission.AD_ID, android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE, android.permission.WAKE_LOCK, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_AD_ID, com.events.gpointercomfishice.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Flutter, androidx.appcompat, androidx.browser (Custom Tabs), androidx.webkit, androidx.core (+ktx), androidx.activity, androidx.fragment, androidx.lifecycle, androidx.room, androidx.datastore, androidx.startup, androidx.profileinstaller, androidx.privacysandbox.ads, androidx.window, Kotlin 1.8.10 + kotlinx-coroutines, flutter_inappwebview, url_launcher, shared_preferences, Tenjin, Firebase Analytics / Core / Installations, Google Play Services (ads-identifier, measurement, basemeasurement), Play Install Referrer, connectivity_plus, internet_connection_checker_plus, shorebird_code_push, rate_my_app, share_plus, image_picker, wakelock_plus"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "events.gpointer.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "флаг первого запуска (isFirst), избранные истории, позиция/режим темы (themePos, themeMode), флаг RateMyApp doNotOpenAgain"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "redirect, webview, InAppWebView, useWebView, launchUrl, openUrlInApp"
+      }
+    ],
+    "cloaking": "нет"
+  }
+}

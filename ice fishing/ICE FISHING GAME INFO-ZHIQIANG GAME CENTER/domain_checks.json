@@ -1,0 +1,9 @@
+{
+  "domains": [
+    {
+      "domain": "events.gpointer.com",
+      "note": "custom CMS backend; VT table not provided by pipeline for this host",
+      "role": "baseUrl for story APIs (allstory.php, category.php, homebanner.php, randomstory.php, story.php, uploads/)"
+    }
+  ]
+}
