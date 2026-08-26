@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "apks": [
+    "fit.donblestandartsathletics.winnerdays-5.apk",
+    "fit.donblestandartsathletics.winnerdays-5-config.en.apk",
+    "fit.donblestandartsathletics.winnerdays-5-config.fr.apk",
+    "fit.donblestandartsathletics.winnerdays-5-config.xxhdpi.apk"
+  ],
+  "source": "apkcombo",
+  "package": "fit.donblestandartsathletics.winnerdays",
+  "version_name": "5",
+  "version_code": 5
+}
