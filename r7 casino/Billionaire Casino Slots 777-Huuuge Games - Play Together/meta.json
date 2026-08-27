@@ -1,0 +1,54 @@
+{
+  "app_id": "com.huuuge.casino.texas",
+  "title": "Billionaire Casino Slots 777",
+  "developer": "Huuuge Games - Play Together",
+  "url": "https://play.google.com/store/apps/details?id=com.huuuge.casino.texas&hl=en&gl=us",
+  "version": "12.08.27100",
+  "version_code": "1786533240",
+  "summary": "Billionaire Casino Slots 777 (APK label: Billionaire Casino) — оригинальная social-casino игра Huuuge Games на собственном движке ClawApp (C++/Lua); игровой сервер game-mobile.production.hc.huuuge.cloud, собственная рекламная сеть hads.huuuge.net + AdMob, аналитика Huuuge Analytics/Firebase/AppsFlyer/Sentry/Datadog/Braze/Intercom; клоаки нет.",
+  "keyword": "r7 casino",
+  "folder": "Billionaire Casino Slots 777-Huuuge Games - Play Together",
+  "path": "r7 casino/Billionaire Casino Slots 777-Huuuge Games - Play Together",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "apk_label": "Billionaire Casino",
+  "cloaking": "нет",
+  "files": [
+    "com.huuuge.casino.texas-1786533240.xapk",
+    "apk/com.huuuge.casino.texas-1786533240.apk",
+    "apk/com.huuuge.casino.texas-1786533240-config.arm64_v8a.apk",
+    "apk/com.huuuge.casino.texas-1786533240-config.en.apk",
+    "apk/com.huuuge.casino.texas-1786533240-config.hdpi.apk"
+  ],
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      {
+        "domain": "aggregator.eu.usercentrics.eu"
+      },
+      {
+        "domain": "aggregator.service.usercentrics.eu"
+      },
+      {
+        "domain": "aomedia.org"
+      },
+      {
+        "domain": "api.usercentrics.eu"
+      }
+    ],
+    "ads": [
+      "AdMob",
+      "Huuuge HADS"
+    ],
+    "analytics": [
+      "Huuuge Analytics",
+      "Firebase Analytics",
+      "AppsFlyer",
+      "Sentry",
+      "Datadog RUM",
+      "Braze",
+      "Intercom",
+      "Facebook App Events"
+    ]
+  }
+}
