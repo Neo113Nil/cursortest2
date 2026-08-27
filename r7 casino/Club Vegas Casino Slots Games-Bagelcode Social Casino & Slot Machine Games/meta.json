@@ -1,0 +1,58 @@
+{
+  "app_id": "com.bagelcode.slots1",
+  "title": "Club Vegas Casino Slots Games",
+  "developer": "Bagelcode Social Casino & Slot Machine Games",
+  "url": "https://play.google.com/store/apps/details?id=com.bagelcode.slots1&hl=en&gl=us",
+  "version": "245.0.6-mobile",
+  "version_code": "4750",
+  "summary": "Club Vegas (APK label: Club Vegas) — legitimate Bagelcode Unity social casino; no cloaking gate.",
+  "keyword": "r7 casino",
+  "folder": "Club Vegas Casino Slots Games-Bagelcode Social Casino & Slot Machine Games",
+  "path": "r7 casino/Club Vegas Casino Slots Games-Bagelcode Social Casino & Slot Machine Games",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "apk_label": "Club Vegas",
+  "cloaking": "нет",
+  "files": [
+    "com.bagelcode.slots1.xapk",
+    "apk/com.bagelcode.slots1.apk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.xxhdpi.apk"
+  ],
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      {
+        "domain": "akm.ssacdn.com"
+      },
+      {
+        "domain": "api.surveymonkey.net"
+      },
+      {
+        "domain": "app.adjust.io"
+      },
+      {
+        "domain": "auroraoss.com"
+      },
+      {
+        "domain": "cdn.prod.website-files.com"
+      }
+    ],
+    "ads": [
+      "AdMob",
+      "ironSource/LevelPlay",
+      "Unity Ads",
+      "Facebook Audience Network",
+      "Vungle",
+      "Mintegral"
+    ],
+    "analytics": [
+      "Firebase Analytics",
+      "Crashlytics",
+      "Adjust",
+      "Facebook App Events",
+      "SurveyMonkey",
+      "Google Analytics"
+    ]
+  }
+}
