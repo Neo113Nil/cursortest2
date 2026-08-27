@@ -1,0 +1,31 @@
+{
+  "app_id": "com.kaizengaming.betano.sportsbook",
+  "title": "Betano - Online Betting",
+  "developer": "Kaizen Gaming International Limited",
+  "url": "https://play.google.com/store/apps/details?id=com.kaizengaming.betano.sportsbook&hl=en",
+  "keyword": "betano",
+  "source": "apkcombo-xapk",
+  "version": "3.124.0",
+  "version_code": "528",
+  "summary": "Official Betano sportsbook / casino by Kaizen Gaming",
+  "folder": "Betano - Online Betting-Kaizen Gaming International Limited",
+  "path": "betano/Betano - Online Betting-Kaizen Gaming International Limited",
+  "apk_title": "Betano Sports",
+  "play_description_title": "Betano - Online Betting",
+  "apk_label": "Betano Sports",
+  "package": "com.kaizengaming.betano.sportsbook",
+  "note": "Play package com.kaizengaming.betano is 404; current official package is com.kaizengaming.betano.sportsbook",
+  "store_title_mismatch": false,
+  "ok": true,
+  "cloaking": "нет",
+  "min_sdk": 24,
+  "target_sdk": 36,
+  "agp": "8.13.2",
+  "kotlin": "2.2",
+  "files": [
+    "com.kaizengaming.betano.sportsbook.xapk",
+    "apk/com.kaizengaming.betano.sportsbook.apk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.xxhdpi.apk"
+  ]
+}
