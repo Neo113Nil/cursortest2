@@ -1,0 +1,52 @@
+{
+  "app_id": "com.megarama.classic.vegas",
+  "title": "Vegas Classic Slots—777 Casino",
+  "developer": "MEGARAMA",
+  "url": "https://play.google.com/store/apps/details?id=com.megarama.classic.vegas&hl=en&gl=us",
+  "version": "1.64.55",
+  "version_code": "3010",
+  "summary": "Vegas Classic Slots—777 Casino (APK label: Classic Slots) — legitimate MEGARAMA Cocos2d social casino; AppLovin MAX mediation; Parse/Heroku bonus assets; no cloaking gate.",
+  "keyword": "r7 casino",
+  "folder": "Vegas Classic Slots—777 Casino-MEGARAMA",
+  "path": "r7 casino/Vegas Classic Slots—777 Casino-MEGARAMA",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "apk_label": "Classic Slots",
+  "cloaking": "нет",
+  "files": [
+    "com.megarama.classic.vegas-3010.xapk",
+    "apk/com.megarama.classic.vegas-3010.apk",
+    "apk/com.megarama.classic.vegas-3010-config.arm64_v8a.apk"
+  ],
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      {"domain": "aomedia.org"},
+      {"domain": "api.bidmachine.io"},
+      {"domain": "appassets.androidplatform.net"},
+      {"domain": "cdn-f.adsmoloco.com"},
+      {"domain": "cdn2.inner-active.mobi"}
+    ],
+    "ads": [
+      "AppLovin MAX",
+      "AdMob",
+      "BidMachine",
+      "Chartboost",
+      "Facebook Audience Network",
+      "Fyber/Inneractive",
+      "Moloco",
+      "Smaato",
+      "Unity Ads",
+      "Vungle"
+    ],
+    "analytics": [
+      "Firebase Analytics",
+      "Crashlytics",
+      "AppsFlyer",
+      "Facebook App Events",
+      "SafeDK",
+      "Firebase Performance",
+      "Firebase Messaging"
+    ]
+  }
+}
