@@ -1,0 +1,62 @@
+{
+  "app_id": "air.com.gamesys.mobile.slots.jpj",
+  "title": "Jackpot Madness Slots Casino",
+  "developer": "Bagelcode Social Casino & Slot Machine Games",
+  "url": "https://play.google.com/store/apps/details?id=air.com.gamesys.mobile.slots.jpj&hl=en&gl=us",
+  "version": "235.0.6-mobile",
+  "version_code": "11000514",
+  "summary": "Jackpot Madness Slots Casino (APK label: Jackpot Madness) — legitimate Bagelcode Unity social casino; no cloaking gate.",
+  "keyword": "r7 casino",
+  "folder": "Jackpot Madness Slots Casino-Bagelcode Social Casino & Slot Machine Games",
+  "path": "r7 casino/Jackpot Madness Slots Casino-Bagelcode Social Casino & Slot Machine Games",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "apk_label": "Jackpot Madness",
+  "cloaking": "нет",
+  "files": [
+    "air.com.gamesys.mobile.slots.jpj.xapk",
+    "apk/air.com.gamesys.mobile.slots.jpj-11000514.apk",
+    "apk/air.com.gamesys.mobile.slots.jpj-11000514-config.armeabi_v7a.apk",
+    "apk/air.com.gamesys.mobile.slots.jpj-11000514-config.en.apk",
+    "apk/air.com.gamesys.mobile.slots.jpj-11000514-config.xhdpi.apk"
+  ],
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      {
+        "domain": "akm.ssacdn.com"
+      },
+      {
+        "domain": "api.surveymonkey.net"
+      },
+      {
+        "domain": "app.adjust.io"
+      },
+      {
+        "domain": "cdn.prod.website-files.com"
+      },
+      {
+        "domain": "chat-prod.slots4.bagelgames.com"
+      },
+      {
+        "domain": "logic-prod.slots4.bagelgames.com"
+      }
+    ],
+    "ads": [
+      "AdMob",
+      "ironSource/LevelPlay",
+      "Unity Ads",
+      "Facebook Audience Network",
+      "Vungle",
+      "Mintegral"
+    ],
+    "analytics": [
+      "Firebase Analytics",
+      "Crashlytics",
+      "Adjust",
+      "Facebook App Events",
+      "SurveyMonkey",
+      "Google Analytics"
+    ]
+  }
+}
