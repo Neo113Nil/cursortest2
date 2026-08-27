@@ -1,0 +1,52 @@
+{
+  "app_id": "com.lynxgames.hrv",
+  "title": "HighRoller Vegas Casino Games",
+  "developer": "PLAYLINKS Corp",
+  "url": "https://play.google.com/store/apps/details?id=com.lynxgames.hrv&hl=en&gl=us",
+  "version": "3.2.52",
+  "version_code": "3025200",
+  "summary": "HighRoller Vegas Casino Games (APK label: HighRoller Vegas) — legitimate PLAYLINKS Cocos social casino; game server appv2.highrollervegas.net; no cloaking gate.",
+  "keyword": "r7 casino",
+  "folder": "HighRoller Vegas Casino Games-PLAYLINKS Corp",
+  "path": "r7 casino/HighRoller Vegas Casino Games-PLAYLINKS Corp",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "apk_label": "HighRoller Vegas",
+  "cloaking": "нет",
+  "files": [
+    "com.lynxgames.hrv-3025200.xapk",
+    "apk/com.lynxgames.hrv-3025200.apk",
+    "apk/com.lynxgames.hrv-3025200-config.arm64_v8a.apk",
+    "apk/com.lynxgames.hrv-3025200-config.en.apk",
+    "apk/com.lynxgames.hrv-3025200-config.mdpi.apk"
+  ],
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      {"domain": "admob-mediation.premiumtag.net"},
+      {"domain": "aomedia.org"},
+      {"domain": "app-firehoseproxy.highrollervegas.net"},
+      {"domain": "appassets.androidplatform.net"},
+      {"domain": "appv2.highrollervegas.net"}
+    ],
+    "ads": [
+      "AdMob",
+      "AppLovin MAX",
+      "ironSource",
+      "Unity Ads",
+      "Facebook Audience Network",
+      "Vungle",
+      "InMobi",
+      "Fyber",
+      "Moloco",
+      "PremiumAds"
+    ],
+    "analytics": [
+      "Firebase Analytics",
+      "Crashlytics",
+      "AppsFlyer",
+      "Facebook App Events",
+      "OneSignal"
+    ]
+  }
+}
