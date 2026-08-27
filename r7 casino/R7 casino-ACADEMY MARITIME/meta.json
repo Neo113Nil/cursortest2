@@ -1,0 +1,35 @@
+{
+  "app_id": "com.code.mesh.base.fast.peak.catcasino",
+  "title": "R7 casino",
+  "developer": "ACADEMY MARITIME",
+  "developer_id": "ACADEMY+MARITIME",
+  "url": "https://play.google.com/store/apps/details?id=com.code.mesh.base.fast.peak.catcasino&hl=en&gl=us",
+  "version": "1.0",
+  "summary": "R7 casino (APK label: Win) — utilities shell with Cloudflare Workers gate cloaking.",
+  "keyword": "r7 casino",
+  "folder": "R7 casino-ACADEMY MARITIME",
+  "path": "r7 casino/R7 casino-ACADEMY MARITIME",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "files": [
+    "com.code.mesh.base.fast.peak.catcasino-1.apk",
+    "com.code.mesh.base.fast.peak.catcasino-1-config.en.apk",
+    "com.code.mesh.base.fast.peak.catcasino-1-config.mdpi.apk"
+  ],
+  "cloaking": "да",
+  "apk_label": "Win",
+  "gate_url": "https://tight-glade-0634.petrenkovalentyna89.workers.dev/?app=com.code.mesh.base.fast.peak.catcasino",
+  "brief_report": {
+    "cloaking": "да",
+    "domains": [
+      {
+        "domain": "api.frankfurter.app"
+      }
+    ],
+    "collected_data": [
+      "имя пакета приложения",
+      "модель телефона",
+      "строка браузера устройства"
+    ]
+  }
+}
