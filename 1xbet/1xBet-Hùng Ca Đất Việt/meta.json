@@ -2,6 +2,7 @@
   "app_id": "com.NghiepVuKeToan.KeToanHoc",
   "title": "1xBet",
   "developer": "Hùng Ca Đất Việt",
+<<<<<<< HEAD
   "score": null,
   "icon": "/static/app-icons/com_NghiepVuKeToan_KeToanHoc.png",
   "url": "https://play.google.com/store/apps/details?id=com.NghiepVuKeToan.KeToanHoc&hl=en&gl=us",
@@ -54,6 +55,21 @@
   "exit_code": 0,
   "error": "",
   "cloaking": "да",
+=======
+  "package": "com.NghiepVuKeToan.KeToanHoc",
+  "version_name": "1.6",
+  "version_code": 6,
+  "apk_label": "Nâng Cao Nghiệp Vụ Kế Toán",
+  "store_title_mismatch": true,
+  "min_sdk": 24,
+  "target_sdk": 36,
+  "agp": "8.2.2",
+  "kotlin": "нет",
+  "cloaking": "да",
+  "folder": "1xBet-Hùng Ca Đất Việt",
+  "path": "1xbet/1xBet-Hùng Ca Đất Việt",
+  "url": "https://play.google.com/store/apps/details?id=com.NghiepVuKeToan.KeToanHoc&hl=en&gl=us",
+>>>>>>> origin/main
   "brief_report": {
     "table": [
       {
@@ -117,6 +133,7 @@
         "value": "meohayvn, dropbox, DataQC, TimeShowFullBN, Interstitial, Banner, PRDownloader"
       }
     ],
+<<<<<<< HEAD
     "domains": [
       {
         "domain": "config.ru",
@@ -142,5 +159,13 @@
     "collected_data": [],
     "cloaking": "да",
     "cloaking_brief": "Как собираются: Сразу после запуска открывается экран-заставка. Если на телефоне ещё нет локальной базы учебных материалов, приложение само, без отдельного окна с разрешением, начинает скачивать архив с сайта meohayvn.com. Для скачивания используется встроенный загрузчик PRDownloader: в интернет уходит обычный запрос на фиксированный адрес файла, без сборки анкеты из языка телефона, модели или рекламного номера. В заголовках запроса загрузчик сам ставит служебную строку User-Agent со значением PRDownloader и заголовок Range для докачки. Отдельного сбора «кто этот человек» ради развилки оффер/белая версия в коде заставки нет.…\n\nКуда отправляются: Учебный архив качается по адресу http://meohayvn.com/A_Data/A_DuLieuUngDung_Online/HCDV_NangCaoNghiepVuKeToan.zip и сохраняется на устройстве, затем распаковывается. PDF-материалы бухгалтерских тем лежат как готовые ссылки Dropbox; перед скачиванием адрес www.dropbox.com в коде заменяется на dl.dropboxusercontent.com, чтобы получить прямой файл. Отдельного «тихого» адреса-проверки (gate), куда бы уходили язык, страна или рекламный номер и откуда бы приходила ссылка казино, в разобранном коде нет. Рекламные запросы AdMob уходят на инфраструктуру Google Ads — это показ баннера и межстраничной рекламы, а не серверная развилка оффера.\n\nКак фильтруются пользователи: Внутри APK нет списка стран, языков или проверки «бот / магазин», по которым одним показывают букмекерскую страницу, а другим оставляют учёбу. После заставки всем открывается одно и то же обычное приложение — вьетнамский учебник по бухучёту Nâng Cao Nghiệp Vụ Kế Toán. Признак «белой оболочки» здесь в другом: в карточке магазина приложение названо 1xBet, а внутри ярлык и экраны — про бухгалтерию. Это сильное несовпадение названия витрины и содержимого. Реклама показывается по таймеру TimeShowFullBN в памяти DataQC (не чаще чем раз в TimeShow миллисекунд), но это ограничение частоты рекламы, а не фильтр «кому оффер».\n\nЧто возвращается: С meohayvn.com приходит файл-архив с учебными данными; после успешной распаковки открывается главное меню приложения. Если сеть недоступна, на заставке показывается сообщение проверить соединение, прогресс обнуляется — перехода на вне…"
+=======
+    "suspicious_domains": [
+      "config.ru",
+      "dl.dropboxusercontent.com",
+      "dropbox.com",
+      "meohayvn.com"
+    ]
+>>>>>>> origin/main
   }
 }

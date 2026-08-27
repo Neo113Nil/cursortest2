@@ -1,0 +1,53 @@
+{
+  "app_id": "com.winmove.step",
+  "title": "Belbet",
+  "developer": "AKARON",
+  "score": null,
+  "icon": "/static/app-icons/com_winmove_step.png",
+  "url": "https://play.google.com/store/apps/details?id=com.winmove.step&hl=en&gl=us",
+  "keyword": "belbet",
+  "country": "Spain",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260827_103851_Spain_belbet_search",
+  "search_title": "Belbet",
+  "search_developer": "AKARON",
+  "rank": 8,
+  "developer_id": "AKARON",
+  "released": "Jul 23, 2026",
+  "updated": "Jul 23, 2026",
+  "version": "Varies with device",
+  "summary": "Belbet - collect coins, avoid hazards, and improve your score",
+  "folder": "Belbet-AKARON",
+  "path": "belbet/Belbet-AKARON",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.winmove.step-1-asset.apk",
+    "com.winmove.step-1-config.en.apk",
+    "com.winmove.step-1-config.xxhdpi.apk",
+    "com.winmove.step-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/belbet/Belbet-AKARON",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.winmove.step ─╮\n│ Belbet             │\n│ 1.0  (vc 1)        │\n╰────────────────────╯\n\nDownloading 4 files  (6.3 MB)\n  com.winmove.step-1.apk               ━━━━━━━━━ 100% 3.9/3.9  13.2 MB/s 0:00:00\n                                                      MB                        \n  com.winmove.step-1-config.en.apk     ━━━━━━━━━ 100% 70.0/70… 429.1     0:00:00\n                                                      kB       kB/s             \n  com.winmove.step-1-config.xxhdpi.apk ━━━━━━━━━ 100% 91.1/91… 2.5 MB/s  0:00:00\n                                                      kB                        \n  com.winmove.step-1-asset.apk         ━━━━━━━━━ 100% 2.6/2.6  7.8 MB/s  0:00:00\n                                                      MB                        \n\n                 Downloaded files                 \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                 ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.winmove.step-1.apk               │  3.7 MB │\n│ com.winmove.step-1-config.en.apk     │ 68.4 KB │\n│ com.winmove.step-1-config.xxhdpi.apk │ 88.9 KB │\n│ com.winmove.step-1-asset.apk         │  3.7 MB │\n└──────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.winmove.step ─╮\n│ Belbet             │\n│ 1.0  (vc 1)        │\n╰────────────────────╯\n\nDownloading 4 files  (6.3 MB)\n  com.winmove.step-1.apk               ━━━━━━━━━ 100% 3.9/3.9  13.2 MB/s 0:00:00\n                                                      MB                        \n  com.winmove.step-1-config.en.apk     ━━━━━━━━━ 100% 70.0/70… 429.1     0:00:00\n                                                      kB       kB/s             \n  com.winmove.step-1-config.xxhdpi.apk ━━━━━━━━━ 100% 91.1/91… 2.5 MB/s  0:00:00\n                                                      kB                        \n  com.winmove.step-1-asset.apk         ━━━━━━━━━ 100% 2.6/2.6  7.8 MB/s  0:00:00\n                                                      MB                        \n\n                 Downloaded files                 \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                 ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.winmove.step-1.apk               │  3.7 MB │\n│ com.winmove.step-1-config.en.apk     │ 68.4 KB │\n│ com.winmove.step-1-config.xxhdpi.apk │ 88.9 KB │\n│ com.winmove.step-1-asset.apk         │  3.7 MB │\n└──────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+  "exit_code": 0,
+  "error": ""
+}

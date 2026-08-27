@@ -521,6 +521,7 @@
 | URLQuery | Unrated |
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
+<<<<<<< HEAD
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | 404 page not found |
 | Где припаркован | регистратор: Alibaba Cloud Computing (Beijing) Co., Ltd. |
@@ -839,3 +840,9 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: 503 Service Temporarily Unavailable. 503 Service Temporarily Unavailable 503 Service Temporarily Unavailable nginx |
 | Где припаркован | регистратор: Alibaba Cloud Computing Ltd. d/b/a HiChina (www.net.cn) |
+=======
+| Куда редиректит | нет (DNS не резолвится) |
+| Что выводит (кратко) | нет (DNS не резолвится) |
+| Где припаркован | регистратор: Alibaba Cloud Computing (Beijing) Co., Ltd. |
+
+>>>>>>> origin/main

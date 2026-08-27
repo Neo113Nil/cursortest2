@@ -1,5 +1,6 @@
 {
   "all_custom_domains": [
+<<<<<<< HEAD
     "com.chrome.dev",
     "config.ru"
   ],
@@ -17,6 +18,17 @@
           "harmless": 56,
           "timeout": 0
         },
+=======
+    "donutholeanalytics.fit"
+  ],
+  "checked": [
+    {
+      "domain": "donutholeanalytics.fit",
+      "virustotal": {
+        "ok": true,
+        "vt_url": "https://www.virustotal.com/gui/domain/donutholeanalytics.fit",
+        "detections": "0/91 (malicious=0, suspicious=0)",
+>>>>>>> origin/main
         "vendor_rows": [
           [
             "Abusix",
@@ -31,7 +43,11 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
             "AILabs (MONITORAPP)",
+=======
+            "AiLabs (MONITORAPP)",
+>>>>>>> origin/main
             "Clean"
           ],
           [
@@ -63,6 +79,7 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
             "CMC Threat Intelligence",
             "Clean"
           ],
@@ -883,6 +900,8 @@
             "Clean"
           ],
           [
+=======
+>>>>>>> origin/main
             "CRDF",
             "Clean"
           ],
@@ -959,10 +978,13 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
             "LevelBlue",
             "Clean"
           ],
           [
+=======
+>>>>>>> origin/main
             "Lionic",
             "Clean"
           ],
@@ -975,15 +997,30 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
+=======
+            "Netcraft",
+            "Clean"
+          ],
+          [
+>>>>>>> origin/main
             "OpenPhish",
             "Clean"
           ],
           [
+<<<<<<< HEAD
             "Phishing Database",
             "Clean"
           ],
           [
             "Phishtank",
+=======
+            "Phishtank",
+            "Clean"
+          ],
+          [
+            "Phishing Database",
+>>>>>>> origin/main
             "Clean"
           ],
           [
@@ -1023,7 +1060,11 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
             "ThreatHive",
+=======
+            "Threathive",
+>>>>>>> origin/main
             "Clean"
           ],
           [
@@ -1063,6 +1104,13 @@
             "Unrated"
           ],
           [
+<<<<<<< HEAD
+=======
+            "alphaMountain.ai",
+            "Unrated"
+          ],
+          [
+>>>>>>> origin/main
             "AlphaSOC",
             "Unrated"
           ],
@@ -1095,6 +1143,13 @@
             "Unrated"
           ],
           [
+<<<<<<< HEAD
+=======
+            "CMC Threat Intelligence",
+            "Unrated"
+          ],
+          [
+>>>>>>> origin/main
             "Criminal IP",
             "Unrated"
           ],
@@ -1139,6 +1194,13 @@
             "Unrated"
           ],
           [
+<<<<<<< HEAD
+=======
+            "LevelBlue",
+            "Unrated"
+          ],
+          [
+>>>>>>> origin/main
             "Lumu",
             "Unrated"
           ],
@@ -1151,10 +1213,13 @@
             "Unrated"
           ],
           [
+<<<<<<< HEAD
             "Netcraft",
             "Unrated"
           ],
           [
+=======
+>>>>>>> origin/main
             "PhishFort",
             "Unrated"
           ],
@@ -1194,6 +1259,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -1638,5 +1704,15 @@
     }
   ],
   "count": 2,
+=======
+        ]
+      },
+      "redirect": "нет",
+      "content_brief": "title: 100 Winner Days. Local workout planner: Build, save, and track a complete 100-day workout plan. Offline-first, browser-only, no account required. На странице бренд-бейдж «1W». Cookie _subid и JWT со streams/campaigns (типичная трекинговая разметка).",
+      "parking": "нет (активный сайт, не парковка)"
+    }
+  ],
+  "count": 1,
+>>>>>>> origin/main
   "vt_configured": true
 }

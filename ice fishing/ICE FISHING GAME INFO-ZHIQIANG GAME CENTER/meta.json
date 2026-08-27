@@ -1,5 +1,6 @@
 {
   "app_id": "com.events.gpointercomfishice",
+<<<<<<< HEAD
   "title": "ICE FISHING GAME INFO",
   "developer": "ZHIQIANG GAME CENTER",
   "score": null,
@@ -54,6 +55,16 @@
   "exit_code": 0,
   "error": "",
   "cloaking": "нет",
+=======
+  "title": "ICE FISHING:GAME INFO",
+  "developer": "ZHIQIANG GAME CENTER",
+  "version": "1.0.1",
+  "version_code": "1",
+  "min_sdk": 24,
+  "target_sdk": 35,
+  "cloaking": "нет",
+  "url": "https://play.google.com/store/apps/details?id=com.events.gpointercomfishice",
+>>>>>>> origin/main
   "brief_report": {
     "table": [
       {
@@ -98,7 +109,11 @@
       },
       {
         "param": "Libraries",
+<<<<<<< HEAD
         "value": "Flutter, androidx.appcompat, androidx.browser (Custom Tabs), androidx.webkit, androidx.core (+ktx), androidx.activity, androidx.fragment, androidx.lifecycle, androidx.room, androidx.datastore, androidx.startup, androidx.profileinstaller, androidx.privacysandbox.ads, androidx.window, Kotlin 1.8.10 + kotlinx-coroutines, flutter_inappwebview, url_launcher, shared_preferences, Tenjin, Firebase Analytics / Core / Installations, Google Play Services (ads-identifier, measurement), Play Install Referrer, connectivity_plus, internet_connection_checker_plus, shorebird_code_push, rate_my_app, share_plus, image_picker, wakelock_plus"
+=======
+        "value": "Flutter, androidx.appcompat, androidx.browser (Custom Tabs), androidx.webkit, androidx.core (+ktx), androidx.activity, androidx.fragment, androidx.lifecycle, androidx.room, androidx.datastore, androidx.startup, androidx.profileinstaller, androidx.privacysandbox.ads, androidx.window, Kotlin 1.8.10 + kotlinx-coroutines, flutter_inappwebview, url_launcher, shared_preferences, Tenjin, Firebase Analytics / Core / Installations, Google Play Services (ads-identifier, measurement, basemeasurement), Play Install Referrer, connectivity_plus, internet_connection_checker_plus, shorebird_code_push, rate_my_app, share_plus, image_picker, wakelock_plus"
+>>>>>>> origin/main
       },
       {
         "param": "Подозрительные домены",
@@ -114,6 +129,7 @@
       },
       {
         "param": "Подозрительные слова",
+<<<<<<< HEAD
         "value": "redirect, webview, InAppWebView, useWebView, launchUrl, openUrlInApp events.gpointer.com Домен events.gpointer.com зашит в приложении как основной адрес (baseUrl) для загрузки статей и баннеров: с него читают сценарии вроде allstory.php, category.php, homebanner.php, randomstory.php, story.php и папку uploads/. Открытая главная страница сервера — панель «Story Book | Login», а ответ API отдаёт JSON со статьями про рыболовные и idle-игры. Это бэкенд белого контента приложения, а не шлюз развилки «оффер / обычное приложение»; по коду отдельной проверки пользователя на оффер не видно."
       }
     ],
@@ -162,5 +178,11 @@
     "collected_data": [],
     "cloaking": "нет",
     "cloaking_brief": ""
+=======
+        "value": "redirect, webview, InAppWebView, useWebView, launchUrl, openUrlInApp"
+      }
+    ],
+    "cloaking": "нет"
+>>>>>>> origin/main
   }
 }

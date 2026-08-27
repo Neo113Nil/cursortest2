@@ -10,8 +10,12 @@
     "se.zxcvbnmpo.com",
     "ssapi.anythinktech.com",
     "static.gamezop.com",
+<<<<<<< HEAD
     "tk.anythinktech.com",
     "whatwg.org"
+=======
+    "tk.anythinktech.com"
+>>>>>>> origin/main
   ],
   "checked": [
     {
@@ -401,6 +405,7 @@
         "categories": {},
         "popularity_ranks": "нет",
         "creation_date": 1347345735,
+<<<<<<< HEAD
         "last_modification_date": 1787780087,
         "last_analysis_date": 1787779634,
         "registrar": "NAMECHEAP INC",
@@ -418,6 +423,25 @@
           "A 18.160.143.92",
           "AAAA 2600:9000:24ce:3a00:17:e24:8e80:93a1",
           "AAAA 2600:9000:24ce:4a00:17:e24:8e80:93a1"
+=======
+        "last_modification_date": 1785380640,
+        "last_analysis_date": 1785379730,
+        "registrar": "NAMECHEAP INC",
+        "whois": "Admin City: Reykjavik\nAdmin Country: IS\nAdmin Email: 73ac69979274514fs@withheldforprivacy.com\nAdmin Organization: Privacy service provided by Withheld for Privacy ehf\nAdmin Postal Code: 101\nAdmin State/Province: Capital Region\nCreation Date: 2012-09-11T06:42:15.00Z\nCreation Date: 2012-09-11T06:42:15Z\nDNSSEC: unsigned\nDomain Name: GAMEZOP.COM\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain name: gamezop.com\nName Server: TERIN.NS.CLOUDFLARE.COM\nName Server: VIDA.NS.CLOUDFLARE.COM\nName Server: terin.ns.cloudflare.com\nName Server: vida.ns.cloudflare.com\nRegistrant City: ddbf76e4e8cee320\nRegistrant Country: IS\nRegistrant Email: 73ac69979274514fs@withheldforprivacy.com\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 3432650ec337c945\nRegistrant Name: 37bfbc24cafea5d2\nRegistrant Organization: 4b7a0912c26a13e2\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: 1c9a7bcdeaf95e9f\nRegistrant Postal Code: f206c9d9737ad45d\nRegistrant State/Province: 3e0204199d8ebf9c\nRegistrant Street: c6523241936df1ba\nRegistrar Abuse Contact Email: abuse@namecheap.com\nRegistrar Abuse Contact Phone: +1.6613102107\nRegistrar Abuse Contact Phone: +1.9854014545\nRegistrar IANA ID: 1068\nRegistrar Registration Expiration Date: 2028-09-11T06:42:15.00Z\nRegistrar URL: http://www.namecheap.com\nRegistrar WHOIS Server: whois.namecheap.com\nRegistrar: NAMECHEAP INC\nRegistrar: NameCheap, Inc.\nRegistry Domain ID: 1744148105_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2028-09-11T06:42:15Z\nTech City: Reykjavik\nTech Country: IS\nTech Email: 73ac69979274514fs@withheldforprivacy.com\nTech Organization: Privacy service provided by Withheld for Privacy ehf\nTech Postal Code: 101\nTech State/Province: Capital Region\nUpdated Date: 2025-08-12T17:07:00.82Z\nUpdated Date: 2025-08-12T17:07:00Z",
+        "dns_records": [
+          "AAAA 2600:9000:24d1:8c00:17:e24:8e80:93a1",
+          "NS ns-467.awsdns-58.com",
+          "NS ns-2029.awsdns-61.co.uk",
+          "AAAA 2600:9000:24d1:3000:17:e24:8e80:93a1",
+          "AAAA 2600:9000:24d1:e400:17:e24:8e80:93a1",
+          "NS ns-807.awsdns-36.net",
+          "CNAME d13hsj3v9eobi2.cloudfront.net",
+          "A 18.64.183.81",
+          "AAAA 2600:9000:24d1:6600:17:e24:8e80:93a1",
+          "A 18.64.183.64",
+          "A 18.64.183.76",
+          "AAAA 2600:9000:24d1:4600:17:e24:8e80:93a1"
+>>>>>>> origin/main
         ],
         "https_subject": {
           "CN": "gamezop.com"
@@ -1229,8 +1253,13 @@
           "Cisco Umbrella: 965105"
         ],
         "creation_date": 1572854891,
+<<<<<<< HEAD
         "last_modification_date": 1787781789,
         "last_analysis_date": 1787780443,
+=======
+        "last_modification_date": 1785424662,
+        "last_analysis_date": 1785424339,
+>>>>>>> origin/main
         "registrar": "Alibaba Cloud Computing (Beijing) Co., Ltd.",
         "whois": "Creation Date: 2019-11-04T08:08:11Z\nDNSSEC: unsigned\nDomain Name: ANYTHINKTECH.COM\nDomain Name: anythinktech.com\nDomain Status: ok https://icann.org/epp#ok\nName Server: NS-1334.AWSDNS-38.ORG\nName Server: NS-1991.AWSDNS-56.CO.UK\nName Server: NS-300.AWSDNS-37.COM\nName Server: NS-910.AWSDNS-49.NET\nRegistrant City: 3432650ec337c945\nRegistrant Country: CN\nRegistrant Email: 6aacf85c31f44448s@\nRegistrant State/Province: 82d23503866c2fea\nRegistrar Abuse Contact Email: DomainAbuse@service.aliyun.com\nRegistrar Abuse Contact Phone: +86.95187\nRegistrar IANA ID: 420\nRegistrar Registration Expiration Date: 2026-11-04T08:08:11Z\nRegistrar URL: http://www.net.cn\nRegistrar WHOIS Server: grs-whois.hichina.com\nRegistrar: Alibaba Cloud Computing (Beijing) Co., Ltd.\nRegistry Domain ID: 2451252614_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2026-11-04T08:08:11Z\nRegistry Registrant ID: Not Available From Registry\nUpdated Date: 2025-09-18T03:37:23Z",
         "dns_records": [
@@ -2043,8 +2072,13 @@
         "categories": {},
         "popularity_ranks": "нет",
         "creation_date": 1572854891,
+<<<<<<< HEAD
         "last_modification_date": 1787576484,
         "last_analysis_date": 1787571698,
+=======
+        "last_modification_date": 1784861542,
+        "last_analysis_date": 1784861216,
+>>>>>>> origin/main
         "registrar": "Alibaba Cloud Computing (Beijing) Co., Ltd.",
         "whois": "Creation Date: 2019-11-04T08:08:11Z\nDNSSEC: unsigned\nDomain Name: ANYTHINKTECH.COM\nDomain Name: anythinktech.com\nDomain Status: ok https://icann.org/epp#ok\nName Server: NS-1334.AWSDNS-38.ORG\nName Server: NS-1991.AWSDNS-56.CO.UK\nName Server: NS-300.AWSDNS-37.COM\nName Server: NS-910.AWSDNS-49.NET\nRegistrant City: 3432650ec337c945\nRegistrant Country: CN\nRegistrant Email: 6aacf85c31f44448s@\nRegistrant State/Province: 82d23503866c2fea\nRegistrar Abuse Contact Email: DomainAbuse@service.aliyun.com\nRegistrar Abuse Contact Phone: +86.95187\nRegistrar IANA ID: 420\nRegistrar Registration Expiration Date: 2026-11-04T08:08:11Z\nRegistrar URL: http://www.net.cn\nRegistrar WHOIS Server: grs-whois.hichina.com\nRegistrar: Alibaba Cloud Computing (Beijing) Co., Ltd.\nRegistry Domain ID: 2451252614_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2026-11-04T08:08:11Z\nRegistry Registrant ID: Not Available From Registry\nUpdated Date: 2025-09-18T03:37:23Z",
         "dns_records": [
@@ -2847,11 +2881,19 @@
         },
         "categories": {},
         "popularity_ranks": [
+<<<<<<< HEAD
           "Cisco Umbrella: 43872"
         ],
         "creation_date": 1572854891,
         "last_modification_date": 1787781788,
         "last_analysis_date": 1787780443,
+=======
+          "Cisco Umbrella: 41444"
+        ],
+        "creation_date": 1572854891,
+        "last_modification_date": 1785422566,
+        "last_analysis_date": 1785421333,
+>>>>>>> origin/main
         "registrar": "Alibaba Cloud Computing (Beijing) Co., Ltd.",
         "whois": "Creation Date: 2019-11-04T08:08:11Z\nDNSSEC: unsigned\nDomain Name: ANYTHINKTECH.COM\nDomain Name: anythinktech.com\nDomain Status: ok https://icann.org/epp#ok\nName Server: NS-1334.AWSDNS-38.ORG\nName Server: NS-1991.AWSDNS-56.CO.UK\nName Server: NS-300.AWSDNS-37.COM\nName Server: NS-910.AWSDNS-49.NET\nRegistrant City: 3432650ec337c945\nRegistrant Country: CN\nRegistrant Email: 6aacf85c31f44448s@\nRegistrant State/Province: 82d23503866c2fea\nRegistrar Abuse Contact Email: DomainAbuse@service.aliyun.com\nRegistrar Abuse Contact Phone: +86.95187\nRegistrar IANA ID: 420\nRegistrar Registration Expiration Date: 2026-11-04T08:08:11Z\nRegistrar URL: http://www.net.cn\nRegistrar WHOIS Server: grs-whois.hichina.com\nRegistrar: Alibaba Cloud Computing (Beijing) Co., Ltd.\nRegistry Domain ID: 2451252614_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2026-11-04T08:08:11Z\nRegistry Registrant ID: Not Available From Registry\nUpdated Date: 2025-09-18T03:37:23Z",
         "dns_records": [
@@ -3662,11 +3704,19 @@
         },
         "categories": {},
         "popularity_ranks": [
+<<<<<<< HEAD
           "Cisco Umbrella: 368528"
         ],
         "creation_date": 1572854891,
         "last_modification_date": 1787781789,
         "last_analysis_date": 1787780444,
+=======
+          "Cisco Umbrella: 349113"
+        ],
+        "creation_date": 1572854891,
+        "last_modification_date": 1785421688,
+        "last_analysis_date": 1785421333,
+>>>>>>> origin/main
         "registrar": "Alibaba Cloud Computing (Beijing) Co., Ltd.",
         "whois": "Creation Date: 2019-11-04T08:08:11Z\nDNSSEC: unsigned\nDomain Name: ANYTHINKTECH.COM\nDomain Name: anythinktech.com\nDomain Status: ok https://icann.org/epp#ok\nName Server: NS-1334.AWSDNS-38.ORG\nName Server: NS-1991.AWSDNS-56.CO.UK\nName Server: NS-300.AWSDNS-37.COM\nName Server: NS-910.AWSDNS-49.NET\nRegistrant City: 3432650ec337c945\nRegistrant Country: CN\nRegistrant Email: 6aacf85c31f44448s@\nRegistrant State/Province: 82d23503866c2fea\nRegistrar Abuse Contact Email: DomainAbuse@service.aliyun.com\nRegistrar Abuse Contact Phone: +86.95187\nRegistrar IANA ID: 420\nRegistrar Registration Expiration Date: 2026-11-04T08:08:11Z\nRegistrar URL: http://www.net.cn\nRegistrar WHOIS Server: grs-whois.hichina.com\nRegistrar: Alibaba Cloud Computing (Beijing) Co., Ltd.\nRegistry Domain ID: 2451252614_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2026-11-04T08:08:11Z\nRegistry Registrant ID: Not Available From Registry\nUpdated Date: 2025-09-18T03:37:23Z",
         "dns_records": [
@@ -3689,6 +3739,7 @@
         ],
         "tags": []
       },
+<<<<<<< HEAD
       "redirects_to": "нет (без редиректа)",
       "redirect_chain": [
         "https://da.anythinktech.com/"
@@ -3697,6 +3748,14 @@
       "parked_at": "регистратор: Alibaba Cloud Computing (Beijing) Co., Ltd.",
       "final_url": "https://da.anythinktech.com/",
       "http_status": 404,
+=======
+      "redirects_to": "нет (DNS не резолвится)",
+      "redirect_chain": [],
+      "page_output": "нет (DNS не резолвится)",
+      "parked_at": "регистратор: Alibaba Cloud Computing (Beijing) Co., Ltd.",
+      "final_url": "",
+      "http_status": null,
+>>>>>>> origin/main
       "table_rows": [
         {
           "param": "Домен",
@@ -4080,17 +4139,26 @@
         },
         {
           "param": "Куда редиректит",
+<<<<<<< HEAD
           "value": "нет (без редиректа)"
         },
         {
           "param": "Что выводит (кратко)",
           "value": "404 page not found"
+=======
+          "value": "нет (DNS не резолвится)"
+        },
+        {
+          "param": "Что выводит (кратко)",
+          "value": "нет (DNS не резолвится)"
+>>>>>>> origin/main
         },
         {
           "param": "Где припаркован",
           "value": "регистратор: Alibaba Cloud Computing (Beijing) Co., Ltd."
         }
       ]
+<<<<<<< HEAD
     },
     {
       "domain": "img.anythinktech.com",
@@ -6557,5 +6625,10 @@
     }
   ],
   "count": 8,
+=======
+    }
+  ],
+  "count": 5,
+>>>>>>> origin/main
   "vt_configured": true
 }

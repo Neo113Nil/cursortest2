@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "all_custom_domains": [
+=======
+  "suspicious_domains": [
+>>>>>>> origin/main
     "config.ru",
     "dl.dropboxusercontent.com",
     "dropbox.com",
@@ -9,6 +13,7 @@
     {
       "domain": "config.ru",
       "virustotal": {
+<<<<<<< HEAD
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/config.ru",
         "detections": "0/91 (malicious=0, suspicious=0)",
@@ -19,6 +24,10 @@
           "harmless": 57,
           "timeout": 0
         },
+=======
+        "vt_url": "https://www.virustotal.com/gui/domain/config.ru",
+        "detections": "0/91 (malicious=0, suspicious=0)",
+>>>>>>> origin/main
         "vendor_rows": [
           [
             "Abusix",
@@ -384,6 +393,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -825,10 +835,18 @@
           "value": "похоже на парковку (domain is for sale)"
         }
       ]
+=======
+        ]
+      },
+      "redirect": "https://config.ru/en/",
+      "content_brief": "title: config.ru is for sale. config.ru is for sale en ru en config.ru This domain is for sale The domain is actually the site name and its correct choice influences greatly on the your endeavors success. Often, cost of the domain change during the project running is comparable with the re-branding, so the be",
+      "parking": "похоже на парковку (domain is for sale)"
+>>>>>>> origin/main
     },
     {
       "domain": "dl.dropboxusercontent.com",
       "virustotal": {
+<<<<<<< HEAD
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/dl.dropboxusercontent.com",
         "detections": "3/91 (malicious=3, suspicious=0)",
@@ -839,6 +857,10 @@
           "harmless": 57,
           "timeout": 0
         },
+=======
+        "vt_url": "https://www.virustotal.com/gui/domain/dl.dropboxusercontent.com",
+        "detections": "3/91 (malicious=3, suspicious=0)",
+>>>>>>> origin/main
         "vendor_rows": [
           [
             "AutoShun",
@@ -1204,6 +1226,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": -41,
         "community_votes": {
@@ -1652,10 +1675,18 @@
           "value": "нет данных"
         }
       ]
+=======
+        ]
+      },
+      "redirect": "нет (без редиректа)",
+      "content_brief": "title: Dropbox - 404. Dropbox - 404 Error (404) We can't find the page you're looking for. Here are a few links that may be helpful: Home Help center Sign in Get a free account Dropbox Plus Dropbox Business",
+      "parking": "нет данных"
+>>>>>>> origin/main
     },
     {
       "domain": "dropbox.com",
       "virustotal": {
+<<<<<<< HEAD
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/dropbox.com",
         "detections": "1/91 (malicious=1, suspicious=0)",
@@ -1666,6 +1697,10 @@
           "harmless": 60,
           "timeout": 0
         },
+=======
+        "vt_url": "https://www.virustotal.com/gui/domain/dropbox.com",
+        "detections": "1/91 (malicious=1, suspicious=0)",
+>>>>>>> origin/main
         "vendor_rows": [
           [
             "Chong Lua Dao",
@@ -2031,6 +2066,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": -43,
         "community_votes": {
@@ -2488,10 +2524,18 @@
           "value": "регистратор: MarkMonitor Inc."
         }
       ]
+=======
+        ]
+      },
+      "redirect": "https://www.dropbox.com/",
+      "content_brief": "title: Dropbox: Secure cloud storage, file sharing, and more. Dropbox: Secure cloud storage, file sharing, and more Skip to main content 8/26 Webinar: The missing link in your construction project workflows. Save your spot. Products Dropbox Store, share, and access files across devices Replay Review and approve videos faster Sign Request an",
+      "parking": "регистратор: MarkMonitor Inc."
+>>>>>>> origin/main
     },
     {
       "domain": "meohayvn.com",
       "virustotal": {
+<<<<<<< HEAD
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/meohayvn.com",
         "detections": "0/91 (malicious=0, suspicious=0)",
@@ -2502,6 +2546,10 @@
           "harmless": 55,
           "timeout": 0
         },
+=======
+        "vt_url": "https://www.virustotal.com/gui/domain/meohayvn.com",
+        "detections": "0/91 (malicious=0, suspicious=0)",
+>>>>>>> origin/main
         "vendor_rows": [
           [
             "Abusix",
@@ -2867,6 +2915,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -3314,4 +3363,13 @@
   ],
   "count": 4,
   "vt_configured": true
+=======
+        ]
+      },
+      "redirect": "нет (без редиректа)",
+      "content_brief": "title: ThanhTruc.Com &#8211; Khi bạn nhìn lại cuộc đời mình, những niềm hạnh phúc nhất chính là những niềm hạnh phúc gia đình. ThanhTruc.Com &#8211; Khi bạn nhìn lại cuộc đời mình, những niềm hạnh phúc nhất chính là những niềm hạnh phúc gia đình",
+      "parking": "нет данных"
+    }
+  ]
+>>>>>>> origin/main
 }

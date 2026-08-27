@@ -473,7 +473,10 @@
 | Seclookup | Clean |
 | Sophos | Clean |
 | StopForumSpam | Clean |
+<<<<<<< HEAD
 | Sucuri SiteCheck | Clean |
+=======
+>>>>>>> origin/main
 | ThreatHive | Clean |
 | URLhaus | Clean |
 | Viettel Threat Intelligence | Clean |
@@ -492,8 +495,13 @@
 | Bfore.Ai PreCrime | Unrated |
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
+<<<<<<< HEAD
 | Cluster25 | Unrated |
 | CMC Threat Intelligence | Unrated |
+=======
+| CMC Threat Intelligence | Unrated |
+| Cluster25 | Unrated |
+>>>>>>> origin/main
 | Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
 | Cyan | Unrated |
@@ -521,6 +529,12 @@
 | URLQuery | Unrated |
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
+<<<<<<< HEAD
 | Куда редиректит | нет (DNS не резолвится) |
 | Что выводит (кратко) | нет (DNS не резолвится) |
 | Где припаркован | нет данных |
+=======
+| Куда редиректит | нет (домен не резолвится) |
+| Что выводит (кратко) | DNS_PROBE_FINISHED_NXDOMAIN - домен не найден, сайт недоступен |
+| Где припаркован | домен не зарегистрирован или удалён |
+>>>>>>> origin/main

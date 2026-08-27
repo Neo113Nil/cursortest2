@@ -2,6 +2,7 @@
   "app_id": "fit.donblestandartsathletics.winnerdays",
   "title": "1win days",
   "developer": "mango fruit",
+<<<<<<< HEAD
   "score": null,
   "icon": "/static/app-icons/fit_donblestandartsathletics_winnerdays.png",
   "url": "https://play.google.com/store/apps/details?id=fit.donblestandartsathletics.winnerdays&hl=en&gl=us",
@@ -52,4 +53,31 @@
   "stderr": "",
   "exit_code": 0,
   "error": ""
+=======
+  "package": "fit.donblestandartsathletics.winnerdays",
+  "version_name": "5",
+  "version_code": 5,
+  "apk_label": "100 Winner Days",
+  "launcher_label": "Winner Days",
+  "store_title_mismatch": true,
+  "min_sdk": 21,
+  "target_sdk": 35,
+  "agp": "8.9.1",
+  "kotlin": "да",
+  "url": "https://play.google.com/store/apps/details?id=fit.donblestandartsathletics.winnerdays&hl=en&gl=us",
+  "folder": "1win days-mango fruit",
+  "path": "1win/1win days-mango fruit",
+  "cloaking": "да",
+  "twa_url": "https://donutholeanalytics.fit/",
+  "suspicious_domains": [
+    "donutholeanalytics.fit"
+  ],
+  "files": [
+    "fit.donblestandartsathletics.winnerdays-5.apk",
+    "fit.donblestandartsathletics.winnerdays-5-config.en.apk",
+    "fit.donblestandartsathletics.winnerdays-5-config.fr.apk",
+    "fit.donblestandartsathletics.winnerdays-5-config.xxhdpi.apk"
+  ],
+  "ok": true
+>>>>>>> origin/main
 }

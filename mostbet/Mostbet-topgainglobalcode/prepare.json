@@ -2,6 +2,7 @@
   "ok": true,
   "apks": [
     "topgaingldbal.actionpickstats.app-2.apk",
+<<<<<<< HEAD
     "topgaingldbal.actionpickstats.app-2-asset.apk",
     "topgaingldbal.actionpickstats.app-2-config.en.apk",
     "topgaingldbal.actionpickstats.app-2-config.xxhdpi.apk",
@@ -46,4 +47,14 @@
     "decompiled/sources/topgaingldbal/"
   ],
   "errors": []
+=======
+    "topgaingldbal.actionpickstats.app-2-config.armeabi_v7a.apk",
+    "topgaingldbal.actionpickstats.app-2-config.en.apk",
+    "topgaingldbal.actionpickstats.app-2-config.mdpi.apk"
+  ],
+  "source": "apkcombo",
+  "package": "topgaingldbal.actionpickstats.app",
+  "version_name": "2.0",
+  "version_code": 2
+>>>>>>> origin/main
 }

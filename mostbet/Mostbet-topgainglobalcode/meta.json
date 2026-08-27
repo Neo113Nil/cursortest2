@@ -2,6 +2,7 @@
   "app_id": "topgaingldbal.actionpickstats.app",
   "title": "Mostbet",
   "developer": "topgainglobalcode",
+<<<<<<< HEAD
   "score": null,
   "icon": "/static/app-icons/topgaingldbal_actionpickstats_app.png",
   "url": "https://play.google.com/store/apps/details?id=topgaingldbal.actionpickstats.app&hl=en&gl=us",
@@ -146,4 +147,33 @@
     "cloaking": "нет",
     "cloaking_brief": ""
   }
+=======
+  "package": "topgaingldbal.actionpickstats.app",
+  "version_name": "2.0",
+  "version_code": 2,
+  "apk_label": "Mostbet",
+  "store_title_mismatch": false,
+  "min_sdk": 24,
+  "target_sdk": 35,
+  "agp": "8.13.2",
+  "kotlin": "2.0.21",
+  "url": "https://play.google.com/store/apps/details?id=topgaingldbal.actionpickstats.app&hl=en&gl=us",
+  "folder": "Mostbet-topgainglobalcode",
+  "path": "mostbet/Mostbet-topgainglobalcode",
+  "cloaking": "нет",
+  "suspicious_domains": [
+    "cdn.comfy.ua",
+    "config.ru",
+    "images.unsplash.com",
+    "img2.ans-media.com",
+    "topgaingldbal.actionpickstats.app"
+  ],
+  "files": [
+    "topgaingldbal.actionpickstats.app-2.apk",
+    "topgaingldbal.actionpickstats.app-2-config.armeabi_v7a.apk",
+    "topgaingldbal.actionpickstats.app-2-config.en.apk",
+    "topgaingldbal.actionpickstats.app-2-config.mdpi.apk"
+  ],
+  "ok": true
+>>>>>>> origin/main
 }

@@ -16,8 +16,13 @@
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
+<<<<<<< HEAD
           "undetected": 35,
           "harmless": 56,
+=======
+          "undetected": 0,
+          "harmless": 0,
+>>>>>>> origin/main
           "timeout": 0
         },
         "vendor_rows": [
@@ -385,6 +390,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -823,6 +829,13 @@
           "value": "регистратор: ua.imena"
         }
       ]
+=======
+        ]
+      },
+      "redirect": "нет (без редиректа)",
+      "content_brief": "title: 403 Forbidden. 403 Forbidden 403 Forbidden nginx",
+      "parking": "регистратор: ua.imena"
+>>>>>>> origin/main
     },
     {
       "domain": "config.ru",
@@ -833,8 +846,13 @@
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
+<<<<<<< HEAD
           "undetected": 34,
           "harmless": 57,
+=======
+          "undetected": 0,
+          "harmless": 0,
+>>>>>>> origin/main
           "timeout": 0
         },
         "vendor_rows": [
@@ -1202,6 +1220,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -1643,6 +1662,13 @@
           "value": "похоже на парковку (domain is for sale)"
         }
       ]
+=======
+        ]
+      },
+      "redirect": "https://config.ru/en/",
+      "content_brief": "title: config.ru is for sale. config.ru is for sale en ru en config.ru This domain is for sale The domain is actually the site name and its correct choice influences greatly on the your endeavors success. Often, cost of the domain change during the project running is comparable with the re-branding, so the be",
+      "parking": "похоже на парковку (domain is for sale)"
+>>>>>>> origin/main
     },
     {
       "domain": "images.unsplash.com",
@@ -1653,8 +1679,13 @@
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
+<<<<<<< HEAD
           "undetected": 33,
           "harmless": 58,
+=======
+          "undetected": 0,
+          "harmless": 0,
+>>>>>>> origin/main
           "timeout": 0
         },
         "vendor_rows": [
@@ -2022,6 +2053,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -2470,6 +2502,13 @@
           "value": "регистратор: 1API GmbH"
         }
       ]
+=======
+        ]
+      },
+      "redirect": "нет (без редиректа)",
+      "content_brief": "title: Imgix - Image Processing On-Demand, Served By CDN. Imgix - Image Processing On-Demand, Served By CDN Dashboard Website",
+      "parking": "регистратор: 1API GmbH"
+>>>>>>> origin/main
     },
     {
       "domain": "img2.ans-media.com",
@@ -2480,8 +2519,13 @@
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
+<<<<<<< HEAD
           "undetected": 35,
           "harmless": 56,
+=======
+          "undetected": 0,
+          "harmless": 0,
+>>>>>>> origin/main
           "timeout": 0
         },
         "vendor_rows": [
@@ -2849,6 +2893,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -3296,6 +3341,13 @@
           "value": "регистратор: Key-Systems GmbH"
         }
       ]
+=======
+        ]
+      },
+      "redirect": "нет (без редиректа)",
+      "content_brief": "Not Found",
+      "parking": "регистратор: Key-Systems GmbH"
+>>>>>>> origin/main
     },
     {
       "domain": "topgaingldbal.actionpickstats.app",
@@ -3306,8 +3358,13 @@
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
+<<<<<<< HEAD
           "undetected": 38,
           "harmless": 53,
+=======
+          "undetected": 0,
+          "harmless": 0,
+>>>>>>> origin/main
           "timeout": 0
         },
         "vendor_rows": [
@@ -3484,10 +3541,13 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
             "Sucuri SiteCheck",
             "Clean"
           ],
           [
+=======
+>>>>>>> origin/main
             "ThreatHive",
             "Clean"
           ],
@@ -3560,11 +3620,19 @@
             "Unrated"
           ],
           [
+<<<<<<< HEAD
             "Cluster25",
             "Unrated"
           ],
           [
             "CMC Threat Intelligence",
+=======
+            "CMC Threat Intelligence",
+            "Unrated"
+          ],
+          [
+            "Cluster25",
+>>>>>>> origin/main
             "Unrated"
           ],
           [
@@ -3675,6 +3743,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -4103,6 +4172,13 @@
           "value": "нет данных"
         }
       ]
+=======
+        ]
+      },
+      "redirect": "нет (домен не резолвится)",
+      "content_brief": "DNS_PROBE_FINISHED_NXDOMAIN - домен не найден, сайт недоступен",
+      "parking": "домен не зарегистрирован или удалён"
+>>>>>>> origin/main
     }
   ],
   "count": 5,
