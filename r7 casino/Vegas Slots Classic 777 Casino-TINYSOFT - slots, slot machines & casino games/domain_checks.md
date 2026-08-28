@@ -207,11 +207,7 @@
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
-<<<<<<< HEAD
 | Что выводит (кратко) | title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story FAQ Members Organizat |
-=======
-| Что выводит (кратко) | title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story Members Organization  |
->>>>>>> origin/main
 | Где припаркован | регистратор: Squarespace Domains II LLC |
 
 ## Проверка домена: api16-access-ttp.tiktokpangle.us
@@ -238,6 +234,7 @@
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
+| Criminal IP | Clean |
 | CTX AI | Clean |
 | Cyble | Clean |
 | CyRadar | Clean |
@@ -278,6 +275,7 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+| Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -289,7 +287,6 @@
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
 | Cluster25 | Unrated |
-| Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
 | Cyan | Unrated |
 | DNS8 | Unrated |
@@ -313,7 +310,6 @@
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
 | VIPRE | Unrated |
-| Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: 404 Not Found. 404 Not Found 404 Not Found nginx |
@@ -338,10 +334,7 @@
 | BitDefender | Clean |
 | Blueliv | Clean |
 | Certego | Clean |
-<<<<<<< HEAD
 | Chong Lua Dao | Clean |
-=======
->>>>>>> origin/main
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
@@ -396,10 +389,6 @@
 | Bfore.Ai PreCrime | Unrated |
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
-<<<<<<< HEAD
-=======
-| Chong Lua Dao | Unrated |
->>>>>>> origin/main
 | Cluster25 | Unrated |
 | Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
@@ -496,6 +485,7 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+| Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -530,12 +520,10 @@
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
 | VIPRE | Unrated |
-| Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Moloco. Moloco |
 | Где припаркован | регистратор: Google Inc. |
-<<<<<<< HEAD
 
 ## Проверка домена: cdn2.inner-active.mobi
 
@@ -602,6 +590,7 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+| Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -636,7 +625,6 @@
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
 | VIPRE | Unrated |
-| Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | AccessDenied Access denied. Anonymous caller does not have storage.objects.list access to the Google Cloud Storage bucket. Permission 'storage.objects.list' denied on resource '//storage.googleapis.com/projects/_/buckets/gcs-exchange-public-useast1-prod' (or it may not exist). |
@@ -851,5 +839,3 @@
 | Куда редиректит | https://chromium.googlesource.com/crashpad/crashpad/+/main/README.md |
 | Что выводит (кратко) | title: Crashpad - Crashpad. Crashpad - Crashpad Crashpad Home Developing Interface Docs Man Pages Source Code Crashpad Crashpad is a crash-reporting system. Documentation Project status Developing Crashpad : instructions for getting the source code, building, testing, and contributing to the project. Crashp |
 | Где припаркован | регистратор: MarkMonitor Inc. |
-=======
->>>>>>> origin/main
