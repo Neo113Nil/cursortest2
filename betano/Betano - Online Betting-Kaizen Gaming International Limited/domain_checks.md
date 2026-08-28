@@ -101,8 +101,8 @@
 | URLQuery | Unrated |
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
-| Куда редиректит | нет |
-| Что выводит (кратко) | не удалось открыть (ConnectTimeout) |
+| Куда редиректит | нет (без редиректа) |
+| Что выводит (кратко) | title: Not Found. Not Found Not Found For request 'GET /' |
 | Где припаркован | нет данных |
 
 ## Проверка домена: ai.dev1.idnow.de
@@ -206,8 +206,8 @@
 | URLQuery | Unrated |
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
-| Куда редиректит | нет |
-| Что выводит (кратко) | не удалось открыть (ConnectTimeout) |
+| Куда редиректит | нет (без редиректа) |
+| Что выводит (кратко) | title: Not Found. Not Found Not Found For request 'GET /' |
 | Где припаркован | нет данных |
 
 ## Проверка домена: ai.dev10.idnow.de
@@ -311,8 +311,8 @@
 | URLQuery | Unrated |
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
-| Куда редиректит | нет |
-| Что выводит (кратко) | не удалось открыть (ConnectTimeout) |
+| Куда редиректит | нет (без редиректа) |
+| Что выводит (кратко) | title: Not Found. Not Found Not Found For request 'GET /' |
 | Где припаркован | нет данных |
 
 ## Проверка домена: ai.dev11.idnow.de

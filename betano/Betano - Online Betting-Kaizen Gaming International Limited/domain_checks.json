@@ -449,13 +449,14 @@
         "categories": {},
         "popularity_ranks": "нет",
         "creation_date": null,
-        "last_modification_date": 1787850326,
-        "last_analysis_date": 1787849809,
+        "last_modification_date": 1787897253,
+        "last_analysis_date": 1787896643,
         "registrar": "нет",
         "whois": "Changed: 2026-03-09T19:14:25+01:00\nDomain: idnow.de\nNserver: ns-1090.awsdns-08.org\nNserver: ns-1676.awsdns-17.co.uk\nNserver: ns-424.awsdns-53.com\nNserver: ns-841.awsdns-41.net\nStatus: connect",
         "dns_records": [
+          "A 40.180.137.186",
           "CNAME public-lb.dev0.idnow.de",
-          "A 52.51.241.57"
+          "CNAME public-lb.dev0.idnow.de"
         ],
         "https_subject": {
           "CN": "dev0.idnow.de"
@@ -473,12 +474,14 @@
         ],
         "tags": []
       },
-      "redirects_to": "нет",
-      "redirect_chain": [],
-      "page_output": "не удалось открыть (ConnectTimeout)",
+      "redirects_to": "нет (без редиректа)",
+      "redirect_chain": [
+        "https://ai.dev0.idnow.de/"
+      ],
+      "page_output": "title: Not Found. Not Found Not Found For request 'GET /'",
       "parked_at": "нет данных",
-      "final_url": "",
-      "http_status": null,
+      "final_url": "https://ai.dev0.idnow.de/",
+      "http_status": 404,
       "table_rows": [
         {
           "param": "Домен",
@@ -862,11 +865,11 @@
         },
         {
           "param": "Куда редиректит",
-          "value": "нет"
+          "value": "нет (без редиректа)"
         },
         {
           "param": "Что выводит (кратко)",
-          "value": "не удалось открыть (ConnectTimeout)"
+          "value": "title: Not Found. Not Found Not Found For request 'GET /'"
         },
         {
           "param": "Где припаркован",
@@ -1261,8 +1264,8 @@
         "categories": {},
         "popularity_ranks": "нет",
         "creation_date": null,
-        "last_modification_date": 1787850326,
-        "last_analysis_date": 1787849809,
+        "last_modification_date": 1787897103,
+        "last_analysis_date": 1787896283,
         "registrar": "нет",
         "whois": "Changed: 2026-03-09T19:14:25+01:00\nDomain: idnow.de\nNserver: ns-1090.awsdns-08.org\nNserver: ns-1676.awsdns-17.co.uk\nNserver: ns-424.awsdns-53.com\nNserver: ns-841.awsdns-41.net\nStatus: connect",
         "dns_records": [
@@ -1285,12 +1288,14 @@
         ],
         "tags": []
       },
-      "redirects_to": "нет",
-      "redirect_chain": [],
-      "page_output": "не удалось открыть (ConnectTimeout)",
+      "redirects_to": "нет (без редиректа)",
+      "redirect_chain": [
+        "https://ai.dev1.idnow.de/"
+      ],
+      "page_output": "title: Not Found. Not Found Not Found For request 'GET /'",
       "parked_at": "нет данных",
-      "final_url": "",
-      "http_status": null,
+      "final_url": "https://ai.dev1.idnow.de/",
+      "http_status": 404,
       "table_rows": [
         {
           "param": "Домен",
@@ -1674,11 +1679,11 @@
         },
         {
           "param": "Куда редиректит",
-          "value": "нет"
+          "value": "нет (без редиректа)"
         },
         {
           "param": "Что выводит (кратко)",
-          "value": "не удалось открыть (ConnectTimeout)"
+          "value": "title: Not Found. Not Found Not Found For request 'GET /'"
         },
         {
           "param": "Где припаркован",
@@ -2073,13 +2078,12 @@
         "categories": {},
         "popularity_ranks": "нет",
         "creation_date": null,
-        "last_modification_date": 1787850326,
-        "last_analysis_date": 1787849809,
+        "last_modification_date": 1787897094,
+        "last_analysis_date": 1787896176,
         "registrar": "нет",
         "whois": "Changed: 2026-03-09T19:14:25+01:00\nDomain: idnow.de\nNserver: ns-1090.awsdns-08.org\nNserver: ns-1676.awsdns-17.co.uk\nNserver: ns-424.awsdns-53.com\nNserver: ns-841.awsdns-41.net\nStatus: connect",
         "dns_records": [
           "A 34.246.68.17",
-          "CNAME public-lb.dev10.idnow.de",
           "CNAME public-lb.dev10.idnow.de"
         ],
         "https_subject": {
@@ -2098,12 +2102,14 @@
         ],
         "tags": []
       },
-      "redirects_to": "нет",
-      "redirect_chain": [],
-      "page_output": "не удалось открыть (ConnectTimeout)",
+      "redirects_to": "нет (без редиректа)",
+      "redirect_chain": [
+        "https://ai.dev10.idnow.de/"
+      ],
+      "page_output": "title: Not Found. Not Found Not Found For request 'GET /'",
       "parked_at": "нет данных",
-      "final_url": "",
-      "http_status": null,
+      "final_url": "https://ai.dev10.idnow.de/",
+      "http_status": 404,
       "table_rows": [
         {
           "param": "Домен",
@@ -2487,11 +2493,11 @@
         },
         {
           "param": "Куда редиректит",
-          "value": "нет"
+          "value": "нет (без редиректа)"
         },
         {
           "param": "Что выводит (кратко)",
-          "value": "не удалось открыть (ConnectTimeout)"
+          "value": "title: Not Found. Not Found Not Found For request 'GET /'"
         },
         {
           "param": "Где припаркован",
