@@ -234,6 +234,7 @@
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
+| Criminal IP | Clean |
 | CTX AI | Clean |
 | Cyble | Clean |
 | CyRadar | Clean |
@@ -274,7 +275,6 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
-| Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -286,7 +286,6 @@
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
 | Cluster25 | Unrated |
-| Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
 | Cyan | Unrated |
 | DNS8 | Unrated |
@@ -310,6 +309,7 @@
 | SOCRadar | Unrated |
 | URLQuery | Unrated |
 | VIPRE | Unrated |
+| Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | Url not found |
@@ -339,6 +339,7 @@
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
+| Criminal IP | Clean |
 | CTX AI | Clean |
 | Cyble | Clean |
 | CyRadar | Clean |
@@ -390,7 +391,6 @@
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
 | Cluster25 | Unrated |
-| Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
 | Cyan | Unrated |
 | DNS8 | Unrated |
@@ -417,7 +417,7 @@
 | Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | AccessDenied Access Denied BVSXM7JX9DYXAMCC 7YZPq6jdxG5Lwj1gOoKMCPviZ1jVPrji05wvxUSCau5sVPn0cno3KThDuCfIxQkmwco9obmJ8Hs= |
+| Что выводит (кратко) | AccessDenied Access Denied R71VRRBDZSFJ6VSY 0cI+xz+Dyxg+fJj8Zyv42hUo92kYdbzTvtRoEm8Tnl9Qnd+qyqifCNMfZ7r7qXqMvPFkGwmP20KcL+lvBgOY/WGcyfNTyzHk |
 | Где припаркован | нет данных |
 
 ## Проверка домена: chat-prod.slots1.bagelgames.com
