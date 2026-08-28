@@ -169,10 +169,7 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
-<<<<<<< HEAD
 | Xcitium Verdict Cloud | Clean |
-=======
->>>>>>> origin/main
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -208,10 +205,6 @@
 | SOCRadar | Unrated |
 | URLQuery | Unrated |
 | VIPRE | Unrated |
-<<<<<<< HEAD
-=======
-| Xcitium Verdict Cloud | Unrated |
->>>>>>> origin/main
 | ZeroFox | Unrated |
 | Куда редиректит | https://www.admaxim.com/ |
 | Что выводит (кратко) | title: AdMaxim &#8211; Advanced Digital Advertising. AdMaxim &#8211; Advanced Digital Advertising Skip to content Facebook page opens in new window Twitter page opens in new window Login AdMaxim Advanced Digital Advertising Home Showcase Contact Home Showcase Contact Pinpoint &trade; Programmatic Digital Media Platform Show Me More |
@@ -322,6 +315,111 @@
 | Что выводит (кратко) | title: Admazing \| Powerful Mobile Gaming Ads for Brands. Admazing \| Powerful Mobile Gaming Ads for Brands Ad Solutions Success Cases Ad Measurement Company ')"> Blog Let's Talk Select Language EN EN Ad Solutions Success Cases Ad Measurement Company ')"> Blog Let's Talk Select Language EN EN unlock the power unlock the power of of Mobil |
 | Где припаркован | регистратор: GANDI SAS |
 
+## Проверка домена: admazing.com
+
+Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
+
+| Параметр / движок | Значение / вердикт |
+|---|---|
+| Домен | admazing.com |
+| VirusTotal URL | https://www.virustotal.com/gui/domain/admazing.com |
+| Детекции | 0/91 (malicious=0, suspicious=0) |
+| Security vendors' analysis | ниже построчно, как на VirusTotal |
+| Abusix | Clean |
+| Acronis | Clean |
+| ADMINUSLabs | Clean |
+| AILabs (MONITORAPP) | Clean |
+| AlienVault | Clean |
+| Antiy-AVL | Clean |
+| BitDefender | Clean |
+| Blueliv | Clean |
+| Certego | Clean |
+| Chong Lua Dao | Clean |
+| CINS Army | Clean |
+| CRDF | Clean |
+| CTX AI | Clean |
+| Cyble | Clean |
+| CyRadar | Clean |
+| desenmascara.me | Clean |
+| Dr.Web | Clean |
+| EmergingThreats | Clean |
+| Emsisoft | Clean |
+| ESET | Clean |
+| ESTsecurity | Clean |
+| Forcepoint ThreatSeeker | Clean |
+| Fortinet | Clean |
+| G-Data | Clean |
+| Google Safe Browsing | Clean |
+| GreenSnow | Clean |
+| Heimdal Security | Clean |
+| IPsum | Clean |
+| Juniper Networks | Clean |
+| Kaspersky | Clean |
+| Lionic | Clean |
+| Malwared | Clean |
+| MalwarePatrol | Clean |
+| Netcraft | Clean |
+| OpenPhish | Clean |
+| Phishing Database | Clean |
+| Phishtank | Clean |
+| PREBYTES | Clean |
+| Quick Heal | Clean |
+| Quttera | Clean |
+| Scantitan | Clean |
+| SCUMWARE.org | Clean |
+| Seclookup | Clean |
+| Sophos | Clean |
+| StopForumSpam | Clean |
+| Sucuri SiteCheck | Clean |
+| ThreatHive | Clean |
+| URLhaus | Clean |
+| Viettel Threat Intelligence | Clean |
+| ViriBack | Clean |
+| VX Vault | Clean |
+| Webroot | Clean |
+| Xcitium Verdict Cloud | Clean |
+| Yandex Safebrowsing | Clean |
+| ZeroCERT | Clean |
+| 0xSI_f33d | Unrated |
+| alphaMountain.ai | Unrated |
+| AlphaSOC | Unrated |
+| ArcSight Threat Intelligence | Unrated |
+| AutoShun | Unrated |
+| Axur | Unrated |
+| Bfore.Ai PreCrime | Unrated |
+| Bkav | Unrated |
+| ChainPatrol | Unrated |
+| Cluster25 | Unrated |
+| CMC Threat Intelligence | Unrated |
+| Criminal IP | Unrated |
+| CSIS Security Group | Unrated |
+| Cyan | Unrated |
+| DNS8 | Unrated |
+| Ermes | Unrated |
+| Fortra | Unrated |
+| GCP Abuse Intelligence | Unrated |
+| GreyNoise | Unrated |
+| Gridinsoft | Unrated |
+| Guardpot | Unrated |
+| Hunt.io Intelligence | Unrated |
+| LevelBlue | Unrated |
+| Lumu | Unrated |
+| MalwareURL | Unrated |
+| Mimecast | Unrated |
+| PhishFort | Unrated |
+| PrecisionSec | Unrated |
+| SafeToOpen | Unrated |
+| Sansec eComscan | Unrated |
+| SecureBrain | Unrated |
+| Snort IP sample list | Unrated |
+| SOCRadar | Unrated |
+| URLQuery | Unrated |
+| VIPRE | Unrated |
+| ZeroFox | Unrated |
+| Куда редиректит | нет (без редиректа) |
+| Что выводит (кратко) | title: Admazing \| Powerful Mobile Gaming Ads for Brands. Admazing \| Powerful Mobile Gaming Ads for Brands Ad Solutions Success Cases Ad Measurement Company ')"> Blog Let's Talk Select Language EN EN Ad Solutions Success Cases Ad Measurement Company ')"> Blog Let's Talk Select Language EN EN unlock the power unlock the power of of Mobil |
+| Где припаркован | регистратор/whois связан с парковкой: godaddy |
+
 ## Проверка домена: admixer.com
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
@@ -384,10 +482,7 @@
 | URLhaus | Clean |
 | URLQuery | Clean |
 | Viettel Threat Intelligence | Clean |
-<<<<<<< HEAD
 | VIPRE | Clean |
-=======
->>>>>>> origin/main
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
@@ -424,16 +519,11 @@
 | SecureBrain | Unrated |
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
-<<<<<<< HEAD
-=======
-| VIPRE | Unrated |
->>>>>>> origin/main
 | Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Admixer \| Full-Stack Programmatic AdTech Solutions. Admixer \| Full-Stack Programmatic AdTech Solutions Products For advertisers Demand Side Platform purchase audiences at scale across all digital media Data Management Platform precise audience targeting Agency Tech Stack make revenue from your own adtech ecosystem In-House DSP for |
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
-<<<<<<< HEAD
 
 ## Проверка домена: admixplay.com
 
@@ -749,110 +839,3 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Customer Service Support and In App Ticketing System \| AIHelp. Customer Service Support and In App Ticketing System \| AIHelp --> --> x x AIHelp Features Pricing Customers Developers Company Blog --> Get Free Trial AIHelp M Features Pricing Customers Developers Company Blog --> Get Free Trial Maximize your return using THE BEST AI services of |
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
-
-## Проверка домена: algorix.co
-
-Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
-
-| Параметр / движок | Значение / вердикт |
-|---|---|
-| Домен | algorix.co |
-| VirusTotal URL | https://www.virustotal.com/gui/domain/algorix.co |
-| Детекции | 0/91 (malicious=0, suspicious=0) |
-| Security vendors' analysis | ниже построчно, как на VirusTotal |
-| Abusix | Clean |
-| Acronis | Clean |
-| ADMINUSLabs | Clean |
-| AILabs (MONITORAPP) | Clean |
-| AlienVault | Clean |
-| Antiy-AVL | Clean |
-| BitDefender | Clean |
-| Blueliv | Clean |
-| Certego | Clean |
-| Chong Lua Dao | Clean |
-| CINS Army | Clean |
-| CMC Threat Intelligence | Clean |
-| CRDF | Clean |
-| CTX AI | Clean |
-| Cyble | Clean |
-| CyRadar | Clean |
-| desenmascara.me | Clean |
-| Dr.Web | Clean |
-| EmergingThreats | Clean |
-| Emsisoft | Clean |
-| ESET | Clean |
-| ESTsecurity | Clean |
-| Forcepoint ThreatSeeker | Clean |
-| Fortinet | Clean |
-| G-Data | Clean |
-| Google Safe Browsing | Clean |
-| GreenSnow | Clean |
-| Heimdal Security | Clean |
-| IPsum | Clean |
-| Juniper Networks | Clean |
-| Kaspersky | Clean |
-| Lionic | Clean |
-| Malwared | Clean |
-| MalwarePatrol | Clean |
-| Netcraft | Clean |
-| OpenPhish | Clean |
-| Phishing Database | Clean |
-| Phishtank | Clean |
-| PREBYTES | Clean |
-| Quick Heal | Clean |
-| Quttera | Clean |
-| Scantitan | Clean |
-| SCUMWARE.org | Clean |
-| Seclookup | Clean |
-| Sophos | Clean |
-| StopForumSpam | Clean |
-| Sucuri SiteCheck | Clean |
-| ThreatHive | Clean |
-| URLhaus | Clean |
-| Viettel Threat Intelligence | Clean |
-| ViriBack | Clean |
-| VX Vault | Clean |
-| Webroot | Clean |
-| Xcitium Verdict Cloud | Clean |
-| Yandex Safebrowsing | Clean |
-| ZeroCERT | Clean |
-| 0xSI_f33d | Unrated |
-| alphaMountain.ai | Unrated |
-| AlphaSOC | Unrated |
-| ArcSight Threat Intelligence | Unrated |
-| AutoShun | Unrated |
-| Axur | Unrated |
-| Bfore.Ai PreCrime | Unrated |
-| Bkav | Unrated |
-| ChainPatrol | Unrated |
-| Cluster25 | Unrated |
-| Criminal IP | Unrated |
-| CSIS Security Group | Unrated |
-| Cyan | Unrated |
-| DNS8 | Unrated |
-| Ermes | Unrated |
-| Fortra | Unrated |
-| GCP Abuse Intelligence | Unrated |
-| GreyNoise | Unrated |
-| Gridinsoft | Unrated |
-| Guardpot | Unrated |
-| Hunt.io Intelligence | Unrated |
-| LevelBlue | Unrated |
-| Lumu | Unrated |
-| MalwareURL | Unrated |
-| Mimecast | Unrated |
-| PhishFort | Unrated |
-| PrecisionSec | Unrated |
-| SafeToOpen | Unrated |
-| Sansec eComscan | Unrated |
-| SecureBrain | Unrated |
-| Snort IP sample list | Unrated |
-| SOCRadar | Unrated |
-| URLQuery | Unrated |
-| VIPRE | Unrated |
-| ZeroFox | Unrated |
-| Куда редиректит | https://www.algorix.co/ |
-| Что выводит (кратко) | title: AlgoriX. AlgoriX Publishers Buyers Advertisers Our Studios Resources News and Articles Case Studies Events Company About Us Our Team Our Commitment Careers Login Publisher Buyer Contact Menu Publishers Buyers Advertisers Our Studios Resources News and Articles Case Studies Events Company  |
-| Где припаркован | регистратор: GANDI SAS |
-=======
->>>>>>> origin/main
