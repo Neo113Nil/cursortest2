@@ -1,0 +1,41 @@
+{
+  "app_id": "com.mobee.igniteonline",
+  "title": "Jackpot Strike - Casino Slots",
+  "developer": "Mobee Co., Limited",
+  "url": "https://play.google.com/store/apps/details?id=com.mobee.igniteonline&hl=en&gl=us",
+  "version": "1.9.2",
+  "version_code": "546",
+  "summary": "Jackpot Strike - Casino Slots (APK label: Jackpot Strike) — social-casino Unity/IL2CPP от Mobee; аналитика ThinkingData upload.mobeetd.com:8991 + Firebase/AppsFlyer/Bugly/Facebook; UniWebView + Facebook Custom Tabs; рекламных сетей mediation нет; клоаки нет.",
+  "keyword": "r7 casino",
+  "folder": "Jackpot Strike - Casino Slots-Mobee Co., Limited",
+  "path": "r7 casino/Jackpot Strike - Casino Slots-Mobee Co., Limited",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "apk_label": "Jackpot Strike",
+  "cloaking": "нет",
+  "files": [
+    "com.mobee.igniteonline.xapk",
+    "com.mobee.igniteonline-546.apk",
+    "apk/com.mobee.igniteonline-546.apk"
+  ],
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      {
+        "domain": "astat.bugly.cros.wr.pvp.net"
+      },
+      {
+        "domain": "fb.gg"
+      }
+    ],
+    "ads": [],
+    "analytics": [
+      "Firebase Analytics",
+      "Firebase Messaging",
+      "AppsFlyer",
+      "ThinkingData",
+      "Tencent Bugly",
+      "Facebook App Events"
+    ]
+  }
+}
