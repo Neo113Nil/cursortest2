@@ -431,10 +431,7 @@
 | Детекции | 0/91 (malicious=0, suspicious=0) |
 | Security vendors' analysis | ниже построчно, как на VirusTotal |
 | Abusix | Clean |
-<<<<<<< HEAD
 | Acronis | Clean |
-=======
->>>>>>> origin/main
 | ADMINUSLabs | Clean |
 | AILabs (MONITORAPP) | Clean |
 | AlienVault | Clean |
@@ -527,7 +524,6 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | OK |
 | Где припаркован | регистратор: Amazon Registrar, Inc. |
-<<<<<<< HEAD
 
 ## Проверка домена: cdn-f.adsmoloco.com
 
@@ -594,6 +590,7 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+| Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -628,7 +625,6 @@
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
 | VIPRE | Unrated |
-| Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Moloco. Moloco |
@@ -699,6 +695,7 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+| Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -733,7 +730,6 @@
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
 | VIPRE | Unrated |
-| Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | AccessDenied Access denied. Anonymous caller does not have storage.objects.list access to the Google Cloud Storage bucket. Permission 'storage.objects.list' denied on resource '//storage.googleapis.com/projects/_/buckets/gcs-exchange-public-useast1-prod' (or it may not exist). |
@@ -843,5 +839,3 @@
 | Куда редиректит | https://www.cocos.com/ |
 | Что выводит (кратко) | title: Cocos - å ¨çé¢å ç2D&amp;3Då¼æï¼æ¸¸æ&#x2F;æºè½åº§è±&#x2F;AR&#x2F;VR&#x2F;è§è²&#x2F;æè². Cocos - å ¨çé¢å ç2D&amp;3Då¼æï¼æ¸¸æ&#x2F;æºè½åº§è±&#x2F;AR&#x2F;VR&#x2F;è§è²&#x2F;æè² ç¼ç» åå ç¤¾åº ç¼ç» COCOS : æé ä¸ä¸ä»£å®æ¶äºå¨å å®¹ é¢åæ¸¸æä¸å¤è¡ä¸äºå¨åºæ¯çå¹³å°ï¼ä»¥é«æ§è½å¼æãå®æ´å·¥å ·é¾åè·¨å¹³å°è½åï¼ |
 | Где припаркован | регистратор: DNSPod, Inc. |
-=======
->>>>>>> origin/main
