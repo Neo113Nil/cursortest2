@@ -207,11 +207,7 @@
 | Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
-<<<<<<< HEAD
 | Что выводит (кратко) | title: Customer Service Support and In App Ticketing System \| AIHelp. Customer Service Support and In App Ticketing System \| AIHelp --> --> x x AIHelp Features Pricing Customers Developers Company Blog --> Get Free Trial AIHelp M Features Pricing Customers Developers Company Blog --> Get Free Trial Maximize your return using THE BEST AI services of |
-=======
-| Что выводит (кратко) | title: Customer Service Support and In App Ticketing System | AIHelp. Customer Service Support and In App Ticketing System | AIHelp --> --> x x AIHelp Features Pricing Customers Developers Company Blog --> Get Free Trial AIHelp M Features Pricing Customers Developers Company Blog --> Get Free Trial Maximize your return using THE BEST AI services of |
->>>>>>> origin/main
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
 
 ## Проверка домена: akm.ssacdn.com
@@ -423,7 +419,6 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story FAQ Members Organizat |
 | Где припаркован | регистратор: Squarespace Domains II LLC |
-<<<<<<< HEAD
 
 ## Проверка домена: api.nextgen.verve.net
 
@@ -740,14 +735,14 @@
 | Что выводит (кратко) | нет |
 | Где припаркован | нет данных |
 
-## Проверка домена: auroraoss.com
+## Проверка домена: cdn.aihelp.net
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
 
 | Параметр / движок | Значение / вердикт |
 |---|---|
-| Домен | auroraoss.com |
-| VirusTotal URL | https://www.virustotal.com/gui/domain/auroraoss.com |
+| Домен | cdn.aihelp.net |
+| VirusTotal URL | https://www.virustotal.com/gui/domain/cdn.aihelp.net |
 | Детекции | 0/91 (malicious=0, suspicious=0) |
 | Security vendors' analysis | ниже построчно, как на VirusTotal |
 | Abusix | Clean |
@@ -755,12 +750,10 @@
 | ADMINUSLabs | Clean |
 | AILabs (MONITORAPP) | Clean |
 | AlienVault | Clean |
-| alphaMountain.ai | Clean |
 | Antiy-AVL | Clean |
 | BitDefender | Clean |
 | Blueliv | Clean |
 | Certego | Clean |
-| Chong Lua Dao | Clean |
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
@@ -769,6 +762,7 @@
 | Cyble | Clean |
 | CyRadar | Clean |
 | desenmascara.me | Clean |
+| DNS8 | Clean |
 | Dr.Web | Clean |
 | EmergingThreats | Clean |
 | Emsisoft | Clean |
@@ -805,10 +799,10 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
-| Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
+| alphaMountain.ai | Unrated |
 | AlphaSOC | Unrated |
 | ArcSight Threat Intelligence | Unrated |
 | AutoShun | Unrated |
@@ -816,10 +810,10 @@
 | Bfore.Ai PreCrime | Unrated |
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
+| Chong Lua Dao | Unrated |
 | Cluster25 | Unrated |
 | CSIS Security Group | Unrated |
 | Cyan | Unrated |
-| DNS8 | Unrated |
 | Ermes | Unrated |
 | Fortra | Unrated |
 | GCP Abuse Intelligence | Unrated |
@@ -840,9 +834,8 @@
 | SOCRadar | Unrated |
 | URLQuery | Unrated |
 | VIPRE | Unrated |
+| Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
-| Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | title: Aurora. Aurora |
-| Где припаркован | регистратор: NAMECHEAP INC |
-=======
->>>>>>> origin/main
+| Куда редиректит | https://cdn.aihelp.net/hc → http://cdn.aihelp.net/hc/ → https://cdn.aihelp.net/hc/ |
+| Что выводит (кратко) | title: AIHelp Web Portal. AIHelp Web Portal Loading content... {{ $t('common.aihelp_faq_feedback_thanks') }} |
+| Где припаркован | регистратор/whois связан с парковкой: godaddy |

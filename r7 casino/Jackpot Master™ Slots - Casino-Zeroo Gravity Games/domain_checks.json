@@ -3,12 +3,10 @@
     "123.com",
     "aihelp.net",
     "akm.ssacdn.com",
-<<<<<<< HEAD
     "aomedia.org",
     "api.nextgen.verve.net",
     "app.adjust.io",
     "astat.bugly.cros.wr.pvp.net",
-    "auroraoss.com",
     "cdn.aihelp.net",
     "cdn.prod.website-files.com",
     "cdn.pubnative.net",
@@ -57,15 +55,11 @@
     "vuejs.org",
     "whatwg.org",
     "wss142.aihelp.net"
-=======
-    "aomedia.org"
->>>>>>> origin/main
   ],
   "checked": [
     {
       "domain": "123.com",
       "virustotal": {
-<<<<<<< HEAD
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/123.com",
         "detections": "1/91 (malicious=1, suspicious=0)",
@@ -878,385 +872,12 @@
         {
           "param": "Где припаркован",
           "value": "нет данных"
-=======
-        "url": "https://www.virustotal.com/gui/domain/123.com",
-        "detections": "1/91 (malicious=1, suspicious=0)"
-      },
-      "redirects_to": "нет (DNS не резолвится)",
-      "page_output": "нет (DNS не резолвится)",
-      "parked_at": "нет данных",
-      "vendors": [
-        {
-          "name": "Chong Lua Dao",
-          "verdict": "Malicious"
-        },
-        {
-          "name": "Abusix",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Acronis",
-          "verdict": "Clean"
-        },
-        {
-          "name": "ADMINUSLabs",
-          "verdict": "Clean"
-        },
-        {
-          "name": "AILabs (MONITORAPP)",
-          "verdict": "Clean"
-        },
-        {
-          "name": "AlienVault",
-          "verdict": "Clean"
-        },
-        {
-          "name": "alphaMountain.ai",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Antiy-AVL",
-          "verdict": "Clean"
-        },
-        {
-          "name": "BitDefender",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Blueliv",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Certego",
-          "verdict": "Clean"
-        },
-        {
-          "name": "CINS Army",
-          "verdict": "Clean"
-        },
-        {
-          "name": "CMC Threat Intelligence",
-          "verdict": "Clean"
-        },
-        {
-          "name": "CRDF",
-          "verdict": "Clean"
-        },
-        {
-          "name": "CTX AI",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Cyble",
-          "verdict": "Clean"
-        },
-        {
-          "name": "CyRadar",
-          "verdict": "Clean"
-        },
-        {
-          "name": "desenmascara.me",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Dr.Web",
-          "verdict": "Clean"
-        },
-        {
-          "name": "EmergingThreats",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Emsisoft",
-          "verdict": "Clean"
-        },
-        {
-          "name": "ESET",
-          "verdict": "Clean"
-        },
-        {
-          "name": "ESTsecurity",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Forcepoint ThreatSeeker",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Fortinet",
-          "verdict": "Clean"
-        },
-        {
-          "name": "G-Data",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Google Safe Browsing",
-          "verdict": "Clean"
-        },
-        {
-          "name": "GreenSnow",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Heimdal Security",
-          "verdict": "Clean"
-        },
-        {
-          "name": "IPsum",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Juniper Networks",
-          "verdict": "Clean"
-        },
-        {
-          "name": "LevelBlue",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Lionic",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Malwared",
-          "verdict": "Clean"
-        },
-        {
-          "name": "MalwarePatrol",
-          "verdict": "Clean"
-        },
-        {
-          "name": "OpenPhish",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Phishing Database",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Phishtank",
-          "verdict": "Clean"
-        },
-        {
-          "name": "PREBYTES",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Quick Heal",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Quttera",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Scantitan",
-          "verdict": "Clean"
-        },
-        {
-          "name": "SCUMWARE.org",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Seclookup",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Sophos",
-          "verdict": "Clean"
-        },
-        {
-          "name": "StopForumSpam",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Sucuri SiteCheck",
-          "verdict": "Clean"
-        },
-        {
-          "name": "ThreatHive",
-          "verdict": "Clean"
-        },
-        {
-          "name": "URLhaus",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Viettel Threat Intelligence",
-          "verdict": "Clean"
-        },
-        {
-          "name": "ViriBack",
-          "verdict": "Clean"
-        },
-        {
-          "name": "VX Vault",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Webroot",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Xcitium Verdict Cloud",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Yandex Safebrowsing",
-          "verdict": "Clean"
-        },
-        {
-          "name": "ZeroCERT",
-          "verdict": "Clean"
-        },
-        {
-          "name": "0xSI_f33d",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "AlphaSOC",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "ArcSight Threat Intelligence",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "AutoShun",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Axur",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Bfore.Ai PreCrime",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Bkav",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "ChainPatrol",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Cluster25",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Criminal IP",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "CSIS Security Group",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Cyan",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "DNS8",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Ermes",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Fortra",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "GCP Abuse Intelligence",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "GreyNoise",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Gridinsoft",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Guardpot",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Hunt.io Intelligence",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Kaspersky",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Lumu",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "MalwareURL",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Mimecast",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Netcraft",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "PhishFort",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "PrecisionSec",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "SafeToOpen",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Sansec eComscan",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "SecureBrain",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Snort IP sample list",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "SOCRadar",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "URLQuery",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "VIPRE",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "ZeroFox",
-          "verdict": "Unrated"
->>>>>>> origin/main
         }
       ]
     },
     {
       "domain": "aihelp.net",
       "virustotal": {
-<<<<<<< HEAD
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/aihelp.net",
         "detections": "0/91 (malicious=0, suspicious=0)",
@@ -1647,23 +1268,23 @@
           "Majestic: 638393"
         ],
         "creation_date": 1450828800,
-        "last_modification_date": 1787855657,
-        "last_analysis_date": 1787854464,
+        "last_modification_date": 1787886589,
+        "last_analysis_date": 1787886541,
         "registrar": "нет",
         "whois": "Create date: 2015-12-23 00:00:00\nDomain name: aihelp.net\nDomain registrar id: 146.0\nDomain registrar url: whois.godaddy.com\nExpiry date: 2026-12-23 00:00:00\nName server 1: NS3.DNSV4.COM\nName server 2: NS4.DNSV4.COM\nQuery time: 2025-12-26 01:00:45\nUpdate date: 2025-12-23 00:00:00",
         "dns_records": [
-          "A 169.61.195.139",
-          "NS ns3.dnsv5.com",
-          "TXT google-site-verification=E_ykmh3O4DVNiHnnl6yCHR7p1LvqWvxnwDwUnhFDv3A",
           "TXT google-site-verification=6AqqFVE9Atoj6uwcKPeNYnr3bedLBGH79qC69tLW3Go",
-          "MX mxbiz2.qq.com",
-          "AAAA 2607:f0d0:1b01:1f9::b",
-          "AAAA 2607:f0d0:1b06:25::9119",
-          "SOA ns3.dnsv5.com",
-          "NS ns4.dnsv5.com",
+          "TXT google-site-verification=E_ykmh3O4DVNiHnnl6yCHR7p1LvqWvxnwDwUnhFDv3A",
           "MX mxbiz1.qq.com",
-          "TXT v=spf1 include:spf.mail.qq.com ~all",
-          "AAAA 2607:f0d0:1e03:c1::3"
+          "NS ns4.dnsv5.com",
+          "AAAA 2607:f0d0:1b06:25::9119",
+          "TXT google-site-verification=NE-buKpYJIWDHcSI748m7C-SXW68Pv58zhapMIwKUvc",
+          "A 169.53.40.82",
+          "NS ns3.dnsv5.com",
+          "A 169.61.195.139",
+          "A 169.55.254.202",
+          "MX mxbiz2.qq.com",
+          "AAAA 2607:f0d0:1b01:1f9::b"
         ],
         "https_subject": {
           "CN": "*.aihelp.net"
@@ -2084,385 +1705,12 @@
         {
           "param": "Где припаркован",
           "value": "регистратор/whois связан с парковкой: godaddy"
-=======
-        "url": "https://www.virustotal.com/gui/domain/aihelp.net",
-        "detections": "0/91 (malicious=0, suspicious=0)"
-      },
-      "redirects_to": "нет (без редиректа)",
-      "page_output": "title: Customer Service Support and In App Ticketing System | AIHelp. Customer Service Support and In App Ticketing System | AIHelp --> --> x x AIHelp Features Pricing Customers Developers Company Blog --> Get Free Trial AIHelp M Features Pricing Customers Developers Company Blog --> Get Free Trial Maximize your return using THE BEST AI services of",
-      "parked_at": "регистратор/whois связан с парковкой: godaddy",
-      "vendors": [
-        {
-          "name": "Abusix",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Acronis",
-          "verdict": "Clean"
-        },
-        {
-          "name": "ADMINUSLabs",
-          "verdict": "Clean"
-        },
-        {
-          "name": "AILabs (MONITORAPP)",
-          "verdict": "Clean"
-        },
-        {
-          "name": "AlienVault",
-          "verdict": "Clean"
-        },
-        {
-          "name": "alphaMountain.ai",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Antiy-AVL",
-          "verdict": "Clean"
-        },
-        {
-          "name": "BitDefender",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Blueliv",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Certego",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Chong Lua Dao",
-          "verdict": "Clean"
-        },
-        {
-          "name": "CINS Army",
-          "verdict": "Clean"
-        },
-        {
-          "name": "CMC Threat Intelligence",
-          "verdict": "Clean"
-        },
-        {
-          "name": "CRDF",
-          "verdict": "Clean"
-        },
-        {
-          "name": "CTX AI",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Cyble",
-          "verdict": "Clean"
-        },
-        {
-          "name": "CyRadar",
-          "verdict": "Clean"
-        },
-        {
-          "name": "desenmascara.me",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Dr.Web",
-          "verdict": "Clean"
-        },
-        {
-          "name": "EmergingThreats",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Emsisoft",
-          "verdict": "Clean"
-        },
-        {
-          "name": "ESET",
-          "verdict": "Clean"
-        },
-        {
-          "name": "ESTsecurity",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Forcepoint ThreatSeeker",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Fortinet",
-          "verdict": "Clean"
-        },
-        {
-          "name": "G-Data",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Google Safe Browsing",
-          "verdict": "Clean"
-        },
-        {
-          "name": "GreenSnow",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Heimdal Security",
-          "verdict": "Clean"
-        },
-        {
-          "name": "IPsum",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Juniper Networks",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Kaspersky",
-          "verdict": "Clean"
-        },
-        {
-          "name": "LevelBlue",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Lionic",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Malwared",
-          "verdict": "Clean"
-        },
-        {
-          "name": "MalwarePatrol",
-          "verdict": "Clean"
-        },
-        {
-          "name": "OpenPhish",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Phishing Database",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Phishtank",
-          "verdict": "Clean"
-        },
-        {
-          "name": "PREBYTES",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Quick Heal",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Quttera",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Scantitan",
-          "verdict": "Clean"
-        },
-        {
-          "name": "SCUMWARE.org",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Seclookup",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Sophos",
-          "verdict": "Clean"
-        },
-        {
-          "name": "StopForumSpam",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Sucuri SiteCheck",
-          "verdict": "Clean"
-        },
-        {
-          "name": "ThreatHive",
-          "verdict": "Clean"
-        },
-        {
-          "name": "URLhaus",
-          "verdict": "Clean"
-        },
-        {
-          "name": "URLQuery",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Viettel Threat Intelligence",
-          "verdict": "Clean"
-        },
-        {
-          "name": "VIPRE",
-          "verdict": "Clean"
-        },
-        {
-          "name": "ViriBack",
-          "verdict": "Clean"
-        },
-        {
-          "name": "VX Vault",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Webroot",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Yandex Safebrowsing",
-          "verdict": "Clean"
-        },
-        {
-          "name": "ZeroCERT",
-          "verdict": "Clean"
-        },
-        {
-          "name": "0xSI_f33d",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "AlphaSOC",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "ArcSight Threat Intelligence",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "AutoShun",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Axur",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Bfore.Ai PreCrime",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Bkav",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "ChainPatrol",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Cluster25",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Criminal IP",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "CSIS Security Group",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Cyan",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "DNS8",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Ermes",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Fortra",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "GCP Abuse Intelligence",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "GreyNoise",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Gridinsoft",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Guardpot",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Hunt.io Intelligence",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Lumu",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "MalwareURL",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Mimecast",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Netcraft",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "PhishFort",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "PrecisionSec",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "SafeToOpen",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Sansec eComscan",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "SecureBrain",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Snort IP sample list",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "SOCRadar",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Xcitium Verdict Cloud",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "ZeroFox",
-          "verdict": "Unrated"
->>>>>>> origin/main
         }
       ]
     },
     {
       "domain": "akm.ssacdn.com",
       "virustotal": {
-<<<<<<< HEAD
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/akm.ssacdn.com",
         "detections": "0/91 (malicious=0, suspicious=0)",
@@ -3281,385 +2529,12 @@
         {
           "param": "Где припаркован",
           "value": "регистратор: Amazon Registrar, Inc."
-=======
-        "url": "https://www.virustotal.com/gui/domain/akm.ssacdn.com",
-        "detections": "0/91 (malicious=0, suspicious=0)"
-      },
-      "redirects_to": "нет (DNS не резолвится)",
-      "page_output": "нет (DNS не резолвится)",
-      "parked_at": "регистратор: Amazon Registrar, Inc.",
-      "vendors": [
-        {
-          "name": "ADMINUSLabs",
-          "verdict": "Clean"
-        },
-        {
-          "name": "AlienVault",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Antiy-AVL",
-          "verdict": "Clean"
-        },
-        {
-          "name": "BitDefender",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Blueliv",
-          "verdict": "Clean"
-        },
-        {
-          "name": "CRDF",
-          "verdict": "Clean"
-        },
-        {
-          "name": "CyRadar",
-          "verdict": "Clean"
-        },
-        {
-          "name": "desenmascara.me",
-          "verdict": "Clean"
-        },
-        {
-          "name": "DNS8",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Dr.Web",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Emsisoft",
-          "verdict": "Clean"
-        },
-        {
-          "name": "ESET",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Forcepoint ThreatSeeker",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Fortinet",
-          "verdict": "Clean"
-        },
-        {
-          "name": "G-Data",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Google Safe Browsing",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Kaspersky",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Lionic",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Malwared",
-          "verdict": "Clean"
-        },
-        {
-          "name": "MalwarePatrol",
-          "verdict": "Clean"
-        },
-        {
-          "name": "OpenPhish",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Phishtank",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Quttera",
-          "verdict": "Clean"
-        },
-        {
-          "name": "SCUMWARE.org",
-          "verdict": "Clean"
-        },
-        {
-          "name": "SecureBrain",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Sucuri SiteCheck",
-          "verdict": "Clean"
-        },
-        {
-          "name": "ThreatHive",
-          "verdict": "Clean"
-        },
-        {
-          "name": "URLhaus",
-          "verdict": "Clean"
-        },
-        {
-          "name": "URLQuery",
-          "verdict": "Clean"
-        },
-        {
-          "name": "VX Vault",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Yandex Safebrowsing",
-          "verdict": "Clean"
-        },
-        {
-          "name": "ZeroCERT",
-          "verdict": "Clean"
-        },
-        {
-          "name": "0xSI_f33d",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Abusix",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Acronis",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "AILabs (MONITORAPP)",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "alphaMountain.ai",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "AlphaSOC",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "ArcSight Threat Intelligence",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "AutoShun",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Axur",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Bfore.Ai PreCrime",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Bkav",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Certego",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "ChainPatrol",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Chong Lua Dao",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "CINS Army",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Cluster25",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "CMC Threat Intelligence",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Criminal IP",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "CSIS Security Group",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "CTX AI",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Cyan",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Cyble",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "EmergingThreats",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Ermes",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "ESTsecurity",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Fortra",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "GCP Abuse Intelligence",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "GreenSnow",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "GreyNoise",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Gridinsoft",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Guardpot",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Heimdal Security",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Hunt.io Intelligence",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "IPsum",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Juniper Networks",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "LevelBlue",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Lumu",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "MalwareURL",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Mimecast",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Netcraft",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "PhishFort",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Phishing Database",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "PREBYTES",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "PrecisionSec",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Quick Heal",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "SafeToOpen",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Sansec eComscan",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Scantitan",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Seclookup",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Snort IP sample list",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "SOCRadar",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Sophos",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "StopForumSpam",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Viettel Threat Intelligence",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "VIPRE",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "ViriBack",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Webroot",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Xcitium Verdict Cloud",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "ZeroFox",
-          "verdict": "Unrated"
->>>>>>> origin/main
         }
       ]
     },
     {
       "domain": "aomedia.org",
       "virustotal": {
-<<<<<<< HEAD
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/aomedia.org",
         "detections": "0/91 (malicious=0, suspicious=0)",
@@ -4050,23 +2925,23 @@
           "Cloudflare Radar: 200000"
         ],
         "creation_date": 1440425251,
-        "last_modification_date": 1787855918,
-        "last_analysis_date": 1787842610,
+        "last_modification_date": 1787886679,
+        "last_analysis_date": 1787875212,
         "registrar": "Squarespace Domains II LLC",
         "whois": "Creation Date: 2015-08-24T14:07:31.607Z\nCreation Date: 2015-08-24T14:07:31Z\nDNSSEC: unsigned\nDomain Name: aomedia.org\nDomain Status: client delete prohibited http://www.icann.org/epp#client delete prohibited\nDomain Status: client transfer prohibited http://www.icann.org/epp#client transfer prohibited\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: ns-cloud-a1.googledomains.com\nName Server: ns-cloud-a2.googledomains.com\nName Server: ns-cloud-a3.googledomains.com\nName Server: ns-cloud-a4.googledomains.com\nRegistrant City: 1f8f4166599d23ee\nRegistrant Country: US\nRegistrant Email: 3bae71a42530df7ds@\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 1f8f4166599d23ee\nRegistrant Name: 1f8f4166599d23ee\nRegistrant Organization: 63e9119f4bc4ba6a\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: 1f8f4166599d23ee\nRegistrant Postal Code: 1f8f4166599d23ee\nRegistrant State/Province: b1952dfc047df18a\nRegistrant Street: 1f8f4166599d23ee\nRegistrar Abuse Contact Email: abuse-complaints@squarespace.com\nRegistrar Abuse Contact Phone: +1.646-693-5324\nRegistrar Abuse Contact Phone: +1.6466935324\nRegistrar IANA ID: 895\nRegistrar Registration Expiration Date: 2028-08-24T14:07:31.607Z\nRegistrar URL: https://domains.squarespace.com\nRegistrar URL: https://domains2.squarespace.com\nRegistrar WHOIS Server: whois.squarespace.domains\nRegistrar: Squarespace Domains II LLC\nRegistry Domain ID: 845b247fe2144e3e965924b2c891e0dd-LROR\nRegistry Domain ID: REDACTED\nRegistry Expiry Date: 2028-08-24T14:07:31Z\nUpdated Date: 2025-07-18T02:52:32Z\nUpdated Date: 2026-06-24T19:25:16.590500Z",
         "dns_records": [
-          "A 185.199.110.153",
-          "A 185.199.109.153",
-          "MX alt3.aspmx.l.google.com",
-          "A 185.199.108.153",
-          "A 185.199.111.153",
-          "TXT v=spf1 include:_spf.google.com ~all",
-          "NS ns-cloud-a3.googledomains.com",
-          "TXT OSSRH-77432",
+          "MX aspmx.l.google.com",
           "TXT cisco-ci-domain-verification=486c8c389e803003a4030a87bc6b7584f1278f34ea8886e0a7c30928e43c7e04",
-          "MX alt1.aspmx.l.google.com",
-          "NS ns-cloud-a4.googledomains.com",
-          "MX aspmx.l.google.com"
+          "NS ns-cloud-a3.googledomains.com",
+          "NS ns-cloud-a2.googledomains.com",
+          "MX alt2.aspmx.l.google.com",
+          "MX alt3.aspmx.l.google.com",
+          "MX alt4.aspmx.l.google.com",
+          "SOA ns-cloud-a1.googledomains.com",
+          "NS ns-cloud-a1.googledomains.com",
+          "TXT v=spf1 include:_spf.google.com ~all",
+          "A 185.199.109.153",
+          "NS ns-cloud-a4.googledomains.com"
         ],
         "https_subject": {
           "CN": "aomedia.org"
@@ -4876,13 +3751,15 @@
           "Cisco Umbrella: 297758"
         ],
         "creation_date": 990355641,
-        "last_modification_date": 1787855975,
-        "last_analysis_date": 1787854091,
+        "last_modification_date": 1787886528,
+        "last_analysis_date": 1787884756,
         "registrar": "GANDI SAS",
         "whois": "Admin City: REDACTED FOR PRIVACY\nAdmin Country: REDACTED FOR PRIVACY\nAdmin Email: adf578e16f538695s@contact.gandi.net\nAdmin Organization: REDACTED FOR PRIVACY\nAdmin Postal Code: REDACTED FOR PRIVACY\nAdmin State/Province: REDACTED FOR PRIVACY\nCreation Date: 2001-05-20T08:47:21Z\nCreation Date: 2001-05-20T10:47:21Z\nDNSSEC: Unsigned\nDNSSEC: unsigned\nDomain Name: VERVE.NET\nDomain Name: verve.net\nDomain Status: clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: NS-CLOUD-D1.GOOGLEDOMAINS.COM\nName Server: NS-CLOUD-D2.GOOGLEDOMAINS.COM\nName Server: NS-CLOUD-D3.GOOGLEDOMAINS.COM\nName Server: NS-CLOUD-D4.GOOGLEDOMAINS.COM\nRegistrant City: 1f8f4166599d23ee\nRegistrant Country: US\nRegistrant Email: adf578e16f538695s@contact.gandi.net\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 1f8f4166599d23ee\nRegistrant Name: 1f8f4166599d23ee\nRegistrant Organization: 70576c638a1e90ec\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: 1f8f4166599d23ee\nRegistrant Postal Code: 1f8f4166599d23ee\nRegistrant State/Province: 77ab92f1911d7c5f\nRegistrant Street: 1f8f4166599d23ee\nRegistrar Abuse Contact Email: abuse@support.gandi.net\nRegistrar Abuse Contact Phone: +33.170377661\nRegistrar IANA ID: 81\nRegistrar Registration Expiration Date: 2027-05-20T10:47:21Z\nRegistrar URL: http://www.gandi.net\nRegistrar WHOIS Server: whois.gandi.net\nRegistrar: GANDI SAS\nRegistrar: Gandi SAS\nRegistry Admin ID: REDACTED FOR PRIVACY\nRegistry Domain ID: 71093657_DOMAIN_NET-VRSN\nRegistry Expiry Date: 2027-05-20T10:47:21Z\nRegistry Registrant ID: REDACTED FOR PRIVACY\nRegistry Tech ID: REDACTED FOR PRIVACY\nTech City: REDACTED FOR PRIVACY\nTech Country: REDACTED FOR PRIVACY\nTech Email: adf578e16f538695s@contact.gandi.net\nTech Organization: REDACTED FOR PRIVACY\nTech Postal Code: REDACTED FOR PRIVACY\nTech State/Province: REDACTED FOR PRIVACY\nUpdated Date: 2026-03-21T09:58:56Z",
         "dns_records": [
           "CNAME api-us-east.nextgen.verve.net",
+          "CNAME api-prod-gcp-us-east4-2.nextgen.verve.net",
           "A 34.4.47.162",
+          "CNAME api-us-east.nextgen.verve.net",
           "CNAME api-prod-gcp-us-east4-2.nextgen.verve.net"
         ],
         "https_subject": {
@@ -5688,18 +4565,14 @@
           "harmless": 0,
           "malicious": 0
         },
-        "categories": {
-          "BitDefender": "trackers",
-          "Sophos": "information technology",
-          "Forcepoint ThreatSeeker": "information technology"
-        },
+        "categories": {},
         "popularity_ranks": [
           "Majestic: 281323",
           "Cisco Umbrella: 17904"
         ],
         "creation_date": 1337869570,
-        "last_modification_date": 1787855994,
-        "last_analysis_date": 1787796579,
+        "last_modification_date": 1787886762,
+        "last_analysis_date": 1787862332,
         "registrar": "united-domains GmbH",
         "whois": "Admin City: REDACTED\nAdmin Country: REDACTED\nAdmin Organization: REDACTED\nAdmin Postal Code: REDACTED\nAdmin State/Province: REDACTED\nCreation Date: 2012-05-24T14:26:10Z\nDNSSEC: unsigned\nDomain Name: adjust.io\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: dns1.p08.nsone.net\nName Server: dns2.p08.nsone.net\nName Server: dns3.p08.nsone.net\nName Server: dns4.p08.nsone.net\nRegistrant City: 3495bcf1839c6374\nRegistrant Country: DE\nRegistrant Email: fb6ff66ef97c0518s@\nRegistrant Fax Ext: 3495bcf1839c6374\nRegistrant Fax: 3495bcf1839c6374\nRegistrant Name: 3495bcf1839c6374\nRegistrant Organization: c89fbc069a3d47db\nRegistrant Phone Ext: 3495bcf1839c6374\nRegistrant Phone: 3495bcf1839c6374\nRegistrant Postal Code: 3495bcf1839c6374\nRegistrant State/Province: 3432650ec337c945\nRegistrant Street: 3495bcf1839c6374\nRegistrar Abuse Contact Email: abuse@united-domains.de\nRegistrar Abuse Contact Phone: +49.8151368670\nRegistrar IANA ID: 1408\nRegistrar URL: http://www.united-domains.de\nRegistrar WHOIS Server: whois.udag.net\nRegistrar: united-domains GmbH\nRegistry Admin ID: REDACTED\nRegistry Domain ID: REDACTED\nRegistry Expiry Date: 2027-05-24T14:26:10Z\nRegistry Registrant ID: REDACTED\nRegistry Tech ID: REDACTED\nTech City: REDACTED\nTech Country: REDACTED\nTech Organization: REDACTED\nTech Postal Code: REDACTED\nTech State/Province: REDACTED\nUpdated Date: 2026-07-08T14:26:22Z",
         "dns_records": [
@@ -6517,8 +5390,8 @@
           "Cisco Umbrella: 730397"
         ],
         "creation_date": 916963200,
-        "last_modification_date": 1787855996,
-        "last_analysis_date": 1787855230,
+        "last_modification_date": 1787886639,
+        "last_analysis_date": 1787884383,
         "registrar": "нет",
         "whois": "Billing country: United States\nBilling email: d52ad5e18ac11e26s@riotgames.com\nCreate date: 1999-01-22 00:00:00\nDomain name: pvp.net\nDomain registrar id: 292.0\nDomain registrar url: whois.markmonitor.com\nExpiry date: 2027-01-22 00:00:00\nQuery time: 2025-12-24 08:39:32\nRegistrant address: 9fe51923514f4661\nRegistrant city: 14ac44352c27e121\nRegistrant company: 9855b439b3532708\nRegistrant country: United States\nRegistrant email: d52ad5e18ac11e26s@riotgames.com\nRegistrant fax: 0a15319415779012\nRegistrant name: 1f33d7151e7ebf55\nRegistrant phone: 9a25cfaf56c54d3b\nRegistrant state: b1952dfc047df18a\nRegistrant zip: dd52927773f8eea6\nTechnical country: United States\nTechnical email: d52ad5e18ac11e26s@riotgames.com\nUpdate date: 2025-12-21 00:00:00",
         "dns_records": [
@@ -6949,16 +5822,16 @@
       ]
     },
     {
-      "domain": "auroraoss.com",
+      "domain": "cdn.aihelp.net",
       "virustotal": {
         "ok": true,
-        "vt_url": "https://www.virustotal.com/gui/domain/auroraoss.com",
+        "vt_url": "https://www.virustotal.com/gui/domain/cdn.aihelp.net",
         "detections": "0/91 (malicious=0, suspicious=0)",
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
-          "undetected": 33,
-          "harmless": 58,
+          "undetected": 35,
+          "harmless": 56,
           "timeout": 0
         },
         "vendor_rows": [
@@ -6983,10 +5856,6 @@
             "Clean"
           ],
           [
-            "alphaMountain.ai",
-            "Clean"
-          ],
-          [
             "Antiy-AVL",
             "Clean"
           ],
@@ -7000,10 +5869,6 @@
           ],
           [
             "Certego",
-            "Clean"
-          ],
-          [
-            "Chong Lua Dao",
             "Clean"
           ],
           [
@@ -7036,6 +5901,10 @@
           ],
           [
             "desenmascara.me",
+            "Clean"
+          ],
+          [
+            "DNS8",
             "Clean"
           ],
           [
@@ -7183,10 +6052,6 @@
             "Clean"
           ],
           [
-            "Xcitium Verdict Cloud",
-            "Clean"
-          ],
-          [
             "Yandex Safebrowsing",
             "Clean"
           ],
@@ -7196,6 +6061,10 @@
           ],
           [
             "0xSI_f33d",
+            "Unrated"
+          ],
+          [
+            "alphaMountain.ai",
             "Unrated"
           ],
           [
@@ -7227,6 +6096,10 @@
             "Unrated"
           ],
           [
+            "Chong Lua Dao",
+            "Unrated"
+          ],
+          [
             "Cluster25",
             "Unrated"
           ],
@@ -7236,10 +6109,6 @@
           ],
           [
             "Cyan",
-            "Unrated"
-          ],
-          [
-            "DNS8",
             "Unrated"
           ],
           [
@@ -7323,6 +6192,10 @@
             "Unrated"
           ],
           [
+            "Xcitium Verdict Cloud",
+            "Unrated"
+          ],
+          [
             "ZeroFox",
             "Unrated"
           ]
@@ -7334,38 +6207,30 @@
         },
         "categories": {},
         "popularity_ranks": [
-          "Majestic: 102368",
-          "Statvoo: 567771",
-          "Alexa: 567771",
-          "Cisco Umbrella: 428148",
-          "Cloudflare Radar: 200000"
+          "Cisco Umbrella: 52993"
         ],
-        "creation_date": 1543230453,
-        "last_modification_date": 1787851829,
-        "last_analysis_date": 1787847785,
-        "registrar": "NAMECHEAP INC",
-        "whois": "Admin City: Reykjavik\nAdmin Country: IS\nAdmin Email: 9648e256a50b979as@withheldforprivacy.com\nAdmin Organization: Privacy service provided by Withheld for Privacy ehf\nAdmin Postal Code: 101\nAdmin State/Province: Capital Region\nCreation Date: 2018-11-26T11:07:33.00Z\nCreation Date: 2018-11-26T11:07:33Z\nDNSSEC: signedDelegation\nDNSSEC: unsigned\nDomain Name: AURORAOSS.COM\nDomain Status: ok https://icann.org/epp#ok\nDomain name: auroraoss.com\nName Server: KAY.NS.CLOUDFLARE.COM\nName Server: MILES.NS.CLOUDFLARE.COM\nName Server: kay.ns.cloudflare.com\nName Server: miles.ns.cloudflare.com\nRegistrant City: ddbf76e4e8cee320\nRegistrant Country: IS\nRegistrant Email: 9648e256a50b979as@withheldforprivacy.com\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 3432650ec337c945\nRegistrant Name: 37bfbc24cafea5d2\nRegistrant Organization: 4b7a0912c26a13e2\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: 1c9a7bcdeaf95e9f\nRegistrant Postal Code: f206c9d9737ad45d\nRegistrant State/Province: 3e0204199d8ebf9c\nRegistrant Street: c6523241936df1ba\nRegistrar Abuse Contact Email: abuse@namecheap.com\nRegistrar Abuse Contact Phone: +1.6613102107\nRegistrar Abuse Contact Phone: +1.9854014545\nRegistrar IANA ID: 1068\nRegistrar Registration Expiration Date: 2026-11-26T11:07:33.00Z\nRegistrar URL: http://www.namecheap.com\nRegistrar WHOIS Server: whois.namecheap.com\nRegistrar: NAMECHEAP INC\nRegistrar: NameCheap, Inc.\nRegistry Domain ID: 2336897073_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2026-11-26T11:07:33Z\nTech City: Reykjavik\nTech Country: IS\nTech Email: 9648e256a50b979as@withheldforprivacy.com\nTech Organization: Privacy service provided by Withheld for Privacy ehf\nTech Postal Code: 101\nTech State/Province: Capital Region\nUpdated Date: 2025-11-27T02:51:25.81Z\nUpdated Date: 2025-11-27T02:51:26Z",
+        "creation_date": 1450834372,
+        "last_modification_date": 1787884723,
+        "last_analysis_date": 1787884303,
+        "registrar": "GoDaddy.com, LLC",
+        "whois": "Domain Name: AIHELP.NET\nRegistry Domain ID: 1989099704_DOMAIN_NET-VRSN\nRegistrar WHOIS Server: whois.godaddy.com\nRegistrar URL: http://www.godaddy.com\nUpdated Date: 2018-03-14T14:01:58Z\nCreation Date: 2015-12-23T01:32:52Z\nRegistry Expiry Date: 2021-12-23T01:32:52Z\nRegistrar: GoDaddy.com, LLC\nRegistrar IANA ID: 146\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: 480-624-2505\nDomain Status: ok https://icann.org/epp#ok\nName Server: NS63.DOMAINCONTROL.COM\nName Server: NS64.DOMAINCONTROL.COM\nDNSSEC: unsigned\nDomain Name: aihelp.net\nUpdated Date: 2017-12-21T15:51:40Z\nRegistrar Registration Expiration Date: 2021-12-23T01:32:52Z\nRegistrar Abuse Contact Phone: +1.4806242505\nDomain Status: ok http://www.icann.org/epp#ok\nRegistry Registrant ID: Not Available From Registry\nRegistrant Country: US\nRegistrant Email: [REDACTED]@domainsbyproxy.com\nRegistry Admin ID: Not Available From Registry\nAdmin Organization: Domains By Proxy, LLC\nAdmin City: Scottsdale\nAdmin State/Province: Arizona\nAdmin Postal Code: 85260\nAdmin Country: US\nAdmin Email: [REDACTED]@domainsbyproxy.com\nRegistry Tech ID: Not Available From Registry\nTech Organization: Domains By Proxy, LLC\nTech City: Scottsdale\nTech State/Province: Arizona\nTech Postal Code: 85260\nTech Country: US\nTech Email: [REDACTED]@domainsbyproxy.com",
         "dns_records": [
-          "MX route3.mx.cloudflare.net",
-          "AAAA 2606:4700:3034::6815:4b3d",
-          "A 172.67.215.30",
-          "AAAA 2606:4700:3032::ac43:d71e",
-          "MX route2.mx.cloudflare.net",
-          "A 104.21.75.61",
-          "NS kay.ns.cloudflare.com",
-          "MX route1.mx.cloudflare.net",
-          "TXT google-site-verification=N9rbfx7Zs9xqCqV9CwD2IHOI0onSvTWpkbTr8X4Aq2Q",
-          "NS miles.ns.cloudflare.com",
-          "TXT v=spf1 include:_spf.mx.cloudflare.net ~all",
-          "SOA kay.ns.cloudflare.com"
+          "AAAA 2606:4700:3116::6812:3448",
+          "AAAA 2606:4700:3115::6812:34f0",
+          "CNAME cdn.aihelp.net.cloudscdn.net",
+          "A 104.18.52.72",
+          "A 104.18.52.240"
         ],
         "https_subject": {
-          "CN": "auroraoss.com"
+          "CN": "*.aihelp.net"
         },
         "https_issuer": {
           "C": "US",
-          "O": "Google Trust Services",
-          "CN": "WE1"
+          "ST": "Arizona",
+          "L": "Scottsdale",
+          "O": "GoDaddy.com, Inc.",
+          "OU": "http://certs.godaddy.com/repository/",
+          "CN": "Go Daddy Secure Certificate Authority - G2"
         },
         "malicious_engines": [
           "нет"
@@ -7375,22 +6240,25 @@
         ],
         "tags": []
       },
-      "redirects_to": "нет (без редиректа)",
+      "redirects_to": "https://cdn.aihelp.net/hc → http://cdn.aihelp.net/hc/ → https://cdn.aihelp.net/hc/",
       "redirect_chain": [
-        "https://auroraoss.com/"
+        "https://cdn.aihelp.net/",
+        "https://cdn.aihelp.net/hc",
+        "http://cdn.aihelp.net/hc/",
+        "https://cdn.aihelp.net/hc/"
       ],
-      "page_output": "title: Aurora. Aurora",
-      "parked_at": "регистратор: NAMECHEAP INC",
-      "final_url": "https://auroraoss.com/",
+      "page_output": "title: AIHelp Web Portal. AIHelp Web Portal Loading content... {{ $t('common.aihelp_faq_feedback_thanks') }}",
+      "parked_at": "регистратор/whois связан с парковкой: godaddy",
+      "final_url": "https://cdn.aihelp.net/hc/",
       "http_status": 200,
       "table_rows": [
         {
           "param": "Домен",
-          "value": "auroraoss.com"
+          "value": "cdn.aihelp.net"
         },
         {
           "param": "VirusTotal URL",
-          "value": "https://www.virustotal.com/gui/domain/auroraoss.com"
+          "value": "https://www.virustotal.com/gui/domain/cdn.aihelp.net"
         },
         {
           "param": "Детекции",
@@ -7421,10 +6289,6 @@
           "value": "Clean"
         },
         {
-          "param": "alphaMountain.ai",
-          "value": "Clean"
-        },
-        {
           "param": "Antiy-AVL",
           "value": "Clean"
         },
@@ -7438,10 +6302,6 @@
         },
         {
           "param": "Certego",
-          "value": "Clean"
-        },
-        {
-          "param": "Chong Lua Dao",
           "value": "Clean"
         },
         {
@@ -7474,6 +6334,10 @@
         },
         {
           "param": "desenmascara.me",
+          "value": "Clean"
+        },
+        {
+          "param": "DNS8",
           "value": "Clean"
         },
         {
@@ -7621,10 +6485,6 @@
           "value": "Clean"
         },
         {
-          "param": "Xcitium Verdict Cloud",
-          "value": "Clean"
-        },
-        {
           "param": "Yandex Safebrowsing",
           "value": "Clean"
         },
@@ -7634,6 +6494,10 @@
         },
         {
           "param": "0xSI_f33d",
+          "value": "Unrated"
+        },
+        {
+          "param": "alphaMountain.ai",
           "value": "Unrated"
         },
         {
@@ -7665,6 +6529,10 @@
           "value": "Unrated"
         },
         {
+          "param": "Chong Lua Dao",
+          "value": "Unrated"
+        },
+        {
           "param": "Cluster25",
           "value": "Unrated"
         },
@@ -7674,10 +6542,6 @@
         },
         {
           "param": "Cyan",
-          "value": "Unrated"
-        },
-        {
-          "param": "DNS8",
           "value": "Unrated"
         },
         {
@@ -7761,400 +6625,28 @@
           "value": "Unrated"
         },
         {
+          "param": "Xcitium Verdict Cloud",
+          "value": "Unrated"
+        },
+        {
           "param": "ZeroFox",
           "value": "Unrated"
         },
         {
           "param": "Куда редиректит",
-          "value": "нет (без редиректа)"
+          "value": "https://cdn.aihelp.net/hc → http://cdn.aihelp.net/hc/ → https://cdn.aihelp.net/hc/"
         },
         {
           "param": "Что выводит (кратко)",
-          "value": "title: Aurora. Aurora"
+          "value": "title: AIHelp Web Portal. AIHelp Web Portal Loading content... {{ $t('common.aihelp_faq_feedback_thanks') }}"
         },
         {
           "param": "Где припаркован",
-          "value": "регистратор: NAMECHEAP INC"
-=======
-        "url": "https://www.virustotal.com/gui/domain/aomedia.org",
-        "detections": "0/91 (malicious=0, suspicious=0)"
-      },
-      "redirects_to": "нет (без редиректа)",
-      "page_output": "title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story FAQ Members Organizat",
-      "parked_at": "регистратор: Squarespace Domains II LLC",
-      "vendors": [
-        {
-          "name": "Abusix",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Acronis",
-          "verdict": "Clean"
-        },
-        {
-          "name": "ADMINUSLabs",
-          "verdict": "Clean"
-        },
-        {
-          "name": "AILabs (MONITORAPP)",
-          "verdict": "Clean"
-        },
-        {
-          "name": "AlienVault",
-          "verdict": "Clean"
-        },
-        {
-          "name": "alphaMountain.ai",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Antiy-AVL",
-          "verdict": "Clean"
-        },
-        {
-          "name": "BitDefender",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Blueliv",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Certego",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Chong Lua Dao",
-          "verdict": "Clean"
-        },
-        {
-          "name": "CINS Army",
-          "verdict": "Clean"
-        },
-        {
-          "name": "CMC Threat Intelligence",
-          "verdict": "Clean"
-        },
-        {
-          "name": "CRDF",
-          "verdict": "Clean"
-        },
-        {
-          "name": "CTX AI",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Cyble",
-          "verdict": "Clean"
-        },
-        {
-          "name": "CyRadar",
-          "verdict": "Clean"
-        },
-        {
-          "name": "desenmascara.me",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Dr.Web",
-          "verdict": "Clean"
-        },
-        {
-          "name": "EmergingThreats",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Emsisoft",
-          "verdict": "Clean"
-        },
-        {
-          "name": "ESET",
-          "verdict": "Clean"
-        },
-        {
-          "name": "ESTsecurity",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Forcepoint ThreatSeeker",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Fortinet",
-          "verdict": "Clean"
-        },
-        {
-          "name": "G-Data",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Google Safe Browsing",
-          "verdict": "Clean"
-        },
-        {
-          "name": "GreenSnow",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Heimdal Security",
-          "verdict": "Clean"
-        },
-        {
-          "name": "IPsum",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Juniper Networks",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Kaspersky",
-          "verdict": "Clean"
-        },
-        {
-          "name": "LevelBlue",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Lionic",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Malwared",
-          "verdict": "Clean"
-        },
-        {
-          "name": "MalwarePatrol",
-          "verdict": "Clean"
-        },
-        {
-          "name": "OpenPhish",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Phishing Database",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Phishtank",
-          "verdict": "Clean"
-        },
-        {
-          "name": "PREBYTES",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Quick Heal",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Quttera",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Scantitan",
-          "verdict": "Clean"
-        },
-        {
-          "name": "SCUMWARE.org",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Seclookup",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Sophos",
-          "verdict": "Clean"
-        },
-        {
-          "name": "StopForumSpam",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Sucuri SiteCheck",
-          "verdict": "Clean"
-        },
-        {
-          "name": "ThreatHive",
-          "verdict": "Clean"
-        },
-        {
-          "name": "URLhaus",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Viettel Threat Intelligence",
-          "verdict": "Clean"
-        },
-        {
-          "name": "ViriBack",
-          "verdict": "Clean"
-        },
-        {
-          "name": "VX Vault",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Webroot",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Xcitium Verdict Cloud",
-          "verdict": "Clean"
-        },
-        {
-          "name": "Yandex Safebrowsing",
-          "verdict": "Clean"
-        },
-        {
-          "name": "ZeroCERT",
-          "verdict": "Clean"
-        },
-        {
-          "name": "0xSI_f33d",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "AlphaSOC",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "ArcSight Threat Intelligence",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "AutoShun",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Axur",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Bfore.Ai PreCrime",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Bkav",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "ChainPatrol",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Cluster25",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Criminal IP",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "CSIS Security Group",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Cyan",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "DNS8",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Ermes",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Fortra",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "GCP Abuse Intelligence",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "GreyNoise",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Gridinsoft",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Guardpot",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Hunt.io Intelligence",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Lumu",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "MalwareURL",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Mimecast",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Netcraft",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "PhishFort",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "PrecisionSec",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "SafeToOpen",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Sansec eComscan",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "SecureBrain",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "Snort IP sample list",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "SOCRadar",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "URLQuery",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "VIPRE",
-          "verdict": "Unrated"
-        },
-        {
-          "name": "ZeroFox",
-          "verdict": "Unrated"
->>>>>>> origin/main
+          "value": "регистратор/whois связан с парковкой: godaddy"
         }
       ]
     }
   ],
-<<<<<<< HEAD
   "count": 8,
-=======
-  "count": 4,
->>>>>>> origin/main
   "vt_configured": true
 }
