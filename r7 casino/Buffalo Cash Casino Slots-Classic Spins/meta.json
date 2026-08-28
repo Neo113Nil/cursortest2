@@ -1,0 +1,65 @@
+{
+  "app_id": "com.foxcubgames.buffalobonuscasino",
+  "title": "Buffalo Cash Casino Slots",
+  "developer": "Classic Spins",
+  "url": "https://play.google.com/store/apps/details?id=com.foxcubgames.buffalobonuscasino&hl=en&gl=us",
+  "version": "93",
+  "version_code": "1872",
+  "summary": "Buffalo Cash Casino Slots (APK label: Buffalo Casino) — Unity social-casino от Classic Spins/FoxCub; privacy classicspins.com; реклама AppLovin MAX + AdMob/Meta/Chartboost/BidMachine/Vungle/ironSource/Fyber/Mintegral/Moloco; аналитика Firebase/Adjust/Facebook/Unity; клоаки нет.",
+  "keyword": "r7 casino",
+  "folder": "Buffalo Cash Casino Slots-Classic Spins",
+  "path": "r7 casino/Buffalo Cash Casino Slots-Classic Spins",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "apk_label": "Buffalo Casino",
+  "cloaking": "нет",
+  "files": [
+    "com.foxcubgames.buffalobonuscasino.xapk",
+    "com.foxcubgames.buffalobonuscasino-1872.apk",
+    "apk/com.foxcubgames.buffalobonuscasino-1872.apk"
+  ],
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      {
+        "domain": "103.97.127.172"
+      },
+      {
+        "domain": "akm.ssacdn.com"
+      },
+      {
+        "domain": "aomedia.org"
+      },
+      {
+        "domain": "api-ssl.bitly.com"
+      },
+      {
+        "domain": "api.bidmachine.io"
+      }
+    ],
+    "ads": [
+      "AppLovin MAX",
+      "AdMob",
+      "Meta Audience Network",
+      "Chartboost",
+      "BidMachine",
+      "Vungle",
+      "ironSource",
+      "Fyber",
+      "Mintegral",
+      "Moloco",
+      "Digital Turbine",
+      "SafeDK",
+      "Google User Messaging Platform"
+    ],
+    "analytics": [
+      "Firebase Analytics",
+      "Crashlytics",
+      "Firebase Messaging",
+      "Adjust",
+      "Facebook App Events",
+      "Unity Analytics",
+      "SafeDK"
+    ]
+  }
+}
