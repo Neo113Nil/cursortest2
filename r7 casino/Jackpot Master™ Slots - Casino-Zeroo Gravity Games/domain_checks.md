@@ -549,7 +549,6 @@
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
-| Criminal IP | Clean |
 | CTX AI | Clean |
 | Cyble | Clean |
 | CyRadar | Clean |
@@ -602,6 +601,7 @@
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
 | Cluster25 | Unrated |
+| Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
 | Cyan | Unrated |
 | DNS8 | Unrated |

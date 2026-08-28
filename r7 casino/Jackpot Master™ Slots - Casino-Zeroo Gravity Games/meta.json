@@ -1,4 +1,10 @@
 {
   "title": "Jackpot Master™ Slots - Casino",
-  "developer": "Zeroo Gravity Games"
+  "developer": "Zeroo Gravity Games",
+  "app_id": "com.jmsgame.jackpotmastercasino",
+  "icon": "/static/app-icons/com_jmsgame_jackpotmastercasino.png",
+  "url": "https://play.google.com/store/apps/details?id=com.jmsgame.jackpotmastercasino&hl=en&gl=us",
+  "released": "Jul 22, 2021",
+  "updated": "2026-07-31",
+  "version": "2.0.88"
 }
