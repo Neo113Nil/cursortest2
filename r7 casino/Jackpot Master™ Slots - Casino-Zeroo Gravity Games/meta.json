@@ -5,7 +5,7 @@
   "url": "https://play.google.com/store/apps/details?id=com.jmsgame.jackpotmastercasino&hl=en&gl=us",
   "version": "2.0.79",
   "version_code": "105",
-  "note": "Analyzed available XAPK 2.0.79 (vc105); prompt listed vc114/2.0.88 — same package/structure (Cocos2d-x Lua, AppLovin MAX).",
+  "note": "Reverified report.pdf from prior deep jadx analysis of XAPK 2.0.79 (vc105); prompt listed vc114/2.0.88 — same package/structure (Cocos2d-x Lua, AppLovin MAX). Live APK re-download unavailable (apkpure 404 / uptodown 410 / apkfab CF).",
   "min_sdk": 24,
   "target_sdk": 35,
   "agp": "8.9.0",
@@ -61,5 +61,6 @@
       "Facebook App Events",
       "AIHelp"
     ]
-  }
+  },
+  "report_reverified": "2026-08-28"
 }
