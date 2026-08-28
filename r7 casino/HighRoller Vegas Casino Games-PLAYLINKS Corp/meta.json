@@ -23,11 +23,21 @@
   "brief_report": {
     "cloaking": "нет",
     "domains": [
-      {"domain": "admob-mediation.premiumtag.net"},
-      {"domain": "aomedia.org"},
-      {"domain": "app-firehoseproxy.highrollervegas.net"},
-      {"domain": "appassets.androidplatform.net"},
-      {"domain": "appv2.highrollervegas.net"}
+      {
+        "domain": "admob-mediation.premiumtag.net"
+      },
+      {
+        "domain": "aomedia.org"
+      },
+      {
+        "domain": "app-firehoseproxy.highrollervegas.net"
+      },
+      {
+        "domain": "appassets.androidplatform.net"
+      },
+      {
+        "domain": "appv2.highrollervegas.net"
+      }
     ],
     "ads": [
       "AdMob",
