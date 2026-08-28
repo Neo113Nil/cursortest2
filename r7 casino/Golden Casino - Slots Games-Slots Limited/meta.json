@@ -1,0 +1,55 @@
+{
+  "app_id": "com.slotslimited.goldencasino",
+  "title": "Golden Casino - Slots Games",
+  "developer": "Slots Limited",
+  "score": 4.847592,
+  "icon": "/static/app-icons/com_slotslimited_goldencasino.png",
+  "url": "https://play.google.com/store/apps/details?id=com.slotslimited.goldencasino&hl=en&gl=us",
+  "keyword": "R7 Casino",
+  "country": "India",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260827_124820_India_R7 Casino_search",
+  "search_title": "Golden Casino - Slots Games",
+  "search_developer": "Slots Limited",
+  "rank": 14,
+  "developer_id": "6730360297060261228",
+  "released": "Mar 23, 2017",
+  "updated": "2026-08-25",
+  "version": "1.0.740",
+  "summary": "Vegas Casino Slots Game! Spin at Golden Online Casino for Mega Nugget Jackpots!",
+  "folder": "Golden Casino - Slots Games-Slots Limited",
+  "path": "r7 casino/Golden Casino - Slots Games-Slots Limited",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.slotslimited.goldencasino-497-asset.apk",
+    "com.slotslimited.goldencasino-497-config.arm64_v8a.apk",
+    "com.slotslimited.goldencasino-497-config.en.apk",
+    "com.slotslimited.goldencasino-497-config.xxhdpi.apk",
+    "com.slotslimited.goldencasino-497-install_time_asset_pack.apk",
+    "com.slotslimited.goldencasino-497.apk"
+  ],
+  "target": "/root/play-collector/загрузки/r7 casino/Golden Casino - Slots Games-Slots Limited",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.slotslimited.goldencasino ─╮\n│ Golden Casino - Slots Games     │\n│ 1.0.740  (vc 497)               │\n╰─────────────────────────────────╯\n\nDownloading 6 files  (401.1 MB)\n  com.slotslimited.goldencasino-497.apk                         ━━ 100% 5… 3… 0…\n                                                                        MB M…   \n  com.slotslimited.goldencasino-497-config.arm64_v8a.apk        ━━ 100% 8… 6… 0…\n                                                                        MB M…   \n  com.slotslimited.goldencasino-497-config.en.apk               ━━ 100% 7… 1… 0…\n                                                                        kB M…   \n  com.slotslimited.goldencasino-497-config.xxhdpi.apk           ━━ 100% 1… 3… 0…\n                                                                        kB M…   \n  com.slotslimited.goldencasino-497-install_time_asset_pack.apk ━━ 100% 3… 1… 0…\n                                                                        MB M…   \n  com.slotslimited.goldencasino-497-asset.apk                   ━━ 100% 2… 9… 0…\n                                                                        MB M…   \n\n                              Downloaded files                              \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                          ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.slotslimited.goldencasino-497.apk                         │  50.5 MB │\n│ com.slotslimited.goldencasino-497-config.arm64_v8a.apk        │   8.2 MB │\n│ com.slotslimited.goldencasino-497-config.en.apk               │  68.4 KB │\n│ com.slotslimited.goldencasino-497-config.xxhdpi.apk           │ 142.1 KB │\n│ com.slotslimited.goldencasino-497-install_time_asset_pack.apk │ 320.7 MB │\n│ com.slotslimited.goldencasino-497-asset.apk                   │  50.5 MB │\n└───────────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.slotslimited.goldencasino ─╮\n│ Golden Casino - Slots Games     │\n│ 1.0.740  (vc 497)               │\n╰─────────────────────────────────╯\n\nDownloading 6 files  (401.1 MB)\n  com.slotslimited.goldencasino-497.apk                         ━━ 100% 5… 3… 0…\n                                                                        MB M…   \n  com.slotslimited.goldencasino-497-config.arm64_v8a.apk        ━━ 100% 8… 6… 0…\n                                                                        MB M…   \n  com.slotslimited.goldencasino-497-config.en.apk               ━━ 100% 7… 1… 0…\n                                                                        kB M…   \n  com.slotslimited.goldencasino-497-config.xxhdpi.apk           ━━ 100% 1… 3… 0…\n                                                                        kB M…   \n  com.slotslimited.goldencasino-497-install_time_asset_pack.apk ━━ 100% 3… 1… 0…\n                                                                        MB M…   \n  com.slotslimited.goldencasino-497-asset.apk                   ━━ 100% 2… 9… 0…\n                                                                        MB M…   \n\n                              Downloaded files                              \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                          ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.slotslimited.goldencasino-497.apk                         │  50.5 MB │\n│ com.slotslimited.goldencasino-497-config.arm64_v8a.apk        │   8.2 MB │\n│ com.slotslimited.goldencasino-497-config.en.apk               │  68.4 KB │\n│ com.slotslimited.goldencasino-497-config.xxhdpi.apk           │ 142.1 KB │\n│ com.slotslimited.goldencasino-497-install_time_asset_pack.apk │ 320.7 MB │\n│ com.slotslimited.goldencasino-497-asset.apk                   │  50.5 MB │\n└───────────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}

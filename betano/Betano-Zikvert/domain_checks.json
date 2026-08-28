@@ -1,10 +1,4 @@
 {
-<<<<<<< HEAD
-=======
-  "suspicious_domains": [
-    "misty-moon-76b0.sinyavitttsky-s.workers.dev"
-  ],
->>>>>>> origin/main
   "all_custom_domains": [
     "misty-moon-76b0.sinyavitttsky-s.workers.dev"
   ],
@@ -17,7 +11,6 @@
         "detections": "0/91 (malicious=0, suspicious=0)",
         "last_analysis_stats": {
           "malicious": 0,
-<<<<<<< HEAD
           "suspicious": 0,
           "undetected": 36,
           "harmless": 55,
@@ -394,34 +387,42 @@
           "harmless": 0,
           "malicious": 0
         },
-        "categories": {
-          "Sophos": "information technology",
-          "Forcepoint ThreatSeeker": "web hosting"
-        },
+        "categories": {},
         "popularity_ranks": "нет",
         "creation_date": 1549658207,
-        "last_modification_date": 1787697530,
-        "last_analysis_date": null,
+        "last_modification_date": 1787704893,
+        "last_analysis_date": 1787697516,
         "registrar": "CloudFlare, Inc.",
         "whois": "Admin City: DATA REDACTED\nAdmin City: REDACTED FOR PRIVACY\nAdmin Country: DATA REDACTED\nAdmin Country: REDACTED FOR PRIVACY\nAdmin Organization: DATA REDACTED\nAdmin Organization: REDACTED FOR PRIVACY\nAdmin Postal Code: DATA REDACTED\nAdmin Postal Code: REDACTED FOR PRIVACY\nAdmin State/Province: DATA REDACTED\nAdmin State/Province: REDACTED FOR PRIVACY\nBilling City: DATA REDACTED\nBilling City: REDACTED FOR PRIVACY\nBilling Country: DATA REDACTED\nBilling Country: REDACTED FOR PRIVACY\nBilling Organization: DATA REDACTED\nBilling Organization: REDACTED FOR PRIVACY\nBilling Postal Code: DATA REDACTED\nBilling Postal Code: REDACTED FOR PRIVACY\nBilling State/Province: DATA REDACTED\nBilling State/Province: REDACTED FOR PRIVACY\nCreation Date: 2019-02-08T20:36:47Z\nDNSSEC: unsigned\nDomain Name: WORKERS.DEV\nDomain Name: workers.dev\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nDomain Status: clientdeleteprohibited https://icann.org/epp#clientdeleteprohibited\nDomain Status: clienttransferprohibited https://icann.org/epp#clienttransferprohibited\nDomain Status: clientupdateprohibited https://icann.org/epp#clientupdateprohibited\nName Server: clyde.ns.cloudflare.com\nName Server: sofia.ns.cloudflare.com\nRegistrant City: 1f8f4166599d23ee\nRegistrant City: acfd0ee3752cd95d\nRegistrant Country: US\nRegistrant Email: 37bb39258f007568s@\nRegistrant Email: d807ea723facd141s@\nRegistrant Fax Ext: acfd0ee3752cd95d\nRegistrant Fax: 1f8f4166599d23ee\nRegistrant Fax: acfd0ee3752cd95d\nRegistrant Name: 1f8f4166599d23ee\nRegistrant Name: acfd0ee3752cd95d\nRegistrant Organization: acfd0ee3752cd95d\nRegistrant Phone Ext: acfd0ee3752cd95d\nRegistrant Phone: 1f8f4166599d23ee\nRegistrant Phone: acfd0ee3752cd95d\nRegistrant Postal Code: 1f8f4166599d23ee\nRegistrant Postal Code: acfd0ee3752cd95d\nRegistrant State/Province: b1952dfc047df18a\nRegistrant Street: 1f8f4166599d23ee\nRegistrant Street: acfd0ee3752cd95d\nRegistrar Abuse Contact Email: registrar-abuse@cloudflare.com\nRegistrar Abuse Contact Phone: +1.4153197517\nRegistrar IANA ID: 1910\nRegistrar Registration Expiration Date: 2026-02-08T20:36:47Z\nRegistrar URL: None\nRegistrar URL: https://www.cloudflare.com\nRegistrar WHOIS Server: whois.cloudflare.com\nRegistrar: CloudFlare, Inc.\nRegistrar: Cloudflare, Inc.\nRegistry Admin ID: REDACTED FOR PRIVACY\nRegistry Billin",
         "dns_records": [
-          "нет"
+          "AAAA 2606:4700:3031::ac43:9b21",
+          "A 172.67.155.33",
+          "AAAA 2606:4700:3032::6815:223b",
+          "A 104.21.34.59"
         ],
-        "https_subject": "нет",
-        "https_issuer": "нет",
+        "https_subject": {
+          "CN": "sinyavitttsky-s.workers.dev"
+        },
+        "https_issuer": {
+          "C": "US",
+          "O": "Google Trust Services",
+          "CN": "WE1"
+        },
         "malicious_engines": [
           "нет"
         ],
         "suspicious_engines": [
           "нет"
         ],
-        "tags": []
+        "tags": [
+          "dga"
+        ]
       },
       "redirects_to": "нет (без редиректа)",
       "redirect_chain": [
         "https://misty-moon-76b0.sinyavitttsky-s.workers.dev/"
       ],
-      "page_output": "{\"status\":\"ok\",\"version\":\"1.0.0\",\"ts\":1787697582260}",
+      "page_output": "{\"status\":\"ok\",\"version\":\"1.0.0\",\"ts\":1787847792219}",
       "parked_at": "регистратор: CloudFlare, Inc.",
       "final_url": "https://misty-moon-76b0.sinyavitttsky-s.workers.dev/",
       "http_status": 200,
@@ -812,120 +813,15 @@
         },
         {
           "param": "Что выводит (кратко)",
-          "value": "{\"status\":\"ok\",\"version\":\"1.0.0\",\"ts\":1787697582260}"
+          "value": "{\"status\":\"ok\",\"version\":\"1.0.0\",\"ts\":1787847792219}"
         },
         {
           "param": "Где припаркован",
           "value": "регистратор: CloudFlare, Inc."
         }
       ]
-=======
-          "suspicious": 0
-        },
-        "vendor_rows": [
-          ["Abusix", "Clean"],
-          ["Acronis", "Clean"],
-          ["ADMINUSLabs", "Clean"],
-          ["AILabs (MONITORAPP)", "Clean"],
-          ["AlienVault", "Clean"],
-          ["Antiy-AVL", "Clean"],
-          ["BitDefender", "Clean"],
-          ["Blueliv", "Clean"],
-          ["Certego", "Clean"],
-          ["ChainPatrol", "Clean"],
-          ["Chong Lua Dao", "Clean"],
-          ["CINS Army", "Clean"],
-          ["CRDF", "Clean"],
-          ["CTX AI", "Clean"],
-          ["Cyble", "Clean"],
-          ["CyRadar", "Clean"],
-          ["desenmascara.me", "Clean"],
-          ["Dr.Web", "Clean"],
-          ["EmergingThreats", "Clean"],
-          ["Emsisoft", "Clean"],
-          ["ESET", "Clean"],
-          ["ESTsecurity", "Clean"],
-          ["Forcepoint ThreatSeeker", "Clean"],
-          ["Fortinet", "Clean"],
-          ["G-Data", "Clean"],
-          ["Google Safe Browsing", "Clean"],
-          ["GreenSnow", "Clean"],
-          ["Heimdal Security", "Clean"],
-          ["IPsum", "Clean"],
-          ["Juniper Networks", "Clean"],
-          ["Kaspersky", "Clean"],
-          ["Lionic", "Clean"],
-          ["Malwared", "Clean"],
-          ["MalwarePatrol", "Clean"],
-          ["OpenPhish", "Clean"],
-          ["Phishing Database", "Clean"],
-          ["Phishtank", "Clean"],
-          ["PREBYTES", "Clean"],
-          ["Quick Heal", "Clean"],
-          ["Quttera", "Clean"],
-          ["Scantitan", "Clean"],
-          ["SCUMWARE.org", "Clean"],
-          ["Seclookup", "Clean"],
-          ["Sophos", "Clean"],
-          ["StopForumSpam", "Clean"],
-          ["Sucuri SiteCheck", "Clean"],
-          ["ThreatHive", "Clean"],
-          ["URLhaus", "Clean"],
-          ["Viettel Threat Intelligence", "Clean"],
-          ["ViriBack", "Clean"],
-          ["VX Vault", "Clean"],
-          ["Webroot", "Clean"],
-          ["Xcitium Verdict Cloud", "Clean"],
-          ["Yandex Safebrowsing", "Clean"],
-          ["ZeroCERT", "Clean"],
-          ["0xSI_f33d", "Unrated"],
-          ["alphaMountain.ai", "Unrated"],
-          ["AlphaSOC", "Unrated"],
-          ["ArcSight Threat Intelligence", "Unrated"],
-          ["AutoShun", "Unrated"],
-          ["Axur", "Unrated"],
-          ["Bfore.Ai PreCrime", "Unrated"],
-          ["Bkav", "Unrated"],
-          ["Cluster25", "Unrated"],
-          ["CMC Threat Intelligence", "Unrated"],
-          ["Criminal IP", "Unrated"],
-          ["CSIS Security Group", "Unrated"],
-          ["Cyan", "Unrated"],
-          ["DNS8", "Unrated"],
-          ["Ermes", "Unrated"],
-          ["Fortra", "Unrated"],
-          ["GCP Abuse Intelligence", "Unrated"],
-          ["GreyNoise", "Unrated"],
-          ["Gridinsoft", "Unrated"],
-          ["Guardpot", "Unrated"],
-          ["Hunt.io Intelligence", "Unrated"],
-          ["LevelBlue", "Unrated"],
-          ["Lumu", "Unrated"],
-          ["MalwareURL", "Unrated"],
-          ["Mimecast", "Unrated"],
-          ["Netcraft", "Unrated"],
-          ["PhishFort", "Unrated"],
-          ["PrecisionSec", "Unrated"],
-          ["SafeToOpen", "Unrated"],
-          ["Sansec eComscan", "Unrated"],
-          ["SecureBrain", "Unrated"],
-          ["Snort IP sample list", "Unrated"],
-          ["SOCRadar", "Unrated"],
-          ["URLQuery", "Unrated"],
-          ["VIPRE", "Unrated"],
-          ["ZeroFox", "Unrated"]
-        ]
-      },
-      "redirect": "нет (без редиректа)",
-      "content_brief": "{\"status\":\"ok\",\"version\":\"1.0.0\",\"ts\":1787697582260}",
-      "parking": "регистратор: CloudFlare, Inc."
->>>>>>> origin/main
     }
   ],
   "count": 1,
   "vt_configured": true
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> origin/main

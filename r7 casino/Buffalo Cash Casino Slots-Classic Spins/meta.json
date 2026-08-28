@@ -1,0 +1,52 @@
+{
+  "app_id": "com.foxcubgames.buffalobonuscasino",
+  "title": "Buffalo Cash Casino Slots",
+  "developer": "Classic Spins",
+  "score": 4.5595465,
+  "icon": "/static/app-icons/com_foxcubgames_buffalobonuscasino.png",
+  "url": "https://play.google.com/store/apps/details?id=com.foxcubgames.buffalobonuscasino&hl=en&gl=us",
+  "keyword": "R7 Casino",
+  "country": "Italy",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260827_142056_Italy_R7 Casino_search",
+  "search_title": "Buffalo Cash Casino Slots",
+  "search_developer": "Classic Spins",
+  "rank": 12,
+  "developer_id": "4614837556873352709",
+  "released": "Oct 30, 2015",
+  "updated": "2026-05-18",
+  "version": "92",
+  "summary": "Play buffalo slots now - 5-reel machines, jackpots, tournaments & daily bonuses.",
+  "folder": "Buffalo Cash Casino Slots-Classic Spins",
+  "path": "r7 casino/Buffalo Cash Casino Slots-Classic Spins",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.foxcubgames.buffalobonuscasino-1872-asset.apk",
+    "com.foxcubgames.buffalobonuscasino-1872-config.arm64_v8a.apk",
+    "com.foxcubgames.buffalobonuscasino-1872.apk"
+  ],
+  "target": "/root/play-collector/загрузки/r7 casino/Buffalo Cash Casino Slots-Classic Spins",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 1,
+      "stdout": "╭─ com.foxcubgames.buffalobonuscasino ─╮\n│ Buffalo Cash Casino Slots            │\n│ 93  (vc 1872)                        │\n╰──────────────────────────────────────╯\n\nDownloading 3 files  (260.4 MB)\n⠴ com.foxcubgames.buffalobonuscasino-1872.apk                  ━╸  98% 1… 1… 0:…\n                                                                       MB M…    \n  com.foxcubgames.buffalobonuscasino-1872-config.arm64_v8a.apk ━━ 100% 3… 9… 0:…\n                                                                       MB M…    \n  com.foxcubgames.buffalobonuscasino-1872-asset.apk            ━━ 100% 9… 1… 0:…\n                                                                       MB M…    \n\ncached",
+      "stderr": "                                 │\n│                                                                              │\n│ /usr/local/lib/python3.12/dist-packages/httpx/_transports/default.py:270 in  │\n│ __aiter__                                                                    │\n│                                                                              │\n│   267 │   │   self._httpcore_stream = httpcore_stream                        │\n│   268 │                                                                      │\n│   269 │   async def __aiter__(self) -> typing.AsyncIterator[bytes]:          │\n│ ❱ 270 │   │   with map_httpcore_exceptions():                                │\n│   271 │   │   │   async for part in self._httpcore_stream:                   │\n│   272 │   │   │   │   yield part                                             │\n│   273                                                                        │\n│                                                                              │\n│ /usr/lib/python3.12/contextlib.py:158 in __exit__                            │\n│                                                                              │\n│   155 │   │   │   │   # tell if we get the same exception back               │\n│   156 │   │   │   │   value = typ()                                          │\n│   157 │   │   │   try:                                                       │\n│ ❱ 158 │   │   │   │   self.gen.throw(value)                                  │\n│   159 │   │   │   except StopIteration as exc:                               │\n│   160 │   │   │   │   # Suppress StopIteration *unless* it's the same        │\n│       exception that                                                         │\n│   161 │   │   │   │   # was passed to throw().  This prevents a              │\n│       StopIteration                                                          │\n│                                                                              │\n│ /usr/local/lib/python3.12/dist-packages/httpx/_transports/default.py:118 in  │\n│ map_httpcore_exceptions                                                      │\n│                                                                              │\n│   115 │   │   │   raise                                                      │\n│   116 │   │                                                                  │\n│   117 │   │   message = str(exc)                                             │\n│ ❱ 118 │   │   raise mapped_exc(message) from exc                             │\n│   119                                                                        │\n│   120                                                                        │\n│   121 class ResponseStream(SyncByteStream):                                  │\n╰──────────────────────────────────────────────────────────────────────────────╯\nRemoteProtocolError: peer closed connection without sending complete message \nbody (received 148896656 bytes, expected 151573646)\n",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.foxcubgames.buffalobonuscasino ─╮\n│ Buffalo Cash Casino Slots            │\n│ 93  (vc 1872)                        │\n╰──────────────────────────────────────╯\n\nDownloading 3 files  (260.4 MB)\n⠴ com.foxcubgames.buffalobonuscasino-1872.apk                  ━╸  98% 1… 1… 0:…\n                                                                       MB M…    \n  com.foxcubgames.buffalobonuscasino-1872-config.arm64_v8a.apk ━━ 100% 3… 9… 0:…\n                                                                       MB M…    \n  com.foxcubgames.buffalobonuscasino-1872-asset.apk            ━━ 100% 9… 1… 0:…\n                                                                       MB M…    \n\ncached",
+  "stderr": "                                 │\n│                                                                              │\n│ /usr/local/lib/python3.12/dist-packages/httpx/_transports/default.py:270 in  │\n│ __aiter__                                                                    │\n│                                                                              │\n│   267 │   │   self._httpcore_stream = httpcore_stream                        │\n│   268 │                                                                      │\n│   269 │   async def __aiter__(self) -> typing.AsyncIterator[bytes]:          │\n│ ❱ 270 │   │   with map_httpcore_exceptions():                                │\n│   271 │   │   │   async for part in self._httpcore_stream:                   │\n│   272 │   │   │   │   yield part                                             │\n│   273                                                                        │\n│                                                                              │\n│ /usr/lib/python3.12/contextlib.py:158 in __exit__                            │\n│                                                                              │\n│   155 │   │   │   │   # tell if we get the same exception back               │\n│   156 │   │   │   │   value = typ()                                          │\n│   157 │   │   │   try:                                                       │\n│ ❱ 158 │   │   │   │   self.gen.throw(value)                                  │\n│   159 │   │   │   except StopIteration as exc:                               │\n│   160 │   │   │   │   # Suppress StopIteration *unless* it's the same        │\n│       exception that                                                         │\n│   161 │   │   │   │   # was passed to throw().  This prevents a              │\n│       StopIteration                                                          │\n│                                                                              │\n│ /usr/local/lib/python3.12/dist-packages/httpx/_transports/default.py:118 in  │\n│ map_httpcore_exceptions                                                      │\n│                                                                              │\n│   115 │   │   │   raise                                                      │\n│   116 │   │                                                                  │\n│   117 │   │   message = str(exc)                                             │\n│ ❱ 118 │   │   raise mapped_exc(message) from exc                             │\n│   119                                                                        │\n│   120                                                                        │\n│   121 class ResponseStream(SyncByteStream):                                  │\n╰──────────────────────────────────────────────────────────────────────────────╯\nRemoteProtocolError: peer closed connection without sending complete message \nbody (received 148896656 bytes, expected 151573646)\n",
+  "exit_code": 1,
+  "error": ""
+}

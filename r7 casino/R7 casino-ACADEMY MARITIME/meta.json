@@ -1,0 +1,132 @@
+{
+  "app_id": "com.code.mesh.base.fast.peak.catcasino",
+  "title": "R7 casino",
+  "developer": "ACADEMY MARITIME",
+  "score": null,
+  "icon": "/static/app-icons/com_code_mesh_base_fast_peak_catcasino.png",
+  "url": "https://play.google.com/store/apps/details?id=com.code.mesh.base.fast.peak.catcasino&hl=en&gl=us",
+  "keyword": "R7 Casino",
+  "country": "Italy",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260827_142056_Italy_R7 Casino_search",
+  "search_title": "R7 casino",
+  "search_developer": "ACADEMY MARITIME",
+  "rank": 1,
+  "developer_id": "ACADEMY+MARITIME",
+  "released": "Aug 5, 2026",
+  "updated": "Aug 5, 2026",
+  "version": "Varies with device",
+  "summary": "R7 casino is a multi-tool app with notes, timers and converters",
+  "folder": "R7 casino-ACADEMY MARITIME",
+  "path": "r7 casino/R7 casino-ACADEMY MARITIME",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.code.mesh.base.fast.peak.catcasino-1-asset.apk",
+    "com.code.mesh.base.fast.peak.catcasino-1-config.en.apk",
+    "com.code.mesh.base.fast.peak.catcasino-1-config.xxhdpi.apk",
+    "com.code.mesh.base.fast.peak.catcasino-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/r7 casino/R7 casino-ACADEMY MARITIME",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.code.mesh.base.fast.peak.catcasino ─╮\n│ R7 casino                                │\n│ 1.0  (vc 1)                              │\n╰──────────────────────────────────────────╯\n\nDownloading 4 files  (6.3 MB)\n  com.code.mesh.base.fast.peak.catcasino-1.apk               ━━ 100% 4.… 2… 0:0…\n                                                                     MB  M…     \n  com.code.mesh.base.fast.peak.catcasino-1-config.en.apk     ━━ 100% 65… 9… 0:0…\n                                                                     kB  k…     \n  com.code.mesh.base.fast.peak.catcasino-1-config.xxhdpi.apk ━━ 100% 78… 2… 0:0…\n                                                                     kB  M…     \n  com.code.mesh.base.fast.peak.catcasino-1-asset.apk         ━━ 100% 2.… 1… 0:0…\n                                                                     MB  M…     \n\n                            Downloaded files                            \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                       ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.code.mesh.base.fast.peak.catcasino-1.apk               │  4.1 MB │\n│ com.code.mesh.base.fast.peak.catcasino-1-config.en.apk     │ 64.2 KB │\n│ com.code.mesh.base.fast.peak.catcasino-1-config.xxhdpi.apk │ 76.2 KB │\n│ com.code.mesh.base.fast.peak.catcasino-1-asset.apk         │  4.1 MB │\n└────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.code.mesh.base.fast.peak.catcasino ─╮\n│ R7 casino                                │\n│ 1.0  (vc 1)                              │\n╰──────────────────────────────────────────╯\n\nDownloading 4 files  (6.3 MB)\n  com.code.mesh.base.fast.peak.catcasino-1.apk               ━━ 100% 4.… 2… 0:0…\n                                                                     MB  M…     \n  com.code.mesh.base.fast.peak.catcasino-1-config.en.apk     ━━ 100% 65… 9… 0:0…\n                                                                     kB  k…     \n  com.code.mesh.base.fast.peak.catcasino-1-config.xxhdpi.apk ━━ 100% 78… 2… 0:0…\n                                                                     kB  M…     \n  com.code.mesh.base.fast.peak.catcasino-1-asset.apk         ━━ 100% 2.… 1… 0:0…\n                                                                     MB  M…     \n\n                            Downloaded files                            \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                       ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.code.mesh.base.fast.peak.catcasino-1.apk               │  4.1 MB │\n│ com.code.mesh.base.fast.peak.catcasino-1-config.en.apk     │ 64.2 KB │\n│ com.code.mesh.base.fast.peak.catcasino-1-config.xxhdpi.apk │ 76.2 KB │\n│ com.code.mesh.base.fast.peak.catcasino-1-asset.apk         │  4.1 MB │\n└────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+  "exit_code": 0,
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "R7 casino (в APK: Win)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.2.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "37"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, com.code.mesh.base.fast.peak.catcasino.DYNAMIC_RECEIV ER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.0.21 / kotlin-stdlib, kotlinx-coroutines 1.9.0, OkHttp 4.12.0, AndroidX (AppCompat 1.7.1, Activity 1.13.0, ConstraintLayout 2.2.1, Core/Core-KTX 1.18.0, Fragment 1.5.4, Lifecycle, RecyclerView 1.2.1, ViewPager2 1.0.0, Emoji2 1.3.0, Startup 1.1.1, ProfileInstaller 1.4.0, CardView 1.0.0, CoordinatorLayout 1.1.0, Transition 1.5.0, Vectordrawable 1.1.0, SavedState 1.2.1, DrawerLayout 1.1.1, NavigationEvent 1.0.0), Google Material Components 1.14.0, Google Play PairIP (com.pairip.application / com.pairip.licensecheck)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "api.frankfurter.app"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "файл store, ключ goto — сохраняет внешнюю ссылку после проверки; при следующем запуске сразу открывает сохранённый адрес; utilities_prefs — счётчики открытий инструментов и заметки белой оболочки"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "casino, workers.dev, goto, redirect, status\":\"ok\", User-Agent, Accept-Language, X-Device-Model, license check, frankfurter"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "api.frankfurter.app",
+        "redirects_to": "https://api.frankfurter.dev/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      }
+    ],
+    "collected_data": [
+      "Имя пакета приложения",
+      "Модель телефона",
+      "Строка браузера устройства"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Имя пакета приложения\n• Модель телефона\n• Строка браузера устройства\n\nКак собираются: Сразу после запуска главного экрана приложение само, без спроса у человека, читает имя своего пакета, модель телефона и обычную строку браузера из системы Android. Отдельного окна с разрешением нет — человек обычно этого не замечает. В заголовок про язык страницы подставляют заранее записанное английское значение en-US,en;q=0.9, а не язык из настроек телефона. Перед сетевой проверкой программа ещё смотрит свою внутреннюю память: если раньше уже сохранили внешнюю ссылку под ключом goto в файле store, новый запрос к серверу может не понадобиться. Всё это происходит тихо в первые мгновения после открытия, ещё до перехода к обычному набору утилит.\n\nКуда отправляются: Сведения незаметно уходят в интернет на адрес https://tight-glade-0634.petrenkovalentyna89.workers.dev/?app=com.code.mesh.base.fast.peak.catcasino. Это не показ рекламы на экране, а тихая проверка «что показать этому человеку». Адрес в программе спрятан и собирается из зашифрованных кусков вместе с именем пакета. Запасных адресов для этой проверки в коде не видно: используется один узел на Cloudflare Workers. Запрос уходит в фоне через встроенную сетевую библиотеку. Вместе с адресом уходят заголовки: модель телефона (X-Device-Model), строка браузера (User-Agent) и фиксированная пометка языка (Accept-Language). Если сервер потом перенаправит на другой сайт,…\n\nКак фильтруются пользователи: На проверку уходят имя пакета, модель телефона и строка браузера устройства; в заголовке также стоит заранее заданный английский язык. В самом приложении нет жёсткого списка стран, языков или «белых» и «грязных» пользователей и нет отдельной проверки на бота или эмулятор. Само решение «кому показать внешнюю страницу, а кому обычное приложение» делает сервер. Приложение лишь сравнивает итоговый адрес после возможных перенаправлений с признаком workers.dev и по этому понимает, какой путь выбрать. В коде есть ещё проверка текста ответа на кусок «\"status\":\"ok\"», но обе ветки этой проверки ведут в одно и то же место — обычное приложение. То есть реально развилку делает не этот кусок текста,…\n\nЧто возвращается: Пос…"
+  }
+}

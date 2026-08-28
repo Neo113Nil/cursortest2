@@ -1,0 +1,51 @@
+{
+  "app_id": "com.grandcashslots.free.gp",
+  "title": "Grand Cash Casino Slots Games",
+  "developer": "Gamehaus Network",
+  "score": 4.7157097,
+  "icon": "/static/app-icons/com_grandcashslots_free_gp.png",
+  "url": "https://play.google.com/store/apps/details?id=com.grandcashslots.free.gp&hl=en&gl=us",
+  "keyword": "R7 Casino",
+  "country": "Italy",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260827_142056_Italy_R7 Casino_search",
+  "search_title": "Grand Cash Casino Slots Games",
+  "search_developer": "Gamehaus Network",
+  "rank": 8,
+  "developer_id": "Gamehaus+Network",
+  "released": "Sep 4, 2021",
+  "updated": "2026-08-13",
+  "version": "6.6.8",
+  "summary": "Play Lotsa Vegas Slots Machine Games Online and Spin to Win Frenzy Jackpots!",
+  "folder": "Grand Cash Casino Slots Games-Gamehaus Network",
+  "path": "r7 casino/Grand Cash Casino Slots Games-Gamehaus Network",
+  "updates_count": 1,
+  "apk_title": "Grand Cash Slots",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.grandcashslots.free.gp-668-asset.apk",
+    "com.grandcashslots.free.gp-668.apk"
+  ],
+  "target": "/root/play-collector/загрузки/r7 casino/Grand Cash Casino Slots Games-Gamehaus Network",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.grandcashslots.free.gp ──╮\n│ Grand Cash Casino Slots Games │\n│ 6.6.8  (vc 668)               │\n╰───────────────────────────────╯\n\nDownloading 3 files  (637.3 MB)\n  com.grandcashslots.free.gp-668.apk       ━━━━━━━ 100% 105.7/… 26.9     0:00:00\n                                                        MB      MB/s            \n  main.668.com.grandcashslots.free.gp.obb  ━━━━━━━ 100% 459.7/… 26.7     0:00:00\n                                                        MB      MB/s            \n  com.grandcashslots.free.gp-668-asset.apk ━━━━━━━ 100% 102.9/… 29.5     0:00:00\n                                                        MB      MB/s            \n\n                   Downloaded files                    \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                     ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.grandcashslots.free.gp-668.apk       │ 100.8 MB │\n│ main.668.com.grandcashslots.free.gp.obb  │ 438.4 MB │\n│ com.grandcashslots.free.gp-668-asset.apk │ 100.8 MB │\n└──────────────────────────────────────────┴──────────┘\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": "Grand Cash Slots"
+    }
+  ],
+  "stdout": "╭─ com.grandcashslots.free.gp ──╮\n│ Grand Cash Casino Slots Games │\n│ 6.6.8  (vc 668)               │\n╰───────────────────────────────╯\n\nDownloading 3 files  (637.3 MB)\n  com.grandcashslots.free.gp-668.apk       ━━━━━━━ 100% 105.7/… 26.9     0:00:00\n                                                        MB      MB/s            \n  main.668.com.grandcashslots.free.gp.obb  ━━━━━━━ 100% 459.7/… 26.7     0:00:00\n                                                        MB      MB/s            \n  com.grandcashslots.free.gp-668-asset.apk ━━━━━━━ 100% 102.9/… 29.5     0:00:00\n                                                        MB      MB/s            \n\n                   Downloaded files                    \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                     ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.grandcashslots.free.gp-668.apk       │ 100.8 MB │\n│ main.668.com.grandcashslots.free.gp.obb  │ 438.4 MB │\n│ com.grandcashslots.free.gp-668-asset.apk │ 100.8 MB │\n└──────────────────────────────────────────┴──────────┘\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
