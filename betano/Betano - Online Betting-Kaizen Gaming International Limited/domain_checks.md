@@ -101,8 +101,8 @@
 | URLQuery | Unrated |
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
-| Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | title: Not Found. Not Found Not Found For request 'GET /' |
+| Куда редиректит | нет |
+| Что выводит (кратко) | не удалось открыть (ConnectTimeout) |
 | Где припаркован | нет данных |
 
 ## Проверка домена: ai.dev1.idnow.de
@@ -206,8 +206,8 @@
 | URLQuery | Unrated |
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
-| Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | title: Not Found. Not Found Not Found For request 'GET /' |
+| Куда редиректит | нет |
+| Что выводит (кратко) | не удалось открыть (ConnectTimeout) |
 | Где припаркован | нет данных |
 
 ## Проверка домена: ai.dev10.idnow.de
@@ -311,8 +311,8 @@
 | URLQuery | Unrated |
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
-| Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | title: Not Found. Not Found Not Found For request 'GET /' |
+| Куда редиректит | нет |
+| Что выводит (кратко) | не удалось открыть (ConnectTimeout) |
 | Где припаркован | нет данных |
 
 ## Проверка домена: ai.dev11.idnow.de
@@ -420,7 +420,6 @@
 | Что выводит (кратко) | нет (DNS не резолвится) |
 | Где припаркован | нет данных |
 
-<<<<<<< HEAD
 ## Проверка домена: ai.dev12.idnow.de
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
@@ -840,5 +839,3 @@
 | Куда редиректит | нет (DNS не резолвится) |
 | Что выводит (кратко) | нет (DNS не резолвится) |
 | Где припаркован | нет данных |
-=======
->>>>>>> origin/main
