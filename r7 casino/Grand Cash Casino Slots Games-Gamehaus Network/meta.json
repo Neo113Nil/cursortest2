@@ -1,0 +1,63 @@
+{
+  "app_id": "com.grandcashslots.free.gp",
+  "title": "Grand Cash Casino Slots Games",
+  "developer": "Gamehaus Network",
+  "url": "https://play.google.com/store/apps/details?id=com.grandcashslots.free.gp&hl=en&gl=us",
+  "version": "6.7.0",
+  "version_code": "670",
+  "summary": "Grand Cash Casino Slots Games (APK label: Grand Cash Slots) — social-casino Cocos2d-lua от Gamehaus; бэкенд haloapps.com / langlang-game.com, веб-версия gcs-play-web.gcscasino.com; реклама AppLovin MAX + AdMob/Pangle/Mintegral/Unity/Fyber/BidMachine/Moloco/Meta; аналитика Firebase/AppsFlyer/ThinkData/ALY; клоаки нет.",
+  "keyword": "r7 casino",
+  "folder": "Grand Cash Casino Slots Games-Gamehaus Network",
+  "path": "r7 casino/Grand Cash Casino Slots Games-Gamehaus Network",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "apk_label": "Grand Cash Slots",
+  "cloaking": "нет",
+  "files": [
+    "com.grandcashslots.free.gp.xapk",
+    "com.grandcashslots.free.gp-670.apk",
+    "apk/com.grandcashslots.free.gp-670.apk"
+  ],
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      {
+        "domain": "a-sta.haloapps.com"
+      },
+      {
+        "domain": "ab-test.haloapps.com"
+      },
+      {
+        "domain": "accountkit.haloapps.com"
+      },
+      {
+        "domain": "aomedia.org"
+      }
+    ],
+    "ads": [
+      "AppLovin MAX",
+      "AdMob",
+      "Google Ad Manager",
+      "Pangle",
+      "Mintegral",
+      "Unity Ads",
+      "Fyber",
+      "BidMachine",
+      "Moloco",
+      "Meta Audience Network",
+      "ironSource (mediation adapter)",
+      "Google User Messaging Platform"
+    ],
+    "analytics": [
+      "Firebase Analytics",
+      "Crashlytics",
+      "Firebase Messaging",
+      "AppsFlyer",
+      "ThinkData (data-ss.gamehaus.com)",
+      "ALY / haloapps stats",
+      "Facebook App Events",
+      "TikTok App Events",
+      "AIHelp"
+    ]
+  }
+}
