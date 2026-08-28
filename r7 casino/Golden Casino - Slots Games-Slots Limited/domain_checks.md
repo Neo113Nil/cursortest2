@@ -744,5 +744,5 @@
 | ZeroCERT | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | {"timestamp":"2026-08-28T04:55:12.879+0000","status":404,"error":"Not Found","message":"Not Found","path":"/"} |
+| Что выводит (кратко) | {"timestamp":"2026-08-28T12:11:45.279+0000","status":404,"error":"Not Found","message":"Not Found","path":"/"} |
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
