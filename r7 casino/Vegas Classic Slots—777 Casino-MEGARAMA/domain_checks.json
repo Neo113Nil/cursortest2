@@ -1,15 +1,10 @@
 {
   "all_custom_domains": [
-<<<<<<< HEAD
-=======
-    "adx.ads.vungle.com",
->>>>>>> origin/main
     "aomedia.org",
     "api.bidmachine.io",
     "appassets.androidplatform.net",
     "cdn-f.adsmoloco.com",
     "cdn2.inner-active.mobi",
-<<<<<<< HEAD
     "chartboo.st",
     "compliance.iabtechnologylab.com",
     "config.safedk.com",
@@ -26,37 +21,13 @@
     "samsungapps.com",
     "sdk-files.smaato.net",
     "sdk-hb-cfg.smaato.net",
-=======
-    "compliance.iabtechnologylab.com",
-    "config.ads.vungle.com",
-    "config.safedk.com",
-    "dashif.org",
-    "edge.safedk.com",
-    "events.ads.vungle.com",
-    "hbsdk-config.log.smaato.net",
-    "impact.smaato.net",
-    "init-mp.fyber.com",
-    "ktor.io",
-    "live.chartboost.com",
-    "logs.ads.vungle.com",
-    "ne-56-1-64.herokuapp.com",
-    "sdk-events.inner-active.mobi",
-    "sdk-files.smaato.net",
->>>>>>> origin/main
     "sdk.ad.smaato.net",
     "sdkapi.dsp-api.moloco.com",
     "sdkopmetrics-us.dsp-api.moloco.com",
     "serving.stat-rock.com",
-<<<<<<< HEAD
     "slf4j.org",
     "tizen.org",
     "unifiedbidding.ad.smaato.net"
-=======
-    "ssp-events.chartboost.com",
-    "x.blueduckredapple.com",
-    "x.everestop.io",
-    "x.thecatmachine.com"
->>>>>>> origin/main
   ],
   "checked": [
     {
@@ -445,7 +416,6 @@
         },
         "categories": {},
         "popularity_ranks": [
-<<<<<<< HEAD
           "Majestic: 55370",
           "Statvoo: 593731",
           "Alexa: 593731",
@@ -453,49 +423,23 @@
           "Cloudflare Radar: 200000"
         ],
         "creation_date": 1440425251,
-        "last_modification_date": 1787868125,
-        "last_analysis_date": 1787842610,
+        "last_modification_date": 1787892064,
+        "last_analysis_date": 1787875212,
         "registrar": "Squarespace Domains II LLC",
         "whois": "Creation Date: 2015-08-24T14:07:31.607Z\nCreation Date: 2015-08-24T14:07:31Z\nDNSSEC: unsigned\nDomain Name: aomedia.org\nDomain Status: client delete prohibited http://www.icann.org/epp#client delete prohibited\nDomain Status: client transfer prohibited http://www.icann.org/epp#client transfer prohibited\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: ns-cloud-a1.googledomains.com\nName Server: ns-cloud-a2.googledomains.com\nName Server: ns-cloud-a3.googledomains.com\nName Server: ns-cloud-a4.googledomains.com\nRegistrant City: 1f8f4166599d23ee\nRegistrant Country: US\nRegistrant Email: 3bae71a42530df7ds@\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 1f8f4166599d23ee\nRegistrant Name: 1f8f4166599d23ee\nRegistrant Organization: 63e9119f4bc4ba6a\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: 1f8f4166599d23ee\nRegistrant Postal Code: 1f8f4166599d23ee\nRegistrant State/Province: b1952dfc047df18a\nRegistrant Street: 1f8f4166599d23ee\nRegistrar Abuse Contact Email: abuse-complaints@squarespace.com\nRegistrar Abuse Contact Phone: +1.646-693-5324\nRegistrar Abuse Contact Phone: +1.6466935324\nRegistrar IANA ID: 895\nRegistrar Registration Expiration Date: 2028-08-24T14:07:31.607Z\nRegistrar URL: https://domains.squarespace.com\nRegistrar URL: https://domains2.squarespace.com\nRegistrar WHOIS Server: whois.squarespace.domains\nRegistrar: Squarespace Domains II LLC\nRegistry Domain ID: 845b247fe2144e3e965924b2c891e0dd-LROR\nRegistry Domain ID: REDACTED\nRegistry Expiry Date: 2028-08-24T14:07:31Z\nUpdated Date: 2025-07-18T02:52:32Z\nUpdated Date: 2026-06-24T19:25:16.590500Z",
         "dns_records": [
-          "A 185.199.110.153",
-          "A 185.199.109.153",
-          "MX alt3.aspmx.l.google.com",
-          "A 185.199.108.153",
-          "A 185.199.111.153",
-          "TXT v=spf1 include:_spf.google.com ~all",
-          "NS ns-cloud-a3.googledomains.com",
-          "TXT OSSRH-77432",
-          "TXT cisco-ci-domain-verification=486c8c389e803003a4030a87bc6b7584f1278f34ea8886e0a7c30928e43c7e04",
-          "MX alt1.aspmx.l.google.com",
-          "NS ns-cloud-a4.googledomains.com",
-          "MX aspmx.l.google.com"
-=======
-          "Majestic: 55139",
-          "Statvoo: 593731",
-          "Alexa: 593731",
-          "Cisco Umbrella: 976804",
-          "Cloudflare Radar: 200000"
-        ],
-        "creation_date": 1440425251,
-        "last_modification_date": 1785788667,
-        "last_analysis_date": 1785763155,
-        "registrar": "Squarespace Domains II LLC",
-        "whois": "Creation Date: 2015-08-24T14:07:31.607Z\nCreation Date: 2015-08-24T14:07:31Z\nDNSSEC: unsigned\nDomain Name: aomedia.org\nDomain Status: client delete prohibited http://www.icann.org/epp#client delete prohibited\nDomain Status: client transfer prohibited http://www.icann.org/epp#client transfer prohibited\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: ns-cloud-a1.googledomains.com\nName Server: ns-cloud-a2.googledomains.com\nName Server: ns-cloud-a3.googledomains.com\nName Server: ns-cloud-a4.googledomains.com\nRegistrant City: 1f8f4166599d23ee\nRegistrant Country: US\nRegistrant Email: 3bae71a42530df7ds@\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 1f8f4166599d23ee\nRegistrant Name: 1f8f4166599d23ee\nRegistrant Organization: 63e9119f4bc4ba6a\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: 1f8f4166599d23ee\nRegistrant Postal Code: 1f8f4166599d23ee\nRegistrant State/Province: b1952dfc047df18a\nRegistrant Street: 1f8f4166599d23ee\nRegistrar Abuse Contact Email: abuse-complaints@squarespace.com\nRegistrar Abuse Contact Phone: +1.646-693-5324\nRegistrar Abuse Contact Phone: +1.6466935324\nRegistrar IANA ID: 895\nRegistrar Registration Expiration Date: 2028-08-24T14:07:31.607Z\nRegistrar URL: https://domains.squarespace.com\nRegistrar URL: https://domains2.squarespace.com\nRegistrar WHOIS Server: whois.squarespace.domains\nRegistrar: Squarespace Domains II LLC\nRegistry Domain ID: 845b247fe2144e3e965924b2c891e0dd-LROR\nRegistry Domain ID: REDACTED\nRegistry Expiry Date: 2028-08-24T14:07:31Z\nUpdated Date: 2025-07-18T02:52:32Z\nUpdated Date: 2026-06-24T19:25:16.590500Z",
-        "dns_records": [
-          "MX alt4.aspmx.l.google.com",
-          "NS ns-cloud-a4.googledomains.com",
-          "A 185.199.108.153",
-          "NS ns-cloud-a3.googledomains.com",
-          "MX alt3.aspmx.l.google.com",
           "MX aspmx.l.google.com",
+          "TXT cisco-ci-domain-verification=486c8c389e803003a4030a87bc6b7584f1278f34ea8886e0a7c30928e43c7e04",
+          "NS ns-cloud-a3.googledomains.com",
+          "NS ns-cloud-a2.googledomains.com",
           "MX alt2.aspmx.l.google.com",
-          "A 185.199.109.153",
-          "TXT v=spf1 include:_spf.google.com ~all",
-          "A 185.199.111.153",
+          "MX alt3.aspmx.l.google.com",
+          "MX alt4.aspmx.l.google.com",
           "SOA ns-cloud-a1.googledomains.com",
-          "A 185.199.110.153"
->>>>>>> origin/main
+          "NS ns-cloud-a1.googledomains.com",
+          "TXT v=spf1 include:_spf.google.com ~all",
+          "A 185.199.109.153",
+          "NS ns-cloud-a4.googledomains.com"
         ],
         "https_subject": {
           "CN": "aomedia.org"
@@ -517,11 +461,7 @@
       "redirect_chain": [
         "https://aomedia.org/"
       ],
-<<<<<<< HEAD
       "page_output": "title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story FAQ Members Organizat",
-=======
-      "page_output": "title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story Members Organization ",
->>>>>>> origin/main
       "parked_at": "регистратор: Squarespace Domains II LLC",
       "final_url": "https://aomedia.org/",
       "http_status": 200,
@@ -912,11 +852,7 @@
         },
         {
           "param": "Что выводит (кратко)",
-<<<<<<< HEAD
           "value": "title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story FAQ Members Organizat"
-=======
-          "value": "title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story Members Organization "
->>>>>>> origin/main
         },
         {
           "param": "Где припаркован",
@@ -930,7 +866,6 @@
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/api.bidmachine.io",
         "detections": "0/91 (malicious=0, suspicious=0)",
-<<<<<<< HEAD
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
@@ -938,8 +873,6 @@
           "harmless": 57,
           "timeout": 0
         },
-=======
->>>>>>> origin/main
         "vendor_rows": [
           [
             "Abusix",
@@ -1070,13 +1003,10 @@
             "Clean"
           ],
           [
-<<<<<<< HEAD
             "LevelBlue",
             "Clean"
           ],
           [
-=======
->>>>>>> origin/main
             "Lionic",
             "Clean"
           ],
@@ -1089,13 +1019,6 @@
             "Clean"
           ],
           [
-<<<<<<< HEAD
-=======
-            "Netcraft",
-            "Clean"
-          ],
-          [
->>>>>>> origin/main
             "OpenPhish",
             "Clean"
           ],
@@ -1172,13 +1095,6 @@
             "Clean"
           ],
           [
-<<<<<<< HEAD
-=======
-            "Xcitium Verdict Cloud",
-            "Clean"
-          ],
-          [
->>>>>>> origin/main
             "Yandex Safebrowsing",
             "Clean"
           ],
@@ -1267,13 +1183,6 @@
             "Unrated"
           ],
           [
-<<<<<<< HEAD
-=======
-            "LevelBlue",
-            "Unrated"
-          ],
-          [
->>>>>>> origin/main
             "Lumu",
             "Unrated"
           ],
@@ -1286,13 +1195,10 @@
             "Unrated"
           ],
           [
-<<<<<<< HEAD
             "Netcraft",
             "Unrated"
           ],
           [
-=======
->>>>>>> origin/main
             "PhishFort",
             "Unrated"
           ],
@@ -1325,7 +1231,6 @@
             "Unrated"
           ],
           [
-<<<<<<< HEAD
             "Xcitium Verdict Cloud",
             "Unrated"
           ],
@@ -1339,24 +1244,20 @@
           "harmless": 0,
           "malicious": 0
         },
-        "categories": {
-          "BitDefender": "blogs",
-          "Sophos": "general business",
-          "Forcepoint ThreatSeeker": "information technology"
-        },
+        "categories": {},
         "popularity_ranks": [
           "Cisco Umbrella: 3132"
         ],
         "creation_date": 1541779080,
-        "last_modification_date": 1787868187,
-        "last_analysis_date": 1787840653,
+        "last_modification_date": 1787892141,
+        "last_analysis_date": 1787876798,
         "registrar": "GoDaddy.com, LLC",
         "whois": "Admin City: REDACTED\nAdmin Country: REDACTED\nAdmin Organization: REDACTED\nAdmin Postal Code: REDACTED\nAdmin State/Province: REDACTED\nCreation Date: 2018-11-09T15:58:00Z\nDNSSEC: unsigned\nDomain Name: bidmachine.io\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: cleo.ns.cloudflare.com\nName Server: dora.ns.cloudflare.com\nRegistrant City: 3495bcf1839c6374\nRegistrant Country: US\nRegistrant Email: fb6ff66ef97c0518s@\nRegistrant Fax Ext: 3495bcf1839c6374\nRegistrant Fax: 3495bcf1839c6374\nRegistrant Name: 3495bcf1839c6374\nRegistrant Organization: 3432650ec337c945\nRegistrant Phone Ext: 3495bcf1839c6374\nRegistrant Phone: 3495bcf1839c6374\nRegistrant Postal Code: 3495bcf1839c6374\nRegistrant State/Province: e2ccb5de5e880e2b\nRegistrant Street: 3495bcf1839c6374\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: +1.4806242505\nRegistrar IANA ID: 146\nRegistrar URL: http://www.godaddy.com/domains/search.aspx?ci=8990\nRegistrar WHOIS Server: whois.godaddy.com\nRegistrar: GoDaddy.com, LLC\nRegistry Admin ID: REDACTED\nRegistry Domain ID: REDACTED\nRegistry Expiry Date: 2026-11-09T15:58:00Z\nRegistry Registrant ID: REDACTED\nRegistry Tech ID: REDACTED\nTech City: REDACTED\nTech Country: REDACTED\nTech Organization: REDACTED\nTech Postal Code: REDACTED\nTech State/Province: REDACTED\nUpdated Date: 2025-12-24T15:58:55Z",
         "dns_records": [
-          "AAAA 2606:4700::6812:2b6",
+          "AAAA 2606:4700::6812:3b6",
           "A 104.18.2.182",
           "A 104.18.3.182",
-          "AAAA 2606:4700::6812:3b6"
+          "AAAA 2606:4700::6812:2b6"
         ],
         "https_subject": {
           "CN": "bidmachine.io"
@@ -1775,409 +1676,6 @@
           "param": "Где припаркован",
           "value": "регистратор/whois связан с парковкой: godaddy"
         }
-=======
-            "ZeroFox",
-            "Unrated"
-          ]
-        ]
-      },
-      "redirects_to": "нет (без редиректа)",
-      "page_output": "Not Found",
-      "parked_at": "регистратор/whois связан с парковкой: godaddy",
-      "table_rows": [
-        [
-          "Домен",
-          "api.bidmachine.io"
-        ],
-        [
-          "VirusTotal URL",
-          "https://www.virustotal.com/gui/domain/api.bidmachine.io"
-        ],
-        [
-          "Детекции",
-          "0/91 (malicious=0, suspicious=0)"
-        ],
-        [
-          "Security vendors' analysis",
-          "ниже построчно, как на VirusTotal"
-        ],
-        [
-          "Abusix",
-          "Clean"
-        ],
-        [
-          "Acronis",
-          "Clean"
-        ],
-        [
-          "ADMINUSLabs",
-          "Clean"
-        ],
-        [
-          "AILabs (MONITORAPP)",
-          "Clean"
-        ],
-        [
-          "AlienVault",
-          "Clean"
-        ],
-        [
-          "alphaMountain.ai",
-          "Clean"
-        ],
-        [
-          "Antiy-AVL",
-          "Clean"
-        ],
-        [
-          "BitDefender",
-          "Clean"
-        ],
-        [
-          "Blueliv",
-          "Clean"
-        ],
-        [
-          "Certego",
-          "Clean"
-        ],
-        [
-          "Chong Lua Dao",
-          "Clean"
-        ],
-        [
-          "CINS Army",
-          "Clean"
-        ],
-        [
-          "CMC Threat Intelligence",
-          "Clean"
-        ],
-        [
-          "CRDF",
-          "Clean"
-        ],
-        [
-          "CTX AI",
-          "Clean"
-        ],
-        [
-          "Cyble",
-          "Clean"
-        ],
-        [
-          "CyRadar",
-          "Clean"
-        ],
-        [
-          "desenmascara.me",
-          "Clean"
-        ],
-        [
-          "Dr.Web",
-          "Clean"
-        ],
-        [
-          "EmergingThreats",
-          "Clean"
-        ],
-        [
-          "Emsisoft",
-          "Clean"
-        ],
-        [
-          "ESET",
-          "Clean"
-        ],
-        [
-          "ESTsecurity",
-          "Clean"
-        ],
-        [
-          "Forcepoint ThreatSeeker",
-          "Clean"
-        ],
-        [
-          "Fortinet",
-          "Clean"
-        ],
-        [
-          "G-Data",
-          "Clean"
-        ],
-        [
-          "Google Safe Browsing",
-          "Clean"
-        ],
-        [
-          "GreenSnow",
-          "Clean"
-        ],
-        [
-          "Heimdal Security",
-          "Clean"
-        ],
-        [
-          "IPsum",
-          "Clean"
-        ],
-        [
-          "Juniper Networks",
-          "Clean"
-        ],
-        [
-          "Kaspersky",
-          "Clean"
-        ],
-        [
-          "Lionic",
-          "Clean"
-        ],
-        [
-          "Malwared",
-          "Clean"
-        ],
-        [
-          "MalwarePatrol",
-          "Clean"
-        ],
-        [
-          "Netcraft",
-          "Clean"
-        ],
-        [
-          "OpenPhish",
-          "Clean"
-        ],
-        [
-          "Phishing Database",
-          "Clean"
-        ],
-        [
-          "Phishtank",
-          "Clean"
-        ],
-        [
-          "PREBYTES",
-          "Clean"
-        ],
-        [
-          "Quick Heal",
-          "Clean"
-        ],
-        [
-          "Quttera",
-          "Clean"
-        ],
-        [
-          "Scantitan",
-          "Clean"
-        ],
-        [
-          "SCUMWARE.org",
-          "Clean"
-        ],
-        [
-          "Seclookup",
-          "Clean"
-        ],
-        [
-          "Sophos",
-          "Clean"
-        ],
-        [
-          "StopForumSpam",
-          "Clean"
-        ],
-        [
-          "Sucuri SiteCheck",
-          "Clean"
-        ],
-        [
-          "ThreatHive",
-          "Clean"
-        ],
-        [
-          "URLhaus",
-          "Clean"
-        ],
-        [
-          "URLQuery",
-          "Clean"
-        ],
-        [
-          "Viettel Threat Intelligence",
-          "Clean"
-        ],
-        [
-          "ViriBack",
-          "Clean"
-        ],
-        [
-          "VX Vault",
-          "Clean"
-        ],
-        [
-          "Webroot",
-          "Clean"
-        ],
-        [
-          "Xcitium Verdict Cloud",
-          "Clean"
-        ],
-        [
-          "Yandex Safebrowsing",
-          "Clean"
-        ],
-        [
-          "ZeroCERT",
-          "Clean"
-        ],
-        [
-          "0xSI_f33d",
-          "Unrated"
-        ],
-        [
-          "AlphaSOC",
-          "Unrated"
-        ],
-        [
-          "ArcSight Threat Intelligence",
-          "Unrated"
-        ],
-        [
-          "AutoShun",
-          "Unrated"
-        ],
-        [
-          "Axur",
-          "Unrated"
-        ],
-        [
-          "Bfore.Ai PreCrime",
-          "Unrated"
-        ],
-        [
-          "Bkav",
-          "Unrated"
-        ],
-        [
-          "ChainPatrol",
-          "Unrated"
-        ],
-        [
-          "Cluster25",
-          "Unrated"
-        ],
-        [
-          "Criminal IP",
-          "Unrated"
-        ],
-        [
-          "CSIS Security Group",
-          "Unrated"
-        ],
-        [
-          "Cyan",
-          "Unrated"
-        ],
-        [
-          "DNS8",
-          "Unrated"
-        ],
-        [
-          "Ermes",
-          "Unrated"
-        ],
-        [
-          "Fortra",
-          "Unrated"
-        ],
-        [
-          "GCP Abuse Intelligence",
-          "Unrated"
-        ],
-        [
-          "GreyNoise",
-          "Unrated"
-        ],
-        [
-          "Gridinsoft",
-          "Unrated"
-        ],
-        [
-          "Guardpot",
-          "Unrated"
-        ],
-        [
-          "Hunt.io Intelligence",
-          "Unrated"
-        ],
-        [
-          "LevelBlue",
-          "Unrated"
-        ],
-        [
-          "Lumu",
-          "Unrated"
-        ],
-        [
-          "MalwareURL",
-          "Unrated"
-        ],
-        [
-          "Mimecast",
-          "Unrated"
-        ],
-        [
-          "PhishFort",
-          "Unrated"
-        ],
-        [
-          "PrecisionSec",
-          "Unrated"
-        ],
-        [
-          "SafeToOpen",
-          "Unrated"
-        ],
-        [
-          "Sansec eComscan",
-          "Unrated"
-        ],
-        [
-          "SecureBrain",
-          "Unrated"
-        ],
-        [
-          "Snort IP sample list",
-          "Unrated"
-        ],
-        [
-          "SOCRadar",
-          "Unrated"
-        ],
-        [
-          "VIPRE",
-          "Unrated"
-        ],
-        [
-          "ZeroFox",
-          "Unrated"
-        ],
-        [
-          "Куда редиректит",
-          "нет (без редиректа)"
-        ],
-        [
-          "Что выводит (кратко)",
-          "Not Found"
-        ],
-        [
-          "Где припаркован",
-          "регистратор/whois связан с парковкой: godaddy"
-        ]
->>>>>>> origin/main
       ]
     },
     {
@@ -2189,13 +1687,8 @@
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
-<<<<<<< HEAD
           "undetected": 36,
           "harmless": 55,
-=======
-          "undetected": 37,
-          "harmless": 54,
->>>>>>> origin/main
           "timeout": 0
         },
         "vendor_rows": [
@@ -2236,13 +1729,10 @@
             "Clean"
           ],
           [
-<<<<<<< HEAD
             "Chong Lua Dao",
             "Clean"
           ],
           [
-=======
->>>>>>> origin/main
             "CINS Army",
             "Clean"
           ],
@@ -2459,13 +1949,6 @@
             "Unrated"
           ],
           [
-<<<<<<< HEAD
-=======
-            "Chong Lua Dao",
-            "Unrated"
-          ],
-          [
->>>>>>> origin/main
             "Cluster25",
             "Unrated"
           ],
@@ -2584,13 +2067,8 @@
           "Cisco Umbrella: 12838"
         ],
         "creation_date": 1192130027,
-<<<<<<< HEAD
-        "last_modification_date": 1787867591,
-        "last_analysis_date": 1787867257,
-=======
-        "last_modification_date": 1785784571,
-        "last_analysis_date": 1785783949,
->>>>>>> origin/main
+        "last_modification_date": 1787891964,
+        "last_analysis_date": 1787891633,
         "registrar": "MarkMonitor Inc.",
         "whois": "Creation Date: 2007-10-11T07:00:00+0000\nCreation Date: 2007-10-11T19:13:47Z\nDNSSEC: unsigned\nDomain Name: ANDROIDPLATFORM.NET\nDomain Name: androidplatform.net\nDomain Status: clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: NS1.GOOGLE.COM\nName Server: NS2.GOOGLE.COM\nName Server: NS3.GOOGLE.COM\nName Server: NS4.GOOGLE.COM\nName Server: ns1.google.com\nName Server: ns2.google.com\nName Server: ns3.google.com\nName Server: ns4.google.com\nRegistrant Country: US\nRegistrant Email: fd5227c398756870s@\nRegistrant Organization: 3307059bbb3149c4\nRegistrar Abuse Contact Email: abusecomplaints@markmonitor.com\nRegistrar Abuse Contact Phone: +1.2086851750\nRegistrar Abuse Contact: https://corp.markmonitor.com/domain/ui/abuse-report\nRegistrar IANA ID: 292\nRegistrar Registration Expiration Date: 2026-10-11T00:00:00+0000\nRegistrar URL: http://www.markmonitor.com\nRegistrar WHOIS Server: whois.markmonitor.com\nRegistrar: MarkMonitor Inc.\nRegistrar: MarkMonitor, Inc.\nRegistry Domain ID: 1269791841_DOMAIN_NET-VRSN\nRegistry Expiry Date: 2026-10-11T19:13:47Z\nUpdated Date: 2025-09-09T10:18:35+0000\nUpdated Date: 2025-09-09T10:18:35Z",
         "dns_records": [
@@ -2666,13 +2144,10 @@
           "value": "Clean"
         },
         {
-<<<<<<< HEAD
           "param": "Chong Lua Dao",
           "value": "Clean"
         },
         {
-=======
->>>>>>> origin/main
           "param": "CINS Army",
           "value": "Clean"
         },
@@ -2889,13 +2364,6 @@
           "value": "Unrated"
         },
         {
-<<<<<<< HEAD
-=======
-          "param": "Chong Lua Dao",
-          "value": "Unrated"
-        },
-        {
->>>>>>> origin/main
           "param": "Cluster25",
           "value": "Unrated"
         },
@@ -3026,8 +2494,8 @@
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
-          "undetected": 34,
-          "harmless": 57,
+          "undetected": 33,
+          "harmless": 58,
           "timeout": 0
         },
         "vendor_rows": [
@@ -3252,6 +2720,10 @@
             "Clean"
           ],
           [
+            "Xcitium Verdict Cloud",
+            "Clean"
+          ],
+          [
             "Yandex Safebrowsing",
             "Clean"
           ],
@@ -3388,10 +2860,6 @@
             "Unrated"
           ],
           [
-            "Xcitium Verdict Cloud",
-            "Unrated"
-          ],
-          [
             "ZeroFox",
             "Unrated"
           ]
@@ -3403,38 +2871,21 @@
         },
         "categories": {},
         "popularity_ranks": [
-<<<<<<< HEAD
           "Cisco Umbrella: 3529"
         ],
         "creation_date": 1382683472,
-        "last_modification_date": 1787863106,
-        "last_analysis_date": 1787862774,
-=======
-          "Cisco Umbrella: 2651"
-        ],
-        "creation_date": 1382683472,
-        "last_modification_date": 1785784825,
-        "last_analysis_date": 1785784054,
->>>>>>> origin/main
+        "last_modification_date": 1787891971,
+        "last_analysis_date": 1787891633,
         "registrar": "Google Inc.",
         "whois": "Domain Name: ADSMOLOCO.COM\nRegistry Domain ID: 1832444478_DOMAIN_COM-VRSN\nRegistrar WHOIS Server: whois.google.com\nRegistrar URL: http://domains.google.com\nUpdated Date: 2017-10-25T12:37:05Z\nCreation Date: 2013-10-25T06:44:32Z\nRegistry Expiry Date: 2018-10-25T06:44:32Z\nRegistrar: Google Inc.\nRegistrar IANA ID: 895\nRegistrar Abuse Contact Email: registrar-abuse@google.com\nRegistrar Abuse Contact Phone: +1.8772376466\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: NS-CLOUD-D1.GOOGLEDOMAINS.COM\nName Server: NS-CLOUD-D2.GOOGLEDOMAINS.COM\nName Server: NS-CLOUD-D3.GOOGLEDOMAINS.COM\nName Server: NS-CLOUD-D4.GOOGLEDOMAINS.COM\nDNSSEC: unsigned",
         "dns_records": [
           "CNAME global.moloco.map.fastly.net",
           "CNAME global.moloco.map.fastly.net",
-<<<<<<< HEAD
-          "CNAME global.moloco.map.fastly.net",
-          "A 199.232.195.52",
-          "CNAME global.moloco.map.fastly.net",
           "A 199.232.199.52",
           "CNAME global.moloco.map.fastly.net",
-=======
-          "A 199.232.199.52",
           "CNAME global.moloco.map.fastly.net",
-          "A 199.232.195.52",
           "CNAME global.moloco.map.fastly.net",
->>>>>>> origin/main
-          "CNAME global.moloco.map.fastly.net",
-          "CNAME global.moloco.map.fastly.net"
+          "A 199.232.195.52"
         ],
         "https_subject": {
           "CN": "cdn-f.adsmoloco.com"
@@ -3698,6 +3149,10 @@
           "value": "Clean"
         },
         {
+          "param": "Xcitium Verdict Cloud",
+          "value": "Clean"
+        },
+        {
           "param": "Yandex Safebrowsing",
           "value": "Clean"
         },
@@ -3834,10 +3289,6 @@
           "value": "Unrated"
         },
         {
-          "param": "Xcitium Verdict Cloud",
-          "value": "Unrated"
-        },
-        {
           "param": "ZeroFox",
           "value": "Unrated"
         },
@@ -3864,8 +3315,8 @@
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
-          "undetected": 32,
-          "harmless": 59,
+          "undetected": 33,
+          "harmless": 58,
           "timeout": 0
         },
         "vendor_rows": [
@@ -3926,13 +3377,6 @@
             "Clean"
           ],
           [
-<<<<<<< HEAD
-            "Criminal IP",
-            "Clean"
-          ],
-          [
-=======
->>>>>>> origin/main
             "CTX AI",
             "Clean"
           ],
@@ -4021,13 +3465,6 @@
             "Clean"
           ],
           [
-<<<<<<< HEAD
-=======
-            "Netcraft",
-            "Clean"
-          ],
-          [
->>>>>>> origin/main
             "OpenPhish",
             "Clean"
           ],
@@ -4152,13 +3589,10 @@
             "Unrated"
           ],
           [
-<<<<<<< HEAD
-=======
             "Criminal IP",
             "Unrated"
           ],
           [
->>>>>>> origin/main
             "CSIS Security Group",
             "Unrated"
           ],
@@ -4211,13 +3645,10 @@
             "Unrated"
           ],
           [
-<<<<<<< HEAD
             "Netcraft",
             "Unrated"
           ],
           [
-=======
->>>>>>> origin/main
             "PhishFort",
             "Unrated"
           ],
@@ -4261,49 +3692,26 @@
         },
         "categories": {},
         "popularity_ranks": [
-<<<<<<< HEAD
           "Cisco Umbrella: 2136"
         ],
         "creation_date": 1286829089,
-        "last_modification_date": 1787867538,
-        "last_analysis_date": 1787867203,
+        "last_modification_date": 1787891164,
+        "last_analysis_date": 1787890822,
         "registrar": "GoDaddy.com, LLC",
         "whois": "Admin City: REDACTED\nAdmin Country: REDACTED\nAdmin Organization: REDACTED\nAdmin Postal Code: REDACTED\nAdmin State/Province: REDACTED\nCreation Date: 2010-10-11T20:31:29Z\nDNSSEC: unsigned\nDomain Name: inner-active.mobi\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: a1-94.akam.net\nName Server: a10-64.akam.net\nName Server: a26-64.akam.net\nName Server: a5-65.akam.net\nName Server: a6-66.akam.net\nName Server: a7-66.akam.net\nRegistrant City: 3495bcf1839c6374\nRegistrant Country: US\nRegistrant Email: fb6ff66ef97c0518s@\nRegistrant Fax Ext: 3495bcf1839c6374\nRegistrant Fax: 3495bcf1839c6374\nRegistrant Name: 3495bcf1839c6374\nRegistrant Organization: b46a98a26fe2fd9f\nRegistrant Phone Ext: 3495bcf1839c6374\nRegistrant Phone: 3495bcf1839c6374\nRegistrant Postal Code: 3495bcf1839c6374\nRegistrant State/Province: 30bdd2917a604c83\nRegistrant Street: 3495bcf1839c6374\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: +1.4806242505\nRegistrar IANA ID: 146\nRegistrar URL: http://www.godaddy.com/domains/search.aspx?ci=8990\nRegistrar WHOIS Server: whois.godaddy.com/\nRegistrar: GoDaddy.com, LLC\nRegistry Admin ID: REDACTED\nRegistry Domain ID: a966be35cfcb4fb8b15bc9f922e48253-DONUTS\nRegistry Expiry Date: 2029-10-11T20:31:29Z\nRegistry Registrant ID: REDACTED\nRegistry Tech ID: REDACTED\nTech City: REDACTED\nTech Country: REDACTED\nTech Organization: REDACTED\nTech Postal Code: REDACTED\nTech State/Province: REDACTED\nUpdated Date: 2024-08-18T14:04:48Z",
         "dns_records": [
-          "CNAME cdn2-inner-active.map.fastly.net",
-          "CNAME cdn2-inner-active.map.fastly.net",
-          "A 151.101.195.52",
-          "A 151.101.67.52",
-          "AAAA 2a04:4e42:400::820",
-          "AAAA 2a04:4e42:200::820",
-          "AAAA 2a04:4e42::820",
-          "A 151.101.131.52",
-          "CNAME cdn2-inner-active.map.fastly.net",
-          "AAAA 2a04:4e42:600::820",
-          "CNAME cdn2-inner-active.map.fastly.net",
-          "A 151.101.3.52"
-=======
-          "Cisco Umbrella: 1521"
-        ],
-        "creation_date": 1286829089,
-        "last_modification_date": 1785788144,
-        "last_analysis_date": 1785787810,
-        "registrar": "GoDaddy.com, LLC",
-        "whois": "Admin City: REDACTED\nAdmin Country: REDACTED\nAdmin Organization: REDACTED\nAdmin Postal Code: REDACTED\nAdmin State/Province: REDACTED\nCreation Date: 2010-10-11T20:31:29Z\nDNSSEC: unsigned\nDomain Name: inner-active.mobi\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: a1-94.akam.net\nName Server: a10-64.akam.net\nName Server: a26-64.akam.net\nName Server: a5-65.akam.net\nName Server: a6-66.akam.net\nName Server: a7-66.akam.net\nRegistrant City: 3495bcf1839c6374\nRegistrant Country: US\nRegistrant Email: fb6ff66ef97c0518s@\nRegistrant Fax Ext: 3495bcf1839c6374\nRegistrant Fax: 3495bcf1839c6374\nRegistrant Name: 3495bcf1839c6374\nRegistrant Organization: b46a98a26fe2fd9f\nRegistrant Phone Ext: 3495bcf1839c6374\nRegistrant Phone: 3495bcf1839c6374\nRegistrant Postal Code: 3495bcf1839c6374\nRegistrant State/Province: 30bdd2917a604c83\nRegistrant Street: 3495bcf1839c6374\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: +1.4806242505\nRegistrar IANA ID: 146\nRegistrar URL: http://www.godaddy.com/domains/search.aspx?ci=8990\nRegistrar WHOIS Server: whois.godaddy.com/\nRegistrar: GoDaddy.com, LLC\nRegistry Admin ID: REDACTED\nRegistry Domain ID: a966be35cfcb4fb8b15bc9f922e48253-DONUTS\nRegistry Expiry Date: 2029-10-11T20:31:29Z\nRegistry Registrant ID: REDACTED\nRegistry Tech ID: REDACTED\nTech City: REDACTED\nTech Country: REDACTED\nTech Organization: REDACTED\nTech Postal Code: REDACTED\nTech State/Province: REDACTED\nUpdated Date: 2024-08-18T14:04:48Z",
-        "dns_records": [
-          "A 151.101.131.52",
-          "CNAME cdn2-inner-active.map.fastly.net",
-          "CNAME cdn2-inner-active.map.fastly.net",
-          "AAAA 2a04:4e42:400::820",
-          "A 151.101.67.52",
-          "AAAA 2a04:4e42:600::820",
-          "A 151.101.195.52",
-          "CNAME cdn2-inner-active.map.fastly.net",
-          "AAAA 2a04:4e42:200::820",
           "CNAME cdn2-inner-active.map.fastly.net",
           "A 151.101.3.52",
-          "AAAA 2a04:4e42::820"
->>>>>>> origin/main
+          "AAAA 2a04:4e42:200::820",
+          "A 151.101.131.52",
+          "A 151.101.195.52",
+          "AAAA 2a04:4e42:400::820",
+          "CNAME cdn2-inner-active.map.fastly.net",
+          "CNAME cdn2-inner-active.map.fastly.net",
+          "AAAA 2a04:4e42::820",
+          "CNAME cdn2-inner-active.map.fastly.net",
+          "CNAME cdn2-inner-active.map.fastly.net",
+          "A 151.101.67.52"
         ],
         "https_subject": {
           "CN": "cdn2.inner-active.mobi"
@@ -4325,11 +3733,7 @@
       "redirect_chain": [
         "https://cdn2.inner-active.mobi/"
       ],
-<<<<<<< HEAD
       "page_output": "AccessDenied Access denied. Anonymous caller does not have storage.objects.list access to the Google Cloud Storage bucket. Permission 'storage.objects.list' denied on resource '//storage.googleapis.com/projects/_/buckets/gcs-exchange-public-useast1-prod' (or it may not exist).",
-=======
-      "page_output": "AccessDenied Access denied. Anonymous caller does not have storage.objects.list access to the Google Cloud Storage bucket. Permission 'storage.objects.list' denied on resource '//storage.googleapis.com/projects/_/buckets/gcs-exchange-public-useast1-prod' (or it may not exist). Re",
->>>>>>> origin/main
       "parked_at": "регистратор/whois связан с парковкой: godaddy",
       "final_url": "https://cdn2.inner-active.mobi/",
       "http_status": 403,
@@ -4407,13 +3811,6 @@
           "value": "Clean"
         },
         {
-<<<<<<< HEAD
-          "param": "Criminal IP",
-          "value": "Clean"
-        },
-        {
-=======
->>>>>>> origin/main
           "param": "CTX AI",
           "value": "Clean"
         },
@@ -4502,13 +3899,6 @@
           "value": "Clean"
         },
         {
-<<<<<<< HEAD
-=======
-          "param": "Netcraft",
-          "value": "Clean"
-        },
-        {
->>>>>>> origin/main
           "param": "OpenPhish",
           "value": "Clean"
         },
@@ -4633,13 +4023,10 @@
           "value": "Unrated"
         },
         {
-<<<<<<< HEAD
-=======
           "param": "Criminal IP",
           "value": "Unrated"
         },
         {
->>>>>>> origin/main
           "param": "CSIS Security Group",
           "value": "Unrated"
         },
@@ -4692,13 +4079,10 @@
           "value": "Unrated"
         },
         {
-<<<<<<< HEAD
           "param": "Netcraft",
           "value": "Unrated"
         },
         {
-=======
->>>>>>> origin/main
           "param": "PhishFort",
           "value": "Unrated"
         },
@@ -4740,7 +4124,6 @@
         },
         {
           "param": "Что выводит (кратко)",
-<<<<<<< HEAD
           "value": "AccessDenied Access denied. Anonymous caller does not have storage.objects.list access to the Google Cloud Storage bucket. Permission 'storage.objects.list' denied on resource '//storage.googleapis.com/projects/_/buckets/gcs-exchange-public-useast1-prod' (or it may not exist)."
         },
         {
@@ -5136,7 +4519,7 @@
         "categories": {},
         "popularity_ranks": "нет",
         "creation_date": 1386806400,
-        "last_modification_date": 1787868253,
+        "last_modification_date": 1787892140,
         "last_analysis_date": 1787858685,
         "registrar": "ST Registry",
         "whois": "Creation Date: 2013-12-12\nDOMAIN: chartboo.st\nDomain Name: chartboo.st\nExpiration Date: 2026-12-12\nName Server: ns-1148.awsdns-15.org\nName Server: ns-137.awsdns-17.com\nName Server: ns-890.awsdns-47.net\nRegistrar: ST Registry\nStatus: ok\nUpdated Date: 2025-11-14\nadmin-city: San Francisco\nadmin-country: US\nadmin-email: e72e68daf76724a8s@chartboost.com\nadmin-state: CA\nbilling-city: San Francisco\nbilling-country: US\nbilling-email: e72e68daf76724a8s@chartboost.com\nbilling-state: CA\nnameserver: ns-1148.awsdns-15.org\nnameserver: ns-137.awsdns-17.com\nnameserver: ns-890.awsdns-47.net\nregistrant-city: bf539c4f17ec5f2d\nregistrant-country: af468110de39b392\nregistrant-email: e72e68daf76724a8s@chartboost.com\nregistrant-fax: 3432650ec337c945\nregistrant-name: 5216d78256426238\nregistrant-organization: 3432650ec337c945\nregistrant-phone: ff14731914fcad3c\nregistrant-state: b1952dfc047df18a\nregistrant-street: 282f75695d1f974e\nregistrant-zip: 3432650ec337c945\ntech-city: San Francisco\ntech-country: US\ntech-email: e72e68daf76724a8s@chartboost.com\ntech-state: CA",
@@ -5952,7 +5335,7 @@
           "Cisco Umbrella: 36307"
         ],
         "creation_date": 1411663203,
-        "last_modification_date": 1787868278,
+        "last_modification_date": 1787892214,
         "last_analysis_date": 1787860962,
         "registrar": "GoDaddy.com, LLC",
         "whois": "Creation Date: 2014-09-25T16:40:03Z\nDNSSEC: unsigned\nDomain Name: IABTECHNOLOGYLAB.COM\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: HALEY.NS.CLOUDFLARE.COM\nName Server: MARIO.NS.CLOUDFLARE.COM\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: 480-624-2505\nRegistrar IANA ID: 146\nRegistrar URL: http://www.godaddy.com\nRegistrar WHOIS Server: whois.godaddy.com\nRegistrar: GoDaddy.com, LLC\nRegistry Domain ID: 1877485146_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2026-09-25T16:40:03Z\nUpdated Date: 2026-07-24T16:32:47Z",
@@ -6770,8 +6153,8 @@
           "Cisco Umbrella: 449561"
         ],
         "creation_date": 1392681600,
-        "last_modification_date": 1787865677,
-        "last_analysis_date": 1787865287,
+        "last_modification_date": 1787891158,
+        "last_analysis_date": 1787890822,
         "registrar": "нет",
         "whois": "Create date: 2014-02-18 00:00:00\nDomain name: safedk.com\nDomain registrar id: 146.0\nDomain registrar url: https://rdap.godaddy.com/v1/\nExpiry date: 2027-02-18 00:00:00\nQuery time: 2026-02-24 05:11:47\nUpdate date: 2026-02-23 00:00:00",
         "dns_records": [
@@ -7193,9 +6576,6 @@
         {
           "param": "Что выводит (кратко)",
           "value": "нет (DNS не резолвится)"
-=======
-          "value": "AccessDenied Access denied. Anonymous caller does not have storage.objects.list access to the Google Cloud Storage bucket. Permission 'storage.objects.list' denied on resource '//storage.googleapis.com/projects/_/buckets/gcs-exchange-public-useast1-prod' (or it may not exist). Re"
->>>>>>> origin/main
         },
         {
           "param": "Где припаркован",
@@ -7204,10 +6584,6 @@
       ]
     }
   ],
-<<<<<<< HEAD
   "count": 8,
-=======
-  "count": 5,
->>>>>>> origin/main
   "vt_configured": true
 }
