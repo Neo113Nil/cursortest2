@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "apks": [
+    "com.grandcashslots.free.gp-668.apk",
+    "com.grandcashslots.free.gp-668-asset.apk"
+  ],
+  "base_apk": "com.grandcashslots.free.gp-668.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "30271 (54%)\nINFO  - progress: 16810 of 30271 (55%)\nINFO  - progress: 17133 of 30271 (56%)\nINFO  - progress: 17353 of 30271 (57%)\nINFO  - progress: 17389 of 30271 (57%)\nINFO  - progress: 17389 of 30271 (57%)\nINFO  - progress: 17389 of 30271 (57%)\nINFO  - progress: 17389 of 30271 (57%)\nINFO  - progress: 17389 of 30271 (57%)\nINFO  - progress: 17642 of 30271 (58%)\nINFO  - progress: 18042 of 30271 (59%)\nINFO  - progress: 18525 of 30271 (61%)\nINFO  - progress: 19011 of 30271 (62%)\nINFO  - progress: 19162 of 30271 (63%)\nINFO  - progress: 19489 of 30271 (64%)\nINFO  - progress: 19910 of 30271 (65%)\nINFO  - progress: 20241 of 30271 (66%)\nINFO  - progress: 20607 of 30271 (68%)\nINFO  - progress: 20957 of 30271 (69%)\nINFO  - progress: 21314 of 30271 (70%)\nINFO  - progress: 21766 of 30271 (71%)\nINFO  - progress: 21990 of 30271 (72%)\nINFO  - progress: 22217 of 30271 (73%)\nINFO  - progress: 22369 of 30271 (73%)\nINFO  - progress: 22534 of 30271 (74%)\nINFO  - progress: 22648 of 30271 (74%)\nINFO  - progress: 22767 of 30271 (75%)\nINFO  - progress: 22817 of 30271 (75%)\nINFO  - progress: 22867 of 30271 (75%)\nINFO  - progress: 23001 of 30271 (75%)\nINFO  - progress: 23084 of 30271 (76%)\nINFO  - progress: 23176 of 30271 (76%)\nINFO  - progress: 23186 of 30271 (76%)\nINFO  - progress: 23186 of 30271 (76%)\nINFO  - progress: 23530 of 30271 (77%)\nINFO  - progress: 23937 of 30271 (79%)\nINFO  - progress: 24328 of 30271 (80%)\nINFO  - progress: 24517 of 30271 (80%)\nINFO  - progress: 24789 of 30271 (81%)\nINFO  - progress: 24994 of 30271 (82%)\nINFO  - progress: 25172 of 30271 (83%)\nINFO  - progress: 25241 of 30271 (83%)\nINFO  - progress: 25294 of 30271 (83%)\nINFO  - progress: 25381 of 30271 (83%)\nINFO  - progress: 25435 of 30271 (84%)\nINFO  - progress: 25603 of 30271 (84%)\nINFO  - progress: 25776 of 30271 (85%)\nINFO  - progress: 26090 of 30271 (86%)\nINFO  - progress: 26360 of 30271 (87%)\nINFO  - progress: 26502 of 30271 (87%)\nINFO  - progress: 26878 of 30271 (88%)\nINFO  - progress: 27009 of 30271 (89%)\nINFO  - progress: 27086 of 30271 (89%)\nINFO  - progress: 27271 of 30271 (90%)\nINFO  - progress: 27462 of 30271 (90%)\nINFO  - progress: 27718 of 30271 (91%)\nINFO  - progress: 27746 of 30271 (91%)\nINFO  - progress: 27786 of 30271 (91%)\nINFO  - progress: 27800 of 30271 (91%)\nINFO  - progress: 27944 of 30271 (92%)\nINFO  - progress: 28111 of 30271 (92%)\nINFO  - progress: 28209 of 30271 (93%)\nINFO  - progress: 28280 of 30271 (93%)\nINFO  - progress: 28313 of 30271 (93%)\nINFO  - progress: 28429 of 30271 (93%)\nINFO  - progress: 28657 of 30271 (94%)\nINFO  - progress: 28794 of 30271 (95%)\nINFO  - progress: 28970 of 30271 (95%)\nINFO  - progress: 29194 of 30271 (96%)\nINFO  - progress: 29404 of 30271 (97%)\nINFO  - progress: 29657 of 30271 (97%)\nINFO  - progress: 29779 of 30271 (98%)\nINFO  - progress: 29869 of 30271 (98%)\nINFO  - progress: 30086 of 30271 (99%)\nINFO  - progress: 30227 of 30271 (99%)\n                                                             \nERROR - finished with errors, count: 70\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/r7 casino/Grand Cash Casino Slots Games-Gamehaus Network/decompiled",
+    "skipped": false,
+    "base_apk": "com.grandcashslots.free.gp-668.apk"
+  },
+  "analysis_files": [
+    "com.grandcashslots.free.gp-668.apk",
+    "com.grandcashslots.free.gp-668-asset.apk",
+    "apk/com.grandcashslots.free.gp-668.apk",
+    "apk/com.grandcashslots.free.gp-668-asset.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/a/",
+    "decompiled/sources/a0/",
+    "decompiled/sources/a1/",
+    "decompiled/sources/a2/",
+    "decompiled/sources/a3/",
+    "decompiled/sources/a4/",
+    "decompiled/sources/a5/",
+    "decompiled/sources/a6/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/b/",
+    "decompiled/sources/b0/",
+    "decompiled/sources/b1/",
+    "decompiled/sources/b2/",
+    "decompiled/sources/b4/",
+    "decompiled/sources/b5/",
+    "decompiled/sources/b6/",
+    "decompiled/sources/c/",
+    "decompiled/sources/c0/"
+  ],
+  "errors": []
+}
