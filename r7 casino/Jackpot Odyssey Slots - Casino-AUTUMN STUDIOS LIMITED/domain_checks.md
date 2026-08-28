@@ -60,13 +60,11 @@
 | Sucuri SiteCheck | Clean |
 | ThreatHive | Clean |
 | URLhaus | Clean |
-| URLQuery | Clean |
 | Viettel Threat Intelligence | Clean |
 | VIPRE | Clean |
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
-| Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -100,6 +98,8 @@
 | SecureBrain | Unrated |
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
+| URLQuery | Unrated |
+| Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | https://www.adikteev.com/ |
 | Что выводит (кратко) | title: Adikteev: The growth engine for apps. Adikteev: The growth engine for apps Skip to content English Chinese 한국어 English Show submenu for translations User Retention Show submenu for User Retention App Retargeting for iOS App Retargeting for Gaming App Retargeting for Non Gaming App Retargeting for Agencies User Acquis |
