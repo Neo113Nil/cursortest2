@@ -10,7 +10,7 @@
   "jadx": {
     "ok": true,
     "exit_code": 1,
-    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 5024 (0%)\nINFO  - progress: 631 of 5024 (12%)\nINFO  - progress: 642 of 5024 (12%)\nINFO  - progress: 713 of 5024 (14%)\nINFO  - progress: 965 of 5024 (19%)\nINFO  - progress: 1328 of 5024 (26%)\nINFO  - progress: 1709 of 5024 (34%)\nINFO  - progress: 1988 of 5024 (39%)\nINFO  - progress: 2177 of 5024 (43%)\nINFO  - progress: 2377 of 5024 (47%)\nINFO  - progress: 2730 of 5024 (54%)\nINFO  - progress: 3006 of 5024 (59%)\nINFO  - progress: 3070 of 5024 (61%)\nINFO  - progress: 3241 of 5024 (64%)\nINFO  - progress: 3383 of 5024 (67%)\nINFO  - progress: 3518 of 5024 (70%)\nINFO  - progress: 3688 of 5024 (73%)\nINFO  - progress: 3924 of 5024 (78%)\nINFO  - progress: 4048 of 5024 (80%)\nINFO  - progress: 4212 of 5024 (83%)\nINFO  - progress: 4450 of 5024 (88%)\nINFO  - progress: 4476 of 5024 (89%)\nINFO  - progress: 4654 of 5024 (92%)\nINFO  - progress: 4742 of 5024 (94%)\nINFO  - progress: 4913 of 5024 (97%)\n                                                             \nERROR - finished with errors, count: 12\n",
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 5024 (0%)\nINFO  - progress: 631 of 5024 (12%)\nINFO  - progress: 643 of 5024 (12%)\nINFO  - progress: 718 of 5024 (14%)\nINFO  - progress: 1201 of 5024 (23%)\nINFO  - progress: 1434 of 5024 (28%)\nINFO  - progress: 1806 of 5024 (35%)\nINFO  - progress: 2068 of 5024 (41%)\nINFO  - progress: 2288 of 5024 (45%)\nINFO  - progress: 2558 of 5024 (50%)\nINFO  - progress: 2903 of 5024 (57%)\nINFO  - progress: 3070 of 5024 (61%)\nINFO  - progress: 3129 of 5024 (62%)\nINFO  - progress: 3282 of 5024 (65%)\nINFO  - progress: 3465 of 5024 (68%)\nINFO  - progress: 3644 of 5024 (72%)\nINFO  - progress: 3974 of 5024 (79%)\nINFO  - progress: 4052 of 5024 (80%)\nINFO  - progress: 4238 of 5024 (84%)\nINFO  - progress: 4475 of 5024 (89%)\nINFO  - progress: 4487 of 5024 (89%)\nINFO  - progress: 4692 of 5024 (93%)\nINFO  - progress: 4842 of 5024 (96%)\nINFO  - progress: 5017 of 5024 (99%)\n                                                             \nERROR - finished with errors, count: 12\n",
     "stderr": "",
     "out_dir": "/root/play-collector/загрузки/r7 casino/Jackpot Strike - Casino Slots-Mobee Co., Limited/decompiled",
     "skipped": false,
@@ -26,6 +26,8 @@
     "apk/com.mobee.igniteonline-546-config.arm64_v8a.apk",
     "apk/com.mobee.igniteonline-546-base_assets.apk",
     "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
     "decompiled/resources/AndroidManifest.xml",
     "decompiled/resources/res/values/strings.xml",
     "decompiled/sources/",
