@@ -77,7 +77,7 @@
       },
       {
         "param": "Подозрительные слова",
-        "value": "rurl, workers.dev, User-Agent, Accept-Language, X-Device-Model, redirect, license check, webview, loadUrl, Belbet"
+        "value": "rurl, workers.dev, User-Agent, Accept-Language, X-Device-Model, license check, webview, loadUrl"
       }
     ],
     "domains": [],
