@@ -1,0 +1,60 @@
+{
+  "app_id": "com.ignite.igniteslots",
+  "title": "Ignite Classic Slots - Casino",
+  "developer": "Mobee Co., Limited",
+  "url": "https://play.google.com/store/apps/details?id=com.ignite.igniteslots&hl=en&gl=us",
+  "version": "2.1.43.0",
+  "version_code": "230",
+  "summary": "Ignite Classic Slots - Casino (APK label: Ignite Slots) — social-casino Cocos2d-lua от Mobee; бэкенд аналитики upload.mobeetd.com; реклама AppLovin MAX + AdMob/Meta/Chartboost/Vungle; аналитика Firebase/AppsFlyer/ThinkingData/TalkingData/Bugly/AIHelp; клоаки нет.",
+  "keyword": "r7 casino",
+  "folder": "Ignite Classic Slots - Casino-Mobee Co., Limited",
+  "path": "r7 casino/Ignite Classic Slots - Casino-Mobee Co., Limited",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "apk_label": "Ignite Slots",
+  "cloaking": "нет",
+  "files": [
+    "com.ignite.igniteslots.xapk",
+    "com.ignite.igniteslots-230.apk",
+    "apk/com.ignite.igniteslots-230.apk"
+  ],
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      {
+        "domain": "aihelp.net"
+      },
+      {
+        "domain": "androidignite.onelink.me"
+      },
+      {
+        "domain": "aomedia.org"
+      },
+      {
+        "domain": "astat.bugly.cros.wr.pvp.net"
+      },
+      {
+        "domain": "cdn.aihelp.net"
+      }
+    ],
+    "ads": [
+      "AppLovin MAX",
+      "AdMob",
+      "Meta Audience Network",
+      "Chartboost",
+      "Vungle",
+      "SafeDK",
+      "Google User Messaging Platform"
+    ],
+    "analytics": [
+      "Firebase Analytics",
+      "Firebase Messaging",
+      "AppsFlyer",
+      "ThinkingData",
+      "TalkingData",
+      "Tencent Bugly",
+      "Facebook App Events",
+      "AIHelp"
+    ]
+  }
+}
