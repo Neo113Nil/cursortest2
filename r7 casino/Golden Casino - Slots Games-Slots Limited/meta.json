@@ -1,0 +1,62 @@
+{
+  "app_id": "com.slotslimited.goldencasino",
+  "title": "Golden Casino - Slots Games",
+  "developer": "Slots Limited",
+  "url": "https://play.google.com/store/apps/details?id=com.slotslimited.goldencasino&hl=en&gl=us",
+  "version": "1.0.740",
+  "version_code": "497",
+  "summary": "Golden Casino - Slots Games (APK label: Golden Casino) — Cocos2d-x JS social casino by Slots Limited; own backend golden-android.joyeggs.com (CH=/Opt= endpoints), AppLovin MAX mediation, AppsFlyer + Firebase analytics, Appcharge external web checkout gated by IsThirdWhite + Play billing country; no cloaking gate.",
+  "keyword": "r7 casino",
+  "folder": "Golden Casino - Slots Games-Slots Limited",
+  "path": "r7 casino/Golden Casino - Slots Games-Slots Limited",
+  "ok": true,
+  "source": "apkcube-apks",
+  "apk_label": "Golden Casino",
+  "cloaking": "нет",
+  "files": [
+    "apk/com.slotslimited.goldencasino-497.apk",
+    "apk/com.slotslimited.goldencasino-497-config.arm64_v8a.apk",
+    "apk/com.slotslimited.goldencasino-497-config.en.apk",
+    "apk/com.slotslimited.goldencasino-497-config.mdpi.apk",
+    "apk/com.slotslimited.goldencasino-497-install_time_asset_pack.apk"
+  ],
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      {"domain": "joyeggs.com"},
+      {"domain": "54030.com"},
+      {"domain": "aaagame.com"},
+      {"domain": "113113888.com"},
+      {"domain": "107.150.109.216"},
+      {"domain": "107.150.109.199"},
+      {"domain": "58.247.45.186"},
+      {"domain": "119.29.29.98"}
+    ],
+    "ads": [
+      "AppLovin MAX",
+      "AdMob",
+      "Google Ad Manager",
+      "Meta Audience Network",
+      "Mintegral",
+      "Unity Ads",
+      "Vungle",
+      "BidMachine",
+      "ironSource Ad Quality",
+      "SafeDK",
+      "IAB Open Measurement SDK",
+      "Google User Messaging Platform"
+    ],
+    "analytics": [
+      "Firebase Analytics",
+      "Crashlytics",
+      "Firebase Remote Config",
+      "Firebase Performance",
+      "Firebase Messaging",
+      "AppsFlyer",
+      "Facebook App Events",
+      "Appia install tracking",
+      "AIHelp",
+      "SurveyMonkey"
+    ]
+  }
+}
