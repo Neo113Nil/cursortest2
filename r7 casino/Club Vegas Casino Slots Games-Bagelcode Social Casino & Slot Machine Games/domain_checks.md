@@ -234,7 +234,6 @@
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
-| Criminal IP | Clean |
 | CTX AI | Clean |
 | Cyble | Clean |
 | CyRadar | Clean |
@@ -287,6 +286,7 @@
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
 | Cluster25 | Unrated |
+| Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
 | Cyan | Unrated |
 | DNS8 | Unrated |
@@ -379,6 +379,7 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+| Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -414,10 +415,9 @@
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
 | VIPRE | Unrated |
-| Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | AccessDenied Access Denied T3V1MMEWJH3Q703D kmC2rrvLVxu/zHb/hDotW0Pux+Bv95jLduaDJ/7A8Li0PZq6XlbMZm/hW1Mr7BGmLjfUtnQ30DDJpEjeWxbo5pPLwCxx+Itd |
+| Что выводит (кратко) | AccessDenied Access Denied RMHRRRHZD6SBP0FP EzgyYUI8twskbSq7PkrBjxy9Qt19etzmss7TVTNUm3jHdQac+KWwyEfOVpAnr5jS2Lv7F1g8keYwhIWy5m91oyJjP2fAPh3B |
 | Где припаркован | нет данных |
 
 ## Проверка домена: chat-prod.slots1.bagelgames.com
