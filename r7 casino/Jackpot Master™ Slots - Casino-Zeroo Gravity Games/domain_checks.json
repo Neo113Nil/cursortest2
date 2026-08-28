@@ -451,8 +451,8 @@
           "Cloudflare Radar: 500000"
         ],
         "creation_date": 816220800,
-        "last_modification_date": 1787851720,
-        "last_analysis_date": 1787851699,
+        "last_modification_date": 1787904175,
+        "last_analysis_date": 1787903847,
         "registrar": "нет",
         "whois": "Administrative city: REDACTED FOR PRIVACY\nAdministrative country: United States\nAdministrative email: 19a7f876f1595d7cs@anonymised.email\nAdministrative state: REDACTED FOR PRIVACY\nCreate date: 1995-11-13 00:00:00\nDomain name: 123.com\nDomain registrar id: 470.0\nDomain registrar url: whois.comlaude.com\nExpiry date: 2029-11-12 00:00:00\nQuery time: 2026-03-06 14:53:40\nRegistrant address: 1f8f4166599d23ee\nRegistrant city: 1f8f4166599d23ee\nRegistrant company: 827e5a10f090bc89\nRegistrant country: United Kingdom\nRegistrant email: 2b1bb323f0cedd8as@anonymised.email\nRegistrant name: 1f8f4166599d23ee\nRegistrant zip: 1f8f4166599d23ee\nTechnical city: REDACTED FOR PRIVACY\nTechnical country: United States\nTechnical email: 4f64dae613bbbd72s@anonymised.email\nTechnical state: REDACTED FOR PRIVACY\nUpdate date: 2026-03-04 00:00:00",
         "dns_records": [
@@ -1259,7 +1259,9 @@
           "harmless": 0,
           "malicious": 0
         },
-        "categories": {},
+        "categories": {
+          "alphaMountain.ai": "Information Technology (alphaMountain.ai)"
+        },
         "popularity_ranks": [
           "Statvoo: 80399",
           "Alexa: 80399",
@@ -1268,23 +1270,23 @@
           "Majestic: 638393"
         ],
         "creation_date": 1450828800,
-        "last_modification_date": 1787886589,
-        "last_analysis_date": 1787886541,
+        "last_modification_date": 1787910560,
+        "last_analysis_date": 1787907064,
         "registrar": "нет",
         "whois": "Create date: 2015-12-23 00:00:00\nDomain name: aihelp.net\nDomain registrar id: 146.0\nDomain registrar url: whois.godaddy.com\nExpiry date: 2026-12-23 00:00:00\nName server 1: NS3.DNSV4.COM\nName server 2: NS4.DNSV4.COM\nQuery time: 2025-12-26 01:00:45\nUpdate date: 2025-12-23 00:00:00",
         "dns_records": [
-          "TXT google-site-verification=6AqqFVE9Atoj6uwcKPeNYnr3bedLBGH79qC69tLW3Go",
-          "TXT google-site-verification=E_ykmh3O4DVNiHnnl6yCHR7p1LvqWvxnwDwUnhFDv3A",
-          "MX mxbiz1.qq.com",
-          "NS ns4.dnsv5.com",
-          "AAAA 2607:f0d0:1b06:25::9119",
           "TXT google-site-verification=NE-buKpYJIWDHcSI748m7C-SXW68Pv58zhapMIwKUvc",
-          "A 169.53.40.82",
-          "NS ns3.dnsv5.com",
+          "TXT google-site-verification=6AqqFVE9Atoj6uwcKPeNYnr3bedLBGH79qC69tLW3Go",
+          "AAAA 2607:f0d0:1b06:25::9119",
+          "AAAA 2607:f0d0:1b01:1f9::b",
+          "AAAA 2607:f0d0:1e03:c1::3",
           "A 169.61.195.139",
-          "A 169.55.254.202",
-          "MX mxbiz2.qq.com",
-          "AAAA 2607:f0d0:1b01:1f9::b"
+          "TXT v=spf1 include:spf.mail.qq.com ~all",
+          "TXT google-site-verification=E_ykmh3O4DVNiHnnl6yCHR7p1LvqWvxnwDwUnhFDv3A",
+          "NS ns3.dnsv5.com",
+          "SOA ns3.dnsv5.com",
+          "TXT google-site-verification=2CIV-tqQYKa-SPHfbqw3A3rfVegzKKQvnvt5YCIwfbI",
+          "MX mxbiz1.qq.com"
         ],
         "https_subject": {
           "CN": "*.aihelp.net"
@@ -2925,7 +2927,7 @@
           "Cloudflare Radar: 200000"
         ],
         "creation_date": 1440425251,
-        "last_modification_date": 1787886679,
+        "last_modification_date": 1787915107,
         "last_analysis_date": 1787875212,
         "registrar": "Squarespace Domains II LLC",
         "whois": "Creation Date: 2015-08-24T14:07:31.607Z\nCreation Date: 2015-08-24T14:07:31Z\nDNSSEC: unsigned\nDomain Name: aomedia.org\nDomain Status: client delete prohibited http://www.icann.org/epp#client delete prohibited\nDomain Status: client transfer prohibited http://www.icann.org/epp#client transfer prohibited\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: ns-cloud-a1.googledomains.com\nName Server: ns-cloud-a2.googledomains.com\nName Server: ns-cloud-a3.googledomains.com\nName Server: ns-cloud-a4.googledomains.com\nRegistrant City: 1f8f4166599d23ee\nRegistrant Country: US\nRegistrant Email: 3bae71a42530df7ds@\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 1f8f4166599d23ee\nRegistrant Name: 1f8f4166599d23ee\nRegistrant Organization: 63e9119f4bc4ba6a\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: 1f8f4166599d23ee\nRegistrant Postal Code: 1f8f4166599d23ee\nRegistrant State/Province: b1952dfc047df18a\nRegistrant Street: 1f8f4166599d23ee\nRegistrar Abuse Contact Email: abuse-complaints@squarespace.com\nRegistrar Abuse Contact Phone: +1.646-693-5324\nRegistrar Abuse Contact Phone: +1.6466935324\nRegistrar IANA ID: 895\nRegistrar Registration Expiration Date: 2028-08-24T14:07:31.607Z\nRegistrar URL: https://domains.squarespace.com\nRegistrar URL: https://domains2.squarespace.com\nRegistrar WHOIS Server: whois.squarespace.domains\nRegistrar: Squarespace Domains II LLC\nRegistry Domain ID: 845b247fe2144e3e965924b2c891e0dd-LROR\nRegistry Domain ID: REDACTED\nRegistry Expiry Date: 2028-08-24T14:07:31Z\nUpdated Date: 2025-07-18T02:52:32Z\nUpdated Date: 2026-06-24T19:25:16.590500Z",
@@ -3751,16 +3753,14 @@
           "Cisco Umbrella: 297758"
         ],
         "creation_date": 990355641,
-        "last_modification_date": 1787886528,
-        "last_analysis_date": 1787884756,
+        "last_modification_date": 1787914692,
+        "last_analysis_date": 1787914386,
         "registrar": "GANDI SAS",
         "whois": "Admin City: REDACTED FOR PRIVACY\nAdmin Country: REDACTED FOR PRIVACY\nAdmin Email: adf578e16f538695s@contact.gandi.net\nAdmin Organization: REDACTED FOR PRIVACY\nAdmin Postal Code: REDACTED FOR PRIVACY\nAdmin State/Province: REDACTED FOR PRIVACY\nCreation Date: 2001-05-20T08:47:21Z\nCreation Date: 2001-05-20T10:47:21Z\nDNSSEC: Unsigned\nDNSSEC: unsigned\nDomain Name: VERVE.NET\nDomain Name: verve.net\nDomain Status: clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: NS-CLOUD-D1.GOOGLEDOMAINS.COM\nName Server: NS-CLOUD-D2.GOOGLEDOMAINS.COM\nName Server: NS-CLOUD-D3.GOOGLEDOMAINS.COM\nName Server: NS-CLOUD-D4.GOOGLEDOMAINS.COM\nRegistrant City: 1f8f4166599d23ee\nRegistrant Country: US\nRegistrant Email: adf578e16f538695s@contact.gandi.net\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 1f8f4166599d23ee\nRegistrant Name: 1f8f4166599d23ee\nRegistrant Organization: 70576c638a1e90ec\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: 1f8f4166599d23ee\nRegistrant Postal Code: 1f8f4166599d23ee\nRegistrant State/Province: 77ab92f1911d7c5f\nRegistrant Street: 1f8f4166599d23ee\nRegistrar Abuse Contact Email: abuse@support.gandi.net\nRegistrar Abuse Contact Phone: +33.170377661\nRegistrar IANA ID: 81\nRegistrar Registration Expiration Date: 2027-05-20T10:47:21Z\nRegistrar URL: http://www.gandi.net\nRegistrar WHOIS Server: whois.gandi.net\nRegistrar: GANDI SAS\nRegistrar: Gandi SAS\nRegistry Admin ID: REDACTED FOR PRIVACY\nRegistry Domain ID: 71093657_DOMAIN_NET-VRSN\nRegistry Expiry Date: 2027-05-20T10:47:21Z\nRegistry Registrant ID: REDACTED FOR PRIVACY\nRegistry Tech ID: REDACTED FOR PRIVACY\nTech City: REDACTED FOR PRIVACY\nTech Country: REDACTED FOR PRIVACY\nTech Email: adf578e16f538695s@contact.gandi.net\nTech Organization: REDACTED FOR PRIVACY\nTech Postal Code: REDACTED FOR PRIVACY\nTech State/Province: REDACTED FOR PRIVACY\nUpdated Date: 2026-03-21T09:58:56Z",
         "dns_records": [
-          "CNAME api-us-east.nextgen.verve.net",
+          "A 35.212.96.170",
           "CNAME api-prod-gcp-us-east4-2.nextgen.verve.net",
-          "A 34.4.47.162",
-          "CNAME api-us-east.nextgen.verve.net",
-          "CNAME api-prod-gcp-us-east4-2.nextgen.verve.net"
+          "CNAME api-us-east.nextgen.verve.net"
         ],
         "https_subject": {
           "CN": "*.nextgen.verve.net"
@@ -4252,6 +4252,10 @@
             "Clean"
           ],
           [
+            "Criminal IP",
+            "Clean"
+          ],
+          [
             "CTX AI",
             "Clean"
           ],
@@ -4412,10 +4416,6 @@
             "Clean"
           ],
           [
-            "Xcitium Verdict Cloud",
-            "Clean"
-          ],
-          [
             "Yandex Safebrowsing",
             "Clean"
           ],
@@ -4457,10 +4457,6 @@
           ],
           [
             "Cluster25",
-            "Unrated"
-          ],
-          [
-            "Criminal IP",
             "Unrated"
           ],
           [
@@ -4556,6 +4552,10 @@
             "Unrated"
           ],
           [
+            "Xcitium Verdict Cloud",
+            "Unrated"
+          ],
+          [
             "ZeroFox",
             "Unrated"
           ]
@@ -4571,8 +4571,8 @@
           "Cisco Umbrella: 17904"
         ],
         "creation_date": 1337869570,
-        "last_modification_date": 1787886762,
-        "last_analysis_date": 1787862332,
+        "last_modification_date": 1787915118,
+        "last_analysis_date": 1787914164,
         "registrar": "united-domains GmbH",
         "whois": "Admin City: REDACTED\nAdmin Country: REDACTED\nAdmin Organization: REDACTED\nAdmin Postal Code: REDACTED\nAdmin State/Province: REDACTED\nCreation Date: 2012-05-24T14:26:10Z\nDNSSEC: unsigned\nDomain Name: adjust.io\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: dns1.p08.nsone.net\nName Server: dns2.p08.nsone.net\nName Server: dns3.p08.nsone.net\nName Server: dns4.p08.nsone.net\nRegistrant City: 3495bcf1839c6374\nRegistrant Country: DE\nRegistrant Email: fb6ff66ef97c0518s@\nRegistrant Fax Ext: 3495bcf1839c6374\nRegistrant Fax: 3495bcf1839c6374\nRegistrant Name: 3495bcf1839c6374\nRegistrant Organization: c89fbc069a3d47db\nRegistrant Phone Ext: 3495bcf1839c6374\nRegistrant Phone: 3495bcf1839c6374\nRegistrant Postal Code: 3495bcf1839c6374\nRegistrant State/Province: 3432650ec337c945\nRegistrant Street: 3495bcf1839c6374\nRegistrar Abuse Contact Email: abuse@united-domains.de\nRegistrar Abuse Contact Phone: +49.8151368670\nRegistrar IANA ID: 1408\nRegistrar URL: http://www.united-domains.de\nRegistrar WHOIS Server: whois.udag.net\nRegistrar: united-domains GmbH\nRegistry Admin ID: REDACTED\nRegistry Domain ID: REDACTED\nRegistry Expiry Date: 2027-05-24T14:26:10Z\nRegistry Registrant ID: REDACTED\nRegistry Tech ID: REDACTED\nTech City: REDACTED\nTech Country: REDACTED\nTech Organization: REDACTED\nTech Postal Code: REDACTED\nTech State/Province: REDACTED\nUpdated Date: 2026-07-08T14:26:22Z",
         "dns_records": [
@@ -4677,6 +4677,10 @@
         },
         {
           "param": "CRDF",
+          "value": "Clean"
+        },
+        {
+          "param": "Criminal IP",
           "value": "Clean"
         },
         {
@@ -4840,10 +4844,6 @@
           "value": "Clean"
         },
         {
-          "param": "Xcitium Verdict Cloud",
-          "value": "Clean"
-        },
-        {
           "param": "Yandex Safebrowsing",
           "value": "Clean"
         },
@@ -4885,10 +4885,6 @@
         },
         {
           "param": "Cluster25",
-          "value": "Unrated"
-        },
-        {
-          "param": "Criminal IP",
           "value": "Unrated"
         },
         {
@@ -4981,6 +4977,10 @@
         },
         {
           "param": "VIPRE",
+          "value": "Unrated"
+        },
+        {
+          "param": "Xcitium Verdict Cloud",
           "value": "Unrated"
         },
         {
@@ -5390,8 +5390,8 @@
           "Cisco Umbrella: 730397"
         ],
         "creation_date": 916963200,
-        "last_modification_date": 1787886639,
-        "last_analysis_date": 1787884383,
+        "last_modification_date": 1787915092,
+        "last_analysis_date": 1787914432,
         "registrar": "нет",
         "whois": "Billing country: United States\nBilling email: d52ad5e18ac11e26s@riotgames.com\nCreate date: 1999-01-22 00:00:00\nDomain name: pvp.net\nDomain registrar id: 292.0\nDomain registrar url: whois.markmonitor.com\nExpiry date: 2027-01-22 00:00:00\nQuery time: 2025-12-24 08:39:32\nRegistrant address: 9fe51923514f4661\nRegistrant city: 14ac44352c27e121\nRegistrant company: 9855b439b3532708\nRegistrant country: United States\nRegistrant email: d52ad5e18ac11e26s@riotgames.com\nRegistrant fax: 0a15319415779012\nRegistrant name: 1f33d7151e7ebf55\nRegistrant phone: 9a25cfaf56c54d3b\nRegistrant state: b1952dfc047df18a\nRegistrant zip: dd52927773f8eea6\nTechnical country: United States\nTechnical email: d52ad5e18ac11e26s@riotgames.com\nUpdate date: 2025-12-21 00:00:00",
         "dns_records": [
@@ -6210,15 +6210,15 @@
           "Cisco Umbrella: 52993"
         ],
         "creation_date": 1450834372,
-        "last_modification_date": 1787884723,
-        "last_analysis_date": 1787884303,
+        "last_modification_date": 1787915125,
+        "last_analysis_date": 1787914174,
         "registrar": "GoDaddy.com, LLC",
         "whois": "Domain Name: AIHELP.NET\nRegistry Domain ID: 1989099704_DOMAIN_NET-VRSN\nRegistrar WHOIS Server: whois.godaddy.com\nRegistrar URL: http://www.godaddy.com\nUpdated Date: 2018-03-14T14:01:58Z\nCreation Date: 2015-12-23T01:32:52Z\nRegistry Expiry Date: 2021-12-23T01:32:52Z\nRegistrar: GoDaddy.com, LLC\nRegistrar IANA ID: 146\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: 480-624-2505\nDomain Status: ok https://icann.org/epp#ok\nName Server: NS63.DOMAINCONTROL.COM\nName Server: NS64.DOMAINCONTROL.COM\nDNSSEC: unsigned\nDomain Name: aihelp.net\nUpdated Date: 2017-12-21T15:51:40Z\nRegistrar Registration Expiration Date: 2021-12-23T01:32:52Z\nRegistrar Abuse Contact Phone: +1.4806242505\nDomain Status: ok http://www.icann.org/epp#ok\nRegistry Registrant ID: Not Available From Registry\nRegistrant Country: US\nRegistrant Email: [REDACTED]@domainsbyproxy.com\nRegistry Admin ID: Not Available From Registry\nAdmin Organization: Domains By Proxy, LLC\nAdmin City: Scottsdale\nAdmin State/Province: Arizona\nAdmin Postal Code: 85260\nAdmin Country: US\nAdmin Email: [REDACTED]@domainsbyproxy.com\nRegistry Tech ID: Not Available From Registry\nTech Organization: Domains By Proxy, LLC\nTech City: Scottsdale\nTech State/Province: Arizona\nTech Postal Code: 85260\nTech Country: US\nTech Email: [REDACTED]@domainsbyproxy.com",
         "dns_records": [
-          "AAAA 2606:4700:3116::6812:3448",
           "AAAA 2606:4700:3115::6812:34f0",
           "CNAME cdn.aihelp.net.cloudscdn.net",
           "A 104.18.52.72",
+          "AAAA 2606:4700:3116::6812:3448",
           "A 104.18.52.240"
         ],
         "https_subject": {
