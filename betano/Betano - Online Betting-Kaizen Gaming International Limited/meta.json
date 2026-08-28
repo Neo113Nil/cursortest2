@@ -21,11 +21,13 @@
   "min_sdk": 24,
   "target_sdk": 36,
   "agp": "8.13.2",
-  "kotlin": "2.2",
+  "kotlin": "2.2.21",
   "files": [
     "com.kaizengaming.betano.sportsbook.xapk",
     "apk/com.kaizengaming.betano.sportsbook.apk",
     "apk/config.arm64_v8a.apk",
     "apk/config.xxhdpi.apk"
-  ]
+  ],
+  "analyzed_version": "3.124.0",
+  "reanalyzed_at": "2026-08-28"
 }
