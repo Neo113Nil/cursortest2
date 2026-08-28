@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "all_custom_domains": [
     "astat.bugly.cros.wr.pvp.net",
     "fb.gg"
@@ -430,6 +431,16 @@
       "final_url": "https://astat.bugly.cros.wr.pvp.net/",
       "http_status": 200,
       "table_rows": [
+=======
+  "suspicious_domains": [
+    "astat.bugly.cros.wr.pvp.net",
+    "fb.gg"
+  ],
+  "checks": [
+    {
+      "domain": "astat.bugly.cros.wr.pvp.net",
+      "rows": [
+>>>>>>> origin/main
         {
           "param": "Домен",
           "value": "astat.bugly.cros.wr.pvp.net"
@@ -826,6 +837,7 @@
     },
     {
       "domain": "fb.gg",
+<<<<<<< HEAD
       "virustotal": {
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/fb.gg",
@@ -1260,6 +1272,9 @@
       "final_url": "https://fb.gg/",
       "http_status": 400,
       "table_rows": [
+=======
+      "rows": [
+>>>>>>> origin/main
         {
           "param": "Домен",
           "value": "fb.gg"
@@ -1654,7 +1669,11 @@
         }
       ]
     }
+<<<<<<< HEAD
   ],
   "count": 2,
   "vt_configured": true
+=======
+  ]
+>>>>>>> origin/main
 }

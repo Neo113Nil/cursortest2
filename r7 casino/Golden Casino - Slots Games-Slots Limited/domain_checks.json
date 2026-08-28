@@ -3,6 +3,7 @@
     "119.29.29.98",
     "aomedia.org",
     "api.bidmachine.io",
+<<<<<<< HEAD
     "api.surveymonkey.net",
     "cdn.aihelp.net",
     "compliance.iabtechnologylab.com",
@@ -24,6 +25,9 @@
     "surveymonkey.com",
     "tizen.org",
     "whatwg.org"
+=======
+    "api.surveymonkey.net"
+>>>>>>> origin/main
   ],
   "checked": [
     {
@@ -33,6 +37,7 @@
         "error": "VT HTTP 400: {\"error\": {\"code\": \"InvalidArgumentError\", \"message\": \"Domain \\\"b'119.29.29.98'\\\" is not a valid domain pattern\"}}"
       },
       "redirects_to": "нет (без редиректа)",
+<<<<<<< HEAD
       "redirect_chain": [
         "http://119.29.29.98/"
       ],
@@ -61,6 +66,19 @@
           "param": "Где припаркован",
           "value": "нет"
         }
+=======
+      "page_output": "title: Server error message. Server error message Error 404: Not Found The request could not be completed because: Document not found!",
+      "parked_at": "нет",
+      "куда_редиректит": "нет (без редиректа)",
+      "что_выводит": "title: Server error message. Server error message Error 404: Not Found The request could not be completed because: Document not found!",
+      "где_припаркован": "нет",
+      "table_rows": [
+        {"param": "Домен", "value": "119.29.29.98"},
+        {"param": "VirusTotal", "value": "ошибка: VT HTTP 400: {\"error\": {\"code\": \"InvalidArgumentError\", \"message\": \"Domain \\\"b'119.29.29.98'\\\" is not a valid domain pattern\"}}"},
+        {"param": "Куда редиректит", "value": "нет (без редиректа)"},
+        {"param": "Что выводит (кратко)", "value": "title: Server error message. Server error message Error 404: Not Found The request could not be completed because: Document not found!"},
+        {"param": "Где припаркован", "value": "нет"}
+>>>>>>> origin/main
       ]
     },
     {
@@ -68,6 +86,7 @@
       "virustotal": {
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/aomedia.org",
+<<<<<<< HEAD
         "detections": "0/91 (malicious=0, suspicious=0)",
         "last_analysis_stats": {
           "malicious": 0,
@@ -892,12 +911,23 @@
           "value": "регистратор: Squarespace Domains II LLC"
         }
       ]
+=======
+        "detections": "0/91 (malicious=0, suspicious=0)"
+      },
+      "redirects_to": "нет (без редиректа)",
+      "page_output": "title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story FAQ Members Organizat",
+      "parked_at": "регистратор: Squarespace Domains II LLC",
+      "куда_редиректит": "нет (без редиректа)",
+      "что_выводит": "title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story FAQ Members Organizat",
+      "где_припаркован": "регистратор: Squarespace Domains II LLC"
+>>>>>>> origin/main
     },
     {
       "domain": "api.bidmachine.io",
       "virustotal": {
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/api.bidmachine.io",
+<<<<<<< HEAD
         "detections": "0/91 (malicious=0, suspicious=0)",
         "last_analysis_stats": {
           "malicious": 0,
@@ -1710,12 +1740,23 @@
           "value": "регистратор/whois связан с парковкой: godaddy"
         }
       ]
+=======
+        "detections": "0/91 (malicious=0, suspicious=0)"
+      },
+      "redirects_to": "нет (без редиректа)",
+      "page_output": "Not Found",
+      "parked_at": "регистратор/whois связан с парковкой: godaddy",
+      "куда_редиректит": "нет (без редиректа)",
+      "что_выводит": "Not Found",
+      "где_припаркован": "регистратор/whois связан с парковкой: godaddy"
+>>>>>>> origin/main
     },
     {
       "domain": "api.surveymonkey.net",
       "virustotal": {
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/api.surveymonkey.net",
+<<<<<<< HEAD
         "detections": "0/91 (malicious=0, suspicious=0)",
         "last_analysis_stats": {
           "malicious": 0,
@@ -5816,3 +5857,18 @@
   "count": 8,
   "vt_configured": true
 }
+=======
+        "detections": "0/91 (malicious=0, suspicious=0)"
+      },
+      "redirects_to": "нет (без редиректа)",
+      "page_output": "title: SurveyMonkey 404. SurveyMonkey 404 We're sorry! We can't find the page you're looking for. Please check the URL you entered to make sure it's spelled correctly. Still not sure how to get to the page you want? Maybe we can help you find your way: Want to create your own survey? Sign Up FREE",
+      "parked_at": "регистратор: MarkMonitor Inc.",
+      "куда_редиректит": "нет (без редиректа)",
+      "что_выводит": "title: SurveyMonkey 404. SurveyMonkey 404 We're sorry! We can't find the page you're looking for. Please check the URL you entered to make sure it's spelled correctly. Still not sure how to get to the page you want? Maybe we can help you find your way: Want to create your own survey? Sign Up FREE",
+      "где_припаркован": "регистратор: MarkMonitor Inc."
+    }
+  ],
+  "count": 4,
+  "vt_configured": true
+}
+>>>>>>> origin/main

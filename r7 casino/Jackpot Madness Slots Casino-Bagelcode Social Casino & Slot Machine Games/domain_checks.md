@@ -275,6 +275,7 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+| Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -309,7 +310,6 @@
 | SOCRadar | Unrated |
 | URLQuery | Unrated |
 | VIPRE | Unrated |
-| Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | Url not found |
@@ -417,7 +417,7 @@
 | Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | AccessDenied Access Denied XTBR4S2185E1C3RR BEgLNHRgxFwFYSBhs2U6A2fNLySlP9jL78ngvPPYQGG2D1FLRTH75My/eEDzA7rwDL189laWcW+K8gzxpGnsVBXAne1B2RTB |
+| Что выводит (кратко) | AccessDenied Access Denied FWA20C635G9DRRP5 HNjwzE7kAWTBOBlXNqHTsQj5zy17n7M5SQr1/kxRtSAexyYLrSYuaH/tdpV2mwaklB1xXGnYsB645lq/NsN8n6BxRBxQgJhP |
 | Где припаркован | нет данных |
 
 ## Проверка домена: chat-prod.slots4.bagelgames.com

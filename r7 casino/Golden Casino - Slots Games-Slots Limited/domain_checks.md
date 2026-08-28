@@ -324,6 +324,7 @@
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
+<<<<<<< HEAD
 | Что выводит (кратко) | title: SurveyMonkey 404. SurveyMonkey 404 We're sorry! We can't find the page you&#39;re looking for. Please check the URL you entered to make sure it&#39;s spelled correctly. Still not sure how to get to the page you want? Maybe we can help you find your way: Want to create your own survey? Sign Up FREE |
 | Где припаркован | регистратор: MarkMonitor Inc. |
 
@@ -746,3 +747,7 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | {"timestamp":"2026-08-28T12:11:45.279+0000","status":404,"error":"Not Found","message":"Not Found","path":"/"} |
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
+=======
+| Что выводит (кратко) | title: SurveyMonkey 404. SurveyMonkey 404 We're sorry! We can't find the page you're looking for. Please check the URL you entered to make sure it's spelled correctly. Still not sure how to get to the page you want? Maybe we can help you find your way: Want to create your own survey? Sign Up FREE |
+| Где припаркован | регистратор: MarkMonitor Inc. |
+>>>>>>> origin/main

@@ -419,6 +419,7 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story FAQ Members Organizat |
 | Где припаркован | регистратор: Squarespace Domains II LLC |
+<<<<<<< HEAD
 
 ## Проверка домена: api.bidmachine.io
 
@@ -839,3 +840,5 @@
 | Куда редиректит | нет (DNS не резолвится) |
 | Что выводит (кратко) | нет (DNS не резолвится) |
 | Где припаркован | нет данных |
+=======
+>>>>>>> origin/main

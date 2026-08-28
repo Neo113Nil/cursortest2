@@ -1,9 +1,14 @@
 {
+<<<<<<< HEAD
   "all_custom_domains": [
+=======
+  "suspicious_domains": [
+>>>>>>> origin/main
     "aihelp.net",
     "androidignite.onelink.me",
     "aomedia.org",
     "astat.bugly.cros.wr.pvp.net",
+<<<<<<< HEAD
     "cdn.aihelp.net",
     "chartboo.st",
     "cloud.cpatrk.net",
@@ -462,6 +467,14 @@
       "final_url": "https://aihelp.net/",
       "http_status": 200,
       "table_rows": [
+=======
+    "cdn.aihelp.net"
+  ],
+  "checks": [
+    {
+      "domain": "aihelp.net",
+      "rows": [
+>>>>>>> origin/main
         {
           "param": "Домен",
           "value": "aihelp.net"
@@ -848,7 +861,11 @@
         },
         {
           "param": "Что выводит (кратко)",
+<<<<<<< HEAD
           "value": "title: Customer Service Support and In App Ticketing System | AIHelp. Customer Service Support and In App Ticketing System | AIHelp --> --> x x AIHelp Features Pricing Customers Developers Company Blog --> Get Free Trial AIHelp M Features Pricing Customers Developers Company Blog --> Get Free Trial Maximize your return using THE BEST AI services of"
+=======
+          "value": "title: Customer Service Support and In App Ticketing System \\"
+>>>>>>> origin/main
         },
         {
           "param": "Где припаркован",
@@ -858,6 +875,7 @@
     },
     {
       "domain": "androidignite.onelink.me",
+<<<<<<< HEAD
       "virustotal": {
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/androidignite.onelink.me",
@@ -1278,11 +1296,15 @@
       "final_url": "https://androidignite.onelink.me/",
       "http_status": 403,
       "table_rows": [
+=======
+      "rows": [
+>>>>>>> origin/main
         {
           "param": "Домен",
           "value": "androidignite.onelink.me"
         },
         {
+<<<<<<< HEAD
           "param": "VirusTotal URL",
           "value": "https://www.virustotal.com/gui/domain/androidignite.onelink.me"
         },
@@ -1657,6 +1679,10 @@
         {
           "param": "ZeroFox",
           "value": "Unrated"
+=======
+          "param": "VirusTotal",
+          "value": "ошибка: домен не найден в VirusTotal"
+>>>>>>> origin/main
         },
         {
           "param": "Куда редиректит",
@@ -1668,12 +1694,17 @@
         },
         {
           "param": "Где припаркован",
+<<<<<<< HEAD
           "value": "регистратор: GANDI SAS"
+=======
+          "value": "нет"
+>>>>>>> origin/main
         }
       ]
     },
     {
       "domain": "aomedia.org",
+<<<<<<< HEAD
       "virustotal": {
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/aomedia.org",
@@ -2108,6 +2139,9 @@
       "final_url": "https://aomedia.org/",
       "http_status": 200,
       "table_rows": [
+=======
+      "rows": [
+>>>>>>> origin/main
         {
           "param": "Домен",
           "value": "aomedia.org"
@@ -2504,6 +2538,7 @@
     },
     {
       "domain": "astat.bugly.cros.wr.pvp.net",
+<<<<<<< HEAD
       "virustotal": {
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/astat.bugly.cros.wr.pvp.net",
@@ -2928,6 +2963,9 @@
       "final_url": "https://astat.bugly.cros.wr.pvp.net/",
       "http_status": 200,
       "table_rows": [
+=======
+      "rows": [
+>>>>>>> origin/main
         {
           "param": "Домен",
           "value": "astat.bugly.cros.wr.pvp.net"
@@ -3324,6 +3362,7 @@
     },
     {
       "domain": "cdn.aihelp.net",
+<<<<<<< HEAD
       "virustotal": {
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/cdn.aihelp.net",
@@ -3753,6 +3792,9 @@
       "final_url": "https://cdn.aihelp.net/hc/",
       "http_status": 200,
       "table_rows": [
+=======
+      "rows": [
+>>>>>>> origin/main
         {
           "param": "Домен",
           "value": "cdn.aihelp.net"
@@ -4135,17 +4177,26 @@
         },
         {
           "param": "Куда редиректит",
+<<<<<<< HEAD
           "value": "https://cdn.aihelp.net/hc → http://cdn.aihelp.net/hc/ → https://cdn.aihelp.net/hc/"
         },
         {
           "param": "Что выводит (кратко)",
           "value": "title: AIHelp Web Portal. AIHelp Web Portal Loading content... {{ $t('common.aihelp_faq_feedback_thanks') }}"
+=======
+          "value": "https://cdn.aihelp.net/hc/"
+        },
+        {
+          "param": "Что выводит (кратко)",
+          "value": "title: AIHelp Web Portal. AIHelp Web Portal Loading content..."
+>>>>>>> origin/main
         },
         {
           "param": "Где припаркован",
           "value": "регистратор/whois связан с парковкой: godaddy"
         }
       ]
+<<<<<<< HEAD
     },
     {
       "domain": "chartboo.st",
@@ -6622,4 +6673,8 @@
   ],
   "count": 8,
   "vt_configured": true
+=======
+    }
+  ]
+>>>>>>> origin/main
 }

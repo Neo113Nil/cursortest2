@@ -6,5 +6,115 @@
   "url": "https://play.google.com/store/apps/details?id=free.vegas.slots.casino.slot.machines&hl=en&gl=us",
   "released": "Mar 12, 2026",
   "updated": "2026-08-20",
-  "version": "1.3.1"
+  "version": "1.3.1",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Vegas Slots Classic 777 Casino"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.7.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1+"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob, AppLovin, Unity Ads, Vungle, Fyber/DT Exchange, InMobi, Mintegral, Pangle, Moloco, Facebook Audience Network"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Crashlytics, AppsFlyer, Firebase Remote Config"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.FOREGROUND_SERVICE, android.permission.FOREGROUND_SERVICE_DATA_SYNC, android.permission.INTERNET, android.permission.POST_NOTIFICATIONS, android.permission.READ_EXTERNAL_STORAGE, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.VIBRATE, android.permission.WAKE_LOCK, com.amazon.privacypass.ATTEST, com.android.vending.BILLING, com.android.vending.CHECK_LICENSE, com.google.android.c2dm.permission.RECEIVE, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.google.android.gms.permission.AD_ID, com.google.android.providers.gsf.permission.READ_GSERVICES, com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA, com.samsung.android.mapsagent.permission.READ_APP_INFO, free.vegas.slots.casino.slot.machines.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity Engine 6000.0.59f2 / IL2CPP, tinysoft.framework.ads.admob.banner, NoaDebugger, AndroidX (appcompat, browser/customtabs, compose, core, datastore, fragment, lifecycle, room, work, webkit, credentials), Kotlin 2.1+, kotlinx-coroutines, OkHttp3, Okio, Coil, Google Play Services (ads, ads-identifier, auth, games-v2, measurement, appset, location, nearby, fido), Google Play Billing, Play Asset Delivery, Install Referrer, Firebase (analytics, crashlytics, remoteconfig, auth, database, functions, installations, appcheck), AppsFlyer, AppLovin MAX + mediation, Unity Ads, Vungle/Liftoff, Fyber/DT Exchange (inneractive), InMobi, Mintegral (mbridge), Pangle/TikTok, Moloco, Facebook Audience Network, IAB OM SDK, GatewayProtocol, bitter.jnibridge"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "123.com, aomedia.org, api16-access-ttp.tiktokpangle.us, appassets.androidplatform.net, cdn-f.adsmoloco.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "appsflyer-data / appsflyer-purchase-data — атрибуция AppsFlyer; служебные prefs Firebase Remote Config и Google Measurement; Unity PlayerPrefs — локальный прогресс игры"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "casino, slots, offer, landing, redirect, deposit, withdraw, postback, webview, blacklist, whitelist, is_bot, clickid, click_id"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "123.com",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "aomedia.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Squarespace Domains II LLC"
+      },
+      {
+        "domain": "api16-access-ttp.tiktokpangle.us",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Gandi SAS"
+      },
+      {
+        "domain": "appassets.androidplatform.net",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "cdn-f.adsmoloco.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Google Inc."
+      },
+      {
+        "domain": "cdn2.inner-active.mobi",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "compliance.iabtechnologylab.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "crashpad.chromium.org",
+        "redirects_to": "https://chromium.googlesource.com/crashpad/crashpad/+/main/README.md",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }

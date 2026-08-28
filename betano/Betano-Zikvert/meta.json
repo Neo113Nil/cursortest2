@@ -49,5 +49,79 @@
   "stdout": "╭─ com.wincatch.neon ─╮\n│ Betano              │\n│ 1.0  (vc 1)         │\n╰─────────────────────╯\n\nDownloading 4 files  (6.3 MB)\n  com.wincatch.neon-1.apk               ━━━━━━━━ 100% 3.9/3.9   27.8     0:00:00\n                                                      MB        MB/s            \n  com.wincatch.neon-1-config.en.apk     ━━━━━━━━ 100% 70.0/70.0 2.2 MB/s 0:00:00\n                                                      kB                        \n  com.wincatch.neon-1-config.xxhdpi.apk ━━━━━━━━ 100% 91.1/91.1 1.9 MB/s 0:00:00\n                                                      kB                        \n  com.wincatch.neon-1-asset.apk         ━━━━━━━━ 100% 2.5/2.5   13.4     0:00:00\n                                                      MB        MB/s            \n\n                 Downloaded files                  \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                  ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.wincatch.neon-1.apk               │  3.7 MB │\n│ com.wincatch.neon-1-config.en.apk     │ 68.4 KB │\n│ com.wincatch.neon-1-config.xxhdpi.apk │ 88.9 KB │\n│ com.wincatch.neon-1-asset.apk         │  3.7 MB │\n└───────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Betano (в APK: Win Catch)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.7.3"
+      },
+      {
+        "param": "minSdk",
+        "value": "26"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_WIFI_STATE, android.permission.ACCESS_NETWORK_STATE, com.wincatch.neon.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.0.21 / kotlin-stdlib, kotlinx-coroutines 1.7.3, OkHttp 4.12.0, AndroidX (AppCompat 1.7.0, Activity 1.9.3, ConstraintLayout, Core/Core-KTX 1.13.1, Fragment 1.5.4, Lifecycle 2.8.7, Room 2.6.1, RecyclerView 1.3.2, ViewPager2, Emoji2 1.3.0, Startup 1.1.1, ProfileInstaller 1.3.1, CardView 1.0.0, CoordinatorLayout 1.1.0, Transition 1.5.0, Vectordrawable 1.1.0, SavedState 1.2.1, SQLite 2.4.0), Google Material Components 1.12.0, Google Play PairIP (com.pairip.application / com.pairip.licensecheck)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "misty-moon-76b0.sinyavitttsky-s.workers.dev"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "файл cfg, ключ rurl — сохраняет внешнюю ссылку после проверки; при следующем запуске сразу открывает сохранённый адрес; win_catch_progress / win_catch_history / win_catch_settings — прогресс, история и настройки белой игры"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "workers.dev, rurl, status, license check, User-Agent, Accept-Language, X-Device-Model"
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "Имя пакета приложения",
+      "Модель телефона",
+      "Строка user-agent",
+      "Язык в заголовке"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Имя пакета приложения\n• Модель телефона\n• Строка user-agent\n• Язык в заголовке\n\nКак собираются: Сразу после запуска стартового экрана приложение само, без спроса у человека, читает имя своего пакета и модель телефона из системы Android. Отдельного окна с разрешением нет — человек этого обычно не замечает. Строку user-agent приложение берёт через системную настройку браузерного движка телефона (это не показ сайта на экране, а только получение стандартной подписи браузера). В заголовок языка оно подставляет заранее прописанное значение «en-US,en;q=0.9», а не читает текущий язык телефона пользователя. Перед сетью приложение ещё смотрит свою память: если там уже лежит сохранённая внешняя ссылка, новый запрос не делается. Всё это происходит тихо, на фоне стартового экрана.\n\nКуда отправляются: Эти сведения незаметно уходят в интернет на адрес https://misty-moon-76b0.sinyavitttsky-s.workers.dev/?app=com.wincatch.neon. Адрес собран из зашифрованных кусков внутри программы плюс имя пакета после «?app=». Запрос идёт тихо в фоне обычным сетевым клиентом. Это не показ рекламы на экране, а проверка «что показать этому человеку». Запасных адресов в коде не видно — используется один этот шлюз на Cloudflare Workers. Если проверка уже прошла раньше и ссылку сохранили в памяти приложения (файл настроек cfg, ключ rurl), повторный запрос на шлюз не нужен: приложение сразу открывает сохранённый адрес.\n\nКак фильтруются пользователи: На проверку уходят имя пакета, модель телефона, строка user-agent и фиксированный заголовок языка. В самом приложении нет жёсткого списка стран, языков или «белых» устройств — локальных правил «кого пустить» на телефоне не видно. Решение «кому показать внешнюю страницу, а кому оставить обычное приложение» делает сервер. Приложение смотрит только на итоговый адрес после ответа и на наличие подписи «status»:«ok» в тексте ответа. Если итоговый адрес всё ещё содержит workers.dev — считается, что оффер не выдан. Если адрес стал другим (сервер увёл на внешний сайт) — открывают эту ссылку. При ошибке сети или сбое открытия ссылки человеку просто остаётся обычное приложение.…\n\nЧто возвращается: Сервер отвечает текстом. В проверке домена…"
+  }
 }

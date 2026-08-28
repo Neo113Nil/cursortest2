@@ -590,6 +590,7 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+| Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -624,7 +625,6 @@
 | SOCRadar | Unrated |
 | URLQuery | Unrated |
 | VIPRE | Unrated |
-| Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | Url not found |

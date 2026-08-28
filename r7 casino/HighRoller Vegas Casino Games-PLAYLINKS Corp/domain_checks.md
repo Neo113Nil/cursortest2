@@ -590,6 +590,7 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+| Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -624,7 +625,6 @@
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
 | VIPRE | Unrated |
-| Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Moloco. Moloco |
@@ -696,6 +696,7 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+| Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -729,7 +730,6 @@
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
 | VIPRE | Unrated |
-| Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | AccessDenied Access denied. Anonymous caller does not have storage.objects.list access to the Google Cloud Storage bucket. Permission 'storage.objects.list' denied on resource '//storage.googleapis.com/projects/_/buckets/gcs-exchange-public-useast1-prod' (or it may not exist). |

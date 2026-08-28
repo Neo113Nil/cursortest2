@@ -1245,23 +1245,23 @@
           "Cisco Umbrella: 737647"
         ],
         "creation_date": 1127809025,
-        "last_modification_date": 1787916136,
-        "last_analysis_date": 1787913863,
+        "last_modification_date": 1787937287,
+        "last_analysis_date": 1787936980,
         "registrar": "MarkMonitor Inc.",
         "whois": "Creation Date: 2005-09-27T08:17:05+0000\nCreation Date: 2005-09-27T08:17:05Z\nDNSSEC: unsigned\nDomain Name: SURVEYMONKEY.NET\nDomain Name: surveymonkey.net\nDomain Status: clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: NS-1016.AWSDNS-63.NET\nName Server: NS-1432.AWSDNS-51.ORG\nName Server: NS-1984.AWSDNS-56.CO.UK\nName Server: NS-89.AWSDNS-11.COM\nName Server: ns-1016.awsdns-63.net\nName Server: ns-1432.awsdns-51.org\nName Server: ns-1984.awsdns-56.co.uk\nName Server: ns-89.awsdns-11.com\nRegistrant Country: US\nRegistrant Email: 7b481434e81e08eas@\nRegistrant Organization: 23058cd63d80f955\nRegistrar Abuse Contact Email: abusecomplaints@markmonitor.com\nRegistrar Abuse Contact Phone: +1.2086851750\nRegistrar Abuse Contact: https://corp.markmonitor.com/domain/ui/abuse-report\nRegistrar IANA ID: 292\nRegistrar Registration Expiration Date: 2028-09-27T00:00:00+0000\nRegistrar URL: http://www.markmonitor.com\nRegistrar WHOIS Server: whois.markmonitor.com\nRegistrar: MarkMonitor Inc.\nRegistrar: MarkMonitor, Inc.\nRegistry Domain ID: 217772110_DOMAIN_NET-VRSN\nRegistry Expiry Date: 2028-09-27T08:17:05Z\nUpdated Date: 2026-08-26T09:01:58+0000\nUpdated Date: 2026-08-26T09:01:58Z",
         "dns_records": [
-          "SOA ns-39.awsdns-04.com",
           "A 18.238.176.39",
-          "CNAME d3f7ctr6bh2vq6.cloudfront.net",
-          "A 18.238.176.94",
-          "A 18.238.176.96",
-          "NS ns-1676.awsdns-17.co.uk",
-          "NS ns-39.awsdns-04.com",
-          "CNAME d3f7ctr6bh2vq6.cloudfront.net",
-          "NS ns-681.awsdns-21.net",
-          "A 18.238.176.8",
           "CNAME g-sm-prod-cloudeng-frontdoor.svmkinfra.com",
-          "NS ns-1511.awsdns-60.org"
+          "CNAME d3f7ctr6bh2vq6.cloudfront.net",
+          "NS ns-39.awsdns-04.com",
+          "CNAME g-sm-prod-cloudeng-frontdoor.svmkinfra.com",
+          "A 18.238.176.96",
+          "SOA ns-39.awsdns-04.com",
+          "NS ns-1511.awsdns-60.org",
+          "NS ns-681.awsdns-21.net",
+          "A 18.238.176.94",
+          "CNAME d3f7ctr6bh2vq6.cloudfront.net",
+          "A 18.238.176.8"
         ],
         "https_subject": {
           "CN": "surveymonkey.com"
@@ -1691,8 +1691,8 @@
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
-          "undetected": 34,
-          "harmless": 57,
+          "undetected": 33,
+          "harmless": 58,
           "timeout": 0
         },
         "vendor_rows": [
@@ -1917,6 +1917,10 @@
             "Clean"
           ],
           [
+            "Xcitium Verdict Cloud",
+            "Clean"
+          ],
+          [
             "Yandex Safebrowsing",
             "Clean"
           ],
@@ -2053,10 +2057,6 @@
             "Unrated"
           ],
           [
-            "Xcitium Verdict Cloud",
-            "Unrated"
-          ],
-          [
             "ZeroFox",
             "Unrated"
           ]
@@ -2069,11 +2069,11 @@
         "categories": {},
         "popularity_ranks": [
           "Majestic: 281323",
-          "Cisco Umbrella: 17904"
+          "Cisco Umbrella: 18150"
         ],
         "creation_date": 1337869570,
-        "last_modification_date": 1787916273,
-        "last_analysis_date": 1787914164,
+        "last_modification_date": 1787938286,
+        "last_analysis_date": 1787917796,
         "registrar": "united-domains GmbH",
         "whois": "Admin City: REDACTED\nAdmin Country: REDACTED\nAdmin Organization: REDACTED\nAdmin Postal Code: REDACTED\nAdmin State/Province: REDACTED\nCreation Date: 2012-05-24T14:26:10Z\nDNSSEC: unsigned\nDomain Name: adjust.io\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: dns1.p08.nsone.net\nName Server: dns2.p08.nsone.net\nName Server: dns3.p08.nsone.net\nName Server: dns4.p08.nsone.net\nRegistrant City: 3495bcf1839c6374\nRegistrant Country: DE\nRegistrant Email: fb6ff66ef97c0518s@\nRegistrant Fax Ext: 3495bcf1839c6374\nRegistrant Fax: 3495bcf1839c6374\nRegistrant Name: 3495bcf1839c6374\nRegistrant Organization: c89fbc069a3d47db\nRegistrant Phone Ext: 3495bcf1839c6374\nRegistrant Phone: 3495bcf1839c6374\nRegistrant Postal Code: 3495bcf1839c6374\nRegistrant State/Province: 3432650ec337c945\nRegistrant Street: 3495bcf1839c6374\nRegistrar Abuse Contact Email: abuse@united-domains.de\nRegistrar Abuse Contact Phone: +49.8151368670\nRegistrar IANA ID: 1408\nRegistrar URL: http://www.united-domains.de\nRegistrar WHOIS Server: whois.udag.net\nRegistrar: united-domains GmbH\nRegistry Admin ID: REDACTED\nRegistry Domain ID: REDACTED\nRegistry Expiry Date: 2027-05-24T14:26:10Z\nRegistry Registrant ID: REDACTED\nRegistry Tech ID: REDACTED\nTech City: REDACTED\nTech Country: REDACTED\nTech Organization: REDACTED\nTech Postal Code: REDACTED\nTech State/Province: REDACTED\nUpdated Date: 2026-07-08T14:26:22Z",
         "dns_records": [
@@ -2345,6 +2345,10 @@
           "value": "Clean"
         },
         {
+          "param": "Xcitium Verdict Cloud",
+          "value": "Clean"
+        },
+        {
           "param": "Yandex Safebrowsing",
           "value": "Clean"
         },
@@ -2478,10 +2482,6 @@
         },
         {
           "param": "VIPRE",
-          "value": "Unrated"
-        },
-        {
-          "param": "Xcitium Verdict Cloud",
           "value": "Unrated"
         },
         {
@@ -2888,19 +2888,19 @@
         },
         "categories": {},
         "popularity_ranks": [
-          "Cisco Umbrella: 5367",
+          "Cisco Umbrella: 5352",
           "Majestic: 2360"
         ],
         "creation_date": 1548201600,
-        "last_modification_date": 1787916256,
-        "last_analysis_date": 1787914450,
+        "last_modification_date": 1787936309,
+        "last_analysis_date": 1787935762,
         "registrar": "нет",
         "whois": "Billing country: United States\nBilling email: 53d8147c627f0cces@webflow.com\nCreate date: 2019-01-23 00:00:00\nDomain name: website-files.com\nDomain registrar id: 292.0\nDomain registrar url: whois.markmonitor.com\nExpiry date: 2027-01-23 00:00:00\nName server 1: titan.ns.cloudflare.com\nName server 2: stevie.ns.cloudflare.com\nQuery time: 2025-12-25 02:12:19\nRegistrant address: b947a943091c5335\nRegistrant city: bf539c4f17ec5f2d\nRegistrant company: 93c8dbc48690f586\nRegistrant country: United States\nRegistrant email: 53d8147c627f0cces@webflow.com\nRegistrant name: 1f33d7151e7ebf55\nRegistrant phone: 6c74caaacb7c5797\nRegistrant state: 77ab92f1911d7c5f\nRegistrant zip: eff1ab11fdc42fcb\nTechnical country: United States\nTechnical email: 53d8147c627f0cces@webflow.com\nUpdate date: 2025-12-22 00:00:00",
         "dns_records": [
-          "A 104.18.160.117",
-          "AAAA 2606:4700::6812:a175",
           "AAAA 2606:4700::6812:a075",
-          "A 104.18.161.117"
+          "A 104.18.161.117",
+          "A 104.18.160.117",
+          "AAAA 2606:4700::6812:a175"
         ],
         "https_subject": {
           "CN": "prod.website-files.com"
@@ -2922,7 +2922,7 @@
       "redirect_chain": [
         "https://cdn.prod.website-files.com/"
       ],
-      "page_output": "AccessDenied Access Denied XTBR4S2185E1C3RR BEgLNHRgxFwFYSBhs2U6A2fNLySlP9jL78ngvPPYQGG2D1FLRTH75My/eEDzA7rwDL189laWcW+K8gzxpGnsVBXAne1B2RTB",
+      "page_output": "AccessDenied Access Denied FWA20C635G9DRRP5 HNjwzE7kAWTBOBlXNqHTsQj5zy17n7M5SQr1/kxRtSAexyYLrSYuaH/tdpV2mwaklB1xXGnYsB645lq/NsN8n6BxRBxQgJhP",
       "parked_at": "нет данных",
       "final_url": "https://cdn.prod.website-files.com/",
       "http_status": 403,
@@ -3313,7 +3313,7 @@
         },
         {
           "param": "Что выводит (кратко)",
-          "value": "AccessDenied Access Denied XTBR4S2185E1C3RR BEgLNHRgxFwFYSBhs2U6A2fNLySlP9jL78ngvPPYQGG2D1FLRTH75My/eEDzA7rwDL189laWcW+K8gzxpGnsVBXAne1B2RTB"
+          "value": "AccessDenied Access Denied FWA20C635G9DRRP5 HNjwzE7kAWTBOBlXNqHTsQj5zy17n7M5SQr1/kxRtSAexyYLrSYuaH/tdpV2mwaklB1xXGnYsB645lq/NsN8n6BxRBxQgJhP"
         },
         {
           "param": "Где припаркован",
@@ -3710,13 +3710,13 @@
           "Cisco Umbrella: 809727"
         ],
         "creation_date": 1536737567,
-        "last_modification_date": 1787040890,
-        "last_analysis_date": 1787040137,
+        "last_modification_date": 1787936842,
+        "last_analysis_date": 1787936530,
         "registrar": "Amazon Registrar, Inc.",
         "whois": "Admin City: Alexandria\nAdmin Country: US\nAdmin Email: 670adf676d78e02cs@bagelgames.com.whoisproxy.org\nAdmin Organization: c/o whoisproxy.com\nAdmin Postal Code: 22314\nAdmin State/Province: VA\nBilling City: Alexandria\nBilling Country: US\nBilling Email: f8464a8ba88a6d7fs@bagelgames.com.whoisproxy.org\nBilling Organization: c/o whoisproxy.com\nBilling Postal Code: 22314\nBilling State/Province: VA\nCreation Date: 2018-09-12T07:32:47Z\nDNSSEC: unsigned\nDomain Name: BAGELGAMES.COM\nDomain Name: bagelgames.com\nDomain Status: ok https://icann.org/epp#ok\nName Server: NS-1384.AWSDNS-45.ORG\nName Server: NS-1739.AWSDNS-25.CO.UK\nName Server: NS-811.AWSDNS-37.NET\nName Server: NS-99.AWSDNS-12.COM\nName Server: ns-1384.awsdns-45.org\nName Server: ns-1739.awsdns-25.co.uk\nName Server: ns-811.awsdns-37.net\nName Server: ns-99.awsdns-12.com\nRegistrant City: 476ffb42e8723566\nRegistrant Country: US\nRegistrant Email: 06ae5fbd9fa9cc1as@bagelgames.com.whoisproxy.org\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 3432650ec337c945\nRegistrant Name: 0678ee1c84416776\nRegistrant Organization: 8e1838cb7004a438\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: 64d13e3464553026\nRegistrant Postal Code: 6be8de69277f8f13\nRegistrant State/Province: 5aaf24d1828ccd0b\nRegistrant Street: 9f000467f4d32ad5\nRegistrar Abuse Contact Email: trustandsafety@support.aws.com\nRegistrar Abuse Contact Phone: +1.2024422253\nRegistrar IANA ID: 468\nRegistrar Registration Expiration Date: 2028-09-12T07:32:47Z\nRegistrar URL: http://registrar.amazon.com\nRegistrar WHOIS Server: whois.registrar.amazon\nRegistrar: Amazon Registrar, Inc.\nRegistry Admin ID: Not Available From Registry\nRegistry Billing ID: Not Available From Registry\nRegistry Domain ID: 2309072368_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2028-09-12T07:32:47Z\nRegistry Registrant ID: Not Available From Registry\nRegistry Tech ID: Not Available From Registry\nTech City: Alexandria\nTech Country: US\nTech Email: 739fbee3c3d92251s@bagelgames.com.whoisproxy.org\nTech Organization: c/o whoisproxy.com\nTech Postal Code: 22314\nTech State/Province: VA\nUpdated Date: 2022-11-17T20:28:03Z",
         "dns_records": [
-          "A 35.80.222.29",
-          "A 32.187.159.59"
+          "A 32.187.119.198",
+          "A 52.34.171.173"
         ],
         "https_subject": {
           "CN": "*.slots4.bagelgames.com"
@@ -5330,19 +5330,19 @@
         "categories": {},
         "popularity_ranks": "нет",
         "creation_date": 1547669556,
-        "last_modification_date": 1787851817,
-        "last_analysis_date": 1787850810,
+        "last_modification_date": 1787925473,
+        "last_analysis_date": 1787924456,
         "registrar": "MarkMonitor Inc.",
         "whois": "Admin City: REDACTED FOR PRIVACY\nAdmin Country: REDACTED FOR PRIVACY\nAdmin Organization: REDACTED FOR PRIVACY\nAdmin Postal Code: REDACTED FOR PRIVACY\nAdmin State/Province: REDACTED FOR PRIVACY\nBilling City: REDACTED FOR PRIVACY\nBilling Country: REDACTED FOR PRIVACY\nBilling Organization: REDACTED FOR PRIVACY\nBilling Postal Code: REDACTED FOR PRIVACY\nBilling State/Province: REDACTED FOR PRIVACY\nCreation Date: 2019-01-16T20:12:36Z\nDNSSEC: unsigned\nDomain Name: chrome.dev\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: ns1.googledomains.com\nName Server: ns2.googledomains.com\nName Server: ns3.googledomains.com\nName Server: ns4.googledomains.com\nRegistrant City: 1f8f4166599d23ee\nRegistrant Country: US\nRegistrant Email: d807ea723facd141s@\nRegistrant Fax: 1f8f4166599d23ee\nRegistrant Name: 1f8f4166599d23ee\nRegistrant Organization: 3307059bbb3149c4\nRegistrant Phone: 1f8f4166599d23ee\nRegistrant Postal Code: 1f8f4166599d23ee\nRegistrant State/Province: b1952dfc047df18a\nRegistrant Street: 1f8f4166599d23ee\nRegistrar Abuse Contact Email: abusecomplaints@markmonitor.com\nRegistrar Abuse Contact Phone: +1.2083895740\nRegistrar IANA ID: 292\nRegistrar URL: http://www.markmonitor.com\nRegistrar WHOIS Server: whois.nic.google\nRegistrar: MarkMonitor Inc.\nRegistry Admin ID: REDACTED FOR PRIVACY\nRegistry Billing ID: REDACTED FOR PRIVACY\nRegistry Domain ID: 30718AF2B-DEV\nRegistry Expiry Date: 2026-01-16T20:12:36Z\nRegistry Registrant ID: REDACTED FOR PRIVACY\nRegistry Tech ID: REDACTED FOR PRIVACY\nTech City: REDACTED FOR PRIVACY\nTech Country: REDACTED FOR PRIVACY\nTech Organization: REDACTED FOR PRIVACY\nTech Postal Code: REDACTED FOR PRIVACY\nTech State/Province: REDACTED FOR PRIVACY\nUpdated Date: 2024-12-20T10:29:49Z",
         "dns_records": [
+          "AAAA 2001:4860:4802:38::15",
           "A 216.239.34.21",
           "AAAA 2001:4860:4802:36::15",
           "A 216.239.36.21",
-          "AAAA 2001:4860:4802:32::15",
-          "AAAA 2001:4860:4802:38::15",
           "A 216.239.38.21",
-          "AAAA 2001:4860:4802:34::15",
-          "A 216.239.32.21"
+          "AAAA 2001:4860:4802:32::15",
+          "A 216.239.32.21",
+          "AAAA 2001:4860:4802:34::15"
         ],
         "https_subject": "нет",
         "https_issuer": "нет",

@@ -112,6 +112,7 @@
 | Параметр / движок | Значение / вердикт |
 |---|---|
 | Домен | androidignite.onelink.me |
+<<<<<<< HEAD
 | VirusTotal URL | https://www.virustotal.com/gui/domain/androidignite.onelink.me |
 | Детекции | 0/91 (malicious=0, suspicious=0) |
 | Security vendors' analysis | ниже построчно, как на VirusTotal |
@@ -209,6 +210,12 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | MissingKey Missing Key-Pair-Id query parameter or cookie value |
 | Где припаркован | регистратор: GANDI SAS |
+=======
+| VirusTotal | ошибка: домен не найден в VirusTotal |
+| Куда редиректит | нет (без редиректа) |
+| Что выводит (кратко) | MissingKey Missing Key-Pair-Id query parameter or cookie value |
+| Где припаркован | нет |
+>>>>>>> origin/main
 
 ## Проверка домена: aomedia.org
 
@@ -521,6 +528,7 @@
 | VIPRE | Unrated |
 | Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
+<<<<<<< HEAD
 | Куда редиректит | https://cdn.aihelp.net/hc → http://cdn.aihelp.net/hc/ → https://cdn.aihelp.net/hc/ |
 | Что выводит (кратко) | title: AIHelp Web Portal. AIHelp Web Portal Loading content... {{ $t('common.aihelp_faq_feedback_thanks') }} |
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
@@ -839,3 +847,8 @@
 | Куда редиректит | https://one.one.one.one/dns/ |
 | Что выводит (кратко) | title: 1.1.1.1 — One of the Internet’s Fastest, Privacy-First DNS Resolver. 1.1.1.1 — One of the Internet’s Fastest, Privacy-First DNS Resolver 1.1.1.1 DNS Families English Bahasa Indonesia Deutsch Español Français Italiano Nederlands Polski Português Türkçe العربية فارسی עברית 日本語 한국어 Русский Українська 简体中文 繁體中文 You are one step away from browsing a fa |
 | Где припаркован | регистратор: Cloudflare, Inc. |
+=======
+| Куда редиректит | https://cdn.aihelp.net/hc/ |
+| Что выводит (кратко) | title: AIHelp Web Portal. AIHelp Web Portal Loading content... |
+| Где припаркован | регистратор/whois связан с парковкой: godaddy |
+>>>>>>> origin/main

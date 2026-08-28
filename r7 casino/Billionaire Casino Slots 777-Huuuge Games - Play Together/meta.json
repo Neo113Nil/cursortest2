@@ -6,5 +6,115 @@
   "url": "https://play.google.com/store/apps/details?id=com.huuuge.casino.texas&hl=en&gl=us",
   "released": "Oct 19, 2016",
   "updated": "2026-08-17",
-  "version": "12.08.27100"
+  "version": "12.08.27100",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Billionaire Casino Slots 777 (label в APK: Billionaire Casino)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.7.3"
+      },
+      {
+        "param": "minSdk",
+        "value": "23"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.2.20"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob (Google Mobile Ads), Huuuge HADS (собственная сеть, hads.huuuge.net)"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Huuuge Analytics, Firebase Analytics, AppsFlyer, Sentry, Datadog RUM, Braze, Intercom, Facebook App Events"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.WAKE_LOCK, android.permission.INTERNET, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.VIBRATE, android.permission.ACCESS_WIFI_STATE, android.permission.ACCESS_NETWORK_STATE, android.permission.POST_NOTIFICATIONS, android.permission.READ_EXTERNAL_STORAGE, android.permission.RECORD_AUDIO, android.permission.READ_PHONE_STATE, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE, android.permission.FOREGROUND_SERVICE, com.android.vending.BILLING, com.google.android.c2dm.permission.RECEIVE, com.google.android.gms.permission.AD_ID, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.google.android.providers.gsf.permission.READ_GSERVICES, com.samsung.android.mapsagent.permission.READ_APP_INFO, com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA, com.huuuge.casino.texas.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "собственный движок ClawApp (libClawApp.so, C++ / Lua), libHadsSDK.so (собственная рекламная сеть Huuuge), Spine (spine-cpp 3.7 / 4.1 / 4.2), Google Protobuf 2.6.1, mp4parser (isoparser 1.9.56), AndroidX (appcompat, browser/customtabs, compose, core, credentials, datastore, media3, navigation, preference, privacysandbox-ads, profileinstaller, room, security, startup, webkit, window, work), Kotlin 2.2.20, kotlinx-coroutines, kotlinx-serialization, OkHttp3, Okio, Retrofit2 (+ jakewharton kotlinx converter), Coil, Glide (com.bumptech), Gson, ZXing, Google Play Services (ads, ads-identifier, appset, auth, cloudmessaging, fido, location, measurement, recaptcha, signin, stats), Google Play Billing 8.3.0, Google Play Core (review 2.0.2, age-signals 0.0.3, integrity), Play Install Referrer, Google User Messaging Platform 3.2.0, Firebase (analytics, auth, messaging, installations, appcheck, datatransport), AppsFlyer, Facebook SDK (login, share, app events), Braze SDK, Intercom SDK, Sentry (Android + NDK), Datadog (RUM, logs, NDK), Usercentrics SDK + UI, AppAuth (net.openid.appauth), Amazon A3L Authentication, Lyft Kronos, AspectJ runtime, Google Material Components, Flexbox, slf4j, org.chrom…"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "aggregator.eu.usercentrics.eu, aggregator.service.usercentrics.eu, aomedia.org, api.usercentrics.eu"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "hg_notifications_prefs — токены пуш-уведомлений, идентификаторы трекинга уведомлений, путь к звуку и флаг вибрации; файл настроек по умолчанию com.huuuge.casino.texas_preferences — флаги согласий GDPR, строка согласия IABTCF_TCString от Usercentrics и af_token для отписочного трекинга AppsFlyer; instantAppPrefs — флаг instantAppFinished; служебные prefs Braze, Intercom, Facebook, Firebase/Google Measurement и admob"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "casino, slots, poker, roulette, betting, jackpot, offer, payout, deposit, redirect, bot, webview, bridge"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "aggregator.eu.usercentrics.eu",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "aggregator.service.usercentrics.eu",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "aomedia.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Squarespace Domains II LLC"
+      },
+      {
+        "domain": "api.usercentrics.eu",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "app.eu.usercentrics.eu",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "app.usercentrics.eu",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "billionairecasino.onelink.me",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: GANDI SAS"
+      },
+      {
+        "domain": "braze.com",
+        "redirects_to": "https://www.braze.com/",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }
