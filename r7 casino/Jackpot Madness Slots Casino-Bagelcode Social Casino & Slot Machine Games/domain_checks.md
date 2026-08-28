@@ -207,7 +207,11 @@
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
+<<<<<<< HEAD
 | Что выводит (кратко) | title: SurveyMonkey 404. SurveyMonkey 404 We're sorry! We can't find the page you&#39;re looking for. Please check the URL you entered to make sure it&#39;s spelled correctly. Still not sure how to get to the page you want? Maybe we can help you find your way: Want to create your own survey? Sign Up FREE |
+=======
+| Что выводит (кратко) | title: SurveyMonkey 404. SurveyMonkey 404 We're sorry! We can't find the page you're looking for. Please check the URL you entered to make sure it's spelled correctly. Still not sure how to get to the page you want? Maybe we can help you find your way: Want to create your own survey? Sign Up FREE |
+>>>>>>> origin/main
 | Где припаркован | регистратор: MarkMonitor Inc. |
 
 ## Проверка домена: app.adjust.io
@@ -234,6 +238,10 @@
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
+<<<<<<< HEAD
+=======
+| Criminal IP | Clean |
+>>>>>>> origin/main
 | CTX AI | Clean |
 | Cyble | Clean |
 | CyRadar | Clean |
@@ -274,7 +282,10 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+<<<<<<< HEAD
 | Xcitium Verdict Cloud | Clean |
+=======
+>>>>>>> origin/main
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -286,7 +297,10 @@
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
 | Cluster25 | Unrated |
+<<<<<<< HEAD
 | Criminal IP | Unrated |
+=======
+>>>>>>> origin/main
 | CSIS Security Group | Unrated |
 | Cyan | Unrated |
 | DNS8 | Unrated |
@@ -310,6 +324,10 @@
 | SOCRadar | Unrated |
 | URLQuery | Unrated |
 | VIPRE | Unrated |
+<<<<<<< HEAD
+=======
+| Xcitium Verdict Cloud | Unrated |
+>>>>>>> origin/main
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | Url not found |
@@ -325,6 +343,10 @@
 | VirusTotal URL | https://www.virustotal.com/gui/domain/cdn.prod.website-files.com |
 | Детекции | 0/91 (malicious=0, suspicious=0) |
 | Security vendors' analysis | ниже построчно, как на VirusTotal |
+<<<<<<< HEAD
+=======
+| Chong Lua Dao | Unrated |
+>>>>>>> origin/main
 | Abusix | Clean |
 | Acronis | Clean |
 | ADMINUSLabs | Clean |
@@ -335,7 +357,10 @@
 | BitDefender | Clean |
 | Blueliv | Clean |
 | Certego | Clean |
+<<<<<<< HEAD
 | Chong Lua Dao | Clean |
+=======
+>>>>>>> origin/main
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
@@ -484,7 +509,10 @@
 | VX Vault | Clean |
 | Webroot | Clean |
 | Yandex Safebrowsing | Clean |
+<<<<<<< HEAD
 | ZeroCERT | Clean |
+=======
+>>>>>>> origin/main
 | 0xSI_f33d | Unrated |
 | alphaMountain.ai | Unrated |
 | AlphaSOC | Unrated |
@@ -520,17 +548,28 @@
 | URLQuery | Unrated |
 | VIPRE | Unrated |
 | Xcitium Verdict Cloud | Unrated |
+<<<<<<< HEAD
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Error. Error Cannot GET / |
 | Где припаркован | регистратор: Amazon Registrar, Inc. |
 
 ## Проверка домена: cncn.ssacdn.com
+=======
+| ZeroCERT | Unrated |
+| ZeroFox | Unrated |
+| Куда редиректит | нет (без редиректа) |
+| Что выводит (кратко) | title: Error. Cannot GET / |
+| Где припаркован | регистратор: Amazon Registrar, Inc. |
+
+## Проверка домена: logic-prod.slots4.bagelgames.com
+>>>>>>> origin/main
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
 
 | Параметр / движок | Значение / вердикт |
 |---|---|
+<<<<<<< HEAD
 | Домен | cncn.ssacdn.com |
 | VirusTotal URL | https://www.virustotal.com/gui/domain/cncn.ssacdn.com |
 | Детекции | 0/91 (malicious=0, suspicious=0) |
@@ -638,6 +677,10 @@
 |---|---|
 | Домен | com.chrome.dev |
 | VirusTotal URL | https://www.virustotal.com/gui/domain/com.chrome.dev |
+=======
+| Домен | logic-prod.slots4.bagelgames.com |
+| VirusTotal URL | https://www.virustotal.com/gui/domain/logic-prod.slots4.bagelgames.com |
+>>>>>>> origin/main
 | Детекции | 0/91 (malicious=0, suspicious=0) |
 | Security vendors' analysis | ниже построчно, как на VirusTotal |
 | Abusix | Clean |
@@ -651,6 +694,7 @@
 | Certego | Clean |
 | Chong Lua Dao | Clean |
 | CINS Army | Clean |
+<<<<<<< HEAD
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
 | Criminal IP | Clean |
@@ -759,10 +803,18 @@
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
+=======
+| CRDF | Clean |
+| Criminal IP | Clean |
+>>>>>>> origin/main
 | CTX AI | Clean |
 | Cyble | Clean |
 | CyRadar | Clean |
 | desenmascara.me | Clean |
+<<<<<<< HEAD
+=======
+| DNS8 | Clean |
+>>>>>>> origin/main
 | Dr.Web | Clean |
 | EmergingThreats | Clean |
 | Emsisoft | Clean |
@@ -776,7 +828,10 @@
 | Heimdal Security | Clean |
 | IPsum | Clean |
 | Juniper Networks | Clean |
+<<<<<<< HEAD
 | Kaspersky | Clean |
+=======
+>>>>>>> origin/main
 | LevelBlue | Clean |
 | Lionic | Clean |
 | Malwared | Clean |
@@ -799,10 +854,16 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+<<<<<<< HEAD
 | Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
+=======
+| Yandex Safebrowsing | Clean |
+| 0xSI_f33d | Unrated |
+| alphaMountain.ai | Unrated |
+>>>>>>> origin/main
 | AlphaSOC | Unrated |
 | ArcSight Threat Intelligence | Unrated |
 | AutoShun | Unrated |
@@ -811,10 +872,16 @@
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
 | Cluster25 | Unrated |
+<<<<<<< HEAD
 | Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
 | Cyan | Unrated |
 | DNS8 | Unrated |
+=======
+| CMC Threat Intelligence | Unrated |
+| CSIS Security Group | Unrated |
+| Cyan | Unrated |
+>>>>>>> origin/main
 | Ermes | Unrated |
 | Fortra | Unrated |
 | GCP Abuse Intelligence | Unrated |
@@ -822,6 +889,10 @@
 | Gridinsoft | Unrated |
 | Guardpot | Unrated |
 | Hunt.io Intelligence | Unrated |
+<<<<<<< HEAD
+=======
+| Kaspersky | Unrated |
+>>>>>>> origin/main
 | Lumu | Unrated |
 | MalwareURL | Unrated |
 | Mimecast | Unrated |
@@ -835,7 +906,16 @@
 | SOCRadar | Unrated |
 | URLQuery | Unrated |
 | VIPRE | Unrated |
+<<<<<<< HEAD
 | ZeroFox | Unrated |
 | Куда редиректит | https://config.ru/en/ |
 | Что выводит (кратко) | title: config.ru is for sale. config.ru is for sale en ru en config.ru This domain is for sale The domain is actually the site name and its correct choice influences greatly on the your endeavors success. Often, cost of the domain change during the project running is comparable with the re-branding, so the be |
 | Где припаркован | похоже на парковку (domain is for sale) |
+=======
+| Xcitium Verdict Cloud | Unrated |
+| ZeroCERT | Unrated |
+| ZeroFox | Unrated |
+| Куда редиректит | нет (без редиректа) |
+| Что выводит (кратко) | title: Error. Cannot GET / |
+| Где припаркован | регистратор: Amazon Registrar, Inc. |
+>>>>>>> origin/main

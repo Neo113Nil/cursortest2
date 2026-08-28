@@ -419,6 +419,7 @@
 | Куда редиректит | https://chromium.googlesource.com/crashpad/crashpad/+/main/README.md |
 | Что выводит (кратко) | title: Crashpad - Crashpad. Crashpad - Crashpad Crashpad Home Developing Interface Docs Man Pages Source Code Crashpad Crashpad is a crash-reporting system. Documentation Project status Developing Crashpad : instructions for getting the source code, building, testing, and contributing to the project. Crashp |
 | Где припаркован | регистратор: MarkMonitor Inc. |
+<<<<<<< HEAD
 
 ## Проверка домена: fb.gg
 
@@ -839,3 +840,5 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: ERROR: The request could not be satisfied. ERROR: The request could not be satisfied 403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website o |
 | Где припаркован | регистратор: 1API GmbH |
+=======
+>>>>>>> origin/main

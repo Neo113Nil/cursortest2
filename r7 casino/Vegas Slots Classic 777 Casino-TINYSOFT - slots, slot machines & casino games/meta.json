@@ -2,6 +2,7 @@
   "app_id": "free.vegas.slots.casino.slot.machines",
   "title": "Vegas Slots Classic 777 Casino",
   "developer": "TINYSOFT - slots, slot machines & casino games",
+<<<<<<< HEAD
   "score": 4.63,
   "icon": "/static/app-icons/free_vegas_slots_casino_slot_machines.png",
   "url": "https://play.google.com/store/apps/details?id=free.vegas.slots.casino.slot.machines&hl=en&gl=us",
@@ -158,5 +159,60 @@
     "collected_data": [],
     "cloaking": "нет",
     "cloaking_brief": ""
+=======
+  "url": "https://play.google.com/store/apps/details?id=free.vegas.slots.casino.slot.machines&hl=en&gl=us",
+  "version": "1.3.1",
+  "version_code": "1310001",
+  "summary": "Vegas Slots Classic 777 Casino (APK label: Vegas Slots Classic 777 Casino) — legitimate TINYSOFT Unity social casino; privacy tinysoft.sk; heavy ad mediation; no cloaking gate.",
+  "keyword": "r7 casino",
+  "folder": "Vegas Slots Classic 777 Casino-TINYSOFT - slots, slot machines & casino games",
+  "path": "r7 casino/Vegas Slots Classic 777 Casino-TINYSOFT - slots, slot machines & casino games",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "apk_label": "Vegas Slots Classic 777 Casino",
+  "cloaking": "нет",
+  "files": [
+    "free.vegas.slots.casino.slot.machines.xapk",
+    "apk/free.vegas.slots.casino.slot.machines.apk",
+    "apk/config.armeabi_v7a.apk"
+  ],
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      {
+        "domain": "123.com"
+      },
+      {
+        "domain": "aomedia.org"
+      },
+      {
+        "domain": "api16-access-ttp.tiktokpangle.us"
+      },
+      {
+        "domain": "appassets.androidplatform.net"
+      },
+      {
+        "domain": "cdn-f.adsmoloco.com"
+      }
+    ],
+    "ads": [
+      "AdMob",
+      "AppLovin",
+      "Unity Ads",
+      "Vungle",
+      "Fyber/DT Exchange",
+      "InMobi",
+      "Mintegral",
+      "Pangle",
+      "Moloco",
+      "Facebook Audience Network"
+    ],
+    "analytics": [
+      "Firebase Analytics",
+      "Crashlytics",
+      "AppsFlyer",
+      "Firebase Remote Config"
+    ]
+>>>>>>> origin/main
   }
 }

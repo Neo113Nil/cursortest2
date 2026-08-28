@@ -169,7 +169,10 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+<<<<<<< HEAD
 | Xcitium Verdict Cloud | Clean |
+=======
+>>>>>>> origin/main
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -205,6 +208,10 @@
 | SOCRadar | Unrated |
 | URLQuery | Unrated |
 | VIPRE | Unrated |
+<<<<<<< HEAD
+=======
+| Xcitium Verdict Cloud | Unrated |
+>>>>>>> origin/main
 | ZeroFox | Unrated |
 | Куда редиректит | https://www.admaxim.com/ |
 | Что выводит (кратко) | title: AdMaxim &#8211; Advanced Digital Advertising. AdMaxim &#8211; Advanced Digital Advertising Skip to content Facebook page opens in new window Twitter page opens in new window Login AdMaxim Advanced Digital Advertising Home Showcase Contact Home Showcase Contact Pinpoint &trade; Programmatic Digital Media Platform Show Me More |
@@ -377,7 +384,10 @@
 | URLhaus | Clean |
 | URLQuery | Clean |
 | Viettel Threat Intelligence | Clean |
+<<<<<<< HEAD
 | VIPRE | Clean |
+=======
+>>>>>>> origin/main
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
@@ -414,11 +424,16 @@
 | SecureBrain | Unrated |
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
+<<<<<<< HEAD
+=======
+| VIPRE | Unrated |
+>>>>>>> origin/main
 | Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Admixer \| Full-Stack Programmatic AdTech Solutions. Admixer \| Full-Stack Programmatic AdTech Solutions Products For advertisers Demand Side Platform purchase audiences at scale across all digital media Data Management Platform precise audience targeting Agency Tech Stack make revenue from your own adtech ecosystem In-House DSP for |
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
+<<<<<<< HEAD
 
 ## Проверка домена: admixplay.com
 
@@ -839,3 +854,5 @@
 | Куда редиректит | https://www.algorix.co/ |
 | Что выводит (кратко) | title: AlgoriX. AlgoriX Publishers Buyers Advertisers Our Studios Resources News and Articles Case Studies Events Company About Us Our Team Our Commitment Careers Login Publisher Buyer Contact Menu Publishers Buyers Advertisers Our Studios Resources News and Articles Case Studies Events Company  |
 | Где припаркован | регистратор: GANDI SAS |
+=======
+>>>>>>> origin/main

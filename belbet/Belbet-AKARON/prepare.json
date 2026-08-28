@@ -10,7 +10,7 @@
   "jadx": {
     "ok": true,
     "exit_code": 0,
-    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 1408 (0%)\nINFO  - progress: 185 of 1408 (13%)\nINFO  - progress: 708 of 1408 (50%)\nINFO  - progress: 721 of 1408 (51%)\nINFO  - progress: 852 of 1408 (60%)\nINFO  - progress: 922 of 1408 (65%)\nINFO  - progress: 947 of 1408 (67%)\nINFO  - progress: 1003 of 1408 (71%)\nINFO  - progress: 1046 of 1408 (74%)\nINFO  - progress: 1063 of 1408 (75%)\nINFO  - progress: 1071 of 1408 (76%)\nINFO  - progress: 1090 of 1408 (77%)\nINFO  - progress: 1107 of 1408 (78%)\nINFO  - progress: 1124 of 1408 (79%)\nINFO  - progress: 1227 of 1408 (87%)\n                                                             \nINFO  - done\n",
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 1408 (0%)\nINFO  - progress: 708 of 1408 (50%)\nINFO  - progress: 708 of 1408 (50%)\nINFO  - progress: 709 of 1408 (50%)\nINFO  - progress: 813 of 1408 (57%)\nINFO  - progress: 896 of 1408 (63%)\nINFO  - progress: 944 of 1408 (67%)\nINFO  - progress: 951 of 1408 (67%)\nINFO  - progress: 986 of 1408 (70%)\nINFO  - progress: 1025 of 1408 (72%)\nINFO  - progress: 1107 of 1408 (78%)\nINFO  - progress: 1121 of 1408 (79%)\nINFO  - progress: 1135 of 1408 (80%)\nINFO  - progress: 1161 of 1408 (82%)\nINFO  - progress: 1175 of 1408 (83%)\nINFO  - progress: 1195 of 1408 (84%)\nINFO  - progress: 1383 of 1408 (98%)\n                                                             \nINFO  - done\n",
     "stderr": "",
     "out_dir": "/root/play-collector/загрузки/belbet/Belbet-AKARON/decompiled",
     "skipped": false,
@@ -26,6 +26,8 @@
     "apk/com.winmove.step-1-asset.apk",
     "apk/com.winmove.step-1-config.xxhdpi.apk",
     "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
     "decompiled/resources/AndroidManifest.xml",
     "decompiled/resources/res/values/strings.xml",
     "decompiled/sources/",

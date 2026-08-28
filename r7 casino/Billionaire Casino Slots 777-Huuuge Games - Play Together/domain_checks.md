@@ -419,6 +419,7 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | AccessDenied Access denied. |
 | Где припаркован | нет данных |
+<<<<<<< HEAD
 
 ## Проверка домена: app.eu.usercentrics.eu
 
@@ -839,3 +840,5 @@
 | Куда редиректит | https://www.braze.com/ |
 | Что выводит (кратко) | title: Braze Customer Engagement Platform. Braze Customer Engagement Platform Why Braze? Product Back The Braze Platform All your data, channels, and orchestration needs in one place View the platform Pricing BrazeAl™ UPDATES Automate, learn, and personalize with AI Braze Data Platform Unify, activate, and distribute your |
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
+=======
+>>>>>>> origin/main

@@ -2,6 +2,7 @@
   "app_id": "com.purplekiwii.vegaslive",
   "title": "Vegas Live Slots Casino Games",
   "developer": "PLAYDOG",
+<<<<<<< HEAD
   "score": 4.46973,
   "icon": "/static/app-icons/com_purplekiwii_vegaslive.png",
   "url": "https://play.google.com/store/apps/details?id=com.purplekiwii.vegaslive&hl=en&gl=us",
@@ -162,3 +163,48 @@
     "cloaking_brief": ""
   }
 }
+=======
+  "url": "https://play.google.com/store/apps/details?id=com.purplekiwii.vegaslive&hl=en&gl=us",
+  "version": "1.5.37",
+  "version_code": "9848",
+  "summary": "Vegas Live Slots (APK label: Vegas Live Slots) — legitimate PLAYDOG Cocos2d social casino; game servers on purplekiwii.com; no cloaking gate.",
+  "keyword": "r7 casino",
+  "folder": "Vegas Live Slots Casino Games-PLAYDOG",
+  "path": "r7 casino/Vegas Live Slots Casino Games-PLAYDOG",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "apk_label": "Vegas Live Slots",
+  "cloaking": "нет",
+  "files": [
+    "com.purplekiwii.vegaslive.xapk",
+    "apk/com.purplekiwii.vegaslive.apk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.en.apk",
+    "apk/config.hdpi.apk"
+  ],
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      {"domain": "cdn2.inner-active.mobi"},
+      {"domain": "compliance.iabtechnologylab.com"},
+      {"domain": "config.ru"},
+      {"domain": "crashpad.chromium.org"}
+    ],
+    "ads": [
+      "AdMob",
+      "AppLovin",
+      "Fyber/DT Exchange",
+      "Mintegral",
+      "Unity Ads",
+      "Vungle",
+      "Facebook Audience Network"
+    ],
+    "analytics": [
+      "Firebase Analytics",
+      "Crashlytics",
+      "AppsFlyer",
+      "Facebook App Events"
+    ]
+  }
+}
+>>>>>>> origin/main

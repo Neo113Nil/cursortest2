@@ -102,7 +102,11 @@
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
+<<<<<<< HEAD
 | Что выводит (кратко) | title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story FAQ Members Organizat |
+=======
+| Что выводит (кратко) | title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story Members Organization  |
+>>>>>>> origin/main
 | Где припаркован | регистратор: Squarespace Domains II LLC |
 
 ## Проверка домена: api.bidmachine.io
@@ -147,10 +151,17 @@
 | IPsum | Clean |
 | Juniper Networks | Clean |
 | Kaspersky | Clean |
+<<<<<<< HEAD
 | LevelBlue | Clean |
 | Lionic | Clean |
 | Malwared | Clean |
 | MalwarePatrol | Clean |
+=======
+| Lionic | Clean |
+| Malwared | Clean |
+| MalwarePatrol | Clean |
+| Netcraft | Clean |
+>>>>>>> origin/main
 | OpenPhish | Clean |
 | Phishing Database | Clean |
 | Phishtank | Clean |
@@ -170,6 +181,10 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+<<<<<<< HEAD
+=======
+| Xcitium Verdict Cloud | Clean |
+>>>>>>> origin/main
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -192,10 +207,17 @@
 | Gridinsoft | Unrated |
 | Guardpot | Unrated |
 | Hunt.io Intelligence | Unrated |
+<<<<<<< HEAD
 | Lumu | Unrated |
 | MalwareURL | Unrated |
 | Mimecast | Unrated |
 | Netcraft | Unrated |
+=======
+| LevelBlue | Unrated |
+| Lumu | Unrated |
+| MalwareURL | Unrated |
+| Mimecast | Unrated |
+>>>>>>> origin/main
 | PhishFort | Unrated |
 | PrecisionSec | Unrated |
 | SafeToOpen | Unrated |
@@ -204,7 +226,10 @@
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
 | VIPRE | Unrated |
+<<<<<<< HEAD
 | Xcitium Verdict Cloud | Unrated |
+=======
+>>>>>>> origin/main
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | Not Found |
@@ -229,7 +254,10 @@
 | BitDefender | Clean |
 | Blueliv | Clean |
 | Certego | Clean |
+<<<<<<< HEAD
 | Chong Lua Dao | Clean |
+=======
+>>>>>>> origin/main
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
@@ -284,6 +312,10 @@
 | Bfore.Ai PreCrime | Unrated |
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
+<<<<<<< HEAD
+=======
+| Chong Lua Dao | Unrated |
+>>>>>>> origin/main
 | Cluster25 | Unrated |
 | Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
@@ -444,7 +476,10 @@
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
+<<<<<<< HEAD
 | Criminal IP | Clean |
+=======
+>>>>>>> origin/main
 | CTX AI | Clean |
 | Cyble | Clean |
 | CyRadar | Clean |
@@ -467,6 +502,10 @@
 | Lionic | Clean |
 | Malwared | Clean |
 | MalwarePatrol | Clean |
+<<<<<<< HEAD
+=======
+| Netcraft | Clean |
+>>>>>>> origin/main
 | OpenPhish | Clean |
 | Phishing Database | Clean |
 | Phishtank | Clean |
@@ -498,6 +537,10 @@
 | Bfore.Ai PreCrime | Unrated |
 | Bkav | Unrated |
 | Cluster25 | Unrated |
+<<<<<<< HEAD
+=======
+| Criminal IP | Unrated |
+>>>>>>> origin/main
 | CSIS Security Group | Unrated |
 | Cyan | Unrated |
 | DNS8 | Unrated |
@@ -511,7 +554,10 @@
 | Lumu | Unrated |
 | MalwareURL | Unrated |
 | Mimecast | Unrated |
+<<<<<<< HEAD
 | Netcraft | Unrated |
+=======
+>>>>>>> origin/main
 | PhishFort | Unrated |
 | PrecisionSec | Unrated |
 | SafeToOpen | Unrated |
@@ -522,6 +568,7 @@
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
+<<<<<<< HEAD
 | Что выводит (кратко) | AccessDenied Access denied. Anonymous caller does not have storage.objects.list access to the Google Cloud Storage bucket. Permission 'storage.objects.list' denied on resource '//storage.googleapis.com/projects/_/buckets/gcs-exchange-public-useast1-prod' (or it may not exist). |
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
 
@@ -838,4 +885,7 @@
 | ZeroFox | Unrated |
 | Куда редиректит | нет (DNS не резолвится) |
 | Что выводит (кратко) | нет (DNS не резолвится) |
+=======
+| Что выводит (кратко) | AccessDenied Access denied. Anonymous caller does not have storage.objects.list access to the Google Cloud Storage bucket. Permission 'storage.objects.list' denied on resource '//storage.googleapis.com/projects/_/buckets/gcs-exchange-public-useast1-prod' (or it may not exist). Re |
+>>>>>>> origin/main
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |

@@ -207,7 +207,11 @@
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
+<<<<<<< HEAD
 | Что выводит (кратко) | title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story FAQ Members Organizat |
+=======
+| Что выводит (кратко) | title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story Members Organization  |
+>>>>>>> origin/main
 | Где припаркован | регистратор: Squarespace Domains II LLC |
 
 ## Проверка домена: api16-access-ttp.tiktokpangle.us
@@ -334,7 +338,10 @@
 | BitDefender | Clean |
 | Blueliv | Clean |
 | Certego | Clean |
+<<<<<<< HEAD
 | Chong Lua Dao | Clean |
+=======
+>>>>>>> origin/main
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
@@ -389,6 +396,10 @@
 | Bfore.Ai PreCrime | Unrated |
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
+<<<<<<< HEAD
+=======
+| Chong Lua Dao | Unrated |
+>>>>>>> origin/main
 | Cluster25 | Unrated |
 | Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
@@ -524,6 +535,7 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Moloco. Moloco |
 | Где припаркован | регистратор: Google Inc. |
+<<<<<<< HEAD
 
 ## Проверка домена: cdn2.inner-active.mobi
 
@@ -839,3 +851,5 @@
 | Куда редиректит | https://chromium.googlesource.com/crashpad/crashpad/+/main/README.md |
 | Что выводит (кратко) | title: Crashpad - Crashpad. Crashpad - Crashpad Crashpad Home Developing Interface Docs Man Pages Source Code Crashpad Crashpad is a crash-reporting system. Documentation Project status Developing Crashpad : instructions for getting the source code, building, testing, and contributing to the project. Crashp |
 | Где припаркован | регистратор: MarkMonitor Inc. |
+=======
+>>>>>>> origin/main

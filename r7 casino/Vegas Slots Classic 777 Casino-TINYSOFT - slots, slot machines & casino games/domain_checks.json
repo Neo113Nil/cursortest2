@@ -4,6 +4,7 @@
     "aomedia.org",
     "api16-access-ttp.tiktokpangle.us",
     "appassets.androidplatform.net",
+<<<<<<< HEAD
     "cdn-f.adsmoloco.com",
     "cdn2.inner-active.mobi",
     "compliance.iabtechnologylab.com",
@@ -27,6 +28,9 @@
     "tinysoft.sk",
     "tizen.org",
     "whatwg.org"
+=======
+    "cdn-f.adsmoloco.com"
+>>>>>>> origin/main
   ],
   "checked": [
     {
@@ -418,13 +422,22 @@
           "Statvoo: 588344",
           "Alexa: 588344",
           "Cisco Umbrella: 906508",
+<<<<<<< HEAD
           "Majestic: 971643",
+=======
+          "Majestic: 973135",
+>>>>>>> origin/main
           "Quantcast: 139615",
           "Cloudflare Radar: 500000"
         ],
         "creation_date": 816220800,
+<<<<<<< HEAD
         "last_modification_date": 1787851720,
         "last_analysis_date": 1787851699,
+=======
+        "last_modification_date": 1785787670,
+        "last_analysis_date": 1785787020,
+>>>>>>> origin/main
         "registrar": "нет",
         "whois": "Administrative city: REDACTED FOR PRIVACY\nAdministrative country: United States\nAdministrative email: 19a7f876f1595d7cs@anonymised.email\nAdministrative state: REDACTED FOR PRIVACY\nCreate date: 1995-11-13 00:00:00\nDomain name: 123.com\nDomain registrar id: 470.0\nDomain registrar url: whois.comlaude.com\nExpiry date: 2029-11-12 00:00:00\nQuery time: 2026-03-06 14:53:40\nRegistrant address: 1f8f4166599d23ee\nRegistrant city: 1f8f4166599d23ee\nRegistrant company: 827e5a10f090bc89\nRegistrant country: United Kingdom\nRegistrant email: 2b1bb323f0cedd8as@anonymised.email\nRegistrant name: 1f8f4166599d23ee\nRegistrant zip: 1f8f4166599d23ee\nTechnical city: REDACTED FOR PRIVACY\nTechnical country: United States\nTechnical email: 4f64dae613bbbd72s@anonymised.email\nTechnical state: REDACTED FOR PRIVACY\nUpdate date: 2026-03-04 00:00:00",
         "dns_records": [
@@ -1233,6 +1246,7 @@
         },
         "categories": {},
         "popularity_ranks": [
+<<<<<<< HEAD
           "Majestic: 55370",
           "Statvoo: 593731",
           "Alexa: 593731",
@@ -1257,6 +1271,32 @@
           "MX alt1.aspmx.l.google.com",
           "NS ns-cloud-a4.googledomains.com",
           "MX aspmx.l.google.com"
+=======
+          "Majestic: 55139",
+          "Statvoo: 593731",
+          "Alexa: 593731",
+          "Cisco Umbrella: 976804",
+          "Cloudflare Radar: 200000"
+        ],
+        "creation_date": 1440425251,
+        "last_modification_date": 1785788667,
+        "last_analysis_date": 1785763155,
+        "registrar": "Squarespace Domains II LLC",
+        "whois": "Creation Date: 2015-08-24T14:07:31.607Z\nCreation Date: 2015-08-24T14:07:31Z\nDNSSEC: unsigned\nDomain Name: aomedia.org\nDomain Status: client delete prohibited http://www.icann.org/epp#client delete prohibited\nDomain Status: client transfer prohibited http://www.icann.org/epp#client transfer prohibited\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: ns-cloud-a1.googledomains.com\nName Server: ns-cloud-a2.googledomains.com\nName Server: ns-cloud-a3.googledomains.com\nName Server: ns-cloud-a4.googledomains.com\nRegistrant City: 1f8f4166599d23ee\nRegistrant Country: US\nRegistrant Email: 3bae71a42530df7ds@\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 1f8f4166599d23ee\nRegistrant Name: 1f8f4166599d23ee\nRegistrant Organization: 63e9119f4bc4ba6a\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: 1f8f4166599d23ee\nRegistrant Postal Code: 1f8f4166599d23ee\nRegistrant State/Province: b1952dfc047df18a\nRegistrant Street: 1f8f4166599d23ee\nRegistrar Abuse Contact Email: abuse-complaints@squarespace.com\nRegistrar Abuse Contact Phone: +1.646-693-5324\nRegistrar Abuse Contact Phone: +1.6466935324\nRegistrar IANA ID: 895\nRegistrar Registration Expiration Date: 2028-08-24T14:07:31.607Z\nRegistrar URL: https://domains.squarespace.com\nRegistrar URL: https://domains2.squarespace.com\nRegistrar WHOIS Server: whois.squarespace.domains\nRegistrar: Squarespace Domains II LLC\nRegistry Domain ID: 845b247fe2144e3e965924b2c891e0dd-LROR\nRegistry Domain ID: REDACTED\nRegistry Expiry Date: 2028-08-24T14:07:31Z\nUpdated Date: 2025-07-18T02:52:32Z\nUpdated Date: 2026-06-24T19:25:16.590500Z",
+        "dns_records": [
+          "MX alt4.aspmx.l.google.com",
+          "NS ns-cloud-a4.googledomains.com",
+          "A 185.199.108.153",
+          "NS ns-cloud-a3.googledomains.com",
+          "MX alt3.aspmx.l.google.com",
+          "MX aspmx.l.google.com",
+          "MX alt2.aspmx.l.google.com",
+          "A 185.199.109.153",
+          "TXT v=spf1 include:_spf.google.com ~all",
+          "A 185.199.111.153",
+          "SOA ns-cloud-a1.googledomains.com",
+          "A 185.199.110.153"
+>>>>>>> origin/main
         ],
         "https_subject": {
           "CN": "aomedia.org"
@@ -1278,7 +1318,11 @@
       "redirect_chain": [
         "https://aomedia.org/"
       ],
+<<<<<<< HEAD
       "page_output": "title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story FAQ Members Organizat",
+=======
+      "page_output": "title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story Members Organization ",
+>>>>>>> origin/main
       "parked_at": "регистратор: Squarespace Domains II LLC",
       "final_url": "https://aomedia.org/",
       "http_status": 200,
@@ -1669,7 +1713,11 @@
         },
         {
           "param": "Что выводит (кратко)",
+<<<<<<< HEAD
           "value": "title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story FAQ Members Organizat"
+=======
+          "value": "title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story Members Organization "
+>>>>>>> origin/main
         },
         {
           "param": "Где припаркован",
@@ -1683,6 +1731,7 @@
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/api16-access-ttp.tiktokpangle.us",
         "detections": "1/91 (malicious=1, suspicious=0)",
+<<<<<<< HEAD
         "last_analysis_stats": {
           "malicious": 1,
           "suspicious": 0,
@@ -1690,6 +1739,8 @@
           "harmless": 55,
           "timeout": 0
         },
+=======
+>>>>>>> origin/main
         "vendor_rows": [
           [
             "Chong Lua Dao",
@@ -2055,6 +2106,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -2503,6 +2555,13 @@
           "value": "регистратор: Gandi SAS"
         }
       ]
+=======
+        ]
+      },
+      "redirects_to": "нет (без редиректа)",
+      "page_output": "title: 404 Not Found. 404 Not Found 404 Not Found nginx",
+      "parked_at": "регистратор: Gandi SAS"
+>>>>>>> origin/main
     },
     {
       "domain": "appassets.androidplatform.net",
@@ -2513,8 +2572,13 @@
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
+<<<<<<< HEAD
           "undetected": 36,
           "harmless": 55,
+=======
+          "undetected": 37,
+          "harmless": 54,
+>>>>>>> origin/main
           "timeout": 0
         },
         "vendor_rows": [
@@ -2555,10 +2619,13 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
             "Chong Lua Dao",
             "Clean"
           ],
           [
+=======
+>>>>>>> origin/main
             "CINS Army",
             "Clean"
           ],
@@ -2775,6 +2842,13 @@
             "Unrated"
           ],
           [
+<<<<<<< HEAD
+=======
+            "Chong Lua Dao",
+            "Unrated"
+          ],
+          [
+>>>>>>> origin/main
             "Cluster25",
             "Unrated"
           ],
@@ -2893,8 +2967,13 @@
           "Cisco Umbrella: 12838"
         ],
         "creation_date": 1192130027,
+<<<<<<< HEAD
         "last_modification_date": 1787853782,
         "last_analysis_date": 1787853449,
+=======
+        "last_modification_date": 1785784571,
+        "last_analysis_date": 1785783949,
+>>>>>>> origin/main
         "registrar": "MarkMonitor Inc.",
         "whois": "Creation Date: 2007-10-11T07:00:00+0000\nCreation Date: 2007-10-11T19:13:47Z\nDNSSEC: unsigned\nDomain Name: ANDROIDPLATFORM.NET\nDomain Name: androidplatform.net\nDomain Status: clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: NS1.GOOGLE.COM\nName Server: NS2.GOOGLE.COM\nName Server: NS3.GOOGLE.COM\nName Server: NS4.GOOGLE.COM\nName Server: ns1.google.com\nName Server: ns2.google.com\nName Server: ns3.google.com\nName Server: ns4.google.com\nRegistrant Country: US\nRegistrant Email: fd5227c398756870s@\nRegistrant Organization: 3307059bbb3149c4\nRegistrar Abuse Contact Email: abusecomplaints@markmonitor.com\nRegistrar Abuse Contact Phone: +1.2086851750\nRegistrar Abuse Contact: https://corp.markmonitor.com/domain/ui/abuse-report\nRegistrar IANA ID: 292\nRegistrar Registration Expiration Date: 2026-10-11T00:00:00+0000\nRegistrar URL: http://www.markmonitor.com\nRegistrar WHOIS Server: whois.markmonitor.com\nRegistrar: MarkMonitor Inc.\nRegistrar: MarkMonitor, Inc.\nRegistry Domain ID: 1269791841_DOMAIN_NET-VRSN\nRegistry Expiry Date: 2026-10-11T19:13:47Z\nUpdated Date: 2025-09-09T10:18:35+0000\nUpdated Date: 2025-09-09T10:18:35Z",
         "dns_records": [
@@ -2970,10 +3049,13 @@
           "value": "Clean"
         },
         {
+<<<<<<< HEAD
           "param": "Chong Lua Dao",
           "value": "Clean"
         },
         {
+=======
+>>>>>>> origin/main
           "param": "CINS Army",
           "value": "Clean"
         },
@@ -3190,6 +3272,13 @@
           "value": "Unrated"
         },
         {
+<<<<<<< HEAD
+=======
+          "param": "Chong Lua Dao",
+          "value": "Unrated"
+        },
+        {
+>>>>>>> origin/main
           "param": "Cluster25",
           "value": "Unrated"
         },
@@ -3697,21 +3786,38 @@
         },
         "categories": {},
         "popularity_ranks": [
+<<<<<<< HEAD
           "Cisco Umbrella: 3529"
         ],
         "creation_date": 1382683472,
         "last_modification_date": 1787854559,
         "last_analysis_date": 1787854452,
+=======
+          "Cisco Umbrella: 2651"
+        ],
+        "creation_date": 1382683472,
+        "last_modification_date": 1785784825,
+        "last_analysis_date": 1785784054,
+>>>>>>> origin/main
         "registrar": "Google Inc.",
         "whois": "Domain Name: ADSMOLOCO.COM\nRegistry Domain ID: 1832444478_DOMAIN_COM-VRSN\nRegistrar WHOIS Server: whois.google.com\nRegistrar URL: http://domains.google.com\nUpdated Date: 2017-10-25T12:37:05Z\nCreation Date: 2013-10-25T06:44:32Z\nRegistry Expiry Date: 2018-10-25T06:44:32Z\nRegistrar: Google Inc.\nRegistrar IANA ID: 895\nRegistrar Abuse Contact Email: registrar-abuse@google.com\nRegistrar Abuse Contact Phone: +1.8772376466\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: NS-CLOUD-D1.GOOGLEDOMAINS.COM\nName Server: NS-CLOUD-D2.GOOGLEDOMAINS.COM\nName Server: NS-CLOUD-D3.GOOGLEDOMAINS.COM\nName Server: NS-CLOUD-D4.GOOGLEDOMAINS.COM\nDNSSEC: unsigned",
         "dns_records": [
           "CNAME global.moloco.map.fastly.net",
+<<<<<<< HEAD
           "A 199.232.199.52",
           "A 199.232.195.52",
           "CNAME global.moloco.map.fastly.net",
           "CNAME global.moloco.map.fastly.net",
           "CNAME global.moloco.map.fastly.net",
           "CNAME global.moloco.map.fastly.net",
+=======
+          "CNAME global.moloco.map.fastly.net",
+          "A 199.232.199.52",
+          "CNAME global.moloco.map.fastly.net",
+          "A 199.232.195.52",
+          "CNAME global.moloco.map.fastly.net",
+          "CNAME global.moloco.map.fastly.net",
+>>>>>>> origin/main
           "CNAME global.moloco.map.fastly.net"
         ],
         "https_subject": {
@@ -4132,6 +4238,7 @@
           "value": "регистратор: Google Inc."
         }
       ]
+<<<<<<< HEAD
     },
     {
       "domain": "cdn2.inner-active.mobi",
@@ -6595,5 +6702,10 @@
     }
   ],
   "count": 8,
+=======
+    }
+  ],
+  "count": 5,
+>>>>>>> origin/main
   "vt_configured": true
 }

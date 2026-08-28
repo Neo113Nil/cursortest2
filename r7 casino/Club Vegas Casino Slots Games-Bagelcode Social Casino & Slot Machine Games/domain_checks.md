@@ -207,7 +207,11 @@
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
+<<<<<<< HEAD
 | Что выводит (кратко) | title: SurveyMonkey 404. SurveyMonkey 404 We're sorry! We can't find the page you&#39;re looking for. Please check the URL you entered to make sure it&#39;s spelled correctly. Still not sure how to get to the page you want? Maybe we can help you find your way: Want to create your own survey? Sign Up FREE |
+=======
+| Что выводит (кратко) | title: SurveyMonkey 404. SurveyMonkey 404 We're sorry! We can't find the page you're looking for. Please check the URL you entered to make sure it's spelled correctly. Still not sure how to get to the page you want? Maybe we can help you find your way: Want to create your own survey? Sign Up FREE |
+>>>>>>> origin/main
 | Где припаркован | регистратор: MarkMonitor Inc. |
 
 ## Проверка домена: app.adjust.io
@@ -234,6 +238,10 @@
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
+<<<<<<< HEAD
+=======
+| Criminal IP | Clean |
+>>>>>>> origin/main
 | CTX AI | Clean |
 | Cyble | Clean |
 | CyRadar | Clean |
@@ -285,7 +293,10 @@
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
 | Cluster25 | Unrated |
+<<<<<<< HEAD
 | Criminal IP | Unrated |
+=======
+>>>>>>> origin/main
 | CSIS Security Group | Unrated |
 | Cyan | Unrated |
 | DNS8 | Unrated |
@@ -339,7 +350,10 @@
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
+<<<<<<< HEAD
 | Criminal IP | Clean |
+=======
+>>>>>>> origin/main
 | CTX AI | Clean |
 | Cyble | Clean |
 | CyRadar | Clean |
@@ -392,6 +406,10 @@
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
 | Cluster25 | Unrated |
+<<<<<<< HEAD
+=======
+| Criminal IP | Unrated |
+>>>>>>> origin/main
 | CSIS Security Group | Unrated |
 | Cyan | Unrated |
 | DNS8 | Unrated |
@@ -428,8 +446,14 @@
 |---|---|
 | Домен | cdn.prod.website-files.com |
 | VirusTotal URL | https://www.virustotal.com/gui/domain/cdn.prod.website-files.com |
+<<<<<<< HEAD
 | Детекции | 0/91 (malicious=0, suspicious=0) |
 | Security vendors' analysis | ниже построчно, как на VirusTotal |
+=======
+| Детекции | 1/91 (malicious=1, suspicious=0) |
+| Security vendors' analysis | ниже построчно, как на VirusTotal |
+| Chong Lua Dao | Malicious |
+>>>>>>> origin/main
 | Abusix | Clean |
 | Acronis | Clean |
 | ADMINUSLabs | Clean |
@@ -440,7 +464,10 @@
 | BitDefender | Clean |
 | Blueliv | Clean |
 | Certego | Clean |
+<<<<<<< HEAD
 | Chong Lua Dao | Clean |
+=======
+>>>>>>> origin/main
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
@@ -484,7 +511,10 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+<<<<<<< HEAD
 | Xcitium Verdict Cloud | Clean |
+=======
+>>>>>>> origin/main
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -520,6 +550,7 @@
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
 | VIPRE | Unrated |
+<<<<<<< HEAD
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | AccessDenied Access Denied PRBWS9B0XYGX3KF7 tluoCOmaG28k2y4MWHegyMxH/zjOAagU7kMnfs/SZwmIkTVX+9OtdWSGkFLg3JAtsNUcfvqpwayfiZLt3wGvjZMoSoreNUPT |
@@ -839,3 +870,10 @@
 | Куда редиректит | нет |
 | Что выводит (кратко) | не удалось открыть (SSLError) |
 | Где припаркован | регистратор: MarkMonitor Inc. |
+=======
+| Xcitium Verdict Cloud | Unrated |
+| ZeroFox | Unrated |
+| Куда редиректит | нет (без редиректа) |
+| Что выводит (кратко) | AccessDenied Access Denied 8FTEA2Y9AQ8SP113 6ljVqE0cRdvuWY7q6M42+TtnEi6fGFwEllRI3N0jldKbbbs5qs6n7G4fxQfz/pOfpEkOmUgMdR2IPIr2ufQgX9wFeDnW5/sd |
+| Где припаркован | нет данных |
+>>>>>>> origin/main

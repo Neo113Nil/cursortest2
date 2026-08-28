@@ -3,6 +3,7 @@
     "cdn2.inner-active.mobi",
     "compliance.iabtechnologylab.com",
     "config.ru",
+<<<<<<< HEAD
     "crashpad.chromium.org",
     "fb.gg",
     "privacy-sandbox.appsflyersdk.com",
@@ -10,6 +11,9 @@
     "tizen.org",
     "vl.purplekiwii.com",
     "whatwg.org"
+=======
+    "crashpad.chromium.org"
+>>>>>>> origin/main
   ],
   "checked": [
     {
@@ -17,6 +21,7 @@
       "virustotal": {
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/cdn2.inner-active.mobi",
+<<<<<<< HEAD
         "detections": "0/91 (malicious=0, suspicious=0)",
         "last_analysis_stats": {
           "malicious": 0,
@@ -443,6 +448,13 @@
       "parked_at": "регистратор/whois связан с парковкой: godaddy",
       "final_url": "https://cdn2.inner-active.mobi/",
       "http_status": 403,
+=======
+        "detections": "0/91 (malicious=0, suspicious=0)"
+      },
+      "redirects_to": "нет (без редиректа)",
+      "page_output": "AccessDenied Access denied. Anonymous caller does not have storage.objects.list access to the Google Cloud Storage bucket. Permission 'storage.objects.list' denied on resource '//storage.googleapis.com/projects/_/buckets/gcs-exchange-public-useast1-prod' (or it may not exist).",
+      "parked_at": "регистратор/whois связан с парковкой: godaddy",
+>>>>>>> origin/main
       "table_rows": [
         {
           "param": "Домен",
@@ -843,6 +855,7 @@
       "virustotal": {
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/compliance.iabtechnologylab.com",
+<<<<<<< HEAD
         "detections": "0/91 (malicious=0, suspicious=0)",
         "last_analysis_stats": {
           "malicious": 0,
@@ -1261,6 +1274,13 @@
       "parked_at": "регистратор/whois связан с парковкой: godaddy",
       "final_url": "https://compliance.iabtechnologylab.com/",
       "http_status": 404,
+=======
+        "detections": "0/91 (malicious=0, suspicious=0)"
+      },
+      "redirects_to": "нет (без редиректа)",
+      "page_output": "title: Page not found &middot; GitHub Pages. Page not found &middot; GitHub Pages 404 File not found The site configured at this address does not contain the requested file. If this is your site, make sure that the filename case matches the URL as well as any file permissions. For root URLs (like http://example.com/ ) you m",
+      "parked_at": "регистратор/whois связан с парковкой: godaddy",
+>>>>>>> origin/main
       "table_rows": [
         {
           "param": "Домен",
@@ -1661,6 +1681,7 @@
       "virustotal": {
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/config.ru",
+<<<<<<< HEAD
         "detections": "0/91 (malicious=0, suspicious=0)",
         "last_analysis_stats": {
           "malicious": 0,
@@ -2081,6 +2102,13 @@
       "parked_at": "похоже на парковку (domain is for sale)",
       "final_url": "https://config.ru/en/",
       "http_status": 200,
+=======
+        "detections": "0/91 (malicious=0, suspicious=0)"
+      },
+      "redirects_to": "https://config.ru/en/",
+      "page_output": "title: config.ru is for sale. config.ru is for sale en ru en config.ru This domain is for sale The domain is actually the site name and its correct choice influences greatly on the your endeavors success. Often, cost of the domain change during the project running is comparable with the re-branding, so the be",
+      "parked_at": "похоже на парковку (domain is for sale)",
+>>>>>>> origin/main
       "table_rows": [
         {
           "param": "Домен",
@@ -2481,6 +2509,7 @@
       "virustotal": {
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/crashpad.chromium.org",
+<<<<<<< HEAD
         "detections": "0/91 (malicious=0, suspicious=0)",
         "last_analysis_stats": {
           "malicious": 0,
@@ -2897,6 +2926,13 @@
       "parked_at": "регистратор: MarkMonitor Inc.",
       "final_url": "https://chromium.googlesource.com/crashpad/crashpad/+/main/README.md",
       "http_status": 200,
+=======
+        "detections": "0/91 (malicious=0, suspicious=0)"
+      },
+      "redirects_to": "https://chromium.googlesource.com/crashpad/crashpad/+/main/README.md",
+      "page_output": "title: Crashpad - Crashpad. Crashpad - Crashpad Crashpad Home Developing Interface Docs Man Pages Source Code Crashpad Crashpad is a crash-reporting system. Documentation Project status Developing Crashpad : instructions for getting the source code, building, testing, and contributing to the project. Crashp",
+      "parked_at": "регистратор: MarkMonitor Inc.",
+>>>>>>> origin/main
       "table_rows": [
         {
           "param": "Домен",
@@ -3291,6 +3327,7 @@
           "value": "регистратор: MarkMonitor Inc."
         }
       ]
+<<<<<<< HEAD
     },
     {
       "domain": "fb.gg",
@@ -6601,5 +6638,10 @@
     }
   ],
   "count": 8,
+=======
+    }
+  ],
+  "count": 4,
+>>>>>>> origin/main
   "vt_configured": true
 }

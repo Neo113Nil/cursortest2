@@ -5,6 +5,7 @@
     "app.adjust.io",
     "cdn.prod.website-files.com",
     "chat-prod.slots4.bagelgames.com",
+<<<<<<< HEAD
     "cncn.ssacdn.com",
     "com.chrome.dev",
     "config.ru",
@@ -30,6 +31,9 @@
     "tizen.org",
     "vuejs.org",
     "whatwg.org"
+=======
+    "logic-prod.slots4.bagelgames.com"
+>>>>>>> origin/main
   ],
   "checked": [
     {
@@ -854,14 +858,31 @@
           "param": "Где припаркован",
           "value": "регистратор: Amazon Registrar, Inc."
         }
+<<<<<<< HEAD
       ]
     },
     {
       "domain": "api.surveymonkey.net",
+=======
+      ],
+      "redirect": "нет (DNS не резолвится)",
+      "content_brief": "нет (DNS не резолвится)",
+      "parking": "регистратор: Amazon Registrar, Inc.",
+      "куда_редиректит": "нет (DNS не резолвится)",
+      "что_выводит": "нет (DNS не резолвится)",
+      "где_припаркован": "регистратор: Amazon Registrar, Inc."
+    },
+    {
+      "domain": "api.surveymonkey.net",
+      "redirects_to": "нет (без редиректа)",
+      "page_output": "title: SurveyMonkey 404. SurveyMonkey 404 We're sorry! We can't find the page you're looking for. Please check the URL you entered to make sure it's spelled correctly. Still not sure how to get to the page you want? Maybe we can help you find your way: Want to create your own survey? Sign Up FREE",
+      "parked_at": "регистратор: MarkMonitor Inc.",
+>>>>>>> origin/main
       "virustotal": {
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/api.surveymonkey.net",
         "detections": "0/91 (malicious=0, suspicious=0)",
+<<<<<<< HEAD
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
@@ -869,6 +890,8 @@
           "harmless": 57,
           "timeout": 0
         },
+=======
+>>>>>>> origin/main
         "vendor_rows": [
           [
             "Abusix",
@@ -1234,6 +1257,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -1287,6 +1311,10 @@
       "parked_at": "регистратор: MarkMonitor Inc.",
       "final_url": "https://api.surveymonkey.net/",
       "http_status": 404,
+=======
+        ]
+      },
+>>>>>>> origin/main
       "table_rows": [
         {
           "param": "Домен",
@@ -1674,13 +1702,27 @@
         },
         {
           "param": "Что выводит (кратко)",
+<<<<<<< HEAD
           "value": "title: SurveyMonkey 404. SurveyMonkey 404 We're sorry! We can't find the page you&#39;re looking for. Please check the URL you entered to make sure it&#39;s spelled correctly. Still not sure how to get to the page you want? Maybe we can help you find your way: Want to create your own survey? Sign Up FREE"
+=======
+          "value": "title: SurveyMonkey 404. SurveyMonkey 404 We're sorry! We can't find the page you're looking for. Please check the URL you entered to make sure it's spelled correctly. Still not sure how to get to the page you want? Maybe we can help you find your way: Want to create your own survey? Sign Up FREE"
+>>>>>>> origin/main
         },
         {
           "param": "Где припаркован",
           "value": "регистратор: MarkMonitor Inc."
         }
+<<<<<<< HEAD
       ]
+=======
+      ],
+      "redirect": "нет (без редиректа)",
+      "content_brief": "title: SurveyMonkey 404. SurveyMonkey 404 We're sorry! We can't find the page you're looking for. Please check the URL you entered to make sure it's spelled correctly. Still not sure how to get to the page you want? Maybe we can help you find your way: Want to create your own survey? Sign Up FREE",
+      "parking": "регистратор: MarkMonitor Inc.",
+      "куда_редиректит": "нет (без редиректа)",
+      "что_выводит": "title: SurveyMonkey 404. SurveyMonkey 404 We're sorry! We can't find the page you're looking for. Please check the URL you entered to make sure it's spelled correctly. Still not sure how to get to the page you want? Maybe we can help you find your way: Want to create your own survey? Sign Up FREE",
+      "где_припаркован": "регистратор: MarkMonitor Inc."
+>>>>>>> origin/main
     },
     {
       "domain": "app.adjust.io",
@@ -1753,6 +1795,13 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
+=======
+            "Criminal IP",
+            "Clean"
+          ],
+          [
+>>>>>>> origin/main
             "CTX AI",
             "Clean"
           ],
@@ -1913,10 +1962,13 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
             "Xcitium Verdict Cloud",
             "Clean"
           ],
           [
+=======
+>>>>>>> origin/main
             "Yandex Safebrowsing",
             "Clean"
           ],
@@ -1961,10 +2013,13 @@
             "Unrated"
           ],
           [
+<<<<<<< HEAD
             "Criminal IP",
             "Unrated"
           ],
           [
+=======
+>>>>>>> origin/main
             "CSIS Security Group",
             "Unrated"
           ],
@@ -2057,6 +2112,13 @@
             "Unrated"
           ],
           [
+<<<<<<< HEAD
+=======
+            "Xcitium Verdict Cloud",
+            "Unrated"
+          ],
+          [
+>>>>>>> origin/main
             "ZeroFox",
             "Unrated"
           ]
@@ -2069,6 +2131,7 @@
         "categories": {},
         "popularity_ranks": [
           "Majestic: 281323",
+<<<<<<< HEAD
           "Cisco Umbrella: 17904"
         ],
         "creation_date": 1337869570,
@@ -2076,6 +2139,15 @@
         "last_analysis_date": 1787862332,
         "registrar": "united-domains GmbH",
         "whois": "Admin City: REDACTED\nAdmin Country: REDACTED\nAdmin Organization: REDACTED\nAdmin Postal Code: REDACTED\nAdmin State/Province: REDACTED\nCreation Date: 2012-05-24T14:26:10Z\nDNSSEC: unsigned\nDomain Name: adjust.io\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: dns1.p08.nsone.net\nName Server: dns2.p08.nsone.net\nName Server: dns3.p08.nsone.net\nName Server: dns4.p08.nsone.net\nRegistrant City: 3495bcf1839c6374\nRegistrant Country: DE\nRegistrant Email: fb6ff66ef97c0518s@\nRegistrant Fax Ext: 3495bcf1839c6374\nRegistrant Fax: 3495bcf1839c6374\nRegistrant Name: 3495bcf1839c6374\nRegistrant Organization: c89fbc069a3d47db\nRegistrant Phone Ext: 3495bcf1839c6374\nRegistrant Phone: 3495bcf1839c6374\nRegistrant Postal Code: 3495bcf1839c6374\nRegistrant State/Province: 3432650ec337c945\nRegistrant Street: 3495bcf1839c6374\nRegistrar Abuse Contact Email: abuse@united-domains.de\nRegistrar Abuse Contact Phone: +49.8151368670\nRegistrar IANA ID: 1408\nRegistrar URL: http://www.united-domains.de\nRegistrar WHOIS Server: whois.udag.net\nRegistrar: united-domains GmbH\nRegistry Admin ID: REDACTED\nRegistry Domain ID: REDACTED\nRegistry Expiry Date: 2027-05-24T14:26:10Z\nRegistry Registrant ID: REDACTED\nRegistry Tech ID: REDACTED\nTech City: REDACTED\nTech Country: REDACTED\nTech Organization: REDACTED\nTech Postal Code: REDACTED\nTech State/Province: REDACTED\nUpdated Date: 2026-07-08T14:26:22Z",
+=======
+          "Cisco Umbrella: 13031"
+        ],
+        "creation_date": 1337869570,
+        "last_modification_date": 1785788650,
+        "last_analysis_date": 1785709395,
+        "registrar": "united-domains GmbH",
+        "whois": "Admin City: REDACTED\nAdmin Country: REDACTED\nAdmin Organization: REDACTED\nAdmin Postal Code: REDACTED\nAdmin State/Province: REDACTED\nCreation Date: 2012-05-24T14:26:10Z\nDNSSEC: unsigned\nDomain Name: adjust.io\nDomain Status: autoRenewPeriod https://icann.org/epp#autoRenewPeriod\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: dns1.p08.nsone.net\nName Server: dns2.p08.nsone.net\nName Server: dns3.p08.nsone.net\nName Server: dns4.p08.nsone.net\nRegistrant City: 3495bcf1839c6374\nRegistrant Country: DE\nRegistrant Email: fb6ff66ef97c0518s@\nRegistrant Fax Ext: 3495bcf1839c6374\nRegistrant Fax: 3495bcf1839c6374\nRegistrant Name: 3495bcf1839c6374\nRegistrant Organization: c89fbc069a3d47db\nRegistrant Phone Ext: 3495bcf1839c6374\nRegistrant Phone: 3495bcf1839c6374\nRegistrant Postal Code: 3495bcf1839c6374\nRegistrant State/Province: 3432650ec337c945\nRegistrant Street: 3495bcf1839c6374\nRegistrar Abuse Contact Email: abuse@united-domains.de\nRegistrar Abuse Contact Phone: +49.8151368670\nRegistrar IANA ID: 1408\nRegistrar URL: http://www.united-domains.de\nRegistrar WHOIS Server: whois.udag.net\nRegistrar: united-domains GmbH\nRegistry Admin ID: REDACTED\nRegistry Domain ID: REDACTED\nRegistry Expiry Date: 2027-05-24T14:26:10Z\nRegistry Registrant ID: REDACTED\nRegistry Tech ID: REDACTED\nTech City: REDACTED\nTech Country: REDACTED\nTech Organization: REDACTED\nTech Postal Code: REDACTED\nTech State/Province: REDACTED\nUpdated Date: 2026-06-09T13:45:17Z",
+>>>>>>> origin/main
         "dns_records": [
           "A 185.151.204.1"
         ],
@@ -2181,6 +2253,13 @@
           "value": "Clean"
         },
         {
+<<<<<<< HEAD
+=======
+          "param": "Criminal IP",
+          "value": "Clean"
+        },
+        {
+>>>>>>> origin/main
           "param": "CTX AI",
           "value": "Clean"
         },
@@ -2341,10 +2420,13 @@
           "value": "Clean"
         },
         {
+<<<<<<< HEAD
           "param": "Xcitium Verdict Cloud",
           "value": "Clean"
         },
         {
+=======
+>>>>>>> origin/main
           "param": "Yandex Safebrowsing",
           "value": "Clean"
         },
@@ -2389,10 +2471,13 @@
           "value": "Unrated"
         },
         {
+<<<<<<< HEAD
           "param": "Criminal IP",
           "value": "Unrated"
         },
         {
+=======
+>>>>>>> origin/main
           "param": "CSIS Security Group",
           "value": "Unrated"
         },
@@ -2485,6 +2570,13 @@
           "value": "Unrated"
         },
         {
+<<<<<<< HEAD
+=======
+          "param": "Xcitium Verdict Cloud",
+          "value": "Unrated"
+        },
+        {
+>>>>>>> origin/main
           "param": "ZeroFox",
           "value": "Unrated"
         },
@@ -2500,7 +2592,17 @@
           "param": "Где припаркован",
           "value": "регистратор: united-domains GmbH"
         }
+<<<<<<< HEAD
       ]
+=======
+      ],
+      "redirect": "нет (без редиректа)",
+      "content_brief": "Url not found",
+      "parking": "регистратор: united-domains GmbH",
+      "куда_редиректит": "нет (без редиректа)",
+      "что_выводит": "Url not found",
+      "где_припаркован": "регистратор: united-domains GmbH"
+>>>>>>> origin/main
     },
     {
       "domain": "cdn.prod.website-files.com",
@@ -2511,12 +2613,24 @@
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
+<<<<<<< HEAD
           "undetected": 35,
           "harmless": 56,
+=======
+          "undetected": 59,
+          "harmless": 32,
+>>>>>>> origin/main
           "timeout": 0
         },
         "vendor_rows": [
           [
+<<<<<<< HEAD
+=======
+            "Chong Lua Dao",
+            "Unrated"
+          ],
+          [
+>>>>>>> origin/main
             "Abusix",
             "Clean"
           ],
@@ -2557,10 +2671,13 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
             "Chong Lua Dao",
             "Clean"
           ],
           [
+=======
+>>>>>>> origin/main
             "CINS Army",
             "Clean"
           ],
@@ -2888,6 +3005,7 @@
         },
         "categories": {},
         "popularity_ranks": [
+<<<<<<< HEAD
           "Cisco Umbrella: 5367",
           "Majestic: 2360"
         ],
@@ -2901,6 +3019,21 @@
           "AAAA 2606:4700::6812:a175",
           "AAAA 2606:4700::6812:a075",
           "A 104.18.160.117"
+=======
+          "Cisco Umbrella: 7533",
+          "Majestic: 2360"
+        ],
+        "creation_date": 1548201600,
+        "last_modification_date": 1785788402,
+        "last_analysis_date": 1785787875,
+        "registrar": "нет",
+        "whois": "Billing country: United States\nBilling email: 53d8147c627f0cces@webflow.com\nCreate date: 2019-01-23 00:00:00\nDomain name: website-files.com\nDomain registrar id: 292.0\nDomain registrar url: whois.markmonitor.com\nExpiry date: 2027-01-23 00:00:00\nName server 1: titan.ns.cloudflare.com\nName server 2: stevie.ns.cloudflare.com\nQuery time: 2025-12-25 02:12:19\nRegistrant address: b947a943091c5335\nRegistrant city: bf539c4f17ec5f2d\nRegistrant company: 93c8dbc48690f586\nRegistrant country: United States\nRegistrant email: 53d8147c627f0cces@webflow.com\nRegistrant name: 1f33d7151e7ebf55\nRegistrant phone: 6c74caaacb7c5797\nRegistrant state: 77ab92f1911d7c5f\nRegistrant zip: eff1ab11fdc42fcb\nTechnical country: United States\nTechnical email: 53d8147c627f0cces@webflow.com\nUpdate date: 2025-12-22 00:00:00",
+        "dns_records": [
+          "A 104.18.160.117",
+          "A 104.18.161.117",
+          "AAAA 2606:4700::6812:a175",
+          "AAAA 2606:4700::6812:a075"
+>>>>>>> origin/main
         ],
         "https_subject": {
           "CN": "prod.website-files.com"
@@ -2911,7 +3044,11 @@
           "CN": "WE1"
         },
         "malicious_engines": [
+<<<<<<< HEAD
           "нет"
+=======
+          "Chong Lua Dao: Malicious"
+>>>>>>> origin/main
         ],
         "suspicious_engines": [
           "нет"
@@ -2922,7 +3059,11 @@
       "redirect_chain": [
         "https://cdn.prod.website-files.com/"
       ],
+<<<<<<< HEAD
       "page_output": "AccessDenied Access Denied Q3DZMDM01TATKMZW CxDTrbXMa2vnvbiw2vmO+X9HJ2Cfp1hrSiCQmsTUned/V3Rk37M1FwdidnGIYPHpxWECsLxG3hYkfQocz5+OxevszlzufKup",
+=======
+      "page_output": "AccessDenied Access Denied 8FTEA2Y9AQ8SP113 6ljVqE0cRdvuWY7q6M42+TtnEi6fGFwEllRI3N0jldKbbbs5qs6n7G4fxQfz/pOfpEkOmUgMdR2IPIr2ufQgX9wFeDnW5/sd",
+>>>>>>> origin/main
       "parked_at": "нет данных",
       "final_url": "https://cdn.prod.website-files.com/",
       "http_status": 403,
@@ -2937,13 +3078,24 @@
         },
         {
           "param": "Детекции",
+<<<<<<< HEAD
           "value": "0/91 (malicious=0, suspicious=0)"
+=======
+          "value": "1/91 (malicious=1, suspicious=0)"
+>>>>>>> origin/main
         },
         {
           "param": "Security vendors' analysis",
           "value": "ниже построчно, как на VirusTotal"
         },
         {
+<<<<<<< HEAD
+=======
+          "param": "Chong Lua Dao",
+          "value": "Malicious"
+        },
+        {
+>>>>>>> origin/main
           "param": "Abusix",
           "value": "Clean"
         },
@@ -2984,10 +3136,13 @@
           "value": "Clean"
         },
         {
+<<<<<<< HEAD
           "param": "Chong Lua Dao",
           "value": "Clean"
         },
         {
+=======
+>>>>>>> origin/main
           "param": "CINS Army",
           "value": "Clean"
         },
@@ -3313,13 +3468,27 @@
         },
         {
           "param": "Что выводит (кратко)",
+<<<<<<< HEAD
           "value": "AccessDenied Access Denied Q3DZMDM01TATKMZW CxDTrbXMa2vnvbiw2vmO+X9HJ2Cfp1hrSiCQmsTUned/V3Rk37M1FwdidnGIYPHpxWECsLxG3hYkfQocz5+OxevszlzufKup"
+=======
+          "value": "AccessDenied Access Denied 8FTEA2Y9AQ8SP113 6ljVqE0cRdvuWY7q6M42+TtnEi6fGFwEllRI3N0jldKbbbs5qs6n7G4fxQfz/pOfpEkOmUgMdR2IPIr2ufQgX9wFeDnW5/sd"
+>>>>>>> origin/main
         },
         {
           "param": "Где припаркован",
           "value": "нет данных"
         }
+<<<<<<< HEAD
       ]
+=======
+      ],
+      "redirect": "нет (без редиректа)",
+      "content_brief": "AccessDenied Access Denied Q3DZMDM01TATKMZW CxDTrbXMa2vnvbiw2vmO+X9HJ2Cfp1hrSiCQmsTUned/V3Rk37M1FwdidnGIYPHpxWECsLxG3hYkfQocz5+OxevszlzufKup",
+      "parking": "нет данных",
+      "куда_редиректит": "нет (без редиректа)",
+      "что_выводит": "AccessDenied Access Denied Q3DZMDM01TATKMZW CxDTrbXMa2vnvbiw2vmO+X9HJ2Cfp1hrSiCQmsTUned/V3Rk37M1FwdidnGIYPHpxWECsLxG3hYkfQocz5+OxevszlzufKup",
+      "где_припаркован": "нет данных"
+>>>>>>> origin/main
     },
     {
       "domain": "chat-prod.slots4.bagelgames.com",
@@ -3330,8 +3499,13 @@
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
+<<<<<<< HEAD
           "undetected": 36,
           "harmless": 55,
+=======
+          "undetected": 37,
+          "harmless": 54,
+>>>>>>> origin/main
           "timeout": 0
         },
         "vendor_rows": [
@@ -3552,10 +3726,13 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
             "ZeroCERT",
             "Clean"
           ],
           [
+=======
+>>>>>>> origin/main
             "0xSI_f33d",
             "Unrated"
           ],
@@ -3696,6 +3873,7 @@
             "Unrated"
           ],
           [
+<<<<<<< HEAD
             "ZeroFox",
             "Unrated"
           ]
@@ -4142,20 +4320,63 @@
       "virustotal": {
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/cncn.ssacdn.com",
+=======
+            "ZeroCERT",
+            "Unrated"
+          ],
+          [
+            "ZeroFox",
+            "Unrated"
+          ]
+        ]
+      },
+      "redirect": "нет (без редиректа)",
+      "content_brief": "title: Error. Cannot GET /",
+      "parking": "регистратор: Amazon Registrar, Inc."
+    },
+    {
+      "domain": "logic-prod.slots4.bagelgames.com",
+      "virustotal": {
+        "ok": true,
+        "vt_url": "https://www.virustotal.com/gui/domain/logic-prod.slots4.bagelgames.com",
+>>>>>>> origin/main
         "detections": "0/91 (malicious=0, suspicious=0)",
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
+<<<<<<< HEAD
           "undetected": 59,
           "harmless": 32,
+=======
+          "undetected": 37,
+          "harmless": 54,
+>>>>>>> origin/main
           "timeout": 0
         },
         "vendor_rows": [
           [
+<<<<<<< HEAD
+=======
+            "Abusix",
+            "Clean"
+          ],
+          [
+            "Acronis",
+            "Clean"
+          ],
+          [
+>>>>>>> origin/main
             "ADMINUSLabs",
             "Clean"
           ],
           [
+<<<<<<< HEAD
+=======
+            "AILabs (MONITORAPP)",
+            "Clean"
+          ],
+          [
+>>>>>>> origin/main
             "AlienVault",
             "Clean"
           ],
@@ -4172,10 +4393,26 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
+=======
+            "Certego",
+            "Clean"
+          ],
+          [
+            "Chong Lua Dao",
+            "Clean"
+          ],
+          [
+            "CINS Army",
+            "Clean"
+          ],
+          [
+>>>>>>> origin/main
             "CRDF",
             "Clean"
           ],
           [
+<<<<<<< HEAD
             "CyRadar",
             "Clean"
           ],
@@ -5011,6 +5248,13 @@
           ],
           [
             "Criminal IP",
+=======
+            "Criminal IP",
+            "Clean"
+          ],
+          [
+            "CTX AI",
+>>>>>>> origin/main
             "Clean"
           ],
           [
@@ -5082,6 +5326,7 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
             "Kaspersky",
             "Clean"
           ],
@@ -5898,6 +6143,8 @@
             "Clean"
           ],
           [
+=======
+>>>>>>> origin/main
             "LevelBlue",
             "Clean"
           ],
@@ -5986,19 +6233,30 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
             "Xcitium Verdict Cloud",
             "Clean"
           ],
           [
+=======
+>>>>>>> origin/main
             "Yandex Safebrowsing",
             "Clean"
           ],
           [
+<<<<<<< HEAD
             "ZeroCERT",
             "Clean"
           ],
           [
             "0xSI_f33d",
+=======
+            "0xSI_f33d",
+            "Unrated"
+          ],
+          [
+            "alphaMountain.ai",
+>>>>>>> origin/main
             "Unrated"
           ],
           [
@@ -6034,7 +6292,11 @@
             "Unrated"
           ],
           [
+<<<<<<< HEAD
             "Criminal IP",
+=======
+            "CMC Threat Intelligence",
+>>>>>>> origin/main
             "Unrated"
           ],
           [
@@ -6046,10 +6308,13 @@
             "Unrated"
           ],
           [
+<<<<<<< HEAD
             "DNS8",
             "Unrated"
           ],
           [
+=======
+>>>>>>> origin/main
             "Ermes",
             "Unrated"
           ],
@@ -6078,6 +6343,13 @@
             "Unrated"
           ],
           [
+<<<<<<< HEAD
+=======
+            "Kaspersky",
+            "Unrated"
+          ],
+          [
+>>>>>>> origin/main
             "Lumu",
             "Unrated"
           ],
@@ -6130,6 +6402,7 @@
             "Unrated"
           ],
           [
+<<<<<<< HEAD
             "ZeroFox",
             "Unrated"
           ]
@@ -6577,5 +6850,26 @@
     }
   ],
   "count": 8,
+=======
+            "Xcitium Verdict Cloud",
+            "Unrated"
+          ],
+          [
+            "ZeroCERT",
+            "Unrated"
+          ],
+          [
+            "ZeroFox",
+            "Unrated"
+          ]
+        ]
+      },
+      "redirect": "нет (без редиректа)",
+      "content_brief": "title: Error. Cannot GET /",
+      "parking": "регистратор: Amazon Registrar, Inc."
+    }
+  ],
+  "count": 6,
+>>>>>>> origin/main
   "vt_configured": true
 }

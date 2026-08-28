@@ -2,6 +2,7 @@
   "app_id": "com.slots.free.vegas.casino.jackpotodyssey",
   "title": "Jackpot Odyssey Slots - Casino",
   "developer": "AUTUMN STUDIOS LIMITED",
+<<<<<<< HEAD
   "score": 4.8240743,
   "icon": "/static/app-icons/com_slots_free_vegas_casino_jackpotodyssey.png",
   "url": "https://play.google.com/store/apps/details?id=com.slots.free.vegas.casino.jackpotodyssey&hl=en&gl=us",
@@ -157,3 +158,52 @@
     "cloaking_brief": ""
   }
 }
+=======
+  "url": "https://play.google.com/store/apps/details?id=com.slots.free.vegas.casino.jackpotodyssey&hl=en&gl=us",
+  "version": "1.1.10",
+  "version_code": "18",
+  "summary": "Jackpot Odyssey Slots - Casino (APK label: Jackpot Odyssey) — Unity social-casino слоты AUTUMN STUDIOS LIMITED; реклама AppLovin MAX + AdMob/FAN/ironSource/Mintegral/Unity Ads/Vungle/Chartboost; аналитика Firebase/AppsFlyer/ThinkingData (ta-data.jackpotlandslots.com); клоаки нет.",
+  "keyword": "r7 casino",
+  "folder": "Jackpot Odyssey Slots - Casino-AUTUMN STUDIOS LIMITED",
+  "path": "r7 casino/Jackpot Odyssey Slots - Casino-AUTUMN STUDIOS LIMITED",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "apk_label": "Jackpot Odyssey",
+  "cloaking": "нет",
+  "files": [
+    "com.slots.free.vegas.casino.jackpotodyssey-18.xapk",
+    "apk/com.slots.free.vegas.casino.jackpotodyssey-18.apk",
+    "apk/com.slots.free.vegas.casino.jackpotodyssey-18-UnityDataAssetPack.apk",
+    "apk/com.slots.free.vegas.casino.jackpotodyssey-18-config.arm64_v8a.apk"
+  ],
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      {"domain": "adikteev.com"},
+      {"domain": "admaxim.com"},
+      {"domain": "admazing.co"},
+      {"domain": "admixer.com"}
+    ],
+    "ads": [
+      "AppLovin MAX",
+      "AdMob",
+      "Google Ad Manager",
+      "Facebook Audience Network",
+      "ironSource",
+      "Mintegral",
+      "Unity Ads",
+      "Vungle",
+      "Chartboost"
+    ],
+    "analytics": [
+      "Firebase Analytics",
+      "Firebase Crashlytics",
+      "Firebase Messaging",
+      "AppsFlyer",
+      "ThinkingData Analytics",
+      "Facebook App Events",
+      "SafeDK analytics"
+    ]
+  }
+}
+>>>>>>> origin/main

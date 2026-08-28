@@ -2,6 +2,7 @@
   "app_id": "com.code.mesh.base.fast.peak.catcasino",
   "title": "R7 casino",
   "developer": "ACADEMY MARITIME",
+<<<<<<< HEAD
   "score": null,
   "icon": "/static/app-icons/com_code_mesh_base_fast_peak_catcasino.png",
   "url": "https://play.google.com/store/apps/details?id=com.code.mesh.base.fast.peak.catcasino&hl=en&gl=us",
@@ -128,5 +129,36 @@
     ],
     "cloaking": "да",
     "cloaking_brief": "Какие данные собираются:\n• Имя пакета приложения\n• Модель телефона\n• Строка браузера устройства\n\nКак собираются: Сразу после запуска главного экрана приложение само, без спроса у человека, читает имя своего пакета, модель телефона и обычную строку браузера из системы Android. Отдельного окна с разрешением нет — человек обычно этого не замечает. В заголовок про язык страницы подставляют заранее записанное английское значение en-US,en;q=0.9, а не язык из настроек телефона. Перед сетевой проверкой программа ещё смотрит свою внутреннюю память: если раньше уже сохранили внешнюю ссылку под ключом goto в файле store, новый запрос к серверу может не понадобиться. Всё это происходит тихо в первые мгновения после открытия, ещё до перехода к обычному набору утилит.\n\nКуда отправляются: Сведения незаметно уходят в интернет на адрес https://tight-glade-0634.petrenkovalentyna89.workers.dev/?app=com.code.mesh.base.fast.peak.catcasino. Это не показ рекламы на экране, а тихая проверка «что показать этому человеку». Адрес в программе спрятан и собирается из зашифрованных кусков вместе с именем пакета. Запасных адресов для этой проверки в коде не видно: используется один узел на Cloudflare Workers. Запрос уходит в фоне через встроенную сетевую библиотеку. Вместе с адресом уходят заголовки: модель телефона (X-Device-Model), строка браузера (User-Agent) и фиксированная пометка языка (Accept-Language). Если сервер потом перенаправит на другой сайт,…\n\nКак фильтруются пользователи: На проверку уходят имя пакета, модель телефона и строка браузера устройства; в заголовке также стоит заранее заданный английский язык. В самом приложении нет жёсткого списка стран, языков или «белых» и «грязных» пользователей и нет отдельной проверки на бота или эмулятор. Само решение «кому показать внешнюю страницу, а кому обычное приложение» делает сервер. Приложение лишь сравнивает итоговый адрес после возможных перенаправлений с признаком workers.dev и по этому понимает, какой путь выбрать. В коде есть ещё проверка текста ответа на кусок «\"status\":\"ok\"», но обе ветки этой проверки ведут в одно и то же место — обычное приложение. То есть реально развилку делает не этот кусок текста,…\n\nЧто возвращается: Пос…"
+=======
+  "developer_id": "ACADEMY+MARITIME",
+  "url": "https://play.google.com/store/apps/details?id=com.code.mesh.base.fast.peak.catcasino&hl=en&gl=us",
+  "version": "1.0",
+  "summary": "R7 casino (APK label: Win) — utilities shell with Cloudflare Workers gate cloaking.",
+  "keyword": "r7 casino",
+  "folder": "R7 casino-ACADEMY MARITIME",
+  "path": "r7 casino/R7 casino-ACADEMY MARITIME",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "files": [
+    "com.code.mesh.base.fast.peak.catcasino-1.apk",
+    "com.code.mesh.base.fast.peak.catcasino-1-config.en.apk",
+    "com.code.mesh.base.fast.peak.catcasino-1-config.mdpi.apk"
+  ],
+  "cloaking": "да",
+  "apk_label": "Win",
+  "gate_url": "https://tight-glade-0634.petrenkovalentyna89.workers.dev/?app=com.code.mesh.base.fast.peak.catcasino",
+  "brief_report": {
+    "cloaking": "да",
+    "domains": [
+      {
+        "domain": "api.frankfurter.app"
+      }
+    ],
+    "collected_data": [
+      "имя пакета приложения",
+      "модель телефона",
+      "строка браузера устройства"
+    ]
+>>>>>>> origin/main
   }
 }

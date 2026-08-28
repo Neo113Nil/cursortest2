@@ -207,7 +207,11 @@
 | Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
+<<<<<<< HEAD
 | Что выводит (кратко) | title: Customer Service Support and In App Ticketing System \| AIHelp. Customer Service Support and In App Ticketing System \| AIHelp --> --> x x AIHelp Features Pricing Customers Developers Company Blog --> Get Free Trial AIHelp M Features Pricing Customers Developers Company Blog --> Get Free Trial Maximize your return using THE BEST AI services of |
+=======
+| Что выводит (кратко) | title: Customer Service Support and In App Ticketing System | AIHelp. Customer Service Support and In App Ticketing System | AIHelp --> --> x x AIHelp Features Pricing Customers Developers Company Blog --> Get Free Trial AIHelp M Features Pricing Customers Developers Company Blog --> Get Free Trial Maximize your return using THE BEST AI services of |
+>>>>>>> origin/main
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
 
 ## Проверка домена: akm.ssacdn.com
@@ -419,6 +423,7 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story FAQ Members Organizat |
 | Где припаркован | регистратор: Squarespace Domains II LLC |
+<<<<<<< HEAD
 
 ## Проверка домена: api.nextgen.verve.net
 
@@ -839,3 +844,5 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Aurora. Aurora |
 | Где припаркован | регистратор: NAMECHEAP INC |
+=======
+>>>>>>> origin/main
