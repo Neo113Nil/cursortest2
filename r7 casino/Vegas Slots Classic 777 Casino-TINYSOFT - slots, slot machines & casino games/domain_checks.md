@@ -274,6 +274,7 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+| Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -309,7 +310,6 @@
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
 | VIPRE | Unrated |
-| Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: 404 Not Found. 404 Not Found 404 Not Found nginx |
@@ -480,7 +480,6 @@
 | Sucuri SiteCheck | Clean |
 | ThreatHive | Clean |
 | URLhaus | Clean |
-| URLQuery | Clean |
 | Viettel Threat Intelligence | Clean |
 | ViriBack | Clean |
 | VX Vault | Clean |
@@ -519,6 +518,7 @@
 | SecureBrain | Unrated |
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
+| URLQuery | Unrated |
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
@@ -585,7 +585,6 @@
 | Sucuri SiteCheck | Clean |
 | ThreatHive | Clean |
 | URLhaus | Clean |
-| URLQuery | Clean |
 | Viettel Threat Intelligence | Clean |
 | ViriBack | Clean |
 | VX Vault | Clean |
@@ -624,6 +623,7 @@
 | SecureBrain | Unrated |
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
+| URLQuery | Unrated |
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
