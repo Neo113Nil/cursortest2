@@ -169,6 +169,7 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+| Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -204,7 +205,6 @@
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
 | VIPRE | Unrated |
-| Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | {"message":"Route GET:/ not found","error":"Not Found","statusCode":404} |
@@ -356,6 +356,7 @@
 | Heimdal Security | Clean |
 | IPsum | Clean |
 | Juniper Networks | Clean |
+| LevelBlue | Clean |
 | Lionic | Clean |
 | Malwared | Clean |
 | MalwarePatrol | Clean |
@@ -378,6 +379,7 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+| Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -401,7 +403,6 @@
 | Guardpot | Unrated |
 | Hunt.io Intelligence | Unrated |
 | Kaspersky | Unrated |
-| LevelBlue | Unrated |
 | Lumu | Unrated |
 | MalwareURL | Unrated |
 | Mimecast | Unrated |
@@ -414,12 +415,10 @@
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
 | VIPRE | Unrated |
-| Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | AccessDenied Access denied. |
 | Где припаркован | нет данных |
-<<<<<<< HEAD
 
 ## Проверка домена: app.eu.usercentrics.eu
 
@@ -761,6 +760,7 @@
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
+| Criminal IP | Clean |
 | CTX AI | Clean |
 | Cyble | Clean |
 | CyRadar | Clean |
@@ -814,7 +814,6 @@
 | Bfore.Ai PreCrime | Unrated |
 | Bkav | Unrated |
 | Cluster25 | Unrated |
-| Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
 | Cyan | Unrated |
 | DNS8 | Unrated |
@@ -840,5 +839,3 @@
 | Куда редиректит | https://www.braze.com/ |
 | Что выводит (кратко) | title: Braze Customer Engagement Platform. Braze Customer Engagement Platform Why Braze? Product Back The Braze Platform All your data, channels, and orchestration needs in one place View the platform Pricing BrazeAl™ UPDATES Automate, learn, and personalize with AI Braze Data Platform Unify, activate, and distribute your |
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
-=======
->>>>>>> origin/main

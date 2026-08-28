@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "all_custom_domains": [
     "aggregator.eu.usercentrics.eu",
     "aggregator.service.usercentrics.eu",
@@ -434,15 +433,16 @@
           "Cisco Umbrella: 219249"
         ],
         "creation_date": null,
-        "last_modification_date": 1787859457,
-        "last_analysis_date": 1787858707,
+        "last_modification_date": 1787888381,
+        "last_analysis_date": 1787887694,
         "registrar": "нет",
         "whois": "Domain: usercentrics.eu\nRegistrant: 3432650ec337c945\nkeanu.ns.cloudflare.com\nkiki.ns.cloudflare.com",
         "dns_records": [
           "CNAME uc-aggregator.b-cdn.net",
-          "CNAME uc-aggregator.b-cdn.net",
-          "CNAME uc-aggregator.b-cdn.net",
           "A 107.150.176.1",
+          "CNAME uc-aggregator.b-cdn.net",
+          "CNAME uc-aggregator.b-cdn.net",
+          "CNAME uc-aggregator.b-cdn.net",
           "CNAME uc-aggregator.b-cdn.net",
           "CNAME uc-aggregator.b-cdn.net"
         ],
@@ -874,8 +874,8 @@
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
-          "undetected": 35,
-          "harmless": 56,
+          "undetected": 34,
+          "harmless": 57,
           "timeout": 0
         },
         "vendor_rows": [
@@ -1096,6 +1096,10 @@
             "Clean"
           ],
           [
+            "Xcitium Verdict Cloud",
+            "Clean"
+          ],
+          [
             "Yandex Safebrowsing",
             "Clean"
           ],
@@ -1236,10 +1240,6 @@
             "Unrated"
           ],
           [
-            "Xcitium Verdict Cloud",
-            "Unrated"
-          ],
-          [
             "ZeroFox",
             "Unrated"
           ]
@@ -1254,8 +1254,8 @@
           "Cisco Umbrella: 7553"
         ],
         "creation_date": null,
-        "last_modification_date": 1787859457,
-        "last_analysis_date": 1787858707,
+        "last_modification_date": 1787888320,
+        "last_analysis_date": 1787887673,
         "registrar": "нет",
         "whois": "Domain: usercentrics.eu\nRegistrant: 3432650ec337c945\nkeanu.ns.cloudflare.com\nkiki.ns.cloudflare.com",
         "dns_records": [
@@ -1520,6 +1520,10 @@
           "value": "Clean"
         },
         {
+          "param": "Xcitium Verdict Cloud",
+          "value": "Clean"
+        },
+        {
           "param": "Yandex Safebrowsing",
           "value": "Clean"
         },
@@ -1657,10 +1661,6 @@
         },
         {
           "param": "VIPRE",
-          "value": "Unrated"
-        },
-        {
-          "param": "Xcitium Verdict Cloud",
           "value": "Unrated"
         },
         {
@@ -2074,23 +2074,23 @@
           "Cloudflare Radar: 200000"
         ],
         "creation_date": 1440425251,
-        "last_modification_date": 1787859602,
-        "last_analysis_date": 1787842610,
+        "last_modification_date": 1787888428,
+        "last_analysis_date": 1787875212,
         "registrar": "Squarespace Domains II LLC",
         "whois": "Creation Date: 2015-08-24T14:07:31.607Z\nCreation Date: 2015-08-24T14:07:31Z\nDNSSEC: unsigned\nDomain Name: aomedia.org\nDomain Status: client delete prohibited http://www.icann.org/epp#client delete prohibited\nDomain Status: client transfer prohibited http://www.icann.org/epp#client transfer prohibited\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: ns-cloud-a1.googledomains.com\nName Server: ns-cloud-a2.googledomains.com\nName Server: ns-cloud-a3.googledomains.com\nName Server: ns-cloud-a4.googledomains.com\nRegistrant City: 1f8f4166599d23ee\nRegistrant Country: US\nRegistrant Email: 3bae71a42530df7ds@\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 1f8f4166599d23ee\nRegistrant Name: 1f8f4166599d23ee\nRegistrant Organization: 63e9119f4bc4ba6a\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: 1f8f4166599d23ee\nRegistrant Postal Code: 1f8f4166599d23ee\nRegistrant State/Province: b1952dfc047df18a\nRegistrant Street: 1f8f4166599d23ee\nRegistrar Abuse Contact Email: abuse-complaints@squarespace.com\nRegistrar Abuse Contact Phone: +1.646-693-5324\nRegistrar Abuse Contact Phone: +1.6466935324\nRegistrar IANA ID: 895\nRegistrar Registration Expiration Date: 2028-08-24T14:07:31.607Z\nRegistrar URL: https://domains.squarespace.com\nRegistrar URL: https://domains2.squarespace.com\nRegistrar WHOIS Server: whois.squarespace.domains\nRegistrar: Squarespace Domains II LLC\nRegistry Domain ID: 845b247fe2144e3e965924b2c891e0dd-LROR\nRegistry Domain ID: REDACTED\nRegistry Expiry Date: 2028-08-24T14:07:31Z\nUpdated Date: 2025-07-18T02:52:32Z\nUpdated Date: 2026-06-24T19:25:16.590500Z",
         "dns_records": [
-          "A 185.199.110.153",
-          "A 185.199.109.153",
-          "MX alt3.aspmx.l.google.com",
-          "A 185.199.108.153",
-          "A 185.199.111.153",
-          "TXT v=spf1 include:_spf.google.com ~all",
-          "NS ns-cloud-a3.googledomains.com",
-          "TXT OSSRH-77432",
+          "MX aspmx.l.google.com",
           "TXT cisco-ci-domain-verification=486c8c389e803003a4030a87bc6b7584f1278f34ea8886e0a7c30928e43c7e04",
-          "MX alt1.aspmx.l.google.com",
-          "NS ns-cloud-a4.googledomains.com",
-          "MX aspmx.l.google.com"
+          "NS ns-cloud-a3.googledomains.com",
+          "NS ns-cloud-a2.googledomains.com",
+          "MX alt2.aspmx.l.google.com",
+          "MX alt3.aspmx.l.google.com",
+          "MX alt4.aspmx.l.google.com",
+          "SOA ns-cloud-a1.googledomains.com",
+          "NS ns-cloud-a1.googledomains.com",
+          "TXT v=spf1 include:_spf.google.com ~all",
+          "A 185.199.109.153",
+          "NS ns-cloud-a4.googledomains.com"
         ],
         "https_subject": {
           "CN": "aomedia.org"
@@ -2520,8 +2520,8 @@
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
-          "undetected": 36,
-          "harmless": 55,
+          "undetected": 34,
+          "harmless": 57,
           "timeout": 0
         },
         "vendor_rows": [
@@ -2650,6 +2650,10 @@
             "Clean"
           ],
           [
+            "LevelBlue",
+            "Clean"
+          ],
+          [
             "Lionic",
             "Clean"
           ],
@@ -2735,6 +2739,10 @@
           ],
           [
             "Webroot",
+            "Clean"
+          ],
+          [
+            "Xcitium Verdict Cloud",
             "Clean"
           ],
           [
@@ -2830,10 +2838,6 @@
             "Unrated"
           ],
           [
-            "LevelBlue",
-            "Unrated"
-          ],
-          [
             "Lumu",
             "Unrated"
           ],
@@ -2882,10 +2886,6 @@
             "Unrated"
           ],
           [
-            "Xcitium Verdict Cloud",
-            "Unrated"
-          ],
-          [
             "ZeroFox",
             "Unrated"
           ]
@@ -2900,13 +2900,13 @@
           "Cisco Umbrella: 5524"
         ],
         "creation_date": null,
-        "last_modification_date": 1787859459,
-        "last_analysis_date": 1787858707,
+        "last_modification_date": 1787888473,
+        "last_analysis_date": 1787887954,
         "registrar": "нет",
         "whois": "Domain: usercentrics.eu\nRegistrant: 3432650ec337c945\nkeanu.ns.cloudflare.com\nkiki.ns.cloudflare.com",
         "dns_records": [
-          "AAAA 2600:1901:0:c07c::",
-          "A 35.241.3.184"
+          "A 35.241.3.184",
+          "AAAA 2600:1901:0:c07c::"
         ],
         "https_subject": {
           "CN": "api.usercentrics.eu"
@@ -3074,6 +3074,10 @@
           "value": "Clean"
         },
         {
+          "param": "LevelBlue",
+          "value": "Clean"
+        },
+        {
           "param": "Lionic",
           "value": "Clean"
         },
@@ -3159,6 +3163,10 @@
         },
         {
           "param": "Webroot",
+          "value": "Clean"
+        },
+        {
+          "param": "Xcitium Verdict Cloud",
           "value": "Clean"
         },
         {
@@ -3254,10 +3262,6 @@
           "value": "Unrated"
         },
         {
-          "param": "LevelBlue",
-          "value": "Unrated"
-        },
-        {
           "param": "Lumu",
           "value": "Unrated"
         },
@@ -3303,10 +3307,6 @@
         },
         {
           "param": "VIPRE",
-          "value": "Unrated"
-        },
-        {
-          "param": "Xcitium Verdict Cloud",
           "value": "Unrated"
         },
         {
@@ -3716,16 +3716,17 @@
           "Cisco Umbrella: 67078"
         ],
         "creation_date": null,
-        "last_modification_date": 1787859457,
-        "last_analysis_date": 1787858707,
+        "last_modification_date": 1787888470,
+        "last_analysis_date": 1787887954,
         "registrar": "нет",
         "whois": "Domain: usercentrics.eu\nRegistrant: 3432650ec337c945\nkeanu.ns.cloudflare.com\nkiki.ns.cloudflare.com",
         "dns_records": [
           "CNAME uc-app.b-cdn.net",
           "CNAME uc-app.b-cdn.net",
-          "CNAME uc-app.b-cdn.net",
-          "CNAME uc-app.b-cdn.net",
           "A 107.150.176.1",
+          "CNAME uc-app.b-cdn.net",
+          "CNAME uc-app.b-cdn.net",
+          "CNAME uc-app.b-cdn.net",
           "CNAME uc-app.b-cdn.net"
         ],
         "https_subject": {
@@ -4536,13 +4537,13 @@
           "Cisco Umbrella: 4440"
         ],
         "creation_date": null,
-        "last_modification_date": 1787859457,
-        "last_analysis_date": 1787858707,
+        "last_modification_date": 1787888473,
+        "last_analysis_date": 1787887693,
         "registrar": "нет",
         "whois": "Domain: usercentrics.eu\nedna.ns.cloudflare.com\njonah.ns.cloudflare.com",
         "dns_records": [
-          "A 35.190.14.188",
-          "AAAA 2600:1901:0:5987::"
+          "AAAA 2600:1901:0:5987::",
+          "A 35.190.14.188"
         ],
         "https_subject": {
           "CN": "app.usercentrics.eu"
@@ -5788,8 +5789,8 @@
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
-          "undetected": 31,
-          "harmless": 60,
+          "undetected": 30,
+          "harmless": 61,
           "timeout": 0
         },
         "vendor_rows": [
@@ -5851,6 +5852,10 @@
           ],
           [
             "CRDF",
+            "Clean"
+          ],
+          [
+            "Criminal IP",
             "Clean"
           ],
           [
@@ -6066,10 +6071,6 @@
             "Unrated"
           ],
           [
-            "Criminal IP",
-            "Unrated"
-          ],
-          [
             "CSIS Security Group",
             "Unrated"
           ],
@@ -6172,23 +6173,23 @@
           "Cloudflare Radar: 500"
         ],
         "creation_date": 948248308,
-        "last_modification_date": 1787859166,
-        "last_analysis_date": 1787854459,
+        "last_modification_date": 1787888239,
+        "last_analysis_date": 1787886538,
         "registrar": "GoDaddy.com, LLC",
         "whois": "Creation Date: 2000-01-19T02:18:28Z\nDNSSEC: unsigned\nDomain Name: BRAZE.COM\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: NS-1086.AWSDNS-07.ORG\nName Server: NS-1651.AWSDNS-14.CO.UK\nName Server: NS-507.AWSDNS-63.COM\nName Server: NS-645.AWSDNS-16.NET\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: 480-624-2505\nRegistrar IANA ID: 146\nRegistrar URL: http://www.godaddy.com\nRegistrar WHOIS Server: whois.godaddy.com\nRegistrar: GoDaddy.com, LLC\nRegistry Domain ID: 18014487_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2034-01-19T02:18:28Z\nUpdated Date: 2024-01-20T02:28:50Z",
         "dns_records": [
-          "TXT wiz-domain-verification=cec9257ee4c75cdc1ae94304fdc8c5fa10b89c48658d5c7df0239bd926e90fb1",
-          "A 104.17.228.60",
-          "TXT adobe-idp-site-verification=08157be0ccd005e280dd92b5259ffbfe9bb906aef1f3c3d66b85f6f094634d23",
-          "TXT onetrust-domain-verification=5e9c69e730c74256a954ba0b817fabc2",
-          "NS ns-645.awsdns-16.net",
-          "MX alt2.aspmx.l.google.com",
-          "MX aspmx.l.google.com",
-          "TXT cursor-domain-verification-4e1ewn=6WZT4RP52qEjEJawWZtL5f54W",
-          "TXT endgame-domain-verification-2x8g3e=5HYgi43A9DfbyaTCUSpv7t0VR",
+          "TXT OSSRH-89659",
           "TXT atlassian-sending-domain-verification=f855b701-ae7a-4298-b06b-c3f969159064",
-          "NS ns-1086.awsdns-07.org",
-          "TXT _globalsign-domain-verification=Ak7DVnwGWFgbLMDP9veofBLZlC-lsWR1G0_vyJ9xqL"
+          "TXT _globalsign-domain-verification=ejSxWtj6itrrEyCy3glSYSPl_CmxCXQqO-Gg8-PAwU",
+          "TXT h1-domain-verification=R1Nq1yWdufLBWLDeRWvqipgzHdcEukNvrnBm4d3UBTkzpyPw",
+          "TXT ca3-b56d68a3b19541daaaa93208c6064b70",
+          "A 104.17.228.60",
+          "NS ns-645.awsdns-16.net",
+          "TXT anthropic-domain-verification-x1gdd0=fcKtdB5uHCp5TuwzmpD6xcOKz",
+          "TXT google-site-verification=AJAjkT_X9Rkmlg740Q5W0-ZqmFs8c5mHd9OuerZ0pTA",
+          "TXT v=spf1 ip4:4.7.93.226 include:_spf.google.com exists:%{i}._spf.mta.salesforce.com include:mailsenders.netsuite.com include:amazonses.com include:us.khoros-mail.com include:sendgrid.net ~all",
+          "TXT atlassian-domain-verification=GJGQs77JK+AOa+nQs6R6U6xVUj5j23wSIs9H1hHeq82TtnFZS0KKzaCfNEGGkAWc",
+          "TXT apple-domain-verification=S7N37rRckeU5NRJd"
         ],
         "https_subject": {
           "CN": "braze.com"
@@ -6290,6 +6291,10 @@
         },
         {
           "param": "CRDF",
+          "value": "Clean"
+        },
+        {
+          "param": "Criminal IP",
           "value": "Clean"
         },
         {
@@ -6505,10 +6510,6 @@
           "value": "Unrated"
         },
         {
-          "param": "Criminal IP",
-          "value": "Unrated"
-        },
-        {
           "param": "CSIS Security Group",
           "value": "Unrated"
         },
@@ -6614,412 +6615,3 @@
   "count": 8,
   "vt_configured": true
 }
-=======
- "domains": [
-  {
-   "domain": "aggregator.eu.usercentrics.eu",
-   "virustotal_url": "https://www.virustotal.com/gui/domain/aggregator.eu.usercentrics.eu",
-   "detections": "0/91 (malicious=0, suspicious=0)",
-   "security_vendors_analysis": {
-    "Abusix": "Clean",
-    "Acronis": "Clean",
-    "ADMINUSLabs": "Clean",
-    "AILabs (MONITORAPP)": "Clean",
-    "AlienVault": "Clean",
-    "Antiy-AVL": "Clean",
-    "BitDefender": "Clean",
-    "Blueliv": "Clean",
-    "Certego": "Clean",
-    "Chong Lua Dao": "Clean",
-    "CINS Army": "Clean",
-    "CMC Threat Intelligence": "Clean",
-    "CRDF": "Clean",
-    "CTX AI": "Clean",
-    "Cyble": "Clean",
-    "CyRadar": "Clean",
-    "desenmascara.me": "Clean",
-    "Dr.Web": "Clean",
-    "EmergingThreats": "Clean",
-    "Emsisoft": "Clean",
-    "ESET": "Clean",
-    "ESTsecurity": "Clean",
-    "Forcepoint ThreatSeeker": "Clean",
-    "Fortinet": "Clean",
-    "G-Data": "Clean",
-    "Google Safe Browsing": "Clean",
-    "GreenSnow": "Clean",
-    "Heimdal Security": "Clean",
-    "IPsum": "Clean",
-    "Juniper Networks": "Clean",
-    "Kaspersky": "Clean",
-    "Lionic": "Clean",
-    "Malwared": "Clean",
-    "MalwarePatrol": "Clean",
-    "Netcraft": "Clean",
-    "OpenPhish": "Clean",
-    "Phishing Database": "Clean",
-    "Phishtank": "Clean",
-    "PREBYTES": "Clean",
-    "Quick Heal": "Clean",
-    "Quttera": "Clean",
-    "Scantitan": "Clean",
-    "SCUMWARE.org": "Clean",
-    "Seclookup": "Clean",
-    "Sophos": "Clean",
-    "StopForumSpam": "Clean",
-    "Sucuri SiteCheck": "Clean",
-    "ThreatHive": "Clean",
-    "URLhaus": "Clean",
-    "Viettel Threat Intelligence": "Clean",
-    "ViriBack": "Clean",
-    "VX Vault": "Clean",
-    "Webroot": "Clean",
-    "Xcitium Verdict Cloud": "Clean",
-    "Yandex Safebrowsing": "Clean",
-    "ZeroCERT": "Clean",
-    "0xSI_f33d": "Unrated",
-    "alphaMountain.ai": "Unrated",
-    "AlphaSOC": "Unrated",
-    "ArcSight Threat Intelligence": "Unrated",
-    "AutoShun": "Unrated",
-    "Axur": "Unrated",
-    "Bfore.Ai PreCrime": "Unrated",
-    "Bkav": "Unrated",
-    "ChainPatrol": "Unrated",
-    "Cluster25": "Unrated",
-    "Criminal IP": "Unrated",
-    "CSIS Security Group": "Unrated",
-    "Cyan": "Unrated",
-    "DNS8": "Unrated",
-    "Ermes": "Unrated",
-    "Fortra": "Unrated",
-    "GCP Abuse Intelligence": "Unrated",
-    "GreyNoise": "Unrated",
-    "Gridinsoft": "Unrated",
-    "Guardpot": "Unrated",
-    "Hunt.io Intelligence": "Unrated",
-    "LevelBlue": "Unrated",
-    "Lumu": "Unrated",
-    "MalwareURL": "Unrated",
-    "Mimecast": "Unrated",
-    "PhishFort": "Unrated",
-    "PrecisionSec": "Unrated",
-    "SafeToOpen": "Unrated",
-    "Sansec eComscan": "Unrated",
-    "SecureBrain": "Unrated",
-    "Snort IP sample list": "Unrated",
-    "SOCRadar": "Unrated",
-    "URLQuery": "Unrated",
-    "VIPRE": "Unrated",
-    "ZeroFox": "Unrated"
-   },
-   "redirects_to": "нет (без редиректа)",
-   "page_snippet": "{\"message\":\"Route GET:/ not found\",\"error\":\"Not Found\",\"statusCode\":404}",
-   "parked_at": "нет данных"
-  },
-  {
-   "domain": "aggregator.service.usercentrics.eu",
-   "virustotal_url": "https://www.virustotal.com/gui/domain/aggregator.service.usercentrics.eu",
-   "detections": "0/91 (malicious=0, suspicious=0)",
-   "security_vendors_analysis": {
-    "Abusix": "Clean",
-    "Acronis": "Clean",
-    "ADMINUSLabs": "Clean",
-    "AILabs (MONITORAPP)": "Clean",
-    "AlienVault": "Clean",
-    "alphaMountain.ai": "Clean",
-    "Antiy-AVL": "Clean",
-    "BitDefender": "Clean",
-    "Blueliv": "Clean",
-    "Certego": "Clean",
-    "Chong Lua Dao": "Clean",
-    "CINS Army": "Clean",
-    "CMC Threat Intelligence": "Clean",
-    "CRDF": "Clean",
-    "CTX AI": "Clean",
-    "Cyble": "Clean",
-    "CyRadar": "Clean",
-    "desenmascara.me": "Clean",
-    "Dr.Web": "Clean",
-    "EmergingThreats": "Clean",
-    "Emsisoft": "Clean",
-    "ESET": "Clean",
-    "ESTsecurity": "Clean",
-    "Forcepoint ThreatSeeker": "Clean",
-    "Fortinet": "Clean",
-    "G-Data": "Clean",
-    "Google Safe Browsing": "Clean",
-    "GreenSnow": "Clean",
-    "Heimdal Security": "Clean",
-    "IPsum": "Clean",
-    "Juniper Networks": "Clean",
-    "LevelBlue": "Clean",
-    "Lionic": "Clean",
-    "Malwared": "Clean",
-    "MalwarePatrol": "Clean",
-    "OpenPhish": "Clean",
-    "Phishing Database": "Clean",
-    "Phishtank": "Clean",
-    "PREBYTES": "Clean",
-    "Quick Heal": "Clean",
-    "Quttera": "Clean",
-    "Scantitan": "Clean",
-    "SCUMWARE.org": "Clean",
-    "Seclookup": "Clean",
-    "Sophos": "Clean",
-    "StopForumSpam": "Clean",
-    "Sucuri SiteCheck": "Clean",
-    "ThreatHive": "Clean",
-    "URLhaus": "Clean",
-    "URLQuery": "Clean",
-    "Viettel Threat Intelligence": "Clean",
-    "ViriBack": "Clean",
-    "VX Vault": "Clean",
-    "Webroot": "Clean",
-    "Yandex Safebrowsing": "Clean",
-    "ZeroCERT": "Clean",
-    "0xSI_f33d": "Unrated",
-    "AlphaSOC": "Unrated",
-    "ArcSight Threat Intelligence": "Unrated",
-    "AutoShun": "Unrated",
-    "Axur": "Unrated",
-    "Bfore.Ai PreCrime": "Unrated",
-    "Bkav": "Unrated",
-    "ChainPatrol": "Unrated",
-    "Cluster25": "Unrated",
-    "Criminal IP": "Unrated",
-    "CSIS Security Group": "Unrated",
-    "Cyan": "Unrated",
-    "DNS8": "Unrated",
-    "Ermes": "Unrated",
-    "Fortra": "Unrated",
-    "GCP Abuse Intelligence": "Unrated",
-    "GreyNoise": "Unrated",
-    "Gridinsoft": "Unrated",
-    "Guardpot": "Unrated",
-    "Hunt.io Intelligence": "Unrated",
-    "Kaspersky": "Unrated",
-    "Lumu": "Unrated",
-    "MalwareURL": "Unrated",
-    "Mimecast": "Unrated",
-    "Netcraft": "Unrated",
-    "PhishFort": "Unrated",
-    "PrecisionSec": "Unrated",
-    "SafeToOpen": "Unrated",
-    "Sansec eComscan": "Unrated",
-    "SecureBrain": "Unrated",
-    "Snort IP sample list": "Unrated",
-    "SOCRadar": "Unrated",
-    "VIPRE": "Unrated",
-    "Xcitium Verdict Cloud": "Unrated",
-    "ZeroFox": "Unrated"
-   },
-   "redirects_to": "нет (без редиректа)",
-   "page_snippet": "{\"message\":\"Route GET:/ not found\",\"error\":\"Not Found\",\"statusCode\":404}",
-   "parked_at": "нет данных"
-  },
-  {
-   "domain": "aomedia.org",
-   "virustotal_url": "https://www.virustotal.com/gui/domain/aomedia.org",
-   "detections": "0/91 (malicious=0, suspicious=0)",
-   "security_vendors_analysis": {
-    "Abusix": "Clean",
-    "Acronis": "Clean",
-    "ADMINUSLabs": "Clean",
-    "AILabs (MONITORAPP)": "Clean",
-    "AlienVault": "Clean",
-    "alphaMountain.ai": "Clean",
-    "Antiy-AVL": "Clean",
-    "BitDefender": "Clean",
-    "Blueliv": "Clean",
-    "Certego": "Clean",
-    "Chong Lua Dao": "Clean",
-    "CINS Army": "Clean",
-    "CMC Threat Intelligence": "Clean",
-    "CRDF": "Clean",
-    "CTX AI": "Clean",
-    "Cyble": "Clean",
-    "CyRadar": "Clean",
-    "desenmascara.me": "Clean",
-    "Dr.Web": "Clean",
-    "EmergingThreats": "Clean",
-    "Emsisoft": "Clean",
-    "ESET": "Clean",
-    "ESTsecurity": "Clean",
-    "Forcepoint ThreatSeeker": "Clean",
-    "Fortinet": "Clean",
-    "G-Data": "Clean",
-    "Google Safe Browsing": "Clean",
-    "GreenSnow": "Clean",
-    "Heimdal Security": "Clean",
-    "IPsum": "Clean",
-    "Juniper Networks": "Clean",
-    "Kaspersky": "Clean",
-    "LevelBlue": "Clean",
-    "Lionic": "Clean",
-    "Malwared": "Clean",
-    "MalwarePatrol": "Clean",
-    "OpenPhish": "Clean",
-    "Phishing Database": "Clean",
-    "Phishtank": "Clean",
-    "PREBYTES": "Clean",
-    "Quick Heal": "Clean",
-    "Quttera": "Clean",
-    "Scantitan": "Clean",
-    "SCUMWARE.org": "Clean",
-    "Seclookup": "Clean",
-    "Sophos": "Clean",
-    "StopForumSpam": "Clean",
-    "Sucuri SiteCheck": "Clean",
-    "ThreatHive": "Clean",
-    "URLhaus": "Clean",
-    "Viettel Threat Intelligence": "Clean",
-    "ViriBack": "Clean",
-    "VX Vault": "Clean",
-    "Webroot": "Clean",
-    "Xcitium Verdict Cloud": "Clean",
-    "Yandex Safebrowsing": "Clean",
-    "ZeroCERT": "Clean",
-    "0xSI_f33d": "Unrated",
-    "AlphaSOC": "Unrated",
-    "ArcSight Threat Intelligence": "Unrated",
-    "AutoShun": "Unrated",
-    "Axur": "Unrated",
-    "Bfore.Ai PreCrime": "Unrated",
-    "Bkav": "Unrated",
-    "ChainPatrol": "Unrated",
-    "Cluster25": "Unrated",
-    "Criminal IP": "Unrated",
-    "CSIS Security Group": "Unrated",
-    "Cyan": "Unrated",
-    "DNS8": "Unrated",
-    "Ermes": "Unrated",
-    "Fortra": "Unrated",
-    "GCP Abuse Intelligence": "Unrated",
-    "GreyNoise": "Unrated",
-    "Gridinsoft": "Unrated",
-    "Guardpot": "Unrated",
-    "Hunt.io Intelligence": "Unrated",
-    "Lumu": "Unrated",
-    "MalwareURL": "Unrated",
-    "Mimecast": "Unrated",
-    "Netcraft": "Unrated",
-    "PhishFort": "Unrated",
-    "PrecisionSec": "Unrated",
-    "SafeToOpen": "Unrated",
-    "Sansec eComscan": "Unrated",
-    "SecureBrain": "Unrated",
-    "Snort IP sample list": "Unrated",
-    "SOCRadar": "Unrated",
-    "URLQuery": "Unrated",
-    "VIPRE": "Unrated",
-    "ZeroFox": "Unrated"
-   },
-   "redirects_to": "нет (без редиректа)",
-   "page_snippet": "title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story FAQ Members Organizat",
-   "parked_at": "регистратор: Squarespace Domains II LLC"
-  },
-  {
-   "domain": "api.usercentrics.eu",
-   "virustotal_url": "https://www.virustotal.com/gui/domain/api.usercentrics.eu",
-   "detections": "0/91 (malicious=0, suspicious=0)",
-   "security_vendors_analysis": {
-    "Abusix": "Clean",
-    "Acronis": "Clean",
-    "ADMINUSLabs": "Clean",
-    "AILabs (MONITORAPP)": "Clean",
-    "AlienVault": "Clean",
-    "alphaMountain.ai": "Clean",
-    "Antiy-AVL": "Clean",
-    "BitDefender": "Clean",
-    "Blueliv": "Clean",
-    "Certego": "Clean",
-    "Chong Lua Dao": "Clean",
-    "CINS Army": "Clean",
-    "CMC Threat Intelligence": "Clean",
-    "CRDF": "Clean",
-    "CTX AI": "Clean",
-    "Cyble": "Clean",
-    "CyRadar": "Clean",
-    "desenmascara.me": "Clean",
-    "Dr.Web": "Clean",
-    "EmergingThreats": "Clean",
-    "Emsisoft": "Clean",
-    "ESET": "Clean",
-    "ESTsecurity": "Clean",
-    "Forcepoint ThreatSeeker": "Clean",
-    "Fortinet": "Clean",
-    "G-Data": "Clean",
-    "Google Safe Browsing": "Clean",
-    "GreenSnow": "Clean",
-    "Heimdal Security": "Clean",
-    "IPsum": "Clean",
-    "Juniper Networks": "Clean",
-    "Lionic": "Clean",
-    "Malwared": "Clean",
-    "MalwarePatrol": "Clean",
-    "OpenPhish": "Clean",
-    "Phishing Database": "Clean",
-    "Phishtank": "Clean",
-    "PREBYTES": "Clean",
-    "Quick Heal": "Clean",
-    "Quttera": "Clean",
-    "Scantitan": "Clean",
-    "SCUMWARE.org": "Clean",
-    "Seclookup": "Clean",
-    "Sophos": "Clean",
-    "StopForumSpam": "Clean",
-    "Sucuri SiteCheck": "Clean",
-    "ThreatHive": "Clean",
-    "URLhaus": "Clean",
-    "URLQuery": "Clean",
-    "Viettel Threat Intelligence": "Clean",
-    "ViriBack": "Clean",
-    "VX Vault": "Clean",
-    "Webroot": "Clean",
-    "Yandex Safebrowsing": "Clean",
-    "ZeroCERT": "Clean",
-    "0xSI_f33d": "Unrated",
-    "AlphaSOC": "Unrated",
-    "ArcSight Threat Intelligence": "Unrated",
-    "AutoShun": "Unrated",
-    "Axur": "Unrated",
-    "Bfore.Ai PreCrime": "Unrated",
-    "Bkav": "Unrated",
-    "ChainPatrol": "Unrated",
-    "Cluster25": "Unrated",
-    "Criminal IP": "Unrated",
-    "CSIS Security Group": "Unrated",
-    "Cyan": "Unrated",
-    "DNS8": "Unrated",
-    "Ermes": "Unrated",
-    "Fortra": "Unrated",
-    "GCP Abuse Intelligence": "Unrated",
-    "GreyNoise": "Unrated",
-    "Gridinsoft": "Unrated",
-    "Guardpot": "Unrated",
-    "Hunt.io Intelligence": "Unrated",
-    "Kaspersky": "Unrated",
-    "LevelBlue": "Unrated",
-    "Lumu": "Unrated",
-    "MalwareURL": "Unrated",
-    "Mimecast": "Unrated",
-    "Netcraft": "Unrated",
-    "PhishFort": "Unrated",
-    "PrecisionSec": "Unrated",
-    "SafeToOpen": "Unrated",
-    "Sansec eComscan": "Unrated",
-    "SecureBrain": "Unrated",
-    "Snort IP sample list": "Unrated",
-    "SOCRadar": "Unrated",
-    "VIPRE": "Unrated",
-    "Xcitium Verdict Cloud": "Unrated",
-    "ZeroFox": "Unrated"
-   },
-   "redirects_to": "нет (без редиректа)",
-   "page_snippet": "AccessDenied Access denied.",
-   "parked_at": "нет данных"
-  }
- ]
-}
->>>>>>> origin/main
