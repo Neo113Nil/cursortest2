@@ -3,7 +3,6 @@
     "cdn2.inner-active.mobi",
     "compliance.iabtechnologylab.com",
     "config.ru",
-<<<<<<< HEAD
     "crashpad.chromium.org",
     "fb.gg",
     "privacy-sandbox.appsflyersdk.com",
@@ -11,9 +10,6 @@
     "tizen.org",
     "vl.purplekiwii.com",
     "whatwg.org"
-=======
-    "crashpad.chromium.org"
->>>>>>> origin/main
   ],
   "checked": [
     {
@@ -21,13 +17,12 @@
       "virustotal": {
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/cdn2.inner-active.mobi",
-<<<<<<< HEAD
         "detections": "0/91 (malicious=0, suspicious=0)",
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
-          "undetected": 34,
-          "harmless": 57,
+          "undetected": 33,
+          "harmless": 58,
           "timeout": 0
         },
         "vendor_rows": [
@@ -252,6 +247,10 @@
             "Clean"
           ],
           [
+            "Xcitium Verdict Cloud",
+            "Clean"
+          ],
+          [
             "Yandex Safebrowsing",
             "Clean"
           ],
@@ -388,10 +387,6 @@
             "Unrated"
           ],
           [
-            "Xcitium Verdict Cloud",
-            "Unrated"
-          ],
-          [
             "ZeroFox",
             "Unrated"
           ]
@@ -401,28 +396,33 @@
           "harmless": 0,
           "malicious": 0
         },
-        "categories": {},
+        "categories": {
+          "BitDefender": "adsnetwork",
+          "Sophos": "advertisements",
+          "Forcepoint ThreatSeeker": "content delivery networks",
+          "Google": "technology"
+        },
         "popularity_ranks": [
           "Cisco Umbrella: 2136"
         ],
         "creation_date": 1286829089,
-        "last_modification_date": 1787853200,
-        "last_analysis_date": 1787852864,
+        "last_modification_date": 1787884216,
+        "last_analysis_date": 1787882694,
         "registrar": "GoDaddy.com, LLC",
         "whois": "Admin City: REDACTED\nAdmin Country: REDACTED\nAdmin Organization: REDACTED\nAdmin Postal Code: REDACTED\nAdmin State/Province: REDACTED\nCreation Date: 2010-10-11T20:31:29Z\nDNSSEC: unsigned\nDomain Name: inner-active.mobi\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: a1-94.akam.net\nName Server: a10-64.akam.net\nName Server: a26-64.akam.net\nName Server: a5-65.akam.net\nName Server: a6-66.akam.net\nName Server: a7-66.akam.net\nRegistrant City: 3495bcf1839c6374\nRegistrant Country: US\nRegistrant Email: fb6ff66ef97c0518s@\nRegistrant Fax Ext: 3495bcf1839c6374\nRegistrant Fax: 3495bcf1839c6374\nRegistrant Name: 3495bcf1839c6374\nRegistrant Organization: b46a98a26fe2fd9f\nRegistrant Phone Ext: 3495bcf1839c6374\nRegistrant Phone: 3495bcf1839c6374\nRegistrant Postal Code: 3495bcf1839c6374\nRegistrant State/Province: 30bdd2917a604c83\nRegistrant Street: 3495bcf1839c6374\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: +1.4806242505\nRegistrar IANA ID: 146\nRegistrar URL: http://www.godaddy.com/domains/search.aspx?ci=8990\nRegistrar WHOIS Server: whois.godaddy.com/\nRegistrar: GoDaddy.com, LLC\nRegistry Admin ID: REDACTED\nRegistry Domain ID: a966be35cfcb4fb8b15bc9f922e48253-DONUTS\nRegistry Expiry Date: 2029-10-11T20:31:29Z\nRegistry Registrant ID: REDACTED\nRegistry Tech ID: REDACTED\nTech City: REDACTED\nTech Country: REDACTED\nTech Organization: REDACTED\nTech Postal Code: REDACTED\nTech State/Province: REDACTED\nUpdated Date: 2024-08-18T14:04:48Z",
         "dns_records": [
+          "CNAME cdn2-inner-active.map.fastly.net",
+          "AAAA 2a04:4e42:200::820",
+          "CNAME cdn2-inner-active.map.fastly.net",
+          "AAAA 2a04:4e42:400::820",
+          "A 151.101.195.52",
           "AAAA 2a04:4e42:600::820",
-          "A 151.101.131.52",
+          "CNAME cdn2-inner-active.map.fastly.net",
+          "CNAME cdn2-inner-active.map.fastly.net",
           "CNAME cdn2-inner-active.map.fastly.net",
           "A 151.101.3.52",
           "CNAME cdn2-inner-active.map.fastly.net",
-          "CNAME cdn2-inner-active.map.fastly.net",
-          "A 151.101.67.52",
-          "AAAA 2a04:4e42:400::820",
-          "AAAA 2a04:4e42:200::820",
-          "AAAA 2a04:4e42::820",
-          "A 151.101.195.52",
-          "CNAME cdn2-inner-active.map.fastly.net"
+          "A 151.101.67.52"
         ],
         "https_subject": {
           "CN": "cdn2.inner-active.mobi"
@@ -448,13 +448,6 @@
       "parked_at": "регистратор/whois связан с парковкой: godaddy",
       "final_url": "https://cdn2.inner-active.mobi/",
       "http_status": 403,
-=======
-        "detections": "0/91 (malicious=0, suspicious=0)"
-      },
-      "redirects_to": "нет (без редиректа)",
-      "page_output": "AccessDenied Access denied. Anonymous caller does not have storage.objects.list access to the Google Cloud Storage bucket. Permission 'storage.objects.list' denied on resource '//storage.googleapis.com/projects/_/buckets/gcs-exchange-public-useast1-prod' (or it may not exist).",
-      "parked_at": "регистратор/whois связан с парковкой: godaddy",
->>>>>>> origin/main
       "table_rows": [
         {
           "param": "Домен",
@@ -693,6 +686,10 @@
           "value": "Clean"
         },
         {
+          "param": "Xcitium Verdict Cloud",
+          "value": "Clean"
+        },
+        {
           "param": "Yandex Safebrowsing",
           "value": "Clean"
         },
@@ -829,10 +826,6 @@
           "value": "Unrated"
         },
         {
-          "param": "Xcitium Verdict Cloud",
-          "value": "Unrated"
-        },
-        {
           "param": "ZeroFox",
           "value": "Unrated"
         },
@@ -855,7 +848,6 @@
       "virustotal": {
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/compliance.iabtechnologylab.com",
-<<<<<<< HEAD
         "detections": "0/91 (malicious=0, suspicious=0)",
         "last_analysis_stats": {
           "malicious": 0,
@@ -1237,18 +1229,18 @@
         },
         "categories": {},
         "popularity_ranks": [
-          "Cisco Umbrella: 35144"
+          "Cisco Umbrella: 36307"
         ],
         "creation_date": 1411663203,
-        "last_modification_date": 1787854201,
-        "last_analysis_date": 1787774560,
+        "last_modification_date": 1787884883,
+        "last_analysis_date": 1787860962,
         "registrar": "GoDaddy.com, LLC",
         "whois": "Creation Date: 2014-09-25T16:40:03Z\nDNSSEC: unsigned\nDomain Name: IABTECHNOLOGYLAB.COM\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: HALEY.NS.CLOUDFLARE.COM\nName Server: MARIO.NS.CLOUDFLARE.COM\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: 480-624-2505\nRegistrar IANA ID: 146\nRegistrar URL: http://www.godaddy.com\nRegistrar WHOIS Server: whois.godaddy.com\nRegistrar: GoDaddy.com, LLC\nRegistry Domain ID: 1877485146_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2026-09-25T16:40:03Z\nUpdated Date: 2026-07-24T16:32:47Z",
         "dns_records": [
           "AAAA 2606:4700:3030::6815:589",
           "AAAA 2606:4700:3031::ac43:8580",
-          "A 104.21.5.137",
-          "A 172.67.133.128"
+          "A 172.67.133.128",
+          "A 104.21.5.137"
         ],
         "https_subject": {
           "CN": "iabtechnologylab.com"
@@ -1274,13 +1266,6 @@
       "parked_at": "регистратор/whois связан с парковкой: godaddy",
       "final_url": "https://compliance.iabtechnologylab.com/",
       "http_status": 404,
-=======
-        "detections": "0/91 (malicious=0, suspicious=0)"
-      },
-      "redirects_to": "нет (без редиректа)",
-      "page_output": "title: Page not found &middot; GitHub Pages. Page not found &middot; GitHub Pages 404 File not found The site configured at this address does not contain the requested file. If this is your site, make sure that the filename case matches the URL as well as any file permissions. For root URLs (like http://example.com/ ) you m",
-      "parked_at": "регистратор/whois связан с парковкой: godaddy",
->>>>>>> origin/main
       "table_rows": [
         {
           "param": "Домен",
@@ -1681,7 +1666,6 @@
       "virustotal": {
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/config.ru",
-<<<<<<< HEAD
         "detections": "0/91 (malicious=0, suspicious=0)",
         "last_analysis_stats": {
           "malicious": 0,
@@ -2102,13 +2086,6 @@
       "parked_at": "похоже на парковку (domain is for sale)",
       "final_url": "https://config.ru/en/",
       "http_status": 200,
-=======
-        "detections": "0/91 (malicious=0, suspicious=0)"
-      },
-      "redirects_to": "https://config.ru/en/",
-      "page_output": "title: config.ru is for sale. config.ru is for sale en ru en config.ru This domain is for sale The domain is actually the site name and its correct choice influences greatly on the your endeavors success. Often, cost of the domain change during the project running is comparable with the re-branding, so the be",
-      "parked_at": "похоже на парковку (domain is for sale)",
->>>>>>> origin/main
       "table_rows": [
         {
           "param": "Домен",
@@ -2509,7 +2486,6 @@
       "virustotal": {
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/crashpad.chromium.org",
-<<<<<<< HEAD
         "detections": "0/91 (malicious=0, suspicious=0)",
         "last_analysis_stats": {
           "malicious": 0,
@@ -2892,14 +2868,14 @@
         "categories": {},
         "popularity_ranks": "нет",
         "creation_date": 1022090988,
-        "last_modification_date": 1787854207,
-        "last_analysis_date": 1787797382,
+        "last_modification_date": 1787884968,
+        "last_analysis_date": 1787875206,
         "registrar": "MarkMonitor Inc.",
         "whois": "Creation Date: 2002-05-22T18:09:48+0000\nCreation Date: 2002-05-22T18:09:48Z\nDNSSEC: unsigned\nDomain Name: chromium.org\nDomain Status: clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nDomain Status: serverDeleteProhibited (https://www.icann.org/epp#serverDeleteProhibited)\nDomain Status: serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited\nDomain Status: serverTransferProhibited (https://www.icann.org/epp#serverTransferProhibited)\nDomain Status: serverTransferProhibited https://icann.org/epp#serverTransferProhibited\nDomain Status: serverUpdateProhibited (https://www.icann.org/epp#serverUpdateProhibited)\nDomain Status: serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited\nName Server: ns1.google.com\nName Server: ns2.google.com\nName Server: ns3.google.com\nName Server: ns4.google.com\nRegistrant Country: US\nRegistrant Email: 5892ddc066e261e6s@\nRegistrant Organization: 3307059bbb3149c4\nRegistrar Abuse Contact Email: abusecomplaints@markmonitor.com\nRegistrar Abuse Contact Phone: +1.2083895740\nRegistrar Abuse Contact Phone: +1.2086851750\nRegistrar Abuse Contact: https://corp.markmonitor.com/domain/ui/abuse-report\nRegistrar IANA ID: 292\nRegistrar Registration Expiration Date: 2027-05-22T00:00:00+0000\nRegistrar URL: http://www.markmonitor.com\nRegistrar WHOIS Server: whois.markmonitor.com\nRegistrar: MarkMonitor Inc.\nRegistrar: MarkMonitor, Inc.\nRegistry Domain ID: 585cf196fa8649db84c2306ad82d7e0b-LROR\nRegistry Domain ID: REDACTED\nRegistry Expiry Date: 2027-05-22T18:09:48Z\nUpdated Date: 2026-04-20T10:34:54+0000\nUpdated Date: 2026-08-12T09:14:10Z",
         "dns_records": [
-          "AAAA 2607:f8b0:4001:c08::79",
+          "AAAA 2607:f8b0:4001:c76::79",
           "CNAME ghs.googlehosted.com",
-          "A 74.125.69.121"
+          "A 172.253.155.121"
         ],
         "https_subject": {
           "CN": "crashpad.chromium.org"
@@ -2926,13 +2902,6 @@
       "parked_at": "регистратор: MarkMonitor Inc.",
       "final_url": "https://chromium.googlesource.com/crashpad/crashpad/+/main/README.md",
       "http_status": 200,
-=======
-        "detections": "0/91 (malicious=0, suspicious=0)"
-      },
-      "redirects_to": "https://chromium.googlesource.com/crashpad/crashpad/+/main/README.md",
-      "page_output": "title: Crashpad - Crashpad. Crashpad - Crashpad Crashpad Home Developing Interface Docs Man Pages Source Code Crashpad Crashpad is a crash-reporting system. Documentation Project status Developing Crashpad : instructions for getting the source code, building, testing, and contributing to the project. Crashp",
-      "parked_at": "регистратор: MarkMonitor Inc.",
->>>>>>> origin/main
       "table_rows": [
         {
           "param": "Домен",
@@ -3327,7 +3296,6 @@
           "value": "регистратор: MarkMonitor Inc."
         }
       ]
-<<<<<<< HEAD
     },
     {
       "domain": "fb.gg",
@@ -3338,8 +3306,8 @@
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
-          "undetected": 33,
-          "harmless": 58,
+          "undetected": 32,
+          "harmless": 59,
           "timeout": 0
         },
         "vendor_rows": [
@@ -3397,6 +3365,10 @@
           ],
           [
             "CRDF",
+            "Clean"
+          ],
+          [
+            "Criminal IP",
             "Clean"
           ],
           [
@@ -3612,10 +3584,6 @@
             "Unrated"
           ],
           [
-            "Criminal IP",
-            "Unrated"
-          ],
-          [
             "CSIS Security Group",
             "Unrated"
           ],
@@ -3716,10 +3684,9 @@
         "categories": {
           "alphaMountain.ai": "Games, Social Networking (alphaMountain.ai)",
           "BitDefender": "games",
-          "Xcitium Verdict Cloud": "social networking",
           "Sophos": "games",
           "Forcepoint ThreatSeeker": "business and economy",
-          "Google": "gaming"
+          "Google": "social_media"
         },
         "popularity_ranks": [
           "Majestic: 198180",
@@ -3729,7 +3696,7 @@
           "Cloudflare Radar: 10000"
         ],
         "creation_date": null,
-        "last_modification_date": 1787854188,
+        "last_modification_date": 1787884943,
         "last_analysis_date": 1787800152,
         "registrar": "нет",
         "whois": "Registrant: 3432650ec337c945\na.ns.facebook.com\nb.ns.facebook.com\nc.ns.facebook.com\nd.ns.facebook.com",
@@ -3842,6 +3809,10 @@
         },
         {
           "param": "CRDF",
+          "value": "Clean"
+        },
+        {
+          "param": "Criminal IP",
           "value": "Clean"
         },
         {
@@ -4054,10 +4025,6 @@
         },
         {
           "param": "Cluster25",
-          "value": "Unrated"
-        },
-        {
-          "param": "Criminal IP",
           "value": "Unrated"
         },
         {
@@ -4555,15 +4522,15 @@
           "Cisco Umbrella: 725885"
         ],
         "creation_date": 1565012094,
-        "last_modification_date": 1787851078,
-        "last_analysis_date": 1787850621,
+        "last_modification_date": 1787883706,
+        "last_analysis_date": 1787883374,
         "registrar": "Amazon Registrar, Inc.",
         "whois": "Admin City: REDACTED FOR PRIVACY\nAdmin Country: REDACTED FOR PRIVACY\nAdmin Email: 4babf6fcc6f7794as@domain-contact.org\nAdmin Organization: REDACTED FOR PRIVACY\nAdmin Postal Code: REDACTED FOR PRIVACY\nAdmin State/Province: REDACTED FOR PRIVACY\nBilling City: REDACTED FOR PRIVACY\nBilling Country: REDACTED FOR PRIVACY\nBilling Email: 4babf6fcc6f7794as@domain-contact.org\nBilling Organization: REDACTED FOR PRIVACY\nBilling Postal Code: REDACTED FOR PRIVACY\nBilling State/Province: REDACTED FOR PRIVACY\nCreation Date: 2019-08-05T13:34:54Z\nDNSSEC: unsigned\nDomain Name: APPSFLYERSDK.COM\nDomain Name: appsflyersdk.com\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: NS-1430.AWSDNS-50.ORG\nName Server: NS-1786.AWSDNS-31.CO.UK\nName Server: NS-314.AWSDNS-39.COM\nName Server: NS-597.AWSDNS-10.NET\nName Server: ns-1430.awsdns-50.org\nName Server: ns-1786.awsdns-31.co.uk\nName Server: ns-314.awsdns-39.com\nName Server: ns-597.awsdns-10.net\nRegistrant City: 1f8f4166599d23ee\nRegistrant Country: IL\nRegistrant Email: 4babf6fcc6f7794as@domain-contact.org\nRegistrant Fax Ext: 1f8f4166599d23ee\nRegistrant Fax: 1f8f4166599d23ee\nRegistrant Name: 1f8f4166599d23ee\nRegistrant Organization: 1f8f4166599d23ee\nRegistrant Phone Ext: 1f8f4166599d23ee\nRegistrant Phone: 1f8f4166599d23ee\nRegistrant Postal Code: 1f8f4166599d23ee\nRegistrant State/Province: 3432650ec337c945\nRegistrant Street: 1f8f4166599d23ee\nRegistrar Abuse Contact Email: trustandsafety@support.aws.com\nRegistrar Abuse Contact Phone: +1.2024422253\nRegistrar IANA ID: 468\nRegistrar Registration Expiration Date: 2029-08-05T13:34:54Z\nRegistrar URL: http://registrar.amazon.com\nRegistrar WHOIS Server: whois.registrar.amazon\nRegistrar: Amazon Registrar, Inc.\nRegistry Admin ID: REDACTED FOR PRIVACY\nRegistry Billing ID: REDACTED FOR PRIVACY\nRegistry Domain ID: 2420191021_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2029-08-05T13:34:54Z\nRegistry Registrant ID: REDACTED FOR PRIVACY\nRegistry Tech ID: REDACTED FOR PRIVACY\nTech City: REDACTED FOR PRIVACY\nTech Country: REDACTED FOR PRIVACY\nTech Email: 4babf6fcc6f7794as@domain-contact.org\nTech Organization: REDACTED FOR PRIVACY\nTech Postal Code: REDACTED FOR PRIVACY\nTech State/Province: REDACTED FOR PRIVACY\nUpdated Date: 2026-05-16T15:51:24Z",
         "dns_records": [
-          "A 18.154.101.13",
-          "A 18.154.101.102",
           "A 18.154.101.64",
-          "A 18.154.101.110"
+          "A 18.154.101.110",
+          "A 18.154.101.13",
+          "A 18.154.101.102"
         ],
         "https_subject": {
           "CN": "*.appsflyersdk.com"
@@ -5371,13 +5338,13 @@
         "categories": {},
         "popularity_ranks": "нет",
         "creation_date": 1513381697,
-        "last_modification_date": 1787854283,
-        "last_analysis_date": 1787787818,
+        "last_modification_date": 1787884960,
+        "last_analysis_date": 1787874248,
         "registrar": "GoDaddy.com, LLC",
         "whois": "Admin City: Tempe\nAdmin Country: US\nAdmin Email: d8e6a68bae31ccd5s@domainsbyproxy.com\nAdmin Organization: Domains By Proxy, LLC\nAdmin Postal Code: 85281\nAdmin State/Province: Arizona\nCreation Date: 2017-12-15T23:48:17Z\nDNSSEC: unsigned\nDomain Name: axon.ai\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: ns-cloud-b1.googledomains.com\nName Server: ns-cloud-b2.googledomains.com\nName Server: ns-cloud-b3.googledomains.com\nName Server: ns-cloud-b4.googledomains.com\nRegistrant City: a7319ae5e6c95df5\nRegistrant Country: US\nRegistrant Email: d8e6a68bae31ccd5s@domainsbyproxy.com\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 3432650ec337c945\nRegistrant Name: 80315b2e6ac1a801\nRegistrant Organization: b46a98a26fe2fd9f\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: d5f66d3a005b000d\nRegistrant Postal Code: d869d3b215ab9645\nRegistrant State/Province: 30bdd2917a604c83\nRegistrant Street: b69e4faac236b255\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: +1.4806242505\nRegistrar IANA ID: 146\nRegistrar URL: http://www.godaddy.com/domains/search.aspx?ci=8990\nRegistrar WHOIS Server: whois.godaddy.com\nRegistrar: GoDaddy.com, LLC\nRegistry Admin ID: 14407932bbd8477c8165dbef1787270a-DONUTS\nRegistry Domain ID: 8c27b371db214c5499a497fe199a62dd-DONUTS\nRegistry Expiry Date: 2027-12-08T23:48:17Z\nRegistry Registrant ID: 5372498c1f03477e8aab2ab8d706c049-DONUTS\nRegistry Tech ID: 56613adcdc84404dba31178a4f9f9c6b-DONUTS\nTech City: Tempe\nTech Country: US\nTech Email: d8e6a68bae31ccd5s@domainsbyproxy.com\nTech Organization: Domains By Proxy, LLC\nTech Postal Code: 85281\nTech State/Province: Arizona\nUpdated Date: 2026-08-12T05:14:00Z",
         "dns_records": [
-          "A 34.160.89.235",
-          "AAAA 2600:1901:0:c257::"
+          "AAAA 2600:1901:0:c257::",
+          "A 34.160.89.235"
         ],
         "https_subject": {
           "CN": "support.axon.ai"
@@ -5809,8 +5776,8 @@
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
-          "undetected": 33,
-          "harmless": 58,
+          "undetected": 32,
+          "harmless": 59,
           "timeout": 0
         },
         "vendor_rows": [
@@ -6039,6 +6006,10 @@
             "Clean"
           ],
           [
+            "Xcitium Verdict Cloud",
+            "Clean"
+          ],
+          [
             "Yandex Safebrowsing",
             "Clean"
           ],
@@ -6171,10 +6142,6 @@
             "Unrated"
           ],
           [
-            "Xcitium Verdict Cloud",
-            "Unrated"
-          ],
-          [
             "ZeroFox",
             "Unrated"
           ]
@@ -6185,7 +6152,6 @@
           "malicious": 0
         },
         "categories": {
-          "alphaMountain.ai": "Information Technology (alphaMountain.ai)",
           "BitDefender": "computersandsoftware",
           "Sophos": "information technology",
           "Forcepoint ThreatSeeker": "information technology"
@@ -6199,7 +6165,7 @@
           "Cloudflare Radar: 1000"
         ],
         "creation_date": 1308828906,
-        "last_modification_date": 1787854312,
+        "last_modification_date": 1787884993,
         "last_analysis_date": 1787800235,
         "registrar": "1API GmbH",
         "whois": "Creation Date: 2011-06-23T11:35:06Z\nDNSSEC: unsigned\nDomain Name: tizen.org\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: ns-1001.awsdns-61.net\nName Server: ns-1181.awsdns-19.org\nName Server: ns-1604.awsdns-08.co.uk\nName Server: ns-9.awsdns-01.com\nRegistrar Abuse Contact Email: abuse@1api.net\nRegistrar Abuse Contact Phone: +49.68949396850\nRegistrar IANA ID: 1387\nRegistrar URL: http://www.1api.net\nRegistrar WHOIS Server: http://whois.1api.net\nRegistrar: 1API GmbH\nRegistry Domain ID: REDACTED\nRegistry Expiry Date: 2027-06-23T11:35:06Z\nUpdated Date: 2026-06-23T12:01:57Z",
@@ -6483,6 +6449,10 @@
           "value": "Clean"
         },
         {
+          "param": "Xcitium Verdict Cloud",
+          "value": "Clean"
+        },
+        {
           "param": "Yandex Safebrowsing",
           "value": "Clean"
         },
@@ -6615,10 +6585,6 @@
           "value": "Unrated"
         },
         {
-          "param": "Xcitium Verdict Cloud",
-          "value": "Unrated"
-        },
-        {
           "param": "ZeroFox",
           "value": "Unrated"
         },
@@ -6638,10 +6604,5 @@
     }
   ],
   "count": 8,
-=======
-    }
-  ],
-  "count": 4,
->>>>>>> origin/main
   "vt_configured": true
 }
