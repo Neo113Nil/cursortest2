@@ -433,17 +433,15 @@
           "Cisco Umbrella: 223335"
         ],
         "creation_date": null,
-        "last_modification_date": 1787936419,
-        "last_analysis_date": 1787935752,
+        "last_modification_date": 1787945421,
+        "last_analysis_date": 1787943980,
         "registrar": "нет",
         "whois": "Domain: usercentrics.eu\nRegistrant: 3432650ec337c945\nkeanu.ns.cloudflare.com\nkiki.ns.cloudflare.com",
         "dns_records": [
-          "A 107.150.176.1",
           "CNAME uc-aggregator.b-cdn.net",
           "CNAME uc-aggregator.b-cdn.net",
           "CNAME uc-aggregator.b-cdn.net",
-          "CNAME uc-aggregator.b-cdn.net",
-          "CNAME uc-aggregator.b-cdn.net"
+          "A 107.150.176.1"
         ],
         "https_subject": {
           "CN": "aggregator.eu.usercentrics.eu"
@@ -1253,13 +1251,13 @@
           "Cisco Umbrella: 7615"
         ],
         "creation_date": null,
-        "last_modification_date": 1787936418,
-        "last_analysis_date": 1787935751,
+        "last_modification_date": 1787945425,
+        "last_analysis_date": 1787943979,
         "registrar": "нет",
         "whois": "Domain: usercentrics.eu\nRegistrant: 3432650ec337c945\nkeanu.ns.cloudflare.com\nkiki.ns.cloudflare.com",
         "dns_records": [
-          "A 34.120.28.121",
-          "AAAA 2600:1901:0:256b::"
+          "AAAA 2600:1901:0:256b::",
+          "A 34.120.28.121"
         ],
         "https_subject": {
           "CN": "aggregator.service.usercentrics.eu"
@@ -2073,7 +2071,7 @@
           "Cloudflare Radar: 200000"
         ],
         "creation_date": 1440425251,
-        "last_modification_date": 1787936493,
+        "last_modification_date": 1787945606,
         "last_analysis_date": 1787875212,
         "registrar": "Squarespace Domains II LLC",
         "whois": "Creation Date: 2015-08-24T14:07:31.607Z\nCreation Date: 2015-08-24T14:07:31Z\nDNSSEC: unsigned\nDomain Name: aomedia.org\nDomain Status: client delete prohibited http://www.icann.org/epp#client delete prohibited\nDomain Status: client transfer prohibited http://www.icann.org/epp#client transfer prohibited\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: ns-cloud-a1.googledomains.com\nName Server: ns-cloud-a2.googledomains.com\nName Server: ns-cloud-a3.googledomains.com\nName Server: ns-cloud-a4.googledomains.com\nRegistrant City: 1f8f4166599d23ee\nRegistrant Country: US\nRegistrant Email: 3bae71a42530df7ds@\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 1f8f4166599d23ee\nRegistrant Name: 1f8f4166599d23ee\nRegistrant Organization: 63e9119f4bc4ba6a\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: 1f8f4166599d23ee\nRegistrant Postal Code: 1f8f4166599d23ee\nRegistrant State/Province: b1952dfc047df18a\nRegistrant Street: 1f8f4166599d23ee\nRegistrar Abuse Contact Email: abuse-complaints@squarespace.com\nRegistrar Abuse Contact Phone: +1.646-693-5324\nRegistrar Abuse Contact Phone: +1.6466935324\nRegistrar IANA ID: 895\nRegistrar Registration Expiration Date: 2028-08-24T14:07:31.607Z\nRegistrar URL: https://domains.squarespace.com\nRegistrar URL: https://domains2.squarespace.com\nRegistrar WHOIS Server: whois.squarespace.domains\nRegistrar: Squarespace Domains II LLC\nRegistry Domain ID: 845b247fe2144e3e965924b2c891e0dd-LROR\nRegistry Domain ID: REDACTED\nRegistry Expiry Date: 2028-08-24T14:07:31Z\nUpdated Date: 2025-07-18T02:52:32Z\nUpdated Date: 2026-06-24T19:25:16.590500Z",
@@ -2896,16 +2894,16 @@
         },
         "categories": {},
         "popularity_ranks": [
-          "Cisco Umbrella: 5524"
+          "Cisco Umbrella: 5560"
         ],
         "creation_date": null,
-        "last_modification_date": 1787936515,
-        "last_analysis_date": 1787935751,
+        "last_modification_date": 1787945421,
+        "last_analysis_date": 1787943979,
         "registrar": "нет",
         "whois": "Domain: usercentrics.eu\nRegistrant: 3432650ec337c945\nkeanu.ns.cloudflare.com\nkiki.ns.cloudflare.com",
         "dns_records": [
-          "AAAA 2600:1901:0:c07c::",
-          "A 35.241.3.184"
+          "A 35.241.3.184",
+          "AAAA 2600:1901:0:c07c::"
         ],
         "https_subject": {
           "CN": "api.usercentrics.eu"
@@ -3715,17 +3713,17 @@
           "Cisco Umbrella: 67567"
         ],
         "creation_date": null,
-        "last_modification_date": 1787936515,
-        "last_analysis_date": 1787935751,
+        "last_modification_date": 1787945672,
+        "last_analysis_date": 1787944821,
         "registrar": "нет",
         "whois": "Domain: usercentrics.eu\nRegistrant: 3432650ec337c945\nkeanu.ns.cloudflare.com\nkiki.ns.cloudflare.com",
         "dns_records": [
           "CNAME uc-app.b-cdn.net",
-          "CNAME uc-app.b-cdn.net",
-          "CNAME uc-app.b-cdn.net",
-          "CNAME uc-app.b-cdn.net",
-          "CNAME uc-app.b-cdn.net",
           "A 107.150.176.1",
+          "CNAME uc-app.b-cdn.net",
+          "CNAME uc-app.b-cdn.net",
+          "CNAME uc-app.b-cdn.net",
+          "CNAME uc-app.b-cdn.net",
           "CNAME uc-app.b-cdn.net"
         ],
         "https_subject": {
@@ -4533,16 +4531,16 @@
         },
         "categories": {},
         "popularity_ranks": [
-          "Cisco Umbrella: 4440"
+          "Cisco Umbrella: 4479"
         ],
         "creation_date": null,
-        "last_modification_date": 1787936515,
-        "last_analysis_date": 1787935752,
+        "last_modification_date": 1787945672,
+        "last_analysis_date": 1787944822,
         "registrar": "нет",
         "whois": "Domain: usercentrics.eu\nedna.ns.cloudflare.com\njonah.ns.cloudflare.com",
         "dns_records": [
-          "AAAA 2600:1901:0:5987::",
-          "A 35.190.14.188"
+          "A 35.190.14.188",
+          "AAAA 2600:1901:0:5987::"
         ],
         "https_subject": {
           "CN": "app.usercentrics.eu"
@@ -5998,10 +5996,6 @@
             "Clean"
           ],
           [
-            "URLQuery",
-            "Clean"
-          ],
-          [
             "Viettel Threat Intelligence",
             "Clean"
           ],
@@ -6019,6 +6013,10 @@
           ],
           [
             "Webroot",
+            "Clean"
+          ],
+          [
+            "Xcitium Verdict Cloud",
             "Clean"
           ],
           [
@@ -6150,7 +6148,7 @@
             "Unrated"
           ],
           [
-            "Xcitium Verdict Cloud",
+            "URLQuery",
             "Unrated"
           ],
           [
@@ -6163,36 +6161,32 @@
           "harmless": 2,
           "malicious": 4
         },
-        "categories": {
-          "BitDefender": "adsnetwork",
-          "Sophos": "general business",
-          "Forcepoint ThreatSeeker": "web and email marketing"
-        },
+        "categories": {},
         "popularity_ranks": [
-          "Majestic: 19851",
+          "Majestic: 19742",
           "Statvoo: 80114",
           "Alexa: 80114",
-          "Cisco Umbrella: 838",
+          "Cisco Umbrella: 852",
           "Cloudflare Radar: 500"
         ],
         "creation_date": 948248308,
-        "last_modification_date": 1787936510,
-        "last_analysis_date": 1787933849,
+        "last_modification_date": 1787945497,
+        "last_analysis_date": 1787945187,
         "registrar": "GoDaddy.com, LLC",
         "whois": "Creation Date: 2000-01-19T02:18:28Z\nDNSSEC: unsigned\nDomain Name: BRAZE.COM\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: NS-1086.AWSDNS-07.ORG\nName Server: NS-1651.AWSDNS-14.CO.UK\nName Server: NS-507.AWSDNS-63.COM\nName Server: NS-645.AWSDNS-16.NET\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: 480-624-2505\nRegistrar IANA ID: 146\nRegistrar URL: http://www.godaddy.com\nRegistrar WHOIS Server: whois.godaddy.com\nRegistrar: GoDaddy.com, LLC\nRegistry Domain ID: 18014487_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2034-01-19T02:18:28Z\nUpdated Date: 2024-01-20T02:28:50Z",
         "dns_records": [
-          "MX aspmx.l.google.com",
-          "TXT wiz-domain-verification=cec9257ee4c75cdc1ae94304fdc8c5fa10b89c48658d5c7df0239bd926e90fb1",
-          "TXT ca3-b56d68a3b19541daaaa93208c6064b70",
-          "SOA ns-1651.awsdns-14.co.uk",
-          "TXT onetrust-domain-verification=e967f86677894eceb7be83500a528001",
-          "TXT atlassian-domain-verification=GJGQs77JK+AOa+nQs6R6U6xVUj5j23wSIs9H1hHeq82TtnFZS0KKzaCfNEGGkAWc",
-          "TXT anthropic-domain-verification-x1gdd0=fcKtdB5uHCp5TuwzmpD6xcOKz",
           "MX alt1.aspmx.l.google.com",
-          "TXT onetrust-domain-verification=5e9c69e730c74256a954ba0b817fabc2",
-          "TXT jamf-site-verification=3MR2XaJkWDBKBFhapt-JVA",
-          "A 104.17.228.60",
-          "MX aspmx2.googlemail.com"
+          "TXT google-site-verification=SgU6dfE2fN_A8bS5yj5rsLQPWOiLIQJo6itWWND77Y8",
+          "TXT google-site-verification=ZbeAAzL5L0iwW0CNN7Wp6K_jn0lnPgWVuCmD_SEjh2s",
+          "TXT google-site-verification=hiLWvuBzrEKZb-76OoGdL2nSmUVQt10oUswbDROuX4Q",
+          "TXT wiz-domain-verification=cec9257ee4c75cdc1ae94304fdc8c5fa10b89c48658d5c7df0239bd926e90fb1",
+          "MX aspmx3.googlemail.com",
+          "TXT v=spf1 ip4:4.7.93.226 include:_spf.google.com exists:%{i}._spf.mta.salesforce.com include:mailsenders.netsuite.com include:amazonses.com include:us.khoros-mail.com include:sendgrid.net ~all",
+          "TXT _globalsign-domain-verification=Ak7DVnwGWFgbLMDP9veofBLZlC-lsWR1G0_vyJ9xqL",
+          "MX alt2.aspmx.l.google.com",
+          "TXT google-site-verification=GjoWmBb7B0vGj3ROnv-6sfOS3eWBwuOkASwKdpgGfUg",
+          "TXT OSSRH-89659",
+          "TXT MS=ms18427005"
         ],
         "https_subject": {
           "CN": "braze.com"
@@ -6441,10 +6435,6 @@
           "value": "Clean"
         },
         {
-          "param": "URLQuery",
-          "value": "Clean"
-        },
-        {
           "param": "Viettel Threat Intelligence",
           "value": "Clean"
         },
@@ -6462,6 +6452,10 @@
         },
         {
           "param": "Webroot",
+          "value": "Clean"
+        },
+        {
+          "param": "Xcitium Verdict Cloud",
           "value": "Clean"
         },
         {
@@ -6593,7 +6587,7 @@
           "value": "Unrated"
         },
         {
-          "param": "Xcitium Verdict Cloud",
+          "param": "URLQuery",
           "value": "Unrated"
         },
         {

@@ -796,12 +796,12 @@
 | Sucuri SiteCheck | Clean |
 | ThreatHive | Clean |
 | URLhaus | Clean |
-| URLQuery | Clean |
 | Viettel Threat Intelligence | Clean |
 | VIPRE | Clean |
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+| Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -834,7 +834,7 @@
 | SecureBrain | Unrated |
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
-| Xcitium Verdict Cloud | Unrated |
+| URLQuery | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | https://www.braze.com/ |
 | Что выводит (кратко) | title: Braze Customer Engagement Platform. Braze Customer Engagement Platform Why Braze? Product Back The Braze Platform All your data, channels, and orchestration needs in one place View the platform Pricing BrazeAl™ UPDATES Automate, learn, and personalize with AI Braze Data Platform Unify, activate, and distribute your |
