@@ -1,4 +1,10 @@
 {
   "title": "Vegas Live Slots Casino Games",
-  "developer": "PLAYDOG"
+  "developer": "PLAYDOG",
+  "app_id": "com.purplekiwii.vegaslive",
+  "icon": "/static/app-icons/com_purplekiwii_vegaslive.png",
+  "url": "https://play.google.com/store/apps/details?id=com.purplekiwii.vegaslive&hl=en&gl=us",
+  "released": "Nov 15, 2017",
+  "updated": "2026-08-27",
+  "version": "1.5.37"
 }

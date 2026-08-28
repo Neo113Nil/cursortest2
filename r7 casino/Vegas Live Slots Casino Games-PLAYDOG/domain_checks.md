@@ -60,7 +60,6 @@
 | Sucuri SiteCheck | Clean |
 | ThreatHive | Clean |
 | URLhaus | Clean |
-| URLQuery | Clean |
 | Viettel Threat Intelligence | Clean |
 | ViriBack | Clean |
 | VX Vault | Clean |
@@ -99,6 +98,7 @@
 | SecureBrain | Unrated |
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
+| URLQuery | Unrated |
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
@@ -480,12 +480,10 @@
 | Sucuri SiteCheck | Clean |
 | ThreatHive | Clean |
 | URLhaus | Clean |
-| URLQuery | Clean |
 | Viettel Threat Intelligence | Clean |
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
-| Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -519,7 +517,9 @@
 | SecureBrain | Unrated |
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
+| URLQuery | Unrated |
 | VIPRE | Unrated |
+| Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Error. Error Sorry, something went wrong. We&#039;re working on getting this fixed as soon as we can. Go back Meta &#169; 2026 &#183; Help > --> |
@@ -795,7 +795,6 @@
 | Sucuri SiteCheck | Clean |
 | ThreatHive | Clean |
 | URLhaus | Clean |
-| URLQuery | Clean |
 | Viettel Threat Intelligence | Clean |
 | VIPRE | Clean |
 | ViriBack | Clean |
@@ -835,6 +834,7 @@
 | SecureBrain | Unrated |
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
+| URLQuery | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: ERROR: The request could not be satisfied. ERROR: The request could not be satisfied 403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website o |
