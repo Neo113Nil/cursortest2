@@ -5,10 +5,11 @@
   "url": "https://play.google.com/store/apps/details?id=com.jmsgame.jackpotmastercasino&hl=en&gl=us",
   "version": "2.0.79",
   "version_code": "105",
-  "note": "Reverified report.pdf from prior deep jadx analysis of XAPK 2.0.79 (vc105); prompt listed vc114/2.0.88 — same package/structure (Cocos2d-x Lua, AppLovin MAX). Live APK re-download unavailable (apkpure 404 / uptodown 410 / apkfab CF).",
+  "note": "report.pdf rebuilt 2026-08-28 from prior deep jadx analysis of XAPK 2.0.79 (vc105). Prompt listed vc114/2.0.88 (seen on APKCube as 366MB) — live re-download blocked (APKFab CF, APKCube hold-to-verify, apkpure 404). Same package/structure: Cocos2d-x Lua + AppLovin MAX; no cloaking gate.",
   "min_sdk": 24,
   "target_sdk": 35,
   "agp": "8.9.0",
+  "kotlin": "2.1.21",
   "apk_label": "Jackpot Master",
   "summary": "Jackpot Master (APK label: Jackpot Master) — legitimate Zeroo Gravity Games Cocos2d-x social casino; AppLovin MAX mediation; no cloaking gate.",
   "keyword": "r7 casino",
@@ -28,18 +29,10 @@
   "brief_report": {
     "cloaking": "нет",
     "domains": [
-      {
-        "domain": "123.com"
-      },
-      {
-        "domain": "aihelp.net"
-      },
-      {
-        "domain": "akm.ssacdn.com"
-      },
-      {
-        "domain": "aomedia.org"
-      }
+      {"domain": "123.com"},
+      {"domain": "aihelp.net"},
+      {"domain": "akm.ssacdn.com"},
+      {"domain": "aomedia.org"}
     ],
     "ads": [
       "AdMob",
