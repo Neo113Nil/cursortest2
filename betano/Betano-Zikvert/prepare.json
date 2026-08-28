@@ -10,7 +10,7 @@
   "jadx": {
     "ok": true,
     "exit_code": 0,
-    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 1446 (0%)\nINFO  - progress: 720 of 1446 (49%)\nINFO  - progress: 881 of 1446 (60%)\nINFO  - progress: 965 of 1446 (66%)\nINFO  - progress: 1052 of 1446 (72%)\nINFO  - progress: 1148 of 1446 (79%)\nINFO  - progress: 1199 of 1446 (82%)\nINFO  - progress: 1209 of 1446 (83%)\nINFO  - progress: 1224 of 1446 (84%)\nINFO  - progress: 1327 of 1446 (91%)\n                                                             \nINFO  - done\n",
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 1446 (0%)\nINFO  - progress: 726 of 1446 (50%)\nINFO  - progress: 926 of 1446 (64%)\nINFO  - progress: 1024 of 1446 (70%)\nINFO  - progress: 1130 of 1446 (78%)\nINFO  - progress: 1294 of 1446 (89%)\nINFO  - progress: 1424 of 1446 (98%)\n                                                             \nINFO  - done\n",
     "stderr": "",
     "out_dir": "/root/play-collector/загрузки/betano/Betano-Zikvert/decompiled",
     "skipped": false,
@@ -25,7 +25,6 @@
     "apk/com.wincatch.neon-1-config.xxhdpi.apk",
     "apk/com.wincatch.neon-1-config.en.apk",
     "apk/com.wincatch.neon-1-asset.apk",
-    "report.pdf",
     "meta.json",
     "domain_checks.json",
     "domain_checks.md",
