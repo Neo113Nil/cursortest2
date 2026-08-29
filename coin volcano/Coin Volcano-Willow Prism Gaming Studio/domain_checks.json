@@ -1,0 +1,10 @@
+{
+  "domains": [
+    "auroraoss.com",
+    "config.ru",
+    "dispatchers.io",
+    "telegra.ph"
+  ],
+  "source": "provided_in_prompt",
+  "gate": "bencch.fit"
+}
