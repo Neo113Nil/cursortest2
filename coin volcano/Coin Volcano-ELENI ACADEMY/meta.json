@@ -1,0 +1,11 @@
+{
+  "package": "com.eleniacademy.lumora",
+  "name": "Coin Volcano",
+  "developer": "ELENI ACADEMY",
+  "version_name": "3",
+  "version_code": 3,
+  "min_sdk": 25,
+  "target_sdk": 36,
+  "agp": "8.10.0",
+  "kotlin": null
+}
