@@ -1,0 +1,13 @@
+{
+  "package": "com.instantchess.revolut.nexus",
+  "name": "Coin Volcano",
+  "developer": "Sunrise Spire Entertainment Studio",
+  "apk_label": "Floranox",
+  "version_name": "1.0",
+  "version_code": 1,
+  "min_sdk": 28,
+  "target_sdk": 36,
+  "agp": "8.11.2",
+  "kotlin": "2.3.0",
+  "cloaking": "нет"
+}

@@ -1,0 +1,8 @@
+{
+  "domains": [
+    "config.ru",
+    "lineheightstyle.alignment.top",
+    "theme.app"
+  ],
+  "source": "provided_in_prompt"
+}
