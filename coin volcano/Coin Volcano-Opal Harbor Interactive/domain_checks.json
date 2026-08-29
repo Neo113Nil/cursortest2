@@ -1,0 +1,9 @@
+{
+  "domains": [
+    "api.telegra.ph",
+    "auroraoss.com",
+    "config.ru",
+    "lineheightstyle.alignment.top"
+  ],
+  "source": "provided_in_prompt"
+}
