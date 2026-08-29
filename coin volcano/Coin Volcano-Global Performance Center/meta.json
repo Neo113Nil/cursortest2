@@ -1,0 +1,13 @@
+{
+  "package": "com.coindropvolcanorush.app",
+  "name": "Coin Volcano",
+  "developer": "Global Performance Center",
+  "version_name": "1.0",
+  "version_code": 1,
+  "min_sdk": 32,
+  "target_sdk": 36,
+  "agp": "9.2.1",
+  "kotlin": "2.1+",
+  "cloaking": "да",
+  "apk_label": "Coin Drop Volcano"
+}
