@@ -1,0 +1,83 @@
+{
+  "app_id": "co.tapcart.app.id_SeUQkleo7w",
+  "title": "Aviator Nation",
+  "developer": "Aviator Nation",
+  "score": 4.91,
+  "icon": "/static/app-icons/co_tapcart_app_id_SeUQkleo7w.png",
+  "url": "https://play.google.com/store/apps/details?id=co.tapcart.app.id_SeUQkleo7w&hl=en&gl=us",
+  "keyword": "Aviator",
+  "country": "Germany",
+  "source": "apkeep:apk-pure",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260829_200452_Germany_Aviator_search",
+  "search_title": "Aviator Nation",
+  "search_developer": "Aviator Nation",
+  "rank": 6,
+  "developer_id": "Aviator+Nation",
+  "released": "Nov 10, 2020",
+  "updated": "2026-08-08",
+  "version": "220",
+  "summary": "Join the Nation",
+  "folder": "Aviator Nation-Aviator Nation",
+  "path": "aviator/Aviator Nation-Aviator Nation",
+  "updates_count": 1,
+  "apk_title": "Aviator Nation",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "co.tapcart.app.id_SeUQkleo7w.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/aviator/Aviator Nation-Aviator Nation",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : auroranovalights@gmail.com            │\n│ GSF ID : 3888417cce418462                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : accs.aww.aura.204@gmail.com           │\n│ GSF ID : 3a580d90118e3935                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading co.tapcart.app.id_SeUQkleo7w...\nco.tapcart.app.id_SeUQkleo7w downloaded successfully!\n",
+      "stderr": "",
+      "apk_label": "Aviator Nation"
+    }
+  ],
+  "stdout": "Downloading co.tapcart.app.id_SeUQkleo7w...\nco.tapcart.app.id_SeUQkleo7w downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
