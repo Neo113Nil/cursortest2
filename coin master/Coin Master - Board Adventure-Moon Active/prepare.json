@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "apks": [
+    "com.moonactive.cmboard.apk",
+    "config.arm64_v8a.apk"
+  ],
+  "base_apk": "com.moonactive.cmboard.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 19723 (0%)\nINFO  - progress: 1164 of 19723 (5%)\nINFO  - progress: 2651 of 19723 (13%)\nINFO  - progress: 3290 of 19723 (16%)\nINFO  - progress: 3303 of 19723 (16%)\nINFO  - progress: 3354 of 19723 (17%)\nINFO  - progress: 3407 of 19723 (17%)\nINFO  - progress: 3476 of 19723 (17%)\nINFO  - progress: 3586 of 19723 (18%)\nINFO  - progress: 3819 of 19723 (19%)\nINFO  - progress: 4364 of 19723 (22%)\nINFO  - progress: 5368 of 19723 (27%)\nINFO  - progress: 5898 of 19723 (29%)\nINFO  - progress: 6088 of 19723 (30%)\nINFO  - progress: 6333 of 19723 (32%)\nINFO  - progress: 6715 of 19723 (34%)\nINFO  - progress: 7518 of 19723 (38%)\nINFO  - progress: 8030 of 19723 (40%)\nINFO  - progress: 8505 of 19723 (43%)\nINFO  - progress: 8862 of 19723 (44%)\nINFO  - progress: 9416 of 19723 (47%)\nINFO  - progress: 9821 of 19723 (49%)\nINFO  - progress: 10359 of 19723 (52%)\nINFO  - progress: 10979 of 19723 (55%)\nINFO  - progress: 11275 of 19723 (57%)\nINFO  - progress: 11621 of 19723 (58%)\nINFO  - progress: 11963 of 19723 (60%)\nINFO  - progress: 12314 of 19723 (62%)\nINFO  - progress: 12834 of 19723 (65%)\nINFO  - progress: 13439 of 19723 (68%)\nINFO  - progress: 13780 of 19723 (69%)\nINFO  - progress: 14272 of 19723 (72%)\nINFO  - progress: 14522 of 19723 (73%)\nINFO  - progress: 14825 of 19723 (75%)\nINFO  - progress: 15154 of 19723 (76%)\nINFO  - progress: 15439 of 19723 (78%)\nINFO  - progress: 15895 of 19723 (80%)\nINFO  - progress: 16255 of 19723 (82%)\nINFO  - progress: 16381 of 19723 (83%)\nINFO  - progress: 16453 of 19723 (83%)\nINFO  - progress: 16543 of 19723 (83%)\nINFO  - progress: 16613 of 19723 (84%)\nINFO  - progress: 16792 of 19723 (85%)\nINFO  - progress: 17069 of 19723 (86%)\nINFO  - progress: 17355 of 19723 (87%)\nINFO  - progress: 17489 of 19723 (88%)\nINFO  - progress: 17858 of 19723 (90%)\nINFO  - progress: 18288 of 19723 (92%)\nINFO  - progress: 18777 of 19723 (95%)\nINFO  - progress: 19061 of 19723 (96%)\nINFO  - progress: 19526 of 19723 (99%)\n                                                             \nERROR - finished with errors, count: 20\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/coin master/Coin Master - Board Adventure-Moon Active/decompiled",
+    "skipped": false,
+    "base_apk": "com.moonactive.cmboard.apk"
+  },
+  "analysis_files": [
+    "com.moonactive.cmboard.xapk",
+    "apk/config.arm64_v8a.apk",
+    "apk/com.moonactive.cmboard.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/bitter/",
+    "decompiled/sources/bolts/",
+    "decompiled/sources/com/",
+    "decompiled/sources/gatewayprotocol/",
+    "decompiled/sources/io/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/net/",
+    "decompiled/sources/okhttp3/",
+    "decompiled/sources/okio/",
+    "decompiled/sources/org/"
+  ],
+  "errors": []
+}
