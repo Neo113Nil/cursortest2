@@ -1,0 +1,83 @@
+{
+  "app_id": "com.aviator.aviatorgamewindailyapp37",
+  "title": "Aviator predictor v4.0 apk",
+  "developer": "QuasarQuill Studios",
+  "score": null,
+  "icon": "/static/app-icons/com_aviator_aviatorgamewindailyapp37.png",
+  "url": "https://play.google.com/store/apps/details?id=com.aviator.aviatorgamewindailyapp37&hl=en&gl=us",
+  "keyword": "Aviator",
+  "country": "Germany",
+  "source": "apkeep:apk-pure",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260829_200452_Germany_Aviator_search",
+  "search_title": "Aviator predictor v4.0 apk (Early Access)",
+  "search_developer": "QuasarQuill Studios",
+  "rank": 12,
+  "developer_id": "QuasarQuill+Studios",
+  "released": "",
+  "updated": "Jun 14, 2026",
+  "version": "Varies with device",
+  "summary": "Welcome to Aviator Game, an exciting strategy-based game play.",
+  "folder": "Aviator predictor v4.0 apk-QuasarQuill Studios",
+  "path": "aviator/Aviator predictor v4.0 apk-QuasarQuill Studios",
+  "updates_count": 1,
+  "apk_title": "Aviator All Online Games",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.aviator.aviatorgamewindailyapp37.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/aviator/Aviator predictor v4.0 apk-QuasarQuill Studios",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : ossaur03@gmail.com                    │\n│ GSF ID : 320816a8d13a78d4                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "gplaydl auth failed: Dispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n\nAuthentication failed — all profiles rejected.\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.aviator.aviatorgamewindailyapp37...\ncom.aviator.aviatorgamewindailyapp37 downloaded successfully!\n",
+      "stderr": "",
+      "apk_label": "Aviator All Online Games"
+    }
+  ],
+  "stdout": "Downloading com.aviator.aviatorgamewindailyapp37...\ncom.aviator.aviatorgamewindailyapp37 downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
