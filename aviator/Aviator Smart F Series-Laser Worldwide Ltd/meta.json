@@ -1,0 +1,83 @@
+{
+  "app_id": "com.crrepa.band.aviator",
+  "title": "Aviator Smart F Series",
+  "developer": "Laser Worldwide Ltd",
+  "score": 3.6,
+  "icon": "/static/app-icons/com_crrepa_band_aviator.png",
+  "url": "https://play.google.com/store/apps/details?id=com.crrepa.band.aviator&hl=en&gl=us",
+  "keyword": "Aviator",
+  "country": "Germany",
+  "source": "apkeep:apk-pure",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260829_200452_Germany_Aviator_search",
+  "search_title": "Aviator Smart F Series",
+  "search_developer": "Laser Worldwide Ltd.",
+  "rank": 1,
+  "developer_id": "Laser+Worldwide+Ltd.",
+  "released": "Sep 7, 2023",
+  "updated": "2026-08-24",
+  "version": "v2.9.19-4",
+  "summary": "Reach for the skies",
+  "folder": "Aviator Smart F Series-Laser Worldwide Ltd",
+  "path": "aviator/Aviator Smart F Series-Laser Worldwide Ltd",
+  "updates_count": 1,
+  "apk_title": "Aviator Smart F Series",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.crrepa.band.aviator.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/aviator/Aviator Smart F Series-Laser Worldwide Ltd",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\nDelivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.six@gmail.com              │\n│ GSF ID : 3a74cf92d84c25b2                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.ponies@gmail.com           │\n│ GSF ID : 38c01bdbcd9a8457                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.crrepa.band.aviator...\ncom.crrepa.band.aviator downloaded successfully!\n",
+      "stderr": "",
+      "apk_label": "Aviator Smart F Series"
+    }
+  ],
+  "stdout": "Downloading com.crrepa.band.aviator...\ncom.crrepa.band.aviator downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
