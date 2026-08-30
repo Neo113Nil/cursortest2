@@ -1,0 +1,66 @@
+{
+  "app_id": "com.platogo.pmp",
+  "title": "Slotpark Casino Slots Games",
+  "developer": "Funstage",
+  "url": "https://play.google.com/store/apps/details?id=com.platogo.pmp&hl=en&gl=us",
+  "version": "4.24.1",
+  "version_code": "424010",
+  "summary": "Slotpark Casino Slots Games (APK label: Slotpark) — оригинальный social-casino Funstage/Platogo на Apache Cordova; API pas.slotparkapp.com, WebView = UI игры; реклама Unity Ads + HMS Ads; аналитика Adjust/Firebase/Branch/Facebook/XtremePush/Sentry; клоаки нет.",
+  "keyword": "r7 casino",
+  "folder": "Slotpark Casino Slots Games-Funstage",
+  "path": "r7 casino/Slotpark Casino Slots Games-Funstage",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "apk_label": "Slotpark",
+  "cloaking": "нет",
+  "files": [
+    "com.platogo.pmp.xapk",
+    "apk/com.platogo.pmp.apk",
+    "apk/config.armeabi_v7a.apk",
+    "apk/config.hdpi.apk",
+    "apk/config.en.apk",
+    "apk/config.de.apk",
+    "apk/config.fr.apk",
+    "apk/config.es.apk",
+    "apk/config.it.apk",
+    "apk/config.pt.apk",
+    "apk/config.ru.apk",
+    "apk/config.zh.apk",
+    "apk/config.ja.apk",
+    "apk/config.ko.apk",
+    "apk/config.ar.apk",
+    "apk/config.hi.apk",
+    "apk/config.tr.apk",
+    "apk/config.th.apk",
+    "apk/config.vi.apk",
+    "apk/config.my.apk",
+    "apk/config.in.apk"
+  ],
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      {"domain": "app.link"},
+      {"domain": "assets.play.slotpark.com"},
+      {"domain": "auroraoss.com"},
+      {"domain": "bit.ly"}
+    ],
+    "ads": [
+      "Unity Ads",
+      "ironSource Ad Quality",
+      "HMS Ads"
+    ],
+    "analytics": [
+      "Adjust",
+      "Firebase Analytics",
+      "Firebase Crashlytics",
+      "Firebase Performance",
+      "Firebase Auth",
+      "Branch",
+      "Facebook App Events",
+      "XtremePush",
+      "Sentry",
+      "Usercentrics",
+      "Google Tag Manager"
+    ]
+  }
+}
