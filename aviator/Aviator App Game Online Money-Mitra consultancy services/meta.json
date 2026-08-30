@@ -1,0 +1,68 @@
+{
+  "app_id": "com.aviator.aviatorgamewindailyapp121",
+  "title": "Aviator App Game Online Money",
+  "developer": "Mitra consultancy services",
+  "score": null,
+  "icon": "/static/app-icons/com_aviator_aviatorgamewindailyapp121.png",
+  "url": "https://play.google.com/store/apps/details?id=com.aviator.aviatorgamewindailyapp121&hl=en&gl=us",
+  "keyword": "Aviator",
+  "country": "Germany",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260829_200452_Germany_Aviator_search",
+  "search_title": "Aviator App Game Online Money (Early Access)",
+  "search_developer": "Mitra consultancy services",
+  "rank": 14,
+  "developer_id": "Mitra+consultancy+services",
+  "released": "",
+  "updated": "Jul 13, 2026",
+  "version": "Varies with device",
+  "summary": "Welcome to Mini Game, an exciting strategy-based game play.",
+  "folder": "Aviator App Game Online Money-Mitra consultancy services",
+  "path": "aviator/Aviator App Game Online Money-Mitra consultancy services",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.aviator.aviatorgamewindailyapp121-1-asset.apk",
+    "com.aviator.aviatorgamewindailyapp121-1-config.arm64_v8a.apk",
+    "com.aviator.aviatorgamewindailyapp121-1-config.en.apk",
+    "com.aviator.aviatorgamewindailyapp121-1-config.lt.apk",
+    "com.aviator.aviatorgamewindailyapp121-1-config.ru.apk",
+    "com.aviator.aviatorgamewindailyapp121-1-config.xxhdpi.apk",
+    "com.aviator.aviatorgamewindailyapp121-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/aviator/Aviator App Game Online Money-Mitra consultancy services",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.aviator.aviatorgamewindailyapp121 ─╮\n│ Aviator App Game Online Money           │\n│ 1.0  (vc 1)                             │\n╰─────────────────────────────────────────╯\n\nDownloading 7 files  (34.5 MB)\n  com.aviator.aviatorgamewindailyapp121-1.apk                  ━━ 100% 2… 1… 0:…\n                                                                       MB M…    \n  com.aviator.aviatorgamewindailyapp121-1-config.arm64_v8a.apk ━━ 100% 7… 2… 0:…\n                                                                       kB M…    \n  com.aviator.aviatorgamewindailyapp121-1-config.en.apk        ━━ 100% 5… ?  0:…\n                                                                       kB       \n  com.aviator.aviatorgamewindailyapp121-1-config.lt.apk        ━━ 100% 3… ?  0:…\n                                                                       kB       \n  com.aviator.aviatorgamewindailyapp121-1-config.ru.apk        ━━ 100% 3… ?  0:…\n                                                                       kB       \n  com.aviator.aviatorgamewindailyapp121-1-config.xxhdpi.apk    ━━ 100% 7… 2… 0:…\n                                                                       kB M…    \n  com.aviator.aviatorgamewindailyapp121-1-asset.apk            ━━ 100% 1… 1… 0:…\n                                                                       MB M…    \n\n                             Downloaded files                             \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                         ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.aviator.aviatorgamewindailyapp121-1.apk                  │ 23.1 MB │\n│ com.aviator.aviatorgamewindailyapp121-1-config.arm64_v8a.apk │ 76.4 KB │\n│ com.aviator.aviatorgamewindailyapp121-1-config.en.apk        │ 52.4 KB │\n│ com.aviator.aviatorgamewindailyapp121-1-config.lt.apk        │ 32.4 KB │\n│ com.aviator.aviatorgamewindailyapp121-1-config.ru.apk        │ 36.4 KB │\n│ com.aviator.aviatorgamewindailyapp121-1-config.xxhdpi.apk    │ 77.7 KB │\n│ com.aviator.aviatorgamewindailyapp121-1-asset.apk            │ 23.1 MB │\n└──────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss4harry@gmail.com            │\n│ GSF ID : 3fefe8f68e5c713d                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.aviator.aviatorgamewindailyapp121 ─╮\n│ Aviator App Game Online Money           │\n│ 1.0  (vc 1)                             │\n╰─────────────────────────────────────────╯\n\nDownloading 7 files  (34.5 MB)\n  com.aviator.aviatorgamewindailyapp121-1.apk                  ━━ 100% 2… 1… 0:…\n                                                                       MB M…    \n  com.aviator.aviatorgamewindailyapp121-1-config.arm64_v8a.apk ━━ 100% 7… 2… 0:…\n                                                                       kB M…    \n  com.aviator.aviatorgamewindailyapp121-1-config.en.apk        ━━ 100% 5… ?  0:…\n                                                                       kB       \n  com.aviator.aviatorgamewindailyapp121-1-config.lt.apk        ━━ 100% 3… ?  0:…\n                                                                       kB       \n  com.aviator.aviatorgamewindailyapp121-1-config.ru.apk        ━━ 100% 3… ?  0:…\n                                                                       kB       \n  com.aviator.aviatorgamewindailyapp121-1-config.xxhdpi.apk    ━━ 100% 7… 2… 0:…\n                                                                       kB M…    \n  com.aviator.aviatorgamewindailyapp121-1-asset.apk            ━━ 100% 1… 1… 0:…\n                                                                       MB M…    \n\n                             Downloaded files                             \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                         ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.aviator.aviatorgamewindailyapp121-1.apk                  │ 23.1 MB │\n│ com.aviator.aviatorgamewindailyapp121-1-config.arm64_v8a.apk │ 76.4 KB │\n│ com.aviator.aviatorgamewindailyapp121-1-config.en.apk        │ 52.4 KB │\n│ com.aviator.aviatorgamewindailyapp121-1-config.lt.apk        │ 32.4 KB │\n│ com.aviator.aviatorgamewindailyapp121-1-config.ru.apk        │ 36.4 KB │\n│ com.aviator.aviatorgamewindailyapp121-1-config.xxhdpi.apk    │ 77.7 KB │\n│ com.aviator.aviatorgamewindailyapp121-1-asset.apk            │ 23.1 MB │\n└──────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss4harry@gmail.com            │\n│ GSF ID : 3fefe8f68e5c713d                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}

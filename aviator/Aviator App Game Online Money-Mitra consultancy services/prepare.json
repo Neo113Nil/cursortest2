@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "apks": [
+    "com.aviator.aviatorgamewindailyapp121-1-config.ru.apk",
+    "com.aviator.aviatorgamewindailyapp121-1-config.lt.apk",
+    "com.aviator.aviatorgamewindailyapp121-1-config.xxhdpi.apk",
+    "com.aviator.aviatorgamewindailyapp121-1-asset.apk",
+    "com.aviator.aviatorgamewindailyapp121-1-config.arm64_v8a.apk",
+    "com.aviator.aviatorgamewindailyapp121-1-config.en.apk",
+    "com.aviator.aviatorgamewindailyapp121-1.apk"
+  ],
+  "base_apk": "com.aviator.aviatorgamewindailyapp121-1.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 7756 (0%)\nINFO  - progress: 879 of 7756 (11%)\nINFO  - progress: 884 of 7756 (11%)\nINFO  - progress: 895 of 7756 (11%)\nINFO  - progress: 970 of 7756 (12%)\nINFO  - progress: 1205 of 7756 (15%)\nINFO  - progress: 1838 of 7756 (23%)\nINFO  - progress: 2294 of 7756 (29%)\nINFO  - progress: 2745 of 7756 (35%)\nINFO  - progress: 3126 of 7756 (40%)\nINFO  - progress: 3443 of 7756 (44%)\nINFO  - progress: 3756 of 7756 (48%)\nINFO  - progress: 4130 of 7756 (53%)\nINFO  - progress: 4480 of 7756 (57%)\nINFO  - progress: 4732 of 7756 (61%)\nINFO  - progress: 4901 of 7756 (63%)\nINFO  - progress: 5220 of 7756 (67%)\nINFO  - progress: 5684 of 7756 (73%)\nINFO  - progress: 5901 of 7756 (76%)\nINFO  - progress: 6102 of 7756 (78%)\nINFO  - progress: 6276 of 7756 (80%)\nINFO  - progress: 6528 of 7756 (84%)\nINFO  - progress: 6803 of 7756 (87%)\nINFO  - progress: 6955 of 7756 (89%)\nINFO  - progress: 7134 of 7756 (91%)\nINFO  - progress: 7497 of 7756 (96%)\nINFO  - progress: 7707 of 7756 (99%)\n                                                             \nERROR - finished with errors, count: 13\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/aviator/Aviator App Game Online Money-Mitra consultancy services/decompiled",
+    "skipped": false,
+    "base_apk": "com.aviator.aviatorgamewindailyapp121-1.apk"
+  },
+  "analysis_files": [
+    "com.aviator.aviatorgamewindailyapp121-1-config.ru.apk",
+    "com.aviator.aviatorgamewindailyapp121-1-config.lt.apk",
+    "com.aviator.aviatorgamewindailyapp121-1-config.xxhdpi.apk",
+    "com.aviator.aviatorgamewindailyapp121-1-asset.apk",
+    "com.aviator.aviatorgamewindailyapp121-1-config.arm64_v8a.apk",
+    "com.aviator.aviatorgamewindailyapp121-1-config.en.apk",
+    "com.aviator.aviatorgamewindailyapp121-1.apk",
+    "apk/com.aviator.aviatorgamewindailyapp121-1-config.ru.apk",
+    "apk/com.aviator.aviatorgamewindailyapp121-1-config.lt.apk",
+    "apk/com.aviator.aviatorgamewindailyapp121-1-config.xxhdpi.apk",
+    "apk/com.aviator.aviatorgamewindailyapp121-1-asset.apk",
+    "apk/com.aviator.aviatorgamewindailyapp121-1-config.arm64_v8a.apk",
+    "apk/com.aviator.aviatorgamewindailyapp121-1-config.en.apk",
+    "apk/com.aviator.aviatorgamewindailyapp121-1.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/okio/",
+    "decompiled/sources/org/",
+    "decompiled/sources/pl/"
+  ],
+  "errors": []
+}
