@@ -1,0 +1,83 @@
+{
+  "app_id": "com.playlinks.vegascraze",
+  "title": "Vegas Craze Casino",
+  "developer": "PLAYLINKS Corp",
+  "score": 4.6145253,
+  "icon": "/static/app-icons/com_playlinks_vegascraze.png",
+  "url": "https://play.google.com/store/apps/details?id=com.playlinks.vegascraze&hl=en&gl=us",
+  "keyword": "R7 casino",
+  "country": "Germany",
+  "source": "apkeep:apk-pure",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260829_185237_Germany_R7 casino_search",
+  "search_title": "Vegas Craze Casino",
+  "search_developer": "PLAYLINKS Corp.",
+  "rank": 10,
+  "developer_id": "PLAYLINKS+Corp.",
+  "released": "Oct 10, 2024",
+  "updated": "2026-08-14",
+  "version": "1.1.12",
+  "summary": "Hit the jackpot and aim big at Vegas Craze Casino! - Vegas at your fingertips!",
+  "folder": "Vegas Craze Casino-PLAYLINKS Corp",
+  "path": "r7 casino/Vegas Craze Casino-PLAYLINKS Corp",
+  "updates_count": 1,
+  "apk_title": "Vegas Craze Casino",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.playlinks.vegascraze.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/r7 casino/Vegas Craze Casino-PLAYLINKS Corp",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : raoneman55@gmail.com                  │\n│ GSF ID : 357a68be4506bfdd                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.eight@gmail.com            │\n│ GSF ID : 3e9aa77a70e76246                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.playlinks.vegascraze...\ncom.playlinks.vegascraze downloaded successfully!\n",
+      "stderr": "",
+      "apk_label": "Vegas Craze Casino"
+    }
+  ],
+  "stdout": "Downloading com.playlinks.vegascraze...\ncom.playlinks.vegascraze downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
