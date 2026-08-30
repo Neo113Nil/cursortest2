@@ -5,7 +5,7 @@
   "url": "https://play.google.com/store/apps/details?id=com.ignite.igniteslots&hl=en&gl=us",
   "version": "2.1.43.0",
   "version_code": "230",
-  "summary": "Ignite Classic Slots - Casino (APK label: Ignite Slots) — social-casino Cocos2d-lua от Mobee; бэкенд аналитики upload.mobeetd.com; реклама AppLovin MAX + AdMob/Meta/Chartboost/Vungle; аналитика Firebase/AppsFlyer/ThinkingData/TalkingData/Bugly/AIHelp; клоаки нет.",
+  "summary": "Ignite Classic Slots - Casino (APK label: Ignite Slots) — social-casino Cocos2d-lua от Mobee; бэкенд аналитики upload.mobeetd.com; реклама AppLovin MAX + AdMob/Meta/Chartboost/Vungle/SafeDK; аналитика Firebase/AppsFlyer/ThinkingData/TalkingData/Bugly/AIHelp; Kotlin 2.1.0; клоаки нет.",
   "keyword": "r7 casino",
   "folder": "Ignite Classic Slots - Casino-Mobee Co., Limited",
   "path": "r7 casino/Ignite Classic Slots - Casino-Mobee Co., Limited",
@@ -43,8 +43,7 @@
       "Meta Audience Network",
       "Chartboost",
       "Vungle",
-      "SafeDK",
-      "Google User Messaging Platform"
+      "SafeDK"
     ],
     "analytics": [
       "Firebase Analytics",
