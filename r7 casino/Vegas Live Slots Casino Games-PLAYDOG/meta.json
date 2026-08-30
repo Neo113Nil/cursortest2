@@ -1,10 +1,83 @@
 {
+  "app_id": "com.purplekiwii.vegaslive",
   "title": "Vegas Live Slots Casino Games",
   "developer": "PLAYDOG",
-  "app_id": "com.purplekiwii.vegaslive",
+  "score": 4.4703784,
   "icon": "/static/app-icons/com_purplekiwii_vegaslive.png",
   "url": "https://play.google.com/store/apps/details?id=com.purplekiwii.vegaslive&hl=en&gl=us",
+  "keyword": "R7 casino",
+  "country": "Germany",
+  "source": "apkeep:apk-pure",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260829_185237_Germany_R7 casino_search",
+  "search_title": "Vegas Live Slots: Casino Games",
+  "search_developer": "PLAYDOG",
+  "rank": 2,
+  "developer_id": "5636651079416583942",
   "released": "Nov 15, 2017",
   "updated": "2026-08-27",
-  "version": "1.5.37"
+  "version": "1.5.37",
+  "summary": "LAS VEGAS SLOTS, KENO, POKER, SCRATCHERS, TABLE GAMES - GRAND JACKPOT WINS!",
+  "folder": "Vegas Live Slots Casino Games-PLAYDOG",
+  "path": "r7 casino/Vegas Live Slots Casino Games-PLAYDOG",
+  "updates_count": 1,
+  "apk_title": "Vegas Live Slots",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.purplekiwii.vegaslive.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/r7 casino/Vegas Live Slots Casino Games-PLAYDOG",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : oss.accs.or.aura.902@gmail.com        │\n│ GSF ID : 351af33e41cffcb1                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : ossaur01@gmail.com                    │\n│ GSF ID : 3f62b05672272208                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.purplekiwii.vegaslive...\ncom.purplekiwii.vegaslive downloaded successfully!\n",
+      "stderr": "",
+      "apk_label": "Vegas Live Slots"
+    }
+  ],
+  "stdout": "Downloading com.purplekiwii.vegaslive...\ncom.purplekiwii.vegaslive downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
 }
