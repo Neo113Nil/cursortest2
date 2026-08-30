@@ -64,5 +64,117 @@
   "stdout": "╭─ com.aviator.aviatorgamewindailyapp121 ─╮\n│ Aviator App Game Online Money           │\n│ 1.0  (vc 1)                             │\n╰─────────────────────────────────────────╯\n\nDownloading 7 files  (34.5 MB)\n  com.aviator.aviatorgamewindailyapp121-1.apk                  ━━ 100% 2… 1… 0:…\n                                                                       MB M…    \n  com.aviator.aviatorgamewindailyapp121-1-config.arm64_v8a.apk ━━ 100% 7… 2… 0:…\n                                                                       kB M…    \n  com.aviator.aviatorgamewindailyapp121-1-config.en.apk        ━━ 100% 5… ?  0:…\n                                                                       kB       \n  com.aviator.aviatorgamewindailyapp121-1-config.lt.apk        ━━ 100% 3… ?  0:…\n                                                                       kB       \n  com.aviator.aviatorgamewindailyapp121-1-config.ru.apk        ━━ 100% 3… ?  0:…\n                                                                       kB       \n  com.aviator.aviatorgamewindailyapp121-1-config.xxhdpi.apk    ━━ 100% 7… 2… 0:…\n                                                                       kB M…    \n  com.aviator.aviatorgamewindailyapp121-1-asset.apk            ━━ 100% 1… 1… 0:…\n                                                                       MB M…    \n\n                             Downloaded files                             \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                         ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.aviator.aviatorgamewindailyapp121-1.apk                  │ 23.1 MB │\n│ com.aviator.aviatorgamewindailyapp121-1-config.arm64_v8a.apk │ 76.4 KB │\n│ com.aviator.aviatorgamewindailyapp121-1-config.en.apk        │ 52.4 KB │\n│ com.aviator.aviatorgamewindailyapp121-1-config.lt.apk        │ 32.4 KB │\n│ com.aviator.aviatorgamewindailyapp121-1-config.ru.apk        │ 36.4 KB │\n│ com.aviator.aviatorgamewindailyapp121-1-config.xxhdpi.apk    │ 77.7 KB │\n│ com.aviator.aviatorgamewindailyapp121-1-asset.apk            │ 23.1 MB │\n└──────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss4harry@gmail.com            │\n│ GSF ID : 3fefe8f68e5c713d                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Aviator All Online Games"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.8.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да (coroutines 1.7.3)"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "Google Ad Manager / AdMob (AdX), Qureka"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.WAKE_LOCK, android.permission.FOREGROUND_SERVICE, com.aviator.aviatorgamewindailyapp121.DYNAMIC_RECEIVER_NOT_EXPORTED _PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.appcompat, androidx.browser, androidx.constraintlayout, com.google.android.gms:play-services-ads, com.google.android.ump, com.github.bumptech.glide, com.airbnb.lottie, com.facebook.shimmer, pl.droidsonroids.gif, kotlinx-coroutines 1.7.3, okio, com.pairip.licensecheck"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "appxanalytics.com, 1000webgames.com, 10761.play.gamezop.com, andyroid.net"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "файл MyApp: флаг intros (пройден ли онбординг)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "start_redirect, qureka, redirect, webview, CustomTabs, qureka_url, qureka_back_url"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "1000webgames.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Bluehost Inc."
+      },
+      {
+        "domain": "10761.play.gamezop.com",
+        "redirects_to": "https://10761.play.umogames.com/en/intro?int-nav=1",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "andyroid.net",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "appxanalytics.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NameCheap, Inc."
+      },
+      {
+        "domain": "atmegame.com",
+        "redirects_to": "https://www.atmegame.com/",
+        "parked_at": "регистратор: Cloudflare, Inc."
+      },
+      {
+        "domain": "auroraoss.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "basketball.io",
+        "redirects_to": "https://www.atom.com/name/Basketball.io",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "battledudes.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      }
+    ],
+    "collected_data": [
+      "Имя пакета приложения"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Имя пакета приложения\n\nКак собираются: Сразу после запуска, на экране заставки, приложение само тихо читает имя своего пакета из системы Android. Отдельного окна с вопросом человеку не показывают: это делается в фоне, пока идёт заставка. Других сведений о телефоне (язык, модель, рекламный номер) в этот проверочный запрос код не кладёт — в цепочке запуска видно только имя пакета. Сбор происходит в стартовом экране (LaunchActivity) до перехода в обычные экраны. Человек обычно замечает только короткую заставку, а не сам факт чтения имени пакета.\n\nКуда отправляются: Имя пакета подставляют в адрес и тихо запрашивают файл настроек по ссылке https://appxanalytics.com/data/com.aviator.aviatorgamewindailyapp121.json. Это обычный GET-запрос без тела: приложение просто скачивает удалённый JSON. Запасных адресов в коде не видно: адрес собирается из постоянного куска https://appxanalytics.com/data/ плюс имя пакета и окончание .json. Запрос уходит в фоне при наличии интернета; если ответа нет, запуск обрывают сообщением об ошибке.\n\nКак фильтруются пользователи: В самом приложении нет жёсткого списка стран, языков или «ботов» для этой проверки. На сервер уходит только имя пакета в адресе запроса. Решение, что показать человеку, заложено в ответе удалённых настроек: поля вроде start_redirect и ads. По смыслу это серверная развилка: один и тот же клиент может получить разный режим (сразу «центральный» экран или обычный онбординг; реклама AdX или ссылки Qureka). Дополнительно в магазине название «Aviator App Game Online Money», а внутри APK ярлык «Aviator All Online Games» — белая оболочка-каталог мини-игр.\n\nЧто возвращается: Сервер отвечает JSON-файлом. Приложение читает из него: start_redirect (включить ли особый старт), qureka_url и qureka_back_url (ссылки для показа), ads (режим «qureka» или «adx»), ads_interval (как часто показывать), а также идентификаторы рекламных блоков adx_interstitial, adx_banner, adx_native, adx_appopen. Если start_redirect = true — после заставки открывают главный хаб без обычного онбординга. Если false — идут в онбординг или стартовый хаб по флагу в памяти приложения. Если ads = «qureka» — берут ссылки qureka_url / qureka_…"
+  }
 }

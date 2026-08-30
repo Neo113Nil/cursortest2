@@ -79,5 +79,115 @@
   "stdout": "Downloading com.sl.cashCraze...\ncom.sl.cashCraze downloaded successfully!\n",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Fun Of Vegas - Casino Slots"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.6.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "21"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 1.8.0"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob, AppLovin MAX, ironSource / LevelPlay, Unity Ads, Vungle, InMobi, Facebook Audience Network, Moloco, Pangle, Mintegral"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Crashlytics, Firebase Messaging, AppsFlyer, Facebook App Events"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.CHANGE_NETWORK_STATE, android.permission.CHANGE_WIFI_STATE, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, com.android.vending.BILLING, android.permission.CAMERA, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, com.google.android.gms.permission.AD_ID, android.permission.POST_NOTIFICATIONS, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, com.samsung.android.mapsagent.permission.READ_APP_INFO, com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, android.permission.VIBRATE, com.android.vending.CHECK_LICENSE, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.FOREGROUND_SERVICE, com.sl.cashCraze.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "org.cocos2dx.lua, androidx.*, coil, okhttp3, okio, kotlinx.coroutines, com.alibaba.fastjson, com.android.billingclient, com.android.installreferrer, com.applovin, com.appsflyer, com.facebook, com.google.android.gms, com.google.firebase, com.ironsource, com.unity3d, com.vungle, com.inmobi, com.moloco, com.bytedance (Pangle), com.mbridge (Mintegral), com.iab, com.loopj, com.squareup"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "aomedia.org, api.frankfurter.app, compliance.iabtechnologylab.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "SHARE_APP_TAG (первый запуск, install referrer), SHARE_AF_APP_TAG (AppsFlyer deeplink), SHARE_FCM_TOKEN (токен push), Cocos2dxPrefsFile (настройки движка)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "casino, slots, offer, landing, redirect, postback, deposit, withdraw, poker, gate, webview"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "aomedia.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Squarespace Domains II LLC"
+      },
+      {
+        "domain": "api.frankfurter.app",
+        "redirects_to": "https://api.frankfurter.dev/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "appassets.androidplatform.net",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "auroraoss.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "compliance.iabtechnologylab.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "crashpad.chromium.org",
+        "redirects_to": "https://chromium.googlesource.com/crashpad/crashpad/+/main/README.md",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "images.unsplash.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: 1API GmbH"
+      },
+      {
+        "domain": "ktor.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }

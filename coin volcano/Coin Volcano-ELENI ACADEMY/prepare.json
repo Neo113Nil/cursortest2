@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "apks": [
+    "com.eleniacademy.lumora-3-config.arm64_v8a.apk",
+    "com.eleniacademy.lumora-3-asset.apk",
+    "com.eleniacademy.lumora-3.apk"
+  ],
+  "base_apk": "com.eleniacademy.lumora-3.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 3304 (0%)\nINFO  - progress: 226 of 3304 (6%)\nINFO  - progress: 251 of 3304 (7%)\nINFO  - progress: 429 of 3304 (12%)\nINFO  - progress: 825 of 3304 (24%)\nINFO  - progress: 1062 of 3304 (32%)\nINFO  - progress: 1394 of 3304 (42%)\nINFO  - progress: 1701 of 3304 (51%)\nINFO  - progress: 1969 of 3304 (59%)\nINFO  - progress: 2199 of 3304 (66%)\nINFO  - progress: 2493 of 3304 (75%)\nINFO  - progress: 2813 of 3304 (85%)\nINFO  - progress: 3151 of 3304 (95%)\n                                                             \nERROR - finished with errors, count: 2\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/coin volcano/Coin Volcano-ELENI ACADEMY/decompiled",
+    "skipped": false,
+    "base_apk": "com.eleniacademy.lumora-3.apk"
+  },
+  "analysis_files": [
+    "com.eleniacademy.lumora-3-config.arm64_v8a.apk",
+    "com.eleniacademy.lumora-3-asset.apk",
+    "com.eleniacademy.lumora-3.apk",
+    "apk/com.eleniacademy.lumora-3-config.arm64_v8a.apk",
+    "apk/com.eleniacademy.lumora-3-asset.apk",
+    "apk/com.eleniacademy.lumora-3.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/bitter/",
+    "decompiled/sources/com/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/org/"
+  ],
+  "errors": []
+}

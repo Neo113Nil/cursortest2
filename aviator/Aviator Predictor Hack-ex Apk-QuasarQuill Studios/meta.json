@@ -79,5 +79,117 @@
   "stdout": "Downloading com.cloudverse.aviatorgame...\ncom.cloudverse.aviatorgame downloaded successfully!\n",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Aviator Predictor Hack-ex Apk (в приложении: Aviator All Online Games)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.8.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да (coroutines 1.7.3)"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob / Google Ad Manager (AdX), Qureka"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Google Analytics / Measurement (GMS)"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.WAKE_LOCK, android.permission.FOREGROUND_SERVICE, com.cloudverse.aviatorgame.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.appcompat, androidx.browser, androidx.constraintlayout, androidx.recyclerview, androidx.room, androidx.lifecycle, androidx.viewpager2, androidx.work, com.google.android.material, com.google.android.gms.ads, com.google.android.gms.ads.admanager, com.google.android.gms.measurement, com.google.android.gms.ads_identifier, Glide (com.bumptech.glide), Lottie (com.airbnb.lottie), Facebook Shimmer, Intuit SDP, kotlinx.coroutines 1.7.3, okio, pl.droidsonroids.gif, com.pairip.licensecheck"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "1000webgames.com, 10761.play.gamezop.com, andyroid.net, appxanalytics.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "файл MyApp: флаг intros (пройден ли онбординг)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "redirect, start_redirect, qureka, webview, license check, earn, slots, roulette"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "1000webgames.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Bluehost Inc."
+      },
+      {
+        "domain": "10761.play.gamezop.com",
+        "redirects_to": "https://10761.play.umogames.com/en/intro?int-nav=1",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "andyroid.net",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "appxanalytics.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NameCheap, Inc."
+      },
+      {
+        "domain": "atmegame.com",
+        "redirects_to": "https://www.atmegame.com/",
+        "parked_at": "регистратор: Cloudflare, Inc."
+      },
+      {
+        "domain": "auroraoss.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "basketball.io",
+        "redirects_to": "https://www.atom.com/name/Basketball.io",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "battledudes.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      }
+    ],
+    "collected_data": [
+      "Имя пакета приложения"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Имя пакета приложения\n\nКак собираются: Сразу после запуска, на экране заставки, приложение само, без спроса у человека, берёт имя своего пакета из системы Android. Отдельного окна с разрешением нет — человек обычно видит только заставку и не замечает, что идёт тихая проверка в интернете. Это происходит в стартовом экране запуска: если есть сеть, сразу начинается загрузка удалённых настроек. Если интернета нет — показывают короткое сообщение, что нужна связь, и дальше по сценарию проверки не идут. В этот запрос приложение не подставляет язык телефона, модель, рекламный номер и другие сведения о человеке — в коде проверки видно только подстановку имени пакета в адрес.\n\nКуда отправляются: Сведения уходят тихим запросом по адресу https://appxanalytics.com/data/com.cloudverse.aviatorgame.json — на сайт appxanalytics.com в файл с именем пакета. Это простой запрос «дай настройки», без заполненной формы и без тела сообщения. Адрес собран из двух кусков: постоянная часть «https://appxanalytics.com/data/» и имя пакета приложения плюс «.json». Запасных адресов для этой проверки в коде не видно. Ответ читают сразу в памяти и по нему решают, куда вести человека дальше; сам адрес проверки в памяти приложения отдельным долгим сохранением не кладут. По смыслу это не показ рекламы на экране,…\n\nКак фильтруются пользователи: В самом приложении нет жёсткого списка стран, языков или «белых/грязных» пользователей для этой развилки. На проверку уходит только имя пакета; решение «что показать» делает сервер (или кто готовит файл настроек на appxanalytics.com). По ответу приложение смотрит флаг start_redirect и поле ads, а также ссылки qureka_url и qureka_back_url. Если сервер выставил режим qureka — дальше открывают внешнюю страницу оффера. Если ads равен adx — включают обычную рекламу Google Ad Manager. Локальных проверок «бот / эмулятор / запрещённая страна» в этой цепочке не видно.…\n\nЧто возвращается: Сервер отдаёт структурированный текстовый ответ. Приложение читает из него поля: start_redirect (да/нет), qureka_url и qureka_back_url (ссылки), ads (режим рекламы, например qureka или adx), ads_interval (как часто показывать), а также идентификаторы рекламны…"
+  }
 }

@@ -79,5 +79,115 @@
   "stdout": "Downloading com.moonactive.cmboard...\ncom.moonactive.cmboard downloaded successfully!\n",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Coin Master - Board Adventure (Play); application-label = Board Adventure"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "7.4.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "23"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.1.0"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AppLovin MAX, Google AdMob, Facebook Audience Network, Unity Ads, ironSource"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Firebase Crashlytics, AppsFlyer, OneSignal, SafeDK"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE, android.permission.VIBRATE, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.WAKE_LOCK, android.permission.READ_CONTACTS, com.google.android.gms.permission.AD_ID, com.google.android.finsky.permission.BIND_GET_INSTALL_REFER RER_SERVICE, com.moonactive.cmboard.permission.C2D_MESSAGE, android.permission.POST_NOTIFICATIONS, com.google.android.c2dm.permission.RECEIVE, me.everything.badger.permission.BADGE_COUNT_READ, me.everything.badger.permission.BADGE_COUNT_WRITE, com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE, android.permission.ACCESS_WIFI_STATE, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, com.samsung.android.mapsagent.permission.READ_APP_IN FO, com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA, com.android.vending.BILLING, android.permission.FOREGROUND_SERVICE, com.moonactive.cmboard.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity, Unity Ads, AppLovin MAX, Google Mobile Ads (AdMob), Facebook SDK, Facebook Audience Network, ironSource (com.json), AppsFlyer, OneSignal, Firebase (Analytics, Crashlytics, Messaging, Remote Config library), Usercentrics, SafeDK, Google Play Billing, Google Play Games, Install Referrer, LINE SDK, OkHttp/Okio, kotlinx-coroutines, AndroidX (appcompat, browser/Custom Tabs, core, fragment, lifecycle, webkit, startup, multidex), net.gree.unitywebview, Picasso (squareup), BestHTTP, Bolts, IAB TCF, Lofelt Haptics"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "aggregator.eu.usercentrics.eu, aggregator.service.usercentrics.eu, api.usercentrics.eu, app.eu.usercentrics.eu"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "файл prefs.dat: deviceID, install referrer, флаг gotReferrer, GCM registration id/версия, счётчик локальных уведомлений"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "нет"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "aggregator.eu.usercentrics.eu",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "aggregator.service.usercentrics.eu",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "api.usercentrics.eu",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "app.eu.usercentrics.eu",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "app.usercentrics.eu",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "auroraoss.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "cmba.onelink.me",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: GANDI SAS"
+      },
+      {
+        "domain": "coin-master-board-adventure.firebasestorage.app",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }

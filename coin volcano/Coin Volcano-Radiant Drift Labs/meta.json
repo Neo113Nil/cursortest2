@@ -1,0 +1,152 @@
+{
+  "app_id": "com.wf.wellsfargomob",
+  "title": "Coin Volcano",
+  "developer": "Radiant Drift Labs",
+  "score": null,
+  "icon": "/static/app-icons/com_wf_wellsfargomob.png",
+  "url": "https://play.google.com/store/apps/details?id=com.wf.wellsfargomob&hl=en&gl=us",
+  "keyword": "Coin Volcano",
+  "country": "Germany",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260829_180036_Germany_Coin Volcano_search",
+  "search_title": "Coin Volcano",
+  "search_developer": "Radiant Drift Labs",
+  "rank": 8,
+  "developer_id": "Radiant+Drift+Labs",
+  "released": "Jul 7, 2026",
+  "updated": "Jul 7, 2026",
+  "version": "Varies with device",
+  "summary": "Plan your pest control efforts and keep track of the treatments in Coin Volcano",
+  "folder": "Coin Volcano-Radiant Drift Labs",
+  "path": "coin volcano/Coin Volcano-Radiant Drift Labs",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.wf.wellsfargomob-3-asset.apk",
+    "com.wf.wellsfargomob-3-config.arm64_v8a.apk",
+    "com.wf.wellsfargomob-3-config.en.apk",
+    "com.wf.wellsfargomob-3-config.lt.apk",
+    "com.wf.wellsfargomob-3-config.ru.apk",
+    "com.wf.wellsfargomob-3-config.xxhdpi.apk",
+    "com.wf.wellsfargomob-3.apk"
+  ],
+  "target": "/root/play-collector/загрузки/coin volcano/Coin Volcano-Radiant Drift Labs",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.wf.wellsfargomob ─╮\n│ Coin Volcano           │\n│ 3.0  (vc 3)            │\n╰────────────────────────╯\n\nDownloading 7 files  (13.1 MB)\n  com.wf.wellsfargomob-3.apk                  ━━━━━━ 100% 8.2/8.2 11.6   0:00:00\n                                                          MB      MB/s          \n  com.wf.wellsfargomob-3-config.arm64_v8a.apk ━━━━━━ 100% 62.0/6… ?      0:00:00\n                                                          kB                    \n  com.wf.wellsfargomob-3-config.en.apk        ━━━━━━ 100% 41.4/4… ?      0:00:00\n                                                          kB                    \n  com.wf.wellsfargomob-3-config.lt.apk        ━━━━━━ 100% 25.0/2… ?      0:00:00\n                                                          kB                    \n  com.wf.wellsfargomob-3-config.ru.apk        ━━━━━━ 100% 25.0/2… ?      0:00:00\n                                                          kB                    \n  com.wf.wellsfargomob-3-config.xxhdpi.apk    ━━━━━━ 100% 53.1/5… ?      0:00:00\n                                                          kB                    \n  com.wf.wellsfargomob-3-asset.apk            ━━━━━━ 100% 5.3/5.3 11.4   0:00:00\n                                                          MB      MB/s          \n\n                    Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                        ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.wf.wellsfargomob-3.apk                  │  7.8 MB │\n│ com.wf.wellsfargomob-3-config.arm64_v8a.apk │ 60.5 KB │\n│ com.wf.wellsfargomob-3-config.en.apk        │ 40.4 KB │\n│ com.wf.wellsfargomob-3-config.lt.apk        │ 24.4 KB │\n│ com.wf.wellsfargomob-3-config.ru.apk        │ 24.4 KB │\n│ com.wf.wellsfargomob-3-config.xxhdpi.apk    │ 51.9 KB │\n│ com.wf.wellsfargomob-3-asset.apk            │  7.8 MB │\n└─────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.wf.wellsfargomob ─╮\n│ Coin Volcano           │\n│ 3.0  (vc 3)            │\n╰────────────────────────╯\n\nDownloading 7 files  (13.1 MB)\n  com.wf.wellsfargomob-3.apk                  ━━━━━━ 100% 8.2/8.2 11.6   0:00:00\n                                                          MB      MB/s          \n  com.wf.wellsfargomob-3-config.arm64_v8a.apk ━━━━━━ 100% 62.0/6… ?      0:00:00\n                                                          kB                    \n  com.wf.wellsfargomob-3-config.en.apk        ━━━━━━ 100% 41.4/4… ?      0:00:00\n                                                          kB                    \n  com.wf.wellsfargomob-3-config.lt.apk        ━━━━━━ 100% 25.0/2… ?      0:00:00\n                                                          kB                    \n  com.wf.wellsfargomob-3-config.ru.apk        ━━━━━━ 100% 25.0/2… ?      0:00:00\n                                                          kB                    \n  com.wf.wellsfargomob-3-config.xxhdpi.apk    ━━━━━━ 100% 53.1/5… ?      0:00:00\n                                                          kB                    \n  com.wf.wellsfargomob-3-asset.apk            ━━━━━━ 100% 5.3/5.3 11.4   0:00:00\n                                                          MB      MB/s          \n\n                    Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                        ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.wf.wellsfargomob-3.apk                  │  7.8 MB │\n│ com.wf.wellsfargomob-3-config.arm64_v8a.apk │ 60.5 KB │\n│ com.wf.wellsfargomob-3-config.en.apk        │ 40.4 KB │\n│ com.wf.wellsfargomob-3-config.lt.apk        │ 24.4 KB │\n│ com.wf.wellsfargomob-3-config.ru.apk        │ 24.4 KB │\n│ com.wf.wellsfargomob-3-config.xxhdpi.apk    │ 51.9 KB │\n│ com.wf.wellsfargomob-3-asset.apk            │  7.8 MB │\n└─────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Coin Volcano"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.11.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "28"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.3.0"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Firebase Crashlytics, Firebase Cloud Messaging"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.POST_NOTIFICATIONS, android.permission.CAMERA, android.permission.VIDEO_CAPTURE, android.permission.VIBRATE, android.permission.ACCESS_WIFI_STATE, android.permission.WAKE_LOCK, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_AD_ID, com.google.android.c2dm.permission.RECEIVE, com.wf.wellsfargomob.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.compose, androidx.activity, androidx.lifecycle, androidx.datastore, androidx.appcompat, androidx.core, androidx.startup, androidx.profileinstaller, androidx.emoji2, androidx.security, kotlinx.coroutines, org.jetbrains.compose, com.google.firebase (analytics, messaging, crashlytics, installations), com.google.android.gms (measurement, ads.identifier, basement, tasks), com.pairip.licensecheck, Koin"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru, telegra.ph, ua.gov.diia.app"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "veut7jv98u8mb: ссылка оффера (q3n8xr2cev9), флаг shortcut (ldierubf46), вариант shortcut (kpobfgv3my9); loading_sdk_prefs; com.google.android.gms.appid; com.google.firebase.crashlytics"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "offer, offer_shortcut, loading, screen-gate, Routed, Severed, Warmup, Remote, Local, Masked, Unseen, bonus, reels, chips, cashed out, exclusive offers, Spinning, Imprint, advertisingId, referrer, pesthunter, shortcut, telegra, diia, pest"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "config.ru",
+        "redirects_to": "https://config.ru/en/",
+        "parked_at": "похоже на парковку (domain is for sale)"
+      },
+      {
+        "domain": "telegra.ph",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "ua.gov.diia.app",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      }
+    ],
+    "collected_data": [
+      "Рекламный номер устройства",
+      "Модель телефона бренд",
+      "Время установки приложения",
+      "Установочный referrer",
+      "User-agent",
+      "Идентификатор Firebase",
+      "Признак тестовых сценариев",
+      "Значение shortcut",
+      "Значение loading",
+      "Язык телефона заголовок"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Рекламный номер устройства\n• Модель телефона бренд\n• Время установки приложения\n• Установочный referrer\n• User-agent\n• Идентификатор Firebase\n• Признак тестовых сценариев\n• Значение shortcut\n• Значение loading\n• Язык телефона заголовок\n\nКак собираются: Сразу после запуска, ещё до показа обычного экрана, приложение само собирает «отпечаток» устройства. Человек отдельного окна с разрешением обычно не видит: сведения берутся из системы Android и сервисов Google в фоне, незаметно. Рекламный номер читается через сервис рекламного идентификатора Google. Модель собирается из системных полей бренда и модели телефона. Время установки и установочный referrer берутся из сведений об установке. User-agent готовится для сетевого запроса. Идентификатор Firebase запрашивается у встроенной аналитики Google. Параллельно читаются служебные значения shortcut и loading, а также проверяются признаки отладки. Пока идёт тихая проверка,…\n\nКуда отправляются: Собранные сведения упаковываются в набор полей с короткими именами, шифруются и тихо уходят POST-запросом на адрес https://pesthunter.site/yi0tl. Если в строке адреса ещё нет схемы, приложение само дописывает https:// спереди. В заголовках уходят язык телефона и user-agent. Тело запроса — зашифрованная строка, а не читаемый текст на экране. Это фоновая проверка «что показать этому человеку», а не обычный рекламный баннер. Ссылку из ответа приложение может сохранить у себя в памяти настроек (файл veut7jv98u8mb), чтобы при следующих открытиях быстрее повторить уже выбранный путь.\n\nКак фильтруются пользователи: В самом приложении нет жёсткого списка стран или языков, по которому локально решают «оффер или обычное приложение». На сервер уходят признаки устройства, установки и служебные флаги loading/shortcut, а язык передаётся в заголовке. Решение «кого пустить» принимает удалённый сервер. В манифесте указана возможность смотреть, установлены ли приложения вроде Diia и ряда мессенджеров. В теле запроса клоаки отдельных полей под них не видно. Флаг отладки собирается в отпечатке, но в отправляемый набор строковых полей не кладётся. Если сеть недоступна или ответ пустой, приложение само оставляет человеку обычный…"
+  }
+}

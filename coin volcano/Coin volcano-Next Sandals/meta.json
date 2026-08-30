@@ -1,0 +1,88 @@
+{
+  "app_id": "com.volcanocoins.volcanjhfd",
+  "title": "Coin volcano",
+  "developer": "Next Sandals",
+  "score": null,
+  "icon": "https://play-lh.googleusercontent.com/OojgcNzaGqZ7kzC3ffnjM_DYkc_Ih1ysYsZgud6IcawbSCvaL_1YQdNJcaCUt2_DEknNq1_tSsIQvF0TUm5ufxE",
+  "url": "https://play.google.com/store/apps/details?id=com.volcanocoins.volcanjhfd&hl=en&gl=us",
+  "keyword": "Coin Volcano",
+  "country": "Germany",
+  "source": "",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260829_180036_Germany_Coin Volcano_search",
+  "search_title": "Coin Volcano",
+  "search_developer": "Next Sandals",
+  "rank": 14,
+  "developer_id": "Next+Sandals",
+  "released": "Aug 25, 2026",
+  "updated": "Aug 25, 2026",
+  "version": "Varies with device",
+  "summary": "Tap boosters Coin volcano , merge items, expand grid",
+  "folder": "Coin volcano-Next Sandals",
+  "path": "coin volcano/Coin volcano-Next Sandals",
+  "updates_count": 1,
+  "ok": false,
+  "files": [],
+  "target": "/root/play-collector/загрузки/coin volcano/Coin volcano-Next Sandals",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.698@gmail.com              │\n│ GSF ID : 3b7739b770e2061a                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : bilbert039@gmail.com                  │\n│ GSF ID : 33ccc40ac3056cc3                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.volcanocoins.volcanjhfd...\n",
+      "stderr": "",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.volcanocoins.volcanjhfd...\n",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "Downloading com.volcanocoins.volcanjhfd...\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}

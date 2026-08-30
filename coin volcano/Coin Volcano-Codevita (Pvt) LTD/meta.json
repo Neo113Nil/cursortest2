@@ -1,0 +1,88 @@
+{
+  "app_id": "jp.ne.ambition.bu",
+  "title": "Coin Volcano",
+  "developer": "Codevita (Pvt) LTD",
+  "score": null,
+  "icon": "https://play-lh.googleusercontent.com/_RIv4xdFP4F9VmwcKINxDxLHHfm8ZbntrisxaX-UL0JD-T5cqDY0AMhFfzaGW6n1Kv84xl4fyuqAgvDVRe-aKw",
+  "url": "https://play.google.com/store/apps/details?id=jp.ne.ambition.bu&hl=en&gl=us",
+  "keyword": "Coin Volcano",
+  "country": "Germany",
+  "source": "",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260829_180036_Germany_Coin Volcano_search",
+  "search_title": "Coin Volcano",
+  "search_developer": "Codevita (Pvt) LTD",
+  "rank": 3,
+  "developer_id": "8500359587808041310",
+  "released": "Aug 7, 2026",
+  "updated": "Aug 7, 2026",
+  "version": "Varies with device",
+  "summary": "Coin Volcano: Tap to awaken the volcano and collect Fire Crystals!",
+  "folder": "Coin Volcano-Codevita (Pvt) LTD",
+  "path": "coin volcano/Coin Volcano-Codevita (Pvt) LTD",
+  "updates_count": 1,
+  "ok": false,
+  "files": [],
+  "target": "/root/play-collector/загрузки/coin volcano/Coin Volcano-Codevita (Pvt) LTD",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : s7763457@gmail.com                    │\n│ GSF ID : 3565d6e529e12b3e                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.fourteen@gmail.com         │\n│ GSF ID : 31d3af9f3bf8c203                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading jp.ne.ambition.bu...\n",
+      "stderr": "",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading jp.ne.ambition.bu...\n",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "Downloading jp.ne.ambition.bu...\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}

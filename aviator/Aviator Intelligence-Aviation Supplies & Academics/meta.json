@@ -1,0 +1,88 @@
+{
+  "app_id": "com.aviatorassistant.asai",
+  "title": "Aviator Intelligence",
+  "developer": "Aviation Supplies & Academics",
+  "score": null,
+  "icon": "https://play-lh.googleusercontent.com/7kbsO4AEcSfnW0tBlvo9XKAsNJnic1hoRuZxlIHi7No9tL1VZXCE9D1wDI3-7RaCn0l3JyZIqH7t1VI6Fc_9iA",
+  "url": "https://play.google.com/store/apps/details?id=com.aviatorassistant.asai&hl=en&gl=us",
+  "keyword": "Aviator",
+  "country": "Germany",
+  "source": "",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260829_200452_Germany_Aviator_search",
+  "search_title": "Aviator Intelligence",
+  "search_developer": "Aviation Supplies & Academics",
+  "rank": 4,
+  "developer_id": "Aviation+Supplies+%26+Academics",
+  "released": "Jun 20, 2025",
+  "updated": "Aug 4, 2025",
+  "version": "Varies with device",
+  "summary": "AI Powered Aviation Knowledge",
+  "folder": "Aviator Intelligence-Aviation Supplies & Academics",
+  "path": "aviator/Aviator Intelligence-Aviation Supplies & Academics",
+  "updates_count": 1,
+  "ok": false,
+  "files": [],
+  "target": "/root/play-collector/загрузки/aviator/Aviator Intelligence-Aviation Supplies & Academics",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.fiftythree@gmail.com       │\n│ GSF ID : 3a59aeab0454944f                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : g90467755@gmail.com                   │\n│ GSF ID : 34d89c147538ca0f                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.aviatorassistant.asai...\n",
+      "stderr": "",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.aviatorassistant.asai...\n",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "Downloading com.aviatorassistant.asai...\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
