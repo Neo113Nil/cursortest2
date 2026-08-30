@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "package": "com.aviator.aviatorgamewindailyapp121",
+  "version_name": "1.0",
+  "version_code": 1,
+  "source": "apkcombo",
+  "base_apk": "com.aviator.aviatorgamewindailyapp121.apk",
+  "apks": [
+    "com.aviator.aviatorgamewindailyapp121.apk",
+    "config.arm64_v8a.apk",
+    "config.armeabi_v7a.apk",
+    "config.en.apk",
+    "config.xxhdpi.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "out_dir": "decompiled",
+    "base_apk": "com.aviator.aviatorgamewindailyapp121.apk"
+  }
+}

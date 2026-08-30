@@ -1,0 +1,38 @@
+{
+  "app_name_play": "Aviator App Game Online Money",
+  "app_label_apk": "Aviator All Online Games",
+  "package": "com.aviator.aviatorgamewindailyapp121",
+  "developer": "Mitra consultancy services",
+  "versionName": "1.0",
+  "versionCode": 1,
+  "minSdk": 24,
+  "targetSdk": 35,
+  "agp": "8.8.0",
+  "kotlin": "coroutines 1.7.3",
+  "cloaking": true,
+  "webview": true,
+  "custom_tabs": true,
+  "ads": [
+    "Google Ad Manager / AdMob (AdX)",
+    "Qureka"
+  ],
+  "analytics": [],
+  "suspicious_domains": [
+    "appxanalytics.com",
+    "1000webgames.com",
+    "10761.play.gamezop.com",
+    "andyroid.net"
+  ],
+  "remote_config_url": "https://appxanalytics.com/data/com.aviator.aviatorgamewindailyapp121.json",
+  "remote_config_live": {
+    "start_redirect": false,
+    "qureka_url": "https://1316.mark.qureka.com/intro/question",
+    "qureka_back_url": "https://1316.mark.qureka.com/intro/question",
+    "ads": "qureka",
+    "ads_interval": "1",
+    "adx_interstitial": "ca-app-pub-3940256099942544/1033173712",
+    "adx_banner": "ca-app-pub-3940256099942544/9214589741",
+    "adx_native": "ca-app-pub-3940256099942544/1044960115",
+    "adx_appopen": "ca-app-pub-3940256099942544/9257395921"
+  }
+}
