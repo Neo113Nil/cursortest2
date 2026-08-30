@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "apks": [
+    "de.whow.jackpot.apk",
+    "config.armeabi_v7a.apk"
+  ],
+  "base_apk": "de.whow.jackpot.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "27049 (47%)\nINFO  - progress: 13276 of 27049 (49%)\nINFO  - progress: 13440 of 27049 (49%)\nINFO  - progress: 13601 of 27049 (50%)\nINFO  - progress: 13640 of 27049 (50%)\nINFO  - progress: 14113 of 27049 (52%)\nINFO  - progress: 14334 of 27049 (52%)\nINFO  - progress: 14685 of 27049 (54%)\nINFO  - progress: 14999 of 27049 (55%)\nINFO  - progress: 15278 of 27049 (56%)\nINFO  - progress: 15498 of 27049 (57%)\nINFO  - progress: 15903 of 27049 (58%)\nINFO  - progress: 16384 of 27049 (60%)\nINFO  - progress: 16696 of 27049 (61%)\nINFO  - progress: 17345 of 27049 (64%)\nINFO  - progress: 17829 of 27049 (65%)\nINFO  - progress: 18036 of 27049 (66%)\nINFO  - progress: 18280 of 27049 (67%)\nINFO  - progress: 18548 of 27049 (68%)\nINFO  - progress: 18734 of 27049 (69%)\nINFO  - progress: 18860 of 27049 (69%)\nINFO  - progress: 19085 of 27049 (70%)\nINFO  - progress: 19293 of 27049 (71%)\nINFO  - progress: 19293 of 27049 (71%)\nINFO  - progress: 19293 of 27049 (71%)\nINFO  - progress: 19293 of 27049 (71%)\nINFO  - progress: 19293 of 27049 (71%)\nINFO  - progress: 19293 of 27049 (71%)\nINFO  - progress: 19293 of 27049 (71%)\nINFO  - progress: 19293 of 27049 (71%)\nINFO  - progress: 19293 of 27049 (71%)\nINFO  - progress: 19587 of 27049 (72%)\nINFO  - progress: 19810 of 27049 (73%)\nINFO  - progress: 20018 of 27049 (74%)\nINFO  - progress: 20147 of 27049 (74%)\nINFO  - progress: 20327 of 27049 (75%)\nINFO  - progress: 20469 of 27049 (75%)\nINFO  - progress: 20673 of 27049 (76%)\nINFO  - progress: 20996 of 27049 (77%)\nINFO  - progress: 21207 of 27049 (78%)\nINFO  - progress: 21676 of 27049 (80%)\nINFO  - progress: 21934 of 27049 (81%)\nINFO  - progress: 22261 of 27049 (82%)\nINFO  - progress: 22568 of 27049 (83%)\nINFO  - progress: 22608 of 27049 (83%)\nINFO  - progress: 22608 of 27049 (83%)\nINFO  - progress: 22608 of 27049 (83%)\nINFO  - progress: 22608 of 27049 (83%)\nINFO  - progress: 22608 of 27049 (83%)\nINFO  - progress: 22697 of 27049 (83%)\nINFO  - progress: 22739 of 27049 (84%)\nINFO  - progress: 23227 of 27049 (85%)\nINFO  - progress: 23601 of 27049 (87%)\nINFO  - progress: 23897 of 27049 (88%)\nINFO  - progress: 24165 of 27049 (89%)\nINFO  - progress: 24558 of 27049 (90%)\nINFO  - progress: 24889 of 27049 (92%)\nINFO  - progress: 25310 of 27049 (93%)\nINFO  - progress: 25610 of 27049 (94%)\nINFO  - progress: 25885 of 27049 (95%)\nINFO  - progress: 26130 of 27049 (96%)\nINFO  - progress: 26328 of 27049 (97%)\nINFO  - progress: 26450 of 27049 (97%)\nINFO  - progress: 26581 of 27049 (98%)\nINFO  - progress: 26725 of 27049 (98%)\nINFO  - progress: 26813 of 27049 (99%)\nINFO  - progress: 26925 of 27049 (99%)\nINFO  - progress: 26940 of 27049 (99%)\nINFO  - progress: 26954 of 27049 (99%)\nINFO  - progress: 26978 of 27049 (99%)\nINFO  - progress: 26994 of 27049 (99%)\nINFO  - progress: 27005 of 27049 (99%)\nINFO  - progress: 27015 of 27049 (99%)\nINFO  - progress: 27021 of 27049 (99%)\nINFO  - progress: 27028 of 27049 (99%)\n                                                             \nERROR - finished with errors, count: 84\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/r7 casino/MyJackpot - Slots & Casino-Whow Games GmbH/decompiled",
+    "skipped": false,
+    "base_apk": "de.whow.jackpot.apk"
+  },
+  "analysis_files": [
+    "de.whow.jackpot.xapk",
+    "apk/config.armeabi_v7a.apk",
+    "apk/de.whow.jackpot.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/a/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/bitter/",
+    "decompiled/sources/bo/",
+    "decompiled/sources/bolts/",
+    "decompiled/sources/coil/",
+    "decompiled/sources/com/",
+    "decompiled/sources/dagger/",
+    "decompiled/sources/de/",
+    "decompiled/sources/firebase/",
+    "decompiled/sources/io/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/net/",
+    "decompiled/sources/okhttp3/",
+    "decompiled/sources/okio/",
+    "decompiled/sources/org/"
+  ],
+  "errors": []
+}

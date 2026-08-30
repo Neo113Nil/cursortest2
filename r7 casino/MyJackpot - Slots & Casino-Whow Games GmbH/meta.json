@@ -1,0 +1,83 @@
+{
+  "app_id": "de.whow.jackpot",
+  "title": "MyJackpot - Slots & Casino",
+  "developer": "Whow Games GmbH",
+  "score": 4.2965517,
+  "icon": "/static/app-icons/de_whow_jackpot.png",
+  "url": "https://play.google.com/store/apps/details?id=de.whow.jackpot&hl=en&gl=us",
+  "keyword": "R7 casino",
+  "country": "Germany",
+  "source": "apkeep:apk-pure",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260829_185237_Germany_R7 casino_search",
+  "search_title": "MyJackpot - Slots & Casino",
+  "search_developer": "Whow Games GmbH",
+  "rank": 8,
+  "developer_id": "Whow+Games+GmbH",
+  "released": "Apr 23, 2018",
+  "updated": "2026-08-18",
+  "version": "6.5.35",
+  "summary": "Enjoy this jackpot casino party with over 200 slot games",
+  "folder": "MyJackpot - Slots & Casino-Whow Games GmbH",
+  "path": "r7 casino/MyJackpot - Slots & Casino-Whow Games GmbH",
+  "updates_count": 1,
+  "apk_title": "MyJackpot",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "de.whow.jackpot.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/r7 casino/MyJackpot - Slots & Casino-Whow Games GmbH",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.cxcr@gmail.com             │\n│ GSF ID : 379e2005d4f301d8                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.400@gmail.com              │\n│ GSF ID : 3aa90c1b83cfffbd                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading de.whow.jackpot...\nde.whow.jackpot downloaded successfully!\n",
+      "stderr": "",
+      "apk_label": "MyJackpot"
+    }
+  ],
+  "stdout": "Downloading de.whow.jackpot...\nde.whow.jackpot downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
