@@ -1,10 +1,83 @@
 {
+  "app_id": "com.lynxgames.hrv",
   "title": "HighRoller Vegas Casino Games",
   "developer": "PLAYLINKS Corp",
-  "app_id": "com.lynxgames.hrv",
+  "score": 4.6716743,
   "icon": "/static/app-icons/com_lynxgames_hrv.png",
   "url": "https://play.google.com/store/apps/details?id=com.lynxgames.hrv&hl=en&gl=us",
+  "keyword": "R7 casino",
+  "country": "Germany",
+  "source": "apkeep:apk-pure",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260829_185237_Germany_R7 casino_search",
+  "search_title": "HighRoller Vegas: Casino Games",
+  "search_developer": "PLAYLINKS Corp.",
+  "rank": 15,
+  "developer_id": "PLAYLINKS+Corp.",
   "released": "Feb 28, 2019",
   "updated": "2026-08-20",
-  "version": "3.2.52"
+  "version": "3.2.52",
+  "summary": "The ultimate slot game PACKED with SUPERIOR Vegas slot machines & HUGE wins.",
+  "folder": "HighRoller Vegas Casino Games-PLAYLINKS Corp",
+  "path": "r7 casino/HighRoller Vegas Casino Games-PLAYLINKS Corp",
+  "updates_count": 1,
+  "apk_title": "HighRoller Vegas",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.lynxgames.hrv.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/r7 casino/HighRoller Vegas Casino Games-PLAYLINKS Corp",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.fourteen@gmail.com         │\n│ GSF ID : 3329e4d8238b9d02                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : crazyman1x1@gmail.com                 │\n│ GSF ID : 32acd2343ccbe32f                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.lynxgames.hrv...\ncom.lynxgames.hrv downloaded successfully!\n",
+      "stderr": "",
+      "apk_label": "HighRoller Vegas"
+    }
+  ],
+  "stdout": "Downloading com.lynxgames.hrv...\ncom.lynxgames.hrv downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
 }
