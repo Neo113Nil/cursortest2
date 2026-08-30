@@ -1,0 +1,83 @@
+{
+  "app_id": "com.cloudverse.aviatorgame",
+  "title": "Aviator Predictor Hack-ex Apk",
+  "developer": "QuasarQuill Studios",
+  "score": null,
+  "icon": "/static/app-icons/com_cloudverse_aviatorgame.png",
+  "url": "https://play.google.com/store/apps/details?id=com.cloudverse.aviatorgame&hl=en&gl=us",
+  "keyword": "Aviator",
+  "country": "Germany",
+  "source": "apkeep:apk-pure",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260829_200452_Germany_Aviator_search",
+  "search_title": "Aviator Predictor Hack-ex Apk (Early Access)",
+  "search_developer": "QuasarQuill Studios",
+  "rank": 13,
+  "developer_id": "QuasarQuill+Studios",
+  "released": "",
+  "updated": "Jun 7, 2026",
+  "version": "Varies with device",
+  "summary": "enjoy a simple, fast, and enjoyable plane flying experience anytime, anywhere.",
+  "folder": "Aviator Predictor Hack-ex Apk-QuasarQuill Studios",
+  "path": "aviator/Aviator Predictor Hack-ex Apk-QuasarQuill Studios",
+  "updates_count": 1,
+  "apk_title": "Aviator All Online Games",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.cloudverse.aviatorgame.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/aviator/Aviator Predictor Hack-ex Apk-QuasarQuill Studios",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : ossaur01@gmail.com                    │\n│ GSF ID : 3e9f3d543ba26133                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : rockball735@gmail.com                 │\n│ GSF ID : 31693c3f1a7cc48f                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : jeeoneman55@gmail.com                 │\n│ GSF ID : 3dd3ed498fbd52fc                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.cloudverse.aviatorgame...\ncom.cloudverse.aviatorgame downloaded successfully!\n",
+      "stderr": "",
+      "apk_label": "Aviator All Online Games"
+    }
+  ],
+  "stdout": "Downloading com.cloudverse.aviatorgame...\ncom.cloudverse.aviatorgame downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
