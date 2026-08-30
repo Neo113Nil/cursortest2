@@ -1,0 +1,52 @@
+{
+  "app_id": "com.playlinks.vegascraze",
+  "title": "Vegas Craze Casino",
+  "developer": "PLAYLINKS Corp",
+  "url": "https://play.google.com/store/apps/details?id=com.playlinks.vegascraze&hl=en&gl=us",
+  "version": "1.1.12",
+  "version_code": "150",
+  "summary": "Vegas Craze Casino (APK label: Vegas Craze Casino) — legitimate PLAYLINKS Cocos2d-js social casino (RockNCash); mobileConfig/GATE gaaentry.vegascraze.com for game boot only; no cloaking fork.",
+  "keyword": "r7 casino",
+  "folder": "Vegas Craze Casino-PLAYLINKS Corp",
+  "path": "r7 casino/Vegas Craze Casino-PLAYLINKS Corp",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "apk_label": "Vegas Craze Casino",
+  "cloaking": "нет",
+  "files": [
+    "com.playlinks.vegascraze.xapk",
+    "apk/com.playlinks.vegascraze.apk",
+    "apk/config.armeabi_v7a.apk",
+    "apk/config.mdpi.apk",
+    "apk/config.en.apk"
+  ],
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      {"domain": "123.com"},
+      {"domain": "admob-mediation.premiumtag.net"},
+      {"domain": "akm.ssacdn.com"},
+      {"domain": "aomedia.org"}
+    ],
+    "ads": [
+      "AdMob",
+      "AppLovin MAX",
+      "ironSource / LevelPlay",
+      "Unity Ads",
+      "Facebook Audience Network",
+      "Vungle",
+      "InMobi",
+      "Fyber",
+      "Moloco",
+      "Digital Turbine",
+      "PremiumAds"
+    ],
+    "analytics": [
+      "Firebase Analytics",
+      "Crashlytics",
+      "AppsFlyer",
+      "Facebook App Events",
+      "OneSignal"
+    ]
+  }
+}
