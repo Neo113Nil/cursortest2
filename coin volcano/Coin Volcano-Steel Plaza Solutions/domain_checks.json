@@ -1,0 +1,9 @@
+{
+  "domains": [
+    "auroraoss.com",
+    "config.ru",
+    "debug.firebase.analytics.app",
+    "lineheightstyle.alignment.top"
+  ],
+  "source": "provided_in_prompt"
+}
