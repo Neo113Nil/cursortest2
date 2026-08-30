@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "apks": [
+    "com.aviatorgame.kunalkumar1.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.mdpi.apk"
+  ],
+  "base_apk": "com.aviatorgame.kunalkumar1.apk",
+  "jadx": {
+    "ok": true,
+    "out_dir": "decompiled",
+    "skipped": false,
+    "base_apk": "com.aviatorgame.kunalkumar1.apk"
+  },
+  "source": "apkeep:apk-pure",
+  "xapk": "com.aviatorgame.kunalkumar1.xapk",
+  "analysis_files": [
+    "com.aviatorgame.kunalkumar1.xapk",
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "report.pdf"
+  ]
+}
