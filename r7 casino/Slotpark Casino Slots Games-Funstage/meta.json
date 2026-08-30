@@ -1,0 +1,83 @@
+{
+  "app_id": "com.platogo.pmp",
+  "title": "Slotpark Casino Slots Games",
+  "developer": "Funstage",
+  "score": 4.3932586,
+  "icon": "/static/app-icons/com_platogo_pmp.png",
+  "url": "https://play.google.com/store/apps/details?id=com.platogo.pmp&hl=en&gl=us",
+  "keyword": "R7 casino",
+  "country": "Germany",
+  "source": "apkeep:apk-pure",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260829_185237_Germany_R7 casino_search",
+  "search_title": "Slotpark Casino Slots Games",
+  "search_developer": "Funstage",
+  "rank": 9,
+  "developer_id": "8128532516213169694",
+  "released": "Dec 14, 2015",
+  "updated": "2026-08-25",
+  "version": "4.22.0",
+  "summary": "Play slots & casino games — spin, win jackpots, enjoy Vegas-style 777 fun!",
+  "folder": "Slotpark Casino Slots Games-Funstage",
+  "path": "r7 casino/Slotpark Casino Slots Games-Funstage",
+  "updates_count": 1,
+  "apk_title": "Slotpark",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.platogo.pmp.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/r7 casino/Slotpark Casino Slots Games-Funstage",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : rockball735@gmail.com                 │\n│ GSF ID : 34241b15e6eee876                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.cxcr@gmail.com             │\n│ GSF ID : 31e1100e3f43e29a                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Samsung F34 5G\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.platogo.pmp...\ncom.platogo.pmp downloaded successfully!\n",
+      "stderr": "",
+      "apk_label": "Slotpark"
+    }
+  ],
+  "stdout": "Downloading com.platogo.pmp...\ncom.platogo.pmp downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
