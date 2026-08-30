@@ -1,0 +1,48 @@
+{
+  "app_name_play": "Aviator predictor v4.0 apk",
+  "app_label_apk": "Aviator All Online Games",
+  "package": "com.aviator.aviatorgamewindailyapp37",
+  "developer": "QuasarQuill Studios",
+  "versionName": "1.0",
+  "versionCode": 1,
+  "minSdk": 24,
+  "targetSdk": 35,
+  "agp": "8.8.0",
+  "kotlin": "да (coroutines 1.7.3)",
+  "cloaking": true,
+  "webview": true,
+  "custom_tabs": true,
+  "ads": [
+    "AdMob / Google Ad Manager (AdX)",
+    "Qureka"
+  ],
+  "analytics": [
+    "Google Analytics / Measurement (GMS)"
+  ],
+  "suspicious_domains": [
+    "1000webgames.com",
+    "10761.play.gamezop.com",
+    "andyroid.net",
+    "appxanalytics.com"
+  ],
+  "remote_config_url": "https://appxanalytics.com/data/com.aviator.aviatorgamewindailyapp37.json",
+  "remote_config_live": {
+    "start_redirect": false,
+    "qureka_url": "https://1316.mark.qureka.com/intro/question",
+    "qureka_back_url": "https://1316.mark.qureka.com/intro/question",
+    "ads": "qureka",
+    "ads_interval": "1",
+    "adx_interstitial": "ca-app-pub-3940256099942544/1033173712",
+    "adx_banner": "ca-app-pub-3940256099942544/9214589741",
+    "adx_native": "ca-app-pub-3940256099942544/1044960115",
+    "adx_appopen": "ca-app-pub-3940256099942544/9257395921"
+  },
+  "suspicious_words": [
+    "redirect",
+    "start_redirect",
+    "qureka",
+    "webview",
+    "license check",
+    "earn"
+  ]
+}

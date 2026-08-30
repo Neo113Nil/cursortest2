@@ -1,0 +1,41 @@
+{
+  "ok": true,
+  "apks": [
+    "com.aviator.aviatorgamewindailyapp37.apk",
+    "config.armeabi_v7a.apk",
+    "config.ar.apk",
+    "config.de.apk",
+    "config.en.apk",
+    "config.es.apk",
+    "config.fr.apk",
+    "config.hdpi.apk",
+    "config.hi.apk",
+    "config.in.apk",
+    "config.it.apk",
+    "config.ja.apk",
+    "config.ko.apk",
+    "config.my.apk",
+    "config.pt.apk",
+    "config.ru.apk",
+    "config.th.apk",
+    "config.tr.apk",
+    "config.vi.apk",
+    "config.zh.apk"
+  ],
+  "base_apk": "com.aviator.aviatorgamewindailyapp37.apk",
+  "jadx": {
+    "ok": true,
+    "out_dir": "decompiled",
+    "skipped": false,
+    "base_apk": "com.aviator.aviatorgamewindailyapp37.apk"
+  },
+  "source": "apkeep:apk-pure",
+  "xapk": "com.aviator.aviatorgamewindailyapp37.xapk",
+  "analysis_files": [
+    "com.aviator.aviatorgamewindailyapp37.xapk",
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "report.pdf"
+  ]
+}
