@@ -1,10 +1,83 @@
 {
+  "app_id": "com.bagelcode.slots1",
   "title": "Club Vegas Casino Slots Games",
   "developer": "Bagelcode Social Casino & Slot Machine Games",
-  "app_id": "com.bagelcode.slots1",
+  "score": 4.818263,
   "icon": "/static/app-icons/com_bagelcode_slots1.png",
   "url": "https://play.google.com/store/apps/details?id=com.bagelcode.slots1&hl=en&gl=us",
+  "keyword": "R7 casino",
+  "country": "Germany",
+  "source": "apkeep:apk-pure",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260829_185237_Germany_R7 casino_search",
+  "search_title": "Club Vegas Casino Slots Games",
+  "search_developer": "Bagelcode: Social Casino & Slot Machine Games",
+  "rank": 1,
+  "developer_id": "8668671585757235506",
   "released": "Jun 29, 2017",
   "updated": "2026-08-13",
-  "version": "Varies with device"
+  "version": "Varies with device",
+  "summary": "Welcome to Club Vegas! Enjoy Vegas slots, online casino fun & slots games!",
+  "folder": "Club Vegas Casino Slots Games-Bagelcode Social Casino & Slot Machine Games",
+  "path": "r7 casino/Club Vegas Casino Slots Games-Bagelcode Social Casino & Slot Machine Games",
+  "updates_count": 1,
+  "apk_title": "Club Vegas",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.bagelcode.slots1.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/r7 casino/Club Vegas Casino Slots Games-Bagelcode Social Casino & Slot Machine Games",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\nDelivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss4harry@gmail.com            │\n│ GSF ID : 3f424e2ecfbe47de                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.ponies@gmail.com           │\n│ GSF ID : 3fbebdd3f47def92                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.bagelcode.slots1...\ncom.bagelcode.slots1 downloaded successfully!\n",
+      "stderr": "",
+      "apk_label": "Club Vegas"
+    }
+  ],
+  "stdout": "Downloading com.bagelcode.slots1...\ncom.bagelcode.slots1 downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
 }
