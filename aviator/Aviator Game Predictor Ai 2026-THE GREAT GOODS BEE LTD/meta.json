@@ -1,0 +1,83 @@
+{
+  "app_id": "com.badsha.panchmseapp.maviatorgames.avigame",
+  "title": "Aviator Game Predictor Ai 2026",
+  "developer": "THE GREAT GOODS BEE LTD",
+  "score": null,
+  "icon": "/static/app-icons/com_badsha_panchmseapp_maviatorgames_avigame.png",
+  "url": "https://play.google.com/store/apps/details?id=com.badsha.panchmseapp.maviatorgames.avigame&hl=en&gl=us",
+  "keyword": "Aviator",
+  "country": "Germany",
+  "source": "apkeep:apk-pure",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260829_200452_Germany_Aviator_search",
+  "search_title": "Aviator Game Predictor Ai 2026 (Early Access)",
+  "search_developer": "THE GREAT GOODS BEE LTD",
+  "rank": 9,
+  "developer_id": "THE+GREAT+GOODS+BEE+LTD",
+  "released": "",
+  "updated": "Jul 21, 2026",
+  "version": "Varies with device",
+  "summary": "Game combines smart decisions, colorful graphics, and engaging seasonal gameplay",
+  "folder": "Aviator Game Predictor Ai 2026-THE GREAT GOODS BEE LTD",
+  "path": "aviator/Aviator Game Predictor Ai 2026-THE GREAT GOODS BEE LTD",
+  "updates_count": 1,
+  "apk_title": "Aviator Predictor Game",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.badsha.panchmseapp.maviatorgames.avigame.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/aviator/Aviator Game Predictor Ai 2026-THE GREAT GOODS BEE LTD",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.two@gmail.com              │\n│ GSF ID : 3787a1069460c309                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.xx2424@gmail.com           │\n│ GSF ID : 38b4a71426a4eeb8                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Samsung F34 5G\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.badsha.panchmseapp.maviatorgames.avigame...\ncom.badsha.panchmseapp.maviatorgames.avigame downloaded successfully!\n",
+      "stderr": "",
+      "apk_label": "Aviator Predictor Game"
+    }
+  ],
+  "stdout": "Downloading com.badsha.panchmseapp.maviatorgames.avigame...\ncom.badsha.panchmseapp.maviatorgames.avigame downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
