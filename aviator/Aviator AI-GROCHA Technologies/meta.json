@@ -1,0 +1,83 @@
+{
+  "app_id": "br.com.aiaviator.app",
+  "title": "Aviator AI",
+  "developer": "GROCHA Technologies",
+  "score": null,
+  "icon": "/static/app-icons/br_com_aiaviator_app.png",
+  "url": "https://play.google.com/store/apps/details?id=br.com.aiaviator.app&hl=en&gl=us",
+  "keyword": "Aviator",
+  "country": "Germany",
+  "source": "apkeep:apk-pure",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260829_200452_Germany_Aviator_search",
+  "search_title": "Aviator AI",
+  "search_developer": "GROCHA Technologies",
+  "rank": 3,
+  "developer_id": "8108067446170871344",
+  "released": "May 6, 2026",
+  "updated": "Aug 24, 2026",
+  "version": "Varies with device",
+  "summary": "AI-powered table reading, auditable history, and training without real money.",
+  "folder": "Aviator AI-GROCHA Technologies",
+  "path": "aviator/Aviator AI-GROCHA Technologies",
+  "updates_count": 1,
+  "apk_title": "Aviator AI",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "br.com.aiaviator.app.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/aviator/Aviator AI-GROCHA Technologies",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.89@gmail.com               │\n│ GSF ID : 31a49da33defcaf7                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.401@gmail.com              │\n│ GSF ID : 37d173159997f13e                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : bilbert87@gmail.com                   │\n│ GSF ID : 313aa22b4e818ff8                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading br.com.aiaviator.app...\nbr.com.aiaviator.app downloaded successfully!\n",
+      "stderr": "",
+      "apk_label": "Aviator AI"
+    }
+  ],
+  "stdout": "Downloading br.com.aiaviator.app...\nbr.com.aiaviator.app downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
