@@ -1,0 +1,83 @@
+{
+  "app_id": "com.sl.cashCraze",
+  "title": "Fun Of Vegas - Casino Slots",
+  "developer": "TREASURETECH CO PTE. LTD",
+  "score": 4.5135026,
+  "icon": "/static/app-icons/com_sl_cashCraze.png",
+  "url": "https://play.google.com/store/apps/details?id=com.sl.cashCraze&hl=en&gl=us",
+  "keyword": "R7 casino",
+  "country": "Germany",
+  "source": "apkeep:apk-pure",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260829_185237_Germany_R7 casino_search",
+  "search_title": "Fun Of Vegas - Casino Slots",
+  "search_developer": "TREASURETECH CO PTE. LTD.",
+  "rank": 13,
+  "developer_id": "TREASURETECH+CO+PTE.+LTD.",
+  "released": "Feb 5, 2021",
+  "updated": "2026-07-03",
+  "version": "1.0.148",
+  "summary": "Play 200+ Vegas slot machines with thrilling themes & huge wins!",
+  "folder": "Fun Of Vegas - Casino Slots-TREASURETECH CO PTE. LTD",
+  "path": "r7 casino/Fun Of Vegas - Casino Slots-TREASURETECH CO PTE. LTD",
+  "updates_count": 1,
+  "apk_title": "Fun Of Vegas",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.sl.cashCraze.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/r7 casino/Fun Of Vegas - Casino Slots-TREASURETECH CO PTE. LTD",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : g8701871@gmail.com                    │\n│ GSF ID : 3fee8f5e5bc2d0b8                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.six@gmail.com              │\n│ GSF ID : 36f7f3944149ef90                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.sl.cashCraze...\ncom.sl.cashCraze downloaded successfully!\n",
+      "stderr": "",
+      "apk_label": "Fun Of Vegas"
+    }
+  ],
+  "stdout": "Downloading com.sl.cashCraze...\ncom.sl.cashCraze downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
