@@ -1,0 +1,64 @@
+{
+  "app_id": "com.moonactive.coinmaster",
+  "title": "Coin Master",
+  "developer": "Moon Active",
+  "score": 4.7503066,
+  "icon": "/static/app-icons/com_moonactive_coinmaster.png",
+  "url": "https://play.google.com/store/apps/details?id=com.moonactive.coinmaster&hl=en&gl=us",
+  "keyword": "Coin Master",
+  "country": "Germany",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260829_215047_Germany_Coin Master_search",
+  "search_title": "Coin Master - Board Adventure",
+  "search_developer": "Moon Active",
+  "rank": 3,
+  "developer_id": "6898760406631171989",
+  "released": "Feb 4, 2016",
+  "updated": "2026-08-26",
+  "version": "Varies with device",
+  "summary": "Be the Coin Master: attack friends & collect coins in this fun adventure game!",
+  "folder": "Coin Master-Moon Active",
+  "path": "coin master/Coin Master-Moon Active",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.moonactive.coinmaster-3406306-asset.apk",
+    "com.moonactive.coinmaster-3406306-config.arm64_v8a.apk",
+    "com.moonactive.coinmaster-3406306.apk"
+  ],
+  "target": "/root/play-collector/загрузки/coin master/Coin Master-Moon Active",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.moonactive.coinmaster ─╮\n│ Coin Master                 │\n│ 3.5.2680  (vc 3406306)      │\n╰─────────────────────────────╯\n\nDownloading 3 files  (179.6 MB)\n  com.moonactive.coinmaster-3406306.apk                  ━━━━ 100% 84… 12.1 0:0…\n                                                                   MB  MB/s     \n  com.moonactive.coinmaster-3406306-config.arm64_v8a.apk ━━━━ 100% 45… 10.5 0:0…\n                                                                   MB  MB/s     \n  com.moonactive.coinmaster-3406306-asset.apk            ━━━━ 100% 58… 10.0 0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                   ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.moonactive.coinmaster-3406306.apk                  │ 80.7 MB │\n│ com.moonactive.coinmaster-3406306-config.arm64_v8a.apk │ 43.3 MB │\n│ com.moonactive.coinmaster-3406306-asset.apk            │ 80.7 MB │\n└────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : awookun102@gmail.com                  │\n│ GSF ID : 3a27d89c62334160                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.moonactive.coinmaster ─╮\n│ Coin Master                 │\n│ 3.5.2680  (vc 3406306)      │\n╰─────────────────────────────╯\n\nDownloading 3 files  (179.6 MB)\n  com.moonactive.coinmaster-3406306.apk                  ━━━━ 100% 84… 12.1 0:0…\n                                                                   MB  MB/s     \n  com.moonactive.coinmaster-3406306-config.arm64_v8a.apk ━━━━ 100% 45… 10.5 0:0…\n                                                                   MB  MB/s     \n  com.moonactive.coinmaster-3406306-asset.apk            ━━━━ 100% 58… 10.0 0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                   ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.moonactive.coinmaster-3406306.apk                  │ 80.7 MB │\n│ com.moonactive.coinmaster-3406306-config.arm64_v8a.apk │ 43.3 MB │\n│ com.moonactive.coinmaster-3406306-asset.apk            │ 80.7 MB │\n└────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : awookun102@gmail.com                  │\n│ GSF ID : 3a27d89c62334160                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
