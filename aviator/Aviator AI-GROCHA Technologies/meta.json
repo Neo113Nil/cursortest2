@@ -1,0 +1,11 @@
+{
+  "app_name": "Aviator AI",
+  "developer": "GROCHA Technologies",
+  "package": "br.com.aiaviator.app",
+  "version_name": "2.0.1",
+  "version_code": "23082026",
+  "min_sdk": 24,
+  "target_sdk": 36,
+  "application_label": "Aviator AI",
+  "play_name": "Aviator AI"
+}
