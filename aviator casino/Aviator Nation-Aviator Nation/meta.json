@@ -29,5 +29,10 @@
     "developers.klaviyo.com"
   ],
   "ota_url": "https://ota.tapcart.com/api/v1/manifest/SeUQkleo7w",
-  "store_host": "www.aviatornation.com"
+  "store_host": "www.aviatornation.com",
+  "suspicious_words": [
+    "offer",
+    "redirect",
+    "whitelist"
+  ]
 }
