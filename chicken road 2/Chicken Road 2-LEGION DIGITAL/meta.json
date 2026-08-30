@@ -1,4 +1,66 @@
 {
+  "app_id": "com.goldenboot.saga.zone",
   "title": "Chicken Road 2",
-  "developer": "LEGION DIGITAL"
+  "developer": "LEGION DIGITAL",
+  "score": null,
+  "icon": "/static/app-icons/com_goldenboot_saga_zone.png",
+  "url": "https://play.google.com/store/apps/details?id=com.goldenboot.saga.zone&hl=en&gl=us",
+  "keyword": "chicken road 2",
+  "country": "Germany",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260829_210210_Germany_chicken road 2_search",
+  "search_title": "Chicken Road 2 (Early Access)",
+  "search_developer": "LEGION DIGITAL",
+  "rank": 7,
+  "developer_id": "LEGION+DIGITAL",
+  "released": "",
+  "updated": "Aug 12, 2026",
+  "version": "Varies with device",
+  "summary": "Football tile-matching puzzles, levels, boosters, trophies and daily rewards",
+  "folder": "Chicken Road 2-LEGION DIGITAL",
+  "path": "chicken road 2/Chicken Road 2-LEGION DIGITAL",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.goldenboot.saga.zone-1-asset.apk",
+    "com.goldenboot.saga.zone-1-config.arm64_v8a.apk",
+    "com.goldenboot.saga.zone-1-config.en.apk",
+    "com.goldenboot.saga.zone-1-config.xxhdpi.apk",
+    "com.goldenboot.saga.zone-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/chicken road 2/Chicken Road 2-LEGION DIGITAL",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.goldenboot.saga.zone ─╮\n│ Chicken Road 2             │\n│ 1.0  (vc 1)                │\n╰────────────────────────────╯\n\nDownloading 5 files  (14.3 MB)\n  com.goldenboot.saga.zone-1.apk                  ━━━━━ 100% 10.5… 25.5   0:00:…\n                                                             MB    MB/s         \n  com.goldenboot.saga.zone-1-config.arm64_v8a.apk ━━━━━ 100% 82.4… 2.3    0:00:…\n                                                             kB    MB/s         \n  com.goldenboot.saga.zone-1-config.en.apk        ━━━━━ 100% 74.1… 2.4    0:00:…\n                                                             kB    MB/s         \n  com.goldenboot.saga.zone-1-config.xxhdpi.apk    ━━━━━ 100% 86.4… 2.3    0:00:…\n                                                             kB    MB/s         \n  com.goldenboot.saga.zone-1-asset.apk            ━━━━━ 100% 4.2/… 19.2   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.goldenboot.saga.zone-1.apk                  │ 10.0 MB │\n│ com.goldenboot.saga.zone-1-config.arm64_v8a.apk │ 80.5 KB │\n│ com.goldenboot.saga.zone-1-config.en.apk        │ 72.4 KB │\n│ com.goldenboot.saga.zone-1-config.xxhdpi.apk    │ 84.4 KB │\n│ com.goldenboot.saga.zone-1-asset.apk            │ 10.0 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.89@gmail.com               │\n│ GSF ID : 3d5b8d0235245c5b                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.goldenboot.saga.zone ─╮\n│ Chicken Road 2             │\n│ 1.0  (vc 1)                │\n╰────────────────────────────╯\n\nDownloading 5 files  (14.3 MB)\n  com.goldenboot.saga.zone-1.apk                  ━━━━━ 100% 10.5… 25.5   0:00:…\n                                                             MB    MB/s         \n  com.goldenboot.saga.zone-1-config.arm64_v8a.apk ━━━━━ 100% 82.4… 2.3    0:00:…\n                                                             kB    MB/s         \n  com.goldenboot.saga.zone-1-config.en.apk        ━━━━━ 100% 74.1… 2.4    0:00:…\n                                                             kB    MB/s         \n  com.goldenboot.saga.zone-1-config.xxhdpi.apk    ━━━━━ 100% 86.4… 2.3    0:00:…\n                                                             kB    MB/s         \n  com.goldenboot.saga.zone-1-asset.apk            ━━━━━ 100% 4.2/… 19.2   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.goldenboot.saga.zone-1.apk                  │ 10.0 MB │\n│ com.goldenboot.saga.zone-1-config.arm64_v8a.apk │ 80.5 KB │\n│ com.goldenboot.saga.zone-1-config.en.apk        │ 72.4 KB │\n│ com.goldenboot.saga.zone-1-config.xxhdpi.apk    │ 84.4 KB │\n│ com.goldenboot.saga.zone-1-asset.apk            │ 10.0 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.89@gmail.com               │\n│ GSF ID : 3d5b8d0235245c5b                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
 }
