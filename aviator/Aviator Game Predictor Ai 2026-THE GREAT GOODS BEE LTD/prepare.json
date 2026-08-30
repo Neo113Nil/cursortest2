@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "apks": [
+    "com.badsha.panchmseapp.maviatorgames.avigame.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.mdpi.apk"
+  ],
+  "base_apk": "com.badsha.panchmseapp.maviatorgames.avigame.apk",
+  "jadx": {
+    "ok": true,
+    "out_dir": "decompiled",
+    "skipped": false
+  },
+  "source": "apkeep:apk-pure",
+  "xapk": "com.badsha.panchmseapp.maviatorgames.avigame.xapk"
+}

@@ -1,0 +1,46 @@
+{
+  "app_name_play": "Aviator Game Predictor Ai 2026",
+  "app_label_apk": "Aviator Predictor Game",
+  "package": "com.badsha.panchmseapp.maviatorgames.avigame",
+  "developer": "THE GREAT GOODS BEE LTD",
+  "versionName": "5.0.0",
+  "versionCode": 1,
+  "minSdk": 24,
+  "targetSdk": 36,
+  "agp": "8.10.1",
+  "kotlin": "да, 2.1.0",
+  "cloaking": true,
+  "webview": true,
+  "custom_tabs": true,
+  "ads": [
+    "AdMob",
+    "Meta Audience Network",
+    "TopOn/AnyThink",
+    "Qureka"
+  ],
+  "analytics": [
+    "Firebase Analytics",
+    "Firebase Crashlytics",
+    "Firebase Remote Config",
+    "OneSignal"
+  ],
+  "suspicious_domains": [
+    "631.mark.qureka.com",
+    "adx.mossturbo.com",
+    "adxtk.mossturbo.com",
+    "api-sec.mossturbo.com",
+    "api.mossturbo.com",
+    "da.mossturbo.com",
+    "img.mossturbo.com",
+    "ssapi.mossturbo.com",
+    "tk.mossturbo.com",
+    "se.mnbvcxzas.com",
+    "free.freeipapi.com",
+    "arihantfoodbazar.in"
+  ],
+  "geo_api_default": "https://free.freeipapi.com/api/json",
+  "remote_config_keys": [
+    "app_configuration05",
+    "ad_and_api_configuration05"
+  ]
+}
