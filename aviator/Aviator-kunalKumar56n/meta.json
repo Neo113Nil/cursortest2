@@ -1,0 +1,83 @@
+{
+  "app_id": "com.aviatorgame.kunalkumar1",
+  "title": "Aviator",
+  "developer": "kunalKumar56n",
+  "score": null,
+  "icon": "/static/app-icons/com_aviatorgame_kunalkumar1.png",
+  "url": "https://play.google.com/store/apps/details?id=com.aviatorgame.kunalkumar1&hl=en&gl=us",
+  "keyword": "Aviator",
+  "country": "Germany",
+  "source": "apkeep:apk-pure",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260829_200452_Germany_Aviator_search",
+  "search_title": "Aviator (Early Access)",
+  "search_developer": "kunalKumar56n",
+  "rank": 7,
+  "developer_id": "kunalKumar56n",
+  "released": "",
+  "updated": "Aug 6, 2026",
+  "version": "Varies with device",
+  "summary": "Welcome to Mini Games, an exciting strategy-based game play.",
+  "folder": "Aviator-kunalKumar56n",
+  "path": "aviator/Aviator-kunalKumar56n",
+  "updates_count": 1,
+  "apk_title": "Aviator All Online Games",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.aviatorgame.kunalkumar1.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/aviator/Aviator-kunalKumar56n",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : ivannazariy83@gmail                   │\n│ GSF ID : 3fb5e4472f058538                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.tk@gmail.com               │\n│ GSF ID : 3fd9655fa2813f57                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.aviatorgame.kunalkumar1...\ncom.aviatorgame.kunalkumar1 downloaded successfully!\n",
+      "stderr": "",
+      "apk_label": "Aviator All Online Games"
+    }
+  ],
+  "stdout": "Downloading com.aviatorgame.kunalkumar1...\ncom.aviatorgame.kunalkumar1 downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}

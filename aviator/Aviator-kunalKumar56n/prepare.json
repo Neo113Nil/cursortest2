@@ -1,0 +1,41 @@
+{
+  "ok": true,
+  "apks": [
+    "com.aviatorgame.kunalkumar1.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.mdpi.apk"
+  ],
+  "base_apk": "com.aviatorgame.kunalkumar1.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 7756 (0%)\nINFO  - progress: 879 of 7756 (11%)\nINFO  - progress: 880 of 7756 (11%)\nINFO  - progress: 890 of 7756 (11%)\nINFO  - progress: 957 of 7756 (12%)\nINFO  - progress: 1160 of 7756 (14%)\nINFO  - progress: 1769 of 7756 (22%)\nINFO  - progress: 2150 of 7756 (27%)\nINFO  - progress: 2494 of 7756 (32%)\nINFO  - progress: 2749 of 7756 (35%)\nINFO  - progress: 3039 of 7756 (39%)\nINFO  - progress: 3240 of 7756 (41%)\nINFO  - progress: 3281 of 7756 (42%)\nINFO  - progress: 3465 of 7756 (44%)\nINFO  - progress: 3688 of 7756 (47%)\nINFO  - progress: 4034 of 7756 (52%)\nINFO  - progress: 4420 of 7756 (56%)\nINFO  - progress: 4667 of 7756 (60%)\nINFO  - progress: 4770 of 7756 (61%)\nINFO  - progress: 4885 of 7756 (62%)\nINFO  - progress: 5065 of 7756 (65%)\nINFO  - progress: 5408 of 7756 (69%)\nINFO  - progress: 5737 of 7756 (73%)\nINFO  - progress: 6088 of 7756 (78%)\nINFO  - progress: 6276 of 7756 (80%)\nINFO  - progress: 6420 of 7756 (82%)\nINFO  - progress: 6732 of 7756 (86%)\nINFO  - progress: 6913 of 7756 (89%)\nINFO  - progress: 6955 of 7756 (89%)\nINFO  - progress: 6955 of 7756 (89%)\nINFO  - progress: 7062 of 7756 (91%)\nINFO  - progress: 7229 of 7756 (93%)\nINFO  - progress: 7404 of 7756 (95%)\nINFO  - progress: 7656 of 7756 (98%)\n                                                             \nERROR - finished with errors, count: 23\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/aviator/Aviator-kunalKumar56n/decompiled",
+    "skipped": false,
+    "base_apk": "com.aviatorgame.kunalkumar1.apk"
+  },
+  "analysis_files": [
+    "com.aviatorgame.kunalkumar1.xapk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.mdpi.apk",
+    "apk/com.aviatorgame.kunalkumar1.apk",
+    "apk/config.en.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/okio/",
+    "decompiled/sources/org/",
+    "decompiled/sources/pl/"
+  ],
+  "errors": []
+}
