@@ -1,0 +1,83 @@
+{
+  "app_id": "com.aviatorassistant.aviatorassistant",
+  "title": "Aviator Assistant - Pilot App",
+  "developer": "Aviator Assistant",
+  "score": 4.57,
+  "icon": "/static/app-icons/com_aviatorassistant_aviatorassistant.png",
+  "url": "https://play.google.com/store/apps/details?id=com.aviatorassistant.aviatorassistant&hl=en&gl=us",
+  "keyword": "Aviator",
+  "country": "Germany",
+  "source": "apkeep:apk-pure",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260829_200452_Germany_Aviator_search",
+  "search_title": "Aviator Assistant - Pilot App",
+  "search_developer": "Aviator Assistant",
+  "rank": 2,
+  "developer_id": "Aviator+Assistant",
+  "released": "May 22, 2021",
+  "updated": "2026-08-19",
+  "version": "4.6.0",
+  "summary": "Try Aviator Assistant today and experience the future of flight planning.",
+  "folder": "Aviator Assistant - Pilot App-Aviator Assistant",
+  "path": "aviator/Aviator Assistant - Pilot App-Aviator Assistant",
+  "updates_count": 1,
+  "apk_title": "Aviator Assistant",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.aviatorassistant.aviatorassistant.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/aviator/Aviator Assistant - Pilot App-Aviator Assistant",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.403@gmail.com              │\n│ GSF ID : 30b136a922adbd20                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "gplaydl auth failed: Dispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n\nAuthentication failed — all profiles rejected.\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.aviatorassistant.aviatorassistant...\ncom.aviatorassistant.aviatorassistant downloaded successfully!\n",
+      "stderr": "",
+      "apk_label": "Aviator Assistant"
+    }
+  ],
+  "stdout": "Downloading com.aviatorassistant.aviatorassistant...\ncom.aviatorassistant.aviatorassistant downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
