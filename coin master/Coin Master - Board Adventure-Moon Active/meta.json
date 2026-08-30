@@ -1,0 +1,23 @@
+{
+  "app_id": "com.moonactive.cmboard",
+  "title": "Coin Master - Board Adventure",
+  "developer": "Moon Active",
+  "url": "https://play.google.com/store/apps/details?id=com.moonactive.cmboard&hl=en&gl=us",
+  "version": "3.5.2661",
+  "versionCode": 3612,
+  "summary": "",
+  "folder": "Coin Master - Board Adventure-Moon Active",
+  "path": "coin master/Coin Master - Board Adventure-Moon Active",
+  "ok": true,
+  "source": "apkpure",
+  "files": [
+    "com.moonactive.cmboard.apk",
+    "config.arm64_v8a.apk"
+  ],
+  "apk_label": "Board Adventure",
+  "minSdk": 23,
+  "targetSdk": 36,
+  "cloaking": "нет",
+  "agp": "7.4.2",
+  "kotlin": "да 2.1.0"
+}
