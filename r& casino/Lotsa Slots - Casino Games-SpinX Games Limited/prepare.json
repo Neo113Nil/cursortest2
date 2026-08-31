@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "apks": [
+    "com.diamondlife.slots.vegas.free-536.apk",
+    "com.diamondlife.slots.vegas.free-536-config.en.apk",
+    "com.diamondlife.slots.vegas.free-536-asset.apk",
+    "com.diamondlife.slots.vegas.free-536-config.arm64_v8a.apk",
+    "com.diamondlife.slots.vegas.free-536-config.xxhdpi.apk"
+  ],
+  "base_apk": "com.diamondlife.slots.vegas.free-536.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "30570 (46%)\nINFO  - progress: 14755 of 30570 (48%)\nINFO  - progress: 15050 of 30570 (49%)\nINFO  - progress: 15323 of 30570 (50%)\nINFO  - progress: 15619 of 30570 (51%)\nINFO  - progress: 15893 of 30570 (51%)\nINFO  - progress: 16216 of 30570 (53%)\nINFO  - progress: 16516 of 30570 (54%)\nINFO  - progress: 16719 of 30570 (54%)\nINFO  - progress: 16900 of 30570 (55%)\nINFO  - progress: 17178 of 30570 (56%)\nINFO  - progress: 17473 of 30570 (57%)\nINFO  - progress: 17669 of 30570 (57%)\nINFO  - progress: 17755 of 30570 (58%)\nINFO  - progress: 17942 of 30570 (58%)\nINFO  - progress: 18286 of 30570 (59%)\nINFO  - progress: 18563 of 30570 (60%)\nINFO  - progress: 18962 of 30570 (62%)\nINFO  - progress: 19260 of 30570 (63%)\nINFO  - progress: 19628 of 30570 (64%)\nINFO  - progress: 19902 of 30570 (65%)\nINFO  - progress: 20335 of 30570 (66%)\nINFO  - progress: 20768 of 30570 (67%)\nINFO  - progress: 21070 of 30570 (68%)\nINFO  - progress: 21515 of 30570 (70%)\nINFO  - progress: 21826 of 30570 (71%)\nINFO  - progress: 22046 of 30570 (72%)\nINFO  - progress: 22194 of 30570 (72%)\nINFO  - progress: 22324 of 30570 (73%)\nINFO  - progress: 22422 of 30570 (73%)\nINFO  - progress: 22564 of 30570 (73%)\nINFO  - progress: 22677 of 30570 (74%)\nINFO  - progress: 22733 of 30570 (74%)\nINFO  - progress: 22840 of 30570 (74%)\nINFO  - progress: 22840 of 30570 (74%)\nINFO  - progress: 22840 of 30570 (74%)\nINFO  - progress: 22840 of 30570 (74%)\nINFO  - progress: 22840 of 30570 (74%)\nINFO  - progress: 23070 of 30570 (75%)\nINFO  - progress: 23433 of 30570 (76%)\nINFO  - progress: 23853 of 30570 (78%)\nINFO  - progress: 24237 of 30570 (79%)\nINFO  - progress: 24600 of 30570 (80%)\nINFO  - progress: 24810 of 30570 (81%)\nINFO  - progress: 25336 of 30570 (82%)\nINFO  - progress: 25842 of 30570 (84%)\nINFO  - progress: 26143 of 30570 (85%)\nINFO  - progress: 26256 of 30570 (85%)\nINFO  - progress: 26334 of 30570 (86%)\nINFO  - progress: 26334 of 30570 (86%)\nINFO  - progress: 26334 of 30570 (86%)\nINFO  - progress: 26532 of 30570 (86%)\nINFO  - progress: 27019 of 30570 (88%)\nINFO  - progress: 27122 of 30570 (88%)\nINFO  - progress: 27372 of 30570 (89%)\nINFO  - progress: 27513 of 30570 (90%)\nINFO  - progress: 27632 of 30570 (90%)\nINFO  - progress: 27877 of 30570 (91%)\nINFO  - progress: 28162 of 30570 (92%)\nINFO  - progress: 28284 of 30570 (92%)\nINFO  - progress: 28390 of 30570 (92%)\nINFO  - progress: 28459 of 30570 (93%)\nINFO  - progress: 28490 of 30570 (93%)\nINFO  - progress: 28527 of 30570 (93%)\nINFO  - progress: 28598 of 30570 (93%)\nINFO  - progress: 28643 of 30570 (93%)\nINFO  - progress: 28852 of 30570 (94%)\nINFO  - progress: 28934 of 30570 (94%)\nINFO  - progress: 28986 of 30570 (94%)\nINFO  - progress: 29171 of 30570 (95%)\nINFO  - progress: 29507 of 30570 (96%)\nINFO  - progress: 29572 of 30570 (96%)\nINFO  - progress: 29935 of 30570 (97%)\nINFO  - progress: 30215 of 30570 (98%)\nINFO  - progress: 30493 of 30570 (99%)\n                                                             \nERROR - finished with errors, count: 77\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/r& casino/Lotsa Slots - Casino Games-SpinX Games Limited/decompiled",
+    "skipped": false,
+    "base_apk": "com.diamondlife.slots.vegas.free-536.apk"
+  },
+  "analysis_files": [
+    "com.diamondlife.slots.vegas.free-536.apk",
+    "com.diamondlife.slots.vegas.free-536-config.en.apk",
+    "com.diamondlife.slots.vegas.free-536-asset.apk",
+    "com.diamondlife.slots.vegas.free-536-config.arm64_v8a.apk",
+    "com.diamondlife.slots.vegas.free-536-config.xxhdpi.apk",
+    "apk/com.diamondlife.slots.vegas.free-536.apk",
+    "apk/com.diamondlife.slots.vegas.free-536-config.en.apk",
+    "apk/com.diamondlife.slots.vegas.free-536-asset.apk",
+    "apk/com.diamondlife.slots.vegas.free-536-config.arm64_v8a.apk",
+    "apk/com.diamondlife.slots.vegas.free-536-config.xxhdpi.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/a/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/coil/",
+    "decompiled/sources/com/",
+    "decompiled/sources/gatewayprotocol/",
+    "decompiled/sources/io/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/okhttp3/",
+    "decompiled/sources/okio/",
+    "decompiled/sources/org/"
+  ],
+  "errors": []
+}
