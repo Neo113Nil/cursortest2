@@ -1,0 +1,52 @@
+{
+  "app_id": "sk.inlogic.rouletteprovip.android",
+  "title": "Roulette VIP - Casino Wheel",
+  "developer": "INLOGIC CASINO - roulette blackjack cards",
+  "score": 4.680203,
+  "icon": "/static/app-icons/sk_inlogic_rouletteprovip_android.png",
+  "url": "https://play.google.com/store/apps/details?id=sk.inlogic.rouletteprovip.android&hl=en&gl=us",
+  "keyword": "R& casino",
+  "country": "Germany",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260831_172700_Germany_R& casino_search",
+  "search_title": "Roulette VIP - Casino Wheel",
+  "search_developer": "INLOGIC CASINO - roulette blackjack cards",
+  "rank": 15,
+  "developer_id": "8130874062678102635",
+  "released": "Apr 4, 2018",
+  "updated": "2025-11-11",
+  "version": "1.0.43",
+  "summary": "Roulette simulator - Bet on lucky ruleta & spin the wheel in online casino games",
+  "folder": "Roulette VIP - Casino Wheel-INLOGIC CASINO - roulette blackjack cards",
+  "path": "r& casino/Roulette VIP - Casino Wheel-INLOGIC CASINO - roulette blackjack cards",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "sk.inlogic.rouletteprovip.android-81-asset.apk",
+    "sk.inlogic.rouletteprovip.android-81-config.arm64_v8a.apk",
+    "sk.inlogic.rouletteprovip.android-81.apk"
+  ],
+  "target": "/root/play-collector/загрузки/r& casino/Roulette VIP - Casino Wheel-INLOGIC CASINO - roulette blackjack cards",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ sk.inlogic.rouletteprovip.android ─╮\n│ Roulette VIP - Casino Wheel         │\n│ 1.0.43  (vc 81)                     │\n╰─────────────────────────────────────╯\n\nDownloading 3 files  (135.5 MB)\n  sk.inlogic.rouletteprovip.android-81.apk                  ━━━ 100% 73… 1… 0:0…\n                                                                     MB  M…     \n  sk.inlogic.rouletteprovip.android-81-config.arm64_v8a.apk ━━━ 100% 22… 7… 0:0…\n                                                                     MB  M…     \n  sk.inlogic.rouletteprovip.android-81-asset.apk            ━━━ 100% 46… 8… 0:0…\n                                                                     MB  M…     \n\n                           Downloaded files                            \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                      ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ sk.inlogic.rouletteprovip.android-81.apk                  │ 69.6 MB │\n│ sk.inlogic.rouletteprovip.android-81-config.arm64_v8a.apk │ 21.4 MB │\n│ sk.inlogic.rouletteprovip.android-81-asset.apk            │ 69.6 MB │\n└───────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ sk.inlogic.rouletteprovip.android ─╮\n│ Roulette VIP - Casino Wheel         │\n│ 1.0.43  (vc 81)                     │\n╰─────────────────────────────────────╯\n\nDownloading 3 files  (135.5 MB)\n  sk.inlogic.rouletteprovip.android-81.apk                  ━━━ 100% 73… 1… 0:0…\n                                                                     MB  M…     \n  sk.inlogic.rouletteprovip.android-81-config.arm64_v8a.apk ━━━ 100% 22… 7… 0:0…\n                                                                     MB  M…     \n  sk.inlogic.rouletteprovip.android-81-asset.apk            ━━━ 100% 46… 8… 0:0…\n                                                                     MB  M…     \n\n                           Downloaded files                            \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                      ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ sk.inlogic.rouletteprovip.android-81.apk                  │ 69.6 MB │\n│ sk.inlogic.rouletteprovip.android-81-config.arm64_v8a.apk │ 21.4 MB │\n│ sk.inlogic.rouletteprovip.android-81-asset.apk            │ 69.6 MB │\n└───────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
