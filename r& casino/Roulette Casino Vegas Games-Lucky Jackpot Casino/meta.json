@@ -1,0 +1,52 @@
+{
+  "app_id": "com.luckyjackpot.roulette.casino.games.free",
+  "title": "Roulette Casino Vegas Games",
+  "developer": "Lucky Jackpot Casino",
+  "score": 4.683258,
+  "icon": "/static/app-icons/com_luckyjackpot_roulette_casino_games_free.png",
+  "url": "https://play.google.com/store/apps/details?id=com.luckyjackpot.roulette.casino.games.free&hl=en&gl=us",
+  "keyword": "R& casino",
+  "country": "Germany",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260831_172700_Germany_R& casino_search",
+  "search_title": "Roulette Casino Vegas Games",
+  "search_developer": "Lucky Jackpot Casino",
+  "rank": 14,
+  "developer_id": "5763445591579324602",
+  "released": "Aug 3, 2020",
+  "updated": "2025-12-23",
+  "version": "1.8.5",
+  "summary": "Roulette Casino Game. Play Online or Offline. Pro American or European Games",
+  "folder": "Roulette Casino Vegas Games-Lucky Jackpot Casino",
+  "path": "r& casino/Roulette Casino Vegas Games-Lucky Jackpot Casino",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.luckyjackpot.roulette.casino.games.free-612-asset.apk",
+    "com.luckyjackpot.roulette.casino.games.free-612-config.arm64_v8a.apk",
+    "com.luckyjackpot.roulette.casino.games.free-612.apk"
+  ],
+  "target": "/root/play-collector/загрузки/r& casino/Roulette Casino Vegas Games-Lucky Jackpot Casino",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.luckyjackpot.roulette.casino.games.free ─╮\n│ Roulette Casino Vegas Games                   │\n│ 1.8.5  (vc 612)                               │\n╰───────────────────────────────────────────────╯\n\nDownloading 3 files  (128.9 MB)\n com.luckyjackpot.roulette.casino.games.free-612.apk                   100%  … …\n                                                                             …  \n com.luckyjackpot.roulette.casino.games.free-612-config.arm64_v8a.apk  100%  … …\n                                                                             …  \n com.luckyjackpot.roulette.casino.games.free-612-asset.apk             100%  … …\n                                                                             …  \n\n                                Downloaded files                                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.luckyjackpot.roulette.casino.games.free-612.apk                │ 66.2 MB │\n│ com.luckyjackpot.roulette.casino.games.free-612-config.arm64_v8a.… │ 24.3 MB │\n│ com.luckyjackpot.roulette.casino.games.free-612-asset.apk          │ 66.2 MB │\n└────────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.luckyjackpot.roulette.casino.games.free ─╮\n│ Roulette Casino Vegas Games                   │\n│ 1.8.5  (vc 612)                               │\n╰───────────────────────────────────────────────╯\n\nDownloading 3 files  (128.9 MB)\n com.luckyjackpot.roulette.casino.games.free-612.apk                   100%  … …\n                                                                             …  \n com.luckyjackpot.roulette.casino.games.free-612-config.arm64_v8a.apk  100%  … …\n                                                                             …  \n com.luckyjackpot.roulette.casino.games.free-612-asset.apk             100%  … …\n                                                                             …  \n\n                                Downloaded files                                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.luckyjackpot.roulette.casino.games.free-612.apk                │ 66.2 MB │\n│ com.luckyjackpot.roulette.casino.games.free-612-config.arm64_v8a.… │ 24.3 MB │\n│ com.luckyjackpot.roulette.casino.games.free-612-asset.apk          │ 66.2 MB │\n└────────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
