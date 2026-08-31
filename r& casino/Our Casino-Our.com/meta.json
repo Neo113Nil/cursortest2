@@ -1,0 +1,41 @@
+{
+  "app_id": "com.our.casino",
+  "title": "Our Casino",
+  "developer": "Our.com",
+  "url": "https://play.google.com/store/apps/details?id=com.our.casino&hl=en&gl=us",
+  "version": "1.57",
+  "version_code": "157",
+  "summary": "Our Casino (APK label: Our Casino) — официальное social-casino Our.com на Capacitor + Angular (HTML5 slots/bingo/poker); бэкенд gsap.our.com / gs1p.our.com / gs2p.our.com / static.our.com / fbk.our.com; рекламных сетей нет; аналитика Facebook App Events + Install Referrer; WebView (Capacitor UI) + Custom Tabs (Browser plugin / Facebook login); клоаки нет.",
+  "keyword": "r& casino",
+  "folder": "Our Casino-Our.com",
+  "path": "r& casino/Our Casino-Our.com",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "apk_label": "Our Casino",
+  "cloaking": "нет",
+  "files": [
+    "com.our.casino.xapk",
+    "apk/com.our.casino-157.apk",
+    "apk/com.our.casino-157-config.en.apk",
+    "apk/com.our.casino-157-config.xxhdpi.apk"
+  ],
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      {"domain": "angular.dev"},
+      {"domain": "angular.io"},
+      {"domain": "aomedia.org"},
+      {"domain": "appassets.androidplatform.net"}
+    ],
+    "ads": [],
+    "analytics": [
+      "Facebook App Events"
+    ]
+  },
+  "minSdk": 23,
+  "targetSdk": 35,
+  "agp": "8.7.2",
+  "kotlin": "да",
+  "webview": true,
+  "custom_tabs": true
+}
