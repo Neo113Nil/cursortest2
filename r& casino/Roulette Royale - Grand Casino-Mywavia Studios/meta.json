@@ -1,0 +1,41 @@
+{
+  "app_id": "com.mw.rouletteroyale",
+  "title": "Roulette Royale - Grand Casino",
+  "developer": "Mywavia Studios",
+  "url": "https://play.google.com/store/apps/details?id=com.mw.rouletteroyale&hl=en&gl=us",
+  "version": "37.14",
+  "versionCode": 534,
+  "folder": "Roulette Royale - Grand Casino-Mywavia Studios",
+  "path": "r& casino/Roulette Royale - Grand Casino-Mywavia Studios",
+  "ok": true,
+  "source": "apkpure",
+  "files": [
+    "com.mw.rouletteroyale.apk",
+    "apk/com.mw.rouletteroyale.apk"
+  ],
+  "apk_label": "Roulette Royale - Casino",
+  "store_title_mismatch": true,
+  "minSdk": 23,
+  "targetSdk": 36,
+  "agp": "8.12.3",
+  "kotlin": "да 2.1",
+  "cloaking": "нет",
+  "webview": true,
+  "custom_tabs": true,
+  "ads": [
+    "AdMob"
+  ],
+  "analytics": [
+    "Firebase Analytics",
+    "Firebase Cloud Messaging",
+    "Google Analytics / App Measurement",
+    "Snowplow",
+    "Facebook App Events"
+  ],
+  "suspicious_domains": [
+    "adgen-self.mywavia.com",
+    "classspace.in",
+    "configservice.mywavia.com"
+  ],
+  "note": "Real Mywavia social-casino roulette; remote /config drives ads+IAP offers, not offer/white cloaking fork. Play title vs APK label is minor branding (Grand Casino vs Casino)."
+}
