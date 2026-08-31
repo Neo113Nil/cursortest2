@@ -1,0 +1,54 @@
+{
+  "app_id": "com.huuuge.casino.slots",
+  "title": "Huuuge Casino 777 Slots Games",
+  "developer": "Huuuge Games - Play Together",
+  "url": "https://play.google.com/store/apps/details?id=com.huuuge.casino.slots&hl=en&gl=us",
+  "version": "8.4.4300",
+  "version_code": "1648745782",
+  "summary": "Huuuge Casino 777 Slots Games (APK label: Huuuge Casino) — оригинальная social-casino игра Huuuge Games на движке Claw (C++/native libClawApp.so); игровой сервер game-mobile.production.hc.huuuge.cloud; собственная рекламная сеть hads.huuuge.net + AppLovin MAX/AdMob/FAN/ironSource/Vungle/Unity Ads/HyprMX; аналитика Huuuge HA/AppsFlyer/Braze/Firebase/Sentry/Helpshift/Facebook; WebView (реклама/CRM) + Custom Tabs (Facebook login); клоаки нет.",
+  "keyword": "r& casino",
+  "folder": "Huuuge Casino 777 Slots Games-Huuuge Games - Play Together",
+  "path": "r& casino/Huuuge Casino 777 Slots Games-Huuuge Games - Play Together",
+  "ok": true,
+  "source": "appheros-apk",
+  "apk_label": "Huuuge Casino",
+  "cloaking": "нет",
+  "files": [
+    "com.huuuge.casino.slots.apk",
+    "apk/com.huuuge.casino.slots.apk"
+  ],
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      {
+        "domain": "developer.mozilla.org"
+      }
+    ],
+    "ads": [
+      "AdMob",
+      "AppLovin MAX",
+      "Facebook Audience Network",
+      "ironSource",
+      "Vungle",
+      "Unity Ads",
+      "HyprMX",
+      "Huuuge HADS"
+    ],
+    "analytics": [
+      "Huuuge Analytics (HA)",
+      "AppsFlyer",
+      "Braze",
+      "Firebase",
+      "Sentry",
+      "Helpshift",
+      "Facebook App Events"
+    ]
+  },
+  "minSdk": 21,
+  "targetSdk": 30,
+  "agp": "нет",
+  "kotlin": "да",
+  "webview": true,
+  "custom_tabs": true,
+  "note": "Проанализирован APK 8.4.4300 (versionCode 1648745782) с appheros CDN; в Play на момент скана указана 12.08.27100. Архитектура Claw/native, рекламный и аналитический стек соответствуют линейке Huuuge social-casino; признаков клоаки нет."
+}
