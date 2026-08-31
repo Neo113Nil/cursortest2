@@ -1,0 +1,39 @@
+{
+  "app_id": "com.amazon.mShop.android.shopping",
+  "title": "Amazon Shopping",
+  "developer": "Amazon Mobile LLC",
+  "url": "https://play.google.com/store/apps/details?id=com.amazon.mShop.android.shopping&hl=en&gl=us",
+  "version": "32.12.4.100",
+  "versionCode": 1241319416,
+  "folder": "Amazon Shopping-Amazon Mobile LLC",
+  "path": "amazon casino/Amazon Shopping-Amazon Mobile LLC",
+  "ok": true,
+  "source": "apkpure",
+  "files": [
+    "com.amazon.mShop.android.shopping.apk",
+    "config.armeabi_v7a.apk",
+    "config.hdpi.apk"
+  ],
+  "apk_label": "Amazon Shopping",
+  "store_title_mismatch": false,
+  "minSdk": 28,
+  "targetSdk": 36,
+  "agp": "8.13.0",
+  "kotlin": "да 2.2.0",
+  "cloaking": "нет",
+  "webview": true,
+  "custom_tabs": true,
+  "ads": [
+    "Google Interactive Media Ads",
+    "Amazon Advertising (A9/APS)"
+  ],
+  "analytics": [
+    "Firebase Cloud Messaging",
+    "Firebase Analytics",
+    "Bugsnag",
+    "Amazon Minerva",
+    "Play Install Referrer"
+  ],
+  "suspicious_domains": [],
+  "note": "Official Amazon Shopping; no offer/white cloaking fork found. Requested vc 1241320016; analyzed 1241319416 (32.12.4.100) from apkpure latest."
+}
