@@ -1,0 +1,65 @@
+{
+  "app_id": "com.luckyjackpot.roulette.casino.games.free",
+  "title": "Roulette Casino Vegas Games",
+  "developer": "Lucky Jackpot Casino",
+  "url": "https://play.google.com/store/apps/details?id=com.luckyjackpot.roulette.casino.games.free&hl=en&gl=us",
+  "version": "1.8.5",
+  "version_code": "612",
+  "summary": "Roulette Casino Vegas Games (APK label: Roulette) — оригинальный social-casino Lucky Jackpot на Unity IL2CPP; BoostOps cross-promo/attribution (analytics.boostops.io); реклама AdMob + LevelPlay mediation (Chartboost/Vungle/Mintegral/Unity/FAN); аналитика Firebase/Facebook/BoostOps; WebView (рекламные SDK) + Custom Tabs (Facebook login); клоаки нет.",
+  "keyword": "r& casino",
+  "folder": "Roulette Casino Vegas Games-Lucky Jackpot Casino",
+  "path": "r& casino/Roulette Casino Vegas Games-Lucky Jackpot Casino",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "apk_label": "Roulette",
+  "cloaking": "нет",
+  "files": [
+    "com.luckyjackpot.roulette.casino.games.free.xapk",
+    "apk/com.luckyjackpot.roulette.casino.games.free-612.apk",
+    "apk/com.luckyjackpot.roulette.casino.games.free-612-config.arm64_v8a.apk"
+  ],
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      {
+        "domain": "analytics.boostops.io"
+      },
+      {
+        "domain": "aomedia.org"
+      },
+      {
+        "domain": "api.opensea.io"
+      },
+      {
+        "domain": "chartboo.st"
+      },
+      {
+        "domain": "crashpad.chromium.org"
+      }
+    ],
+    "ads": [
+      "AdMob",
+      "Unity Ads",
+      "ironSource / Unity LevelPlay",
+      "Chartboost",
+      "Vungle / Liftoff",
+      "Mintegral / MBridge",
+      "Facebook Audience Network"
+    ],
+    "analytics": [
+      "Firebase Analytics",
+      "Firebase Crashlytics",
+      "BoostOps Analytics",
+      "Facebook App Events",
+      "Unity Analytics / Services",
+      "Play Install Referrer"
+    ]
+  },
+  "minSdk": 23,
+  "targetSdk": 36,
+  "agp": "8.10.0",
+  "kotlin": "да",
+  "webview": true,
+  "custom_tabs": true,
+  "note": "APK 1.8.5 (versionCode 612) с APKPure XAPK; Play-название и APK-label совпадают по бренду Roulette; BoostOps — кросс-промо/атрибуция, не offer-gate клоаки."
+}
