@@ -1,0 +1,66 @@
+{
+  "app_id": "com.funstage.gta",
+  "title": "GameTwist Vegas Casino Slots",
+  "developer": "Funstage",
+  "url": "https://play.google.com/store/apps/details?id=com.funstage.gta&hl=en&gl=us",
+  "version": "5.56.0",
+  "version_code": "40172",
+  "summary": "GameTwist Vegas Casino Slots (APK label: GameTwist) — оригинальный social-casino Funstage/Greentube на native Greentube MVC + HTML5 WebView для слотов; API gta.gametwist.com / *.greentube.com; реклама AdMob + Unity Ads + Fyber FairBid + ironSource/Unity LevelPlay + Vungle + Facebook Audience Network; аналитика Adjust/Firebase/Branch/ExtremePush/Usercentrics/Google Analytics; WebView (слоты/лобби) + Custom Tabs (Branch); клоаки нет.",
+  "keyword": "r& casino",
+  "folder": "GameTwist Vegas Casino Slots-Funstage",
+  "path": "r& casino/GameTwist Vegas Casino Slots-Funstage",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "apk_label": "GameTwist",
+  "cloaking": "нет",
+  "files": [
+    "com.funstage.gta-40172.xapk",
+    "apk/com.funstage.gta-40172.apk",
+    "apk/com.funstage.gta-40172-config.armeabi_v7a.apk",
+    "apk/com.funstage.gta-40172-config.mdpi.apk"
+  ],
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      {
+        "domain": "130610.measurementapi.com"
+      },
+      {
+        "domain": "akm.ssacdn.com"
+      },
+      {
+        "domain": "app.adjust.io"
+      },
+      {
+        "domain": "at-freespins-v1.greentube.com"
+      }
+    ],
+    "ads": [
+      "AdMob",
+      "Unity Ads",
+      "Fyber FairBid",
+      "ironSource / Unity LevelPlay",
+      "Vungle",
+      "Facebook Audience Network"
+    ],
+    "analytics": [
+      "Adjust",
+      "Firebase Analytics",
+      "Firebase Crashlytics",
+      "Firebase Performance",
+      "Firebase Remote Config",
+      "Firebase Messaging",
+      "Branch",
+      "ExtremePush",
+      "Google Analytics / GTM",
+      "Usercentrics"
+    ]
+  },
+  "minSdk": 32,
+  "targetSdk": 37,
+  "agp": "9.1.0",
+  "kotlin": "да",
+  "webview": true,
+  "custom_tabs": true,
+  "note": "APK 5.56.0 (versionCode 40172) с APKPure XAPK; Play-название и APK-label совпадают по бренду GameTwist; geoIP — легальная блокировка стран social-casino, не клоака."
+}
