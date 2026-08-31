@@ -1,0 +1,30 @@
+{
+  "app_id": "com.boltmania.screwvib",
+  "title": "Amazon Casino Real Money Win",
+  "developer": "DAVOS SOLUTIONS LIMITED",
+  "url": "https://play.google.com/store/apps/details?id=com.boltmania.screwvib&hl=en&gl=us",
+  "version": "1.0.7",
+  "versionCode": 7,
+  "folder": "Amazon Casino-DAVOS SOLUTIONS LIMITED",
+  "path": "amazon casino/Amazon Casino-DAVOS SOLUTIONS LIMITED",
+  "ok": true,
+  "source": "apkcombo",
+  "files": [
+    "com.boltmania.screwvib.apk",
+    "config.arm64_v8a.apk",
+    "config.xxhdpi.apk",
+    "config.en.apk",
+    "config.fr.apk"
+  ],
+  "apk_label": "Boltmania Screw Vibe",
+  "minSdk": 25,
+  "targetSdk": 36,
+  "agp": "8.11.1",
+  "kotlin": "да 2.2.20",
+  "cloaking": "да",
+  "webview": true,
+  "custom_tabs": true,
+  "ads": ["StartApp"],
+  "analytics": ["AppMetrica", "OneSignal", "Firebase Messaging"],
+  "suspicious_domains": ["config.ru"]
+}
