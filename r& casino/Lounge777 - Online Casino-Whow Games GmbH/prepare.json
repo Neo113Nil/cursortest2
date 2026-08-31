@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "apks": [
+    "net.whow.lounge777.apk",
+    "config.arm64_v8a.apk"
+  ],
+  "base_apk": "net.whow.lounge777.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "27048 (69%)\nINFO  - progress: 18848 of 27048 (69%)\nINFO  - progress: 19046 of 27048 (70%)\nINFO  - progress: 19292 of 27048 (71%)\nINFO  - progress: 19292 of 27048 (71%)\nINFO  - progress: 19292 of 27048 (71%)\nINFO  - progress: 19292 of 27048 (71%)\nINFO  - progress: 19292 of 27048 (71%)\nINFO  - progress: 19292 of 27048 (71%)\nINFO  - progress: 19292 of 27048 (71%)\nINFO  - progress: 19292 of 27048 (71%)\nINFO  - progress: 19489 of 27048 (72%)\nINFO  - progress: 19657 of 27048 (72%)\nINFO  - progress: 19830 of 27048 (73%)\nINFO  - progress: 20032 of 27048 (74%)\nINFO  - progress: 20251 of 27048 (74%)\nINFO  - progress: 20443 of 27048 (75%)\nINFO  - progress: 20576 of 27048 (76%)\nINFO  - progress: 20743 of 27048 (76%)\nINFO  - progress: 21110 of 27048 (78%)\nINFO  - progress: 21536 of 27048 (79%)\nINFO  - progress: 21923 of 27048 (81%)\nINFO  - progress: 22250 of 27048 (82%)\nINFO  - progress: 22565 of 27048 (83%)\nINFO  - progress: 22607 of 27048 (83%)\nINFO  - progress: 22607 of 27048 (83%)\nINFO  - progress: 22607 of 27048 (83%)\nINFO  - progress: 22607 of 27048 (83%)\nINFO  - progress: 22607 of 27048 (83%)\nINFO  - progress: 22607 of 27048 (83%)\nINFO  - progress: 22607 of 27048 (83%)\nINFO  - progress: 22607 of 27048 (83%)\nINFO  - progress: 22607 of 27048 (83%)\nINFO  - progress: 22607 of 27048 (83%)\nINFO  - progress: 22607 of 27048 (83%)\nINFO  - progress: 22607 of 27048 (83%)\nINFO  - progress: 22654 of 27048 (83%)\nINFO  - progress: 22669 of 27048 (83%)\nINFO  - progress: 22674 of 27048 (83%)\nINFO  - progress: 22674 of 27048 (83%)\nINFO  - progress: 22682 of 27048 (83%)\nINFO  - progress: 22696 of 27048 (83%)\nINFO  - progress: 22717 of 27048 (83%)\nINFO  - progress: 22853 of 27048 (84%)\nINFO  - progress: 22955 of 27048 (84%)\nINFO  - progress: 22994 of 27048 (85%)\nINFO  - progress: 23013 of 27048 (85%)\nINFO  - progress: 23062 of 27048 (85%)\nINFO  - progress: 23070 of 27048 (85%)\nINFO  - progress: 23134 of 27048 (85%)\nINFO  - progress: 23172 of 27048 (85%)\nINFO  - progress: 23194 of 27048 (85%)\nINFO  - progress: 23242 of 27048 (85%)\nINFO  - progress: 23281 of 27048 (86%)\nINFO  - progress: 23296 of 27048 (86%)\nINFO  - progress: 23305 of 27048 (86%)\nINFO  - progress: 23317 of 27048 (86%)\nINFO  - progress: 23362 of 27048 (86%)\nINFO  - progress: 23408 of 27048 (86%)\nINFO  - progress: 23470 of 27048 (86%)\nINFO  - progress: 23776 of 27048 (87%)\nINFO  - progress: 23930 of 27048 (88%)\nINFO  - progress: 24295 of 27048 (89%)\nINFO  - progress: 24655 of 27048 (91%)\nINFO  - progress: 24946 of 27048 (92%)\nINFO  - progress: 25011 of 27048 (92%)\nINFO  - progress: 25312 of 27048 (93%)\nINFO  - progress: 25526 of 27048 (94%)\nINFO  - progress: 25879 of 27048 (95%)\nINFO  - progress: 26110 of 27048 (96%)\nINFO  - progress: 26433 of 27048 (97%)\nINFO  - progress: 26665 of 27048 (98%)\nINFO  - progress: 26868 of 27048 (99%)\nINFO  - progress: 27009 of 27048 (99%)\nINFO  - progress: 27047 of 27048 (99%)\n                                                             \nERROR - finished with errors, count: 84\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/r& casino/Lounge777 - Online Casino-Whow Games GmbH/decompiled",
+    "skipped": false,
+    "base_apk": "net.whow.lounge777.apk"
+  },
+  "analysis_files": [
+    "net.whow.lounge777.xapk",
+    "apk/config.arm64_v8a.apk",
+    "apk/net.whow.lounge777.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/a/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/bitter/",
+    "decompiled/sources/bo/",
+    "decompiled/sources/bolts/",
+    "decompiled/sources/coil/",
+    "decompiled/sources/com/",
+    "decompiled/sources/dagger/",
+    "decompiled/sources/de/",
+    "decompiled/sources/firebase/",
+    "decompiled/sources/io/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/net/",
+    "decompiled/sources/okhttp3/",
+    "decompiled/sources/okio/",
+    "decompiled/sources/org/"
+  ],
+  "errors": []
+}

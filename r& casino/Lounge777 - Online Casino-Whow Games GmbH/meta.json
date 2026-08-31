@@ -1,0 +1,83 @@
+{
+  "app_id": "net.whow.lounge777",
+  "title": "Lounge777 - Online Casino",
+  "developer": "Whow Games GmbH",
+  "score": 4.55,
+  "icon": "/static/app-icons/net_whow_lounge777.png",
+  "url": "https://play.google.com/store/apps/details?id=net.whow.lounge777&hl=en&gl=us",
+  "keyword": "R& casino",
+  "country": "Germany",
+  "source": "apkeep:apk-pure",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260831_172700_Germany_R& casino_search",
+  "search_title": "Lounge777 - Online Casino",
+  "search_developer": "Whow Games GmbH",
+  "rank": 1,
+  "developer_id": "Whow+Games+GmbH",
+  "released": "Jun 3, 2021",
+  "updated": "2026-08-28",
+  "version": "6.5.37",
+  "summary": "Lounge777 - Win incredible jackpots and enjoy 200+ slot machines",
+  "folder": "Lounge777 - Online Casino-Whow Games GmbH",
+  "path": "r& casino/Lounge777 - Online Casino-Whow Games GmbH",
+  "updates_count": 1,
+  "apk_title": "Lounge777",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "net.whow.lounge777.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/r& casino/Lounge777 - Online Casino-Whow Games GmbH",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\nDelivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : oss.accs.or.auraa.953@gmail.com       │\n│ GSF ID : 374e2018578bbde6                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss4harry@gmail.com            │\n│ GSF ID : 39fad8aa24e4e80b                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading net.whow.lounge777...\nnet.whow.lounge777 downloaded successfully!\n",
+      "stderr": "",
+      "apk_label": "Lounge777"
+    }
+  ],
+  "stdout": "Downloading net.whow.lounge777...\nnet.whow.lounge777 downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
