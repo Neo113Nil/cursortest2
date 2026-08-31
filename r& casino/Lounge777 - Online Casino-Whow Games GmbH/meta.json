@@ -1,0 +1,60 @@
+{
+  "app_id": "net.whow.lounge777",
+  "title": "Lounge777 - Online Casino",
+  "developer": "Whow Games GmbH",
+  "url": "https://play.google.com/store/apps/details?id=net.whow.lounge777&hl=en&gl=us",
+  "version": "6.5.37",
+  "version_code": "5002785",
+  "summary": "Lounge777 - Online Casino (APK label: Lounge777) — Unity/IL2CPP social-casino от Whow Games GmbH; бэкенд mapi.jackpot.de / www.lounge777.com; реклама AdMob + AppLovin/ironSource/Fyber/Vungle/Moloco/Pangle/Digital Turbine/Facebook AN; аналитика Firebase/AppsFlyer/Braze/Bugsnag/Smartlook/Facebook/OneTrust; Vuplex WebView + Custom Tabs; клоаки нет.",
+  "keyword": "r& casino",
+  "folder": "Lounge777 - Online Casino-Whow Games GmbH",
+  "path": "r& casino/Lounge777 - Online Casino-Whow Games GmbH",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "apk_label": "Lounge777",
+  "cloaking": "нет",
+  "files": [
+    "net.whow.lounge777.xapk",
+    "apk/net.whow.lounge777.apk",
+    "apk/config.arm64_v8a.apk"
+  ],
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      {"domain": "akm.ssacdn.com"},
+      {"domain": "aomedia.org"},
+      {"domain": "api16-access-ttp.tiktokpangle.us"},
+      {"domain": "auroraoss.com"},
+      {"domain": "braze.com"}
+    ],
+    "ads": [
+      "AdMob",
+      "AppLovin",
+      "ironSource",
+      "Fyber",
+      "Vungle",
+      "Moloco",
+      "Pangle",
+      "Digital Turbine",
+      "Facebook Audience Network"
+    ],
+    "analytics": [
+      "Firebase Analytics",
+      "Firebase Crashlytics",
+      "Firebase Performance",
+      "Firebase Remote Config",
+      "AppsFlyer",
+      "Braze",
+      "Bugsnag",
+      "Smartlook",
+      "Facebook App Events",
+      "OneTrust"
+    ]
+  },
+  "minSdk": 25,
+  "targetSdk": 36,
+  "agp": "8.10.0",
+  "kotlin": "да 2.2.0",
+  "webview": true,
+  "custom_tabs": true
+}
