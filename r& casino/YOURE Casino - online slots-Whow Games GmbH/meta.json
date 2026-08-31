@@ -1,0 +1,60 @@
+{
+  "app_id": "net.youre.yrecasino",
+  "title": "YOURE Casino - online slots",
+  "developer": "Whow Games GmbH",
+  "url": "https://play.google.com/store/apps/details?id=net.youre.yrecasino&hl=en&gl=us",
+  "version": "6.5.33",
+  "version_code": "5002761",
+  "summary": "YOURE Casino - online slots (APK label: Youre Casino) — Unity/IL2CPP social-casino от Whow Games GmbH; бэкенд mapi.jackpot.de / mapi.spielbrause.net / auth.pro.youre.id / youre.casino; реклама AdMob + AppLovin/ironSource/Fyber/Vungle/Moloco/Pangle/Digital Turbine/Facebook AN; аналитика Firebase/AppsFlyer/Braze/Bugsnag/Smartlook/Facebook/OneTrust; Vuplex WebView + Custom Tabs; клоаки нет.",
+  "keyword": "r& casino",
+  "folder": "YOURE Casino - online slots-Whow Games GmbH",
+  "path": "r& casino/YOURE Casino - online slots-Whow Games GmbH",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "apk_label": "Youre Casino",
+  "cloaking": "нет",
+  "files": [
+    "net.youre.yrecasino.xapk",
+    "apk/net.youre.yrecasino.apk",
+    "apk/config.armeabi_v7a.apk"
+  ],
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      {"domain": "akm.ssacdn.com"},
+      {"domain": "aomedia.org"},
+      {"domain": "api16-access-ttp.tiktokpangle.us"},
+      {"domain": "auroraoss.com"},
+      {"domain": "braze.com"}
+    ],
+    "ads": [
+      "AdMob",
+      "AppLovin",
+      "ironSource",
+      "Fyber",
+      "Vungle",
+      "Moloco",
+      "Pangle",
+      "Digital Turbine",
+      "Facebook Audience Network"
+    ],
+    "analytics": [
+      "Firebase Analytics",
+      "Firebase Crashlytics",
+      "Firebase Performance",
+      "Firebase Remote Config",
+      "AppsFlyer",
+      "Braze",
+      "Bugsnag",
+      "Smartlook",
+      "Facebook App Events",
+      "OneTrust"
+    ]
+  },
+  "minSdk": 25,
+  "targetSdk": 35,
+  "agp": "8.10.0",
+  "kotlin": "да 2.2.20",
+  "webview": true,
+  "custom_tabs": true
+}
