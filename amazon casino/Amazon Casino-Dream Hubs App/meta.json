@@ -1,0 +1,46 @@
+{
+  "app_id": "com.fenolvatrshine.mobile.app",
+  "title": "Amazon Casino",
+  "developer": "Dream Hubs App",
+  "url": "https://play.google.com/store/apps/details?id=com.fenolvatrshine.mobile.app&hl=en&gl=us",
+  "version": "1.0",
+  "versionCode": 1,
+  "folder": "Amazon Casino-Dream Hubs App",
+  "path": "amazon casino/Amazon Casino-Dream Hubs App",
+  "ok": true,
+  "source": "apkcombo",
+  "files": [
+    "com.fenolvatrshine.mobile.app.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.xxhdpi.apk",
+    "config.armeabi_v7a.apk"
+  ],
+  "apk_label": "Fenolvatr Shine",
+  "store_title_mismatch": true,
+  "minSdk": 32,
+  "targetSdk": 36,
+  "agp": "9.2.1",
+  "kotlin": "да 2.2.20",
+  "cloaking": "да",
+  "webview": false,
+  "custom_tabs": true,
+  "ads": [],
+  "analytics": [
+    "OneSignal",
+    "Firebase"
+  ],
+  "suspicious_domains": [
+    "app.configcat.com",
+    "cdn-eu.configcat.com",
+    "cdn-global.configcat.com",
+    "configcat.com",
+    "opentelemetry.io",
+    "slf4j.org"
+  ],
+  "configcat_sdk_key": "configcat-sdk-1/dfzeCKO8lE2FYdS_GWGpmQ/oyuz_OGdhUiacIZJM4Q21g",
+  "configcat_string_key": "fexdfjshine",
+  "button_text": "Dive In",
+  "link_open_mode": "EXTERNAL_BROWSER",
+  "onesignal_app_id": "e49afa76-3609-4177-8077-3e2fc98480c4"
+}
