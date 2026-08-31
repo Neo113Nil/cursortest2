@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "app_id": "net.huntingto.instantchess.pro",
   "title": "Coin Volcano",
   "developer": "Steel Plaza Solutions",
@@ -219,3 +220,17 @@
     "cloaking_brief": ""
   }
 }
+=======
+  "package": "net.huntingto.instantchess.pro",
+  "name": "Coin Volcano",
+  "developer": "Steel Plaza Solutions",
+  "apk_label": "Inferno Quest",
+  "version_name": "1.0",
+  "version_code": 1,
+  "min_sdk": 28,
+  "target_sdk": 36,
+  "agp": "8.11.2",
+  "kotlin": "2.3.0",
+  "cloaking": "нет"
+}
+>>>>>>> origin/main

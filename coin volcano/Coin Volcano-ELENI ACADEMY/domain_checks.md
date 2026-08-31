@@ -419,6 +419,7 @@
 | Куда редиректит | https://support.applovin.com:443/en |
 | Что выводит (кратко) | title: Home \| AppLovin \| Support Center. search ⌘ K ​ search language light_mode How can we help? search ⌘ K ​ search Advertise Profitable advertising made easy with AppLovin Ads Monetize Learn how to monetize using AppLovin Max mediation Can’t find what you’re looking for? Contact support © 2026 AppLovin. All rights re |
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
+<<<<<<< HEAD
 
 ## Проверка домена: tizen.org
 
@@ -524,3 +525,5 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: ERROR: The request could not be satisfied. ERROR: The request could not be satisfied 403 ERROR The request could not be satisfied. Request blocked. We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website o |
 | Где припаркован | регистратор: 1API GmbH |
+=======
+>>>>>>> origin/main

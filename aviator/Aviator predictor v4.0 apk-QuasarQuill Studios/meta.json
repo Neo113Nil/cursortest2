@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "app_id": "com.aviator.aviatorgamewindailyapp37",
   "title": "Aviator predictor v4.0 apk",
   "developer": "QuasarQuill Studios",
@@ -193,3 +194,52 @@
     "cloaking_brief": "Какие данные собираются:\n• Имя пакета приложения\n\nКак собираются: Сразу после запуска, на экране заставки, приложение само, без спроса у человека, берёт имя своего пакета из системы Android. Отдельного окна с разрешением нет — человек обычно видит только заставку и не замечает, что идёт тихая проверка в интернете. Это происходит в стартовом экране запуска: если есть сеть, сразу начинается загрузка удалённых настроек. Если интернета нет — показывают короткое сообщение, что нужна связь, и дальше по сценарию проверки не идут. В этот запрос приложение не подставляет язык телефона, модель, рекламный номер и другие сведения о человеке — в коде проверки видно только подстановку имени пакета в адрес.\n\nКуда отправляются: Сведения уходят тихим запросом по адресу https://appxanalytics.com/data/com.aviator.aviatorgamewindailyapp37.json — на сайт appxanalytics.com в файл с именем пакета. Это простой запрос «дай настройки», без заполненной формы и без тела сообщения. Адрес собран из двух кусков: постоянная часть «https://appxanalytics.com/data/» и имя пакета приложения плюс «.json». Запасных адресов для этой проверки в коде не видно. Ответ читают сразу в памяти и по нему решают, куда вести человека дальше; сам адрес проверки в памяти приложения отдельным долгим сохранением не кладут. По смыслу это не показ рекламы на экране,…\n\nКак фильтруются пользователи: В самом приложении нет жёсткого списка стран, языков или «белых/грязных» пользователей для этой развилки. На проверку уходит только имя пакета; решение «что показать» делает сервер (или кто готовит файл настроек на appxanalytics.com). По ответу приложение смотрит флаг start_redirect и поле ads, а также ссылки qureka_url и qureka_back_url. Если сервер выставил режим qureka — дальше открывают внешнюю страницу оффера. Если ads равен adx — включают обычную рекламу Google Ad Manager. Локальных проверок «бот / эмулятор / запрещённая страна» в этой цепочке не видно.…\n\nЧто возвращается: Сервер отдаёт структурированный текстовый ответ. Приложение читает из него поля: start_redirect (да/нет), qureka_url и qureka_back_url (ссылки), ads (режим рекламы, например qureka или adx), ads_interval (как часто показывать), а также идентификатор…"
   }
 }
+=======
+  "app_name_play": "Aviator predictor v4.0 apk",
+  "app_label_apk": "Aviator All Online Games",
+  "package": "com.aviator.aviatorgamewindailyapp37",
+  "developer": "QuasarQuill Studios",
+  "versionName": "1.0",
+  "versionCode": 1,
+  "minSdk": 24,
+  "targetSdk": 35,
+  "agp": "8.8.0",
+  "kotlin": "да (coroutines 1.7.3)",
+  "cloaking": true,
+  "webview": true,
+  "custom_tabs": true,
+  "ads": [
+    "AdMob / Google Ad Manager (AdX)",
+    "Qureka"
+  ],
+  "analytics": [
+    "Google Analytics / Measurement (GMS)"
+  ],
+  "suspicious_domains": [
+    "1000webgames.com",
+    "10761.play.gamezop.com",
+    "andyroid.net",
+    "appxanalytics.com"
+  ],
+  "remote_config_url": "https://appxanalytics.com/data/com.aviator.aviatorgamewindailyapp37.json",
+  "remote_config_live": {
+    "start_redirect": false,
+    "qureka_url": "https://1316.mark.qureka.com/intro/question",
+    "qureka_back_url": "https://1316.mark.qureka.com/intro/question",
+    "ads": "qureka",
+    "ads_interval": "1",
+    "adx_interstitial": "ca-app-pub-3940256099942544/1033173712",
+    "adx_banner": "ca-app-pub-3940256099942544/9214589741",
+    "adx_native": "ca-app-pub-3940256099942544/1044960115",
+    "adx_appopen": "ca-app-pub-3940256099942544/9257395921"
+  },
+  "suspicious_words": [
+    "redirect",
+    "start_redirect",
+    "qureka",
+    "webview",
+    "license check",
+    "earn"
+  ]
+}
+>>>>>>> origin/main

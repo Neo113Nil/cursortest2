@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "all_custom_domains": [
     "coinvolcano.online",
     "com.coindropvolcanorush.app"
@@ -1632,3 +1633,27 @@
   "count": 2,
   "vt_configured": true
 }
+=======
+  "domains": [
+    "coinvolcano.online",
+    "com.coindropvolcanorush.app"
+  ],
+  "source": "provided_in_prompt",
+  "results": {
+    "coinvolcano.online": {
+      "vt_url": "https://www.virustotal.com/gui/domain/coinvolcano.online",
+      "detections": "0/91 (malicious=0, suspicious=0)",
+      "redirect": "нет (без редиректа)",
+      "content": "title: 404 Not Found. 404 Not Found 404 Not Found nginx/1.24.0",
+      "parking": "регистратор: NAMECHEAP INC"
+    },
+    "com.coindropvolcanorush.app": {
+      "vt_url": "https://www.virustotal.com/gui/domain/com.coindropvolcanorush.app",
+      "detections": "0/91 (malicious=0, suspicious=0)",
+      "redirect": "нет (DNS не резолвится)",
+      "content": "нет (DNS не резолвится)",
+      "parking": "нет данных"
+    }
+  }
+}
+>>>>>>> origin/main

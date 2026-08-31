@@ -2,6 +2,7 @@
   "app_id": "de.whow.jackpot",
   "title": "MyJackpot - Slots & Casino",
   "developer": "Whow Games GmbH",
+<<<<<<< HEAD
   "score": 4.2965517,
   "icon": "/static/app-icons/de_whow_jackpot.png",
   "url": "https://play.google.com/store/apps/details?id=de.whow.jackpot&hl=en&gl=us",
@@ -191,3 +192,55 @@
     "cloaking_brief": ""
   }
 }
+=======
+  "url": "https://play.google.com/store/apps/details?id=de.whow.jackpot&hl=en&gl=us",
+  "version": "6.5.35",
+  "version_code": "5002770",
+  "summary": "MyJackpot - Slots & Casino (APK label: MyJackpot) — Unity/IL2CPP social-casino от Whow Games GmbH; бэкенд jackpot.de/mapi; реклама AdMob + AppLovin/ironSource/Fyber/Vungle/Moloco/Pangle/Digital Turbine/Facebook AN; аналитика Firebase/AppsFlyer/Braze/Bugsnag/Smartlook/Facebook/OneTrust; Vuplex WebView + Custom Tabs; клоаки нет.",
+  "keyword": "r7 casino",
+  "folder": "MyJackpot - Slots & Casino-Whow Games GmbH",
+  "path": "r7 casino/MyJackpot - Slots & Casino-Whow Games GmbH",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "apk_label": "MyJackpot",
+  "cloaking": "нет",
+  "files": [
+    "de.whow.jackpot.xapk",
+    "apk/de.whow.jackpot.apk",
+    "apk/config.armeabi_v7a.apk"
+  ],
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      {"domain": "akm.ssacdn.com"},
+      {"domain": "aomedia.org"},
+      {"domain": "api16-access-ttp.tiktokpangle.us"},
+      {"domain": "auroraoss.com"},
+      {"domain": "braze.com"}
+    ],
+    "ads": [
+      "AdMob",
+      "AppLovin",
+      "ironSource",
+      "Fyber",
+      "Vungle",
+      "Moloco",
+      "Pangle",
+      "Digital Turbine",
+      "Facebook Audience Network"
+    ],
+    "analytics": [
+      "Firebase Analytics",
+      "Firebase Crashlytics",
+      "Firebase Performance",
+      "Firebase Remote Config",
+      "AppsFlyer",
+      "Braze",
+      "Bugsnag",
+      "Smartlook",
+      "Facebook App Events",
+      "OneTrust"
+    ]
+  }
+}
+>>>>>>> origin/main

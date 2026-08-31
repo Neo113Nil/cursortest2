@@ -2,6 +2,7 @@
   "app_id": "com.sl.cashCraze",
   "title": "Fun Of Vegas - Casino Slots",
   "developer": "TREASURETECH CO PTE. LTD",
+<<<<<<< HEAD
   "score": 4.5135026,
   "icon": "/static/app-icons/com_sl_cashCraze.png",
   "url": "https://play.google.com/store/apps/details?id=com.sl.cashCraze&hl=en&gl=us",
@@ -189,5 +190,55 @@
     "collected_data": [],
     "cloaking": "нет",
     "cloaking_brief": ""
+=======
+  "url": "https://play.google.com/store/apps/details?id=com.sl.cashCraze&hl=en&gl=us",
+  "version": "1.0.148",
+  "version_code": "148",
+  "summary": "Fun Of Vegas - Casino Slots (APK label: Fun Of Vegas) — social-casino Cocos2d-lua от TREASURETECH; frankfurter.app только FX для ad revenue; реклама AdMob/AppLovin MAX + mediation; аналитика Firebase/AppsFlyer/Facebook; клоаки нет.",
+  "keyword": "r7 casino",
+  "folder": "Fun Of Vegas - Casino Slots-TREASURETECH CO PTE. LTD",
+  "path": "r7 casino/Fun Of Vegas - Casino Slots-TREASURETECH CO PTE. LTD",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "apk_label": "Fun Of Vegas",
+  "cloaking": "нет",
+  "files": [
+    "com.sl.cashCraze.xapk",
+    "apk/com.sl.cashCraze.apk",
+    "apk/config.arm64_v8a.apk"
+  ],
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      {
+        "domain": "aomedia.org"
+      },
+      {
+        "domain": "api.frankfurter.app"
+      },
+      {
+        "domain": "compliance.iabtechnologylab.com"
+      }
+    ],
+    "ads": [
+      "AdMob",
+      "AppLovin MAX",
+      "ironSource / LevelPlay",
+      "Unity Ads",
+      "Vungle",
+      "InMobi",
+      "Facebook Audience Network",
+      "Moloco",
+      "Pangle",
+      "Mintegral"
+    ],
+    "analytics": [
+      "Firebase Analytics",
+      "Crashlytics",
+      "Firebase Messaging",
+      "AppsFlyer",
+      "Facebook App Events"
+    ]
+>>>>>>> origin/main
   }
 }

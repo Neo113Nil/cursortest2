@@ -1,10 +1,15 @@
 {
+<<<<<<< HEAD
   "all_custom_domains": [
+=======
+  "domains": [
+>>>>>>> origin/main
     "auroraoss.com",
     "config.ru",
     "dispatchers.io",
     "telegra.ph"
   ],
+<<<<<<< HEAD
   "checked": [
     {
       "domain": "auroraoss.com",
@@ -3313,3 +3318,8 @@
   "count": 4,
   "vt_configured": true
 }
+=======
+  "source": "provided_in_prompt",
+  "gate": "bencch.fit"
+}
+>>>>>>> origin/main

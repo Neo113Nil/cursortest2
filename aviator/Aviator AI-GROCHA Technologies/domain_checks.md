@@ -419,6 +419,7 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Aurora. Aurora |
 | Где припаркован | регистратор: NAMECHEAP INC |
+<<<<<<< HEAD
 
 ## Проверка домена: betou.bet.br
 
@@ -839,3 +840,5 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | O CVV Quem somos Nossa história Imprensa Ouvidoria CVV CVV na comunidade Mantenedoras Links úteis Seja voluntário Doações e parcerias Blog Conheça mais Grupos de Apoio Fale conosco fechar Menu completo O CVV Quem somos Nossa história Imprensa Ouvidoria CVV CVV na comunidade Mante |
 | Где припаркован | нет данных |
+=======
+>>>>>>> origin/main

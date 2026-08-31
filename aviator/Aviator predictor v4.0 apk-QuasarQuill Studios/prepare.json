@@ -2,6 +2,7 @@
   "ok": true,
   "apks": [
     "com.aviator.aviatorgamewindailyapp37.apk",
+<<<<<<< HEAD
     "config.es.apk",
     "config.pt.apk",
     "config.ru.apk",
@@ -21,10 +22,32 @@
     "config.hdpi.apk",
     "config.th.apk",
     "config.vi.apk"
+=======
+    "config.armeabi_v7a.apk",
+    "config.ar.apk",
+    "config.de.apk",
+    "config.en.apk",
+    "config.es.apk",
+    "config.fr.apk",
+    "config.hdpi.apk",
+    "config.hi.apk",
+    "config.in.apk",
+    "config.it.apk",
+    "config.ja.apk",
+    "config.ko.apk",
+    "config.my.apk",
+    "config.pt.apk",
+    "config.ru.apk",
+    "config.th.apk",
+    "config.tr.apk",
+    "config.vi.apk",
+    "config.zh.apk"
+>>>>>>> origin/main
   ],
   "base_apk": "com.aviator.aviatorgamewindailyapp37.apk",
   "jadx": {
     "ok": true,
+<<<<<<< HEAD
     "exit_code": 1,
     "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 7756 (0%)\nINFO  - progress: 879 of 7756 (11%)\nINFO  - progress: 880 of 7756 (11%)\nINFO  - progress: 883 of 7756 (11%)\nINFO  - progress: 885 of 7756 (11%)\nINFO  - progress: 898 of 7756 (11%)\nINFO  - progress: 950 of 7756 (12%)\nINFO  - progress: 1040 of 7756 (13%)\nINFO  - progress: 1599 of 7756 (20%)\nINFO  - progress: 2021 of 7756 (26%)\nINFO  - progress: 2428 of 7756 (31%)\nINFO  - progress: 2809 of 7756 (36%)\nINFO  - progress: 3202 of 7756 (41%)\nINFO  - progress: 3442 of 7756 (44%)\nINFO  - progress: 3741 of 7756 (48%)\nINFO  - progress: 4089 of 7756 (52%)\nINFO  - progress: 4475 of 7756 (57%)\nINFO  - progress: 4691 of 7756 (60%)\nINFO  - progress: 4872 of 7756 (62%)\nINFO  - progress: 5102 of 7756 (65%)\nINFO  - progress: 5485 of 7756 (70%)\nINFO  - progress: 5746 of 7756 (74%)\nINFO  - progress: 6045 of 7756 (77%)\nINFO  - progress: 6156 of 7756 (79%)\nINFO  - progress: 6283 of 7756 (81%)\nINFO  - progress: 6461 of 7756 (83%)\nINFO  - progress: 6757 of 7756 (87%)\nINFO  - progress: 6955 of 7756 (89%)\nINFO  - progress: 7056 of 7756 (90%)\nINFO  - progress: 7229 of 7756 (93%)\nINFO  - progress: 7587 of 7756 (97%)\nINFO  - progress: 7744 of 7756 (99%)\n                                                             \nERROR - finished with errors, count: 24\n",
     "stderr": "",
@@ -71,3 +94,19 @@
   ],
   "errors": []
 }
+=======
+    "out_dir": "decompiled",
+    "skipped": false,
+    "base_apk": "com.aviator.aviatorgamewindailyapp37.apk"
+  },
+  "source": "apkeep:apk-pure",
+  "xapk": "com.aviator.aviatorgamewindailyapp37.xapk",
+  "analysis_files": [
+    "com.aviator.aviatorgamewindailyapp37.xapk",
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "report.pdf"
+  ]
+}
+>>>>>>> origin/main

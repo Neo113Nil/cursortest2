@@ -18,7 +18,13 @@
   "released": "Feb 28, 2019",
   "updated": "2026-08-20",
   "version": "3.2.52",
+<<<<<<< HEAD
   "summary": "The ultimate slot game PACKED with SUPERIOR Vegas slot machines & HUGE wins.",
+=======
+  "version_code": "3025200",
+  "summary": "HighRoller Vegas Casino Games (APK label: HighRoller Vegas) — PLAYLINKS Cocos social casino; Splash→AppActivity no gate; serverURL appv2.highrollervegas.net; firehose app_init telemetry only; cloaking=нет.",
+  "keyword": "r7 casino",
+>>>>>>> origin/main
   "folder": "HighRoller Vegas Casino Games-PLAYLINKS Corp",
   "path": "r7 casino/HighRoller Vegas Casino Games-PLAYLINKS Corp",
   "updates_count": 1,

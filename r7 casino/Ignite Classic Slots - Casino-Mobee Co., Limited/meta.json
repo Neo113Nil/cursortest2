@@ -18,7 +18,13 @@
   "released": "Apr 28, 2017",
   "updated": "2026-07-30",
   "version": "2.1.43.0",
+<<<<<<< HEAD
   "summary": "Vegas slot game in 2026! Get your jackpots and claim your bonus now!",
+=======
+  "version_code": "230",
+  "summary": "Ignite Classic Slots - Casino (APK label: Ignite Slots) — social-casino Cocos2d-lua от Mobee; бэкенд аналитики upload.mobeetd.com; реклама AppLovin MAX + AdMob/Meta/Chartboost/Vungle/SafeDK; аналитика Firebase/AppsFlyer/ThinkingData/TalkingData/Bugly/AIHelp; Kotlin 2.1.0; клоаки нет.",
+  "keyword": "r7 casino",
+>>>>>>> origin/main
   "folder": "Ignite Classic Slots - Casino-Mobee Co., Limited",
   "path": "r7 casino/Ignite Classic Slots - Casino-Mobee Co., Limited",
   "updates_count": 1,
@@ -128,6 +134,7 @@
         "value": "casino, slots, offer, redirect, landing, postback, webview, blacklist, whitelist, withdraw"
       }
     ],
+<<<<<<< HEAD
     "domains": [
       {
         "domain": "aihelp.net",
@@ -169,6 +176,15 @@
         "redirects_to": "нет (без редиректа)",
         "parked_at": "регистратор: Alibaba Cloud Computing (Beijing) Co., Ltd."
       }
+=======
+    "ads": [
+      "AppLovin MAX",
+      "AdMob",
+      "Meta Audience Network",
+      "Chartboost",
+      "Vungle",
+      "SafeDK"
+>>>>>>> origin/main
     ],
     "collected_data": [],
     "cloaking": "нет",

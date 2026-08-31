@@ -2,6 +2,7 @@
   "ok": true,
   "apks": [
     "com.cloudverse.aviatorgame.apk",
+<<<<<<< HEAD
     "config.zh.apk",
     "config.de.apk",
     "config.fr.apk",
@@ -21,10 +22,32 @@
     "config.es.apk",
     "config.ru.apk",
     "config.th.apk"
+=======
+    "config.armeabi_v7a.apk",
+    "config.ar.apk",
+    "config.de.apk",
+    "config.en.apk",
+    "config.es.apk",
+    "config.fr.apk",
+    "config.hdpi.apk",
+    "config.hi.apk",
+    "config.in.apk",
+    "config.it.apk",
+    "config.ja.apk",
+    "config.ko.apk",
+    "config.my.apk",
+    "config.pt.apk",
+    "config.ru.apk",
+    "config.th.apk",
+    "config.tr.apk",
+    "config.vi.apk",
+    "config.zh.apk"
+>>>>>>> origin/main
   ],
   "base_apk": "com.cloudverse.aviatorgame.apk",
   "jadx": {
     "ok": true,
+<<<<<<< HEAD
     "exit_code": 1,
     "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 7756 (0%)\nINFO  - progress: 879 of 7756 (11%)\nINFO  - progress: 880 of 7756 (11%)\nINFO  - progress: 891 of 7756 (11%)\nINFO  - progress: 938 of 7756 (12%)\nINFO  - progress: 1076 of 7756 (13%)\nINFO  - progress: 1715 of 7756 (22%)\nINFO  - progress: 2067 of 7756 (26%)\nINFO  - progress: 2565 of 7756 (33%)\nINFO  - progress: 3037 of 7756 (39%)\nINFO  - progress: 3386 of 7756 (43%)\nINFO  - progress: 3625 of 7756 (46%)\nINFO  - progress: 4003 of 7756 (51%)\nINFO  - progress: 4354 of 7756 (56%)\nINFO  - progress: 4653 of 7756 (59%)\nINFO  - progress: 4863 of 7756 (62%)\nINFO  - progress: 4949 of 7756 (63%)\nINFO  - progress: 5253 of 7756 (67%)\nINFO  - progress: 5712 of 7756 (73%)\nINFO  - progress: 5964 of 7756 (76%)\nINFO  - progress: 6123 of 7756 (78%)\nINFO  - progress: 6276 of 7756 (80%)\nINFO  - progress: 6524 of 7756 (84%)\nINFO  - progress: 6785 of 7756 (87%)\nINFO  - progress: 6955 of 7756 (89%)\nINFO  - progress: 7062 of 7756 (91%)\nINFO  - progress: 7328 of 7756 (94%)\nINFO  - progress: 7621 of 7756 (98%)\nINFO  - progress: 7755 of 7756 (99%)\n                                                             \nERROR - finished with errors, count: 21\n",
     "stderr": "",
@@ -71,3 +94,19 @@
   ],
   "errors": []
 }
+=======
+    "out_dir": "decompiled",
+    "skipped": false,
+    "base_apk": "com.cloudverse.aviatorgame.apk"
+  },
+  "source": "apkeep:apk-pure",
+  "xapk": "com.cloudverse.aviatorgame.xapk",
+  "analysis_files": [
+    "com.cloudverse.aviatorgame.xapk",
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "report.pdf"
+  ]
+}
+>>>>>>> origin/main

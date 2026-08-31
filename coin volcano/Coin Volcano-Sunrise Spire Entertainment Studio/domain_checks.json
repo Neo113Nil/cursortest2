@@ -1,9 +1,14 @@
 {
+<<<<<<< HEAD
   "all_custom_domains": [
+=======
+  "domains": [
+>>>>>>> origin/main
     "config.ru",
     "lineheightstyle.alignment.top",
     "theme.app"
   ],
+<<<<<<< HEAD
   "checked": [
     {
       "domain": "config.ru",
@@ -2443,3 +2448,7 @@
   "count": 3,
   "vt_configured": true
 }
+=======
+  "source": "provided_in_prompt"
+}
+>>>>>>> origin/main

@@ -417,6 +417,7 @@
 | Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | https://bitly.com/ |
+<<<<<<< HEAD
 | Что выводит (кратко) | title: Bitly \| Short URLs, QR Codes, and More. Bitly \| Short URLs, QR Codes, and More Skip Navigation Menu Menu Menu Platform Products URL Shortener Customize, share and track links QR Code Generator Dynamic solutions to fit every business need Analytics A central place to track and analyze performance Pages Mobile-friendly,  |
 | Где припаркован | регистратор: Libyan Spider Network (int) |
 
@@ -839,3 +840,7 @@
 | Куда редиректит | https://passport.baidu.com/v2/?login&u=https%3A%2F%2Fwenzhang.baidu.com%2F |
 | Что выводит (кратко) | title: ç»å½ç¾åº¦è´¦å·. ç»å½ç¾åº¦è´¦å· 2026&nbsp;&copy;Baidu |
 | Где припаркован | регистратор: MarkMonitor Information Technology (Shanghai) Co., Ltd. |
+=======
+| Что выводит (кратко) | title: Bitly - Short URLs, QR Codes, and More. Bitly - Short URLs, QR Codes, and More Skip Navigation Menu Menu Menu Platform Products URL Shortener Customize, share and track links QR Code Generator Dynamic solutions to fit every business need Analytics A central place to track and analyze performance Pages Mobile-friendly,  |
+| Где припаркован | регистратор: Libyan Spider Network (int) |
+>>>>>>> origin/main

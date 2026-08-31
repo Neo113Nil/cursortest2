@@ -1,5 +1,13 @@
 {
   "ok": true,
+<<<<<<< HEAD
+=======
+  "package": "br.com.aiaviator.app",
+  "version_name": "2.0.1",
+  "version_code": 23082026,
+  "source": "apkpure",
+  "base_apk": "br.com.aiaviator.app.apk",
+>>>>>>> origin/main
   "apks": [
     "br.com.aiaviator.app.apk",
     "config.arm64_v8a.apk",
@@ -7,6 +15,7 @@
     "config.fr.apk",
     "config.mdpi.apk"
   ],
+<<<<<<< HEAD
   "base_apk": "br.com.aiaviator.app.apk",
   "jadx": {
     "ok": true,
@@ -51,3 +60,11 @@
   ],
   "errors": []
 }
+=======
+  "jadx": {
+    "ok": true,
+    "out_dir": "decompiled",
+    "base_apk": "br.com.aiaviator.app.apk"
+  }
+}
+>>>>>>> origin/main

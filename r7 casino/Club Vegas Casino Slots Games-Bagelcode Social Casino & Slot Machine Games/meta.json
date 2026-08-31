@@ -5,6 +5,7 @@
   "score": 4.818263,
   "icon": "/static/app-icons/com_bagelcode_slots1.png",
   "url": "https://play.google.com/store/apps/details?id=com.bagelcode.slots1&hl=en&gl=us",
+<<<<<<< HEAD
   "keyword": "R7 casino",
   "country": "Germany",
   "source": "apkeep:apk-pure",
@@ -19,6 +20,12 @@
   "updated": "2026-08-13",
   "version": "Varies with device",
   "summary": "Welcome to Club Vegas! Enjoy Vegas slots, online casino fun & slots games!",
+=======
+  "version": "245.0.6-mobile",
+  "version_code": "4750",
+  "summary": "Club Vegas (APK label: Club Vegas) — legitimate Bagelcode Unity social casino; no cloaking gate. Re-verified from fresh APKPure XAPK 245.0.6-mobile / 4750.",
+  "keyword": "r7 casino",
+>>>>>>> origin/main
   "folder": "Club Vegas Casino Slots Games-Bagelcode Social Casino & Slot Machine Games",
   "path": "r7 casino/Club Vegas Casino Slots Games-Bagelcode Social Casino & Slot Machine Games",
   "updates_count": 1,

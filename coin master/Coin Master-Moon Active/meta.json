@@ -2,6 +2,7 @@
   "app_id": "com.moonactive.coinmaster",
   "title": "Coin Master",
   "developer": "Moon Active",
+<<<<<<< HEAD
   "score": 4.7503066,
   "icon": "/static/app-icons/com_moonactive_coinmaster.png",
   "url": "https://play.google.com/store/apps/details?id=com.moonactive.coinmaster&hl=en&gl=us",
@@ -172,3 +173,24 @@
     "cloaking_brief": ""
   }
 }
+=======
+  "url": "https://play.google.com/store/apps/details?id=com.moonactive.coinmaster&hl=en&gl=us",
+  "version": "3.5.2680",
+  "versionCode": 3406306,
+  "summary": "",
+  "folder": "Coin Master-Moon Active",
+  "path": "coin master/Coin Master-Moon Active",
+  "ok": true,
+  "source": "apkpure",
+  "files": [
+    "com.moonactive.coinmaster.apk",
+    "config.arm64_v8a.apk"
+  ],
+  "apk_label": "Coin Master",
+  "minSdk": 24,
+  "targetSdk": 36,
+  "cloaking": "нет",
+  "agp": "7.4.2",
+  "kotlin": "да 2.1.0"
+}
+>>>>>>> origin/main

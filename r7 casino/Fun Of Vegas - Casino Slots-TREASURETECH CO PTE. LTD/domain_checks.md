@@ -210,6 +210,7 @@
 | Что выводит (кратко) | {"name":"Frankfurter","versions":{"v1":{"base":"/v1","openapi":"/v1/openapi.json","status":"frozen"},"v2":{"base":"/v2","openapi":"/v2/openapi.json","status":"current"}},"docs":"https://frankfurter.dev","source":"https://github.com/lineofflight/frankfurter"} |
 | Где припаркован | регистратор: NAMECHEAP INC |
 
+<<<<<<< HEAD
 ## Проверка домена: appassets.androidplatform.net
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
@@ -420,6 +421,8 @@
 | Что выводит (кратко) | title: Aurora. Aurora |
 | Где припаркован | регистратор: NAMECHEAP INC |
 
+=======
+>>>>>>> origin/main
 ## Проверка домена: compliance.iabtechnologylab.com
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
@@ -524,6 +527,7 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Page not found &middot; GitHub Pages. Page not found &middot; GitHub Pages 404 File not found The site configured at this address does not contain the requested file. If this is your site, make sure that the filename case matches the URL as well as any file permissions. For root URLs (like http://example.com/ ) you m |
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
+<<<<<<< HEAD
 
 ## Проверка домена: crashpad.chromium.org
 
@@ -839,3 +843,5 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Ktor: Build Asynchronous Servers and Clients in Kotlin \| Ktor Framework. Ktor: Build Asynchronous Servers and Clients in Kotlin \| Ktor Framework Create Docs API Support fun main() { embeddedServer ( Netty , port = 8000 ) { routing { get ( &quot;/&quot; ) { call. respondText ( &quot;Hello, world!&quot; ) } } } . start (wait = true ) } Simple and Â fun  |
 | Где припаркован | регистратор: MarkMonitor Inc. |
+=======
+>>>>>>> origin/main

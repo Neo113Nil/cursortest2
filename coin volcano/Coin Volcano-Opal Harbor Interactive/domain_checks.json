@@ -1,10 +1,15 @@
 {
+<<<<<<< HEAD
   "all_custom_domains": [
+=======
+  "domains": [
+>>>>>>> origin/main
     "api.telegra.ph",
     "auroraoss.com",
     "config.ru",
     "lineheightstyle.alignment.top"
   ],
+<<<<<<< HEAD
   "checked": [
     {
       "domain": "api.telegra.ph",
@@ -3284,4 +3289,7 @@
   ],
   "count": 4,
   "vt_configured": true
+=======
+  "source": "provided_in_prompt"
+>>>>>>> origin/main
 }

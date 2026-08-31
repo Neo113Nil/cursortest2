@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "all_custom_domains": [
     "auroraoss.com",
     "config.ru",
@@ -4886,3 +4887,13 @@
   "count": 6,
   "vt_configured": true
 }
+=======
+  "domains": [
+    "auroraoss.com",
+    "config.ru",
+    "debug.firebase.analytics.app",
+    "lineheightstyle.alignment.top"
+  ],
+  "source": "provided_in_prompt"
+}
+>>>>>>> origin/main

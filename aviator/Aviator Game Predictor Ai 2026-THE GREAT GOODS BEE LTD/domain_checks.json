@@ -5,6 +5,7 @@
     "adxtk.mossturbo.com",
     "api-sec.mossturbo.com",
     "api.mossturbo.com",
+<<<<<<< HEAD
     "arihantfoodbazar.in",
     "auroraoss.com",
     "da.mossturbo.com",
@@ -16,6 +17,15 @@
     "ssapi.mossturbo.com",
     "tk.mossturbo.com",
     "whatwg.org"
+=======
+    "da.mossturbo.com",
+    "img.mossturbo.com",
+    "ssapi.mossturbo.com",
+    "tk.mossturbo.com",
+    "se.mnbvcxzas.com",
+    "free.freeipapi.com",
+    "arihantfoodbazar.in"
+>>>>>>> origin/main
   ],
   "checked": [
     {
@@ -24,6 +34,7 @@
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/631.mark.qureka.com",
         "detections": "0/91 (malicious=0, suspicious=0)",
+<<<<<<< HEAD
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
@@ -31,6 +42,8 @@
           "harmless": 57,
           "timeout": 0
         },
+=======
+>>>>>>> origin/main
         "vendor_rows": [
           [
             "Abusix",
@@ -396,6 +409,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -831,6 +845,13 @@
           "value": "регистратор/whois связан с парковкой: godaddy"
         }
       ]
+=======
+        ]
+      },
+      "redirect": "https://631.mark.qureka.com/intro",
+      "page_snippet": "title: Qureka Lite. --> Qureka Lite &times; Qureka Lite registration service is currently not available in your region. However, you can continue keep playing as a guest to improve your knowledge across our quiz categories. Quizzes for everyone! 25 + quiz categories 20 M+ users &amp; counting 500 K+",
+      "parking": "регистратор/whois связан с парковкой: godaddy"
+>>>>>>> origin/main
     },
     {
       "domain": "adx.mossturbo.com",
@@ -838,6 +859,7 @@
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/adx.mossturbo.com",
         "detections": "0/91 (malicious=0, suspicious=0)",
+<<<<<<< HEAD
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
@@ -845,6 +867,8 @@
           "harmless": 55,
           "timeout": 0
         },
+=======
+>>>>>>> origin/main
         "vendor_rows": [
           [
             "Abusix",
@@ -1210,6 +1234,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -1647,6 +1672,13 @@
           "value": "регистратор: Amazon Registrar, Inc."
         }
       ]
+=======
+        ]
+      },
+      "redirect": "нет (без редиректа)",
+      "page_snippet": "404 page not found",
+      "parking": "регистратор: Amazon Registrar, Inc."
+>>>>>>> origin/main
     },
     {
       "domain": "adxtk.mossturbo.com",
@@ -1654,6 +1686,7 @@
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/adxtk.mossturbo.com",
         "detections": "0/91 (malicious=0, suspicious=0)",
+<<<<<<< HEAD
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
@@ -1661,6 +1694,8 @@
           "harmless": 0,
           "timeout": 0
         },
+=======
+>>>>>>> origin/main
         "vendor_rows": [
           [
             "0xSI_f33d",
@@ -2026,6 +2061,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -2452,6 +2488,13 @@
           "value": "регистратор: Amazon Registrar, Inc."
         }
       ]
+=======
+        ]
+      },
+      "redirect": "нет (DNS не резолвится)",
+      "page_snippet": "нет (DNS не резолвится)",
+      "parking": "регистратор: Amazon Registrar, Inc."
+>>>>>>> origin/main
     },
     {
       "domain": "api-sec.mossturbo.com",
@@ -2459,6 +2502,7 @@
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/api-sec.mossturbo.com",
         "detections": "0/91 (malicious=0, suspicious=0)",
+<<<<<<< HEAD
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
@@ -2466,6 +2510,8 @@
           "harmless": 54,
           "timeout": 0
         },
+=======
+>>>>>>> origin/main
         "vendor_rows": [
           [
             "Abusix",
@@ -2831,6 +2877,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -6567,4 +6614,13 @@
   ],
   "count": 8,
   "vt_configured": true
+=======
+        ]
+      },
+      "redirect": "нет (без редиректа)",
+      "page_snippet": "нет",
+      "parking": "регистратор: Amazon Registrar, Inc."
+    }
+  ]
+>>>>>>> origin/main
 }

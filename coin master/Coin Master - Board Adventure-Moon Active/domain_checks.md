@@ -169,7 +169,10 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+<<<<<<< HEAD
 | Xcitium Verdict Cloud | Clean |
+=======
+>>>>>>> origin/main
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -205,6 +208,10 @@
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
 | VIPRE | Unrated |
+<<<<<<< HEAD
+=======
+| Xcitium Verdict Cloud | Unrated |
+>>>>>>> origin/main
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | {"message":"Route GET:/ not found","error":"Not Found","statusCode":404} |
@@ -251,7 +258,10 @@
 | Heimdal Security | Clean |
 | IPsum | Clean |
 | Juniper Networks | Clean |
+<<<<<<< HEAD
 | LevelBlue | Clean |
+=======
+>>>>>>> origin/main
 | Lionic | Clean |
 | Malwared | Clean |
 | MalwarePatrol | Clean |
@@ -269,11 +279,18 @@
 | Sucuri SiteCheck | Clean |
 | ThreatHive | Clean |
 | URLhaus | Clean |
+<<<<<<< HEAD
+=======
+| URLQuery | Clean |
+>>>>>>> origin/main
 | Viettel Threat Intelligence | Clean |
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+<<<<<<< HEAD
 | Xcitium Verdict Cloud | Clean |
+=======
+>>>>>>> origin/main
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -297,6 +314,10 @@
 | Guardpot | Unrated |
 | Hunt.io Intelligence | Unrated |
 | Kaspersky | Unrated |
+<<<<<<< HEAD
+=======
+| LevelBlue | Unrated |
+>>>>>>> origin/main
 | Lumu | Unrated |
 | MalwareURL | Unrated |
 | Mimecast | Unrated |
@@ -308,8 +329,13 @@
 | SecureBrain | Unrated |
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
+<<<<<<< HEAD
 | URLQuery | Unrated |
 | VIPRE | Unrated |
+=======
+| VIPRE | Unrated |
+| Xcitium Verdict Cloud | Unrated |
+>>>>>>> origin/main
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | AccessDenied Access denied. |
@@ -419,6 +445,7 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | AccessDenied Access denied. |
 | Где припаркован | нет данных |
+<<<<<<< HEAD
 
 ## Проверка домена: app.usercentrics.eu
 
@@ -839,3 +866,5 @@
 | Куда редиректит | нет (DNS не резолвится) |
 | Что выводит (кратко) | нет (DNS не резолвится) |
 | Где припаркован | регистратор: MarkMonitor Inc. |
+=======
+>>>>>>> origin/main

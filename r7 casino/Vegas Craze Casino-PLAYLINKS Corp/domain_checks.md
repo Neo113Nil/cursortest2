@@ -419,6 +419,7 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story FAQ Members Organizat |
 | Где припаркован | регистратор: Squarespace Domains II LLC |
+<<<<<<< HEAD
 
 ## Проверка домена: api.sdkbox.com
 
@@ -839,3 +840,5 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Moloco. Moloco |
 | Где припаркован | регистратор: Google Inc. |
+=======
+>>>>>>> origin/main

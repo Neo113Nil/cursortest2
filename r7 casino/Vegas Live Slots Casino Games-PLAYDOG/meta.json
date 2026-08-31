@@ -5,6 +5,7 @@
   "score": 4.4703784,
   "icon": "/static/app-icons/com_purplekiwii_vegaslive.png",
   "url": "https://play.google.com/store/apps/details?id=com.purplekiwii.vegaslive&hl=en&gl=us",
+<<<<<<< HEAD
   "keyword": "R7 casino",
   "country": "Germany",
   "source": "apkeep:apk-pure",
@@ -19,6 +20,12 @@
   "updated": "2026-08-27",
   "version": "1.5.37",
   "summary": "LAS VEGAS SLOTS, KENO, POKER, SCRATCHERS, TABLE GAMES - GRAND JACKPOT WINS!",
+=======
+  "version": "1.5.38",
+  "version_code": "9875",
+  "summary": "Vegas Live Slots (APK label: Vegas Live Slots) — legitimate PLAYDOG Cocos2d social casino; game servers on purplekiwii.com; no cloaking gate. Re-verified APK 1.5.38 (9875).",
+  "keyword": "r7 casino",
+>>>>>>> origin/main
   "folder": "Vegas Live Slots Casino Games-PLAYDOG",
   "path": "r7 casino/Vegas Live Slots Casino Games-PLAYDOG",
   "updates_count": 1,

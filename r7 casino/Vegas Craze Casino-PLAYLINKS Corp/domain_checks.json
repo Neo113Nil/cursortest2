@@ -3,6 +3,7 @@
     "123.com",
     "admob-mediation.premiumtag.net",
     "akm.ssacdn.com",
+<<<<<<< HEAD
     "aomedia.org",
     "api.sdkbox.com",
     "appassets.androidplatform.net",
@@ -55,6 +56,9 @@
     "vegascraze.onelink.me",
     "vuejs.org",
     "wiki.commonjs.org"
+=======
+    "aomedia.org"
+>>>>>>> origin/main
   ],
   "checked": [
     {
@@ -63,6 +67,7 @@
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/123.com",
         "detections": "1/91 (malicious=1, suspicious=0)",
+<<<<<<< HEAD
         "last_analysis_stats": {
           "malicious": 1,
           "suspicious": 0,
@@ -70,6 +75,8 @@
           "harmless": 55,
           "timeout": 0
         },
+=======
+>>>>>>> origin/main
         "vendor_rows": [
           [
             "Chong Lua Dao",
@@ -435,6 +442,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -874,6 +882,13 @@
           "value": "нет данных"
         }
       ]
+=======
+        ]
+      },
+      "redirect": "нет (DNS не резолвится)",
+      "content_summary": "нет (DNS не резолвится)",
+      "parking": "нет данных"
+>>>>>>> origin/main
     },
     {
       "domain": "admob-mediation.premiumtag.net",
@@ -881,6 +896,7 @@
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/admob-mediation.premiumtag.net",
         "detections": "0/91 (malicious=0, suspicious=0)",
+<<<<<<< HEAD
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
@@ -888,6 +904,8 @@
           "harmless": 55,
           "timeout": 0
         },
+=======
+>>>>>>> origin/main
         "vendor_rows": [
           [
             "Abusix",
@@ -1253,6 +1271,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -1694,6 +1713,13 @@
           "value": "регистратор: NAMECHEAP INC"
         }
       ]
+=======
+        ]
+      },
+      "redirect": "нет (без редиректа)",
+      "content_summary": "{\"detail\":\"Not Found\"}",
+      "parking": "регистратор: NAMECHEAP INC"
+>>>>>>> origin/main
     },
     {
       "domain": "akm.ssacdn.com",
@@ -1701,6 +1727,7 @@
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/akm.ssacdn.com",
         "detections": "0/91 (malicious=0, suspicious=0)",
+<<<<<<< HEAD
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
@@ -1708,6 +1735,8 @@
           "harmless": 32,
           "timeout": 0
         },
+=======
+>>>>>>> origin/main
         "vendor_rows": [
           [
             "ADMINUSLabs",
@@ -2073,6 +2102,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -2518,6 +2548,13 @@
           "value": "регистратор: Amazon Registrar, Inc."
         }
       ]
+=======
+        ]
+      },
+      "redirect": "нет (DNS не резолвится)",
+      "content_summary": "нет (DNS не резолвится)",
+      "parking": "регистратор: Amazon Registrar, Inc."
+>>>>>>> origin/main
     },
     {
       "domain": "aomedia.org",
@@ -2525,6 +2562,7 @@
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/aomedia.org",
         "detections": "0/91 (malicious=0, suspicious=0)",
+<<<<<<< HEAD
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
@@ -2532,6 +2570,8 @@
           "harmless": 57,
           "timeout": 0
         },
+=======
+>>>>>>> origin/main
         "vendor_rows": [
           [
             "Abusix",
@@ -2897,6 +2937,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -6624,4 +6665,13 @@
   ],
   "count": 8,
   "vt_configured": true
+=======
+        ]
+      },
+      "redirect": "нет (без редиректа)",
+      "content_summary": "title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story FAQ Members Organizat",
+      "parking": "регистратор: Squarespace Domains II LLC"
+    }
+  ]
+>>>>>>> origin/main
 }

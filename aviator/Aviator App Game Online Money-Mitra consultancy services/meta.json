@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "app_id": "com.aviator.aviatorgamewindailyapp121",
   "title": "Aviator App Game Online Money",
   "developer": "Mitra consultancy services",
@@ -178,3 +179,42 @@
     "cloaking_brief": "Какие данные собираются:\n• Имя пакета приложения\n\nКак собираются: Сразу после запуска, на экране заставки, приложение само тихо читает имя своего пакета из системы Android. Отдельного окна с вопросом человеку не показывают: это делается в фоне, пока идёт заставка. Других сведений о телефоне (язык, модель, рекламный номер) в этот проверочный запрос код не кладёт — в цепочке запуска видно только имя пакета. Сбор происходит в стартовом экране (LaunchActivity) до перехода в обычные экраны. Человек обычно замечает только короткую заставку, а не сам факт чтения имени пакета.\n\nКуда отправляются: Имя пакета подставляют в адрес и тихо запрашивают файл настроек по ссылке https://appxanalytics.com/data/com.aviator.aviatorgamewindailyapp121.json. Это обычный GET-запрос без тела: приложение просто скачивает удалённый JSON. Запасных адресов в коде не видно: адрес собирается из постоянного куска https://appxanalytics.com/data/ плюс имя пакета и окончание .json. Запрос уходит в фоне при наличии интернета; если ответа нет, запуск обрывают сообщением об ошибке.\n\nКак фильтруются пользователи: В самом приложении нет жёсткого списка стран, языков или «ботов» для этой проверки. На сервер уходит только имя пакета в адресе запроса. Решение, что показать человеку, заложено в ответе удалённых настроек: поля вроде start_redirect и ads. По смыслу это серверная развилка: один и тот же клиент может получить разный режим (сразу «центральный» экран или обычный онбординг; реклама AdX или ссылки Qureka). Дополнительно в магазине название «Aviator App Game Online Money», а внутри APK ярлык «Aviator All Online Games» — белая оболочка-каталог мини-игр.\n\nЧто возвращается: Сервер отвечает JSON-файлом. Приложение читает из него: start_redirect (включить ли особый старт), qureka_url и qureka_back_url (ссылки для показа), ads (режим «qureka» или «adx»), ads_interval (как часто показывать), а также идентификаторы рекламных блоков adx_interstitial, adx_banner, adx_native, adx_appopen. Если start_redirect = true — после заставки открывают главный хаб без обычного онбординга. Если false — идут в онбординг или стартовый хаб по флагу в памяти приложения. Если ads = «qureka» — берут ссылки qureka_url / qureka_…"
   }
 }
+=======
+  "app_name_play": "Aviator App Game Online Money",
+  "app_label_apk": "Aviator All Online Games",
+  "package": "com.aviator.aviatorgamewindailyapp121",
+  "developer": "Mitra consultancy services",
+  "versionName": "1.0",
+  "versionCode": 1,
+  "minSdk": 24,
+  "targetSdk": 35,
+  "agp": "8.8.0",
+  "kotlin": "coroutines 1.7.3",
+  "cloaking": true,
+  "webview": true,
+  "custom_tabs": true,
+  "ads": [
+    "Google Ad Manager / AdMob (AdX)",
+    "Qureka"
+  ],
+  "analytics": [],
+  "suspicious_domains": [
+    "appxanalytics.com",
+    "1000webgames.com",
+    "10761.play.gamezop.com",
+    "andyroid.net"
+  ],
+  "remote_config_url": "https://appxanalytics.com/data/com.aviator.aviatorgamewindailyapp121.json",
+  "remote_config_live": {
+    "start_redirect": false,
+    "qureka_url": "https://1316.mark.qureka.com/intro/question",
+    "qureka_back_url": "https://1316.mark.qureka.com/intro/question",
+    "ads": "qureka",
+    "ads_interval": "1",
+    "adx_interstitial": "ca-app-pub-3940256099942544/1033173712",
+    "adx_banner": "ca-app-pub-3940256099942544/9214589741",
+    "adx_native": "ca-app-pub-3940256099942544/1044960115",
+    "adx_appopen": "ca-app-pub-3940256099942544/9257395921"
+  }
+}
+>>>>>>> origin/main

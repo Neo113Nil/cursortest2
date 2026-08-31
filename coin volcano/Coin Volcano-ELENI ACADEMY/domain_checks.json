@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "all_custom_domains": [
     "auroraoss.com",
     "bingoskillz.com",
@@ -4126,3 +4127,13 @@
   "count": 5,
   "vt_configured": true
 }
+=======
+  "domains": [
+    "auroraoss.com",
+    "bingoskillz.com",
+    "compliance.iabtechnologylab.com",
+    "support.axon.ai"
+  ],
+  "source": "provided_in_prompt"
+}
+>>>>>>> origin/main

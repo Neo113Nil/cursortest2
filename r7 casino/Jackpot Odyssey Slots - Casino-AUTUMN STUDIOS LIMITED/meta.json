@@ -7,6 +7,17 @@
   "released": "Jun 26, 2025",
   "updated": "2026-06-25",
   "version": "1.1.10",
+<<<<<<< HEAD
+=======
+  "version_code": "18",
+  "summary": "Jackpot Odyssey Slots - Casino (APK label: Jackpot Odyssey) — Unity 2022.3.62f3 social-casino AUTUMN STUDIOS LIMITED; реклама AppLovin MAX + AdMob/FAN/ironSource/Mintegral/Unity Ads/Vungle/Chartboost; аналитика Firebase/AppsFlyer/ThinkingData; клоаки нет.",
+  "keyword": "r7 casino",
+  "folder": "Jackpot Odyssey Slots - Casino-AUTUMN STUDIOS LIMITED",
+  "path": "r7 casino/Jackpot Odyssey Slots - Casino-AUTUMN STUDIOS LIMITED",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "apk_label": "Jackpot Odyssey",
+>>>>>>> origin/main
   "cloaking": "нет",
   "brief_report": {
     "table": [
@@ -73,6 +84,7 @@
     ],
     "domains": [
       {
+<<<<<<< HEAD
         "domain": "adikteev.com",
         "redirects_to": "https://www.adikteev.com/",
         "parked_at": "нет данных"
@@ -111,6 +123,18 @@
         "domain": "aihelp.net",
         "redirects_to": "нет (без редиректа)",
         "parked_at": "регистратор/whois связан с парковкой: godaddy"
+=======
+        "domain": "adikteev.com"
+      },
+      {
+        "domain": "admaxim.com"
+      },
+      {
+        "domain": "admazing.co"
+      },
+      {
+        "domain": "admixer.com"
+>>>>>>> origin/main
       }
     ],
     "collected_data": [],
