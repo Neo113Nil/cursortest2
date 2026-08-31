@@ -1,0 +1,52 @@
+{
+  "app_id": "com.huuuge.casino.slots",
+  "title": "Huuuge Casino 777 Slots Games",
+  "developer": "Huuuge Games - Play Together",
+  "score": 4.52819,
+  "icon": "/static/app-icons/com_huuuge_casino_slots.png",
+  "url": "https://play.google.com/store/apps/details?id=com.huuuge.casino.slots&hl=en&gl=us",
+  "keyword": "R& casino",
+  "country": "Germany",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260831_172700_Germany_R& casino_search",
+  "search_title": "Huuuge Casino Slots Vegas 777",
+  "search_developer": "Huuuge Games - Play Together",
+  "rank": 7,
+  "developer_id": "8992197787187790047",
+  "released": "Jun 19, 2015",
+  "updated": "2026-08-18",
+  "version": "12.08.27100",
+  "summary": "Spin 777 slots, hit massive jackpots, and enjoy the Vegas casino fun!",
+  "folder": "Huuuge Casino 777 Slots Games-Huuuge Games - Play Together",
+  "path": "r& casino/Huuuge Casino 777 Slots Games-Huuuge Games - Play Together",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.huuuge.casino.slots-1786533240-config.en.apk",
+    "com.huuuge.casino.slots-1786533240-config.xxhdpi.apk",
+    "com.huuuge.casino.slots-1786533240.apk"
+  ],
+  "target": "/root/play-collector/загрузки/r& casino/Huuuge Casino 777 Slots Games-Huuuge Games - Play Together",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 1,
+      "stdout": "╭─── com.huuuge.casino.slots ───╮\n│ Huuuge Casino Slots Vegas 777 │\n│ 12.08.27100  (vc 1786533240)  │\n╰───────────────────────────────╯\n\nDownloading 5 files  (197.5 MB)\n⠏ com.huuuge.casino.slots-1786533240.apk                        6% 5.… 18.7 0:0…\n                                                                   MB  MB/s     \n⠏ com.huuuge.casino.slots-1786533240-config.arm64_v8a.apk ━━━   0% 0/? ?        \n                                                                   by…          \n  com.huuuge.casino.slots-1786533240-config.en.apk        ━━━ 100% 10… 2.5  0:0…\n                                                                   kB  MB/s     \n  com.huuuge.casino.slots-1786533240-config.xxhdpi.apk    ━━━ 100% 25… 4.3  0:0…\n                                                                   kB  MB/s     \n⠏ com.huuuge.casino.slots-1786533240-asset.apk            ━━━   0% 0/? ?        \n                                                                   by…          \n\ncached",
+      "stderr": "                                │\n│ /usr/local/lib/python3.12/dist-packages/gplaydl/download.py:69 in            │\n│ _download_one                                                                │\n│                                                                              │\n│    66 │   │   )                                                              │\n│    67 │   │                                                                  │\n│    68 │   │   async with client.stream(\"GET\", spec.url, headers=headers) as  │\n│       resp:                                                                  │\n│ ❱  69 │   │   │   resp.raise_for_status()                                    │\n│    70 │   │   │   total = int(resp.headers.get(\"Content-Length\", 0))         │\n│    71 │   │   │   if total:                                                  │\n│    72 │   │   │   │   progress.update(task_id, total=total)                  │\n│                                                                              │\n│ /usr/local/lib/python3.12/dist-packages/httpx/_models.py:829 in              │\n│ raise_for_status                                                             │\n│                                                                              │\n│    826 │   │   }                                                             │\n│    827 │   │   error_type = error_types.get(status_class, \"Invalid status    │\n│        code\")                                                                │\n│    828 │   │   message = message.format(self, error_type=error_type)         │\n│ ❱  829 │   │   raise HTTPStatusError(message, request=request,               │\n│        response=self)                                                        │\n│    830 │                                                                     │\n│    831 │   def json(self, **kwargs: typing.Any) -> typing.Any:               │\n│    832 │   │   return jsonlib.loads(self.content, **kwargs)                  │\n╰──────────────────────────────────────────────────────────────────────────────╯\nHTTPStatusError: Server error '503 Service Unavailable' for url \n'https://rr3---sn-5hneknes.gvt1.com/play-apps-download-default/download/by-id/AF\n3DWBfkGpzLDiMDFxTo4XhicYUCStAldu_bYSMV_CIXaT0cwhE7x1gx8DnpL6n_ilFyCz7kDn7zRU21fJ\nm6Hveui1BXOQZdX1hrnnMybpbSuVHG-XVy9kvfTal_6S7EzFhvAHghzUlDUV8PQkmVJ8lIs5taciyzgg\n?cpn=o-PqQec70YztA7po&ctier=L&xpc=EgVo5bjzNQ%3D%3D&cps=292&met=1788201430,178820\n1430&mh=UK&pl=57&rms=au,au&expire=1788374230&ip=2a02:4780:c:a648:0:0:0:1&ipbits=\n0&sparams=cps,ctier,expire,ip,ipbits,met,mh,mip,mm,mn,mr,ms,mv,mvi,pl,q:,rms,xpc\n&signature=0EA3014330E40996E8F32E192D62CA232757B0C7.0C38DB479EE5517AD2A3FBC16BA8\n5189B62FED83&key=cms1&rm=sn-4g5eze7e,sn-5hnesk7s,sn-4g5eze7e&rrc=40,40,40&req_id\n=333e5f17b77d9c00&mr=y&redirect_counter=1&cms_redirect=yes&mip=2a02:4780:c:a648:\n:1&mm=39&mn=sn-5hneknes&ms=ltr&mt=1788200983&mv=u&mvi=3'\nFor more information check: \nhttps://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503\n",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─── com.huuuge.casino.slots ───╮\n│ Huuuge Casino Slots Vegas 777 │\n│ 12.08.27100  (vc 1786533240)  │\n╰───────────────────────────────╯\n\nDownloading 5 files  (197.5 MB)\n⠏ com.huuuge.casino.slots-1786533240.apk                        6% 5.… 18.7 0:0…\n                                                                   MB  MB/s     \n⠏ com.huuuge.casino.slots-1786533240-config.arm64_v8a.apk ━━━   0% 0/? ?        \n                                                                   by…          \n  com.huuuge.casino.slots-1786533240-config.en.apk        ━━━ 100% 10… 2.5  0:0…\n                                                                   kB  MB/s     \n  com.huuuge.casino.slots-1786533240-config.xxhdpi.apk    ━━━ 100% 25… 4.3  0:0…\n                                                                   kB  MB/s     \n⠏ com.huuuge.casino.slots-1786533240-asset.apk            ━━━   0% 0/? ?        \n                                                                   by…          \n\ncached",
+  "stderr": "                                │\n│ /usr/local/lib/python3.12/dist-packages/gplaydl/download.py:69 in            │\n│ _download_one                                                                │\n│                                                                              │\n│    66 │   │   )                                                              │\n│    67 │   │                                                                  │\n│    68 │   │   async with client.stream(\"GET\", spec.url, headers=headers) as  │\n│       resp:                                                                  │\n│ ❱  69 │   │   │   resp.raise_for_status()                                    │\n│    70 │   │   │   total = int(resp.headers.get(\"Content-Length\", 0))         │\n│    71 │   │   │   if total:                                                  │\n│    72 │   │   │   │   progress.update(task_id, total=total)                  │\n│                                                                              │\n│ /usr/local/lib/python3.12/dist-packages/httpx/_models.py:829 in              │\n│ raise_for_status                                                             │\n│                                                                              │\n│    826 │   │   }                                                             │\n│    827 │   │   error_type = error_types.get(status_class, \"Invalid status    │\n│        code\")                                                                │\n│    828 │   │   message = message.format(self, error_type=error_type)         │\n│ ❱  829 │   │   raise HTTPStatusError(message, request=request,               │\n│        response=self)                                                        │\n│    830 │                                                                     │\n│    831 │   def json(self, **kwargs: typing.Any) -> typing.Any:               │\n│    832 │   │   return jsonlib.loads(self.content, **kwargs)                  │\n╰──────────────────────────────────────────────────────────────────────────────╯\nHTTPStatusError: Server error '503 Service Unavailable' for url \n'https://rr3---sn-5hneknes.gvt1.com/play-apps-download-default/download/by-id/AF\n3DWBfkGpzLDiMDFxTo4XhicYUCStAldu_bYSMV_CIXaT0cwhE7x1gx8DnpL6n_ilFyCz7kDn7zRU21fJ\nm6Hveui1BXOQZdX1hrnnMybpbSuVHG-XVy9kvfTal_6S7EzFhvAHghzUlDUV8PQkmVJ8lIs5taciyzgg\n?cpn=o-PqQec70YztA7po&ctier=L&xpc=EgVo5bjzNQ%3D%3D&cps=292&met=1788201430,178820\n1430&mh=UK&pl=57&rms=au,au&expire=1788374230&ip=2a02:4780:c:a648:0:0:0:1&ipbits=\n0&sparams=cps,ctier,expire,ip,ipbits,met,mh,mip,mm,mn,mr,ms,mv,mvi,pl,q:,rms,xpc\n&signature=0EA3014330E40996E8F32E192D62CA232757B0C7.0C38DB479EE5517AD2A3FBC16BA8\n5189B62FED83&key=cms1&rm=sn-4g5eze7e,sn-5hnesk7s,sn-4g5eze7e&rrc=40,40,40&req_id\n=333e5f17b77d9c00&mr=y&redirect_counter=1&cms_redirect=yes&mip=2a02:4780:c:a648:\n:1&mm=39&mn=sn-5hneknes&ms=ltr&mt=1788200983&mv=u&mvi=3'\nFor more information check: \nhttps://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503\n",
+  "exit_code": 1,
+  "error": ""
+}
