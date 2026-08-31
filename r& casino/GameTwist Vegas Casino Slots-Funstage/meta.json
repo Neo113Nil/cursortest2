@@ -1,0 +1,53 @@
+{
+  "app_id": "com.funstage.gta",
+  "title": "GameTwist Vegas Casino Slots",
+  "developer": "Funstage",
+  "score": 4.357143,
+  "icon": "/static/app-icons/com_funstage_gta.png",
+  "url": "https://play.google.com/store/apps/details?id=com.funstage.gta&hl=en&gl=us",
+  "keyword": "R& casino",
+  "country": "Germany",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260831_172700_Germany_R& casino_search",
+  "search_title": "GameTwist Vegas Casino Slots",
+  "search_developer": "Funstage",
+  "rank": 11,
+  "developer_id": "8128532516213169694",
+  "released": "Nov 9, 2011",
+  "updated": "2026-08-19",
+  "version": "5.56.0",
+  "summary": "Play 400+ Online Slot Machines & Casino games: Poker, Roulette & BlackJack",
+  "folder": "GameTwist Vegas Casino Slots-Funstage",
+  "path": "r& casino/GameTwist Vegas Casino Slots-Funstage",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.funstage.gta-40172-asset.apk",
+    "com.funstage.gta-40172-config.arm64_v8a.apk",
+    "com.funstage.gta-40172-config.xxhdpi.apk",
+    "com.funstage.gta-40172.apk"
+  ],
+  "target": "/root/play-collector/загрузки/r& casino/GameTwist Vegas Casino Slots-Funstage",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭────── com.funstage.gta ──────╮\n│ GameTwist Vegas Casino Slots │\n│ 5.56.0  (vc 40172)           │\n╰──────────────────────────────╯\n\nDownloading 4 files  (179.4 MB)\n  com.funstage.gta-40172.apk                  ━━━━━━ 100% 68.2/… 7.8     0:00:00\n                                                          MB     MB/s           \n  com.funstage.gta-40172-config.arm64_v8a.apk ━━━━━━ 100% 63.4/… 7.5     0:00:00\n                                                          MB     MB/s           \n  com.funstage.gta-40172-config.xxhdpi.apk    ━━━━━━ 100% 19.6/… 5.4     0:00:00\n                                                          MB     MB/s           \n  com.funstage.gta-40172-asset.apk            ━━━━━━ 100% 36.9/… 5.5     0:00:00\n                                                          MB     MB/s           \n\n                    Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                        ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.funstage.gta-40172.apk                  │ 65.0 MB │\n│ com.funstage.gta-40172-config.arm64_v8a.apk │ 60.5 MB │\n│ com.funstage.gta-40172-config.xxhdpi.apk    │ 18.7 MB │\n│ com.funstage.gta-40172-asset.apk            │ 65.0 MB │\n└─────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭────── com.funstage.gta ──────╮\n│ GameTwist Vegas Casino Slots │\n│ 5.56.0  (vc 40172)           │\n╰──────────────────────────────╯\n\nDownloading 4 files  (179.4 MB)\n  com.funstage.gta-40172.apk                  ━━━━━━ 100% 68.2/… 7.8     0:00:00\n                                                          MB     MB/s           \n  com.funstage.gta-40172-config.arm64_v8a.apk ━━━━━━ 100% 63.4/… 7.5     0:00:00\n                                                          MB     MB/s           \n  com.funstage.gta-40172-config.xxhdpi.apk    ━━━━━━ 100% 19.6/… 5.4     0:00:00\n                                                          MB     MB/s           \n  com.funstage.gta-40172-asset.apk            ━━━━━━ 100% 36.9/… 5.5     0:00:00\n                                                          MB     MB/s           \n\n                    Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                        ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.funstage.gta-40172.apk                  │ 65.0 MB │\n│ com.funstage.gta-40172-config.arm64_v8a.apk │ 60.5 MB │\n│ com.funstage.gta-40172-config.xxhdpi.apk    │ 18.7 MB │\n│ com.funstage.gta-40172-asset.apk            │ 65.0 MB │\n└─────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
