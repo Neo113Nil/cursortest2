@@ -1,4 +1,52 @@
 {
+  "app_id": "com.garcialopezalbert.ateliercube",
   "title": "Amazon casino",
-  "developer": "GARCIA LOPEZ ALBERT"
+  "developer": "GARCIA LOPEZ ALBERT",
+  "score": null,
+  "icon": "/static/app-icons/com_garcialopezalbert_ateliercube.png",
+  "url": "https://play.google.com/store/apps/details?id=com.garcialopezalbert.ateliercube&hl=en&gl=us",
+  "keyword": "Amazon Casino",
+  "country": "Germany",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260901_150915_Germany_Amazon Casino_search",
+  "search_title": "Amazon casino",
+  "search_developer": "GARCIA LOPEZ ALBERT",
+  "rank": 3,
+  "developer_id": "GARCIA+LOPEZ+ALBERT",
+  "released": "Jun 22, 2026",
+  "updated": "Jul 14, 2026",
+  "version": "Varies with device",
+  "summary": "Tropical arcade challenge. Choose your team and win tournaments.",
+  "folder": "Amazon casino-GARCIA LOPEZ ALBERT",
+  "path": "amazon casino/Amazon casino-GARCIA LOPEZ ALBERT",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.garcialopezalbert.ateliercube-4-asset.apk",
+    "com.garcialopezalbert.ateliercube-4-config.arm64_v8a.apk",
+    "com.garcialopezalbert.ateliercube-4.apk"
+  ],
+  "target": "/root/play-collector/загрузки/amazon casino/Amazon casino-GARCIA LOPEZ ALBERT",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.garcialopezalbert.ateliercube ─╮\n│ Amazon casino                       │\n│ 4.1  (vc 4)                         │\n╰─────────────────────────────────────╯\n\nDownloading 3 files  (192.1 MB)\n  com.garcialopezalbert.ateliercube-4.apk                  ━━━ 100% 10… 24… 0:0…\n                                                                    MB  MB…     \n  com.garcialopezalbert.ateliercube-4-config.arm64_v8a.apk ━━━ 100% 17… 21… 0:0…\n                                                                    MB  MB…     \n  com.garcialopezalbert.ateliercube-4-asset.apk            ━━━ 100% 80… 21… 0:0…\n                                                                    MB  MB…     \n\n                           Downloaded files                           \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                     ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.garcialopezalbert.ateliercube-4.apk                  │ 99.2 MB │\n│ com.garcialopezalbert.ateliercube-4-config.arm64_v8a.apk │ 16.7 MB │\n│ com.garcialopezalbert.ateliercube-4-asset.apk            │ 99.2 MB │\n└──────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.garcialopezalbert.ateliercube ─╮\n│ Amazon casino                       │\n│ 4.1  (vc 4)                         │\n╰─────────────────────────────────────╯\n\nDownloading 3 files  (192.1 MB)\n  com.garcialopezalbert.ateliercube-4.apk                  ━━━ 100% 10… 24… 0:0…\n                                                                    MB  MB…     \n  com.garcialopezalbert.ateliercube-4-config.arm64_v8a.apk ━━━ 100% 17… 21… 0:0…\n                                                                    MB  MB…     \n  com.garcialopezalbert.ateliercube-4-asset.apk            ━━━ 100% 80… 21… 0:0…\n                                                                    MB  MB…     \n\n                           Downloaded files                           \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                     ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.garcialopezalbert.ateliercube-4.apk                  │ 99.2 MB │\n│ com.garcialopezalbert.ateliercube-4-config.arm64_v8a.apk │ 16.7 MB │\n│ com.garcialopezalbert.ateliercube-4-asset.apk            │ 99.2 MB │\n└──────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+  "exit_code": 0,
+  "error": ""
 }
