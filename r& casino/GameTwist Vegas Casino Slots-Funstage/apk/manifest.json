@@ -1,0 +1,43 @@
+{
+  "package_name": "com.funstage.gta",
+  "name": "GameTwist",
+  "version_code": "40172",
+  "version_name": "5.56.0",
+  "min_sdk_version": "32",
+  "target_sdk_version": "37",
+  "permissions": [
+    "android.permission.ACCESS_ADSERVICES_AD_ID",
+    "android.permission.ACCESS_ADSERVICES_ATTRIBUTION",
+    "android.permission.ACCESS_ADSERVICES_TOPICS",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "com.amazon.privacypass.ATTEST",
+    "com.android.alarm.permission.SET_ALARM",
+    "com.android.vending.BILLING",
+    "com.funstage.gta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "split_apks": [
+    {
+      "file": "com.funstage.gta-40172.apk",
+      "id": "base"
+    },
+    {
+      "file": "com.funstage.gta-40172-config.armeabi_v7a.apk",
+      "id": "config.armeabi_v7a"
+    },
+    {
+      "file": "com.funstage.gta-40172-config.mdpi.apk",
+      "id": "config.mdpi"
+    }
+  ],
+  "source": "apkpure-xapk"
+}

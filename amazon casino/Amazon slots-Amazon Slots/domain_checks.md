@@ -1,13 +1,22 @@
 # Проверка подозрительных доменов
 
+<<<<<<< HEAD
 ## Проверка домена: appassets.androidplatform.net
+=======
+## Проверка домена: ancientlegends.top
+>>>>>>> origin/main
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
 
 | Параметр / движок | Значение / вердикт |
 |---|---|
+<<<<<<< HEAD
 | Домен | appassets.androidplatform.net |
 | VirusTotal URL | https://www.virustotal.com/gui/domain/appassets.androidplatform.net |
+=======
+| Домен | ancientlegends.top |
+| VirusTotal URL | https://www.virustotal.com/gui/domain/ancientlegends.top |
+>>>>>>> origin/main
 | Детекции | 0/91 (malicious=0, suspicious=0) |
 | Security vendors' analysis | ниже построчно, как на VirusTotal |
 | Abusix | Clean |
@@ -21,7 +30,10 @@
 | Certego | Clean |
 | Chong Lua Dao | Clean |
 | CINS Army | Clean |
+<<<<<<< HEAD
 | CMC Threat Intelligence | Clean |
+=======
+>>>>>>> origin/main
 | CRDF | Clean |
 | CTX AI | Clean |
 | Cyble | Clean |
@@ -40,10 +52,18 @@
 | Heimdal Security | Clean |
 | IPsum | Clean |
 | Juniper Networks | Clean |
+<<<<<<< HEAD
 | LevelBlue | Clean |
 | Lionic | Clean |
 | Malwared | Clean |
 | MalwarePatrol | Clean |
+=======
+| Kaspersky | Clean |
+| Lionic | Clean |
+| Malwared | Clean |
+| MalwarePatrol | Clean |
+| Netcraft | Clean |
+>>>>>>> origin/main
 | OpenPhish | Clean |
 | Phishing Database | Clean |
 | Phishtank | Clean |
@@ -75,6 +95,10 @@
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
 | Cluster25 | Unrated |
+<<<<<<< HEAD
+=======
+| CMC Threat Intelligence | Unrated |
+>>>>>>> origin/main
 | Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
 | Cyan | Unrated |
@@ -86,11 +110,18 @@
 | Gridinsoft | Unrated |
 | Guardpot | Unrated |
 | Hunt.io Intelligence | Unrated |
+<<<<<<< HEAD
 | Kaspersky | Unrated |
 | Lumu | Unrated |
 | MalwareURL | Unrated |
 | Mimecast | Unrated |
 | Netcraft | Unrated |
+=======
+| LevelBlue | Unrated |
+| Lumu | Unrated |
+| MalwareURL | Unrated |
+| Mimecast | Unrated |
+>>>>>>> origin/main
 | PhishFort | Unrated |
 | PrecisionSec | Unrated |
 | SafeToOpen | Unrated |
@@ -101,6 +132,7 @@
 | URLQuery | Unrated |
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
+<<<<<<< HEAD
 | Куда редиректит | нет (DNS не резолвится) |
 | Что выводит (кратко) | нет (DNS не резолвится) |
 | Где припаркован | регистратор: MarkMonitor Inc. |
@@ -734,3 +766,8 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Suno \| AI Music Generator. Suno \| AI Music Generator Loading Loading Open App Loading Log in Log in Join Suno for free Make any song you can imagine Start with a simple prompt or dive into our pro editing tools, your next track is just a step away. Advanced Create Mind blowing song quality Whether you have |
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
+=======
+| Куда редиректит | нет (без редиректа) |
+| Что выводит (кратко) | JSON: {   "subid": "{subid}", "action": "pass_to_gray",   "source": "cloaker",   "timestamp": "2026-07-03" } |
+| Где припаркован | регистратор: NameSilo,LLC |
+>>>>>>> origin/main

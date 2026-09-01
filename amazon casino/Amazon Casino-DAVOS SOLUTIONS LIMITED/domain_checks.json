@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "all_custom_domains": [
     "appmetrica.io",
     "config.ru",
@@ -4093,3 +4094,38 @@
   "count": 5,
   "vt_configured": true
 }
+=======
+  "appmetrica.io": {
+    "domain": "appmetrica.io",
+    "vt_url": "https://www.virustotal.com/gui/domain/appmetrica.io",
+    "detections": "0/91 (malicious=0, suspicious=0)",
+    "redirect": "https://passport.yandex.com/showcaptcha",
+    "content": "title: Are you not a robot?",
+    "parking": "регистратор: SafeNames Ltd."
+  },
+  "config.ru": {
+    "domain": "config.ru",
+    "vt_url": "https://www.virustotal.com/gui/domain/config.ru",
+    "detections": "0/91 (malicious=0, suspicious=0)",
+    "redirect": "https://config.ru/en/",
+    "content": "title: config.ru is for sale.",
+    "parking": "похоже на парковку (domain is for sale)"
+  },
+  "debug.firebase.analytics.app": {
+    "domain": "debug.firebase.analytics.app",
+    "vt_url": "https://www.virustotal.com/gui/domain/debug.firebase.analytics.app",
+    "detections": "1/91 (malicious=1, suspicious=0)",
+    "redirect": "нет (DNS не резолвится)",
+    "content": "нет (DNS не резолвится)",
+    "parking": "регистратор: Namecamp Limited"
+  },
+  "startup.mobile.yandex.net": {
+    "domain": "startup.mobile.yandex.net",
+    "vt_url": "https://www.virustotal.com/gui/domain/startup.mobile.yandex.net",
+    "detections": "0/91 (malicious=0, suspicious=0)",
+    "redirect": null,
+    "content": null,
+    "parking": null
+  }
+}
+>>>>>>> origin/main

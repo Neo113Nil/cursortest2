@@ -101,8 +101,13 @@
 | URLQuery | Unrated |
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
+<<<<<<< HEAD
 | Куда редиректит | https://passport.yandex.com/showcaptcha?cc=1&form-fb-hint=2.191&mt=B6742E58479CCC0E7380767495C4943E20742ACF0FF816FBE5EC0DE10F81286B0102F54DFB4F676DB81163542CC9F20E8AA703B864CF9CEE6BF59A63EA2C79475654D7FC8F7E62C452C7A28A1D53403A12262A77BEDCB717EF90107896A8A53FF5E3A1D979A76421337276CACC74D4D041C4C9DAE0E36EED0321B39C06FDD0C7DD7911B029469E213393EF73E5490E2872AAE30B2164244891CEF06C8524D0E9AD7A9A5E0993778A6B3F71DBFBE5EBA2939377B7CF1CD108E7879DDF7E667BAD7F41D02A53579DE57F7FA8ABE5E46635970D1E43DE4FA4A2177DD86D4A78BF3CC5DA59ACA25E32154779DB6A9CB6DBA4AA90703482919B0E80&retpath=aHR0cHM6Ly9wYXNzcG9ydC55YW5kZXguY29tL2F1dGg_cmV0cGF0aD1odHRwcyUzQSUyRiUyRmFwcG1ldHJpY2EueWFuZGV4LmNvbSUyRm92ZXJ2aWV3Jmxhbmc9ZW4%2C_86db0e445bbbc26d9df0268833aac0c7&t=2%252F1788203815%252F4978419f29e0f3bafe04fb991194230c&u=9323… |
 | Что выводит (кратко) | title: Are you not a robot?. Are you not a robot? Please confirm that you are not a robot We&#x27;re sorry, but it looks like requests sent from your device are automated. Why might this happen? JavaScript is disabled. After checkbox you will have additional check.Â How to enable JavaScript? I&#x27;m not a r |
+=======
+| Куда редиректит | https://passport.yandex.com/showcaptcha?... |
+| Что выводит (кратко) | title: Are you not a robot?. Are you not a robot? Please confirm that you are not a robot |
+>>>>>>> origin/main
 | Где припаркован | регистратор: SafeNames Ltd. |
 
 ## Проверка домена: config.ru
@@ -403,6 +408,7 @@
 | Gridinsoft | Unrated |
 | Guardpot | Unrated |
 | Hunt.io Intelligence | Unrated |
+<<<<<<< HEAD
 | Lumu | Unrated |
 | MalwareURL | Unrated |
 | Mimecast | Unrated |
@@ -524,3 +530,5 @@
 | Куда редиректит | нет (DNS не резолвится) |
 | Что выводит (кратко) | нет (DNS не резолвится) |
 | Где припаркован | нет данных |
+=======
+>>>>>>> origin/main

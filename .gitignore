@@ -6,3 +6,5 @@ __pycache__/
 **/decompiled/**
 **/build_report.py
 build_report.py
+report.prev.*.pdf
+**/.analyze_tmp/

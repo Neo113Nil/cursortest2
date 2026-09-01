@@ -1,0 +1,30 @@
+{
+  "package_name": "com.huuuge.casino.slots",
+  "name": "Huuuge Casino",
+  "version_code": "1648745782",
+  "version_name": "8.4.4300",
+  "min_sdk_version": "21",
+  "target_sdk_version": "30",
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.INTERNET",
+    "android.permission.READ_EXTERNAL_STORAGE",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.VIBRATE",
+    "android.permission.WAKE_LOCK",
+    "android.permission.WRITE_EXTERNAL_STORAGE",
+    "com.android.vending.BILLING",
+    "com.google.android.c2dm.permission.RECEIVE",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "com.google.android.gms.permission.AD_ID"
+  ],
+  "split_apks": [
+    {
+      "file": "com.huuuge.casino.slots.apk",
+      "id": "base"
+    }
+  ],
+  "source": "appheros-apk"
+}

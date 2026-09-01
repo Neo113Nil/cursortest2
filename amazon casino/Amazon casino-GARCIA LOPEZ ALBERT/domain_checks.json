@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "all_custom_domains": [
     "admarvel.com",
     "adtilt.com",
@@ -6621,4 +6622,10 @@
   ],
   "count": 8,
   "vt_configured": true
+=======
+  "domains": [
+    "bingoskillz.com"
+  ],
+  "source": "provided_in_prompt"
+>>>>>>> origin/main
 }

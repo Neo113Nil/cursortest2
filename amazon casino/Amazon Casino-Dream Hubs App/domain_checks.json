@@ -397,6 +397,7 @@
           "Cisco Umbrella: 884618"
         ],
         "creation_date": 1520886677,
+<<<<<<< HEAD
         "last_modification_date": 1788204680,
         "last_analysis_date": 1788204275,
         "registrar": "GoDaddy.com, LLC",
@@ -406,6 +407,17 @@
           "AAAA 2606:4700::6812:1d1f",
           "AAAA 2606:4700::6812:1c1f",
           "A 104.18.28.31"
+=======
+        "last_modification_date": 1786408021,
+        "last_analysis_date": 1786404536,
+        "registrar": "GoDaddy.com, LLC",
+        "whois": "Domain Name: CONFIGCAT.COM\nRegistry Domain ID: 2238451949_DOMAIN_COM-VRSN\nRegistrar WHOIS Server: whois.godaddy.com\nRegistrar URL: http://www.godaddy.com\nUpdated Date: 2018-11-04T19:17:28Z\nCreation Date: 2018-03-12T20:31:17Z\nRegistry Expiry Date: 2020-03-12T20:31:17Z\nRegistrar: GoDaddy.com, LLC\nRegistrar IANA ID: 146\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: 480-624-2505\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: NS39.DOMAINCONTROL.COM\nName Server: NS40.DOMAINCONTROL.COM\nDNSSEC: unsigned\nDomain Name: configcat.com\nUpdated Date: 2018-11-04T19:17:26Z\nRegistrar Registration Expiration Date: 2020-03-12T20:31:17Z\nRegistrar Abuse Contact Phone: +1.4806242505\nDomain Status: clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited http://www.icann.org/epp#clientUpdateProhibited\nDomain Status: clientRenewProhibited http://www.icann.org/epp#clientRenewProhibited\nDomain Status: clientDeleteProhibited http://www.icann.org/epp#clientDeleteProhibited\nRegistrant Country: HU",
+        "dns_records": [
+          "A 104.18.28.31",
+          "AAAA 2606:4700::6812:1c1f",
+          "AAAA 2606:4700::6812:1d1f",
+          "A 104.18.29.31"
+>>>>>>> origin/main
         ],
         "https_subject": {
           "CN": "configcat.com"
@@ -835,8 +847,13 @@
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
+<<<<<<< HEAD
           "undetected": 34,
           "harmless": 57,
+=======
+          "undetected": 35,
+          "harmless": 56,
+>>>>>>> origin/main
           "timeout": 0
         },
         "vendor_rows": [
@@ -893,10 +910,13 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
             "Criminal IP",
             "Clean"
           ],
           [
+=======
+>>>>>>> origin/main
             "CTX AI",
             "Clean"
           ],
@@ -913,6 +933,13 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
+=======
+            "DNS8",
+            "Clean"
+          ],
+          [
+>>>>>>> origin/main
             "Dr.Web",
             "Clean"
           ],
@@ -969,10 +996,13 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
             "LevelBlue",
             "Clean"
           ],
           [
+=======
+>>>>>>> origin/main
             "Lionic",
             "Clean"
           ],
@@ -1109,6 +1139,13 @@
             "Unrated"
           ],
           [
+<<<<<<< HEAD
+=======
+            "Criminal IP",
+            "Unrated"
+          ],
+          [
+>>>>>>> origin/main
             "CSIS Security Group",
             "Unrated"
           ],
@@ -1117,10 +1154,13 @@
             "Unrated"
           ],
           [
+<<<<<<< HEAD
             "DNS8",
             "Unrated"
           ],
           [
+=======
+>>>>>>> origin/main
             "Ermes",
             "Unrated"
           ],
@@ -1149,6 +1189,13 @@
             "Unrated"
           ],
           [
+<<<<<<< HEAD
+=======
+            "LevelBlue",
+            "Unrated"
+          ],
+          [
+>>>>>>> origin/main
             "Lumu",
             "Unrated"
           ],
@@ -1212,6 +1259,7 @@
         },
         "categories": {},
         "popularity_ranks": [
+<<<<<<< HEAD
           "Cisco Umbrella: 220168"
         ],
         "creation_date": 1520812800,
@@ -1224,6 +1272,20 @@
           "CNAME 4a4b54543b1747e9946804f84e9a42b2.pacloudflare.com",
           "A 172.65.204.231",
           "AAAA 2606:4700:90:0:3363:5347:1e9c:7182"
+=======
+          "Cisco Umbrella: 222279"
+        ],
+        "creation_date": 1520812800,
+        "last_modification_date": 1786408020,
+        "last_analysis_date": 1786404536,
+        "registrar": "нет",
+        "whois": "Create date: 2018-03-12 00:00:00\nDomain name: configcat.com\nDomain registrar id: 1910.0\nDomain registrar url: whois.cloudflare.com\nExpiry date: 2027-03-12 00:00:00\nName server 1: damien.ns.cloudflare.com\nName server 2: mallory.ns.cloudflare.com\nQuery time: 2026-02-21 14:56:50\nRegistrant address: acfd0ee3752cd95d\nRegistrant city: acfd0ee3752cd95d\nRegistrant company: acfd0ee3752cd95d\nRegistrant country: Hungary\nRegistrant name: acfd0ee3752cd95d\nRegistrant phone: 89a7b728a1a1e323\nRegistrant state: a1dd02b0618b1c0d\nRegistrant zip: acfd0ee3752cd95d\nUpdate date: 2026-02-15 00:00:00",
+        "dns_records": [
+          "AAAA 2606:4700:90:0:3363:5347:1e9c:7182",
+          "A 172.65.204.231",
+          "CNAME cdn-eu-spectrum.configcat.com",
+          "CNAME 4a4b54543b1747e9946804f84e9a42b2.pacloudflare.com"
+>>>>>>> origin/main
         ],
         "https_subject": {
           "CN": "configcat.com"
@@ -1319,10 +1381,13 @@
           "value": "Clean"
         },
         {
+<<<<<<< HEAD
           "param": "Criminal IP",
           "value": "Clean"
         },
         {
+=======
+>>>>>>> origin/main
           "param": "CTX AI",
           "value": "Clean"
         },
@@ -1339,6 +1404,13 @@
           "value": "Clean"
         },
         {
+<<<<<<< HEAD
+=======
+          "param": "DNS8",
+          "value": "Clean"
+        },
+        {
+>>>>>>> origin/main
           "param": "Dr.Web",
           "value": "Clean"
         },
@@ -1395,10 +1467,13 @@
           "value": "Clean"
         },
         {
+<<<<<<< HEAD
           "param": "LevelBlue",
           "value": "Clean"
         },
         {
+=======
+>>>>>>> origin/main
           "param": "Lionic",
           "value": "Clean"
         },
@@ -1535,6 +1610,13 @@
           "value": "Unrated"
         },
         {
+<<<<<<< HEAD
+=======
+          "param": "Criminal IP",
+          "value": "Unrated"
+        },
+        {
+>>>>>>> origin/main
           "param": "CSIS Security Group",
           "value": "Unrated"
         },
@@ -1543,10 +1625,13 @@
           "value": "Unrated"
         },
         {
+<<<<<<< HEAD
           "param": "DNS8",
           "value": "Unrated"
         },
         {
+=======
+>>>>>>> origin/main
           "param": "Ermes",
           "value": "Unrated"
         },
@@ -1575,6 +1660,13 @@
           "value": "Unrated"
         },
         {
+<<<<<<< HEAD
+=======
+          "param": "LevelBlue",
+          "value": "Unrated"
+        },
+        {
+>>>>>>> origin/main
           "param": "Lumu",
           "value": "Unrated"
         },
@@ -1653,8 +1745,13 @@
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
+<<<<<<< HEAD
           "undetected": 34,
           "harmless": 57,
+=======
+          "undetected": 35,
+          "harmless": 56,
+>>>>>>> origin/main
           "timeout": 0
         },
         "vendor_rows": [
@@ -1787,10 +1884,13 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
             "LevelBlue",
             "Clean"
           ],
           [
+=======
+>>>>>>> origin/main
             "Lionic",
             "Clean"
           ],
@@ -1967,6 +2067,13 @@
             "Unrated"
           ],
           [
+<<<<<<< HEAD
+=======
+            "LevelBlue",
+            "Unrated"
+          ],
+          [
+>>>>>>> origin/main
             "Lumu",
             "Unrated"
           ],
@@ -2030,6 +2137,7 @@
         },
         "categories": {},
         "popularity_ranks": [
+<<<<<<< HEAD
           "Cisco Umbrella: 17755"
         ],
         "creation_date": 1520812800,
@@ -2042,6 +2150,20 @@
           "AAAA 2606:4700::6812:1d1f",
           "A 104.18.29.31",
           "AAAA 2606:4700::6812:1c1f"
+=======
+          "Cisco Umbrella: 17600"
+        ],
+        "creation_date": 1520812800,
+        "last_modification_date": 1786408020,
+        "last_analysis_date": 1786404536,
+        "registrar": "нет",
+        "whois": "Create date: 2018-03-12 00:00:00\nDomain name: configcat.com\nDomain registrar id: 1910.0\nDomain registrar url: whois.cloudflare.com\nExpiry date: 2027-03-12 00:00:00\nName server 1: damien.ns.cloudflare.com\nName server 2: mallory.ns.cloudflare.com\nQuery time: 2026-02-21 14:56:50\nRegistrant address: acfd0ee3752cd95d\nRegistrant city: acfd0ee3752cd95d\nRegistrant company: acfd0ee3752cd95d\nRegistrant country: Hungary\nRegistrant name: acfd0ee3752cd95d\nRegistrant phone: 89a7b728a1a1e323\nRegistrant state: a1dd02b0618b1c0d\nRegistrant zip: acfd0ee3752cd95d\nUpdate date: 2026-02-15 00:00:00",
+        "dns_records": [
+          "AAAA 2606:4700::6812:1c1f",
+          "A 104.18.28.31",
+          "A 104.18.29.31",
+          "AAAA 2606:4700::6812:1d1f"
+>>>>>>> origin/main
         ],
         "https_subject": {
           "CN": "configcat.com"
@@ -2213,10 +2335,13 @@
           "value": "Clean"
         },
         {
+<<<<<<< HEAD
           "param": "LevelBlue",
           "value": "Clean"
         },
         {
+=======
+>>>>>>> origin/main
           "param": "Lionic",
           "value": "Clean"
         },
@@ -2393,6 +2518,13 @@
           "value": "Unrated"
         },
         {
+<<<<<<< HEAD
+=======
+          "param": "LevelBlue",
+          "value": "Unrated"
+        },
+        {
+>>>>>>> origin/main
           "param": "Lumu",
           "value": "Unrated"
         },
@@ -2471,8 +2603,13 @@
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
+<<<<<<< HEAD
           "undetected": 33,
           "harmless": 58,
+=======
+          "undetected": 34,
+          "harmless": 57,
+>>>>>>> origin/main
           "timeout": 0
         },
         "vendor_rows": [
@@ -2697,10 +2834,13 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
             "Xcitium Verdict Cloud",
             "Clean"
           ],
           [
+=======
+>>>>>>> origin/main
             "Yandex Safebrowsing",
             "Clean"
           ],
@@ -2837,6 +2977,13 @@
             "Unrated"
           ],
           [
+<<<<<<< HEAD
+=======
+            "Xcitium Verdict Cloud",
+            "Unrated"
+          ],
+          [
+>>>>>>> origin/main
             "ZeroFox",
             "Unrated"
           ]
@@ -2848,6 +2995,7 @@
         },
         "categories": {},
         "popularity_ranks": [
+<<<<<<< HEAD
           "Majestic: 383851",
           "Statvoo: 135984",
           "Alexa: 135984",
@@ -2872,6 +3020,32 @@
           "TXT _globalsign-domain-verification=ACYii0KvpTx5aQzMwSSLAzTVV4kveWxbobOExZj__k",
           "TXT _globalsign-domain-verification=BJNOgPzo7QmBP23tIVupg6CxS5IFEob4ifXcC1AbN6",
           "TXT _globalsign-domain-verification=vrIE6CWShAmpsOezBjyvtDzokEvlknIedTrEGxIc0e"
+=======
+          "Majestic: 405036",
+          "Statvoo: 135984",
+          "Alexa: 135984",
+          "Cisco Umbrella: 16984",
+          "Cloudflare Radar: 5000"
+        ],
+        "creation_date": 1520812800,
+        "last_modification_date": 1786408022,
+        "last_analysis_date": 1786404536,
+        "registrar": "нет",
+        "whois": "Create date: 2018-03-12 00:00:00\nDomain name: configcat.com\nDomain registrar id: 1910.0\nDomain registrar url: whois.cloudflare.com\nExpiry date: 2027-03-12 00:00:00\nName server 1: damien.ns.cloudflare.com\nName server 2: mallory.ns.cloudflare.com\nQuery time: 2026-02-21 14:56:50\nRegistrant address: acfd0ee3752cd95d\nRegistrant city: acfd0ee3752cd95d\nRegistrant company: acfd0ee3752cd95d\nRegistrant country: Hungary\nRegistrant name: acfd0ee3752cd95d\nRegistrant phone: 89a7b728a1a1e323\nRegistrant state: a1dd02b0618b1c0d\nRegistrant zip: acfd0ee3752cd95d\nUpdate date: 2026-02-15 00:00:00",
+        "dns_records": [
+          "MX alt2.aspmx.l.google.com",
+          "NS damien.ns.cloudflare.com",
+          "CAA comodoca.com",
+          "TXT stripe-verification=69131d5b2429f7fe11883a09623e792233fe624c0d427d54c07a43f2976c7b51",
+          "TXT configcat-domain-verification=08dd825d-72a5-435b-85da-ddf7144cecc5",
+          "CAA pki.goog;",
+          "A 104.18.28.31",
+          "TXT _globalsign-domain-verification=BJNOgPzo7QmBP23tIVupg6CxS5IFEob4ifXcC1AbN6",
+          "TXT _globalsign-domain-verification=O6O5-k_K4ZOO8b6dkuqEFeWlsgJT2T-J2uc8AlQ231",
+          "MX alt3.aspmx.l.google.com",
+          "CAA globalsign.com",
+          "TXT configcat-domain-verification=08d97e73-2be3-4dfc-8286-9b266c3e4105"
+>>>>>>> origin/main
         ],
         "https_subject": {
           "CN": "configcat.com"
@@ -3135,10 +3309,13 @@
           "value": "Clean"
         },
         {
+<<<<<<< HEAD
           "param": "Xcitium Verdict Cloud",
           "value": "Clean"
         },
         {
+=======
+>>>>>>> origin/main
           "param": "Yandex Safebrowsing",
           "value": "Clean"
         },
@@ -3275,6 +3452,13 @@
           "value": "Unrated"
         },
         {
+<<<<<<< HEAD
+=======
+          "param": "Xcitium Verdict Cloud",
+          "value": "Unrated"
+        },
+        {
+>>>>>>> origin/main
           "param": "ZeroFox",
           "value": "Unrated"
         },
@@ -3339,10 +3523,13 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
             "Bkav",
             "Clean"
           ],
           [
+=======
+>>>>>>> origin/main
             "Blueliv",
             "Clean"
           ],
@@ -3351,6 +3538,13 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
+=======
+            "Chong Lua Dao",
+            "Clean"
+          ],
+          [
+>>>>>>> origin/main
             "CINS Army",
             "Clean"
           ],
@@ -3559,11 +3753,19 @@
             "Unrated"
           ],
           [
+<<<<<<< HEAD
             "ChainPatrol",
             "Unrated"
           ],
           [
             "Chong Lua Dao",
+=======
+            "Bkav",
+            "Unrated"
+          ],
+          [
+            "ChainPatrol",
+>>>>>>> origin/main
             "Unrated"
           ],
           [
@@ -3678,6 +3880,7 @@
         },
         "categories": {},
         "popularity_ranks": [
+<<<<<<< HEAD
           "Majestic: 11180",
           "Statvoo: 99611",
           "Alexa: 99611",
@@ -3702,6 +3905,32 @@
           "AAAA 2600:1f16:1a4:a001::1f5",
           "A 15.197.167.90",
           "SOA dns1.p08.nsone.net"
+=======
+          "Majestic: 12397",
+          "Statvoo: 99611",
+          "Alexa: 99611",
+          "Cisco Umbrella: 906885",
+          "Cloudflare Radar: 200000"
+        ],
+        "creation_date": 1556585891,
+        "last_modification_date": 1786408084,
+        "last_analysis_date": 1786398984,
+        "registrar": "1API GmbH",
+        "whois": "Admin City: REDACTED\nAdmin Country: REDACTED\nAdmin Organization: REDACTED\nAdmin Postal Code: REDACTED\nAdmin State/Province: REDACTED\nCreation Date: 2019-04-30T00:58:11Z\nDNSSEC: unsigned\nDomain Name: opentelemetry.io\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nName Server: dns1.p01.nsone.net\nName Server: dns2.p01.nsone.net\nName Server: dns3.p01.nsone.net\nName Server: dns4.p01.nsone.net\nRegistrant City: 3495bcf1839c6374\nRegistrant Country: US\nRegistrant Email: fb6ff66ef97c0518s@\nRegistrant Fax Ext: 3495bcf1839c6374\nRegistrant Fax: 3495bcf1839c6374\nRegistrant Name: 3495bcf1839c6374\nRegistrant Organization: bfabf0ebbbee8245\nRegistrant Phone Ext: 3495bcf1839c6374\nRegistrant Phone: 3495bcf1839c6374\nRegistrant Postal Code: 3495bcf1839c6374\nRegistrant State/Province: b1952dfc047df18a\nRegistrant Street: 3495bcf1839c6374\nRegistrar Abuse Contact Email: abuse@1api.net\nRegistrar Abuse Contact Phone: +49.68949396850\nRegistrar IANA ID: 1387\nRegistrar URL: http://www.1api.net\nRegistrar WHOIS Server: whois.1api.net\nRegistrar: 1API GmbH\nRegistry Admin ID: REDACTED\nRegistry Domain ID: REDACTED\nRegistry Expiry Date: 2027-04-30T00:58:11Z\nRegistry Registrant ID: REDACTED\nRegistry Tech ID: REDACTED\nTech City: REDACTED\nTech Country: REDACTED\nTech Organization: REDACTED\nTech Postal Code: REDACTED\nTech State/Province: REDACTED\nUpdated Date: 2026-04-30T02:02:29Z",
+        "dns_records": [
+          "A 3.33.186.135",
+          "NS dns4.p08.nsone.net",
+          "A 15.197.167.90",
+          "CAA letsencrypt.org;accounturi=https://acme-v02.api.letsencrypt.org/acme/acct/2185112545",
+          "SOA dns1.p08.nsone.net",
+          "MX smtp.google.com",
+          "NS dns2.p08.nsone.net",
+          "NS dns3.p08.nsone.net",
+          "CAA pki.goog",
+          "AAAA 2600:1f16:1a4:a001::1f6",
+          "AAAA 2600:1f16:1a4:a001::1f5",
+          "MX jw7ysczcoch7xmigon2sjfi32oj5pgmrq6nmklkaiuyekef6dc6q.mx-verification.google.com"
+>>>>>>> origin/main
         ],
         "https_subject": {
           "CN": "opentelemetry.io"
@@ -3723,7 +3952,11 @@
       "redirect_chain": [
         "https://opentelemetry.io/"
       ],
+<<<<<<< HEAD
       "page_output": "title: OpenTelemetry. OpenTelemetry For AI agents: a documentation index is available at /llms.txt. This page has a Markdown version at /index.md. The OpenTelemetry Logo OpenTelemetry Docs Ecosystem Status Community Training Blog English EN বাংলা English Español Français 日本語 한국어 Polski Português Român",
+=======
+      "page_output": "title: OpenTelemetry. OpenTelemetry The OpenTelemetry Logo OpenTelemetry Docs Ecosystem Status Community Training Blog English EN বাংলা English Español Français 日本語 한국어 Polski Português Română Українська 中文 Light Dark Auto Ask AI (&amp;#x2318;-K)\" class=\"td-search__input form-control td-search-input\" ",
+>>>>>>> origin/main
       "parked_at": "регистратор: 1API GmbH",
       "final_url": "https://opentelemetry.io/",
       "http_status": 200,
@@ -3777,10 +4010,13 @@
           "value": "Clean"
         },
         {
+<<<<<<< HEAD
           "param": "Bkav",
           "value": "Clean"
         },
         {
+=======
+>>>>>>> origin/main
           "param": "Blueliv",
           "value": "Clean"
         },
@@ -3789,6 +4025,13 @@
           "value": "Clean"
         },
         {
+<<<<<<< HEAD
+=======
+          "param": "Chong Lua Dao",
+          "value": "Clean"
+        },
+        {
+>>>>>>> origin/main
           "param": "CINS Army",
           "value": "Clean"
         },
@@ -3997,11 +4240,19 @@
           "value": "Unrated"
         },
         {
+<<<<<<< HEAD
           "param": "ChainPatrol",
           "value": "Unrated"
         },
         {
           "param": "Chong Lua Dao",
+=======
+          "param": "Bkav",
+          "value": "Unrated"
+        },
+        {
+          "param": "ChainPatrol",
+>>>>>>> origin/main
           "value": "Unrated"
         },
         {
@@ -4114,7 +4365,11 @@
         },
         {
           "param": "Что выводит (кратко)",
+<<<<<<< HEAD
           "value": "title: OpenTelemetry. OpenTelemetry For AI agents: a documentation index is available at /llms.txt. This page has a Markdown version at /index.md. The OpenTelemetry Logo OpenTelemetry Docs Ecosystem Status Community Training Blog English EN বাংলা English Español Français 日本語 한국어 Polski Português Român"
+=======
+          "value": "title: OpenTelemetry. OpenTelemetry The OpenTelemetry Logo OpenTelemetry Docs Ecosystem Status Community Training Blog English EN বাংলা English Español Français 日本語 한국어 Polski Português Română Українська 中文 Light Dark Auto Ask AI (&amp;#x2318;-K)\" class=\"td-search__input form-control td-search-input\" "
+>>>>>>> origin/main
         },
         {
           "param": "Где припаркован",
@@ -4131,8 +4386,13 @@
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
+<<<<<<< HEAD
           "undetected": 34,
           "harmless": 57,
+=======
+          "undetected": 35,
+          "harmless": 56,
+>>>>>>> origin/main
           "timeout": 0
         },
         "vendor_rows": [
@@ -4177,10 +4437,13 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
             "Chong Lua Dao",
             "Clean"
           ],
           [
+=======
+>>>>>>> origin/main
             "CINS Army",
             "Clean"
           ],
@@ -4193,10 +4456,13 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
             "Criminal IP",
             "Clean"
           ],
           [
+=======
+>>>>>>> origin/main
             "CTX AI",
             "Clean"
           ],
@@ -4357,6 +4623,13 @@
             "Clean"
           ],
           [
+<<<<<<< HEAD
+=======
+            "Xcitium Verdict Cloud",
+            "Clean"
+          ],
+          [
+>>>>>>> origin/main
             "Yandex Safebrowsing",
             "Clean"
           ],
@@ -4397,10 +4670,24 @@
             "Unrated"
           ],
           [
+<<<<<<< HEAD
+=======
+            "Chong Lua Dao",
+            "Unrated"
+          ],
+          [
+>>>>>>> origin/main
             "Cluster25",
             "Unrated"
           ],
           [
+<<<<<<< HEAD
+=======
+            "Criminal IP",
+            "Unrated"
+          ],
+          [
+>>>>>>> origin/main
             "CSIS Security Group",
             "Unrated"
           ],
@@ -4493,10 +4780,13 @@
             "Unrated"
           ],
           [
+<<<<<<< HEAD
             "Xcitium Verdict Cloud",
             "Unrated"
           ],
           [
+=======
+>>>>>>> origin/main
             "ZeroFox",
             "Unrated"
           ]
@@ -4510,17 +4800,26 @@
           "BitDefender": "society",
           "Sophos": "information technology",
           "Forcepoint ThreatSeeker": "information technology",
+<<<<<<< HEAD
+=======
+          "Xcitium Verdict Cloud": "technical information",
+>>>>>>> origin/main
           "Google": "technology"
         },
         "popularity_ranks": [
           "Statvoo: 41453",
           "Alexa: 41453",
           "Cisco Umbrella: 893564",
+<<<<<<< HEAD
           "Majestic: 38310",
+=======
+          "Majestic: 39050",
+>>>>>>> origin/main
           "Quantcast: 257062",
           "Cloudflare Radar: 1000000"
         ],
         "creation_date": 1113478631,
+<<<<<<< HEAD
         "last_modification_date": 1788191344,
         "last_analysis_date": 1788052773,
         "registrar": "NAMECHEAP INC",
@@ -4531,6 +4830,18 @@
           "AAAA 2a04:c44:e00:9d02:4c5:dcff:fe00:29f",
           "NS fran1.slf4j.org",
           "SOA fran1.slf4j.org"
+=======
+        "last_modification_date": 1786383386,
+        "last_analysis_date": 1786374287,
+        "registrar": "NAMECHEAP INC",
+        "whois": "Admin City: Reykjavik\nAdmin Country: IS\nAdmin Email: daf001ca31d580a6s@withheldforprivacy.com\nAdmin Organization: Privacy service provided by Withheld for Privacy ehf\nAdmin Postal Code: 101\nAdmin State/Province: Capital Region\nCreation Date: 2005-04-14T11:37:11.57Z\nCreation Date: 2005-04-14T11:37:11Z\nDNSSEC: unsigned\nDomain Name: slf4j.org\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain name: slf4j.org\nName Server: exo1.qos.ch\nName Server: fran1.qos.ch\nRegistrant City: ddbf76e4e8cee320\nRegistrant Country: IS\nRegistrant Email: daf001ca31d580a6s@withheldforprivacy.com\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 3432650ec337c945\nRegistrant Name: 37bfbc24cafea5d2\nRegistrant Organization: 4b7a0912c26a13e2\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: 1c9a7bcdeaf95e9f\nRegistrant Postal Code: f206c9d9737ad45d\nRegistrant State/Province: 3e0204199d8ebf9c\nRegistrant Street: c6523241936df1ba\nRegistrar Abuse Contact Email: abuse@namecheap.com\nRegistrar Abuse Contact Phone: +1.9854014545\nRegistrar IANA ID: 1068\nRegistrar Registration Expiration Date: 2029-04-14T11:37:11.57Z\nRegistrar URL: http://www.namecheap.com\nRegistrar WHOIS Server: whois.namecheap.com\nRegistrar: NAMECHEAP INC\nRegistrar: NameCheap, Inc.\nRegistry Domain ID: 1b8de47f108248e2b95d784b23ff955c-LROR\nRegistry Domain ID: REDACTED\nRegistry Expiry Date: 2029-04-14T11:37:11Z\nTech City: Reykjavik\nTech Country: IS\nTech Email: daf001ca31d580a6s@withheldforprivacy.com\nTech Organization: Privacy service provided by Withheld for Privacy ehf\nTech Postal Code: 101\nTech State/Province: Capital Region\nUpdated Date: 2020-03-09T06:55:30.07Z\nUpdated Date: 2025-08-27T13:53:24Z",
+        "dns_records": [
+          "NS exo1.slf4j.org",
+          "NS fran1.slf4j.org",
+          "SOA fran1.slf4j.org",
+          "A 159.100.250.151",
+          "AAAA 2a04:c44:e00:9d02:4c5:dcff:fe00:29f"
+>>>>>>> origin/main
         ],
         "https_subject": {
           "CN": "www.slf4j.org"
@@ -4614,10 +4925,13 @@
           "value": "Clean"
         },
         {
+<<<<<<< HEAD
           "param": "Chong Lua Dao",
           "value": "Clean"
         },
         {
+=======
+>>>>>>> origin/main
           "param": "CINS Army",
           "value": "Clean"
         },
@@ -4630,10 +4944,13 @@
           "value": "Clean"
         },
         {
+<<<<<<< HEAD
           "param": "Criminal IP",
           "value": "Clean"
         },
         {
+=======
+>>>>>>> origin/main
           "param": "CTX AI",
           "value": "Clean"
         },
@@ -4794,6 +5111,13 @@
           "value": "Clean"
         },
         {
+<<<<<<< HEAD
+=======
+          "param": "Xcitium Verdict Cloud",
+          "value": "Clean"
+        },
+        {
+>>>>>>> origin/main
           "param": "Yandex Safebrowsing",
           "value": "Clean"
         },
@@ -4834,10 +5158,24 @@
           "value": "Unrated"
         },
         {
+<<<<<<< HEAD
+=======
+          "param": "Chong Lua Dao",
+          "value": "Unrated"
+        },
+        {
+>>>>>>> origin/main
           "param": "Cluster25",
           "value": "Unrated"
         },
         {
+<<<<<<< HEAD
+=======
+          "param": "Criminal IP",
+          "value": "Unrated"
+        },
+        {
+>>>>>>> origin/main
           "param": "CSIS Security Group",
           "value": "Unrated"
         },
@@ -4930,10 +5268,13 @@
           "value": "Unrated"
         },
         {
+<<<<<<< HEAD
           "param": "Xcitium Verdict Cloud",
           "value": "Unrated"
         },
         {
+=======
+>>>>>>> origin/main
           "param": "ZeroFox",
           "value": "Unrated"
         },

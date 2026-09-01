@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "all_custom_domains": [
     "amazon.ae",
     "amazon.ca",
@@ -6750,3 +6751,8 @@
   "count": 8,
   "vt_configured": true
 }
+=======
+  "domains": [],
+  "notes": "No custom/unknown suspicious domains. Amazon regional hosts and known SDK domains excluded per report rules."
+}
+>>>>>>> origin/main

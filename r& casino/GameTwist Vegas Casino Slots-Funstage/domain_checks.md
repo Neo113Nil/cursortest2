@@ -419,6 +419,7 @@
 | Куда редиректит | https://at-freespins-v1.greentube.com/docs |
 | Что выводит (кратко) | Status Code: 404; Not Found |
 | Где припаркован | регистратор: Ascio Technologies, Inc. Danmark - Filial af Ascio technologies, Inc. USA |
+<<<<<<< HEAD
 
 ## Проверка домена: beta-app.gametwist.com
 
@@ -839,3 +840,5 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | AccessDenied Access Denied 9XCB3SXA488Y9Y8P n3YUa+onSCK+iKJ737iTId2Q7TOBsC2vlKiuFYodbYRDWhIVmxb9pOaiDmEwzXcm/u6LZq0F7Q58SqxIHYa7qz2AoaEcGUng |
 | Где припаркован | нет данных |
+=======
+>>>>>>> origin/main

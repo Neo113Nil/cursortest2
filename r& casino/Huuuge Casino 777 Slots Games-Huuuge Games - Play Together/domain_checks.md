@@ -102,5 +102,9 @@
 | Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | https://developer.mozilla.org/en-US/ |
+<<<<<<< HEAD
 | Что выводит (кратко) | title: MDN Web Docs. MDN Web Docs Skip to main content Skip to search MDN HTML HTML: Markup language HTML reference Elements Global attributes Attributes See allâ¦ HTML guides Responsive images HTML cheatsheet Date &amp; time formats See allâ¦ Markup languages SVG MathML XML CSS CSS: Styling langua |
+=======
+| Что выводит (кратко) | title: MDN Web Docs. MDN Web Docs Skip to main content Skip to search MDN HTML HTML: Markup language HTML reference Elements Global attributes Attributes See allâ¦ HTML guides Responsive images HTML cheatsheet Date &amp; time formats See allâ¦ Markup languages SVG MathML XML CSS CSS: Styling langua |
+>>>>>>> origin/main
 | Где припаркован | регистратор: MarkMonitor Inc. |

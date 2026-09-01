@@ -1,5 +1,6 @@
 # Проверка подозрительных доменов
 
+<<<<<<< HEAD
 ## Проверка домена: admarvel.com
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
@@ -315,6 +316,8 @@
 | Что выводит (кратко) | title: BidMachine. Fastest Growing Mobile Ad Exchange. BidMachine. Fastest Growing Mobile Ad Exchange Solutions For Non-Gaming Publishers For Gaming Publishers For DSPs &amp; Agencies For Marketers Products SDK Monetization Ad Mediation User Acquisition Ad Exchange Private MarketPlace DIRECT Placements Resources Blog Media Kit Newsle |
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
 
+=======
+>>>>>>> origin/main
 ## Проверка домена: bingoskillz.com
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
@@ -420,6 +423,7 @@
 | Что выводит (кратко) | title: My Blog &#8211; My WordPress Blog. My Blog &#8211; My WordPress Blog My Blog Sample Page Hello world! October 5, 2024 Uncategorized Welcome to WordPress. This is your first post. Edit or delete it, then start writing! My Blog Instagram Facebook Twitter |
 | Где припаркован | регистратор: NAMECHEAP INC |
 
+<<<<<<< HEAD
 ## Проверка домена: bm-ads.io
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
@@ -839,3 +843,5 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: SafeDK Edge Server. SafeDK Edge Server Not Found Resource identified by path '/', does not exist. SafeDK Edge Server |
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
+=======
+>>>>>>> origin/main

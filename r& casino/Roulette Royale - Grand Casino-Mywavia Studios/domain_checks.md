@@ -105,6 +105,7 @@
 | Что выводит (кратко) | title: 404 Not Found. 404 Not Found Not Found The requested URL /roul- was not found on this server. Apache/2.4.18 (Ubuntu) Server at adgen-self.mywavia.com Port 443 |
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
 
+<<<<<<< HEAD
 ## Проверка домена: auroraoss.com
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
@@ -210,6 +211,8 @@
 | Что выводит (кратко) | title: Aurora. Aurora |
 | Где припаркован | регистратор: NAMECHEAP INC |
 
+=======
+>>>>>>> origin/main
 ## Проверка домена: classspace.in
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
@@ -419,6 +422,7 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Index of /. Index of / Index of / Name Last modified Size Description US_isocc.txt 2017-06-11 12:39 2 &nbsp; html/ 2017-06-10 17:52 - &nbsp; roul_tournaments.txt 2023-07-13 06:13 503 &nbsp; roul_tournaments.txt.bak 2023-03-05 07:08 739 &nbsp; roul_tournaments_bak.txt 2017-06-17 06:37 869 &nb |
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
+<<<<<<< HEAD
 
 ## Проверка домена: cus.adwhirl.com
 
@@ -839,3 +843,5 @@
 | Куда редиректит | нет (DNS не резолвится) |
 | Что выводит (кратко) | нет (DNS не резолвится) |
 | Где припаркован | регистратор: MarkMonitor Inc. |
+=======
+>>>>>>> origin/main

@@ -274,7 +274,10 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+<<<<<<< HEAD
 | Xcitium Verdict Cloud | Clean |
+=======
+>>>>>>> origin/main
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -310,6 +313,10 @@
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
 | VIPRE | Unrated |
+<<<<<<< HEAD
+=======
+| Xcitium Verdict Cloud | Unrated |
+>>>>>>> origin/main
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: 404 Not Found. 404 Not Found 404 Not Found nginx |
@@ -339,7 +346,10 @@
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
+<<<<<<< HEAD
 | Criminal IP | Clean |
+=======
+>>>>>>> origin/main
 | CTX AI | Clean |
 | Cyble | Clean |
 | CyRadar | Clean |
@@ -380,6 +390,10 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
+<<<<<<< HEAD
+=======
+| Xcitium Verdict Cloud | Clean |
+>>>>>>> origin/main
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -391,6 +405,10 @@
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
 | Cluster25 | Unrated |
+<<<<<<< HEAD
+=======
+| Criminal IP | Unrated |
+>>>>>>> origin/main
 | CSIS Security Group | Unrated |
 | Cyan | Unrated |
 | DNS8 | Unrated |
@@ -414,7 +432,10 @@
 | SOCRadar | Unrated |
 | URLQuery | Unrated |
 | VIPRE | Unrated |
+<<<<<<< HEAD
 | Xcitium Verdict Cloud | Unrated |
+=======
+>>>>>>> origin/main
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Aurora. Aurora |
@@ -441,7 +462,10 @@
 | Blueliv | Clean |
 | Certego | Clean |
 | ChainPatrol | Clean |
+<<<<<<< HEAD
 | Chong Lua Dao | Clean |
+=======
+>>>>>>> origin/main
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
@@ -481,12 +505,20 @@
 | Sucuri SiteCheck | Clean |
 | ThreatHive | Clean |
 | URLhaus | Clean |
+<<<<<<< HEAD
 | Viettel Threat Intelligence | Clean |
 | VIPRE | Clean |
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
 | Xcitium Verdict Cloud | Clean |
+=======
+| URLQuery | Clean |
+| Viettel Threat Intelligence | Clean |
+| ViriBack | Clean |
+| VX Vault | Clean |
+| Webroot | Clean |
+>>>>>>> origin/main
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -496,6 +528,10 @@
 | Axur | Unrated |
 | Bfore.Ai PreCrime | Unrated |
 | Bkav | Unrated |
+<<<<<<< HEAD
+=======
+| Chong Lua Dao | Unrated |
+>>>>>>> origin/main
 | Cluster25 | Unrated |
 | Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
@@ -519,11 +555,17 @@
 | SecureBrain | Unrated |
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
+<<<<<<< HEAD
 | URLQuery | Unrated |
+=======
+| VIPRE | Unrated |
+| Xcitium Verdict Cloud | Unrated |
+>>>>>>> origin/main
 | ZeroFox | Unrated |
 | Куда редиректит | https://www.braze.com/ |
 | Что выводит (кратко) | title: Braze Customer Engagement Platform. Braze Customer Engagement Platform Why Braze? Product Back The Braze Platform All your data, channels, and orchestration needs in one place View the platform Pricing BrazeAl™ UPDATES Automate, learn, and personalize with AI Braze Data Platform Unify, activate, and distribute your |
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
+<<<<<<< HEAD
 
 ## Проверка домена: bugsnag.com
 
@@ -839,3 +881,5 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | AccessDenied Access denied. Anonymous caller does not have storage.objects.list access to the Google Cloud Storage bucket. Permission 'storage.objects.list' denied on resource '//storage.googleapis.com/projects/_/buckets/gcs-exchange-public-useast1-prod' (or it may not exist). |
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
+=======
+>>>>>>> origin/main

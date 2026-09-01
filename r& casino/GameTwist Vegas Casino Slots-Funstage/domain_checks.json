@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "all_custom_domains": [
     "130610.measurementapi.com",
     "akm.ssacdn.com",
@@ -6640,4 +6641,44 @@
   ],
   "count": 8,
   "vt_configured": true
+=======
+  "domains": [
+    {
+      "domain": "130610.measurementapi.com",
+      "detections": "0/91",
+      "malicious": 0,
+      "suspicious": 0,
+      "redirects_to": "нет (без редиректа)",
+      "content_brief": "{ \"error\": { \"message\": \"This API has been deprecated. Please use the Branch services. https://help.branch.io/developers-hub/docs/tracking-commerce-content-lifecycle-and-custom-events\", \"code\": 403 } }",
+      "parked_at": "регистратор: Amazon Registrar, Inc."
+    },
+    {
+      "domain": "akm.ssacdn.com",
+      "detections": "0/91",
+      "malicious": 0,
+      "suspicious": 0,
+      "redirects_to": "нет (DNS не резолвится)",
+      "content_brief": "нет (DNS не резолвится)",
+      "parked_at": "регистратор: Amazon Registrar, Inc."
+    },
+    {
+      "domain": "app.adjust.io",
+      "detections": "0/91",
+      "malicious": 0,
+      "suspicious": 0,
+      "redirects_to": "нет (без редиректа)",
+      "content_brief": "Url not found",
+      "parked_at": "регистратор: united-domains GmbH"
+    },
+    {
+      "domain": "at-freespins-v1.greentube.com",
+      "detections": "0/91",
+      "malicious": 0,
+      "suspicious": 0,
+      "redirects_to": "https://at-freespins-v1.greentube.com/docs",
+      "content_brief": "Status Code: 404; Not Found",
+      "parked_at": "регистратор: Ascio Technologies, Inc. Danmark - Filial af Ascio technologies, Inc. USA"
+    }
+  ]
+>>>>>>> origin/main
 }

@@ -102,7 +102,11 @@
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
+<<<<<<< HEAD
 | Что выводит (кратко) | {"details":"Provide API key in BoostOps-Project-Key, X-Project-Key, X-API-Key header or Authorization: Bearer \u003ckey\u003e","error":"Missing API key"} |
+=======
+| Что выводит (кратко) | {"details":"Provide API key in BoostOps-Project-Key, X-Project-Key, X-API-Key header or Authorization: Bearer <key>","error":"Missing API key"} |
+>>>>>>> origin/main
 | Где припаркован | регистратор: NAMECHEAP INC |
 
 ## Проверка домена: aomedia.org
@@ -443,7 +447,10 @@
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
+<<<<<<< HEAD
 | Criminal IP | Clean |
+=======
+>>>>>>> origin/main
 | CTX AI | Clean |
 | Cyble | Clean |
 | CyRadar | Clean |
@@ -497,6 +504,10 @@
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
 | Cluster25 | Unrated |
+<<<<<<< HEAD
+=======
+| Criminal IP | Unrated |
+>>>>>>> origin/main
 | CSIS Security Group | Unrated |
 | Cyan | Unrated |
 | DNS8 | Unrated |
@@ -524,6 +535,7 @@
 | Куда редиректит | https://chromium.googlesource.com/crashpad/crashpad/+/main/README.md |
 | Что выводит (кратко) | title: Crashpad - Crashpad. Crashpad - Crashpad Crashpad Home Developing Interface Docs Man Pages Source Code Crashpad Crashpad is a crash-reporting system. Documentation Project status Developing Crashpad : instructions for getting the source code, building, testing, and contributing to the project. Crashp |
 | Где припаркован | регистратор: MarkMonitor Inc. |
+<<<<<<< HEAD
 
 ## Проверка домена: fb.gg
 
@@ -839,3 +851,5 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Login - Sign in to Yahoo. Login - Sign in to Yahoo |
 | Где припаркован | регистратор: MarkMonitor Inc. |
+=======
+>>>>>>> origin/main

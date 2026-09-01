@@ -417,6 +417,7 @@
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
+<<<<<<< HEAD
 | Что выводит (кратко) | title: James Newton-King. James Newton-King James Newton-King JamesNK Blog Bio Follow JamesNK on Twitter Go to JamesNK's GitHub repo Jan 2, 2026 Astro I’ve updated this blog to use Astro , a Node.js-based static site generator. Hosting has also changed to GitHub Pages. Benefits The blog no longer runs on  |
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
 
@@ -629,3 +630,7 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: 403 Forbidden. 403 Forbidden 403 Forbidden nginx/1.18.0 (Ubuntu) |
 | Где припаркован | регистратор: EXOT-0004 |
+=======
+| Что выводит (кратко) | title: James Newton-King. James Newton-King James Newton-King JamesNK Blog Bio Follow JamesNK on Twitter Go to JamesNK's GitHub repo Jan 2, 2026 Astro I’ve updated this blog to use Astro , a Node.js-based static site generator. Hosting has also changed to GitHub Pages. Benefits The blog no longer |
+| Где припаркован | нет данных |
+>>>>>>> origin/main

@@ -419,6 +419,7 @@
 | Куда редиректит | нет (DNS не резолвится) |
 | Что выводит (кратко) | нет (DNS не резолвится) |
 | Где припаркован | регистратор: MarkMonitor Inc. |
+<<<<<<< HEAD
 
 ## Проверка домена: capacitorjs.com
 
@@ -839,3 +840,5 @@
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: Our.com - Our friends, our games, our world. Our.com - Our friends, our games, our world our.com Login Games Our Bingo Our Slots Play all Our games for free Register Login with What's New MEDUSA HUNT! THE SNAKE CHARMER! Arrives LONGMU AND THE DRAGONS! New release! MILLION ZEUS! User / Email Password Remember session Login F |
 | Где припаркован | регистратор: ENOM, INC. |
+=======
+>>>>>>> origin/main

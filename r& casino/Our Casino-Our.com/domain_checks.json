@@ -3,6 +3,7 @@
     "angular.dev",
     "angular.io",
     "aomedia.org",
+<<<<<<< HEAD
     "appassets.androidplatform.net",
     "capacitorjs.com",
     "com.chrome.dev",
@@ -28,6 +29,9 @@
     "tournament.buttons.top",
     "tournament.dialogs.results.top",
     "validator.iaptic.com"
+=======
+    "appassets.androidplatform.net"
+>>>>>>> origin/main
   ],
   "checked": [
     {
@@ -36,6 +40,7 @@
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/angular.dev",
         "detections": "0/91 (malicious=0, suspicious=0)",
+<<<<<<< HEAD
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
@@ -43,6 +48,8 @@
           "harmless": 58,
           "timeout": 0
         },
+=======
+>>>>>>> origin/main
         "vendor_rows": [
           [
             "Abusix",
@@ -408,6 +415,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -857,6 +865,13 @@
           "value": "нет данных"
         }
       ]
+=======
+        ]
+      },
+      "redirect": "нет (без редиректа)",
+      "page_content_summary": "title: Home • Angular. Home • Angular Skip to main content menu close v22 K Docs Tutorials Playground Reference more_horiz Angular v22 is here! ⚡ Explore what's new search Productivity Meets scalability The framework for building scalable web apps with confidence Get Started Features that actually help",
+      "parking": "нет данных"
+>>>>>>> origin/main
     },
     {
       "domain": "angular.io",
@@ -864,6 +879,7 @@
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/angular.io",
         "detections": "0/91 (malicious=0, suspicious=0)",
+<<<<<<< HEAD
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
@@ -871,6 +887,8 @@
           "harmless": 60,
           "timeout": 0
         },
+=======
+>>>>>>> origin/main
         "vendor_rows": [
           [
             "Abusix",
@@ -1236,6 +1254,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": -41,
         "community_votes": {
@@ -1690,6 +1709,13 @@
           "value": "регистратор: MarkMonitor Inc."
         }
       ]
+=======
+        ]
+      },
+      "redirect": "https://angular.dev/",
+      "page_content_summary": "title: Home • Angular. Home • Angular Skip to main content menu close v22 K Docs Tutorials Playground Reference more_horiz Angular v22 is here! ⚡ Explore what's new search Productivity Meets scalability The framework for building scalable web apps with confidence Get Started Features that actually help",
+      "parking": "регистратор: MarkMonitor Inc."
+>>>>>>> origin/main
     },
     {
       "domain": "aomedia.org",
@@ -1697,6 +1723,7 @@
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/aomedia.org",
         "detections": "0/91 (malicious=0, suspicious=0)",
+<<<<<<< HEAD
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
@@ -1704,6 +1731,8 @@
           "harmless": 57,
           "timeout": 0
         },
+=======
+>>>>>>> origin/main
         "vendor_rows": [
           [
             "Abusix",
@@ -2069,6 +2098,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -2520,6 +2550,13 @@
           "value": "регистратор: Squarespace Domains II LLC"
         }
       ]
+=======
+        ]
+      },
+      "redirect": "нет (без редиректа)",
+      "page_content_summary": "title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story FAQ Members Organizat",
+      "parking": "регистратор: Squarespace Domains II LLC"
+>>>>>>> origin/main
     },
     {
       "domain": "appassets.androidplatform.net",
@@ -2527,6 +2564,7 @@
         "ok": true,
         "vt_url": "https://www.virustotal.com/gui/domain/appassets.androidplatform.net",
         "detections": "0/91 (malicious=0, suspicious=0)",
+<<<<<<< HEAD
         "last_analysis_stats": {
           "malicious": 0,
           "suspicious": 0,
@@ -2534,6 +2572,8 @@
           "harmless": 55,
           "timeout": 0
         },
+=======
+>>>>>>> origin/main
         "vendor_rows": [
           [
             "Abusix",
@@ -2899,6 +2939,7 @@
             "ZeroFox",
             "Unrated"
           ]
+<<<<<<< HEAD
         ],
         "reputation": 0,
         "community_votes": {
@@ -6607,4 +6648,13 @@
   ],
   "count": 8,
   "vt_configured": true
+=======
+        ]
+      },
+      "redirect": "нет (DNS не резолвится)",
+      "page_content_summary": "нет (DNS не резолвится)",
+      "parking": "регистратор: MarkMonitor Inc."
+    }
+  ]
+>>>>>>> origin/main
 }
