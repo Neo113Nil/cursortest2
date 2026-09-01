@@ -1,0 +1,61 @@
+{
+  "app_id": "de.merkur24.universalapp",
+  "title": "Merkur24 – Slots & Casino",
+  "developer": "Whow Games GmbH",
+  "url": "https://play.google.com/store/apps/details?id=de.merkur24.universalapp&hl=en&gl=us",
+  "version": "6.5.37",
+  "version_code": "5002785",
+  "summary": "Merkur24 – Slots & Casino (APK label: Merkur24) — Unity/IL2CPP social-casino от Whow Games GmbH; бэкенд mapi.jackpot.de / mapi.spielbrause.net / auth.pro.youre.id / www.jackpot.de; реклама AdMob + AppLovin/ironSource/Fyber/Vungle/Moloco/Pangle/Digital Turbine/Facebook AN; аналитика Firebase/AppsFlyer/Braze/Bugsnag/Smartlook/Facebook/OneTrust; Vuplex WebView + Custom Tabs; клоаки нет.",
+  "keyword": "r& casino",
+  "folder": "Merkur24 – Slots & Casino-Whow Games GmbH",
+  "path": "r& casino/Merkur24 – Slots & Casino-Whow Games GmbH",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "apk_label": "Merkur24",
+  "cloaking": "нет",
+  "files": [
+    "de.merkur24.universalapp.xapk",
+    "apk/de.merkur24.universalapp.apk",
+    "apk/config.arm64_v8a.apk"
+  ],
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      {"domain": "akm.ssacdn.com"},
+      {"domain": "aomedia.org"},
+      {"domain": "api16-access-ttp.tiktokpangle.us"},
+      {"domain": "auroraoss.com"},
+      {"domain": "braze.com"}
+    ],
+    "ads": [
+      "AdMob",
+      "AppLovin",
+      "ironSource",
+      "Fyber",
+      "Vungle",
+      "Moloco",
+      "Pangle",
+      "Digital Turbine",
+      "Facebook Audience Network"
+    ],
+    "analytics": [
+      "Firebase Analytics",
+      "Firebase Crashlytics",
+      "Firebase Performance",
+      "Firebase Remote Config",
+      "AppsFlyer",
+      "Braze",
+      "Bugsnag",
+      "Smartlook",
+      "Facebook App Events",
+      "OneTrust"
+    ]
+  },
+  "minSdk": 25,
+  "targetSdk": 36,
+  "agp": "8.10.0",
+  "kotlin": "да 2.2.0",
+  "webview": true,
+  "custom_tabs": true,
+  "analysis_note": "Deep re-scan 2026-09-01: entry BrazeUnityPlayerActivity → Unity/IL2CPP → Whow MAPI (mapi.jackpot.de / mapi.spielbrause.net) + auth.pro.youre.id; Vuplex/UniWebView/Custom Tabs for product WebView/ads/consent; no silent gate→offer fork; cloaking=нет."
+}
