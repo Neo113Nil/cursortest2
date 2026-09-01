@@ -1,0 +1,54 @@
+{
+  "app_id": "com.diamondlife.slots.vegas.free",
+  "title": "Lotsa Slots - Casino Games",
+  "developer": "SpinX Games Limited",
+  "score": 4.8349857,
+  "icon": "/static/app-icons/com_diamondlife_slots_vegas_free.png",
+  "url": "https://play.google.com/store/apps/details?id=com.diamondlife.slots.vegas.free&hl=en&gl=us",
+  "keyword": "R& casino",
+  "country": "Germany",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260901_163528_Germany_R& casino_search",
+  "search_title": "Lotsa Slots Casino Spiel",
+  "search_developer": "SpinX Games Limited",
+  "rank": 10,
+  "developer_id": "5793980904747267349",
+  "released": "Oct 22, 2017",
+  "updated": "2026-08-13",
+  "version": "4.91",
+  "summary": "Hit jackpot in Lotsa Slots Online Casino, play slots games with lots surprise!",
+  "folder": "Lotsa Slots - Casino Games-SpinX Games Limited",
+  "path": "r& casino/Lotsa Slots - Casino Games-SpinX Games Limited",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.diamondlife.slots.vegas.free-536-asset.apk",
+    "com.diamondlife.slots.vegas.free-536-config.arm64_v8a.apk",
+    "com.diamondlife.slots.vegas.free-536-config.en.apk",
+    "com.diamondlife.slots.vegas.free-536-config.xxhdpi.apk",
+    "com.diamondlife.slots.vegas.free-536.apk"
+  ],
+  "target": "/root/play-collector/загрузки/r& casino/Lotsa Slots - Casino Games-SpinX Games Limited",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.diamondlife.slots.vegas.free ─╮\n│ Lotsa Slots - Casino Games         │\n│ 4.91  (vc 536)                     │\n╰────────────────────────────────────╯\n\nDownloading 5 files  (340.6 MB)\n  com.diamondlife.slots.vegas.free-536.apk                  ━━━ 100% 19… 8… 0:0…\n                                                                     MB  M…     \n  com.diamondlife.slots.vegas.free-536-config.arm64_v8a.apk ━━━ 100% 7.… 7… 0:0…\n                                                                     MB  M…     \n  com.diamondlife.slots.vegas.free-536-config.en.apk        ━━━ 100% 61… ?  0:0…\n                                                                     kB         \n  com.diamondlife.slots.vegas.free-536-config.xxhdpi.apk    ━━━ 100% 20… 2… 0:0…\n                                                                     kB  M…     \n  com.diamondlife.slots.vegas.free-536-asset.apk            ━━━ 100% 15… 1… 0:0…\n                                                                     MB  M…     \n\n                            Downloaded files                            \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                      ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.diamondlife.slots.vegas.free-536.apk                  │ 184.6 MB │\n│ com.diamondlife.slots.vegas.free-536-config.arm64_v8a.apk │   7.3 MB │\n│ com.diamondlife.slots.vegas.free-536-config.en.apk        │  60.4 KB │\n│ com.diamondlife.slots.vegas.free-536-config.xxhdpi.apk    │ 203.5 KB │\n│ com.diamondlife.slots.vegas.free-536-asset.apk            │ 184.6 MB │\n└───────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.diamondlife.slots.vegas.free ─╮\n│ Lotsa Slots - Casino Games         │\n│ 4.91  (vc 536)                     │\n╰────────────────────────────────────╯\n\nDownloading 5 files  (340.6 MB)\n  com.diamondlife.slots.vegas.free-536.apk                  ━━━ 100% 19… 8… 0:0…\n                                                                     MB  M…     \n  com.diamondlife.slots.vegas.free-536-config.arm64_v8a.apk ━━━ 100% 7.… 7… 0:0…\n                                                                     MB  M…     \n  com.diamondlife.slots.vegas.free-536-config.en.apk        ━━━ 100% 61… ?  0:0…\n                                                                     kB         \n  com.diamondlife.slots.vegas.free-536-config.xxhdpi.apk    ━━━ 100% 20… 2… 0:0…\n                                                                     kB  M…     \n  com.diamondlife.slots.vegas.free-536-asset.apk            ━━━ 100% 15… 1… 0:0…\n                                                                     MB  M…     \n\n                            Downloaded files                            \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                      ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.diamondlife.slots.vegas.free-536.apk                  │ 184.6 MB │\n│ com.diamondlife.slots.vegas.free-536-config.arm64_v8a.apk │   7.3 MB │\n│ com.diamondlife.slots.vegas.free-536-config.en.apk        │  60.4 KB │\n│ com.diamondlife.slots.vegas.free-536-config.xxhdpi.apk    │ 203.5 KB │\n│ com.diamondlife.slots.vegas.free-536-asset.apk            │ 184.6 MB │\n└───────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}

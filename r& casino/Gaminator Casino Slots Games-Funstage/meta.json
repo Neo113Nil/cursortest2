@@ -1,0 +1,54 @@
+{
+  "app_id": "com.platogo.gmp",
+  "title": "Gaminator Casino Slots Games",
+  "developer": "Funstage",
+  "score": 4.59,
+  "icon": "/static/app-icons/com_platogo_gmp.png",
+  "url": "https://play.google.com/store/apps/details?id=com.platogo.gmp&hl=en&gl=us",
+  "keyword": "R& casino",
+  "country": "Germany",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260901_163528_Germany_R& casino_search",
+  "search_title": "Gaminator Casino Slots Games",
+  "search_developer": "Funstage",
+  "rank": 15,
+  "developer_id": "8128532516213169694",
+  "released": "Mar 25, 2019",
+  "updated": "2026-08-25",
+  "version": "4.23.0",
+  "summary": "Vegas-style casino slots - Spin reels, enjoy games, and 777 jackpots fun",
+  "folder": "Gaminator Casino Slots Games-Funstage",
+  "path": "r& casino/Gaminator Casino Slots Games-Funstage",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.platogo.gmp-424010-asset.apk",
+    "com.platogo.gmp-424010-config.arm64_v8a.apk",
+    "com.platogo.gmp-424010-config.en.apk",
+    "com.platogo.gmp-424010-config.xxhdpi.apk",
+    "com.platogo.gmp-424010.apk"
+  ],
+  "target": "/root/play-collector/загрузки/r& casino/Gaminator Casino Slots Games-Funstage",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭────── com.platogo.gmp ───────╮\n│ Gaminator Casino Slots Games │\n│ 4.24.1  (vc 424010)          │\n╰──────────────────────────────╯\n\nDownloading 5 files  (116.9 MB)\n  com.platogo.gmp-424010.apk                  ━━━━━━ 100% 66.0/6… 20.8   0:00:00\n                                                          MB      MB/s          \n  com.platogo.gmp-424010-config.arm64_v8a.apk ━━━━━━ 100% 3.0/3.0 12.5   0:00:00\n                                                          MB      MB/s          \n  com.platogo.gmp-424010-config.en.apk        ━━━━━━ 100% 53.7/5… ?      0:00:00\n                                                          kB                    \n  com.platogo.gmp-424010-config.xxhdpi.apk    ━━━━━━ 100% 574.7/… 5.7    0:00:00\n                                                          kB      MB/s          \n  com.platogo.gmp-424010-asset.apk            ━━━━━━ 100% 52.9/5… 10.7   0:00:00\n                                                          MB      MB/s          \n\n                     Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                        ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.platogo.gmp-424010.apk                  │  63.0 MB │\n│ com.platogo.gmp-424010-config.arm64_v8a.apk │   2.9 MB │\n│ com.platogo.gmp-424010-config.en.apk        │  52.4 KB │\n│ com.platogo.gmp-424010-config.xxhdpi.apk    │ 561.2 KB │\n│ com.platogo.gmp-424010-asset.apk            │  63.0 MB │\n└─────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭────── com.platogo.gmp ───────╮\n│ Gaminator Casino Slots Games │\n│ 4.24.1  (vc 424010)          │\n╰──────────────────────────────╯\n\nDownloading 5 files  (116.9 MB)\n  com.platogo.gmp-424010.apk                  ━━━━━━ 100% 66.0/6… 20.8   0:00:00\n                                                          MB      MB/s          \n  com.platogo.gmp-424010-config.arm64_v8a.apk ━━━━━━ 100% 3.0/3.0 12.5   0:00:00\n                                                          MB      MB/s          \n  com.platogo.gmp-424010-config.en.apk        ━━━━━━ 100% 53.7/5… ?      0:00:00\n                                                          kB                    \n  com.platogo.gmp-424010-config.xxhdpi.apk    ━━━━━━ 100% 574.7/… 5.7    0:00:00\n                                                          kB      MB/s          \n  com.platogo.gmp-424010-asset.apk            ━━━━━━ 100% 52.9/5… 10.7   0:00:00\n                                                          MB      MB/s          \n\n                     Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                        ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.platogo.gmp-424010.apk                  │  63.0 MB │\n│ com.platogo.gmp-424010-config.arm64_v8a.apk │   2.9 MB │\n│ com.platogo.gmp-424010-config.en.apk        │  52.4 KB │\n│ com.platogo.gmp-424010-config.xxhdpi.apk    │ 561.2 KB │\n│ com.platogo.gmp-424010-asset.apk            │  63.0 MB │\n└─────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}

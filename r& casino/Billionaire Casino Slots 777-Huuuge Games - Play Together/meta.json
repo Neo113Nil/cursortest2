@@ -2,18 +2,18 @@
   "app_id": "com.huuuge.casino.texas",
   "title": "Billionaire Casino Slots 777",
   "developer": "Huuuge Games - Play Together",
-  "score": 4.599724,
-  "icon": "https://play-lh.googleusercontent.com/qQtXm0MkyLjGXxXTrGxDPl3ynP7euLwwnIRjSoKx-BX8t-_ZAcMn2YBUfpZ9HVNOqFAK_o6pySgmIWdjTb1h",
+  "score": 4.598817,
+  "icon": "/static/app-icons/com_huuuge_casino_texas.png",
   "url": "https://play.google.com/store/apps/details?id=com.huuuge.casino.texas&hl=en&gl=us",
   "keyword": "R& casino",
   "country": "Germany",
-  "source": "",
+  "source": "gplaydl",
   "sponsored": false,
   "match_via": "phone-install",
-  "geelark_search_dir": "/root/play-collector/geelark_poc/20260831_172700_Germany_R& casino_search",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260901_163528_Germany_R& casino_search",
   "search_title": "Billionaire Casino Slots 777",
   "search_developer": "Huuuge Games - Play Together",
-  "rank": 4,
+  "rank": 5,
   "developer_id": "8992197787187790047",
   "released": "Oct 19, 2016",
   "updated": "2026-08-17",
@@ -22,8 +22,16 @@
   "folder": "Billionaire Casino Slots 777-Huuuge Games - Play Together",
   "path": "r& casino/Billionaire Casino Slots 777-Huuuge Games - Play Together",
   "updates_count": 1,
-  "ok": false,
-  "files": [],
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.huuuge.casino.texas-1786533240-asset.apk",
+    "com.huuuge.casino.texas-1786533240-config.arm64_v8a.apk",
+    "com.huuuge.casino.texas-1786533240-config.en.apk",
+    "com.huuuge.casino.texas-1786533240-config.xxhdpi.apk",
+    "com.huuuge.casino.texas-1786533240.apk"
+  ],
   "target": "/root/play-collector/загрузки/r& casino/Billionaire Casino Slots 777-Huuuge Games - Play Together",
   "attempts": [
     {
@@ -32,56 +40,14 @@
         "force_auth": false,
         "no_splits": false
       },
-      "ok": false,
-      "exit_code": 1,
-      "stdout": "\ncached",
-      "stderr": "Delivery failed (HTTP 429).\n",
-      "apk_label": ""
-    },
-    {
-      "method": "gplaydl",
-      "try": {
-        "force_auth": true,
-        "no_splits": false
-      },
-      "ok": false,
-      "exit_code": 1,
-      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.another1                   │\n│ GSF ID : 32d78e05ccf7e343                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
-      "stderr": "Delivery failed (HTTP 429).\n",
-      "apk_label": ""
-    },
-    {
-      "method": "gplaydl",
-      "try": {
-        "force_auth": true,
-        "no_splits": true
-      },
-      "ok": false,
-      "exit_code": 1,
-      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.droelf@gmail.com           │\n│ GSF ID : 35d1f84294749277                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
-      "stderr": "Delivery failed (HTTP 429).\n",
-      "apk_label": ""
-    },
-    {
-      "method": "apkeep",
-      "try": 1,
-      "ok": false,
+      "ok": true,
       "exit_code": 0,
-      "stdout": "Downloading com.huuuge.casino.texas...\n",
-      "stderr": "",
-      "apk_label": ""
-    },
-    {
-      "method": "apkeep",
-      "try": 2,
-      "ok": false,
-      "exit_code": 0,
-      "stdout": "Downloading com.huuuge.casino.texas...\n",
+      "stdout": "╭── com.huuuge.casino.texas ───╮\n│ Billionaire Casino Slots 777 │\n│ 12.08.27100  (vc 1786533240) │\n╰──────────────────────────────╯\n\nDownloading 5 files  (196.2 MB)\n  com.huuuge.casino.texas-1786533240.apk                  ━━━ 100% 94… 13.2 0:0…\n                                                                   MB  MB/s     \n  com.huuuge.casino.texas-1786533240-config.arm64_v8a.apk ━━━ 100% 38… 9.0  0:0…\n                                                                   MB  MB/s     \n  com.huuuge.casino.texas-1786533240-config.en.apk        ━━━ 100% 10… 2.3  0:0…\n                                                                   kB  MB/s     \n  com.huuuge.casino.texas-1786533240-config.xxhdpi.apk    ━━━ 100% 24… 4.3  0:0…\n                                                                   kB  MB/s     \n  com.huuuge.casino.texas-1786533240-asset.apk            ━━━ 100% 72… 11.5 0:0…\n                                                                   MB  MB/s     \n\n                           Downloaded files                           \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                    ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.huuuge.casino.texas-1786533240.apk                  │  90.0 MB │\n│ com.huuuge.casino.texas-1786533240-config.arm64_v8a.apk │  36.7 MB │\n│ com.huuuge.casino.texas-1786533240-config.en.apk        │ 104.4 KB │\n│ com.huuuge.casino.texas-1786533240-config.xxhdpi.apk    │ 242.6 KB │\n│ com.huuuge.casino.texas-1786533240-asset.apk            │  90.0 MB │\n└─────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
       "stderr": "",
       "apk_label": ""
     }
   ],
-  "stdout": "Downloading com.huuuge.casino.texas...\n",
+  "stdout": "╭── com.huuuge.casino.texas ───╮\n│ Billionaire Casino Slots 777 │\n│ 12.08.27100  (vc 1786533240) │\n╰──────────────────────────────╯\n\nDownloading 5 files  (196.2 MB)\n  com.huuuge.casino.texas-1786533240.apk                  ━━━ 100% 94… 13.2 0:0…\n                                                                   MB  MB/s     \n  com.huuuge.casino.texas-1786533240-config.arm64_v8a.apk ━━━ 100% 38… 9.0  0:0…\n                                                                   MB  MB/s     \n  com.huuuge.casino.texas-1786533240-config.en.apk        ━━━ 100% 10… 2.3  0:0…\n                                                                   kB  MB/s     \n  com.huuuge.casino.texas-1786533240-config.xxhdpi.apk    ━━━ 100% 24… 4.3  0:0…\n                                                                   kB  MB/s     \n  com.huuuge.casino.texas-1786533240-asset.apk            ━━━ 100% 72… 11.5 0:0…\n                                                                   MB  MB/s     \n\n                           Downloaded files                           \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                    ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.huuuge.casino.texas-1786533240.apk                  │  90.0 MB │\n│ com.huuuge.casino.texas-1786533240-config.arm64_v8a.apk │  36.7 MB │\n│ com.huuuge.casino.texas-1786533240-config.en.apk        │ 104.4 KB │\n│ com.huuuge.casino.texas-1786533240-config.xxhdpi.apk    │ 242.6 KB │\n│ com.huuuge.casino.texas-1786533240-asset.apk            │  90.0 MB │\n└─────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
   "error": ""

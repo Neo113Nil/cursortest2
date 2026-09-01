@@ -1,0 +1,54 @@
+{
+  "app_id": "com.platogo.pmp",
+  "title": "Slotpark Casino Slots Games",
+  "developer": "Funstage",
+  "score": 4.3955226,
+  "icon": "/static/app-icons/com_platogo_pmp.png",
+  "url": "https://play.google.com/store/apps/details?id=com.platogo.pmp&hl=en&gl=us",
+  "keyword": "R& casino",
+  "country": "Germany",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260901_163528_Germany_R& casino_search",
+  "search_title": "Slotpark Casino Slots Games",
+  "search_developer": "Funstage",
+  "rank": 6,
+  "developer_id": "8128532516213169694",
+  "released": "Dec 14, 2015",
+  "updated": "2026-08-25",
+  "version": "4.22.0",
+  "summary": "Play slots & casino games — spin, win jackpots, enjoy Vegas-style 777 fun!",
+  "folder": "Slotpark Casino Slots Games-Funstage",
+  "path": "r& casino/Slotpark Casino Slots Games-Funstage",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.platogo.pmp-424010-asset.apk",
+    "com.platogo.pmp-424010-config.arm64_v8a.apk",
+    "com.platogo.pmp-424010-config.en.apk",
+    "com.platogo.pmp-424010-config.xxhdpi.apk",
+    "com.platogo.pmp-424010.apk"
+  ],
+  "target": "/root/play-collector/загрузки/r& casino/Slotpark Casino Slots Games-Funstage",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭────── com.platogo.pmp ──────╮\n│ Slotpark Casino Slots Games │\n│ 4.24.1  (vc 424010)         │\n╰─────────────────────────────╯\n\nDownloading 5 files  (115.9 MB)\n  com.platogo.pmp-424010.apk                  ━━━━━━ 100% 65.4/6… 8.1    0:00:00\n                                                          MB      MB/s          \n  com.platogo.pmp-424010-config.arm64_v8a.apk ━━━━━━ 100% 3.0/3.0 10.6   0:00:00\n                                                          MB      MB/s          \n  com.platogo.pmp-424010-config.en.apk        ━━━━━━ 100% 53.7/5… ?      0:00:00\n                                                          kB                    \n  com.platogo.pmp-424010-config.xxhdpi.apk    ━━━━━━ 100% 623.9/… 4.5    0:00:00\n                                                          kB      MB/s          \n  com.platogo.pmp-424010-asset.apk            ━━━━━━ 100% 52.4/5… 12.0   0:00:00\n                                                          MB      MB/s          \n\n                     Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                        ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.platogo.pmp-424010.apk                  │  62.4 MB │\n│ com.platogo.pmp-424010-config.arm64_v8a.apk │   2.9 MB │\n│ com.platogo.pmp-424010-config.en.apk        │  52.4 KB │\n│ com.platogo.pmp-424010-config.xxhdpi.apk    │ 609.2 KB │\n│ com.platogo.pmp-424010-asset.apk            │  62.4 MB │\n└─────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭────── com.platogo.pmp ──────╮\n│ Slotpark Casino Slots Games │\n│ 4.24.1  (vc 424010)         │\n╰─────────────────────────────╯\n\nDownloading 5 files  (115.9 MB)\n  com.platogo.pmp-424010.apk                  ━━━━━━ 100% 65.4/6… 8.1    0:00:00\n                                                          MB      MB/s          \n  com.platogo.pmp-424010-config.arm64_v8a.apk ━━━━━━ 100% 3.0/3.0 10.6   0:00:00\n                                                          MB      MB/s          \n  com.platogo.pmp-424010-config.en.apk        ━━━━━━ 100% 53.7/5… ?      0:00:00\n                                                          kB                    \n  com.platogo.pmp-424010-config.xxhdpi.apk    ━━━━━━ 100% 623.9/… 4.5    0:00:00\n                                                          kB      MB/s          \n  com.platogo.pmp-424010-asset.apk            ━━━━━━ 100% 52.4/5… 12.0   0:00:00\n                                                          MB      MB/s          \n\n                     Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                        ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.platogo.pmp-424010.apk                  │  62.4 MB │\n│ com.platogo.pmp-424010-config.arm64_v8a.apk │   2.9 MB │\n│ com.platogo.pmp-424010-config.en.apk        │  52.4 KB │\n│ com.platogo.pmp-424010-config.xxhdpi.apk    │ 609.2 KB │\n│ com.platogo.pmp-424010-asset.apk            │  62.4 MB │\n└─────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
