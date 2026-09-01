@@ -1,4 +1,75 @@
 {
+  "app_id": "com.boltmania.screwvib",
   "title": "Amazon Casino",
-  "developer": "DAVOS SOLUTIONS LIMITED"
+  "developer": "DAVOS SOLUTIONS LIMITED",
+  "score": null,
+  "icon": "/static/app-icons/com_boltmania_screwvib.png",
+  "url": "https://play.google.com/store/apps/details?id=com.boltmania.screwvib&hl=en&gl=us",
+  "keyword": "Amazon Casino",
+  "country": "Germany",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260901_150915_Germany_Amazon Casino_search",
+  "search_title": "Amazon Casino: Real Money Win (Early Access)",
+  "search_developer": "DAVOS SOLUTIONS LIMITED",
+  "rank": 6,
+  "developer_id": "DAVOS+SOLUTIONS+LIMITED",
+  "released": "",
+  "updated": "Aug 31, 2026",
+  "version": "Varies with device",
+  "summary": "Match colored bolts & clear shapes. Engaging tap to unscrew logic board puzzle.",
+  "folder": "Amazon Casino-DAVOS SOLUTIONS LIMITED",
+  "path": "amazon casino/Amazon Casino-DAVOS SOLUTIONS LIMITED",
+  "updates_count": 1,
+  "apk_title": "Amazon Casino",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.boltmania.screwvib-9-asset.apk",
+    "com.boltmania.screwvib-9.apk"
+  ],
+  "target": "/root/play-collector/загрузки/amazon casino/Amazon Casino-DAVOS SOLUTIONS LIMITED",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : oss.accs.or.aura.510@gmail.com        │\n│ GSF ID : 3851cb1aba104b89                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─── com.boltmania.screwvib ────╮\n│ Amazon Casino: Real Money Win │\n│ 1.2.0.9  (vc 9)               │\n╰───────────────────────────────╯\n\nDownloading 2 files  (54.7 MB)\n  com.boltmania.screwvib-9.apk       ━━━━━━━━━━ 100% 30.6/30.6 24.6 MB/s 0:00:00\n                                                     MB                         \n  com.boltmania.screwvib-9-asset.apk ━━━━━━━━━━ 100% 26.7/26.7 33.1 MB/s 0:00:00\n                                                     MB                         \n\n                Downloaded files                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.boltmania.screwvib-9.apk       │ 29.2 MB │\n│ com.boltmania.screwvib-9-asset.apk │ 29.2 MB │\n└────────────────────────────────────┴─────────┘\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.zeronine@gmail.com         │\n│ GSF ID : 36e9397d8ae3a4b9                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "",
+      "apk_label": "Amazon Casino"
+    }
+  ],
+  "stdout": "╭─── com.boltmania.screwvib ────╮\n│ Amazon Casino: Real Money Win │\n│ 1.2.0.9  (vc 9)               │\n╰───────────────────────────────╯\n\nDownloading 2 files  (54.7 MB)\n  com.boltmania.screwvib-9.apk       ━━━━━━━━━━ 100% 30.6/30.6 24.6 MB/s 0:00:00\n                                                     MB                         \n  com.boltmania.screwvib-9-asset.apk ━━━━━━━━━━ 100% 26.7/26.7 33.1 MB/s 0:00:00\n                                                     MB                         \n\n                Downloaded files                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.boltmania.screwvib-9.apk       │ 29.2 MB │\n│ com.boltmania.screwvib-9-asset.apk │ 29.2 MB │\n└────────────────────────────────────┴─────────┘\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.zeronine@gmail.com         │\n│ GSF ID : 36e9397d8ae3a4b9                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
 }
