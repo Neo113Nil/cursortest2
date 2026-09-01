@@ -2,60 +2,63 @@
   "app_id": "de.merkur24.universalapp",
   "title": "Merkur24 – Slots & Casino",
   "developer": "Whow Games GmbH",
+  "score": 4.292683,
+  "icon": "/static/app-icons/de_merkur24_universalapp.png",
   "url": "https://play.google.com/store/apps/details?id=de.merkur24.universalapp&hl=en&gl=us",
+  "keyword": "R& casino",
+  "country": "Germany",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260831_172700_Germany_R& casino_search",
+  "search_title": "Merkur24 – Slots & Casino",
+  "search_developer": "Whow Games GmbH",
+  "rank": 5,
+  "developer_id": "Whow+Games+GmbH",
+  "released": "Feb 13, 2018",
+  "updated": "2026-08-28",
   "version": "6.5.37",
-  "version_code": "5002785",
-  "summary": "Merkur24 – Slots & Casino (APK label: Merkur24) — Unity/IL2CPP social-casino от Whow Games GmbH; бэкенд mapi.jackpot.de / mapi.spielbrause.net / auth.pro.youre.id / www.jackpot.de; реклама AdMob + AppLovin/ironSource/Fyber/Vungle/Moloco/Pangle/Digital Turbine/Facebook AN; аналитика Firebase/AppsFlyer/Braze/Bugsnag/Smartlook/Facebook/OneTrust; Vuplex WebView + Custom Tabs; клоаки нет.",
-  "keyword": "r& casino",
+  "summary": "Enjoy more than 700 slot games and great promotions under the Merkur Sun!",
   "folder": "Merkur24 – Slots & Casino-Whow Games GmbH",
   "path": "r& casino/Merkur24 – Slots & Casino-Whow Games GmbH",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
   "ok": true,
-  "source": "apkpure-xapk",
-  "apk_label": "Merkur24",
-  "cloaking": "нет",
   "files": [
-    "de.merkur24.universalapp.xapk",
-    "apk/de.merkur24.universalapp.apk",
-    "apk/config.arm64_v8a.apk"
+    "de.merkur24.universalapp-5002785-asset.apk",
+    "de.merkur24.universalapp-5002785-config.arm64_v8a.apk",
+    "de.merkur24.universalapp-5002785.apk"
   ],
-  "brief_report": {
-    "cloaking": "нет",
-    "domains": [
-      {"domain": "akm.ssacdn.com"},
-      {"domain": "aomedia.org"},
-      {"domain": "api16-access-ttp.tiktokpangle.us"},
-      {"domain": "auroraoss.com"},
-      {"domain": "braze.com"}
-    ],
-    "ads": [
-      "AdMob",
-      "AppLovin",
-      "ironSource",
-      "Fyber",
-      "Vungle",
-      "Moloco",
-      "Pangle",
-      "Digital Turbine",
-      "Facebook Audience Network"
-    ],
-    "analytics": [
-      "Firebase Analytics",
-      "Firebase Crashlytics",
-      "Firebase Performance",
-      "Firebase Remote Config",
-      "AppsFlyer",
-      "Braze",
-      "Bugsnag",
-      "Smartlook",
-      "Facebook App Events",
-      "OneTrust"
-    ]
-  },
-  "minSdk": 25,
-  "targetSdk": 36,
-  "agp": "8.10.0",
-  "kotlin": "да 2.2.0",
-  "webview": true,
-  "custom_tabs": true,
-  "analysis_note": "Deep re-scan 2026-09-01: entry BrazeUnityPlayerActivity → Unity/IL2CPP → Whow MAPI (mapi.jackpot.de / mapi.spielbrause.net) + auth.pro.youre.id; Vuplex/UniWebView/Custom Tabs for product WebView/ads/consent; no silent gate→offer fork; cloaking=нет."
+  "target": "/root/play-collector/загрузки/r& casino/Merkur24 – Slots & Casino-Whow Games GmbH",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ de.merkur24.universalapp ─╮\n│ Merkur24 – Slots & Casino  │\n│ 6.5.37  (vc 5002785)       │\n╰────────────────────────────╯\n\nDownloading 3 files  (303.5 MB)\n  de.merkur24.universalapp-5002785.apk                  ━━━━ 100% 166… 10.0 0:0…\n                                                                  MB   MB/s     \n  de.merkur24.universalapp-5002785-config.arm64_v8a.apk ━━━━ 100% 46.… 8.6  0:0…\n                                                                  MB   MB/s     \n  de.merkur24.universalapp-5002785-asset.apk            ━━━━ 100% 105… 7.8  0:0…\n                                                                  MB   MB/s     \n\n                          Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                  ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ de.merkur24.universalapp-5002785.apk                  │ 158.5 MB │\n│ de.merkur24.universalapp-5002785-config.arm64_v8a.apk │  44.2 MB │\n│ de.merkur24.universalapp-5002785-asset.apk            │ 158.5 MB │\n└───────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : bilbert039@gmail.com                  │\n│ GSF ID : 3920465eabdba5ef                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ de.merkur24.universalapp ─╮\n│ Merkur24 – Slots & Casino  │\n│ 6.5.37  (vc 5002785)       │\n╰────────────────────────────╯\n\nDownloading 3 files  (303.5 MB)\n  de.merkur24.universalapp-5002785.apk                  ━━━━ 100% 166… 10.0 0:0…\n                                                                  MB   MB/s     \n  de.merkur24.universalapp-5002785-config.arm64_v8a.apk ━━━━ 100% 46.… 8.6  0:0…\n                                                                  MB   MB/s     \n  de.merkur24.universalapp-5002785-asset.apk            ━━━━ 100% 105… 7.8  0:0…\n                                                                  MB   MB/s     \n\n                          Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                  ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ de.merkur24.universalapp-5002785.apk                  │ 158.5 MB │\n│ de.merkur24.universalapp-5002785-config.arm64_v8a.apk │  44.2 MB │\n│ de.merkur24.universalapp-5002785-asset.apk            │ 158.5 MB │\n└───────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : bilbert039@gmail.com                  │\n│ GSF ID : 3920465eabdba5ef                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
 }
