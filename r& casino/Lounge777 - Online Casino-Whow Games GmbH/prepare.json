@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "apks": [
+    "net.whow.lounge777.apk",
+    "config.arm64_v8a.apk"
+  ],
+  "base_apk": "net.whow.lounge777.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "errors_count": 84,
+    "out_dir": "/workspace/r& casino/Lounge777 - Online Casino-Whow Games GmbH/decompiled"
+  },
+  "analysis_files": [
+    "net.whow.lounge777.xapk",
+    "apk/config.arm64_v8a.apk",
+    "apk/net.whow.lounge777.apk",
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/"
+  ],
+  "errors": []
+}
