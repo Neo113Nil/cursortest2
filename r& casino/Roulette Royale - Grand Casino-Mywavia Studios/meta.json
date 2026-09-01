@@ -19,7 +19,7 @@
   "targetSdk": 36,
   "agp": "8.12.3",
   "kotlin": "да 2.1",
-  "cloaking": "нет",
+  "cloaking": "да",
   "webview": true,
   "custom_tabs": true,
   "ads": [
@@ -35,8 +35,13 @@
   ],
   "suspicious_domains": [
     "adgen-self.mywavia.com",
+    "auroraoss.com",
     "classspace.in",
-    "configservice.mywavia.com"
+    "configservice.mywavia.com",
+    "cus.adwhirl.com",
+    "dispatchers.io",
+    "met.adwhirl.com",
+    "mob.adwhirl.com"
   ],
-  "note": "Deep re-analysis: real Mywavia social-casino roulette. Remote /config drives in-app ads+IAP offers (interstitial/banner/offer packs), not offer/white cloaking fork. Play title vs APK label is minor branding (Grand Casino vs Casino). Custom Tabs used by Facebook login and AdMob only; MWWebViewer opens more-apps catalog."
+  "note": "Remote config gate adgen-self.mywavia.com/config + get_standing_offer; WebView more-apps via configservice; AdWhirl custom redirect_url; ISOCC country filter; Play title ≠ APK label."
 }
