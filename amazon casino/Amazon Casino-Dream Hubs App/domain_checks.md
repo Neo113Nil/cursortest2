@@ -1,5 +1,110 @@
 # Проверка подозрительных доменов
 
+## Проверка домена: alphamountain.ai
+
+Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
+
+| Параметр / движок | Значение / вердикт |
+|---|---|
+| Домен | alphamountain.ai |
+| VirusTotal URL | https://www.virustotal.com/gui/domain/alphamountain.ai |
+| Детекции | 0/91 (malicious=0, suspicious=0) |
+| Security vendors' analysis | ниже построчно, как на VirusTotal |
+| Abusix | Clean |
+| Acronis | Clean |
+| ADMINUSLabs | Clean |
+| AILabs (MONITORAPP) | Clean |
+| AlienVault | Clean |
+| alphaMountain.ai | Clean |
+| Antiy-AVL | Clean |
+| BitDefender | Clean |
+| Blueliv | Clean |
+| Certego | Clean |
+| ChainPatrol | Clean |
+| Chong Lua Dao | Clean |
+| CINS Army | Clean |
+| CMC Threat Intelligence | Clean |
+| CRDF | Clean |
+| CTX AI | Clean |
+| Cyble | Clean |
+| CyRadar | Clean |
+| desenmascara.me | Clean |
+| Dr.Web | Clean |
+| EmergingThreats | Clean |
+| Emsisoft | Clean |
+| ESET | Clean |
+| ESTsecurity | Clean |
+| Forcepoint ThreatSeeker | Clean |
+| Fortinet | Clean |
+| G-Data | Clean |
+| Google Safe Browsing | Clean |
+| GreenSnow | Clean |
+| Heimdal Security | Clean |
+| IPsum | Clean |
+| Juniper Networks | Clean |
+| Kaspersky | Clean |
+| LevelBlue | Clean |
+| Lionic | Clean |
+| Malwared | Clean |
+| MalwarePatrol | Clean |
+| OpenPhish | Clean |
+| Phishing Database | Clean |
+| Phishtank | Clean |
+| PREBYTES | Clean |
+| Quick Heal | Clean |
+| Quttera | Clean |
+| Scantitan | Clean |
+| SCUMWARE.org | Clean |
+| Seclookup | Clean |
+| Sophos | Clean |
+| StopForumSpam | Clean |
+| Sucuri SiteCheck | Clean |
+| ThreatHive | Clean |
+| URLhaus | Clean |
+| Viettel Threat Intelligence | Clean |
+| ViriBack | Clean |
+| VX Vault | Clean |
+| Webroot | Clean |
+| Xcitium Verdict Cloud | Clean |
+| Yandex Safebrowsing | Clean |
+| ZeroCERT | Clean |
+| 0xSI_f33d | Unrated |
+| AlphaSOC | Unrated |
+| ArcSight Threat Intelligence | Unrated |
+| AutoShun | Unrated |
+| Axur | Unrated |
+| Bfore.Ai PreCrime | Unrated |
+| Bkav | Unrated |
+| Cluster25 | Unrated |
+| Criminal IP | Unrated |
+| CSIS Security Group | Unrated |
+| Cyan | Unrated |
+| DNS8 | Unrated |
+| Ermes | Unrated |
+| Fortra | Unrated |
+| GCP Abuse Intelligence | Unrated |
+| GreyNoise | Unrated |
+| Gridinsoft | Unrated |
+| Guardpot | Unrated |
+| Hunt.io Intelligence | Unrated |
+| Lumu | Unrated |
+| MalwareURL | Unrated |
+| Mimecast | Unrated |
+| Netcraft | Unrated |
+| PhishFort | Unrated |
+| PrecisionSec | Unrated |
+| SafeToOpen | Unrated |
+| Sansec eComscan | Unrated |
+| SecureBrain | Unrated |
+| Snort IP sample list | Unrated |
+| SOCRadar | Unrated |
+| URLQuery | Unrated |
+| VIPRE | Unrated |
+| ZeroFox | Unrated |
+| Куда редиректит | https://www.alphamountain.ai/ |
+| Что выводит (кратко) | title: alphaMountain.ai \| URL Classification &amp; IP Reputation. alphaMountain.ai \| URL Classification &amp; IP Reputation Home Products Threat Intelligence Feeds &#038; APIs threatYeti URL Scan Free Threat Intelligence Feeds Solutions URL Classification Domain &#038; IP Reputation Agentic AI Integrations Partners Blog Contact Request API Key  |
+| Где припаркован | регистратор: NAMECHEAP INC |
+
 ## Проверка домена: app.configcat.com
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
@@ -105,6 +210,111 @@
 | Что выводит (кратко) | title: ConfigCat Dashboard. ConfigCat Dashboard |
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
 
+## Проверка домена: bfore.ai
+
+Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
+
+| Параметр / движок | Значение / вердикт |
+|---|---|
+| Домен | bfore.ai |
+| VirusTotal URL | https://www.virustotal.com/gui/domain/bfore.ai |
+| Детекции | 0/91 (malicious=0, suspicious=0) |
+| Security vendors' analysis | ниже построчно, как на VirusTotal |
+| Abusix | Clean |
+| Acronis | Clean |
+| ADMINUSLabs | Clean |
+| AILabs (MONITORAPP) | Clean |
+| AlienVault | Clean |
+| alphaMountain.ai | Clean |
+| Antiy-AVL | Clean |
+| BitDefender | Clean |
+| Blueliv | Clean |
+| Certego | Clean |
+| CINS Army | Clean |
+| CMC Threat Intelligence | Clean |
+| CRDF | Clean |
+| Criminal IP | Clean |
+| CTX AI | Clean |
+| Cyble | Clean |
+| CyRadar | Clean |
+| desenmascara.me | Clean |
+| Dr.Web | Clean |
+| EmergingThreats | Clean |
+| Emsisoft | Clean |
+| ESET | Clean |
+| ESTsecurity | Clean |
+| Forcepoint ThreatSeeker | Clean |
+| Fortinet | Clean |
+| G-Data | Clean |
+| Google Safe Browsing | Clean |
+| GreenSnow | Clean |
+| Heimdal Security | Clean |
+| IPsum | Clean |
+| Juniper Networks | Clean |
+| Kaspersky | Clean |
+| LevelBlue | Clean |
+| Lionic | Clean |
+| Malwared | Clean |
+| MalwarePatrol | Clean |
+| OpenPhish | Clean |
+| Phishing Database | Clean |
+| Phishtank | Clean |
+| PREBYTES | Clean |
+| Quick Heal | Clean |
+| Quttera | Clean |
+| Scantitan | Clean |
+| SCUMWARE.org | Clean |
+| Seclookup | Clean |
+| Sophos | Clean |
+| StopForumSpam | Clean |
+| Sucuri SiteCheck | Clean |
+| ThreatHive | Clean |
+| URLhaus | Clean |
+| Viettel Threat Intelligence | Clean |
+| ViriBack | Clean |
+| VX Vault | Clean |
+| Webroot | Clean |
+| Yandex Safebrowsing | Clean |
+| ZeroCERT | Clean |
+| 0xSI_f33d | Unrated |
+| AlphaSOC | Unrated |
+| ArcSight Threat Intelligence | Unrated |
+| AutoShun | Unrated |
+| Axur | Unrated |
+| Bfore.Ai PreCrime | Unrated |
+| Bkav | Unrated |
+| ChainPatrol | Unrated |
+| Chong Lua Dao | Unrated |
+| Cluster25 | Unrated |
+| CSIS Security Group | Unrated |
+| Cyan | Unrated |
+| DNS8 | Unrated |
+| Ermes | Unrated |
+| Fortra | Unrated |
+| GCP Abuse Intelligence | Unrated |
+| GreyNoise | Unrated |
+| Gridinsoft | Unrated |
+| Guardpot | Unrated |
+| Hunt.io Intelligence | Unrated |
+| Lumu | Unrated |
+| MalwareURL | Unrated |
+| Mimecast | Unrated |
+| Netcraft | Unrated |
+| PhishFort | Unrated |
+| PrecisionSec | Unrated |
+| SafeToOpen | Unrated |
+| Sansec eComscan | Unrated |
+| SecureBrain | Unrated |
+| Snort IP sample list | Unrated |
+| SOCRadar | Unrated |
+| URLQuery | Unrated |
+| VIPRE | Unrated |
+| Xcitium Verdict Cloud | Unrated |
+| ZeroFox | Unrated |
+| Куда редиректит | нет (без редиректа) |
+| Что выводит (кратко) | title: Predictive Cybersecurity Platform for Threat Prevention \| Bfore. Predictive Cybersecurity Platform for Threat Prevention \| Bfore Access your complimentary Gartner® report Access your complimentary Gartner® report : Hype Cycle for Security Operations, 2026 Hype Cycle for Security Operations, 2026 Products PreCrime™ Defense PreCrime™ Intelligenc |
+| Где припаркован | регистратор: Key-Systems GmbH |
+
 ## Проверка домена: cdn-eu.configcat.com
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
@@ -128,18 +338,11 @@
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
-<<<<<<< HEAD
 | Criminal IP | Clean |
-=======
->>>>>>> origin/main
 | CTX AI | Clean |
 | Cyble | Clean |
 | CyRadar | Clean |
 | desenmascara.me | Clean |
-<<<<<<< HEAD
-=======
-| DNS8 | Clean |
->>>>>>> origin/main
 | Dr.Web | Clean |
 | EmergingThreats | Clean |
 | Emsisoft | Clean |
@@ -154,10 +357,7 @@
 | IPsum | Clean |
 | Juniper Networks | Clean |
 | Kaspersky | Clean |
-<<<<<<< HEAD
 | LevelBlue | Clean |
-=======
->>>>>>> origin/main
 | Lionic | Clean |
 | Malwared | Clean |
 | MalwarePatrol | Clean |
@@ -192,15 +392,9 @@
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
 | Cluster25 | Unrated |
-<<<<<<< HEAD
 | CSIS Security Group | Unrated |
 | Cyan | Unrated |
 | DNS8 | Unrated |
-=======
-| Criminal IP | Unrated |
-| CSIS Security Group | Unrated |
-| Cyan | Unrated |
->>>>>>> origin/main
 | Ermes | Unrated |
 | Fortra | Unrated |
 | GCP Abuse Intelligence | Unrated |
@@ -208,10 +402,6 @@
 | Gridinsoft | Unrated |
 | Guardpot | Unrated |
 | Hunt.io Intelligence | Unrated |
-<<<<<<< HEAD
-=======
-| LevelBlue | Unrated |
->>>>>>> origin/main
 | Lumu | Unrated |
 | MalwareURL | Unrated |
 | Mimecast | Unrated |
@@ -272,10 +462,7 @@
 | IPsum | Clean |
 | Juniper Networks | Clean |
 | Kaspersky | Clean |
-<<<<<<< HEAD
 | LevelBlue | Clean |
-=======
->>>>>>> origin/main
 | Lionic | Clean |
 | Malwared | Clean |
 | MalwarePatrol | Clean |
@@ -320,10 +507,6 @@
 | Gridinsoft | Unrated |
 | Guardpot | Unrated |
 | Hunt.io Intelligence | Unrated |
-<<<<<<< HEAD
-=======
-| LevelBlue | Unrated |
->>>>>>> origin/main
 | Lumu | Unrated |
 | MalwareURL | Unrated |
 | Mimecast | Unrated |
@@ -402,13 +585,13 @@
 | Sucuri SiteCheck | Clean |
 | ThreatHive | Clean |
 | URLhaus | Clean |
+| URLQuery | Clean |
 | Viettel Threat Intelligence | Clean |
 | VIPRE | Clean |
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
-<<<<<<< HEAD
-=======
+| Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -442,23 +625,22 @@
 | SecureBrain | Unrated |
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
-| URLQuery | Unrated |
-| Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
 | Что выводит (кратко) | title: ConfigCat - Feature Flag Service for Teams. ConfigCat - Feature Flag Service for Teams What is it? How it works? Why us? Pricing API Docs Blog Log in Sign up Book a demo Dashboard Feature flags for teams ConfigCat is a feature flag service with unlimited seats , awesome support, and a reasonable price tag. Sign up Forever  |
 | Где припаркован | нет данных |
 
-## Проверка домена: opentelemetry.io
+## Проверка домена: desenmascara.me
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
 
 | Параметр / движок | Значение / вердикт |
 |---|---|
-| Домен | opentelemetry.io |
-| VirusTotal URL | https://www.virustotal.com/gui/domain/opentelemetry.io |
-| Детекции | 0/91 (malicious=0, suspicious=0) |
+| Домен | desenmascara.me |
+| VirusTotal URL | https://www.virustotal.com/gui/domain/desenmascara.me |
+| Детекции | 1/91 (malicious=0, suspicious=1) |
 | Security vendors' analysis | ниже построчно, как на VirusTotal |
+| Gridinsoft | Suspicious |
 | Abusix | Clean |
 | Acronis | Clean |
 | ADMINUSLabs | Clean |
@@ -513,7 +695,6 @@
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
->>>>>>> origin/main
 | Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
@@ -534,7 +715,6 @@
 | Fortra | Unrated |
 | GCP Abuse Intelligence | Unrated |
 | GreyNoise | Unrated |
-| Gridinsoft | Unrated |
 | Guardpot | Unrated |
 | Hunt.io Intelligence | Unrated |
 | Lumu | Unrated |
@@ -549,34 +729,20 @@
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
 | URLQuery | Unrated |
-<<<<<<< HEAD
-| ZeroFox | Unrated |
-| Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | title: ConfigCat - Feature Flag Service for Teams. ConfigCat - Feature Flag Service for Teams What is it? How it works? Why us? Pricing API Docs Blog Log in Sign up Book a demo Dashboard Feature flags for teams ConfigCat is a feature flag service with unlimited seats , awesome support, and a reasonable price tag. Sign up Forever  |
-| Где припаркован | нет данных |
-
-## Проверка домена: opentelemetry.io
-=======
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | title: OpenTelemetry. OpenTelemetry The OpenTelemetry Logo OpenTelemetry Docs Ecosystem Status Community Training Blog English EN বাংলা English Español Français 日本語 한국어 Polski Português Română Українська 中文 Light Dark Auto Ask AI (&amp;#x2318;-K)" class="td-search__input form-control td-search-input"  |
-| Где припаркован | регистратор: 1API GmbH |
+| Что выводит (кратко) | title: Desenmascara.me — Detecta fraude y scams en cualquier web. Desenmascara.me — Detecta fraude y scams en cualquier web Trust Intelligence Live Log in Pricing Resources Problem API Signals History Contact X / Twitter Log in Explore pricing Website and phone fraud check Unmask a suspicious link or number. Paste what you received. We return a |
+| Где припаркован | регистратор/whois связан с парковкой: godaddy |
 
-## Проверка домена: slf4j.org
->>>>>>> origin/main
+## Проверка домена: opentelemetry.io
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
 
 | Параметр / движок | Значение / вердикт |
 |---|---|
-<<<<<<< HEAD
 | Домен | opentelemetry.io |
 | VirusTotal URL | https://www.virustotal.com/gui/domain/opentelemetry.io |
-=======
-| Домен | slf4j.org |
-| VirusTotal URL | https://www.virustotal.com/gui/domain/slf4j.org |
->>>>>>> origin/main
 | Детекции | 0/91 (malicious=0, suspicious=0) |
 | Security vendors' analysis | ниже построчно, как на VirusTotal |
 | Abusix | Clean |
@@ -587,12 +753,10 @@
 | alphaMountain.ai | Clean |
 | Antiy-AVL | Clean |
 | BitDefender | Clean |
-<<<<<<< HEAD
 | Bkav | Clean |
-=======
->>>>>>> origin/main
 | Blueliv | Clean |
 | Certego | Clean |
+| Chong Lua Dao | Clean |
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
@@ -645,12 +809,7 @@
 | AutoShun | Unrated |
 | Axur | Unrated |
 | Bfore.Ai PreCrime | Unrated |
-<<<<<<< HEAD
-=======
-| Bkav | Unrated |
->>>>>>> origin/main
 | ChainPatrol | Unrated |
-| Chong Lua Dao | Unrated |
 | Cluster25 | Unrated |
 | Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
@@ -678,116 +837,5 @@
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
-<<<<<<< HEAD
 | Что выводит (кратко) | title: OpenTelemetry. OpenTelemetry For AI agents: a documentation index is available at /llms.txt. This page has a Markdown version at /index.md. The OpenTelemetry Logo OpenTelemetry Docs Ecosystem Status Community Training Blog English EN বাংলা English Español Français 日本語 한국어 Polski Português Român |
 | Где припаркован | регистратор: 1API GmbH |
-
-## Проверка домена: slf4j.org
-
-Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
-
-| Параметр / движок | Значение / вердикт |
-|---|---|
-| Домен | slf4j.org |
-| VirusTotal URL | https://www.virustotal.com/gui/domain/slf4j.org |
-| Детекции | 0/91 (malicious=0, suspicious=0) |
-| Security vendors' analysis | ниже построчно, как на VirusTotal |
-| Abusix | Clean |
-| Acronis | Clean |
-| ADMINUSLabs | Clean |
-| AILabs (MONITORAPP) | Clean |
-| AlienVault | Clean |
-| alphaMountain.ai | Clean |
-| Antiy-AVL | Clean |
-| BitDefender | Clean |
-| Blueliv | Clean |
-| Certego | Clean |
-| Chong Lua Dao | Clean |
-| CINS Army | Clean |
-| CMC Threat Intelligence | Clean |
-| CRDF | Clean |
-| Criminal IP | Clean |
-| CTX AI | Clean |
-| Cyble | Clean |
-| CyRadar | Clean |
-| desenmascara.me | Clean |
-| Dr.Web | Clean |
-| EmergingThreats | Clean |
-| Emsisoft | Clean |
-| ESET | Clean |
-| ESTsecurity | Clean |
-| Forcepoint ThreatSeeker | Clean |
-| Fortinet | Clean |
-| G-Data | Clean |
-| Google Safe Browsing | Clean |
-| GreenSnow | Clean |
-| Heimdal Security | Clean |
-| IPsum | Clean |
-| Juniper Networks | Clean |
-| Kaspersky | Clean |
-| LevelBlue | Clean |
-| Lionic | Clean |
-| Malwared | Clean |
-| MalwarePatrol | Clean |
-| OpenPhish | Clean |
-| Phishing Database | Clean |
-| Phishtank | Clean |
-| PREBYTES | Clean |
-| Quick Heal | Clean |
-| Quttera | Clean |
-| Scantitan | Clean |
-| SCUMWARE.org | Clean |
-| Seclookup | Clean |
-| Sophos | Clean |
-| StopForumSpam | Clean |
-| Sucuri SiteCheck | Clean |
-| ThreatHive | Clean |
-| URLhaus | Clean |
-| Viettel Threat Intelligence | Clean |
-| ViriBack | Clean |
-| VX Vault | Clean |
-| Webroot | Clean |
-| Yandex Safebrowsing | Clean |
-| ZeroCERT | Clean |
-| 0xSI_f33d | Unrated |
-| AlphaSOC | Unrated |
-| ArcSight Threat Intelligence | Unrated |
-| AutoShun | Unrated |
-| Axur | Unrated |
-| Bfore.Ai PreCrime | Unrated |
-| Bkav | Unrated |
-| ChainPatrol | Unrated |
-| Cluster25 | Unrated |
-| CSIS Security Group | Unrated |
-| Cyan | Unrated |
-| DNS8 | Unrated |
-| Ermes | Unrated |
-| Fortra | Unrated |
-| GCP Abuse Intelligence | Unrated |
-| GreyNoise | Unrated |
-| Gridinsoft | Unrated |
-| Guardpot | Unrated |
-| Hunt.io Intelligence | Unrated |
-| Lumu | Unrated |
-| MalwareURL | Unrated |
-| Mimecast | Unrated |
-| Netcraft | Unrated |
-| PhishFort | Unrated |
-| PrecisionSec | Unrated |
-| SafeToOpen | Unrated |
-| Sansec eComscan | Unrated |
-| SecureBrain | Unrated |
-| Snort IP sample list | Unrated |
-| SOCRadar | Unrated |
-| URLQuery | Unrated |
-| VIPRE | Unrated |
-| Xcitium Verdict Cloud | Unrated |
-| ZeroFox | Unrated |
-| Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | title: SLF4J. SLF4J Simple Logging Facade for Java (SLF4J) The Simple Logging Facade for Java (SLF4J) serves as a simple facade or abstraction for various logging frameworks (e.g. java.util.logging, logback, log4j) allowing the end user to plug in the desired logging framework at deployment ti |
-| Где припаркован | регистратор: NAMECHEAP INC |
-=======
-| Что выводит (кратко) | title: SLF4J. SLF4J Simple Logging Facade for Java (SLF4J) The Simple Logging Facade for Java (SLF4J) serves as a simple facade or abstraction for various logging frameworks (e.g. java.util.logging, logback, log4j) allowing the end user to plug in the desired logging framework at deployment ti |
-| Где припаркован | регистратор: NAMECHEAP INC |
-
->>>>>>> origin/main

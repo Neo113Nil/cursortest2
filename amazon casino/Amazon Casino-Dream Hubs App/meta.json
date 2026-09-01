@@ -1,4 +1,54 @@
 {
+  "app_id": "com.fenolvatrshine.mobile.app",
   "title": "Amazon Casino",
-  "developer": "Dream Hubs App"
+  "developer": "Dream Hubs App",
+  "score": null,
+  "icon": "/static/app-icons/com_fenolvatrshine_mobile_app.png",
+  "url": "https://play.google.com/store/apps/details?id=com.fenolvatrshine.mobile.app&hl=en&gl=us",
+  "keyword": "Amazon Casino",
+  "country": "Germany",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260901_150915_Germany_Amazon Casino_search",
+  "search_title": "Amazon Casino",
+  "search_developer": "Dream Hubs App",
+  "rank": 5,
+  "developer_id": "Dream+Hubs+App",
+  "released": "",
+  "updated": "2026-08-18",
+  "version": "1.0",
+  "summary": "Shine a net across the meadow without overheating",
+  "folder": "Amazon Casino-Dream Hubs App",
+  "path": "amazon casino/Amazon Casino-Dream Hubs App",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.fenolvatrshine.mobile.app-1-asset.apk",
+    "com.fenolvatrshine.mobile.app-1-config.arm64_v8a.apk",
+    "com.fenolvatrshine.mobile.app-1-config.en.apk",
+    "com.fenolvatrshine.mobile.app-1-config.xxhdpi.apk",
+    "com.fenolvatrshine.mobile.app-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/amazon casino/Amazon Casino-Dream Hubs App",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.fenolvatrshine.mobile.app ─╮\n│ Amazon Casino                   │\n│ 1.0  (vc 1)                     │\n╰─────────────────────────────────╯\n\nDownloading 5 files  (46.9 MB)\n  com.fenolvatrshine.mobile.app-1.apk                  ━━━━ 100% 35.… 15.9 0:00…\n                                                                 MB   MB/s      \n  com.fenolvatrshine.mobile.app-1-config.arm64_v8a.apk ━━━━ 100% 65.… 315… 0:00…\n                                                                 kB   kB/s      \n  com.fenolvatrshine.mobile.app-1-config.en.apk        ━━━━ 100% 110… 2.9  0:00…\n                                                                 kB   MB/s      \n  com.fenolvatrshine.mobile.app-1-config.xxhdpi.apk    ━━━━ 100% 87.… 2.4  0:00…\n                                                                 kB   MB/s      \n  com.fenolvatrshine.mobile.app-1-asset.apk            ━━━━ 100% 13.… 11.1 0:00…\n                                                                 MB   MB/s      \n\n                         Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                 ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.fenolvatrshine.mobile.app-1.apk                  │  33.8 MB │\n│ com.fenolvatrshine.mobile.app-1-config.arm64_v8a.apk │  64.2 KB │\n│ com.fenolvatrshine.mobile.app-1-config.en.apk        │ 108.2 KB │\n│ com.fenolvatrshine.mobile.app-1-config.xxhdpi.apk    │  85.1 KB │\n│ com.fenolvatrshine.mobile.app-1-asset.apk            │  33.8 MB │\n└──────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.fenolvatrshine.mobile.app ─╮\n│ Amazon Casino                   │\n│ 1.0  (vc 1)                     │\n╰─────────────────────────────────╯\n\nDownloading 5 files  (46.9 MB)\n  com.fenolvatrshine.mobile.app-1.apk                  ━━━━ 100% 35.… 15.9 0:00…\n                                                                 MB   MB/s      \n  com.fenolvatrshine.mobile.app-1-config.arm64_v8a.apk ━━━━ 100% 65.… 315… 0:00…\n                                                                 kB   kB/s      \n  com.fenolvatrshine.mobile.app-1-config.en.apk        ━━━━ 100% 110… 2.9  0:00…\n                                                                 kB   MB/s      \n  com.fenolvatrshine.mobile.app-1-config.xxhdpi.apk    ━━━━ 100% 87.… 2.4  0:00…\n                                                                 kB   MB/s      \n  com.fenolvatrshine.mobile.app-1-asset.apk            ━━━━ 100% 13.… 11.1 0:00…\n                                                                 MB   MB/s      \n\n                         Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                 ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.fenolvatrshine.mobile.app-1.apk                  │  33.8 MB │\n│ com.fenolvatrshine.mobile.app-1-config.arm64_v8a.apk │  64.2 KB │\n│ com.fenolvatrshine.mobile.app-1-config.en.apk        │ 108.2 KB │\n│ com.fenolvatrshine.mobile.app-1-config.xxhdpi.apk    │  85.1 KB │\n│ com.fenolvatrshine.mobile.app-1-asset.apk            │  33.8 MB │\n└──────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
 }
