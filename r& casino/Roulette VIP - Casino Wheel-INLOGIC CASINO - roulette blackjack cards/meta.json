@@ -1,0 +1,56 @@
+{
+  "app_id": "sk.inlogic.rouletteprovip.android",
+  "title": "Roulette VIP - Casino Wheel",
+  "developer": "INLOGIC CASINO - roulette blackjack cards",
+  "url": "https://play.google.com/store/apps/details?id=sk.inlogic.rouletteprovip.android&hl=en&gl=us",
+  "version": "1.0.43",
+  "version_code": "81",
+  "summary": "Roulette VIP - Casino Wheel (APK label: Roulette VIP) — Unity IL2CPP social-casino рулетка Inlogic; реклама AdMob + Unity LevelPlay/ironSource + Unity Ads + Facebook Audience Network; аналитика Singular + Facebook App Events + Google Measurement/Firebase encoders + Play Install Referrer; WebView (рекламные SDK) + Custom Tabs (Facebook login); клоаки нет.",
+  "keyword": "r& casino",
+  "folder": "Roulette VIP - Casino Wheel-INLOGIC CASINO - roulette blackjack cards",
+  "path": "r& casino/Roulette VIP - Casino Wheel-INLOGIC CASINO - roulette blackjack cards",
+  "ok": true,
+  "source": "apkpure-xapk",
+  "apk_label": "Roulette VIP",
+  "cloaking": "нет",
+  "files": [
+    "sk.inlogic.rouletteprovip.android.xapk",
+    "apk/sk.inlogic.rouletteprovip.android-81.apk",
+    "apk/sk.inlogic.rouletteprovip.android-81-config.arm64_v8a.apk"
+  ],
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      {
+        "domain": "developers.is.com"
+      },
+      {
+        "domain": "fb.gg"
+      },
+      {
+        "domain": "inlogic.sk"
+      },
+      {
+        "domain": "james.newtonking.com"
+      }
+    ],
+    "ads": [
+      "AdMob",
+      "Unity Ads",
+      "ironSource / Unity LevelPlay",
+      "Facebook Audience Network"
+    ],
+    "analytics": [
+      "Singular",
+      "Facebook App Events",
+      "Google Analytics / App Measurement",
+      "Play Install Referrer"
+    ]
+  },
+  "minSdk": 24,
+  "targetSdk": 36,
+  "agp": "8.10.0",
+  "kotlin": "да",
+  "webview": true,
+  "custom_tabs": true
+}
