@@ -60,5 +60,115 @@
   "stdout": "╭─ de.merkur24.universalapp ─╮\n│ Merkur24 – Slots & Casino  │\n│ 6.5.37  (vc 5002785)       │\n╰────────────────────────────╯\n\nDownloading 3 files  (303.5 MB)\n  de.merkur24.universalapp-5002785.apk                  ━━━━ 100% 166… 10.0 0:0…\n                                                                  MB   MB/s     \n  de.merkur24.universalapp-5002785-config.arm64_v8a.apk ━━━━ 100% 46.… 8.6  0:0…\n                                                                  MB   MB/s     \n  de.merkur24.universalapp-5002785-asset.apk            ━━━━ 100% 105… 7.8  0:0…\n                                                                  MB   MB/s     \n\n                          Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                  ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ de.merkur24.universalapp-5002785.apk                  │ 158.5 MB │\n│ de.merkur24.universalapp-5002785-config.arm64_v8a.apk │  44.2 MB │\n│ de.merkur24.universalapp-5002785-asset.apk            │ 158.5 MB │\n└───────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : bilbert039@gmail.com                  │\n│ GSF ID : 3920465eabdba5ef                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Merkur24 – Slots & Casino"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.2.20"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob, AppLovin, ironSource, Fyber, Vungle, Moloco, Pangle, Digital Turbine, Facebook Audience Network"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Firebase Crashlytics, Firebase Performance, Firebase Remote Config, AppsFlyer, Braze, Bugsnag, Smartlook, Facebook App Events, OneTrust"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.ACCESS_NETWORK_STATE, android.permission.INTERNET, com.google.android.gms.permission.AD_ID, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, android.permission.POST_NOTIFICATIONS, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_TOPICS, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.google.android.providers.gsf.permission.READ_GSERVICES, com.android.vending.BILLING, android.permission.VIBRATE, com.android.vending.CHECK_LICENSE, android.permission.ACCESS_WIFI_STATE, com.samsung.android.mapsagent.permission.READ_APP_INFO, com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA, android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE, com.amazon.privacypass.ATTEST, android.permission.FOREGROUND_SERVICE, de.merkur24.universalapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, de.merkur24.universalapp.permission.C2D_MESSAGE, android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity 6000.3.16f1 (IL2CPP), Braze Unity SDK, AppsFlyer, AppLovin MAX, ironSource, Fyber, Vungle, Moloco, Pangle (Bytedance), Digital Turbine Ignite, Facebook SDK / Audience Network, Firebase (Analytics, Crashlytics, Performance, Remote Config, Messaging), Bugsnag, Smartlook, Freshchat, OneTrust, Vuplex 3D WebView, gree unity-webview, UniWebView, Coil, OkHttp, Okio, Dagger, Bolts, Kotlin, androidx.browser 1.8.0, Play Billing 8.3.0, Play Games"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "akm.ssacdn.com, aomedia.org, api16-access-ttp.tiktokpangle.us, auroraoss.com, braze.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "AppsFlyer (атрибуция/конверсия), Braze (профиль и сессии), Facebook SDK, Firebase/Unity-настройки, флаги согласия OneTrust"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "cloak, offer, redirect, casino, slots, roulette, landing, blacklist, whitelist, clickid, bridge, webview, postback, deposit, withdraw, gambling, poker"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "akm.ssacdn.com",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: Amazon Registrar, Inc."
+      },
+      {
+        "domain": "aomedia.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Squarespace Domains II LLC"
+      },
+      {
+        "domain": "api16-access-ttp.tiktokpangle.us",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Gandi SAS"
+      },
+      {
+        "domain": "auroraoss.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "braze.com",
+        "redirects_to": "https://www.braze.com/",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "bugsnag.com",
+        "redirects_to": "https://www.bugsnag.com/",
+        "parked_at": "регистратор: GANDI SAS"
+      },
+      {
+        "domain": "cdn.prod.website-files.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "cdn2.inner-active.mobi",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }

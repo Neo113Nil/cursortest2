@@ -1,0 +1,162 @@
+{
+  "app_id": "com.ancientlegends.slots",
+  "title": "Amazon slots",
+  "developer": "Amazon Slots",
+  "score": null,
+  "icon": "/static/app-icons/com_ancientlegends_slots.png",
+  "url": "https://play.google.com/store/apps/details?id=com.ancientlegends.slots&hl=en&gl=us",
+  "keyword": "Amazon Casino",
+  "country": "Germany",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260831_161904_Germany_Amazon Casino_search",
+  "search_title": "Amazon slots",
+  "search_developer": "Amazon Slots",
+  "rank": 6,
+  "developer_id": "Amazon+Slots",
+  "released": "Jun 29, 2026",
+  "updated": "2026-07-03",
+  "version": "1.1",
+  "summary": "Hunt for virtual jackpots in a prehistoric social slots simulator.",
+  "folder": "Amazon slots-Amazon Slots",
+  "path": "amazon casino/Amazon slots-Amazon Slots",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.ancientlegends.slots-2-asset.apk",
+    "com.ancientlegends.slots-2-config.en.apk",
+    "com.ancientlegends.slots-2-config.lt.apk",
+    "com.ancientlegends.slots-2-config.ru.apk",
+    "com.ancientlegends.slots-2-config.xxhdpi.apk",
+    "com.ancientlegends.slots-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/amazon casino/Amazon slots-Amazon Slots",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.ancientlegends.slots ─╮\n│ Amazon slots               │\n│ 1.1  (vc 2)                │\n╰────────────────────────────╯\n\nDownloading 6 files  (151.8 MB)\n  com.ancientlegends.slots-2.apk               ━━━━━━ 100% 79.9/… 10.7   0:00:00\n                                                           MB     MB/s          \n  com.ancientlegends.slots-2-config.en.apk     ━━━━━━ 100% 37.3/… ?      0:00:00\n                                                           kB                   \n  com.ancientlegends.slots-2-config.lt.apk     ━━━━━━ 100% 20.9/… ?      0:00:00\n                                                           kB                   \n  com.ancientlegends.slots-2-config.ru.apk     ━━━━━━ 100% 20.9/… ?      0:00:00\n                                                           kB                   \n  com.ancientlegends.slots-2-config.xxhdpi.apk ━━━━━━ 100% 78.4/… 1.1    0:00:00\n                                                           kB     MB/s          \n  com.ancientlegends.slots-2-asset.apk         ━━━━━━ 100% 79.1/… 8.4    0:00:00\n                                                           MB     MB/s          \n\n                     Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                         ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.ancientlegends.slots-2.apk               │ 76.2 MB │\n│ com.ancientlegends.slots-2-config.en.apk     │ 36.4 KB │\n│ com.ancientlegends.slots-2-config.lt.apk     │ 20.4 KB │\n│ com.ancientlegends.slots-2-config.ru.apk     │ 20.4 KB │\n│ com.ancientlegends.slots-2-config.xxhdpi.apk │ 76.6 KB │\n│ com.ancientlegends.slots-2-asset.apk         │ 76.2 MB │\n└──────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.ancientlegends.slots ─╮\n│ Amazon slots               │\n│ 1.1  (vc 2)                │\n╰────────────────────────────╯\n\nDownloading 6 files  (151.8 MB)\n  com.ancientlegends.slots-2.apk               ━━━━━━ 100% 79.9/… 10.7   0:00:00\n                                                           MB     MB/s          \n  com.ancientlegends.slots-2-config.en.apk     ━━━━━━ 100% 37.3/… ?      0:00:00\n                                                           kB                   \n  com.ancientlegends.slots-2-config.lt.apk     ━━━━━━ 100% 20.9/… ?      0:00:00\n                                                           kB                   \n  com.ancientlegends.slots-2-config.ru.apk     ━━━━━━ 100% 20.9/… ?      0:00:00\n                                                           kB                   \n  com.ancientlegends.slots-2-config.xxhdpi.apk ━━━━━━ 100% 78.4/… 1.1    0:00:00\n                                                           kB     MB/s          \n  com.ancientlegends.slots-2-asset.apk         ━━━━━━ 100% 79.1/… 8.4    0:00:00\n                                                           MB     MB/s          \n\n                     Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                         ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.ancientlegends.slots-2.apk               │ 76.2 MB │\n│ com.ancientlegends.slots-2-config.en.apk     │ 36.4 KB │\n│ com.ancientlegends.slots-2-config.lt.apk     │ 20.4 KB │\n│ com.ancientlegends.slots-2-config.ru.apk     │ 20.4 KB │\n│ com.ancientlegends.slots-2-config.xxhdpi.apk │ 76.6 KB │\n│ com.ancientlegends.slots-2-asset.apk         │ 76.2 MB │\n└──────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ancient Legends Slots"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.13.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 1.8.1"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.CAMERA, android.permission.RECORD_AUDIO, android.permission.MODIFY_AUDIO_SETTINGS, android.permission.ACCESS_NETWORK_STATE, com.ancientlegends.slots.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Capacitor (com.getcapacitor / com.capacitorjs.plugins.app / network), AndroidX (appcompat 1.7.1, activity 1.11.0, core/core-ktx 1.17.0, fragment 1.8.9, webkit 1.14.0, lifecycle, splashscreen, emoji2, profileinstaller, startup), kotlinx-coroutines 1.8.1, Google Pairip licensecheck (com.pairip), Cordova allowlist stubs"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "ancientlegends.top"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "localStorage во встроенном окне сайта: savedWebViewUrl (ссылка оффера), showNativeApp (флаг белой версии), hasSeenOnboarding; также игровые slot_balance / slot_gems"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "slots, webview, NativeWebView, openWebView, unlosea, savedWebViewUrl, showNativeApp, ancientlegends"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "appassets.androidplatform.net",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "capacitorjs.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: SafeNames Ltd."
+      },
+      {
+        "domain": "config.ru",
+        "redirects_to": "https://config.ru/en/",
+        "parked_at": "похоже на парковку (domain is for sale)"
+      },
+      {
+        "domain": "issues.chromium.org",
+        "redirects_to": "https://issues.chromium.org/issues",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "reactjs.org",
+        "redirects_to": "https://react.dev/",
+        "parked_at": "регистратор: Key-Systems GmbH"
+      },
+      {
+        "domain": "stackoverflow.com",
+        "redirects_to": "https://stackoverflow.com/questions",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "suno.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      }
+    ],
+    "collected_data": [
+      "В коде не"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• В коде не\n\nКак собираются: Сразу после запуска приложение само, без спроса у человека, делает тихую проверку в интернете. Отдельного окна с разрешением на сбор данных нет: в запросе проверки не видно явной подстановки языка, модели телефона или рекламного номера. Сначала приложение смотрит в свою локальную память внутри встроенного окна сайта: если ссылка оффера или флаг «оставить обычное приложение» уже сохранены раньше, повторный запрос на сервер не делается. Если сохранённых отметок нет — уходит простой запрос «дай ответ» на служебный адрес. Параллельно приложение проверяет, есть ли интернет (в том числе коротким обращением к google.com), но эти сведения в запрос клоаки не подставляются.…\n\nКуда отправляются: Тихий запрос уходит на адрес https://ancientlegends.top. Это не показ рекламы на экране, а служебная проверка «что показать этому человеку». В коде адрес спрятан и собран из зашифрованных чисел, чтобы его было труднее заметить при поверхностном просмотре. Запасных адресов в коде не видно. Если сервер отдал «боевую» ссылку, приложение сохраняет её в локальной памяти под именем savedWebViewUrl и при следующих запусках может сразу открыть сохранённый адрес, не спрашивая сервер снова. Если решено оставить обычное приложение, сохраняется отметка showNativeApp.\n\nКак фильтруются пользователи: В самом приложении нет жёсткого списка стран, языков или «белых» и «грязных» пользователей. На телефон уходит только запрос к серверу, а решение «кому оффер, кому обычное приложение» делает сервер. Приложение смотрит лишь на ответ: есть ли в нём особое поле со ссылкой. По смыслу схемы фильтр полностью на стороне сайта-проверки. Если запрос ломается или ответа с нужным полем нет, приложение само переходит к обычному режиму и запоминает это, чтобы не дергать сервер снова.\n\nЧто возвращается: Сервер отвечает данными в формате ответа с полями. Приложение специально ищет поле с именем unlosea. Если это поле есть и в нём лежит текст — приложение склеивает из него полный адрес страницы: https://ancientlegends.top/ плюс значение из unlosea. Такой ответ считается «боевым»: дальше открывают оффер. Если поля unlosea нет, ответ пустой по смыслу для схемы, или…"
+  }
+}

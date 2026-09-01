@@ -48,5 +48,105 @@
   "stdout": "╭─ sk.inlogic.rouletteprovip.android ─╮\n│ Roulette VIP - Casino Wheel         │\n│ 1.0.43  (vc 81)                     │\n╰─────────────────────────────────────╯\n\nDownloading 3 files  (135.5 MB)\n  sk.inlogic.rouletteprovip.android-81.apk                  ━━━ 100% 73… 1… 0:0…\n                                                                     MB  M…     \n  sk.inlogic.rouletteprovip.android-81-config.arm64_v8a.apk ━━━ 100% 22… 7… 0:0…\n                                                                     MB  M…     \n  sk.inlogic.rouletteprovip.android-81-asset.apk            ━━━ 100% 46… 8… 0:0…\n                                                                     MB  M…     \n\n                           Downloaded files                            \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                      ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ sk.inlogic.rouletteprovip.android-81.apk                  │ 69.6 MB │\n│ sk.inlogic.rouletteprovip.android-81-config.arm64_v8a.apk │ 21.4 MB │\n│ sk.inlogic.rouletteprovip.android-81-asset.apk            │ 69.6 MB │\n└───────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Roulette VIP - Casino Wheel (APK label: Roulette VIP)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да (kotlinx-coroutines 1.8.0; Facebook SDK metadata Kotlin 1.8.0)"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob, Unity Ads, ironSource/Unity LevelPlay, Facebook Audience Network"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Singular, Facebook App Events, Google Analytics/App Measurement, Play Install Referrer; Unity Remote Config (MyRemoteConfig)"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE, android.permission.ACCESS_ADSERVICES_TOPICS, com.google.android.finsky. permission.BIND_GET_INSTALL_REFERRER_SERVICE, android.permission.POST_NOTIFICATIONS, com.android.vending.BILLING, android.permission.WAKE_LOCK, android.permission.FOREGROUND_SERVICE, sk.inlogic.rouletteprovip.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMIS SION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity IL2CPP / UnityPlayerActivity, Unity Ads, Unity LevelPlay/ironSource mediation (AdMob + Unity Ads + Facebook adapters, Ad Quality), Google Mobile Ads/AdMob 24.7.0, Facebook SDK + Audience Network, Singular SDK (Unity bridge), Google Play Billing 8.0.0, Play Install Referrer / CHECK_LICENSE, Play Review, Google App Measurement / Firebase encoders + datatransport, AndroidX (browser/Custom Tabs 1.8.0, webkit 1.12.1, core-ktx 1.13.1, work-runtime, room, datastore, lifecycle), Kotlin / kotlinx-coroutines 1.8.0, OkHttp/Okio, bolts, bitter/jnibridge, gatewayprotocol (Unity Ads)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "developers.is.com, fb.gg, inlogic.sk, james.newtonking.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "ironSource/LevelPlay: supersonic_shared_preferen, CRep, com.unity3d.ad-mediation.testSuite; Facebook SDK prefs; Singular SDK prefs; Unity PlayerPrefs; Google Ads/Measurement prefs"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "casino, roulette, poker, slots, betting, offer, redirect, landing, gate, webview, blacklist, whitelist, postback, click_id, is_bot, deposit, payout, advertisingId, gaid, RemoteConfig, cross_promo"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "developers.is.com",
+        "redirects_to": "https://docs.unity.com/en-us/grow",
+        "parked_at": "регистратор: Amazon Registrar, Inc."
+      },
+      {
+        "domain": "fb.gg",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "inlogic.sk",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: EXOT-0004"
+      },
+      {
+        "domain": "james.newtonking.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "nuget.org",
+        "redirects_to": "https://www.nuget.org/",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "timeserver.inlogic.sk",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: EXOT-0004"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }

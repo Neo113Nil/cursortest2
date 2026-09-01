@@ -79,5 +79,115 @@
   "stdout": "Downloading com.mw.rouletteroyale...\ncom.mw.rouletteroyale downloaded successfully!\n",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Roulette Royale - Grand Casino"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.12.3"
+      },
+      {
+        "param": "minSdk",
+        "value": "23"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.1"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Firebase Cloud Messaging, Google Analytics / App Measurement, Snowplow, Facebook App Events"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.WRITE_EXTERNAL_STORAGE, com.android.vending.BILLING, com.mw.rouletteroyale.permission.C2D_MESSAGE, com.google.android.c2dm.permission.RECEIVE, android.permission.WAKE_LOCK, android.permission.READ_EXTERNAL_STORAGE, com.google.android.gms.permission.AD_ID, android.permission.POST_NOTIFICATIONS, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, android.permission.FOREGROUND_SERVICE, com.mw.rouletteroyale.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx (AppCompat, Browser/Custom Tabs, WebKit, Lifecycle, Fragment, RecyclerView, Room, DataStore, WorkManager), Google Play Services Ads (AdMob), Play Billing, Play Services Measurement / Firebase Analytics, Firebase Messaging, Facebook SDK (Login/Share/Custom Tabs), Glide, ButterKnife, Snowplow Analytics, AdWhirl (legacy mediation stubs), Leonids, uCrop, ImagePicker, Java-WebSocket, OkHttp (Apache HttpClient stack), Gson, Kotlin stdlib / coroutines, nullwire ExceptionHandler"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "adgen-self.mywavia.com, classspace.in, configservice.mywavia.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "сохраняет JSON-конфиг игры (_SurrogateActivityFile_), настройки музыки/звука/типа рулетки, историю партий, достижения, конфиг виджета и AdWhirl"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "casino, roulette, slots, poker, offer, standing_offer, Roulette Offers, offer_gift, webview, betting, payout, withdraw, bot, gate"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "adgen-self.mywavia.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "auroraoss.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "classspace.in",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "configservice.mywavia.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "cus.adwhirl.com",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "met.adwhirl.com",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "mob.adwhirl.com",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }

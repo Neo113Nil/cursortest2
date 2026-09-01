@@ -49,5 +49,115 @@
   "stdout": "╭────── com.funstage.gta ──────╮\n│ GameTwist Vegas Casino Slots │\n│ 5.56.0  (vc 40172)           │\n╰──────────────────────────────╯\n\nDownloading 4 files  (179.4 MB)\n  com.funstage.gta-40172.apk                  ━━━━━━ 100% 68.2/… 7.8     0:00:00\n                                                          MB     MB/s           \n  com.funstage.gta-40172-config.arm64_v8a.apk ━━━━━━ 100% 63.4/… 7.5     0:00:00\n                                                          MB     MB/s           \n  com.funstage.gta-40172-config.xxhdpi.apk    ━━━━━━ 100% 19.6/… 5.4     0:00:00\n                                                          MB     MB/s           \n  com.funstage.gta-40172-asset.apk            ━━━━━━ 100% 36.9/… 5.5     0:00:00\n                                                          MB     MB/s           \n\n                    Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                        ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.funstage.gta-40172.apk                  │ 65.0 MB │\n│ com.funstage.gta-40172-config.arm64_v8a.apk │ 60.5 MB │\n│ com.funstage.gta-40172-config.xxhdpi.apk    │ 18.7 MB │\n│ com.funstage.gta-40172-asset.apk            │ 65.0 MB │\n└─────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "GameTwist Vegas Casino Slots"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.1.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "37"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob, Unity Ads, Fyber FairBid, ironSource / Unity LevelPlay, Vungle, Facebook Audience Network, Digital Turbine"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Adjust, Firebase Analytics, Firebase Crashlytics, Firebase Performance, Firebase Remote Config, Firebase Messaging, Branch, ExtremePush, Google Analytics / GTM, Usercentrics"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.FOREGROUND_SERVICE, android.permission.INTERNET, android.permission.POST_NOTIFICATIONS, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.VIBRATE, android.permission.WAKE_LOCK, com.amazon.privacypass.ATTEST, com.android.alarm.permission.SET_ALARM, com.android.vending.BILLING, com.funstage.gta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.c2dm.permission.RECEIVE, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.google.android.gms.permission.AD_ID"
+      },
+      {
+        "param": "Libraries",
+        "value": "Greentube native MVC / HTML5 game WebView (com.greentube), Kotlin + kotlinx-coroutines 1.9.0, AndroidX (appcompat, browser/Custom Tabs 1.8.0, webkit, core-ktx, work, room, datastore, lifecycle), Dagger 2.57.2, OkHttp / Okio, Adjust SDK, Branch SDK, Firebase (Analytics, Crashlytics, Performance, Remote Config, Messaging, Installations), Google Play Services (Ads/AdMob, Analytics, Measurement, Basement, Tasks, Location, Cloud Messaging), Google Play Billing 8.3.0, Play Install Referrer, Unity Ads / Unity Mediation, ironSource / Unity LevelPlay, Fyber FairBid / Inneractive, Vungle Ads, Facebook Audience Network + Facebook SDK, Digital Turbine Ignite, ExtremePush (ie.imobile.extremepush), Usercentrics CMP, novomind iAGENT (support chat/FAQ), Google Tag Manager (GTM-MK62Q4), BASS audio (com.un4seen), Java-WebSocket (neovisionaries)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "130610.measurementapi.com, akm.ssacdn.com, app.adjust.io, at-freespins-v1.greentube.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "AndroidConfig (default SharedPreferences) — настройки приложения, кэш advertising id, ярлыки; device_id.xml — постоянный UUID устройства; также prefs Adjust, Branch, ExtremePush, Firebase, Usercentrics (согласие)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "casino, slots, offerwall, landing, deposit, payout, blacklist, whitelist, clickid, click_id, poker, gambling, postback, betting, affiliate, gate"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "130610.measurementapi.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Amazon Registrar, Inc."
+      },
+      {
+        "domain": "akm.ssacdn.com",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: Amazon Registrar, Inc."
+      },
+      {
+        "domain": "app.adjust.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: united-domains GmbH"
+      },
+      {
+        "domain": "at-freespins-v1.greentube.com",
+        "redirects_to": "https://at-freespins-v1.greentube.com/docs",
+        "parked_at": "регистратор: Ascio Technologies, Inc. Danmark - Filial af Ascio technologies, Inc. USA"
+      },
+      {
+        "domain": "beta-app.gametwist.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Ascio Technologies, Inc"
+      },
+      {
+        "domain": "bit.ly",
+        "redirects_to": "https://bitly.com/",
+        "parked_at": "регистратор: Libyan Spider Network (int)"
+      },
+      {
+        "domain": "boosters-social-stg.gametwist.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Ascio Technologies, Inc"
+      },
+      {
+        "domain": "cdn.prod.website-files.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }

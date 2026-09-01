@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "apks": [
+    "com.fenolvatrshine.mobile.app-1-config.en.apk",
+    "com.fenolvatrshine.mobile.app-1-config.arm64_v8a.apk",
+    "com.fenolvatrshine.mobile.app-1-config.xxhdpi.apk",
+    "com.fenolvatrshine.mobile.app-1-asset.apk",
+    "com.fenolvatrshine.mobile.app-1.apk"
+  ],
+  "base_apk": "com.fenolvatrshine.mobile.app-1.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": " 9459 (55%)\nINFO  - progress: 5278 of 9459 (55%)\nINFO  - progress: 5299 of 9459 (56%)\nINFO  - progress: 5308 of 9459 (56%)\nINFO  - progress: 5320 of 9459 (56%)\nINFO  - progress: 5349 of 9459 (56%)\nINFO  - progress: 5357 of 9459 (56%)\nINFO  - progress: 5377 of 9459 (56%)\nINFO  - progress: 5418 of 9459 (57%)\nINFO  - progress: 5446 of 9459 (57%)\nINFO  - progress: 5874 of 9459 (62%)\nINFO  - progress: 6080 of 9459 (64%)\nINFO  - progress: 6254 of 9459 (66%)\nINFO  - progress: 6284 of 9459 (66%)\nINFO  - progress: 6317 of 9459 (66%)\nINFO  - progress: 6333 of 9459 (66%)\nINFO  - progress: 6346 of 9459 (67%)\nINFO  - progress: 6359 of 9459 (67%)\nINFO  - progress: 6363 of 9459 (67%)\nINFO  - progress: 6408 of 9459 (67%)\nINFO  - progress: 6446 of 9459 (68%)\nINFO  - progress: 6602 of 9459 (69%)\nINFO  - progress: 6836 of 9459 (72%)\nINFO  - progress: 7037 of 9459 (74%)\nINFO  - progress: 7295 of 9459 (77%)\nINFO  - progress: 7630 of 9459 (80%)\nINFO  - progress: 7668 of 9459 (81%)\nINFO  - progress: 7695 of 9459 (81%)\nINFO  - progress: 7906 of 9459 (83%)\nINFO  - progress: 8153 of 9459 (86%)\nINFO  - progress: 8247 of 9459 (87%)\nINFO  - progress: 8417 of 9459 (88%)\nINFO  - progress: 8493 of 9459 (89%)\nINFO  - progress: 8526 of 9459 (90%)\nINFO  - progress: 8551 of 9459 (90%)\nINFO  - progress: 8598 of 9459 (90%)\nINFO  - progress: 8613 of 9459 (91%)\nINFO  - progress: 8633 of 9459 (91%)\nINFO  - progress: 8647 of 9459 (91%)\nINFO  - progress: 8671 of 9459 (91%)\nINFO  - progress: 8690 of 9459 (91%)\nINFO  - progress: 8716 of 9459 (92%)\nINFO  - progress: 8739 of 9459 (92%)\nINFO  - progress: 8759 of 9459 (92%)\nINFO  - progress: 8773 of 9459 (92%)\nINFO  - progress: 8776 of 9459 (92%)\nINFO  - progress: 8783 of 9459 (92%)\nINFO  - progress: 8789 of 9459 (92%)\nINFO  - progress: 8800 of 9459 (93%)\nINFO  - progress: 8819 of 9459 (93%)\nINFO  - progress: 8845 of 9459 (93%)\nINFO  - progress: 8859 of 9459 (93%)\nINFO  - progress: 8878 of 9459 (93%)\nINFO  - progress: 8901 of 9459 (94%)\nINFO  - progress: 8913 of 9459 (94%)\nINFO  - progress: 8930 of 9459 (94%)\nINFO  - progress: 8950 of 9459 (94%)\nINFO  - progress: 8969 of 9459 (94%)\nINFO  - progress: 8984 of 9459 (94%)\nINFO  - progress: 8990 of 9459 (95%)\nINFO  - progress: 9004 of 9459 (95%)\nINFO  - progress: 9148 of 9459 (96%)\nINFO  - progress: 9177 of 9459 (97%)\nINFO  - progress: 9194 of 9459 (97%)\nINFO  - progress: 9200 of 9459 (97%)\nINFO  - progress: 9211 of 9459 (97%)\nINFO  - progress: 9216 of 9459 (97%)\nINFO  - progress: 9220 of 9459 (97%)\nINFO  - progress: 9222 of 9459 (97%)\nINFO  - progress: 9223 of 9459 (97%)\nINFO  - progress: 9225 of 9459 (97%)\nINFO  - progress: 9227 of 9459 (97%)\nINFO  - progress: 9230 of 9459 (97%)\nINFO  - progress: 9246 of 9459 (97%)\nINFO  - progress: 9267 of 9459 (97%)\nINFO  - progress: 9270 of 9459 (98%)\nINFO  - progress: 9273 of 9459 (98%)\nINFO  - progress: 9382 of 9459 (99%)\nINFO  - progress: 9454 of 9459 (99%)\n                                                             \nERROR - finished with errors, count: 41\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/amazon casino/Amazon Casino-Dream Hubs App/decompiled",
+    "skipped": false,
+    "base_apk": "com.fenolvatrshine.mobile.app-1.apk"
+  },
+  "analysis_files": [
+    "com.fenolvatrshine.mobile.app-1-config.en.apk",
+    "com.fenolvatrshine.mobile.app-1-config.arm64_v8a.apk",
+    "com.fenolvatrshine.mobile.app-1-config.xxhdpi.apk",
+    "com.fenolvatrshine.mobile.app-1-asset.apk",
+    "com.fenolvatrshine.mobile.app-1.apk",
+    "apk/com.fenolvatrshine.mobile.app-1-config.en.apk",
+    "apk/com.fenolvatrshine.mobile.app-1-config.arm64_v8a.apk",
+    "apk/com.fenolvatrshine.mobile.app-1-config.xxhdpi.apk",
+    "apk/com.fenolvatrshine.mobile.app-1-asset.apk",
+    "apk/com.fenolvatrshine.mobile.app-1.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/",
+    "decompiled/sources/de/",
+    "decompiled/sources/io/",
+    "decompiled/sources/java9/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/okhttp/",
+    "decompiled/sources/okhttp3/",
+    "decompiled/sources/okio/",
+    "decompiled/sources/org/"
+  ],
+  "errors": []
+}

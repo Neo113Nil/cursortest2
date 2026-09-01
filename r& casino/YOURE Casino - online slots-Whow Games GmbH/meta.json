@@ -79,5 +79,115 @@
   "stdout": "Downloading net.youre.yrecasino...\nnet.youre.yrecasino downloaded successfully!\n",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "YOURE Casino - online slots"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.2.20"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob, AppLovin, ironSource, Fyber, Vungle, Moloco, Pangle, Digital Turbine, Facebook Audience Network"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Firebase Crashlytics, Firebase Performance, Firebase Remote Config, AppsFlyer, Braze, Bugsnag, Smartlook, Facebook App Events, OneTrust"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.ACCESS_NETWORK_STATE, android.permission.INTERNET, com.google.android.gms.permission.AD_ID, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, android.permission.POST_NOTIFICATIONS, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_TOPICS, com.google.android.finsky. permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.google.android.providers.gsf.permission.READ_GSERVICES, com.android.vending.BILLING, android.permission.VIBRATE, com.android.vending.CHECK_LICENSE, android.permission.ACCESS_WIFI_STATE, com.samsung.android.mapsagent.permission.READ_APP_INFO, com.huawei.ap pmarket.service.commondata.permission.GET_COMMON_DATA, android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE, com.amazon.privacypass.ATTEST, android.permission.FOREGROUND_SERVICE, net.youre.yrecasino.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, net.youre.yrecasino.permission.C2D_MESSAGE, android.permission.READ_EXTERNAL_STORAGE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity 6000.3.16f1 (IL2CPP), Vuplex 3D WebView, gree unity-webview, UniWebView, Braze, AppsFlyer, AppLovin MAX, ironSource, Fyber, Vungle, Moloco, Pangle, Digital Turbine, Facebook SDK / Audience Network, Firebase Analytics/Crashlytics/Performance/Remote Config, Bugsnag, Smartlook, Freshchat, OneTrust, OkHttp, Coil, Dagger, Kotlin 2.2.20 / kotlinx-coroutines, androidx.browser (Custom Tabs)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "akm.ssacdn.com, aomedia.org, api16-access-ttp.tiktokpangle.us, auroraoss.com, braze.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "AppsFlyer (атрибуция/флаги устройства), Braze (сессия/пользователь), Facebook SDK, Firebase/Unity, флаги согласия OneTrust"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "casino, slots, roulette, betting, offer, redirect, whitelist, blacklist, landing, bridge, webview, gate, clickid, affiliate, payout"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "akm.ssacdn.com",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: Amazon Registrar, Inc."
+      },
+      {
+        "domain": "aomedia.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Squarespace Domains II LLC"
+      },
+      {
+        "domain": "api16-access-ttp.tiktokpangle.us",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Gandi SAS"
+      },
+      {
+        "domain": "auroraoss.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "braze.com",
+        "redirects_to": "https://www.braze.com/",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "bugsnag.com",
+        "redirects_to": "https://www.bugsnag.com/",
+        "parked_at": "регистратор: GANDI SAS"
+      },
+      {
+        "domain": "cdn.prod.website-files.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "cdn2.inner-active.mobi",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }

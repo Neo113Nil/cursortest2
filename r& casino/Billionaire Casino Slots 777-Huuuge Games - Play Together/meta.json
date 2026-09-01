@@ -1,0 +1,88 @@
+{
+  "app_id": "com.huuuge.casino.texas",
+  "title": "Billionaire Casino Slots 777",
+  "developer": "Huuuge Games - Play Together",
+  "score": 4.599724,
+  "icon": "https://play-lh.googleusercontent.com/qQtXm0MkyLjGXxXTrGxDPl3ynP7euLwwnIRjSoKx-BX8t-_ZAcMn2YBUfpZ9HVNOqFAK_o6pySgmIWdjTb1h",
+  "url": "https://play.google.com/store/apps/details?id=com.huuuge.casino.texas&hl=en&gl=us",
+  "keyword": "R& casino",
+  "country": "Germany",
+  "source": "",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260831_172700_Germany_R& casino_search",
+  "search_title": "Billionaire Casino Slots 777",
+  "search_developer": "Huuuge Games - Play Together",
+  "rank": 4,
+  "developer_id": "8992197787187790047",
+  "released": "Oct 19, 2016",
+  "updated": "2026-08-17",
+  "version": "12.08.27100",
+  "summary": "Experience a swanky social casino! Spin 777 slots & join the Billionaire League.",
+  "folder": "Billionaire Casino Slots 777-Huuuge Games - Play Together",
+  "path": "r& casino/Billionaire Casino Slots 777-Huuuge Games - Play Together",
+  "updates_count": 1,
+  "ok": false,
+  "files": [],
+  "target": "/root/play-collector/загрузки/r& casino/Billionaire Casino Slots 777-Huuuge Games - Play Together",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.another1                   │\n│ GSF ID : 32d78e05ccf7e343                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.droelf@gmail.com           │\n│ GSF ID : 35d1f84294749277                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.huuuge.casino.texas...\n",
+      "stderr": "",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.huuuge.casino.texas...\n",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "Downloading com.huuuge.casino.texas...\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}
