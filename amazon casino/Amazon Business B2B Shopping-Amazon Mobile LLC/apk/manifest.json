@@ -1,8 +1,0 @@
-{
-  "package": "com.amazon.mShop.android.business.shopping",
-  "version_code": "1243220206",
-  "version_name": "32.16.0.451",
-  "label": "Amazon Business",
-  "min_sdk": 31,
-  "target_sdk": 36
-}
