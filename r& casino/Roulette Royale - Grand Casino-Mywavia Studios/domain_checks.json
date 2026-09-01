@@ -1227,6 +1227,7 @@
         },
         "categories": {},
         "popularity_ranks": [
+<<<<<<< HEAD
           "Majestic: 102332",
           "Statvoo: 567771",
           "Alexa: 567771",
@@ -1249,6 +1250,30 @@
           "AAAA 2606:4700:3032::ac43:d71e",
           "MX route2.mx.cloudflare.net",
           "A 104.21.75.61",
+=======
+          "Majestic: 101129",
+          "Statvoo: 567771",
+          "Alexa: 567771",
+          "Cisco Umbrella: 317481",
+          "Cloudflare Radar: 100000"
+        ],
+        "creation_date": 1543230453,
+        "last_modification_date": 1788208341,
+        "last_analysis_date": 1788208022,
+        "registrar": "NAMECHEAP INC",
+        "whois": "Admin City: Reykjavik\nAdmin Country: IS\nAdmin Email: 9648e256a50b979as@withheldforprivacy.com\nAdmin Organization: Privacy service provided by Withheld for Privacy ehf\nAdmin Postal Code: 101\nAdmin State/Province: Capital Region\nCreation Date: 2018-11-26T11:07:33.00Z\nCreation Date: 2018-11-26T11:07:33Z\nDNSSEC: signedDelegation\nDNSSEC: unsigned\nDomain Name: AURORAOSS.COM\nDomain Status: ok https://icann.org/epp#ok\nDomain name: auroraoss.com\nName Server: KAY.NS.CLOUDFLARE.COM\nName Server: MILES.NS.CLOUDFLARE.COM\nName Server: kay.ns.cloudflare.com\nName Server: miles.ns.cloudflare.com\nRegistrant City: ddbf76e4e8cee320\nRegistrant Country: IS\nRegistrant Email: 9648e256a50b979as@withheldforprivacy.com\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 3432650ec337c945\nRegistrant Name: 37bfbc24cafea5d2\nRegistrant Organization: 4b7a0912c26a13e2\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: 1c9a7bcdeaf95e9f\nRegistrant Postal Code: f206c9d9737ad45d\nRegistrant State/Province: 3e0204199d8ebf9c\nRegistrant Street: c6523241936df1ba\nRegistrar Abuse Contact Email: abuse@namecheap.com\nRegistrar Abuse Contact Phone: +1.6613102107\nRegistrar Abuse Contact Phone: +1.9854014545\nRegistrar IANA ID: 1068\nRegistrar Registration Expiration Date: 2026-11-26T11:07:33.00Z\nRegistrar URL: http://www.namecheap.com\nRegistrar WHOIS Server: whois.namecheap.com\nRegistrar: NAMECHEAP INC\nRegistrar: NameCheap, Inc.\nRegistry Domain ID: 2336897073_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2026-11-26T11:07:33Z\nTech City: Reykjavik\nTech Country: IS\nTech Email: 9648e256a50b979as@withheldforprivacy.com\nTech Organization: Privacy service provided by Withheld for Privacy ehf\nTech Postal Code: 101\nTech State/Province: Capital Region\nUpdated Date: 2025-11-27T02:51:25.81Z\nUpdated Date: 2025-11-27T02:51:26Z",
+        "dns_records": [
+          "MX route2.mx.cloudflare.net",
+          "A 104.21.75.61",
+          "SOA kay.ns.cloudflare.com",
+          "A 172.67.215.30",
+          "TXT v=spf1 include:_spf.mx.cloudflare.net ~all",
+          "AAAA 2606:4700:3034::6815:4b3d",
+          "TXT google-site-verification=N9rbfx7Zs9xqCqV9CwD2IHOI0onSvTWpkbTr8X4Aq2Q",
+          "AAAA 2606:4700:3032::ac43:d71e",
+          "MX route1.mx.cloudflare.net",
+          "NS miles.ns.cloudflare.com",
+>>>>>>> origin/main
           "NS kay.ns.cloudflare.com",
           "MX route3.mx.cloudflare.net"
         ],
@@ -3710,11 +3735,20 @@
         "categories": {},
         "popularity_ranks": "нет",
         "creation_date": 1240116277,
+<<<<<<< HEAD
         "last_modification_date": 1788270509,
         "last_analysis_date": 1788269387,
         "registrar": "MarkMonitor Inc.",
         "whois": "Creation Date: 2009-04-19T04:44:37+0000\nCreation Date: 2009-04-19T04:44:37Z\nDNSSEC: unsigned\nDomain Name: ADWHIRL.COM\nDomain Name: adwhirl.com\nDomain Status: clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: NS1.GOOGLE.COM\nName Server: NS2.GOOGLE.COM\nName Server: NS3.GOOGLE.COM\nName Server: NS4.GOOGLE.COM\nName Server: ns1.google.com\nName Server: ns2.google.com\nName Server: ns3.google.com\nName Server: ns4.google.com\nRegistrant Country: US\nRegistrant Email: 9eb31b881926c345s@\nRegistrant Organization: 3307059bbb3149c4\nRegistrar Abuse Contact Email: abusecomplaints@markmonitor.com\nRegistrar Abuse Contact Phone: +1.2086851750\nRegistrar Abuse Contact: https://corp.markmonitor.com/domain/ui/abuse-report\nRegistrar IANA ID: 292\nRegistrar Registration Expiration Date: 2027-04-19T00:00:00+0000\nRegistrar URL: http://www.markmonitor.com\nRegistrar WHOIS Server: whois.markmonitor.com\nRegistrar: MarkMonitor Inc.\nRegistrar: MarkMonitor, Inc.\nRegistry Domain ID: 1552747305_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2027-04-19T04:44:37Z\nUpdated Date: 2026-03-18T10:47:22+0000\nUpdated Date: 2026-03-18T10:47:22Z",
         "dns_records": [
+=======
+        "last_modification_date": 1788093224,
+        "last_analysis_date": 1788092898,
+        "registrar": "MarkMonitor Inc.",
+        "whois": "Creation Date: 2009-04-19T04:44:37+0000\nCreation Date: 2009-04-19T04:44:37Z\nDNSSEC: unsigned\nDomain Name: ADWHIRL.COM\nDomain Name: adwhirl.com\nDomain Status: clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: NS1.GOOGLE.COM\nName Server: NS2.GOOGLE.COM\nName Server: NS3.GOOGLE.COM\nName Server: NS4.GOOGLE.COM\nName Server: ns1.google.com\nName Server: ns2.google.com\nName Server: ns3.google.com\nName Server: ns4.google.com\nRegistrant Country: US\nRegistrant Email: 9eb31b881926c345s@\nRegistrant Organization: 3307059bbb3149c4\nRegistrar Abuse Contact Email: abusecomplaints@markmonitor.com\nRegistrar Abuse Contact Phone: +1.2086851750\nRegistrar Abuse Contact: https://corp.markmonitor.com/domain/ui/abuse-report\nRegistrar IANA ID: 292\nRegistrar Registration Expiration Date: 2027-04-19T00:00:00+0000\nRegistrar URL: http://www.markmonitor.com\nRegistrar WHOIS Server: whois.markmonitor.com\nRegistrar: MarkMonitor Inc.\nRegistrar: MarkMonitor, Inc.\nRegistry Domain ID: 1552747305_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2027-04-19T04:44:37Z\nUpdated Date: 2026-03-18T10:47:22+0000\nUpdated Date: 2026-03-18T10:47:22Z",
+        "dns_records": [
+          "CNAME adwhirllb-473732162.us-east-1.elb.amazonaws.com",
+>>>>>>> origin/main
           "CNAME adwhirllb-473732162.us-east-1.elb.amazonaws.com"
         ],
         "https_subject": "нет",
@@ -5339,11 +5373,20 @@
           "Cisco Umbrella: 755511"
         ],
         "creation_date": 1240116277,
+<<<<<<< HEAD
         "last_modification_date": 1788270508,
         "last_analysis_date": 1788269387,
         "registrar": "MarkMonitor Inc.",
         "whois": "Creation Date: 2009-04-19T04:44:37+0000\nCreation Date: 2009-04-19T04:44:37Z\nDNSSEC: unsigned\nDomain Name: ADWHIRL.COM\nDomain Name: adwhirl.com\nDomain Status: clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: NS1.GOOGLE.COM\nName Server: NS2.GOOGLE.COM\nName Server: NS3.GOOGLE.COM\nName Server: NS4.GOOGLE.COM\nName Server: ns1.google.com\nName Server: ns2.google.com\nName Server: ns3.google.com\nName Server: ns4.google.com\nRegistrant Country: US\nRegistrant Email: 9eb31b881926c345s@\nRegistrant Organization: 3307059bbb3149c4\nRegistrar Abuse Contact Email: abusecomplaints@markmonitor.com\nRegistrar Abuse Contact Phone: +1.2086851750\nRegistrar Abuse Contact: https://corp.markmonitor.com/domain/ui/abuse-report\nRegistrar IANA ID: 292\nRegistrar Registration Expiration Date: 2027-04-19T00:00:00+0000\nRegistrar URL: http://www.markmonitor.com\nRegistrar WHOIS Server: whois.markmonitor.com\nRegistrar: MarkMonitor Inc.\nRegistrar: MarkMonitor, Inc.\nRegistry Domain ID: 1552747305_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2027-04-19T04:44:37Z\nUpdated Date: 2026-03-18T10:47:22+0000\nUpdated Date: 2026-03-18T10:47:22Z",
         "dns_records": [
+=======
+        "last_modification_date": 1788093224,
+        "last_analysis_date": 1788092898,
+        "registrar": "MarkMonitor Inc.",
+        "whois": "Creation Date: 2009-04-19T04:44:37+0000\nCreation Date: 2009-04-19T04:44:37Z\nDNSSEC: unsigned\nDomain Name: ADWHIRL.COM\nDomain Name: adwhirl.com\nDomain Status: clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: NS1.GOOGLE.COM\nName Server: NS2.GOOGLE.COM\nName Server: NS3.GOOGLE.COM\nName Server: NS4.GOOGLE.COM\nName Server: ns1.google.com\nName Server: ns2.google.com\nName Server: ns3.google.com\nName Server: ns4.google.com\nRegistrant Country: US\nRegistrant Email: 9eb31b881926c345s@\nRegistrant Organization: 3307059bbb3149c4\nRegistrar Abuse Contact Email: abusecomplaints@markmonitor.com\nRegistrar Abuse Contact Phone: +1.2086851750\nRegistrar Abuse Contact: https://corp.markmonitor.com/domain/ui/abuse-report\nRegistrar IANA ID: 292\nRegistrar Registration Expiration Date: 2027-04-19T00:00:00+0000\nRegistrar URL: http://www.markmonitor.com\nRegistrar WHOIS Server: whois.markmonitor.com\nRegistrar: MarkMonitor Inc.\nRegistrar: MarkMonitor, Inc.\nRegistry Domain ID: 1552747305_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2027-04-19T04:44:37Z\nUpdated Date: 2026-03-18T10:47:22+0000\nUpdated Date: 2026-03-18T10:47:22Z",
+        "dns_records": [
+          "CNAME adwhirllb-473732162.us-east-1.elb.amazonaws.com",
+>>>>>>> origin/main
           "CNAME adwhirllb-473732162.us-east-1.elb.amazonaws.com"
         ],
         "https_subject": "нет",
@@ -6146,11 +6189,20 @@
           "Cisco Umbrella: 906814"
         ],
         "creation_date": 1240116277,
+<<<<<<< HEAD
         "last_modification_date": 1788270508,
         "last_analysis_date": 1788269387,
         "registrar": "MarkMonitor Inc.",
         "whois": "Creation Date: 2009-04-19T04:44:37+0000\nCreation Date: 2009-04-19T04:44:37Z\nDNSSEC: unsigned\nDomain Name: ADWHIRL.COM\nDomain Name: adwhirl.com\nDomain Status: clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: NS1.GOOGLE.COM\nName Server: NS2.GOOGLE.COM\nName Server: NS3.GOOGLE.COM\nName Server: NS4.GOOGLE.COM\nName Server: ns1.google.com\nName Server: ns2.google.com\nName Server: ns3.google.com\nName Server: ns4.google.com\nRegistrant Country: US\nRegistrant Email: 9eb31b881926c345s@\nRegistrant Organization: 3307059bbb3149c4\nRegistrar Abuse Contact Email: abusecomplaints@markmonitor.com\nRegistrar Abuse Contact Phone: +1.2086851750\nRegistrar Abuse Contact: https://corp.markmonitor.com/domain/ui/abuse-report\nRegistrar IANA ID: 292\nRegistrar Registration Expiration Date: 2027-04-19T00:00:00+0000\nRegistrar URL: http://www.markmonitor.com\nRegistrar WHOIS Server: whois.markmonitor.com\nRegistrar: MarkMonitor Inc.\nRegistrar: MarkMonitor, Inc.\nRegistry Domain ID: 1552747305_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2027-04-19T04:44:37Z\nUpdated Date: 2026-03-18T10:47:22+0000\nUpdated Date: 2026-03-18T10:47:22Z",
         "dns_records": [
+=======
+        "last_modification_date": 1788093224,
+        "last_analysis_date": 1788092898,
+        "registrar": "MarkMonitor Inc.",
+        "whois": "Creation Date: 2009-04-19T04:44:37+0000\nCreation Date: 2009-04-19T04:44:37Z\nDNSSEC: unsigned\nDomain Name: ADWHIRL.COM\nDomain Name: adwhirl.com\nDomain Status: clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: NS1.GOOGLE.COM\nName Server: NS2.GOOGLE.COM\nName Server: NS3.GOOGLE.COM\nName Server: NS4.GOOGLE.COM\nName Server: ns1.google.com\nName Server: ns2.google.com\nName Server: ns3.google.com\nName Server: ns4.google.com\nRegistrant Country: US\nRegistrant Email: 9eb31b881926c345s@\nRegistrant Organization: 3307059bbb3149c4\nRegistrar Abuse Contact Email: abusecomplaints@markmonitor.com\nRegistrar Abuse Contact Phone: +1.2086851750\nRegistrar Abuse Contact: https://corp.markmonitor.com/domain/ui/abuse-report\nRegistrar IANA ID: 292\nRegistrar Registration Expiration Date: 2027-04-19T00:00:00+0000\nRegistrar URL: http://www.markmonitor.com\nRegistrar WHOIS Server: whois.markmonitor.com\nRegistrar: MarkMonitor Inc.\nRegistrar: MarkMonitor, Inc.\nRegistry Domain ID: 1552747305_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2027-04-19T04:44:37Z\nUpdated Date: 2026-03-18T10:47:22+0000\nUpdated Date: 2026-03-18T10:47:22Z",
+        "dns_records": [
+          "CNAME adwhirllb-473732162.us-east-1.elb.amazonaws.com",
+>>>>>>> origin/main
           "CNAME adwhirllb-473732162.us-east-1.elb.amazonaws.com"
         ],
         "https_subject": "нет",
