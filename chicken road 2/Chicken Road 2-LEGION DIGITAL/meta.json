@@ -1,0 +1,48 @@
+{
+  "app_id": "com.goldenboot.saga.zone",
+  "title": "Chicken Road 2",
+  "developer": "LEGION DIGITAL",
+  "score": null,
+  "icon": "/static/app-icons/com_goldenboot_saga_zone.png",
+  "url": "https://play.google.com/store/apps/details?id=com.goldenboot.saga.zone&hl=en&gl=us",
+  "keyword": "chicken road 2",
+  "developer_id": "LEGION+DIGITAL",
+  "released": "",
+  "updated": "Aug 12, 2026",
+  "version": "Varies with device",
+  "summary": "Football tile-matching puzzles, levels, boosters, trophies and daily rewards",
+  "country": "India",
+  "folder": "Chicken Road 2-LEGION DIGITAL",
+  "path": "chicken road 2/Chicken Road 2-LEGION DIGITAL",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.goldenboot.saga.zone-1-asset.apk",
+    "com.goldenboot.saga.zone-1-config.arm64_v8a.apk",
+    "com.goldenboot.saga.zone-1-config.en.apk",
+    "com.goldenboot.saga.zone-1-config.xxhdpi.apk",
+    "com.goldenboot.saga.zone-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/chicken road 2/Chicken Road 2-LEGION DIGITAL",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.goldenboot.saga.zone ─╮\n│ Chicken Road 2             │\n│ 1.0  (vc 1)                │\n╰────────────────────────────╯\n\nDownloading 5 files  (14.3 MB)\n  com.goldenboot.saga.zone-1.apk                  ━━━━━ 100% 10.5… 11.1   0:00:…\n                                                             MB    MB/s         \n  com.goldenboot.saga.zone-1-config.arm64_v8a.apk ━━━━━ 100% 82.4… 1.9    0:00:…\n                                                             kB    MB/s         \n  com.goldenboot.saga.zone-1-config.en.apk        ━━━━━ 100% 74.1… 2.0    0:00:…\n                                                             kB    MB/s         \n  com.goldenboot.saga.zone-1-config.xxhdpi.apk    ━━━━━ 100% 86.4… 2.4    0:00:…\n                                                             kB    MB/s         \n  com.goldenboot.saga.zone-1-asset.apk            ━━━━━ 100% 4.2/… 5.2    0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.goldenboot.saga.zone-1.apk                  │ 10.0 MB │\n│ com.goldenboot.saga.zone-1-config.arm64_v8a.apk │ 80.5 KB │\n│ com.goldenboot.saga.zone-1-config.en.apk        │ 72.4 KB │\n│ com.goldenboot.saga.zone-1-config.xxhdpi.apk    │ 84.4 KB │\n│ com.goldenboot.saga.zone-1-asset.apk            │ 10.0 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.goldenboot.saga.zone ─╮\n│ Chicken Road 2             │\n│ 1.0  (vc 1)                │\n╰────────────────────────────╯\n\nDownloading 5 files  (14.3 MB)\n  com.goldenboot.saga.zone-1.apk                  ━━━━━ 100% 10.5… 11.1   0:00:…\n                                                             MB    MB/s         \n  com.goldenboot.saga.zone-1-config.arm64_v8a.apk ━━━━━ 100% 82.4… 1.9    0:00:…\n                                                             kB    MB/s         \n  com.goldenboot.saga.zone-1-config.en.apk        ━━━━━ 100% 74.1… 2.0    0:00:…\n                                                             kB    MB/s         \n  com.goldenboot.saga.zone-1-config.xxhdpi.apk    ━━━━━ 100% 86.4… 2.4    0:00:…\n                                                             kB    MB/s         \n  com.goldenboot.saga.zone-1-asset.apk            ━━━━━ 100% 4.2/… 5.2    0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.goldenboot.saga.zone-1.apk                  │ 10.0 MB │\n│ com.goldenboot.saga.zone-1-config.arm64_v8a.apk │ 80.5 KB │\n│ com.goldenboot.saga.zone-1-config.en.apk        │ 72.4 KB │\n│ com.goldenboot.saga.zone-1-config.xxhdpi.apk    │ 84.4 KB │\n│ com.goldenboot.saga.zone-1-asset.apk            │ 10.0 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}

@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "apks": [
+    "com.skytonedarps.arskthrp-5-config.xxhdpi.apk",
+    "com.skytonedarps.arskthrp-5-config.arm64_v8a.apk",
+    "com.skytonedarps.arskthrp-5-asset.apk",
+    "com.skytonedarps.arskthrp-5.apk",
+    "com.skytonedarps.arskthrp-5-config.lt.apk",
+    "com.skytonedarps.arskthrp-5-config.en.apk",
+    "com.skytonedarps.arskthrp-5-config.ru.apk"
+  ],
+  "base_apk": "com.skytonedarps.arskthrp-5.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 1943 (0%)\nINFO  - progress: 118 of 1943 (6%)\nINFO  - progress: 469 of 1943 (24%)\nINFO  - progress: 650 of 1943 (33%)\nINFO  - progress: 834 of 1943 (42%)\nINFO  - progress: 1002 of 1943 (51%)\nINFO  - progress: 1133 of 1943 (58%)\nINFO  - progress: 1169 of 1943 (60%)\nINFO  - progress: 1240 of 1943 (63%)\nINFO  - progress: 1327 of 1943 (68%)\nINFO  - progress: 1380 of 1943 (71%)\nINFO  - progress: 1580 of 1943 (81%)\n                                                             \nERROR - finished with errors, count: 2\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/chicken road 2/Chicken Road 2-Tarra-Market/decompiled",
+    "skipped": false,
+    "base_apk": "com.skytonedarps.arskthrp-5.apk"
+  },
+  "agent_src": {
+    "files": 802,
+    "zip": true,
+    "package": "com.skytonedarps.arskthrp"
+  },
+  "agent_base": {
+    "ok": true,
+    "size": 10502464,
+    "from": "com.skytonedarps.arskthrp-5.apk"
+  },
+  "analysis_files": [
+    "agent_base.apk",
+    "agent_src.zip",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "meta.json",
+    "apk/com.skytonedarps.arskthrp-5-asset.apk",
+    "apk/com.skytonedarps.arskthrp-5-config.arm64_v8a.apk",
+    "apk/com.skytonedarps.arskthrp-5-config.en.apk",
+    "apk/com.skytonedarps.arskthrp-5-config.lt.apk",
+    "apk/com.skytonedarps.arskthrp-5-config.ru.apk",
+    "apk/com.skytonedarps.arskthrp-5-config.xxhdpi.apk",
+    "apk/com.skytonedarps.arskthrp-5.apk",
+    "agent_src/",
+    "agent_src/com/skytonedarps/arskthrp/MainActivity.java",
+    "agent_src/com/pairip/application/Application.java",
+    "agent_src/com/pairip/licensecheck/LicenseActivity.java"
+  ],
+  "errors": []
+}
