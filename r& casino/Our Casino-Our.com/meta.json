@@ -1,0 +1,115 @@
+{
+  "title": "Our Casino",
+  "developer": "Our.com",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Our Casino"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.7.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "23"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Facebook App Events"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.android.vending.BILLING, com.our.casino.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Capacitor (Bridge/WebView), Cordova (cordova-plugin-purchase / iaptic, cordova-plugin-fullscreen), Angular (HTML5 UI в assets/public), Facebook SDK (Login / Custom Tabs / App Events), Google Play Billing 7.1.1, Play Install Referrer, AndroidX (appcompat, browser/Custom Tabs, webkit, core/core-ktx, activity, fragment, lifecycle, splashscreen), Kotlin / kotlinx-coroutines 1.6.4, Google Play Services (base, basement, location, tasks), Google Datatransport / Firebase Encoders (транспорт), @capacitor/app, browser, device, filesystem, network, preferences, splash-screen, @capacitor-community/facebook-login, keep-awake, @capgo/native-audio, capacitor-plugin-safe-area"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "angular.dev, angular.io, aomedia.org, appassets.androidplatform.net, capacitorjs.com, com.chrome.dev, config.ru, de.our.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "CapacitorStorage (плагин Preferences); CapWebViewSettings (версии бинарника и путь WebView); PluginPermStates; Facebook SDK (токен входа, настройки приложения, App Events / attribution и связанные ключи)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "casino, slots, poker, bingo, offer, redirect, bridge, webview, gambling"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "angular.dev",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "angular.io",
+        "redirects_to": "https://angular.dev/",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "aomedia.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Squarespace Domains II LLC"
+      },
+      {
+        "domain": "appassets.androidplatform.net",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "capacitorjs.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: SafeNames Ltd."
+      },
+      {
+        "domain": "com.chrome.dev",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "config.ru",
+        "redirects_to": "https://config.ru/en/",
+        "parked_at": "похоже на парковку (domain is for sale)"
+      },
+      {
+        "domain": "de.our.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: ENOM, INC."
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  },
+  "app_id": ""
+}

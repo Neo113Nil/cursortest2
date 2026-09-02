@@ -1,16 +1,15 @@
 # Проверка подозрительных доменов
 
-## Проверка домена: 123.com
+## Проверка домена: app.link
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
 
 | Параметр / движок | Значение / вердикт |
 |---|---|
-| Домен | 123.com |
-| VirusTotal URL | https://www.virustotal.com/gui/domain/123.com |
-| Детекции | 1/91 (malicious=1, suspicious=0) |
+| Домен | app.link |
+| VirusTotal URL | https://www.virustotal.com/gui/domain/app.link |
+| Детекции | 0/91 (malicious=0, suspicious=0) |
 | Security vendors' analysis | ниже построчно, как на VirusTotal |
-| Chong Lua Dao | Malicious |
 | Abusix | Clean |
 | Acronis | Clean |
 | ADMINUSLabs | Clean |
@@ -19,11 +18,13 @@
 | alphaMountain.ai | Clean |
 | Antiy-AVL | Clean |
 | BitDefender | Clean |
+| Bkav | Clean |
 | Blueliv | Clean |
 | Certego | Clean |
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
+| Criminal IP | Clean |
 | CTX AI | Clean |
 | Cyble | Clean |
 | CyRadar | Clean |
@@ -41,6 +42,7 @@
 | Heimdal Security | Clean |
 | IPsum | Clean |
 | Juniper Networks | Clean |
+| Kaspersky | Clean |
 | LevelBlue | Clean |
 | Lionic | Clean |
 | Malwared | Clean |
@@ -59,14 +61,13 @@
 | Sucuri SiteCheck | Clean |
 | ThreatHive | Clean |
 | URLhaus | Clean |
+| URLQuery | Clean |
 | Viettel Threat Intelligence | Clean |
+| VIPRE | Clean |
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
-<<<<<<< HEAD
-=======
 | Xcitium Verdict Cloud | Clean |
->>>>>>> origin/main
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -75,10 +76,9 @@
 | AutoShun | Unrated |
 | Axur | Unrated |
 | Bfore.Ai PreCrime | Unrated |
-| Bkav | Unrated |
 | ChainPatrol | Unrated |
+| Chong Lua Dao | Unrated |
 | Cluster25 | Unrated |
-| Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
 | Cyan | Unrated |
 | DNS8 | Unrated |
@@ -89,7 +89,6 @@
 | Gridinsoft | Unrated |
 | Guardpot | Unrated |
 | Hunt.io Intelligence | Unrated |
-| Kaspersky | Unrated |
 | Lumu | Unrated |
 | MalwareURL | Unrated |
 | Mimecast | Unrated |
@@ -101,63 +100,78 @@
 | SecureBrain | Unrated |
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
-| URLQuery | Unrated |
-| VIPRE | Unrated |
-<<<<<<< HEAD
-| Xcitium Verdict Cloud | Unrated |
-=======
->>>>>>> origin/main
 | ZeroFox | Unrated |
-| Куда редиректит | нет (DNS не резолвится) |
-| Что выводит (кратко) | нет (DNS не резолвится) |
-| Где припаркован | нет данных |
+| Куда редиректит | нет (без редиректа) |
+| Что выводит (кратко) | That link could not be found! Check the spelling of the link or make sure you're using the correct domain. |
+| Где припаркован | регистратор: GANDI SAS |
 
-## Проверка домена: akm.ssacdn.com
+## Проверка домена: assets.play.gaminator.com
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
 
 | Параметр / движок | Значение / вердикт |
 |---|---|
-| Домен | akm.ssacdn.com |
-| VirusTotal URL | https://www.virustotal.com/gui/domain/akm.ssacdn.com |
+| Домен | assets.play.gaminator.com |
+| VirusTotal URL | https://www.virustotal.com/gui/domain/assets.play.gaminator.com |
 | Детекции | 0/91 (malicious=0, suspicious=0) |
 | Security vendors' analysis | ниже построчно, как на VirusTotal |
-| ADMINUSLabs | Clean |
+| Abusix | Clean |
+| Acronis | Clean |
+| AILabs (MONITORAPP) | Clean |
 | AlienVault | Clean |
 | Antiy-AVL | Clean |
 | BitDefender | Clean |
 | Blueliv | Clean |
+| Certego | Clean |
+| Chong Lua Dao | Clean |
+| CINS Army | Clean |
 | CRDF | Clean |
+| CTX AI | Clean |
+| Cyble | Clean |
 | CyRadar | Clean |
 | desenmascara.me | Clean |
 | DNS8 | Clean |
 | Dr.Web | Clean |
+| EmergingThreats | Clean |
 | Emsisoft | Clean |
 | ESET | Clean |
+| ESTsecurity | Clean |
 | Forcepoint ThreatSeeker | Clean |
 | Fortinet | Clean |
 | G-Data | Clean |
 | Google Safe Browsing | Clean |
+| GreenSnow | Clean |
+| Heimdal Security | Clean |
+| IPsum | Clean |
+| Juniper Networks | Clean |
 | Kaspersky | Clean |
+| LevelBlue | Clean |
 | Lionic | Clean |
 | Malwared | Clean |
 | MalwarePatrol | Clean |
 | OpenPhish | Clean |
+| Phishing Database | Clean |
 | Phishtank | Clean |
+| PREBYTES | Clean |
+| Quick Heal | Clean |
 | Quttera | Clean |
+| Scantitan | Clean |
 | SCUMWARE.org | Clean |
-| SecureBrain | Clean |
+| Seclookup | Clean |
+| Sophos | Clean |
+| StopForumSpam | Clean |
 | Sucuri SiteCheck | Clean |
 | ThreatHive | Clean |
 | URLhaus | Clean |
-| URLQuery | Clean |
+| Viettel Threat Intelligence | Clean |
+| ViriBack | Clean |
 | VX Vault | Clean |
+| Webroot | Clean |
+| Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
-| Abusix | Unrated |
-| Acronis | Unrated |
-| AILabs (MONITORAPP) | Unrated |
+| ADMINUSLabs | Unrated |
 | alphaMountain.ai | Unrated |
 | AlphaSOC | Unrated |
 | ArcSight Threat Intelligence | Unrated |
@@ -165,138 +179,12 @@
 | Axur | Unrated |
 | Bfore.Ai PreCrime | Unrated |
 | Bkav | Unrated |
-| Certego | Unrated |
 | ChainPatrol | Unrated |
-| Chong Lua Dao | Unrated |
-| CINS Army | Unrated |
 | Cluster25 | Unrated |
 | CMC Threat Intelligence | Unrated |
 | Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
-| CTX AI | Unrated |
 | Cyan | Unrated |
-| Cyble | Unrated |
-| EmergingThreats | Unrated |
-| Ermes | Unrated |
-| ESTsecurity | Unrated |
-| Fortra | Unrated |
-| GCP Abuse Intelligence | Unrated |
-| GreenSnow | Unrated |
-| GreyNoise | Unrated |
-| Gridinsoft | Unrated |
-| Guardpot | Unrated |
-| Heimdal Security | Unrated |
-| Hunt.io Intelligence | Unrated |
-| IPsum | Unrated |
-| Juniper Networks | Unrated |
-| LevelBlue | Unrated |
-| Lumu | Unrated |
-| MalwareURL | Unrated |
-| Mimecast | Unrated |
-| Netcraft | Unrated |
-| PhishFort | Unrated |
-| Phishing Database | Unrated |
-| PREBYTES | Unrated |
-| PrecisionSec | Unrated |
-| Quick Heal | Unrated |
-| SafeToOpen | Unrated |
-| Sansec eComscan | Unrated |
-| Scantitan | Unrated |
-| Seclookup | Unrated |
-| Snort IP sample list | Unrated |
-| SOCRadar | Unrated |
-| Sophos | Unrated |
-| StopForumSpam | Unrated |
-| Viettel Threat Intelligence | Unrated |
-| VIPRE | Unrated |
-| ViriBack | Unrated |
-| Webroot | Unrated |
-| Xcitium Verdict Cloud | Unrated |
-| ZeroFox | Unrated |
-| Куда редиректит | нет (DNS не резолвится) |
-| Что выводит (кратко) | нет (DNS не резолвится) |
-| Где припаркован | регистратор: Amazon Registrar, Inc. |
-
-## Проверка домена: aomedia.org
-
-Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
-
-| Параметр / движок | Значение / вердикт |
-|---|---|
-| Домен | aomedia.org |
-| VirusTotal URL | https://www.virustotal.com/gui/domain/aomedia.org |
-| Детекции | 0/91 (malicious=0, suspicious=0) |
-| Security vendors' analysis | ниже построчно, как на VirusTotal |
-| Abusix | Clean |
-| Acronis | Clean |
-| ADMINUSLabs | Clean |
-| AILabs (MONITORAPP) | Clean |
-| AlienVault | Clean |
-| alphaMountain.ai | Clean |
-| Antiy-AVL | Clean |
-| BitDefender | Clean |
-| Blueliv | Clean |
-| Certego | Clean |
-| Chong Lua Dao | Clean |
-| CINS Army | Clean |
-| CMC Threat Intelligence | Clean |
-| CRDF | Clean |
-| CTX AI | Clean |
-| Cyble | Clean |
-| CyRadar | Clean |
-| desenmascara.me | Clean |
-| Dr.Web | Clean |
-| EmergingThreats | Clean |
-| Emsisoft | Clean |
-| ESET | Clean |
-| ESTsecurity | Clean |
-| Forcepoint ThreatSeeker | Clean |
-| Fortinet | Clean |
-| G-Data | Clean |
-| Google Safe Browsing | Clean |
-| GreenSnow | Clean |
-| Heimdal Security | Clean |
-| IPsum | Clean |
-| Juniper Networks | Clean |
-| Kaspersky | Clean |
-| LevelBlue | Clean |
-| Lionic | Clean |
-| Malwared | Clean |
-| MalwarePatrol | Clean |
-| OpenPhish | Clean |
-| Phishing Database | Clean |
-| Phishtank | Clean |
-| PREBYTES | Clean |
-| Quick Heal | Clean |
-| Quttera | Clean |
-| Scantitan | Clean |
-| SCUMWARE.org | Clean |
-| Seclookup | Clean |
-| Sophos | Clean |
-| StopForumSpam | Clean |
-| Sucuri SiteCheck | Clean |
-| ThreatHive | Clean |
-| URLhaus | Clean |
-| Viettel Threat Intelligence | Clean |
-| ViriBack | Clean |
-| VX Vault | Clean |
-| Webroot | Clean |
-| Xcitium Verdict Cloud | Clean |
-| Yandex Safebrowsing | Clean |
-| ZeroCERT | Clean |
-| 0xSI_f33d | Unrated |
-| AlphaSOC | Unrated |
-| ArcSight Threat Intelligence | Unrated |
-| AutoShun | Unrated |
-| Axur | Unrated |
-| Bfore.Ai PreCrime | Unrated |
-| Bkav | Unrated |
-| ChainPatrol | Unrated |
-| Cluster25 | Unrated |
-| Criminal IP | Unrated |
-| CSIS Security Group | Unrated |
-| Cyan | Unrated |
-| DNS8 | Unrated |
 | Ermes | Unrated |
 | Fortra | Unrated |
 | GCP Abuse Intelligence | Unrated |
@@ -319,19 +207,20 @@
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story FAQ Members Organizat |
-| Где припаркован | регистратор: Squarespace Domains II LLC |
+| Что выводит (кратко) | AccessDenied Access Denied KHH0S0HQHQWTD7XD AeIK2b4wVKOUSQX0gnyHcwqwuediBJx6oJb3DBui70JSeMa5vQ7TRVreNpM6+d3RZkvrrolZCno= |
+| Где припаркован | регистратор: EPAG DOMAINSERVICES GmbH |
 
-## Проверка домена: app.adjust.io
+## Проверка домена: bit.ly
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
 
 | Параметр / движок | Значение / вердикт |
 |---|---|
-| Домен | app.adjust.io |
-| VirusTotal URL | https://www.virustotal.com/gui/domain/app.adjust.io |
-| Детекции | 0/91 (malicious=0, suspicious=0) |
+| Домен | bit.ly |
+| VirusTotal URL | https://www.virustotal.com/gui/domain/bit.ly |
+| Детекции | 1/91 (malicious=1, suspicious=0) |
 | Security vendors' analysis | ниже построчно, как на VirusTotal |
+| Gridinsoft | Malicious |
 | Abusix | Clean |
 | Acronis | Clean |
 | ADMINUSLabs | Clean |
@@ -340,12 +229,15 @@
 | alphaMountain.ai | Clean |
 | Antiy-AVL | Clean |
 | BitDefender | Clean |
+| Bkav | Clean |
 | Blueliv | Clean |
 | Certego | Clean |
+| ChainPatrol | Clean |
 | Chong Lua Dao | Clean |
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
 | CRDF | Clean |
+| Criminal IP | Clean |
 | CTX AI | Clean |
 | Cyble | Clean |
 | CyRadar | Clean |
@@ -374,223 +266,7 @@
 | PREBYTES | Clean |
 | Quick Heal | Clean |
 | Quttera | Clean |
-| Scantitan | Clean |
-| SCUMWARE.org | Clean |
-| Seclookup | Clean |
-| Sophos | Clean |
-| StopForumSpam | Clean |
-| Sucuri SiteCheck | Clean |
-| ThreatHive | Clean |
-| URLhaus | Clean |
-| Viettel Threat Intelligence | Clean |
-| ViriBack | Clean |
-| VX Vault | Clean |
-| Webroot | Clean |
-<<<<<<< HEAD
-=======
-| Xcitium Verdict Cloud | Clean |
->>>>>>> origin/main
-| Yandex Safebrowsing | Clean |
-| ZeroCERT | Clean |
-| 0xSI_f33d | Unrated |
-| AlphaSOC | Unrated |
-| ArcSight Threat Intelligence | Unrated |
-| AutoShun | Unrated |
-| Axur | Unrated |
-| Bfore.Ai PreCrime | Unrated |
-| Bkav | Unrated |
-| ChainPatrol | Unrated |
-| Cluster25 | Unrated |
-| Criminal IP | Unrated |
-| CSIS Security Group | Unrated |
-| Cyan | Unrated |
-| DNS8 | Unrated |
-| Ermes | Unrated |
-| Fortra | Unrated |
-| GCP Abuse Intelligence | Unrated |
-| GreyNoise | Unrated |
-| Gridinsoft | Unrated |
-| Guardpot | Unrated |
-| Hunt.io Intelligence | Unrated |
-| Lumu | Unrated |
-| MalwareURL | Unrated |
-| Mimecast | Unrated |
-| Netcraft | Unrated |
-| PhishFort | Unrated |
-| PrecisionSec | Unrated |
-| SafeToOpen | Unrated |
-| Sansec eComscan | Unrated |
-| SecureBrain | Unrated |
-| Snort IP sample list | Unrated |
-| SOCRadar | Unrated |
-| URLQuery | Unrated |
-| VIPRE | Unrated |
-<<<<<<< HEAD
-| Xcitium Verdict Cloud | Unrated |
-=======
->>>>>>> origin/main
-| ZeroFox | Unrated |
-| Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | Url not found |
-| Где припаркован | регистратор: united-domains GmbH |
-
-## Проверка домена: appassets.androidplatform.net
-
-Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
-
-| Параметр / движок | Значение / вердикт |
-|---|---|
-| Домен | appassets.androidplatform.net |
-| VirusTotal URL | https://www.virustotal.com/gui/domain/appassets.androidplatform.net |
-| Детекции | 0/91 (malicious=0, suspicious=0) |
-| Security vendors' analysis | ниже построчно, как на VirusTotal |
-| Abusix | Clean |
-| Acronis | Clean |
-| ADMINUSLabs | Clean |
-| AILabs (MONITORAPP) | Clean |
-| AlienVault | Clean |
-| Antiy-AVL | Clean |
-| BitDefender | Clean |
-| Blueliv | Clean |
-| Certego | Clean |
-| Chong Lua Dao | Clean |
-| CINS Army | Clean |
-| CMC Threat Intelligence | Clean |
-| CRDF | Clean |
-| CTX AI | Clean |
-| Cyble | Clean |
-| CyRadar | Clean |
-| desenmascara.me | Clean |
-| Dr.Web | Clean |
-| EmergingThreats | Clean |
-| Emsisoft | Clean |
-| ESET | Clean |
-| ESTsecurity | Clean |
-| Forcepoint ThreatSeeker | Clean |
-| Fortinet | Clean |
-| G-Data | Clean |
-| Google Safe Browsing | Clean |
-| GreenSnow | Clean |
-| Heimdal Security | Clean |
-| IPsum | Clean |
-| Juniper Networks | Clean |
-| LevelBlue | Clean |
-| Lionic | Clean |
-| Malwared | Clean |
-| MalwarePatrol | Clean |
-| OpenPhish | Clean |
-| Phishing Database | Clean |
-| Phishtank | Clean |
-| PREBYTES | Clean |
-| Quick Heal | Clean |
-| Quttera | Clean |
-| Scantitan | Clean |
-| SCUMWARE.org | Clean |
-| Seclookup | Clean |
-| Sophos | Clean |
-| StopForumSpam | Clean |
-| Sucuri SiteCheck | Clean |
-| ThreatHive | Clean |
-| URLhaus | Clean |
-| Viettel Threat Intelligence | Clean |
-| ViriBack | Clean |
-| VX Vault | Clean |
-| Webroot | Clean |
-| Xcitium Verdict Cloud | Clean |
-| Yandex Safebrowsing | Clean |
-| ZeroCERT | Clean |
-| 0xSI_f33d | Unrated |
-| alphaMountain.ai | Unrated |
-| AlphaSOC | Unrated |
-| ArcSight Threat Intelligence | Unrated |
-| AutoShun | Unrated |
-| Axur | Unrated |
-| Bfore.Ai PreCrime | Unrated |
-| Bkav | Unrated |
-| ChainPatrol | Unrated |
-| Cluster25 | Unrated |
-| Criminal IP | Unrated |
-| CSIS Security Group | Unrated |
-| Cyan | Unrated |
-| DNS8 | Unrated |
-| Ermes | Unrated |
-| Fortra | Unrated |
-| GCP Abuse Intelligence | Unrated |
-| GreyNoise | Unrated |
-| Gridinsoft | Unrated |
-| Guardpot | Unrated |
-| Hunt.io Intelligence | Unrated |
-| Kaspersky | Unrated |
-| Lumu | Unrated |
-| MalwareURL | Unrated |
-| Mimecast | Unrated |
-| Netcraft | Unrated |
-| PhishFort | Unrated |
-| PrecisionSec | Unrated |
-| SafeToOpen | Unrated |
-| Sansec eComscan | Unrated |
-| SecureBrain | Unrated |
-| Snort IP sample list | Unrated |
-| SOCRadar | Unrated |
-| URLQuery | Unrated |
-| VIPRE | Unrated |
-| ZeroFox | Unrated |
-| Куда редиректит | нет (DNS не резолвится) |
-| Что выводит (кратко) | нет (DNS не резолвится) |
-| Где припаркован | регистратор: MarkMonitor Inc. |
-
-## Проверка домена: cdn-f.adsmoloco.com
-
-Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
-
-| Параметр / движок | Значение / вердикт |
-|---|---|
-| Домен | cdn-f.adsmoloco.com |
-| VirusTotal URL | https://www.virustotal.com/gui/domain/cdn-f.adsmoloco.com |
-| Детекции | 0/91 (malicious=0, suspicious=0) |
-| Security vendors' analysis | ниже построчно, как на VirusTotal |
-| Abusix | Clean |
-| Acronis | Clean |
-| ADMINUSLabs | Clean |
-| AILabs (MONITORAPP) | Clean |
-| AlienVault | Clean |
-| alphaMountain.ai | Clean |
-| Antiy-AVL | Clean |
-| BitDefender | Clean |
-| Blueliv | Clean |
-| Certego | Clean |
-| Chong Lua Dao | Clean |
-| CINS Army | Clean |
-| CMC Threat Intelligence | Clean |
-| CRDF | Clean |
-| CTX AI | Clean |
-| Cyble | Clean |
-| CyRadar | Clean |
-| desenmascara.me | Clean |
-| Dr.Web | Clean |
-| EmergingThreats | Clean |
-| Emsisoft | Clean |
-| ESET | Clean |
-| ESTsecurity | Clean |
-| Forcepoint ThreatSeeker | Clean |
-| Fortinet | Clean |
-| G-Data | Clean |
-| Google Safe Browsing | Clean |
-| GreenSnow | Clean |
-| Heimdal Security | Clean |
-| IPsum | Clean |
-| Juniper Networks | Clean |
-| Kaspersky | Clean |
-| LevelBlue | Clean |
-| Lionic | Clean |
-| Malwared | Clean |
-| MalwarePatrol | Clean |
-| OpenPhish | Clean |
-| Phishing Database | Clean |
-| Phishtank | Clean |
-| PREBYTES | Clean |
-| Quick Heal | Clean |
-| Quttera | Clean |
+| SafeToOpen | Clean |
 | Scantitan | Clean |
 | SCUMWARE.org | Clean |
 | Seclookup | Clean |
@@ -601,13 +277,10 @@
 | URLhaus | Clean |
 | URLQuery | Clean |
 | Viettel Threat Intelligence | Clean |
+| VIPRE | Clean |
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
-<<<<<<< HEAD
-| Xcitium Verdict Cloud | Clean |
-=======
->>>>>>> origin/main
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
@@ -616,10 +289,7 @@
 | AutoShun | Unrated |
 | Axur | Unrated |
 | Bfore.Ai PreCrime | Unrated |
-| Bkav | Unrated |
-| ChainPatrol | Unrated |
 | Cluster25 | Unrated |
-| Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
 | Cyan | Unrated |
 | DNS8 | Unrated |
@@ -627,7 +297,6 @@
 | Fortra | Unrated |
 | GCP Abuse Intelligence | Unrated |
 | GreyNoise | Unrated |
-| Gridinsoft | Unrated |
 | Guardpot | Unrated |
 | Hunt.io Intelligence | Unrated |
 | Lumu | Unrated |
@@ -636,29 +305,24 @@
 | Netcraft | Unrated |
 | PhishFort | Unrated |
 | PrecisionSec | Unrated |
-| SafeToOpen | Unrated |
 | Sansec eComscan | Unrated |
 | SecureBrain | Unrated |
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
-| VIPRE | Unrated |
-<<<<<<< HEAD
-=======
 | Xcitium Verdict Cloud | Unrated |
->>>>>>> origin/main
 | ZeroFox | Unrated |
-| Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | title: Moloco. Moloco |
-| Где припаркован | регистратор: Google Inc. |
+| Куда редиректит | https://bitly.com/ |
+| Что выводит (кратко) | title: Bitly \| Short URLs, QR Codes, and More. Bitly \| Short URLs, QR Codes, and More Skip Navigation Menu Menu Menu Platform Products URL Shortener Customize, share and track links QR Code Generator Dynamic solutions to fit every business need Analytics A central place to track and analyze performance Pages Mobile-friendly,  |
+| Где припаркован | регистратор: Libyan Spider Network (int) |
 
-## Проверка домена: cdn.prod.website-files.com
+## Проверка домена: blogger.com
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
 
 | Параметр / движок | Значение / вердикт |
 |---|---|
-| Домен | cdn.prod.website-files.com |
-| VirusTotal URL | https://www.virustotal.com/gui/domain/cdn.prod.website-files.com |
+| Домен | blogger.com |
+| VirusTotal URL | https://www.virustotal.com/gui/domain/blogger.com |
 | Детекции | 0/91 (malicious=0, suspicious=0) |
 | Security vendors' analysis | ниже построчно, как на VirusTotal |
 | Abusix | Clean |
@@ -667,114 +331,6 @@
 | AILabs (MONITORAPP) | Clean |
 | AlienVault | Clean |
 | alphaMountain.ai | Clean |
-| Antiy-AVL | Clean |
-| BitDefender | Clean |
-| Blueliv | Clean |
-| Certego | Clean |
-| CINS Army | Clean |
-| CMC Threat Intelligence | Clean |
-| CRDF | Clean |
-| CTX AI | Clean |
-| Cyble | Clean |
-| CyRadar | Clean |
-| desenmascara.me | Clean |
-| Dr.Web | Clean |
-| EmergingThreats | Clean |
-| Emsisoft | Clean |
-| ESET | Clean |
-| ESTsecurity | Clean |
-| Forcepoint ThreatSeeker | Clean |
-| Fortinet | Clean |
-| G-Data | Clean |
-| Google Safe Browsing | Clean |
-| GreenSnow | Clean |
-| Heimdal Security | Clean |
-| IPsum | Clean |
-| Juniper Networks | Clean |
-| LevelBlue | Clean |
-| Lionic | Clean |
-| Malwared | Clean |
-| MalwarePatrol | Clean |
-| OpenPhish | Clean |
-| Phishing Database | Clean |
-| Phishtank | Clean |
-| PREBYTES | Clean |
-| Quick Heal | Clean |
-| Quttera | Clean |
-| Scantitan | Clean |
-| SCUMWARE.org | Clean |
-| Seclookup | Clean |
-| Sophos | Clean |
-| StopForumSpam | Clean |
-| Sucuri SiteCheck | Clean |
-| ThreatHive | Clean |
-| URLhaus | Clean |
-| URLQuery | Clean |
-| Viettel Threat Intelligence | Clean |
-| ViriBack | Clean |
-| VX Vault | Clean |
-| Webroot | Clean |
-| Xcitium Verdict Cloud | Clean |
-| Yandex Safebrowsing | Clean |
-| ZeroCERT | Clean |
-| 0xSI_f33d | Unrated |
-| AlphaSOC | Unrated |
-| ArcSight Threat Intelligence | Unrated |
-| AutoShun | Unrated |
-| Axur | Unrated |
-| Bfore.Ai PreCrime | Unrated |
-| Bkav | Unrated |
-| ChainPatrol | Unrated |
-| Chong Lua Dao | Unrated |
-| Cluster25 | Unrated |
-| Criminal IP | Unrated |
-| CSIS Security Group | Unrated |
-| Cyan | Unrated |
-| DNS8 | Unrated |
-| Ermes | Unrated |
-| Fortra | Unrated |
-| GCP Abuse Intelligence | Unrated |
-| GreyNoise | Unrated |
-| Gridinsoft | Unrated |
-| Guardpot | Unrated |
-| Hunt.io Intelligence | Unrated |
-| Kaspersky | Unrated |
-| Lumu | Unrated |
-| MalwareURL | Unrated |
-| Mimecast | Unrated |
-| Netcraft | Unrated |
-| PhishFort | Unrated |
-| PrecisionSec | Unrated |
-| SafeToOpen | Unrated |
-| Sansec eComscan | Unrated |
-| SecureBrain | Unrated |
-| Snort IP sample list | Unrated |
-| SOCRadar | Unrated |
-| VIPRE | Unrated |
-| ZeroFox | Unrated |
-| Куда редиректит | нет (без редиректа) |
-<<<<<<< HEAD
-| Что выводит (кратко) | AccessDenied Access Denied VH3J09WWZ9Z3G6M2 ZUeA0lZokGey4ymHpuiH/f6tR9EQZRo2LNFNuvNKLnq+lTlFda/SoBrLpKyUG/0AfdnFUvGbhaEVSBX40dpFOVXTPeqnTUbh |
-=======
-| Что выводит (кратко) | AccessDenied Access Denied N1K7685PC0F3KDKT RNt2mEv8+YqpWjQwQ/z15izX/lAmdkkabbxTiyWLhKvRHwROM3uCuGZNx7CpuUbImp7kbcJn1h2K1Nw3+F8yVTY6Q+JDQCNP |
->>>>>>> origin/main
-| Где припаркован | нет данных |
-
-## Проверка домена: cdn2.inner-active.mobi
-
-Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
-
-| Параметр / движок | Значение / вердикт |
-|---|---|
-| Домен | cdn2.inner-active.mobi |
-| VirusTotal URL | https://www.virustotal.com/gui/domain/cdn2.inner-active.mobi |
-| Детекции | 0/91 (malicious=0, suspicious=0) |
-| Security vendors' analysis | ниже построчно, как на VirusTotal |
-| Abusix | Clean |
-| Acronis | Clean |
-| ADMINUSLabs | Clean |
-| AILabs (MONITORAPP) | Clean |
-| AlienVault | Clean |
 | Antiy-AVL | Clean |
 | BitDefender | Clean |
 | Blueliv | Clean |
@@ -820,19 +376,15 @@
 | Sucuri SiteCheck | Clean |
 | ThreatHive | Clean |
 | URLhaus | Clean |
-<<<<<<< HEAD
 | URLQuery | Clean |
-=======
->>>>>>> origin/main
 | Viettel Threat Intelligence | Clean |
+| VIPRE | Clean |
 | ViriBack | Clean |
 | VX Vault | Clean |
 | Webroot | Clean |
-| Xcitium Verdict Cloud | Clean |
 | Yandex Safebrowsing | Clean |
 | ZeroCERT | Clean |
 | 0xSI_f33d | Unrated |
-| alphaMountain.ai | Unrated |
 | AlphaSOC | Unrated |
 | ArcSight Threat Intelligence | Unrated |
 | AutoShun | Unrated |
@@ -862,12 +414,428 @@
 | SecureBrain | Unrated |
 | Snort IP sample list | Unrated |
 | SOCRadar | Unrated |
-<<<<<<< HEAD
-=======
+| Xcitium Verdict Cloud | Unrated |
+| ZeroFox | Unrated |
+| Куда редиректит | https://www.blogger.com/ → https://accounts.google.com/ServiceLogin?passive=true&go=true&service=blogger&continue=https://www.blogger.com/?bpli%3D1 → https://www.blogger.com/?bpli=1 → https://www.blogger.com/about?bpli=1 → https://www.blogger.com/about/?bpli=1 |
+| Что выводит (кратко) | title: Blogger.com - Create a unique and beautiful blog easily.. Blogger.com - Create a unique and beautiful blog easily. Skip to content Sign in Create your blog Publish your passions, your way Create a unique and beautiful blog easily. Create your blog Choose the perfect design Create a beautiful blog that fits your style. Choose from a sele |
+| Где припаркован | регистратор: MarkMonitor Inc. |
+
+## Проверка домена: browserpayment.phonenumber.info
+
+Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
+
+| Параметр / движок | Значение / вердикт |
+|---|---|
+| Домен | browserpayment.phonenumber.info |
+| VirusTotal URL | https://www.virustotal.com/gui/domain/browserpayment.phonenumber.info |
+| Детекции | 0/91 (malicious=0, suspicious=0) |
+| Security vendors' analysis | ниже построчно, как на VirusTotal |
+| Abusix | Clean |
+| Acronis | Clean |
+| ADMINUSLabs | Clean |
+| AILabs (MONITORAPP) | Clean |
+| AlienVault | Clean |
+| Antiy-AVL | Clean |
+| BitDefender | Clean |
+| Blueliv | Clean |
+| Certego | Clean |
+| CINS Army | Clean |
+| CRDF | Clean |
+| CTX AI | Clean |
+| Cyble | Clean |
+| CyRadar | Clean |
+| desenmascara.me | Clean |
+| Dr.Web | Clean |
+| EmergingThreats | Clean |
+| Emsisoft | Clean |
+| ESET | Clean |
+| ESTsecurity | Clean |
+| Fortinet | Clean |
+| G-Data | Clean |
+| Google Safe Browsing | Clean |
+| GreenSnow | Clean |
+| Heimdal Security | Clean |
+| IPsum | Clean |
+| Juniper Networks | Clean |
+| Kaspersky | Clean |
+| LevelBlue | Clean |
+| Lionic | Clean |
+| Malwared | Clean |
+| MalwarePatrol | Clean |
+| OpenPhish | Clean |
+| Phishing Database | Clean |
+| Phishtank | Clean |
+| PREBYTES | Clean |
+| Quick Heal | Clean |
+| Quttera | Clean |
+| Scantitan | Clean |
+| SCUMWARE.org | Clean |
+| Seclookup | Clean |
+| Sophos | Clean |
+| StopForumSpam | Clean |
+| Sucuri SiteCheck | Clean |
+| ThreatHive | Clean |
+| URLhaus | Clean |
+| Viettel Threat Intelligence | Clean |
+| ViriBack | Clean |
+| VX Vault | Clean |
+| Webroot | Clean |
+| Xcitium Verdict Cloud | Clean |
+| Yandex Safebrowsing | Clean |
+| ZeroCERT | Clean |
+| 0xSI_f33d | Unrated |
+| alphaMountain.ai | Unrated |
+| AlphaSOC | Unrated |
+| ArcSight Threat Intelligence | Unrated |
+| AutoShun | Unrated |
+| Axur | Unrated |
+| Bfore.Ai PreCrime | Unrated |
+| Bkav | Unrated |
+| ChainPatrol | Unrated |
+| Chong Lua Dao | Unrated |
+| Cluster25 | Unrated |
+| CMC Threat Intelligence | Unrated |
+| Criminal IP | Unrated |
+| CSIS Security Group | Unrated |
+| Cyan | Unrated |
+| DNS8 | Unrated |
+| Ermes | Unrated |
+| Forcepoint ThreatSeeker | Unrated |
+| Fortra | Unrated |
+| GCP Abuse Intelligence | Unrated |
+| GreyNoise | Unrated |
+| Gridinsoft | Unrated |
+| Guardpot | Unrated |
+| Hunt.io Intelligence | Unrated |
+| Lumu | Unrated |
+| MalwareURL | Unrated |
+| Mimecast | Unrated |
+| Netcraft | Unrated |
+| PhishFort | Unrated |
+| PrecisionSec | Unrated |
+| SafeToOpen | Unrated |
+| Sansec eComscan | Unrated |
+| SecureBrain | Unrated |
+| Snort IP sample list | Unrated |
+| SOCRadar | Unrated |
 | URLQuery | Unrated |
->>>>>>> origin/main
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
-| Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | AccessDenied Access denied. Anonymous caller does not have storage.objects.list access to the Google Cloud Storage bucket. Permission 'storage.objects.list' denied on resource '//storage.googleapis.com/projects/_/buckets/gcs-exchange-public-useast1-prod' (or it may not exist). |
+| Куда редиректит | нет (DNS не резолвится) |
+| Что выводит (кратко) | нет (DNS не резолвится) |
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
+
+## Проверка домена: buffer.com
+
+Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
+
+| Параметр / движок | Значение / вердикт |
+|---|---|
+| Домен | buffer.com |
+| VirusTotal URL | https://www.virustotal.com/gui/domain/buffer.com |
+| Детекции | 0/91 (malicious=0, suspicious=0) |
+| Security vendors' analysis | ниже построчно, как на VirusTotal |
+| Abusix | Clean |
+| Acronis | Clean |
+| ADMINUSLabs | Clean |
+| AILabs (MONITORAPP) | Clean |
+| AlienVault | Clean |
+| alphaMountain.ai | Clean |
+| Antiy-AVL | Clean |
+| BitDefender | Clean |
+| Bkav | Clean |
+| Blueliv | Clean |
+| Certego | Clean |
+| CINS Army | Clean |
+| CMC Threat Intelligence | Clean |
+| CRDF | Clean |
+| CTX AI | Clean |
+| Cyble | Clean |
+| CyRadar | Clean |
+| desenmascara.me | Clean |
+| Dr.Web | Clean |
+| EmergingThreats | Clean |
+| Emsisoft | Clean |
+| ESET | Clean |
+| ESTsecurity | Clean |
+| Forcepoint ThreatSeeker | Clean |
+| Fortinet | Clean |
+| G-Data | Clean |
+| Google Safe Browsing | Clean |
+| GreenSnow | Clean |
+| Heimdal Security | Clean |
+| IPsum | Clean |
+| Juniper Networks | Clean |
+| Kaspersky | Clean |
+| LevelBlue | Clean |
+| Lionic | Clean |
+| Malwared | Clean |
+| MalwarePatrol | Clean |
+| OpenPhish | Clean |
+| Phishing Database | Clean |
+| Phishtank | Clean |
+| PREBYTES | Clean |
+| Quick Heal | Clean |
+| Quttera | Clean |
+| Scantitan | Clean |
+| SCUMWARE.org | Clean |
+| Seclookup | Clean |
+| Sophos | Clean |
+| StopForumSpam | Clean |
+| Sucuri SiteCheck | Clean |
+| ThreatHive | Clean |
+| URLhaus | Clean |
+| URLQuery | Clean |
+| Viettel Threat Intelligence | Clean |
+| VIPRE | Clean |
+| ViriBack | Clean |
+| VX Vault | Clean |
+| Webroot | Clean |
+| Xcitium Verdict Cloud | Clean |
+| Yandex Safebrowsing | Clean |
+| ZeroCERT | Clean |
+| 0xSI_f33d | Unrated |
+| AlphaSOC | Unrated |
+| ArcSight Threat Intelligence | Unrated |
+| AutoShun | Unrated |
+| Axur | Unrated |
+| Bfore.Ai PreCrime | Unrated |
+| ChainPatrol | Unrated |
+| Chong Lua Dao | Unrated |
+| Cluster25 | Unrated |
+| Criminal IP | Unrated |
+| CSIS Security Group | Unrated |
+| Cyan | Unrated |
+| DNS8 | Unrated |
+| Ermes | Unrated |
+| Fortra | Unrated |
+| GCP Abuse Intelligence | Unrated |
+| GreyNoise | Unrated |
+| Gridinsoft | Unrated |
+| Guardpot | Unrated |
+| Hunt.io Intelligence | Unrated |
+| Lumu | Unrated |
+| MalwareURL | Unrated |
+| Mimecast | Unrated |
+| Netcraft | Unrated |
+| PhishFort | Unrated |
+| PrecisionSec | Unrated |
+| SafeToOpen | Unrated |
+| Sansec eComscan | Unrated |
+| SecureBrain | Unrated |
+| Snort IP sample list | Unrated |
+| SOCRadar | Unrated |
+| ZeroFox | Unrated |
+| Куда редиректит | нет (без редиректа) |
+| Что выводит (кратко) | title: Buffer: Social media management for everyone. Buffer: Social media management for everyone Top navigation Buffer Features Buffer&#x27;s features Create Build your own library of content ideas Publish Plan and schedule your content across social media platforms Insights New Understand your performance and what to post next Co |
+| Где припаркован | регистратор: NameCheap, Inc. |
+
+## Проверка домена: cang.baidu.com
+
+Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
+
+| Параметр / движок | Значение / вердикт |
+|---|---|
+| Домен | cang.baidu.com |
+| VirusTotal URL | https://www.virustotal.com/gui/domain/cang.baidu.com |
+| Детекции | 0/91 (malicious=0, suspicious=0) |
+| Security vendors' analysis | ниже построчно, как на VirusTotal |
+| Abusix | Clean |
+| Acronis | Clean |
+| ADMINUSLabs | Clean |
+| AILabs (MONITORAPP) | Clean |
+| AlienVault | Clean |
+| alphaMountain.ai | Clean |
+| Antiy-AVL | Clean |
+| BitDefender | Clean |
+| Blueliv | Clean |
+| Certego | Clean |
+| ChainPatrol | Clean |
+| Chong Lua Dao | Clean |
+| CINS Army | Clean |
+| CMC Threat Intelligence | Clean |
+| CRDF | Clean |
+| CTX AI | Clean |
+| Cyble | Clean |
+| CyRadar | Clean |
+| desenmascara.me | Clean |
+| Dr.Web | Clean |
+| EmergingThreats | Clean |
+| Emsisoft | Clean |
+| ESET | Clean |
+| ESTsecurity | Clean |
+| Forcepoint ThreatSeeker | Clean |
+| Fortinet | Clean |
+| G-Data | Clean |
+| Google Safe Browsing | Clean |
+| GreenSnow | Clean |
+| Heimdal Security | Clean |
+| IPsum | Clean |
+| Juniper Networks | Clean |
+| Kaspersky | Clean |
+| LevelBlue | Clean |
+| Lionic | Clean |
+| Malwared | Clean |
+| MalwarePatrol | Clean |
+| OpenPhish | Clean |
+| Phishing Database | Clean |
+| Phishtank | Clean |
+| PREBYTES | Clean |
+| Quick Heal | Clean |
+| Quttera | Clean |
+| Scantitan | Clean |
+| SCUMWARE.org | Clean |
+| Seclookup | Clean |
+| Sophos | Clean |
+| StopForumSpam | Clean |
+| Sucuri SiteCheck | Clean |
+| ThreatHive | Clean |
+| URLhaus | Clean |
+| Viettel Threat Intelligence | Clean |
+| ViriBack | Clean |
+| VX Vault | Clean |
+| Webroot | Clean |
+| Yandex Safebrowsing | Clean |
+| ZeroCERT | Clean |
+| 0xSI_f33d | Unrated |
+| AlphaSOC | Unrated |
+| ArcSight Threat Intelligence | Unrated |
+| AutoShun | Unrated |
+| Axur | Unrated |
+| Bfore.Ai PreCrime | Unrated |
+| Bkav | Unrated |
+| Cluster25 | Unrated |
+| Criminal IP | Unrated |
+| CSIS Security Group | Unrated |
+| Cyan | Unrated |
+| DNS8 | Unrated |
+| Ermes | Unrated |
+| Fortra | Unrated |
+| GCP Abuse Intelligence | Unrated |
+| GreyNoise | Unrated |
+| Gridinsoft | Unrated |
+| Guardpot | Unrated |
+| Hunt.io Intelligence | Unrated |
+| Lumu | Unrated |
+| MalwareURL | Unrated |
+| Mimecast | Unrated |
+| Netcraft | Unrated |
+| PhishFort | Unrated |
+| PrecisionSec | Unrated |
+| SafeToOpen | Unrated |
+| Sansec eComscan | Unrated |
+| SecureBrain | Unrated |
+| Snort IP sample list | Unrated |
+| SOCRadar | Unrated |
+| URLQuery | Unrated |
+| VIPRE | Unrated |
+| Xcitium Verdict Cloud | Unrated |
+| ZeroFox | Unrated |
+| Куда редиректит | https://passport.baidu.com/v2/?login&u=https%3A%2F%2Fwenzhang.baidu.com%2F |
+| Что выводит (кратко) | title: ç»å½ç¾åº¦è´¦å·. ç»å½ç¾åº¦è´¦å· 2026&nbsp;&copy;Baidu |
+| Где припаркован | регистратор: MarkMonitor Information Technology (Shanghai) Co., Ltd. |
+
+## Проверка домена: compose.mail.yahoo.com
+
+Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
+
+| Параметр / движок | Значение / вердикт |
+|---|---|
+| Домен | compose.mail.yahoo.com |
+| VirusTotal URL | https://www.virustotal.com/gui/domain/compose.mail.yahoo.com |
+| Детекции | 0/91 (malicious=0, suspicious=0) |
+| Security vendors' analysis | ниже построчно, как на VirusTotal |
+| Abusix | Clean |
+| Acronis | Clean |
+| ADMINUSLabs | Clean |
+| AILabs (MONITORAPP) | Clean |
+| AlienVault | Clean |
+| alphaMountain.ai | Clean |
+| Antiy-AVL | Clean |
+| BitDefender | Clean |
+| Blueliv | Clean |
+| Certego | Clean |
+| Chong Lua Dao | Clean |
+| CINS Army | Clean |
+| CMC Threat Intelligence | Clean |
+| CRDF | Clean |
+| Criminal IP | Clean |
+| CTX AI | Clean |
+| Cyble | Clean |
+| CyRadar | Clean |
+| desenmascara.me | Clean |
+| Dr.Web | Clean |
+| EmergingThreats | Clean |
+| Emsisoft | Clean |
+| ESET | Clean |
+| ESTsecurity | Clean |
+| Forcepoint ThreatSeeker | Clean |
+| Fortinet | Clean |
+| G-Data | Clean |
+| Google Safe Browsing | Clean |
+| GreenSnow | Clean |
+| Heimdal Security | Clean |
+| IPsum | Clean |
+| Juniper Networks | Clean |
+| Kaspersky | Clean |
+| Lionic | Clean |
+| Malwared | Clean |
+| MalwarePatrol | Clean |
+| OpenPhish | Clean |
+| Phishing Database | Clean |
+| Phishtank | Clean |
+| PREBYTES | Clean |
+| Quick Heal | Clean |
+| Quttera | Clean |
+| Scantitan | Clean |
+| SCUMWARE.org | Clean |
+| Seclookup | Clean |
+| Sophos | Clean |
+| StopForumSpam | Clean |
+| Sucuri SiteCheck | Clean |
+| ThreatHive | Clean |
+| URLhaus | Clean |
+| Viettel Threat Intelligence | Clean |
+| ViriBack | Clean |
+| VX Vault | Clean |
+| Webroot | Clean |
+| Xcitium Verdict Cloud | Clean |
+| Yandex Safebrowsing | Clean |
+| ZeroCERT | Clean |
+| 0xSI_f33d | Unrated |
+| AlphaSOC | Unrated |
+| ArcSight Threat Intelligence | Unrated |
+| AutoShun | Unrated |
+| Axur | Unrated |
+| Bfore.Ai PreCrime | Unrated |
+| Bkav | Unrated |
+| ChainPatrol | Unrated |
+| Cluster25 | Unrated |
+| CSIS Security Group | Unrated |
+| Cyan | Unrated |
+| DNS8 | Unrated |
+| Ermes | Unrated |
+| Fortra | Unrated |
+| GCP Abuse Intelligence | Unrated |
+| GreyNoise | Unrated |
+| Gridinsoft | Unrated |
+| Guardpot | Unrated |
+| Hunt.io Intelligence | Unrated |
+| LevelBlue | Unrated |
+| Lumu | Unrated |
+| MalwareURL | Unrated |
+| Mimecast | Unrated |
+| Netcraft | Unrated |
+| PhishFort | Unrated |
+| PrecisionSec | Unrated |
+| SafeToOpen | Unrated |
+| Sansec eComscan | Unrated |
+| SecureBrain | Unrated |
+| Snort IP sample list | Unrated |
+| SOCRadar | Unrated |
+| URLQuery | Unrated |
+| VIPRE | Unrated |
+| ZeroFox | Unrated |
+| Куда редиректит | https://login.yahoo.com?.src=ym&pspid=159600001&activity=mail-direct&.lang=en-US&.intl=us&.done=https%3A%2F%2Fcompose.mail.yahoo.com%2Fmrd%2F |
+| Что выводит (кратко) | title: Login - Sign in to Yahoo. Login - Sign in to Yahoo |
+| Где припаркован | регистратор: MarkMonitor Inc. |

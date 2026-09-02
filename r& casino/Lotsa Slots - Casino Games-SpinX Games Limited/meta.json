@@ -56,7 +56,7 @@
     "table": [
       {
         "param": "Название приложения",
-        "value": "Lotsa Slots (Play: Lotsa Slots - Casino Games / Lotsa Slots Casino Spiel)"
+        "value": "Lotsa Slots"
       },
       {
         "param": "Android Gradle Plugin",
@@ -72,7 +72,7 @@
       },
       {
         "param": "Kotlin",
-        "value": "да, 1.7.0"
+        "value": "да 1.7.0"
       },
       {
         "param": "Web View",
@@ -84,11 +84,11 @@
       },
       {
         "param": "Рекламные сети",
-        "value": "AdMob / Google Mobile Ads, ironSource (Unity LevelPlay), Unity Ads, Fyber / Digital Turbine (Inneractive), InMobi, Moloco, Vungle (Liftoff), Facebook Audience Network"
+        "value": "AdMob, ironSource (LevelPlay), Unity Ads, Vungle, InMobi, Fyber, Moloco, Digital Turbine Ignite, Facebook Audience Network"
       },
       {
         "param": "Аналитика",
-        "value": "Firebase Analytics, Firebase Crashlytics, Firebase Cloud Messaging, Adjust, Facebook App Events / Facebook SDK, Google Play Measurement, Helpshift"
+        "value": "Adjust, Firebase Analytics, Firebase Crashlytics, Firebase Remote Config, Facebook App Events, Google Analytics for Firebase"
       },
       {
         "param": "Permissions",
@@ -96,11 +96,15 @@
       },
       {
         "param": "Libraries",
-        "value": "Cocos2d-x Lua (libcocos2dlua.so), Kotlin 1.7.0, kotlinx-coroutines 1.10.2, AndroidX (appcompat, activity, browser 1.8.0, webkit 1.12.1, work, room, datastore, compose 1.6.8, lifecycle, fragment, recyclerview, preference, multidex), OkHttp/Okio, Ktor client, Coil, Picasso (Square), Google Play Services (Ads/AdMob, auth, games-v2, location, measurement, appset), Play Billing, Firebase (Analytics, Crashlytics, Messaging, Installations), Adjust SDK (+ OAID), Facebook SDK / Audience Network, ironSource / Unity LevelPlay mediation, Unity Ads, Fyber Inneractive / Digital Turbine, InMobi, Moloco, Vungle (Liftoff), Amazon Privacy Pass, Helpshift, Google Play Games v2, libcrashlytics, libsigner Подозрительные домены 123.com"
+        "value": "org.cocos2dx (Lua/bole), androidx.* (appcompat, browser, webkit, compose, media3, work), com.google.android.gms (ads, auth, games, measurement), com.google.firebase (analytics, crashlytics, messaging, remoteconfig), com.adjust.sdk, com.facebook (core, login, applinks, Audience Network), com.ironsource / com.unity3d (ads, mediation, ironsourceads), com.vungle, com.inmobi, com.fyber, com.moloco, com.digitalturbine.ignite, com.helpshift, okhttp3, okio, coil, kotlinx.coroutines, io.ktor"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "123.com, akm.ssacdn.com, aomedia.org, cdn-f.adsmoloco.com, cdn.prod.website-files.com, cdn2.inner-active.mobi"
       },
       {
         "param": "SharedPreferences",
-        "value": "default SharedPreferences (PreferenceManager): флаги уведомлений (notification_authorization), GDPR/настройки через BoleJavaUtil; bole_referrer_preferences (ключ bole_share_referrer_key — install referrer); google.analytics.deferred.deeplink.prefs (отложенный deeplink); служебные prefs Adjust / Facebook / Firebase / рекламных сетей"
+        "value": "bole_referrer_preferences (install referrer); default SharedPreferences (isAppInstalled, notification_authorization, reject_notify, fcm_type_*, произвольные ключи через BoleJavaUtil); google.analytics.deferred.deeplink.prefs (deferred deeplink); Cocos2dx SharedPreferences CCOS2DX_PREFS (игровые настройки); Amazon IAP prefs ORANGES_*"
       },
       {
         "param": "Есть ли клоака",
@@ -108,51 +112,10 @@
       },
       {
         "param": "Подозрительные слова",
-        "value": "casino, slots, poker, roulette, gambling, betting, deposit, withdraw, payout, offer, landing, redirect, cloak, whitelist, blacklist, clickid, click_id, postback, IS_BOT, webview, gate"
+        "value": "casino, slots, offer, redirect, landing, WebView, deposit, withdraw, gambling, affiliate, postback"
       }
     ],
-    "domains": [
-      {
-        "domain": "123.com",
-        "redirects_to": "нет (DNS не резолвится)",
-        "parked_at": "нет данных"
-      },
-      {
-        "domain": "akm.ssacdn.com",
-        "redirects_to": "нет (DNS не резолвится)",
-        "parked_at": "регистратор: Amazon Registrar, Inc."
-      },
-      {
-        "domain": "aomedia.org",
-        "redirects_to": "нет (без редиректа)",
-        "parked_at": "регистратор: Squarespace Domains II LLC"
-      },
-      {
-        "domain": "app.adjust.io",
-        "redirects_to": "нет (без редиректа)",
-        "parked_at": "регистратор: united-domains GmbH"
-      },
-      {
-        "domain": "appassets.androidplatform.net",
-        "redirects_to": "нет (DNS не резолвится)",
-        "parked_at": "регистратор: MarkMonitor Inc."
-      },
-      {
-        "domain": "cdn-f.adsmoloco.com",
-        "redirects_to": "нет (без редиректа)",
-        "parked_at": "регистратор: Google Inc."
-      },
-      {
-        "domain": "cdn.prod.website-files.com",
-        "redirects_to": "нет (без редиректа)",
-        "parked_at": "нет данных"
-      },
-      {
-        "domain": "cdn2.inner-active.mobi",
-        "redirects_to": "нет (без редиректа)",
-        "parked_at": "регистратор/whois связан с парковкой: godaddy"
-      }
-    ],
+    "domains": [],
     "collected_data": [],
     "cloaking": "нет",
     "cloaking_brief": ""
