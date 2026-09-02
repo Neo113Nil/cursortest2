@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "apks": [
+    "com.betano.finance-1-asset.apk",
+    "com.betano.finance-1.apk",
+    "com.betano.finance-1-config.xxhdpi.apk",
+    "com.betano.finance-1-config.en.apk",
+    "com.betano.finance-1-config.arm64_v8a.apk"
+  ],
+  "base_apk": "com.betano.finance-1.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 2583 (0%)\nINFO  - progress: 293 of 2583 (11%)\nINFO  - progress: 320 of 2583 (12%)\nINFO  - progress: 596 of 2583 (23%)\nINFO  - progress: 878 of 2583 (33%)\nINFO  - progress: 1072 of 2583 (41%)\nINFO  - progress: 1278 of 2583 (49%)\nINFO  - progress: 1484 of 2583 (57%)\nINFO  - progress: 1593 of 2583 (61%)\nINFO  - progress: 1692 of 2583 (65%)\nINFO  - progress: 1878 of 2583 (72%)\nINFO  - progress: 2059 of 2583 (79%)\nINFO  - progress: 2221 of 2583 (85%)\nINFO  - progress: 2326 of 2583 (90%)\nINFO  - progress: 2549 of 2583 (98%)\n                                                             \nERROR - finished with errors, count: 8\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/betano/Betano Finance-The Veranda Story LTD/decompiled",
+    "skipped": false,
+    "base_apk": "com.betano.finance-1.apk"
+  },
+  "analysis_files": [
+    "com.betano.finance-1-asset.apk",
+    "com.betano.finance-1.apk",
+    "com.betano.finance-1-config.xxhdpi.apk",
+    "com.betano.finance-1-config.en.apk",
+    "com.betano.finance-1-config.arm64_v8a.apk",
+    "apk/com.betano.finance-1-asset.apk",
+    "apk/com.betano.finance-1.apk",
+    "apk/com.betano.finance-1-config.xxhdpi.apk",
+    "apk/com.betano.finance-1-config.en.apk",
+    "apk/com.betano.finance-1-config.arm64_v8a.apk",
+    "report.pdf",
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/capacitor/",
+    "decompiled/sources/com/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/net/",
+    "decompiled/sources/org/"
+  ],
+  "errors": []
+}

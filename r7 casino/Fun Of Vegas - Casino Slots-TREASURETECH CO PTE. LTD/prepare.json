@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "apks": [
+    "com.sl.cashCraze.apk",
+    "config.arm64_v8a.apk"
+  ],
+  "base_apk": "com.sl.cashCraze.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "8 of 25421 (29%)\nINFO  - progress: 7557 of 25421 (29%)\nINFO  - progress: 7656 of 25421 (30%)\nINFO  - progress: 8220 of 25421 (32%)\nINFO  - progress: 9144 of 25421 (35%)\nINFO  - progress: 9684 of 25421 (38%)\nINFO  - progress: 10451 of 25421 (41%)\nINFO  - progress: 11028 of 25421 (43%)\nINFO  - progress: 11530 of 25421 (45%)\nINFO  - progress: 11942 of 25421 (46%)\nINFO  - progress: 12455 of 25421 (48%)\nINFO  - progress: 12647 of 25421 (49%)\nINFO  - progress: 12994 of 25421 (51%)\nINFO  - progress: 13139 of 25421 (51%)\nINFO  - progress: 13269 of 25421 (52%)\nINFO  - progress: 13462 of 25421 (52%)\nINFO  - progress: 13689 of 25421 (53%)\nINFO  - progress: 13857 of 25421 (54%)\nINFO  - progress: 14060 of 25421 (55%)\nINFO  - progress: 14223 of 25421 (55%)\nINFO  - progress: 14400 of 25421 (56%)\nINFO  - progress: 14511 of 25421 (57%)\nINFO  - progress: 14811 of 25421 (58%)\nINFO  - progress: 15227 of 25421 (59%)\nINFO  - progress: 15573 of 25421 (61%)\nINFO  - progress: 15636 of 25421 (61%)\nINFO  - progress: 15736 of 25421 (61%)\nINFO  - progress: 15864 of 25421 (62%)\nINFO  - progress: 16070 of 25421 (63%)\nINFO  - progress: 16459 of 25421 (64%)\nINFO  - progress: 16788 of 25421 (66%)\nINFO  - progress: 17053 of 25421 (67%)\nINFO  - progress: 17345 of 25421 (68%)\nINFO  - progress: 17692 of 25421 (69%)\nINFO  - progress: 17898 of 25421 (70%)\nINFO  - progress: 18169 of 25421 (71%)\nINFO  - progress: 18426 of 25421 (72%)\nINFO  - progress: 18833 of 25421 (74%)\nINFO  - progress: 19078 of 25421 (75%)\nINFO  - progress: 19245 of 25421 (75%)\nINFO  - progress: 19468 of 25421 (76%)\nINFO  - progress: 19681 of 25421 (77%)\nINFO  - progress: 19681 of 25421 (77%)\nINFO  - progress: 19681 of 25421 (77%)\nINFO  - progress: 19681 of 25421 (77%)\nINFO  - progress: 19681 of 25421 (77%)\nINFO  - progress: 19966 of 25421 (78%)\nINFO  - progress: 20338 of 25421 (80%)\nINFO  - progress: 20725 of 25421 (81%)\nINFO  - progress: 21071 of 25421 (82%)\nINFO  - progress: 21368 of 25421 (84%)\nINFO  - progress: 21617 of 25421 (85%)\nINFO  - progress: 21766 of 25421 (85%)\nINFO  - progress: 21766 of 25421 (85%)\nINFO  - progress: 21817 of 25421 (85%)\nINFO  - progress: 22296 of 25421 (87%)\nINFO  - progress: 22696 of 25421 (89%)\nINFO  - progress: 23016 of 25421 (90%)\nINFO  - progress: 23062 of 25421 (90%)\nINFO  - progress: 23171 of 25421 (91%)\nINFO  - progress: 23566 of 25421 (92%)\nINFO  - progress: 23847 of 25421 (93%)\nINFO  - progress: 24235 of 25421 (95%)\nINFO  - progress: 24664 of 25421 (97%)\nINFO  - progress: 24966 of 25421 (98%)\nINFO  - progress: 25086 of 25421 (98%)\nINFO  - progress: 25181 of 25421 (99%)\nINFO  - progress: 25210 of 25421 (99%)\nINFO  - progress: 25223 of 25421 (99%)\nINFO  - progress: 25256 of 25421 (99%)\nINFO  - progress: 25279 of 25421 (99%)\nINFO  - progress: 25291 of 25421 (99%)\nINFO  - progress: 25304 of 25421 (99%)\nINFO  - progress: 25321 of 25421 (99%)\nINFO  - progress: 25323 of 25421 (99%)\n                                                             \nERROR - finished with errors, count: 80\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/r7 casino/Fun Of Vegas - Casino Slots-TREASURETECH CO PTE. LTD/decompiled",
+    "skipped": false,
+    "base_apk": "com.sl.cashCraze.apk"
+  },
+  "analysis_files": [
+    "com.sl.cashCraze.xapk",
+    "apk/config.arm64_v8a.apk",
+    "apk/com.sl.cashCraze.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/a/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/coil/",
+    "decompiled/sources/com/",
+    "decompiled/sources/cz/",
+    "decompiled/sources/io/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/ms/",
+    "decompiled/sources/okhttp3/",
+    "decompiled/sources/okio/",
+    "decompiled/sources/org/"
+  ],
+  "errors": []
+}

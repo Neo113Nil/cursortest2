@@ -1,0 +1,80 @@
+{
+  "title": "Ice Fishing",
+  "developer": "BLACKDEAR APPS",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.9.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да (Kotlin + kotlinx-coroutines 1.8.0)"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob / Google Mobile Ads, TopOn / AnyThink, Meta Audience Network, Google User Messaging Platform, локальные баннеры Qureka (ads_qureka*)"
+      },
+      {
+        "param": "Аналитика",
+        "value": "OneSignal (App ID f2a35f4f-9ae4-41ac-b40d-ed960fc01377), Firebase Cloud Messaging / Installations / Datatransport, Google Play Services Measurement, OpenTelemetry (в составе TopOn/AnyThink)"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.ACCESS_NETWORK_STATE, android.permission.INTERNET, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_WIFI_STATE, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, com.icefishing.icefishinglive4.permission.C2D_MESSAGE, android.permission.POST_NOTIFICATIONS, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, android.permission.VIBRATE, com.sec.android.provider.badge.permission.READ, com.sec.android.provider.badge.permission.WRITE, com.htc.launcher.permission.READ_SETTINGS, com.htc.launcher.permission.UPDATE_SHORTCUT, com.sonyericsson.home.permission.BROADCAST_BADGE, com.sonymobile.home.permission.PROVIDER_INSERT_BADGE, com.anddoes.launcher.permission.UPDATE_COUNT, com.majeur.launcher.permission.UPDATE_BADGE, com.huawei.android.launcher.permission.CHANGE_BADGE, com.huawei.android.launcher.permission.READ_SETTINGS, com.huawei.android.launcher.permission.WRITE_SETTINGS, android.permission.READ_APP_BADGE, com.oppo.launcher.permission.READ_SETTINGS, com.oppo.launcher.permission.WRITE_SETTINGS, me.everything.badger.permission.BADGE_COUNT_READ,…"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.appcompat 1.7.1, androidx.activity 1.10.1 (+ktx), androidx.browser 1.8.0 (Custom Tabs), androidx.core 1.13.0 (+ktx), androidx.fragment 1.6.1, androidx.lifecycle, androidx.navigation 2.6.0, androidx.recyclerview, androidx.viewpager/viewpager2, androidx.work 2.8.1, androidx.room 2.5.0, androidx.datastore, androidx.constraintlayout 2.2.1, androidx.cardview, androidx.coordinatorlayout, androidx.databinding (viewbinding 8.9.0), com.google.android.material 1.12.0, Kotlin stdlib + kotlinx-coroutines 1.8.0, Volley (очередь HTTP), OkHttp (в составе SDK), Glide (com.bumptech.glide), Lottie (com.airbnb.lottie), Google Play Services (ads / AdMob, ads-identifier, basemement, cloud-messaging, measurement, tasks), Firebase (common, messaging, installations, datatransport), OneSignal, TopOn / AnyThink SDK (com.anythink), Meta Audience Network (com.facebook.ads), Google UMP / consent SDK, pairip (com.pairip.application.Application), IAB Open Measurement helpers"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "10761.play.gamezop.com, adx.anythinktech.com, adxtk.anythinktech.com, api.anythinktech.com, da.anythinktech.com Параметр Значение"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "MyPref — полный ответ удалённых настроек (ключ response), adposition, interstitial_id и поля из JSON (splash_link_all, splash_redirect, link1–3, topon_*, Admob_*, FB_*). HeartRate — флаг первого запуска IsFirstTimeLaunch. Отдельно — настройки согласия UMP (consent_status и др.) и служебные ключи OneSignal / Firebase Messaging."
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "splash_redirect, splash_link_all, link1, link2, link3, livetv, redirect, qureka, ads_qureka, gamezop, gamescritique, criczop, djdvk, ApplinkActivity, CustomTabs, loadUrl, web_url, offer (anythink_myoffer_*), raw.githubusercontent.com/smtpatel9211/PandyaTech"
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "В коде не"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• В коде не\n\nКак собираются: Сразу после запуска открывается экран-заставка. Сначала программа сама проверяет, есть ли интернет. Если сети нет — показывает предупреждение и просит нажать «OK». Если сеть есть — при необходимости показывает стандартное окно согласия на рекламу от Google, а затем тихо, без спроса у человека, скачивает файл настроек с заранее зашитого адреса на GitHub. В этот тихий запрос не дописывают язык телефона, модель, рекламный номер и другие сведения об устройстве — уходит простое получение файла. Человек этого обычно не замечает: на экране крутится обычная заставка, отдельного окна про «проверку» нет. Ответ целиком сохраняется в памяти приложения (файл настроек MyPref, ключ response).…\n\nКуда отправляются: Тихий запрос уходит на точный адрес https://raw.githubusercontent.com/smtpatel9211/PandyaTech/refs/heads/main/com.icefishing.icefishinglive4 — это не страница магазина и не обычная рекламная сеть, а удалённый файл настроек, который разработчик может менять без обновления программы в магазине. Запасных адресов для этой проверки в коде не видно: адрес зашит одной строкой в экране ApplinkActivity, от которого наследуется заставка. Сам ответ потом живёт в памяти приложения (MyPref), чтобы при следующих запусках и показах рекламы уже опираться на сохранённые флаги и ссылки. Отдельно, уже не как «проверка кого пускать», а как содержимое витрины,…\n\nКак фильтруются пользователи: В самом приложении нет жёсткого списка стран, языков или «ботов», по которому решают «этому человеку оффер, а этому — нет». Экраны выбора страны, языка, возраста и пола — обычные шаги знакомства после первого запуска, а не скрытый фильтр трафика для оффера. Решение «кому показать внешнюю страницу» зашито в удалённом файле на GitHub: разработчик выставляет splash_link_all и splash_redirect в 0 или 1 и подставляет актуальные link1 / link2 / link3. Приложение лишь читает эти числа и ссылки. То есть фильтр по сути делает тот, кто правит файл на сервере, а не код на телефоне по гео или «боту». Дополнительно при открытии оффера программа случайно выбирает одну из трёх присланных ссылок.…\n\nЧто возвращается: С адреса на GitHub приходит текстовый ответ со с…"
+  },
+  "app_id": "com.icefishing.icefishinglive4",
+  "icon": "/static/app-icons/com_icefishing_icefishinglive4.png",
+  "url": "https://play.google.com/store/apps/details?id=com.icefishing.icefishinglive4&hl=en&gl=us",
+  "updated": "Aug 7, 2026",
+  "version": "Varies with device"
+}

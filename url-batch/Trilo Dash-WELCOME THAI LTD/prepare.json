@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "apks": [
+    "com.techno_world.pencil.sketch.camera.apk"
+  ],
+  "base_apk": "com.techno_world.pencil.sketch.camera.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 6346 (0%)\nINFO  - progress: 763 of 6346 (12%)\nINFO  - progress: 787 of 6346 (12%)\nINFO  - progress: 876 of 6346 (13%)\nINFO  - progress: 1434 of 6346 (22%)\nINFO  - progress: 1714 of 6346 (27%)\nINFO  - progress: 2231 of 6346 (35%)\nINFO  - progress: 2533 of 6346 (39%)\nINFO  - progress: 2830 of 6346 (44%)\nINFO  - progress: 3225 of 6346 (50%)\nINFO  - progress: 3685 of 6346 (58%)\nINFO  - progress: 3914 of 6346 (61%)\nINFO  - progress: 4197 of 6346 (66%)\nINFO  - progress: 4398 of 6346 (69%)\nINFO  - progress: 4754 of 6346 (74%)\nINFO  - progress: 5051 of 6346 (79%)\nINFO  - progress: 5291 of 6346 (83%)\nINFO  - progress: 5694 of 6346 (89%)\nINFO  - progress: 5811 of 6346 (91%)\nINFO  - progress: 6170 of 6346 (97%)\n                                                             \nERROR - finished with errors, count: 13\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/url-batch/Trilo Dash-WELCOME THAI LTD/decompiled",
+    "skipped": false,
+    "base_apk": "com.techno_world.pencil.sketch.camera.apk"
+  },
+  "analysis_files": [
+    "com.techno_world.pencil.sketch.camera.apk",
+    "apk/com.techno_world.pencil.sketch.camera.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/org/"
+  ]
+}

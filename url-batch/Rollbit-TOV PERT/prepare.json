@@ -1,0 +1,46 @@
+{
+  "ok": true,
+  "apks": [
+    "com.fatum.rollbit.mortis-1.apk",
+    "com.fatum.rollbit.mortis-1-asset.apk",
+    "com.fatum.rollbit.mortis-1-config.ru.apk",
+    "com.fatum.rollbit.mortis-1-config.xxhdpi.apk",
+    "com.fatum.rollbit.mortis-1-config.lt.apk",
+    "com.fatum.rollbit.mortis-1-config.en.apk"
+  ],
+  "base_apk": "com.fatum.rollbit.mortis-1.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 1578 (0%)\nINFO  - progress: 847 of 1578 (53%)\nINFO  - progress: 943 of 1578 (59%)\nINFO  - progress: 1019 of 1578 (64%)\nINFO  - progress: 1099 of 1578 (69%)\nINFO  - progress: 1207 of 1578 (76%)\nINFO  - progress: 1317 of 1578 (83%)\nINFO  - progress: 1418 of 1578 (89%)\n                                                             \nINFO  - done\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/url-batch/Rollbit-TOV PERT/decompiled",
+    "skipped": false,
+    "base_apk": "com.fatum.rollbit.mortis-1.apk"
+  },
+  "analysis_files": [
+    "com.fatum.rollbit.mortis-1.apk",
+    "com.fatum.rollbit.mortis-1-asset.apk",
+    "com.fatum.rollbit.mortis-1-config.ru.apk",
+    "com.fatum.rollbit.mortis-1-config.xxhdpi.apk",
+    "com.fatum.rollbit.mortis-1-config.lt.apk",
+    "com.fatum.rollbit.mortis-1-config.en.apk",
+    "apk/com.fatum.rollbit.mortis-1.apk",
+    "apk/com.fatum.rollbit.mortis-1-asset.apk",
+    "apk/com.fatum.rollbit.mortis-1-config.ru.apk",
+    "apk/com.fatum.rollbit.mortis-1-config.xxhdpi.apk",
+    "apk/com.fatum.rollbit.mortis-1-config.lt.apk",
+    "apk/com.fatum.rollbit.mortis-1-config.en.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/",
+    "decompiled/sources/defpackage/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/okhttp3/"
+  ],
+  "errors": []
+}

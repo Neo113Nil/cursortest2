@@ -1,0 +1,146 @@
+{
+  "app_id": "com.fc.barca.football",
+  "title": "1x News Hub",
+  "developer": "ZYMNINOHY",
+  "developer_id": "ZYMNINOHY",
+  "icon": "/static/app-icons/com_fc_barca_football.png",
+  "url": "https://play.google.com/store/apps/details?id=com.fc.barca.football&hl=en&gl=us",
+  "score": null,
+  "released": "",
+  "updated": "Jun 13, 2026",
+  "version": "Varies with device",
+  "summary": "Football news, live match content, wallpapers and mini games",
+  "keyword": "url-batch",
+  "folder": "1x News Hub-ZYMNINOHY",
+  "path": "url-batch/1x News Hub-ZYMNINOHY",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.fc.barca.football.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/1x News Hub-ZYMNINOHY",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.fc.barca.football...\ncom.fc.barca.football downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.fc.barca.football...\ncom.fc.barca.football downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "1x News Hub (внутри системы подписан как «Barca News Hub»); пакет com.fc.barca.football; версия 1.0.6 (versionCode 6); разработчик ZYMNINOHY"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.9.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1.0 (Gradle 8.12, kotlinx-coroutines 1.8.1)"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "Start.io (StartApp SDK 5.3.0)"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Yandex AppMetrica 7.13.0 (вместе с модулями сбора дохода от рекламы для AdMob, AppLovin, ironSource, Fyber), собственная телеметрия StartApp (infoevent, insight), Google DataTransport / CCT, Google Play Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.WRITE_EXTERNAL_STORAGE (maxSdkVersion=28), android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.ACCESS_ADSERVICES_TOPICS, com.google.android.gms.permission.AD_ID, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_ SERVICE, com.android.vending.BILLING, com.android.vending.CHECK_LICENSE, com.fc.barca.football.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSIO N Параметр Значение"
+      },
+      {
+        "param": "Libraries",
+        "value": "Flutter engine (io.flutter, embedding v2, Dart AOT libapp.so); плагины Flutter: webview_flutter_android, url_launcher_android, shared_preferences_android, path_provider_android, sqflite_android, audioplayers_android (xyz.luan), gallery_saver_plus, permission_handler_android, in_app_purchase_android, appmetrica_plugin (flutter-3.4.0), startapp_sdk; flutter_cache_manager (SQLite-кэш cacheObject); StartApp SDK 5.3.0 (com.startapp.sdk: adsbase, ads, inappbrowser, insight, triggeredlinks, omsdk, sensors, motiondetector, jobs, cachedservice); AppMetrica 7.13.0 (io.appmetrica.analytics + модули ad-revenue admob/applovin/ironsource/fyber); Google Play Billing 7.1.1 (com.android.billingclient); Google Play Services: play-services-base 18.5.0, play-services-basement 18.4.0, play-services-tasks 18.2.0, play-services-ads-identifier 18.1.0, play-services-appset 16.1.0, play- services-location 19.0.0, play-services-places-placereport 17.0.0; Google DataTransport: transport-api 3.0.0, transport-runtime 3.1.8, transport-backend-cct 3.1.8; firebase-encoders 17.0.0, firebase- encoders-json 18.0.0, firebase-encoders-proto 16.0.0; com.pairip.licensecheck (защита лицензии Google Play); kotlinx- corouti…"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "adsmetadata.mobileadexchange.net, adsmetadata.startappservice.com, api.openai.com, appmetrica.io, cipa.jp, config.ru, dispatchers.io, funnel-assets.startappservice.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Файл FlutterSharedPreferences хранит настройки самого приложения: флаг пройденного первого знакомства (onboarding_done), выбранную команду (fav_team), «уровень фаната» (fan_level, level), внутриигровые монеты (coins), признак платной подписки (premium), время последнего ежедневного бонуса (last_bonus_ts), разблокированные обои (wp_unlocked) и время их создания (wp_create_ts), а также кэш сгенерированных новостей и время этого кэша (barca_news_cache_v1, barca_news_cache_time_v1). Отдельно свои файлы настроек заводят подключённые сервисы: com.startapp.sdk, com.startapp.sdk.extras, com.startapp.android.publish.CookiePrefsFile и набор файлов вида StartApp-<хэш>, а также app_set_id_storage и com.google.android.gms.signin от сервисов Google."
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет Параметр Значение"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "offer (ACCEPT THE OFFER, идентификатор покупки barca.offer.3weeks, externalOffer), redirect (Redirect limit exceeded, Redirect loop detected, «Server response has no Location header for redirect»), gate (GOAL IN THE GATE), skrolling_stavok.mp3 (имя звукового файла — транслитерация «скроллинг ставок»), AI PREDICTION, TOTAL GOAL PREDICTION, WINNING CHANCE, MAKE YOUR PICK, HOME WIN, LAST WIN, DAILY BONUS, «Not enough coins», «Max stage. Claim your reward!», «1,500,000+ USERS JOINED», «SIGNAL DETECTED», «TAP TO START STREAMING», license check (com.pairip.licensecheck, разрешение com.android.vending.CHECK_LICENSE), geoip (адрес geoip.api.p3insight.de внутри рекламного набора StartApp), Emulator / droid4x / Genymotion (проверка на эмулятор внутри StartApp), inappbrowser и triggeredlinks (модули StartApp), remoteconfig (модуль StartApp), «Bearer sk-proj-…» (зашитый прямо в приложение ключ доступа к OpenAI), usesCleartextTraffic (разрешён незашифрованный сетевой обмен)"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "adsmetadata.mobileadexchange.net",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "adsmetadata.startappservice.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "api.openai.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "appmetrica.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: SafeNames Ltd."
+      },
+      {
+        "domain": "cipa.jp",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "https://cakhiatv1.net/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "funnel-assets.startappservice.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
+}

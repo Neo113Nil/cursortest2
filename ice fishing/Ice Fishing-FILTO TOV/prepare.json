@@ -1,0 +1,61 @@
+{
+  "ok": true,
+<<<<<<< HEAD
+  "apks": [
+    "com.combinations.level.experts-1.apk",
+    "com.combinations.level.experts-1-config.en.apk",
+    "com.combinations.level.experts-1-config.arm64_v8a.apk",
+    "com.combinations.level.experts-1-asset.apk"
+  ],
+  "base_apk": "com.combinations.level.experts-1.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 1578 (0%)\nINFO  - progress: 236 of 1578 (14%)\nINFO  - progress: 438 of 1578 (27%)\nINFO  - progress: 519 of 1578 (32%)\nINFO  - progress: 722 of 1578 (45%)\nINFO  - progress: 903 of 1578 (57%)\nINFO  - progress: 1062 of 1578 (67%)\nINFO  - progress: 1207 of 1578 (76%)\nINFO  - progress: 1361 of 1578 (86%)\n                                                             \nERROR - finished with errors, count: 11\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/ice fishing/Ice Fishing-FILTO TOV/decompiled",
+    "skipped": false,
+    "base_apk": "com.combinations.level.experts-1.apk"
+  },
+  "analysis_files": [
+    "com.combinations.level.experts-1.apk",
+    "com.combinations.level.experts-1-config.en.apk",
+    "com.combinations.level.experts-1-config.arm64_v8a.apk",
+    "com.combinations.level.experts-1-asset.apk",
+    "apk/com.combinations.level.experts-1.apk",
+    "apk/com.combinations.level.experts-1-config.en.apk",
+    "apk/com.combinations.level.experts-1-config.arm64_v8a.apk",
+    "apk/com.combinations.level.experts-1-asset.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/",
+    "decompiled/sources/defpackage/",
+    "decompiled/sources/kotlin/"
+  ]
+}
+=======
+  "source": "apkcombo:playwright",
+  "package": "com.combinations.level.experts",
+  "version_name": "1.0",
+  "version_code": 1,
+  "xapk": "com.combinations.level.experts.xapk",
+  "apks": [
+    "apk/com.combinations.level.experts.apk",
+    "apk/config.armeabi_v7a.apk",
+    "apk/config.en.apk"
+  ],
+  "base_apk": "apk/com.combinations.level.experts.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "note": "jadx 1.5.1 finished with 11 errors; sources usable",
+    "out_dir": "decompiled"
+  },
+  "cloaking": "нет",
+  "notes": "Play listing Ice Fishing / FILTO TOV; APKCombo title Chicken Road; in-app label Xenoloop. Offline Compose puzzle. No INTERNET permission. PairIP license check via com.android.vending only. config.ru is language split name in splits0.xml, not a network gate."
+}
+>>>>>>> 63c2e3364fa873afd3fe44fabd2ba375028c3ced

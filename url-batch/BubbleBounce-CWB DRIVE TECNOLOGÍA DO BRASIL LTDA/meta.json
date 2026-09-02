@@ -1,0 +1,129 @@
+{
+  "app_id": "com.ud.army.cargo.transport.simulator.games",
+  "title": "BubbleBounce",
+  "developer": "CWB DRIVE TECNOLOGÍA DO BRASIL LTDA",
+  "developer_id": "CWB+DRIVE+TECNOLOG%C3%8DA+DO+BRASIL+LTDA",
+  "icon": "/static/app-icons/com_ud_army_cargo_transport_simulator_games.png",
+  "url": "https://play.google.com/store/apps/details?id=com.ud.army.cargo.transport.simulator.games&hl=en&gl=us",
+  "score": 4.1538463,
+  "released": "Jan 29, 2021",
+  "updated": "2026-08-06",
+  "version": "1012",
+  "summary": "Match, aim, and pop colorful bubbles to clear every level offline!",
+  "keyword": "url-batch",
+  "folder": "BubbleBounce-CWB DRIVE TECNOLOGÍA DO BRASIL LTDA",
+  "path": "url-batch/BubbleBounce-CWB DRIVE TECNOLOGÍA DO BRASIL LTDA",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.ud.army.cargo.transport.simulator.games-1012-asset.apk",
+    "com.ud.army.cargo.transport.simulator.games-1012-config.arm64_v8a.apk",
+    "com.ud.army.cargo.transport.simulator.games-1012.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/BubbleBounce-CWB DRIVE TECNOLOGÍA DO BRASIL LTDA",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.ud.army.cargo.transport.simulator.games ─╮\n│ BubbleBounce                                  │\n│ 1012  (vc 1012)                               │\n╰───────────────────────────────────────────────╯\n\nDownloading 3 files  (48.9 MB)\n com.ud.army.cargo.transport.simulator.games-1012.apk                   100%   …\n com.ud.army.cargo.transport.simulator.games-1012-config.arm64_v8a.apk  100%   …\n com.ud.army.cargo.transport.simulator.games-1012-asset.apk             100%   …\n\n                                Downloaded files                                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.ud.army.cargo.transport.simulator.games-1012.apk               │ 14.7 MB │\n│ com.ud.army.cargo.transport.simulator.games-1012-config.arm64_v8a… │ 22.3 MB │\n│ com.ud.army.cargo.transport.simulator.games-1012-asset.apk         │ 14.7 MB │\n└────────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.ud.army.cargo.transport.simulator.games ─╮\n│ BubbleBounce                                  │\n│ 1012  (vc 1012)                               │\n╰───────────────────────────────────────────────╯\n\nDownloading 3 files  (48.9 MB)\n com.ud.army.cargo.transport.simulator.games-1012.apk                   100%   …\n com.ud.army.cargo.transport.simulator.games-1012-config.arm64_v8a.apk  100%   …\n com.ud.army.cargo.transport.simulator.games-1012-asset.apk             100%   …\n\n                                Downloaded files                                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.ud.army.cargo.transport.simulator.games-1012.apk               │ 14.7 MB │\n│ com.ud.army.cargo.transport.simulator.games-1012-config.arm64_v8a… │ 22.3 MB │\n│ com.ud.army.cargo.transport.simulator.games-1012-asset.apk         │ 14.7 MB │\n└────────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Веtаnо Аpр (label в APK; в Google Play — BubbleBounce)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity 6000.3.8f1 (IL2CPP, Universal RP, TextMeshPro, 2D Animation/SpriteShape/Tilemap, Visual Scripting, Burst, Collections, Mathematics), UniWebView (com.onevcat.uniwebview), androidx.browser 1.2.0, androidx.core 1.1.0, androidx.lifecycle-runtime 2.0.0, androidx.versionedparcelable 1.1.0, androidx.interpolator 1.0.0, Kotlin stdlib, com.unity3d.player, org.fmod, org.xmlpull.v1 Подозрительные домены accepter-earhart.com, cwb-drive-tecnolog-a-do-brasil-ltda-a3027383.surge.sh"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "Веtаnо Аpр (кириллица вместо латиницы в названии), policy, BoomPolicyTrello, BoomPolicyMain, CreateBoomBrowsing, DoomBoom, SecondBoomBeach, SugestterKey, IsBoomOpen, FingerInMyBoom, WBoom, LBoom, BSummerG, BoomID, Received redirect url, Safe Browsing"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "cwb-drive-tecnolog-a-do-brasil-ltda-a3027383.surge.sh",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Porkbun LLC"
+      },
+      {
+        "domain": "accepter-earhart.com",
+        "redirects_to": "https://cwb-drive-tecnolog-a-do-brasil-ltda-a3027383.surge.sh/com.ud.army.cargo.transport.simulator.games/badbd536/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "com.chrome.dev",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      }
+    ],
+    "collected_data": [
+      "Имя пакета приложения",
+      "Итоговый адрес"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Имя пакета приложения\n• Итоговый адрес\n\nКак собираются: Проверка запускается сама, сразу при открытии игры: у главного объекта игры в методе запуска стартует фоновая процедура (в коде она названа CreateBoomBrowsing). Первым делом приложение выключает звук и держит поверх экрана служебные объекты, поэтому человек в эти секунды видит только загрузку и ничего не замечает. Никаких окон с вопросами или разрешениями не появляется: приложение молча уходит в интернет и ждёт ответа не дольше 11 секунд. Отдельно подчеркну проверенный факт: в сам запрос приложение не добавляет ни языка телефона, ни страны, ни модели, ни версии Android, ни рекламного номера — я просмотрел весь игровой код целиком, и это единственный сетевой вызов во всём приложении,…\n\nКуда отправляются: Запрос уходит на один зашитый в приложение адрес — https://accepter-earhart.com. Адрес лежит в коде целой строкой: он не собирается из кусков, не расшифровывается, не подставляется из удалённых настроек, и запасных адресов в приложении нет. Запрос выполняется в фоне обычным сетевым вызовом игрового движка с ограничением 11 секунд, никакой страницы человеку в этот момент не показывают. Приложению важно не содержимое ответа, а то, куда этот адрес в итоге перебросит: итоговую ссылку приложение сохраняет у себя в памяти на время сеанса. По готовым проверкам домена видно,…\n\nКак фильтруются пользователи: Никаких списков стран, языков или моделей телефонов внутри приложения нет — на телефоне решение не принимается. Решает сервер: он видит только сам обращающийся телефон, то есть его интернет-адрес (а по нему — страну, оператора и то, не идёт ли запрос из серверного дата-центра), а также стандартные служебные данные, которые к запросу добавляет сам игровой движок. В зависимости от того, кем сервер счёл посетителя, он либо оставляет обычную страницу с политикой конфиденциальности, либо перебрасывает на другую ссылку. Приложение же смотрит на результат: если итоговый адрес содержит имя пакета приложения, человек считается «не тем», кому нужно показывать рекламную страницу,…\n\nЧто возвращается: Обратно приходит не файл с настройками и не текст с командами: приложение вообще не читает содержимо…"
+  }
+}

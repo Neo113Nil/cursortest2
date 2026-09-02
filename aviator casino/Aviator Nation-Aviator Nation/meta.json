@@ -1,0 +1,79 @@
+{
+  "title": "Aviator Nation",
+  "developer": "Aviator Nation",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Aviator Nation"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.12.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1.20"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Mixpanel, Facebook App Events, Sentry, Klaviyo, Google Play Install Referrer, Notifee"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_NOTIFICATION_POLICY, android.permission.ACCESS_WIFI_STATE, android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS, android.permission.CAMERA, android.permission.CHANGE_NETWORK_STATE, android.permission.FOREGROUND_SERVICE, android.permission.INTERNET, android.permission.POST_NOTIFICATIONS, android.permission.READ_APP_BADGE, android.permission.READ_EXTERNAL_STORAGE, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.RECORD_AUDIO, android.permission.SCHEDULE_EXACT_ALARM, android.permission.SYSTEM_ALERT_WINDOW, android.permission.VIBRATE, android.permission.WAKE_LOCK, android.permission.WRITE_EXTERNAL_STORAGE, co.tapcart.app.id_SeUQkleo7 w.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.anddoes.launcher.permission.UPDATE_COUNT, com.google.android.c2dm.permission.RECEIVE, com.google.android.finsky.per mission.BIND_GET_INSTALL_REFERRER_SERVICE, c…"
+      },
+      {
+        "param": "Libraries",
+        "value": "React Native / Hermes, Expo Modules, co.tapcart (Tapcart multiplatform Vault), com.shopify.checkoutsheetkit, com.facebook.react, com.facebook.fresco, Facebook SDK (Login / App Events / Custom Tabs), com.google.firebase (Analytics, Messaging, Installations), com.google.android.gms (ads-identifier, measurement, auth, location, cloudmessaging, mlkit barcode), com.klaviyo, com.mixpanel, io.sentry, app.notifee / io.invertase.firebase / io.invertase.notifee, com.reactnativecommunity.webview, com.reactnativecommunity.asyncstorage, androidx.appcompat, androidx.browser, androidx.webkit, androidx.camera, androidx.media3, coil3, okhttp3, okio, dagger, bolts, com.bumptech.glide, com.swmansion (reanimated / gesture-handler / screens), com.horcrux.svg, com.mrousavy.mmkv, com.zoontek.rnpermissions, com.learnium.RNDeviceInfo, com.oblador.vectoricons, jp.wasabeef, eightbitlab, com.th3rdwave.safeareacontext, kotlinx-coroutines, co.touchlab.kermit"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "aomedia.org, aviatornation.com, dashif.org, developers.klaviyo.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Facebook SDK (USER_SETTINGS / AccessToken), Mixpanel ReferralInfo и superProperties, Klaviyo / Firebase / Sentry служебные prefs, React Native AsyncStorage (SQLite), MMKV, Tapcart Vault / MetadataVault (защищённое хранилище ключ-значение), кэш Expo Updates"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "offer, redirect, whitelist"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  },
+  "app_id": "co.tapcart.app.id_SeUQkleo7w",
+  "icon": "/static/app-icons/co_tapcart_app_id_SeUQkleo7w.png",
+  "url": "https://play.google.com/store/apps/details?id=co.tapcart.app.id_SeUQkleo7w&hl=en&gl=us",
+  "released": "Nov 10, 2020",
+  "updated": "2026-08-08",
+  "version": "220"
+}

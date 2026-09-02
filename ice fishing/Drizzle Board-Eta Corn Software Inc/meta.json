@@ -1,0 +1,79 @@
+{
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.3.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "37"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1+"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.kolosta.rejin.jilosa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin / kotlinx-coroutines 1.9.0, AndroidX (appcompat 1.7.1, activity, fragment, core, lifecycle, navigation 2.9.8, room 2.8.4, recyclerview, constraintlayout, coordinatorlayout, viewpager2, emoji2, profileinstaller, startup, sqlite, savedstate, window), Material Components 1.14.0, Hilt/Dagger 2.60.1, Pairip licensecheck (com.pairip.application / licensecheck)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "dispatchers.io"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "нет"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  },
+  "app_id": "com.kolosta.rejin.jilosa",
+  "title": "Drizzle Board",
+  "developer": "Eta Corn Software Inc",
+  "icon": "/static/app-icons/com_kolosta_rejin_jilosa.webp",
+  "url": "https://play.google.com/store/apps/details?id=com.kolosta.rejin.jilosa&hl=en&gl=us",
+  "released": "Aug 1, 2026",
+  "updated": "Aug 1, 2026",
+  "version": "Varies with device"
+}

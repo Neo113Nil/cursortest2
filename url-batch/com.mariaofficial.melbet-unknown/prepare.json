@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "apks": [
+    "com.mariaofficial.melbet.apk",
+    "config.armeabi_v7a.apk",
+    "config.en.apk",
+    "config.mdpi.apk"
+  ],
+  "base_apk": "com.mariaofficial.melbet.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 8489 (0%)\nINFO  - progress: 956 of 8489 (11%)\nINFO  - progress: 969 of 8489 (11%)\nINFO  - progress: 1025 of 8489 (12%)\nINFO  - progress: 1314 of 8489 (15%)\nINFO  - progress: 1814 of 8489 (21%)\nINFO  - progress: 2290 of 8489 (26%)\nINFO  - progress: 2556 of 8489 (30%)\nINFO  - progress: 2805 of 8489 (33%)\nINFO  - progress: 3029 of 8489 (35%)\nINFO  - progress: 3238 of 8489 (38%)\nINFO  - progress: 3516 of 8489 (41%)\nINFO  - progress: 3802 of 8489 (44%)\nINFO  - progress: 4117 of 8489 (48%)\nINFO  - progress: 4266 of 8489 (50%)\nINFO  - progress: 4366 of 8489 (51%)\nINFO  - progress: 4700 of 8489 (55%)\nINFO  - progress: 5005 of 8489 (58%)\nINFO  - progress: 5301 of 8489 (62%)\nINFO  - progress: 5522 of 8489 (65%)\nINFO  - progress: 5737 of 8489 (67%)\nINFO  - progress: 5868 of 8489 (69%)\nINFO  - progress: 5905 of 8489 (69%)\nINFO  - progress: 5920 of 8489 (69%)\nINFO  - progress: 5936 of 8489 (69%)\nINFO  - progress: 5950 of 8489 (70%)\nINFO  - progress: 5950 of 8489 (70%)\nINFO  - progress: 5950 of 8489 (70%)\nINFO  - progress: 5950 of 8489 (70%)\nINFO  - progress: 5950 of 8489 (70%)\nINFO  - progress: 5950 of 8489 (70%)\nINFO  - progress: 5950 of 8489 (70%)\nINFO  - progress: 5950 of 8489 (70%)\nINFO  - progress: 5950 of 8489 (70%)\nINFO  - progress: 5950 of 8489 (70%)\nINFO  - progress: 5950 of 8489 (70%)\nINFO  - progress: 5950 of 8489 (70%)\nINFO  - progress: 5950 of 8489 (70%)\nINFO  - progress: 5950 of 8489 (70%)\nINFO  - progress: 5950 of 8489 (70%)\nINFO  - progress: 5950 of 8489 (70%)\nINFO  - progress: 5950 of 8489 (70%)\nINFO  - progress: 5950 of 8489 (70%)\nINFO  - progress: 5961 of 8489 (70%)\nINFO  - progress: 5985 of 8489 (70%)\nINFO  - progress: 5999 of 8489 (70%)\nINFO  - progress: 6022 of 8489 (70%)\nINFO  - progress: 6258 of 8489 (73%)\nINFO  - progress: 6585 of 8489 (77%)\nINFO  - progress: 6834 of 8489 (80%)\nINFO  - progress: 7093 of 8489 (83%)\nINFO  - progress: 7151 of 8489 (84%)\nINFO  - progress: 7355 of 8489 (86%)\nINFO  - progress: 7738 of 8489 (91%)\nINFO  - progress: 8096 of 8489 (95%)\nINFO  - progress: 8323 of 8489 (98%)\n                                                             \nERROR - finished with errors, count: 21\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/url-batch/com.mariaofficial.melbet-unknown/decompiled",
+    "skipped": false,
+    "base_apk": "com.mariaofficial.melbet.apk"
+  },
+  "analysis_files": [
+    "com.mariaofficial.melbet.xapk",
+    "apk/com.mariaofficial.melbet.apk",
+    "apk/config.mdpi.apk",
+    "apk/config.armeabi_v7a.apk",
+    "apk/config.en.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/bolts/",
+    "decompiled/sources/coil3/",
+    "decompiled/sources/com/",
+    "decompiled/sources/eightbitlab/",
+    "decompiled/sources/expo/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/okhttp3/",
+    "decompiled/sources/okio/",
+    "decompiled/sources/org/"
+  ]
+}

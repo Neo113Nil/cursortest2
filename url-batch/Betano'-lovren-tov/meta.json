@@ -1,0 +1,131 @@
+{
+  "app_id": "com.gamified.taskplanner",
+  "title": "Betano'",
+  "developer": "lovren-tov",
+  "developer_id": "5987303093808588222",
+  "icon": "/static/app-icons/com_gamified_taskplanner.png",
+  "url": "https://play.google.com/store/apps/details?id=com.gamified.taskplanner&hl=en&gl=us",
+  "score": null,
+  "released": "",
+  "updated": "Jul 16, 2026",
+  "version": "Varies with device",
+  "summary": "Turn your daily tasks into a motivating RPG-style progress adventure.",
+  "keyword": "url-batch",
+  "folder": "Betano'-lovren-tov",
+  "path": "url-batch/Betano'-lovren-tov",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.gamified.taskplanner-4-asset.apk",
+    "com.gamified.taskplanner-4-config.arm64_v8a.apk",
+    "com.gamified.taskplanner-4.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Betano'-lovren-tov",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.gamified.taskplanner ─╮\n│ Betano'                    │\n│ 4  (vc 4)                  │\n╰────────────────────────────╯\n\nDownloading 3 files  (71.5 MB)\n  com.gamified.taskplanner-4.apk                  ━━━━━ 100% 23.3… 27.6   0:00:…\n                                                             MB    MB/s         \n  com.gamified.taskplanner-4-config.arm64_v8a.apk ━━━━━ 100% 35.6… 31.4   0:00:…\n                                                             MB    MB/s         \n  com.gamified.taskplanner-4-asset.apk            ━━━━━ 100% 16.1… 20.4   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.gamified.taskplanner-4.apk                  │ 22.2 MB │\n│ com.gamified.taskplanner-4-config.arm64_v8a.apk │ 33.9 MB │\n│ com.gamified.taskplanner-4-asset.apk            │ 22.2 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.gamified.taskplanner ─╮\n│ Betano'                    │\n│ 4  (vc 4)                  │\n╰────────────────────────────╯\n\nDownloading 3 files  (71.5 MB)\n  com.gamified.taskplanner-4.apk                  ━━━━━ 100% 23.3… 27.6   0:00:…\n                                                             MB    MB/s         \n  com.gamified.taskplanner-4-config.arm64_v8a.apk ━━━━━ 100% 35.6… 31.4   0:00:…\n                                                             MB    MB/s         \n  com.gamified.taskplanner-4-asset.apk            ━━━━━ 100% 16.1… 20.4   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.gamified.taskplanner-4.apk                  │ 22.2 MB │\n│ com.gamified.taskplanner-4-config.arm64_v8a.apk │ 33.9 MB │\n│ com.gamified.taskplanner-4-asset.apk            │ 22.2 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Betano'"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.7.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да + 1.9.0"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.google.android.gms.permission.AD_ID, android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.WAKE_LOCK, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_AD_ID, com.gamified.taskplanner.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity 6000.0.60f1 (IL2CPP), Firebase Analytics 23.2.0, Firebase Installations 17.0.1, Firebase Unity SDK 13.10.0 (Analytics/App/Remote Config/Storage export), play-services-ads-identifier 18.0.0, play-services-base 18.10.0, play-services-basement 18.10.0, play-services-tasks 18.4.1, play-services-measurement 23.2.0, AndroidX (core/core-ktx 1.9.0, datastore 1.1.7, activity, fragment, lifecycle, privacysandbox ads), kotlinx-coroutines 1.9.0, MiniIT AdvertisingIdFetcher, com.pairip.licensecheck, UniTask, DOTween, Unity Addressables, bitter.jnibridge, okio, Guava"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "gamified-task-planner.firebasestorage.app"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Unity PlayerPrefs: ключ referrer / bc12bafaadc238 (данные установки), ключи isSoundMuted / isMusicMuted; SaveLoadService хранит GameData белого приложения"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "UpdateTool, RequestParams, VerifScreen, AdvertisingId, referrer, OpenURL, RemoteConfig, bridge, license check, ParserLinkAuthority, FlagLinkVisitor, ClickID"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "gamified-task-planner.firebasestorage.app",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет"
+      }
+    ],
+    "collected_data": [
+      "Идентификатор AppsFlyer",
+      "Рекламный номер устройства",
+      "Модель телефона",
+      "Версия системы",
+      "Идентификатор игрока",
+      "Номер выпуска Android",
+      "Идентификатор сборки",
+      "Версия приложения",
+      "Реферер установки",
+      "Время установки"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Идентификатор AppsFlyer\n• Рекламный номер устройства\n• Модель телефона\n• Версия системы\n• Идентификатор игрока\n• Номер выпуска Android\n• Идентификатор сборки\n• Версия приложения\n• Реферер установки\n• Время установки\n\nКак собираются: Сразу после запуска Unity-игры, ещё до обычного экрана планировщика задач, встроенный модуль UpdateTool сам читает сведения об устройстве. Человек этого обычно не замечает: отдельного окна с разрешением на этот сбор нет. Рекламный номер устройства берут через Android Advertising Id (класс AndroidAdvertisingIdHelper и пакет MiniIT AdvertisingIdFetcher). Модель телефона и версию системы читают из сведений Android. Реферер установки и время установки запрашивают у службы Google Play (Install Referrer): в коде есть GetReferrer, GetInstallTime, GetInstallInfo и обработчики onInstallReferrerSetupFinished. Все эти значения складывают в объект RequestParams с типами RequestParameter (AppsFlyerId,…\n\nКуда отправляются: Собранные сведения уходят в инфраструктуру Firebase проекта gamified-task-planner. В приложении прописано хранилище gamified-task-planner.firebasestorage.app (строка google_storage_bucket и google-services.json). Модуль TagCollectKey97 лежит в UpdateTool.CodeBase.Components.FireBase — то есть проверка завязана на Firebase. Перед запросом приложение поднимает служебные токены Firebase (App Check и Auth) через HttpHelpers.SetRequestHeaders и потом проверяет ответ ValidateHttpResponse. Точный полный URL собран из обфусцированных кусков рядом с RequestParams (строки вроде wvqqch7bplpujgp, hapop5o и другие), поэтому открытым текстом в коде он не лежит,…\n\nКак фильтруются пользователи: На проверку уходят рекламный номер устройства, модель телефона, версии системы и приложения, реферер установки и время установки. По этим признакам сервер может отличать живой трафик магазина от «грязного», смотреть источник установки и решать, кому дать внешнюю ссылку. В самом приложении на телефоне нет явного списка стран или языков «кого пускать». Локально видны только сбор признаков и разбор ответа. Решение «кому оффер, кому обычное приложение» делает удалённая сторона (Firebase / ответ HTTP). Дополнительный сигнал схемы: в…"
+  }
+}

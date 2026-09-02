@@ -1,0 +1,117 @@
+{
+  "title": "HighRoller Vegas Casino Games",
+  "developer": "PLAYLINKS Corp",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "HighRoller Vegas"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.11.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "23"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 1.9.1"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob, AppLovin MAX, ironSource, Unity Ads, Facebook Audience Network, Vungle, InMobi, Fyber, Moloco, PremiumAds"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Crashlytics, AppsFlyer, Facebook App Events, OneSignal"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.GET_TASKS, com.google.android.gms.permission.AD_ID, com.android.vending.BILLING, android.permission.WAKE_LOCK, android.permission.VIBRATE, android.permission.RECEIVE_BOOT_COMPLETED, com.lynxgames.hrv.permission.C2D_MESSAGE, com.google.android.c2dm.permission.RECEIVE, com.sec.android.provider.badge.permission.RE AD, com.sec.android.provider.badge.permission.WRITE, com.htc.launcher.permission.READ_SETTINGS, com.htc.launcher.permission.UPDATE_SHORTCU T, com.sonyericsson.home.permission.BROADCAST_BADGE, com.sonymobile.home.permission.PROVIDER_INSERT_BADGE, com.anddoes.launcher.permission.UPDATE_COUNT, com.majeur.launcher.permission.UPDATE_BADGE, com.huawei.android.launcher.permission.CHANGE_BADGE, com.huawei.android.launcher.permission.READ_SETTINGS, com.huawei.android.launcher.permission.WRITE_SETTINGS, android.permission.READ_APP_BADGE, com.oppo.launcher.permission.READ_SETTINGS, com.oppo.launcher.permission.WRITE_SETTINGS, me.everything.badger.permission.BADGE_COUNT_READ, me.everything.badger.permission.BADGE_COUNT_WRITE, android.permission.POST_NOTIFICATION…"
+      },
+      {
+        "param": "Libraries",
+        "value": "org.cocos2dx, androidx.appcompat, androidx.browser, androidx.multidex, androidx.webkit, com.android.billingclient, com.android.installreferrer, com.google.android.gms.ads, com.google.firebase (analytics, crashlytics, messaging), com.google.android.ump, com.applovin, com.ironsource, com.unity3d.ads, com.facebook (SDK + Audience Network), com.appsflyer, com.onesignal, com.vungle, com.inmobi, com.fyber.inneractive, com.moloco, com.digitalturbine, net.premiumads.sdk.adapter, com.iab.omid, okhttp3, okio, kotlin, kotlinx.coroutines"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "admob-mediation.premiumtag.net, aomedia.org, app-firehoseproxy.highrollervegas.net, appassets.androidplatform.net, appv2.highrollervegas.net"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "сохраняет строковые ключи игры в com.lynxgames.hrv_Data; TCF-строку согласия и флаг gad_rdp в default prefs"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "casino, slots, offer, whitelist, blacklist, payout, redirect, gate, landing, clickid, postback, webview, betting, gambling, roulette, affiliate, withdraw"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "admob-mediation.premiumtag.net",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "alphamountain.ai",
+        "redirects_to": "https://www.alphamountain.ai/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "aomedia.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Squarespace Domains II LLC"
+      },
+      {
+        "domain": "app-firehoseproxy.highrollervegas.net",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Amazon Registrar, Inc."
+      },
+      {
+        "domain": "appassets.androidplatform.net",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "appv2.highrollervegas.net",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Amazon Registrar, Inc."
+      },
+      {
+        "domain": "auroraoss.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "bfore.ai",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Key-Systems GmbH"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  },
+  "app_id": "com.lynxgames.hrv",
+  "icon": "/static/app-icons/com_lynxgames_hrv.png",
+  "url": "https://play.google.com/store/apps/details?id=com.lynxgames.hrv"
+}

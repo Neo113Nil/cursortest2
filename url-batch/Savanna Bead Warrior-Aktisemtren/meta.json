@@ -1,0 +1,75 @@
+{
+  "app_id": "com.MagmaFlowStudios.SavannaBeadWarrior",
+  "title": "Savanna Bead Warrior",
+  "developer": "Aktisemtren",
+  "developer_id": "8855108696378458955",
+  "icon": "/static/app-icons/com_MagmaFlowStudios_SavannaBeadWarrior.png",
+  "url": "https://play.google.com/store/apps/details?id=com.MagmaFlowStudios.SavannaBeadWarrior&hl=en&gl=us",
+  "score": null,
+  "released": "Jun 27, 2026",
+  "updated": "2026-06-27",
+  "version": "4.122",
+  "summary": "Catch falling beads, dodge dangerous wildlife, and survive the wild savanna!",
+  "keyword": "url-batch",
+  "folder": "Savanna Bead Warrior-Aktisemtren",
+  "path": "url-batch/Savanna Bead Warrior-Aktisemtren",
+  "updates_count": 1,
+  "ok": false,
+  "source": "",
+  "files": [],
+  "target": "/root/play-collector/загрузки/url-batch/Savanna Bead Warrior-Aktisemtren",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.MagmaFlowStudios.SavannaBeadWarrior...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.MagmaFlowStudios.SavannaBeadWarrior...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Samsung F34 5G\nDelivery failed (HTTP 429).\n"
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "gplaydl auth failed: Dispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n\nAuthentication failed — all profiles rejected.\n"
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "gplaydl auth failed: Dispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n\nAuthentication failed — all profiles rejected.\n"
+    }
+  ],
+  "stdout": "",
+  "stderr": "gplaydl auth failed: Dispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n\nAuthentication failed — all profiles rejected.\n",
+  "exit_code": 1
+}

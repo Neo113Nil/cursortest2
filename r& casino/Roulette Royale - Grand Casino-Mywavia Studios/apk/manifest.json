@@ -1,0 +1,8 @@
+{
+  "package_name": "com.mw.rouletteroyale",
+  "version_code": "534",
+  "version_name": "37.14",
+  "min_sdk": 23,
+  "target_sdk": 36,
+  "label": "Roulette Royale - Casino"
+}

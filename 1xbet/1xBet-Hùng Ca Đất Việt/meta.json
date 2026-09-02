@@ -1,0 +1,76 @@
+{
+  "title": "1xBet",
+  "developer": "Hùng Ca Đất Việt",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "1xBet (Google Play); внутри APK label = Nâng Cao Nghiệp Vụ Kế Toán"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.2.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "нет"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob (banner, interstitial)"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Google Play Services Measurement (measurement-base / measurement-sdk-api), рекламный идентификатор (AD_ID)"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.ACCESS_NETWORK_STATE, android.permission.INTERNET, android.permission.ACCESS_WIFI_STATE, android.permission.WAKE_LOCK, com.google.android.gms.permission.AD_ID, android.permission.FOREGROUND_SERVICE"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.appcompat 1.2.0, androidx.activity 1.0.0, androidx.core 1.6.0, androidx.browser 1.4.0, androidx.recyclerview 1.1.0, androidx.room 2.2.5, androidx.work 2.7.0, androidx.lifecycle, androidx.fragment, androidx.startup, com.google.android.material 1.2.1, Google Play Services Ads 22.1.0 (AdMob), play-services-ads-identifier 18.0.0, play-services-measurement-base/sdk-api 20.1.2, play-services-appset 16.0.1, user-messaging-platform 2.0.0, PRDownloader (HttpURLConnection), com.github.barteksc.pdfviewer, com.shockwave.pdfium, com.flaviofaria.kenburnsview"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru, dl.dropboxusercontent.com, dropbox.com, meohayvn.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "DataQC — ключ TimeShowFullBN (время последнего полноэкранного показа рекламы)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "meohayvn, dropbox, DataQC, TimeShowFullBN, Interstitial, Banner, PRDownloader"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "да",
+    "cloaking_brief": "Как собираются: Сразу после запуска открывается экран-заставка. Если на телефоне ещё нет локальной базы учебных материалов, приложение само, без отдельного окна с разрешением, начинает скачивать архив с сайта meohayvn.com. Для скачивания используется встроенный загрузчик PRDownloader: в интернет уходит обычный запрос на фиксированный адрес файла, без сборки анкеты из языка телефона, модели или рекламного номера. В заголовках запроса загрузчик сам ставит служебную строку User-Agent со значением PRDownloader и заголовок Range для докачки. Отдельного сбора «кто этот человек» ради развилки оффер/белая версия в коде заставки нет.…\n\nКуда отправляются: Учебный архив качается по адресу http://meohayvn.com/A_Data/A_DuLieuUngDung_Online/HCDV_NangCaoNghiepVuKeToan.zip и сохраняется на устройстве, затем распаковывается. PDF-материалы бухгалтерских тем лежат как готовые ссылки Dropbox; перед скачиванием адрес www.dropbox.com в коде заменяется на dl.dropboxusercontent.com, чтобы получить прямой файл. Отдельного «тихого» адреса-проверки (gate), куда бы уходили язык, страна или рекламный номер и откуда бы приходила ссылка казино, в разобранном коде нет. Рекламные запросы AdMob уходят на инфраструктуру Google Ads — это показ баннера и межстраничной рекламы, а не серверная развилка оффера.\n\nКак фильтруются пользователи: Внутри APK нет списка стран, языков или проверки «бот / магазин», по которым одним показывают букмекерскую страницу, а другим оставляют учёбу. После заставки всем открывается одно и то же обычное приложение — вьетнамский учебник по бухучёту Nâng Cao Nghiệp Vụ Kế Toán. Признак «белой оболочки» здесь в другом: в карточке магазина приложение названо 1xBet, а внутри ярлык и экраны — про бухгалтерию. Это сильное несовпадение названия витрины и содержимого. Реклама показывается по таймеру TimeShowFullBN в памяти DataQC (не чаще чем раз в TimeShow миллисекунд), но это ограничение частоты рекламы, а не фильтр «кому оффер».\n\nЧто возвращается: С meohayvn.com приходит файл-архив с учебными данными; после успешной распаковки открывается главное меню приложения. Если сеть недоступна, на заставке показывается сообщение проверить соединение, прогресс обнуляется — перехода на вне…"
+  },
+  "app_id": "com.NghiepVuKeToan.KeToanHoc",
+  "url": "https://play.google.com/store/apps/details?id=com.NghiepVuKeToan.KeToanHoc",
+  "icon": "/static/app-icons/com_NghiepVuKeToan_KeToanHoc.png"
+}

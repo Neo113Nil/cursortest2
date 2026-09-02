@@ -1,0 +1,90 @@
+{
+  "title": "Coin Volcano",
+  "developer": "Radiant Drift Labs",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Coin Volcano"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.11.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "28"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.3.0"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Firebase Crashlytics, Firebase Cloud Messaging"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.POST_NOTIFICATIONS, android.permission.CAMERA, android.permission.VIDEO_CAPTURE, android.permission.VIBRATE, android.permission.ACCESS_WIFI_STATE, android.permission.WAKE_LOCK, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_AD_ID, com.google.android.c2dm.permission.RECEIVE, com.wf.wellsfargomob.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.compose, androidx.activity, androidx.lifecycle, androidx.datastore, androidx.appcompat, androidx.core, androidx.startup, androidx.profileinstaller, androidx.emoji2, androidx.security, kotlinx.coroutines, org.jetbrains.compose, com.google.firebase (analytics, messaging, crashlytics, installations), com.google.android.gms (measurement, ads.identifier, basement, tasks), com.pairip.licensecheck, Koin"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru, telegra.ph, ua.gov.diia.app"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "veut7jv98u8mb: ссылка оффера (q3n8xr2cev9), флаг shortcut (ldierubf46), вариант shortcut (kpobfgv3my9); loading_sdk_prefs; com.google.android.gms.appid; com.google.firebase.crashlytics"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "offer, offer_shortcut, loading, screen-gate, Routed, Severed, Warmup, Remote, Local, Masked, Unseen, bonus, reels, chips, cashed out, exclusive offers, Spinning, Imprint, advertisingId, referrer, pesthunter, shortcut, telegra, diia, pest"
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "Рекламный номер устройства",
+      "Модель телефона бренд",
+      "Время установки приложения",
+      "Установочный referrer",
+      "User-agent",
+      "Идентификатор Firebase",
+      "Признак тестовых сценариев",
+      "Значение shortcut",
+      "Значение loading",
+      "Язык телефона заголовок"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Рекламный номер устройства\n• Модель телефона бренд\n• Время установки приложения\n• Установочный referrer\n• User-agent\n• Идентификатор Firebase\n• Признак тестовых сценариев\n• Значение shortcut\n• Значение loading\n• Язык телефона заголовок\n\nКак собираются: Сразу после запуска, ещё до показа обычного экрана, приложение само собирает «отпечаток» устройства. Человек отдельного окна с разрешением обычно не видит: сведения берутся из системы Android и сервисов Google в фоне, незаметно. Рекламный номер читается через сервис рекламного идентификатора Google. Модель собирается из системных полей бренда и модели телефона. Время установки и установочный referrer берутся из сведений об установке. User-agent готовится для сетевого запроса. Идентификатор Firebase запрашивается у встроенной аналитики Google. Параллельно читаются служебные значения shortcut и loading, а также проверяются признаки отладки. Пока идёт тихая проверка,…\n\nКуда отправляются: Собранные сведения упаковываются в набор полей с короткими именами, шифруются и тихо уходят POST-запросом на адрес https://pesthunter.site/yi0tl. Если в строке адреса ещё нет схемы, приложение само дописывает https:// спереди. В заголовках уходят язык телефона и user-agent. Тело запроса — зашифрованная строка, а не читаемый текст на экране. Это фоновая проверка «что показать этому человеку», а не обычный рекламный баннер. Ссылку из ответа приложение может сохранить у себя в памяти настроек (файл veut7jv98u8mb), чтобы при следующих открытиях быстрее повторить уже выбранный путь.\n\nКак фильтруются пользователи: В самом приложении нет жёсткого списка стран или языков, по которому локально решают «оффер или обычное приложение». На сервер уходят признаки устройства, установки и служебные флаги loading/shortcut, а язык передаётся в заголовке. Решение «кого пустить» принимает удалённый сервер. В манифесте указана возможность смотреть, установлены ли приложения вроде Diia и ряда мессенджеров. В теле запроса клоаки отдельных полей под них не видно. Флаг отладки собирается в отпечатке, но в отправляемый набор строковых полей не кладётся. Если сеть недоступна или ответ пустой, приложение само оставляет человеку обычный…"
+  },
+  "app_id": "com.wf.wellsfargomob",
+  "icon": "/static/app-icons/com_wf_wellsfargomob.png",
+  "url": "https://play.google.com/store/apps/details?id=com.wf.wellsfargomob&hl=en&gl=us",
+  "released": "Jul 7, 2026",
+  "updated": "Jul 7, 2026",
+  "version": "Varies with device"
+}

@@ -1,0 +1,79 @@
+{
+  "title": "Mostbet",
+  "developer": "topgainglobalcode",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Mostbet"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.13.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.POST_NOTIFICATIONS, topgaingldbal.actionpickstats.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.compose (ui, foundation, material3, animation, runtime), androidx.activity, androidx.appcompat, androidx.core, androidx.lifecycle, androidx.navigation, androidx.room, androidx.datastore, androidx.startup, androidx.emoji2, androidx.profileinstaller, androidx.sqlite, coil, okhttp3, okio, org.koin, kotlinx.coroutines, kotlinx.serialization, co.touchlab.stately, com.google.accompanist, com.google.common.util.concurrent, com.pairip.licensecheck"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "cdn.comfy.ua, config.ru, images.unsplash.com, img2.ans-media.com, topgaingldbal.actionpickstats.app"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "DataStore Preferences: ключ onboarding_completed (флаг, что человек уже прошёл стартовый экран знакомства)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "нет"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  },
+  "app_id": "topgaingldbal.actionpickstats.app",
+  "icon": "/static/app-icons/topgaingldbal_actionpickstats_app.png",
+  "url": "https://play.google.com/store/apps/details?id=topgaingldbal.actionpickstats.app&hl=en&gl=us",
+  "released": "Aug 6, 2026",
+  "updated": "Aug 17, 2026",
+  "version": "Varies with device"
+}

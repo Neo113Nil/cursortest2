@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "apks": [
+    "com.scorelanta.goalforge.pitchzone-1-config.lt.apk",
+    "com.scorelanta.goalforge.pitchzone-1-asset.apk",
+    "com.scorelanta.goalforge.pitchzone-1.apk",
+    "com.scorelanta.goalforge.pitchzone-1-config.en.apk",
+    "com.scorelanta.goalforge.pitchzone-1-config.ru.apk",
+    "com.scorelanta.goalforge.pitchzone-1-config.xxhdpi.apk"
+  ],
+  "base_apk": "com.scorelanta.goalforge.pitchzone-1.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 3063 (0%)\nINFO  - progress: 919 of 3063 (30%)\nINFO  - progress: 929 of 3063 (30%)\nINFO  - progress: 1008 of 3063 (32%)\nINFO  - progress: 1203 of 3063 (39%)\nINFO  - progress: 1214 of 3063 (39%)\nINFO  - progress: 1353 of 3063 (44%)\nINFO  - progress: 1520 of 3063 (49%)\nINFO  - progress: 1650 of 3063 (53%)\nINFO  - progress: 1888 of 3063 (61%)\nINFO  - progress: 2070 of 3063 (67%)\nINFO  - progress: 2208 of 3063 (72%)\nINFO  - progress: 2323 of 3063 (75%)\nINFO  - progress: 2444 of 3063 (79%)\nINFO  - progress: 2627 of 3063 (85%)\nINFO  - progress: 2766 of 3063 (90%)\nINFO  - progress: 2857 of 3063 (93%)\nINFO  - progress: 3052 of 3063 (99%)\n                                                             \nERROR - finished with errors, count: 7\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/1xbet/1xbet-DEVENT PIXEL STUDIO/decompiled",
+    "skipped": false,
+    "base_apk": "com.scorelanta.goalforge.pitchzone-1.apk"
+  },
+  "analysis_files": [
+    "com.scorelanta.goalforge.pitchzone-1-config.lt.apk",
+    "com.scorelanta.goalforge.pitchzone-1-asset.apk",
+    "com.scorelanta.goalforge.pitchzone-1.apk",
+    "com.scorelanta.goalforge.pitchzone-1-config.en.apk",
+    "com.scorelanta.goalforge.pitchzone-1-config.ru.apk",
+    "com.scorelanta.goalforge.pitchzone-1-config.xxhdpi.apk",
+    "apk/com.scorelanta.goalforge.pitchzone-1-config.lt.apk",
+    "apk/com.scorelanta.goalforge.pitchzone-1-asset.apk",
+    "apk/com.scorelanta.goalforge.pitchzone-1.apk",
+    "apk/com.scorelanta.goalforge.pitchzone-1-config.en.apk",
+    "apk/com.scorelanta.goalforge.pitchzone-1-config.ru.apk",
+    "apk/com.scorelanta.goalforge.pitchzone-1-config.xxhdpi.apk",
+    "report.pdf",
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/okhttp3/",
+    "decompiled/sources/okio/"
+  ],
+  "errors": []
+}

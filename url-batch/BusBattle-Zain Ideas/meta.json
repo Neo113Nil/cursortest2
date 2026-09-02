@@ -1,0 +1,145 @@
+{
+  "app_id": "com.tgg.eurobusdriving.bus.game.bus",
+  "title": "BusBattle",
+  "developer": "Zain Ideas",
+  "developer_id": "Zain+Ideas",
+  "icon": "/static/app-icons/com_tgg_eurobusdriving_bus_game_bus.png",
+  "url": "https://play.google.com/store/apps/details?id=com.tgg.eurobusdriving.bus.game.bus&hl=en&gl=us",
+  "score": 3.4166667,
+  "released": "Nov 17, 2024",
+  "updated": "2026-07-22",
+  "version": "51",
+  "summary": "Enjoy the journey of city bus driving!",
+  "keyword": "url-batch",
+  "folder": "BusBattle-Zain Ideas",
+  "path": "url-batch/BusBattle-Zain Ideas",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.tgg.eurobusdriving.bus.game.bus-51-asset.apk",
+    "com.tgg.eurobusdriving.bus.game.bus-51-config.arm64_v8a.apk",
+    "com.tgg.eurobusdriving.bus.game.bus-51.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/BusBattle-Zain Ideas",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.tgg.eurobusdriving.bus.game.bus ─╮\n│ BusBattle                             │\n│ 51  (vc 51)                           │\n╰───────────────────────────────────────╯\n\nDownloading 3 files  (134.5 MB)\n  com.tgg.eurobusdriving.bus.game.bus-51.apk                  ━━ 100% 6… 1… 0:0…\n                                                                      MB M…     \n  com.tgg.eurobusdriving.bus.game.bus-51-config.arm64_v8a.apk ━━ 100% 2… 8… 0:0…\n                                                                      MB M…     \n  com.tgg.eurobusdriving.bus.game.bus-51-asset.apk            ━━ 100% 5… 1… 0:0…\n                                                                      MB M…     \n\n                            Downloaded files                             \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                        ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.tgg.eurobusdriving.bus.game.bus-51.apk                  │ 57.5 MB │\n│ com.tgg.eurobusdriving.bus.game.bus-51-config.arm64_v8a.apk │ 22.0 MB │\n│ com.tgg.eurobusdriving.bus.game.bus-51-asset.apk            │ 57.5 MB │\n└─────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.tgg.eurobusdriving.bus.game.bus ─╮\n│ BusBattle                             │\n│ 51  (vc 51)                           │\n╰───────────────────────────────────────╯\n\nDownloading 3 files  (134.5 MB)\n  com.tgg.eurobusdriving.bus.game.bus-51.apk                  ━━ 100% 6… 1… 0:0…\n                                                                      MB M…     \n  com.tgg.eurobusdriving.bus.game.bus-51-config.arm64_v8a.apk ━━ 100% 2… 8… 0:0…\n                                                                      MB M…     \n  com.tgg.eurobusdriving.bus.game.bus-51-asset.apk            ━━ 100% 5… 1… 0:0…\n                                                                      MB M…     \n\n                            Downloaded files                             \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                        ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.tgg.eurobusdriving.bus.game.bus-51.apk                  │ 57.5 MB │\n│ com.tgg.eurobusdriving.bus.game.bus-51-config.arm64_v8a.apk │ 22.0 MB │\n│ com.tgg.eurobusdriving.bus.game.bus-51-asset.apk            │ 57.5 MB │\n└─────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "BusBattle (название в Google Play) / B Clic Mobile (application-label внутри APK, res/values/strings.xml → app_name). Package: com.tgg.eurobusdriving.bus.game.bus, versionCode 51, versionName 51. Движок: Unity 6000.3.8f1, IL2CPP (arm64-v8a)."
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.0 (META-INF/com/android/build/gradle/app-metadata.properties)"
+      },
+      {
+        "param": "minSdk",
+        "value": "28"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36 (compileSdkVersion 36, platformBuildVersionCode 36)"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 1.8.22 (kotlin-stdlib, kotlin/KotlinVersionCurrentValue → KotlinVersion(1, 8, 22))"
+      },
+      {
+        "param": "Web View",
+        "value": "да — UniWebView (com.onevcat.uniwebview, UniWebViewProxyActivity и UniWebViewFileProvider в AndroidManifest.xml). Через него открывается страница шлюза: AppLoaderNewGameScene.OpenMoonstoneWebGate → UniWebView.Load(url) + Show()."
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да — androidx.browser.customtabs в classes.dex, <queries> на android.support.customtabs.action.CustomTabsService в AndroidManifest.xml, UniWebViewSafeBrowsing.Create(url).Show() в Privacy.OpenPrivacy и MainMenu.PrivacyPolicy."
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob — только идентификатор admob_app_id = ca-app-pub- 4540471389474737~7834589181 в assets/google-services-desktop.json и разрешение com.google.android.gms.permission.AD_ID; классов рекламного SDK (com/google/android/gms/ads, AppLovin, Unity Ads, ironSource, Facebook Audience Network, Pangle, Vungle, Chartboost, InMobi, Mintegral) ни в classes.dex, ни в C#-сборках нет. Класс Testingads присутствует, но пустой."
+      },
+      {
+        "param": "Аналитика",
+        "value": "SolarEngine (Reyun) — com.reyun.solar.engine.unity.bridge в classes.dex, SolarEngineSDK.dll, SolarEngineUnityTool.dll, SolarEngineMiniGames.dll; SolarEngine Remote Conﬁg — com.reyun.se.remote.conﬁg.unity.bridge, MiniGameRemoteConﬁg.dll. Обе библиотеки лежат в APK, но код приложения ни разу их не вызывает: SolarEngineAnalytics только присваивает AppKey = \"\", вызовов Analytics.Init и Remote Conﬁg из Assembly-CSharp нет, класс GameAnalyticsInitializer.Start пустой. Firebase: в assets есть google- services-desktop.json (project_id euro--bus-driving-city-bus-3d, api_key, mobilesdk_app_id), но SDK com.google.ﬁrebase в APK отсутствует, метод Loading.CheckForUpdate — пустая заглушка."
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.READ_EXTERNAL_STORAGE, com.google.android.gms.permission.AD_ID Параметр Значение"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity 6000.3.8f1 (IL2CPP; libil2cpp.so, libunity.so, libmain.so, lib_burst_generated.so, libc++_shared.so), UniWebView (com.onevcat.uniwebview, UniWebView-CSharp.dll, libUniWebViewNativeTexture.so), androidx.browser (Custom Tabs), androidx.core 1.1.0, androidx.lifecycle-runtime 2.0.0, androidx.versionedparcelable 1.1.0, androidx.interpolator 1.0.0, androidx.annotation, androidx.collection, androidx.concurrent.futures, androidx.arch.core, kotlin-stdlib 1.8.22, org.jetbrains.annotations, SolarEngine SDK (com.reyun.solar.engine), SolarEngine Remote Conﬁg (com.reyun.se.remote.conﬁg), Newtonsoft.Json, UniTask (+ UniTask.Addressables, UniTask.DOTween, UniTask.Linq, UniTask.TextMeshPro), DOTween, Cinemachine, ParticleImage, VacuumShaders TerrainToMesh, Realistic Car Controller (BoneCracker Games), Gley Traﬃc System, THOR Stickers, In-game Debug Console (com.yasirkula.unity, IngameDebugConsole.Runtime.dll), Google.Play.Common, Google.Play.Core, Google Android Games SDK / Swappy (com.google.androidgamesdk, libswappywrapper.so), FMOD (org.fmod), bitter.jnibridge, org.apache.http.legacy (uses-library)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "chagrins-gauzy.com, zain-ideas-9030e0ac.surge.sh, bonecrackergames.com, euro--bus-driving-city-bus- 3d.ﬁrebasestorage.app, www.dronethegame.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Unity PlayerPrefs (файл com.tgg.eurobusdriving.bus.game.bus.v2.playerprefs.xml): хранит игровой прогресс и настройки — «Cash», «Keys», «Levels», «Levels0», «LevelsOﬀRoad», «LevelsOﬀRoad0», «PlayedLevel», «PlayedLevelOﬀRoad», «Unlock», «First», «Quality», «Music», «Sound», «Control», «DailyRewardShown», «CurrentDay», «NextClaimTime», «Ach_*_Value», «Ach_*_Completed», «Ach_*_Claimed», «TotalMiles», «TotalRoutes», «TotalCarHits»; покупки и оформление — «Bus», «Owned», «Driver», «NeonColor», «TintColor», «StickerNo», «SpoilerNo», «spoiler», «SelectedRCCVehicle» и набор ключей RCC_Customization («_MaximumSpeed», «_ABS», «_TCS», «_ESP» и др.); профиль, который игрок вводит сам — «Player», «UserNameText», «UserAge», «UserGender», «UserCountry», «UserProﬁleImage». Результат проверки шлюза chagrins-gauzy.com в настройки не записывается."
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "gate — RequestMoonstoneWebGate, InterpretMoonstoneGateAnswer, OpenMoonstoneWebGate, moonstoneWebGateView, moonstoneWebGateHasOpened, gateBodyText, resolvedGateUrl, targetGateUrl (Assembly-CSharp, класс AppLoaderNewGameScene); Testingads (пустой класс Assembly-CSharp); oﬀer — ad_oﬀer_id, ad_oﬀer_name, _adoﬀer_id, _adoﬀer_name (SolarEngine SDK); postback — UpdatePostbackConversionValue (SolarEngine SDK); redirect — RedirectUri, «Received redirect url: » (UniWebView); user-agent — GetUserAgent, SetUserAgent, getUserAgent, setUserAgent (UniWebView); SafeBrowsing — UniWebViewSafeBrowsing, SafeBrowsingInit, SafeBrowsingChangeUrl (UniWebView) Проверка подозрительных доменов"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "zain-ideas-9030e0ac.surge.sh",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Porkbun LLC"
+      },
+      {
+        "domain": "bonecrackergames.com",
+        "redirects_to": "https://www.bonecrackergames.com/",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "euro--bus-driving-city-bus-3d.firebasestorage.app",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "james.newtonking.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "newtonsoft.com",
+        "redirects_to": "https://www.newtonsoft.com/ → https://www.newtonsoft.com/json",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "nuget.org",
+        "redirects_to": "https://www.nuget.org/",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "да",
+    "cloaking_brief": "Как собираются: Проверка запускается в первой же сцене приложения — «Assets/Loading new game scene/Load.unity», это тот самый экран загрузки с полоской, который человек видит сразу после нажатия на иконку. Метод Start у объекта AppLoaderNewGameScene ничего не ждёт: он тут же запускает фоновую задачу RequestMoonstoneWebGate, то есть обращение к постороннему сайту происходит в первые доли секунды работы приложения. Когда ответ приходит, приложение спрашивает у системы Android собственное техническое имя (Application.identiﬁer — то самое com.tgg.eurobusdriving.bus.game.bus, под которым приложение числится в телефоне) и держит это значение в памяти для сравнения.…\n\nКуда отправляются: Обращение уходит на один жёстко вписанный в программу адрес — https://chagrins-gauzy.com. Этот адрес лежит в двоичных данных приложения (файл global-metadata.dat) целой строкой, он не собирается из кусков и не расшифровывается, запасных или вторых адресов для этой проверки в коде нет. Запрос обычный, «прочитать страницу» (UnityWebRequest.Get), и приложение не добавляет к нему ни одного своего параметра: ни в самой ссылке, ни в дополнительных полях запроса ничего не дописывается — то есть техническое имя приложения на сервер не отправляют, оно нужно уже потом, при разборе ответа. Запрос идёт молча, в фоне, во время экрана загрузки: никакой надписи,…\n\nКак фильтруются пользователи: В самом приложении никаких списков стран, языков, операторов или признаков «робота» нет — проверены весь код запуска, сетевая часть, строки и сохранённые настройки. Решение «кому что показать» целиком принимает сервер chagrins-gauzy.com: приложение не подсказывает ему ни одного признака, сервер отвечает по своим собственным правилам, которых в приложении не видно. На стороне телефона работает одно единственное правило-пропуск: приложение берёт своё техническое имя и ищет его в ответе сервера — и в тексте страницы, и в итоговом адресе, на который сервер в конце перевёл запрос; поиск идёт без учёта заглавных и строчных букв, а перед поиском из ответа вычищаются пробелы,…\n\nЧто возвращается: Обратно приходит обыкновенная веб-страница, и приложение забирает из неё всего две вещи: текст ответа и итоговый адрес, на кот…"
+  }
+}

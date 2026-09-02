@@ -1,0 +1,86 @@
+{
+  "ok": true,
+  "apks": [
+<<<<<<< HEAD
+    "com.theaviatorgame.realmoneyaviatorgame-1-config.xxhdpi.apk",
+    "com.theaviatorgame.realmoneyaviatorgame-1-asset.apk",
+    "com.theaviatorgame.realmoneyaviatorgame-1-config.arm64_v8a.apk",
+    "com.theaviatorgame.realmoneyaviatorgame-1-config.lt.apk",
+    "com.theaviatorgame.realmoneyaviatorgame-1.apk",
+    "com.theaviatorgame.realmoneyaviatorgame-1-config.ru.apk",
+    "com.theaviatorgame.realmoneyaviatorgame-1-config.en.apk"
+  ],
+  "base_apk": "com.theaviatorgame.realmoneyaviatorgame-1.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 9170 (0%)\nINFO  - progress: 1282 of 9170 (13%)\nINFO  - progress: 1395 of 9170 (15%)\nINFO  - progress: 1440 of 9170 (15%)\nINFO  - progress: 1495 of 9170 (16%)\nINFO  - progress: 1705 of 9170 (18%)\nINFO  - progress: 2085 of 9170 (22%)\nINFO  - progress: 2398 of 9170 (26%)\nINFO  - progress: 2580 of 9170 (28%)\nINFO  - progress: 2803 of 9170 (30%)\nINFO  - progress: 2972 of 9170 (32%)\nINFO  - progress: 3208 of 9170 (34%)\nINFO  - progress: 3463 of 9170 (37%)\nINFO  - progress: 3733 of 9170 (40%)\nINFO  - progress: 4248 of 9170 (46%)\nINFO  - progress: 4588 of 9170 (50%)\nINFO  - progress: 4834 of 9170 (52%)\nINFO  - progress: 5026 of 9170 (54%)\nINFO  - progress: 5240 of 9170 (57%)\nINFO  - progress: 5527 of 9170 (60%)\nINFO  - progress: 5791 of 9170 (63%)\nINFO  - progress: 6064 of 9170 (66%)\nINFO  - progress: 6332 of 9170 (69%)\nINFO  - progress: 6619 of 9170 (72%)\nINFO  - progress: 6881 of 9170 (75%)\nINFO  - progress: 7047 of 9170 (76%)\nINFO  - progress: 7226 of 9170 (78%)\nINFO  - progress: 7325 of 9170 (79%)\nINFO  - progress: 7461 of 9170 (81%)\nINFO  - progress: 7637 of 9170 (83%)\nINFO  - progress: 7892 of 9170 (86%)\nINFO  - progress: 8270 of 9170 (90%)\nINFO  - progress: 8639 of 9170 (94%)\nINFO  - progress: 8822 of 9170 (96%)\nINFO  - progress: 9114 of 9170 (99%)\n                                                             \nERROR - finished with errors, count: 21\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/aviator casino/Aviator Game-mony/decompiled",
+    "skipped": false,
+    "base_apk": "com.theaviatorgame.realmoneyaviatorgame-1.apk"
+  },
+  "analysis_files": [
+    "com.theaviatorgame.realmoneyaviatorgame-1-config.xxhdpi.apk",
+    "com.theaviatorgame.realmoneyaviatorgame-1-asset.apk",
+    "com.theaviatorgame.realmoneyaviatorgame-1-config.arm64_v8a.apk",
+    "com.theaviatorgame.realmoneyaviatorgame-1-config.lt.apk",
+    "com.theaviatorgame.realmoneyaviatorgame-1.apk",
+    "com.theaviatorgame.realmoneyaviatorgame-1-config.ru.apk",
+    "com.theaviatorgame.realmoneyaviatorgame-1-config.en.apk",
+    "apk/com.theaviatorgame.realmoneyaviatorgame-1-config.xxhdpi.apk",
+    "apk/com.theaviatorgame.realmoneyaviatorgame-1-asset.apk",
+    "apk/com.theaviatorgame.realmoneyaviatorgame-1-config.arm64_v8a.apk",
+    "apk/com.theaviatorgame.realmoneyaviatorgame-1-config.lt.apk",
+    "apk/com.theaviatorgame.realmoneyaviatorgame-1.apk",
+    "apk/com.theaviatorgame.realmoneyaviatorgame-1-config.ru.apk",
+    "apk/com.theaviatorgame.realmoneyaviatorgame-1-config.en.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/A/",
+    "decompiled/sources/A0/",
+    "decompiled/sources/A1/",
+    "decompiled/sources/A2/",
+    "decompiled/sources/A3/",
+    "decompiled/sources/A4/",
+    "decompiled/sources/A5/",
+    "decompiled/sources/A7/",
+    "decompiled/sources/A8/",
+    "decompiled/sources/B/",
+    "decompiled/sources/B0/",
+    "decompiled/sources/B1/",
+    "decompiled/sources/B2/",
+    "decompiled/sources/B3/",
+    "decompiled/sources/B4/",
+    "decompiled/sources/B5/",
+    "decompiled/sources/B6/",
+    "decompiled/sources/B7/",
+    "decompiled/sources/B8/",
+    "decompiled/sources/C/"
+  ],
+  "errors": []
+=======
+    "com.theaviatorgame.realmoneyaviatorgame.apk",
+    "config.armeabi_v7a.apk",
+    "config.en.apk",
+    "config.mdpi.apk"
+  ],
+  "base_apk": "com.theaviatorgame.realmoneyaviatorgame.apk",
+  "jadx": {
+    "ok": true,
+    "out_dir": "decompiled",
+    "skipped": false,
+    "base_apk": "com.theaviatorgame.realmoneyaviatorgame.apk"
+  },
+  "source": "apkeep:apk-pure",
+  "xapk": "com.theaviatorgame.realmoneyaviatorgame.xapk",
+  "analysis_files": [
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "report.pdf"
+  ]
+>>>>>>> origin/main
+}

@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "apks": [
+    "com.nordvpn.android-2022.apk",
+    "com.nordvpn.android-2022-asset.apk",
+    "com.nordvpn.android-2022-config.arm64_v8a.apk",
+    "com.nordvpn.android-2022-config.xxhdpi.apk"
+  ],
+  "base_apk": "com.nordvpn.android-2022.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "- progress: 8172 of 17859 (45%)\nINFO  - progress: 8207 of 17859 (45%)\nINFO  - progress: 8227 of 17859 (46%)\nINFO  - progress: 8249 of 17859 (46%)\nINFO  - progress: 8275 of 17859 (46%)\nINFO  - progress: 8295 of 17859 (46%)\nINFO  - progress: 8325 of 17859 (46%)\nINFO  - progress: 8342 of 17859 (46%)\nINFO  - progress: 8374 of 17859 (46%)\nINFO  - progress: 8405 of 17859 (47%)\nINFO  - progress: 8454 of 17859 (47%)\nINFO  - progress: 8470 of 17859 (47%)\nINFO  - progress: 8578 of 17859 (48%)\nINFO  - progress: 8689 of 17859 (48%)\nINFO  - progress: 8838 of 17859 (49%)\nINFO  - progress: 9260 of 17859 (51%)\nINFO  - progress: 9362 of 17859 (52%)\nINFO  - progress: 9903 of 17859 (55%)\nINFO  - progress: 9926 of 17859 (55%)\nINFO  - progress: 9964 of 17859 (55%)\nINFO  - progress: 9996 of 17859 (55%)\nINFO  - progress: 10012 of 17859 (56%)\nINFO  - progress: 10013 of 17859 (56%)\nINFO  - progress: 10181 of 17859 (57%)\nINFO  - progress: 10216 of 17859 (57%)\nINFO  - progress: 10236 of 17859 (57%)\nINFO  - progress: 10471 of 17859 (58%)\nINFO  - progress: 10524 of 17859 (58%)\nINFO  - progress: 10786 of 17859 (60%)\nINFO  - progress: 11107 of 17859 (62%)\nINFO  - progress: 11520 of 17859 (64%)\nINFO  - progress: 11764 of 17859 (65%)\nINFO  - progress: 12069 of 17859 (67%)\nINFO  - progress: 12476 of 17859 (69%)\nINFO  - progress: 12806 of 17859 (71%)\nINFO  - progress: 13105 of 17859 (73%)\nINFO  - progress: 13482 of 17859 (75%)\nINFO  - progress: 13802 of 17859 (77%)\nINFO  - progress: 13821 of 17859 (77%)\nINFO  - progress: 14097 of 17859 (78%)\nINFO  - progress: 14103 of 17859 (78%)\nINFO  - progress: 14153 of 17859 (79%)\nINFO  - progress: 14167 of 17859 (79%)\nINFO  - progress: 14186 of 17859 (79%)\nINFO  - progress: 14197 of 17859 (79%)\nINFO  - progress: 14553 of 17859 (81%)\nINFO  - progress: 15139 of 17859 (84%)\nINFO  - progress: 15586 of 17859 (87%)\nINFO  - progress: 15689 of 17859 (87%)\nINFO  - progress: 15703 of 17859 (87%)\nINFO  - progress: 15722 of 17859 (88%)\nINFO  - progress: 15734 of 17859 (88%)\nINFO  - progress: 15754 of 17859 (88%)\nINFO  - progress: 15771 of 17859 (88%)\nINFO  - progress: 15779 of 17859 (88%)\nINFO  - progress: 15781 of 17859 (88%)\nINFO  - progress: 16258 of 17859 (91%)\nINFO  - progress: 16563 of 17859 (92%)\nINFO  - progress: 17043 of 17859 (95%)\nINFO  - progress: 17114 of 17859 (95%)\nINFO  - progress: 17182 of 17859 (96%)\nINFO  - progress: 17224 of 17859 (96%)\nINFO  - progress: 17239 of 17859 (96%)\nINFO  - progress: 17256 of 17859 (96%)\nINFO  - progress: 17298 of 17859 (96%)\nINFO  - progress: 17329 of 17859 (97%)\nINFO  - progress: 17350 of 17859 (97%)\nINFO  - progress: 17391 of 17859 (97%)\nINFO  - progress: 17438 of 17859 (97%)\nINFO  - progress: 17489 of 17859 (97%)\nINFO  - progress: 17520 of 17859 (98%)\nINFO  - progress: 17562 of 17859 (98%)\nINFO  - progress: 17577 of 17859 (98%)\nINFO  - progress: 17611 of 17859 (98%)\nINFO  - progress: 17629 of 17859 (98%)\n                                                             \nERROR - finished with errors, count: 64\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/vpn/NordVPN – fast VPN for privacy-Nord Security/decompiled",
+    "skipped": false,
+    "base_apk": "com.nordvpn.android-2022.apk"
+  },
+  "analysis_files": [
+    "com.nordvpn.android-2022.apk",
+    "com.nordvpn.android-2022-asset.apk",
+    "com.nordvpn.android-2022-config.arm64_v8a.apk",
+    "com.nordvpn.android-2022-config.xxhdpi.apk",
+    "apk/com.nordvpn.android-2022.apk",
+    "apk/com.nordvpn.android-2022-asset.apk",
+    "apk/com.nordvpn.android-2022-config.arm64_v8a.apk",
+    "apk/com.nordvpn.android-2022-config.xxhdpi.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/bo/",
+    "decompiled/sources/ch/",
+    "decompiled/sources/coil3/",
+    "decompiled/sources/com/",
+    "decompiled/sources/defpackage/",
+    "decompiled/sources/io/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/okhttp3/",
+    "decompiled/sources/org/",
+    "decompiled/sources/retrofit2/"
+  ]
+}

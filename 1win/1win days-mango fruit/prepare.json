@@ -1,0 +1,72 @@
+{
+  "ok": true,
+  "apks": [
+<<<<<<< HEAD
+    "fit.donblestandartsathletics.winnerdays-5-config.ru.apk",
+    "fit.donblestandartsathletics.winnerdays-5-config.en.apk",
+    "fit.donblestandartsathletics.winnerdays-5-asset.apk",
+    "fit.donblestandartsathletics.winnerdays-5.apk",
+    "fit.donblestandartsathletics.winnerdays-5-config.xxhdpi.apk",
+    "fit.donblestandartsathletics.winnerdays-5-config.lt.apk"
+  ],
+  "base_apk": "fit.donblestandartsathletics.winnerdays-5.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 521 (0%)\nINFO  - progress: 281 of 521 (53%)\nINFO  - progress: 416 of 521 (79%)\nINFO  - progress: 516 of 521 (99%)\n                                                             \nINFO  - done\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/1win/1win days-mango fruit/decompiled",
+    "skipped": false,
+    "base_apk": "fit.donblestandartsathletics.winnerdays-5.apk"
+  },
+  "analysis_files": [
+    "fit.donblestandartsathletics.winnerdays-5-config.ru.apk",
+    "fit.donblestandartsathletics.winnerdays-5-config.en.apk",
+    "fit.donblestandartsathletics.winnerdays-5-asset.apk",
+    "fit.donblestandartsathletics.winnerdays-5.apk",
+    "fit.donblestandartsathletics.winnerdays-5-config.xxhdpi.apk",
+    "fit.donblestandartsathletics.winnerdays-5-config.lt.apk",
+    "apk/fit.donblestandartsathletics.winnerdays-5-config.ru.apk",
+    "apk/fit.donblestandartsathletics.winnerdays-5-config.en.apk",
+    "apk/fit.donblestandartsathletics.winnerdays-5-asset.apk",
+    "apk/fit.donblestandartsathletics.winnerdays-5.apk",
+    "apk/fit.donblestandartsathletics.winnerdays-5-config.xxhdpi.apk",
+    "apk/fit.donblestandartsathletics.winnerdays-5-config.lt.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/A/",
+    "decompiled/sources/B/",
+    "decompiled/sources/C/",
+    "decompiled/sources/D/",
+    "decompiled/sources/E/",
+    "decompiled/sources/F/",
+    "decompiled/sources/G/",
+    "decompiled/sources/H/",
+    "decompiled/sources/I/",
+    "decompiled/sources/J/",
+    "decompiled/sources/K/",
+    "decompiled/sources/L/",
+    "decompiled/sources/M/",
+    "decompiled/sources/N/",
+    "decompiled/sources/O/",
+    "decompiled/sources/P/",
+    "decompiled/sources/Q/",
+    "decompiled/sources/R/",
+    "decompiled/sources/S/",
+    "decompiled/sources/T/"
+  ],
+  "errors": []
+=======
+    "fit.donblestandartsathletics.winnerdays-5.apk",
+    "fit.donblestandartsathletics.winnerdays-5-config.en.apk",
+    "fit.donblestandartsathletics.winnerdays-5-config.fr.apk",
+    "fit.donblestandartsathletics.winnerdays-5-config.xxhdpi.apk"
+  ],
+  "source": "apkcombo",
+  "package": "fit.donblestandartsathletics.winnerdays",
+  "version_name": "5",
+  "version_code": 5
+>>>>>>> origin/main
+}

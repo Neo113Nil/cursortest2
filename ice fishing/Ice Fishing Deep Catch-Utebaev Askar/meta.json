@@ -1,0 +1,119 @@
+{
+  "title": "Ice Fishing Deep Catch",
+  "developer": "Utebaev Askar",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing Deep Catch"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.1.4"
+      },
+      {
+        "param": "minSdk",
+        "value": "26"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 1.9.10"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "AppsFlyer 6.15.2, Google Play Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, com.samsung.android.mapsagent.permission.READ_APP_INFO, com.huawei.ap pmarket.service.commondata.permission.GET_COMMON_DATA, com.protoclaw.airfishing.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, c om.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "AppsFlyer 6.15.2, Play Install Referrer, com.pairip (Play licensing), androidx.core (+ktx), androidx.lifecycle, androidx.annotation, androidx.versionedparcelable, androidx.arch.core, androidx.interpolator, Kotlin stdlib 1.9.10"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "deepaircatch.online"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "ac_gs: st_f (флаг «оставить обычное приложение»), dl_v (сохранённая ссылка после проверки на deepaircatch.online); appsflyer-data (служебные данные AppsFlyer)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "deepaircatch.online, shwCntnt, bundle, afid, devkey, referrer, dl_v, st_f, privacyCanon, loadUrl, NativeActions, accept, play, AppsFlyer, onelink, clickid"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "alphamountain.ai",
+        "redirects_to": "https://www.alphamountain.ai/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "appsflyersdk.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Amazon Registrar, Inc."
+      },
+      {
+        "domain": "auroraoss.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "bfore.ai",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Key-Systems GmbH"
+      },
+      {
+        "domain": "config.ru",
+        "redirects_to": "https://config.ru/en/",
+        "parked_at": "похоже на парковку (domain is for sale)"
+      },
+      {
+        "domain": "cv.iptc.org",
+        "redirects_to": "http://cv.iptc.org/newscodes → https://cv.iptc.org/newscodes",
+        "parked_at": "регистратор: Amazon Registrar, Inc."
+      },
+      {
+        "domain": "deepaircatch.online",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "desenmascara.me",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "да",
+    "cloaking_brief": "Как собираются: Сразу при запуске приложение само, без отдельного окна с разрешением, включает AppsFlyer и подключается к службе меток установки Google Play. Номер установки AppsFlyer и метка из магазина сохраняются в памяти программы ещё до того, как человек нажмёт кнопку. Когда человек нажимает «PLAY NOW» на стартовом экране, приложение собирает эти сведения в одну ссылку и открывает её во встроенном окне сайта внутри приложения. Человек обычно видит только экран «Loading...» и не понимает, что уходит тихая проверка. Имя пакета берётся из системы Android. Ключ разработчика AppsFlyer зашит в программе одной строкой и подставляется в адрес проверки вместе с остальными параметрами.…\n\nКуда отправляются: Проверка уходит на адрес https://deepaircatch.online во встроенном окне сайта внутри приложения. К адресу добавляются параметры bundle, afid, devkey и при наличии referrer. Это не обычный показ рекламного баннера на экране, а тихая проверка «что показать этому человеку». Запасных адресов в коде приложения не видно: базовый адрес зашит одной строкой. Параллельно AppsFlyer шлёт свои служебные данные на свои серверы аналитики, но развилка «оффер или обычное приложение» завязана именно на deepaircatch.online. Если после проверки открывается другой адрес, приложение сохраняет его в памяти под ключом dl_v. При следующем запуске этот сохранённый адрес открывают сразу,…\n\nКак фильтруются пользователи: В самом приложении нет жёсткого списка стран или языков: на проверку уходят имя пакета, номер установки AppsFlyer, ключ разработчика и метка установки из магазина. Решение «кому показать внешнюю страницу, а кому оставить обычный режим» делает сервер deepaircatch.online по этим признакам и по тому, как ответит на запрос. На телефоне есть только простой локальный флаг st_f: если он включён (через служебное сообщение accept из страницы во встроенном окне сайта), приложение больше не гонит человека на проверку и открывает локальный экран обычного приложения. В обычном меню кнопки accept нет — туда уводит нажатие «PLAY NOW», пока флаг не выставлен и пока нет сохранённой ссылки.…\n\nЧто возвращается: Отдельного текстового ответа вроде «можно» / «нельзя» приложение не разбирает. Оно от…"
+  },
+  "app_id": "com.protoclaw.airfishing",
+  "icon": "/static/app-icons/com_protoclaw_airfishing.png",
+  "url": "https://play.google.com/store/apps/details?id=com.protoclaw.airfishing&hl=en&gl=us",
+  "updated": "May 31, 2026",
+  "version": "Varies with device"
+}

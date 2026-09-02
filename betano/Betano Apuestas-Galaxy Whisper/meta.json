@@ -1,0 +1,147 @@
+{
+  "app_id": "com.btWr6vex.ballOon5za.pop8lora",
+  "title": "Betano Apuestas",
+  "developer": "Galaxy Whisper",
+  "score": null,
+  "icon": "/static/app-icons/com_btWr6vex_ballOon5za_pop8lora.png",
+  "url": "https://play.google.com/store/apps/details?id=com.btWr6vex.ballOon5za.pop8lora&hl=en&gl=us",
+  "keyword": "betano",
+  "country": "India",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260810_214322_India_betano_search",
+  "search_title": "Betano Apuestas",
+  "search_developer": "Galaxy Whisper",
+  "rank": 6,
+  "developer_id": "Galaxy+Whisper",
+  "released": "Jun 4, 2026",
+  "updated": "Jun 5, 2026",
+  "version": "Varies with device",
+  "summary": "Match colored spheres, choose modes and track your score",
+  "folder": "Betano Apuestas-Galaxy Whisper",
+  "path": "betano/Betano Apuestas-Galaxy Whisper",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.btWr6vex.ballOon5za.pop8lora-1-asset.apk",
+    "com.btWr6vex.ballOon5za.pop8lora-1-config.en.apk",
+    "com.btWr6vex.ballOon5za.pop8lora-1-config.lt.apk",
+    "com.btWr6vex.ballOon5za.pop8lora-1-config.ru.apk",
+    "com.btWr6vex.ballOon5za.pop8lora-1-config.xxhdpi.apk",
+    "com.btWr6vex.ballOon5za.pop8lora-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/betano/Betano Apuestas-Galaxy Whisper",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.btWr6vex.ballOon5za.pop8lora ─╮\n│ Betano Apuestas                    │\n│ 1.0  (vc 1)                        │\n╰────────────────────────────────────╯\n\nDownloading 6 files  (58.3 MB)\n  com.btWr6vex.ballOon5za.pop8lora-1.apk               ━━━━ 100% 34.… 40.2 0:00…\n                                                                 MB   MB/s      \n  com.btWr6vex.ballOon5za.pop8lora-1-config.en.apk     ━━━━ 100% 45.… ?    0:00…\n                                                                 kB             \n  com.btWr6vex.ballOon5za.pop8lora-1-config.lt.apk     ━━━━ 100% 29.… ?    0:00…\n                                                                 kB             \n  com.btWr6vex.ballOon5za.pop8lora-1-config.ru.apk     ━━━━ 100% 29.… ?    0:00…\n                                                                 kB             \n  com.btWr6vex.ballOon5za.pop8lora-1-config.xxhdpi.apk ━━━━ 100% 61.… ?    0:00…\n                                                                 kB             \n  com.btWr6vex.ballOon5za.pop8lora-1-asset.apk         ━━━━ 100% 26.… 40.2 0:00…\n                                                                 MB   MB/s      \n\n                         Downloaded files                         \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                 ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.btWr6vex.ballOon5za.pop8lora-1.apk               │ 32.9 MB │\n│ com.btWr6vex.ballOon5za.pop8lora-1-config.en.apk     │ 44.4 KB │\n│ com.btWr6vex.ballOon5za.pop8lora-1-config.lt.apk     │ 28.4 KB │\n│ com.btWr6vex.ballOon5za.pop8lora-1-config.ru.apk     │ 28.4 KB │\n│ com.btWr6vex.ballOon5za.pop8lora-1-config.xxhdpi.apk │ 60.4 KB │\n│ com.btWr6vex.ballOon5za.pop8lora-1-asset.apk         │ 32.9 MB │\n└──────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.btWr6vex.ballOon5za.pop8lora ─╮\n│ Betano Apuestas                    │\n│ 1.0  (vc 1)                        │\n╰────────────────────────────────────╯\n\nDownloading 6 files  (58.3 MB)\n  com.btWr6vex.ballOon5za.pop8lora-1.apk               ━━━━ 100% 34.… 40.2 0:00…\n                                                                 MB   MB/s      \n  com.btWr6vex.ballOon5za.pop8lora-1-config.en.apk     ━━━━ 100% 45.… ?    0:00…\n                                                                 kB             \n  com.btWr6vex.ballOon5za.pop8lora-1-config.lt.apk     ━━━━ 100% 29.… ?    0:00…\n                                                                 kB             \n  com.btWr6vex.ballOon5za.pop8lora-1-config.ru.apk     ━━━━ 100% 29.… ?    0:00…\n                                                                 kB             \n  com.btWr6vex.ballOon5za.pop8lora-1-config.xxhdpi.apk ━━━━ 100% 61.… ?    0:00…\n                                                                 kB             \n  com.btWr6vex.ballOon5za.pop8lora-1-asset.apk         ━━━━ 100% 26.… 40.2 0:00…\n                                                                 MB   MB/s      \n\n                         Downloaded files                         \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                 ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.btWr6vex.ballOon5za.pop8lora-1.apk               │ 32.9 MB │\n│ com.btWr6vex.ballOon5za.pop8lora-1-config.en.apk     │ 44.4 KB │\n│ com.btWr6vex.ballOon5za.pop8lora-1-config.lt.apk     │ 28.4 KB │\n│ com.btWr6vex.ballOon5za.pop8lora-1-config.ru.apk     │ 28.4 KB │\n│ com.btWr6vex.ballOon5za.pop8lora-1-config.xxhdpi.apk │ 60.4 KB │\n│ com.btWr6vex.ballOon5za.pop8lora-1-asset.apk         │ 32.9 MB │\n└──────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Betano Apuestas (в приложении: Victory Sphepes)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.7.3"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 1.9.24"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.CAMERA, com.btWr6vex.ballOon5za.pop8lora.DYNAMIC_RECEIVER_NOT_EXPORTED_PER MISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 1.9.24, kotlinx-coroutines 1.7.3, OkHttp, Okio, Retrofit2, Gson, androidx.appcompat 1.7.0, androidx.core/core-ktx 1.15.0, androidx.activity 1.10.0, androidx.fragment 1.6.2, androidx.constraintlayout 2.2.0, androidx.navigation 2.8.5, androidx.recyclerview 1.1.0, androidx.databinding 8.7.3, com.google.android.material 1.12.0, Google Pairip licensecheck"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "vorenemin.info"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "файл name_db: музыка, звуки клика, имя игрока, уровни/рекорды/звёзды, вид режима; ключ web_url (getUrl/setUrl) — в цепочке проверки оффера на заставке не используется, ссылка держится в памяти"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "token, Base64, URL, apiUrl, extractUrlFromApi, Decoded URL, opening browser, api, web_url"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "alphamountain.ai",
+        "redirects_to": "https://www.alphamountain.ai/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "bfore.ai",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Key-Systems GmbH"
+      },
+      {
+        "domain": "desenmascara.me",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "vorenemin.info",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      }
+    ],
+    "collected_data": [
+      "Токен"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Токен\n\nКак собираются: Сразу после открытия приложения показывается экран-заставка. В этот же момент программа тихо, без спроса у человека, запускает фоновую проверку в интернете. Отдельного окна с разрешением на сбор данных для этой проверки нет. Язык телефона, рекламный номер устройства, модель и другие сведения о телефоне для этой проверки приложение не читает. В адрес запроса подставляется только заранее прописанный в коде ключ доступа (токен). Человек этого обычно не замечает: на экране просто крутится заставка. Параллельно запускается таймер примерно на пять секунд. После него приложение решает, открыть ли внешнюю ссылку или оставить обычное приложение — в зависимости от того,…\n\nКуда отправляются: Запрос уходит на адрес https://vorenemin.info/api/?token=nn1t667WjR751ZMr. Это тихий фоновый опрос «что показать этому запуску», а не показ рекламы на экране приложения. Адрес проверки записан в коде целиком, из кусков его не собирают. Запасных адресов для этой проверки в коде не видно. Ответ сервера на заставке в постоянную память приложения не сохраняют: ссылка держится только во временной переменной до решения, что открыть. Если запрос не удался или сервер ответил ошибкой, приложение просто идёт дальше без внешней ссылки.\n\nКак фильтруются пользователи: В самом приложении нет списка стран, языков или признака «бот / проверка магазина». На сервер уходит только токен из адреса — без языка телефона и без рекламного номера. По коду видно, что решение «кому показать ссылку, а кому обычное приложение» делает сервер: он либо отдаёт в ответе закодированную ссылку, либо нет. Телефон лишь проверяет, получилась ли из ответа нормальная интернет-ссылка. Дополнительный признак схемы: в магазине приложение называется «Betano Apuestas», а внутри программы имя другое — «Victory Sphepes». Это белая оболочка вокруг проверки оффера.\n\nЧто возвращается: Сервер отвечает текстом в формате объекта с полями. Приложение берёт значение первого поля и расшифровывает его из кодировки Base64 — получается строка со ссылкой на сайт. Если после расшифровки получается адрес, начинающийся с http или https (или к нему добавляют https://), и ссылка выглядит настоящей (ест…"
+  }
+}

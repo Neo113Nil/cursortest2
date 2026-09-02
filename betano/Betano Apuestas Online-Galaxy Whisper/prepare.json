@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "apks": [
+    "com.strVex7ul.footbAll5ra.manag8lix-2.apk",
+    "com.strVex7ul.footbAll5ra.manag8lix-2-config.en.apk",
+    "com.strVex7ul.footbAll5ra.manag8lix-2-config.ru.apk",
+    "com.strVex7ul.footbAll5ra.manag8lix-2-asset.apk",
+    "com.strVex7ul.footbAll5ra.manag8lix-2-config.lt.apk",
+    "com.strVex7ul.footbAll5ra.manag8lix-2-config.xxhdpi.apk"
+  ],
+  "base_apk": "com.strVex7ul.footbAll5ra.manag8lix-2.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 5151 (0%)\nINFO  - progress: 1119 of 5151 (21%)\nINFO  - progress: 1130 of 5151 (21%)\nINFO  - progress: 1198 of 5151 (23%)\nINFO  - progress: 1569 of 5151 (30%)\nINFO  - progress: 1976 of 5151 (38%)\nINFO  - progress: 2241 of 5151 (43%)\nINFO  - progress: 2376 of 5151 (46%)\nINFO  - progress: 2666 of 5151 (51%)\nINFO  - progress: 2931 of 5151 (56%)\nINFO  - progress: 3109 of 5151 (60%)\nINFO  - progress: 3324 of 5151 (64%)\nINFO  - progress: 3526 of 5151 (68%)\nINFO  - progress: 3679 of 5151 (71%)\nINFO  - progress: 3906 of 5151 (75%)\nINFO  - progress: 3977 of 5151 (77%)\nINFO  - progress: 4157 of 5151 (80%)\nINFO  - progress: 4237 of 5151 (82%)\nINFO  - progress: 4500 of 5151 (87%)\nINFO  - progress: 4662 of 5151 (90%)\nINFO  - progress: 4677 of 5151 (90%)\nINFO  - progress: 4973 of 5151 (96%)\n                                                             \nERROR - finished with errors, count: 12\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/betano/Betano Apuestas Online-Galaxy Whisper/decompiled",
+    "skipped": false,
+    "base_apk": "com.strVex7ul.footbAll5ra.manag8lix-2.apk"
+  },
+  "analysis_files": [
+    "com.strVex7ul.footbAll5ra.manag8lix-2.apk",
+    "com.strVex7ul.footbAll5ra.manag8lix-2-config.en.apk",
+    "com.strVex7ul.footbAll5ra.manag8lix-2-config.ru.apk",
+    "com.strVex7ul.footbAll5ra.manag8lix-2-asset.apk",
+    "com.strVex7ul.footbAll5ra.manag8lix-2-config.lt.apk",
+    "com.strVex7ul.footbAll5ra.manag8lix-2-config.xxhdpi.apk",
+    "apk/com.strVex7ul.footbAll5ra.manag8lix-2.apk",
+    "apk/com.strVex7ul.footbAll5ra.manag8lix-2-config.en.apk",
+    "apk/com.strVex7ul.footbAll5ra.manag8lix-2-config.ru.apk",
+    "apk/com.strVex7ul.footbAll5ra.manag8lix-2-asset.apk",
+    "apk/com.strVex7ul.footbAll5ra.manag8lix-2-config.lt.apk",
+    "apk/com.strVex7ul.footbAll5ra.manag8lix-2-config.xxhdpi.apk",
+    "report.pdf",
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/okhttp3/",
+    "decompiled/sources/okio/",
+    "decompiled/sources/org/",
+    "decompiled/sources/retrofit2/"
+  ],
+  "errors": []
+}

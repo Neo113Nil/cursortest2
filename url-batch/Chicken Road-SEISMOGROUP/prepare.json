@@ -1,0 +1,46 @@
+{
+  "ok": true,
+  "apks": [
+    "com.quantumriftgate.arqntmrg.apk",
+    "config.arm64_v8a.apk"
+  ],
+  "base_apk": "com.quantumriftgate.arqntmrg.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 394 (0%)\nINFO  - progress: 178 of 394 (45%)\nINFO  - progress: 250 of 394 (63%)\nINFO  - progress: 388 of 394 (98%)\n                                                             \nERROR - finished with errors, count: 2\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/url-batch/Chicken Road-SEISMOGROUP/decompiled",
+    "skipped": false,
+    "base_apk": "com.quantumriftgate.arqntmrg.apk"
+  },
+  "analysis_files": [
+    "com.quantumriftgate.arqntmrg.xapk",
+    "apk/com.quantumriftgate.arqntmrg.apk",
+    "apk/config.arm64_v8a.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/A/",
+    "decompiled/sources/B/",
+    "decompiled/sources/C/",
+    "decompiled/sources/D/",
+    "decompiled/sources/E/",
+    "decompiled/sources/F/",
+    "decompiled/sources/G/",
+    "decompiled/sources/H/",
+    "decompiled/sources/I/",
+    "decompiled/sources/K/",
+    "decompiled/sources/M/",
+    "decompiled/sources/N/",
+    "decompiled/sources/O/",
+    "decompiled/sources/Q/",
+    "decompiled/sources/S/",
+    "decompiled/sources/T/",
+    "decompiled/sources/U/",
+    "decompiled/sources/V/",
+    "decompiled/sources/W/",
+    "decompiled/sources/X/"
+  ]
+}

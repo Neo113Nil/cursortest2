@@ -1,0 +1,40 @@
+{
+  "ok": true,
+  "apks": [
+    "com.icefishing.icefishingmoneygame11.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.mdpi.apk"
+  ],
+  "base_apk": "com.icefishing.icefishingmoneygame11.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 8153 (0%)\nINFO  - progress: 858 of 8153 (10%)\nINFO  - progress: 865 of 8153 (10%)\nINFO  - progress: 881 of 8153 (10%)\nINFO  - progress: 977 of 8153 (11%)\nINFO  - progress: 1219 of 8153 (14%)\nINFO  - progress: 1836 of 8153 (22%)\nINFO  - progress: 2298 of 8153 (28%)\nINFO  - progress: 2792 of 8153 (34%)\nINFO  - progress: 3146 of 8153 (38%)\nINFO  - progress: 3418 of 8153 (41%)\nINFO  - progress: 3723 of 8153 (45%)\nINFO  - progress: 4201 of 8153 (51%)\nINFO  - progress: 4647 of 8153 (56%)\nINFO  - progress: 4815 of 8153 (59%)\nINFO  - progress: 5076 of 8153 (62%)\nINFO  - progress: 5408 of 8153 (66%)\nINFO  - progress: 5710 of 8153 (70%)\nINFO  - progress: 5982 of 8153 (73%)\nINFO  - progress: 6237 of 8153 (76%)\nINFO  - progress: 6511 of 8153 (79%)\nINFO  - progress: 6712 of 8153 (82%)\nINFO  - progress: 7024 of 8153 (86%)\nINFO  - progress: 7290 of 8153 (89%)\nINFO  - progress: 7337 of 8153 (89%)\nINFO  - progress: 7534 of 8153 (92%)\nINFO  - progress: 7719 of 8153 (94%)\nINFO  - progress: 7985 of 8153 (97%)\n                                                             \nERROR - finished with errors, count: 15\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/ice fishing/Ice Fishing-HkkT Hongkong/decompiled",
+    "skipped": false,
+    "base_apk": "com.icefishing.icefishingmoneygame11.apk"
+  },
+  "analysis_files": [
+    "com.icefishing.icefishingmoneygame11.xapk",
+    "apk/config.arm64_v8a.apk",
+    "apk/com.icefishing.icefishingmoneygame11.apk",
+    "apk/config.mdpi.apk",
+    "apk/config.en.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/okio/",
+    "decompiled/sources/org/",
+    "decompiled/sources/pl/"
+  ]
+}

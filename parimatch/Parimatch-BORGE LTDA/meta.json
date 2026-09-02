@@ -1,0 +1,153 @@
+{
+  "app_id": "com.arena.legendsarena",
+  "title": "Parimatch",
+  "developer": "BORGE LTDA",
+  "score": null,
+  "icon": "/static/app-icons/com_arena_legendsarena.png",
+  "url": "https://play.google.com/store/apps/details?id=com.arena.legendsarena&hl=en&gl=us",
+  "keyword": "Parimatch",
+  "country": "Spain",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260813_174703_Spain_Parimatch_search",
+  "search_title": "Parimatch",
+  "search_developer": "BORGE LTDA",
+  "rank": 2,
+  "developer_id": "BORGE+LTDA",
+  "released": "Jul 27, 2026",
+  "updated": "2026-07-27",
+  "version": "1",
+  "summary": "Defend the stadium as a legendary footballer in endless waves of foes.",
+  "folder": "Parimatch-BORGE LTDA",
+  "path": "parimatch/Parimatch-BORGE LTDA",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.arena.legendsarena-1-asset.apk",
+    "com.arena.legendsarena-1-config.arm64_v8a.apk",
+    "com.arena.legendsarena-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/parimatch/Parimatch-BORGE LTDA",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.arena.legendsarena ─╮\n│ Parimatch                │\n│ 1  (vc 1)                │\n╰──────────────────────────╯\n\nDownloading 3 files  (98.0 MB)\n  com.arena.legendsarena-1.apk                  ━━━━━━ 100% 36.9/… 10.0   0:00:…\n                                                            MB     MB/s         \n  com.arena.legendsarena-1-config.arm64_v8a.apk ━━━━━━ 100% 34.3/… 11.1   0:00:…\n                                                            MB     MB/s         \n  com.arena.legendsarena-1-asset.apk            ━━━━━━ 100% 31.5/… 11.4   0:00:…\n                                                            MB     MB/s         \n\n                     Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                          ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.arena.legendsarena-1.apk                  │ 35.2 MB │\n│ com.arena.legendsarena-1-config.arm64_v8a.apk │ 32.7 MB │\n│ com.arena.legendsarena-1-asset.apk            │ 35.2 MB │\n└───────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.arena.legendsarena ─╮\n│ Parimatch                │\n│ 1  (vc 1)                │\n╰──────────────────────────╯\n\nDownloading 3 files  (98.0 MB)\n  com.arena.legendsarena-1.apk                  ━━━━━━ 100% 36.9/… 10.0   0:00:…\n                                                            MB     MB/s         \n  com.arena.legendsarena-1-config.arm64_v8a.apk ━━━━━━ 100% 34.3/… 11.1   0:00:…\n                                                            MB     MB/s         \n  com.arena.legendsarena-1-asset.apk            ━━━━━━ 100% 31.5/… 11.4   0:00:…\n                                                            MB     MB/s         \n\n                     Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                          ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.arena.legendsarena-1.apk                  │ 35.2 MB │\n│ com.arena.legendsarena-1-config.arm64_v8a.apk │ 32.7 MB │\n│ com.arena.legendsarena-1-asset.apk            │ 35.2 MB │\n└───────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Arena Legends"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.7.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "нет"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Google Advertising ID (play-services-ads-identifier), Play Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.google.android.gms.permission.AD_ID, android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity 6000.0.60f1 (IL2CPP); UnityEngine modules (AndroidJNI, UnityWebRequest, JSONSerialize, InputSystem, Addressables, URP, 2D Animation/SpriteShape, Burst, Collections, TextMeshPro); Assembly-CSharp (CodeBase, UpdateTool.CodeBase); MiniIT.AdvertisingIdFetcher; UniTask; Zenject; DOTween; Newtonsoft.Json; AndroidX (core, fragment, lifecycle, legacy-support-v4, media, coordinatorlayout, drawerlayout, viewpager, swiperefreshlayout, asynclayoutinflater, localbroadcastmanager, documentfile, print, versionedparcelable); Google Play Services ads-identifier 16.0.0; play-services-basement 16.0.1; Google Play PairIP (com.pairip.application.Application, licensecheck); bitter.jnibridge"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "libcore.icu.icu"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Unity PlayerPrefs: целочисленный флаг режима/прохождения проверки и строковый идентификатор игрока"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "VerifScreen, UpdateTool, RequestParams, FilterLoadChain, referrer, AdvertisingId, AppsFlyerId, InstallTime, OpenURL, gate, redirect, license check"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "alphamountain.ai",
+        "redirects_to": "https://www.alphamountain.ai/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "bfore.ai",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Key-Systems GmbH"
+      },
+      {
+        "domain": "desenmascara.me",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "libcore.icu.icu",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      }
+    ],
+    "collected_data": [
+      "Номер AppsFlyer",
+      "Рекламный номер устройства",
+      "Модель телефона",
+      "Версия ОС",
+      "Идентификатор игрока",
+      "Номер выпуска Android",
+      "Идентификатор сборки",
+      "Версия приложения",
+      "Источник установки referrer",
+      "Время установки"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Номер AppsFlyer\n• Рекламный номер устройства\n• Модель телефона\n• Версия ОС\n• Идентификатор игрока\n• Номер выпуска Android\n• Идентификатор сборки\n• Версия приложения\n• Источник установки referrer\n• Время установки\n\nКак собираются: Сразу после запуска приложение само, без спроса у человека, поднимает служебную проверку (модуль UpdateTool). Отдельного окна с просьбой «разрешите доступ» для этого шага нет — человек обычно ничего не замечает. Рекламный номер устройства приложение тихо берёт из системы Android через службы Google. Модель телефона, версию системы и номер выпуска Android читает из обычных сведений об устройстве. Откуда поставили приложение и когда его установили — спрашивает у сервиса магазина Play (Install Referrer). Какие именно поля попадут в проверочный адрес, задаёт встроенный список параметров запроса. Для каждого пункта приложение берёт значение и аккуратно подставляет его в ссылку.…\n\nКуда отправляются: Собранные сведения склеивают в адрес тихой проверки и не показывают как обычную рекламу на экране. Сам базовый адрес в приложении лежит в зашифрованном виде из кусков рядом со списком параметров, поэтому полный открытый адрес в ресурсах глазами не читается. В готовых проверках доменов для этого приложения указан хост libcore.icu.icu: по данным проверки имя в интернете не открывается, страница и переход дальше недоступны. Других открытых запасных адресов проверки в коде не видно. Запрос уходит тихо в фоне. Флаг результата и часть служебных строк сохраняют в памяти приложения на телефоне.\n\nКак фильтруются пользователи: На проверку уходят номер AppsFlyer, рекламный номер устройства, модель телефона, версии системы и приложения, идентификатор игрока, идентификатор сборки, источник установки и время установки. В самом приложении нет отдельного жёсткого списка стран или языков, по которому сразу режут людей на телефоне. Признаки собирают и встраивают в адрес проверки; решение «кому оффер, кому обычное приложение» делает сервер. Локально приложение ещё смотрит, есть ли интернет, читает свой флаг в памяти и учитывает возврат по служебной ссылке arenal://open. Экран подтверждения VerifScreen — развилка: дальше либо внешняя ссылка…"
+  }
+}

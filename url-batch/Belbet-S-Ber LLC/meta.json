@@ -1,0 +1,110 @@
+{
+  "app_id": "com.gdmhkmf.belbet",
+  "title": "Belbet",
+  "developer": "S-Ber LLC",
+  "developer_id": "S-Ber+LLC",
+  "icon": "/static/app-icons/com_gdmhkmf_belbet.png",
+  "url": "https://play.google.com/store/apps/details?id=com.gdmhkmf.belbet&hl=en&gl=us",
+  "score": null,
+  "released": "Jun 25, 2026",
+  "updated": "Jun 25, 2026",
+  "version": "Varies with device",
+  "summary": "Belbet  makes it easy to remember birthdays and special occasions.",
+  "keyword": "url-batch",
+  "folder": "Belbet-S-Ber LLC",
+  "path": "url-batch/Belbet-S-Ber LLC",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.gdmhkmf.belbet.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Belbet-S-Ber LLC",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.gdmhkmf.belbet...\ncom.gdmhkmf.belbet downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.gdmhkmf.belbet...\ncom.gdmhkmf.belbet downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Belbet"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.13.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "26"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_WIFI_STATE, android.permission.ACCESS_NETWORK_STATE, com.gdmhkmf.belbet.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.0.21, kotlinx-coroutines 1.9.0, OkHttp 4.12.0, AndroidX (AppCompat 1.7.1, Activity 1.13.0, ConstraintLayout 2.2.1, Core/Core-KTX 1.18.0, Fragment 1.5.4, Lifecycle, RecyclerView 1.4.0, ViewPager2 1.1.0-beta02, Emoji2 1.3.0, Startup 1.1.1, ProfileInstaller 1.4.0, CardView 1.0.0, CoordinatorLayout 1.1.0, DrawerLayout 1.1.1, Transition 1.5.0, Vectordrawable 1.1.0, SavedState 1.2.1), Google Material Components 1.14.0, Pairip licensecheck (com.pairip.licensecheck)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "файл prefs «cfg»: ключ «rurl» — сохранённый адрес после перенаправления с сервера; при следующем запуске сразу открывается во внешнем браузере; также «win_birthday_notebook» (записи блокнота) и «win_milestone_prefs» (флаги юбилеев)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "rurl, workers.dev, User-Agent, X-Device-Model, Accept-Language, license check, status, belbet, betting, redirect"
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "Имя приложения в системе — техническое имя",
+      "Модель телефона — какая марка",
+      "Язык в заголовке запроса — в запросе",
+      "Строка браузера — как браузер"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Имя приложения в системе — техническое имя\n• Модель телефона — какая марка\n• Язык в заголовке запроса — в запросе\n• Строка браузера — как браузер\n\nКак собираются: Сразу после открытия главного экрана приложение само, без спроса у человека, читает имя программы, модель телефона и строку браузера из системы Android. Отдельного окна с разрешением нет — человек обычно этого не замечает. Язык в заголовке не читают из настроек телефона: он уже зашит в программе как английский. Перед этим приложение ещё смотрит свою внутреннюю память: если раньше уже сохраняли внешнюю ссылку, новый сбор и запрос к серверу могут не понадобиться. Всё это происходит в фоне в первые мгновения после запуска. Если в памяти уже есть сохранённый адрес, программа сразу пытается открыть его и снова не спрашивает сервер.\n\nКуда отправляются: Собранные сведения незаметно уходят в интернет на адрес https://shy-hill-ddf8.iyyarchik00plxn72.workers.dev?app=com.gdmhkmf.belbet. Это не показ рекламы на экране, а тихая проверка «что показать этому человеку». Адрес в программе спрятан и собирается из зашифрованных кусков; запасных адресов в коде не видно. Запрос уходит тихо в фоне через сетевую библиотеку приложения. Вместе с адресом уходят служебные заголовки с моделью телефона, языком и строкой браузера. Если сервер потом перенаправит на другой сайт, итоговый адрес сохраняют во внутренней памяти приложения, чтобы при следующем запуске сразу открыть его снова.\n\nЧто возвращается: После ответа приложение смотрит итоговый адрес страницы: остался ли он на служебном сайте workers.dev или ушёл на другой адрес. Если в итоговом адресе всё ещё есть workers.dev — считается, что нужно оставить обычное приложение. Если адрес изменился и ушёл на другой сайт — это сигнал открыть внешнюю рекламную страницу. В теле ответа программа также ищет метку «status»:«ok», но на выбор экрана это почти не влияет: решают именно перенаправления и итоговый адрес. В «хорошем» для схемы варианте сервер перенаправляет на другой адрес, и программа принимает его как боевую ссылку и запоминает. В «плохом» для схемы варианте (ошибка сети или нет перенаправления) человеку остаётся обычное приложение.\n\nКак показываетс…"
+  }
+}

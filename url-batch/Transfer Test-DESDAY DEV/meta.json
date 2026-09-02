@@ -1,0 +1,135 @@
+{
+  "app_id": "com.football.transfertrivia",
+  "title": "Transfer Test",
+  "developer": "DESDAY DEV",
+  "developer_id": "DESDAY+DEV",
+  "icon": "/static/app-icons/com_football_transfertrivia.png",
+  "url": "https://play.google.com/store/apps/details?id=com.football.transfertrivia&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 2, 2026",
+  "updated": "Jul 2, 2026",
+  "version": "Varies with device",
+  "summary": "Transfer Test - Guess the player from transfer fee and club moves",
+  "keyword": "url-batch",
+  "folder": "Transfer Test-DESDAY DEV",
+  "path": "url-batch/Transfer Test-DESDAY DEV",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.football.transfertrivia-1-asset.apk",
+    "com.football.transfertrivia-1-config.en.apk",
+    "com.football.transfertrivia-1-config.lt.apk",
+    "com.football.transfertrivia-1-config.ru.apk",
+    "com.football.transfertrivia-1-config.xxhdpi.apk",
+    "com.football.transfertrivia-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Transfer Test-DESDAY DEV",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.football.transfertrivia...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.football.transfertrivia...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.football.transfertrivia ─╮\n│ Transfer Test                 │\n│ 1.0  (vc 1)                   │\n╰───────────────────────────────╯\n\nDownloading 6 files  (5.5 MB)\n  com.football.transfertrivia-1.apk               ━━━━━ 100% 3.4/… 14.9   0:00:…\n                                                             MB    MB/s         \n  com.football.transfertrivia-1-config.en.apk     ━━━━━ 100% 45.5… ?      0:00:…\n                                                             kB                 \n  com.football.transfertrivia-1-config.lt.apk     ━━━━━ 100% 29.1… ?      0:00:…\n                                                             kB                 \n  com.football.transfertrivia-1-config.ru.apk     ━━━━━ 100% 29.1… ?      0:00:…\n                                                             kB                 \n  com.football.transfertrivia-1-config.xxhdpi.apk ━━━━━ 100% 66.5… 1.8    0:00:…\n                                                             kB    MB/s         \n  com.football.transfertrivia-1-asset.apk         ━━━━━ 100% 2.2/… 13.3   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.football.transfertrivia-1.apk               │  3.3 MB │\n│ com.football.transfertrivia-1-config.en.apk     │ 44.4 KB │\n│ com.football.transfertrivia-1-config.lt.apk     │ 28.4 KB │\n│ com.football.transfertrivia-1-config.ru.apk     │ 28.4 KB │\n│ com.football.transfertrivia-1-config.xxhdpi.apk │ 64.9 KB │\n│ com.football.transfertrivia-1-asset.apk         │  3.3 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n"
+    }
+  ],
+  "stdout": "╭─ com.football.transfertrivia ─╮\n│ Transfer Test                 │\n│ 1.0  (vc 1)                   │\n╰───────────────────────────────╯\n\nDownloading 6 files  (5.5 MB)\n  com.football.transfertrivia-1.apk               ━━━━━ 100% 3.4/… 14.9   0:00:…\n                                                             MB    MB/s         \n  com.football.transfertrivia-1-config.en.apk     ━━━━━ 100% 45.5… ?      0:00:…\n                                                             kB                 \n  com.football.transfertrivia-1-config.lt.apk     ━━━━━ 100% 29.1… ?      0:00:…\n                                                             kB                 \n  com.football.transfertrivia-1-config.ru.apk     ━━━━━ 100% 29.1… ?      0:00:…\n                                                             kB                 \n  com.football.transfertrivia-1-config.xxhdpi.apk ━━━━━ 100% 66.5… 1.8    0:00:…\n                                                             kB    MB/s         \n  com.football.transfertrivia-1-asset.apk         ━━━━━ 100% 2.2/… 13.3   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.football.transfertrivia-1.apk               │  3.3 MB │\n│ com.football.transfertrivia-1-config.en.apk     │ 44.4 KB │\n│ com.football.transfertrivia-1-config.lt.apk     │ 28.4 KB │\n│ com.football.transfertrivia-1-config.ru.apk     │ 28.4 KB │\n│ com.football.transfertrivia-1-config.xxhdpi.apk │ 64.9 KB │\n│ com.football.transfertrivia-1-asset.apk         │  3.3 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+  "exit_code": 0,
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Transfer Test"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.7.3"
+      },
+      {
+        "param": "minSdk",
+        "value": "26"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.football.transfertrivia.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "AGP 8.7.3; Kotlin 2.0.21 / kotlinx-coroutines 1.7.3; AndroidX Activity 1.9.3, AppCompat 1.7.0, Core/Core-KTX 1.13.1, ConstraintLayout, Fragment 1.5.4, Lifecycle 2.8.7, RecyclerView 1.3.2, Room 2.6.1, SQLite 2.4.0, Emoji2 1.3.0, Startup 1.1.1, ProfileInstaller 1.3.1, Material 1.12.0; Pairip (com.pairip.application / licensecheck)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "dispatchers.io"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "license check"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "https://cakhiatv1.net/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
+}

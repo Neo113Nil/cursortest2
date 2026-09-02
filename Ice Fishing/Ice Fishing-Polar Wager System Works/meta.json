@@ -1,0 +1,67 @@
+{
+  "app_id": "com.combinations.spin.balbi",
+  "title": "Ice Fishing",
+  "developer": "Polar Wager System Works",
+  "score": null,
+  "icon": "/static/app-icons/com_combinations_spin_balbi.png",
+  "url": "https://play.google.com/store/apps/details?id=com.combinations.spin.balbi&hl=en&gl=us",
+  "keyword": "Ice Fishing",
+  "country": "Italy",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260806_111818_Italy_Ice Fishing_search",
+  "search_title": "Ice Fishing",
+  "search_developer": "Polar Wager System Works",
+  "rank": 14,
+  "developer_id": "Polar+Wager+System+Works",
+  "released": "Jul 18, 2026",
+  "updated": "Jul 18, 2026",
+  "version": "Varies with device",
+  "summary": "Ice Fishing, explore islands, and complete the captain's ledger.",
+  "folder": "Ice Fishing-Polar Wager System Works",
+  "path": "Ice Fishing/Ice Fishing-Polar Wager System Works",
+  "updates_count": 1,
+  "ok": true,
+  "files": [
+    "com.combinations.spin.balbi-1-asset.apk",
+    "com.combinations.spin.balbi-1-config.arm64_v8a.apk",
+    "com.combinations.spin.balbi-1-config.en.apk",
+    "com.combinations.spin.balbi-1-config.lt.apk",
+    "com.combinations.spin.balbi-1-config.ru.apk",
+    "com.combinations.spin.balbi-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/Ice Fishing/Ice Fishing-Polar Wager System Works",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.combinations.spin.balbi...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.combinations.spin.balbi...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.combinations.spin.balbi ─╮\n│ Ice Fishing                   │\n│ 1.0  (vc 1)                   │\n╰───────────────────────────────╯\n\nDownloading 6 files  (4.3 MB)\n  com.combinations.spin.balbi-1.apk                  ━━━━ 100% 2.8/… 10.6 0:00:…\n                                                               MB    MB/s       \n  com.combinations.spin.balbi-1-config.arm64_v8a.apk ━━━━ 100% 53.6… ?    0:00:…\n                                                               kB               \n  com.combinations.spin.balbi-1-config.en.apk        ━━━━ 100% 20.7… ?    0:00:…\n                                                               kB               \n  com.combinations.spin.balbi-1-config.lt.apk        ━━━━ 100% 16.6… ?    0:00:…\n                                                               kB               \n  com.combinations.spin.balbi-1-config.ru.apk        ━━━━ 100% 16.6… ?    0:00:…\n                                                               kB               \n  com.combinations.spin.balbi-1-asset.apk            ━━━━ 100% 1.6/… 15.8 0:00:…\n                                                               MB    MB/s       \n\n                        Downloaded files                        \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.combinations.spin.balbi-1.apk                  │  2.6 MB │\n│ com.combinations.spin.balbi-1-config.arm64_v8a.apk │ 52.3 KB │\n│ com.combinations.spin.balbi-1-config.en.apk        │ 20.2 KB │\n│ com.combinations.spin.balbi-1-config.lt.apk        │ 16.2 KB │\n│ com.combinations.spin.balbi-1-config.ru.apk        │ 16.2 KB │\n│ com.combinations.spin.balbi-1-asset.apk            │  2.6 MB │\n└────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.combinations.spin.balbi ─╮\n│ Ice Fishing                   │\n│ 1.0  (vc 1)                   │\n╰───────────────────────────────╯\n\nDownloading 6 files  (4.3 MB)\n  com.combinations.spin.balbi-1.apk                  ━━━━ 100% 2.8/… 10.6 0:00:…\n                                                               MB    MB/s       \n  com.combinations.spin.balbi-1-config.arm64_v8a.apk ━━━━ 100% 53.6… ?    0:00:…\n                                                               kB               \n  com.combinations.spin.balbi-1-config.en.apk        ━━━━ 100% 20.7… ?    0:00:…\n                                                               kB               \n  com.combinations.spin.balbi-1-config.lt.apk        ━━━━ 100% 16.6… ?    0:00:…\n                                                               kB               \n  com.combinations.spin.balbi-1-config.ru.apk        ━━━━ 100% 16.6… ?    0:00:…\n                                                               kB               \n  com.combinations.spin.balbi-1-asset.apk            ━━━━ 100% 1.6/… 15.8 0:00:…\n                                                               MB    MB/s       \n\n                        Downloaded files                        \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.combinations.spin.balbi-1.apk                  │  2.6 MB │\n│ com.combinations.spin.balbi-1-config.arm64_v8a.apk │ 52.3 KB │\n│ com.combinations.spin.balbi-1-config.en.apk        │ 20.2 KB │\n│ com.combinations.spin.balbi-1-config.lt.apk        │ 16.2 KB │\n│ com.combinations.spin.balbi-1-config.ru.apk        │ 16.2 KB │\n│ com.combinations.spin.balbi-1-asset.apk            │  2.6 MB │\n└────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0
+}

@@ -1,0 +1,81 @@
+{
+  "ok": true,
+  "apks": [
+<<<<<<< HEAD
+    "com.aviatorassistant.aviatorassistant-241-config.lt.apk",
+    "com.aviatorassistant.aviatorassistant-241-config.en.apk",
+    "com.aviatorassistant.aviatorassistant-241-config.ru.apk",
+    "com.aviatorassistant.aviatorassistant-241-config.xxhdpi.apk",
+    "com.aviatorassistant.aviatorassistant-241.apk",
+    "com.aviatorassistant.aviatorassistant-241-config.arm64_v8a.apk",
+    "com.aviatorassistant.aviatorassistant-241-asset.apk"
+  ],
+  "base_apk": "com.aviatorassistant.aviatorassistant-241.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 12451 (0%)\nINFO  - progress: 1533 of 12451 (12%)\nINFO  - progress: 3051 of 12451 (24%)\nINFO  - progress: 4346 of 12451 (34%)\nINFO  - progress: 5070 of 12451 (40%)\nINFO  - progress: 5105 of 12451 (41%)\nINFO  - progress: 5184 of 12451 (41%)\nINFO  - progress: 5352 of 12451 (42%)\nINFO  - progress: 5820 of 12451 (46%)\nINFO  - progress: 6227 of 12451 (50%)\nINFO  - progress: 6622 of 12451 (53%)\nINFO  - progress: 6960 of 12451 (55%)\nINFO  - progress: 7237 of 12451 (58%)\nINFO  - progress: 7526 of 12451 (60%)\nINFO  - progress: 7785 of 12451 (62%)\nINFO  - progress: 8019 of 12451 (64%)\nINFO  - progress: 8226 of 12451 (66%)\nINFO  - progress: 8527 of 12451 (68%)\nINFO  - progress: 8704 of 12451 (69%)\nINFO  - progress: 8974 of 12451 (72%)\nINFO  - progress: 9344 of 12451 (75%)\nINFO  - progress: 9633 of 12451 (77%)\nINFO  - progress: 9899 of 12451 (79%)\nINFO  - progress: 10172 of 12451 (81%)\nINFO  - progress: 10345 of 12451 (83%)\nINFO  - progress: 10425 of 12451 (83%)\nINFO  - progress: 10649 of 12451 (85%)\nINFO  - progress: 11032 of 12451 (88%)\nINFO  - progress: 11280 of 12451 (90%)\nINFO  - progress: 11356 of 12451 (91%)\nINFO  - progress: 11728 of 12451 (94%)\nINFO  - progress: 12206 of 12451 (98%)\n                                                             \nERROR - finished with errors, count: 8\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/aviator casino/Aviator Assistant - Pilot App-Aviator Assistant/decompiled",
+    "skipped": false,
+    "base_apk": "com.aviatorassistant.aviatorassistant-241.apk"
+  },
+  "analysis_files": [
+    "com.aviatorassistant.aviatorassistant-241-config.lt.apk",
+    "com.aviatorassistant.aviatorassistant-241-config.en.apk",
+    "com.aviatorassistant.aviatorassistant-241-config.ru.apk",
+    "com.aviatorassistant.aviatorassistant-241-config.xxhdpi.apk",
+    "com.aviatorassistant.aviatorassistant-241.apk",
+    "com.aviatorassistant.aviatorassistant-241-config.arm64_v8a.apk",
+    "com.aviatorassistant.aviatorassistant-241-asset.apk",
+    "apk/com.aviatorassistant.aviatorassistant-241-config.lt.apk",
+    "apk/com.aviatorassistant.aviatorassistant-241-config.en.apk",
+    "apk/com.aviatorassistant.aviatorassistant-241-config.ru.apk",
+    "apk/com.aviatorassistant.aviatorassistant-241-config.xxhdpi.apk",
+    "apk/com.aviatorassistant.aviatorassistant-241.apk",
+    "apk/com.aviatorassistant.aviatorassistant-241-config.arm64_v8a.apk",
+    "apk/com.aviatorassistant.aviatorassistant-241-asset.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/ai/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/capacitor/",
+    "decompiled/sources/com/",
+    "decompiled/sources/cordova/",
+    "decompiled/sources/de/",
+    "decompiled/sources/dev/",
+    "decompiled/sources/io/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/net/",
+    "decompiled/sources/nl/",
+    "decompiled/sources/org/"
+  ],
+  "errors": []
+=======
+    "com.aviatorassistant.aviatorassistant.apk",
+    "config.armeabi_v7a.apk",
+    "config.en.apk",
+    "config.mdpi.apk"
+  ],
+  "base_apk": "com.aviatorassistant.aviatorassistant.apk",
+  "jadx": {
+    "ok": true,
+    "out_dir": "decompiled",
+    "skipped": false,
+    "base_apk": "com.aviatorassistant.aviatorassistant.apk"
+  },
+  "source": "apkeep:apk-pure",
+  "xapk": "com.aviatorassistant.aviatorassistant.xapk",
+  "analysis_files": [
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "report.pdf"
+  ]
+>>>>>>> origin/main
+}

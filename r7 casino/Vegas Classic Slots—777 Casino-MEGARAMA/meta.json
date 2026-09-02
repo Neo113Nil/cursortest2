@@ -1,0 +1,120 @@
+{
+  "title": "Vegas Classic Slots—777 Casino",
+  "developer": "MEGARAMA",
+  "app_id": "com.megarama.classic.vegas",
+  "icon": "/static/app-icons/com_megarama_classic_vegas.png",
+  "url": "https://play.google.com/store/apps/details?id=com.megarama.classic.vegas&hl=en&gl=us",
+  "released": "Dec 5, 2022",
+  "updated": "2025-06-13",
+  "version": "1.64.55",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Classic Slots (в Google Play: Vegas Classic Slots—777 Casino)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "7.3.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "21"
+      },
+      {
+        "param": "targetSdk",
+        "value": "34"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 1.9.x"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AppLovin MAX, AdMob, BidMachine, Chartboost, Facebook Audience Network, Fyber/Inneractive, Moloco, Smaato, Unity Ads, Vungle"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Crashlytics, AppsFlyer, Facebook App Events, SafeDK, Firebase Performance, Firebase Messaging"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.android.vending.BILLING, com.google.android.gms.permission.AD_ID, android.permission.WAKE_LOCK, android.permission.VIBRATE, com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE, android.permission.ACCESS_WIFI_STATE, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.POST_NOTIFICATIONS, com.google.android.c2dm.permission.RECEIVE, android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE, com.google.an droid.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, android.permission.FOREGROUND_SERVICE, com.megarama.classic.vegas.DY NAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.samsung.android.mapsagent.permission.READ_APP_INFO, com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"
+      },
+      {
+        "param": "Libraries",
+        "value": "org.cocos2dx (Cocos2d-x / libcocos2dcpp), com.modules.*, com.megarama.classic.vegas, com.easyndk, androidx.multidex, androidx.appcompat, androidx.browser 1.8.0, androidx.webkit, androidx.compose.*, com.android.billingclient 7.1.1, com.android.installreferrer, com.google.android.gms.ads 23.6.0, com.google.firebase (analytics, crashlytics, messaging, perf, remote config, installations, sessions), com.google.android.ump, com.applovin (MAX + adapters), io.bidmachine / com.explorestack, com.chartboost, com.facebook (SDK + Audience Network), com.fyber.inneractive / com.digitalturbine, com.moloco, com.smaato, com.unity3d.ads, com.vungle, com.appsflyer 6.15.2, com.safedk, com.iab.omid, okhttp3/okio, coil, squareup/picasso, kotlin 1.9.x, kotlinx-coroutines 1.7.3"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "aomedia.org, api.bidmachine.io, appassets.androidplatform.net, cdn-f.adsmoloco.com, cdn2.inner-active.mobi"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Cocos2dxPrefsFile — игровые настройки движка; отдельные prefs рекламных/аналитических SDK (AppsFlyer, AppLovin, AdMob, Facebook, Fyber, Chartboost, Vungle, Firebase); отдельного prefs результата клоаки нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "casino, slots, offer, redirect, landing, payout, roulette, webview, postback, blacklist, poker, betting, clickid"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "aomedia.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Squarespace Domains II LLC"
+      },
+      {
+        "domain": "api.bidmachine.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "appassets.androidplatform.net",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "cdn-f.adsmoloco.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Google Inc."
+      },
+      {
+        "domain": "cdn2.inner-active.mobi",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "chartboo.st",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: ST Registry"
+      },
+      {
+        "domain": "compliance.iabtechnologylab.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "config.safedk.com",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
+}

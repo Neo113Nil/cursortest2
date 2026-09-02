@@ -1,0 +1,55 @@
+{
+  "app_id": "xyz.total.poker.casino.pooja",
+  "title": "Total Poker Casino",
+  "developer": "Pooja Game Solutions",
+  "score": null,
+  "icon": "/static/app-icons/xyz_total_poker_casino_pooja.png",
+  "url": "https://play.google.com/store/apps/details?id=xyz.total.poker.casino.pooja&hl=en&gl=us",
+  "keyword": "Total casino",
+  "country": "Italy",
+  "source": "geelark-play-install",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260808_200831_Italy_Total casino_search",
+  "search_title": "Total Poker Casino",
+  "search_developer": "Pooja Game Solutions",
+  "rank": 10,
+  "developer_id": "Pooja+Game+Solutions",
+  "released": "Mar 6, 2026",
+  "updated": "Mar 6, 2026",
+  "version": "Varies with device",
+  "summary": "Experience Texas Hold'em & Five Card Draw against smart AI. Play now!",
+  "folder": "Total Poker Casino-Pooja Game Solutions",
+  "path": "total casino/Total Poker Casino-Pooja Game Solutions",
+  "updates_count": 1,
+  "apk_title": "Total Poker Casino",
+  "store_title_mismatch": false,
+  "apk_label_note": "Play«Total Poker Casino» ≠ было«?» → GeeLark«Total Poker Casino» geo=Italy",
+  "ok": true,
+  "files": [
+    "xyz.total.poker.casino.pooja-split_config.arm64_v8a.apk",
+    "xyz.total.poker.casino.pooja-split_config.en.apk",
+    "xyz.total.poker.casino.pooja-split_config.it.apk",
+    "xyz.total.poker.casino.pooja-split_config.xhdpi.apk",
+    "xyz.total.poker.casino.pooja.apk"
+  ],
+  "target": "/root/play-collector/загрузки/total casino/Total Poker Casino-Pooja Game Solutions",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ xyz.total.poker.casino.pooja ─╮\n│ Total Poker Casino             │\n│ 1.0.7  (vc 7)                  │\n╰────────────────────────────────╯\n\nDownloading 7 files  (33.9 MB)\n  xyz.total.poker.casino.pooja-7.apk                  ━━━━ 100% 24.… 11.8 0:00:…\n                                                                MB   MB/s       \n  xyz.total.poker.casino.pooja-7-config.arm64_v8a.apk ━━━━ 100% 33.… ?    0:00:…\n                                                                kB              \n  xyz.total.poker.casino.pooja-7-config.en.apk        ━━━━ 100% 74.… 2.1  0:00:…\n                                                                kB   MB/s       \n  xyz.total.poker.casino.pooja-7-config.lt.apk        ━━━━ 100% 29.… ?    0:00:…\n                                                                kB              \n  xyz.total.poker.casino.pooja-7-config.ru.apk        ━━━━ 100% 29.… ?    0:00:…\n                                                                kB              \n  xyz.total.poker.casino.pooja-7-config.xxhdpi.apk    ━━━━ 100% 66.… 1.5  0:00:…\n                                                                kB   MB/s       \n  xyz.total.poker.casino.pooja-7-asset.apk            ━━━━ 100% 10.… 9.7  0:00:…\n                                                                MB   MB/s       \n\n                        Downloaded files                         \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ xyz.total.poker.casino.pooja-7.apk                  │ 23.4 MB │\n│ xyz.total.poker.casino.pooja-7-config.arm64_v8a.apk │ 32.4 KB │\n│ xyz.total.poker.casino.pooja-7-config.en.apk        │ 72.4 KB │\n│ xyz.total.poker.casino.pooja-7-config.lt.apk        │ 28.4 KB │\n│ xyz.total.poker.casino.pooja-7-config.ru.apk        │ 28.4 KB │\n│ xyz.total.poker.casino.pooja-7-config.xxhdpi.apk    │ 64.9 KB │\n│ xyz.total.poker.casino.pooja-7-asset.apk            │ 23.4 MB │\n└─────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ xyz.total.poker.casino.pooja ─╮\n│ Total Poker Casino             │\n│ 1.0.7  (vc 7)                  │\n╰────────────────────────────────╯\n\nDownloading 7 files  (33.9 MB)\n  xyz.total.poker.casino.pooja-7.apk                  ━━━━ 100% 24.… 11.8 0:00:…\n                                                                MB   MB/s       \n  xyz.total.poker.casino.pooja-7-config.arm64_v8a.apk ━━━━ 100% 33.… ?    0:00:…\n                                                                kB              \n  xyz.total.poker.casino.pooja-7-config.en.apk        ━━━━ 100% 74.… 2.1  0:00:…\n                                                                kB   MB/s       \n  xyz.total.poker.casino.pooja-7-config.lt.apk        ━━━━ 100% 29.… ?    0:00:…\n                                                                kB              \n  xyz.total.poker.casino.pooja-7-config.ru.apk        ━━━━ 100% 29.… ?    0:00:…\n                                                                kB              \n  xyz.total.poker.casino.pooja-7-config.xxhdpi.apk    ━━━━ 100% 66.… 1.5  0:00:…\n                                                                kB   MB/s       \n  xyz.total.poker.casino.pooja-7-asset.apk            ━━━━ 100% 10.… 9.7  0:00:…\n                                                                MB   MB/s       \n\n                        Downloaded files                         \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ xyz.total.poker.casino.pooja-7.apk                  │ 23.4 MB │\n│ xyz.total.poker.casino.pooja-7-config.arm64_v8a.apk │ 32.4 KB │\n│ xyz.total.poker.casino.pooja-7-config.en.apk        │ 72.4 KB │\n│ xyz.total.poker.casino.pooja-7-config.lt.apk        │ 28.4 KB │\n│ xyz.total.poker.casino.pooja-7-config.ru.apk        │ 28.4 KB │\n│ xyz.total.poker.casino.pooja-7-config.xxhdpi.apk    │ 64.9 KB │\n│ xyz.total.poker.casino.pooja-7-asset.apk            │ 23.4 MB │\n└─────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}

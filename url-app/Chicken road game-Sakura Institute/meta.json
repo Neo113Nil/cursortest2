@@ -1,0 +1,124 @@
+{
+  "app_id": "com.chicken.road.whale",
+  "title": "Chicken road game",
+  "developer": "Sakura Institute",
+  "developer_id": "Sakura+Institute",
+  "icon": "/static/app-icons/com_chicken_road_whale.png",
+  "url": "https://play.google.com/store/apps/details?id=com.chicken.road.whale&hl=en&gl=us",
+  "score": null,
+  "released": "",
+  "updated": "Jul 27, 2026",
+  "version": "Varies with device",
+  "summary": "Monitor weekly meal metrics and track local grocery items in Chicken road game.",
+  "keyword": "url-app",
+  "folder": "Chicken road game-Sakura Institute",
+  "path": "url-app/Chicken road game-Sakura Institute",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.chicken.road.whale.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-app/Chicken road game-Sakura Institute",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.chicken.road.whale...\ncom.chicken.road.whale downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.chicken.road.whale...\ncom.chicken.road.whale downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Chicken road game"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.13.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Realtime Database, Google Play Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.CAMERA, com.chicken.road.whale.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.compose (Material3 1.3.1 / Compose UI 1.7.5), androidx.room 2.6.1, androidx.datastore 1.1.1, androidx.navigation, androidx.lifecycle, androidx.core 1.13.1, androidx.activity 1.9.3, androidx.appcompat/fragment/startup, okhttp3 4.12.0, kotlinx.coroutines 1.9.0, kotlinx.serialization, Firebase Database 21.0.0, play-services-ads-identifier 18.1.0, play-services-base 18.1.0, installreferrer, pairip licensecheck, native libplatecore"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru, dispatchers.io"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "DataStore plateStore: last_page (ссылка оффера), reply_time (время ответа), agreed_flag (флаг согласия); также FirebaseHeartBeat*"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "gateUrl, gate, hint, consent, PlateConfig, PlateReply, platecore, gaid, deviceUuid, referrer, extra_url, Privacy-Policy, serverCheckUrl, custom_user_id, install_referrer, myGame, appConfig, redirectUrl, last_page, reply_time, agreed_flag, TraceIds, loadUrl, uniwebview"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "https://cakhiatv1.net/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      }
+    ],
+    "collected_data": [
+      "Рекламный номер устройства — служебный",
+      "Свой номер устройства — постоянный код",
+      "Системный идентификатор — внутренний номер",
+      "Имя приложения в системе — техническое имя",
+      "Источник установки — откуда приложени",
+      "Строка браузера — как телефон",
+      "Пометка «нужен ответ в виде — служебный"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Рекламный номер устройства — служебный\n• Свой номер устройства — постоянный код\n• Системный идентификатор — внутренний номер\n• Имя приложения в системе — техническое имя\n• Источник установки — откуда приложени\n• Строка браузера — как телефон\n• Пометка «нужен ответ в виде — служебный\n\nКак собираются: Сразу после запуска главного экрана приложение само, без отдельного окна с вопросом к человеку, начинает тихую проверку. Сначала оно читает из удалённой базы настроек Google (Firebase), включён ли сейчас «боевой» режим и какой адрес проверки использовать. Имена настроек и путь к ним спрятаны во встроенной библиотеке platecore, поэтому в открытом виде в коде их не видно. Если проверка включена, приложение незаметно спрашивает у системы Android рекламный номер устройства, системный идентификатор телефона и техническое имя программы; из последних двух собирает свой постоянный номер устройства. Параллельно через сервис магазина Google Play читается метка установки,…\n\nКуда отправляются: Сначала настройки схемы читаются из удалённой базы Firebase проекта chicken-3443-69b4c по адресу https://chicken-3443-69b4c-default-rtdb.europe-west1.firebasedatabase.app. Там лежит узел настроек с флагом включения, адресом проверки и служебной подсказкой для показа страницы. Собранные сведения о телефоне затем тихо уходят в интернет на адрес проверки, который приходит из этой настройки. Точный хост в открытом виде в файлах приложения не зашит — он подставляется с сервера конфигурации. В запрос добавляются рекламный номер, свой номер устройства и источник установки; вместе с ними уходит строка браузера. Это не показ рекламы на экране, а фоновая проверка «что показать этому человеку».\n\nЧто возвращается: Сервер проверки отвечает двумя полями: ссылкой на внешнюю страницу и временем ответа. Если ссылка есть и она не пустая — приложение считает, что можно показать внешнюю страницу. Если ответа нет, ссылка пустая или сеть не ответила — остаётся обычный режим приложения. Удачную ссылку и время приложение ещё запоминает у себя в локальной памяти приложения, чтобы при следующем запуске можно было опереться на уже сохранённый результат. В «плохом» для схемы варианте (пусто…"
+  }
+}

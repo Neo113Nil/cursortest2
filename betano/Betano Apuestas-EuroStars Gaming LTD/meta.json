@@ -1,0 +1,153 @@
+{
+  "app_id": "com.gkichelshoyasim.bulubpofnacdva.lighttrail",
+  "title": "Betano Apuestas",
+  "developer": "EuroStars Gaming LTD",
+  "score": null,
+  "icon": "/static/app-icons/com_gkichelshoyasim_bulubpofnacdva_lighttrail.png",
+  "url": "https://play.google.com/store/apps/details?id=com.gkichelshoyasim.bulubpofnacdva.lighttrail&hl=en&gl=us",
+  "keyword": "betano",
+  "country": "Italy",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260810_210842_Italy_betano_search",
+  "search_title": "Betano Apuestas",
+  "search_developer": "EuroStars Gaming LTD",
+  "rank": 10,
+  "developer_id": "EuroStars+Gaming+LTD",
+  "released": "Jun 9, 2026",
+  "updated": "Aug 1, 2026",
+  "version": "Varies with device",
+  "summary": "Engage in thrilling light trail challenges.",
+  "folder": "Betano Apuestas-EuroStars Gaming LTD",
+  "path": "betano/Betano Apuestas-EuroStars Gaming LTD",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-asset.apk",
+    "com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.arm64_v8a.apk",
+    "com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.en.apk",
+    "com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.lt.apk",
+    "com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.ru.apk",
+    "com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.xxhdpi.apk",
+    "com.gkichelshoyasim.bulubpofnacdva.lighttrail-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/betano/Betano Apuestas-EuroStars Gaming LTD",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.gkichelshoyasim.bulubpofnacdva.lighttrail ─╮\n│ Betano Apuestas                                 │\n│ 1.1  (vc 2)                                     │\n╰─────────────────────────────────────────────────╯\n\nDownloading 7 files  (8.1 MB)\n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2.apk                   100%  … …\n                                                                             …  \n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.arm64_v8a.apk  100%  ? …\n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.en.apk         100%  ? …\n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.lt.apk         100%  ? …\n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.ru.apk         100%  ? …\n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.xxhdpi.apk     100%  ? …\n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-asset.apk             100%  … …\n                                                                             …  \n\n                                Downloaded files                                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2.apk                │  4.8 MB │\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.arm64_v8a.… │ 44.4 KB │\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.en.apk      │ 44.4 KB │\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.lt.apk      │ 24.4 KB │\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.ru.apk      │ 24.4 KB │\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.xxhdpi.apk  │ 60.4 KB │\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-asset.apk          │  4.8 MB │\n└────────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.gkichelshoyasim.bulubpofnacdva.lighttrail ─╮\n│ Betano Apuestas                                 │\n│ 1.1  (vc 2)                                     │\n╰─────────────────────────────────────────────────╯\n\nDownloading 7 files  (8.1 MB)\n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2.apk                   100%  … …\n                                                                             …  \n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.arm64_v8a.apk  100%  ? …\n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.en.apk         100%  ? …\n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.lt.apk         100%  ? …\n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.ru.apk         100%  ? …\n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.xxhdpi.apk     100%  ? …\n com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-asset.apk             100%  … …\n                                                                             …  \n\n                                Downloaded files                                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2.apk                │  4.8 MB │\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.arm64_v8a.… │ 44.4 KB │\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.en.apk      │ 44.4 KB │\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.lt.apk      │ 24.4 KB │\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.ru.apk      │ 24.4 KB │\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-config.xxhdpi.apk  │ 60.4 KB │\n│ com.gkichelshoyasim.bulubpofnacdva.lighttrail-2-asset.apk          │  4.8 MB │\n└────────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Betano Apuestas (в приложении: Beson / Besano Trail)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.9.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "26"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.VIBRATE, com.gkichelshoyasim.bulubpofnacdva.lighttrail.DYNAMIC_RE CEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.0.21, kotlinx-coroutines 1.9.0, OkHttp 4.12.0, Jetpack Compose (ui/foundation/material3/runtime 1.7–1.9), androidx.appcompat 1.6.1, androidx.core/core-ktx 1.18.0, androidx.activity 1.13.0, androidx.fragment 1.3.6, androidx.lifecycle 2.9.4, androidx.constraintlayout, com.google.android.material 1.10.0, Google Pairip licensecheck"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "vossi.site, config.ru, diia.app, dispatchers.io, lineheightstyle.alignment.top, ua.gov.diia.app"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "файл startup_prefs, ключ saved_url — сохраняет ссылку после проверки (или пустую строку, если оффер не показали)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "saved_url, destination, loadUrl, User-Agent, browser_fallback_url, AES, Base64, AES/CBC/PKCS5Padding, diia, diia.app, ua.gov.diia.app, intent, OR_BIBED_11, OR_BIBED_15, No Internet Connection, startup_prefs, tap_and_turn_snake"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "diia.app",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "https://cakhiatv1.net/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "lineheightstyle.alignment.top",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "ua.gov.diia.app",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      }
+    ],
+    "collected_data": [
+      "Строка User-Agent"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Строка User-Agent\n\nКак собираются: Сразу после запуска, ещё на экране заставки, приложение само проверяет интернет и тихо готовит запрос к скрытому адресу. Строку User-Agent оно берёт из системы Android через настройки встроенного окна сайта — без отдельного окна и без спроса у человека. Человек этого обычно не замечает: на экране только загрузка, а запрос уходит в фоне. Отдельного чтения языка, модели или рекламного номера в коде запроса нет: в запрос кладут только эту одну строку User-Agent.\n\nКуда отправляются: Сведения уходят тихим запросом на адрес https://vossi.site/tap_and_turn_snake/ — он спрятан в приложении и собирается из зашифрованных кусков. Это не показ рекламы на экране, а скрытая проверка, что показать этому человеку. В заголовке запроса уходит только User-Agent. Если проверка уже была, готовая ссылка может лежать в памяти приложения в файле startup_prefs под ключом saved_url, и повторный запрос не нужен. В коде есть ещё расшифрованная строка «tap_and_turn_snake», но в самом сетевом запросе проверки используется полный адрес на vossi.site.\n\nКак фильтруются пользователи: В самом приложении нет списка стран, языков или «белых» и «грязных» пользователей. На сервер уходит только строка User-Agent, а дальше решение делает удалённый сервер: он отвечает либо текстом со ссылкой, либо пустотой (или ошибкой). На телефоне смотрят лишь итог ответа — похожа ли присланная строка на обычную http/https-ссылку. Название в магазине «Betano Apuestas» сильно не совпадает с подписью внутри приложения («Beson» / «Besano Trail»): это белая оболочка вокруг проверки. Локальной фильтрации по стране или боту в коде не видно — развилку «оффер или обычное приложение» задаёт ответ сервера.\n\nЧто возвращается: Сервер должен ответить кодом успеха (2xx) и телом — обычным текстом. Приложение обрезает пробелы и проверяет, начинается ли текст с «http». Если да — считает это боевой ссылкой, сохраняет её в saved_url и идёт открывать оффер. Если тело пустое, ссылка не похожа на http, код ответа неуспешный или сеть упала с ошибкой — в saved_url пишут пустую строку и оставляют обычное приложение. Отдельных полей с именами вроде offer или status в разборе ответа…"
+  }
+}

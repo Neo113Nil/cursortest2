@@ -1,0 +1,41 @@
+{
+  "ok": true,
+  "apks": [
+    "com.garcialopezalbert.ateliercube-4-asset.apk",
+    "com.garcialopezalbert.ateliercube-4.apk",
+    "com.garcialopezalbert.ateliercube-4-config.arm64_v8a.apk"
+  ],
+  "base_apk": "com.garcialopezalbert.ateliercube-4.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 3397 (0%)\nINFO  - progress: 221 of 3397 (6%)\nINFO  - progress: 222 of 3397 (6%)\nINFO  - progress: 222 of 3397 (6%)\nINFO  - progress: 226 of 3397 (6%)\nINFO  - progress: 243 of 3397 (7%)\nINFO  - progress: 263 of 3397 (7%)\nINFO  - progress: 269 of 3397 (7%)\nINFO  - progress: 286 of 3397 (8%)\nINFO  - progress: 317 of 3397 (9%)\nINFO  - progress: 482 of 3397 (14%)\nINFO  - progress: 756 of 3397 (22%)\nINFO  - progress: 938 of 3397 (27%)\nINFO  - progress: 1062 of 3397 (31%)\nINFO  - progress: 1153 of 3397 (33%)\nINFO  - progress: 1227 of 3397 (36%)\nINFO  - progress: 1378 of 3397 (40%)\nINFO  - progress: 1443 of 3397 (42%)\nINFO  - progress: 1491 of 3397 (43%)\nINFO  - progress: 1510 of 3397 (44%)\nINFO  - progress: 1546 of 3397 (45%)\nINFO  - progress: 1589 of 3397 (46%)\nINFO  - progress: 1663 of 3397 (48%)\nINFO  - progress: 1858 of 3397 (54%)\nINFO  - progress: 1894 of 3397 (55%)\nINFO  - progress: 1918 of 3397 (56%)\nINFO  - progress: 1946 of 3397 (57%)\nINFO  - progress: 1965 of 3397 (57%)\nINFO  - progress: 1987 of 3397 (58%)\nINFO  - progress: 2173 of 3397 (63%)\nINFO  - progress: 2207 of 3397 (64%)\nINFO  - progress: 2242 of 3397 (65%)\nINFO  - progress: 2276 of 3397 (67%)\nINFO  - progress: 2302 of 3397 (67%)\nINFO  - progress: 2347 of 3397 (69%)\nINFO  - progress: 2377 of 3397 (69%)\nINFO  - progress: 2398 of 3397 (70%)\nINFO  - progress: 2417 of 3397 (71%)\nINFO  - progress: 2446 of 3397 (72%)\nINFO  - progress: 2470 of 3397 (72%)\nINFO  - progress: 2660 of 3397 (78%)\nINFO  - progress: 2891 of 3397 (85%)\nINFO  - progress: 2930 of 3397 (86%)\nINFO  - progress: 2986 of 3397 (87%)\nINFO  - progress: 3036 of 3397 (89%)\nINFO  - progress: 3065 of 3397 (90%)\nINFO  - progress: 3279 of 3397 (96%)\nINFO  - progress: 3386 of 3397 (99%)\nINFO  - progress: 3395 of 3397 (99%)\nINFO  - progress: 3396 of 3397 (99%)\n                                                             \nERROR - finished with errors, count: 2\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/amazon casino/Amazon casino-GARCIA LOPEZ ALBERT/decompiled",
+    "skipped": false,
+    "base_apk": "com.garcialopezalbert.ateliercube-4.apk"
+  },
+  "analysis_files": [
+    "com.garcialopezalbert.ateliercube-4-asset.apk",
+    "com.garcialopezalbert.ateliercube-4.apk",
+    "com.garcialopezalbert.ateliercube-4-config.arm64_v8a.apk",
+    "apk/com.garcialopezalbert.ateliercube-4-asset.apk",
+    "apk/com.garcialopezalbert.ateliercube-4.apk",
+    "apk/com.garcialopezalbert.ateliercube-4-config.arm64_v8a.apk",
+    "report.pdf",
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/bitter/",
+    "decompiled/sources/com/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/org/"
+  ],
+  "errors": []
+}

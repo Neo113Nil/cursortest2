@@ -1,0 +1,134 @@
+{
+  "app_id": "com.gust.at.sea",
+  "title": "Marisync",
+  "developer": "Torg Active",
+  "developer_id": "Torg+Active",
+  "icon": "/static/app-icons/com_gust_at_sea.png",
+  "url": "https://play.google.com/store/apps/details?id=com.gust.at.sea&hl=en&gl=us",
+  "score": null,
+  "released": "",
+  "updated": "Apr 3, 2026",
+  "version": "Varies with device",
+  "summary": "Marisync is a mobile puzzle game that invites players to dive deep",
+  "keyword": "url-batch",
+  "folder": "Marisync-Torg Active",
+  "path": "url-batch/Marisync-Torg Active",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.gust.at.sea-2-asset.apk",
+    "com.gust.at.sea-2-config.arm64_v8a.apk",
+    "com.gust.at.sea-2-config.en.apk",
+    "com.gust.at.sea-2-config.lt.apk",
+    "com.gust.at.sea-2-config.ru.apk",
+    "com.gust.at.sea-2-config.xxhdpi.apk",
+    "com.gust.at.sea-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Marisync-Torg Active",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.gust.at.sea ─╮\n│ Marisync          │\n│ 1.2.0  (vc 2)     │\n╰───────────────────╯\n\nDownloading 7 files  (18.2 MB)\n  com.gust.at.sea-2.apk                  ━━━━━━━━ 100% 2.4/2.4  10.7     0:00:00\n                                                       MB       MB/s            \n  com.gust.at.sea-2-config.arm64_v8a.apk ━━━━━━━━ 100% 14.9/14… 12.2     0:00:00\n                                                       MB       MB/s            \n  com.gust.at.sea-2-config.en.apk        ━━━━━━━━ 100% 29.1/29… ?        0:00:00\n                                                       kB                       \n  com.gust.at.sea-2-config.lt.apk        ━━━━━━━━ 100% 20.9/20… ?        0:00:00\n                                                       kB                       \n  com.gust.at.sea-2-config.ru.apk        ━━━━━━━━ 100% 20.9/20… ?        0:00:00\n                                                       kB                       \n  com.gust.at.sea-2-config.xxhdpi.apk    ━━━━━━━━ 100% 66.5/66… 805.3    0:00:00\n                                                       kB       kB/s            \n  com.gust.at.sea-2-asset.apk            ━━━━━━━━ 100% 1.7/1.7  15.9     0:00:00\n                                                       MB       MB/s            \n\n                  Downloaded files                  \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                   ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.gust.at.sea-2.apk                  │  2.3 MB │\n│ com.gust.at.sea-2-config.arm64_v8a.apk │ 14.2 MB │\n│ com.gust.at.sea-2-config.en.apk        │ 28.4 KB │\n│ com.gust.at.sea-2-config.lt.apk        │ 20.4 KB │\n│ com.gust.at.sea-2-config.ru.apk        │ 20.4 KB │\n│ com.gust.at.sea-2-config.xxhdpi.apk    │ 64.9 KB │\n│ com.gust.at.sea-2-asset.apk            │  2.3 MB │\n└────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.gust.at.sea ─╮\n│ Marisync          │\n│ 1.2.0  (vc 2)     │\n╰───────────────────╯\n\nDownloading 7 files  (18.2 MB)\n  com.gust.at.sea-2.apk                  ━━━━━━━━ 100% 2.4/2.4  10.7     0:00:00\n                                                       MB       MB/s            \n  com.gust.at.sea-2-config.arm64_v8a.apk ━━━━━━━━ 100% 14.9/14… 12.2     0:00:00\n                                                       MB       MB/s            \n  com.gust.at.sea-2-config.en.apk        ━━━━━━━━ 100% 29.1/29… ?        0:00:00\n                                                       kB                       \n  com.gust.at.sea-2-config.lt.apk        ━━━━━━━━ 100% 20.9/20… ?        0:00:00\n                                                       kB                       \n  com.gust.at.sea-2-config.ru.apk        ━━━━━━━━ 100% 20.9/20… ?        0:00:00\n                                                       kB                       \n  com.gust.at.sea-2-config.xxhdpi.apk    ━━━━━━━━ 100% 66.5/66… 805.3    0:00:00\n                                                       kB       kB/s            \n  com.gust.at.sea-2-asset.apk            ━━━━━━━━ 100% 1.7/1.7  15.9     0:00:00\n                                                       MB       MB/s            \n\n                  Downloaded files                  \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                   ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.gust.at.sea-2.apk                  │  2.3 MB │\n│ com.gust.at.sea-2-config.arm64_v8a.apk │ 14.2 MB │\n│ com.gust.at.sea-2-config.en.apk        │ 28.4 KB │\n│ com.gust.at.sea-2-config.lt.apk        │ 20.4 KB │\n│ com.gust.at.sea-2-config.ru.apk        │ 20.4 KB │\n│ com.gust.at.sea-2-config.xxhdpi.apk    │ 64.9 KB │\n│ com.gust.at.sea-2-asset.apk            │  2.3 MB │\n└────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": "",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Marisync"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.11.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.2.20"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.gust.at.sea.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "AGP 8.11.1; Flutter (libflutter.so / libapp.so, flutterEmbedding v2, Dart/Flutter 3.11.3 stable); Kotlin 2.2.20 / kotlinx-coroutines 1.9.0; AndroidX Activity 1.8.1, AppCompat 1.1.0, Core/Core-KTX 1.13.1, DataStore 1.2.0, Fragment 1.7.1, Lifecycle 2.7.0, Preference 1.2.1, ProfileInstaller 1.3.1, Startup 1.1.1, Window 1.2.0, SavedState 1.2.1, ExifInterface 1.4.1; shared_preferences / shared_preferences_android; path_provider / path_provider_android; google_fonts; cupertino_icons; Pairip (com.pairip.licensecheck)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru, dispatchers.io, systemuioverlay.top"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Flutter SharedPreferences / DataStore (ключ data_store): first_launch, unlocked_levels, completed_levels, all_levels, best_time_, first_win, achievements, chapter1_master / chapter2_master / chapter3_master, perfect_10, perfect_streak, speed_demon и связанные игровые флаги прогресса"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "license check"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "https://cakhiatv1.net/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "systemuioverlay.top",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
+}

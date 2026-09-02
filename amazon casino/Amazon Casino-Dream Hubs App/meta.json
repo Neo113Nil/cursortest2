@@ -1,0 +1,168 @@
+{
+  "app_id": "com.fenolvatrshine.mobile.app",
+  "title": "Amazon Casino",
+  "developer": "Dream Hubs App",
+  "score": null,
+  "icon": "/static/app-icons/com_fenolvatrshine_mobile_app.png",
+  "url": "https://play.google.com/store/apps/details?id=com.fenolvatrshine.mobile.app&hl=en&gl=us",
+  "keyword": "Amazon Casino",
+  "country": "Germany",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260901_150915_Germany_Amazon Casino_search",
+  "search_title": "Amazon Casino",
+  "search_developer": "Dream Hubs App",
+  "rank": 5,
+  "developer_id": "Dream+Hubs+App",
+  "released": "",
+  "updated": "2026-08-18",
+  "version": "1.0",
+  "summary": "Shine a net across the meadow without overheating",
+  "folder": "Amazon Casino-Dream Hubs App",
+  "path": "amazon casino/Amazon Casino-Dream Hubs App",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.fenolvatrshine.mobile.app-1-asset.apk",
+    "com.fenolvatrshine.mobile.app-1-config.arm64_v8a.apk",
+    "com.fenolvatrshine.mobile.app-1-config.en.apk",
+    "com.fenolvatrshine.mobile.app-1-config.xxhdpi.apk",
+    "com.fenolvatrshine.mobile.app-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/amazon casino/Amazon Casino-Dream Hubs App",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.fenolvatrshine.mobile.app ─╮\n│ Amazon Casino                   │\n│ 1.0  (vc 1)                     │\n╰─────────────────────────────────╯\n\nDownloading 5 files  (46.9 MB)\n  com.fenolvatrshine.mobile.app-1.apk                  ━━━━ 100% 35.… 15.9 0:00…\n                                                                 MB   MB/s      \n  com.fenolvatrshine.mobile.app-1-config.arm64_v8a.apk ━━━━ 100% 65.… 315… 0:00…\n                                                                 kB   kB/s      \n  com.fenolvatrshine.mobile.app-1-config.en.apk        ━━━━ 100% 110… 2.9  0:00…\n                                                                 kB   MB/s      \n  com.fenolvatrshine.mobile.app-1-config.xxhdpi.apk    ━━━━ 100% 87.… 2.4  0:00…\n                                                                 kB   MB/s      \n  com.fenolvatrshine.mobile.app-1-asset.apk            ━━━━ 100% 13.… 11.1 0:00…\n                                                                 MB   MB/s      \n\n                         Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                 ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.fenolvatrshine.mobile.app-1.apk                  │  33.8 MB │\n│ com.fenolvatrshine.mobile.app-1-config.arm64_v8a.apk │  64.2 KB │\n│ com.fenolvatrshine.mobile.app-1-config.en.apk        │ 108.2 KB │\n│ com.fenolvatrshine.mobile.app-1-config.xxhdpi.apk    │  85.1 KB │\n│ com.fenolvatrshine.mobile.app-1-asset.apk            │  33.8 MB │\n└──────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.fenolvatrshine.mobile.app ─╮\n│ Amazon Casino                   │\n│ 1.0  (vc 1)                     │\n╰─────────────────────────────────╯\n\nDownloading 5 files  (46.9 MB)\n  com.fenolvatrshine.mobile.app-1.apk                  ━━━━ 100% 35.… 15.9 0:00…\n                                                                 MB   MB/s      \n  com.fenolvatrshine.mobile.app-1-config.arm64_v8a.apk ━━━━ 100% 65.… 315… 0:00…\n                                                                 kB   kB/s      \n  com.fenolvatrshine.mobile.app-1-config.en.apk        ━━━━ 100% 110… 2.9  0:00…\n                                                                 kB   MB/s      \n  com.fenolvatrshine.mobile.app-1-config.xxhdpi.apk    ━━━━ 100% 87.… 2.4  0:00…\n                                                                 kB   MB/s      \n  com.fenolvatrshine.mobile.app-1-asset.apk            ━━━━ 100% 13.… 11.1 0:00…\n                                                                 MB   MB/s      \n\n                         Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                 ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.fenolvatrshine.mobile.app-1.apk                  │  33.8 MB │\n│ com.fenolvatrshine.mobile.app-1-config.arm64_v8a.apk │  64.2 KB │\n│ com.fenolvatrshine.mobile.app-1-config.en.apk        │ 108.2 KB │\n│ com.fenolvatrshine.mobile.app-1-config.xxhdpi.apk    │  85.1 KB │\n│ com.fenolvatrshine.mobile.app-1-asset.apk            │  33.8 MB │\n└──────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Amazon Casino"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.2.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.2.10"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "OneSignal, Firebase Cloud Messaging, OpenTelemetry"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.POST_NOTIFICATIONS, android.permission.WAKE_LOCK, android.permission.VIBRATE, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.FOREGROUND_SERVICE, android.permission.READ_APP_BADGE, com.google.android.c2dm.permission.RECEIVE, com.android.vending.CHECK_LICENSE, com.fenolvatrshine.mobile.app.permission.C2D_MESSAGE, com.fenolvatrshine.mobile.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.sec.android.provider.badge.permission.READ, com.sec.android.provider.badge.permission.WRITE, com.htc.launcher.permission.READ_SETTINGS, com.htc.launcher.permission.UPDATE_SHORTCUT, com.sonyericsson.home.permission.BROADCAST_BADGE, com.sonymobile.home.permission.PROVIDER_INSERT_BADGE, com.anddoes.launcher.permission.UPDATE_COUNT, com.majeur.launcher.permission.UPDATE_BADGE, com.huawei.android.launcher.permission.CHANGE_BADGE, com.huawei.android.launcher.permission.READ_SETTINGS, com.huawei.android.launcher.permission.WRITE_SETTINGS, com.oppo.launcher.permission.READ_SETTINGS, com.oppo.launcher.permission.WRITE_SETTINGS, me.everything.badger.permission.BADGE_COUNT_READ, me.everything.badger.permissio…"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.appcompat, androidx.activity, androidx.browser (Custom Tabs), androidx.compose, androidx.constraintlayout, androidx.core, androidx.fragment, androidx.lifecycle, androidx.room, androidx.work, com.google.android.material, com.google.firebase (messaging/installations), com.google.android.gms, com.configcat (ConfigCat Android SDK 10.4.1), com.kaakyire.kaaky.rie.trafitui (Trafit UI), com.onesignal, io.opentelemetry, okhttp3, okio, kotlinx.coroutines, com.pairip (Play Integrity / license check)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "app.configcat.com, cdn-eu.configcat.com, cdn-global.configcat.com, configcat.com, opentelemetry.io, slf4j.org"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "configcat_preferences — кэш удалённого конфига ConfigCat (JSON настроек)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "ConfigCat, fexdfjshine, Dive In, EXTERNAL_BROWSER, CHROME_TAB, redirect, url, CustomTabs, martinma, wemad, casino"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "alphamountain.ai",
+        "redirects_to": "https://www.alphamountain.ai/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "app.configcat.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "bfore.ai",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Key-Systems GmbH"
+      },
+      {
+        "domain": "cdn-eu.configcat.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "cdn-global.configcat.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "configcat.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "desenmascara.me",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "opentelemetry.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: 1API GmbH"
+      }
+    ],
+    "collected_data": [
+      "Ключ SDK ConfigCat",
+      "Заголовок X-ConfigCat-UserAgent",
+      "Метка кэша ETag"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Ключ SDK ConfigCat\n• Заголовок X-ConfigCat-UserAgent\n• Метка кэша ETag\n\nКак собираются: Сразу после запуска стартовый экран сам, без спроса у человека, обращается к удалённым настройкам ConfigCat. Отдельного окна с разрешением на эту проверку нет: человек видит только анимацию загрузки. В коде приложения не читают язык телефона, рекламный номер устройства, модель или имя пакета специально ради этой проверки. В интернет уходит запрос библиотеки ConfigCat: в адресе лежит ключ SDK приложения, в заголовке — служебная строка User-Agent библиотеки, а при повторном запуске может добавиться метка кэша ETag. Параллельно при запуске настраивают OneSignal для уведомлений, но это отдельный сервис push, а не поля той же проверки «что показать».\n\nКуда отправляются: Тихий запрос уходит на серверы ConfigCat: по умолчанию https://cdn-global.configcat.com или https://cdn-eu.configcat.com, путь вида /configuration-files/<ключ SDK>/config_v6.json. В приложении также зашиты адреса app.configcat.com и configcat.com как часть той же схемы удалённых настроек. Ответ сохраняют в памяти приложения в файле настроек configcat_preferences, чтобы не качать конфиг каждый раз заново. Это не показ рекламного баннера на экране, а фоновая проверка, какую строку настроек выдать этому запуску. Ключ настройки в коде — fexdfjshine. Запасного «своего» домена-шлюза кроме сети ConfigCat в коде не видно.\n\nКак фильтруются пользователи: В самом приложении нет локального списка стран, языков или «ботов». На телефон просто приходит готовая текстовая настройка с сервера ConfigCat. Дальше телефон сравнивает полученную строку с текстом кнопки «Dive In». Если строки совпали — считают, что нужен обычный режим приложения. Если строка другая — её принимают за интернет-адрес оффера. Кому именно сервер ConfigCat отдаст адрес, а кому слово «Dive In», решает удалённая панель настроек, а не жёсткие правила внутри APK. В запросе этой проверки нет языка телефона и рекламного номера устройства.\n\nЧто возвращается: С сервера ConfigCat приходит строковое значение по ключу fexdfjshine. Пустую строку код считает ошибкой и не открывает оффер. Если пришло ровно «Dive In» (как текст кнопки в настройках за…"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "app_id": "com.vrx.farming.tractor.simulator.game",
+  "title": "BraveBuilder",
+  "developer": "Hetakira",
+  "developer_id": "Hetakira",
+  "icon": "/static/app-icons/com_vrx_farming_tractor_simulator_game.png",
+  "url": "https://play.google.com/store/apps/details?id=com.vrx.farming.tractor.simulator.game&hl=en&gl=us",
+  "score": 3.17,
+  "released": "Nov 29, 2017",
+  "updated": "2026-06-29",
+  "version": "0.41",
+  "summary": "Enjoy tractor driving games as farmer simulator as pro tractor driver and enjoy",
+  "keyword": "url-batch",
+  "folder": "BraveBuilder-Hetakira",
+  "path": "url-batch/BraveBuilder-Hetakira",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.vrx.farming.tractor.simulator.game-41-asset.apk",
+    "com.vrx.farming.tractor.simulator.game-41-config.arm64_v8a.apk",
+    "com.vrx.farming.tractor.simulator.game-41.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/BraveBuilder-Hetakira",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.vrx.farming.tractor.simulator.game ─╮\n│ BraveBuilder                             │\n│ 0.41  (vc 41)                            │\n╰──────────────────────────────────────────╯\n\nDownloading 3 files  (112.8 MB)\n  com.vrx.farming.tractor.simulator.game-41.apk                  ━━ 100% … 1… 0…\n                                                                         … M…   \n  com.vrx.farming.tractor.simulator.game-41-config.arm64_v8a.apk ━━ 100% … 9… 0…\n                                                                         … M…   \n  com.vrx.farming.tractor.simulator.game-41-asset.apk            ━━ 100% … 1… 0…\n                                                                         … M…   \n\n                              Downloaded files                              \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                           ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.vrx.farming.tractor.simulator.game-41.apk                  │ 52.1 MB │\n│ com.vrx.farming.tractor.simulator.game-41-config.arm64_v8a.apk │ 19.0 MB │\n│ com.vrx.farming.tractor.simulator.game-41-asset.apk            │ 52.1 MB │\n└────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.vrx.farming.tractor.simulator.game ─╮\n│ BraveBuilder                             │\n│ 0.41  (vc 41)                            │\n╰──────────────────────────────────────────╯\n\nDownloading 3 files  (112.8 MB)\n  com.vrx.farming.tractor.simulator.game-41.apk                  ━━ 100% … 1… 0…\n                                                                         … M…   \n  com.vrx.farming.tractor.simulator.game-41-config.arm64_v8a.apk ━━ 100% … 9… 0…\n                                                                         … M…   \n  com.vrx.farming.tractor.simulator.game-41-asset.apk            ━━ 100% … 1… 0…\n                                                                         … M…   \n\n                              Downloaded files                              \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                           ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.vrx.farming.tractor.simulator.game-41.apk                  │ 52.1 MB │\n│ com.vrx.farming.tractor.simulator.game-41-config.arm64_v8a.apk │ 19.0 MB │\n│ com.vrx.farming.tractor.simulator.game-41-asset.apk            │ 52.1 MB │\n└────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Bclic App (label в APK, @string/app_name); в Google Play карточка называется BraveBuilder"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 1.6.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity 6000.3.8f1 (IL2CPP): libil2cpp.so, libunity.so, lib_burst_generated.so, libc++_shared.so, libswappywrapper.so; UniWebView 4 (com.onevcat.uniwebview) + UniWebView-CSharp.dll; androidx.browser 1.2.0; androidx.core 1.1.0; androidx.lifecycle-runtime 2.0.0; androidx.interpolator 1.0.0; androidx.versionedparcelable 1.1.0; androidx.collection; androidx.concurrent.futures; Kotlin stdlib 1.6.21; com.google.androidgamesdk (Swappy); com.google.common (Guava ListenableFuture); bitter.jnibridge; org.fmod; org.jetbrains.annotations; com.unity3d.player; DOTween, DOTweenPro, DemiLib; Cinemachine; Unity.TextMeshPro; Unity.Timeline; Unity.InputSystem; Unity.Burst, Unity.Collections, Unity.Mathematics; Unity.VisualScripting; Unity.AI.Navigation; Unity.Animation.Rigging; Unity.RenderPipelines.Core; Realistic Car Controller (RCC); System.IO.Hashing; System.Runtime.CompilerServices.Unsafe Подозрительные домены roving-futility.com, hetakira-7c48792c.surge.sh, bonecrackergames.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "сохраняет имя и возраст игрока, выбранный транспорт, монеты, прогресс уровней, настройки звука и музыки, настройки машины; результат проверки на сервере не сохраняет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да Подозрительные слова aHR0cHM6Ly8= («https://»), cm92aW5nLQ== («roving-»), ZnV0aWxpdA== («futilit»), eS5jb20= («y.com»), cGxheQ== («play»), Lmdvbw== («.goo»), Z2xlLg== («gle.»), Y29t («com»), DecodeTargetUrl, DecodePlayStoreUrl, RetrieveEndpoint, AnalyzeResponse, VerifyConnectivity, bypassContent, cachedEndpoint, retrievedEndpoint, QueryingRemote, EvaluatingResponse, RenderingContent, RestoringConnection, LaunchWebViewFragments, Fragment_01_InitializePhysics, Fragment_02_SyncNetwork, Fragment_03_MixAudio, Fragment_04_CalculateInventory, Fragment_05_UpdateBodies, Fragment_06_Finalize, HandleWebViewError, StopLoad Проверка подозрительных доменов"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "hetakira-7c48792c.surge.sh",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Porkbun LLC"
+      },
+      {
+        "domain": "bonecrackergames.com",
+        "redirects_to": "https://www.bonecrackergames.com/",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      }
+    ],
+    "collected_data": [
+      "Наличие подключения"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Наличие подключения\n\nКак собираются: Приложение берёт эти сведения само, в первый же миг после запуска, без единого вопроса к человеку. Экран заставки (класс Splash) сразу выставляет себе шаг «проверяю сеть», и уже на первом кадре работы вызывается проверка GameManager.VerifyConnectivity, которая спрашивает у системы Android, есть ли вообще выход в интернет. Больше приложение ни о чём телефон не спрашивает. Отдельно просмотрены весь код запуска и все сетевые места: язык, страну, модель телефона, версию Android, рекламный номер устройства, android_id, имя оператора, часовой пояс и размер экрана приложение для этой проверки не читает и в запрос не кладёт.…\n\nКуда отправляются: Тихий запрос уходит на один адрес — https://roving-futility.com. В файле приложения этого адреса нет в читаемом виде: он склеен из четырёх закодированных кусочков («aHR0cHM6Ly8=», «cm92aW5nLQ==», «ZnV0aWxpdA==», «eS5jb20=»), которые раскодируются и соединяются прямо во время работы (метод GameManager.DecodeTargetUrl). Поэтому обычный поиск по строкам этот адрес не находит — это сделано, чтобы адрес не бросался в глаза при проверке. Запросов ровно один и запасных адресов для проверки нет: во всём приложении есть единственный сетевой вызов собственного кода (GameManager.RetrieveEndpoint), и он идёт именно туда. Ответа приложение ждёт не больше 15 секунд.…\n\nКак фильтруются пользователи: Самое важное здесь: решение «кому оффер, а кому обычное приложение» приложение не принимает. Оно вообще не сообщает серверу ни одного признака о телефоне — запрос уходит «пустым», без каких-либо добавленных полей, без дописанных к адресу параметров и без своих служебных строк. Значит, сортировать посетителей сервер может только по тому, что видно у любого обращения в интернет само собой: по сетевому адресу телефона (из него понятны страна и оператор) и по служебной подписи программы, которая делает запрос. Никаких списков стран, языков или «плохих» устройств внутри приложения нет — просмотрены все ветки кода. Единственное правило, которое приложение выполняет само, — это проверка связи.…\n\nЧто возвращается: Ответ читается очень скупо, и это тоже показательно: сам текст страницы приложени…"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "apks": [
+    "com.k4zi.herb.arium-4-config.xxhdpi.apk",
+    "com.k4zi.herb.arium-4.apk",
+    "com.k4zi.herb.arium-4-asset.apk",
+    "com.k4zi.herb.arium-4-config.arm64_v8a.apk",
+    "com.k4zi.herb.arium-4-config.en.apk"
+  ],
+  "base_apk": "com.k4zi.herb.arium-4.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 2084 (0%)\nINFO  - progress: 277 of 2084 (13%)\nINFO  - progress: 312 of 2084 (14%)\nINFO  - progress: 551 of 2084 (26%)\nINFO  - progress: 744 of 2084 (35%)\nINFO  - progress: 895 of 2084 (42%)\nINFO  - progress: 906 of 2084 (43%)\nINFO  - progress: 1074 of 2084 (51%)\nINFO  - progress: 1196 of 2084 (57%)\nINFO  - progress: 1344 of 2084 (64%)\nINFO  - progress: 1364 of 2084 (65%)\nINFO  - progress: 1388 of 2084 (66%)\nINFO  - progress: 1391 of 2084 (66%)\nINFO  - progress: 1415 of 2084 (67%)\nINFO  - progress: 1419 of 2084 (68%)\nINFO  - progress: 1433 of 2084 (68%)\nINFO  - progress: 1465 of 2084 (70%)\nINFO  - progress: 1602 of 2084 (76%)\nINFO  - progress: 1781 of 2084 (85%)\nINFO  - progress: 1952 of 2084 (93%)\nINFO  - progress: 1961 of 2084 (94%)\n                                                             \nERROR - finished with errors, count: 4\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/mostbet/Mostbet-TOV TOKADO/decompiled",
+    "skipped": false,
+    "base_apk": "com.k4zi.herb.arium-4.apk"
+  },
+  "analysis_files": [
+    "com.k4zi.herb.arium-4-config.xxhdpi.apk",
+    "com.k4zi.herb.arium-4.apk",
+    "com.k4zi.herb.arium-4-asset.apk",
+    "com.k4zi.herb.arium-4-config.arm64_v8a.apk",
+    "com.k4zi.herb.arium-4-config.en.apk",
+    "apk/com.k4zi.herb.arium-4-config.xxhdpi.apk",
+    "apk/com.k4zi.herb.arium-4.apk",
+    "apk/com.k4zi.herb.arium-4-asset.apk",
+    "apk/com.k4zi.herb.arium-4-config.arm64_v8a.apk",
+    "apk/com.k4zi.herb.arium-4-config.en.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/",
+    "decompiled/sources/fi/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/org/"
+  ],
+  "errors": []
+}

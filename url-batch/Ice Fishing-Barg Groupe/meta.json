@@ -1,0 +1,161 @@
+{
+  "app_id": "com.ice.fishing.grenza",
+  "title": "Ice Fishing",
+  "developer": "Barg Groupe",
+  "developer_id": "Barg+Groupe",
+  "icon": "/static/app-icons/com_ice_fishing_grenza.png",
+  "url": "https://play.google.com/store/apps/details?id=com.ice.fishing.grenza&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 17, 2026",
+  "updated": "Jul 21, 2026",
+  "version": "Varies with device",
+  "summary": "Ice Fishing catalog: dish details, rating filters, facts, and tic-tac-toe.",
+  "keyword": "url-batch",
+  "folder": "Ice Fishing-Barg Groupe",
+  "path": "url-batch/Ice Fishing-Barg Groupe",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.ice.fishing.grenza-2-asset.apk",
+    "com.ice.fishing.grenza-2-config.arm64_v8a.apk",
+    "com.ice.fishing.grenza-2-config.en.apk",
+    "com.ice.fishing.grenza-2-config.lt.apk",
+    "com.ice.fishing.grenza-2-config.ru.apk",
+    "com.ice.fishing.grenza-2-config.xxhdpi.apk",
+    "com.ice.fishing.grenza-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Ice Fishing-Barg Groupe",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.ice.fishing.grenza...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.ice.fishing.grenza...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.ice.fishing.grenza ─╮\n│ Ice Fishing              │\n│ 1.1  (vc 2)              │\n╰──────────────────────────╯\n\nDownloading 7 files  (5.8 MB)\n  com.ice.fishing.grenza-2.apk                  ━━━━━━ 100% 3.7/3… 26.3   0:00:…\n                                                            MB     MB/s         \n  com.ice.fishing.grenza-2-config.arm64_v8a.apk ━━━━━━ 100% 41.2/… ?      0:00:…\n                                                            kB                  \n  com.ice.fishing.grenza-2-config.en.apk        ━━━━━━ 100% 24.8/… ?      0:00:…\n                                                            kB                  \n  com.ice.fishing.grenza-2-config.lt.apk        ━━━━━━ 100% 20.7/… ?      0:00:…\n                                                            kB                  \n  com.ice.fishing.grenza-2-config.ru.apk        ━━━━━━ 100% 20.7/… ?      0:00:…\n                                                            kB                  \n  com.ice.fishing.grenza-2-config.xxhdpi.apk    ━━━━━━ 100% 16.7/… ?      0:00:…\n                                                            kB                  \n  com.ice.fishing.grenza-2-asset.apk            ━━━━━━ 100% 2.3/2… 18.1   0:00:…\n                                                            MB     MB/s         \n\n                     Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                          ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.ice.fishing.grenza-2.apk                  │  3.6 MB │\n│ com.ice.fishing.grenza-2-config.arm64_v8a.apk │ 40.2 KB │\n│ com.ice.fishing.grenza-2-config.en.apk        │ 24.2 KB │\n│ com.ice.fishing.grenza-2-config.lt.apk        │ 20.2 KB │\n│ com.ice.fishing.grenza-2-config.ru.apk        │ 20.2 KB │\n│ com.ice.fishing.grenza-2-config.xxhdpi.apk    │ 16.3 KB │\n│ com.ice.fishing.grenza-2-asset.apk            │  3.6 MB │\n└───────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.ice.fishing.grenza ─╮\n│ Ice Fishing              │\n│ 1.1  (vc 2)              │\n╰──────────────────────────╯\n\nDownloading 7 files  (5.8 MB)\n  com.ice.fishing.grenza-2.apk                  ━━━━━━ 100% 3.7/3… 26.3   0:00:…\n                                                            MB     MB/s         \n  com.ice.fishing.grenza-2-config.arm64_v8a.apk ━━━━━━ 100% 41.2/… ?      0:00:…\n                                                            kB                  \n  com.ice.fishing.grenza-2-config.en.apk        ━━━━━━ 100% 24.8/… ?      0:00:…\n                                                            kB                  \n  com.ice.fishing.grenza-2-config.lt.apk        ━━━━━━ 100% 20.7/… ?      0:00:…\n                                                            kB                  \n  com.ice.fishing.grenza-2-config.ru.apk        ━━━━━━ 100% 20.7/… ?      0:00:…\n                                                            kB                  \n  com.ice.fishing.grenza-2-config.xxhdpi.apk    ━━━━━━ 100% 16.7/… ?      0:00:…\n                                                            kB                  \n  com.ice.fishing.grenza-2-asset.apk            ━━━━━━ 100% 2.3/2… 18.1   0:00:…\n                                                            MB     MB/s         \n\n                     Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                          ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.ice.fishing.grenza-2.apk                  │  3.6 MB │\n│ com.ice.fishing.grenza-2-config.arm64_v8a.apk │ 40.2 KB │\n│ com.ice.fishing.grenza-2-config.en.apk        │ 24.2 KB │\n│ com.ice.fishing.grenza-2-config.lt.apk        │ 20.2 KB │\n│ com.ice.fishing.grenza-2-config.ru.apk        │ 20.2 KB │\n│ com.ice.fishing.grenza-2-config.xxhdpi.apk    │ 16.3 KB │\n│ com.ice.fishing.grenza-2-asset.apk            │  3.6 MB │\n└───────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.2.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, ~2.1"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Google Advertising ID, Google Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, com.google.android.gms.permission.AD_ID, com.ice.fishing.grenza.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "AGP 9.2.1; Kotlin ~2.1 / kotlin-stdlib; kotlinx-coroutines 1.9.0; kotlinx-serialization; Jetpack Compose 1.11.4 / Material3 1.4.0; AndroidX Activity 1.13.0, Browser 1.9.0 (Custom Tabs), Core 1.19.0, Lifecycle 2.11.0, Navigation 2.9.8, Room 2.8.4, SQLite 2.6.2, Emoji2 1.4.0, Startup 1.2.0, ProfileInstaller 1.4.0, Window 1.5.0, SavedState 1.4.0, Hilt Navigation Compose 1.4.0; Dagger/Hilt 2.60.1; OkHttp 5.4.0; Google Play Services Ads Identifier 18.2.0 / Base 18.5.0 / Basement 18.4.0 / Tasks 18.2.0; Play Install Referrer; Pairip (com.pairip.application / licensecheck)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru, dispatchers.io, eternalsiegeapplication.space, lineheightstyle.alignment.top, theme.app"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Room DB app_db: таблица gate_config (id, valueSaved, customTab, customTabLink) — кэш решения и ссылки оффера; таблица items — данные белой оболочки; SharedPreferences com.google.android.gms.signin — служебные prefs GMS"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "{{OFFER_URL}}, offer, customTab, customTabLink, GateConfig, openTab, tabUrl, Settled, User-Agent, anatoliaTable, WebSocket, spiceLantern, bazaarSaffron, copperPlatter, tableStory, scoreVisible, valueSaved, eternalsiegeapplication, license check"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "https://cakhiatv1.net/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "eternalsiegeapplication.space",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "lineheightstyle.alignment.top",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "theme.app",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: Squarespace Domains II LLC"
+      }
+    ],
+    "collected_data": [
+      "Рекламный номер устройства — служебный",
+      "Метка установки из магазина — строка",
+      "Системный номер устройства — постоянный",
+      "Строка «как представился — стандартная"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Рекламный номер устройства — служебный\n• Метка установки из магазина — строка\n• Системный номер устройства — постоянный\n• Строка «как представился — стандартная\n\nКак собираются: Сразу после открытия приложения, ещё до того как человеку покажут обычные экраны, программа сама запускает тихую проверку. Она параллельно спрашивает у системы Android рекламный номер устройства, у сервиса установки Google Play — метку установки, и у защищённых настроек телефона — системный номер устройства. Отдельного окна с разрешением для этих действий нет: человек обычно ничего не замечает. Строку «как представился браузер» приложение берёт из настроек встроенного браузерного движка телефона в момент подготовки сетевого клиента. Если такое решение уже сохраняли раньше в локальной базе приложения,…\n\nКуда отправляются: Собранные сведения уходят в интернет на адрес https://eternalsiegeapplication.space/api/anatoliaTable. Это не показ рекламного баннера на экране, а тихая проверка «что показать этому человеку». Связь идёт через постоянное сетевое соединение (WebSocket) библиотеки OkHttp: приложение открывает канал, отправляет текстовый пакет с тремя полями и ждёт ответ. В заголовке запроса стоит строка браузера телефона. Запасного адреса в коде нет — используется именно этот хост. Результат проверки потом сохраняют в локальной базе приложения (таблица gate_config), чтобы при следующем запуске не спрашивать сервер заново.\n\nЧто возвращается: Сервер присылает ответ в виде набора полей с «кулинарными» названиями. Для решения реально важно одно поле — «история стола» (tableStory): там лежит либо готовая ссылка на внешний сайт (http/https), либо служебный шаблон {{OFFER_URL}}, либо пустое/обычное значение без ссылки. Если в поле есть ссылка или шаблон {{OFFER_URL}}, приложение считает, что нужно открыть внешнюю страницу. Для шаблона {{OFFER_URL}} подставляется запасной адрес https://eternalsiegeapplication.space. Остальные поля ответа (номера коллекций, регионов, флаги видимости и тому подобное) в коде после разбора практически не используются — они выглядят как маскировка.…\n\nКак показывается оффер или белая версия: Если ответ «боевой» и ссылка есть, приложение откры…"
+  }
+}

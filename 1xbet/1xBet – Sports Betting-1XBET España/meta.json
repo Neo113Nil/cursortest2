@@ -1,0 +1,193 @@
+{
+  "app_id": "com.obelis.xbetspain",
+  "title": "1xBet – Sports Betting",
+  "developer": "1XBET España",
+  "score": null,
+  "icon": "/static/app-icons/com_obelis_xbetspain.webp",
+  "url": "https://play.google.com/store/apps/details?id=com.obelis.xbetspain&hl=en&gl=us",
+  "keyword": "1xBet",
+  "country": "Spain",
+  "source": "apkeep:apk-pure",
+  "sponsored": true,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260810_221310_Spain_1xBet_search",
+  "search_title": "1xBet – Sports Betting",
+  "search_developer": "1XBET España",
+  "rank": 1,
+  "developer_id": "1XBET+Espa%C3%B1a",
+  "released": "",
+  "updated": "Jun 29, 2026",
+  "version": "Varies with device",
+  "summary": "Live match score: Football, Tennis, Basketball |Sports Statistics",
+  "folder": "1xBet – Sports Betting-1XBET España",
+  "path": "1xbet/1xBet – Sports Betting-1XBET España",
+  "updates_count": 1,
+  "apk_title": "1xBet",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.obelis.xbetspain.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/1xbet/1xBet – Sports Betting-1XBET España",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\nNo download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : mariobart292@gmail.com                │\n│ GSF ID : 3221b6dc2d717e1f                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.bpear@gmail.com            │\n│ GSF ID : 38832baa91c75a7b                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.obelis.xbetspain...\ncom.obelis.xbetspain downloaded successfully!\n",
+      "stderr": "",
+      "apk_label": "1xBet"
+    }
+  ],
+  "stdout": "Downloading com.obelis.xbetspain...\ncom.obelis.xbetspain downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": "",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "1xBet – Sports Betting"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.0.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "29"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.3.0"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "AppsFlyer, Firebase Analytics, Firebase Crashlytics, Firebase Performance, Firebase Messaging, Facebook SDK, FingerprintJS Pro"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.CAMERA, android.permission.FOREGROUND_SERVICE, android.permission.GET_TASKS, android.permission.HIGH_SAMPLING_RATE_SENSORS, android.permission.INTERNET, android.permission.MODIFY_AUDIO_SETTINGS, android.permission.POST_NOTIFICATIONS, android.permission.READ_PHONE_STATE, android.permission.READ_PRIVILEGED_PHONE_STATE, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.RECORD_AUDIO, android.permission.SCHEDULE_EXACT_ALARM, android.permission.SYSTEM_ALERT_WINDOW, android.permission.USE_BIOMETRIC, android.permission.USE_CREDENTIALS, android.permission.USE_FINGERPRINT, android.permission.VIBRATE, android.permission.WAKE_LOCK, com.android.vending.CHECK_LICENSE, com.google.android.c2dm.permission.RECEIVE, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.google.android.gms.permission.…"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.3.0, kotlinx-coroutines 1.10.2, Jetpack Compose 1.10.2 / Material3 1.4.0, androidx.appcompat 1.7.1, androidx.core/core-ktx 1.18.0, androidx.activity 1.13.0, androidx.fragment 1.8.9, androidx.lifecycle 2.10.0, androidx.datastore 1.2.0, androidx.work, androidx.room, androidx.paging 3.4.0, androidx.constraintlayout 2.2.1, androidx.biometric, OkHttp, Retrofit2, Gson, Moshi, Coil3, Dagger, Google Play Services (basement/base, location, maps, wallet, auth-api-phone, cloud-messaging, ads-identifier, measurement), Firebase (Analytics, Crashlytics, Messaging, Remote Config, Performance, Installations), AppsFlyer, Facebook SDK 18.1.3, FingerprintJS Pro, hCaptcha SDK, ZXing Android Embedded (JourneyApps), Lottie (Airbnb), Moxy, Pairip licensecheck, Play Integrity"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "ap.api.fpjs.io, api.fpjs.io, eu.api.fpjs.io, auroraoss.com, journeyapps.com, js.hcaptcha.com, mobapi.1xbet.es, obelis.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "DataStore «com.obelis.xbetspain_APPLICATION_SHARED_PREFERENCES» — общие настройки приложения; DataStore «com.obelis.xbetspain_USER_DATA_SOURCE» — сессионные/пользовательские данные (с очисткой сессии); SharedPreferences «widget_shared_prefs» — состояние виджетов; плюс prefs SDK Facebook / Firebase Performance / WorkManager"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "betting, casino, slots, poker, roulette, deposit, withdraw, payout, offer, offers, redirect, postback, affiliate, webview, gambling, ForbiddenInYourCountry, licensecheck"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "ap.api.fpjs.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: GANDI SAS"
+      },
+      {
+        "domain": "api.fpjs.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: GANDI SAS"
+      },
+      {
+        "domain": "auroraoss.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "eu.api.fpjs.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Gandi SAS"
+      },
+      {
+        "domain": "journeyapps.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Amazon Registrar, Inc."
+      },
+      {
+        "domain": "js.hcaptcha.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "mobapi.1xbet.es",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "obelis.com",
+        "redirects_to": "https://www.obelis.net/",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
+}

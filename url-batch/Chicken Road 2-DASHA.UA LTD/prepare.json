@@ -1,0 +1,46 @@
+{
+  "ok": true,
+  "apks": [
+    "com.cosmiclabyrinth.aethernova.apk",
+    "config.armeabi_v7a.apk"
+  ],
+  "base_apk": "com.cosmiclabyrinth.aethernova.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 396 (0%)\nINFO  - progress: 188 of 396 (47%)\nINFO  - progress: 244 of 396 (61%)\nINFO  - progress: 306 of 396 (77%)\nINFO  - progress: 360 of 396 (90%)\nINFO  - progress: 394 of 396 (99%)\n                                                             \nERROR - finished with errors, count: 2\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/url-batch/Chicken Road 2-DASHA.UA LTD/decompiled",
+    "skipped": false,
+    "base_apk": "com.cosmiclabyrinth.aethernova.apk"
+  },
+  "analysis_files": [
+    "com.cosmiclabyrinth.aethernova.xapk",
+    "apk/config.armeabi_v7a.apk",
+    "apk/com.cosmiclabyrinth.aethernova.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/B/",
+    "decompiled/sources/C/",
+    "decompiled/sources/D/",
+    "decompiled/sources/E/",
+    "decompiled/sources/F/",
+    "decompiled/sources/G/",
+    "decompiled/sources/H/",
+    "decompiled/sources/I/",
+    "decompiled/sources/K/",
+    "decompiled/sources/M/",
+    "decompiled/sources/N/",
+    "decompiled/sources/O/",
+    "decompiled/sources/Q/",
+    "decompiled/sources/R/",
+    "decompiled/sources/S/",
+    "decompiled/sources/T/",
+    "decompiled/sources/U/",
+    "decompiled/sources/V/",
+    "decompiled/sources/W/",
+    "decompiled/sources/X/"
+  ]
+}

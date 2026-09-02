@@ -1,0 +1,76 @@
+{
+  "title": "Vegas Craze Casino",
+  "developer": "PLAYLINKS Corp",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Vegas Craze Casino"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.9.3"
+      },
+      {
+        "param": "minSdk",
+        "value": "23"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob, AppLovin MAX, ironSource / LevelPlay, Unity Ads, Facebook Audience Network, Vungle, InMobi, Fyber, Moloco, Digital Turbine, PremiumAds"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Crashlytics, AppsFlyer, Facebook App Events, OneSignal"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.VIBRATE, com.android.vending.BILLING, android.permission.WAKE_LOCK, android.permission.RECEIVE_BOOT_COMPLETED, com.sec.android.provider.badge.permission.READ, com.sec.android.provider.badge.permission.WRITE, com.htc.launcher.permission.READ_SETTINGS, com.htc.launcher.permission.UPDATE_SHORTCUT, com.sonyericsson.home.permission.BROADCAST_BADGE, com.sonymobile.home.permission.PROVIDER_INSERT_BADGE, com.anddoes.launcher.permission.UPDATE_COUNT, com.majeur.launcher.permission.UPDATE_BADGE, com.huawei.android.launcher.permission.CHANGE_BADGE, com.huawei.android.launcher.permission.READ_SETTINGS, com.huawei.android.launcher.permission.WRITE_SETTINGS, android.permission.READ_APP_BADGE, com.oppo.launcher.permission.READ_SETTINGS, com.oppo.launcher.permission.WRITE_SETTINGS, com.google.android.gms.permission.AD_ID, android.permission.USE_BIOMETRIC, android.permission.USE_FINGERPRINT, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_AD_ID, com.android.vending.CHECK_LICENSE, android.per…"
+      },
+      {
+        "param": "Libraries",
+        "value": "org.cocos2dx (Cocos2d-js), androidx.appcompat, androidx.browser, androidx.webkit, androidx.multidex, androidx.credentials, androidx.compose, androidx.media3, com.android.billingclient, com.android.installreferrer, com.google.android.gms.ads, com.google.android.ump, com.google.firebase (analytics, crashlytics, messaging), com.applovin, com.ironsource / Unity LevelPlay, com.unity3d.ads, com.facebook (SDK + Audience Network), com.appsflyer, com.vungle, com.inmobi, com.fyber.inneractive, com.moloco, com.digitalturbine, net.premiumads.sdk.adapter, com.sdkbox, com.iab.omid, coil, com.bumptech.glide, okhttp3, okio, kotlin, kotlinx.coroutines, io.ktor"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "123.com, admob-mediation.premiumtag.net, akm.ssacdn.com, aomedia.org"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Cocos2dxPrefsFile — deep link / DEVICE_HINTS_JSON / аккаунты; vegascraze.xml — UUID устройства"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "casino, slots, offer, gate, deposit, betting, poker, roulette"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  },
+  "app_id": "com.playlinks.vegascraze",
+  "icon": "/static/app-icons/com_playlinks_vegascraze.png",
+  "url": "https://play.google.com/store/apps/details?id=com.playlinks.vegascraze"
+}

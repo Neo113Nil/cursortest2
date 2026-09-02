@@ -1,0 +1,139 @@
+{
+  "app_id": "com.nfcquicknotes.tags",
+  "title": "QuickNotes Tap-Faster",
+  "developer": "lovren-tov",
+  "developer_id": "5987303093808588222",
+  "icon": "/static/app-icons/com_nfcquicknotes_tags.png",
+  "url": "https://play.google.com/store/apps/details?id=com.nfcquicknotes.tags&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 9, 2026",
+  "updated": "Jul 16, 2026",
+  "version": "Varies with device",
+  "summary": "Create, scan, store, and search NFC-based notes and quick tag payloads.",
+  "keyword": "url-batch",
+  "folder": "QuickNotes Tap-Faster-lovren-tov",
+  "path": "url-batch/QuickNotes Tap-Faster-lovren-tov",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.nfcquicknotes.tags-2-asset.apk",
+    "com.nfcquicknotes.tags-2-config.arm64_v8a.apk",
+    "com.nfcquicknotes.tags-2-config.en.apk",
+    "com.nfcquicknotes.tags-2-config.lt.apk",
+    "com.nfcquicknotes.tags-2-config.ru.apk",
+    "com.nfcquicknotes.tags-2-config.xxhdpi.apk",
+    "com.nfcquicknotes.tags-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/QuickNotes Tap-Faster-lovren-tov",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.nfcquicknotes.tags ─╮\n│ QuickNotes: Tap-Faster   │\n│ 2  (vc 2)                │\n╰──────────────────────────╯\n\nDownloading 7 files  (5.2 MB)\n  com.nfcquicknotes.tags-2.apk                  ━━━━━━ 100% 3.2/3… 25.7   0:00:…\n                                                            MB     MB/s         \n  com.nfcquicknotes.tags-2-config.arm64_v8a.apk ━━━━━━ 100% 41.2/… ?      0:00:…\n                                                            kB                  \n  com.nfcquicknotes.tags-2-config.en.apk        ━━━━━━ 100% 24.8/… ?      0:00:…\n                                                            kB                  \n  com.nfcquicknotes.tags-2-config.lt.apk        ━━━━━━ 100% 20.7/… ?      0:00:…\n                                                            kB                  \n  com.nfcquicknotes.tags-2-config.ru.apk        ━━━━━━ 100% 20.7/… ?      0:00:…\n                                                            kB                  \n  com.nfcquicknotes.tags-2-config.xxhdpi.apk    ━━━━━━ 100% 16.7/… ?      0:00:…\n                                                            kB                  \n  com.nfcquicknotes.tags-2-asset.apk            ━━━━━━ 100% 2.1/2… 10.4   0:00:…\n                                                            MB     MB/s         \n\n                     Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                          ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.nfcquicknotes.tags-2.apk                  │  3.1 MB │\n│ com.nfcquicknotes.tags-2-config.arm64_v8a.apk │ 40.2 KB │\n│ com.nfcquicknotes.tags-2-config.en.apk        │ 24.2 KB │\n│ com.nfcquicknotes.tags-2-config.lt.apk        │ 20.2 KB │\n│ com.nfcquicknotes.tags-2-config.ru.apk        │ 20.2 KB │\n│ com.nfcquicknotes.tags-2-config.xxhdpi.apk    │ 16.3 KB │\n│ com.nfcquicknotes.tags-2-asset.apk            │  3.1 MB │\n└───────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.nfcquicknotes.tags ─╮\n│ QuickNotes: Tap-Faster   │\n│ 2  (vc 2)                │\n╰──────────────────────────╯\n\nDownloading 7 files  (5.2 MB)\n  com.nfcquicknotes.tags-2.apk                  ━━━━━━ 100% 3.2/3… 25.7   0:00:…\n                                                            MB     MB/s         \n  com.nfcquicknotes.tags-2-config.arm64_v8a.apk ━━━━━━ 100% 41.2/… ?      0:00:…\n                                                            kB                  \n  com.nfcquicknotes.tags-2-config.en.apk        ━━━━━━ 100% 24.8/… ?      0:00:…\n                                                            kB                  \n  com.nfcquicknotes.tags-2-config.lt.apk        ━━━━━━ 100% 20.7/… ?      0:00:…\n                                                            kB                  \n  com.nfcquicknotes.tags-2-config.ru.apk        ━━━━━━ 100% 20.7/… ?      0:00:…\n                                                            kB                  \n  com.nfcquicknotes.tags-2-config.xxhdpi.apk    ━━━━━━ 100% 16.7/… ?      0:00:…\n                                                            kB                  \n  com.nfcquicknotes.tags-2-asset.apk            ━━━━━━ 100% 2.1/2… 10.4   0:00:…\n                                                            MB     MB/s         \n\n                     Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                          ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.nfcquicknotes.tags-2.apk                  │  3.1 MB │\n│ com.nfcquicknotes.tags-2-config.arm64_v8a.apk │ 40.2 KB │\n│ com.nfcquicknotes.tags-2-config.en.apk        │ 24.2 KB │\n│ com.nfcquicknotes.tags-2-config.lt.apk        │ 20.2 KB │\n│ com.nfcquicknotes.tags-2-config.ru.apk        │ 20.2 KB │\n│ com.nfcquicknotes.tags-2-config.xxhdpi.apk    │ 16.3 KB │\n│ com.nfcquicknotes.tags-2-asset.apk            │  3.1 MB │\n└───────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "QuickNotes: Tap-Faster"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.1.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да + 2.1.0"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.NFC, com.google.android.gms.permission.AD_ID, com.android.vending.CHECK_LICENSE, com.nfcquicknotes.tags.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.activity (1.10.1), androidx.compose.* (1.7.2), androidx.compose.material3 (1.3.0), androidx.core / core-ktx (1.18.0), androidx.lifecycle (2.8.7), androidx.navigation (2.8.9), androidx.room (2.7.0), androidx.sqlite (2.5.0), androidx.savedstate (1.2.1), androidx.emoji2 (1.3.0), androidx.profileinstaller (1.4.0), androidx.startup (1.1.1), kotlinx-coroutines (1.10.2), play-services-ads-identifier (18.3.0), play-services-base (18.5.0), play-services-basement (18.9.0), play-services-tasks (18.2.0), com.pairip.licensecheck"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "frostyfishj.frostyfishjourney.com, config.ru, dispatchers.io"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "файл nfqzvpmx, ключ nfpxmqvzdl — флаг после возврата по ссылке aasfasf; также com.google.android.gms.signin"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "offer, license check, I'm Not a Robot"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "https://cakhiatv1.net/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "frostyfishj.frostyfishjourney.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      }
+    ],
+    "collected_data": [
+      "Имя пакета приложения",
+      "Рекламный номер устройства",
+      "Уровень версии Android",
+      "Модель телефона"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Имя пакета приложения\n• Рекламный номер устройства\n• Уровень версии Android\n• Модель телефона\n\nКак собираются: Сразу после запуска главного экрана приложение само, без отдельного окна с разрешением, читает рекламный номер устройства через службы Google на телефоне. Если номер получить не удалось, вместо него подставляется случайный идентификатор. Параллельно из системы Android берутся номер версии системы и модель аппарата. Имя пакета уже зашито в адрес проверки. Человек этого обычно не замечает: сбор идёт в фоне, пока на экране ещё служебные надписи вроде SYNC CHECK и Verification required.\n\nКуда отправляются: Сведения уходят не отдельным скрытым сетевым запросом из самого приложения, а встраиваются в адрес страницы проверки https://frostyfishj.frostyfishjourney.com/ с параметрами gofoergk (имя пакета), wiowg (рекламный номер), mrgnerng (номер версии Android) и qwef (модель телефона). Этот адрес открывают во внешнем браузере телефона. Запасных адресов в коде не видно. Флаг результата потом сохраняется в памяти приложения (настройки nfqzvpmx).\n\nКак фильтруются пользователи: В самом приложении нет списка стран, языков или «белых» и «грязных» пользователей. На проверку уходят имя пакета, рекламный номер устройства, версия Android и модель телефона — дальше решение принимает сервер по ответу страницы в браузере. На телефоне видно только развилку: либо человека сначала отправляют на внешнюю страницу проверки (кнопка I'm Not a Robot на экране Verification required), либо после возврата по специальной ссылке ему остаётся обычное приложение. Локально приложение лишь читает сохранённый флаг и реагирует на возврат по схеме aasfasf.\n\nЧто возвращается: Приложение не разбирает ответ сервера как набор полей вроде ссылки внутри структурированного ответа. Внешняя страница открывается в браузере; по проверке домена она отдаёт заголовок MyApplication и без дальнейшего редиректа. «Боевой» для схемы возврат в приложение идёт через специальную ссылку со схемой aasfasf: тогда в настройках ставится флаг nfpxmqvzdl. Если этого возврата нет, человек остаётся на внешней странице или при следующих запусках снова проходит ту же проверку, пока флаг не будет сохра…"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "app_id": "com.winfour.neondrop",
+  "title": "Blitz",
+  "developer": "DESDAY DEV",
+  "developer_id": "DESDAY+DEV",
+  "icon": "/static/app-icons/com_winfour_neondrop.png",
+  "url": "https://play.google.com/store/apps/details?id=com.winfour.neondrop&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 21, 2026",
+  "updated": "Jul 21, 2026",
+  "version": "Varies with device",
+  "summary": "Blitz — lightning-fast sports betting and premium casino gaming in one app!",
+  "keyword": "url-batch",
+  "folder": "Blitz-DESDAY DEV",
+  "path": "url-batch/Blitz-DESDAY DEV",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.winfour.neondrop.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Blitz-DESDAY DEV",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.winfour.neondrop...\ncom.winfour.neondrop downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.winfour.neondrop...\ncom.winfour.neondrop downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Blitz"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.7.3"
+      },
+      {
+        "param": "minSdk",
+        "value": "26"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_WIFI_STATE, android.permission.ACCESS_NETWORK_STATE, com.winfour.neondrop.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.0.21, kotlinx-coroutines 1.7.3, OkHttp 4.12.0, AndroidX (AppCompat 1.7.0, Activity 1.9.3, ConstraintLayout, Core/Core-KTX 1.13.1, Fragment 1.5.4, Lifecycle 2.8.7, Room 2.6.1, RecyclerView, ViewPager2, Emoji2 1.3.0, Startup 1.1.1, ProfileInstaller 1.3.1, CardView, CoordinatorLayout, DrawerLayout, Transition, Vectordrawable, SavedState, SQLite), Google Material Components 1.12.0, Pairip licensecheck (com.pairip.licensecheck) Подозрительные домены нет"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "файл prefs «cfg»: ключ «rurl» — сохранённый адрес после перенаправления с сервера; при следующем запуске сразу открывается во внешнем браузере; также «win_four_progress» для обычного режима (unlocked_level, best_score и прогресс игры)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "redirect, rurl, workers.dev, User-Agent, X-Device-Model, Accept-Language, license check, status, betting, casino"
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "Имя приложения в системе — техническое имя",
+      "Модель телефона — какая марка",
+      "Язык в заголовке запроса — в запросе",
+      "Строка браузера — как встроенный"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Имя приложения в системе — техническое имя\n• Модель телефона — какая марка\n• Язык в заголовке запроса — в запросе\n• Строка браузера — как встроенный\n\nКак собираются: Сразу после открытия главного экрана приложение само, без спроса у человека, читает имя программы, модель телефона и строку браузера из системы Android. Отдельного окна с разрешением нет — человек обычно этого не замечает. Язык в заголовке не читают из настроек телефона: он уже зашит в программе как английский. Перед этим приложение ещё смотрит свою внутреннюю память: если раньше уже сохраняли внешнюю ссылку, новый сбор и запрос к серверу могут не понадобиться. Всё это происходит в фоне в первые мгновения после запуска. Если в памяти уже есть сохранённый адрес, программа сразу пытается открыть его и снова не спрашивает сервер.\n\nКуда отправляются: Собранные сведения незаметно уходят в интернет на адрес https://winter-frost-42bd.lytvvwncc-natee76.workers.dev/?app=com.winfour.neondrop. Это не показ рекламы на экране, а тихая проверка «что показать этому человеку». Адрес в программе спрятан и собирается из зашифрованных кусков; запасных адресов в коде не видно. Запрос уходит тихо в фоне через сетевую библиотеку приложения. Если сервер потом перенаправит на другой сайт, итоговый адрес сохраняют во внутренней памяти приложения, чтобы при следующем запуске сразу открыть его снова.\n\nЧто возвращается: Приложение смотрит итоговый адрес после возможных перенаправлений. Если адрес всё ещё относится к workers.dev — считается, что нужно оставить обычное приложение. Если адрес изменился и ушёл на другой сайт — это сигнал открыть внешнюю рекламную страницу. В теле ответа программа умеет искать признак «status»:«ok», но на выбор пути это почти не влияет: решение строится именно по смене адреса. В «хорошем» для схемы варианте сервер перенаправляет на другой адрес, и программа принимает его как боевую ссылку. В «плохом» для схемы варианте (ошибка сети или нет перенаправления) человеку остаётся обычное приложение. Боевую ссылку после успешного перенаправления записывают в память,…\n\nКак показывается оффер или белая версия: Если сервер перенаправил на другой адрес, программа сразу открывает это…"
+  }
+}

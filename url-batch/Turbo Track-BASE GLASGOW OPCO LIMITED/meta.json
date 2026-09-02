@@ -1,0 +1,126 @@
+{
+  "app_id": "net.wifi.connect",
+  "title": "Turbo Track",
+  "developer": "BASE GLASGOW OPCO LIMITED",
+  "developer_id": "BASE+GLASGOW+OPCO+LIMITED",
+  "icon": "/static/app-icons/net_wifi_connect.png",
+  "url": "https://play.google.com/store/apps/details?id=net.wifi.connect&hl=en&gl=us",
+  "score": 4.02,
+  "released": "Jul 22, 2021",
+  "updated": "2026-07-17",
+  "version": "18.2.5",
+  "summary": "Turbo Track — get ready for the race!",
+  "keyword": "url-batch",
+  "folder": "Turbo Track-BASE GLASGOW OPCO LIMITED",
+  "path": "url-batch/Turbo Track-BASE GLASGOW OPCO LIMITED",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "net.wifi.connect.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Turbo Track-BASE GLASGOW OPCO LIMITED",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading net.wifi.connect...\nnet.wifi.connect downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading net.wifi.connect...\nnet.wifi.connect downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Turbo Track"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "26"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.0.0"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase, OneSignal"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.POST_NOTIFICATIONS, android.permission.WAKE_LOCK, android.permission.VIBRATE, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.FOREGROUND_SERVICE, android.permission.READ_APP_BADGE, com.google.android.c2dm.permission.RECEIVE, net.wifi.connect.permission.C2D_MESSAGE, net.wifi.connect.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.sec.android.provider.badge.permission.READ, com.sec.android.provider.badge.permission.WRITE, com.htc.launcher.permission.READ_SETTINGS, com.htc.launcher.permission.UPDATE_SHORTCUT, com.sonyericsson.home.permission.BROADCAST_BADGE, com.sonymobile.home.permission.PROVIDER_INSERT_BADGE, com.anddoes.launcher.permission.UPDATE_COUNT, com.majeur.launcher.permission.UPDATE_BADGE, com.huawei.android.launcher.permission.CHANGE_BADGE, com.huawei.android.launcher.permission.READ_SETTINGS, com.huawei.android.launcher.permission.WRITE_SETTINGS, com.oppo.launcher.permission.READ_SETTINGS, com.oppo.launcher.permission.WRITE_SETTINGS, me.everything.badger.permission.BADGE_COUNT_READ, me.everything.badger.permission.BADGE_COUNT_WRITE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity IL2CPP / Unity Engine, FMOD, bitter.jnibridge, com.cct.cctbridge, com.progress.index, Kotlin 2.0 / kotlinx-coroutines 1.6.4, AndroidX (appcompat, browser/Custom Tabs, core, fragment, lifecycle, room, work, startup, emoji2, sqlite, savedstate, cardview, drawerlayout), Google Play Services (base, basement, cloud-messaging, tasks, stats), Firebase (messaging, installations, encoders, datatransport), OneSignal, Google Android Game SDK, Newtonsoft.Json"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Unity PlayerPrefs — игровые настройки; OneSignal — состояние push-уведомлений и подписок; снимок проверки устройства (LastRawJson) держится в памяти Unity, отдельного prefs для оффер-ссылки в Java-мостах нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "is_ready, quality_score, level1, level3, emulator, magisk, payload, url, redirect, bridge, CustomTabs, webview, finishHostOnLaunch, getSessionProgress, PlayerProgress, OnCctEvent, tacap"
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "Номер сессии — случайный служеб",
+      "Язык телефона — на каком",
+      "Страна из настроек телефона — код",
+      "Модель телефона — какая модель",
+      "Производитель телефона — какая марка",
+      "Отпечаток системы — длинная служебна",
+      "Имя продукта и устройства — внутренние",
+      "Тип железа — как система",
+      "Название видеоускорителя",
+      "Код сети оператора — номер сети",
+      "Состояние SIM-карты — вставлена ли",
+      "Оценка «качества» устройства — числовой",
+      "Флаг «устройство готово» — итог локальной",
+      "Уровень проверки — грубая метка",
+      "Включена ли отладка — признак разработ",
+      "Включены ли настройки — ещё один",
+      "Признаки рута",
+      "Признаки эмулятора",
+      "Зерно прогресса — число",
+      "Номер этапа"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Номер сессии — случайный служеб\n• Язык телефона — на каком\n• Страна из настроек телефона — код\n• Модель телефона — какая модель\n• Производитель телефона — какая марка\n• Отпечаток системы — длинная служебна\n• Имя продукта и устройства — внутренние\n• Тип железа — как система\n• Название видеоускорителя\n• Код сети оператора — номер сети\n• Состояние SIM-карты — вставлена ли\n• Оценка «качества» устройства — числовой\n• Флаг «устройство готово» — итог локальной\n• Уровень проверки — грубая метка\n• Включена ли отладка — признак разработ\n• Включены ли настройки — ещё один\n• Признаки рута\n• Признаки эмулятора\n• Зерно прогресса — число\n• Номер этапа\n\nКак собираются: Сразу после запуска Unity поднимает экран заставки (SplashManager) и игровой поток. Параллельно код читает «прогресс сессии» через мост PlayerProgressBridge: метод getSessionProgress собирает сведения о телефоне из системы Android без отдельного окна с вопросом. Человек этого обычно не замечает: на экране может идти обычная заставка гонки. Язык и страна берутся из настроек языка телефона, модель и отпечаток — из свойств сборки, оператор и SIM — из телефонной службы, а признаки рута — из списка установленных программ и путей на диске (в манифесте прямо перечислены Magisk и похожие пакеты).…\n\nКуда отправляются: Сведения уходят в интернет обычным фоновым запросом игрового движка (через UnityWebRequest). В открытом виде готового адреса «ворот» в ресурсах и строках APK не нашлось: пайплайн domain_checks тоже не нашёл кастомных хостов. Адрес, судя по коду, задаётся на стороне игровой логики (замаскирован под «уровень» / сессию) и не лежит простым текстом рядом с Java-мостами. Это не показ баннера на экране, а тихая проверка «что показать этому человеку». Отдельного запасного хоста в Java-слое не видно. Результат проверки кратко держится в памяти Unity (LastRawJson / ответы levelResponse и completeResponse), а не как явная оффер-ссылка в SharedPreferences мостов.…\n\nКак фильтруются пользователи: На телефоне уже считают «подозрительность»: эмулятор, рут/Magisk, отладка по кабелю, странная графика, пустой оператор без нормальной SIM. Из этого собирают quality_score, level1 или level3 и флаг is_re…"
+  }
+}

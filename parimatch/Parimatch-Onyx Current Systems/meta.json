@@ -1,0 +1,162 @@
+{
+  "app_id": "com.krevoltanrush.casual.app",
+  "title": "Parimatch",
+  "developer": "Onyx Current Systems",
+  "score": null,
+  "icon": "/static/app-icons/com_krevoltanrush_casual_app.png",
+  "url": "https://play.google.com/store/apps/details?id=com.krevoltanrush.casual.app&hl=en&gl=us",
+  "keyword": "Parimatch",
+  "country": "Spain",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260813_174703_Spain_Parimatch_search",
+  "search_title": "Parimatch",
+  "search_developer": "Onyx Current Systems",
+  "rank": 3,
+  "developer_id": "Onyx+Current+Systems",
+  "released": "",
+  "updated": "2026-07-23",
+  "version": "1.0",
+  "summary": "Volcanic gate breach rush stages",
+  "folder": "Parimatch-Onyx Current Systems",
+  "path": "parimatch/Parimatch-Onyx Current Systems",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.krevoltanrush.casual.app-1-asset.apk",
+    "com.krevoltanrush.casual.app-1-config.arm64_v8a.apk",
+    "com.krevoltanrush.casual.app-1-config.en.apk",
+    "com.krevoltanrush.casual.app-1-config.xxhdpi.apk",
+    "com.krevoltanrush.casual.app-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/parimatch/Parimatch-Onyx Current Systems",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.krevoltanrush.casual.app ─╮\n│ Parimatch                      │\n│ 1.0  (vc 1)                    │\n╰────────────────────────────────╯\n\nDownloading 5 files  (45.7 MB)\n  com.krevoltanrush.casual.app-1.apk                  ━━━━ 100% 34.… 17.4 0:00:…\n                                                                MB   MB/s       \n  com.krevoltanrush.casual.app-1-config.arm64_v8a.apk ━━━━ 100% 65.… 480… 0:00:…\n                                                                kB   kB/s       \n  com.krevoltanrush.casual.app-1-config.en.apk        ━━━━ 100% 110… 2.8  0:00:…\n                                                                kB   MB/s       \n  com.krevoltanrush.casual.app-1-config.xxhdpi.apk    ━━━━ 100% 87.… 2.5  0:00:…\n                                                                kB   MB/s       \n  com.krevoltanrush.casual.app-1-asset.apk            ━━━━ 100% 12.… 27.1 0:00:…\n                                                                MB   MB/s       \n\n                         Downloaded files                         \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.krevoltanrush.casual.app-1.apk                  │  33.3 MB │\n│ com.krevoltanrush.casual.app-1-config.arm64_v8a.apk │  64.2 KB │\n│ com.krevoltanrush.casual.app-1-config.en.apk        │ 108.2 KB │\n│ com.krevoltanrush.casual.app-1-config.xxhdpi.apk    │  85.1 KB │\n│ com.krevoltanrush.casual.app-1-asset.apk            │  33.3 MB │\n└─────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.krevoltanrush.casual.app ─╮\n│ Parimatch                      │\n│ 1.0  (vc 1)                    │\n╰────────────────────────────────╯\n\nDownloading 5 files  (45.7 MB)\n  com.krevoltanrush.casual.app-1.apk                  ━━━━ 100% 34.… 17.4 0:00:…\n                                                                MB   MB/s       \n  com.krevoltanrush.casual.app-1-config.arm64_v8a.apk ━━━━ 100% 65.… 480… 0:00:…\n                                                                kB   kB/s       \n  com.krevoltanrush.casual.app-1-config.en.apk        ━━━━ 100% 110… 2.8  0:00:…\n                                                                kB   MB/s       \n  com.krevoltanrush.casual.app-1-config.xxhdpi.apk    ━━━━ 100% 87.… 2.5  0:00:…\n                                                                kB   MB/s       \n  com.krevoltanrush.casual.app-1-asset.apk            ━━━━ 100% 12.… 27.1 0:00:…\n                                                                MB   MB/s       \n\n                         Downloaded files                         \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.krevoltanrush.casual.app-1.apk                  │  33.3 MB │\n│ com.krevoltanrush.casual.app-1-config.arm64_v8a.apk │  64.2 KB │\n│ com.krevoltanrush.casual.app-1-config.en.apk        │ 108.2 KB │\n│ com.krevoltanrush.casual.app-1-config.xxhdpi.apk    │  85.1 KB │\n│ com.krevoltanrush.casual.app-1-asset.apk            │  33.3 MB │\n└─────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Krevoltan Rush (Play: Parimatch)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.2.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.2.0"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "OneSignal, Firebase Messaging"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.ACCESS_NETWORK_STATE, android.permission.FOREGROUND_SERVICE, android.permission.INTERNET, android.permission.POST_NOTIFICATIONS, android.permission.READ_APP_BADGE, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.VIBRATE, android.permission.WAKE_LOCK, com.anddoes.launcher.permission.UPDATE_COUNT, com.android.vending.CHECK_LICENSE, com.google.android.c2dm.permission.RECEIVE, com.htc.launcher.permission.READ_SETTINGS, com.htc.launcher.permission.UPDATE_SHORTCUT, com.huawei.android.launcher.permission.CHANGE_BADGE, com.huawei.android.launcher.permission.READ_SETTINGS, com.huawei.android.launcher.permission.WRITE_SETTINGS, com.krevoltanrush.casual.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.krevoltanrush.casual.app.permission.C2D_MESSAGE, com.majeur.launcher.permission.UPDATE_BADGE, com.oppo.launcher.permission.READ_SETTINGS, com.oppo.launcher.permission.WRITE_SETTIN GS, com.sec.android.provider.badge.permission.READ, com.sec.android.provider.badge.permission.WRITE, com.sonyericsson.home.permission.BROADCAST_BADGE, com.sonymobile.home.permission.PROVIDER_INSERT_BADGE, me.everything.badger.permission.BADGE_COUNT_READ, me.everything.badger.permission…"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.appcompat, androidx.browser (Custom Tabs), androidx.compose, androidx.constraintlayout, androidx.core, androidx.fragment, androidx.lifecycle, androidx.room, androidx.work, com.configcat (ConfigCat Android SDK), com.google.android.gms, com.google.android.material, com.google.firebase (Messaging, Installations), com.kaakyire.kaaky.rie.trafitui (Trafit UI), com.onesignal, com.pairip.licensecheck, com.squareup.wire, io.opentelemetry, kotlin, kotlinx.coroutines, okhttp3, okio, org.slf4j Подозрительные домены app.configcat.com, cdn-eu.configcat.com, cdn-global.configcat.com, configcat.com, opentelemetry.io"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "configcat_preferences — кэш удалённых настроек ConfigCat; krevoltan_dash_breach — очки, сессии, уровни и звук белой игры"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "ConfigCat, oneTyiiValue, sdkKey, stringKey, EXTERNAL_BROWSER, CHROME_TAB, DeepLink, redirect, WebView, Start"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "alphamountain.ai",
+        "redirects_to": "https://www.alphamountain.ai/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "app.configcat.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "bfore.ai",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Key-Systems GmbH"
+      },
+      {
+        "domain": "cdn-eu.configcat.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "cdn-global.configcat.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "configcat.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "desenmascara.me",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "opentelemetry.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: 1API GmbH"
+      }
+    ],
+    "collected_data": [
+      "В коде не"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• В коде не\n\nКак собираются: Сразу после запуска открывается стартовый экран библиотеки Trafit с анимацией загрузки. Отдельного окна с просьбой разрешить сбор данных для проверки нет: приложение само тянет удалённые настройки. В коде точки входа (MainActivity) и сетевого слоя ConfigCat не видно чтения языка телефона, рекламного номера, модели или других сведений о человеке для этой проверки. В запрос удалённых настроек объект пользователя ConfigCat не передают. Человек обычно замечает только крутящуюся заставку. Параллельно могут включить OneSignal для пуш-уведомлений, но это не та же цепочка, что решает «оффер или обычное приложение».\n\nКуда отправляются: Тихий запрос уходит на серверы ConfigCat за файлом настроек. В коде базовые адреса такие: https://cdn-global.configcat.com и запасной https://cdn-eu.configcat.com. Полный путь собирается как /configuration-files/<ключ SDK>/config_v6.json. В этом приложении зашит ключ configcat-sdk-1/tOjeCJUaQUKHL7RzGwthvg/DruH0prup0mJp6aSqVup5Q и имя настройки oneTyiiValue. Запрос идёт в фоне через OkHttp, на экране вместо ссылки показывают только загрузку. В заголовке уходит служебная строка X-ConfigCat-UserAgent (ConfigCat-Droid/…-10.4.1); при повторном запросе могут добавить If-None-Match из кэша. Ответ кэшируют в памяти приложения в файле настроек configcat_preferences,…\n\nКак фильтруются пользователи: В самом приложении нет списка стран, языков или проверки «это бот». На телефон приходит одна строка из удалённых настроек, и дальше сравнивают её с заранее заданным текстом кнопки «Start». Если строка совпадает со словом Start — считают, что нужен белый режим. Если строка другая (обычно это ссылка) — считают, что нужно открыть внешнюю страницу. То есть развилка «оффер / обычное приложение» завязана на содержимое ответа ConfigCat. По коду видно только получение этой строки. Само решение, какое значение отдать разным людям, делает сервер ConfigCat (удалённые настройки), а не жёсткие правила внутри APK. Дополнительный признак схемы: в магазине приложение зовётся Parimatch,…\n\nЧто возвращается: ConfigCat отдаёт текстовое значение ключа oneTyiiValue. Приложение обрезает кавычки и пробелы и смотрит на получив…"
+  }
+}

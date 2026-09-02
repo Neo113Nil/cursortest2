@@ -1,0 +1,178 @@
+{
+  "app_id": "com.icewinter.flow.winter.icecatch",
+  "title": "Ice Fishing",
+  "developer": "Soft App Zone",
+  "score": null,
+  "icon": "/static/app-icons/com_icewinter_flow_winter_icecatch.png",
+  "url": "https://play.google.com/store/apps/details?id=com.icewinter.flow.winter.icecatch&hl=en&gl=us",
+  "keyword": "ice fishing",
+  "developer_id": "Soft++App+Zone",
+  "released": "",
+  "updated": "Jul 29, 2026",
+  "version": "Varies with device",
+  "summary": "Catch fish, manage energy, unlock modes!",
+  "folder": "Ice Fishing-Soft App Zone",
+  "path": "ice fishing/Ice Fishing-Soft App Zone",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.icewinter.flow.winter.icecatch-3-asset.apk",
+    "com.icewinter.flow.winter.icecatch-3-config.arm64_v8a.apk",
+    "com.icewinter.flow.winter.icecatch-3-config.en.apk",
+    "com.icewinter.flow.winter.icecatch-3-config.lt.apk",
+    "com.icewinter.flow.winter.icecatch-3-config.ru.apk",
+    "com.icewinter.flow.winter.icecatch-3-config.xxhdpi.apk",
+    "com.icewinter.flow.winter.icecatch-3.apk"
+  ],
+  "target": "/root/play-collector/загрузки/ice fishing/Ice Fishing-Soft App Zone",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.icewinter.flow.winter.icecatch...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.icewinter.flow.winter.icecatch...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.icewinter.flow.winter.icecatch ─╮\n│ Ice Fishing                          │\n│ 3.0  (vc 3)                          │\n╰──────────────────────────────────────╯\n\nDownloading 7 files  (7.3 MB)\n  com.icewinter.flow.winter.icecatch-3.apk                  ━━━ 100% 3.… 1… 0:0…\n                                                                     MB  M…     \n  com.icewinter.flow.winter.icecatch-3-config.arm64_v8a.apk ━━━ 100% 1.… 1… 0:0…\n                                                                     MB  M…     \n  com.icewinter.flow.winter.icecatch-3-config.en.apk        ━━━ 100% 20… ?  0:0…\n                                                                     kB         \n  com.icewinter.flow.winter.icecatch-3-config.lt.apk        ━━━ 100% 20… ?  0:0…\n                                                                     kB         \n  com.icewinter.flow.winter.icecatch-3-config.ru.apk        ━━━ 100% 20… ?  0:0…\n                                                                     kB         \n  com.icewinter.flow.winter.icecatch-3-config.xxhdpi.apk    ━━━ 100% 16… ?  0:0…\n                                                                     kB         \n  com.icewinter.flow.winter.icecatch-3-asset.apk            ━━━ 100% 2.… 1… 0:0…\n                                                                     MB  M…     \n\n                           Downloaded files                            \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                      ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.icewinter.flow.winter.icecatch-3.apk                  │  3.7 MB │\n│ com.icewinter.flow.winter.icecatch-3-config.arm64_v8a.apk │  1.3 MB │\n│ com.icewinter.flow.winter.icecatch-3-config.en.apk        │ 20.2 KB │\n│ com.icewinter.flow.winter.icecatch-3-config.lt.apk        │ 20.2 KB │\n│ com.icewinter.flow.winter.icecatch-3-config.ru.apk        │ 20.2 KB │\n│ com.icewinter.flow.winter.icecatch-3-config.xxhdpi.apk    │ 16.3 KB │\n│ com.icewinter.flow.winter.icecatch-3-asset.apk            │  3.7 MB │\n└───────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n"
+    }
+  ],
+  "stdout": "╭─ com.icewinter.flow.winter.icecatch ─╮\n│ Ice Fishing                          │\n│ 3.0  (vc 3)                          │\n╰──────────────────────────────────────╯\n\nDownloading 7 files  (7.3 MB)\n  com.icewinter.flow.winter.icecatch-3.apk                  ━━━ 100% 3.… 1… 0:0…\n                                                                     MB  M…     \n  com.icewinter.flow.winter.icecatch-3-config.arm64_v8a.apk ━━━ 100% 1.… 1… 0:0…\n                                                                     MB  M…     \n  com.icewinter.flow.winter.icecatch-3-config.en.apk        ━━━ 100% 20… ?  0:0…\n                                                                     kB         \n  com.icewinter.flow.winter.icecatch-3-config.lt.apk        ━━━ 100% 20… ?  0:0…\n                                                                     kB         \n  com.icewinter.flow.winter.icecatch-3-config.ru.apk        ━━━ 100% 20… ?  0:0…\n                                                                     kB         \n  com.icewinter.flow.winter.icecatch-3-config.xxhdpi.apk    ━━━ 100% 16… ?  0:0…\n                                                                     kB         \n  com.icewinter.flow.winter.icecatch-3-asset.apk            ━━━ 100% 2.… 1… 0:0…\n                                                                     MB  M…     \n\n                           Downloaded files                            \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                      ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.icewinter.flow.winter.icecatch-3.apk                  │  3.7 MB │\n│ com.icewinter.flow.winter.icecatch-3-config.arm64_v8a.apk │  1.3 MB │\n│ com.icewinter.flow.winter.icecatch-3-config.en.apk        │ 20.2 KB │\n│ com.icewinter.flow.winter.icecatch-3-config.lt.apk        │ 20.2 KB │\n│ com.icewinter.flow.winter.icecatch-3-config.ru.apk        │ 20.2 KB │\n│ com.icewinter.flow.winter.icecatch-3-config.xxhdpi.apk    │ 16.3 KB │\n│ com.icewinter.flow.winter.icecatch-3-asset.apk            │  3.7 MB │\n└───────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing (пакет com.icewinter.flow.winter.icecatch, версия 3.0, versionCode 3, разработчик Soft App Zone)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.3.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "37"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.4.10"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Adjust SDK 5.7.0 (атрибуция: adid, attribution, Google Advertising ID, Google Play install referrer, режим ENVIRONMENT_PRODUCTION, LogLevel.VERBOSE), Firebase Cloud Messaging 25.1.1 (push-токен устройства), Firebase Installations 19.1.1, Firebase Common 22.0.1, Google DataTransport / CCT 18.2.0 (отправляет model, hardware, device, product, os-uild, manufacturer, fingerprint, tz-offset, net-type, mobile-subtype, country, locale, mcc_mnc, application_build, sdk-version), Google Play Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.POST_NOTIFICATIONS, android.permission.CAMERA, android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, co m.icewinter.flow.winter.icecatch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.gms.permission.AD_ID, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "AGP 9.3.1; Kotlin 2.4.10 / kotlin-stdlib; kotlinx-coroutines; Jetpack Compose UI (androidx.compose.ui, Material-иконки, Compose Runtime); AndroidX: activity, annotation, core, emoji2, fragment, graphics-path (libandroidx.graphics.path.so), legacy-support, lifecycle (process/runtime/viewmodel), profileinstaller, room (AppDatabase, таблица caught_fish), startup-runtime, versionedparcelable, window; AndroidX DataStore (libdatastore_shared_counter.so); Adjust Android SDK 5.7.0 + adjust-signature libsigner.so 3.67.0; Google Play Install Referrer (com.android.installreferrer); Firebase: fire-core 22.0.1, firebase-messaging 25.1.1, firebase-installations 19.1.1, firebase-datatransport 18.2.0, firebase-iid-interop 17.1.0, firebase-measurement-connector 19.0.0, firebase-encoders 17.0.0 / -json 18.0.0 / -proto 16.0.0; Google Play services: basement 18.9.0, base 18.9.0, cloud-messaging 17.4.0, stats 17.0.2, tasks 18.4.0; Java-WebSocket (клиент WebSocket, TooTallNate) + slf4j-api 2.0.99; Pairip (com.pairip.application.Application, com.pairip.licensecheck); android.webkit.WebView"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "torquepatterncluster.life, config.ru, dispatchers.io"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Файл «Ice Fishing_preferences»: ключ user_secure_data — сюда записывается строка, которую вернул сервер (ссылка на внешнюю страницу). Если ключ не пустой, приложение при следующих запусках уже не спрашивает сервер и сразу открывает сохранённую ссылку во встроенном окне сайта. Дополнительно служебные файлы сторонних компонентов: adjust_preferences (данные атрибуции Adjust), com.google.firebase.messaging и com.google.android.gms.appid (push-идентификаторы). Игровой прогресс белой части хранится в базе Room «caught_fish», а не в SharedPreferences."
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да Ice Fishing — com.icewinter.flow.winter.icecatch 2 Параметр Значение"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "wss://torquepatterncluster.life (адрес спрятан в классе AppConnectionData как «readConnectionData»), APP_CONNECTION_DATA, APP_SECURE_KEY, APP_GOOGLE_BLANK_ID («00000000-0000-0000-0000-000000000000»), frozenCatchKey, icyRouteAnchor, glacierSignalBridge (bridge), frostCurrentVector, snowStreamTracker, dywdsn385csg, user_secure_data, Successfully / Failure (развилка «оффер или игра»), ColdActivity, удаление метки «; wv» из строки браузера, googlepay://, tez://, intent://, S.browser_fallback_url, redirect («Following redirect to: %s»), deeplink_url / deeplink_url_cached / attribution_deeplink, license check (com.pairip.licensecheck)"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "adjust.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: united-domains GmbH"
+      },
+      {
+        "domain": "app.adjust.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: united-domains GmbH"
+      },
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "https://cakhiatv1.net/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "gdpr.adjust.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: united-domains GmbH"
+      },
+      {
+        "domain": "go.link",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: GANDI SAS"
+      },
+      {
+        "domain": "slf4j.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "ssrv.adjust.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: united-domains GmbH"
+      }
+    ],
+    "collected_data": [
+      "Рекламный номер устройства",
+      "Adjust.getGoogleAdId) — уникальный рекла",
+      "Подменный рекламный номер",
+      "Ice Fishing — пакет",
+      " техническое имя и сборка — имя программы",
+      "Оператора связи — эти сведения"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Рекламный номер устройства\n• Adjust.getGoogleAdId) — уникальный рекла\n• Подменный рекламный номер\n• Ice Fishing — пакет\n•  техническое имя и сборка — имя программы\n• Оператора связи — эти сведения\n\nКак собираются: Всё начинается сразу после нажатия на иконку. Первым открывается пусковой экран (в коде — RunningActivity): человек видит только заставку с картинкой и полосой загрузки. Через полсекунды приложение показывает единственное окно с вопросом — разрешение на уведомления. Дальше самое важное: ответ человека на этот вопрос вообще не проверяется. Нажали «разрешить» или «запретить» — приложение в любом случае тут же переходит к сбору сведений о телефоне. Сбор идёт в фоновом потоке, то есть незаметно и без единого сообщения на экране: человек продолжает смотреть на заставку. Приложение по очереди спрашивает у системы Android и у встроенных служебных компонентов пять вещей: рекламный номер устройства,…\n\nКуда отправляются: Всё уходит на один адрес: torquepatterncluster.life. Обращение идёт не обычным запросом страницы, а через постоянное соединение (адрес записан как «wss://torquepatterncluster.life») — это тот же защищённый канал, что используют чаты: приложение подключается к серверу и держит связь открытой, каждые шестьдесят секунд подтверждая, что оно на линии. Адрес не набирается человеком и нигде не показывается. Он зашит в код одной строкой внутри класса AppConnectionData, метод которого назван «прочитать данные соединения». Запасных адресов в приложении нет, из кусков ссылка не собирается — сервер один, зато скрыт за невинным именем класса. Само подключение выполняется в фоне,…\n\nКак фильтруются пользователи: Ice Fishing — com.icewinter.flow.winter.icecatch 8 Решение «кому показать внешнюю страницу, а кому обычное приложение» принимает сервер, а не телефон. В приложении нет ни списка стран, ни списка языков, ни проверки времени — есть только отправка признаков и ожидание ответа. Приложение слушается ответа буквально: пришла строка — открываем внешнюю страницу, пришла пустота — оставляем игру. При этом набор отправляемых признаков подобран именно так, чтобы сервер мог отсеять проверяющих. Главный признак — рекламный номер устройст…"
+  }
+}

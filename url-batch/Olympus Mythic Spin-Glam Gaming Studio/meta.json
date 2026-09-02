@@ -1,0 +1,146 @@
+{
+  "app_id": "com.olypt7turol.tundr.roler",
+  "title": "Olympus Mythic Spin",
+  "developer": "Glam Gaming Studio",
+  "developer_id": "Glam+Gaming+Studio",
+  "icon": "/static/app-icons/com_olypt7turol_tundr_roler.png",
+  "url": "https://play.google.com/store/apps/details?id=com.olypt7turol.tundr.roler&hl=en&gl=us",
+  "score": 3.1875,
+  "released": "Nov 27, 2025",
+  "updated": "2026-06-30",
+  "version": "1.0.3",
+  "summary": "Spin and collect on a mythic adventure across Olympus.",
+  "keyword": "url-batch",
+  "folder": "Olympus Mythic Spin-Glam Gaming Studio",
+  "path": "url-batch/Olympus Mythic Spin-Glam Gaming Studio",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.olypt7turol.tundr.roler.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Olympus Mythic Spin-Glam Gaming Studio",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.olypt7turol.tundr.roler...\ncom.olypt7turol.tundr.roler downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.olypt7turol.tundr.roler...\ncom.olypt7turol.tundr.roler downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Olympus Mythic Spin"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.6.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob, AppLovin MAX, ironSource/LevelPlay, Unity Ads, Meta Audience Network, Mintegral, Chartboost, InMobi, Vungle/Liftoff, Fyber, Digital Turbine, BidMachine, PubMatic, Smaato, MobileFuse, Moloco, Ogury, myTarget, Yandex Mobile Ads, Pangle/TikTok, Verve/PubNative, YSO Network, BIGO Ads, Five Ad, SafeDK"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Adjust, Firebase Analytics, AppMetrica, Facebook App Events, Google Play Measurement, ROAS"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_AD_ID, com.android.vending.BILLING, android.permission.VIBRATE, com.android.vending.CHECK_LICENSE, android.permission.ACCESS_WIFI_STATE, android.permission.WAKE_LOCK, android.permission.FOREGROUND_SERVICE, com.amazon.privacypass.ATTEST, com.olypt7turol.tundr.roler.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "AGP 8.6.0; Unity 2022.3.62f3 (IL2CPP); HybridCLR; OPS.Obfuscator; SolitarySpark.Runtime / SolitarySpark.Protector; Kusodino.AdEngine; MaxSdk (AppLovin MAX); AdjustSdk; EasyMobile; Firebase Analytics (C++); Google Mobile Ads; Facebook Unity SDK; Kotlin / kotlinx-coroutines 1.10.2; AndroidX AppCompat, Browser (Custom Tabs), Core, Fragment, Lifecycle, WorkManager, Compose, Privacy Sandbox Ads, Startup, Emoji2, DataStore, Room; OkHttp / Okio; Coil; BidMachine; AppLovin; ironSource; Unity Ads; Chartboost; InMobi; Mintegral (mbridge); Vungle; Fyber; Digital Turbine; PubMatic; Smaato; MobileFuse; Moloco; Ogury; myTarget; Yandex Mobile Ads; Pangle/TikTok; Verve/PubNative; YSO Network; BIGO Ads; Five Ad; SafeDK; AppMetrica; Play Billing; Play Services Ads/Identifier/Measurement/Auth; User Messaging Platform; Pairip (com.pairip.application / licensecheck); bitter.jnibridge; DOTween; Spine; UniTask; Sirenix; Newtonsoft.Json; LitJson; FMOD"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "obplaceholder.click.com, 123.com, ad-host-backup-america.oss-us-west-1.aliyuncs.com, ad-host-backup-asia.oss-ap-southeast-1.aliyuncs.com, ad-host-backup-europe.oss-eu-central-1.aliyuncs.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "adjust_preferences / adjust_keys — атрибуция Adjust; служебные prefs AppLovin MAX, Firebase/GMS, ad SDK (Mintegral share_date и др.); Unity PlayerPrefs для игровых настроек SolitarySpark"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "offer, landing, redirect, WebView, slots, slotanew, license check, SolitarySpark, Protector, ProtectorSafety, gaid, advertisingId, bridge, PLACEHOLDER_CLICK_THROUGH, lightplaygame, testhehe, EndPoint, PrivacyURL, TermsURL"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "obplaceholder.click.com",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "123.com",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "ad-host-backup-america.oss-us-west-1.aliyuncs.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "ad-host-backup-asia.oss-ap-southeast-1.aliyuncs.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "ad-host-backup-europe.oss-eu-central-1.aliyuncs.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "ad.mail.ru",
+        "redirects_to": "https://target.vk.ru/?utm_source=ad.mail.ru&utm_medium=redir&utm_campaign=index",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "akm.ssacdn.com",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: Amazon Registrar, Inc."
+      },
+      {
+        "domain": "aomedia.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Squarespace Domains II LLC"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
+}

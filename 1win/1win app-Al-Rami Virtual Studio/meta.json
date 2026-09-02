@@ -1,0 +1,82 @@
+{
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "1win app (Google Play); внутри APK label = Goal Superstar"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "30"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1.21"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Google Play Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.goal.superstar.arena.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.compose (UI/Material3/Navigation), androidx.core, androidx.activity, androidx.lifecycle, androidx.datastore, androidx.startup, androidx.profileinstaller, androidx.emoji2, kotlinx-coroutines 1.10.2, com.google.gson, com.android.installreferrer, com.pairip (Play Integrity / licensecheck), org.lsposed.lsparanoid"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "routesummitstack.site"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "app_onboarding_prefs: флаг is_first_launch; DataStore: user_uuid, referrer, saved_url и игровые настройки/статистика"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "offer, SPECIAL OFFER, BONUS PACK, TAP TO CLAIM, gift, aes256gcm, saved_url, uuid, referrer, redirect, 1win"
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "Идентификатор пользователя uuid",
+      "Строка User-Agent",
+      "Источник установки install"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Идентификатор пользователя uuid\n• Строка User-Agent\n• Источник установки install\n\nКак собираются: Сразу после запуска приложение само, без отдельного окна с разрешением, готовит проверку. Оно создаёт или читает из своей памяти случайный идентификатор пользователя (uuid) и сохраняет его. Параллельно спрашивает у магазина Google Play строку источника установки (install referrer); если строка пустая, подставляет значение organic. Строку User-Agent берёт из системных настроек встроенного движка страниц Android (через WebSettings), не показывая человеку отдельный экран. Человек этого обычно не замечает: всё происходит в фоне при старте.\n\nКуда отправляются: Эти сведения уходят тихим запросом в интернет на адрес https://routesummitstack.site/xarl. Адрес в приложении хранится в зашифрованном виде (aes256gcm) и расшифровывается только перед запросом. К адресу добавляют параметр uuid; в заголовках уходят User-Agent, поле user с тем же uuid и Referer с источником установки. Запасных адресов в коде не видно. Это не показ рекламного баннера на экране, а фоновая проверка «что показать этому человеку». Если в ответе приходит ссылка, её сохраняют в памяти приложения под ключом saved_url.\n\nКак фильтруются пользователи: В самом приложении нет жёсткого списка стран или языков на телефоне. На проверку уходят uuid, User-Agent и источник установки (referrer) — по ним сервер может отличать «своих» и «чужих». Решение «кому оффер, кому обычное приложение» делает сервер: приложение лишь смотрит, пришла ли в ответе ссылка, начинающаяся с http. Если приходит пусто, «none» или данные без ссылки — считается белый путь. Локальных фильтров по боту или стране в коде после разбора не видно.\n\nЧто возвращается: Сервер отвечает обычным текстом. Часто это снова шифротекст с префиксом aes256gcm, который приложение расшифровывает тем же ключом. После расшифровки ожидается либо ссылка на внешний сайт (начинается с http), либо значение вроде none / пусто. Если получилась ссылка — её сохраняют и считают, что можно показать оффер. Если ссылки нет или расшифровка не дала http — остаётся обычный режим приложения. При проверке с обычного сервера ответ расшифровывался в none — это к…"
+  },
+  "app_id": "com.goal.superstar.arena",
+  "title": "1win app",
+  "developer": "Al-Rami Virtual Studio",
+  "icon": "/static/app-icons/com_goal_superstar_arena.png",
+  "url": "https://play.google.com/store/apps/details?id=com.goal.superstar.arena&hl=en&gl=us",
+  "updated": "Aug 18, 2026",
+  "version": "Varies with device"
+}

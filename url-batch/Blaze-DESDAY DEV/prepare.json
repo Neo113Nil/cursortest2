@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "apks": [
+    "com.winworm.neongrid.apk",
+    "config.en.apk",
+    "config.fr.apk",
+    "config.mdpi.apk"
+  ],
+  "base_apk": "com.winworm.neongrid.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 1440 (0%)\nINFO  - progress: 732 of 1440 (50%)\nINFO  - progress: 935 of 1440 (64%)\nINFO  - progress: 1014 of 1440 (70%)\nINFO  - progress: 1103 of 1440 (76%)\nINFO  - progress: 1231 of 1440 (85%)\nINFO  - progress: 1400 of 1440 (97%)\n                                                             \nINFO  - done\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/url-batch/Blaze-DESDAY DEV/decompiled",
+    "skipped": false,
+    "base_apk": "com.winworm.neongrid.apk"
+  },
+  "analysis_files": [
+    "com.winworm.neongrid.xapk",
+    "apk/config.fr.apk",
+    "apk/com.winworm.neongrid.apk",
+    "apk/config.mdpi.apk",
+    "apk/config.en.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/A/",
+    "decompiled/sources/A0/",
+    "decompiled/sources/A1/",
+    "decompiled/sources/B/",
+    "decompiled/sources/B0/",
+    "decompiled/sources/B1/",
+    "decompiled/sources/C/",
+    "decompiled/sources/C0/",
+    "decompiled/sources/D/",
+    "decompiled/sources/D0/",
+    "decompiled/sources/D1/",
+    "decompiled/sources/E/",
+    "decompiled/sources/E1/",
+    "decompiled/sources/F0/",
+    "decompiled/sources/F1/",
+    "decompiled/sources/G/",
+    "decompiled/sources/G0/",
+    "decompiled/sources/H/",
+    "decompiled/sources/H0/",
+    "decompiled/sources/I/"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "title": "Betano'",
+  "developer": "Blue Bicycle",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Betano' (в Google Play); внутри APK app_name = Victory Blocker"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.13.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "30"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.VIBRATE, com. resistance. blocker. defense. tactical. DYNAMIC_ RECEIVER_ NOT_ EXPORTED_ PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.0.21, kotlinx-coroutines-core/android 1.9.0, OkHttp 4.12.0, Okio, Retrofit2 + converter-gson, Gson 2.11.0, androidx.appcompat 1.7.1, androidx.activity 1.13.0, androidx.fragment 1.5.4, androidx.constraintlayout 2.2.1, androidx.coordinatorlayout 1.1.0, androidx.recyclerview 1.3.2, androidx.viewpager2 1.1.0-beta02, androidx.viewpager 1.0.0, androidx.swiperefreshlayout 1.1.0, androidx.cardview 1.0.0, androidx.core/core-ktx 1.18.0, androidx.lifecycle 2.8.7, androidx.emoji2 1.3.0, androidx.profileinstaller 1.4.0, androidx.startup 1.1.1, androidx.databinding/viewbinding 8.13.2, androidx.transition 1.5.0, androidx.drawerlayout 1.1.1, androidx.dynamicanimation 1.1.0, androidx.graphics-shapes 1.0.1, androidx.customview 1.2.0, com.google.android.material 1.14.0, Google Play Pairip (com.pairip.application.Application, com.pairip.licensecheck)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "api.open-meteo.com, geocoding-api.open-meteo.com, thesportsdb.com, gelinora.info"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "app_prefs: флаг force_game (после «белого» ответа сервера проверка в интернете больше не выполняется); fcr_prefs: монеты, опыт, рекорды, открытый уровень, купленные предметы, достижения, настройки музыки/звука/вибрации/сложности/чувствительности, кэш погоды и матчей, последний город и его координаты"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "token, force_game, loadPrivacyPolicyUrl, openUrl, Base64, item_004, U3Vuc2V0"
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "Встроенный опознавательный код"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Встроенный опознавательный код\n\nКак собираются: Приложение открывается экраном-заставкой с крутящимся кольцом и полоской загрузки. В ту же секунду, ещё до того как человек что-то нажал, программа запускает отдельный фоновый поток и уходит в интернет за проверкой. Никакого окна с вопросом о согласии или разрешении на это нет, и человек видит только обычную загрузку. Сведений о телефоне для этой проверки приложение не читает вообще: ни язык и страну, ни рекламный номер устройства, ни модель и производителя, ни версию Android, ни имя пакета, ни часовой пояс, ни оператора. В адрес запроса подставлен только заранее вписанный в код опознавательный код (token) — он одинаковый для всех, кто поставил эту версию.…\n\nКуда отправляются: Запрос уходит на адрес https://gelinora.info/api/?token=vb3f851xs6CRVhkR. Это не показ рекламы на экране и не загрузка игровых данных, а тихий фоновый вопрос к чужому серверу: «что показать этому запуску». Адрес прописан в коде одной целой строкой — из кусков его не собирают, из настроек и не из удалённого конфига не подтягивают. Запасных адресов для этой проверки в коде нет: если сервер не ответил или ответ не удалось разобрать, приложение молча переходит в обычный режим. Сам адрес проверки в память приложения не сохраняется — сохраняется только отметка force_game о том, что проверку можно больше не делать. Обычные функции приложения (погода и результаты матчей) ходят на другие,…\n\nКак фильтруются пользователи: В самом приложении нет ни списка стран, ни списка языков, ни проверки «похож ли этот запуск на робота, эмулятор или на проверку магазина». Признаков человека на телефон не собирают и на сервер не отправляют — уходит только опознавательный код из адреса. Значит, разделять людей может лишь чужой сервер и лишь по тому, что видно ему самому со стороны: по этому опознавательному коду и по данным самого подключения. В коде приложения правил «кого пускать» нет — решение целиком принимается на стороне сервера. На телефоне остаётся только сверка ответа: три полученных поля сравнивают с жёстко прописанными значениями «item_004», «U3Vuc2V0» и «default». Совпало всё три — это белый путь.…\n\nЧто возвращается: Сервер отвеча…"
+  },
+  "app_id": "com.resistance.blocker.defense.tactical",
+  "icon": "/static/app-icons/com_resistance_blocker_defense_tactical.png",
+  "url": "https://play.google.com/store/apps/details?id=com.resistance.blocker.defense.tactical"
+}

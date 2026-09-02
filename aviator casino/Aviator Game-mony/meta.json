@@ -1,0 +1,78 @@
+{
+  "title": "Aviator Game",
+  "developer": "mony",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Aviator Game"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.9.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да (coroutines 1.8.0)"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob / Google Ad Manager, TopOn (AnyThink), Facebook Audience Network, Qureka"
+      },
+      {
+        "param": "Аналитика",
+        "value": "OneSignal, Firebase"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.ACCESS_NETWORK_STATE, android.permission.INTERNET, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_WIFI_STATE, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, com.theaviatorgame.realmoneyaviatorgame.permission.C2D_MESSAGE, android.permission.POST_NOTIFICATIONS, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, android.permission.VIBRATE, com.sec.android.provider.badge.permission.READ, com.sec.android.provider.badge.permission.WRITE, com.htc.launcher.permission.READ_SETTINGS, com.htc.launcher.permission.UPDATE_SHORTCUT, com.sonyericsson.home.permission.BROADCAST_BADGE, com.sonymobile.home.permission.PROVIDER_INSERT_BADGE, com.anddoes.launcher.permission.UPDATE_COUNT, com.majeur.launcher.permission.UPDATE_BADGE, com.huawei.android.launcher.permission.CHANGE_BADGE, com.huawei.android.launcher.permission.READ_SETTINGS, com.huawei.android.launcher.permission.WRITE_SETTINGS, android.permission.READ_APP_BADGE, com.oppo.launcher.permission.READ_SETTINGS, com.oppo.launcher.permission.WRITE_SETTINGS, me.everything.badger.permission.BADGE_COU…"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.appcompat, androidx.browser, androidx.core, androidx.fragment, androidx.lifecycle, androidx.recyclerview, androidx.constraintlayout, androidx.navigation, androidx.room, androidx.work, androidx.webkit, com.google.android.gms (ads, basements, appset), com.google.firebase (messaging/measurement connectors), com.anythink (TopOn), com.facebook.ads, com.onesignal, com.bumptech.glide, okhttp, kotlinx.coroutines, com.pairip.application, org.json / Volley-style queue"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "10761.play.gamezop.com, adx.anythinktech.com, adxtk.anythinktech.com, api.anythinktech.com, da.anythinktech.com, img.anythinktech.com, img.toponad.com, se.zxcvbnmpo.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "MyPref: сохраняет полный ответ удалённого конфига (response), adposition, interstitial_id; отдельные prefs: флаг первого запуска IsFirstTimeLaunch"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "splash_redirect, splash_link_all, link1, link2, link3, qureka, redirect, offer, deposit, withdraw, webview, gate, realmoney, aviator, landing"
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "Имя пакета приложения"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Имя пакета приложения\n\nКак собираются: Сразу после запуска, на экране заставки, приложение само проверяет интернет и тихо запрашивает удалённый текстовый файл с настройками. Отдельного окна с просьбой «разрешить сбор» для этой проверки нет: человек видит только заставку. В адрес запроса уже вписано имя пакета этого приложения — других сведений о телефоне в этот запрос код не добавляет. Ответ потом кладут в память приложения, чтобы не тянуть файл заново при каждом шаге.\n\nКуда отправляются: Запрос уходит на адрес https://raw.githubusercontent.com/smtpatel9211/PandyaTech/refs/heads/main/com.t heaviatorgame.realmoneyaviatorgame — это обычная «сырая» ссылка на файл в интернете. По коду видно, что это не показ рекламы на экране, а тихая проверка настроек: что показать этому запуску. Запасных адресов для этой проверки в приложении не видно. Полученный текст сохраняют в памяти приложения под именем response.\n\nКак фильтруются пользователи: В самом телефоне нет жёсткого списка стран или языков для этой развилки. Решение зашито в ответе с сервера: поля вроде «делать ли редирект при запуске» и три готовые ссылки. Если редирект включён и связанные флаги позволяют, приложение случайно выбирает одну из трёх ссылок. Само «кого пустить на оффер» делает тот, кто правит удалённый файл настроек; приложение лишь читает флаги и открывает то, что там написано.\n\nЧто возвращается: Сервер отдаёт текстовый ответ в виде списка настроек. Из него читают, среди прочего: splash_redirect, splash_link_all, link1, link2, link3, настройки рекламных сетей (TopOn, AdMob, Facebook) и служебные поля вроде livetv. Если splash_redirect включён и есть рабочие link1–link3, приложение считает, что можно открыть внешнюю страницу. Если редирект выключен или ссылок нет — остаётся обычный режим приложения с играми и рекламой. На момент проверки в живом файле редирект был включён, а ссылки вели на страницы вроде mark.qureka.com и go.gamescritique.com.\n\nКак показывается оффер или белая версия: Если по настройкам нужно показать оффер, ссылку открывают во внешнем окне браузера телефона через встроенные вкладки Chrome (Custom Tabs), а если это не вышло — через обычный переход в браузер. Ч…"
+  },
+  "app_id": "com.theaviatorgame.realmoneyaviatorgame",
+  "url": "https://play.google.com/store/apps/details?id=com.theaviatorgame.realmoneyaviatorgame",
+  "icon": "/static/app-icons/com_theaviatorgame_realmoneyaviatorgame.png"
+}

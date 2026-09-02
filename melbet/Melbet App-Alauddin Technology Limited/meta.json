@@ -1,0 +1,78 @@
+{
+  "title": "Melbet App",
+  "developer": "Alauddin Technology Limited",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "MelBet Guide"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "23"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Google Play Services Measurement"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.READ_PHONE_STATE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.WAKE_LOCK, android.permission.FOREGROUND_SERVICE, net.livesports.melbet.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Jetpack Compose, androidx.activity, androidx.appcompat, androidx.browser (Custom Tabs), androidx.core, androidx.lifecycle, androidx.navigation, androidx.room, androidx.work, androidx.startup, androidx.profileinstaller, androidx.emoji2, Kotlin 2.0.21, kotlinx-coroutines, OkHttp, Coil, Google Mobile Ads (AdMob), Google Play Services (ads, ads-identifier, measurement, base, basement, appset, tasks), User Messaging Platform, Play Integrity / pairip license check (com.pairip)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "gamebriefing.xyz, multigamezone.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "результат проверки хранит в памяти (RemoteConfiguration), отдельных SharedPreferences клоаки нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "campaignadx, campaignreq, remoteConfiguration, landing, forward, backward, PromotionCoordinator, aladio02, gamebriefing, multigamezone, remoteConfigurationFullSlot, remoteConfigurationEntryUrl, remoteConfigurationEncryptedServiceBaseUrl"
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "Код страны SIM-карты"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Код страны SIM-карты\n\nКак собираются: Сразу после запуска открывается заставка. Приложение ждёт около двух с половиной секунд, проверяет, что интернет есть, и в фоне само читает код страны с SIM-карты через службу телефона Android. Отдельного окна с вопросом человеку не показывают: это происходит тихо, пока на экране крутится заставка. Если код страны пустой, параметр в адрес просто не дописывают. Параллельно расшифровывают спрятанный в приложении адрес сервера проверки. Человек обычно видит только заставку MelBet Guide и ничего не нажимает для этой проверки.\n\nКуда отправляются: Сведения уходят тихим запросом GET на адрес https://www.gamebriefing.xyz/aladio02. Если код страны SIM-карты удалось прочитать, его дописывают в адрес как параметр language, например …/aladio02?language=us. Запасного адреса для этой проверки в коде нет: основной адрес заранее зашифрован внутри приложения и расшифровывается только в момент запроса. Это не показ рекламы на экране, а скрытая загрузка удалённых настроек: что показать этому человеку дальше. Ответ сервера держат в памяти приложения до конца сессии.\n\nКак фильтруются пользователи: На проверку уходит только код страны SIM-карты. В самом приложении нет жёсткого списка запрещённых стран или языков: решение «кому оффер, кому обычное приложение» делает сервер и присылает в ответе метку режима. По коду видно три ветки: метка campaignreq — открыть ссылку из ответа; метка campaignadx — сначала реклама сети AdMob, затем встроенная ссылка на внешнюю страницу; любой другой или пустой ответ — оставить обычное приложение. Локальной проверки «бот / эмулятор» в этом запросе не видно.\n\nЧто возвращается: Сервер отвечает текстовым блоком настроек. Приложение читает метку режима из раздела campaign (поле tag), ссылки forward и backward из раздела runtime.links, блоки рекламы из adsCenter и служебные поля remoteService. По метке tag понимают, какую ветку запустить. Если tag равен campaignreq и ссылка forward не пустая — считают, что можно открыть внешнюю страницу. Если tag равен campaignadx — готовят показ рекламы и затем открытие заранее зашитой в приложении ссылки. Если нужных полей нет или запрос не удался — переходят…"
+  },
+  "app_id": "net.livesports.melbet",
+  "icon": "/static/app-icons/net_livesports_melbet.png",
+  "url": "https://play.google.com/store/apps/details?id=net.livesports.melbet"
+}

@@ -1,0 +1,75 @@
+{
+  "app_id": "com.talbot.wafriendс",
+  "title": "com.talbot.wafriendс",
+  "developer": "unknown",
+  "developer_id": "",
+  "icon": "",
+  "url": "https://play.google.com/store/apps/details?id=com.talbot.wafriendс",
+  "score": null,
+  "released": "",
+  "updated": "",
+  "version": "",
+  "summary": "",
+  "keyword": "url-batch",
+  "folder": "com.talbot.wafriendс-unknown",
+  "path": "url-batch/com.talbot.wafriendс-unknown",
+  "updates_count": 1,
+  "ok": false,
+  "source": "",
+  "files": [],
+  "target": "/root/play-collector/загрузки/url-batch/com.talbot.wafriendс-unknown",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.talbot.wafriendс...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.talbot.wafriendс...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\nFailed to fetch details (HTTP 400).\n"
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : g8701871@gmail.com                    │\n│ GSF ID : 321a30c31ecd6dad                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Failed to fetch details (HTTP 400).\n"
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.89@gmail.com               │\n│ GSF ID : 3d6366f252b042a1                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Failed to fetch details (HTTP 400).\n"
+    }
+  ],
+  "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.89@gmail.com               │\n│ GSF ID : 3d6366f252b042a1                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+  "stderr": "Failed to fetch details (HTTP 400).\n",
+  "exit_code": 1
+}

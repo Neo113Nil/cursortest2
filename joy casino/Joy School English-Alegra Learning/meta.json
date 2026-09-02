@@ -1,0 +1,147 @@
+{
+  "app_id": "com.alegralearning.joyschoolkinder",
+  "title": "Joy School English",
+  "developer": "Alegra Learning",
+  "score": 4.3125,
+  "icon": "/static/app-icons/com_alegralearning_joyschoolkinder.png",
+  "url": "https://play.google.com/store/apps/details?id=com.alegralearning.joyschoolkinder&hl=en&gl=us",
+  "keyword": "Joy Casino",
+  "country": "India",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260813_181659_India_Joy Casino_search",
+  "search_title": "Joy School English",
+  "search_developer": "Alegra Learning",
+  "rank": 8,
+  "developer_id": "Alegra+Learning",
+  "released": "Sep 8, 2022",
+  "updated": "2026-08-12",
+  "version": "2026.2.2",
+  "summary": "Teaches English and values to kids age 4-6 using games, songs and stories.",
+  "folder": "Joy School English-Alegra Learning",
+  "path": "joy casino/Joy School English-Alegra Learning",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "com.alegralearning.joyschoolkinder-395-asset.apk",
+    "com.alegralearning.joyschoolkinder-395-config.arm64_v8a.apk",
+    "com.alegralearning.joyschoolkinder-395.apk"
+  ],
+  "target": "/root/play-collector/загрузки/joy casino/Joy School English-Alegra Learning",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.alegralearning.joyschoolkinder ─╮\n│ Joy School English                   │\n│ 2026.2.2  (vc 395)                   │\n╰──────────────────────────────────────╯\n\nDownloading 3 files  (268.4 MB)\n  com.alegralearning.joyschoolkinder-395.apk                  ━━ 100% 1… 1… 0:0…\n                                                                      MB M…     \n  com.alegralearning.joyschoolkinder-395-config.arm64_v8a.apk ━━ 100% 4… 1… 0:0…\n                                                                      MB M…     \n  com.alegralearning.joyschoolkinder-395-asset.apk            ━━ 100% 7… 5… 0:0…\n                                                                      MB M…     \n\n                             Downloaded files                             \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                        ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.alegralearning.joyschoolkinder-395.apk                  │ 149.4 MB │\n│ com.alegralearning.joyschoolkinder-395-config.arm64_v8a.apk │  43.3 MB │\n│ com.alegralearning.joyschoolkinder-395-asset.apk            │ 149.4 MB │\n└─────────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.alegralearning.joyschoolkinder ─╮\n│ Joy School English                   │\n│ 2026.2.2  (vc 395)                   │\n╰──────────────────────────────────────╯\n\nDownloading 3 files  (268.4 MB)\n  com.alegralearning.joyschoolkinder-395.apk                  ━━ 100% 1… 1… 0:0…\n                                                                      MB M…     \n  com.alegralearning.joyschoolkinder-395-config.arm64_v8a.apk ━━ 100% 4… 1… 0:0…\n                                                                      MB M…     \n  com.alegralearning.joyschoolkinder-395-asset.apk            ━━ 100% 7… 5… 0:0…\n                                                                      MB M…     \n\n                             Downloaded files                             \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                                        ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.alegralearning.joyschoolkinder-395.apk                  │ 149.4 MB │\n│ com.alegralearning.joyschoolkinder-395-config.arm64_v8a.apk │  43.3 MB │\n│ com.alegralearning.joyschoolkinder-395-asset.apk            │ 149.4 MB │\n└─────────────────────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": "",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Joy School English"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "28"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 1.9"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Unity Analytics, Unity Cloud Diagnostics"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.ACCESS_NETWORK_STATE, android.permission.BLUETOOTH, android.permission.CAMERA, android.permission.CHANGE_NETWORK_STATE, android.permission.CHANGE_WIFI_MULTICAST_STATE, android.permission.FLASHLIGHT, android.permission.FOREGROUND_SERVICE, android.permission.INTERNET, android.permission.MODIFY_AUDIO_SETTINGS, android.permission.READ_EXTERNAL_STORAGE, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.RECORD_AUDIO, android.permission.WAKE_LOCK, android.permission.WRITE_EXTERNAL_STORAGE, com.alegralearning.joyschoolkinder.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.BILLING"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity 6000.2.8f1 (IL2CPP), Unity Addressables 2.7.6, Unity Services Core 1.14.0, Unity Analytics 6.1.0, Unity Cloud Diagnostics 1.0.11, Google Play Billing 9.1.0 (com.alegralearning.googlebillingplugin), AndroidX (activity, core/core-ktx, fragment, lifecycle, room, sqlite, startup, work-runtime, media3/exoplayer, profileinstaller, exifinterface), Kotlin stdlib 1.9 / kotlinx-coroutines 1.6.4, OkHttp3, Okio, Gson, Google Play Services (base/common/tasks/auth/cronet), Google Data Transport (CCT), Firebase encoders (json/proto), WebRTC (org.webrtc, com.because_why_not.awrtc/wrtc), VideoKit (ai.videokit), AVPro Video (com.renderheads), Recognissimo / bluezzzy speech, kokosoft unity speechrecognition, FMOD (org.fmod), Mirror networking (в Unity-сборке), Amazon Lex runtime (строки), audio360 (com.twobigears), QRReader (com.ToolBar), bitter.jnibridge, io.antmedia.rtmp_client"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "aomedia.org, dashif.org, devplay.joyschoolenglish.com, localplay.joyschoolenglish.com, play.joyschoolenglish.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Unity PlayerPrefs (PlayerPrefsHelper): AccountSessionPref, SessionTokenPref, IdAAEncrypKeyPref — сессия аккаунта/студента и связанные токены входа"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "offer, landing, redirect, casino"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "aomedia.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Squarespace Domains II LLC"
+      },
+      {
+        "domain": "dashif.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "devplay.joyschoolenglish.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "localplay.joyschoolenglish.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "play.joyschoolenglish.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "title": "Chicken Road 2-Tarra",
+  "developer": "Market",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Chicken Road 2 (в Google Play); внутри APK label = Skytone Harps"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.6.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.1.0"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.skytonedarps.arskthrp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Flutter, io.flutter, androidx.activity, androidx.core, androidx.fragment, androidx.lifecycle, androidx.profileinstaller, androidx.savedstate, androidx.startup, androidx.window, androidx.customview, androidx.viewpager, androidx.tracing, androidx.versionedparcelable, kotlinx-coroutines, com.pairip.licensecheck, path_provider, sqflite, cupertino_icons"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "cv.iptc.org, dispatchers.io, systemuioverlay.top, va.truepic.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "license check"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  },
+  "app_id": "com.skytonedarps.arskthrp",
+  "icon": "/static/app-icons/com_skytonedarps_arskthrp.png",
+  "url": "https://play.google.com/store/apps/details?id=com.skytonedarps.arskthrp"
+}

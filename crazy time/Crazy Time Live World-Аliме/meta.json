@@ -1,0 +1,80 @@
+{
+  "title": "Crazy Time Live World",
+  "developer": "Аliме",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Crazy Time Live World (Google Play); внутри APK label = Crazy Time"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.11.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 1.9.23"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Firebase Installations, Google Play Measurement"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_AD_ID, com.google.android.finsky.p ermission.BIND_GET_INSTALL_REFERRER_SERVICE, com.crazytime.worldapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Jetpack Compose (ui/foundation/material3/animation/runtime), androidx.appcompat, androidx.activity, androidx.core, androidx.lifecycle, androidx.navigation, androidx.room, androidx.hilt, androidx.startup, androidx.profileinstaller, androidx.emoji2, androidx.webkit (через accompanist-web), com.google.accompanist.web, dagger/hilt, retrofit2, okhttp3, okio, gson, kotlin-stdlib, kotlinx-coroutines, Firebase (Analytics, Functions, Installations, IID), Google Play Services (base, basement, tasks, measurement, ads-identifier, cloud-messaging)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "api.timezonedb.com, config.ru"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "имя «app», ключ «u» — сохраняет расшифрованный ответ проверки (ссылку оффера или не-ссылку); при следующем запуске читает «u» и сразу открывает сохранённую ссылку во встроенном окне сайта, если там есть http"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "init, redirect, http, loadUrl, WebView, tmp"
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "Модель телефона",
+      "Смещение часового пояса",
+      "Имя пакета приложения"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Модель телефона\n• Смещение часового пояса\n• Имя пакета приложения\n\nКак собираются: Сразу после запуска главного экрана приложение само, без спроса у человека, читает модель телефона из системы Android и текущее смещение часового пояса. Отдельного окна с разрешением на это нет — человек обычно ничего не замечает, на экране ещё крутится заставка. Из этих сведений и из имени пакета приложения на телефоне собирается короткий идентификатор проверки. Всё это делается в фоне, пока человек смотрит заставку обычного приложения с часовыми поясами. Если в памяти приложения уже лежит сохранённый результат прошлой проверки, новый тихий запрос может не понадобиться: приложение просто читает сохранённое значение и решает, что показать дальше.\n\nКуда отправляются: Сведения незаметно уходят в интернет через облачную функцию Firebase с именем «init» проекта misha-1 (типичный адрес вида https://us-central1-misha-1.cloudfunctions.net/init). Это не показ рекламного баннера на экране, а тихая серверная проверка, что показать этому человеку. Отдельно белое приложение ходит на api.timezonedb.com за списком часовых поясов — это уже работа обычного режима, а не адрес самой проверки «кого пустить». Результат проверки приложение может сохранить у себя в памяти под ключом «u», чтобы при следующем открытии сразу знать, показывать ли ссылку.\n\nКак фильтруются пользователи: На проверку уходят модель телефона и смещение часового пояса, а также производный идентификатор из модели, пояса и имени пакета. В самом приложении нет жёсткого списка стран или языков на телефоне. Само решение «кому показать внешнюю ссылку, а кому обычное приложение» делает сервер: приложение только отправляет признаки и смотрит, что вернётся после расшифровки ответа. Если в ответе после расшифровки есть «http» — человека ведут на внешнюю страницу. Если «http» нет — остаётся обычный режим приложения с часовыми поясами.\n\nЧто возвращается: Сервер отвечает зашифрованной строкой. Приложение расшифровывает её на телефоне с помощью того же короткого идентификатора, который уходил в запросе. Если после расшифровки в тексте есть «http», приложение считает это ссылкой на внешний сайт и включает режим показа…"
+  },
+  "app_id": "com.crazytime.worldapp",
+  "icon": "/static/app-icons/com_crazytime_worldapp.png",
+  "url": "https://play.google.com/store/apps/details?id=com.crazytime.worldapp"
+}

@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "apks": [
+    "co.tapcart.app.id_SeUQkleo7w.apk",
+    "config.arm64_v8a.apk",
+    "config.mdpi.apk"
+  ],
+  "base_apk": "co.tapcart.app.id_SeUQkleo7w.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 18623 (0%)\nINFO  - progress: 1262 of 18623 (6%)\nINFO  - progress: 1289 of 18623 (6%)\nINFO  - progress: 1352 of 18623 (7%)\nINFO  - progress: 1492 of 18623 (8%)\nINFO  - progress: 1550 of 18623 (8%)\nINFO  - progress: 1711 of 18623 (9%)\nINFO  - progress: 2279 of 18623 (12%)\nINFO  - progress: 2973 of 18623 (15%)\nINFO  - progress: 3564 of 18623 (19%)\nINFO  - progress: 4092 of 18623 (21%)\nINFO  - progress: 4469 of 18623 (23%)\nINFO  - progress: 4815 of 18623 (25%)\nINFO  - progress: 4938 of 18623 (26%)\nINFO  - progress: 5113 of 18623 (27%)\nINFO  - progress: 5198 of 18623 (27%)\nINFO  - progress: 5348 of 18623 (28%)\nINFO  - progress: 5469 of 18623 (29%)\nINFO  - progress: 5610 of 18623 (30%)\nINFO  - progress: 5783 of 18623 (31%)\nINFO  - progress: 6257 of 18623 (33%)\nINFO  - progress: 6529 of 18623 (35%)\nINFO  - progress: 6934 of 18623 (37%)\nINFO  - progress: 7309 of 18623 (39%)\nINFO  - progress: 7715 of 18623 (41%)\nINFO  - progress: 8076 of 18623 (43%)\nINFO  - progress: 8856 of 18623 (47%)\nINFO  - progress: 9071 of 18623 (48%)\nINFO  - progress: 9345 of 18623 (50%)\nINFO  - progress: 9511 of 18623 (51%)\nINFO  - progress: 9704 of 18623 (52%)\nINFO  - progress: 9876 of 18623 (53%)\nINFO  - progress: 10087 of 18623 (54%)\nINFO  - progress: 10395 of 18623 (55%)\nINFO  - progress: 10598 of 18623 (56%)\nINFO  - progress: 10963 of 18623 (58%)\nINFO  - progress: 11460 of 18623 (61%)\nINFO  - progress: 11822 of 18623 (63%)\nINFO  - progress: 12141 of 18623 (65%)\nINFO  - progress: 12300 of 18623 (66%)\nINFO  - progress: 12425 of 18623 (66%)\nINFO  - progress: 12621 of 18623 (67%)\nINFO  - progress: 12749 of 18623 (68%)\nINFO  - progress: 12949 of 18623 (69%)\nINFO  - progress: 12988 of 18623 (69%)\nINFO  - progress: 12988 of 18623 (69%)\nINFO  - progress: 12988 of 18623 (69%)\nINFO  - progress: 12988 of 18623 (69%)\nINFO  - progress: 12988 of 18623 (69%)\nINFO  - progress: 13256 of 18623 (71%)\nINFO  - progress: 13625 of 18623 (73%)\nINFO  - progress: 14001 of 18623 (75%)\nINFO  - progress: 14264 of 18623 (76%)\nINFO  - progress: 14631 of 18623 (78%)\nINFO  - progress: 14955 of 18623 (80%)\nINFO  - progress: 15263 of 18623 (81%)\nINFO  - progress: 15401 of 18623 (82%)\nINFO  - progress: 15401 of 18623 (82%)\nINFO  - progress: 15401 of 18623 (82%)\nINFO  - progress: 15441 of 18623 (82%)\nINFO  - progress: 15905 of 18623 (85%)\nINFO  - progress: 16143 of 18623 (86%)\nINFO  - progress: 16496 of 18623 (88%)\nINFO  - progress: 16907 of 18623 (90%)\nINFO  - progress: 17200 of 18623 (92%)\nINFO  - progress: 17611 of 18623 (94%)\nINFO  - progress: 17878 of 18623 (95%)\nINFO  - progress: 18179 of 18623 (97%)\nINFO  - progress: 18365 of 18623 (98%)\nINFO  - progress: 18511 of 18623 (99%)\nINFO  - progress: 18613 of 18623 (99%)\n                                                             \nERROR - finished with errors, count: 73\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/aviator/Aviator Nation-Aviator Nation/decompiled",
+    "skipped": false,
+    "base_apk": "co.tapcart.app.id_SeUQkleo7w.apk"
+  },
+  "analysis_files": [
+    "co.tapcart.app.id_SeUQkleo7w.xapk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.mdpi.apk",
+    "apk/co.tapcart.app.id_SeUQkleo7w.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/a/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/app/",
+    "decompiled/sources/bolts/",
+    "decompiled/sources/co/",
+    "decompiled/sources/coil3/",
+    "decompiled/sources/com/",
+    "decompiled/sources/dagger/",
+    "decompiled/sources/defpackage/",
+    "decompiled/sources/eightbitlab/",
+    "decompiled/sources/expo/",
+    "decompiled/sources/inline/",
+    "decompiled/sources/io/",
+    "decompiled/sources/jakarta/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/jp/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/"
+  ],
+  "errors": []
+}

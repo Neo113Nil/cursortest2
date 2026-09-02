@@ -1,0 +1,88 @@
+{
+  "app_id": "com.gokersoft.aviatorscalculator",
+  "title": "Aviator's Calculator",
+  "developer": "Gokersoft",
+  "score": null,
+  "icon": "https://play-lh.googleusercontent.com/Dwes0kIl36xylIiNahXIms9zoBu6zXRjrUbTPOPtdkoBHcDFDbzVV3YhX5QjJPIx6ztbZlx6MXw1JOSw6e8NCAk",
+  "url": "https://play.google.com/store/apps/details?id=com.gokersoft.aviatorscalculator&hl=en&gl=us",
+  "keyword": "Aviator",
+  "country": "Germany",
+  "source": "",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260829_200452_Germany_Aviator_search",
+  "search_title": "Aviator's Calculator",
+  "search_developer": "Gokersoft",
+  "rank": 11,
+  "developer_id": "8621833764488982154",
+  "released": "Mar 26, 2023",
+  "updated": "2025-10-28",
+  "version": "1.3",
+  "summary": "Easily calculate Block Hours, Flight Time, Duty Period, FDP and more.",
+  "folder": "Aviator's Calculator-Gokersoft",
+  "path": "aviator/Aviator's Calculator-Gokersoft",
+  "updates_count": 1,
+  "ok": false,
+  "files": [],
+  "target": "/root/play-collector/загрузки/aviator/Aviator's Calculator-Gokersoft",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.test@gmail.com             │\n│ GSF ID : 39f71cc25ec8d946                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.403@gmail.com              │\n│ GSF ID : 315aaf81ab9245a5                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.gokersoft.aviatorscalculator...\n",
+      "stderr": "",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.gokersoft.aviatorscalculator...\n",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "Downloading com.gokersoft.aviatorscalculator...\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}

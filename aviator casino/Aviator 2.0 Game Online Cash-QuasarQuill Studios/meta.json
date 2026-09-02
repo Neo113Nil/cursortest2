@@ -1,0 +1,78 @@
+{
+  "title": "Aviator 2.0 Game Online Cash",
+  "developer": "QuasarQuill Studios",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Aviator All Online Games (Play: Aviator 2.0 Game Online Cash)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.8.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да (coroutines 1.7.3)"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "Google Ad Manager / AdMob (AdX), Qureka"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.WAKE_LOCK, android.permission.FOREGROUND_SERVICE, com.zenithlabs.aviatorgame.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.appcompat 1.7.1, androidx.browser 1.4.0 (Custom Tabs), androidx.core/core-ktx 1.13.0, androidx.constraintlayout 2.2.1, androidx.recyclerview, androidx.viewpager2, androidx.room 2.2.5, androidx.work 2.7.0, com.google.android.material 1.12.0, Google Mobile Ads / Ad Manager (com.google.android.gms.ads), Glide (com.bumptech.glide), Facebook Shimmer, pl.droidsonroids.gif, kotlinx-coroutines 1.7.3, okio, Pairip (com.pairip.application), Intuit SDP/SSP, Airbnb (airbnb package present)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "appxanalytics.com, 1000webgames.com, 10761.play.gamezop.com, andyroid.net"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "файл MyApp: флаг intros (пройден ли онбординг)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "start_redirect, qureka, qureka_url, qureka_back_url, redirect, ads_qureka, loadUrl, WebView, CustomTabs, slots, roulette"
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "Имя пакета приложения"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Имя пакета приложения\n\nКак собираются: Сразу после запуска, на экране заставки, приложение само проверяет, есть ли интернет. Если сеть есть, оно в фоне берёт имя своего пакета из системы Android и подставляет его в адрес запроса к удалённому файлу настроек. Человек этого обычно не замечает: отдельного окна с разрешением или пояснением нет. Никаких других сведений о телефоне (язык, модель, рекламный номер) в этот запрос приложение в коде не кладёт.\n\nКуда отправляются: Запрос уходит по адресу https://appxanalytics.com/data/com.zenithlabs.aviatorgame.json тихим GET-запросом в фоне, пока человек смотрит заставку. Это не показ рекламы на экране, а загрузка удалённого конфига: что включить (режим рекламы) и куда вести. Запасных адресов в коде нет — только эта сборка ссылки из фиксированной части appxanalytics.com/data/ и имени пакета. Сам адрес в SharedPreferences не сохраняется.\n\nКак фильтруются пользователи: В самом приложении нет жёсткого списка стран или языков. Решение «как себя вести» приходит с сервера в JSON. Поле start_redirect решает, сразу открыть главный хаб игр или провести через онбординг и стартовый экран. Поле ads выбирает режим: qureka (открывать внешние оффер-ссылки) или adx (обычные объявления Google Ad Manager). Ссылки qureka_url и qureka_back_url задают, какую страницу открыть во внешнем браузере. То есть фильтр и сценарий задаёт удалённый конфиг, а не локальные правила на телефоне.\n\nЧто возвращается: Сервер отдаёт JSON. Приложение читает из ответа: start_redirect (да/нет), qureka_url, qureka_back_url, ads, ads_interval, adx_interstitial, adx_banner, adx_native, adx_appopen. Если start_redirect истинно — дальше главный хаб. Если ложно — онбординг или стартовый экран в зависимости от флага intros в памяти приложения. Если ads равен qureka — сразу после заставки открывают ссылку из qureka_url во вкладках браузера телефона. На момент проверки живой конфиг отдавал ads=qureka и start_redirect=false, а qureka_url вёл на https://1316.mark.qureka.com/intro/question.\n\nКак показывается оффер или белая версия: Если в конфиге включён режим qureka, оффер открывают во внешнем браузере через Custom Tabs (вкладки Chrome на телефоне) по…"
+  },
+  "app_id": "com.zenithlabs.aviatorgame",
+  "url": "https://play.google.com/store/apps/details?id=com.zenithlabs.aviatorgame",
+  "icon": "/static/app-icons/com_zenithlabs_aviatorgame.png"
+}

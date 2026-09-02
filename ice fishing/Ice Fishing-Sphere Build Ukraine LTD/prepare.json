@@ -1,0 +1,52 @@
+{
+  "ok": true,
+  "apks": [
+    "com.icecatchbiger.hookfrostmaster.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.mdpi.apk",
+    "config.pl.apk"
+  ],
+  "base_apk": "com.icecatchbiger.hookfrostmaster.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 796 (0%)\nINFO  - progress: 227 of 796 (28%)\nINFO  - progress: 387 of 796 (48%)\nINFO  - progress: 482 of 796 (60%)\nINFO  - progress: 572 of 796 (71%)\nINFO  - progress: 732 of 796 (91%)\n                                                             \nERROR - finished with errors, count: 2\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/ice fishing/Ice Fishing-Sphere Build Ukraine LTD/decompiled",
+    "skipped": false,
+    "base_apk": "com.icecatchbiger.hookfrostmaster.apk"
+  },
+  "analysis_files": [
+    "com.icecatchbiger.hookfrostmaster.xapk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.mdpi.apk",
+    "apk/config.pl.apk",
+    "apk/com.icecatchbiger.hookfrostmaster.apk",
+    "apk/config.en.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/A/",
+    "decompiled/sources/A0/",
+    "decompiled/sources/B/",
+    "decompiled/sources/C/",
+    "decompiled/sources/C0/",
+    "decompiled/sources/D/",
+    "decompiled/sources/D0/",
+    "decompiled/sources/E/",
+    "decompiled/sources/E0/",
+    "decompiled/sources/F/",
+    "decompiled/sources/F0/",
+    "decompiled/sources/G/",
+    "decompiled/sources/G0/",
+    "decompiled/sources/H/",
+    "decompiled/sources/H0/",
+    "decompiled/sources/I/",
+    "decompiled/sources/I0/",
+    "decompiled/sources/J/",
+    "decompiled/sources/J0/",
+    "decompiled/sources/K/"
+  ]
+}

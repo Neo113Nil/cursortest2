@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "apks": [
+    "com.icewinter.flow.winter.icecatch-3-config.lt.apk",
+    "com.icewinter.flow.winter.icecatch-3-config.ru.apk",
+    "com.icewinter.flow.winter.icecatch-3.apk",
+    "com.icewinter.flow.winter.icecatch-3-config.xxhdpi.apk",
+    "com.icewinter.flow.winter.icecatch-3-config.en.apk",
+    "com.icewinter.flow.winter.icecatch-3-config.arm64_v8a.apk",
+    "com.icewinter.flow.winter.icecatch-3-asset.apk"
+  ],
+  "base_apk": "com.icewinter.flow.winter.icecatch-3.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 1853 (0%)\nINFO  - progress: 118 of 1853 (6%)\nINFO  - progress: 375 of 1853 (20%)\nINFO  - progress: 479 of 1853 (25%)\nINFO  - progress: 620 of 1853 (33%)\nINFO  - progress: 805 of 1853 (43%)\nINFO  - progress: 993 of 1853 (53%)\nINFO  - progress: 1160 of 1853 (62%)\nINFO  - progress: 1365 of 1853 (73%)\nINFO  - progress: 1503 of 1853 (81%)\nINFO  - progress: 1691 of 1853 (91%)\n                                                             \nERROR - finished with errors, count: 15\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/ice fishing/Ice Fishing-Soft App Zone/decompiled",
+    "skipped": false,
+    "base_apk": "com.icewinter.flow.winter.icecatch-3.apk"
+  },
+  "analysis_files": [
+    "com.icewinter.flow.winter.icecatch-3-config.lt.apk",
+    "com.icewinter.flow.winter.icecatch-3-config.ru.apk",
+    "com.icewinter.flow.winter.icecatch-3.apk",
+    "com.icewinter.flow.winter.icecatch-3-config.xxhdpi.apk",
+    "com.icewinter.flow.winter.icecatch-3-config.en.apk",
+    "com.icewinter.flow.winter.icecatch-3-config.arm64_v8a.apk",
+    "com.icewinter.flow.winter.icecatch-3-asset.apk",
+    "apk/com.icewinter.flow.winter.icecatch-3-config.lt.apk",
+    "apk/com.icewinter.flow.winter.icecatch-3-config.ru.apk",
+    "apk/com.icewinter.flow.winter.icecatch-3.apk",
+    "apk/com.icewinter.flow.winter.icecatch-3-config.xxhdpi.apk",
+    "apk/com.icewinter.flow.winter.icecatch-3-config.en.apk",
+    "apk/com.icewinter.flow.winter.icecatch-3-config.arm64_v8a.apk",
+    "apk/com.icewinter.flow.winter.icecatch-3-asset.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/"
+  ]
+}

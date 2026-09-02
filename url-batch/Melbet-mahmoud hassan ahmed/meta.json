@@ -1,0 +1,146 @@
+{
+  "app_id": "com.AboSamour.Project.adih",
+  "title": "Melbet",
+  "developer": "mahmoud hassan ahmed",
+  "developer_id": "7370786299749624778",
+  "icon": "/static/app-icons/com_AboSamour_Project_adih.png",
+  "url": "https://play.google.com/store/apps/details?id=com.AboSamour.Project.adih&hl=en&gl=us",
+  "score": null,
+  "released": "Jun 19, 2017",
+  "updated": "Jul 21, 2026",
+  "version": "Varies with device",
+  "summary": "An app that contains Melbet in text and audio",
+  "keyword": "url-batch",
+  "folder": "Melbet-mahmoud hassan ahmed",
+  "path": "url-batch/Melbet-mahmoud hassan ahmed",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.AboSamour.Project.adih.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Melbet-mahmoud hassan ahmed",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.AboSamour.Project.adih...\ncom.AboSamour.Project.adih downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.AboSamour.Project.adih...\ncom.AboSamour.Project.adih downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Melbet"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "нет"
+      },
+      {
+        "param": "minSdk",
+        "value": "19"
+      },
+      {
+        "param": "targetSdk",
+        "value": "31"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 1.6.10"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Google Play Services Measurement"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.WAKE_LOCK, android.permission.FOREGROUND_SERVICE, android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, android.permission.RECEIVE_BOOT_COMPLETED"
+      },
+      {
+        "param": "Libraries",
+        "value": "Flutter (embedding 2); Gradle 7.4; Kotlin 1.6.10 / kotlinx-coroutines; audio_service / audio_session / just_audio; google_mobile_ads (Play Services Ads 20.6.0, Ads Identifier 17.0.0, UMP 1.0.0); webview_flutter; url_launcher; device_info_plus; shared_preferences; path_provider; sqflite; video_player; wakelock; flutter_share; launch_review; flutter_html / flutter_math_fork; ExoPlayer 2.18.x; AndroidX (Browser/Custom Tabs 1.0.0, WebKit 1.5.0, Work 2.7.0, Room 2.2.5, Media/Media2, Core 1.7.0, Lifecycle, Activity, Fragment, Window, Startup); Google Play Services (Base/Basement 17.6.0, Tasks 17.2.1, AppSet 16.0.0, Measurement 18.0.3)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "FlutterSharedPreferences: настройки Flutter; audio_service_preferences: канал уведомлений и параметры аудиосервиса; admob / admob_user_agent / google_ads_flags: флаги и user-agent рекламы AdMob; __GOOGLE_FUNDING_CHOICE_SDK_INTERNAL__: согласие на рекламу; app_set_id_storage: App Set ID; androidx.work.util.preferences / .id: WorkManager; com.google.android.gms.signin: служебные данные Google"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "whitelist, offer, Melbet, slots"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "aomedia.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Squarespace Domains II LLC"
+      },
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "dashif.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "developer.mozilla.org",
+        "redirects_to": "https://developer.mozilla.org/en-US/",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "fontpalace.com",
+        "redirects_to": "https://www.fontpalace.com/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "ibm.com",
+        "redirects_to": "https://www.ibm.com/ → https://www.ibm.com/lt-en → https://www.ibm.com/us-en",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "iec.ch",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "linotypelibrary.com",
+        "redirects_to": "https://www.linotype.com",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
+}

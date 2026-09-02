@@ -1,0 +1,105 @@
+{
+  "app_id": "com.oriondriftchasers.arordrft",
+  "title": "Chicken Road 2",
+  "developer": "LIVENTORH",
+  "developer_id": "LIVENTORH",
+  "icon": "/static/app-icons/com_oriondriftchasers_arordrft.png",
+  "url": "https://play.google.com/store/apps/details?id=com.oriondriftchasers.arordrft&hl=en&gl=us",
+  "score": null,
+  "released": "",
+  "updated": "Feb 5, 2026",
+  "version": "Varies with device",
+  "summary": "Welcome to the World of Chicken Road 2!",
+  "keyword": "url-batch",
+  "folder": "Chicken Road 2-LIVENTORH",
+  "path": "url-batch/Chicken Road 2-LIVENTORH",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.oriondriftchasers.arordrft.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Chicken Road 2-LIVENTORH",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.oriondriftchasers.arordrft...\ncom.oriondriftchasers.arordrft downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.oriondriftchasers.arordrft...\ncom.oriondriftchasers.arordrft downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Chicken Road 2 (в Google Play; внутри файла приложение называется Orion Drift Chasers, пакет com.oriondriftchasers.arordrft, версия 1.4, versionCode 4, разработчик LIVENTORH)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.13.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.3.0"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.oriondriftchasers.arordrft.DYNAMIC_RECEIVER_NOT_EXPORTED_PER MISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.appcompat 1.7.1 (+ appcompat-resources 1.7.1), androidx.core / core-ktx 1.17.0, androidx.core-viewtree 1.0.0, androidx.activity 1.12.2, androidx.fragment 1.5.4, androidx.constraintlayout 2.2.1, androidx.coordinatorlayout 1.1.0, androidx.recyclerview 1.2.1, androidx.viewpager 1.0.0, androidx.viewpager2 1.0.0, androidx.cardview 1.0.0, androidx.drawerlayout 1.1.1, androidx.customview 1.1.0, androidx.cursoradapter 1.0.0, androidx.interpolator 1.0.0, androidx.loader 1.0.0, androidx.transition 1.5.0, androidx.vectordrawable 1.1.0 (+ vectordrawable-animated 1.1.0), androidx.dynamicanimation 1.1.0, androidx.emoji2 1.3.0 (+ emoji2-views-helper 1.3.0), androidx.lifecycle (runtime, viewmodel, viewmodel-savedstate, livedata, livedata-core, process), androidx.savedstate 1.2.1, androidx.arch.core core-runtime, androidx.startup startup-runtime 1.1.1, androidx.profileinstaller 1.4.0, androidx.tracing 1.2.0, androidx.versionedparcelable 1.1.1, androidx.navigationevent 1.0.1, androidx.graphics graphics-shapes 1.0.1, androidx.annotation-experimental 1.4.1, androidx.compose.runtime runtime-annotation 1.9.0, androidx.databinding viewbinding 8.13.2, com.google.android.material 1.13.0, kotlin-st…"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет Chicken Road 2 — com.oriondriftchasers.arordrft стр. 2 Параметр Значение"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "да, два локальных файла настроек. «game_storage_prefs» — запись player_data с игровым прогрессом (credits, experience, level, ownedGliders, selectedGlider, completedRaces, totalWins) и список completed_missions. «quiz_storage_prefs» — запись quiz_results: история пройденных викторин (quizId, totalQuestions, correctAnswers, timestamp). Идентификаторов телефона, рекламных номеров, ссылок и ответов сервера в настройках не сохраняется"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "license check Пояснение простыми словами Приложение в магазине называется «Chicken Road 2», но внутри установочного файла лежит совсем другая программа — «Orion Drift Chasers»: набор экранов про космические гонки, викторина с вопросами, справочник и калькулятор. Все тексты, вопросы и «товары» вшиты прямо в файл приложения, поэтому оно полностью работает без интернета. Клоаки (когда одним людям показывают обычное приложение, а другим — рекламную или игорную страницу) в этой сборке нет, и это видно сразу по нескольким независимым признакам. У приложения вообще нет разрешения на выход в интернет: в списке разрешений только служебное разрешение для внутренних сообщений самой программы и проверка лицензии магазина Google Play. В программе нет встроенного окна сайта и нет вызова внешнего браузера: ни класса WebView, ни Custom Tabs, ни открытия ссылок через системное «открыть адрес». В коде и в байт-коде нет ни одной библиотеки для сетевых запросов (OkHttp, Retrofit, Volley, HttpURLConnection, сокеты) и ни одного собственного адреса сайта — единственные найденные адреса это технические пространства имён Android (schemas.android.com), ссылка на магазин play.google.com в служебной метке под…"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "package": "com.zinc.forge.game.rvm",
+  "version_name": "1.0.0",
+  "version_code": 5098581,
+  "label": "Parimatch",
+  "minSdk": 32,
+  "targetSdk": 36,
+  "agp": "9.2.1"
+}

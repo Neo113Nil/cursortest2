@@ -1,0 +1,79 @@
+{
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.2.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1+"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.VIBRATE, com.combinations.level.experts.DYNAMIC_RECEI VER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.1+ / kotlin-stdlib (в т.ч. concurrent.atomics builtins), kotlinx-coroutines 1.9.0, Jetpack Compose (ui/foundation/animation/runtime/material-ripple 1.11.4, material3 1.4.0, material-icons-core 1.7.8), AndroidX (activity/activity-compose/activity-ktx 1.13.0, appcompat 1.7.1, core/core-ktx 1.19.0, datastore/datastore-preferences 1.2.1, emoji2 1.4.0, fragment 1.8.9, lifecycle 2.11.0, navigation 2.9.8, navigationevent 1.0.0, profileinstaller 1.4.0, savedstate 1.4.0, startup 1.1.1, window 1.5.0, graphics-path, vectordrawable, transition, tracing), Koin (DI), Google Play PairIP licensecheck (com.pairip.application / com.pairip.licensecheck), libandroidx.graphics.path.so, libdatastore_shared_counter.so"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "не SharedPreferences API; AndroidX DataStore Preferences (файл datastore/xenoloop.preferences_pb) — прогресс кампании (результаты уровней/звёзды, подсказки-сканы) и настройки (вибрация, анимация поворота, таймер)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "license check"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  },
+  "app_id": "com.combinations.level.experts",
+  "title": "Ice Fishing",
+  "developer": "FILTO TOV",
+  "icon": "/static/app-icons/com_combinations_level_experts.png",
+  "url": "https://play.google.com/store/apps/details?id=com.combinations.level.experts&hl=en&gl=us",
+  "released": "Jul 19, 2026",
+  "updated": "Jul 19, 2026",
+  "version": "Varies with device"
+}

@@ -1,0 +1,80 @@
+{
+  "title": "Mostbet",
+  "developer": "TOV PODMAH",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Mostbet (Google Play); внутри APK label = Win"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.1.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, com.retopi.defrowit.mostbet.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.appcompat, androidx.activity, androidx.core, androidx.constraintlayout, androidx.coordinatorlayout, androidx.lifecycle, androidx.startup, androidx.profileinstaller, androidx.emoji2, androidx.recyclerview, androidx.fragment, androidx.cardview, androidx.viewpager2, com.google.android.material, kotlinx-coroutines, okhttp3 4.12.0, com.pairip (Play Integrity / licensecheck)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "summer-lake-1bb4.malaniimariana5.workers.dev"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "имя cfg, ключ rurl — сохраняет ссылку оффера после проверки; при следующем запуске открывает сохранённую ссылку; win_prefs / tasks — список задач белого приложения"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "rurl, workers.dev, status\":\"ok\", mostbet, Accept-Language, User-Agent, X-Device-Model, license check"
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "Имя пакета приложения",
+      "Модель телефона",
+      "Строка браузера телефона"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Имя пакета приложения\n• Модель телефона\n• Строка браузера телефона\n\nКак собираются: Сразу после открытия стартового экрана приложение само, без спроса у человека, готовит тихую проверку. Оно читает имя своего пакета из системы Android и подставляет его в адрес проверки. Модель телефона берёт из системных сведений об устройстве. Строку браузера телефона (как обычно выглядит браузер на этом аппарате) спрашивает у системных настроек встроенного движка страниц Android — отдельного окна с разрешением нет. Человек этого обычно не замечает: на экране только индикатор загрузки, а сбор и отправка идут в фоне.\n\nКуда отправляются: Эти сведения уходят тихим запросом в интернет на адрес https://summer-lake-1bb4.malaniimariana5.workers.dev?app=com.retopi.defrowit.mostbet. Адрес в коде собран из зашифрованных кусков и имени пакета; запасных адресов в коде не видно. В заголовках уходят модель телефона и строка браузера телефона; также ставится фиксированная пометка языка ответа (не из настроек телефона). Это не показ рекламы на экране, а фоновая проверка «что показать этому человеку». Если позже приходит внешняя ссылка, её сохраняют в памяти приложения под ключом rurl.\n\nКак фильтруются пользователи: На проверку уходят имя пакета, модель телефона и строка браузера. В самом приложении нет жёсткого списка стран, языков или «запрещённых» сетей: решение «кого пустить на оффер» делает сервер. На телефоне приложение смотрит только на итоговый адрес ответа: если в адресе остался кусок workers.dev (то есть человек «остался» на проверочном сайте), считается белый путь. Если итоговый адрес уже другой — считают, что можно открыть внешнюю страницу. При ошибке сети тоже открывают обычное приложение. Отдельной проверки «это бот или эмулятор» в коде после разбора не видно. Дополнительный признак оболочки: в магазине приложение называется Mostbet, а внутри APK написано Win (приложение-задачник).\n\nЧто возвращается: Сервер может ответить обычным текстом в формате короткого сообщения со статусом или перенаправить запрос на другой адрес. Приложение читает итоговый адрес запроса после всех переходов и тело ответа. Если итоговый адрес всё ещё на проверочном сайте (в нём ест…"
+  },
+  "app_id": "com.retopi.defrowit.mostbet",
+  "url": "https://play.google.com/store/apps/details?id=com.retopi.defrowit.mostbet",
+  "icon": "/static/app-icons/com_retopi_defrowit_mostbet.png"
+}

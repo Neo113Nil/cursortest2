@@ -1,0 +1,36 @@
+{
+  "ok": true,
+  "apks": [
+    "com.pishtech.ifd2.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.fr.apk",
+    "config.mdpi.apk"
+  ],
+  "base_apk": "com.pishtech.ifd2.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 2187 (0%)\nINFO  - progress: 1155 of 2187 (52%)\nINFO  - progress: 1232 of 2187 (56%)\nINFO  - progress: 1585 of 2187 (72%)\nINFO  - progress: 1833 of 2187 (83%)\nINFO  - progress: 2038 of 2187 (93%)\n                                                             \nERROR - finished with errors, count: 1\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/ice fishing/Ice Fishing Derby 2-Pishtech LLC/decompiled",
+    "skipped": false,
+    "base_apk": "com.pishtech.ifd2.apk"
+  },
+  "analysis_files": [
+    "com.pishtech.ifd2.xapk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.fr.apk",
+    "apk/config.mdpi.apk",
+    "apk/com.pishtech.ifd2.apk",
+    "apk/config.en.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/",
+    "decompiled/sources/javax/"
+  ]
+}

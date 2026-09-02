@@ -1,0 +1,137 @@
+{
+  "app_id": "com.icefishing.icefish.ice.fishing.s294s",
+  "title": "Ice Fishing",
+  "developer": "Shard Flow Systems",
+  "developer_id": "Shard+Flow+Systems",
+  "icon": "/static/app-icons/com_icefishing_icefish_ice_fishing_s294s.png",
+  "url": "https://play.google.com/store/apps/details?id=com.icefishing.icefish.ice.fishing.s294s&hl=en&gl=us",
+  "score": null,
+  "released": "",
+  "updated": "Jun 30, 2026",
+  "version": "Varies with device",
+  "summary": "Drill through ice, catch rare fish, upgrade gear, and explore frozen lakes.",
+  "keyword": "url-batch",
+  "folder": "Ice Fishing-Shard Flow Systems",
+  "path": "url-batch/Ice Fishing-Shard Flow Systems",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.icefishing.icefish.ice.fishing.s294s.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Ice Fishing-Shard Flow Systems",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.icefishing.icefish.ice.fishing.s294s...\ncom.icefishing.icefish.ice.fishing.s294s downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.icefishing.icefish.ice.fishing.s294s...\ncom.icefishing.icefish.ice.fishing.s294s downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.11.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.3.20"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "AppsFlyer, OneSignal, Firebase Messaging"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.POST_NOTIFICATIONS, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_NETWORK_STATE, android.permission.INTERNET, com.icefishing.icefish.ice.fishing.s294s.permission.C2D_MESSAGE, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, android.permission.VIBRATE, android.permission.RECEIVE_BOOT_COMPLETED, com.sec.android.provider.badge.permission.READ, com.sec.android.provider.badge.permission.WRITE, com.htc.launcher.permission.READ_SETTINGS, com.htc.launcher.permission.UPDATE_SHORTCUT, com.sonyericsson.home.permission.BROADCAST_BADGE, com.sonymobile.home.permission.PROVIDER_INSERT_BADGE, com.anddoes.launcher.permission.UPDATE_COUNT, com.majeur.launcher.permission.UPDATE_BADGE, com.huawei.android.launcher.permission.CHANGE_BADGE, com.huawei.android.launcher.permission.READ_SETTINGS, com.huawei.android.launcher.permission.WRITE_SETTINGS, android.permission.READ_APP_BADGE, com.oppo.launcher.permission.READ_SETTINGS, com.oppo.launcher.permission.WRITE_SETTINGS, me.everything.badger.permission.BADGE_COUNT_READ, me.everything.badger.permission.BADGE_COUNT_WRITE, com.samsung.android.mapsagent.permission.READ_APP_INFO, com.huawei.appmar…"
+      },
+      {
+        "param": "Libraries",
+        "value": "Flutter; Flame; Kotlin 2.3.20 / kotlin-stdlib; kotlinx-coroutines 1.9.0; AndroidX AppCompat 1.6.1, Browser 1.9.0 (Custom Tabs), WebKit 1.12.0, Work 2.8.1, Room, DataStore, Lifecycle, Core/Core-KTX, Activity, Fragment, Preference, Startup, Emoji2, RecyclerView, Window; flutter_inappwebview; url_launcher_android; shared_preferences_android; connectivity_plus; advertising_id; android_play_install_referrer; AppsFlyer SDK 6.18.0 (Flutter plugin); OneSignal Flutter SDK; Firebase Core / Messaging / Installations / DataTransport; Google Play Services Ads Identifier, Base/Basement/Tasks, Cloud Messaging; Pairip (com.pairip.application / licensecheck); JNI / jni_flutter; OkHttp"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru, dispatchers.io, icefishinguserterms.store, systemuioverlay.top"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "сохраняет локальный id устройства (deviceId), данные AppsFlyer (appsflyer_data), номер OneSignal и onesignal_external_id, флаг постоянного показа встроенного окна сайта (persistent_webview), профиль обычного приложения (ice_fishing_profile_v1); служебные prefs OneSignal и Firebase Messaging"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "redirect, isRedirect, webview, slots, click_id, fishconf, fish_terms, iceId, iceData, iceUn, userSource, openUrlInApp, persistent_webview, useWebView, rawPayload, dataFromWeb"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "https://cakhiatv1.net/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "icefishinguserterms.store",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "systemuioverlay.top",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      }
+    ],
+    "collected_data": [
+      "Локальный номер устройства — свой",
+      "Рекламный номер устройства — служебный",
+      "Номер установки AppsFlyer — служебный",
+      "Данные атрибуции AppsFlyer — сведения о",
+      "Метка установки из магазина — строка",
+      "Номер OneSignal — служебный номер",
+      "Внешний номер OneSignal — дополнительный",
+      "Упакованные сведения об — общий пакет",
+      "Второй уникальный номер — дополнительное",
+      "Источник пользователя — отметка откуда"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Локальный номер устройства — свой\n• Рекламный номер устройства — служебный\n• Номер установки AppsFlyer — служебный\n• Данные атрибуции AppsFlyer — сведения о\n• Метка установки из магазина — строка\n• Номер OneSignal — служебный номер\n• Внешний номер OneSignal — дополнительный\n• Упакованные сведения об — общий пакет\n• Второй уникальный номер — дополнительное\n• Источник пользователя — отметка откуда\n\nКак собираются: Сразу после открытия, на экране заставки, приложение само запускает служебную проверку. Сначала оно тихо смотрит, есть ли интернет: пробует достучаться до служебного адреса one.one.one.one. Если сети нет — человеку показывают экран с просьбой включить интернет и кнопку повтора. Если сеть есть — программа без отдельного окна разрешения считывает рекламный номер из системы Android, номер и данные из сервиса учёта установок AppsFlyer, метку установки из магазина и номера OneSignal. Параллельно приложение читает или создаёт свой локальный номер устройства во внутренней памяти.…\n\nКуда отправляются: Собранные сведения незаметно уходят в интернет на точный адрес https://icefishinguserterms.store/fishconf с параметрами iceId, iceData, iceUn и userSource. Это не показ рекламы на экране, а тихая проверка «что показать этому человеку»: внешнюю страницу или обычное приложение. Адрес прописан в коде целиком; запасного адреса для этой же проверки в коде не видно. На том же сайте в коде есть ещё адрес https://icefishinguserterms.store/fish_terms — служебная страница, связанная с этой схемой. Результат проверки и режим показа внешней страницы приложение может сохранить во внутренней памяти (в том числе флаг постоянного показа встроенного окна сайта),…\n\nЧто возвращается: Точный формат ответа сервера в скомпилированном коде разобран не полностью: отдельных явных полей вроде «можно» или «нельзя» рядом с разбором ответа не видно. По обработке на заставке приложение ждёт ответ и смотрит, похож ли он на ссылку на сайт (строка, которая начинается с http). Если ссылка есть — программа считает ответ «боевым» и готовит показ внешней страницы. Если ссылки нет, ответ пустой или не подходит — это сигнал оставить обычный режим приложения. В «хорошем» для сх…"
+  }
+}

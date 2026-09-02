@@ -1,0 +1,145 @@
+{
+  "app_id": "com.goal.rush.betano.tapper",
+  "title": "Betano'",
+  "developer": "SnapeDit",
+  "developer_id": "5044278313214288613",
+  "icon": "/static/app-icons/com_goal_rush_betano_tapper.png",
+  "url": "https://play.google.com/store/apps/details?id=com.goal.rush.betano.tapper&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 15, 2026",
+  "updated": "Jul 15, 2026",
+  "version": "Varies with device",
+  "summary": "¡Calcula probabilidades, analiza cuotas de fútbol y simula apuestas con Betano!",
+  "keyword": "url-batch",
+  "folder": "Betano'-SnapeDit",
+  "path": "url-batch/Betano'-SnapeDit",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.goal.rush.betano.tapper-2-asset.apk",
+    "com.goal.rush.betano.tapper-2-config.en.apk",
+    "com.goal.rush.betano.tapper-2-config.lt.apk",
+    "com.goal.rush.betano.tapper-2-config.ru.apk",
+    "com.goal.rush.betano.tapper-2-config.xxhdpi.apk",
+    "com.goal.rush.betano.tapper-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Betano'-SnapeDit",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.goal.rush.betano.tapper ─╮\n│ Betano'                       │\n│ 2  (vc 2)                     │\n╰───────────────────────────────╯\n\nDownloading 6 files  (8.4 MB)\n  com.goal.rush.betano.tapper-2.apk               ━━━━━ 100% 6.3/… 14.7   0:00:…\n                                                             MB    MB/s         \n  com.goal.rush.betano.tapper-2-config.en.apk     ━━━━━ 100% 37.3… ?      0:00:…\n                                                             kB                 \n  com.goal.rush.betano.tapper-2-config.lt.apk     ━━━━━ 100% 20.9… ?      0:00:…\n                                                             kB                 \n  com.goal.rush.betano.tapper-2-config.ru.apk     ━━━━━ 100% 20.9… ?      0:00:…\n                                                             kB                 \n  com.goal.rush.betano.tapper-2-config.xxhdpi.apk ━━━━━ 100% 66.5… 1.2    0:00:…\n                                                             kB    MB/s         \n  com.goal.rush.betano.tapper-2-asset.apk         ━━━━━ 100% 2.4/… 11.1   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.goal.rush.betano.tapper-2.apk               │  6.0 MB │\n│ com.goal.rush.betano.tapper-2-config.en.apk     │ 36.4 KB │\n│ com.goal.rush.betano.tapper-2-config.lt.apk     │ 20.4 KB │\n│ com.goal.rush.betano.tapper-2-config.ru.apk     │ 20.4 KB │\n│ com.goal.rush.betano.tapper-2-config.xxhdpi.apk │ 64.9 KB │\n│ com.goal.rush.betano.tapper-2-asset.apk         │  6.0 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.goal.rush.betano.tapper ─╮\n│ Betano'                       │\n│ 2  (vc 2)                     │\n╰───────────────────────────────╯\n\nDownloading 6 files  (8.4 MB)\n  com.goal.rush.betano.tapper-2.apk               ━━━━━ 100% 6.3/… 14.7   0:00:…\n                                                             MB    MB/s         \n  com.goal.rush.betano.tapper-2-config.en.apk     ━━━━━ 100% 37.3… ?      0:00:…\n                                                             kB                 \n  com.goal.rush.betano.tapper-2-config.lt.apk     ━━━━━ 100% 20.9… ?      0:00:…\n                                                             kB                 \n  com.goal.rush.betano.tapper-2-config.ru.apk     ━━━━━ 100% 20.9… ?      0:00:…\n                                                             kB                 \n  com.goal.rush.betano.tapper-2-config.xxhdpi.apk ━━━━━ 100% 66.5… 1.2    0:00:…\n                                                             kB    MB/s         \n  com.goal.rush.betano.tapper-2-asset.apk         ━━━━━ 100% 2.4/… 11.1   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.goal.rush.betano.tapper-2.apk               │  6.0 MB │\n│ com.goal.rush.betano.tapper-2-config.en.apk     │ 36.4 KB │\n│ com.goal.rush.betano.tapper-2-config.lt.apk     │ 20.4 KB │\n│ com.goal.rush.betano.tapper-2-config.ru.apk     │ 20.4 KB │\n│ com.goal.rush.betano.tapper-2-config.xxhdpi.apk │ 64.9 KB │\n│ com.goal.rush.betano.tapper-2-asset.apk         │  6.0 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Betano'"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "нет"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 1.9.24"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, com.android.vending.CHECK_LICENSE, com.goal.rush.betano.tapper.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.activity, androidx.appcompat, androidx.core, androidx.core-ktx, androidx.drawerlayout, androidx.emoji2, androidx.fragment, androidx.lifecycle, androidx.profileinstaller, androidx.savedstate, androidx.startup, androidx.vectordrawable, androidx.viewpager, kotlinx-coroutines-android, kotlinx-coroutines-core, com.pairip.licensecheck, com.google.common"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "backpacker.gr, config.ru, goal-rush-tapper-3d.netlify.app, magenta.gr, scripts.sil.org"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "app_state: флаг iconSwapped (смена иконки); clicker: счёт, уровни улучшений, totalTaps, lifetimeEarned, lastSeen"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "Betano, consent, bridge, redirect, STORE_URL, openStore, onConsent, AltAlias, swapIcon, iconSwapped, market"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "backpacker.gr",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "goal-rush-tapper-3d.netlify.app",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Name.com, Inc."
+      },
+      {
+        "domain": "magenta.gr",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "scripts.sil.org",
+        "redirects_to": "https://scripts.sil.org/cms/scripts/page.php?id=default&site_id=nrsi",
+        "parked_at": "регистратор: Cloudflare, Inc."
+      }
+    ],
+    "collected_data": [
+      "В коде не"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• В коде не\n\nКак собираются: Сразу после открытия главного экрана приложение само, без спроса у человека, запускает экран согласия. На этом экране открывается встроенное окно сайта и загружается заранее прописанный адрес страницы на Netlify. В нативном коде нет сборки отдельного списка сведений о телефоне: не читают язык, рекламный номер, модель или страну специально для проверки. Человек обычно не замечает, что страница согласия — это внешний сайт: она открывается поверх обычного приложения. После загрузки страницы скрипт на сайте сам вызывает мост AndroidConsent и просит открыть магазинную ссылку.\n\nКуда отправляются: Приложение тихо загружает страницу по адресу https://goal-rush-tapper-3d.netlify.app/. Это не показ обычной рекламной сети на экране, а загрузка внешней страницы, которая дальше отдаёт ссылку для перехода. Запасных адресов в коде приложения нет: адрес согласия записан одной строкой. Сама «боевая» ссылка лежит не в APK, а на этой странице в переменной STORE_URL; приложение потом читает её из окна сайта. В момент разбора там была ссылка вида https://goalrushtapper3d.shop/6obOgQtH.\n\nКак фильтруются пользователи: В коде телефона нет жёсткого списка стран, языков или проверки «бот / не бот» перед показом оффера. Приложение просто открывает внешнюю страницу и смотрит, какую ссылку она отдаст. Решение «кому дать ссылку, а кому оставить только обычное приложение» может меняться на стороне сайта: страница может подставить STORE_URL или оставить пусто. В самом приложении видно только реакцию на наличие ссылки и на уход с домена согласия на другой адрес. Отдельной фильтрации по оператору, типу сети или времени суток в коде нет.\n\nЧто возвращается: Со страницы согласия приложение читает значение window.STORE_URL — это ссылка на внешний сайт. Если ссылка есть и не пустая, приложение считает, что нужно открыть оффер. Если ссылки нет или она пустая, переход наружу не делается. Также если встроенное окно сайта само уходит на другой домен по http, https или market, этот адрес тоже принимают как цель для перехода. Кнопки Accept и Decline на странице вызывают onConsent и просто закрывают экран согласия, возвращая к обычному приложению.\n\nКак п…"
+  }
+}

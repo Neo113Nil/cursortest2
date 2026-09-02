@@ -1,0 +1,40 @@
+{
+  "ok": true,
+  "apks": [
+    "com.titus.nordicbet.avrelius-1-config.en.apk",
+    "com.titus.nordicbet.avrelius-1-config.xxhdpi.apk",
+    "com.titus.nordicbet.avrelius-1-asset.apk",
+    "com.titus.nordicbet.avrelius-1.apk"
+  ],
+  "base_apk": "com.titus.nordicbet.avrelius-1.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 1577 (0%)\nINFO  - progress: 849 of 1577 (53%)\nINFO  - progress: 965 of 1577 (61%)\nINFO  - progress: 1023 of 1577 (64%)\nINFO  - progress: 1159 of 1577 (73%)\nINFO  - progress: 1257 of 1577 (79%)\nINFO  - progress: 1367 of 1577 (86%)\nINFO  - progress: 1570 of 1577 (99%)\n                                                             \nINFO  - done\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/url-batch/NordicBet-TOV PERT/decompiled",
+    "skipped": false,
+    "base_apk": "com.titus.nordicbet.avrelius-1.apk"
+  },
+  "analysis_files": [
+    "com.titus.nordicbet.avrelius-1-config.en.apk",
+    "com.titus.nordicbet.avrelius-1-config.xxhdpi.apk",
+    "com.titus.nordicbet.avrelius-1-asset.apk",
+    "com.titus.nordicbet.avrelius-1.apk",
+    "apk/com.titus.nordicbet.avrelius-1-config.en.apk",
+    "apk/com.titus.nordicbet.avrelius-1-config.xxhdpi.apk",
+    "apk/com.titus.nordicbet.avrelius-1-asset.apk",
+    "apk/com.titus.nordicbet.avrelius-1.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/",
+    "decompiled/sources/defpackage/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/okhttp3/"
+  ],
+  "errors": []
+}

@@ -1,0 +1,126 @@
+{
+  "app_id": "genix.block.puzzle.joy",
+  "title": "Block Joy",
+  "developer": "OVIVO Games",
+  "score": 3.64,
+  "icon": "/static/app-icons/genix_block_puzzle_joy.png",
+  "url": "https://play.google.com/store/apps/details?id=genix.block.puzzle.joy&hl=en&gl=us",
+  "keyword": "Joy Casino",
+  "country": "India",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260813_181659_India_Joy Casino_search",
+  "search_title": "Block Joy",
+  "search_developer": "OVIVO Games",
+  "rank": 9,
+  "developer_id": "6037342058562088481",
+  "released": "Sep 9, 2024",
+  "updated": "2026-07-09",
+  "version": "2025.67",
+  "summary": "Relax during the long day with this brain health, soothing puzzle game",
+  "folder": "Block Joy-OVIVO Games",
+  "path": "joy casino/Block Joy-OVIVO Games",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "files": [
+    "genix.block.puzzle.joy-67-config.arm64_v8a.apk",
+    "genix.block.puzzle.joy-67.apk"
+  ],
+  "target": "/root/play-collector/загрузки/joy casino/Block Joy-OVIVO Games",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 1,
+      "stdout": "╭─ genix.block.puzzle.joy ─╮\n│ Block Joy                │\n│ 2025.67  (vc 67)         │\n╰──────────────────────────╯\n\nDownloading 3 files  (256.9 MB)\n⠴ genix.block.puzzle.joy-67.apk                           4% 7.2/… 10.5   0:00:…\n                                                             MB    MB/s         \n⠴ genix.block.puzzle.joy-67-config.arm64_v8a.apk ━       25% 7.0/… 10.1   0:00:…\n                                                             MB    MB/s         \n⠴ genix.block.puzzle.joy-67-asset.apk            ━━━━━━   0% 0/?   ?            \n                                                             bytes              \n\ncached",
+      "stderr": "ython3.12/dist-packages/gplaydl/download.py:69 in            │\n│ _download_one                                                                │\n│                                                                              │\n│    66 │   │   )                                                              │\n│    67 │   │                                                                  │\n│    68 │   │   async with client.stream(\"GET\", spec.url, headers=headers) as  │\n│       resp:                                                                  │\n│ ❱  69 │   │   │   resp.raise_for_status()                                    │\n│    70 │   │   │   total = int(resp.headers.get(\"Content-Length\", 0))         │\n│    71 │   │   │   if total:                                                  │\n│    72 │   │   │   │   progress.update(task_id, total=total)                  │\n│                                                                              │\n│ /usr/local/lib/python3.12/dist-packages/httpx/_models.py:829 in              │\n│ raise_for_status                                                             │\n│                                                                              │\n│    826 │   │   }                                                             │\n│    827 │   │   error_type = error_types.get(status_class, \"Invalid status    │\n│        code\")                                                                │\n│    828 │   │   message = message.format(self, error_type=error_type)         │\n│ ❱  829 │   │   raise HTTPStatusError(message, request=request,               │\n│        response=self)                                                        │\n│    830 │                                                                     │\n│    831 │   def json(self, **kwargs: typing.Any) -> typing.Any:               │\n│    832 │   │   return jsonlib.loads(self.content, **kwargs)                  │\n╰──────────────────────────────────────────────────────────────────────────────╯\nHTTPStatusError: Server error '503 Service Unavailable' for url \n'https://rr5---sn-5hnekn7z.gvt1.com/play-apps-download-default/download/by-id/AF\n3DWBd7LwDQllXqLHZ9mV1neECTaHdex7BD5zYfVzoAh6jDxTAtzunxT8671fQAZvsfE63CjDgNZWqYIa\nx1X3PfKt_YdIjX3lqe6YT_5ZKJrj0gvBairi0IAabKxNmhVAVNOnC9JitXXvkxziKfDH6NcmSwR-zR17\nTJXpYlBom1UHwOWv29UPE?cpn=M-rtikKmBeLd07zg&ctier=L&xpc=EgVo5bjzNQ%3D%3D&cps=366&\nmet=1786646833,1786646833&mh=0f&pl=57&rms=au,au&expire=1786819633&ip=2a02:4780:c\n:a648:0:0:0:1&ipbits=0&sparams=cps,ctier,expire,ip,ipbits,met,mh,mip,mm,mn,mr,ms\n,mv,mvi,pl,q:,rms,xpc&signature=56438317CF33423FA3192222C8D5B5B7C60F9401.78758CB\nF3163F5056820A10CA3EC154F6663F74C&key=cms1&rm=sn-4g5lez7e,sn-4g5l7776,sn-5hnels7\n6,sn-4g5lez7e,sn-4g5l7776&rrc=40,40,40,40,40&req_id=f68941e6361353ee&mr=y&redire\nct_counter=2&cms_redirect=yes&mip=2a02:4780:c:a648::1&mm=39&mn=sn-5hnekn7z&ms=lt\nr&mt=1786646451&mv=u&mvi=5'\nFor more information check: \nhttps://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503\n",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ genix.block.puzzle.joy ─╮\n│ Block Joy                │\n│ 2025.67  (vc 67)         │\n╰──────────────────────────╯\n\nDownloading 3 files  (256.9 MB)\n⠴ genix.block.puzzle.joy-67.apk                           4% 7.2/… 10.5   0:00:…\n                                                             MB    MB/s         \n⠴ genix.block.puzzle.joy-67-config.arm64_v8a.apk ━       25% 7.0/… 10.1   0:00:…\n                                                             MB    MB/s         \n⠴ genix.block.puzzle.joy-67-asset.apk            ━━━━━━   0% 0/?   ?            \n                                                             bytes              \n\ncached",
+  "stderr": "ython3.12/dist-packages/gplaydl/download.py:69 in            │\n│ _download_one                                                                │\n│                                                                              │\n│    66 │   │   )                                                              │\n│    67 │   │                                                                  │\n│    68 │   │   async with client.stream(\"GET\", spec.url, headers=headers) as  │\n│       resp:                                                                  │\n│ ❱  69 │   │   │   resp.raise_for_status()                                    │\n│    70 │   │   │   total = int(resp.headers.get(\"Content-Length\", 0))         │\n│    71 │   │   │   if total:                                                  │\n│    72 │   │   │   │   progress.update(task_id, total=total)                  │\n│                                                                              │\n│ /usr/local/lib/python3.12/dist-packages/httpx/_models.py:829 in              │\n│ raise_for_status                                                             │\n│                                                                              │\n│    826 │   │   }                                                             │\n│    827 │   │   error_type = error_types.get(status_class, \"Invalid status    │\n│        code\")                                                                │\n│    828 │   │   message = message.format(self, error_type=error_type)         │\n│ ❱  829 │   │   raise HTTPStatusError(message, request=request,               │\n│        response=self)                                                        │\n│    830 │                                                                     │\n│    831 │   def json(self, **kwargs: typing.Any) -> typing.Any:               │\n│    832 │   │   return jsonlib.loads(self.content, **kwargs)                  │\n╰──────────────────────────────────────────────────────────────────────────────╯\nHTTPStatusError: Server error '503 Service Unavailable' for url \n'https://rr5---sn-5hnekn7z.gvt1.com/play-apps-download-default/download/by-id/AF\n3DWBd7LwDQllXqLHZ9mV1neECTaHdex7BD5zYfVzoAh6jDxTAtzunxT8671fQAZvsfE63CjDgNZWqYIa\nx1X3PfKt_YdIjX3lqe6YT_5ZKJrj0gvBairi0IAabKxNmhVAVNOnC9JitXXvkxziKfDH6NcmSwR-zR17\nTJXpYlBom1UHwOWv29UPE?cpn=M-rtikKmBeLd07zg&ctier=L&xpc=EgVo5bjzNQ%3D%3D&cps=366&\nmet=1786646833,1786646833&mh=0f&pl=57&rms=au,au&expire=1786819633&ip=2a02:4780:c\n:a648:0:0:0:1&ipbits=0&sparams=cps,ctier,expire,ip,ipbits,met,mh,mip,mm,mn,mr,ms\n,mv,mvi,pl,q:,rms,xpc&signature=56438317CF33423FA3192222C8D5B5B7C60F9401.78758CB\nF3163F5056820A10CA3EC154F6663F74C&key=cms1&rm=sn-4g5lez7e,sn-4g5l7776,sn-5hnels7\n6,sn-4g5lez7e,sn-4g5l7776&rrc=40,40,40,40,40&req_id=f68941e6361353ee&mr=y&redire\nct_counter=2&cms_redirect=yes&mip=2a02:4780:c:a648::1&mm=39&mn=sn-5hnekn7z&ms=lt\nr&mt=1786646451&mv=u&mvi=5'\nFor more information check: \nhttps://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503\n",
+  "exit_code": 1,
+  "error": "",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Block Joy"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "7.4.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "23"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AppLovin MAX, AdMob / Google Mobile Ads, Unity Ads, ironSource / LevelPlay, Facebook Audience Network, Chartboost, Pangle, InMobi, Vungle, Smaato, BidMachine, Mintegral, Fyber / Inneractive, Bigo Ads, Moloco, MobileFuse, PubMatic, Amazon APS, YSO Network, Five Ad Network, PubNative / Verve, Odeeo"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Firebase Crashlytics, Firebase Cloud Messaging, Firebase Remote Config, Firebase In-App Messaging, Adjust, Mixpanel, ByteBrew, GameAnalytics, Unity Analytics, Facebook App Events, Kinoa"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.FOREGROUND_SERVICE, android.permission.INTERNET, android.permission.POST_NOTIFICATIONS, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.VIBRATE, android.permission.WAKE_LOCK, com.android.vending.BILLING, com.android.vending.CHECK_LICENSE, com.google.android.c2dm.permission.RECEIVE, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.google.android.gms.permission.AD_ID, genix.block.puzzle.joy.DYNAMIC_RECEIVER_NOT_EX PORTED_PERMISSION, genix.block.puzzle.joy.permission.C2D_MESSAGE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity 2022.3.62f2 (IL2CPP), MaxSdk / AppLovin, Google Mobile Ads, Adjust SDK, Firebase (Analytics, Crashlytics, Messaging, Remote Config, In-App Messaging), Facebook Unity SDK, Amazon APS, Chartboost, Pangle / ByteDance, InMobi, Vungle, Smaato, BidMachine, Mintegral / MBridge, Fyber Inneractive, Bigo Ads, Moloco, MobileFuse, PubMatic, ironSource / LevelPlay, YSO Network, Five Corp Ads, PubNative Lite / Verve, Odeeo, SafeDK, Mistplay Hex, ByteBrew, GameAnalytics, Mixpanel, Kinoa, Google Play Billing 7.1.1, Google Play Games, Google Play Review, AndroidX (appcompat, activity, activity-compose, browser 1.8.0, webkit 1.12.1, lifecycle, work, room, datastore, navigation, compose 1.4.3, preference, media, profileinstaller, startup, emoji2), Kotlin (DebugProbesKt, kotlinx-coroutines 1.10.2), ktor client, gRPC, Picasso, DOTween, Spine, NativeShare, ACTk, Sirenix Odin, Newtonsoft.Json, System.Text.Json"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "developer.mozilla.org"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Unity PlayerPrefs: прогресс игры, покупки (no-ads, starter pack), данные Mistplay/Almedia, флаги офферов; Android SharedPreferences: идентификаторы Unity Ads/Analytics; также prefs рекламных и аналитических SDK (Adjust, Firebase и др.)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "offer, OfferWall, gaid, click_id, remote_config, freecash, utm_medium=offer, webview, landing, whitelist, popup, Mistplay, Almedia"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "developer.mozilla.org",
+        "redirects_to": "https://developer.mozilla.org/en-US/",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
+}

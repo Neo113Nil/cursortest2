@@ -1,0 +1,160 @@
+{
+  "app_id": "xyz.total.poker.casino.pooja",
+  "title": "Total Poker Casino",
+  "developer": "Pooja Game Solutions",
+  "developer_id": "Pooja+Game+Solutions",
+  "icon": "/static/app-icons/xyz_total_poker_casino_pooja.png",
+  "url": "https://play.google.com/store/apps/details?id=xyz.total.poker.casino.pooja&hl=en&gl=us",
+  "score": null,
+  "released": "Mar 6, 2026",
+  "updated": "Mar 6, 2026",
+  "version": "Varies with device",
+  "summary": "Experience Texas Hold'em & Five Card Draw against smart AI. Play now!",
+  "keyword": "url-batch",
+  "folder": "Total Poker Casino-Pooja Game Solutions",
+  "path": "url-batch/Total Poker Casino-Pooja Game Solutions",
+  "updates_count": 1,
+  "apk_title": "Total Poker Casino",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "xyz.total.poker.casino.pooja-7-asset.apk",
+    "xyz.total.poker.casino.pooja-7.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Total Poker Casino-Pooja Game Solutions",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.three@gmail.com            │\n│ GSF ID : 3e5438009fd3091d                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ xyz.total.poker.casino.pooja ─╮\n│ Total Poker Casino             │\n│ 1.0.7  (vc 7)                  │\n╰────────────────────────────────╯\n\nDownloading 2 files  (33.7 MB)\n  xyz.total.poker.casino.pooja-7.apk       ━━━━━━━ 100% 24.5/2… 12.3     0:00:00\n                                                        MB      MB/s            \n  xyz.total.poker.casino.pooja-7-asset.apk ━━━━━━━ 100% 10.8/1… 26.0     0:00:00\n                                                        MB      MB/s            \n\n                   Downloaded files                   \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                     ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ xyz.total.poker.casino.pooja-7.apk       │ 23.4 MB │\n│ xyz.total.poker.casino.pooja-7-asset.apk │ 23.4 MB │\n└──────────────────────────────────────────┴─────────┘\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.00@gmail.com               │\n│ GSF ID : 3500d34e77b1df6f                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "",
+      "apk_label": "Total Poker Casino"
+    }
+  ],
+  "stdout": "╭─ xyz.total.poker.casino.pooja ─╮\n│ Total Poker Casino             │\n│ 1.0.7  (vc 7)                  │\n╰────────────────────────────────╯\n\nDownloading 2 files  (33.7 MB)\n  xyz.total.poker.casino.pooja-7.apk       ━━━━━━━ 100% 24.5/2… 12.3     0:00:00\n                                                        MB      MB/s            \n  xyz.total.poker.casino.pooja-7-asset.apk ━━━━━━━ 100% 10.8/1… 26.0     0:00:00\n                                                        MB      MB/s            \n\n                   Downloaded files                   \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                     ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ xyz.total.poker.casino.pooja-7.apk       │ 23.4 MB │\n│ xyz.total.poker.casino.pooja-7-asset.apk │ 23.4 MB │\n└──────────────────────────────────────────┴─────────┘\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.00@gmail.com               │\n│ GSF ID : 3500d34e77b1df6f                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Total Poker Casino"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.2.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 1.9.22"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.android.vending.CHECK_LICENSE, xyz.total.poker.casino.pooja.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "AndroidX (AppCompat 1.6.1, Activity 1.9.3, Core/Core-KTX 1.13.1, Fragment 1.6.2, Lifecycle 2.8.7, Compose UI/Foundation/Runtime 1.7.x, Material3 1.3.0, WebKit 1.10.0, Emoji2 1.3.0, ProfileInstaller 1.3.1, Startup 1.1.1, SavedState 1.2.1); Kotlin 1.9.22; kotlinx-coroutines 1.7.3; OkHttp 4.12.0; Okio; Retrofit2; Gson 2.10.1; Coil (coil-compose); Pairip licensecheck (com.pairip.licensecheck); xyz.total.o4c73_lib_totalpokercasi (VersionUpdateCheck)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "app.totalpokercasino.xyz, auroraoss.com, config.ru, placeholder.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "poker, casino, playstore_url, newVersionCheck, version_meta, version_id, betting, Maybe Later, license check"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "app.totalpokercasino.xyz",
+        "redirects_to": "https://totalpokercasino.xyz",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "auroraoss.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "placeholder.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      }
+    ],
+    "collected_data": [
+      "В коде не"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• В коде не\n\nКак собираются: Сразу после запуска, когда человек впервые видит главный экран, приложение само включает встроенную проверку «есть ли обновление». Отдельного окна с вопросом к человеку нет — всё происходит в фоне, незаметно. По коду видно, что перед этой проверкой приложение не читает язык телефона, рекламный номер устройства, модель, имя пакета или другие сведения о человеке, чтобы положить их в запрос. Запрос уходит как простой запрос на готовый адрес без дополнительных полей и без своих заголовков из кода приложения. На экране уже может открываться обычное приложение во встроенном окне сайта (локальная HTML-игра), а проверка при этом уходит параллельно, когда экран становится активным.…\n\nКуда отправляются: Тихий запрос уходит в интернет на адрес https://app.totalpokercasino.xyz/api/newVersionCheck. Это не показ рекламы на экране, а проверка, нужно ли показать человеку дополнительное окно со ссылками. Адрес проверки прописан целиком при старте приложения в коде запуска. Рядом в сетевом слое указан запасной базовый адрес https://placeholder.com/, но реальный вызов идёт именно на app.totalpokercasino.xyz. Отдельного сохранения адреса проверки во внутренней памяти приложения в коде не видно. Запрос выполняется в фоне через обычный интернет-клиент приложения, пока человек смотрит основной экран. Запасных «боевых» адресов проверки кроме указанного в коде не видно.\n\nКак фильтруются пользователи: В самом приложении нет списка стран, языков, «белого» или «грязного» трафика и нет проверки «похож ли человек на бота». На телефон не кладут правила, кого пускать на оффер. В приложении видно только отправку пустого по полям запроса проверки и разбор ответа. Само решение «кому показать оффер, а кому обычное приложение» делает сервер: если ответ «можно» и пришёл непустой список пунктов — показывают диалог, иначе диалог не открывают. Дополнительно на телефоне есть только технические условия запуска проверки: есть ли сеть, включена ли проверка, и не показывали ли диалог уже в этой сессии. Это не фильтр по стране или языку, а ограничение частоты показа.\n\nЧто возвращается: Сервер отвечает признаком «результат» (result) и списком пунктов (data…"
+  }
+}

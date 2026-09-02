@@ -1,0 +1,172 @@
+{
+  "app_id": "com.polarvoyage.glacialoceans.icepathfinder.quest",
+  "title": "Ice Fishing",
+  "developer": "Planettrch",
+  "developer_id": "Planettrch",
+  "icon": "/static/app-icons/com_polarvoyage_glacialoceans_icepathfinder_quest.png",
+  "url": "https://play.google.com/store/apps/details?id=com.polarvoyage.glacialoceans.icepathfinder.quest&hl=en&gl=us",
+  "score": null,
+  "released": "",
+  "updated": "Jul 29, 2026",
+  "version": "Varies with device",
+  "summary": "Master the ice, catch rare fish, and survive the frozen challenge!",
+  "keyword": "url-batch",
+  "folder": "Ice Fishing-Planettrch",
+  "path": "url-batch/Ice Fishing-Planettrch",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.polarvoyage.glacialoceans.icepathfinder.quest-4-asset.apk",
+    "com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.arm64_v8a.apk",
+    "com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.en.apk",
+    "com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.lt.apk",
+    "com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.ru.apk",
+    "com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.xxhdpi.apk",
+    "com.polarvoyage.glacialoceans.icepathfinder.quest-4.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Ice Fishing-Planettrch",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.polarvoyage.glacialoceans.icepathfinder.quest...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.polarvoyage.glacialoceans.icepathfinder.quest...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.polarvoyage.glacialoceans.icepathfinder.quest ─╮\n│ Ice Fishing                                         │\n│ 4.0  (vc 4)                                         │\n╰─────────────────────────────────────────────────────╯\n\nDownloading 7 files  (12.3 MB)\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4.apk                  100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-config.arm64_v8a.apk 100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-config.en.apk        100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-config.lt.apk        100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-config.ru.apk        100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-config.xxhdpi.apk    100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-asset.apk            100%  …\n\n                                Downloaded files                                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4.apk            │  6.6 MB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.arm64_… │  1.2 MB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.en.apk  │ 20.2 KB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.lt.apk  │ 20.2 KB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.ru.apk  │ 20.2 KB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.xxhdpi… │ 16.3 KB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-asset.apk      │  6.6 MB │\n└────────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.polarvoyage.glacialoceans.icepathfinder.quest ─╮\n│ Ice Fishing                                         │\n│ 4.0  (vc 4)                                         │\n╰─────────────────────────────────────────────────────╯\n\nDownloading 7 files  (12.3 MB)\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4.apk                  100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-config.arm64_v8a.apk 100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-config.en.apk        100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-config.lt.apk        100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-config.ru.apk        100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-config.xxhdpi.apk    100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-asset.apk            100%  …\n\n                                Downloaded files                                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4.apk            │  6.6 MB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.arm64_… │  1.2 MB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.en.apk  │ 20.2 KB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.lt.apk  │ 20.2 KB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.ru.apk  │ 20.2 KB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.xxhdpi… │ 16.3 KB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-asset.apk      │  6.6 MB │\n└────────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.1.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, ~2.2"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Adjust, Firebase Messaging, Firebase Installations, Google Play Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.CAMERA, android.permission.POST_NOTIFICATIONS, android.permission.ACCESS_WIFI_STATE, android.permission.ACCESS_NETWORK_STATE, android.permission.VIBRATE, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, com.polarv oyage.glacialoceans.icepathfinder.quest.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.gms.permission.AD_ID, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin ~2.2 / kotlin-stdlib, kotlinx-coroutines, Jetpack Compose (foundation/material3/ui/animation), AndroidX (core, lifecycle, startup, datastore, emoji2, profileinstaller, graphics), OkHttp3 (HTTP + WebSocket), Coil3, Adjust android5.5.0, Firebase Messaging 24.1.2 / Installations / Common / Data Transport, Google Play Services, Play Install Referrer, Pairip (com.pairip.application / licensecheck), ExoPlayer-style media (merged), R8 obfuscation (p000createpolar)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "umbrapatterncluster.life"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "DataStore player_store (ключ player_info) — кэш ссылки оффера; SharedPreferences polar_settings — music_enabled / music_volume / sound_enabled / sound_volume / vibration_enabled / show_timer_hints / best_score_classic / best_score_survival / best_score_arcade; служебные prefs Firebase/GMS/Adjust (messaging, appid, HeartBeat, AdjustIoActivityState и др.)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "silentPhaseNavigator, umbrapatterncluster, vortexSignalCatalyst, temporalNodeAssembler, kineticFluxResolver, ambientVectorCompiler, AdvertisingSeed, forbidden, replacement, EntryBundle, Filled, UrlEnvelope, RawEnvelope, CipherBundle, RequestTracker, RequestEndpoint, RequestCipher, PolarTransferTag, GO, STOP, WALLET, player_info, player_store, User-Agent, offer, redirect, Screens, Content"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "aomedia.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Squarespace Domains II LLC"
+      },
+      {
+        "domain": "app.adjust.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: united-domains GmbH"
+      },
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "https://cakhiatv1.net/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "gdpr.adjust.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: united-domains GmbH"
+      },
+      {
+        "domain": "ssrv.adjust.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: united-domains GmbH"
+      },
+      {
+        "domain": "subscription.adjust.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: united-domains GmbH"
+      }
+    ],
+    "collected_data": [
+      "Рекламный номер устройства — служебный",
+      "Номер для уведомлений — код",
+      "Метка установки из магазина — служебная",
+      "Номер пользователя",
+      "Данные о источнике установки — что сервис"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Рекламный номер устройства — служебный\n• Номер для уведомлений — код\n• Метка установки из магазина — служебная\n• Номер пользователя\n• Данные о источнике установки — что сервис\n\nКак собираются: Сразу после открытия, на экране заставки, приложение само, без спроса у человека, запускает сервис учёта установок и начинает собирать сведения с телефона. Отдельного окна с разрешением на этот сбор нет — человек обычно видит только заставку и не замечает, что в фоне уже читают рекламный номер, номер для уведомлений и метку установки. Перед отправкой программа сначала смотрит свою внутреннюю память: если ссылка на внешнюю страницу уже сохранялась раньше, новый сбор и обращение к проверочному серверу могут не понадобиться. Если сохранённой ссылки нет, все собранные поля складывают в один пакет, шифруют скрытым ключом и только потом отправляют. Это происходит в первые секунды после запуска,…\n\nКуда отправляются: Собранный пакет незаметно уходит в интернет на адрес wss://umbrapatterncluster.life/ — это защищённое соединение «веб-сокета», то есть постоянный канал для обмена сообщениями, а не обычная реклама на экране. Адрес в коде спрятан: он записан в зашифрованном виде и расшифровывается только в момент запуска. Перед отправкой содержимое пакета дополнительно закрывают скрытым ключом, чтобы по дороге его было сложнее прочитать. Запасных адресов в коде не видно: проверка идёт на этот один узел. После ответа ссылку, если она пришла, сохраняют во внутренней памяти приложения, чтобы при следующем открытии не спрашивать сервер заново. Это тихая проверка «что показать этому человеку»,…\n\nКак фильтруются пользователи: На проверку уходят рекламный номер устройства, номер для уведомлений, метка установки из магазина, номер пользователя в сервисе учёта установок и подробности рекламного источника. По этим признакам сервер может понять, «живой» ли трафик, откуда установка и к какой кампании она относится. В самом приложении на телефоне отдельного жёсткого списка стран, языков или «белых» регионов не видно. Есть только локальная подмена пустого рекламного номера на случайный — чтобы устройство всё равно можно было отличить. Само решение «кому показать внешнюю ст…"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "app_id": "com.crrepa.band.aviator",
+  "title": "Aviator Smart F Series",
+  "developer": "Laser Worldwide Ltd",
+  "developer_id": "Laser+Worldwide+Ltd.",
+  "icon": "/static/app-icons/com_crrepa_band_aviator.png",
+  "url": "https://play.google.com/store/apps/details?id=com.crrepa.band.aviator&hl=en&gl=us",
+  "score": 3.6,
+  "released": "Sep 7, 2023",
+  "updated": "2025-11-25",
+  "version": "v2.9.2-2",
+  "summary": "Reach for the skies",
+  "keyword": "url-batch",
+  "folder": "Aviator Smart F Series-Laser Worldwide Ltd",
+  "path": "url-batch/Aviator Smart F Series-Laser Worldwide Ltd",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.crrepa.band.aviator.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Aviator Smart F Series-Laser Worldwide Ltd",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.crrepa.band.aviator...\ncom.crrepa.band.aviator downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.crrepa.band.aviator...\ncom.crrepa.band.aviator downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Aviator Smart F Series"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.6.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "21"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, ~1.8"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics 21.2.2, Google Play Install Referrer, Google Advertising ID (play-services-ads-identifier 18.0.0)"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.ACCESS_BACKGROUND_LOCATION, android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION, android.permission.ACCESS_LOCATION_EXTRA_COMMANDS, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.ACTIVITY_RECOGNITION, android.permission.ANSWER_PHONE_CALLS, android.permission.BLUETOOTH, android.permission.BLUETOOTH_ADMIN, android.permission.BLUETOOTH_CONNECT, android.permission.BLUETOOTH_SCAN, android.permission.BROADCAST_STICKY, android.permission.CALL_PHONE, android.permission.CAMERA, android.permission.CHANGE_WIFI_STATE, android.permission.FLASHLIGHT, android.permission.FOREGROUND_SERVICE, android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE, android.permission.INTERNET, android.permission.MEDIA_PROJECTION, android.permission.MODIFY_AUDIO_SETTINGS, android.permission.POST_NOTIFICATIONS, android.permission.READ_CALENDAR, android.permission.READ_CALL_LOG, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_MEDIA_AUDIO, android.permission.READ_MEDIA_VISUAL_USER_SELECTED, android.permission.READ_PHONE_STATE, android.permission.READ_SMS, android.permiss…"
+      },
+      {
+        "param": "Libraries",
+        "value": "AGP 8.6.0; Kotlin (kotlinx-coroutines 1.7.3); AndroidX AppCompat 1.7.1, Core 1.13.0, Activity 1.8.0, Fragment, Lifecycle, RecyclerView, ConstraintLayout, Multidex, DataBinding/ViewBinding, Material 1.13.0; OkHttp 4.11.0-SNAPSHOT; Okio; Retrofit2; RxJava2 / RxAndroid; Gson 2.10.1; GreenDAO; EventBus; AgentWeb (com.just.agentweb); Picasso; Lottie; MPAndroidChart; ZXing / king.zxing; uCrop; FileDownloader; Blankj UtilCode; Hutool; FFmpegKit; ExoPlayer2; Firebase Analytics / Common / Installations / Components; Google Play Services Ads Identifier 18.0.0, Auth, Fitness, Location, Maps 19.0.0, Measurement, Base/Basement/Tasks; Play Install Referrer; Baidu Maps / Location / AR / mshield; CRREPA BLE (com.crrepa.*); Moyoung DaFit (com.moyoung.*); Realtek / Realsil BLE-DFU; JieLi audio/watchface; Sifli watchfacelibrary; OpenWearPlay / OpenHarmony dsBridge; Artillery CTC AI (ASR/TTS); BouncyCastle; CommonMark; Aho-Corasick; PermissionsDispatcher; FloatWindow; CalendarView; RatingDialog; Logger; Material Dialogs"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "183.233.197.205, acdn1.moyoung.com, ai.azure.com, aip.baidubce.com, aispace.baidu.com, altair.moyoung.com, aomedia.org, api-cdn.moyoung.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "config: first_open_app / privacy_policy, профиль пользователя, MAC и настройки браслета, цели тренировок, погода, флаги функций; oauth_prefs: токены Moyoung AI; GalleryPhotoPickerPrefs: выбор фото; camera / Utils (Artillery UDID); DFU settings; служебные prefs Firebase / GMS Measurement / Baidu Maps"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "whitelist, blacklist, bridge, redirect, User-Agent, license, WebView Проверка подозрительных доменов Данные ниже взяты как есть из готовых проверок пайплайна (domain_checks.json / domain_checks.md): сводка VirusTotal, полный список Security vendors' analysis и три дополнительных пункта в конце."
+      }
+    ],
+    "domains": [
+      {
+        "domain": "183.233.197.205",
+        "redirects_to": "нет",
+        "parked_at": "нет"
+      },
+      {
+        "domain": "acdn1.moyoung.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Alibaba Cloud Computing (Beijing) Co., Ltd."
+      },
+      {
+        "domain": "ai.azure.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "aip.baidubce.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Key-Systems GmbH"
+      },
+      {
+        "domain": "aispace.baidu.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: MarkMonitor Information Technology (Shanghai) Co., Ltd."
+      },
+      {
+        "domain": "altair.moyoung.com",
+        "redirects_to": "https://altair.moyoung.com/admin → https://altair.moyoung.com/admin/ → https://altair.moyoung.com/static/ding-login.html?redirect=/admin/",
+        "parked_at": "регистратор: Alibaba Cloud Computing (Beijing) Co., Ltd."
+      },
+      {
+        "domain": "aomedia.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Squarespace Domains II LLC"
+      },
+      {
+        "domain": "api-cdn.moyoung.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Alibaba Cloud Computing (Beijing) Co., Ltd."
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
+}

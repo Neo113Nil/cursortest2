@@ -1,0 +1,88 @@
+{
+  "app_id": "com.jmsgame.jackpotmastercasino",
+  "title": "Jackpot Master™ Slots - Casino",
+  "developer": "Zeroo Gravity Games",
+  "score": 4.8488874,
+  "icon": "https://play-lh.googleusercontent.com/WQmjO65qTKyBwow6K6yrNSGZc6AZD1YnZBvcDmJWMjEuxyWUPyeFTTgLl0XIqlvV_4vAwLfzVp70aY9mufjcAw",
+  "url": "https://play.google.com/store/apps/details?id=com.jmsgame.jackpotmastercasino&hl=en&gl=us",
+  "keyword": "R7 casino",
+  "country": "Germany",
+  "source": "",
+  "sponsored": false,
+  "match_via": "web-strict-after-install-miss",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260829_185237_Germany_R7 casino_search",
+  "search_title": "Jackpot MasterTM Slots - Casino",
+  "search_developer": "Zeroo Gravity Games",
+  "rank": 7,
+  "developer_id": "6285385060368291276",
+  "released": "Jul 22, 2021",
+  "updated": "2026-08-29",
+  "version": "2.0.88",
+  "summary": "Experience Vegas Slots Games with endless huge jackpots!",
+  "folder": "Jackpot Master™ Slots - Casino-Zeroo Gravity Games",
+  "path": "r7 casino/Jackpot Master™ Slots - Casino-Zeroo Gravity Games",
+  "updates_count": 1,
+  "ok": false,
+  "files": [],
+  "target": "/root/play-collector/загрузки/r7 casino/Jackpot Master™ Slots - Casino-Zeroo Gravity Games",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.ftw                        │\n│ GSF ID : 31575df2d0a5e774                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Samsung F34 5G\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.21@gmail.com               │\n│ GSF ID : 340a89072d92d82d                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "Delivery failed (HTTP 429).\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.jmsgame.jackpotmastercasino...\n",
+      "stderr": "",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.jmsgame.jackpotmastercasino...\n",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "Downloading com.jmsgame.jackpotmastercasino...\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": ""
+}

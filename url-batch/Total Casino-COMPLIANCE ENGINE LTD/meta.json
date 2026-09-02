@@ -1,0 +1,216 @@
+{
+  "app_id": "com.CauHoiViSao.ViSao",
+  "title": "Total Casino",
+  "developer": "COMPLIANCE ENGINE LTD",
+  "developer_id": "5107258170276040104",
+  "icon": "/static/app-icons/com_CauHoiViSao_ViSao.png",
+  "url": "https://play.google.com/store/apps/details?id=com.CauHoiViSao.ViSao&hl=en&gl=us",
+  "score": null,
+  "released": "Jun 25, 2019",
+  "updated": "Aug 6, 2026",
+  "version": "Varies with device",
+  "summary": "Total Casin app: 777 slot machines, free spins and huge jackpot games!",
+  "keyword": "url-batch",
+  "folder": "Total Casino-COMPLIANCE ENGINE LTD",
+  "path": "url-batch/Total Casino-COMPLIANCE ENGINE LTD",
+  "updates_count": 1,
+  "apk_label_note": "Play«Total Casino» ≠ было«Mười Vạn Câu Hỏi Vì Sao ?» → GeeLark«Total Casino» geo=Germany",
+  "apk_title": "Total Casino",
+  "store_title_mismatch": false,
+  "source": "geelark-play-install",
+  "ok": true,
+  "files": [
+    "com.CauHoiViSao.ViSao.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Total Casino-COMPLIANCE ENGINE LTD",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\nNo download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : h61180594@gmail.com                   │\n│ GSF ID : 391d6e4e0c71553b                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.zeronine@gmail.com         │\n│ GSF ID : 3fb00e6c373fad1d                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.CauHoiViSao.ViSao...\ncom.CauHoiViSao.ViSao downloaded successfully!\n",
+      "stderr": "",
+      "apk_label": "Mười Vạn Câu Hỏi Vì Sao ?"
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : accs.aww.aura.191@gmail.com           │\n│ GSF ID : 30efc63a2a960fe1                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+      "apk_label": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.bpear@gmail.com            │\n│ GSF ID : 3324272e29c1411e                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n",
+      "apk_label": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.CauHoiViSao.ViSao...\ncom.CauHoiViSao.ViSao downloaded successfully!\n",
+      "stderr": "",
+      "apk_label": "Mười Vạn Câu Hỏi Vì Sao ?"
+    }
+  ],
+  "stdout": "Downloading com.CauHoiViSao.ViSao...\ncom.CauHoiViSao.ViSao downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Total Casino"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.2.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Crashlytics, Firebase Installations, Firebase Sessions"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.CauHoiViSao.ViSao.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "WebGate SDK (com.webgate.sdk), OkHttp 5.4.0, Retrofit, kotlinx.coroutines 1.11.0, kotlinx.serialization, androidx.appcompat 1.7.1, androidx.browser 1.10.0, androidx.core 1.19.0, androidx.fragment 1.8.9, androidx.lifecycle 2.11.0, androidx.activity 1.13.0, androidx.datastore 1.1.7, Material Components 1.14.0, Play Integrity 1.6.0, play-services-basement 18.9.0, play-services-tasks 18.4.0, Firebase Crashlytics, Firebase Installations, Firebase Sessions"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "auroraoss.com, config.ru, dispatchers.io, totalsupergames.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "com.webgate.sdk.prefs: instance_id и device_token; audio_settings: музыка/звуки/вибрация; slot_game_preferences: баланс игры; com.google.firebase.crashlytics"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "WebGate, Gate, GateActivity, GateResponse, gate, casino, bet, spin, slot, payout, integrity, X-Integrity-Token, device_token, instance_id, game_refresh, verify, token, url, CustomTabs, TrustedWebActivity, totalsupergames"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "auroraoss.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "totalsupergames.com",
+        "redirects_to": "https://totalsupergames.com/game",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      }
+    ],
+    "collected_data": [
+      "Идентификатор установки",
+      "Токен проверки целостности",
+      "Токен устройства"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Идентификатор установки\n• Токен проверки целостности\n• Токен устройства\n\nКак собираются: Сразу при запуске открывается экран проверки (GateActivity). Человек ничего не нажимает: приложение само, в фоне, начинает сбор сведений для скрытой проверки. Отдельного окна с запросом разрешения на эти данные нет. Идентификатор установки приложение берёт из своей памяти (хранилище com.webgate.sdk.prefs). Если его ещё нет, оно один раз создаёт случайный номер и сохраняет его под именем instance_id. Токен устройства тоже читается из этой же памяти, если сервер уже выдавал его раньше. Если сохранённого токена устройства нет (или сервер его отклонил), приложение просит у системы Android токен проверки целостности Google Play.…\n\nКуда отправляются: Сведения уходят на сайт https://totalsupergames.com/. Первая проверка идёт на адрес https://totalsupergames.com/game (путь «game»). Повторная проверка с уже выданным токеном устройства идёт на https://totalsupergames.com/game_refresh (путь «game_refresh»). Запрос тихий: обычный сетевой вызов в фоне, без показа страницы человеку. В заголовках уходят X-Instance-Id, а также либо X-Integrity-Token (первая проверка), либо X-Device-Token (повторная). Адрес базы зашит в настройках WebGate внутри приложения. Ответный токен устройства приложение сразу сохраняет у себя в памяти (device_token), чтобы в следующий раз не запрашивать проверку целостности заново.\n\nКак фильтруются пользователи: В самом приложении нет списка стран, языков или «белых» и «грязных» пользователей. На сервер уходят идентификатор установки и токен проверки целостности Google Play (или ранее выданный токен устройства). По этим признакам сервер сам решает, что вернуть. Токен проверки целостности Google Play как раз нужен серверу, чтобы понять, настоящее ли это устройство и не похоже ли оно на подделку или проверку магазина. Жёстких правил «если язык такой — покажи оффер» в коде телефона нет. В приложении видно только отправку признаков и разбор ответа; само решение «кого пустить на оффер» делает сервер.\n\nЧто возвращается: Сервер отвечает данными с двумя полями: url и token. Приложение читает оба. Поле token, если оно не пустое, сохраняется как токен…"
+  }
+}

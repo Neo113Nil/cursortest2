@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "apks": [
+    "com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1.apk",
+    "com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1-asset.apk",
+    "com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1-config.arm64_v8a.apk"
+  ],
+  "base_apk": "com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "0642 (65%)\nINFO  - progress: 26815 of 40642 (65%)\nINFO  - progress: 26991 of 40642 (66%)\nINFO  - progress: 27234 of 40642 (67%)\nINFO  - progress: 27416 of 40642 (67%)\nINFO  - progress: 27575 of 40642 (67%)\nINFO  - progress: 27586 of 40642 (67%)\nINFO  - progress: 27586 of 40642 (67%)\nINFO  - progress: 27586 of 40642 (67%)\nINFO  - progress: 27586 of 40642 (67%)\nINFO  - progress: 27586 of 40642 (67%)\nINFO  - progress: 27586 of 40642 (67%)\nINFO  - progress: 27586 of 40642 (67%)\nINFO  - progress: 27586 of 40642 (67%)\nINFO  - progress: 27586 of 40642 (67%)\nINFO  - progress: 27586 of 40642 (67%)\nINFO  - progress: 27639 of 40642 (68%)\nINFO  - progress: 28186 of 40642 (69%)\nINFO  - progress: 28578 of 40642 (70%)\nINFO  - progress: 28782 of 40642 (70%)\nINFO  - progress: 29208 of 40642 (71%)\nINFO  - progress: 29515 of 40642 (72%)\nINFO  - progress: 29877 of 40642 (73%)\nINFO  - progress: 30279 of 40642 (74%)\nINFO  - progress: 30458 of 40642 (74%)\nINFO  - progress: 30833 of 40642 (75%)\nINFO  - progress: 31053 of 40642 (76%)\nINFO  - progress: 31394 of 40642 (77%)\nINFO  - progress: 31766 of 40642 (78%)\nINFO  - progress: 32261 of 40642 (79%)\nINFO  - progress: 32618 of 40642 (80%)\nINFO  - progress: 32732 of 40642 (80%)\nINFO  - progress: 32863 of 40642 (80%)\nINFO  - progress: 33004 of 40642 (81%)\nINFO  - progress: 33069 of 40642 (81%)\nINFO  - progress: 33112 of 40642 (81%)\nINFO  - progress: 33112 of 40642 (81%)\nINFO  - progress: 33112 of 40642 (81%)\nINFO  - progress: 33112 of 40642 (81%)\nINFO  - progress: 33112 of 40642 (81%)\nINFO  - progress: 33112 of 40642 (81%)\nINFO  - progress: 33112 of 40642 (81%)\nINFO  - progress: 33288 of 40642 (81%)\nINFO  - progress: 33406 of 40642 (82%)\nINFO  - progress: 33472 of 40642 (82%)\nINFO  - progress: 33679 of 40642 (82%)\nINFO  - progress: 33919 of 40642 (83%)\nINFO  - progress: 34398 of 40642 (84%)\nINFO  - progress: 34689 of 40642 (85%)\nINFO  - progress: 34913 of 40642 (85%)\nINFO  - progress: 35099 of 40642 (86%)\nINFO  - progress: 35420 of 40642 (87%)\nINFO  - progress: 35823 of 40642 (88%)\nINFO  - progress: 36238 of 40642 (89%)\nINFO  - progress: 36511 of 40642 (89%)\nINFO  - progress: 36942 of 40642 (90%)\nINFO  - progress: 37065 of 40642 (91%)\nINFO  - progress: 37427 of 40642 (92%)\nINFO  - progress: 37806 of 40642 (93%)\nINFO  - progress: 38134 of 40642 (93%)\nINFO  - progress: 38468 of 40642 (94%)\nINFO  - progress: 38628 of 40642 (95%)\nINFO  - progress: 38900 of 40642 (95%)\nINFO  - progress: 38978 of 40642 (95%)\nINFO  - progress: 39110 of 40642 (96%)\nINFO  - progress: 39286 of 40642 (96%)\nINFO  - progress: 39446 of 40642 (97%)\nINFO  - progress: 39529 of 40642 (97%)\nINFO  - progress: 39588 of 40642 (97%)\nINFO  - progress: 39746 of 40642 (97%)\nINFO  - progress: 39953 of 40642 (98%)\nINFO  - progress: 40102 of 40642 (98%)\nINFO  - progress: 40297 of 40642 (99%)\nINFO  - progress: 40397 of 40642 (99%)\nINFO  - progress: 40594 of 40642 (99%)\n                                                             \nERROR - finished with errors, count: 101\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/betano/Betano Slots Ganhar Dinheiro-HILA FLOWER BOUTIQUE LTD/decompiled",
+    "skipped": false,
+    "base_apk": "com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1.apk"
+  },
+  "analysis_files": [
+    "com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1.apk",
+    "com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1-asset.apk",
+    "com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1-config.arm64_v8a.apk",
+    "apk/com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1.apk",
+    "apk/com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1-asset.apk",
+    "apk/com.betanoslots.betanoslotsapp.betanoslotsbetanoslotsapp.reels-1-config.arm64_v8a.apk",
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/a/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/bitter/",
+    "decompiled/sources/coil/",
+    "decompiled/sources/com/",
+    "decompiled/sources/gatewayprotocol/",
+    "decompiled/sources/io/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/net/",
+    "decompiled/sources/okhttp3/",
+    "decompiled/sources/okio/",
+    "decompiled/sources/org/",
+    "decompiled/sources/sg/",
+    "decompiled/sources/yads/"
+  ],
+  "errors": []
+}

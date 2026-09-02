@@ -1,0 +1,123 @@
+{
+  "app_id": "com.chickyneer.roadway",
+  "title": "Chicken Road",
+  "developer": "IntLog Outsourcing",
+  "developer_id": "IntLog+Outsourcing",
+  "icon": "/static/app-icons/com_chickyneer_roadway.png",
+  "url": "https://play.google.com/store/apps/details?id=com.chickyneer.roadway&hl=en&gl=us",
+  "score": null,
+  "released": "",
+  "updated": "Jul 16, 2026",
+  "version": "Varies with device",
+  "summary": "Your path, your rules! Choose your strategy and enjoy the game dynamics.",
+  "keyword": "url-app",
+  "folder": "Chicken Road-IntLog Outsourcing",
+  "path": "url-app/Chicken Road-IntLog Outsourcing",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.chickyneer.roadway.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-app/Chicken Road-IntLog Outsourcing",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.chickyneer.roadway...\ncom.chickyneer.roadway downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.chickyneer.roadway...\ncom.chickyneer.roadway downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "cloaking": "да",
+  "_store_enriched": true,
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Chicken Road"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.6.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.1.0"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "AppMetrica, OneSignal, Firebase Messaging, Varioqub"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.VIBRATE, android.permission.POST_NOTIFICATIONS, com.android.vending.BILLING, android.permission.ACCESS_WIFI_STATE, com.chickyneer.roadway.permission.C2D_MESSAGE, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, android.permission.RECEIVE_BOOT_COMPLETED, com.sec.android.provider.badge.permission.READ, com.sec.android.provider.badge.permission.WRITE, com.htc.launcher.permission.READ_SETTINGS, com.htc.launcher.permission.UPDATE_SHORTCUT, com.sonyericsson.home.permission.BROADCAST_BADGE, com.sonymobile.home.permission.PROVIDER_INSERT_BADGE, com.anddoes.launcher.permission.UPDATE_COUNT, com.majeur.launcher.permission.UPDATE_BADGE, com.huawei.android.launcher.permission.CHANGE_BADGE, com.huawei.android.launcher.permission.READ_SETTINGS, com.huawei.android.launcher.permission.WRITE_SETTINGS, android.permission.READ_APP_BADGE, com.oppo.launcher.permission.READ_SETTINGS, com.oppo.launcher.permission.WRITE_SETTINGS, me.everything.badger.permission.BADGE_COUNT_READ, me.everything.badger.permission.BADGE_COUNT_WRITE, android.permission.FOREGROUND_SERVICE, com.google.android.gms.per…"
+      },
+      {
+        "param": "Libraries",
+        "value": "Flutter, Kotlin 2.1.0, kotlinx-coroutines 1.7.3, AndroidX AppCompat 1.1.0, AndroidX Browser 1.8.0, AndroidX Core/Core-KTX 1.13.1, AndroidX Activity 1.8.1, AndroidX Fragment 1.7.1, AndroidX Lifecycle 2.7.0, AndroidX DataStore Preferences 1.1.7, AndroidX Preference 1.2.1, AndroidX Window 1.2.0, AndroidX Work 2.8.1, AndroidX Room 2.5.0, AndroidX ProfileInstaller 1.3.1, AndroidX Startup 1.2.0, OneSignal 5.9.2 (onesignal_flutter), Firebase Messaging / Installations / Components, Play Services Ads Identifier 18.1.0, Play Services AppSet, Play Services Base/Basement/Tasks/Cloud Messaging, Google Play Billing 7.1.1, Install Referrer API, AppMetrica 7.13.0 (appmetrica_plugin flutter-3.4.0, apiKey 6328603), Varioqub 0.7.0 (varioqub_plugin + AppMetrica adapter), OkHttp, OpenTelemetry (OneSignal), audioplayers_android, device_info_plus, network_info_plus, flutter_custom_tabs_android, in_app_purchase_android, jni/jni_flutter, shared_preferences_android, vibration, pairip licensecheck"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Flutter SharedPreferences: баланс (crossing_balance), звук/музыка, согласие 18+ (journey_consent_accepted_v1), стартовый бонус, бесплатные спины, дата спина колеса, история ставок, данные обмена/вывода, ключи externalOffer и app_link; com.chickyneer.roadway_varioqub_pref (конфиг Varioqub, etag, experiments); хранилища OneSignal; FirebaseHeartBeat*; com.google.firebase.messaging; com.google.android.gms.appid; app_set_id_storage; androidx.work.util.preferences"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да Параметр Значение"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "externalOffer, app_link, launchUrl, withdraw, CASH OUT, wager_history, exchange_usd_wallet, exchange_payment_method, BTC wallet, Payeer, PayPal, Digital wallet, free spins, Watch Ad to Spin, crossing_balance, welcome_bonus, journey_consent, bet, wheel_spin, cash out, crypto, tether, payout"
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "Идентификатор клиента — служебный номер",
+      "Номер устройства — постоянный служе",
+      "Номер пользователя — второй служебный",
+      "Сохранённый идентификатор прошлой",
+      "Язык телефона — на каком",
+      "Внешнюю страницу, а кому — обычное",
+      "Название версии приложения — какая версия",
+      "Номер сборки приложения — технический номе",
+      "Платформа — пометка",
+      "Версия модуля удалённых — служебная версия",
+      "Уровень системы Android — номер android",
+      "Текстовая версия Android — какая именно",
+      "Имя адаптера аналитики — пометка",
+      "Дополнительные пары «ключ — значение",
+      "Служебные счётчики событий — внутренние",
+      "Рекламный номер устройства — система"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Идентификатор клиента — служебный номер\n• Номер устройства — постоянный служе\n• Номер пользователя — второй служебный\n• Сохранённый идентификатор прошлой\n• Язык телефона — на каком\n• Внешнюю страницу, а кому — обычное\n• Название версии приложения — какая версия\n• Номер сборки приложения — технический номе\n• Платформа — пометка\n• Версия модуля удалённых — служебная версия\n• Уровень системы Android — номер android\n• Текстовая версия Android — какая именно\n• Имя адаптера аналитики — пометка\n• Дополнительные пары «ключ — значение\n• Служебные счётчики событий — внутренние\n• Рекламный номер устройства — система\n\nКак собираются: Сразу после запуска приложение само, без отдельного окна с вопросом к человеку, поднимает аналитику AppMetrica и модуль удалённых настроек Varioqub. Из системы Android оно читает язык телефона, версию приложения и сведения о системе. Через связку с AppMetrica тихо запрашиваются номер устройства и номер пользователя. Человек этого обычно не замечает: отдельного разрешения «показать рекламную страницу» нет. После этого модуль собирает все эти сведения в один служебный пакет и готовит проверку «что показать дальше». Параллельно приложение умеет читать общие сведения о телефоне через встроенный модуль сведений об устройстве и сохранять у себя игровые пометки в памяти приложения.…\n\nКуда отправляются: Собранные для проверки сведения незаметно уходят в интернет на адрес https://app.uaas.yandex.ru/v1/app?client_id=%s, где вместо %s подставляется идентификатор клиента (в приложении видна связка appmetrica.6328603). Это не показ рекламы на экране, а тихая проверка через сервер удалённых настроек Яндекса: что вернуть этому человеку. Запасного «своего» адреса оффера в файлах приложения нет: внешняя ссылка не зашита заранее. Ответ сервера и служебные пометки сохраняются в памяти приложения в файле настроек с суффиксом _varioqub_pref, чтобы при следующем запуске не запрашивать всё заново без нужды.\n\nЧто возвращается: Сервер присылает набор удалённых настроек — пары «имя — значение». Приложение после получения включает этот набор и читает из него строковые ключи, среди которых в коде игры видны externalOffer и app_link. Если в ответ…"
+  }
+}

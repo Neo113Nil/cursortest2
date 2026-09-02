@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "apks": [
+    "com.Budge.KickGoalFever-61.apk",
+    "com.Budge.KickGoalFever-61-config.arm64_v8a.apk",
+    "com.Budge.KickGoalFever-61-asset.apk"
+  ],
+  "base_apk": "com.Budge.KickGoalFever-61.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 1115 (0%)\nINFO  - progress: 406 of 1115 (36%)\nINFO  - progress: 562 of 1115 (50%)\nINFO  - progress: 761 of 1115 (68%)\nINFO  - progress: 940 of 1115 (84%)\n                                                             \nINFO  - done\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/betano/Betano-Ofeliia/decompiled",
+    "skipped": false,
+    "base_apk": "com.Budge.KickGoalFever-61.apk"
+  },
+  "analysis_files": [
+    "com.Budge.KickGoalFever-61.apk",
+    "com.Budge.KickGoalFever-61-config.arm64_v8a.apk",
+    "com.Budge.KickGoalFever-61-asset.apk",
+    "apk/com.Budge.KickGoalFever-61.apk",
+    "apk/com.Budge.KickGoalFever-61-config.arm64_v8a.apk",
+    "apk/com.Budge.KickGoalFever-61-asset.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/A/",
+    "decompiled/sources/B/",
+    "decompiled/sources/C/",
+    "decompiled/sources/D/",
+    "decompiled/sources/E/",
+    "decompiled/sources/F/",
+    "decompiled/sources/G/",
+    "decompiled/sources/H/",
+    "decompiled/sources/I/",
+    "decompiled/sources/J/",
+    "decompiled/sources/K/",
+    "decompiled/sources/L/",
+    "decompiled/sources/M/",
+    "decompiled/sources/N/",
+    "decompiled/sources/O/",
+    "decompiled/sources/P/",
+    "decompiled/sources/R/",
+    "decompiled/sources/T/",
+    "decompiled/sources/U/",
+    "decompiled/sources/V/"
+  ],
+  "errors": []
+}

@@ -1,0 +1,121 @@
+{
+  "app_id": "org.game.play.aviator.gameplay",
+  "title": "Aviator",
+  "developer": "TechNova Creations",
+  "developer_id": "TechNova+Creations",
+  "icon": "/static/app-icons/org_game_play_aviator_gameplay.png",
+  "url": "https://play.google.com/store/apps/details?id=org.game.play.aviator.gameplay&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 23, 2026",
+  "updated": "Jul 23, 2026",
+  "version": "Varies with device",
+  "summary": "Pilot your fighter jet through the cosmic vortex and destroy alien invaders",
+  "keyword": "url-batch",
+  "folder": "Aviator-TechNova Creations",
+  "path": "url-batch/Aviator-TechNova Creations",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "org.game.play.aviator.gameplay.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Aviator-TechNova Creations",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading org.game.play.aviator.gameplay...\norg.game.play.aviator.gameplay downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading org.game.play.aviator.gameplay...\norg.game.play.aviator.gameplay downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Aviator"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.9.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1.20"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob, Facebook Audience Network, CustomLink/Qureka (com.pesonal.adsdk)"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Firebase Crashlytics, Firebase Remote Config, Facebook App Events, Google Play Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.WAKE_LOCK, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, android.permission.FOREGROUND_SERVICE, org.game.play.aviator.gameplay.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "AGP 8.9.1; Kotlin 2.1.20 / kotlin-stdlib; kotlinx-coroutines 1.9.0; kotlinx-serialization; AndroidX AppCompat, Activity, Browser (Custom Tabs), Core, Fragment, Lifecycle, RecyclerView, Room, WorkManager, WebKit, DataStore, Emoji2, Startup, ProfileInstaller, Material; Glide; Lottie; Intuit SDP/SSP; Gson; Okio; Google Play Services Ads / Ads Identifier / Measurement / Basement / Tasks; User Messaging Platform; Firebase Analytics / Crashlytics / Remote Config / Installations / Sessions / Datatransport; Facebook SDK / Audience Network / Gaming Services; Google Android Browser Helper (TWA); Play Install Referrer; Pairip (com.pairip.application / licensecheck); com.pesonal.adsdk"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "fb.gg"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "файл имени пакета: installReferrer, флаги рекламы и увода (app_adShowStatus, app_redirectOtherAppStatus, app_newPackageName, app_howShowAd, app_adPlatformSequence, admob_AdStatus, facebook_AdStatus, app_privacyPolicyLink, app_versionCode и др.), счётчики гайд-экранов, IABTCF_gdprApplies, isUserConsent; ad_pref: need_internet; *_preferences: IABTCF_VendorConsents"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "redirect, redirectLink, onRedirect, gclid, AviatorCamp, isEncrypt, DecryptUrl, CustomLink, Qureka, partialCustomTabUrl, onResumeDirectUrlOpen, appInsideCustomTabShow, app_redirectOtherAppStatus, app_newPackageName, game_url, AvitorGameLink, license check"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "fb.gg",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      }
+    ],
+    "collected_data": [
+      "Метка установки — служебная строка",
+      "Признак платной рекламной — проверка есть",
+      "Рекламный параметр — берут набор",
+      "Отпечаток цифровой подписи — уникальный",
+      "Техническое имя приложения — имя пакета",
+      "Номер версии приложения — номер сборки",
+      "Идентификатор облачного — служебный номер",
+      "Есть ли интернет — проверка подключ",
+      "Служебный номер устройства — приложение"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Метка установки — служебная строка\n• Признак платной рекламной — проверка есть\n• Рекламный параметр — берут набор\n• Отпечаток цифровой подписи — уникальный\n• Техническое имя приложения — имя пакета\n• Номер версии приложения — номер сборки\n• Идентификатор облачного — служебный номер\n• Есть ли интернет — проверка подключ\n• Служебный номер устройства — приложение\n\nКак собираются: Сразу после открытия заставки приложение само, без спроса у человека, читает служебную метку установки из магазина приложений Google Play. Если метки ещё нет в памяти — ждёт ответ магазина, сохраняет её и только потом продолжает запуск. Параллельно считает отпечаток своей цифровой подписи и номер версии из системы Android. Отдельного окна с разрешением на это нет: человек обычно видит только загрузочный экран. Дальше эти сведения используют, чтобы тихо запросить удалённые настройки и понять, что именно показать. Всё происходит в фоне в первые секунды после запуска, до перехода в обычные экраны приложения.\n\nКуда отправляются: Запрос уходит не на отдельный «левый» сайт из кода, а в облачный сервис удалённых настроек Google (проект aviator2-a91ef). Приложение просит набор настроек по ключу из отпечатка подписи; если ответа нет — берёт запасной ключ: для установок с рекламной меткой кампании — AviatorCamp, без неё — Aviator. Потом отдельно запрашивают ещё один набор настроек со списком игр и ссылок (ключ AvitorGameLink). Свой запасной адрес сервера в программе не прописан: сами рекламные ссылки приходят уже внутри ответа. Часть полученных флагов и ссылок сохраняют во внутренней памяти приложения, чтобы не спрашивать заново каждый раз.\n\nЧто возвращается: Сервер отвечает большим набором настроек. Сначала смотрят код статуса: если он «успешно», читают дальше. По флагу увода на другое приложение и полю с новым адресом/именем пакета решают, показать ли окно «установите наше новое приложение». По флагу обновления и списку версий решают, гнать ли человека в магазин. Если этих принудительных путей нет — считают, что можно оставить обычный режим. В том же ответе приходят блоки рекламы: обычная реклама Google, реклама Facebook и свои рекламные карточки со ссылками для перехода…"
+  }
+}

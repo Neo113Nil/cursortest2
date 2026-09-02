@@ -1,0 +1,125 @@
+{
+  "app_id": "com.subwaysanta.xmassurf",
+  "title": "Bclic App",
+  "developer": "Bclic",
+  "developer_id": "",
+  "icon": "/static/app-icons/com_subwaysanta_xmassurf.png",
+  "url": "https://play.google.com/store/apps/details?id=com.subwaysanta.xmassurf",
+  "score": null,
+  "released": "",
+  "updated": "",
+  "version": "",
+  "summary": "",
+  "keyword": "url-batch",
+  "folder": "com.subwaysanta.xmassurf-unknown",
+  "path": "url-batch/com.subwaysanta.xmassurf-unknown",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.subwaysanta.xmassurf.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/com.subwaysanta.xmassurf-unknown",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.subwaysanta.xmassurf...\ncom.subwaysanta.xmassurf downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.subwaysanta.xmassurf...\ncom.subwaysanta.xmassurf downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "_store_enriched": true,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Bclic App"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 1.6.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity 6000.3.8f1 IL2CPP (UnityEngine modules, Assembly-CSharp), UniWebView (com.onevcat.uniwebview), UniTask (Cysharp; UniTask/Addressables/DOTween/Linq/TextMeshPro), TextMeshPro, DOTween, Kotlin stdlib 1.6.21, AndroidX Browser 1.2.0 (Custom Tabs), AndroidX Core 1.1.0, AndroidX Lifecycle Runtime 2.0.0, AndroidX Interpolator 1.0.0, AndroidX VersionedParcelable 1.1.0, android.support.customtabs / support-v4 shims, bitter.jnibridge, org.fmod (FMOD), com.google.common.util.concurrent (ListenableFuture)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "g6games-10a78c7f.surge.sh, longinus-zymurgy.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Unity PlayerPrefs (обёртка над SharedPreferences): Get/Set/HasKey/DeleteKey; в игровой части — рекорд (highScore) и флаги звука (muteMusic/muteEfx). Состояние шлюза/встроенного окна сайта в AppLoaderNewVer держится в полях загрузчика (hasSapphireWebViewStarted, isEmberLoadingActive, resolvedGatewayUrl/targetGatewayUrl); отдельных открытых имён ключей prefs для клоаки в метаданных нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "gateway, probe, fallback, webview, payload, GatewayProbeUrl, resolvedGatewayUrl, targetGatewayUrl, gatewayPayloadText, ActivateSapphireWebView, OpenFallbackGameScene, OpenPrivacy, SafeBrowsing, BeginGatewayProbeRoutine, ResolveGatewayProbeAnswer"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "g6games-10a78c7f.surge.sh",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Porkbun LLC"
+      },
+      {
+        "domain": "longinus-zymurgy.com",
+        "redirects_to": "https://play.google.com/store/apps/details?id=com.subwaysanta.xmassurf",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      }
+    ],
+    "collected_data": [
+      "Адрес проверки на шлюзе — приложение ходит",
+      "Сетевой адрес телефона — обычный интернет",
+      "Как телефон представляется — строка",
+      "Имя приложения в системе — техническое имя",
+      "Служебный код приложения — короткий код",
+      "Текст ответа шлюза — то",
+      "Итоговая ссылка с шлюза — готовый адрес"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Адрес проверки на шлюзе — приложение ходит\n• Сетевой адрес телефона — обычный интернет\n• Как телефон представляется — строка\n• Имя приложения в системе — техническое имя\n• Служебный код приложения — короткий код\n• Текст ответа шлюза — то\n• Итоговая ссылка с шлюза — готовый адрес\n\nКак собираются: Сразу после запуска открывается экран загрузки игры. В этот момент, ещё до обычной игровой сцены, загрузчик сам, без отдельного окна с вопросом к человеку, запускает служебную проверку на шлюзе. Человек обычно видит только полоску/анимацию загрузки и не замечает, что параллельно уходит запрос в интернет. Запрос делает встроенный сетевой модуль движка игры: он обращается по заранее записанному адресу шлюза. Отдельных полей вроде языка телефона, модели или рекламного номера устройства в открытых строках клиентского кода после разбора метаданных не видно: вместе с запросом на сервер сами собой уходят обычные сетевые сведения (откуда пришёл запрос и как представился клиент).…\n\nКуда отправляются: Тихая проверка уходит на адрес https://longinus-zymurgy.com — это и есть адрес шлюза, зашитый в программе. В коде рядом лежит и второй адрес разработчика: https://g6games-10a78c7f.surge.sh/com.subwaysanta.xmassurf/b14ef434 — страница политики/белой обложки, её открывают отдельно, а не как ответ шлюза. Запасных зеркал шлюза в открытых строках не видно: проверочный адрес записан целиком. Запрос уходит в фоне во время заставки. Если сервер вернул ссылку, её кладут в поля загрузчика (итоговая ссылка шлюза), чтобы сразу открыть встроенное окно сайта. Если открыть сам longinus-zymurgy.com обычным браузером снаружи,…\n\nЧто возвращается: Сервер шлюза присылает текстовый ответ. Приложение сохраняет его как ответ проверки и разбирает: есть ли в нём адрес внешней страницы. Если адрес удалось получить — его записывают как итоговую ссылку шлюза и считают, что человеку можно показать внешнюю страницу. Если ответа нет, он пустой, «битый» или без пригодной ссылки — приложение выбирает запасной путь и открывает обычную игровую сцену. Точный текст «можно/нельзя» отдельным словом в клиенте не зашит: решение строится по тому, получилась ли из ответа нормальная ссылка. Снаружи,…"
+  }
+}

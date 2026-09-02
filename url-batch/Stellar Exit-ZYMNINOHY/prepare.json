@@ -1,0 +1,46 @@
+{
+  "ok": true,
+  "apks": [
+    "com.cosmiclabyrinth.stellarpath.apk",
+    "config.arm64_v8a.apk"
+  ],
+  "base_apk": "com.cosmiclabyrinth.stellarpath.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 394 (0%)\nINFO  - progress: 145 of 394 (36%)\nINFO  - progress: 186 of 394 (47%)\nINFO  - progress: 241 of 394 (61%)\nINFO  - progress: 369 of 394 (93%)\n                                                             \nERROR - finished with errors, count: 2\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/url-batch/Stellar Exit-ZYMNINOHY/decompiled",
+    "skipped": false,
+    "base_apk": "com.cosmiclabyrinth.stellarpath.apk"
+  },
+  "analysis_files": [
+    "com.cosmiclabyrinth.stellarpath.xapk",
+    "apk/config.arm64_v8a.apk",
+    "apk/com.cosmiclabyrinth.stellarpath.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/B/",
+    "decompiled/sources/C/",
+    "decompiled/sources/D/",
+    "decompiled/sources/E/",
+    "decompiled/sources/F/",
+    "decompiled/sources/G/",
+    "decompiled/sources/H/",
+    "decompiled/sources/I/",
+    "decompiled/sources/K/",
+    "decompiled/sources/M/",
+    "decompiled/sources/N/",
+    "decompiled/sources/O/",
+    "decompiled/sources/Q/",
+    "decompiled/sources/R/",
+    "decompiled/sources/S/",
+    "decompiled/sources/T/",
+    "decompiled/sources/U/",
+    "decompiled/sources/V/",
+    "decompiled/sources/W/",
+    "decompiled/sources/X/"
+  ]
+}

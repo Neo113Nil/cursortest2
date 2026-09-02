@@ -1,0 +1,147 @@
+{
+  "app_id": "xyz.silasmem",
+  "title": "Betclie",
+  "developer": "Pooja Game Solutions",
+  "developer_id": "Pooja+Game+Solutions",
+  "icon": "/static/app-icons/xyz_silasmem.png",
+  "url": "https://play.google.com/store/apps/details?id=xyz.silasmem&hl=en&gl=us",
+  "score": null,
+  "released": "Mar 3, 2026",
+  "updated": "Jun 10, 2026",
+  "version": "Varies with device",
+  "summary": "Flip cards to test your memory skills in Betclie .",
+  "keyword": "url-batch",
+  "folder": "Betclie-Pooja Game Solutions",
+  "path": "url-batch/Betclie-Pooja Game Solutions",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "xyz.silasmem-16-asset.apk",
+    "xyz.silasmem-16-config.arm64_v8a.apk",
+    "xyz.silasmem-16-config.en.apk",
+    "xyz.silasmem-16-config.lt.apk",
+    "xyz.silasmem-16-config.ru.apk",
+    "xyz.silasmem-16-config.xxhdpi.apk",
+    "xyz.silasmem-16.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Betclie-Pooja Game Solutions",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ xyz.silasmem ──╮\n│ Betclie         │\n│ 1.0.16  (vc 16) │\n╰─────────────────╯\n\nDownloading 7 files  (36.1 MB)\n  xyz.silasmem-16.apk                  ━━━━━━━━━ 100% 25.7/25… 11.8 MB/s 0:00:00\n                                                      MB                        \n  xyz.silasmem-16-config.arm64_v8a.apk ━━━━━━━━━ 100% 45.5/45… ?         0:00:00\n                                                      kB                        \n  xyz.silasmem-16-config.en.apk        ━━━━━━━━━ 100% 74.1/74… 493.4     0:00:00\n                                                      kB       kB/s             \n  xyz.silasmem-16-config.lt.apk        ━━━━━━━━━ 100% 29.1/29… ?         0:00:00\n                                                      kB                        \n  xyz.silasmem-16-config.ru.apk        ━━━━━━━━━ 100% 29.1/29… ?         0:00:00\n                                                      kB                        \n  xyz.silasmem-16-config.xxhdpi.apk    ━━━━━━━━━ 100% 66.5/66… 697.2     0:00:00\n                                                      kB       kB/s             \n  xyz.silasmem-16-asset.apk            ━━━━━━━━━ 100% 11.9/11… 12.6 MB/s 0:00:00\n                                                      MB                        \n\n                 Downloaded files                 \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                 ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ xyz.silasmem-16.apk                  │ 24.5 MB │\n│ xyz.silasmem-16-config.arm64_v8a.apk │ 44.4 KB │\n│ xyz.silasmem-16-config.en.apk        │ 72.4 KB │\n│ xyz.silasmem-16-config.lt.apk        │ 28.4 KB │\n│ xyz.silasmem-16-config.ru.apk        │ 28.4 KB │\n│ xyz.silasmem-16-config.xxhdpi.apk    │ 64.9 KB │\n│ xyz.silasmem-16-asset.apk            │ 24.5 MB │\n└──────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ xyz.silasmem ──╮\n│ Betclie         │\n│ 1.0.16  (vc 16) │\n╰─────────────────╯\n\nDownloading 7 files  (36.1 MB)\n  xyz.silasmem-16.apk                  ━━━━━━━━━ 100% 25.7/25… 11.8 MB/s 0:00:00\n                                                      MB                        \n  xyz.silasmem-16-config.arm64_v8a.apk ━━━━━━━━━ 100% 45.5/45… ?         0:00:00\n                                                      kB                        \n  xyz.silasmem-16-config.en.apk        ━━━━━━━━━ 100% 74.1/74… 493.4     0:00:00\n                                                      kB       kB/s             \n  xyz.silasmem-16-config.lt.apk        ━━━━━━━━━ 100% 29.1/29… ?         0:00:00\n                                                      kB                        \n  xyz.silasmem-16-config.ru.apk        ━━━━━━━━━ 100% 29.1/29… ?         0:00:00\n                                                      kB                        \n  xyz.silasmem-16-config.xxhdpi.apk    ━━━━━━━━━ 100% 66.5/66… 697.2     0:00:00\n                                                      kB       kB/s             \n  xyz.silasmem-16-asset.apk            ━━━━━━━━━ 100% 11.9/11… 12.6 MB/s 0:00:00\n                                                      MB                        \n\n                 Downloaded files                 \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                 ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ xyz.silasmem-16.apk                  │ 24.5 MB │\n│ xyz.silasmem-16-config.arm64_v8a.apk │ 44.4 KB │\n│ xyz.silasmem-16-config.en.apk        │ 72.4 KB │\n│ xyz.silasmem-16-config.lt.apk        │ 28.4 KB │\n│ xyz.silasmem-16-config.ru.apk        │ 28.4 KB │\n│ xyz.silasmem-16-config.xxhdpi.apk    │ 64.9 KB │\n│ xyz.silasmem-16-asset.apk            │ 24.5 MB │\n└──────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": "",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Betclie"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.7.3"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 1.9.22"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, xyz.silasmem.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "AndroidX (AppCompat 1.6.1, Activity 1.9.3, Core/Core-KTX 1.13.1, Fragment 1.6.2, Lifecycle 2.8.7, Compose UI/Foundation/Runtime 1.7.6, Material3 1.3.1, WebKit 1.10.0, Emoji2 1.3.0, ProfileInstaller 1.3.1, Startup 1.1.1, SavedState 1.2.1); Kotlin 1.9.22; kotlinx-coroutines 1.7.3; OkHttp3; Okio; Retrofit2; Gson; Coil; Google Accompanist drawablepainter; Pairip licensecheck (com.pairip.licensecheck); Three.js (assets/three.min.js); xyz.silasmem.c9e6a_lib_betclic (VersionUpdateCheck SDK 1.0.1)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "app.silasmem.xyz, config.ru, discourse.threejs.org, placeholder.com, threejs.org"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "offer, special offers, real-time offers, betclic, Betclic, playstore_url, alternativeAppUrl, alternativeAppText, newVersionCheck, suspended, TgLink, modal_custom_url, modal_mode, license check"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "app.silasmem.xyz",
+        "redirects_to": "https://silasmem.xyz",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "discourse.threejs.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: 10dencehispahard SLU"
+      },
+      {
+        "domain": "placeholder.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "threejs.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: 10dencehispahard SLU"
+      }
+    ],
+    "collected_data": [
+      "Версия встроенной библиотеки",
+      "Строка User-Agent клиента"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Версия встроенной библиотеки\n• Строка User-Agent клиента\n\nКак собираются: Сразу после запуска, когда открывается главный экран, приложение тихо включает встроенную проверку «есть ли обновление». Отдельного окна с вопросом к человеку нет — всё происходит в фоне. В запрос проверки приложение само подставляет только два служебных заголовка: версию своей библиотеки и готовую строку User-Agent вида VersionUpdateCheckSDK/1.0.1. Язык телефона, рекламный номер, модель и имя пакета в этот запрос из кода не читаются и не добавляются. Человек обычно ничего не замечает: на экране уже может идти обычная игра во встроенном окне сайта, а проверка уходит параллельно при появлении экрана.\n\nКуда отправляются: Эти служебные сведения незаметно уходят в интернет на адрес https://app.silasmem.xyz/api/newVersionCheck. Это не показ рекламы на экране, а тихая проверка, нужно ли показать человеку дополнительное окно со ссылками. В коде этот адрес прописан целиком при старте приложения. Рядом ещё указан запасной базовый адрес https://placeholder.com/, но реальный вызов идёт именно на app.silasmem.xyz. Адрес проверки во внутренней памяти приложения не сохраняется.\n\nКак фильтруются пользователи: В самом приложении нет списка стран, языков или «белого/грязного» трафика. На проверку уходят только служебные заголовки, а решение «кому что показать» принимает сервер. Если сервер отвечает «можно» и присылает список пунктов, приложение показывает диалог. Если ответ «нельзя», список пуст или сеть недоступна — диалог не открывают, человеку остаётся обычное приложение. Дополнительно сервер может прислать режим экрана, свои кнопки и ссылки. По ним приложение выбирает, какой вариант окна показать, но сами правила отбора людей на телефоне не прописаны.\n\nЧто возвращается: Сервер отвечает признаком «результат» и списком пунктов. Если результат отрицательный или список пуст — приложение ничего лишнего не показывает. Если результат положительный и список не пуст, приложение читает из ответа ссылки и подписи к кнопкам: адрес магазина у каждого пункта, режим окна, свой текст и свою ссылку, ссылку и тексты для Telegram, состояние экрана, а также адрес и текст «другого приложения». В…"
+  }
+}

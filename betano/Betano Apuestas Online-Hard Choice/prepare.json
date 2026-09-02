@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "apks": [
+    "com.winNexa.tournRealm.cupBlaze-1-config.en.apk",
+    "com.winNexa.tournRealm.cupBlaze-1-asset.apk",
+    "com.winNexa.tournRealm.cupBlaze-1.apk",
+    "com.winNexa.tournRealm.cupBlaze-1-config.ru.apk",
+    "com.winNexa.tournRealm.cupBlaze-1-config.xxhdpi.apk",
+    "com.winNexa.tournRealm.cupBlaze-1-config.lt.apk"
+  ],
+  "base_apk": "com.winNexa.tournRealm.cupBlaze-1.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 4541 (0%)\nINFO  - progress: 1074 of 4541 (23%)\nINFO  - progress: 1082 of 4541 (23%)\nINFO  - progress: 1124 of 4541 (24%)\nINFO  - progress: 1327 of 4541 (29%)\nINFO  - progress: 1637 of 4541 (36%)\nINFO  - progress: 1862 of 4541 (41%)\nINFO  - progress: 2085 of 4541 (45%)\nINFO  - progress: 2217 of 4541 (48%)\nINFO  - progress: 2420 of 4541 (53%)\nINFO  - progress: 2582 of 4541 (56%)\nINFO  - progress: 2749 of 4541 (60%)\nINFO  - progress: 2850 of 4541 (62%)\nINFO  - progress: 3008 of 4541 (66%)\nINFO  - progress: 3170 of 4541 (69%)\nINFO  - progress: 3314 of 4541 (72%)\nINFO  - progress: 3495 of 4541 (76%)\nINFO  - progress: 3643 of 4541 (80%)\nINFO  - progress: 3751 of 4541 (82%)\nINFO  - progress: 3990 of 4541 (87%)\nINFO  - progress: 4169 of 4541 (91%)\nINFO  - progress: 4198 of 4541 (92%)\nINFO  - progress: 4491 of 4541 (98%)\n                                                             \nERROR - finished with errors, count: 10\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/betano/Betano Apuestas Online-Hard Choice/decompiled",
+    "skipped": false,
+    "base_apk": "com.winNexa.tournRealm.cupBlaze-1.apk"
+  },
+  "analysis_files": [
+    "com.winNexa.tournRealm.cupBlaze-1-config.en.apk",
+    "com.winNexa.tournRealm.cupBlaze-1-asset.apk",
+    "com.winNexa.tournRealm.cupBlaze-1.apk",
+    "com.winNexa.tournRealm.cupBlaze-1-config.ru.apk",
+    "com.winNexa.tournRealm.cupBlaze-1-config.xxhdpi.apk",
+    "com.winNexa.tournRealm.cupBlaze-1-config.lt.apk",
+    "apk/com.winNexa.tournRealm.cupBlaze-1-config.en.apk",
+    "apk/com.winNexa.tournRealm.cupBlaze-1-asset.apk",
+    "apk/com.winNexa.tournRealm.cupBlaze-1.apk",
+    "apk/com.winNexa.tournRealm.cupBlaze-1-config.ru.apk",
+    "apk/com.winNexa.tournRealm.cupBlaze-1-config.xxhdpi.apk",
+    "apk/com.winNexa.tournRealm.cupBlaze-1-config.lt.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/okhttp3/",
+    "decompiled/sources/okio/",
+    "decompiled/sources/org/",
+    "decompiled/sources/retrofit2/"
+  ],
+  "errors": []
+}

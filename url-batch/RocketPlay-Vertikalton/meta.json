@@ -1,0 +1,141 @@
+{
+  "app_id": "com.luckycounter.drinkwater",
+  "title": "RocketPlay",
+  "developer": "Vertikalton",
+  "developer_id": "Vertikalton",
+  "icon": "/static/app-icons/com_luckycounter_drinkwater.png",
+  "url": "https://play.google.com/store/apps/details?id=com.luckycounter.drinkwater&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 20, 2026",
+  "updated": "Jul 21, 2026",
+  "version": "Varies with device",
+  "summary": "RocketPlay - track water intake, streaks, tiers, and daily hydration goals.",
+  "keyword": "url-batch",
+  "folder": "RocketPlay-Vertikalton",
+  "path": "url-batch/RocketPlay-Vertikalton",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.luckycounter.drinkwater-1-asset.apk",
+    "com.luckycounter.drinkwater-1-config.en.apk",
+    "com.luckycounter.drinkwater-1-config.lt.apk",
+    "com.luckycounter.drinkwater-1-config.ru.apk",
+    "com.luckycounter.drinkwater-1-config.xxhdpi.apk",
+    "com.luckycounter.drinkwater-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/RocketPlay-Vertikalton",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.luckycounter.drinkwater...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.luckycounter.drinkwater...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.luckycounter.drinkwater ─╮\n│ RocketPlay                    │\n│ 1.0  (vc 1)                   │\n╰───────────────────────────────╯\n\nDownloading 6 files  (6.7 MB)\n  com.luckycounter.drinkwater-1.apk               ━━━━━ 100% 4.1/… 10.4   0:00:…\n                                                             MB    MB/s         \n  com.luckycounter.drinkwater-1-config.en.apk     ━━━━━ 100% 45.5… ?      0:00:…\n                                                             kB                 \n  com.luckycounter.drinkwater-1-config.lt.apk     ━━━━━ 100% 29.1… ?      0:00:…\n                                                             kB                 \n  com.luckycounter.drinkwater-1-config.ru.apk     ━━━━━ 100% 29.1… ?      0:00:…\n                                                             kB                 \n  com.luckycounter.drinkwater-1-config.xxhdpi.apk ━━━━━ 100% 66.5… 1.7    0:00:…\n                                                             kB    MB/s         \n  com.luckycounter.drinkwater-1-asset.apk         ━━━━━ 100% 2.7/… 18.5   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.luckycounter.drinkwater-1.apk               │  3.9 MB │\n│ com.luckycounter.drinkwater-1-config.en.apk     │ 44.4 KB │\n│ com.luckycounter.drinkwater-1-config.lt.apk     │ 28.4 KB │\n│ com.luckycounter.drinkwater-1-config.ru.apk     │ 28.4 KB │\n│ com.luckycounter.drinkwater-1-config.xxhdpi.apk │ 64.9 KB │\n│ com.luckycounter.drinkwater-1-asset.apk         │  3.9 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.luckycounter.drinkwater ─╮\n│ RocketPlay                    │\n│ 1.0  (vc 1)                   │\n╰───────────────────────────────╯\n\nDownloading 6 files  (6.7 MB)\n  com.luckycounter.drinkwater-1.apk               ━━━━━ 100% 4.1/… 10.4   0:00:…\n                                                             MB    MB/s         \n  com.luckycounter.drinkwater-1-config.en.apk     ━━━━━ 100% 45.5… ?      0:00:…\n                                                             kB                 \n  com.luckycounter.drinkwater-1-config.lt.apk     ━━━━━ 100% 29.1… ?      0:00:…\n                                                             kB                 \n  com.luckycounter.drinkwater-1-config.ru.apk     ━━━━━ 100% 29.1… ?      0:00:…\n                                                             kB                 \n  com.luckycounter.drinkwater-1-config.xxhdpi.apk ━━━━━ 100% 66.5… 1.7    0:00:…\n                                                             kB    MB/s         \n  com.luckycounter.drinkwater-1-asset.apk         ━━━━━ 100% 2.7/… 18.5   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.luckycounter.drinkwater-1.apk               │  3.9 MB │\n│ com.luckycounter.drinkwater-1-config.en.apk     │ 44.4 KB │\n│ com.luckycounter.drinkwater-1-config.lt.apk     │ 28.4 KB │\n│ com.luckycounter.drinkwater-1-config.ru.apk     │ 28.4 KB │\n│ com.luckycounter.drinkwater-1-config.xxhdpi.apk │ 64.9 KB │\n│ com.luckycounter.drinkwater-1-asset.apk         │  3.9 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "RocketPlay"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.7.3"
+      },
+      {
+        "param": "minSdk",
+        "value": "26"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_WIFI_STATE, android.permission.ACCESS_NETWORK_STATE, com.luckycounter.drinkwater.DYNAMIC_RECEIVER_NOT_EXPORTED_PER MISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.0.21 / kotlin-stdlib, kotlinx-coroutines 1.7.3, OkHttp 4.12.0, AndroidX (appcompat 1.7.0, activity 1.9.3, fragment 1.5.4, core/core-ktx 1.13.1, lifecycle 2.8.7, recyclerview 1.3.2, room 2.6.1, sqlite 2.4.0, startup 1.1.1, emoji2 1.3.0, profileinstaller 1.3.1, constraintlayout, coordinatorlayout 1.1.0, viewpager2, cardview 1.0.0, savedstate 1.2.1, transition 1.5.0), Material Components 1.12.0, Pairip (com.pairip.application / licensecheck), ViewBinding"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "dispatchers.io"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "файл cfg, ключ rurl — сохраняет ссылку на внешнюю страницу после проверки на сервере; при следующем запуске сразу открывает сохранённую ссылку; отдельно hydration_prefs — цель воды, серия дней и даты для обычного режима приложения"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "rurl, workers.dev, User-Agent, Accept-Language, X-Device-Model, status, redirect, license check"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "https://cakhiatv1.net/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      }
+    ],
+    "collected_data": [
+      "Имя приложения в системе — техническое имя",
+      "Модель телефона — марка",
+      "Язык для ответа — значение accept",
+      "Как представился браузер — строка",
+      "Итоговый адрес после — полный адрес"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Имя приложения в системе — техническое имя\n• Модель телефона — марка\n• Язык для ответа — значение accept\n• Как представился браузер — строка\n• Итоговый адрес после — полный адрес\n\nКак собираются: Сразу при открытии стартового экрана приложение само, без отдельного окна и без спроса у человека, читает нужные сведения. Имя приложения берётся из системы Android. Модель телефона — из системного поля модели устройства. Строку «как представился браузер» 4 приложение запрашивает у встроенных браузерных настроек телефона. Язык для заголовка не спрашивает у человека и не читает из настроек языка телефона: подставляет заранее записанное английское значение. Всё это происходит тихо, обычно на пустом или коротком стартовом экране, пока человек ещё не видит обычное приложение. Если раньше уже сохраняли внешнюю ссылку в памяти приложения,…\n\nКуда отправляются: Сведения уходят в интернет тихим фоновым запросом на адрес https://yellow-truth-1200.gvlvvckko-irrynckka93.workers.dev/?app=com.luckycounter.drinkwater. Это не показ рекламы на экране, а проверка «что показать этому человеку». Адрес в коде записан в зашифрованном виде и собирается из кусков вместе с именем приложения. Запасных адресов в коде не видно: используется этот один узел на инфраструктуре Cloudflare Workers. Запрос идёт методом получения страницы (без тела), с перечисленными выше заголовками. Если сервер в итоге отдаёт «боевую» внешнюю ссылку, приложение записывает её в свою память под ключом rurl в файле настроек cfg,…\n\nЧто возвращается: Программа смотрит на итоговый адрес ответа после возможных переходов сервера. Если этот адрес всё ещё относится к узлу workers.dev, приложение считает ответ «белым» и переводит человека в обычный режим. Если итоговый адрес уже другой — без workers.dev — приложение считает, что пришла внешняя рекламная ссылка: сохраняет её и открывает. Тело ответа тоже читается: в коде есть проверка на фрагмент «status»:«ok». На практике при ответе с того же workers.dev оба варианта этой проверки ведут в обычное приложение, так что решающим признаком остаётся именно итоговый адрес. Если запрос к серверу не удался (нет сети или ошибка), приложение тоже открывает обычный…"
+  }
+}

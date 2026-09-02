@@ -1,0 +1,154 @@
+{
+  "app_id": "gbcorp.c313.olympusgods1000.game",
+  "title": "Gates of Olympus 1000",
+  "developer": "WESTON COMPANIES Labs",
+  "developer_id": "WESTON+COMPANIES+Labs",
+  "icon": "/static/app-icons/gbcorp_c313_olympusgods1000_game.png",
+  "url": "https://play.google.com/store/apps/details?id=gbcorp.c313.olympusgods1000.game&hl=en&gl=us",
+  "score": null,
+  "released": "Jun 19, 2026",
+  "updated": "2026-06-30",
+  "version": "1.4",
+  "summary": "Quick login to spark your joy with the Gates of Olympus 1000 App!",
+  "keyword": "url-batch",
+  "folder": "Gates of Olympus 1000-WESTON COMPANIES Labs",
+  "path": "url-batch/Gates of Olympus 1000-WESTON COMPANIES Labs",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "gbcorp.c313.olympusgods1000.game-4-asset.apk",
+    "gbcorp.c313.olympusgods1000.game-4-config.arm64_v8a.apk",
+    "gbcorp.c313.olympusgods1000.game-4.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Gates of Olympus 1000-WESTON COMPANIES Labs",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading gbcorp.c313.olympusgods1000.game...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading gbcorp.c313.olympusgods1000.game...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ gbcorp.c313.olympusgods1000.game ─╮\n│ Gates of Olympus 1000              │\n│ 1.4  (vc 4)                        │\n╰────────────────────────────────────╯\n\nDownloading 3 files  (58.5 MB)\n  gbcorp.c313.olympusgods1000.game-4.apk                  ━━━ 100% 25… 14.9 0:0…\n                                                                   MB  MB/s     \n  gbcorp.c313.olympusgods1000.game-4-config.arm64_v8a.apk ━━━ 100% 21… 12.4 0:0…\n                                                                   MB  MB/s     \n  gbcorp.c313.olympusgods1000.game-4-asset.apk            ━━━ 100% 15… 12.3 0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                           \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                    ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ gbcorp.c313.olympusgods1000.game-4.apk                  │ 23.9 MB │\n│ gbcorp.c313.olympusgods1000.game-4-config.arm64_v8a.apk │ 20.3 MB │\n│ gbcorp.c313.olympusgods1000.game-4-asset.apk            │ 23.9 MB │\n└─────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : g90467755@gmail.com                   │\n│ GSF ID : 3ba9e9a3a9fb29bd                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ gbcorp.c313.olympusgods1000.game ─╮\n│ Gates of Olympus 1000              │\n│ 1.4  (vc 4)                        │\n╰────────────────────────────────────╯\n\nDownloading 3 files  (58.5 MB)\n  gbcorp.c313.olympusgods1000.game-4.apk                  ━━━ 100% 25… 14.9 0:0…\n                                                                   MB  MB/s     \n  gbcorp.c313.olympusgods1000.game-4-config.arm64_v8a.apk ━━━ 100% 21… 12.4 0:0…\n                                                                   MB  MB/s     \n  gbcorp.c313.olympusgods1000.game-4-asset.apk            ━━━ 100% 15… 12.3 0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                           \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                    ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ gbcorp.c313.olympusgods1000.game-4.apk                  │ 23.9 MB │\n│ gbcorp.c313.olympusgods1000.game-4-config.arm64_v8a.apk │ 20.3 MB │\n│ gbcorp.c313.olympusgods1000.game-4-asset.apk            │ 23.9 MB │\n└─────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : g90467755@gmail.com                   │\n│ GSF ID : 3ba9e9a3a9fb29bd                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+  "stderr": "",
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Gates of Olympus 1000"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "28"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, ~2.0"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "AppsFlyer, Firebase Analytics, Firebase Cloud Messaging, Google Play Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.POST_NOTIFICATIONS, com.google.android.gms.permission.AD_ID, android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, com.samsung.android.mapsagent.permission.READ_APP_INFO, com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, android.permission.ACCESS_ADSERVICES_AD_ID, gbcorp.c313.olympusgods1000.game.permission.C2D_MESSAGE, gbcorp.c313.olympusgods1000.game.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "AGP 8.10.0; Unity 6000.0.66f1 (IL2CPP); Kotlin ~2.0 / kotlin-stdlib; kotlinx-coroutines 1.9.0; AndroidX AppCompat 1.6.1, Activity 1.6.0, Browser 1.2.0 (Custom Tabs), Core 1.10.1, Fragment 1.3.6, Lifecycle 2.5.1, Emoji2 1.2.0, Startup 1.1.1, DataStore 1.1.7, Privacy Sandbox Ads 1.1.0-beta11; Google Play Services Ads Identifier 18.0.0 / Base 18.9.0 / Basement 18.9.0 / Tasks 18.4.0 / Cloud Messaging 17.2.0 / Measurement 23.0.0; Firebase Analytics 23.0.0, Firebase Cloud Messaging, Firebase Installations, Firebase IID 21.1.0; AppsFlyer Unity bridge 6.17.91; UniWebView (com.onevcat.uniwebview); Play Install Referrer; Pairip (com.pairip.application / licensecheck); GRLoader (com.grloader.unity / Assets/GR); Okio; fmod; android.webkit.WebView"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "gates-of-olympus-1000-a2d68.firebasestorage.app, auroraoss.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Unity PlayerPrefs: installCompleted (флаг, что проверка установки уже прошла), storedURL (сохранённая ссылка ответа), lastFCMToken (последний токен уведомлений); appsflyer-data / appsflyer-purchase-data — данные атрибуции AppsFlyer; служебные prefs Firebase/GMS"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "GRLoader, GRRequest, GRResponse, ShowUrl, OpenGame, StoredUrlKey, InstallCompleted, Emulator detected, appsInfo, referrer, fcm_token, advertisingId, GetGAID, deep link, onelink, conversion, attribution, landing, UniWebView, bridge, license check, v1/public/install, v1/public/refresh"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "gates-of-olympus-1000-a2d68.firebasestorage.app",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "auroraoss.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "privacy-sandbox.appsflyersdk.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Amazon Registrar, Inc."
+      }
+    ],
+    "collected_data": [
+      "Имя приложения в системе — техническое имя",
+      "Часовой пояс телефона — в каком",
+      "Токен уведомлений — служебный номер",
+      "Номер AppsFlyer — служебный номер",
+      "Сведения AppsFlyer об — откуда пришла",
+      "Источник установки — строка referrer",
+      "Рекламный номер устройства — уникальный",
+      "Запрашивает его у",
+      "Язык телефона — на каком",
+      "Идентификатор устройства — внутренний",
+      "Версия Android на телефоне — номер версии"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Имя приложения в системе — техническое имя\n• Часовой пояс телефона — в каком\n• Токен уведомлений — служебный номер\n• Номер AppsFlyer — служебный номер\n• Сведения AppsFlyer об — откуда пришла\n• Источник установки — строка referrer\n• Рекламный номер устройства — уникальный\n• Запрашивает его у\n• Язык телефона — на каком\n• Идентификатор устройства — внутренний\n• Версия Android на телефоне — номер версии\n\nКак собираются: Сразу после запуска, ещё до обычного режима приложения, срабатывает модуль загрузчика GRLoader. Сначала он тихо проверяет, не запущено ли приложение на эмуляторе: смотрит признаки виртуальной машины, подозрительные файлы и железо. Если решили, что это эмулятор, запрос на сервер не отправляют и сразу оставляют человеку обычное приложение. Если устройство выглядит «настоящим», загрузчик без отдельного окна с вопросом читает язык, часовой пояс, имя приложения, рекламный номер, номер AppsFlyer, токен уведомлений и строку установки из магазина. Параллельно ждёт ответ AppsFlyer про источник установки и собирает эти метки в одно служебное поле.…\n\nКуда отправляются: Собранные сведения уходят в интернет методом POST на служебный адрес проверки установки с путём /v1/public/install. Точный хост в открытом виде в ресурсах и строках Unity не лежит — в коде виден именно этот путь и запись в журнале «Sending to» с телом запроса; сам хост, скорее всего, спрятан в нативной части сборки Unity. Позже, когда обновляется токен уведомлений, приложение шлёт отдельный запрос на путь /v1/public/refresh — чтобы сервер знал актуальный номер для сообщений. Оба запроса идут тихо в фоне, не как рекламный баннер на экране. Отдельно в настройках Firebase указано хранилище gates-of-olympus-1000-a2d68.firebasestorage.app — проектное облачное хранилище этого приложения.…\n\nЧто возвращается: Сервер отвечает телом, которое программа пытается разобрать как GRResponse. В журналах загрузчика прямо видно две развилки: «Received valid URL» и «Received non-URL». То есть в ответе либо есть пригодная интернет-ссылка, либо её нет (или приходит не ссылка). Если ссылка есть — приложение считает ответ «боевым»: сохраняет адрес и готовится показать внешнюю страницу. Если сс…"
+  }
+}

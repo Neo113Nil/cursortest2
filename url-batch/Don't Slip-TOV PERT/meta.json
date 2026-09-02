@@ -1,0 +1,125 @@
+{
+  "app_id": "com.glowfoxInteractive.dontslip",
+  "title": "Don't Slip",
+  "developer": "TOV PERT",
+  "developer_id": "TOV+PERT",
+  "icon": "/static/app-icons/com_glowfoxInteractive_dontslip.png",
+  "url": "https://play.google.com/store/apps/details?id=com.glowfoxInteractive.dontslip&hl=en&gl=us",
+  "score": null,
+  "released": "Jun 19, 2026",
+  "updated": "2026-06-19",
+  "version": "1.0.0",
+  "summary": "Don't miss. One ball, a narrow corridor, spikes on the sides. How long can you last?",
+  "keyword": "url-batch",
+  "folder": "Don't Slip-TOV PERT",
+  "path": "url-batch/Don't Slip-TOV PERT",
+  "updates_count": 1,
+  "apk_title": "",
+  "store_title_mismatch": false,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.glowfoxInteractive.dontslip-1-asset.apk",
+    "com.glowfoxInteractive.dontslip-1-config.arm64_v8a.apk",
+    "com.glowfoxInteractive.dontslip-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Don't Slip-TOV PERT",
+  "attempts": [
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.glowfoxInteractive.dontslip ─╮\n│ Don't Slip                        │\n│ 1.0.0  (vc 1)                     │\n╰───────────────────────────────────╯\n\nDownloading 3 files  (39.7 MB)\n  com.glowfoxInteractive.dontslip-1.apk                  ━━━━ 100% 11… 13.8 0:0…\n                                                                   MB  MB/s     \n  com.glowfoxInteractive.dontslip-1-config.arm64_v8a.apk ━━━━ 100% 21… 13.6 0:0…\n                                                                   MB  MB/s     \n  com.glowfoxInteractive.dontslip-1-asset.apk            ━━━━ 100% 9.… 9.4  0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                   ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.glowfoxInteractive.dontslip-1.apk                  │ 10.9 MB │\n│ com.glowfoxInteractive.dontslip-1-config.arm64_v8a.apk │ 20.1 MB │\n│ com.glowfoxInteractive.dontslip-1-asset.apk            │ 10.9 MB │\n└────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
+      "apk_label": ""
+    }
+  ],
+  "stdout": "╭─ com.glowfoxInteractive.dontslip ─╮\n│ Don't Slip                        │\n│ 1.0.0  (vc 1)                     │\n╰───────────────────────────────────╯\n\nDownloading 3 files  (39.7 MB)\n  com.glowfoxInteractive.dontslip-1.apk                  ━━━━ 100% 11… 13.8 0:0…\n                                                                   MB  MB/s     \n  com.glowfoxInteractive.dontslip-1-config.arm64_v8a.apk ━━━━ 100% 21… 13.6 0:0…\n                                                                   MB  MB/s     \n  com.glowfoxInteractive.dontslip-1-asset.apk            ━━━━ 100% 9.… 9.4  0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                   ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.glowfoxInteractive.dontslip-1.apk                  │ 10.9 MB │\n│ com.glowfoxInteractive.dontslip-1-config.arm64_v8a.apk │ 20.1 MB │\n│ com.glowfoxInteractive.dontslip-1-asset.apk            │ 10.9 MB │\n└────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0,
+  "error": "",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Don't Slip"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.7.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "нет"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "Unity Ads 4.4.2"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Unity Analytics 6.1.0, Unity Services Analytics"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, com.android.vending.BILLING, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity IL2CPP (Unity 6000.2.7f2), Unity Ads 4.4.2, Unity Purchasing 4.12.2, Unity Services Core 1.14.0, Unity Services Analytics 6.1.0, Google Play Billing 6.2.1, play-services-base 18.3.0, play-services-basement 18.3.0, play-services-tasks 18.1.0, play-services-location 19.0.0, Google DataTransport (transport-api 3.0.0, transport-runtime 3.1.8, transport-backend-cct 3.1.8), firebase-encoders 17.0.0, firebase-encoders-json 18.0.0, firebase-encoders-proto 16.0.0, androidx.activity, androidx.core, androidx.fragment, androidx.lifecycle, androidx.customview, androidx.viewpager, androidx.savedstate, androidx.loader, androidx.tracing, androidx.versionedparcelable, bitter.jnibridge, org.fmod, javax.inject, Newtonsoft.Json, com.pairip.licensecheck"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "james.newtonking.com, nuget.org"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Unity Ads AndroidPreferences (ключи SDK рекламы); com.google.android.gms.signin; androidx AppLaunchChecker (флаг запуска из лаунчера)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "license check, bridge, redirect"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "james.newtonking.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "nuget.org",
+        "redirects_to": "https://www.nuget.org/",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "title": "Betano - Online Betting",
+  "developer": "Kaizen Gaming International Limited",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Betano - Online Betting (в APK: Betano Sports; package: com.kaizengaming.betano.sportsbook)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.13.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.2.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Crashlytics, Firebase Performance, Firebase Remote Config, AppsFlyer, FullStory, Optimove, Kameleoon, Google Analytics (GMS), Smooch"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.ACCESS_FINE_LOCATION, android.permission.ACCESS_COARSE_LOCATION, android.permission.USE_FINGERPRINT, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, android.permission.VIBRATE, com.android.launcher.permission.INSTALL_SHORTCUT, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.CAMERA, com.google.android.gms.permission.AD_ID, android.permission.CHANGE_NETWORK_STATE, android.permission.CHANGE_WIFI_STATE, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.BLUETOOTH_CONNECT, android.permission.QUERY_ALL_PACKAGES, android.permission.POST_NOTIFICATIONS, android.permission.ACCESS_COARSE_UPDATES, android.permission.PACKAGE_USAGE_STATS, android.permission.BLUETOOTH, android.permission.BLUETOOTH_ADMIN, android.permission.BLUETOOTH_SCAN, com.google.android.providers.gsf.permission.READ_GSERVICES, android.permission.FLASHLIGHT, android.permission.NFC, android.permission.FOREGROUND_SERVICE, android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION, android.permission.READ_PHONE_STATE,…"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.2.21 / kotlin-stdlib, kotlinx-coroutines 1.10.2, Jetpack Compose (ui/runtime/foundation/animation 1.11.1, material3 1.4.0), AndroidX (appcompat 1.7.1, activity 1.13.0, browser/customtabs 1.7.0, webkit 1.16.0, camera 1.5.3, core/core-ktx, lifecycle 2.10.0, navigation 2.9.8, datastore 1.2.1, room 2.5.0, work 2.9.1, security-crypto, biometric, hilt-navigation-compose 1.2.0), Hilt/Dagger 2.57.2, OkHttp, Retrofit2, Coil, Gson, Firebase (Analytics, Crashlytics, Messaging, Remote Config, Performance), AppsFlyer, FullStory, Optimove/Kumulos, Smooch/Zendesk, Kameleoon, OneTrust, IDnow (de.idnow), LexisNexis ThreatMetrix (SeFHhd), GeoComply, FaceTec, Unissey, DataDome, GetStream Chat, PayPal Magnes, Sportradar Virtual Stadium, mkodo, RootBeer (scottyab), Microsoft SignalR, Airbnb Lottie, Facebook SDK"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "ai.dev0.idnow.de, ai.dev1.idnow.de, ai.dev10.idnow.de, ai.dev11.idnow.de"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Свои настройки приложения — через Jetpack DataStore; SharedPreferences используют сторонние SDK (OneTrust consent, Kameleoon visitor, DataDome, Smooch/GetStream session, GeoComply cache, PayPal Magnes) — без ключей offer/cloak/gate"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "casino, betting, slots, poker, roulette, gambling, offer, redirect, deposit, withdraw, landing, postback, webview, gaid, affiliate, clickid, payout, blacklist, whitelist, cloak"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "ai.dev0.idnow.de",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "ai.dev1.idnow.de",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "ai.dev10.idnow.de",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "ai.dev11.idnow.de",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "ai.dev12.idnow.de",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "ai.dev13.idnow.de",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "ai.dev14.idnow.de",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "ai.dev15.idnow.de",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  },
+  "app_id": "com.kaizengaming.betano",
+  "icon": "/static/app-icons/com_kaizengaming_betano.png",
+  "url": "https://play.google.com/store/apps/details?id=com.kaizengaming.betano"
+}

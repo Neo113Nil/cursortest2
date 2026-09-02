@@ -1,0 +1,76 @@
+{
+  "title": "1win days",
+  "developer": "mango fruit",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "1win days (Google Play); внутри APK label = 100 Winner Days, launcher = Winner Days"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.9.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "21"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.POST_NOTIFICATIONS, fit.donblestandartsathletics.winnerdays.DY NAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Google Android Browser Helper / Trusted Web Activity (com.google.androidbrowserhelper.trusted, bubblewrap-cli), androidx.browser 1.9.0-alpha04 (Custom Tabs), androidx.appcompat, androidx.activity 1.9.0, androidx.fragment, androidx.core / core-ktx 1.13.0, androidx.lifecycle, androidx.emoji2 1.3.0, androidx.startup 1.1.1, androidx.profileinstaller, kotlinx-coroutines 1.7.3, Pairip licensecheck (com.pairip.application / licensecheck)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "donutholeanalytics.fit"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "TrustedWebActivityLauncherPrefs — KEY_PROVIDER_PACKAGE (какой браузер открывает доверенную вкладку); com.google.androidbrowserhelper — SharedPreferencesTokenStore.TOKEN и HAS_REQUESTED_NOTIFICATION_PERMISSION; splashImagePrefs — данные заставки"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "launchUrl, hostName, fullScopeUrl, webManifestUrl, TrustedWebActivity, bubblewrap-cli, customtabs, fallbackType, webview, WebViewFallback, 1win days, Winner Days"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "да",
+    "cloaking_brief": "Как собираются: Сразу после запуска открывается стартовый экран приложения. Отдельного тихого сбора языка, модели телефона или рекламного номера устройства перед показом сайта в коде нет: приложение не собирает такие сведения в свой запрос. Человеку не показывают отдельное окно с разрешением на сбор данных для проверки. Единственное заметное действие при старте — подготовка доверенной вкладки браузера и открытие уже зашитого адреса сайта. Проверка лицензии Google Play (Pairip) при старте идёт отдельно и не связана с выбором «оффер или обычное приложение».\n\nКуда отправляются: Приложение само не шлёт отдельный служебный пакет с полями проверки на «ворота». Вместо этого оно сразу открывает встроенный в настройки адрес https://donutholeanalytics.fit/ — это стартовая страница доверенной вкладки (Trusted Web Activity) / Custom Tabs. Запасных адресов «ворот» в коде не видно: тот же хост прописан как launchUrl, fullScopeUrl, hostName и webManifestUrl. Если подходящий браузер недоступен, тот же адрес открывают во встроенном окне сайта внутри приложения (запасной путь WebView). Адрес не собирается из кусков и не сохраняется как результат проверки — он уже лежит в строках приложения.\n\nКак фильтруются пользователи: В самом приложении нет списка стран, языков или «ботов», по которому телефон решал бы, кому показать рекламную страницу, а кому обычный режим. Разветвления «оффер / белая версия» в коде Android нет: всем открывают один и тот же адрес. Признаки фильтрации видны уже на стороне сайта: при открытии страницы сервер ставит служебные метки вроде _subid и cookie со streams/campaigns. Это похоже на учёт потоков трафика на сервере, а не на решение внутри приложения. В коде телефона видно только открытие сайта; кого куда пустить, решает сервер (если решает), а не локальные правила APK.\n\nЧто возвращается: Приложение не ждёт от сервера отдельный ответ вроде поля url/offer/link, по которому выбирают экран. Ответом по сути является сама загруженная страница сайта. При проверке с обычного доступа страница отдаёт белую оболочку «100 Winner Days» — локальный планировщик тренировок на 100 дней, с бейджем «1W». Отдельного пустого ответа или явного «можно/нельзя» в коде приложения не…"
+  },
+  "app_id": "fit.donblestandartsathletics.winnerdays",
+  "icon": "/static/app-icons/fit_donblestandartsathletics_winnerdays.png",
+  "url": "https://play.google.com/store/apps/details?id=fit.donblestandartsathletics.winnerdays"
+}

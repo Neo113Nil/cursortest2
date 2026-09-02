@@ -1,0 +1,79 @@
+{
+  "title": "Aviator AI",
+  "developer": "GROCHA Technologies",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Aviator AI"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.11.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.2.20"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob (Google Mobile Ads)"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Firebase Crashlytics, Firebase Cloud Messaging"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.CAMERA, android.permission.RECORD_AUDIO, android.permission.ACCESS_NETWORK_STATE, android.permission.INTERNET, android.permission.WAKE_LOCK, android.permission.POST_NOTIFICATIONS, android.permission.VIBRATE, android.permission.USE_BIOMETRIC, android.permission.USE_FINGERPRINT, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, com.android.vending.BILLING, com.google.android.c2dm.permission.RECEIVE, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE , android.permission.FOREGROUND_SERVICE, br.com.aiaviator.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Flutter (embedding v2, libapp.so / libflutter.so), AndroidX (appcompat, activity, fragment, browser/Custom Tabs, webkit, core, lifecycle, window, biometric, datastore), Kotlin 2.2.20 / kotlin-stdlib, kotlinx-coroutines 1.9.0, Google Mobile Ads (AdMob) + User Messaging Platform, Google Play Billing, Firebase (Analytics, Crashlytics, Messaging, Installations, Sessions), Play Services (ads, ads-identifier, measurement, basements, tasks, cloud-messaging, appset, location), webview_flutter_android, url_launcher_android, shared_preferences_android, flutter_secure_storage, flutter_local_notifications, image_picker, just_audio, local_auth, permission_handler, package_info_plus, app_links, record_android, video_player_android, jni / jni_flutter, com.pairip.application / licensecheck (Play Integrity PairIP)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "betoholictrack.biz, aiaviator.com.br, aomedia.org, auroraoss.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Flutter SharedPreferences: aviatorai.access_token, aviatorai.refresh_token, aviatorai.user_json, aviatorai.locale, aviatorai.theme_mode, aviatorai.rewards.pending_claims, aviatorai.chat.translateLang, landing_viewed; prefs.* (банкролл/ставки); flutter_secure_storage для чувствительных токенов"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "offer, landing, redirect, betting, gambling, casino, slots, bot, gate, webview, withdraw, deposit, payout, 1xbet, betou, sortenabet, sub_id, land"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  },
+  "app_id": "br.com.aiaviator.app",
+  "icon": "/static/app-icons/br_com_aiaviator_app.png",
+  "url": "https://play.google.com/store/apps/details?id=br.com.aiaviator.app&hl=en&gl=us",
+  "released": "May 6, 2026",
+  "updated": "Aug 24, 2026",
+  "version": "Varies with device"
+}

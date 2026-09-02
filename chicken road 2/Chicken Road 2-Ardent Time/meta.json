@@ -1,0 +1,178 @@
+{
+  "app_id": "com.watchfacestudio.huasi_urx110",
+  "title": "Chicken Road 2",
+  "developer": "Ardent Time",
+  "score": null,
+  "icon": "/static/app-icons/com_watchfacestudio_huasi_urx110.webp",
+  "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.huasi_urx110&hl=en&gl=us",
+  "keyword": "chicken road 2",
+  "country": "India",
+  "source": "apkeep:apk-pure",
+  "sponsored": false,
+  "match_via": "phone-install",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260805_181630_India_chicken road 2_search",
+  "search_title": "Chicken Road 2",
+  "search_developer": "Ardent Time",
+  "developer_id": "6323219318645239616",
+  "released": "Oct 22, 2024",
+  "updated": "2026-06-11",
+  "version": "Varies with device",
+  "summary": "Welcome to the World of Chicken Road 2!",
+  "folder": "Chicken Road 2-Ardent Time",
+  "path": "chicken road 2/Chicken Road 2-Ardent Time",
+  "updates_count": 1,
+  "ok": true,
+  "files": [
+    "com.watchfacestudio.cosmic2_urx61-101-asset.apk",
+    "com.watchfacestudio.cosmic2_urx61-101-config.arm64_v8a.apk",
+    "com.watchfacestudio.cosmic2_urx61-101-config.en.apk",
+    "com.watchfacestudio.cosmic2_urx61-101-config.lt.apk",
+    "com.watchfacestudio.cosmic2_urx61-101-config.ru.apk",
+    "com.watchfacestudio.cosmic2_urx61-101-config.xxhdpi.apk",
+    "com.watchfacestudio.cosmic2_urx61-101.apk",
+    "com.watchfacestudio.huasi_urx110.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/chicken road 2/Chicken Road 2-Ardent Time",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.watchfacestudio.huasi_urx110...\ncom.watchfacestudio.huasi_urx110 downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.watchfacestudio.huasi_urx110...\ncom.watchfacestudio.huasi_urx110 downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Chicken Road 2"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.6.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.1.0"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "AppMetrica, Varioqub"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, com.google.android.finsky.permis sion.BIND_GET_INSTALL_REFERRER_SERVICE, com.watchfacestudio.huasi_urx1 10.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Flutter, io.appmetrica.analytics, com.yandex.varioqub, OkHttp, androidx.browser, androidx.datastore, shared_preferences, device_info_plus, com.android.installreferrer, com.google.android.gms (ads-identifier, basement, tasks), kotlinx-coroutines"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru, dispatchers.io"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "FlutterSharedPreferences (игровые значения и флаги); com.watchfacestudio.huasi_urx110_varioqub_pref (etag, experiments, fetched_config_key, activated_config_key, identifier, config_version, last_fetched_time_ms_key, last_successful_fetched_time_ms_key, should_notify_adapter, varioqub_testids); служебные настройки AppMetrica (UUID/startup)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "openCrossing, trail, lane_crossing, fetchConfig, activateConfig"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "alphamountain.ai",
+        "redirects_to": "https://www.alphamountain.ai/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "api.githubcopilot.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "app.uaas.yandex.ru",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "appmetrica.io",
+        "redirects_to": "https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fappmetrica.yandex.com%2Foverview&lang=en&cause=auth&process_uuid=985b9c83-b284-40c1-bc44-bc43697ac41b",
+        "parked_at": "регистратор: SafeNames Ltd."
+      },
+      {
+        "domain": "bfore.ai",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Key-Systems GmbH"
+      },
+      {
+        "domain": "ca.yandex.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "cakhiatv1.net",
+        "redirects_to": "нет",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      }
+    ],
+    "collected_data": [
+      "Идентификатор клиента — номер проекта",
+      "Служебный идентификатор — внутренний номер",
+      "Номер пользователя — служебный номер",
+      "Номер устройства в аналитике — служебный",
+      "Рекламный номер устройства — номер",
+      "Язык телефона — на каком",
+      "Название версии приложения — какая сборка",
+      "Код версии приложения — числовой номер",
+      "Платформа — пометка",
+      "Версия Android — какая система",
+      "Уровень API Android — технический номе",
+      "Версия библиотеки удалённых — служебная",
+      "Имя адаптера аналитики — пометка appmetri",
+      "Клиентские признаки — дополнительные",
+      "Метки времени и служебные — короткие",
+      "Метка уже скачанных настроек — уходит",
+      "Модель и марка телефона — читаются плагино",
+      "Имя приложения в системе — техническое имя"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Идентификатор клиента — номер проекта\n• Служебный идентификатор — внутренний номер\n• Номер пользователя — служебный номер\n• Номер устройства в аналитике — служебный\n• Рекламный номер устройства — номер\n• Язык телефона — на каком\n• Название версии приложения — какая сборка\n• Код версии приложения — числовой номер\n• Платформа — пометка\n• Версия Android — какая система\n• Уровень API Android — технический номе\n• Версия библиотеки удалённых — служебная\n• Имя адаптера аналитики — пометка appmetri\n• Клиентские признаки — дополнительные\n• Метки времени и служебные — короткие\n• Метка уже скачанных настроек — уходит\n• Модель и марка телефона — читаются плагино\n• Имя приложения в системе — техническое имя\n\nКак собираются: Сразу после запуска открывается главный экран на движке Flutter. Отдельного окна с вопросом «разрешить сбор данных?» нет: приложение само поднимает аналитику AppMetrica и библиотеку удалённых настроек Varioqub. Человек обычно видит только обычный старт программы и не замечает фоновой проверки. Язык берётся из настроек телефона. Версия приложения и код сборки — из сведений установленной программы. Версия Android и уровень API — из системы. Номера устройства и пользователя библиотека просит у AppMetrica и ждёт их до десяти секунд; если номера не пришли, запрос настроек даже не отправляется. Рекламный номер читается через службы Google Play.…\n\nКуда отправляются: Тихий запрос уходит на адрес удалённых настроек Яндекса: https://app.uaas.yandex.ru/v1/app?client_id=<идентификатор_клиента>. Это не показ баннера на экране, а фоновая проверка «какие настройки и какую ссылку выдать этому человеку». Адрес в коде задан шаблоном; при инициализации его можно подменить, но по умолчанию используется именно этот хост. Тело запроса собирается библиотекой и уходит методом POST вместе с заголовком If-None-Match (метка etag). Параллельно аналитика AppMetrica общается со своими служебными адресами (в проверках доменов фигурируют appmetrica.io и связанные хосты). Ответ с настройками сохраняется на телефоне: etag, experiments, fetched_config_key, activated_config_key,…\n\nКак фильтруются пользователи: На проверку уходят язык телефона, номера устройства и…"
+  }
+}
