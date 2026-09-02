@@ -1,1 +1,0 @@
-{"xapk_version":2,"package_name":"com.eleniacademy.lumora","name":"com.eleniacademy.lumora","version_name":"3","version_code":"3","total_size":136833068,"icon":"icon.png","split_apks":[{"file":"com.eleniacademy.lumora.apk","id":"base"},{"file":"config.arm64_v8a.apk","id":"config.arm64_v8a"},{"file":"config.armeabi_v7a.apk","id":"config.armeabi_v7a"}]}
