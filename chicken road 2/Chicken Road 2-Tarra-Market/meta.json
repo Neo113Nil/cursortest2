@@ -65,5 +65,115 @@
   "stdout": "╭── com.skytonedarps.arskthrp ──╮\n│ Chicken Road 2: Earning Money │\n│ 1.5  (vc 5)                   │\n╰───────────────────────────────╯\n\nDownloading 2 files  (18.7 MB)\n  com.skytonedarps.arskthrp-5.apk       ━━━━━━━━ 100% 10.5/10.5 6.5 MB/s 0:00:00\n                                                      MB                        \n  com.skytonedarps.arskthrp-5-asset.apk ━━━━━━━━ 100% 9.1/9.1   7.6 MB/s 0:00:00\n                                                      MB                        \n\n                 Downloaded files                  \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                  ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.skytonedarps.arskthrp-5.apk       │ 10.0 MB │\n│ com.skytonedarps.arskthrp-5-asset.apk │ 10.0 MB │\n└───────────────────────────────────────┴─────────┘\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.402@gmail.com              │\n│ GSF ID : 346ccfe9c5c3ca18                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
   "stderr": "",
   "exit_code": 0,
-  "error": ""
+  "error": "",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Chicken Road 2 (в Google Play); внутри APK label = Skytone Harps"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.6.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.1.0"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.skytonedarps.arskthrp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Flutter, io.flutter, androidx.activity, androidx.core, androidx.fragment, androidx.lifecycle, androidx.profileinstaller, androidx.savedstate, androidx.startup, androidx.window, androidx.customview, androidx.viewpager, androidx.tracing, androidx.versionedparcelable, kotlinx-coroutines, com.pairip.licensecheck, path_provider, sqflite, cupertino_icons, google_fonts"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "cv.iptc.org, dispatchers.io, systemuioverlay.top, va.truepic.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "license check"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "alphamountain.ai",
+        "redirects_to": "https://www.alphamountain.ai/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "app.uaas.yandex.ru",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "appmetrica.io",
+        "redirects_to": "https://passport.yandex.com/auth?retpath=https%3A%2F%2Fappmetrica.yandex.com%2Foverview&lang=en",
+        "parked_at": "регистратор: SafeNames Ltd."
+      },
+      {
+        "domain": "auroraoss.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "bfore.ai",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Key-Systems GmbH"
+      },
+      {
+        "domain": "config.ru",
+        "redirects_to": "https://config.ru/en/",
+        "parked_at": "похоже на парковку (domain is for sale)"
+      },
+      {
+        "domain": "cv.iptc.org",
+        "redirects_to": "http://cv.iptc.org/newscodes → https://cv.iptc.org/newscodes",
+        "parked_at": "регистратор: Amazon Registrar, Inc."
+      },
+      {
+        "domain": "desenmascara.me",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }
