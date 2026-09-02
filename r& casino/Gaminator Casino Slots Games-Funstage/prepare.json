@@ -32,5 +32,8 @@
     "decompiled/resources/res/values/strings.xml",
     "decompiled/sources/"
   ],
-  "errors": []
+  "errors": [],
+  "domain_checks_count": 8,
+  "cloak": "нет",
+  "note": "Deep re-analysis: Cordova social casino, no offer/white gate; 8 domain_checks tables"
 }
