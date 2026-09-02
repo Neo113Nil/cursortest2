@@ -1,0 +1,90 @@
+{
+  "title": "Coin Volcano",
+  "developer": "Opal Harbor Interactive",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Coin Volcano"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.11.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "28"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.3.0"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Firebase Crashlytics, Firebase Cloud Messaging"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.CAMERA, android.permission.VIBRATE, android.permission.POST_NOTIFICATIONS, android.permission.WAKE_LOCK, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_AD_ID, com.google.android.c2dm.permission.RECEIVE, com.lukok.unicre.ch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.compose, androidx.activity, androidx.lifecycle, androidx.datastore, androidx.navigation, androidx.window, androidx.startup, androidx.profileinstaller, okhttp3, kotlinx.coroutines, org.jetbrains.compose, com.russhwolf.settings, com.google.firebase (analytics, messaging, crashlytics, installations), com.google.android.gms (measurement, ads.identifier, play services), com.pairip.licensecheck, libnative-config.so"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "api.telegra.ph, auroraoss.com, config.ru, lineheightstyle.alignment.top"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "blob_browser_ab (variant); fake_uninstall_ab (launcher_hidden, variant); SQLite route_state (route_mark, route_target); install_referrer; сохранённый режим white/оффер читается при старте"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "white, offer, postback, fake_uninstall, blob_browser, Telegraph, redirect, APP_ATTRIBUTION_ROUTE, APP_DOMEN, APP_SITE_ROUTE, trackingId"
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "Рекламный номер устройства",
+      "Идентификатор экземпляра Firebase",
+      "Метка установки",
+      "Время первой установки",
+      "Флаги вариантов интерфейса",
+      "Вариант режима встроенного",
+      "Вариант нескольких иконок",
+      "Статус ложного удаления",
+      "Производитель телефона",
+      "Модель телефона"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Рекламный номер устройства\n• Идентификатор экземпляра Firebase\n• Метка установки\n• Время первой установки\n• Флаги вариантов интерфейса\n• Вариант режима встроенного\n• Вариант нескольких иконок\n• Статус ложного удаления\n• Производитель телефона\n• Модель телефона\n\nКак собираются: Сразу после открытия приложения, ещё до показа обычного экрана игры, код тихо собирает сведения о телефоне. Рекламный номер берётся через службы Google на устройстве. Отдельный идентификатор берётся из Firebase Analytics. Метка установки запрашивается у сервиса магазина Play. Время первой установки читается из сведений о пакете приложения. Производитель и модель берутся из системных полей Android. Флаги вариантов и «ложного удаления» читаются из локальных настроек приложения. Человек обычно ничего не замечает: отдельного окна с разрешением на эту проверку нет.\n\nКуда отправляются: Собранные поля собираются в один список параметров и тихо уходят запросом в интернет на адрес проверки. Адрес собирается из встроенных настроек APP_DOMEN и APP_ATTRIBUTION_ROUTE: их значения лежат в шифрованном виде внутри библиотеки native-config, в открытом тексте хост не записан. Если домена нет, берётся запасной путь из APP_ATTRIBUTION_ROUTE. Это не показ рекламного баннера на экране, а фоновая проверка, что показать именно этому человеку. Результат потом сохраняется в локальной базе route_state (поля route_mark и route_target), чтобы при следующем запуске не спрашивать заново.\n\nКак фильтруются пользователи: В коде на телефоне нет жёсткого списка стран или языков «кому можно». На проверку уходят рекламный номер, идентификатор Firebase, метка установки, время первой установки, флаги вариантов интерфейса и модель телефона. Само решение «кому оффер, кому обычное приложение» делает сервер по ответу. Локально приложение лишь смотрит на текст ответа: если пришла строка white или ссылка, которая относится к тому же домену, что и встроенный APP_DOMEN, включается обычный режим; иначе ответ считают ссылкой на оффер.\n\nЧто возвращается: Сервер отвечает строкой. Если ответ пустой или равен null, приложение считает проверку неудачной и остаётся в обычном режиме. Если ответ равен white либо ссылка…"
+  },
+  "app_id": "com.lukok.unicre.ch",
+  "icon": "/static/app-icons/com_lukok_unicre_ch.png",
+  "url": "https://play.google.com/store/apps/details?id=com.lukok.unicre.ch&hl=en&gl=us",
+  "released": "Aug 13, 2026",
+  "updated": "Aug 13, 2026",
+  "version": "Varies with device"
+}

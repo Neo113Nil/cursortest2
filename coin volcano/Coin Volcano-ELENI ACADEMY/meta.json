@@ -1,0 +1,79 @@
+{
+  "title": "Coin Volcano",
+  "developer": "ELENI ACADEMY",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Coin Volcano"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "нет"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AppLovin MAX, Facebook Audience Network"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.VIBRATE, com.google.android.gms.permission.AD_ID, com.android.vending.CHECK_LICENSE, android.permission.ACCESS_WIFI_STATE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity (IL2CPP), androidx.appcompat/browser/core/fragment/lifecycle, com.applovin, com.facebook.ads, com.google.android.gms, com.iab (OM SDK), com.pairip (Play license), bitter.jnibridge, okhttp, fmod"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "bingoskillz.com, auroraoss.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "AppLovin сохраняет свои настройки SDK; игра через Unity PlayerPrefs кэширует флаги удалённого конфига (Issuspend, id рекламных блоков и ссылки)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "Issuspend, UrlSusspendApp, Susspend, IsInterOpen, UrlInterAds, casino, slots, postback, landing, WebView, redirect, offer, is_bot"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  },
+  "app_id": "com.eleniacademy.lumora",
+  "icon": "/static/app-icons/com_eleniacademy_lumora.png",
+  "url": "https://play.google.com/store/apps/details?id=com.eleniacademy.lumora",
+  "released": "Jun 9, 2026",
+  "updated": "Aug 24, 2026",
+  "version": "Varies with device"
+}

@@ -1,0 +1,53 @@
+{
+  "title": "Coin Volcano",
+  "developer": "Sunrise Spire Entertainment Studio",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.11.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "28"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "■■, 2.3.0"
+      },
+      {
+        "param": "Web View",
+        "value": "■■"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "■■■ ■■■■■■■■■ ■■■■ ■■■ ■■■■■■■■■ ■■■"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.CAMERA, android.permission.WRITE_EXTERNAL_STORAGE, com.instantchess.revolut.nexus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "AGP 8.11.2; Kotlin 2.3.0 / kotlinx-coroutines 1.9.0; Jetpack Compose 1.10.0 / Material3 1.5.0-alpha08; AndroidX Activity 1.12.2, Core 1.16.0, Core SplashScreen 1.0.1, Fragment 1.8.9, Lifecycle 2.9.4, Emoji2 1.4.0, Startup 1.1.1, ProfileInstaller 1.4.0, Window 1.5.0, SavedState 1.3.3; JetBrains Compose Multiplatform 1.9.3; Pairip (com.pairip.application / licensecheck) ■■■■■■■■■■■■■■ ■■■■■■ config.ru, lineheightstyle.alignment.top, theme.app"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "floranox_prefs: ■■■■■■■■■ ■■■■■■■■■ ■ ■■■■■■ ■■■■■■■■ ■■■■■■■■ (floranox.settings.v1, floranox.glazes.v1, floranox.clays.v1, floranox.firings.v1) ■■■■ ■■ ■■■■■■ ■■■ ■■■■■■■■■■■■■■ ■■■■■ url, WebView, onOpenWebView, Privacy Policy, license check, white, route ■■■■■■■■ ■■■■■■: config.ru ■■■■■■■■ / ■■■■■■ ■■■■■■■■ / ■■■■■■■ ■■■■■ config.ru VirusTotal URL https://www.virustotal.com/gui/domain/config.ru ■■■■■■■■ 0/91 (malicious=0, suspicious=0) Security vendors' analysis ■■■■ ■■■■■■■■■, ■■■ ■■ VirusTotal Abusix Clean Acronis Clean ADMINUSLabs Clean AILabs (MONITORAPP) Clean AlienVault Clean alphaMountain.ai Clean Antiy-AVL Clean BitDefender Clean Blueliv Clean Certego Clean Chong Lua Dao Clean CINS Army Clean CMC Threat Intelligence Clean CRDF Clean CTX AI Clean Cyble Clean CyRadar Clean desenmascara.me Clean Dr.Web Clean EmergingThreats Clean Emsisoft Clean ESET Clean ESTsecurity Clean Forcepoint ThreatSeeker Clean Fortinet Clean G-Data Clean Google Safe Browsing Clean GreenSnow Clean Heimdal Security Clean IPsum Clean Juniper Networks Clean Kaspersky Clean LevelBlue Clean Lionic Clean Malwared Clean MalwarePatrol Clean OpenPhish Clean Phishing Database Clean Phishtank Clean PREBYTES C…"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": null,
+    "cloaking_brief": ""
+  },
+  "app_id": "com.instantchess.revolut.nexus",
+  "icon": "/static/app-icons/com_instantchess_revolut_nexus.png",
+  "url": "https://play.google.com/store/apps/details?id=com.instantchess.revolut.nexus",
+  "updated": "Aug 24, 2026",
+  "version": "Varies with device"
+}

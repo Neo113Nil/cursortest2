@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "apks": [
+    "com.kingsofgames.miniclip.defi.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.mdpi.apk"
+  ],
+  "base_apk": "com.kingsofgames.miniclip.defi.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 3065 (0%)\nINFO  - progress: 247 of 3065 (8%)\nINFO  - progress: 508 of 3065 (16%)\nINFO  - progress: 745 of 3065 (24%)\nINFO  - progress: 998 of 3065 (32%)\nINFO  - progress: 1167 of 3065 (38%)\nINFO  - progress: 1375 of 3065 (44%)\nINFO  - progress: 1645 of 3065 (53%)\nINFO  - progress: 1873 of 3065 (61%)\nINFO  - progress: 1986 of 3065 (64%)\nINFO  - progress: 2238 of 3065 (73%)\nINFO  - progress: 2444 of 3065 (79%)\nINFO  - progress: 2848 of 3065 (92%)\n                                                             \nERROR - finished with errors, count: 22\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/coin volcano/Coin Volcano-Noble Flame Studios Limited/decompiled",
+    "skipped": false,
+    "base_apk": "com.kingsofgames.miniclip.defi.apk"
+  },
+  "analysis_files": [
+    "com.kingsofgames.miniclip.defi.xapk",
+    "apk/config.arm64_v8a.apk",
+    "apk/com.kingsofgames.miniclip.defi.apk",
+    "apk/config.mdpi.apk",
+    "apk/config.en.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/AiHYdCWegseH3tkdclkp/",
+    "decompiled/sources/B5G2ojMMN96UbfePawrxWDsy/",
+    "decompiled/sources/B8Ury2QTWuYj5h9NNZsNs3ydUrA3pnMbE39/",
+    "decompiled/sources/BG6euwayqmbnNJTe6fTjtuo3jOQVeO56XgkuBt3zvZ/",
+    "decompiled/sources/BTyPvdZAMXxitGbjuAnFdunGOjVeG/",
+    "decompiled/sources/BfpClf1ie0aDU5U3AGJJz1sWMx/",
+    "decompiled/sources/Bghp1OOkOG82wL2t7HeF2br1KziNd4jWABxYpFuIU/",
+    "decompiled/sources/BsYqLjMaZe3n1dXt2sbch4rwAM1mFSwP1z/",
+    "decompiled/sources/BxomtklX5wBAflqxh1Ln/",
+    "decompiled/sources/BzLjzwK8dIaLzm0cIiHlUX4awoo9bHCkWO9/",
+    "decompiled/sources/CCO543bcoTQMb4j98bPr6NnFGKTN71J0oakbSwc/",
+    "decompiled/sources/CTQIWnLmWrL81sOp0WDzPit/",
+    "decompiled/sources/Cay6OgsI25AFyYvBpwOlC99ZTqJkk7GPFAJY9201rZl0Ftyy/",
+    "decompiled/sources/Cc2Ke7ub17xTzSCiiza9GlvPxNQu/",
+    "decompiled/sources/CeQ4MIe6BinkeL74MMbq6xgFYBkaExq7aAV0m/",
+    "decompiled/sources/CgwsmuVIvoOgpCnuz3Ak8GN9DCt20P3MafYOml/",
+    "decompiled/sources/CxBQdmrcx01nanhOsU5rMNIvETZ7oaTehuuNtdg1prxlMTmYs/",
+    "decompiled/sources/CyD8VhahrO2GTxFSgGJDHIqWQXfmyHcinvNHvMQwvRVowZT8V/",
+    "decompiled/sources/D5Ly9VzSLwo4KIuQr4NefHd149TJm6yg5yk/",
+    "decompiled/sources/D7rSbeAy8S2WJFZv9NPpKY1pZaEvUePdUnyF1EUoh0dDp/"
+  ],
+  "errors": []
+}

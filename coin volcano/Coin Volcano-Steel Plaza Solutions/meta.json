@@ -1,0 +1,79 @@
+{
+  "title": "Coin Volcano",
+  "developer": "Steel Plaza Solutions",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Coin Volcano"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.11.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "28"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.3.0"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.VIBRATE, android.permission.WRITE_EXTERNAL_STORAGE, net.huntingto.instantchess.pro.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "AGP 8.11.2; Kotlin 2.3.0 / kotlinx-coroutines 1.10.2; Jetpack Compose 1.10.0 / Material3 1.5.0-alpha08; AndroidX Activity 1.12.2, Core 1.16.0, Core SplashScreen 1.0.1, Fragment 1.8.9, Lifecycle 2.9.4, Emoji2 1.4.0, Startup 1.1.1, ProfileInstaller 1.4.0, Window 1.5.0, SavedState 1.3.3, SQLite 2.4.0; JetBrains Compose Multiplatform 1.9.3; SQLDelight (InfernoDb); Pairip (com.pairip.application / licensecheck)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "auroraoss.com, config.ru, lineheightstyle.alignment.top"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "локальная БД InfernoDb (SQLDelight): игровые настройки и прогресс через GetPref; отдельного SharedPreferences под клоаку/оффер нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "Privacy Policy, url, license check, route"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  },
+  "app_id": "net.huntingto.instantchess.pro",
+  "icon": "/static/app-icons/net_huntingto_instantchess_pro.png",
+  "url": "https://play.google.com/store/apps/details?id=net.huntingto.instantchess.pro&hl=en&gl=us",
+  "released": "Jul 21, 2026",
+  "updated": "Aug 20, 2026",
+  "version": "Varies with device"
+}

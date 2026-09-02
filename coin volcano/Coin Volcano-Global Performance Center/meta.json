@@ -1,0 +1,84 @@
+{
+  "title": "Coin Volcano",
+  "developer": "Global Performance Center",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Coin Volcano"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.2.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1+"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "AppsFlyer, OneSignal, Firebase Analytics, Firebase Cloud Messaging"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.POST_NOTIFICATIONS, android.permission.VIBRATE, com.coindropvolcanorush.app.permission.C2D_MESSAGE, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, android.permission.RECEIVE_BOOT_COMPLETED, com.sec.android.provider.badge.permission.READ, com.sec.android.provider.badge.permission.WRITE, com.htc.launcher.permission.READ_SETTINGS, com.htc.launcher.permission.UPDATE_SHORTCUT, com.sonyericsson.home.permission.BROADCAST_BADGE, com.sonymobile.home.permission.PROVIDER_INSERT_BADGE, com.anddoes.launcher.permission.UPDATE_COUNT, com.majeur.launcher.permission.UPDATE_BADGE, com.huawei.android.launcher.permission.CHANGE_BADGE, com.huawei.android.launcher.permission.READ_SETTINGS, com.huawei.android.launcher.permission.WRITE_SETTINGS, android.permission.READ_APP_BADGE, com.oppo.launcher.permission.READ_SETTINGS, com.oppo.launcher.permission.WRITE_SETTINGS, me.everything.badger.permission.BADGE_COUNT_READ, me.everything.badger.permission.BADGE_COUNT_WRITE, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, com.samsung.android.mapsagent.permission.READ_APP_INFO, com.huawei.appmarket.service.c…"
+      },
+      {
+        "param": "Libraries",
+        "value": "Jetpack Compose (runtime/ui 1.11.0, foundation/animation 1.10.4, material3 1.4.0), AndroidX (activity 1.13.0, appcompat 1.7.0, browser 1.3.0, core/core-ktx 1.19.0, datastore 1.1.7, lifecycle 2.11.0, navigation 2.9.6, room 2.8.4, startup 1.2.0, window 1.5.0, work 2.8.1, profileinstaller, emoji2, hilt-navigation-compose), Kotlin / kotlinx-coroutines 1.9.0, okhttp3, Hilt/Dagger 2.60.1, Google Material 1.14.0, AppsFlyer, OneSignal, Firebase (Analytics, Messaging, Installations), Google Play Services (ads-identifier, measurement, cloud-messaging), Install Referrer API, Play Integrity / PairIP license check (com.pairip), OpenTelemetry"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "coinvolcano.online"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "url_prefs (fujiId, vesuviusRef, loaData, etnaFlyer, krakatoaInstance); onboarding_prefs (isOnboarded); DataStore volcano_settings (audio_enabled, music_volume, sfx_volume, haptics_enabled)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "volcano_consent, finished_onboarding, fujiId, vesuviusRef, loaData, etnaFlyer, krakatoaInstance, offer, redirect, clickId, click_id, blacklist, payout, landing"
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "Рекламный номер устройства",
+      "Источник установки install",
+      "Данные атрибуции AppsFlyer",
+      "Идентификатор AppsFlyer",
+      "Идентификатор экземпляра Firebase"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• Рекламный номер устройства\n• Источник установки install\n• Данные атрибуции AppsFlyer\n• Идентификатор AppsFlyer\n• Идентификатор экземпляра Firebase\n\nКак собираются: Сразу после запуска, ещё на экране загрузки и без отдельного окна с вопросом, приложение само проверяет интернет и читает нужные сведения с телефона. Рекламный номер берётся из службы Google на устройстве. Источник установки спрашивается у магазина Play через стандартный механизм install referrer. Идентификатор AppsFlyer и данные атрибуции AppsFlyer получаются из SDK AppsFlyer после его тихого старта. Идентификатор экземпляра Firebase Analytics запрашивается у Firebase. Всё это записывается в память приложения (файл настроек url_prefs) и человеку обычно незаметно.\n\nКуда отправляются: Эти пять значений подставляются в адрес страницы проверки и уходят на https://coinvolcano.online/volcano_consent вместе с именами полей fujiId, vesuviusRef, loaData, etnaFlyer и krakatoaInstance. Отдельного запасного адреса в коде не видно: базовый хост прописан целиком. После сбора данных приложение открывает именно эту ссылку во встроенном окне сайта, то есть проверка идёт не как обычный рекламный баннер на экране, а как тихий переход на свой сервер с параметрами пользователя.\n\nКак фильтруются пользователи: В самом приложении нет жёсткого списка стран или языков: оно лишь собирает рекламный номер, источник установки, данные и идентификатор AppsFlyer и идентификатор Firebase, затем открывает страницу проверки с этими полями. Решение «кому показать внешнюю страницу, а кому оставить обычное приложение» делает сервер по пришедшим признакам. На телефоне видно только развилку по флагу isOnboarded: если человек уже «прошёл» эту проверку раньше, сразу показывают обычное приложение; если нет — снова ведут на страницу на coinvolcano.online.\n\nЧто возвращается: Отдельного разбора JSON с полем «ссылка» в коде нет: ответ сервера — это сама веб-страница (и возможные редиректы) внутри встроенного окна сайта. Пока страница открыта, человек видит то, что отдал сервер. Когда страница в консоли браузера внутри приложения печатает служебную фразу finished_onboarding, приложение считает проверку завершённой, ставит…"
+  },
+  "app_id": "com.coindropvolcanorush.app",
+  "url": "https://play.google.com/store/apps/details?id=com.coindropvolcanorush.app",
+  "icon": "/static/app-icons/com_coindropvolcanorush_app.png",
+  "updated": "Jul 31, 2026",
+  "version": "Varies with device"
+}
