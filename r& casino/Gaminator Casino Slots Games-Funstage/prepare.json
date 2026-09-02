@@ -1,0 +1,36 @@
+{
+  "ok": true,
+  "apks": [
+    "com.platogo.gmp-424010.apk",
+    "com.platogo.gmp-424010-asset.apk",
+    "com.platogo.gmp-424010-config.en.apk",
+    "com.platogo.gmp-424010-config.xxhdpi.apk",
+    "com.platogo.gmp-424010-config.arm64_v8a.apk"
+  ],
+  "base_apk": "com.platogo.gmp-424010.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "/workspace/r& casino/Gaminator Casino Slots Games-Funstage/decompiled",
+    "skipped": false,
+    "base_apk": "com.platogo.gmp-424010.apk",
+    "note": "finished with errors, count: 34"
+  },
+  "analysis_files": [
+    "com.platogo.gmp-424010.apk",
+    "com.platogo.gmp-424010-asset.apk",
+    "com.platogo.gmp-424010-config.en.apk",
+    "com.platogo.gmp-424010-config.xxhdpi.apk",
+    "com.platogo.gmp-424010-config.arm64_v8a.apk",
+    "apk/com.platogo.gmp-424010.apk",
+    "apk/com.platogo.gmp-424010-asset.apk",
+    "apk/com.platogo.gmp-424010-config.en.apk",
+    "apk/com.platogo.gmp-424010-config.xxhdpi.apk",
+    "apk/com.platogo.gmp-424010-config.arm64_v8a.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/"
+  ],
+  "errors": []
+}
