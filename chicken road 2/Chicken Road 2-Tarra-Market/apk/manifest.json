@@ -1,1 +1,0 @@
-{"xapk_version":2,"package_name":"com.skytonedarps.arskthrp","name":"com.skytonedarps.arskthrp","version_name":"1.2","version_code":"2","total_size":34110743,"icon":"icon.png","split_apks":[{"file":"com.skytonedarps.arskthrp.apk","id":"base"},{"file":"config.arm64_v8a.apk","id":"config.arm64_v8a"},{"file":"config.armeabi_v7a.apk","id":"config.armeabi_v7a"}]}
