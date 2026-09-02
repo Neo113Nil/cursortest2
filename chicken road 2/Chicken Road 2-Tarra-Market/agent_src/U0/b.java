@@ -1,0 +1,5 @@
+package U0;
+
+/* loaded from: classes.dex */
+public interface b extends K0.a {
+}
