@@ -48,7 +48,7 @@
       },
       {
         "param": "Permissions",
-        "value": "android.permission.INTERNET, com.code.mesh.base.fast.peak.catcasino.DYNAMIC_RE CEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+        "value": "android.permission.INTERNET, com.code.mesh.base.fast.peak.catcasino.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
       },
       {
         "param": "Libraries",
@@ -56,7 +56,7 @@
       },
       {
         "param": "Подозрительные домены",
-        "value": "api.frankfurter.app, api.frankfurter.dev, frankfurter.dev"
+        "value": "tight-glade-0634.petrenkovalentyna89.workers.dev, api.frankfurter.app, api.frankfurter.dev, frankfurter.dev"
       },
       {
         "param": "SharedPreferences",
@@ -72,6 +72,11 @@
       }
     ],
     "domains": [
+      {
+        "domain": "tight-glade-0634.petrenkovalentyna89.workers.dev",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: CloudFlare, Inc."
+      },
       {
         "domain": "api.frankfurter.app",
         "redirects_to": "https://api.frankfurter.dev/",
