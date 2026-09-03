@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "apks": [
+    "com.watchfacestudio.pred01-1156.apk",
+    "com.watchfacestudio.pred01-1156-asset.apk",
+    "com.watchfacestudio.pred01-1156-config.arm64_v8a.apk",
+    "com.watchfacestudio.pred01-1156-config.en.apk",
+    "com.watchfacestudio.pred01-1156-config.lt.apk",
+    "com.watchfacestudio.pred01-1156-config.ru.apk",
+    "com.watchfacestudio.pred01-1156-config.xxhdpi.apk"
+  ],
+  "base_apk": "com.watchfacestudio.pred01-1156.apk",
+  "agent_base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed"
+  },
+  "analysis_files": [
+    "agent_base.apk",
+    "agent_src.zip",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "apk/com.watchfacestudio.pred01-1156.apk",
+    "apk/com.watchfacestudio.pred01-1156-asset.apk",
+    "apk/com.watchfacestudio.pred01-1156-config.arm64_v8a.apk",
+    "apk/com.watchfacestudio.pred01-1156-config.en.apk",
+    "apk/com.watchfacestudio.pred01-1156-config.lt.apk",
+    "apk/com.watchfacestudio.pred01-1156-config.ru.apk",
+    "apk/com.watchfacestudio.pred01-1156-config.xxhdpi.apk",
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "report.pdf"
+  ],
+  "package": "com.watchfacestudio.pred01",
+  "version_name": "1156.2.0.4",
+  "version_code": 1156,
+  "app_label": "Ice Fishing",
+  "errors": []
+}

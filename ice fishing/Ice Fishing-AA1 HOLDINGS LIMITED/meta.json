@@ -1,0 +1,75 @@
+{
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.6.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.1.0"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "AppMetrica, Varioqub"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.watchfacestudio.pred01.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Flutter, io.appmetrica.analytics 7.13.0, com.yandex.varioqub, OkHttp, androidx.browser 1.8.0 (Custom Tabs), shared_preferences, com.android.installreferrer, com.google.android.gms (ads-identifier 18.1.0), Kotlin 2.1.0 / kotlinx-coroutines"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru, systemuioverlay.top"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "FlutterSharedPreferences (игровые значения и флаги); com.watchfacestudio.pred01_varioqub_pref (etag, experiments, fetched_config_key, activated_config_key, identifier, config_version, last_fetched_time_ms_key, last_successful_fetched_time_ms_key, should_notify_adapter, varioqub_testids); служебные настройки AppMetrica"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "openOuterCast, hullMark, frost.cabin.relay, fetchConfig, activateConfig, RfBypass, FrostCtaTone, path"
+      }
+    ],
+    "cloaking": "да"
+  },
+  "app_id": "com.watchfacestudio.pred01",
+  "title": "Ice Fishing",
+  "developer": "AA1 HOLDINGS LIMITED",
+  "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.pred01&hl=en&gl=us",
+  "version": "1156.2.0.4",
+  "version_code": 1156,
+  "app_label": "Ice Fishing"
+}
