@@ -1,0 +1,61 @@
+{
+  "cloaking": "да",
+  "app_id": "org.sofimob.chessunive.sync",
+  "title": "Ice Fishing",
+  "developer": "Velvet Glade Solutions Studio",
+  "version_name": "2.1",
+  "version_code": 3,
+  "min_sdk": 28,
+  "target_sdk": 36,
+  "agp": "8.11.2",
+  "gate": "https://eveningharbor.monster/b1ncgh",
+  "brief_report": {
+    "cloaking": "да",
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.11.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "28"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1+"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Firebase Crashlytics, Firebase Cloud Messaging, Google Advertising ID, Google Play Install Referrer"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "eveningharbor.monster, config.ru, dispatchers.io, theme.app"
+      }
+    ]
+  }
+}

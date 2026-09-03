@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "base_apk": "org.sofimob.chessunive.sync.apk",
+  "agent_base": {
+    "ok": true,
+    "size": 7064967,
+    "from": "apkpure xapk"
+  },
+  "agent_src": {
+    "package": "org.sofimob.chessunive.sync",
+    "note": "jadx local, not committed"
+  },
+  "analysis_files": [
+    "agent_base.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "report.pdf"
+  ],
+  "errors": []
+}
