@@ -1,0 +1,36 @@
+{
+  "app_id": "com.pishtech.mifdf",
+  "title": "Ice Fishing Derby",
+  "developer": "Pishtech LLC",
+  "icon": "/static/app-icons/com_pishtech_mifdf.png",
+  "url": "https://play.google.com/store/apps/details?id=com.pishtech.mifdf&hl=en&gl=us",
+  "keyword": "ice fishing",
+  "folder": "Ice Fishing Derby-Pishtech LLC",
+  "path": "ice fishing/Ice Fishing Derby-Pishtech LLC",
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.pishtech.mifdf.xapk"
+  ],
+  "version": "1.52",
+  "version_code": 152,
+  "cloaking": "нет",
+  "_store_enriched": true,
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "Ice Fishing Derby"},
+      {"param": "Android Gradle Plugin", "value": "8.5.2"},
+      {"param": "minSdk", "value": "21"},
+      {"param": "targetSdk", "value": "35"},
+      {"param": "Kotlin", "value": "нет"},
+      {"param": "Web View", "value": "нет"},
+      {"param": "Custom Tabs", "value": "нет"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "нет"},
+      {"param": "Permissions", "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.android.vending.BILLING"},
+      {"param": "Подозрительные домены", "value": "config.ru, iconian.com, libcore.icu.icu"},
+      {"param": "Есть ли клоака", "value": "нет"},
+      {"param": "Подозрительные слова", "value": "offer, UrlLoader, cross_promo, market://details"}
+    ]
+  }
+}

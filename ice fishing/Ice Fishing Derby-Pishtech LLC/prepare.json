@@ -1,0 +1,17 @@
+{
+  "app_id": "com.pishtech.mifdf",
+  "title": "Ice Fishing Derby",
+  "developer": "Pishtech LLC",
+  "folder": "Ice Fishing Derby-Pishtech LLC",
+  "path": "ice fishing/Ice Fishing Derby-Pishtech LLC",
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": ["com.pishtech.mifdf.xapk"],
+  "agent_base": "agent_base.apk",
+  "version": "1.52",
+  "version_code": 152,
+  "min_sdk": 21,
+  "target_sdk": 35,
+  "agp": "8.5.2",
+  "cloaking": "нет"
+}
