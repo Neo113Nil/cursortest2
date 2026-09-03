@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "source": "apkcombo/apkpure XAPK via d.apkpure.net",
+  "base_apk": "com.win.ultimate.tictac.meta.apk",
+  "apks": [
+    "com.win.ultimate.tictac.meta.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.mdpi.apk"
+  ],
+  "note": "Play Collector folder was missing; downloaded XAPK 1.0. agent_src via jadx locally, not committed. Firebase /appConfig live: serverCheckUrl=http://winltimatetictaceta.click title=https://suasotdtutr.click/LQNvRv3N"
+}

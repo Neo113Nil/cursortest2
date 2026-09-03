@@ -1,0 +1,56 @@
+{
+  "title": "R7 casino",
+  "developer": "DAAD BROTHERS LTD",
+  "app_id": "com.win.ultimate.tictac.meta",
+  "url": "https://play.google.com/store/apps/details?id=com.win.ultimate.tictac.meta&hl=en&gl=us",
+  "version": "1.0",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "R7 casino (в приложении: Win Ultimate)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.12.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.1.20"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      }
+    ],
+    "cloaking": "да",
+    "gate": "http://winltimatetictaceta.click/api/get-offer-url",
+    "firebase_appConfig": "https://winultimate-cgt9b-default-rtdb.firebaseio.com/appConfig.json",
+    "collected_data": [
+      "локальный идентификатор adid",
+      "baseUrl (title из Firebase)",
+      "версия Android (os_version)",
+      "модель телефона",
+      "имя пакета приложения",
+      "версия приложения (build_id)",
+      "внешний IP-адрес (real_ip)"
+    ]
+  }
+}
