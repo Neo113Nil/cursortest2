@@ -6,7 +6,7 @@
     "table": [
       {
         "param": "Название приложения",
-        "value": "Betano"
+        "value": "Betano (в приложении: App)"
       },
       {
         "param": "Android Gradle Plugin",
@@ -62,7 +62,7 @@
       },
       {
         "param": "Подозрительные слова",
-        "value": "redirect, webview, loadUrl, pendingOpen, startup_check, stoneway, mbnk, user-agent, token, vpn, license, bridge"
+        "value": "redirect, webview, loadUrl, pendingOpen, startup_check, stoneway, mbnk, user-agent, token, link, license, bridge"
       }
     ],
     "domains": [],
