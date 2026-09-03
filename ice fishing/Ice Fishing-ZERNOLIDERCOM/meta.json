@@ -1,0 +1,88 @@
+{
+  "app_id": "com.pengsnow.battlefun",
+  "title": "Ice Fishing",
+  "developer": "ZERNOLIDERCOM",
+  "score": null,
+  "icon": "/static/app-icons/com_pengsnow_battlefun.png",
+  "url": "https://play.google.com/store/apps/details?id=com.pengsnow.battlefun&hl=en&gl=us",
+  "keyword": "ice fishing",
+  "folder": "Ice Fishing-ZERNOLIDERCOM",
+  "path": "ice fishing/Ice Fishing-ZERNOLIDERCOM",
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.pengsnow.battlefun.xapk"
+  ],
+  "version": "1.2",
+  "version_code": "2",
+  "apk_label": "Penguin Snow Battle",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing (в Google Play); внутри APK label = Penguin Snow Battle"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.6.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.1.0"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.pengsnow.battlefun.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Flutter, io.flutter, Kotlin 2.1.0, kotlinx-coroutines 1.7.3, androidx.activity 1.8.1, androidx.appcompat 1.1.0, androidx.core/core-ktx 1.13.1, androidx.fragment 1.7.1, androidx.lifecycle 2.7.0, androidx.datastore/preferences 1.1.7, androidx.preference 1.2.1, androidx.profileinstaller 1.3.1, androidx.startup 1.1.1, androidx.window 1.2.0, androidx.recyclerview 1.0.0, androidx.savedstate 1.2.1, androidx.slidingpanelayout 1.2.0, androidx.transition 1.4.1, androidx.vectordrawable 1.1.0, androidx.exifinterface 1.4.1, androidx.tracing 1.2.0, shared_preferences_android, cupertino_icons, MaterialIcons, com.pairip.licensecheck"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru, dispatchers.io, systemuioverlay.top"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Flutter SharedPreferences (FlutterSharedPreferences): настройки игры — pref_difficulty, pref_haptics, pref_music, pref_sound, pref_particles, pref_highscore_ (лучшие результаты по режимам)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "нет"
+      }
+    ],
+    "domains": ["config.ru", "dispatchers.io", "systemuioverlay.top"],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
+}
