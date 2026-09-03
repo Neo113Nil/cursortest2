@@ -1,0 +1,36 @@
+{
+  "ok": true,
+  "apks": [
+    "org.unicre.huntingto-3.apk",
+    "org.unicre.huntingto-3-config.arm64_v8a.apk",
+    "org.unicre.huntingto-3-config.en.apk",
+    "org.unicre.huntingto-3-config.xxhdpi.apk"
+  ],
+  "base_apk": "org.unicre.huntingto-3.apk",
+  "agent_base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed"
+  },
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/org.unicre.huntingto-3.apk",
+    "apk/org.unicre.huntingto-3-config.arm64_v8a.apk",
+    "apk/org.unicre.huntingto-3-config.en.apk",
+    "apk/org.unicre.huntingto-3-config.xxhdpi.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "package": "org.unicre.huntingto",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Fishing Companion"
+}

@@ -1,0 +1,87 @@
+{
+  "title": "Ice Fishing",
+  "developer": "Mystic Glade Entertainment Studios",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.11.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "28"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.3.0"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics 23.0.0, Firebase Crashlytics, Firebase Cloud Messaging, Firebase Installations, Google Play Services Measurement 23.0.0, Play Services Ads Identifier 18.0.0, Play Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.CAMERA, android.permission.VIBRATE, android.permission.POST_NOTIFICATIONS, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_AD_ID, org.unicre.huntingto.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "AGP 8.11.2; Kotlin 2.3.0 / kotlin-stdlib; kotlinx-coroutines 1.11.0; Jetpack Compose UI 1.10.5 (animation, foundation, material3, material-icons-extended, runtime, ui); AndroidX: activity, appcompat, core, datastore 1.2.1, emoji2, fragment, graphics-path, lifecycle, profileinstaller, room 2.8.4, startup, sqlite, window; Ktor client (Android engine) + slf4j; JetBrains Compose Multiplatform resources; Firebase Analytics 23.0.0, Crashlytics, Messaging, Installations, Datatransport; Google Play services: basement/base 18.5.0, cloud-messaging 17.2.0, measurement 23.0.0, ads-identifier 18.0.0; Pairip (com.pairip.application.Application, com.pairip.licensecheck); kotlinx-serialization"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "api.telegra.ph"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Preferences DataStore: icewaters_app_settings, icewaters_gear_seeded, icewaters_gear_items, icewaters_catches, icewaters_ice_readings, icewaters_licenses_seeded, icewaters_licenses, icewaters_spots, icewaters_lakes, icewaters_current_lake, icewaters_map_photo, icewaters_legal_privacy_cache, icewaters_legal_terms_cache; служебные prefs Firebase/GMS"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "telegra, Marin Waters, icewaters, license check"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "api.telegra.ph",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  },
+  "app_id": "org.unicre.huntingto",
+  "version_name": "1.0",
+  "version_code": 1,
+  "apk_label": "Fishing Companion",
+  "play_title": "Ice Fishing",
+  "source": "apkpure",
+  "folder": "Ice Fishing-Mystic Glade Entertainment Studios",
+  "path": "ice fishing/Ice Fishing-Mystic Glade Entertainment Studios"
+}
