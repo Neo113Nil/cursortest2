@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "base_apk": "com.spiritlantern.fantasy.puzzle.realm.story.apk",
+  "agent_base": {
+    "ok": true,
+    "size": 12428371,
+    "from": "apkpure xapk"
+  },
+  "agent_src": {
+    "package": "com.spiritlantern.fantasy.puzzle.realm.story"
+  },
+  "analysis_files": [
+    "agent_base.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/",
+    "agent_src/com/spiritlantern/fantasy/puzzle/realm/story/MainActivity.java",
+    "agent_src/c0/AbstractActivityC0104f.java"
+  ],
+  "errors": []
+}
