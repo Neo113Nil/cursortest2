@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "source": "apkcombo/apkpure XAPK",
+  "base_apk": "com.base.quick.hub.peak.silver.r7casino.apk",
+  "apks": [
+    "com.base.quick.hub.peak.silver.r7casino.apk",
+    "config.en.apk",
+    "config.mdpi.apk"
+  ],
+  "note": "Play Collector folder was missing; APK downloaded from APKCombo/APKPure (XAPK 1.0 / vc1). agent_src via jadx, not committed."
+}

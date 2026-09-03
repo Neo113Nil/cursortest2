@@ -1,0 +1,59 @@
+{
+  "title": "R7 casino",
+  "developer": "AURALIGHT POLSKA",
+  "app_id": "com.base.quick.hub.peak.silver.r7casino",
+  "url": "https://play.google.com/store/apps/details?id=com.base.quick.hub.peak.silver.r7casino&hl=en&gl=us",
+  "version": "1.0",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "R7 casino (в APK: Win)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.2.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      }
+    ],
+    "cloaking": "да",
+    "gate": "https://small-salad-5106.viktoromelan79.workers.dev/?app=com.base.quick.hub.peak.silver.r7casino",
+    "collected_data": [
+      "имя пакета приложения",
+      "модель телефона",
+      "строка браузера устройства"
+    ]
+  }
+}
