@@ -12,5 +12,5 @@
   "ok": true,
   "cloaking": "нет",
   "source": "apkpure",
-  "notes": "Play title Chicken Road 2 vs APK label Spirit Lantern; offline Flutter puzzle, no traffic filter"
+  "notes": "Play title Chicken Road 2 vs APK label Spirit Lantern; offline Flutter puzzle, no INTERNET/WebView/Custom Tabs/ad SDK; domain_checks hosts are false positives (language split, C2PA metadata, Dispatchers.IO, SystemUiOverlay)"
 }
