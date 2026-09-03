@@ -6,19 +6,25 @@
   "icon": "/static/app-icons/com_skytonedarps_arskthrp.png",
   "url": "https://play.google.com/store/apps/details?id=com.skytonedarps.arskthrp&hl=en&gl=us",
   "keyword": "chicken road 2",
+  "country": "Spain",
+  "source": "gplaydl",
+  "sponsored": false,
+  "match_via": "phone-docid",
+  "geelark_search_dir": "/root/play-collector/geelark_poc/20260903_141321_Spain_chicken road 2_search",
+  "search_title": "Chicken Road 2: Earning Money (acceso anticipado)",
+  "search_developer": "Tarra-Market",
+  "rank": 3,
   "developer_id": "Tarra-Market",
   "released": "",
   "updated": "Sep 1, 2026",
   "version": "Varies with device",
   "summary": "Welcome to the World of Chicken Road 2!",
-  "country": "India",
   "folder": "Chicken Road 2-Tarra-Market",
   "path": "chicken road 2/Chicken Road 2-Tarra-Market",
   "updates_count": 1,
   "apk_title": "",
   "store_title_mismatch": false,
   "ok": true,
-  "source": "gplaydl",
   "files": [
     "com.skytonedarps.arskthrp-5-asset.apk",
     "com.skytonedarps.arskthrp-5-config.arm64_v8a.apk",
@@ -38,138 +44,14 @@
       },
       "ok": true,
       "exit_code": 0,
-      "stdout": "╭── com.skytonedarps.arskthrp ──╮\n│ Chicken Road 2: Earning Money │\n│ 1.5  (vc 5)                   │\n╰───────────────────────────────╯\n\nDownloading 7 files  (34.1 MB)\n  com.skytonedarps.arskthrp-5.apk                  ━━━━━ 100% 10.5… 31.9  0:00:…\n                                                              MB    MB/s        \n  com.skytonedarps.arskthrp-5-config.arm64_v8a.apk ━━━━━ 100% 16.0… 11.7  0:00:…\n                                                              MB    MB/s        \n  com.skytonedarps.arskthrp-5-config.en.apk        ━━━━━ 100% 25.0… ?     0:00:…\n                                                              kB                \n  com.skytonedarps.arskthrp-5-config.lt.apk        ━━━━━ 100% 20.9… ?     0:00:…\n                                                              kB                \n  com.skytonedarps.arskthrp-5-config.ru.apk        ━━━━━ 100% 20.9… ?     0:00:…\n                                                              kB                \n  com.skytonedarps.arskthrp-5-config.xxhdpi.apk    ━━━━━ 100% 25.8… ?     0:00:…\n                                                              kB                \n  com.skytonedarps.arskthrp-5-asset.apk            ━━━━━ 100% 9.1/… 29.1  0:00:…\n                                                              MB    MB/s        \n\n                       Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                             ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.skytonedarps.arskthrp-5.apk                  │ 10.0 MB │\n│ com.skytonedarps.arskthrp-5-config.arm64_v8a.apk │ 15.3 MB │\n│ com.skytonedarps.arskthrp-5-config.en.apk        │ 24.4 KB │\n│ com.skytonedarps.arskthrp-5-config.lt.apk        │ 20.4 KB │\n│ com.skytonedarps.arskthrp-5-config.ru.apk        │ 20.4 KB │\n│ com.skytonedarps.arskthrp-5-config.xxhdpi.apk    │ 25.2 KB │\n│ com.skytonedarps.arskthrp-5-asset.apk            │ 10.0 MB │\n└──────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
-      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+      "stdout": "╭── com.skytonedarps.arskthrp ──╮\n│ Chicken Road 2: Earning Money │\n│ 1.5  (vc 5)                   │\n╰───────────────────────────────╯\n\nDownloading 7 files  (34.1 MB)\n  com.skytonedarps.arskthrp-5.apk                  ━━━━━ 100% 10.5… 29.0  0:00:…\n                                                              MB    MB/s        \n  com.skytonedarps.arskthrp-5-config.arm64_v8a.apk ━━━━━ 100% 16.0… 20.6  0:00:…\n                                                              MB    MB/s        \n  com.skytonedarps.arskthrp-5-config.en.apk        ━━━━━ 100% 25.0… ?     0:00:…\n                                                              kB                \n  com.skytonedarps.arskthrp-5-config.lt.apk        ━━━━━ 100% 20.9… ?     0:00:…\n                                                              kB                \n  com.skytonedarps.arskthrp-5-config.ru.apk        ━━━━━ 100% 20.9… ?     0:00:…\n                                                              kB                \n  com.skytonedarps.arskthrp-5-config.xxhdpi.apk    ━━━━━ 100% 25.8… ?     0:00:…\n                                                              kB                \n  com.skytonedarps.arskthrp-5-asset.apk            ━━━━━ 100% 9.1/… 13.3  0:00:…\n                                                              MB    MB/s        \n\n                       Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                             ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.skytonedarps.arskthrp-5.apk                  │ 10.0 MB │\n│ com.skytonedarps.arskthrp-5-config.arm64_v8a.apk │ 15.3 MB │\n│ com.skytonedarps.arskthrp-5-config.en.apk        │ 24.4 KB │\n│ com.skytonedarps.arskthrp-5-config.lt.apk        │ 20.4 KB │\n│ com.skytonedarps.arskthrp-5-config.ru.apk        │ 20.4 KB │\n│ com.skytonedarps.arskthrp-5-config.xxhdpi.apk    │ 25.2 KB │\n│ com.skytonedarps.arskthrp-5-asset.apk            │ 10.0 MB │\n└──────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "",
       "apk_label": ""
     }
   ],
-  "stdout": "╭── com.skytonedarps.arskthrp ──╮\n│ Chicken Road 2: Earning Money │\n│ 1.5  (vc 5)                   │\n╰───────────────────────────────╯\n\nDownloading 7 files  (34.1 MB)\n  com.skytonedarps.arskthrp-5.apk                  ━━━━━ 100% 10.5… 31.9  0:00:…\n                                                              MB    MB/s        \n  com.skytonedarps.arskthrp-5-config.arm64_v8a.apk ━━━━━ 100% 16.0… 11.7  0:00:…\n                                                              MB    MB/s        \n  com.skytonedarps.arskthrp-5-config.en.apk        ━━━━━ 100% 25.0… ?     0:00:…\n                                                              kB                \n  com.skytonedarps.arskthrp-5-config.lt.apk        ━━━━━ 100% 20.9… ?     0:00:…\n                                                              kB                \n  com.skytonedarps.arskthrp-5-config.ru.apk        ━━━━━ 100% 20.9… ?     0:00:…\n                                                              kB                \n  com.skytonedarps.arskthrp-5-config.xxhdpi.apk    ━━━━━ 100% 25.8… ?     0:00:…\n                                                              kB                \n  com.skytonedarps.arskthrp-5-asset.apk            ━━━━━ 100% 9.1/… 29.1  0:00:…\n                                                              MB    MB/s        \n\n                       Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                             ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.skytonedarps.arskthrp-5.apk                  │ 10.0 MB │\n│ com.skytonedarps.arskthrp-5-config.arm64_v8a.apk │ 15.3 MB │\n│ com.skytonedarps.arskthrp-5-config.en.apk        │ 24.4 KB │\n│ com.skytonedarps.arskthrp-5-config.lt.apk        │ 20.4 KB │\n│ com.skytonedarps.arskthrp-5-config.ru.apk        │ 20.4 KB │\n│ com.skytonedarps.arskthrp-5-config.xxhdpi.apk    │ 25.2 KB │\n│ com.skytonedarps.arskthrp-5-asset.apk            │ 10.0 MB │\n└──────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
-  "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+  "stdout": "╭── com.skytonedarps.arskthrp ──╮\n│ Chicken Road 2: Earning Money │\n│ 1.5  (vc 5)                   │\n╰───────────────────────────────╯\n\nDownloading 7 files  (34.1 MB)\n  com.skytonedarps.arskthrp-5.apk                  ━━━━━ 100% 10.5… 29.0  0:00:…\n                                                              MB    MB/s        \n  com.skytonedarps.arskthrp-5-config.arm64_v8a.apk ━━━━━ 100% 16.0… 20.6  0:00:…\n                                                              MB    MB/s        \n  com.skytonedarps.arskthrp-5-config.en.apk        ━━━━━ 100% 25.0… ?     0:00:…\n                                                              kB                \n  com.skytonedarps.arskthrp-5-config.lt.apk        ━━━━━ 100% 20.9… ?     0:00:…\n                                                              kB                \n  com.skytonedarps.arskthrp-5-config.ru.apk        ━━━━━ 100% 20.9… ?     0:00:…\n                                                              kB                \n  com.skytonedarps.arskthrp-5-config.xxhdpi.apk    ━━━━━ 100% 25.8… ?     0:00:…\n                                                              kB                \n  com.skytonedarps.arskthrp-5-asset.apk            ━━━━━ 100% 9.1/… 13.3  0:00:…\n                                                              MB    MB/s        \n\n                       Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                             ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.skytonedarps.arskthrp-5.apk                  │ 10.0 MB │\n│ com.skytonedarps.arskthrp-5-config.arm64_v8a.apk │ 15.3 MB │\n│ com.skytonedarps.arskthrp-5-config.en.apk        │ 24.4 KB │\n│ com.skytonedarps.arskthrp-5-config.lt.apk        │ 20.4 KB │\n│ com.skytonedarps.arskthrp-5-config.ru.apk        │ 20.4 KB │\n│ com.skytonedarps.arskthrp-5-config.xxhdpi.apk    │ 25.2 KB │\n│ com.skytonedarps.arskthrp-5-asset.apk            │ 10.0 MB │\n└──────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
   "exit_code": 0,
   "error": "",
-  "cloaking": "да",
-  "brief_report": {
-    "table": [
-      {
-        "param": "Название приложения",
-        "value": "Chicken Road 2"
-      },
-      {
-        "param": "Android Gradle Plugin",
-        "value": "8.6.0"
-      },
-      {
-        "param": "minSdk",
-        "value": "25"
-      },
-      {
-        "param": "targetSdk",
-        "value": "36"
-      },
-      {
-        "param": "Kotlin",
-        "value": "да 2.1.0"
-      },
-      {
-        "param": "Web View",
-        "value": "нет"
-      },
-      {
-        "param": "Custom Tabs",
-        "value": "да"
-      },
-      {
-        "param": "Рекламные сети",
-        "value": "нет"
-      },
-      {
-        "param": "Аналитика",
-        "value": "AppMetrica, Varioqub (Yandex Remote Config)"
-      },
-      {
-        "param": "Permissions",
-        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, com.skytonedarps.arskthrp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
-      },
-      {
-        "param": "Libraries",
-        "value": "Flutter, io.flutter, androidx.activity, androidx.browser, androidx.core, androidx.fragment, androidx.lifecycle, androidx.profileinstaller, androidx.savedstate, androidx.startup, androidx.window, androidx.customview, androidx.viewpager, androidx.tracing, androidx.versionedparcelable, kotlinx-coroutines, OkHttp 3.12.0, com.pairip.licensecheck, path_provider, sqflite, cupertino_icons, io.appmetrica.analytics (AppMetrica), com.yandex.varioqub (Varioqub), play-services-ads-identifier, play-services-base, play-services-basement, play-services-appset, play-services-tasks"
-      },
-      {
-        "param": "Подозрительные домены",
-        "value": "нет"
-      },
-      {
-        "param": "SharedPreferences",
-        "value": "Varioqub (_varioqub_pref): удалённый конфиг, etag, identifier, testids, время загрузки; Google App Set ID (app_set_id_storage); com.google.android.gms.signin"
-      },
-      {
-        "param": "Есть ли клоака",
-        "value": "да"
-      },
-      {
-        "param": "Подозрительные слова",
-        "value": "chamber, openGallery, phrase, license check"
-      }
-    ],
-    "domains": [
-      {
-        "domain": "app.uaas.yandex.ru",
-        "redirects_to": "нет (без редиректа)",
-        "parked_at": "регистратор: RU-CENTER-RU"
-      },
-      {
-        "domain": "appmetrica.io",
-        "redirects_to": "https://passport.yandex.com/auth?retpath=https%3A%2F%2Fappmetrica.yandex.com%2Foverview&lang=en",
-        "parked_at": "регистратор: SafeNames Ltd."
-      },
-      {
-        "domain": "config.ru",
-        "redirects_to": "https://config.ru/en/",
-        "parked_at": "похоже на парковку (domain is for sale)"
-      },
-      {
-        "domain": "cv.iptc.org",
-        "redirects_to": "http://cv.iptc.org/newscodes → https://cv.iptc.org/newscodes",
-        "parked_at": "регистратор: Amazon Registrar, Inc."
-      },
-      {
-        "domain": "dispatchers.io",
-        "redirects_to": "нет",
-        "parked_at": "регистратор: NAMECHEAP INC"
-      },
-      {
-        "domain": "startup.mobile.yandex.net",
-        "redirects_to": "нет (без редиректа)",
-        "parked_at": "регистратор: SafeNames Ltd."
-      },
-      {
-        "domain": "systemuioverlay.top",
-        "redirects_to": "нет (DNS не резолвится)",
-        "parked_at": "нет данных"
-      },
-      {
-        "domain": "va.truepic.com",
-        "redirects_to": "нет (DNS не резолвится)",
-        "parked_at": "регистратор/whois связан с парковкой: godaddy"
-      }
-    ],
-    "collected_data": [
-      "Идентификатор клиента удалённых",
-      "Идентификатор устройства AppMetrica",
-      "Идентификатор пользователя AppMetrica",
-      "Идентификатор конфига Varioqub",
-      "Название версии приложения",
-      "Номер сборки приложения",
-      "Язык телефона",
-      "Версия Android",
-      "Уровень API Android",
-      "Платформа android",
-      "Версия библиотеки Varioqub",
-      "Имя адаптера аналитики",
-      "Клиентские признаки пары",
-      "Служебные метрики времени"
-    ],
-    "cloaking": "да",
-    "cloaking_brief": "Какие данные собираются:\n• Идентификатор клиента удалённых\n• Идентификатор устройства AppMetrica\n• Идентификатор пользователя AppMetrica\n• Идентификатор конфига Varioqub\n• Название версии приложения\n• Номер сборки приложения\n• Язык телефона\n• Версия Android\n• Уровень API Android\n• Платформа android\n• Версия библиотеки Varioqub\n• Имя адаптера аналитики\n• Клиентские признаки пары\n• Служебные метрики времени\n\nКак собираются: Сразу после запуска приложение само, без спроса у человека, начинает тихую проверку через удалённые настройки Yandex Varioqub. Идентификатор клиента для этих настроек берётся из внутренней логики приложения. Идентификаторы устройства и пользователя приложение спрашивает у встроенной аналитики AppMetrica. Язык телефона, версию Android и сведения о версии самого приложения читают из системы Android и из установленного пакета. Отдельного экрана с разрешением нет: человек этого обычно не замечает, сбор идёт в фоне сразу при открытии.\n\nКуда отправляются: Эти сведения незаметно уходят в интернет на адрес https://app.uaas.yandex.ru/v1/app?client_id=%s — туда подставляется идентификатор клиента удалённых настроек. Это не показ рекламы на экране, а тихая загрузка удалённых настроек: что показать этому человеку. Ответ и служебные метки (метка версии ответа, загруженные настройки, идентификатор) сохраняются в памяти приложения в файле настроек _varioqub_pref. По умолчанию используется именно app.uaas.yandex.ru; в коде есть возможность подставить другой базовый адрес при запуске настроек.\n\nКак фильтруются пользователи: На проверку уходят язык телефона, идентификаторы AppMetrica, версия приложения и версия Android, а также идентификатор клиента удалённых настроек. В самом приложении нет жёсткого списка стран или «белых» и «грязных» пользователей на телефоне — решение принимает сервер удалённых настроек. После ответа приложение читает из настроек строки и флаги «да/нет» и по ним выбирает дальнейший путь. Точные правила фильтрации (кому внешнюю страницу, кому обычное приложение) в коде на телефоне не записаны: их держит сервер.\n\nЧто возвращается: Сервер отвечает набором ключей удалённых настроек: у каждого ключа есть значение (текст, число или да/нет) и служе…"
-  }
+  "cloaking": "да"
 }
