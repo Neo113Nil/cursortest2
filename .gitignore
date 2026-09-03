@@ -8,3 +8,5 @@ __pycache__/
 build_report.py
 report.prev.*.pdf
 **/.analyze_tmp/
+**/agent_src/
+**/agent_src/**

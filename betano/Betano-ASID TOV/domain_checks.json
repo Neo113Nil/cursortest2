@@ -1,8 +1,5 @@
 {
-  "domains": [],
   "all_custom_domains": [],
   "checked": [],
-  "count": 0,
-  "vt_configured": true,
-  "notes": "No custom/unknown suspicious hosts found in APK code, strings, or resources. Play stamp https://play.google.com/store and framework/JetBrains URLs excluded. splits0.xml entry config.ru is an AAB language split for locale ru, not a network domain."
+  "note": "Подозрительных (кастомных/неизвестных) доменов в приложении не найдено. Крупные SDK/Google/Android-хосты в отчёт не включаются."
 }
