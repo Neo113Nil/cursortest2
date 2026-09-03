@@ -1,0 +1,4 @@
+{
+  "domains": [],
+  "note": "Font/cert URLs (ascendercorp.com, *.verisign.com) found in OpenSans TTF metadata only; excluded as non-custom app hosts per report rules."
+}
