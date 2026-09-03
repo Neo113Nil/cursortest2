@@ -1,0 +1,22 @@
+{
+  "ok": true,
+  "base_apk": "com.procyon.propilkki.apk",
+  "agent_base": {
+    "ok": true,
+    "size": 116596989,
+    "from": "apk LFS pull / agent_base.apk copy"
+  },
+  "agent_src": {
+    "package": "com.procyon.propilkki",
+    "note": "jadx local from decompiled history + APK, not committed"
+  },
+  "analysis_files": [
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "report.pdf"
+  ],
+  "errors": []
+}
