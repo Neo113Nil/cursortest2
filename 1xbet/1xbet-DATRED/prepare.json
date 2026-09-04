@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "out_dir": "agent_src",
+    "skipped": false
+  },
+  "source": "apkcombo XAPK (Play Collector folder was missing)",
+  "apks": [
+    "apk/com.ozvarlankrace.casual.game-1.apk",
+    "apk/com.ozvarlankrace.casual.game-1-config.arm64_v8a.apk",
+    "apk/com.ozvarlankrace.casual.game-1-config.en.apk",
+    "apk/com.ozvarlankrace.casual.game-1-config.xxhdpi.apk"
+  ],
+  "errors": []
+}
