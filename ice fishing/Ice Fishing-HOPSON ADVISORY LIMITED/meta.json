@@ -66,7 +66,7 @@
     "domains": [],
     "collected_data": [],
     "cloaking": "нет",
-    "cloaking_brief": "Полный разбор MainActivity/манифеста/сети: нет INTERNET, WebView, Custom Tabs, gate/offer. Только Wear RemoteActivityHelper + market://details. Play≠APK label, но развилки трафика нет."
+    "cloaking_brief": "Повторный полный разбор jadx (MainActivity, манифест, DEX, строки, prefs, сеть): нет INTERNET; нет WebView/Custom Tabs/OkHttp/HttpURLConnection; нет gate/offer/whitelist/bot; SharedPreferences в first-party нет. MainActivity только RemoteActivityHelper + market://details на часы. Play «Ice Fishing» ≠ label «Hybrid TURMAN Watch face», но развилки трафика нет. domain_checks пуст."
   },
   "app_id": "com.watchfacestudio.turman",
   "title": "Ice Fishing",
