@@ -12,5 +12,5 @@
   "ok": true,
   "cloaking": "нет",
   "source": "apkpure",
-  "notes": "Play title Chicken Road 2 vs APK label Spirit Lantern; offline Flutter puzzle, no INTERNET/WebView/Custom Tabs/ad SDK; domain_checks hosts are false positives (language split, C2PA metadata, Dispatchers.IO, SystemUiOverlay)"
+  "notes": "Re-analyzed via jadx agent_base.apk: Play «Chicken Road 2» ≠ APK label «Spirit Lantern», but offline Flutter puzzle — no INTERNET/WebView/Custom Tabs/ad/analytics SDK; entry=PairIP license + Flutter MainActivity; domain_checks hosts are pipeline false positives (language split config.ru, C2PA cv.iptc.org, Dispatchers.IO, SystemUiOverlay)."
 }
