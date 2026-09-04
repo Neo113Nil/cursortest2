@@ -1,0 +1,7 @@
+{
+  "domains": [
+    "com.guvuen.app"
+  ],
+  "count": 1,
+  "note": "Vendor verdicts copied from the pipeline domain_checks tables provided with the analysis prompt."
+}
