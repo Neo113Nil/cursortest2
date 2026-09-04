@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "out_dir": "agent_src",
+    "skipped": false
+  },
+  "source": "apkpure XAPK (folder was missing in git)",
+  "apks": [
+    "apk/com.win.poker.square.deal.apk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.en.apk",
+    "apk/config.mdpi.apk"
+  ],
+  "errors": []
+}

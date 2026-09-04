@@ -1,0 +1,4 @@
+{
+  "domains": [],
+  "note": "No custom/unknown hosts hardcoded in the APK. Firebase RTDB and public IP echo services are large/known; gate host comes from remote serverCheckUrl."
+}
