@@ -4,7 +4,7 @@
     "table": [
       {
         "param": "Название приложения",
-        "value": "Ice Fishing (в APK: Hybrid TURMAN Watch face)"
+        "value": "Ice Fishing"
       },
       {
         "param": "Android Gradle Plugin",
@@ -20,7 +20,7 @@
       },
       {
         "param": "Kotlin",
-        "value": "да (stdlib + kotlinx-coroutines 1.9.0)"
+        "value": "да, 2.0.21"
       },
       {
         "param": "Web View",
@@ -44,7 +44,7 @@
       },
       {
         "param": "Libraries",
-        "value": "Kotlin stdlib / kotlinx-coroutines 1.9.0, AndroidX (appcompat 1.7.1, activity 1.8.0, fragment 1.5.4, core/core-ktx 1.16.0, lifecycle, constraintlayout 2.2.1, coordinatorlayout 1.1.0, recyclerview 1.2.1, cardview 1.0.0, viewpager2 1.0.0, emoji2 1.3.0, profileinstaller 1.4.0, startup 1.1.1, savedstate 1.2.1, transition 1.5.0, wear-remote-interactions 1.2.0, wear-core 1.0.0), Material Components 1.14.0, Google Play services (wearable 20.0.1, base 18.4.0, basement 18.10.0, tasks 18.1.0)"
+        "value": "Kotlin 2.0.21 / kotlinx-coroutines 1.9.0, AndroidX (appcompat 1.7.1, activity 1.8.0, fragment 1.5.4, core/core-ktx 1.16.0, lifecycle, constraintlayout 2.2.1, coordinatorlayout 1.1.0, recyclerview 1.2.1, cardview 1.0.0, viewpager2 1.0.0, emoji2 1.3.0, profileinstaller 1.4.0, startup 1.1.1, savedstate 1.2.1, transition 1.5.0, wear-remote-interactions 1.2.0, wear-core 1.0.0), Material Components 1.14.0, Google Play services (wearable 20.0.1, base 18.5.0, basement 18.10.0, tasks 18.2.0)"
       },
       {
         "param": "Подозрительные домены",
@@ -66,7 +66,7 @@
     "domains": [],
     "collected_data": [],
     "cloaking": "нет",
-    "cloaking_brief": "Повторный полный разбор: LFS pull → jadx agent_base (com.watchfacestudio.turman). Точка входа MainActivity.onCreate: layout activity_main (ImageView), по клику launchPlayStoreOnWear → Wearable NodeClient + RemoteActivityHelper.startRemoteActivity(market://details?id=<package>). Нет Application-класса, нет INTERNET, нет WebView/Custom Tabs/OkHttp/HttpURLConnection/Volley/Retrofit, нет SharedPreferences в first-party, нет remote config/рекламы/аналитики, нет gate/offer/whitelist/bot. Play «Ice Fishing» ≠ label «Hybrid TURMAN Watch face», но развилки оффер/белая нет. domain_checks пуст (подозрительных доменов нет)."
+    "cloaking_brief": "Полный повторный разбор (LFS pull base APK + jadx 1.5.1, 4519 классов). Точка входа: нет своего Application; MainActivity.onCreate ставит activity_main (ConstraintLayout + ImageView). Клик → launchPlayStoreOnWear → поток → Wearable.getNodeClient.getConnectedNodes; если часы рядом — RemoteActivityHelper.startRemoteActivity(ACTION_VIEW market://details?id=<package>) и тост «Please check your watch», иначе «No watch is connected». Сеть: нет INTERNET; нет OkHttp/HttpURLConnection/Volley/Retrofit; DEX http-URL только schemas.android.com и googleapis.com/auth/*. WebView: нет использования (android.webkit.WebView только в невызываемом androidx LinkifyCompat.findAddress). Custom Tabs / androidx.browser нет. Firebase — три exception-класса GMS, не аналитика. First-party SharedPreferences нет. Remote config / реклама / аналитика нет. cloak/gate/offer/whitelist/bot/is_bot в first-party нет. Play «Ice Fishing» ≠ APK-label «Hybrid TURMAN Watch face», но без сети/WebView/remote config это не развилка оффер/белая. domain_checks пуст."
   },
   "app_id": "com.watchfacestudio.turman",
   "title": "Ice Fishing",
