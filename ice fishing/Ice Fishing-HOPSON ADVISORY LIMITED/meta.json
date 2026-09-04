@@ -4,7 +4,7 @@
     "table": [
       {
         "param": "Название приложения",
-        "value": "Ice Fishing"
+        "value": "Ice Fishing (в APK: Hybrid TURMAN Watch face)"
       },
       {
         "param": "Android Gradle Plugin",
@@ -66,7 +66,7 @@
     "domains": [],
     "collected_data": [],
     "cloaking": "нет",
-    "cloaking_brief": "Повторный полный разбор jadx (MainActivity, манифест, DEX, строки, prefs, сеть): нет INTERNET; нет WebView/Custom Tabs/OkHttp/HttpURLConnection; нет gate/offer/whitelist/bot; SharedPreferences в first-party нет. MainActivity только RemoteActivityHelper + market://details на часы. Play «Ice Fishing» ≠ label «Hybrid TURMAN Watch face», но развилки трафика нет. domain_checks пуст."
+    "cloaking_brief": "Повторный полный разбор: LFS pull → jadx agent_base (com.watchfacestudio.turman). Точка входа MainActivity.onCreate: layout activity_main (ImageView), по клику launchPlayStoreOnWear → Wearable NodeClient + RemoteActivityHelper.startRemoteActivity(market://details?id=<package>). Нет Application-класса, нет INTERNET, нет WebView/Custom Tabs/OkHttp/HttpURLConnection/Volley/Retrofit, нет SharedPreferences в first-party, нет remote config/рекламы/аналитики, нет gate/offer/whitelist/bot. Play «Ice Fishing» ≠ label «Hybrid TURMAN Watch face», но развилки оффер/белая нет. domain_checks пуст (подозрительных доменов нет)."
   },
   "app_id": "com.watchfacestudio.turman",
   "title": "Ice Fishing",

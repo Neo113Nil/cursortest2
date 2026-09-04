@@ -18,5 +18,5 @@
     "out_dir": "agent_src (local, gitignored)"
   },
   "cloaking": "нет",
-  "notes": "Wear OS watch-face companion (label: Hybrid TURMAN Watch face). Re-analyzed via jadx on real base APK after LFS pull. No INTERNET permission. MainActivity opens market://details on connected watch via Wearable/RemoteActivityHelper. No WebView, Custom Tabs, ads, analytics gate, offer/white fork, or first-party SharedPreferences. Play title Ice Fishing != APK label, but no traffic cloaking fork in code. domain_checks: empty."
+  "notes": "Wear OS watch-face companion (label: Hybrid TURMAN Watch face, package com.watchfacestudio.turman). Full re-analysis: jadx on LFS-pulled base APK. No INTERNET. MainActivity → RemoteActivityHelper market://details on watch. No WebView/Custom Tabs/ads/analytics/gate/offer/SharedPreferences. Play title Ice Fishing != APK label; no traffic cloaking fork. domain_checks empty."
 }
