@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "package": "com.sit.ribalka",
+  "version_name": "2.4115",
+  "version_code": 24115,
+  "xapk": "com.sit.ribalka.xapk",
+  "apks": [
+    "apk/com.sit.ribalka-24115.apk",
+    "apk/com.sit.ribalka-24115-config.arm64_v8a.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "note": "jadx 1.5.1 finished with 23 errors; sources usable",
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk"
+  },
+  "analysis_files": [
+    "agent_base.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "apk/com.sit.ribalka-24115.apk",
+    "apk/com.sit.ribalka-24115-config.arm64_v8a.apk",
+    "meta.json"
+  ],
+  "cloaking": "нет",
+  "errors": [],
+  "notes": "Play listing Ice fishing game. Catch bass / dreamapps.ru; APK label Ice fishing. Unity 6000 ice-fishing simulator with AppLovin MAX mediation. PairIP Play license check on Application.attachBaseContext, then UnityPlayerActivity. No cloak/gate/offer traffic fork in first-party Java or IL2CPP metadata."
+}

@@ -1,0 +1,88 @@
+{
+  "app_id": "com.sit.ribalka",
+  "title": "Ice fishing game. Catch bass",
+  "developer": "dreamapps.ru",
+  "score": null,
+  "icon": "",
+  "url": "https://play.google.com/store/apps/details?id=com.sit.ribalka&hl=en&gl=us",
+  "keyword": "ice fishing",
+  "folder": "Ice fishing game. Catch bass-dreamapps.ru",
+  "path": "ice fishing/Ice fishing game. Catch bass-dreamapps.ru",
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.sit.ribalka.xapk"
+  ],
+  "version": "2.4115",
+  "version_code": "24115",
+  "apk_label": "Ice fishing",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice fishing game. Catch bass (в APK: Ice fishing)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.7.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "23"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AppLovin MAX, Unity Ads, Vungle, Yandex Mobile Ads, myTarget, Facebook Audience Network, Bigo Ads, Fyber Inneractive, ironSource, Mintegral, Digital Turbine Ignite"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Firebase Crashlytics, Amplitude, AppMetrica, Tenjin, Google Play Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, android.permission.WAKE_LOCK, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_AD_ID, com.amazon.privacypass.ATTEST, android.permission.VIBRATE, com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE, android.permission.ACCESS_WIFI_STATE, android.permission.ACCESS_ADSERVICES_TOPICS, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.BILLING, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.FOREGROUND_SERVICE, com.sit.ribalka.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, android.permission.POST_NOTIFICATIONS, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity 6000.0.58f2 (IL2CPP), AppLovin MAX, Unity Ads, Vungle, Yandex Mobile Ads, myTarget, Facebook Audience Network, Bigo Ads, Fyber Inneractive, ironSource, Mintegral, Amplitude, AppMetrica, Tenjin, Firebase Analytics/Crashlytics/Installations/Sessions, Google Play Billing, Play License Check (com.pairip), Kotlin 2.0.21, kotlinx-coroutines 1.9.0, OkHttp, AndroidX (appcompat 1.6.1, activity 1.9.2, browser 1.4.0, core/core-ktx 1.13.1, webkit 1.6.1, room 2.5.1, work 2.7.0, datastore 1.1.7, recyclerview 1.3.2, fragment 1.1.0, lifecycle, startup, profileinstaller 1.3.1), FMOD, Opsive Ultimate Character Controller / Inventory, Unity Addressables, Adaptive Performance"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Unity PlayerPrefs (прогресс игры и PlayerPrefsAdsPersistence для рекламы); Tenjin (tenjinInstallPreferences, рекламный номер, первый запуск); служебные prefs Firebase, AppLovin, AppMetrica, Amplitude"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "нет"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
+}
