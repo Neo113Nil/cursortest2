@@ -4,11 +4,11 @@
   "agent_base": {
     "ok": true,
     "size": 116596989,
-    "from": "LFS cache oid 0ab07005… / agent_base.apk local"
+    "from": "LFS oid 0ab07005… / agent_base.apk local"
   },
   "agent_src": {
     "package": "com.procyon.propilkki",
-    "note": "jadx restored from git history commit 7f44eca + native liblib_main.so strings; not committed"
+    "note": "jadx from git history commit 7f44eca + arm64 liblib_main.so strings; not committed"
   },
   "analysis_files": [
     "AndroidManifest.xml",
@@ -21,15 +21,22 @@
   "errors": [],
   "reanalysis": {
     "cloaking": "нет",
-    "entry": "ProPilkki2Mobile NativeActivity",
+    "entry": "ProPilkki2Mobile NativeActivity onCreate → Billing + native lib_main",
     "webview": false,
     "custom_tabs": false,
+    "shared_preferences_first_party": false,
+    "play_label": "Pro Pilkki 2 - Ice Fishing",
+    "apk_label": "Pro Pilkki 2 Mobile",
     "native_hosts": [
       "178.128.137.111",
       "propilkki.fi",
       "kalassa.net",
       "procyon.ddns.net"
     ],
-    "note": "Re-verified agent_src ProPilkki2Mobile + liblib_main.so strings; no cloak/gate/offer fork; ACTION_VIEW only"
+    "false_positive_domains": [
+      "config.ru (AAB language split in splits0.xml)"
+    ],
+    "open_url": "ACTION_VIEW / android_OpenBrowser (licenses, donate, hostlist/records)",
+    "cloak_keywords_hit": false
   }
 }
