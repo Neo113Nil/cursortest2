@@ -37,6 +37,7 @@
       "config.ru (AAB language split in splits0.xml)"
     ],
     "open_url": "ACTION_VIEW / android_OpenBrowser (licenses, donate, hostlist/records)",
-    "cloak_keywords_hit": false
+    "cloak_keywords_hit": false,
+    "native_strings_pass": "liblib_main.so from config.arm64_v8a.apk; OpenURL/android_OpenBrowser hardcoded licenses/donate/hostlist; no WebView/CustomTabs/cloak/gate/offer"
   }
 }
