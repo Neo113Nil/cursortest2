@@ -40,7 +40,7 @@
       },
       {
         "param": "Permissions",
-        "value": "com.watchfacestudio.turman.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSI ON"
+        "value": "com.watchfacestudio.turman.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       },
       {
         "param": "Libraries",
@@ -70,10 +70,12 @@
   },
   "app_id": "com.watchfacestudio.turman",
   "title": "Ice Fishing",
+  "app_label": "Hybrid TURMAN Watch face",
   "developer": "HOPSON ADVISORY LIMITED",
   "icon": "/static/app-icons/com_watchfacestudio_turman.png",
   "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.turman&hl=en&gl=us",
   "released": "Jun 13, 2026",
   "updated": "2026-07-29",
-  "version": "Varies with device"
+  "version": "1.0.2",
+  "version_code": 2
 }
