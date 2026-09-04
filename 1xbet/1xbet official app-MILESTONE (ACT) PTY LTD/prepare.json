@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder was missing)",
+  "package": "com.kreke.app",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Kreke",
+  "play_title": "1xbet official app",
+  "developer": "MILESTONE (ACT) PTY LTD",
+  "base_apk": "com.kreke.app.apk",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "com.kreke.app.apk",
+    "config.en.apk",
+    "config.xxhdpi.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally with jadx 1.5.1 (9 errors); agent_src not committed"
+  },
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.kreke.app-1.apk",
+    "apk/com.kreke.app-1-config.en.apk",
+    "apk/com.kreke.app-1-config.xxhdpi.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder 1xbet/1xbet official app-MILESTONE (ACT) PTY LTD was missing on origin/main. XAPK 1.0 (vc1) downloaded from APKCombo. agent_src via jadx 1.5.1, not committed. Gate URL decoded from obfuscated int[] in MainActivity."
+}

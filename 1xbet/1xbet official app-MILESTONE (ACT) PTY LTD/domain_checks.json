@@ -1,0 +1,8 @@
+{
+  "domains": [
+    "com.kreke.app",
+    "dispatchers.io"
+  ],
+  "count": 2,
+  "note": "Vendor verdicts copied from the pipeline domain_checks tables provided with the analysis prompt. richapp68.online is the real gate host from jadx (obfuscated int[] in MainActivity) and was not in the pipeline list."
+}
