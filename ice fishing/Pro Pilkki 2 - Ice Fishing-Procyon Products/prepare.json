@@ -4,11 +4,11 @@
   "agent_base": {
     "ok": true,
     "size": 116596989,
-    "from": "apk LFS pull / agent_base.apk copy"
+    "from": "LFS cache oid 0ab07005… / agent_base.apk local"
   },
   "agent_src": {
     "package": "com.procyon.propilkki",
-    "note": "jadx local from decompiled history + APK, not committed"
+    "note": "jadx restored from git history commit 7f44eca + native liblib_main.so strings; not committed"
   },
   "analysis_files": [
     "AndroidManifest.xml",
@@ -18,5 +18,17 @@
     "meta.json",
     "report.pdf"
   ],
-  "errors": []
+  "errors": [],
+  "reanalysis": {
+    "cloaking": "нет",
+    "entry": "ProPilkki2Mobile NativeActivity",
+    "webview": false,
+    "custom_tabs": false,
+    "native_hosts": [
+      "178.128.137.111",
+      "propilkki.fi",
+      "kalassa.net",
+      "procyon.ddns.net"
+    ]
+  }
 }
