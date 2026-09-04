@@ -1,0 +1,14 @@
+{
+  "domains": ["cryptoinvestmen.com"],
+  "results": [
+    {
+      "domain": "cryptoinvestmen.com",
+      "vt_url": "https://www.virustotal.com/gui/domain/cryptoinvestmen.com",
+      "detections": "нет",
+      "vendors": [],
+      "redirects_to": "нет",
+      "page_summary": "title: Football Knowledge Quiz. Белая страница викторины про футбол (как встроенный index.html): два раунда вопросов, правила и очки. HTTP 200, без редиректа (проверка с адреса датацентра)",
+      "parked_at": "регистратор: NameCheap, Inc. (NS: pdns1.registrar-servers.com, pdns2.registrar-servers.com; регистрация 2026-07-09)"
+    }
+  ]
+}
