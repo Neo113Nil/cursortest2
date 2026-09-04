@@ -1,0 +1,9 @@
+{
+  "domains": [
+    "com.gregi.app",
+    "dispatchers.io",
+    "richapp53.online"
+  ],
+  "count": 3,
+  "note": "Vendor verdicts copied from the pipeline domain_checks tables provided with the analysis prompt."
+}
