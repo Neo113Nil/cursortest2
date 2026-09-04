@@ -29,6 +29,7 @@
       "propilkki.fi",
       "kalassa.net",
       "procyon.ddns.net"
-    ]
+    ],
+    "note": "Re-verified agent_src ProPilkki2Mobile + liblib_main.so strings; no cloak/gate/offer fork; ACTION_VIEW only"
   }
 }
