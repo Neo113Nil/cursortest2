@@ -1,0 +1,15 @@
+{
+  "title": "1xbet",
+  "developer": "neoaro",
+  "cloaking": "да",
+  "app_id": "com.beznadion.tichko.betfury",
+  "url": "https://play.google.com/store/apps/details?id=com.beznadion.tichko.betfury",
+  "brief_report": {
+    "cloaking": "да",
+    "collected_data": [
+      "имя пакета приложения",
+      "модель телефона",
+      "строка браузера телефона"
+    ]
+  }
+}
