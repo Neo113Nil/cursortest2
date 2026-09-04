@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder was missing)",
+  "package": "com.bomok.hiterion.moonpi",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Win",
+  "play_title": "1xbet\u2060\u200b",
+  "developer": "TOV FERES",
+  "base_apk": "com.bomok.hiterion.moonpi.apk",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "com.bomok.hiterion.moonpi.apk",
+    "config.en.apk",
+    "config.mdpi.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed"
+  },
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.bomok.hiterion.moonpi-1.apk",
+    "apk/com.bomok.hiterion.moonpi-1-config.en.apk",
+    "apk/com.bomok.hiterion.moonpi-1-config.xxhdpi.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder 1xbet/1xbet\\u2060\\u200b-TOV FERES was missing on origin/main. XAPK 1.0 (vc1) downloaded from APKPure. Split density is config.mdpi (copied as -config.xxhdpi.apk for apk/ naming). No asset split in the XAPK. agent_src via jadx 1.5.1, not committed."
+}
