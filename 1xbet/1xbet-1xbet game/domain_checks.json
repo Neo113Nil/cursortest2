@@ -1,0 +1,7 @@
+{
+  "all_custom_domains": [],
+  "checked": [],
+  "count": 0,
+  "vt_configured": true,
+  "note": "No custom/unknown hosts in the APK. SystemUiOverlay.top / Remote Config strings are not domains. Gate host is firebaseremoteconfig.googleapis.com (Google)."
+}

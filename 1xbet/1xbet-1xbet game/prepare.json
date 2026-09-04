@@ -1,0 +1,40 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder was missing)",
+  "package": "com.kkgameo.neoneon.exxbeet",
+  "version_name": "1.0.0",
+  "version_code": 1,
+  "app_label": "1 xbet",
+  "play_title": "1xbet",
+  "developer": "1xbet game",
+  "base_apk": "com.kkgameo.neoneon.exxbeet.apk",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "com.kkgameo.neoneon.exxbeet.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.mdpi.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed"
+  },
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.kkgameo.neoneon.exxbeet-1.apk",
+    "apk/com.kkgameo.neoneon.exxbeet-1-config.arm64_v8a.apk",
+    "apk/com.kkgameo.neoneon.exxbeet-1-config.en.apk",
+    "apk/com.kkgameo.neoneon.exxbeet-1-config.xxhdpi.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder 1xbet/1xbet-1xbet game was missing on origin/main. XAPK 1.0.0 (vc1) downloaded from APKPure. Split density is config.mdpi (copied as -config.xxhdpi.apk for apk/ naming). No asset split in this XAPK. agent_src via jadx 1.5.1, not committed."
+}
