@@ -1,0 +1,7 @@
+{
+  "domains": [
+    "com.karregogaci.app"
+  ],
+  "count": 1,
+  "note": "Vendor verdicts copied from the pipeline domain_checks tables provided with the analysis prompt. richapp69.online is the real gate host from jadx (obfuscated int[] − 22 in nm) and was not in the pipeline list."
+}

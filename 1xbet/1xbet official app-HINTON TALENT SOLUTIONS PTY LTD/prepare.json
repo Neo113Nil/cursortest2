@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder was missing)",
+  "package": "com.karregogaci.app",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Karregogaci",
+  "play_title": "1xbet official app",
+  "developer": "HINTON TALENT SOLUTIONS PTY LTD",
+  "base_apk": "com.karregogaci.app.apk",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "com.karregogaci.app.apk",
+    "config.en.apk",
+    "config.xxhdpi.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally with jadx 1.5.1 (9 errors); agent_src not committed"
+  },
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.karregogaci.app-1.apk",
+    "apk/com.karregogaci.app-1-config.en.apk",
+    "apk/com.karregogaci.app-1-config.xxhdpi.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder 1xbet/1xbet official app-HINTON TALENT SOLUTIONS PTY LTD was missing on origin/main. XAPK 1.0 (vc1) downloaded from APKCombo. Splits: config.en + config.xxhdpi (no asset split in this XAPK). agent_src via jadx 1.5.1, not committed. Gate URL decoded from obfuscated int[] − 22 in nm."
+}
