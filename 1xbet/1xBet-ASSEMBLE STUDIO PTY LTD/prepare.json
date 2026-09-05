@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "errors": 9
+  },
+  "source": "apkcombo XAPK (folder was missing in git)",
+  "apks": [
+    "apk/com.carunda.app-1.apk",
+    "apk/com.carunda.app-1-config.en.apk",
+    "apk/com.carunda.app-1-config.xxhdpi.apk"
+  ],
+  "note": "No asset split in XAPK. Gate URL obfuscated as char-5: https://richapp70.online/GqRd3kZx",
+  "errors": []
+}
