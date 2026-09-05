@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder was missing in git)",
+  "package": "com.socceridolstar.kool",
+  "version_name": "1.1",
+  "version_code": 2,
+  "app_label": "Melbet",
+  "play_title": "Melbet",
+  "developer": "DNH AUTOS LTD",
+  "base_apk": "com.socceridolstar.kool.apk",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "apk/com.socceridolstar.kool-2.apk",
+    "apk/com.socceridolstar.kool-2-config.arm64_v8a.apk",
+    "apk/com.socceridolstar.kool-2-config.en.apk",
+    "apk/com.socceridolstar.kool-2-config.xxhdpi.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed; jadx 1.5.3 finished with errors count 51"
+  },
+  "note": "Play Collector folder melbet/Melbet-DNH AUTOS LTD was missing on origin/main. XAPK Soccer Idol 1.1 (vc 2) downloaded from APKCombo. Splits: config.arm64_v8a, config.en, config.xxhdpi, config.armeabi_v7a. No asset split in this XAPK. Gate URL hardcoded: https://apesaj.company/9s4QIA"
+}

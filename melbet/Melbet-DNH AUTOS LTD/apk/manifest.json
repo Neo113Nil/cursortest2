@@ -1,0 +1,13 @@
+{
+  "package_name": "com.socceridolstar.kool",
+  "name": "Melbet",
+  "version_name": "1.1",
+  "version_code": "2",
+  "split_apks": [
+    {"file": "com.socceridolstar.kool-2.apk", "id": "base"},
+    {"file": "com.socceridolstar.kool-2-config.arm64_v8a.apk", "id": "config.arm64_v8a"},
+    {"file": "com.socceridolstar.kool-2-config.armeabi_v7a.apk", "id": "config.armeabi_v7a"},
+    {"file": "com.socceridolstar.kool-2-config.en.apk", "id": "config.en"},
+    {"file": "com.socceridolstar.kool-2-config.xxhdpi.apk", "id": "config.xxhdpi"}
+  ]
+}

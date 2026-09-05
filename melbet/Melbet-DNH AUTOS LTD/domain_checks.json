@@ -1,0 +1,20 @@
+{
+  "domains": [
+    "apesaj.company"
+  ],
+  "notes": {
+    "config.ru": "Android language split, not a host",
+    "dispatchers.io": "not present; Kotlin Dispatchers.IO only"
+  },
+  "results": [
+    {
+      "domain": "apesaj.company",
+      "vt_url": "https://www.virustotal.com/gui/domain/apesaj.company",
+      "detections": "нет",
+      "vendors": [],
+      "redirects_to": "https://play.google.com/store/apps/details?id=com.socceridolstar.kool",
+      "page_excerpt": "нет",
+      "parked": "нет"
+    }
+  ]
+}
