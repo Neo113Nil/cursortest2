@@ -1,0 +1,9 @@
+{
+  "domains": [
+    "app.configcat.com",
+    "cdn-eu.configcat.com",
+    "cdn-global.configcat.com",
+    "configcat.com"
+  ],
+  "source": "pipeline domain_checks provided in analysis prompt"
+}

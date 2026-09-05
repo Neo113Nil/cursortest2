@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder was missing in git)",
+  "package": "com.bexonvralrun.arcade.game",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "BexonvralRun",
+  "play_title": "Melbet",
+  "developer": "TOV FERENTA",
+  "base_apk": "com.bexonvralrun.arcade.game.apk",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "com.bexonvralrun.arcade.game.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.xxhdpi.apk",
+    "config.armeabi_v7a.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.1 finished with 42 errors; agent_src not committed"
+  },
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.bexonvralrun.arcade.game-1.apk",
+    "apk/com.bexonvralrun.arcade.game-1-config.arm64_v8a.apk",
+    "apk/com.bexonvralrun.arcade.game-1-config.en.apk",
+    "apk/com.bexonvralrun.arcade.game-1-config.xxhdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder melbet/Melbet-TOV FERENTA was missing on origin/main. XAPK 1.0 (vc1) downloaded from APKCombo. No asset split in this XAPK. Cloak via TrafitUI + ConfigCat key eightRtyuiValue, offer via EXTERNAL_BROWSER.",
+  "errors": []
+}
