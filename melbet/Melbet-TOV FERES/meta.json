@@ -1,0 +1,24 @@
+{
+  "title": "Melbet",
+  "apk_label": "Win",
+  "developer": "TOV FERES",
+  "cloaking": "да",
+  "app_id": "com.nine.zorik.bossom",
+  "package": "com.nine.zorik.bossom",
+  "folder": "Melbet-TOV FERES",
+  "path": "melbet/Melbet-TOV FERES",
+  "store_title_mismatch": true,
+  "url": "https://play.google.com/store/apps/details?id=com.nine.zorik.bossom",
+  "version_name": "1.0",
+  "version_code": "1",
+  "source": "apkpure XAPK (Play Collector folder was missing)",
+  "gate_url": "https://withered-cloud-bc5b.rieznikvaleriia.workers.dev?app=com.nine.zorik.bossom",
+  "brief_report": {
+    "cloaking": "да",
+    "collected_data": [
+      "имя пакета приложения",
+      "модель телефона",
+      "строка браузера телефона"
+    ]
+  }
+}

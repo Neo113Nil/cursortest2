@@ -1,0 +1,40 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder was missing)",
+  "package": "com.nine.zorik.bossom",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Win",
+  "play_title": "Melbet",
+  "developer": "TOV FERES",
+  "base_apk": "apk/com.nine.zorik.bossom-1.apk",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "apk/com.nine.zorik.bossom-1.apk",
+    "apk/com.nine.zorik.bossom-1-config.en.apk",
+    "apk/com.nine.zorik.bossom-1-config.xxhdpi.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "errors": 2,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally with jadx 1.5.1; agent_src not committed"
+  },
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.nine.zorik.bossom-1.apk",
+    "apk/com.nine.zorik.bossom-1-config.en.apk",
+    "apk/com.nine.zorik.bossom-1-config.xxhdpi.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder melbet/Melbet-TOV FERES was missing on origin/main. XAPK 1.0 (vc1) downloaded from APKPure as Melbet_1.0_APKPure.xapk. Split density is config.mdpi (copied as -config.xxhdpi.apk for apk/ naming). No asset split in the XAPK. Gate URL XOR-obfuscated in MainActivity: https://withered-cloud-bc5b.rieznikvaleriia.workers.dev?app=com.nine.zorik.bossom",
+  "errors": []
+}
