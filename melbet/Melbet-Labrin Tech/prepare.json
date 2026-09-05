@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder was missing)",
+  "package": "com.gneius.apuestatotal.priscus",
+  "version_name": "2.0",
+  "version_code": 2,
+  "app_label": "Win",
+  "play_title": "Melbet",
+  "developer": "Labrin Tech",
+  "base_apk": "com.gneius.apuestatotal.priscus.apk",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "com.gneius.apuestatotal.priscus.apk",
+    "config.en.apk",
+    "config.mdpi.apk"
+  ],
+  "related_play_package": "com.povezet.dasjgimce.lottoland",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed"
+  },
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.gneius.apuestatotal.priscus-2.apk",
+    "apk/com.gneius.apuestatotal.priscus-2-config.en.apk",
+    "apk/com.gneius.apuestatotal.priscus-2-config.xxhdpi.apk",
+    "apk/com.povezet.dasjgimce.lottoland-1.apk",
+    "apk/com.povezet.dasjgimce.lottoland-1-config.en.apk",
+    "apk/com.povezet.dasjgimce.lottoland-1-config.xxhdpi.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder melbet/Melbet-Labrin Tech was missing on origin/main. XAPK 2.0 (vc2) for com.gneius.apuestatotal.priscus downloaded from APKPure; Labrin Tech Play page also lists older Melbet listing com.povezet.dasjgimce.lottoland 1.0 (vc1), splits copied into apk/. Split density is config.mdpi (copied as -config.xxhdpi.apk for apk/ naming). No asset split in these XAPKs. agent_src via jadx 1.5.1, not committed."
+}

@@ -1,0 +1,95 @@
+{
+  "app_id": "com.gneius.apuestatotal.priscus",
+  "title": "Melbet",
+  "developer": "Labrin Tech",
+  "score": null,
+  "icon": "",
+  "url": "https://play.google.com/store/apps/details?id=com.gneius.apuestatotal.priscus&hl=en&gl=us",
+  "keyword": "melbet",
+  "source": "apkpure XAPK",
+  "folder": "Melbet-Labrin Tech",
+  "path": "melbet/Melbet-Labrin Tech",
+  "apk_title": "Win",
+  "store_title_mismatch": true,
+  "ok": true,
+  "files": [
+    "com.gneius.apuestatotal.priscus-2.apk",
+    "com.gneius.apuestatotal.priscus-2-config.en.apk",
+    "com.gneius.apuestatotal.priscus-2-config.xxhdpi.apk",
+    "com.povezet.dasjgimce.lottoland-1.apk",
+    "com.povezet.dasjgimce.lottoland-1-config.en.apk",
+    "com.povezet.dasjgimce.lottoland-1-config.xxhdpi.apk"
+  ],
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Melbet (в приложении: Win)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.1.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "37"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_WIFI_STATE, android.permission.ACCESS_NETWORK_STATE, com.gneius.apuestatotal.priscus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.1, kotlinx-coroutines-core / kotlinx-coroutines-android 1.9.0, OkHttp 4.12.0, Google Material 1.14.0, AndroidX: activity 1.13.0, appcompat 1.8.0, cardview 1.0.0, constraintlayout 2.2.2, coordinatorlayout 1.1.0, core / core-ktx 1.19.0, core-viewtree 1.0.0, cursoradapter 1.0.0, customview 1.2.0, customview-poolingcontainer 1.0.0, drawerlayout 1.1.1, dynamicanimation 1.1.0, emoji2 / emoji2-views-helper 1.3.0, fragment 1.5.4, graphics-shapes 1.0.1, interpolator 1.0.0, lifecycle (livedata / process / runtime / viewmodel / viewmodel-savedstate), loader 1.0.0, navigationevent 1.0.0, profileinstaller 1.4.0, recyclerview 1.4.0, savedstate 1.2.1, startup-runtime 1.1.1, tracing 1.2.0, transition 1.5.0, vectordrawable / vectordrawable-animated 1.1.0, versionedparcelable 1.1.1, viewpager 1.0.0, viewpager2 1.1.0-beta02, viewbinding 9.1.1, annotation-experimental 1.4.1, compose.runtime-annotation 1.9.0, arch.core-runtime; Google Play PairIP: com.pairip.application.Application, com.pairip.licensecheck"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "cfg: ключ rurl — сохранённая ссылка после проверки; win_finance: валюта и список операций"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "rurl, workers.dev, status\":\"ok\", license check, Accept-Language, User-Agent, X-Device-Model, apuestatotal"
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "имя пакета приложения",
+      "модель телефона",
+      "строка браузера телефона"
+    ],
+    "cloaking": "да"
+  }
+}
