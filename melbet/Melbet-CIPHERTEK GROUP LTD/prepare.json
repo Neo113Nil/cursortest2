@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder was missing)",
+  "package": "com.cornerkick.planner",
+  "version_name": "1.0.1",
+  "version_code": 2,
+  "app_label": "CornerKick Planner",
+  "play_title": "Melbet",
+  "developer": "CIPHERTEK GROUP LTD",
+  "base_apk": "com.cornerkick.planner.apk",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "com.cornerkick.planner.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed; jadx 1.5.1 finished with errors count 43"
+  },
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.cornerkick.planner-2.apk",
+    "apk/com.cornerkick.planner-2-config.arm64_v8a.apk",
+    "apk/com.cornerkick.planner-2-config.en.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder melbet/Melbet-CIPHERTEK GROUP LTD was missing on origin/main. XAPK 1.0.1 (vc2) downloaded from APKPure as Melbet_1.0.1_APKPure.xapk. Splits: config.arm64_v8a, config.en. No asset split in this XAPK. Gate URL hardcoded: https://cornerkick-planner.cfd/bF5KrJmd. agent_src via jadx 1.5.1, not committed."
+}

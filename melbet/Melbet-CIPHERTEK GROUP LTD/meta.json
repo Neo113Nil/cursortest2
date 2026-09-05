@@ -1,0 +1,15 @@
+{
+  "app_id": "com.cornerkick.planner",
+  "title": "Melbet",
+  "apk_label": "CornerKick Planner",
+  "developer": "CIPHERTEK GROUP LTD",
+  "package": "com.cornerkick.planner",
+  "folder": "Melbet-CIPHERTEK GROUP LTD",
+  "path": "melbet/Melbet-CIPHERTEK GROUP LTD",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "version_name": "1.0.1",
+  "version_code": "2",
+  "source": "apkpure XAPK (Play Collector folder was missing in git)",
+  "gate_url": "https://cornerkick-planner.cfd/bF5KrJmd"
+}
