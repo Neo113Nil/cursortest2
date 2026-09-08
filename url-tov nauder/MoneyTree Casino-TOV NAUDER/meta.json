@@ -1,0 +1,16 @@
+{
+  "app_id": "com.goal.clean.eagle.cliff.gasp.moneytreecasino",
+  "title": "MoneyTree Casino",
+  "developer": "TOV NAUDER",
+  "apk_label": "Win",
+  "store_title_mismatch": true,
+  "keyword": "MoneyTree Casino",
+  "folder": "MoneyTree Casino-TOV NAUDER",
+  "path": "url-tov nauder/MoneyTree Casino-TOV NAUDER",
+  "version": "1.0",
+  "version_code": 1,
+  "ok": true,
+  "cloaking": "да",
+  "source": "apkcombo",
+  "notes": "Play «MoneyTree Casino» ≠ APK label «Win». Gate GET https://restless-bar-5a66.manuilenkodenys.workers.dev/?app=package, headers X-Device-Model/User-Agent/Accept-Language. Splash has ProgressBar only (no WebView); offer via ACTION_VIEW; white = MainActivity2. Prefs app_cfg / redirect_url."
+}
