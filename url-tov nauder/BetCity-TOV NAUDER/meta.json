@@ -12,5 +12,5 @@
   "ok": true,
   "cloaking": "да",
   "source": "apkcombo",
-  "notes": "Play «BetCity» ≠ APK label «Win». Gate: restless-bar-5a66.manuilenkodenys.workers.dev/?app=package, headers X-Device-Model/User-Agent/Accept-Language. Offer via ACTION_VIEW; white = MainActivity2. o0/l0.java isBot = androidx Person, not traffic filter."
+  "notes": "Play «BetCity» ≠ APK label «Win». Gate GET https://restless-bar-5a66.manuilenkodenys.workers.dev/?app=package, headers X-Device-Model/User-Agent/Accept-Language. Splash layout has unused WebView; offer via ACTION_VIEW; white = MainActivity2. o0/l0.java isBot = androidx Person, not traffic filter."
 }
