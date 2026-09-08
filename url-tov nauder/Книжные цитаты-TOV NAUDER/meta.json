@@ -1,0 +1,16 @@
+{
+  "app_id": "com.book.quotes.keeper200626.reader.library.journal",
+  "title": "Книжные цитаты",
+  "developer": "TOV NAUDER",
+  "apk_label": "Книжные цитаты",
+  "store_title_mismatch": false,
+  "keyword": "Книжные цитаты",
+  "folder": "Книжные цитаты-TOV NAUDER",
+  "path": "url-tov nauder/Книжные цитаты-TOV NAUDER",
+  "version": "4.0",
+  "version_code": 4,
+  "ok": true,
+  "cloaking": "нет",
+  "source": "apkcombo",
+  "notes": "Play «Книжные цитаты» = APK label «Книжные цитаты». Нет INTERNET, WebView, Custom Tabs, OkHttp. Splash 1800 мс → home. Prefs book_quotes_prefs (quotes JSON). Pairip Play license check only."
+}
