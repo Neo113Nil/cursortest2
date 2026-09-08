@@ -1,0 +1,16 @@
+{
+  "app_id": "com.rock.vein.sync.ditch.smart.firekeepers",
+  "title": "FireKeepers",
+  "developer": "TOV NAUDER",
+  "apk_label": "Win",
+  "store_title_mismatch": true,
+  "keyword": "FireKeepers",
+  "folder": "FireKeepers-TOV NAUDER",
+  "path": "url-tov nauder/FireKeepers-TOV NAUDER",
+  "version": "1.0",
+  "version_code": 1,
+  "ok": true,
+  "cloaking": "да",
+  "source": "apkcombo",
+  "notes": "Play «FireKeepers» ≠ APK label «Win». Gate GET https://restless-bar-5a66.manuilenkodenys.workers.dev/?app=package, headers X-Device-Model/User-Agent/Accept-Language. Splash activity_main.xml has ProgressBar only; offer via ACTION_VIEW; white = MainActivity2. Prefs file cache / key nav_url. q0/l0.java isBot = androidx Person, not traffic filter."
+}
