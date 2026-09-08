@@ -1,0 +1,16 @@
+{
+  "app_id": "com.bird.folk.fluid.valve.fuel.levelupcasino",
+  "title": "Levelup Casino",
+  "developer": "TOV NAUDER",
+  "apk_label": "Win",
+  "store_title_mismatch": true,
+  "keyword": "Levelup Casino",
+  "folder": "Levelup Casino-TOV NAUDER",
+  "path": "url-tov nauder/Levelup Casino-TOV NAUDER",
+  "version": "1.0",
+  "version_code": 1,
+  "ok": true,
+  "cloaking": "да",
+  "source": "apkcombo",
+  "notes": "Play «Levelup Casino» ≠ APK label «Win». Gate: restless-bar-5a66.manuilenkodenys.workers.dev/?app=package, headers X-Device-Model/User-Agent/Accept-Language. Offer via ACTION_VIEW; white = MainActivity2."
+}
