@@ -1,0 +1,16 @@
+{
+  "app_id": "com.quartz.chunk.charm.form.prime.richardcasino",
+  "title": "Richard Casino",
+  "developer": "TOV NAUDER",
+  "apk_label": "Win",
+  "store_title_mismatch": true,
+  "keyword": "Richard Casino",
+  "folder": "Richard Casino-TOV NAUDER",
+  "path": "url-tov nauder/Richard Casino-TOV NAUDER",
+  "version": "1.0",
+  "version_code": 1,
+  "ok": true,
+  "cloaking": "да",
+  "source": "apkcombo",
+  "notes": "Play «Richard Casino» ≠ APK label «Win». Gate GET https://restless-bar-5a66.manuilenkodenys.workers.dev/?app=package, headers X-Device-Model/User-Agent/Accept-Language. Splash activity_main.xml has ProgressBar only; offer via ACTION_VIEW; white = MainActivity2. Prefs file app_cfg / key dest."
+}
