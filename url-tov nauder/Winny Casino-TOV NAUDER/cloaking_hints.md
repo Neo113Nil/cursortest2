@@ -1,0 +1,13 @@
+# Cloaking
+
+- Play title: Winny Casino
+- APK label: Win
+- Entry: MainActivity.onCreate
+- If SharedPreferences `data` / key `goto` already has a URL → ACTION_VIEW that URL
+- Else GET `https://restless-bar-5a66.manuilenkodenys.workers.dev/?app=<package>`
+- Headers: `X-Device-Model` = Build.MODEL, `Accept-Language` = `en-US,en;q=0.9`, `User-Agent` = WebSettings.getDefaultUserAgent
+- Parse: final request URL. If it does **not** contain `workers.dev` → Redirect(url), save `goto`, ACTION_VIEW
+- If URL still contains `workers.dev` (or network error) → MainActivity2 (white DailyKit tools)
+- Body is also checked for `"status":"ok"`, but both branches of that check call the white path
+- Splash `activity_main.xml` has ProgressBar only, no WebView widget; offer via ACTION_VIEW
+- `w0/r0.java` `isBot`: AndroidX Person, not the gate

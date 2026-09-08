@@ -1,0 +1,16 @@
+{
+  "app_id": "com.node.net.spark.quantum.logic.winnycasino",
+  "title": "Winny Casino",
+  "developer": "TOV NAUDER",
+  "apk_label": "Win",
+  "store_title_mismatch": true,
+  "keyword": "Winny Casino",
+  "folder": "Winny Casino-TOV NAUDER",
+  "path": "url-tov nauder/Winny Casino-TOV NAUDER",
+  "version": "1.0",
+  "version_code": 1,
+  "ok": true,
+  "cloaking": "да",
+  "source": "apkcombo",
+  "notes": "Play «Winny Casino» ≠ APK label «Win». Gate GET https://restless-bar-5a66.manuilenkodenys.workers.dev/?app=package, headers X-Device-Model/User-Agent/Accept-Language. Splash ProgressBar only, no WebView widget; offer via ACTION_VIEW; white = MainActivity2. Prefs file data / key goto. w0/r0.java isBot = androidx Person, not traffic filter."
+}
