@@ -1,0 +1,16 @@
+{
+  "app_id": "com.gray.span.champ.corn.cedar.casinobet",
+  "title": "Casinobet",
+  "developer": "TOV NAUDER",
+  "apk_label": "Win",
+  "store_title_mismatch": true,
+  "keyword": "Casinobet",
+  "folder": "Casinobet-TOV NAUDER",
+  "path": "url-tov nauder/Casinobet-TOV NAUDER",
+  "version": "1.0",
+  "version_code": 1,
+  "ok": true,
+  "cloaking": "да",
+  "source": "apkcombo",
+  "notes": "Play «Casinobet» ≠ APK label «Win». Gate GET https://restless-bar-5a66.manuilenkodenys.workers.dev/?app=package, headers X-Device-Model/User-Agent/Accept-Language. Splash has ProgressBar only (no WebView); offer via ACTION_VIEW; white = MainActivity2. Prefs data / target. q0/o0.java isBot is AndroidX Person."
+}
