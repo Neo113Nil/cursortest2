@@ -12,5 +12,5 @@
   "ok": true,
   "cloaking": "нет",
   "source": "apkcombo",
-  "notes": "Play «Книжные цитаты» = APK label «Книжные цитаты». Нет INTERNET, WebView, Custom Tabs, OkHttp. Splash 1800 мс → home. Prefs book_quotes_prefs (quotes JSON). Pairip Play license check only."
+  "notes": "Повторный разбор jadx agent_base.apk: Application=pairip LicenseClient.checkLicense; MainActivity Compose NavHost splash(1800мс)→home/add_quote/quote_detail/edit_quote/favorites. Play title = APK label. Нет INTERNET, WebView, Custom Tabs, OkHttp, HttpURLConnection, ACTION_VIEW, remote config, рекламы и аналитики. Prefs book_quotes_prefs (quotes JSON). PairIP только проверка лицензии Play."
 }
