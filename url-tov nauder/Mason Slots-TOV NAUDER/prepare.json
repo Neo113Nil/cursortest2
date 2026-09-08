@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder was missing in git)",
+  "package": "com.mesh.max.data.ion.digital.masonslots",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Win",
+  "play_title": "Mason Slots",
+  "developer": "TOV NAUDER",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "com.mesh.max.data.ion.digital.masonslots.apk",
+    "config.en.apk",
+    "config.xxhdpi.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed; jadx 1.5.3 finished with errors count 3"
+  },
+  "note": "Play Collector folder url-tov nauder/Mason Slots-TOV NAUDER was missing on origin/main. XAPK Mason Slots 1.0 (vc 1) downloaded from APKCombo. Splits: config.en, config.xxhdpi. No asset split in this XAPK. Gate URL XOR-decoded: https://restless-bar-5a66.manuilenkodenys.workers.dev/?app=<package>. Splash activity_main.xml has ProgressBar only, no WebView widget. Prefs file store / key rurl. q0/l0.java isBot is AndroidX Person, not cloaking."
+}
