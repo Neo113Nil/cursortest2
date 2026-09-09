@@ -1,0 +1,16 @@
+{
+  "app_id": "com.pinkprank.circojooker",
+  "title": "Pink J0ker",
+  "developer": "Skrol Craft",
+  "apk_label": "Pink J0ker",
+  "store_title_mismatch": false,
+  "keyword": "Pink J0ker",
+  "folder": "Pink J0ker-Skrol Craft",
+  "path": "url-batch/Pink J0ker-Skrol Craft",
+  "version": "35.0",
+  "version_code": 35,
+  "ok": true,
+  "cloaking": "нет",
+  "source": "apkcombo",
+  "notes": "Play title = APK label Pink J0ker. RN+Hermes bowling game (GameScreen/HowToPlayScreen/ResultScreen, pins/aim). WebView+Custom Tabs SDKs present but no gate/offer URL. Adjust 5.6.1 + FCM. pairip LicenseClient only. config.ru is AAB language split; dispatchers.io is Kotlin Dispatchers.IO."
+}

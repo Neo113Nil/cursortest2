@@ -1,0 +1,18 @@
+{
+  "custom_domains": [],
+  "excluded_known_sdk": [
+    "app.adjust.io",
+    "gdpr.adjust.io",
+    "ssrv.adjust.io"
+  ],
+  "false_positives": [
+    {
+      "token": "config.ru",
+      "reason": "Android App Bundle language split (res/xml/splits0.xml split=config.ru), not a hostname"
+    },
+    {
+      "token": "dispatchers.io",
+      "reason": "Kotlin coroutines Dispatchers.IO identifier, not a hostname"
+    }
+  ]
+}

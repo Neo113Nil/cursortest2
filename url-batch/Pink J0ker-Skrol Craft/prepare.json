@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder was missing in git)",
+  "package": "com.pinkprank.circojooker",
+  "version_name": "35.0",
+  "version_code": 35,
+  "app_label": "Pink J0ker",
+  "play_title": "Pink J0ker",
+  "developer": "Skrol Craft",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "com.pinkprank.circojooker.apk",
+    "config.arm64_v8a.apk",
+    "config.armeabi_v7a.apk",
+    "config.en.apk",
+    "config.xxhdpi.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed; jadx 1.5.3 finished with errors, count: 6"
+  },
+  "note": "Play Collector folder url-batch/Pink J0ker-Skrol Craft was missing on origin/main. XAPK Pink J0ker 35.0 (vc 35) downloaded from APKCombo. No asset split in this XAPK. Hermes bytecode v98 dumped via hbctool-cli. Cloak=нет."
+}
