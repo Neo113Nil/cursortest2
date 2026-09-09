@@ -1,0 +1,16 @@
+{
+  "app_id": "com.berrypeek.gogame",
+  "title": "Fru1t Match",
+  "developer": "ELIXEM HOLDINGS",
+  "apk_label": "Fru1t Match",
+  "store_title_mismatch": false,
+  "keyword": "Fru1t Match",
+  "folder": "Fru1t Match-ELIXEM HOLDINGS",
+  "path": "url-batch/Fru1t Match-ELIXEM HOLDINGS",
+  "version": "1.1",
+  "version_code": 2,
+  "ok": true,
+  "cloaking": "да",
+  "source": "apkcombo",
+  "notes": "Play title = APK label Fru1t Match. EntryGateScreen launcher + InboundSignalGate FCM + CoreLaunchHost Adjust. Gate POST https://rapidtraceengine.online/ (AES-GCM protobuf). Offer URL via FCM field url / SharedPreferences gate_entry_mark, shown in WebView or Chrome Custom Tabs. Play listing HTTP 200 skips to white OrbitSelectStage. StringFog XOR. pairip LicenseClient wraps Application."
+}

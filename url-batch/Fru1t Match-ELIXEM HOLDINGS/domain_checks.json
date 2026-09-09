@@ -1,0 +1,34 @@
+{
+  "custom_domains": [
+    {
+      "domain": "rapidtraceengine.online",
+      "virustotal_url": "https://www.virustotal.com/gui/domain/rapidtraceengine.online",
+      "detections": "0/89 (malicious=0, suspicious=0)",
+      "last_analysis_stats": {
+        "malicious": 0,
+        "suspicious": 0,
+        "undetected": 35,
+        "harmless": 54,
+        "timeout": 0
+      },
+      "redirect": "нет (HTTP 403 Cloudflare, без редиректа)",
+      "content": "пустой ответ, код 403",
+      "parking": "регистратор: NameCheap, Inc.; DNS: Cloudflare"
+    }
+  ],
+  "excluded_known_sdk": [
+    "app.adjust.io",
+    "gdpr.adjust.io",
+    "ssrv.adjust.io"
+  ],
+  "false_positives": [
+    {
+      "token": "config.ru",
+      "reason": "Android App Bundle language split, not a hostname"
+    },
+    {
+      "token": "dispatchers.io",
+      "reason": "Kotlin coroutines Dispatchers.IO identifier, not a hostname"
+    }
+  ]
+}
