@@ -1,0 +1,17 @@
+{
+  "app_id": "com.velvet.quokka.nexus.baxiro.mivora",
+  "title": "777 Memory",
+  "developer": "Muhammad Asif333",
+  "apk_label": "777 Memory",
+  "store_title_mismatch": false,
+  "play_developer": "NUMNUMM ( PRIVATE ) LIMITED",
+  "keyword": "777 Memory",
+  "folder": "777 Memory-Muhammad Asif333",
+  "path": "url-batch/777 Memory-Muhammad Asif333",
+  "version": "2.0.0",
+  "version_code": 2,
+  "ok": true,
+  "cloaking": "да",
+  "source": "apkpure.net XAPK (Play Collector folder was missing in git)",
+  "notes": "Play title = APK label 777 Memory. Launcher SplashGateActivity: empty prefs runs Play-store GET + encrypted POST to https://lifelineengine.digital/; FCM data key url opens CloverLaneActivity WebView; failure/skip opens PairArenaActivity. Adjust 5.7.0 token uudqz1n6yrk0. Pairip Application wrapper."
+}

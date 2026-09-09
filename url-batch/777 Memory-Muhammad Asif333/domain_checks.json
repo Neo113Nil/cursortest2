@@ -1,0 +1,18 @@
+{
+  "custom_domains": [
+    "lifelineengine.digital"
+  ],
+  "excluded_known_sdk": [
+    "app.adjust.io",
+    "gdpr.adjust.io",
+    "ktor.io",
+    "slf4j.org"
+  ],
+  "false_positives": [
+    {
+      "token": "config.ru",
+      "reason": "Android App Bundle language split (requiredSplitTypes / config splits), not a hostname used by first-party code"
+    }
+  ],
+  "notes": "Gate URL https://lifelineengine.digital/ is obfuscated in first-party clover.a and was not in the pipeline VT dump. Pipeline VT covered Adjust/Ktor/SLF4J/config.ru only."
+}

@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "source": "apkpure.net XAPK (Play Collector folder was missing in git)",
+  "package": "com.velvet.quokka.nexus.baxiro.mivora",
+  "version_name": "2.0.0",
+  "version_code": 2,
+  "app_label": "777 Memory",
+  "play_title": "777 Memory",
+  "developer": "Muhammad Asif333",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "com.velvet.quokka.nexus.baxiro.mivora.apk",
+    "config.en.apk",
+    "config.mdpi.apk",
+    "config.x86.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed; jadx 1.5.3 finished with errors, count: 66"
+  },
+  "note": "Play Collector folder url-batch/777 Memory-Muhammad Asif333 was missing on origin/main. XAPK 777 Memory 2.0.0 (vc 2) downloaded from apkpure.net. XAPK splits: base + config.en + config.mdpi + config.x86 (no arm64/xxhdpi/asset in this XAPK). Cloak=да."
+}
