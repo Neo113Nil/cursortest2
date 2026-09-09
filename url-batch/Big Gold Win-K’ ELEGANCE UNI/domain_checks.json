@@ -1,0 +1,30 @@
+{
+  "custom_domains": [
+    "quantixmatrix.digital"
+  ],
+  "excluded_known_sdk": [
+    "app.adjust.io",
+    "app.adjust.com",
+    "gdpr.adjust.io",
+    "gdpr.adjust.com",
+    "ssrv.adjust.io",
+    "ssrv.adjust.com",
+    "subscription.adjust.io",
+    "subscription.adjust.com"
+  ],
+  "false_positives": [
+    {
+      "token": "config.ru",
+      "reason": "Android App Bundle language split token, not a hostname used by first-party code"
+    }
+  ],
+  "live_check": {
+    "domain": "quantixmatrix.digital",
+    "virustotal_url": "https://www.virustotal.com/gui/domain/quantixmatrix.digital",
+    "detections": "нет",
+    "redirects_to": "нет (без редиректа); https://quantixmatrix.digital/ отвечает 403 Cloudflare, https://www.quantixmatrix.digital/ — 200 без цепочки редиректов",
+    "page_summary": "title: Welcome to nginx. Стандартная заглушка nginx («If you see this page, the nginx web server is successfully installed and working. Further configuration is required.»). Тело POST/GET на apex — пустое (Cloudflare 403).",
+    "parked": "регистратор: NameCheap, Inc.; DNS: Cloudflare (vick.ns.cloudflare.com, blair.ns.cloudflare.com)"
+  },
+  "notes": "Gate URL https://quantixmatrix.digital/ is StringFog-obfuscated in RemoteStageScreen.r() and was not in the pipeline VT dump. Pipeline VT covered Adjust SDK hosts / config.ru only."
+}

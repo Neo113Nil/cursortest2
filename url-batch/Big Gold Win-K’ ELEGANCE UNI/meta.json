@@ -1,0 +1,17 @@
+{
+  "app_id": "com.gold.stack.app",
+  "title": "Big Gold Win",
+  "developer": "K’ ELEGANCE UNI",
+  "play_developer": "K' ELEGANCE FIT UNISEX SALON",
+  "apk_label": "Big Gold Win",
+  "store_title_mismatch": false,
+  "keyword": "Big Gold Win",
+  "folder": "Big Gold Win-K’ ELEGANCE UNI",
+  "path": "url-batch/Big Gold Win-K’ ELEGANCE UNI",
+  "version": "1.1",
+  "version_code": 2,
+  "ok": true,
+  "cloaking": "да",
+  "source": "apkcombo",
+  "notes": "Play title = APK label Big Gold Win. Launcher RemoteStageScreen: Play listing GET then encrypted POST https://quantixmatrix.digital/; FCM field url loads WebView/Custom Tabs; else EntryChoiceScreen white stacker. Adjust 5.8.0 + FCM. StringFog XOR. Cloak=да."
+}

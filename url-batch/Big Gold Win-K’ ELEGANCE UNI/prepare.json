@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder was missing in git)",
+  "package": "com.gold.stack.app",
+  "version_name": "1.1",
+  "version_code": 2,
+  "app_label": "Big Gold Win",
+  "play_title": "Big Gold Win",
+  "developer": "K’ ELEGANCE UNI",
+  "play_developer": "K' ELEGANCE FIT UNISEX SALON",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "com.gold.stack.app.apk",
+    "config.arm64_v8a.apk",
+    "config.armeabi_v7a.apk",
+    "config.en.apk",
+    "config.xxhdpi.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed; jadx 1.5.3"
+  },
+  "note": "Play Collector folder url-batch/Big Gold Win-K’ ELEGANCE UNI was missing on origin/main. XAPK Big Gold Win 1.1 (vc 2) downloaded from APKCombo. Splits: config.arm64_v8a, config.armeabi_v7a, config.en, config.xxhdpi. No asset split in this XAPK. Gate POST https://quantixmatrix.digital/ . Cloak=да."
+}
