@@ -1,0 +1,24 @@
+{
+  "custom_domains": [
+    "primekernel.world"
+  ],
+  "excluded_known_sdk": [
+    "app.adjust.io",
+    "app.adjust.com",
+    "gdpr.adjust.io",
+    "gdpr.adjust.com",
+    "ssrv.adjust.io",
+    "ssrv.adjust.com"
+  ],
+  "false_positives": [
+    {
+      "token": "config.ru",
+      "reason": "Android App Bundle language split token, not a hostname used by first-party code"
+    },
+    {
+      "token": "dispatchers.io",
+      "reason": "not present in this APK or first-party code"
+    }
+  ],
+  "notes": "Gate URL https://primekernel.world/ is StringFog-obfuscated in EntryGateScreen and was not in the pipeline VT dump. Pipeline VT covered Adjust SDK hosts / config.ru / dispatchers.io only."
+}

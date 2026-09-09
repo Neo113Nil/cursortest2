@@ -1,0 +1,17 @@
+{
+  "app_id": "com.fruitmemory.matchjuo",
+  "title": "Orchard Memory",
+  "developer": "Fokur Systems",
+  "apk_label": "Orchard Memory",
+  "store_title_mismatch": false,
+  "play_developer": "FOKUR TOV",
+  "keyword": "Orchard Memory",
+  "folder": "Orchard Memory-Fokur Systems",
+  "path": "url-batch/Orchard Memory-Fokur Systems",
+  "version": "1.1",
+  "version_code": 2,
+  "ok": true,
+  "cloaking": "да",
+  "source": "apkcombo XAPK (Play Collector folder was missing in git)",
+  "notes": "Play title = APK label Orchard Memory. Launcher EntryGateScreen: empty prefs POST encrypted protobuf to https://primekernel.world/; FCM data key url opens WebView; into_game / 4xx / no network opens HomeChoiceStageScreen. Adjust 5.8.0 token e28x4efkafpc sandbox. Pairip Application wrapper. StringFog XOR."
+}
