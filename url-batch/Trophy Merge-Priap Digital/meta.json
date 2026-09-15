@@ -1,0 +1,16 @@
+{
+  "app_id": "com.trophynumbers.puzzlix",
+  "title": "Trophy Merge",
+  "developer": "Priap Digital",
+  "apk_label": "Trophy Merge",
+  "store_title_mismatch": false,
+  "keyword": "Trophy Merge",
+  "folder": "Trophy Merge-Priap Digital",
+  "path": "url-batch/Trophy Merge-Priap Digital",
+  "version": "1.1",
+  "version_code": 2,
+  "ok": true,
+  "cloaking": "да",
+  "source": "apkcombo",
+  "notes": "Play title = APK label Trophy Merge. StagePortalFrame launcher + SignalIntakeLine FCM + CoreLaunchPoint Adjust. Gate POST https://aetherdrift.site/ (AES-GCM protobuf). Offer URL via FCM field url / SharedPreferences gate_entry_path, shown in WebView or Chrome Custom Tabs. Play listing HTTP 200 skips to white MainChoiceScreen. StringFog XOR. pairip LicenseClient wraps Application."
+}

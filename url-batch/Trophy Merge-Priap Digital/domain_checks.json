@@ -1,0 +1,27 @@
+{
+  "custom_domains": [
+    {
+      "domain": "aetherdrift.site",
+      "virustotal_url": "https://www.virustotal.com/gui/domain/aetherdrift.site",
+      "detections": "нет",
+      "vendors": [],
+      "redirect": "нет (HTTP 403 Cloudflare, без редиректа)",
+      "content": "пустой ответ, код 403",
+      "parking": "регистратор: NameCheap, Inc.; DNS: Cloudflare"
+    }
+  ],
+  "excluded_known_sdk": [
+    "app.adjust.io",
+    "app.adjust.com",
+    "gdpr.adjust.io",
+    "gdpr.adjust.com",
+    "ssrv.adjust.io",
+    "subscription.adjust.io"
+  ],
+  "false_positives": [
+    {
+      "token": "config.ru",
+      "reason": "Android App Bundle language split (splits0.xml key ru → config.ru), not a hostname"
+    }
+  ]
+}
