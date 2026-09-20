@@ -1,0 +1,83 @@
+{
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing (в приложении: Lawn Muster)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.3.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1+"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.kortosi.kluani.fenzalir.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.1+ (stdlib + builtins, kotlinx-coroutines-core 1.9.0, kotlinx-coroutines-android 1.9.0, kotlinx-serialization-core); Dagger 2.51.1; AndroidX: activity / activity-compose / activity-ktx 1.13.0, annotation-experimental 1.5.0, autofill 1.0.0, compose animation / animation-core 1.12.0, compose foundation / foundation-layout 1.12.0, compose material3 1.4.0, compose material-icons-core / material-icons-extended 1.7.8, compose material-ripple 1.12.0, compose runtime / runtime-annotation / runtime-retain / runtime-saveable 1.12.0, compose ui / ui-geometry / ui-graphics / ui-text / ui-tooling-preview / ui-unit / ui-util 1.12.0, core / core-ktx 1.19.0, core-viewtree 1.0.0, customview-poolingcontainer 1.0.0, emoji2 1.4.0, graphics-path 1.0.1, interpolator 1.0.0, lifecycle 2.11.0 (runtime, runtime-ktx, runtime-compose, process, livedata-core, viewmodel, viewmodel-ktx, viewmodel-compose, viewmodel-savedstate), navigation 2.9.8 (common, runtime, compose), navigationevent 1.0.0, navigationevent-compose 1.0.0, profileinstaller 1.4.0, room-runtime 2.8.4, room-ktx 2.8.4, sqlite / sqlite-framework 2.6.2, savedstate / savedstate-ktx / savedstate-compose 1.4.0, startup-runtime 1.1.1, tracing 1.2.0, versionedparcelable 1.1.1, window / window-core 1.5.0"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru, dispatchers.io, lineheightstyle.alignment.top"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "first-party SharedPreferences нет; Room lawn-muster.db (таблицы game_records, player_profile)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "offer — только ArrayDeque.offer в исполнителе задач AndroidX; gateball / three gates — названия игры Gateball в справочнике; Redirected / RedirectCancelled — внутренние состояния навигации Compose; landing — фраза «clean landings» в описании Quoits; Tab — роль вкладки Material; в собственном коде cloak/gate/offer URL/landing/bot нет"
+      }
+    ],
+    "domains": [
+      "config.ru",
+      "dispatchers.io",
+      "lineheightstyle.alignment.top"
+    ],
+    "collected_data": [],
+    "cloaking": "да",
+    "cloaking_brief": "Полный разбор актуального релиза Play-карточки «Ice Fishing» (DOWN ENVIRONMENTAL LIMITED): пакет com.kortosi.kluani.fenzalir 1.0 (versionCode 1), XAPK через APKCombo, jadx 1.5.3. Точка входа: com.kortosi.kluani.fenzalir.LawnMusterApplication (ленивая подготовка Room lawn-muster.db), LAUNCHER — MainActivity.onCreate ставит Jetpack Compose и локальную навигацию OpeningRoute / RosterRoute / BriefRoute / PlannerRoute / PennantRoute. Сеть: android.permission.INTERNET отсутствует; в classes.dex нет OkHttp/Retrofit/Volley/HttpURLConnection, android.webkit.WebView, Custom Tabs, ACTION_VIEW, getSharedPreferences, AdvertisingId. Рекламы, аналитики, remote config, PairIP/CHECK_LICENSE нет. First-party SharedPreferences нет. Room lawn-muster.db (game_records, player_profile). cloak/gate/offer URL в собственном коде нет (offer — очередь задач AndroidX; gateball — игра справочника). Клоака = да по правилу белой оболочки: карточка Play называется «Ice Fishing», application-label в APK — «Lawn Muster» (справочник 13 дворовых игр); развилки трафика «оффер/белое» внутри этой сборки нет. config.ru — языковой сплит splits0.xml; dispatchers.io — kotlinx Dispatchers.IO; lineheightstyle.alignment.top — Compose LineHeightStyle.Alignment.Top."
+  },
+  "app_id": "com.kortosi.kluani.fenzalir",
+  "title": "Ice Fishing",
+  "app_label": "Lawn Muster",
+  "developer": "DOWN ENVIRONMENTAL LIMITED",
+  "url": "https://play.google.com/store/apps/details?id=com.kortosi.kluani.fenzalir&hl=en&gl=us",
+  "updated": "2026-09-05",
+  "version": "1.0",
+  "version_code": 1
+}
