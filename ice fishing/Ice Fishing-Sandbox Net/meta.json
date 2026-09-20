@@ -1,0 +1,86 @@
+{
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.7.3"
+      },
+      {
+        "param": "minSdk",
+        "value": "26"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1.0"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, com.jorden.karto.setrisokegl.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.1.0, kotlinx-coroutines 1.8.0, OkHttp 4.12.0, Gson 2.11.0, Koin, androidx.browser 1.8.0 (Custom Tabs), AndroidX activity 1.10.1, appcompat 1.7.1, core 1.16.0, fragment 1.8.8, lifecycle 2.9.0, navigation 2.8.9, room 2.7.1, recyclerview 1.4.0, constraintlayout 2.2.1, coordinatorlayout 1.1.0, drawerlayout 1.1.1, emoji2 1.3.0, profileinstaller 1.4.0, savedstate 1.3.0, startup 1.1.1, transition 1.5.0, viewpager2 1.1.0-beta02, window 1.0.0, sqlite 2.5.0, cardview 1.0.0, slidingpanelayout 1.2.0, Google Material Components 1.12.0, play-services-ads-identifier 18.2.0, play-services-base 18.5.0, play-services-basement 18.4.0, play-services-tasks 18.2.0, com.android.installreferrer, viewbinding 8.7.3, kotlinx-serialization"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "embergauge.space"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Room ember-gauge.db, таблица splash_cache — сохраняет ответ серверной проверки (activityName, effortLevel и остальные поля); локальный прогресс справочника в move_state, recent_view, counter"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "activityName, effortLevel, Moderate, embergauge, stairwell, laundry, firewood, splash_cache, CustomTabsIntent, advertisingId, referrer, android_id, User-Agent, isPrescribed, isCompleted"
+      }
+    ],
+    "domains": [
+      "embergauge.space"
+    ],
+    "collected_data": [
+      "рекламный номер устройства",
+      "метка установки из магазина",
+      "идентификатор Android",
+      "строка браузера телефона"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Полный разбор актуального релиза Play-карточки «Ice Fishing» (Sandbox Net): пакет com.jorden.karto.setrisokegl 2.0 (versionCode 2), XAPK через APKCombo, jadx 1.5.3. Точка входа: EmberGauge.onCreate (Koin), LAUNCHER — SplashActivity. Сразу на заставке собирают advertisingId/installReferrer/androidId и User-Agent, шлют JSON stairwell/laundry/firewood на wss https://embergauge.space/api/metabolic/scale/activity. Ответ SplashResponse: effortLevel == «Moderate» → MainActivity; иначе activityName открывают в Custom Tabs. Кэш Room ember-gauge.db / splash_cache. Cloak=да."
+  },
+  "app_id": "com.jorden.karto.setrisokegl",
+  "title": "Ice Fishing",
+  "app_label": "Ice Fishing",
+  "developer": "Sandbox Net",
+  "url": "https://play.google.com/store/apps/details?id=com.jorden.karto.setrisokegl&hl=en&gl=us",
+  "updated": "2026-09-20",
+  "version": "2.0",
+  "version_code": 2
+}

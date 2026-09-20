@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder Ice Fishing-Sandbox Net was missing on origin/main)",
+  "package": "com.jorden.karto.setrisokegl",
+  "version_name": "2.0",
+  "version_code": 2,
+  "app_label": "Ice Fishing",
+  "play_title": "Ice Fishing",
+  "developer": "Sandbox Net",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.jorden.karto.setrisokegl_2.0.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "config.en",
+    "config.xxhdpi"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors count 3"
+  },
+  "cloaking": "да",
+  "note": "Folder ice fishing/Ice Fishing-Sandbox Net was missing on origin/main. XAPK Ice Fishing 2.0 (vc 2) downloaded from APKCombo (6 MB, config.en + config.xxhdpi). Play «Ice Fishing» = application-label «Ice Fishing». LAUNCHER SplashActivity silently collects GAID/install referrer/android_id + User-Agent and sends JSON stairwell/laundry/firewood over WebSocket to https://embergauge.space/api/metabolic/scale/activity. effortLevel == Moderate → MainActivity; else activityName opened in Custom Tabs. Cache Room ember-gauge.db / splash_cache. agent_src via jadx 1.5.3, not committed as a tree."
+}
