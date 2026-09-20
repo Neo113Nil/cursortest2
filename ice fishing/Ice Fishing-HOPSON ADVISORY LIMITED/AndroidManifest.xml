@@ -6,19 +6,19 @@
     android:compileSdkVersionCodename="15"
     android:requiredSplitTypes="base__density"
     android:splitTypes=""
-    package="com.watchfacestudio.turman"
+    package="com.watchfacestudio.katarum"
     platformBuildVersionCode="35"
     platformBuildVersionName="15">
     <uses-sdk
         android:minSdkVersion="25"
         android:targetSdkVersion="35"/>
     <permission
-        android:name="com.watchfacestudio.turman.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.watchfacestudio.katarum.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature"/>
-    <uses-permission android:name="com.watchfacestudio.turman.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.watchfacestudio.katarum.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
     <application
         android:theme="@style/Theme.Dbasic12"
-        android:label="Hybrid TURMAN Watch face"
+        android:label="Hybrid KATARUM Watch face"
         android:icon="@mipmap/ic_launcher"
         android:allowBackup="true"
         android:supportsRtl="true"
@@ -26,7 +26,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory">
         <activity
-            android:name="com.watchfacestudio.turman.MainActivity"
+            android:name="com.watchfacestudio.katarum.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -46,7 +46,7 @@
         <provider
             android:name="androidx.startup.InitializationProvider"
             android:exported="false"
-            android:authorities="com.watchfacestudio.turman.androidx-startup">
+            android:authorities="com.watchfacestudio.katarum.androidx-startup">
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"
                 android:value="androidx.startup"/>
