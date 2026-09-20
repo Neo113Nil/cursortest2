@@ -1,7 +1,7 @@
 {
   "title": "ICE FISHING GAME INFO",
   "developer": "ZHIQIANG GAME CENTER",
-  "cloaking": "нет",
+  "cloaking": "да",
   "brief_report": {
     "table": [
       {
@@ -38,7 +38,7 @@
       },
       {
         "param": "Аналитика",
-        "value": "Tenjin, Firebase Analytics, Google Analytics / Measurement, Play Install Referrer"
+        "value": "Tenjin android-sdk 1.18.0, Firebase Analytics, Google Analytics / play-services-measurement 22.1.2, play-services-analytics 17.0.0, play-services-tagmanager-v4-impl, Play Install Referrer, play-services-ads-identifier 18.1.0, play-services-appset 16.0.2"
       },
       {
         "param": "Permissions",
@@ -46,7 +46,7 @@
       },
       {
         "param": "Libraries",
-        "value": "Flutter, androidx.appcompat, androidx.browser (Custom Tabs), androidx.webkit, androidx.core (+ktx), androidx.activity, androidx.fragment, androidx.lifecycle, androidx.room, androidx.datastore, androidx.startup, androidx.profileinstaller, androidx.privacysandbox.ads, androidx.window, Kotlin 1.8.10 + kotlinx-coroutines, flutter_inappwebview, url_launcher, shared_preferences, Tenjin, Firebase Analytics / Core / Installations, Google Play Services (ads-identifier, measurement), Play Install Referrer, connectivity_plus, internet_connection_checker_plus, shorebird_code_push, rate_my_app, share_plus, image_picker, wakelock_plus"
+        "value": "Flutter (движок Shorebird, Dart 3.11.1), Dart-пакеты: http, shorebird_code_push, restart_app, tenjin_plugin, advertising_id, firebase_core, firebase_analytics, flutter_inappwebview (android + platform_interface), url_launcher, flutter_widget_from_html_core, html, csslib, html_unescape, carousel_slider, shared_preferences, connectivity_plus, internet_connection_checker_plus, share_plus, image_picker, path_provider, package_info_plus, fluttertoast, flutter_colorpicker, numberpicker, rate_my_app, wakelock_plus, quill_native_bridge, flutter_keyboard_visibility_temp_fork, intl, flutter_localizations, collection, path, logging, ffi, vector_math, material_color_utilities; Android: androidx.appcompat 1.6.1, androidx.browser 1.8.0 (Custom Tabs), androidx.webkit 1.12.0, androidx.core / core-ktx 1.13.1, androidx.activity, androidx.fragment, androidx.lifecycle, androidx.room 2.5.1, androidx.datastore 1.0.0, androidx.startup, androidx.profileinstaller, androidx.window 1.2.0, androidx.privacysandbox.ads 1.0.0-beta05, androidx.multidex, Kotlin 1.8.10 + kotlinx-coroutines, Tenjin android-sdk 1.18.0, Firebase Core / Analytics / Installations, Google Play Services (base 18.5.0, basement 18.4.0, ads-identifier, appset, measurement, analytics), Play Install Referrer, Play Core / Play In-App Review, Gson"
       },
       {
         "param": "Подозрительные домены",
@@ -54,21 +54,70 @@
       },
       {
         "param": "SharedPreferences",
-        "value": "флаг первого запуска (isFirst), избранные истории, позиция/режим темы (themePos, themeMode), флаг RateMyApp doNotOpenAgain"
+        "value": "FlutterSharedPreferences — флаг первого запуска isFirst, список избранного storyFavList, список прочитанного storyCompleteReadList, последняя открытая статья lastReadStory, размер шрифта storytextSize, тёмная тема storyDarkMode, настройки темы themeMode и themePos, флаг оценки приложения doNotOpenAgain; tenjinInstallPreferences (Tenjin) — tenjinFirstLaunchKey, tenjinInstallReferrerSent, tenjinGoogleInstallReferrer, TENJIN_ADVERTISING_ID_STORE, TENJIN_AD_TRACKING_STORE, TENJIN_INITIALIZED_AT, tenjinReferenceId, TENJIN_USER_PROFILE; служебные настройки Firebase/Google Measurement; состояние загруженных заплаток Shorebird в файле patches_state.json"
       },
       {
         "param": "Есть ли клоака",
-        "value": "нет"
+        "value": "да"
       },
       {
         "param": "Подозрительные слова",
-        "value": "redirect, webview, InAppWebView, useWebView, launchUrl, openUrlInApp events.gpointer.com Домен events.gpointer.com зашит в приложении как основной адрес (baseUrl) для загрузки статей и баннеров: с него читают сценарии вроде allstory.php, category.php, homebanner.php, randomstory.php, story.php и папку uploads/. Открытая главная страница сервера — панель «Story Book | Login», а ответ API отдаёт JSON со статьями про рыболовные и idle-игры. Это бэкенд белого контента приложения, а не шлюз развилки «оффер / обычное приложение»; по коду отдельной проверки пользователя на оффер не видно."
+        "value": "ShoreBirdCheck, ShoreBirdStartDownload, ShoreBirdAvailable, ShoreBirdNotAvailable, ShoreBirdNoPatch, ShoreBirdRestart, checkForUpdate, checkForDownloadableUpdate, downloadUpdate, downloadFailed, patch_available, download_url, hash_signature, restartApp, restartRequired, deferred_deeplink_url, deeplink_url, clickedTenjinLink, click_id, advertising_id, limit_ad_tracking, device_info, AndroidInAppWebViewPlatform, useWebView, inAppWebView, inAppBrowserView, enableJavaScript, launchUrl, openUrlInApp, onTapUrl, baseUrl, uploads/"
       }
     ],
-    "domains": [],
-    "collected_data": [],
-    "cloaking": "нет",
-    "cloaking_brief": ""
+    "domains": [
+      "events.gpointer.com"
+    ],
+    "collected_data": [
+      "ключ приложения в системе учёта установок",
+      "имя пакета приложения",
+      "название платформы",
+      "версия приложения",
+      "код версии приложения",
+      "версия Android",
+      "номер выпуска Android",
+      "номер сборки прошивки",
+      "название устройства",
+      "производитель телефона",
+      "модель телефона",
+      "марка телефона",
+      "заводское название модели",
+      "магазин, из которого установлено приложение",
+      "ширина экрана",
+      "высота экрана",
+      "язык телефона",
+      "страна телефона",
+      "региональные настройки телефона",
+      "часовой пояс",
+      "оператор связи",
+      "тип подключения к интернету",
+      "признак запуска на эмуляторе",
+      "рекламный номер устройства",
+      "запрет слежения в рекламе",
+      "признак того, что рекламный номер взят из памяти приложения",
+      "номер устройства для разработчика",
+      "область действия номера устройства для разработчика",
+      "версия библиотеки учёта установок",
+      "служебный номер установки приложения",
+      "номер текущего сеанса",
+      "время отправки запроса",
+      "время первого включения библиотеки учёта",
+      "признак повторной отправки накопленных событий",
+      "номер пользователя в системе учёта установок",
+      "метка перехода из магазина приложений",
+      "время нажатия на рекламное объявление",
+      "время установки приложения",
+      "название события приложения",
+      "номер приложения в системе обновления кода",
+      "канал обновления кода",
+      "версия выпуска приложения",
+      "номер клиента в системе обновления кода",
+      "номер уже установленной заплатки кода",
+      "архитектура процессора",
+      "номер раздела со статьями"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "При запуске приложение молча собирает сведения о телефоне (язык, страна, модель, рекламный номер, оператор, признак эмулятора и др.) и отправляет их в систему учёта установок Tenjin на track.tenjin.com, а также обращается к службе обновления программного кода Shorebird на api.shorebird.dev (/api/v1/patches/check). Сервер по номеру приложения, каналу, версии выпуска и номеру клиента решает, выдавать ли заплатку: если она есть, приложение скачивает новый код и перезапускает себя, после чего работает уже на присланном с сервера коде. Содержимое статей целиком приходит с events.gpointer.com в виде веб-разметки, ссылки из неё открываются приложением, в том числе во встроенном окне сайта. Если заплатки нет, человеку остаётся обычное приложение."
   },
   "app_id": "com.events.gpointercomfishice",
   "icon": "/static/app-icons/com_events_gpointercomfishice.png",
