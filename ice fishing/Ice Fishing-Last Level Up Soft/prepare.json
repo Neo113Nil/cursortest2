@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder Ice Fishing-Last Level Up Soft was missing on origin/main)",
+  "package": "com.kolosta.rejin.keldranis",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Freight Folio",
+  "play_title": "Ice Fishing",
+  "developer": "Last Level Up Soft",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.kolosta.rejin.keldranis.xapk / Ice Fishing_1.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "config.armeabi_v7a",
+    "config.en"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors count 19"
+  },
+  "cloaking": "да",
+  "note": "Folder ice fishing/Ice Fishing-Last Level Up Soft was missing on origin/main. XAPK Ice Fishing 1.0 (vc 1) downloaded from APKPure (2.9 MB). Splits: config.armeabi_v7a, config.en. No asset split and no arm64_v8a in this XAPK. Play «Ice Fishing» ≠ application-label «Freight Folio». No INTERNET, WebView, Custom Tabs, OkHttp, HttpURLConnection, remote config, ads, analytics, PairIP. Room freight-folio.db. agent_src via jadx 1.5.3, not committed as a tree. dispatchers.io = kotlinx.coroutines Dispatchers.IO; config.ru = language split in splits0.xml."
+}

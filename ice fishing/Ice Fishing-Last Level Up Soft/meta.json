@@ -1,0 +1,82 @@
+{
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing (в приложении: Freight Folio)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.3.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1+"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.kolosta.rejin.keldranis.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.1+ (stdlib + builtins, kotlinx-coroutines-core 1.9.0, kotlinx-coroutines-android 1.9.0, kotlinx-serialization-core); Dagger 2.60.1; Jetpack Compose (runtime/ui/foundation/animation 1.12.0, material3 1.4.0, material-icons 1.7.8, material-ripple 1.12.0); Navigation Compose 2.9.8; NavigationEvent 1.0.0; Room 2.8.4; SQLite 2.6.2; AndroidX: activity 1.13.0, activity-compose 1.13.0, activity-ktx 1.13.0, annotation-experimental 1.5.0, core 1.19.0, core-ktx 1.19.0, core-viewtree 1.0.0, emoji2 1.4.0, graphics-path 1.0.1, interpolator 1.0.0, lifecycle-* 2.11.0, profileinstaller 1.4.0, savedstate 1.4.0, startup-runtime 1.1.1, tracing 1.2.0, versionedparcelable 1.1.1, window 1.5.0, autofill 1.0.0, customview-poolingcontainer 1.0.0"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru, dispatchers.io"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "first-party SharedPreferences нет; Room freight-folio.db (таблицы wagon_records, reader)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "offer — только имя метода коллекции в DEX; Tab — строка вкладки интерфейса; gate — фраза discharge gates в описании вагона; cloak/landing/bot/whitelist в собственном коде нет"
+      }
+    ],
+    "domains": [
+      "config.ru",
+      "dispatchers.io"
+    ],
+    "collected_data": [],
+    "cloaking": "да",
+    "cloaking_brief": "Полный разбор актуального релиза Play-карточки «Ice Fishing» (Last Level Up Soft): пакет com.kolosta.rejin.keldranis 1.0 (versionCode 1), XAPK через APKPure, jadx 1.5.3. Точка входа: com.kolosta.rejin.keldranis.FreightFolioApp.onCreate (локальный Dagger-компонент и Room freight-folio.db), LAUNCHER — MainActivity (Compose setContent, маршруты HomeRoute/CatalogRoute/DetailRoute/GameRoute/ProfileRoute). Сеть: android.permission.INTERNET отсутствует; в dex нет OkHttp/Retrofit/Volley/HttpURLConnection; WebView/Custom Tabs/ACTION_VIEW на URL с сервера нет. Рекламы, аналитики, remote config, PairIP нет. First-party SharedPreferences нет. cloak/gate/offer URL в собственном коде нет (offer — метод коллекции). Клоака = да по правилу белой оболочки: карточка Play называется «Ice Fishing», application-label в APK — «Freight Folio»; развилки трафика «оффер/белое» внутри этой сборки нет. config.ru — языковой сплит splits0.xml. dispatchers.io — строка Dispatchers.IO из kotlinx-coroutines, не сетевой хост."
+  },
+  "app_id": "com.kolosta.rejin.keldranis",
+  "title": "Ice Fishing",
+  "app_label": "Freight Folio",
+  "developer": "Last Level Up Soft",
+  "url": "https://play.google.com/store/apps/details?id=com.kolosta.rejin.keldranis&hl=en&gl=us",
+  "updated": "2026-09-06",
+  "version": "1.0",
+  "version_code": 1
+}
