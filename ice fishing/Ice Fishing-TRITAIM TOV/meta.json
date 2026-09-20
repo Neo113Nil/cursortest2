@@ -1,0 +1,87 @@
+{
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.7.3"
+      },
+      {
+        "param": "minSdk",
+        "value": "26"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1.0"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, com.google.android.gms.permission.AD_ID, com.jorden.karto.setrisopira.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.1.0, kotlinx-coroutines 1.7.3, OkHttp 5.4.0, Gson, Koin, androidx.browser 1.8.0 (Custom Tabs), Jetpack Compose 1.8.2 (ui/foundation/animation/runtime), AndroidX activity 1.10.1, appcompat 1.7.0, core 1.16.0, datastore 1.1.7, fragment 1.8.6, lifecycle 2.9.0, navigation 2.8.9, room 2.7.1, recyclerview 1.4.0, constraintlayout 2.2.1, coordinatorlayout 1.1.0, drawerlayout 1.1.1, emoji2 1.4.0, profileinstaller 1.4.0, savedstate 1.3.0, startup 1.2.0, transition 1.5.0, viewpager2 1.1.0-beta02, window 1.0.0, sqlite 2.5.0, Google Material Components 1.12.0, play-services-ads-identifier 18.2.0, play-services-base 18.5.0, play-services-basement 18.4.0, play-services-tasks 18.2.0, com.android.installreferrer, PairIP licensecheck (com.pairip.application / com.pairip.licensecheck)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "conkledgeregyster.space, config.ru"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "DataStore splash_cache.preferences_pb — ключ forager_tally_response (сохранённый ответ проверки); Room conk_ledge.db — локальный прогресс справочника"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "woodland, trunk, ruler, foragerTally, speciesName, isOutlier, isMature, Ganoderma applanatum, Tab, openTab, forager_tally_response, splash_cache, bracketSpan"
+      }
+    ],
+    "domains": [
+      "conkledgeregyster.space",
+      "config.ru"
+    ],
+    "collected_data": [
+      "рекламный номер устройства",
+      "метка установки из магазина",
+      "идентификатор Android",
+      "строка браузера телефона"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Полный разбор актуального релиза Play-карточки «Ice Fishing» (TRITAIM TOV): пакет com.jorden.karto.setrisopira 2.0 (versionCode 2), XAPK через APKPure, jadx 1.5.3. Точка входа: com.pairip.application.Application.attachBaseContext → LicenseClient.checkLicense, затем ConkLedge (Koin). LAUNCHER — SplashActivity. Сразу на заставке собирают advertisingId/installReferrer/androidId и User-Agent, шлют JSON woodland/trunk/ruler на wss https://conkledgeregyster.space/api/bracketSpan/foragerTally. Ответ ForagerTallyResponse: speciesName == «Ganoderma applanatum» → MainActivity; иначе speciesName открывают в Custom Tabs. Кэш DataStore splash_cache. config.ru — имя языкового split, не сетевой gate. Cloak=да."
+  },
+  "app_id": "com.jorden.karto.setrisopira",
+  "title": "Ice Fishing",
+  "app_label": "Ice Fishing",
+  "developer": "TRITAIM TOV",
+  "url": "https://play.google.com/store/apps/details?id=com.jorden.karto.setrisopira&hl=en&gl=us",
+  "updated": "2026-09-14",
+  "version": "2.0",
+  "version_code": 2
+}

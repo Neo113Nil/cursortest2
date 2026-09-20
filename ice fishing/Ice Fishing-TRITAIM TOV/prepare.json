@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK via apkeep (Play Collector folder Ice Fishing-TRITAIM TOV was missing on origin/main)",
+  "package": "com.jorden.karto.setrisopira",
+  "version_name": "2.0",
+  "version_code": 2,
+  "app_label": "Ice Fishing",
+  "play_title": "Ice Fishing",
+  "developer": "TRITAIM TOV",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.jorden.karto.setrisopira@2.0.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "config.arm64_v8a",
+    "config.en",
+    "config.mdpi"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed; jadx 1.5.3; first-party + cloak packages zipped as agent_src.zip"
+  },
+  "cloaking": "да",
+  "note": "Folder ice fishing/Ice Fishing-TRITAIM TOV was missing on origin/main. XAPK Ice Fishing 2.0 (vc 2) downloaded from APKPure. Splits: config.arm64_v8a, config.en, config.mdpi. No asset split in this XAPK. Live gate https://conkledgeregyster.space/api/bracketSpan/foragerTally (WebSocket + DeviceIdsPayload). config.ru is language split name in splits0.xml, not a network host. Older package com.jorden.karto.setrisoplas was not on APKPure. agent_src via jadx 1.5.3, not committed."
+}
