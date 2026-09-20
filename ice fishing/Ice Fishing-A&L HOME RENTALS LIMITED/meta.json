@@ -1,0 +1,87 @@
+{
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing (в приложении: Strait Watch)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.3.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.4.0"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.chicken.road.nevsdomy.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.4.0 / kotlin-stdlib, kotlinx-coroutines 1.9.0, kotlinx-serialization, Jetpack Compose 1.12.0 (ui/foundation/animation/runtime, material3 1.4.0, material-icons-core 1.7.8), AndroidX (activity/activity-compose/activity-ktx 1.13.0, core/core-ktx 1.19.0, emoji2 1.4.0, fragment 1.5.1, lifecycle 2.11.0, navigation/navigation-compose 2.9.8, navigationevent 1.0.0, room 2.8.4, sqlite 2.6.2, savedstate 1.4.0, profileinstaller 1.4.0, startup 1.1.1, window 1.5.0, hilt-navigation-compose 1.4.0, tracing 1.2.0), Dagger/Hilt 2.60.1, Google Play PairIP licensecheck (com.pairip.application / com.pairip.licensecheck)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "license check, PAYWALL, Bridged, Atlantic Gates"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "config.ru",
+        "vt_url": "https://www.virustotal.com/gui/domain/config.ru",
+        "detections": "0/89 (malicious=0, suspicious=0)",
+        "redirect": "https://config.ru/en/",
+        "parked": "похоже на парковку (domain is for sale)",
+        "note": "строка из res/xml/splits0.xml — имя языкового сплита (русский), в коде и сети не используется"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": "Полный разбор agent_base.apk (jadx 1.5.3, 8452 java, classes.dex+classes2.dex, без native .so). Точка входа: com.pairip.application.Application.attachBaseContext вызывает LicenseClient.checkLicense (проверка лицензии Google Play через bindService к com.android.vending, в запрос уходит только имя пакета), затем StraitWatchApp (пустой Hilt Application). MainActivity.onCreate включает EdgeToEdge и ставит Compose-навигацию StraitWatchNavGraph (Chart Room / Narrows Register / Passage Log / Beacon Sweep). Сеть: в манифесте нет INTERNET; в dex нет OkHttp/HttpURLConnection/Volley/Retrofit; URL только schemas.android.com, apache.org, github.com/eclipse, youtrack.jetbrains.com. WebView: только невызываемый WebView.findAddress в AndroidX LinkifyCompat. Custom Tabs / androidx.browser нет. Firebase/реклама/аналитика/remote config нет. First-party SharedPreferences нет; данные — Room strait_watch.db (CrossingEntity, SweepStatsEntity), каталог проливов зашит в StraitSeed. cloak/offer/whitelist/bot/is_bot в first-party нет. Play «Ice Fishing» ≠ APK-label «Strait Watch» — белая оболочка по названию, но развилки оффер/белая в коде нет и без интернета невозможна. PairIP — лицензия Play, не фильтр трафика. Cloak = нет. config.ru — имя языкового сплита из splits0.xml, VT 0/89, парковка."
+  },
+  "app_id": "com.chicken.road.nevsdomy",
+  "title": "Ice Fishing",
+  "app_label": "Strait Watch",
+  "developer": "A&L HOME RENTALS LIMITED",
+  "url": "https://play.google.com/store/apps/details?id=com.chicken.road.nevsdomy&hl=en&gl=us",
+  "version": "1.0",
+  "version_code": 1
+}
