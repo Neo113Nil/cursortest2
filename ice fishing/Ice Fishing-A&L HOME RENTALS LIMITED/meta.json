@@ -1,5 +1,5 @@
 {
-  "cloaking": "нет",
+  "cloaking": "да",
   "brief_report": {
     "table": [
       {
@@ -20,7 +20,7 @@
       },
       {
         "param": "Kotlin",
-        "value": "да, 2.4.0"
+        "value": "да, 2.4.10"
       },
       {
         "param": "Web View",
@@ -44,7 +44,7 @@
       },
       {
         "param": "Libraries",
-        "value": "Kotlin 2.4.0 / kotlin-stdlib, kotlinx-coroutines 1.9.0, kotlinx-serialization, Jetpack Compose 1.12.0 (ui/foundation/animation/runtime, material3 1.4.0, material-icons-core 1.7.8), AndroidX (activity/activity-compose/activity-ktx 1.13.0, core/core-ktx 1.19.0, emoji2 1.4.0, fragment 1.5.1, lifecycle 2.11.0, navigation/navigation-compose 2.9.8, navigationevent 1.0.0, room 2.8.4, sqlite 2.6.2, savedstate 1.4.0, profileinstaller 1.4.0, startup 1.1.1, window 1.5.0, hilt-navigation-compose 1.4.0, tracing 1.2.0), Dagger/Hilt 2.60.1, Google Play PairIP licensecheck (com.pairip.application / com.pairip.licensecheck)"
+        "value": "kotlin-stdlib 2.4.10, kotlinx-coroutines-core / coroutines-android 1.9.0, kotlinx-serialization-core, Jetpack Compose 1.12.0 (runtime, runtime-saveable, runtime-retain, runtime-annotation, ui, ui-graphics, ui-text, ui-unit, ui-util, ui-geometry, ui-tooling-preview, foundation, foundation-layout, animation, animation-core, material-ripple), Compose material3 1.4.0, compose material-icons-core 1.7.8, androidx activity / activity-compose / activity-ktx 1.13.0, androidx core / core-ktx 1.19.0, core-viewtree 1.0.0, annotation-experimental 1.5.0, autofill 1.0.0, customview 1.0.0, customview-poolingcontainer 1.0.0, emoji2 1.4.0, fragment 1.5.1, graphics-path 1.0.1, interpolator 1.0.0, lifecycle 2.11.0 (runtime, runtime-ktx, runtime-compose, process, livedata, viewmodel, viewmodel-ktx, viewmodel-compose, viewmodel-savedstate), loader 1.0.0, navigation 2.9.8 (common, runtime, compose), navigationevent 1.0.0, navigationevent-compose 1.0.0, room 2.8.4 (runtime, ktx), sqlite / sqlite-framework 2.6.2, savedstate 1.4.0 (savedstate, savedstate-ktx, savedstate-compose), profileinstaller 1.4.0, startup-runtime 1.1.1, tracing 1.2.0, versionedparcelable 1.1.1, viewpager 1.0.0, window / window-core 1.5.0, hilt-navigation-compose 1.4.0, hilt-lifecycle-viewmodel 1.4.0, hilt-lifecycle-viewmodel-compose 1.4.0, Dagger / Hilt 2.60.1, com.google.common.util.concurrent.ListenableFuture, Google Play PairIP (com.pairip.application, com.pairip.licensecheck)"
       },
       {
         "param": "Подозрительные домены",
@@ -56,11 +56,11 @@
       },
       {
         "param": "Есть ли клоака",
-        "value": "нет"
+        "value": "да"
       },
       {
         "param": "Подозрительные слова",
-        "value": "license check, PAYWALL, Bridged, Atlantic Gates"
+        "value": "license check, License check, PAYWALL_INTENT, paywall, Atlantic Gates, Gate of Tears, Bridged"
       }
     ],
     "domains": [
@@ -70,12 +70,20 @@
         "detections": "0/89 (malicious=0, suspicious=0)",
         "redirect": "https://config.ru/en/",
         "parked": "похоже на парковку (domain is for sale)",
-        "note": "строка из res/xml/splits0.xml — имя языкового сплита (русский), в коде и сети не используется"
+        "note": "строка из res/xml/splits0.xml — имя языкового сплита (русский), рядом ещё 73 таких же записи; в коде и сети не используется"
       }
     ],
-    "collected_data": [],
-    "cloaking": "нет",
-    "cloaking_brief": "Полный разбор agent_base.apk (jadx 1.5.3, 8452 java, classes.dex+classes2.dex, без native .so). Точка входа: com.pairip.application.Application.attachBaseContext вызывает LicenseClient.checkLicense (проверка лицензии Google Play через bindService к com.android.vending, в запрос уходит только имя пакета), затем StraitWatchApp (пустой Hilt Application). MainActivity.onCreate включает EdgeToEdge и ставит Compose-навигацию StraitWatchNavGraph (Chart Room / Narrows Register / Passage Log / Beacon Sweep). Сеть: в манифесте нет INTERNET; в dex нет OkHttp/HttpURLConnection/Volley/Retrofit; URL только schemas.android.com, apache.org, github.com/eclipse, youtrack.jetbrains.com. WebView: только невызываемый WebView.findAddress в AndroidX LinkifyCompat. Custom Tabs / androidx.browser нет. Firebase/реклама/аналитика/remote config нет. First-party SharedPreferences нет; данные — Room strait_watch.db (CrossingEntity, SweepStatsEntity), каталог проливов зашит в StraitSeed. cloak/offer/whitelist/bot/is_bot в first-party нет. Play «Ice Fishing» ≠ APK-label «Strait Watch» — белая оболочка по названию, но развилки оффер/белая в коде нет и без интернета невозможна. PairIP — лицензия Play, не фильтр трафика. Cloak = нет. config.ru — имя языкового сплита из splits0.xml, VT 0/89, парковка."
+    "collected_data": [
+      "имя пакета приложения",
+      "название служебного интерфейса проверки лицензии",
+      "обратный канал приложения для ответа проверки",
+      "отметка о досрочном завершении пробного периода",
+      "название магазина, через который установлено приложение",
+      "системные отметки установленного приложения",
+      "версия Android на устройстве"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Повторный независимый разбор: agent_base.apk распакован и заново декомпилирован jadx 1.5.3 (classes.dex + classes2.dex, 8615 файлов, 44 ошибки, native .so в base нет). Play-название «Ice Fishing» != application-label «Strait Watch», а имя пакета com.chicken.road.nevsdomy содержит след казино-бренда chicken road — три разных идентичности, белая оболочка, поэтому клоака = да. Точка входа: манифест ставит com.pairip.application.Application (обёртка Google Play PairIP), она в attachBaseContext вызывает LicenseClient.checkLicense и только потом StraitWatchApp (пустой Hilt Application); LicenseContentProvider в манифесте не зарегистрирован. Единственная тихая проверка — лицензия Google Play через bindService к com.android.vending (ILicensingService / IBackgroundLicensingService, транзакции 2 и 3): в Parcel уходят interface token, имя пакета, binder-получатель ответа и (при досрочном завершении триала) флаг end_custom_trial; локально читаются installing package name (сравнение с com.android.vending), системные флаги приложения и Build.VERSION.SDK_INT. Из ответа читаются код (0/2/3), LICENSE_DATA (alg=RS256, packageName, repeatedCheckDurationToRetryMillis, repeatedCheckTimeToRetryMillis) и PAYWALL_INTENT; поля url/offer/link/redirect в ответе нет. Сеть: android.permission.INTERNET в манифесте отсутствует, в dex нет OkHttp/Retrofit/Volley/HttpURLConnection/сокетов; строки с http — только документация Android/Kotlin/issue-трекеры. WebView: единственная ссылка — статический WebView.findAddress внутри androidx.core.text.util.LinkifyCompat (не вызывается приложением). Custom Tabs / androidx.browser, реклама, аналитика, Firebase, remote config, SharedPreferences в first-party нет; данные только в локальной Room-базе strait_watch.db (crossings: straitId/crossedOn; sweep_stats: bestBoards/runsPlayed), каталог 13 проливов зашит в StraitSeed. Развилка, видимая в коде: лицензия подтверждена -> обычное приложение; ответ «нет лицензии» -> LicenseActivity открывает присланный магазином PAYWALL_INTENT и закрывает приложение; ошибка проверки -> диалог «Something went wrong» и System.exit через 30 с. config.ru — имя языкового сплита из splits0.xml, VT 0/89, парковка."
   },
   "app_id": "com.chicken.road.nevsdomy",
   "title": "Ice Fishing",
