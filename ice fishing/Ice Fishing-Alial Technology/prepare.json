@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder ice fishing/Ice Fishing-Alial Technology was missing on origin/main)",
+  "package": "com.oceanbounce.fishskyquest",
+  "version_name": "1.2",
+  "version_code": 2,
+  "app_label": "Fish Jump Adventure",
+  "play_title": "Ice Fishing",
+  "developer": "Alial Technology",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.oceanbounce.fishskyquest_1.2.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base = com.oceanbounce.fishskyquest.apk)",
+    "config.arm64_v8a",
+    "config.armeabi_v7a",
+    "config.en",
+    "config.fr",
+    "config.xxhdpi"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors count 2"
+  },
+  "cloaking": "нет",
+  "note": "Folder ice fishing/Ice Fishing-Alial Technology was missing on origin/main. XAPK Fish Jump Adventure 1.2 (vc 2, ~30 MB) downloaded from APKCombo. Splits: config.arm64_v8a, config.armeabi_v7a, config.en, config.fr, config.xxhdpi. No asset split and no config.ru/config.lt files in this XAPK (config.ru is only a language split name in splits0.xml). Play «Ice Fishing» ≠ application-label «Fish Jump Adventure». No INTERNET, WebView, Custom Tabs, OkHttp, HttpURLConnection, remote config, ads, analytics. PairIP LicenseClient talks only to Google Play licensing (com.android.vending). Flutter plugin: shared_preferences_android only. libapp.so is the Fish Jump Adventure dart snapshot (local scores/settings). agent_src via jadx 1.5.3, not committed as a tree."
+}

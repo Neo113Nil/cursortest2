@@ -1,0 +1,79 @@
+{
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing (в приложении: Fish Jump Adventure)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.6.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1.0"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.oceanbounce.fishskyquest.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Flutter (io.flutter.embedding, libflutter.so, libapp.so), Kotlin 2.1.0, kotlinx-coroutines 1.7.3, shared_preferences_android, PairIP licensecheck (com.pairip.application / com.pairip.licensecheck), AndroidX activity/activity-ktx 1.8.1, annotation-experimental 1.4.0, appcompat/appcompat-resources 1.1.0, asynclayoutinflater 1.0.0, coordinatorlayout 1.0.0, core/core-ktx 1.13.1, cursoradapter 1.0.0, customview 1.1.0, datastore/datastore-core/datastore-preferences 1.1.7, documentfile 1.0.0, drawerlayout 1.0.0, exifinterface 1.4.1, fragment/fragment-ktx 1.7.1, interpolator 1.0.0, legacy-support-core-ui/utils 1.0.0, lifecycle-* 2.7.0, loader 1.0.0, localbroadcastmanager 1.0.0, preference 1.2.1, print 1.0.0, profileinstaller 1.3.1, recyclerview 1.0.0, savedstate/savedstate-ktx 1.2.1, slidingpanelayout 1.2.0, startup-runtime 1.1.1, swiperefreshlayout 1.0.0, tracing 1.2.0, transition 1.4.1, vectordrawable/vectordrawable-animated 1.1.0, versionedparcelable 1.1.1, viewpager 1.0.0, window/window-java 1.2.0, window-extensions-core 1.0.0, libdatastore_shared_counter.so"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Flutter shared_preferences_android — ключи game_settings (difficulty, soundEnabled, musicEnabled) и high_scores (локальная таблица очков)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "license check, PAYWALL"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": "Полный разбор актуального релиза Play-карточки «Ice Fishing» (Alial Technology): пакет com.oceanbounce.fishskyquest 1.2 (versionCode 2), XAPK через APKCombo, jadx 1.5.3. Точка входа: com.pairip.application.Application.attachBaseContext → LicenseClient.checkLicense (только com.android.vending), затем Flutter MainActivity extends c0.AbstractActivityC0104f. application-label «Fish Jump Adventure». android.permission.INTERNET нет во всех сплитах; нет WebView, Custom Tabs, OkHttp, HttpURLConnection, remote config, рекламы, аналитики. Единственный Flutter-плагин — shared_preferences_android. libapp.so — офлайн-игра Fish Jump Adventure (очки/настройки локально). config.ru — имя языкового split в splits0.xml, файла config.ru в XAPK нет. Развилки оффер/белая нет — это ребрендинг карточки без фильтрации трафика. Cloak=нет."
+  },
+  "app_id": "com.oceanbounce.fishskyquest",
+  "title": "Ice Fishing",
+  "app_label": "Fish Jump Adventure",
+  "developer": "Alial Technology",
+  "url": "https://play.google.com/store/apps/details?id=com.oceanbounce.fishskyquest&hl=en&gl=us",
+  "updated": "2026-06-17",
+  "version": "1.2",
+  "version_code": 2
+}

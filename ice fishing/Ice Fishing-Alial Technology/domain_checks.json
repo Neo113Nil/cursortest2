@@ -1,0 +1,16 @@
+{
+  "all_custom_domains": [],
+  "checked": [],
+  "count": 0,
+  "vt_configured": true,
+  "suspicious_domains": [],
+  "notes": {
+    "config.ru": "имя языкового split в res/xml/splits0.xml (split=\"config.ru\"), не сетевой хост и не gate",
+    "config.lt": "имя языкового split в splits0.xml, в этом XAPK файла config.lt.apk нет",
+    "github.com": "строка движка Flutter https://github.com/flutter/flutter/issues/30701, не first-party",
+    "pub.dev": "строка Flutter/Dart SDK https://pub.dev/, не first-party",
+    "api.flutter.dev": "документация Flutter в libapp.so, не first-party",
+    "dispatchers.io": "в APK нет; Kotlin Dispatchers.IO в этом приложении не встречается"
+  },
+  "checks": []
+}
