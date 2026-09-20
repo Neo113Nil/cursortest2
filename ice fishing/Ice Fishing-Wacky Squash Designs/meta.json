@@ -1,0 +1,82 @@
+{
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing (в приложении: Bao Basket)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.2.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "37"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1+"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.chance.mega.trivoxbaob.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.1+ (stdlib + builtins, kotlinx-coroutines-core 1.10.2, kotlinx-coroutines-android 1.10.2); SQLDelight; PairIP licensecheck; AndroidX: activity / activity-compose / activity-ktx 1.13.0, annotation-experimental 1.5.1, arch.core core-runtime, autofill 1.0.0, compose animation / animation-core 1.12.0, compose foundation / foundation-layout 1.12.0, compose material3 1.4.0, compose material3 adaptive 1.3.0, compose material-icons-core / material-icons-extended 1.7.8, compose material-ripple 1.12.0, compose runtime / runtime-annotation / runtime-retain / runtime-saveable 1.12.0, compose ui / ui-geometry / ui-graphics / ui-text / ui-tooling-preview / ui-unit / ui-util 1.12.0, core / core-ktx 1.19.0, core-viewtree 1.0.0, customview 1.0.0, customview-poolingcontainer 1.0.0, datastore / datastore-core / datastore-preferences / datastore-preferences-core 1.2.1, emoji2 1.4.0, fragment / fragment-ktx 1.9.0, graphics-path 1.0.1, interpolator 1.0.0, lifecycle 2.11.0 (livedata, livedata-core, livedata-core-ktx, process, runtime, runtime-ktx, runtime-compose, viewmodel, viewmodel-ktx, viewmodel-compose, viewmodel-savedstate), loader 1.0.0, navigationevent / navigationevent-compose 1.0.0, profileinstaller 1.4.0, savedstate / savedstate-ktx / savedstate-compose 1.4.0, sqlite / sqlite-framework 2.6.2, startup-runtime 1.1.1, tracing 2.0.0, versionedparcelable 1.1.1, viewpager 1.0.0, window / window-core 1.5.0"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru, dispatchers.io"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "DataStore steamer_preferences.preferences_pb: recent_cravings, best_fold_score, total_fold_sessions, seen_stamps; SQLDelight bao_steamer.db (steamerCart, steamerCartItem, discovery, foldRun). First-party getSharedPreferences нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "Redirected, RedirectCancelled — состояния навигации Compose; Tab — вкладки меню Bao Basket; PAYWALL / license check — проверка лицензии Google Play (PairIP); в собственном коде cloak/gate/offer URL/landing/bot нет"
+      }
+    ],
+    "domains": [
+      "config.ru",
+      "dispatchers.io"
+    ],
+    "collected_data": [],
+    "cloaking": "да",
+    "cloaking_brief": "Полный разбор актуального релиза Play-карточки «Ice Fishing» (Wacky Squash Designs): пакет com.chance.mega.trivoxbaob 1.0 (versionCode 1), XAPK через APKCombo, jadx 1.5.3. Точка входа: com.pairip.application.Application.attachBaseContext → LicenseClient.checkLicense (проверка лицензии Play), затем com.example.app.common.App; MainActivity.onCreate ставит activity_main, steamerHost и локальные вкладки Menu / Cart / Folder / Passport. Сеть: android.permission.INTERNET отсутствует; в classes.dex нет OkHttp/Retrofit/Volley/HttpURLConnection, android.webkit.WebView, Custom Tabs, ACTION_VIEW на URL с сервера, AdvertisingId. Рекламы, аналитики, remote config нет. First-party getSharedPreferences нет. DataStore steamer_preferences.preferences_pb (recent_cravings, best_fold_score, total_fold_sessions, seen_stamps) и SQLDelight bao_steamer.db (steamerCart, steamerCartItem, discovery, foldRun). cloak/gate/offer URL в собственном коде нет. Клоака = да по правилу белой оболочки: карточка Play называется «Ice Fishing», application-label в APK — «Bao Basket» (справочник 48 видов бао); развилки трафика «оффер/белое» внутри этой сборки нет. config.ru — языковой сплит splits0.xml; dispatchers.io — kotlinx Dispatchers.IO."
+  },
+  "app_id": "com.chance.mega.trivoxbaob",
+  "title": "Ice Fishing",
+  "app_label": "Bao Basket",
+  "developer": "Wacky Squash Designs",
+  "url": "https://play.google.com/store/apps/details?id=com.chance.mega.trivoxbaob&hl=en&gl=us",
+  "updated": "2026-09-04",
+  "version": "1.0",
+  "version_code": 1
+}
