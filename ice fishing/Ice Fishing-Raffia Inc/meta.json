@@ -1,0 +1,78 @@
+{
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing (в приложении: Deck Lore)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.7.3"
+      },
+      {
+        "param": "minSdk",
+        "value": "26"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.1.0"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.kortosi.kluani.qorzanis.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.1.0 / kotlinx-coroutines 1.7.3, AndroidX (appcompat 1.7.0, activity 1.8.1, fragment 1.8.6, core/core-ktx 1.16.0, lifecycle 2.9.0, navigation 2.8.9, room 2.7.1, recyclerview 1.4.0, constraintlayout 2.2.1, coordinatorlayout 1.1.0, drawerlayout 1.1.1, viewpager2 1.1.0-beta02, emoji2 1.3.0, profileinstaller 1.4.0, startup 1.1.1, savedstate 1.3.0, sqlite 2.5.0, window 1.0.0), Material Components 1.12.0, Dagger/Hilt 2.51.1"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "landing, Landing Card, landing report"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": "Полный разбор: XAPK с APKCombo + jadx 1.5.3 agent_base.apk (1909 java). Точка входа DeckLore.onCreate только Hilt; MainActivity.onCreate рисует локальную навигацию Drop In / Trick Roster / Spot Check / Rider Crest / Landing Card. Нет INTERNET/ACCESS_NETWORK_STATE/AD_ID. DEX/java: нет WebView, Custom Tabs, OkHttp, HttpURLConnection, Volley, Retrofit, ACTION_VIEW URL, Firebase, рекламы, remote config. First-party SharedPreferences нет; Room таблицы bagged, landing_report, opened_card, trail_event, rider. Play «Ice Fishing» ≠ APK-label «Deck Lore», но без сети/WebView/remote config это ребрендинг без развилки оффер/белая. domain_checks пуст. Слова landing / Landing Card / landing report — про скейт-трюк, не про оффер."
+  },
+  "app_id": "com.kortosi.kluani.qorzanis",
+  "title": "Ice Fishing",
+  "app_label": "Deck Lore",
+  "developer": "Raffia Inc",
+  "url": "https://play.google.com/store/apps/details?id=com.kortosi.kluani.qorzanis&hl=en&gl=us",
+  "version": "1.0",
+  "version_code": 1
+}
