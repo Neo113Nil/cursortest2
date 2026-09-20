@@ -44,11 +44,11 @@
       },
       {
         "param": "Libraries",
-        "value": "Kotlin 2.1.0 / kotlinx-coroutines 1.7.3, AndroidX (appcompat 1.7.0, activity 1.8.1, fragment 1.8.6, core/core-ktx 1.16.0, lifecycle 2.9.0, navigation 2.8.9, room 2.7.1, recyclerview 1.4.0, constraintlayout 2.2.1, coordinatorlayout 1.1.0, drawerlayout 1.1.1, viewpager2 1.1.0-beta02, emoji2 1.3.0, profileinstaller 1.4.0, startup 1.1.1, savedstate 1.3.0, sqlite 2.5.0, window 1.0.0), Material Components 1.12.0, Dagger/Hilt 2.51.1"
+        "value": "Kotlin 2.1.0 (stdlib), kotlinx-coroutines-core 1.7.3, kotlinx-coroutines-android 1.7.3, AndroidX: activity 1.8.1, activity-ktx 1.8.1, annotation-experimental 1.4.1, appcompat 1.7.0, appcompat-resources 1.7.0, arch.core core-runtime, cardview 1.0.0, constraintlayout 2.2.1, coordinatorlayout 1.1.0, core 1.16.0, core-ktx 1.16.0, core-viewtree 1.0.0, cursoradapter 1.0.0, customview 1.1.0, customview-poolingcontainer 1.0.0, databinding-viewbinding 8.7.3, documentfile 1.0.0, drawerlayout 1.1.1, dynamicanimation 1.0.0, emoji2 1.3.0, emoji2-views-helper 1.3.0, fragment 1.8.6, fragment-ktx 1.8.6, interpolator 1.0.0, legacy-support-core-utils 1.0.0, lifecycle-livedata 2.9.0, lifecycle-livedata-core 2.9.0, lifecycle-livedata-core-ktx 2.9.0, lifecycle-process 2.9.0, lifecycle-runtime 2.9.0, lifecycle-runtime-ktx 2.9.0, lifecycle-viewmodel 2.9.0, lifecycle-viewmodel-ktx 2.9.0, lifecycle-viewmodel-savedstate 2.9.0, loader 1.0.0, localbroadcastmanager 1.0.0, navigation-common 2.8.9, navigation-common-ktx 2.8.9, navigation-fragment 2.8.9, navigation-fragment-ktx 2.8.9, navigation-runtime 2.8.9, navigation-runtime-ktx 2.8.9, navigation-ui 2.8.9, navigation-ui-ktx 2.8.9, print 1.0.0, profileinstaller 1.4.0, recyclerview 1.4.0, room-runtime 2.7.1, room-ktx 2.7.1, savedstate 1.3.0, savedstate-ktx 1.3.0, slidingpanelayout 1.2.0, sqlite 2.5.0, sqlite-framework 2.5.0, startup-runtime 1.1.1, tracing 1.2.0, transition 1.5.0, vectordrawable 1.1.0, vectordrawable-animated 1.1.0, versionedparcelable 1.1.1, viewpager 1.0.0, viewpager2 1.1.0-beta02, window 1.0.0; Google Material Components 1.12.0; Dagger 2.51.1, Hilt Android 2.51.1"
       },
       {
         "param": "Подозрительные домены",
-        "value": "нет"
+        "value": "config.ru"
       },
       {
         "param": "SharedPreferences",
@@ -63,10 +63,19 @@
         "value": "landing, Landing Card, landing report"
       }
     ],
-    "domains": [],
+    "domains": [
+      {
+        "domain": "config.ru",
+        "vt_url": "https://www.virustotal.com/gui/domain/config.ru",
+        "detections": "0/89 (malicious=0, suspicious=0)",
+        "redirect": "https://config.ru/en/",
+        "parked": "похоже на парковку (domain is for sale)",
+        "note": "строка из res/xml/splits0.xml — имя языкового сплита (русский), в коде и сети не используется"
+      }
+    ],
     "collected_data": [],
     "cloaking": "нет",
-    "cloaking_brief": "Полный разбор: XAPK с APKCombo + jadx 1.5.3 agent_base.apk (1909 java). Точка входа DeckLore.onCreate только Hilt; MainActivity.onCreate рисует локальную навигацию Drop In / Trick Roster / Spot Check / Rider Crest / Landing Card. Нет INTERNET/ACCESS_NETWORK_STATE/AD_ID. DEX/java: нет WebView, Custom Tabs, OkHttp, HttpURLConnection, Volley, Retrofit, ACTION_VIEW URL, Firebase, рекламы, remote config. First-party SharedPreferences нет; Room таблицы bagged, landing_report, opened_card, trail_event, rider. Play «Ice Fishing» ≠ APK-label «Deck Lore», но без сети/WebView/remote config это ребрендинг без развилки оффер/белая. domain_checks пуст. Слова landing / Landing Card / landing report — про скейт-трюк, не про оффер."
+    "cloaking_brief": "Повторный глубокий разбор agent_base.apk (jadx, 1909 java, один classes.dex, без native-библиотек и без ассетов кроме baseline.prof). Точка входа: DeckLore.onCreate — только Hilt; MainActivity.onCreate — локальная навигация по пяти экранам (Drop In, Trick Roster, Spot Check, Rider Crest, Landing Card), без предварительных проверок. Сеть: в манифесте нет INTERNET (единственный uses-permission — DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION), в dex нет java.net, HttpURLConnection, OkHttp, Retrofit, Volley, ни одного http(s)-адреса. WebView/WebViewClient/loadUrl/Custom Tabs/ACTION_VIEW отсутствуют; 'android.webkit.' — лишь префикс в AppCompatViewInflater. Нет Firebase/Remote Config, рекламы и аналитики. Сбора language/locale/gaid/android_id/model нет; Build.MANUFACTURER и LocationManager встречаются только в Material и AppCompat. SharedPreferences не используется; данные — Room deck_lore.db (bagged, landing_report, opened_card, trail_event, rider), контент 25 трюков зашит в p1/AbstractC0395a. Слова landing/Landing Card/landing report — про скейт-трюк; 'gate' только в delegate/navigate. Play «Ice Fishing» != APK-label «Deck Lore» (справочник скейт-трюков) — белая оболочка по названию, но развилки оффер/белая в коде нет и без интернета невозможна. Cloak = нет. config.ru — имя языкового сплита из splits0.xml, VT 0/89, парковка."
   },
   "app_id": "com.kortosi.kluani.qorzanis",
   "title": "Ice Fishing",
