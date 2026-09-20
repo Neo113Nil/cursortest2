@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK via apkeep (Play Collector folder Ice Fishing-T.D.O. TOV was missing on origin/main)",
+  "package": "com.zfarm.escapebite",
+  "version_name": "1.2",
+  "version_code": 2,
+  "app_label": "Zombie Farm Escape",
+  "play_title": "Ice Fishing",
+  "developer": "T.D.O. TOV",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.zfarm.escapebite.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "config.arm64_v8a",
+    "config.en",
+    "config.mdpi",
+    "config.zh"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors count 2"
+  },
+  "cloaking": "да",
+  "note": "Folder ice fishing/Ice Fishing-T.D.O. TOV was missing on origin/main. XAPK Ice Fishing_1.2 / Zombie Farm Escape (vc 2) downloaded from APKPure via apkeep (~19 MB, arm64-v8a + config.en/mdpi/zh). Play «Ice Fishing» ≠ application-label «Zombie Farm Escape». No INTERNET, WebView, Custom Tabs, OkHttp, HttpURLConnection, remote config, ads, analytics. PairIP LicenseClient talks only to Google Play licensing. FlutterSharedPreferences stores local survivor name/settings/stats. config.ru is language split in splits0.xml. agent_src via jadx 1.5.3, not committed as a tree."
+}

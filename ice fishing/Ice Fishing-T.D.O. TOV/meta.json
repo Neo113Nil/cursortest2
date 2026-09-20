@@ -1,0 +1,81 @@
+{
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing (в приложении: Zombie Farm Escape)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.6.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1.0"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.zfarm.escapebite.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Flutter (libflutter.so, libapp.so, Dart 3.11.5 stable), shared_preferences_android / FlutterSharedPreferences, cupertino_icons, Kotlin 2.1.0, kotlinx-coroutines-core 1.7.3, kotlinx-coroutines-android 1.7.3, PairIP licensecheck (com.pairip.licensecheck), AndroidX: activity / activity-ktx 1.8.1, annotation-experimental 1.4.0, appcompat / appcompat-resources 1.1.0, arch.core core-runtime, asynclayoutinflater 1.0.0, coordinatorlayout 1.0.0, core / core-ktx 1.13.1, cursoradapter 1.0.0, customview 1.1.0, datastore / datastore-core / datastore-preferences / datastore-preferences-core 1.1.7, documentfile 1.0.0, drawerlayout 1.0.0, exifinterface 1.4.1, fragment / fragment-ktx 1.7.1, interpolator 1.0.0, legacy-support-core-ui / core-utils 1.0.0, lifecycle 2.7.0 (livedata, livedata-core, livedata-core-ktx, process, runtime, runtime-ktx, viewmodel, viewmodel-ktx, viewmodel-savedstate), loader 1.0.0, localbroadcastmanager 1.0.0, preference 1.2.1, print 1.0.0, profileinstaller 1.3.1, recyclerview 1.0.0, savedstate / savedstate-ktx 1.2.1, slidingpanelayout 1.2.0, startup-runtime 1.1.1, swiperefreshlayout 1.0.0, tracing 1.2.0, transition 1.4.1, vectordrawable / vectordrawable-animated 1.1.0, versionedparcelable 1.1.1, viewpager 1.0.0, window / window-java 1.2.0, window.extensions.core 1.0.0, libdatastore_shared_counter.so"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "FlutterSharedPreferences (и DataStore FlutterSharedPreferences.preferences_pb): pref_player_name, pref_sound, pref_haptics, pref_reduced_motion, pref_left_handed, stats_total_games, stats_total_kills, stats_total_supplies, stats_total_barricades, stats_best_wave, stats_best_survival, stats_best_story, stats_best_challenge"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "PAYWALL, license check"
+      }
+    ],
+    "domains": [
+      "config.ru"
+    ],
+    "collected_data": [],
+    "cloaking": "да",
+    "cloaking_brief": "Полный разбор актуального релиза Play-карточки «Ice Fishing» (T.D.O. TOV): пакет com.zfarm.escapebite 1.2 (versionCode 2), XAPK через APKPure/apkeep, jadx 1.5.3. Точка входа: LicenseContentProvider.onCreate → LicenseClient.initializeLicenseCheck (проверка лицензии Play), затем com.zfarm.escapebite.MainActivity (пустой FlutterActivity). Сеть: android.permission.INTERNET отсутствует; в first-party/Flutter нет OkHttp/Retrofit/Volley/HttpURLConnection, android.webkit.WebView, Custom Tabs, ACTION_VIEW на URL с сервера, AdvertisingId. Рекламы, аналитики, remote config нет. FlutterSharedPreferences хранит имя выжившего, звук/вибрацию и локальную статистику. cloak/gate/offer URL в собственном коде нет. Клоака = да по правилу белой оболочки: карточка Play называется «Ice Fishing», application-label в APK — «Zombie Farm Escape»; развилки трафика «оффер/белое» внутри этой сборки нет. config.ru — языковой сплит splits0.xml."
+  },
+  "app_id": "com.zfarm.escapebite",
+  "title": "Ice Fishing",
+  "app_label": "Zombie Farm Escape",
+  "developer": "T.D.O. TOV",
+  "url": "https://play.google.com/store/apps/details?id=com.zfarm.escapebite&hl=en&gl=us",
+  "updated": "2026-09-15",
+  "version": "1.2",
+  "version_code": 2
+}
