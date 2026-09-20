@@ -1,0 +1,81 @@
+{
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing (в приложении: Curry Trail)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.3.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "37"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1+"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.kolosta.rejin.kiltor.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.1+ (stdlib + builtins, kotlinx-coroutines-core 1.9.0, kotlinx-coroutines-android 1.9.0); Dagger / Hilt 2.60.1; PairIP licensecheck; AndroidX: activity 1.8.0, activity-ktx 1.8.0, annotation-experimental 1.5.0, appcompat 1.8.0, appcompat-resources 1.8.0, cardview 1.0.0, constraintlayout 2.2.1, coordinatorlayout 1.1.0, core 1.19.0, core-ktx 1.19.0, core-viewtree 1.0.0, cursoradapter 1.0.0, customview 1.2.0, databinding-viewbinding 9.3.2, drawerlayout 1.1.1, dynamicanimation 1.1.0, emoji2 1.3.0, emoji2-views-helper 1.3.0, fragment 1.6.2, fragment-ktx 1.6.2, graphics-shapes 1.0.1, interpolator 1.0.0, lifecycle-* 2.11.0, loader 1.0.0, navigation-* 2.10.0, profileinstaller 1.4.0, recyclerview 1.2.1, room-runtime 2.8.4, room-ktx 2.8.4, savedstate 1.5.0, savedstate-ktx 1.5.0, slidingpanelayout 1.2.0, sqlite 2.6.2, sqlite-framework 2.6.2, startup-runtime 1.1.1, tracing 1.2.0, transition 1.5.0, vectordrawable 1.1.0, vectordrawable-animated 1.1.0, versionedparcelable 1.1.1, viewpager 1.0.0, viewpager2 1.0.0, window 1.0.0; Google Material Components 1.14.0"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "dispatchers.io"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "first-party SharedPreferences нет; Room curry_trail.db (таблицы dishes, dish_states, compare_pairs, rounds, profile)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "offer — только ArrayDeque.offer в AppCompat Executor; PAYWALL_INTENT / paywall — только PairIP проверка лицензии Play; Tab — роль вкладки Material; в собственном коде cloak/gate/offer/landing/bot нет"
+      }
+    ],
+    "domains": [
+      "dispatchers.io"
+    ],
+    "collected_data": [],
+    "cloaking": "да",
+    "cloaking_brief": "Полный разбор актуального релиза Play-карточки «Ice Fishing» (GREAT SEA BOOKS LTD): пакет com.kolosta.rejin.kiltor 1.0 (versionCode 1), XAPK через APKPure, jadx 1.5.3. Точка входа: com.pairip.application.Application.attachBaseContext → LicenseClient.checkLicense (проверка лицензии Play), затем com.kolosta.rejin.kiltor.core.common.Application.onCreate. LAUNCHER — MainActivity: activity_main, DrawerLayout и NavHostFragment с локальной навигацией CurryBoard/SpiceMenu/FlavorImposter/CurryPassport. Сеть: android.permission.INTERNET отсутствует; в dex нет OkHttp/Retrofit/Volley/HttpURLConnection; WebView/Custom Tabs/ACTION_VIEW на URL с сервера нет. Рекламы, аналитики, remote config нет. First-party SharedPreferences нет. Room curry_trail.db. cloak/gate/offer URL в собственном коде нет (offer — очередь задач AppCompat). Клоака = да по правилу белой оболочки: карточка Play называется «Ice Fishing», application-label в APK — «Curry Trail» (справочник индийских карри); развилки трафика «оффер/белое» внутри этой сборки нет. dispatchers.io — строка Dispatchers.IO из kotlinx-coroutines, не сетевой хост."
+  },
+  "app_id": "com.kolosta.rejin.kiltor",
+  "title": "Ice Fishing",
+  "app_label": "Curry Trail",
+  "developer": "GREAT SEA BOOKS LTD",
+  "url": "https://play.google.com/store/apps/details?id=com.kolosta.rejin.kiltor&hl=en&gl=us",
+  "updated": "2026-09-01",
+  "version": "1.0",
+  "version_code": 1
+}

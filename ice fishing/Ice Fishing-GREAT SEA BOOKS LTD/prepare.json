@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder Ice Fishing-GREAT SEA BOOKS LTD was missing on origin/main)",
+  "package": "com.kolosta.rejin.kiltor",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Curry Trail",
+  "play_title": "Ice Fishing",
+  "developer": "GREAT SEA BOOKS LTD",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.kolosta.rejin.kiltor_1.0.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "config.mdpi"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party + PairIP zipped as agent_src.zip; jadx 1.5.3"
+  },
+  "cloaking": "да",
+  "note": "Folder ice fishing/Ice Fishing-GREAT SEA BOOKS LTD was missing on origin/main. XAPK Ice Fishing 1.0 (vc 1) downloaded from APKPure. Splits: config.mdpi only (no asset, no ABI, no xxhdpi). Play «Ice Fishing» ≠ application-label «Curry Trail». No INTERNET, WebView, Custom Tabs, OkHttp, HttpURLConnection, remote config, ads, analytics. PairIP Play license check only. Room curry_trail.db. dispatchers.io = kotlinx.coroutines Dispatchers.IO, not a network host. Sibling Play listing com.visal.korpes.kalvos (Hop Ledger / beer guide, same developer) is a different APK; APKPure 403, APKCombo download failed — not this release."
+}
