@@ -22,7 +22,7 @@
       },
       {
         "param": "Kotlin",
-        "value": "да 1.8.10"
+        "value": "да 1.9.24 (Kotlin Gradle plugin 1.8.10)"
       },
       {
         "param": "Web View",
@@ -46,7 +46,7 @@
       },
       {
         "param": "Libraries",
-        "value": "Flutter (движок Shorebird, Dart 3.11.1), Dart-пакеты: http, shorebird_code_push, restart_app, tenjin_plugin, advertising_id, firebase_core, firebase_analytics, flutter_inappwebview (android + platform_interface), url_launcher, flutter_widget_from_html_core, html, csslib, html_unescape, carousel_slider, shared_preferences, connectivity_plus, internet_connection_checker_plus, share_plus, image_picker, path_provider, package_info_plus, fluttertoast, flutter_colorpicker, numberpicker, rate_my_app, wakelock_plus, quill_native_bridge, flutter_keyboard_visibility_temp_fork, intl, flutter_localizations, collection, path, logging, ffi, vector_math, material_color_utilities; Android: androidx.appcompat 1.6.1, androidx.browser 1.8.0 (Custom Tabs), androidx.webkit 1.12.0, androidx.core / core-ktx 1.13.1, androidx.activity, androidx.fragment, androidx.lifecycle, androidx.room 2.5.1, androidx.datastore 1.0.0, androidx.startup, androidx.profileinstaller, androidx.window 1.2.0, androidx.privacysandbox.ads 1.0.0-beta05, androidx.multidex, Kotlin 1.8.10 + kotlinx-coroutines, Tenjin android-sdk 1.18.0, Firebase Core / Analytics / Installations, Google Play Services (base 18.5.0, basement 18.4.0, ads-identifier, appset, measurement, analytics), Play Install Referrer, Play Core / Play In-App Review, Gson"
+        "value": "Flutter (движок Shorebird, Dart 3.11.1), Dart-пакеты: http, shorebird_code_push, restart_app, tenjin_plugin, advertising_id, firebase_core, firebase_analytics, flutter_inappwebview (android + platform_interface), url_launcher, flutter_widget_from_html_core, html, csslib, html_unescape, carousel_slider, shared_preferences, connectivity_plus, internet_connection_checker_plus, share_plus, image_picker, path_provider, package_info_plus, fluttertoast, flutter_colorpicker, numberpicker, rate_my_app, wakelock_plus, quill_native_bridge, flutter_keyboard_visibility_temp_fork, intl, flutter_localizations, collection, path, logging, ffi, vector_math, material_color_utilities; Android: androidx.appcompat 1.6.1, androidx.browser 1.8.0 (Custom Tabs), androidx.webkit 1.12.0, androidx.core / core-ktx 1.13.1, androidx.activity, androidx.fragment, androidx.lifecycle, androidx.room 2.5.1, androidx.datastore 1.0.0, androidx.startup, androidx.profileinstaller, androidx.window 1.2.0, androidx.privacysandbox.ads 1.0.0-beta05, androidx.multidex, Kotlin 1.9.24 + kotlinx-coroutines, Tenjin android-sdk 1.18.0, Firebase Core / Analytics / Installations, Google Play Services (base 18.5.0, basement 18.4.0, ads-identifier, appset, measurement, analytics), Play Install Referrer, Play Core / Play In-App Review, Gson"
       },
       {
         "param": "Подозрительные домены",
