@@ -1,0 +1,33 @@
+{
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "Ice Fishing"},
+      {"param": "Android Gradle Plugin", "value": "8.9.3"},
+      {"param": "minSdk", "value": "26"},
+      {"param": "targetSdk", "value": "36"},
+      {"param": "Kotlin", "value": "да 2.1.20"},
+      {"param": "Web View", "value": "да"},
+      {"param": "Custom Tabs", "value": "нет"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "нет"},
+      {"param": "Permissions", "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.android.vending.CHECK_LICENSE, com.Onyx330.PrismPeak.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"},
+      {"param": "Libraries", "value": "androidx.activity 1.9.3, androidx.appcompat 1.7.0, androidx.core 1.13.1, androidx.fragment 1.5.4, androidx.lifecycle, androidx.emoji2, androidx.profileinstaller, androidx.startup, androidx.savedstate, androidx.drawerlayout, androidx.viewpager, androidx.vectordrawable, androidx.customview, androidx.cursoradapter, androidx.loader, androidx.interpolator, androidx.tracing, androidx.arch.core, androidx.annotation, kotlinx-coroutines 1.6.4, kotlin-stdlib 2.1.20, com.joom.paranoid, com.pairip, com.google.common (ListenableFuture), org.jetbrains.annotations"},
+      {"param": "Подозрительные домены", "value": "calveris.info, ceo481.github.io, config.ru, diia.app"},
+      {"param": "SharedPreferences", "value": "один файл progress: ключ ppeak хранит ссылку после проверки, ключ prismpeak — флаг «оставить обычное приложение»; там же игровые монеты, рекорды, скины и звук"},
+      {"param": "Есть ли клоака", "value": "да"},
+      {"param": "Подозрительные слова", "value": "offer, urlOffer, gate, fragment_decision_gate, token"}
+    ],
+    "domains": ["calveris.info", "ceo481.github.io", "config.ru", "diia.app"],
+    "collected_data": ["встроенный токен приложения"],
+    "cloaking": "да",
+    "cloaking_brief": "Play «Ice Fishing Casino Real Money» ≠ APK-label «Ice Fishing». LAUNCHER PrismPeakSplashActivity: GET https://calveris.info/api/?token=3bypXPXBJRcy6xR1 (AES в ProgressKt), Accept application/json, extractLinkFromConfig, prefs ppeak/prismpeak, ACTION_VIEW или MenuActivity. WebView: PrivacyActivity (file privacy_policy.html) и PrismPeakPrivacyPolicyActivity (urlOffer)."
+  },
+  "app_id": "com.Onyx330.PrismPeak",
+  "title": "Ice Fishing Casino Real Money",
+  "app_label": "Ice Fishing",
+  "developer": "LIBERSTAR LLC",
+  "url": "https://play.google.com/store/apps/details?id=com.Onyx330.PrismPeak&hl=en",
+  "version": "1.1",
+  "version_code": 2
+}

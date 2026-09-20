@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder was missing on origin/main)",
+  "package": "com.Onyx330.PrismPeak",
+  "version_name": "1.1",
+  "version_code": 2,
+  "app_label": "Ice Fishing",
+  "app_name_resource": "Prism Peak",
+  "play_title": "Ice Fishing Casino Real Money",
+  "play_title_store": "Ice Fishing: Casino Real Money",
+  "developer": "LIBERSTAR LLC",
+  "base_apk": "agent_base.apk",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.Onyx330.PrismPeak_1.1.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "config.en",
+    "config.mdpi"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; jadx 1.5.1 finished with errors count 1"
+  },
+  "cloaking": "да",
+  "gate_url": "https://calveris.info/api/?token=3bypXPXBJRcy6xR1",
+  "note": "Play Collector folder ice fishing/Ice Fishing Casino Real Money-LIBERSTAR LLC was missing on origin/main. XAPK 1.1 (vc2) downloaded from APKCombo. Play «Ice Fishing Casino Real Money» / store «Ice Fishing: Casino Real Money» ≠ application-label «Ice Fishing» (app_name Prism Peak). LAUNCHER PrismPeakSplashActivity: GET gate, extractLinkFromConfig, ACTION_VIEW or MenuActivity. WebView: PrivacyActivity (local HTML) and PrismPeakPrivacyPolicyActivity (urlOffer). domain_checks from pipeline: ceo481.github.io, config.ru, diia.app. Gate host calveris.info recovered via AES from ProgressKt."
+}
