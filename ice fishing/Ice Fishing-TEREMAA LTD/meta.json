@@ -1,0 +1,82 @@
+{
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing (в приложении: Almond Macaron Cafe)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.2.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "37"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.2.0"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, com.chair.wood.resta.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.2.0, kotlinx-coroutines 1.11.0, kotlinx-serialization-core, Jetpack Compose (runtime/ui/foundation/animation 1.11.4, material3 1.4.0, material-icons 1.7.8), Hilt/Dagger 2.59.2, androidx.hilt 1.4.0, Navigation Compose 2.9.8, Room 2.8.4, SQLite 2.6.2, OkHttp (PlatformInitializer), Ktor OkHttp engine (OkHttpEngineContainer), PairIP licensecheck, AndroidX activity 1.13.0, core 1.19.0, fragment 1.5.1, lifecycle 2.11.0, savedstate 1.4.0, startup-runtime 1.2.0, profileinstaller 1.4.0, emoji2 1.4.0, window 1.5.0, transition 1.6.0, tracing 1.2.0, navigationevent 1.0.0, customview, documentfile, dynamicanimation, interpolator, loader, localbroadcastmanager, print, viewpager, versionedparcelable, graphics-path, autofill, annotation-experimental 1.5.0"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru, dispatchers.io"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "PAYWALL, license check, Redirected, RedirectCancelled"
+      }
+    ],
+    "domains": [
+      "config.ru",
+      "dispatchers.io"
+    ],
+    "collected_data": [],
+    "cloaking": "да",
+    "cloaking_brief": "Полный разбор актуального релиза Play-карточки «Ice Fishing» (TEREMAA LTD): пакет com.chair.wood.resta 1.0 (versionCode 1), XAPK через APKCombo, jadx 1.5.3. Точка входа: com.pairip.application.Application.attachBaseContext → LicenseClient.checkLicense, затем AlmondMacaronCafeApp.onCreate и LAUNCHER MainActivity (Compose setContent). Сеть: INTERNET есть; first-party WebView/Custom Tabs/ACTION_VIEW на URL с сервера, AdvertisingId, OkHttp/Ktor-вызов на кастомный хост, remote config, ads, analytics — нет. Room: menu_items, quiz_results, taste_marks. SharedPreferences нет. Клоака = да по правилу белой оболочки: карточка Play «Ice Fishing», application-label «Almond Macaron Cafe»; развилки трафика оффер/белая внутри этой сборки нет. config.ru — языковой сплит splits0.xml. Dispatchers.IO — Kotlin coroutines."
+  },
+  "app_id": "com.chair.wood.resta",
+  "title": "Ice Fishing",
+  "app_label": "Almond Macaron Cafe",
+  "developer": "TEREMAA LTD",
+  "url": "https://play.google.com/store/apps/details?id=com.chair.wood.resta&hl=en&gl=us",
+  "updated": "2026-08-23",
+  "version": "1.0",
+  "version_code": 1
+}
