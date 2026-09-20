@@ -1,0 +1,81 @@
+{
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing (в приложении: Tin Toy Blitz)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.3.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1.0"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.level.satisfying.introsadium.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin (stdlib + builtins, kotlinx-coroutines-core 1.9.0, kotlinx-coroutines-android 1.9.0), Dagger 2.60.1, Hilt 2.60.1 (hilt-android, hilt-core, androidx.hilt:hilt-navigation-compose 1.4.0, hilt-lifecycle-viewmodel 1.4.0, hilt-lifecycle-viewmodel-compose 1.4.0), Jetpack Compose 1.11.4 (ui, foundation, animation, runtime, material-ripple), Compose Material3 1.4.0, PairIP licensecheck (com.pairip.application / com.pairip.licensecheck), AndroidX: activity / activity-ktx / activity-compose 1.13.0, annotation-experimental 1.4.1, autofill 1.0.0, core / core-ktx 1.19.0, core-viewtree 1.0.0, customview 1.0.0, customview-poolingcontainer 1.0.0, datastore / datastore-core / datastore-preferences / datastore-preferences-core 1.2.0, documentfile 1.0.0, dynamicanimation 1.0.0, emoji2 1.4.0, fragment 1.5.1, graphics-path 1.0.1, interpolator 1.0.0, legacy-support-core-utils 1.0.0, lifecycle-* 2.11.0, loader 1.0.0, localbroadcastmanager 1.0.0, navigation-* 2.10.0, navigationevent 1.1.2, print 1.0.0, profileinstaller 1.4.0, savedstate / savedstate-ktx / savedstate-compose 1.5.0, startup-runtime 1.1.1, tracing 1.2.0, transition 1.6.0, versionedparcelable 1.1.1, viewpager 1.0.0, window / window-core 1.5.0"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "DataStore toy_blitz_profile.preferences_pb — ключи best_score, best_wave, bolts, runs_played, score_table, selected_skin, unlocked_skins, total_kills (локальный прогресс)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "PAYWALL, license check"
+      }
+    ],
+    "domains": [
+      "config.ru"
+    ],
+    "collected_data": [],
+    "cloaking": "да",
+    "cloaking_brief": "Полный разбор актуального релиза Play-карточки «Ice Fishing» (NEOMETAL TOV): пакет com.level.satisfying.introsadium 1.0 (versionCode 1), XAPK через APKPure, jadx 1.5.3. Точка входа: com.pairip.application.Application.attachBaseContext → LicenseClient.checkLicense, затем ToyBlitzApp / MainActivity (Jetpack Compose). Сеть: android.permission.INTERNET отсутствует; в first-party/dex нет OkHttp/Retrofit/Volley/HttpURLConnection, android.webkit.WebView, Custom Tabs, ACTION_VIEW на URL с сервера, AdvertisingId. Рекламы, аналитики, remote config нет. DataStore toy_blitz_profile хранит локальный счёт, болты и скины. cloak/gate/offer URL в собственном коде нет. Клоака = да по правилу белой оболочки: карточка Play называется «Ice Fishing», application-label в APK — «Tin Toy Blitz»; развилки трафика «оффер/белое» внутри этой сборки нет. config.ru — языковой сплит splits0.xml."
+  },
+  "app_id": "com.level.satisfying.introsadium",
+  "title": "Ice Fishing",
+  "app_label": "Tin Toy Blitz",
+  "developer": "NEOMETAL TOV",
+  "url": "https://play.google.com/store/apps/details?id=com.level.satisfying.introsadium&hl=en&gl=us",
+  "updated": "2026-09-03",
+  "version": "1.0",
+  "version_code": 1
+}

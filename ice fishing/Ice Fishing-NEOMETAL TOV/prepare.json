@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK via d.apkpure.net (Play Collector folder Ice Fishing-NEOMETAL TOV was missing on origin/main)",
+  "package": "com.level.satisfying.introsadium",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Tin Toy Blitz",
+  "play_title": "Ice Fishing",
+  "developer": "NEOMETAL TOV",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "Ice Fishing_1.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "config.armeabi_v7a",
+    "config.en"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors count 9"
+  },
+  "cloaking": "да",
+  "note": "Folder ice fishing/Ice Fishing-NEOMETAL TOV was missing on origin/main. XAPK Ice Fishing_1.0 / Tin Toy Blitz (vc 1) downloaded from APKPure (~3.2 MB, armeabi-v7a + config.en). No asset split and no arm64 split in this XAPK. Play «Ice Fishing» ≠ application-label «Tin Toy Blitz». No INTERNET, WebView, Custom Tabs, OkHttp, HttpURLConnection, remote config, ads, analytics. PairIP LicenseClient talks only to Google Play licensing. DataStore toy_blitz_profile stores local score/bolts/skins. config.ru is language split in splits0.xml. agent_src via jadx 1.5.3, not committed as a tree."
+}
