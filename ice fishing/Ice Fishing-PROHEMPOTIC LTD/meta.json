@@ -1,0 +1,82 @@
+{
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing (в приложении: Buoy Cipher)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.7.3"
+      },
+      {
+        "param": "minSdk",
+        "value": "26"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 1.8+"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.general.melcan.fizorysam.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 1.8+ (stdlib + builtins, kotlinx-coroutines-core 1.7.3, kotlinx-coroutines-android 1.7.3); PairIP licensecheck; AndroidX: activity 1.8.1, activity-ktx 1.8.1, annotation-experimental 1.4.1, appcompat 1.7.0, appcompat-resources 1.7.0, cardview 1.0.0, constraintlayout 2.2.1, coordinatorlayout 1.1.0, core 1.16.0, core-ktx 1.16.0, core-viewtree 1.0.0, cursoradapter 1.0.0, customview 1.1.0, customview-poolingcontainer 1.0.0, databinding-viewbinding 8.7.3, documentfile 1.0.0, drawerlayout 1.1.1, dynamicanimation 1.0.0, emoji2 1.3.0, emoji2-views-helper 1.3.0, fragment 1.8.6, fragment-ktx 1.8.6, interpolator 1.0.0, legacy-support-core-utils 1.0.0, lifecycle-* 2.9.0, loader 1.0.0, localbroadcastmanager 1.0.0, navigation-* 2.8.9, print 1.0.0, profileinstaller 1.4.0, recyclerview 1.4.0, room-runtime 2.7.1, room-ktx 2.7.1, savedstate 1.3.0, slidingpanelayout 1.2.0, sqlite 2.5.0, sqlite-framework 2.5.0, startup-runtime 1.1.1, tracing 1.2.0, transition 1.5.0, vectordrawable 1.1.0, vectordrawable-animated 1.1.0, versionedparcelable 1.1.1, viewpager 1.0.0, viewpager2 1.1.0-beta02, window 1.0.0; Google Material Components 1.12.0"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru, dispatchers.io"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "first-party SharedPreferences нет; Room buoy_cipher.db (таблицы buoys, watch_score)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "offer — только java.util.Queue.offer в AppCompat ExecutorC0199n; в собственном коде cloak/gate/offer/landing/bot нет"
+      }
+    ],
+    "domains": [
+      "config.ru",
+      "dispatchers.io"
+    ],
+    "collected_data": [],
+    "cloaking": "да",
+    "cloaking_brief": "Полный разбор актуального релиза Play-карточки «Ice Fishing» (PROHEMPOTIC LTD): пакет com.general.melcan.fizorysam 1.0 (versionCode 1), XAPK через APKCombo, jadx 1.5.1. Точка входа: com.pairip.application.Application.attachBaseContext → LicenseClient.checkLicense (проверка лицензии Play), затем com.general.melcan.fizorysam.BuoyCipher.onCreate поднимает Room buoy_cipher.db и засевает локальный справочник буёв; MainActivity.onCreate ставит activity_main и NavHostFragment с локальной навигацией SignalDeck/MarkerAtlas/SignalDossier/ChannelRush/WatchkeeperLog. Сеть: android.permission.INTERNET отсутствует; в dex нет OkHttp/Retrofit/Volley/HttpURLConnection; WebView/Custom Tabs/ACTION_VIEW на URL с сервера нет. Рекламы, аналитики, remote config нет. First-party SharedPreferences нет. cloak/gate/offer URL в собственном коде нет (offer — только очередь задач AppCompat). Клоака = да по правилу белой оболочки: карточка Play называется «Ice Fishing», application-label в APK — «Buoy Cipher» (справочник морских навигационных буёв); развилки трафика «оффер/белое» внутри этой сборки нет."
+  },
+  "app_id": "com.general.melcan.fizorysam",
+  "title": "Ice Fishing",
+  "app_label": "Buoy Cipher",
+  "developer": "PROHEMPOTIC LTD",
+  "url": "https://play.google.com/store/apps/details?id=com.general.melcan.fizorysam&hl=en&gl=us",
+  "updated": "2026-08-31",
+  "version": "1.0",
+  "version_code": 1
+}

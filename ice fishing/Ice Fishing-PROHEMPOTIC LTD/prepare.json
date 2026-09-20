@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder was missing on origin/main)",
+  "package": "com.general.melcan.fizorysam",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Buoy Cipher",
+  "play_title": "Ice Fishing",
+  "developer": "PROHEMPOTIC LTD",
+  "base_apk": "agent_base.apk",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.general.melcan.fizorysam_1.0.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "config.en",
+    "config.xxhdpi"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed; jadx 1.5.1 finished with errors count 2"
+  },
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.general.melcan.fizorysam-1.apk",
+    "apk/com.general.melcan.fizorysam-1-config.en.apk",
+    "apk/com.general.melcan.fizorysam-1-config.xxhdpi.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/",
+    "agent_src/com/general/melcan/fizorysam/MainActivity.java",
+    "agent_src/h/AbstractActivityC0194i.java",
+    "agent_src/p0/RemoteCallbackListC0384p.java"
+  ],
+  "cloaking": "да",
+  "note": "Play Collector folder ice fishing/Ice Fishing-PROHEMPOTIC LTD was missing on origin/main. XAPK 1.0 (vc1) downloaded from APKCombo. Splits: config.en, config.xxhdpi. No asset split and no ABI split in this XAPK (native libs none). Play «Ice Fishing» ≠ application-label «Buoy Cipher». No INTERNET, WebView, Custom Tabs, OkHttp, HttpURLConnection, remote config, ads, analytics. PairIP Play license check only. Room buoy_cipher.db. agent_src via jadx 1.5.1, not committed. domain_checks: config.ru (language split), dispatchers.io (Dispatchers.IO)."
+}
