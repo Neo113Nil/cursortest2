@@ -1,22 +1,22 @@
 {
   "ok": true,
   "source": "apkeep:apk-pure",
-  "package": "com.watchfacestudio.turman",
+  "package": "com.watchfacestudio.katarum",
   "version_name": "1.0.2",
   "version_code": 2,
-  "xapk": "com.watchfacestudio.turman.xapk",
+  "xapk": "com.watchfacestudio.katarum.xapk (скачан во временную папку, в git не коммитится)",
   "apks": [
-    "apk/com.watchfacestudio.turman.apk",
-    "apk/config.en.apk",
-    "apk/config.mdpi.apk"
+    "agent_base.apk (base)",
+    "config.ar/de/en/es/fr/hi/in/it/ja/ko/my/pt/ru/th/tr/vi/zh",
+    "config.xxhdpi"
   ],
-  "base_apk": "apk/com.watchfacestudio.turman.apk",
+  "base_apk": "agent_base.apk",
   "jadx": {
     "ok": true,
     "exit_code": 0,
-    "note": "jadx 1.5.1 finished with 8 errors; sources usable",
+    "note": "jadx 1.5.1, ошибки только в классах kotlin/kotlinx (DebugProbesKt, WhileSelectKt)",
     "out_dir": "agent_src (local, gitignored)"
   },
-  "cloaking": "нет",
-  "notes": "Wear OS watch-face companion (label: Hybrid TURMAN Watch face, package com.watchfacestudio.turman). Full re-analysis: LFS pull + jadx 1.5.1 of agent_base.apk. Entry MainActivity.onCreate → ImageView click → Wearable NodeClient + RemoteActivityHelper market://details on watch. No INTERNET, no OkHttp/HttpURLConnection, no WebView/Custom Tabs, no ads/analytics/remote config/gate/offer/first-party SharedPreferences. Play title Ice Fishing != APK label; no traffic cloaking fork. domain_checks empty."
+  "cloaking": "да",
+  "notes": "Wear OS watch-face companion. Play-карточка «Ice Fishing», application-label «Hybrid KATARUM Watch face». Нет INTERNET, нет сетевого слоя, WebView/Custom Tabs, рекламы, аналитики, remote config и first-party SharedPreferences. Клоака = да по правилу белой оболочки (Play-название != application-label); развилки трафика в коде нет. domain_checks: config.ru (имя языкового сплита), dispatchers.io (строка Dispatchers.IO из kotlinx-coroutines), systemuioverlay.top (в APK не найдена)."
 }
