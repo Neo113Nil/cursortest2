@@ -1,0 +1,82 @@
+{
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing (в приложении: Feta Fork)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.2.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "37"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1+"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.general.melcan.fizoryfork.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.1+ (stdlib + builtins, kotlinx-coroutines-core 1.9.0, kotlinx-coroutines-android 1.9.0); Kodein-DI; PairIP licensecheck; AndroidX: activity 1.13.0, activity-ktx 1.13.0, annotation-experimental 1.5.0, appcompat 1.8.0, appcompat-resources 1.8.0, asynclayoutinflater 1.0.0, cardview 1.0.0, compose.runtime-annotation 1.9.0, constraintlayout 2.2.2, coordinatorlayout 1.1.0, core 1.19.0, core-ktx 1.19.0, core-viewtree 1.0.0, cursoradapter 1.0.0, customview 1.2.0, customview-poolingcontainer 1.0.0, databinding-viewbinding 9.2.1, datastore 1.2.1, datastore-core 1.2.1, datastore-preferences 1.2.1, documentfile 1.0.0, drawerlayout 1.1.1, dynamicanimation 1.1.0, emoji2 1.3.0, emoji2-views-helper 1.3.0, fragment 1.9.0, fragment-ktx 1.9.0, graphics-shapes 1.0.1, interpolator 1.0.0, legacy-support-v4 1.0.0, lifecycle-* 2.11.0, loader 1.0.0, localbroadcastmanager 1.0.0, media 1.0.0, navigation-* 2.10.0, navigationevent 1.0.0, print 1.0.0, profileinstaller 1.4.0, recyclerview 1.4.0, room-runtime 2.8.4, room-ktx 2.8.4, savedstate 1.5.0, slidingpanelayout 1.2.0, sqlite 2.6.2, startup-runtime 1.1.1, swiperefreshlayout 1.0.0, tracing 2.0.0, transition 1.5.0, vectordrawable 1.1.0, viewpager 1.0.0, viewpager2 1.1.0-beta02, window 1.0.0; Google Material Components 1.14.0"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru, dispatchers.io"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "DataStore terrace_table.preferences_pb: landing_card, landing_finished, cook_groups, guide_pace, board_index, best_turns; Room lanai_calabash.db (keepsakes, guide_progress). Kodein androidModule регистрирует стандартные SharedPreferences системы — ключей клоаки в них нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "landing, landing_card, landing_finished, gate"
+      }
+    ],
+    "domains": [
+      "config.ru",
+      "dispatchers.io"
+    ],
+    "collected_data": [],
+    "cloaking": "да",
+    "cloaking_brief": "Полный разбор актуального релиза Play-карточки «Ice Fishing» (Good Arena Group): пакет com.general.melcan.fizoryfork 1.0 (versionCode 1), XAPK через APKCombo, jadx 1.5.1. Точка входа: com.pairip.application.Application.attachBaseContext → LicenseClient.checkLicense (проверка лицензии Play), затем com.example.app.common.App; MainActivity.onCreate ставит activity_main и хост-фрагмент с локальной навигацией Agora/Recipe/Mezze/Grove/Welcome. Сеть: android.permission.INTERNET отсутствует; в dex нет OkHttp/Retrofit/Volley/HttpURLConnection; WebView/Custom Tabs/ACTION_VIEW на URL с сервера нет. Рекламы, аналитики, remote config нет. First-party DataStore terrace_table.preferences_pb и Room lanai_calabash.db — только локальный прогресс рецептов. cloak/gate/offer URL в собственном коде нет (landing_* — онбординг греческого меню; gate — текст мини-игры «olive grove»). Клоака = да по правилу белой оболочки: карточка Play называется «Ice Fishing», application-label в APK — «Feta Fork» (справочник греческой кухни); развилки трафика «оффер/белое» внутри этой сборки нет."
+  },
+  "app_id": "com.general.melcan.fizoryfork",
+  "title": "Ice Fishing",
+  "app_label": "Feta Fork",
+  "developer": "Good Arena Group",
+  "url": "https://play.google.com/store/apps/details?id=com.general.melcan.fizoryfork&hl=en&gl=us",
+  "updated": "2026-08-31",
+  "version": "1.0",
+  "version_code": 1
+}

@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder was missing)",
+  "package": "com.general.melcan.fizoryfork",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Feta Fork",
+  "play_title": "Ice Fishing",
+  "developer": "Good Arena Group",
+  "base_apk": "agent_base.apk",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.general.melcan.fizoryfork_1.0.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "config.arm64_v8a",
+    "config.en",
+    "config.xxhdpi"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed; jadx 1.5.1 finished with errors count 1"
+  },
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.general.melcan.fizoryfork-1.apk",
+    "apk/com.general.melcan.fizoryfork-1-config.arm64_v8a.apk",
+    "apk/com.general.melcan.fizoryfork-1-config.en.apk",
+    "apk/com.general.melcan.fizoryfork-1-config.xxhdpi.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/",
+    "agent_src/sources/com/example/app/presentation/MainActivity.java"
+  ],
+  "cloaking": "да",
+  "note": "Play Collector folder ice fishing/Ice Fishing-Good Arena Group was missing on origin/main. XAPK 1.0 (vc1) downloaded from APKCombo. Splits: config.arm64_v8a, config.en, config.xxhdpi (plus unused config.armeabi_v7a). No asset split in this XAPK. Play «Ice Fishing» ≠ application-label «Feta Fork». No INTERNET, WebView, Custom Tabs, OkHttp, HttpURLConnection, remote config, ads, analytics. PairIP Play license check only. agent_src via jadx 1.5.1, not committed. domain_checks: config.ru (language split), dispatchers.io (Dispatchers.IO)."
+}
