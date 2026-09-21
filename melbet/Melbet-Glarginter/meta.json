@@ -1,0 +1,24 @@
+{
+  "app_id": "com.civis.melbet.galba",
+  "title": "Melbet",
+  "apk_label": "Win",
+  "developer": "Glarginter",
+  "package": "com.civis.melbet.galba",
+  "folder": "Melbet-Glarginter",
+  "path": "melbet/Melbet-Glarginter",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "version_name": "1.0",
+  "version_code": "1",
+  "source": "apkpure XAPK via apkeep (Play Collector folder melbet/Melbet-Glarginter was missing on origin/main)",
+  "gate_url": "https://fragrant-firefly-c10d.sanzhexcvst.workers.dev?app=com.civis.melbet.galba",
+  "brief_report": {
+    "cloaking": "да",
+    "collected_data": [
+      "имя пакета приложения",
+      "модель телефона",
+      "строка браузера телефона",
+      "язык"
+    ]
+  }
+}

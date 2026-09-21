@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK via d.apkpure.net (Play Collector folder melbet/Melbet-Glarginter was missing on origin/main)",
+  "package": "com.civis.melbet.galba",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Win",
+  "play_title": "Melbet",
+  "developer": "Glarginter",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "Melbet._1.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/com.civis.melbet.galba-1.apk",
+    "apk/com.civis.melbet.galba-1-config.en.apk",
+    "apk/com.civis.melbet.galba-1-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3"
+  },
+  "cloaking": "да",
+  "gate_url": "https://fragrant-firefly-c10d.sanzhexcvst.workers.dev?app=com.civis.melbet.galba",
+  "note": "Folder melbet/Melbet-Glarginter was missing on origin/main. XAPK Melbet 1.0 / Win (vc 1) from APKPure. Splits: config.en, config.mdpi (copied as -config.xxhdpi.apk for apk/ naming). Collector listed -1-asset.apk; APKPure XAPK has no asset split. Gate XOR-decoded: https://fragrant-firefly-c10d.sanzhexcvst.workers.dev?app=<package>. Play «Melbet» ≠ application-label «Win»."
+}
