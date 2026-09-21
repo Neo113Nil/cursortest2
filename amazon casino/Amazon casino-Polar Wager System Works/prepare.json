@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder amazon casino/Amazon casino-Polar Wager System Works was missing on origin/main)",
+  "package": "com.chicken.road.krydaz",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Neon Rebellion",
+  "play_title": "Amazon casino",
+  "developer": "Polar Wager System Works",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.chicken.road.krydaz_1.0.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/com.chicken.road.krydaz-1.apk",
+    "apk/com.chicken.road.krydaz-1-config.arm64_v8a.apk",
+    "apk/com.chicken.road.krydaz-1-config.armeabi_v7a.apk",
+    "apk/com.chicken.road.krydaz-1-config.en.apk",
+    "apk/com.chicken.road.krydaz-1-config.fr.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors"
+  },
+  "cloaking": "да",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.chicken.road.krydaz-1.apk",
+    "apk/com.chicken.road.krydaz-1-config.arm64_v8a.apk",
+    "apk/com.chicken.road.krydaz-1-config.armeabi_v7a.apk",
+    "apk/com.chicken.road.krydaz-1-config.en.apk",
+    "apk/com.chicken.road.krydaz-1-config.fr.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src.zip",
+    "agent_src/"
+  ],
+  "note": "Folder was missing on origin/main. XAPK Chicken Road 1.0 (vc 1, derived.apk.id 4) from APKCombo. Splits in this XAPK: config.arm64_v8a, config.armeabi_v7a, config.en, config.fr. No asset split. config.lt/config.ru exist as language split names in splits0.xml only. Play «Amazon casino» ≠ application-label «Neon Rebellion». INTERNET absent; no WebView/Custom Tabs; first-party does not call OkHttp/Retrofit; PairIP LicenseClient talks to Google Play. Room stores items locally. SharedPreferences not used. domain_checks: config.ru (language split), theme.app (Theme.App style). agent_src via jadx 1.5.3, not committed as a tree."
+}

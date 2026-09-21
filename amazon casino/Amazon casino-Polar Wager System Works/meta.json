@@ -1,0 +1,81 @@
+{
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Amazon casino (в приложении: Neon Rebellion)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.2.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.0"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.chicken.road.krydaz.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.0, kotlinx-coroutines-core 1.9.0, kotlinx-coroutines-android 1.9.0, Koin, Jetpack Compose 1.11.4, Compose Material3 1.4.0, Compose Material Icons 1.7.8, Navigation Compose 2.9.8, Room 2.8.4, sqlite 2.6.2, com.pairip.licensecheck, com.pairip.application; AndroidX: activity 1.13.0, activity-compose 1.13.0, activity-ktx 1.13.0, annotation-experimental 1.5.0, appcompat 1.7.1, appcompat-resources 1.7.1, autofill 1.0.0, core 1.19.0, core-ktx 1.19.0, core-viewtree 1.0.0, cursoradapter 1.0.0, customview 1.0.0, customview-poolingcontainer 1.0.0, documentfile 1.0.0, drawerlayout 1.0.0, dynamicanimation 1.0.0, emoji2 1.4.0, fragment 1.8.9, graphics-path 1.0.1, interpolator 1.0.0, legacy-support-core-utils 1.0.0, lifecycle 2.11.0, loader 1.0.0, localbroadcastmanager 1.0.0, navigationevent 1.0.0, print 1.0.0, profileinstaller 1.4.0, savedstate 1.4.0, sqlite-framework 2.6.2, startup-runtime 1.1.1, tracing 1.2.0, transition 1.6.0, vectordrawable 1.1.0, vectordrawable-animated 1.1.0, versionedparcelable 1.1.1, viewpager 1.0.0, window 1.5.0, window-core 1.5.0"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru, theme.app"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "license check"
+      }
+    ],
+    "domains": [
+      "config.ru",
+      "theme.app"
+    ],
+    "collected_data": [],
+    "cloaking": "да",
+    "cloaking_brief": "Play-карточка «Amazon casino», application-label «Neon Rebellion». Compose 1.0 vc1, package com.chicken.road.krydaz. INTERNET нет, WebView/Custom Tabs нет, first-party сеть не вызывает. PairIP говорит с Google Play. Клоака = да по белой оболочке; развилки оффер/белое внутри сборки нет."
+  },
+  "app_id": "com.chicken.road.krydaz",
+  "title": "Amazon casino",
+  "app_label": "Neon Rebellion",
+  "developer": "Polar Wager System Works",
+  "url": "https://play.google.com/store/apps/details?id=com.chicken.road.krydaz",
+  "version_name": "1.0",
+  "version_code": 1
+}
