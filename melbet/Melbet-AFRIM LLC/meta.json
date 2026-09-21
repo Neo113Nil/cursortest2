@@ -1,0 +1,24 @@
+{
+  "app_id": "com.net.soft.delta.beta.alpha.melbet",
+  "title": "Melbet",
+  "apk_label": "Win",
+  "developer": "AFRIM LLC",
+  "package": "com.net.soft.delta.beta.alpha.melbet",
+  "folder": "Melbet-AFRIM LLC",
+  "path": "melbet/Melbet-AFRIM LLC",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "version_name": "1.0",
+  "version_code": "1",
+  "source": "apkcombo XAPK (Play Collector folder melbet/Melbet-AFRIM LLC was missing on origin/main)",
+  "gate_url": "https://proud-sun-f751.piltiaievv20267-volodymyrr11.workers.dev/?app=com.net.soft.delta.beta.alpha.melbet",
+  "brief_report": {
+    "cloaking": "да",
+    "collected_data": [
+      "имя пакета приложения",
+      "модель телефона",
+      "строка браузера телефона",
+      "язык"
+    ]
+  }
+}
