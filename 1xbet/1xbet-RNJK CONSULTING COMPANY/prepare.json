@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK via apkeep (Play Collector folder 1xbet/1xbet-RNJK CONSULTING COMPANY was missing on origin/main)",
+  "package": "gbcorp.c384.a1bat.app",
+  "version_name": "2.0",
+  "version_code": 2,
+  "app_label": "1xbet",
+  "play_title": "1xbet",
+  "developer": "RNJK CONSULTING COMPANY",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "gbcorp.c384.a1bat.app@2.0.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/gbcorp.c384.a1bat.app-2.apk",
+    "apk/gbcorp.c384.a1bat.app-2-config.arm64_v8a.apk",
+    "apk/gbcorp.c384.a1bat.app-2-config.en.apk",
+    "apk/gbcorp.c384.a1bat.app-2-config.ru.apk",
+    "apk/gbcorp.c384.a1bat.app-2-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip"
+  },
+  "cloaking": "да",
+  "note": "Folder was missing on origin/main. XAPK 2.0 (vc 2) from APKPure via apkeep. Play «1xbet» = application-label «1xbet». Cloak: DeviceCheck then POST https://qdvofvqlt.click/v1/public/install (bundle, device, language, timezone); offer URL saved as remote_url and opened in encrypted DEX WebView (com.app.verdeappweb.WebScreenKt)."
+}
