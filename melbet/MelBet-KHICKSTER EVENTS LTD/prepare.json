@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "source": "APKCombo XAPK (Play Collector folder was missing)",
+  "package": "com.melon.burst.game.vzk",
+  "version_name": "1.0.0",
+  "version_code": 5246541,
+  "app_label": "MelBet",
+  "play_title": "MelBet",
+  "developer": "KHICKSTER EVENTS LTD",
+  "base_apk": "com.melon.burst.game.vzk-5246541.apk",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "com.melon.burst.game.vzk-5246541.apk",
+    "com.melon.burst.game.vzk-5246541-config.arm64_v8a.apk",
+    "com.melon.burst.game.vzk-5246541-config.en.apk",
+    "com.melon.burst.game.vzk-5246541-config.xxhdpi.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed"
+  },
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.melon.burst.game.vzk-5246541.apk",
+    "apk/com.melon.burst.game.vzk-5246541-config.arm64_v8a.apk",
+    "apk/com.melon.burst.game.vzk-5246541-config.en.apk",
+    "apk/com.melon.burst.game.vzk-5246541-config.xxhdpi.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play title equals APK application-label (MelBet). No INTERNET permission, no WebView/Custom Tabs, no gate/offer URL. PairIP is Google Play license check only. config.ru in splits0.xml is AAB language split, not a domain. Dispatchers.IO is kotlinx.coroutines, not dispatchers.io. agent_src via jadx, not committed."
+}

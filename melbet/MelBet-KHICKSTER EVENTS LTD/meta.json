@@ -1,0 +1,15 @@
+{
+  "app_id": "com.melon.burst.game.vzk",
+  "title": "MelBet",
+  "apk_label": "MelBet",
+  "developer": "KHICKSTER EVENTS LTD",
+  "package": "com.melon.burst.game.vzk",
+  "folder": "MelBet-KHICKSTER EVENTS LTD",
+  "path": "melbet/MelBet-KHICKSTER EVENTS LTD",
+  "store_title_mismatch": false,
+  "cloaking": "нет",
+  "version_name": "1.0.0",
+  "version_code": "5246541",
+  "source": "APKCombo XAPK (Play Collector folder was missing in git)",
+  "gate_url": null
+}
