@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK via ztp-pig.apkcombo.com (Play Collector folder melbet/Melbet of Mtebeat-KIBIRIGE CONSULTANCY LIMITED was missing on origin/main)",
+  "package": "com.messagettothpuvbluc.app",
+  "version_name": "1.0.1",
+  "version_code": 2,
+  "app_label": "Mtebeat",
+  "play_title": "Melbet of Mtebeat",
+  "developer": "KIBIRIGE CONSULTANCY LIMITED",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.messagettothpuvbluc.app_1.0.1.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk"
+  ],
+  "apk_splits_local": [
+    "apk/com.messagettothpuvbluc.app-2.apk",
+    "apk/com.messagettothpuvbluc.app-2-config.arm64_v8a.apk",
+    "apk/com.messagettothpuvbluc.app-2-config.en.apk",
+    "apk/com.messagettothpuvbluc.app-2-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party + listed hits zipped as agent_src.zip; jadx 1.5.3"
+  },
+  "cloaking": "нет",
+  "note": "Folder was missing on origin/main. XAPK Melbet of Mtebeat 1.0.1 / Mtebeat (vc 2) from APKCombo. Splits: config.arm64_v8a, config.armeabi_v7a, config.en, config.xxhdpi. No asset split. Split APKs not committed (Git LFS); analysis used agent_base.apk. Play «Melbet of Mtebeat» vs application-label «Mtebeat». Expo SDK WebView/Custom Tabs unused by JS; no gate/offer."
+}

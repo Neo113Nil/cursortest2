@@ -1,0 +1,18 @@
+{
+  "app_id": "com.messagettothpuvbluc.app",
+  "title": "Melbet of Mtebeat",
+  "apk_label": "Mtebeat",
+  "developer": "KIBIRIGE CONSULTANCY LIMITED",
+  "package": "com.messagettothpuvbluc.app",
+  "folder": "Melbet of Mtebeat-KIBIRIGE CONSULTANCY LIMITED",
+  "path": "melbet/Melbet of Mtebeat-KIBIRIGE CONSULTANCY LIMITED",
+  "store_title_mismatch": true,
+  "cloaking": "нет",
+  "version_name": "1.0.1",
+  "version_code": "2",
+  "source": "apkcombo XAPK via ztp-pig.apkcombo.com (Play Collector folder melbet/Melbet of Mtebeat-KIBIRIGE CONSULTANCY LIMITED was missing on origin/main)",
+  "brief_report": {
+    "cloaking": "нет",
+    "note": "Expo/RN balloon painter. WebView/Custom Tabs = unused Expo SDK. TabsHost is_bot = isBottomNavigationMenuInvalidated false positive. No gate/offer fork."
+  }
+}
