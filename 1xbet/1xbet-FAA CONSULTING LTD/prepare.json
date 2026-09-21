@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK via apkeep (Play Collector folder 1xbet/1xbet-FAA CONSULTING LTD was missing on origin/main)",
+  "package": "com.win.aquarium.water.fill",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Win Aqua",
+  "play_title": "1xbet",
+  "developer": "FAA CONSULTING LTD",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.win.aquarium.water.fill.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/com.win.aquarium.water.fill.apk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.en.apk",
+    "apk/config.mdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 3,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.6 finished with errors count 110"
+  },
+  "cloaking": "да",
+  "note": "Folder 1xbet/1xbet-FAA CONSULTING LTD was missing on origin/main. XAPK 1xbet 1.0 / Win Aqua (vc 1) from APKPure via apkeep. Splits: config.arm64_v8a, config.en, config.mdpi. Play «1xbet» ≠ application-label «Win Aqua». Cloak: Firebase /appConfig → serverCheckUrl + /api/get-offer-url → WebView / Custom Tabs."
+}
