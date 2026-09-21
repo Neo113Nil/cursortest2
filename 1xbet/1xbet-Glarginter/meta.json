@@ -1,0 +1,23 @@
+{
+  "app_id": "com.imeninniki.dasfkojl.app1xbet",
+  "title": "1xbet",
+  "apk_label": "Win",
+  "developer": "Glarginter",
+  "package": "com.imeninniki.dasfkojl.app1xbet",
+  "folder": "1xbet-Glarginter",
+  "path": "1xbet/1xbet-Glarginter",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "version_name": "1.0",
+  "version_code": "1",
+  "source": "apkpure XAPK via apkeep",
+  "brief_report": {
+    "cloaking": "да",
+    "collected_data": [
+      "имя пакета приложения",
+      "модель телефона",
+      "строка браузера телефона",
+      "язык"
+    ]
+  }
+}

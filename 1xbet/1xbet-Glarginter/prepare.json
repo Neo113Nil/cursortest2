@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK via apkeep (Play Collector folder 1xbet/1xbet-Glarginter was missing on origin/main)",
+  "package": "com.imeninniki.dasfkojl.app1xbet",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Win",
+  "play_title": "1xbet",
+  "developer": "Glarginter",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.imeninniki.dasfkojl.app1xbet.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/com.imeninniki.dasfkojl.app1xbet-1.apk",
+    "apk/com.imeninniki.dasfkojl.app1xbet-1-config.en.apk",
+    "apk/com.imeninniki.dasfkojl.app1xbet-1-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors count 2"
+  },
+  "cloaking": "да",
+  "gate_url": "https://fragrant-firefly-c10d.sanzhexcvst.workers.dev/?app=<package>",
+  "note": "Folder 1xbet/1xbet-Glarginter was missing on origin/main. XAPK 1xbet 1.0 / Win (vc 1) from APKPure via apkeep. Splits: config.en, config.mdpi (copied as -config.xxhdpi.apk for apk/ naming). Collector listed -1-asset.apk; APKPure XAPK has no asset split. Gate XOR-decoded: https://fragrant-firefly-c10d.sanzhexcvst.workers.dev/?app=<package>. Play «1xbet» ≠ application-label «Win»."
+}
