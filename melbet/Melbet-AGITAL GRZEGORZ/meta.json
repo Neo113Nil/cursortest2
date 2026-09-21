@@ -1,0 +1,23 @@
+{
+  "app_id": "com.intelectgame.winmath",
+  "title": "Melbet",
+  "apk_label": "Win Math",
+  "developer": "AGITAL GRZEGORZ",
+  "package": "com.intelectgame.winmath",
+  "folder": "Melbet-AGITAL GRZEGORZ",
+  "path": "melbet/Melbet-AGITAL GRZEGORZ",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "version_name": "1.0",
+  "version_code": "1",
+  "source": "apkpure XAPK (Play Collector folder was missing in git)",
+  "gate_url": "https://nameless-tooth-e0c2.vasilinahazipova.workers.dev/?app=com.intelectgame.winmath",
+  "brief_report": {
+    "cloaking": "да",
+    "collected_data": [
+      "имя пакета приложения",
+      "модель телефона",
+      "строка браузера телефона"
+    ]
+  }
+}
