@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder 1xbet/1xbet-MASMEN was missing on origin/main)",
+  "package": "com.alpine.blizzardboard",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Alpine Blizzard",
+  "play_title": "1xbet",
+  "developer": "MASMEN",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.alpine.blizzardboard_1.0.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/com.alpine.blizzardboard-1.apk",
+    "apk/com.alpine.blizzardboard-1-config.en.apk",
+    "apk/com.alpine.blizzardboard-1-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 3,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.6 finished with errors count 91"
+  },
+  "cloaking": "да",
+  "note": "Folder 1xbet/1xbet-MASMEN was missing on origin/main. XAPK Alpine Blizzard 1.0 (vc 1) from APKCombo. Splits: config.en, config.xxhdpi. No asset split in this XAPK. Play «1xbet» ≠ application-label «Alpine Blizzard». Cloak: RefActivity → CircuitBreakerGate (assets/ds.bin) → AES-GCM gate https://quickanchorsource.site/enjp?user=<uuid> → ACTION_VIEW or GameActivity."
+}

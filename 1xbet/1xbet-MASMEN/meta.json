@@ -1,0 +1,14 @@
+{
+  "app_id": "com.alpine.blizzardboard",
+  "title": "1xbet",
+  "apk_label": "Alpine Blizzard",
+  "developer": "MASMEN",
+  "package": "com.alpine.blizzardboard",
+  "folder": "1xbet-MASMEN",
+  "path": "1xbet/1xbet-MASMEN",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "version_name": "1.0",
+  "version_code": "1",
+  "source": "apkcombo XAPK"
+}
