@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK via d.apkpure.net (Play Collector folder 1xbet/1xBet-Nerbur app was missing on origin/main; apkeep -l returned no versions)",
+  "package": "com.slidigu.app",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Slidigu",
+  "play_title": "1xBet",
+  "developer": "Nerbur app",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.slidigu.app.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/com.slidigu.app-1.apk",
+    "apk/com.slidigu.app-1-config.en.apk",
+    "apk/com.slidigu.app-1-config.mdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors count 9"
+  },
+  "cloaking": "да",
+  "gate_url": "https://richapp91.online/nBwTXN5V",
+  "note": "Folder 1xbet/1xBet-Nerbur app was missing on origin/main. XAPK 1xBet 1.0 / Slidigu (vc 1) from APKPure. Splits: config.en + config.mdpi. No asset/xxhdpi split in this XAPK (collector listed -1-asset.apk and -1-config.xxhdpi.apk). Gate decoded from int[] minus 9: https://richapp91.online/nBwTXN5V. Play «1xBet» ≠ application-label «Slidigu». dispatchers.io in domain_checks is Kotlin Dispatchers.IO, not a network host."
+}

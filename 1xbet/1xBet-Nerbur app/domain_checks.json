@@ -1,0 +1,8 @@
+{
+  "suspicious_domains": [
+    "richapp91.online",
+    "com.slidigu.app",
+    "dispatchers.io"
+  ],
+  "note": "Проверки предоставлены пайплайном. com.slidigu.app — имя пакета (DNS не резолвится). dispatchers.io — совпадение с Kotlin Dispatchers.IO; в APK как сетевой хост не используется. Боевой адрес проверки в коде: richapp91.online."
+}
