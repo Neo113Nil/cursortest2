@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK via d.apkpure.net (Play Collector folder melbet/Melbet-Yaney app was missing on origin/main)",
+  "package": "com.cell.force.dev.star.cyber.melbet",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Win",
+  "play_title": "Melbet",
+  "developer": "Yaney app",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "Melbet._1.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk"
+  ],
+  "apk_splits_local": [
+    "apk/com.cell.force.dev.star.cyber.melbet-1.apk",
+    "apk/com.cell.force.dev.star.cyber.melbet-1-config.en.apk",
+    "apk/com.cell.force.dev.star.cyber.melbet-1-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3"
+  },
+  "cloaking": "да",
+  "gate_url": "https://withered-sound-2cbc.scett-iik-antoniuuc1980.workers.dev/?app=com.cell.force.dev.star.cyber.melbet",
+  "note": "Folder melbet/Melbet-Yaney app was missing on origin/main. XAPK Melbet 1.0 / Win (vc 1) from APKPure. Splits: config.en, config.mdpi (copied as -config.xxhdpi.apk for apk/ naming). Collector listed -1-asset.apk; APKPure XAPK has no asset split. Split APKs not committed: Git LFS budget exceeded; analysis used agent_base.apk (not LFS). Gate XOR-decoded: https://withered-sound-2cbc.scett-iik-antoniuuc1980.workers.dev/?app=<package>. Play «Melbet» ≠ application-label «Win»."
+}

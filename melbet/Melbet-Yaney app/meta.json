@@ -1,0 +1,24 @@
+{
+  "app_id": "com.cell.force.dev.star.cyber.melbet",
+  "title": "Melbet",
+  "apk_label": "Win",
+  "developer": "Yaney app",
+  "package": "com.cell.force.dev.star.cyber.melbet",
+  "folder": "Melbet-Yaney app",
+  "path": "melbet/Melbet-Yaney app",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "version_name": "1.0",
+  "version_code": "1",
+  "source": "apkpure XAPK via d.apkpure.net (Play Collector folder melbet/Melbet-Yaney app was missing on origin/main)",
+  "gate_url": "https://withered-sound-2cbc.scett-iik-antoniuuc1980.workers.dev/?app=com.cell.force.dev.star.cyber.melbet",
+  "brief_report": {
+    "cloaking": "да",
+    "collected_data": [
+      "имя пакета приложения",
+      "модель телефона",
+      "строка браузера телефона",
+      "язык"
+    ]
+  }
+}
