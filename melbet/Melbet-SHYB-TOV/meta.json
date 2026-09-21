@@ -1,0 +1,23 @@
+{
+  "app_id": "com.woodlandfox.acornhunt",
+  "title": "Melbet",
+  "apk_label": "Melb",
+  "developer": "SHYB-TOV",
+  "package": "com.woodlandfox.acornhunt",
+  "folder": "Melbet-SHYB-TOV",
+  "path": "melbet/Melbet-SHYB-TOV",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "version_name": "5.0",
+  "version_code": "5",
+  "source": "Play 5.0 identity + collector first-party scan; mirrors only had 3.0 WoodlandFox",
+  "play_url": "https://play.google.com/store/apps/details?id=com.woodlandfox.acornhunt",
+  "privacy_policy": "https://melbet.feathersoffury.com/",
+  "developer_website": "https://aviatorgames.uk.com/",
+  "brief_report": {
+    "cloaking": "да",
+    "collected_data": [
+      "адрес страницы, которую открывают во встроенном окне сайта"
+    ]
+  }
+}

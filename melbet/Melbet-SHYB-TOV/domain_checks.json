@@ -1,0 +1,24 @@
+{
+  "all_custom_domains": [
+    "app.feathersoffury.com"
+  ],
+  "checked": [
+    {
+      "domain": "app.feathersoffury.com",
+      "virustotal": {
+        "ok": true,
+        "vt_url": "https://www.virustotal.com/gui/domain/app.feathersoffury.com",
+        "detections": "0/89 (malicious=0, suspicious=0)"
+      },
+      "redirects_to": "нет (без редиректа)",
+      "content_brief": "title: Woodland Fox. Woodland Fox",
+      "parked_at": "нет данных"
+    }
+  ],
+  "pipeline_also_extracted_but_not_custom_hosts": [
+    "com.chrome.dev",
+    "config.ru",
+    "debug.firebase.analytics.app",
+    "dispatchers.io"
+  ]
+}

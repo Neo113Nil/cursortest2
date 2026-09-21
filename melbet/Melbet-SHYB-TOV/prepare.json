@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "source": "Play listing 5.0 (Melbet / Melb) + collector first-party hits; APKPure/APKCombo only served 3.0",
+  "package": "com.woodlandfox.acornhunt",
+  "version_name": "5.0",
+  "version_code": 5,
+  "app_label": "Melb",
+  "play_title": "Melbet",
+  "developer": "SHYB-TOV",
+  "play_updated": "2026-08-03",
+  "mirror_apk_available": "3.0 (vc 3) WoodlandFox Compose game, no INTERNET, no WebView",
+  "collector_files_expected": [
+    "apk/com.woodlandfox.acornhunt-5.apk",
+    "apk/com.woodlandfox.acornhunt-5-asset.apk",
+    "apk/com.woodlandfox.acornhunt-5-config.en.apk",
+    "apk/com.woodlandfox.acornhunt-5-config.lt.apk",
+    "apk/com.woodlandfox.acornhunt-5-config.ru.apk",
+    "apk/com.woodlandfox.acornhunt-5-config.xxhdpi.apk"
+  ],
+  "first_party_hits": [
+    "r0/n.java loadUrl",
+    "r0/n.java shouldOverrideUrlLoading"
+  ],
+  "entry": [
+    "com.woodlandfox.acornhunt.Application",
+    "com.woodlandfox.acornhunt.LauncherActivity"
+  ],
+  "cloaking": "да",
+  "custom_domain": "app.feathersoffury.com",
+  "note": "Folder melbet/Melbet-SHYB-TOV was missing on origin/main. Play 5.0 updated Aug 3, 2026 titled Melbet, APK label Melb. Public mirrors (APKPure XAPK, APKCombo) only have 3.0 WoodlandFox (minSdk 32, no INTERNET, Compose game). Collector scan of v5 agent_src reported WebViewClient loadUrl/shouldOverrideUrlLoading. Custom host app.feathersoffury.com (Woodland Fox, no redirect). Cloaking=да: Play Melbet vs APK Melb + first-party WebView URL load + Custom Tabs (com.chrome.dev) + remote page after launch. Did not copy sibling-app gate fields (GAID/model) because they are not in this APK's visible request."
+}
