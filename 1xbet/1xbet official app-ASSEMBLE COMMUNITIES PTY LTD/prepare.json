@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder was missing on origin/main)",
+  "package": "com.mazefootball6813.app",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Maze Football",
+  "play_title": "1xbet official app",
+  "developer": "ASSEMBLE COMMUNITIES PTY LTD",
+  "base_apk": "com.mazefootball6813.app.apk",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "com.mazefootball6813.app.apk",
+    "config.en.apk",
+    "config.mdpi.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally with jadx 1.5.6 (15 errors); agent_src not committed"
+  },
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.mazefootball6813.app-1.apk",
+    "apk/com.mazefootball6813.app-1-config.en.apk",
+    "apk/com.mazefootball6813.app-1-config.mdpi.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder 1xbet/1xbet official app-ASSEMBLE COMMUNITIES PTY LTD was missing on origin/main. XAPK 1.0 (vc1) downloaded from APKPure. Splits: config.en + config.mdpi (no asset split in this XAPK). agent_src via jadx 1.5.6, not committed. Gate URL decoded from obfuscated int[] − 31 in af."
+}
