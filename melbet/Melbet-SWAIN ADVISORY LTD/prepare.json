@@ -1,0 +1,41 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder melbet/Melbet-SWAIN ADVISORY LTD was missing on origin/main)",
+  "package": "com.pincurve.bowling",
+  "version_name": "2.0",
+  "version_code": 2,
+  "app_label": "Pin Curve",
+  "play_title": "Melbet",
+  "developer": "SWAIN ADVISORY LTD",
+  "base_apk": "com.pincurve.bowling.apk",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.pincurve.bowling_2.0.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/com.pincurve.bowling-2.apk",
+    "apk/com.pincurve.bowling-2-config.en.apk",
+    "apk/com.pincurve.bowling-2-config.xxhdpi.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors count 2"
+  },
+  "cloaking": "да",
+  "gate_url": "https://pincurve.date",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.pincurve.bowling-2.apk",
+    "apk/com.pincurve.bowling-2-config.en.apk",
+    "apk/com.pincurve.bowling-2-config.xxhdpi.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Folder was missing on origin/main. XAPK Pin Curve 2.0 (vc 2) from APKCombo. Splits: config.en, config.xxhdpi. No asset split in this XAPK. TWA DEFAULT_URL https://pincurve.date. Play «Melbet» ≠ application-label «Pin Curve». No INTERNET permission. agent_src via jadx 1.5.3, not committed as a tree."
+}
