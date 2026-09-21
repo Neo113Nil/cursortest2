@@ -1,0 +1,19 @@
+{
+  "title": "1xBet",
+  "developer": "FUSION DEV",
+  "cloaking": "да",
+  "app_id": "com.stellar.studio.spark6x3x.lottomatica",
+  "url": "https://play.google.com/store/apps/details?id=com.stellar.studio.spark6x3x.lottomatica",
+  "app_label": "Win App",
+  "version_name": "1.7",
+  "version_code": 8,
+  "brief_report": {
+    "cloaking": "да",
+    "collected_data": [
+      "имя пакета приложения",
+      "модель телефона",
+      "строка User-Agent",
+      "заголовок Accept-Language"
+    ]
+  }
+}

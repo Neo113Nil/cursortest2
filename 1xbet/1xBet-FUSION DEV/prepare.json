@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK via apkeep (Play Collector folder 1xbet/1xBet-FUSION DEV was missing on origin/main)",
+  "package": "com.stellar.studio.spark6x3x.lottomatica",
+  "version_name": "1.7",
+  "version_code": 8,
+  "app_label": "Win App",
+  "play_title": "1xBet",
+  "developer": "FUSION DEV",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.stellar.studio.spark6x3x.lottomatica.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/com.stellar.studio.spark6x3x.lottomatica-8.apk",
+    "apk/com.stellar.studio.spark6x3x.lottomatica-8-config.en.apk",
+    "apk/com.stellar.studio.spark6x3x.lottomatica-8-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors count 4"
+  },
+  "cloaking": "да",
+  "gate_url": "https://nameless-limit-bc80.mykhno-backend-dev.workers.dev/?app=<package>",
+  "note": "Folder 1xbet/1xBet-FUSION DEV was missing on origin/main. XAPK 1xBet 1.7 / Win App (vc 8) from APKPure via apkeep. Splits: many language configs + config.xxhdpi. No asset split in this XAPK (collector listed -8-asset.apk, APKPure XAPK has none). Gate XOR-decoded: https://nameless-limit-bc80.mykhno-backend-dev.workers.dev/?app=<package>. Play «1xBet» ≠ application-label «Win App»."
+}
