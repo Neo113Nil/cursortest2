@@ -1,0 +1,66 @@
+{
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Amazon Shopping"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.13.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "31"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.2.0"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "Amazon APS, Google IMA, Google PAL, Google TV Ads"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase, Bugsnag, Amazon Minerva, AppsFlyer (через MMP-прокси Amazon), Crashlytics, Install Referrer"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "cloak, whitelist, blacklist, gate, offer, affiliate, redirect, landing, webview, casino"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": "Официальный com.amazon.mShop.android.shopping 32.13.0.100 (vc 1241320016). Play-название совпадает с application-label «Amazon Shopping». whispercloak — AES-GCM/JPAKE для WhisperJoin, не клоака трафика. is_bot в локальном скане — ложные совпадения isBottom*. WebView/Custom Tabs открывают витрину Amazon и KYC (idfy/DigiLocker), не оффер после gate. MMP-прокси AppsFlyer только атрибуция первого запуска, ответ не ветвит UI."
+  },
+  "app_id": "com.amazon.mShop.android.shopping",
+  "title": "Amazon Shopping",
+  "app_label": "Amazon Shopping",
+  "developer": "Amazon Mobile LLC",
+  "url": "https://play.google.com/store/apps/details?id=com.amazon.mShop.android.shopping",
+  "version_name": "32.13.0.100",
+  "version_code": 1241320016
+}

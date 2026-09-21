@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "source": "restored from git history (folder deleted on origin/main) + jadx agent_base.apk from LFS",
+  "package": "com.amazon.mShop.android.shopping",
+  "version_name": "32.13.0.100",
+  "version_code": 1241320016,
+  "app_label": "Amazon Shopping",
+  "play_title": "Amazon Shopping",
+  "developer": "Amazon Mobile LLC",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "apk/com.amazon.mShop.android.shopping-1241320016.apk",
+    "apk/com.amazon.mShop.android.shopping-1241320016-asset.apk",
+    "apk/com.amazon.mShop.android.shopping-1241320016-config.arm64_v8a.apk",
+    "apk/com.amazon.mShop.android.shopping-1241320016-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally with jadx 1.5.3; agent_src not committed as a tree"
+  },
+  "cloaking": "нет",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.amazon.mShop.android.shopping-1241320016.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Folder was deleted from origin/main. Restored LFS APKs, copied base to agent_base.apk, jadx 1.5.3. Play «Amazon Shopping» = application-label «Amazon Shopping». whispercloak is device-pairing crypto. CustomWebView domainList is idfy.com / DigiLocker. MMP proxy is first-open AppsFlyer attribution, response is logged only. agent_src gitignored."
+}
