@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "package": "com.heritage.strategy.mental.puzzles",
+  "app_label": "Gravity Groove",
+  "play_title": "Gravity Groove",
+  "developer": "upload",
+  "source": "apk_upload (folder missing on origin/main; Play 404; no public APK mirror; analysis from pipeline scan hits + domain_checks + live gavorella.org)",
+  "agent_base_apk": "нет",
+  "jadx": {
+    "ok": false,
+    "skipped": true,
+    "note": "agent_base.apk and agent_src were not present in the cloud workspace; Play listing 404; APKCombo/APKPure/Aptoide have no package"
+  },
+  "cloaking": "да",
+  "note": "Local first-party scan listed W/f0, W/e0, W/T, W/N shouldOverrideUrlLoading and W/T loadUrl. Flutter entry G.AbstractActivityC0005f + MainActivity. Domain checks: dispatchers.io, gavorella.org, systemuioverlay.top. Cloaking=да because WebView URL loading was not disproven as a traffic fork."
+}

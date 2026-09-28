@@ -1,0 +1,8 @@
+{
+  "suspicious_domains": [
+    "dispatchers.io",
+    "gavorella.org",
+    "systemuioverlay.top"
+  ],
+  "source": "pipeline domain_checks provided with the analysis prompt"
+}
