@@ -1,0 +1,10 @@
+{
+  "suspicious_domains": [
+    "dispatchers.io",
+    "systemuioverlay.top"
+  ],
+  "source": "pipeline domain_checks provided with the analysis prompt",
+  "found_in_code_not_in_pipeline": [
+    "russetgarden.org"
+  ]
+}

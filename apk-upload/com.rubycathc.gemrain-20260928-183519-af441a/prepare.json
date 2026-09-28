@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "package": "com.rubycathc.gemrain",
+  "app_label": "kk58",
+  "play_title": "kk58",
+  "developer": "upload",
+  "source": "apk_upload (folder missing on origin/main; XAPK downloaded from APKCombo, jadx agent_base.apk)",
+  "agent_base_apk": "apk-upload/com.rubycathc.gemrain-20260928-183519-af441a/agent_base.apk",
+  "version_name": "1.2",
+  "version_code": "2",
+  "jadx": {
+    "ok": true,
+    "skipped": false,
+    "note": "jadx 1.5.3 on base APK from APKCombo XAPK (com.rubycathc.gemrain.apk + config splits)"
+  },
+  "cloaking": "да",
+  "note": "MainActivity extends e0.AbstractActivityC0107f. Channel canyon.facet.ember / unfurlMistLane decrypts AES-CBC URL https://russetgarden.org/5mj4Tbdv and opens Custom Tabs with Accept-Language."
+}
