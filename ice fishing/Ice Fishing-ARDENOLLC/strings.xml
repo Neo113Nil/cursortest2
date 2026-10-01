@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="androidx_compose_foundation_autofill">Autofill</string>
+    <string name="androidx_compose_ui_autofill">Autofill</string>
+    <string name="androidx_startup">androidx.startup</string>
+    <string name="app_name">Frost Kintsugi</string>
+    <string name="default_error_message">Invalid input</string>
+    <string name="default_popup_window_title">Pop-Up Window</string>
+    <string name="in_progress">In progress</string>
+    <string name="indeterminate">Partially checked</string>
+    <string name="m3c_bottom_sheet_drag_handle_description">Drag handle</string>
+    <string name="m3c_date_picker_switch_to_day_selection">Swipe to select a year, or tap to switch back to selecting a day</string>
+    <string name="m3c_date_picker_switch_to_next_month">Change to next month</string>
+    <string name="m3c_date_picker_switch_to_previous_month">Change to previous month</string>
+    <string name="m3c_date_picker_switch_to_year_selection">Switch to selecting a year</string>
+    <string name="m3c_date_picker_year_picker_pane_title">Year picker visible</string>
+    <string name="m3c_dialog">Dialog</string>
+    <string name="m3c_snackbar_dismiss">Dismiss</string>
+    <string name="m3c_time_picker_am">AM</string>
+    <string name="m3c_time_picker_pm">PM</string>
+    <string name="m3c_time_picker_toggle_touch">Switch to clock mode for the time input</string>
+    <string name="not_selected">Not selected</string>
+    <string name="selected">Selected</string>
+    <string name="state_empty">Empty</string>
+    <string name="state_off">Off</string>
+    <string name="state_on">On</string>
+    <string name="switch_role">Switch</string>
+    <string name="tab">Tab</string>
+    <string name="template_percent">%1$d percent.</string>
+    <string name="tooltip_description">tooltip</string>
+    <string name="tooltip_label">show tooltip</string>
+</resources>

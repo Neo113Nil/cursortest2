@@ -1,0 +1,33 @@
+{
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "Ice Fishing (в приложении: Frost Kintsugi)"},
+      {"param": "Android Gradle Plugin", "value": "9.2.1"},
+      {"param": "minSdk", "value": "32"},
+      {"param": "targetSdk", "value": "36"},
+      {"param": "Kotlin", "value": "да 2.2.0"},
+      {"param": "Web View", "value": "нет"},
+      {"param": "Custom Tabs", "value": "нет"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "нет"},
+      {"param": "Permissions", "value": "com.kolosta.rejin.tarlyons.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"},
+      {"param": "Libraries", "value": "Kotlin 2.2.0 (stdlib, stdlib-jdk7, stdlib-jdk8), kotlinx-coroutines-core 1.9.0, kotlinx-coroutines-android 1.9.0, kotlinx-serialization-core, okio, AndroidX: activity 1.13.0, activity-compose 1.13.0, activity-ktx 1.13.0, annotation-experimental 1.4.1, autofill 1.0.0, compose.animation 1.10.4, compose.foundation 1.10.4, compose.material3 1.4.0, compose.material-ripple 1.10.4, compose.runtime 1.11.0, compose.ui 1.10.4, core 1.19.0, core-ktx 1.19.0, core-viewtree 1.0.0, customview-poolingcontainer 1.0.0, datastore 1.1.2, documentfile 1.0.0, dynamicanimation 1.0.0, emoji2 1.4.0, graphics-path 1.0.1, interpolator 1.0.0, legacy-support-core-utils 1.0.0, lifecycle 2.11.0, loader 1.0.0, localbroadcastmanager 1.0.0, navigationevent 1.0.0, print 1.0.0, profileinstaller 1.4.0, savedstate 1.4.0, startup-runtime 1.1.1, tracing 1.2.0, transition 1.6.0, versionedparcelable 1.1.1, window 1.5.0; PairIP licensecheck (com.pairip.application / licensecheck)"},
+      {"param": "Подозрительные домены", "value": "config.ru, theme.app"},
+      {"param": "SharedPreferences", "value": "нет (локальный DataStore kintsugiStore: unlocked_tray, lacquer_drops, perfect_trays, resin_tints, equipped_tint, cabinet_boards)"},
+      {"param": "Есть ли клоака", "value": "нет"},
+      {"param": "Подозрительные слова", "value": "нет"}
+    ],
+    "domains": ["config.ru", "theme.app"],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": "Повторный глубокий разбор agent_base.apk (jadx 1.5.3, classes.dex, без native .so). Play «Ice Fishing» ≠ application-label «Frost Kintsugi» — белая оболочка по названию. Точка входа: com.pairip.application.Application.attachBaseContext вызывает LicenseClient.checkLicense к com.android.vending, затем MainActivity.onCreate поднимает Compose Store. Экраны TABLE/STACK/PLAY/REVEAL/CABINET — локальная головоломка (кинцуги/ледяные эмблемы). В манифесте нет INTERNET; в first-party dex нет WebView, Custom Tabs, OkHttp, HttpURLConnection, ACTION_VIEW, java.net. Рекламы и аналитики нет. DataStore kintsugiStore хранит локальный прогресс. config.ru — языковой сплит splits0.xml. theme.app — стиль Theme.App, DNS не резолвится. Развилки оффер/белая нет. Cloak = нет."
+  },
+  "app_id": "com.kolosta.rejin.tarlyons",
+  "title": "Ice Fishing",
+  "app_label": "Frost Kintsugi",
+  "developer": "ARDENOLLC",
+  "url": "https://play.google.com/store/apps/details?id=com.kolosta.rejin.tarlyons&hl=en&gl=us",
+  "version": "1.0",
+  "version_code": 1
+}

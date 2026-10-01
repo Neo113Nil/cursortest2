@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK via ztp1.apkcombo.com (Play Collector folder ice fishing/Ice Fishing-ARDENOLLC was missing on origin/main)",
+  "package": "com.kolosta.rejin.tarlyons",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Frost Kintsugi",
+  "play_title": "Ice Fishing",
+  "developer": "ARDENOLLC",
+  "sha256": "289034be9f322b6f5b90d12c116e8038fb907389cd9de94c6f00bc4603df464a",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "Ice_Fishing_1.0_apkcombo.com.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/com.kolosta.rejin.tarlyons-1.apk",
+    "apk/com.kolosta.rejin.tarlyons-1-config.arm64_v8a.apk",
+    "apk/com.kolosta.rejin.tarlyons-1-config.armeabi_v7a.apk",
+    "apk/com.kolosta.rejin.tarlyons-1-config.en.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors"
+  },
+  "cloaking": "нет",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.kolosta.rejin.tarlyons-1.apk",
+    "apk/com.kolosta.rejin.tarlyons-1-config.arm64_v8a.apk",
+    "apk/com.kolosta.rejin.tarlyons-1-config.armeabi_v7a.apk",
+    "apk/com.kolosta.rejin.tarlyons-1-config.en.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "cloaking_hints.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Folder ice fishing/Ice Fishing-ARDENOLLC was missing on origin/main. XAPK Ice Fishing 1.0 / Frost Kintsugi (vc 1) from APKCombo (~6.6 MB). Splits: config.arm64_v8a, config.en, config.armeabi_v7a. No asset split in this XAPK. Play «Ice Fishing» ≠ application-label «Frost Kintsugi». No INTERNET, WebView, Custom Tabs, OkHttp, HttpURLConnection, remote config, ads, analytics. PairIP LicenseClient talks only to Google Play licensing. DataStore kintsugiStore stores local tray/tint/cabinet progress. config.ru is language split in splits0.xml. theme.app is Theme.App style, DNS NXDOMAIN. agent_src via jadx 1.5.3, not committed as a tree."
+}
