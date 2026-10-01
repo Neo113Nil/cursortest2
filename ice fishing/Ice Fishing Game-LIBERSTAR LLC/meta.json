@@ -1,0 +1,33 @@
+{
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "Ice Fishing"},
+      {"param": "Android Gradle Plugin", "value": "8.9.3"},
+      {"param": "minSdk", "value": "26"},
+      {"param": "targetSdk", "value": "36"},
+      {"param": "Kotlin", "value": "да 2.1.20"},
+      {"param": "Web View", "value": "да"},
+      {"param": "Custom Tabs", "value": "нет"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "нет"},
+      {"param": "Permissions", "value": "android.permission.ACCESS_NETWORK_STATE, android.permission.INTERNET, com.Onyx330.PrismPeak.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"},
+      {"param": "Libraries", "value": "androidx.activity 1.9.3, androidx.appcompat 1.7.0, androidx.core 1.13.1, androidx.fragment 1.5.4, androidx.lifecycle, androidx.emoji2 1.3.0, androidx.profileinstaller 1.3.1, androidx.startup 1.1.1, androidx.savedstate 1.2.1, androidx.drawerlayout 1.0.0, androidx.viewpager 1.0.0, androidx.vectordrawable 1.1.0, androidx.customview 1.0.0, androidx.cursoradapter 1.0.0, androidx.loader 1.0.0, androidx.interpolator 1.0.0, androidx.tracing 1.0.0, androidx.arch.core, androidx.annotation, kotlinx-coroutines 1.6.4, kotlin-stdlib 2.1.20, com.joom.paranoid, com.pairip, com.google.common (ListenableFuture), org.jetbrains.annotations"},
+      {"param": "Подозрительные домены", "value": "calveris.info, ceo481.github.io, config.ru, diia.app"},
+      {"param": "SharedPreferences", "value": "файл progress: ключ ppeak хранит ссылку после проверки, ключ prismpeak — флаг «оставить обычное приложение»; там же игровые монеты, рекорды, скины и звук"},
+      {"param": "Есть ли клоака", "value": "да"},
+      {"param": "Подозрительные слова", "value": "offer, urlOffer, gate, fragment_decision_gate, token"}
+    ],
+    "domains": ["calveris.info", "ceo481.github.io", "config.ru", "diia.app"],
+    "collected_data": ["встроенный токен приложения"],
+    "cloaking": "да",
+    "cloaking_brief": "Play «Ice Fishing Game» ≠ APK-label «Ice Fishing». LAUNCHER PrismPeakSplashActivity: GET https://calveris.info/api/?token=3bypXPXBJRcy6xR1 (AES в ProgressKt), extractLinkFromConfig, prefs ppeak/prismpeak, ACTION_VIEW или MenuActivity. WebView: PrivacyActivity (file privacy_policy.html) и PrismPeakPrivacyPolicyActivity (urlOffer)."
+  },
+  "app_id": "com.Onyx330.PrismPeak",
+  "title": "Ice Fishing Game",
+  "app_label": "Ice Fishing",
+  "developer": "LIBERSTAR LLC",
+  "url": "https://play.google.com/store/apps/details?id=com.Onyx330.PrismPeak&hl=en",
+  "version": "1.1",
+  "version_code": 2
+}

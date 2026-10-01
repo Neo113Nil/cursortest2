@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "source": "same APK as Ice Fishing Casino Real Money-LIBERSTAR LLC; Play card title recorded as Ice Fishing Game",
+  "package": "com.Onyx330.PrismPeak",
+  "version_name": "1.1",
+  "version_code": 2,
+  "app_label": "Ice Fishing",
+  "app_name_resource": "Prism Peak",
+  "play_title": "Ice Fishing Game",
+  "developer": "LIBERSTAR LLC",
+  "base_apk": "agent_base.apk",
+  "agent_base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "first-party sources from agent_src.zip; agent_src not committed as a tree"
+  },
+  "cloaking": "да",
+  "gate_url": "https://calveris.info/api/?token=3bypXPXBJRcy6xR1",
+  "note": "Play «Ice Fishing Game» ≠ application-label «Ice Fishing» (app_name Prism Peak). LAUNCHER PrismPeakSplashActivity: silent gate, extractLinkFromConfig, ACTION_VIEW or MenuActivity. WebView: PrivacyActivity (local HTML) and PrismPeakPrivacyPolicyActivity (urlOffer). domain_checks from pipeline: ceo481.github.io, config.ru, diia.app. Gate host calveris.info recovered via AES from ProgressKt."
+}
