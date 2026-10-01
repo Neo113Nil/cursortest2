@@ -1,0 +1,33 @@
+{
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "Ice Fishing (в приложении: Ice Skating)"},
+      {"param": "Android Gradle Plugin", "value": "8.13.2"},
+      {"param": "minSdk", "value": "29"},
+      {"param": "targetSdk", "value": "36"},
+      {"param": "Kotlin", "value": "да 2.3.21"},
+      {"param": "Web View", "value": "нет"},
+      {"param": "Custom Tabs", "value": "нет"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "нет"},
+      {"param": "Permissions", "value": "android.permission.INTERNET, uhggroup.iceskating.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"},
+      {"param": "Libraries", "value": "Kotlin 2.3.21, kotlinx-coroutines 1.10.2, AndroidX: activity 1.13.0, appcompat 1.7.1, compose.animation 1.11.0, compose.foundation 1.11.0, compose.material3 1.4.0, compose.material-icons 1.7.8, compose.runtime 1.11.2, compose.ui 1.11.2, compose.ui-text-google-fonts 1.11.2, core 1.18.0, datastore 1.2.0, fragment 1.8.9, lifecycle 2.10.0, navigation 2.9.7, room 2.8.4, sqlite 2.6.2, window 1.5.0, profileinstaller 1.4.1, emoji2 1.4.0, startup-runtime 1.1.1; Coil 3, OkHttp 4.12.0, Okio, Koin, Google Accompanist drawablepainter, PairIP licensecheck (com.pairip.application / licensecheck)"},
+      {"param": "Подозрительные домены", "value": "travelandleisure.com, cdn.shopify.com, config.ru"},
+      {"param": "SharedPreferences", "value": "нет (DataStore onboarding_prefs: флаг onboardedState; Room ics_db: корзина и заказы)"},
+      {"param": "Есть ли клоака", "value": "нет"},
+      {"param": "Подозрительные слова", "value": "нет"}
+    ],
+    "domains": ["travelandleisure.com", "cdn.shopify.com", "config.ru"],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": "Глубокий разбор agent_base.apk (jadx 1.5.3, classes.dex/2/3). Play «Ice Fishing» ≠ application-label «Ice Skating». Точка входа: com.pairip.application.Application.attachBaseContext вызывает LicenseClient.checkLicense к Google Play, ICSApplication стартует Koin, MainActivity поднимает Compose. Splash читает локальный DataStore onboardedState и ведёт либо на знакомство, либо в каталог сумок. Товары захардкожены в ProductRepository; Coil грузит фото по готовым ссылкам. В first-party нет WebView, Custom Tabs, OkHttp, HttpURLConnection, remote config, рекламы и аналитики. config.ru — языковой сплит splits0.xml. Развилки оффер/белая нет. Cloak = нет."
+  },
+  "app_id": "uhggroup.iceskating.app",
+  "title": "Ice Fishing",
+  "app_label": "Ice Skating",
+  "developer": "UHG GROUP LTD",
+  "url": "https://play.google.com/store/apps/details?id=uhggroup.iceskating.app&hl=en",
+  "version": "1.0",
+  "version_code": 1
+}

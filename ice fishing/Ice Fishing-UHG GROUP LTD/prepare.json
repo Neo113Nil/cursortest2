@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK via d.apkpure.net (Play Collector folder ice fishing/Ice Fishing-UHG GROUP LTD was missing on origin/main)",
+  "package": "uhggroup.iceskating.app",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Ice Skating",
+  "play_title": "Ice Fishing",
+  "developer": "UHG GROUP LTD",
+  "sha256": "41a25aa0b07d852263c493664a4737b732e4df89ec58f68ac6700ff8e4154e1e",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "Ice_Skating_1.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/uhggroup.iceskating.app-1.apk",
+    "apk/uhggroup.iceskating.app-1-config.armeabi_v7a.apk",
+    "apk/uhggroup.iceskating.app-1-config.en.apk",
+    "apk/uhggroup.iceskating.app-1-config.mdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors"
+  },
+  "cloaking": "нет",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/uhggroup.iceskating.app-1.apk",
+    "apk/uhggroup.iceskating.app-1-config.armeabi_v7a.apk",
+    "apk/uhggroup.iceskating.app-1-config.en.apk",
+    "apk/uhggroup.iceskating.app-1-config.mdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "cloaking_hints.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Folder ice fishing/Ice Fishing-UHG GROUP LTD was missing on origin/main. XAPK Ice Skating 1.0 (vc 1) from APKPure (~50 MB). Splits: config.armeabi_v7a, config.en, config.mdpi. No asset/arm64/xxhdpi splits in this XAPK (Play Collector filenames with vc 2 were not on git). Play «Ice Fishing» ≠ application-label «Ice Skating». PairIP LicenseClient talks only to Google Play licensing. Splash reads local DataStore onboardedState. Catalog is hardcoded ProductRepository; Coil loads product photos. No WebView, Custom Tabs, first-party OkHttp/HttpURLConnection, ads, analytics, remote config, or gate. config.ru is language split in splits0.xml. agent_src via jadx 1.5.3, not committed as a tree."
+}

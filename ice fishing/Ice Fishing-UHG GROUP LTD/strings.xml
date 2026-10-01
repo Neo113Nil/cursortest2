@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ice Skating</string>
+    <string name="button_add_to_cart_label">Add to Cart</string>
+    <string name="button_confirm_order_label">Confirm Order</string>
+    <string name="checkout_dialog_title">Order Confirmed!</string>
+    <string name="home_categories_title">Shop by Category</string>
+    <string name="home_featured_title">Bestsellers</string>
+    <string name="home_products_title">All Items</string>
+    <string name="ics_app_version">1.0.0</string>
+    <string name="ics_bottom_bar_nav_item_cart_title">Cart</string>
+    <string name="ics_bottom_bar_nav_item_home_title">Home</string>
+    <string name="ics_bottom_bar_nav_item_orders_title">Orders</string>
+    <string name="ics_bottom_bar_nav_item_settings_title">Settings</string>
+    <string name="ics_company_name" />
+    <string name="ics_customer_support_link" />
+    <string name="ics_top_bar_tagline">Travel in style</string>
+</resources>
