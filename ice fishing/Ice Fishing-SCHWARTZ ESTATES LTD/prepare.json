@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "source": "apkcombo (Play Collector folder ice fishing/Ice Fishing-SCHWARTZ ESTATES LTD was missing on origin/main; APKPure blocked by Cloudflare)",
+  "package": "com.watchfacestudio.estateshalloween",
+  "version_name": "1.0.2",
+  "version_code": 2,
+  "app_label": "Halloween Animated Watch face",
+  "play_title": "Ice Fishing",
+  "developer": "SCHWARTZ ESTATES LTD",
+  "sha256": "31cd810f5335746450f4ebded6b69bb62f79fc9325223ca2bd282fa481fac419",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "Ice Fishing_1.0.2_apkcombo.com.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.watchfacestudio.estateshalloween-2.apk",
+    "apk/com.watchfacestudio.estateshalloween-2-config.en.apk",
+    "apk/com.watchfacestudio.estateshalloween-2-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3, 3694 classes, finished with 5 errors; first-party only MainActivity, BuildConfig, R; agent_src gitignored, first-party zipped as agent_src.zip"
+  },
+  "cloaking": "да",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.watchfacestudio.estateshalloween-2.apk",
+    "apk/com.watchfacestudio.estateshalloween-2-config.en.apk",
+    "apk/com.watchfacestudio.estateshalloween-2-config.xxhdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Folder was missing on origin/main. XAPK 1.0.2 vc2 from APKCombo (~12 MB): base + config.en + config.xxhdpi (no asset/lt/ru splits in this XAPK). Play title «Ice Fishing» ≠ application-label «Halloween Animated Watch face». Wear OS watch-face companion. No INTERNET, no network layer, WebView/Custom Tabs, ads, analytics, remote config or first-party SharedPreferences. Cloak = да by white-shell rule; no offer/white traffic fork in this build."
+}
