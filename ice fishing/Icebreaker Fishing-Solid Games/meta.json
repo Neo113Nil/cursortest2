@@ -1,0 +1,24 @@
+{
+  "app_id": "com.icebreaker.fishing",
+  "title": "Icebreaker Fishing",
+  "app_label": "Icebreaker Fishing",
+  "developer": "Solid Games",
+  "icon": "/static/app-icons/com_icebreaker_fishing.png",
+  "url": "https://play.google.com/store/apps/details?id=com.icebreaker.fishing&hl=en&gl=us",
+  "updated": "2026-03-31",
+  "version": "0.1.6",
+  "version_code": 16,
+  "cloaking": "нет",
+  "source": "apkeep:apk-pure",
+  "sha256": "67b4db8ce76513817494f59f993435ebb45b8b916af73f6fb939b7b552ddb3d3",
+  "brief_report": {
+    "cloaking": "нет",
+    "domains": [
+      "123.com",
+      "ad-host-backup-america.oss-us-west-1.aliyuncs.com",
+      "ad-host-backup-asia.oss-ap-southeast-1.aliyuncs.com",
+      "ad-host-backup-europe.oss-eu-central-1.aliyuncs.com",
+      "adsbigo.com"
+    ]
+  }
+}

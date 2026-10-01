@@ -1,0 +1,41 @@
+{
+  "ok": true,
+  "source": "apkeep:apk-pure (Play Collector folder ice fishing/Icebreaker Fishing-Solid Games was missing on origin/main)",
+  "package": "com.icebreaker.fishing",
+  "version_name": "0.1.6",
+  "version_code": 16,
+  "app_label": "Icebreaker Fishing",
+  "play_title": "Icebreaker Fishing",
+  "developer": "Solid Games",
+  "sha256": "67b4db8ce76513817494f59f993435ebb45b8b916af73f6fb939b7b552ddb3d3",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.icebreaker.fishing.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/com.icebreaker.fishing-16.apk",
+    "apk/com.icebreaker.fishing-16-config.armeabi_v7a.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with 101 errors"
+  },
+  "cloaking": "нет",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.icebreaker.fishing-16.apk",
+    "apk/com.icebreaker.fishing-16-config.armeabi_v7a.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "cloaking_hints.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Folder was missing on origin/main. XAPK 0.1.6 vc16 from APKPure via apkeep (~78 MB): base + config.armeabi_v7a (no asset/arm64 splits in this XAPK). Play title matches application-label. Unity IL2CPP fishing game with AppLovin MAX mediation. Listed loadUrl hits are Bolts/APM/Bigo/BidMachine SDK, not a cloak gate."
+}
