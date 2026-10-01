@@ -1,0 +1,40 @@
+{
+  "title": "Ice Fishing",
+  "developer": "Iсe Fishing Value",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "Ice Fishing"},
+      {"param": "Android Gradle Plugin", "value": "9.2.1"},
+      {"param": "minSdk", "value": "32"},
+      {"param": "targetSdk", "value": "36"},
+      {"param": "Kotlin", "value": "да (2.2.10)"},
+      {"param": "Web View", "value": "да"},
+      {"param": "Custom Tabs", "value": "нет"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "нет"},
+      {"param": "Permissions", "value": "android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.INTERNET, android.permission.CAMERA, android.permission.WAKE_LOCK, android.permission.RECORD_AUDIO, android.permission.WRITE_EXTERNAL_STORAGE, com.google.android.c2dm.permission.RECEIVE, com.ice.fishing.hagopal.bluefarets.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"},
+      {"param": "Libraries", "value": "androidx.appcompat, androidx.core, androidx.fragment, androidx.activity, androidx.webkit, androidx.window, androidx.swiperefreshlayout, androidx.emoji2, androidx.lifecycle, com.facebook.react, com.facebook.fresco, react-native-webview, @react-native-async-storage/async-storage, react-native-device-info, react-native-safe-area-context, react-native-paper, okhttp3, okio, kotlinx.coroutines, hermes, com.pairip, bolts, play-services-base, play-services-iid"},
+      {"param": "Подозрительные домены", "value": "bluefarets.space"},
+      {"param": "SharedPreferences", "value": "react-native-device-info: installReferrer; AsyncStorage settings_data: saved_endpoint и synced_at (зашифрованная ссылка и время)"},
+      {"param": "Есть ли клоака", "value": "да"},
+      {"param": "Подозрительные слова", "value": "PlumeGate, cloak, whitelist, redirect, WebView, bridge, uuid, ping, isEmulator, isSynthetic, saved_endpoint, openExternal, paymentRequestEnabled"}
+    ],
+    "domains": ["bluefarets.space"],
+    "collected_data": [
+      "идентификатор Android",
+      "имя пакета приложения",
+      "строка браузера",
+      "флаг эмулятора",
+      "модель телефона",
+      "бренд телефона",
+      "производитель телефона",
+      "продукт устройства",
+      "отпечаток прошивки",
+      "аппаратная платформа"
+    ],
+    "cloaking": "да"
+  },
+  "app_id": "com.ice.fishing.hagopal.bluefarets",
+  "url": "https://play.google.com/store/apps/details?id=com.ice.fishing.hagopal.bluefarets"
+}

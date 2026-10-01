@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK via d.apkpure.net (folder ice fishing/Ice Fishing-Iсe Fishing Value was missing on origin/main)",
+  "package": "com.ice.fishing.hagopal.bluefarets",
+  "version_name": "1.1",
+  "version_code": 2,
+  "app_label": "Ice Fishing",
+  "play_title": "Ice Fishing",
+  "developer": "Iсe Fishing Value",
+  "sha256": "450f9d1781700888826163022b690820a49335456f0a4273f3f97a1cfd97ee8c",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "Ice_Fishing_1.1_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/com.ice.fishing.hagopal.bluefarets-2.apk",
+    "apk/com.ice.fishing.hagopal.bluefarets-2-config.armeabi_v7a.apk",
+    "apk/com.ice.fishing.hagopal.bluefarets-2-config.en.apk",
+    "apk/com.ice.fishing.hagopal.bluefarets-2-config.mdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; jadx 1.5.3"
+  },
+  "hermes": {
+    "version": 98,
+    "component": "PlumeBirdJournal",
+    "gate": "https://bluefarets.space/status/ping/"
+  },
+  "cloaking": "да",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.ice.fishing.hagopal.bluefarets-2.apk",
+    "apk/com.ice.fishing.hagopal.bluefarets-2-config.armeabi_v7a.apk",
+    "apk/com.ice.fishing.hagopal.bluefarets-2-config.en.apk",
+    "apk/com.ice.fishing.hagopal.bluefarets-2-config.mdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "cloaking_hints.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Folder was missing on origin/main. XAPK Ice Fishing 1.1 (vc 2) from APKPure. Splits: armeabi_v7a, en, mdpi. No asset/arm64/xxhdpi in this XAPK. Hermes v98: PlumeGate XOR-hidden https://bluefarets.space/status/ping/?uuid=. Play title = APK label Ice Fishing; RN component PlumeBirdJournal. config.ru is AAB language split. agent_src via jadx 1.5.3, not committed as a tree."
+}

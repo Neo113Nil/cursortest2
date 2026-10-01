@@ -1,0 +1,27 @@
+{
+  "domains": ["bluefarets.space"],
+  "skipped": {
+    "config.ru": "Android language split in splits0.xml (key=ru split=config.ru), not a host"
+  },
+  "results": [
+    {
+      "domain": "bluefarets.space",
+      "vt_url": "https://www.virustotal.com/gui/domain/bluefarets.space",
+      "detections": "нет",
+      "vendors": [],
+      "redirect": "нет",
+      "content": "GET https://bluefarets.space/status/ping/ without uuid: {\"status\":\"bad_request\",\"code\":400,\"reason\":\"invalid_client\"} (HTTP 404, application/json, Cloudflare). Root https://bluefarets.space/: {\"error\":\"Not Found\"}",
+      "parked": "нет (Cloudflare: 104.21.80.40, 172.67.174.15)",
+      "final_url": "https://bluefarets.space/status/ping/",
+      "rows": [
+        {"param": "Домен", "value": "bluefarets.space"},
+        {"param": "VirusTotal URL", "value": "https://www.virustotal.com/gui/domain/bluefarets.space"},
+        {"param": "Детекции", "value": "нет"},
+        {"param": "Security vendors' analysis", "value": "нет"},
+        {"param": "Куда редиректит", "value": "нет"},
+        {"param": "Что выводит (кратко)", "value": "GET https://bluefarets.space/status/ping/ без uuid: {\"status\":\"bad_request\",\"code\":400,\"reason\":\"invalid_client\"} (HTTP 404, application/json, Cloudflare). Корень https://bluefarets.space/: {\"error\":\"Not Found\"}"},
+        {"param": "Где припаркован", "value": "нет (Cloudflare: 104.21.80.40, 172.67.174.15)"}
+      ]
+    }
+  ]
+}
