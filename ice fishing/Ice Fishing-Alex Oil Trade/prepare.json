@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK via ztp-pew.apkcombo.com (Play Collector folder ice fishing/Ice Fishing-Alex Oil Trade was missing on origin/main)",
+  "package": "com.battletank.stormwar",
+  "version_name": "1.5",
+  "version_code": 4,
+  "app_label": "Ice Fishing",
+  "play_title": "Ice Fishing",
+  "developer": "Alex Oil Trade",
+  "sha256": "31060f78ad3796f22e479807eb4655a932b783f6b474f630ced28f31291d258b",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.battletank.stormwar_1.5.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/com.battletank.stormwar-4.apk",
+    "apk/com.battletank.stormwar-4-config.arm64_v8a.apk",
+    "apk/com.battletank.stormwar-4-config.armeabi_v7a.apk",
+    "apk/com.battletank.stormwar-4-config.en.apk",
+    "apk/com.battletank.stormwar-4-config.fr.apk",
+    "apk/com.battletank.stormwar-4-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors"
+  },
+  "cloaking": "нет",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.battletank.stormwar-4.apk",
+    "apk/com.battletank.stormwar-4-config.arm64_v8a.apk",
+    "apk/com.battletank.stormwar-4-config.armeabi_v7a.apk",
+    "apk/com.battletank.stormwar-4-config.en.apk",
+    "apk/com.battletank.stormwar-4-config.fr.apk",
+    "apk/com.battletank.stormwar-4-config.xxhdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Folder ice fishing/Ice Fishing-Alex Oil Trade was missing on origin/main. XAPK Battle Tank Storm / Ice Fishing 1.5 (vc 4) from APKCombo (~31 MB). Splits in this XAPK: config.arm64_v8a, config.armeabi_v7a, config.en, config.fr, config.xxhdpi. No asset split and no config.ru/config.lt files in the XAPK; config.ru still listed as language split in splits0.xml. Play title = APK label «Ice Fishing». In-game Flutter title «Battle Tank Storm». Gate/WebView/Custom Tabs/OkHttp/HttpURLConnection/remote config/ads/analytics: none. PairIP LicenseClient talks only to Google Play licensing. dispatchers.io is Kotlin Dispatchers.IO. systemuioverlay.top is Flutter SystemUiOverlay. agent_src via jadx 1.5.3, not committed as a tree."
+}

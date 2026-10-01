@@ -1,0 +1,83 @@
+{
+  "title": "Ice Fishing",
+  "developer": "Alex Oil Trade",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.6.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1.0"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, com.battletank.stormwar.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Flutter 3.12.0, io.flutter embedding, shared_preferences_android, PairIP licensecheck (com.pairip.application / com.pairip.licensecheck), Kotlin 2.1.0, kotlinx-coroutines-core 1.7.3, kotlinx-coroutines-android 1.7.3, androidx.activity 1.8.1, androidx.annotation-experimental 1.4.0, androidx.appcompat 1.1.0, androidx.asynclayoutinflater 1.0.0, androidx.browser 1.8.0, androidx.coordinatorlayout 1.0.0, androidx.core / core-ktx 1.13.1, androidx.cursoradapter 1.0.0, androidx.customview 1.1.0, androidx.datastore 1.1.7, androidx.documentfile 1.0.0, androidx.drawerlayout 1.0.0, androidx.exifinterface 1.4.1, androidx.fragment 1.7.1, androidx.interpolator 1.0.0, androidx.legacy-support-core-ui 1.0.0, androidx.legacy-support-core-utils 1.0.0, androidx.lifecycle 2.7.0, androidx.loader 1.0.0, androidx.localbroadcastmanager 1.0.0, androidx.preference 1.2.1, androidx.print 1.0.0, androidx.profileinstaller 1.3.1, androidx.recyclerview 1.0.0, androidx.savedstate 1.2.1, androidx.slidingpanelayout 1.2.0, androidx.startup-runtime 1.1.1, androidx.swiperefreshlayout 1.0.0, androidx.tracing 1.2.0, androidx.transition 1.4.1, androidx.vectordrawable 1.1.0, androidx.versionedparcelable 1.1.1, androidx.viewpager 1.0.0, androidx.window 1.2.0, androidx.window-java 1.2.0, androidx.window.extensions.core 1.0.0"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru, dispatchers.io, systemuioverlay.top"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Flutter SharedPreferences (plugins.flutter.io/shared_preferences): tank_sound, tank_music, tank_haptics, tank_selected, tank_control, tank_difficulty, tank_best_*, tank_total_kills, tank_total_seconds, tank_total_games, tank_victories, tank_longest_run"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "PAYWALL, license check"
+      }
+    ],
+    "domains": [
+      "config.ru",
+      "dispatchers.io",
+      "systemuioverlay.top"
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": "Полный разбор com.battletank.stormwar 1.5 (versionCode 4), XAPK APKCombo, jadx 1.5.3. Play и application-label — «Ice Fishing». Точка входа: PairIP LicenseClient на Google Play, затем Flutter MainActivity. Единственный плагин — shared_preferences. WebView / Custom Tabs / OkHttp / HttpURLConnection / url с сервера / remote config / реклама / аналитика — нет. В Dart-снимке игра называется Battle Tank Storm, локальные ключи tank_*. Клоака = нет: развилки оффер/белая нет, названия Play и APK совпадают."
+  },
+  "app_id": "com.battletank.stormwar",
+  "url": "https://play.google.com/store/apps/details?id=com.battletank.stormwar",
+  "app_label": "Ice Fishing",
+  "version": "1.5",
+  "version_code": 4,
+  "sha256": "31060f78ad3796f22e479807eb4655a932b783f6b474f630ced28f31291d258b"
+}
