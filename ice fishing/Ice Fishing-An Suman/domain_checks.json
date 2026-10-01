@@ -1,0 +1,10 @@
+{
+  "domains": [
+    "10761.play.gamezop.com",
+    "adx.anythinktech.com",
+    "adxtk.anythinktech.com",
+    "api.anythinktech.com",
+    "da.anythinktech.com"
+  ],
+  "tables": "domain_checks.md"
+}
