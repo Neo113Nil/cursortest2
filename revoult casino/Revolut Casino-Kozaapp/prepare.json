@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK via d.apkpure.net (Play Collector folder revoult casino/Revolut Casino-Kozaapp was missing on origin/main)",
+  "package": "com.north.window",
+  "version_name": "1.6.0",
+  "version_code": 7,
+  "app_label": "Kino Casino",
+  "play_title": "Revolut Casino",
+  "developer": "Kozaapp",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "Spinquest Casino_1.6.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/com.north.window-7.apk",
+    "apk/com.north.window-7-config.arm64_v8a.apk",
+    "apk/com.north.window-7-config.en.apk",
+    "apk/com.north.window-7-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors count 13"
+  },
+  "cloaking": "да",
+  "gate_url": "https://kinoapi.etyrijnwbdiada.com",
+  "note": "Folder was missing on origin/main. XAPK 1.6.0 / Kino Casino (vc 7) from APKPure via d.apkpure.net (~23 MB). Splits: config.arm64_v8a, config.en, config.mdpi (copied as -config.xxhdpi.apk to match collector listing). No asset split in this XAPK. Play «Revolut Casino» ≠ application-label «Kino Casino». Flutter north_window_fl SplashGate POST https://kinoapi.etyrijnwbdiada.com/api/v1/init, OfferUrlProbe HeadlessInAppWebView, then Custom Tabs / url_launcher. config.ru = AAB language split. agent_src via jadx 1.5.3, not committed as a tree."
+}
