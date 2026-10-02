@@ -1,0 +1,33 @@
+{
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "Ice Winner Fishing"},
+      {"param": "Android Gradle Plugin", "value": "8.13.1"},
+      {"param": "minSdk", "value": "24"},
+      {"param": "targetSdk", "value": "36"},
+      {"param": "Kotlin", "value": "да 2.2.21"},
+      {"param": "Web View", "value": "да"},
+      {"param": "Custom Tabs", "value": "да"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "AppsFlyer, OneSignal, Firebase Messaging"},
+      {"param": "Permissions", "value": "android.permission.CAMERA, android.permission.INTERNET, android.permission.POST_NOTIFICATIONS, com.google.android.gms.permission.AD_ID, android.permission.VIBRATE, com.devsisters.cook.permission.C2D_MESSAGE, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, android.permission.RECEIVE_BOOT_COMPLETED, com.sec.android.provider.badge.permission.READ, com.sec.android.provider.badge.permission.WRITE, com.htc.launcher.permission.READ_SETTINGS, com.htc.launcher.permission.UPDATE_SHORTCUT, com.sonyericsson.home.permission.BROADCAST_BADGE, com.sonymobile.home.permission.PROVIDER_INSERT_BADGE, com.anddoes.launcher.permission.UPDATE_COUNT, com.majeur.launcher.permission.UPDATE_BADGE, com.huawei.android.launcher.permission.CHANGE_BADGE, com.huawei.android.launcher.permission.READ_SETTINGS, com.huawei.android.launcher.permission.WRITE_SETTINGS, android.permission.READ_APP_BADGE, com.oppo.launcher.permission.READ_SETTINGS, com.oppo.launcher.permission.WRITE_SETTINGS, me.everything.badger.permission.BADGE_COUNT_READ, me.everything.badger.permission.BADGE_COUNT_WRITE, android.permission.ACCESS_NETWORK_STATE, android.permission.FOREGROUND_SERVICE, com.samsung.android.mapsagent.permission.READ_APP_INFO, com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA, com.devsisters.cook.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"},
+      {"param": "Libraries", "value": "Kotlin 2.2.21, kotlinx-coroutines 1.10.2, Android Gradle Plugin 8.13.1, Gradle 9.2.1, Dagger/Hilt 2.57.2, Jetpack Compose 1.9.5, Material3 1.5.0-alpha09, androidx.activity 1.12.0, androidx.appcompat 1.7.1, androidx.browser 1.3.0, androidx.core 1.16.0, androidx.fragment 1.5.4, androidx.hilt 1.3.0, androidx.lifecycle 2.10.0, androidx.navigation 2.9.0, androidx.navigation3 1.0.0, androidx.room 2.5.0, androidx.work 2.8.1, androidx.emoji2 1.4.0, androidx.profileinstaller 1.4.1, androidx.startup 1.1.1, androidx.datastore (AppUserPreferences/AppGamePreferences), OneSignal 5.1.35, AppsFlyer, Firebase Messaging / Installations / Datatransport, Play services ads-identifier (AD_ID), PairIP licensecheck, libnative.so (AES, nlohmann JSON, WebView URL)"},
+      {"param": "Подозрительные домены", "value": "config.ru, fb.com"},
+      {"param": "SharedPreferences", "value": "нативное хранилище NativeStore (initNativeDatastore в каталоге файлов приложения); DataStore настроек звука/темы/вибрации и игрового счёта; служебные записи OneSignal и AppsFlyer"},
+      {"param": "Есть ли клоака", "value": "да"},
+      {"param": "Подозрительные слова", "value": "webview, Pop-Up Window, fb.com, facebook.com"}
+    ],
+    "domains": ["config.ru", "fb.com"],
+    "collected_data": ["идентификатор AppsFlyer"],
+    "cloaking": "да",
+    "cloaking_brief": "Play «Ice Winner Fishing» = APK-label. LAUNCHER MainActivity → InitialScreen ждёт сеть (8.8.8.8:53), initNativeDatastore, WebView. URL из native g_pending_url / applyHardwareLayer. HTTP 403 → MenuScreen (белая). Успешная загрузка страницы оставляет встроенное окно. Native AES POST/perform, af_get_uid. j6.a shouldOverrideUrlLoading: getExceptions + facebook.com/fb.com. Cloak = да."
+  },
+  "app_id": "com.devsisters.cook",
+  "title": "Ice Winner Fishing",
+  "app_label": "Ice Winner Fishing",
+  "developer": "Abide publishing",
+  "url": "https://play.google.com/store/apps/details?id=com.devsisters.cook",
+  "version": "1.0",
+  "version_code": 1
+}
