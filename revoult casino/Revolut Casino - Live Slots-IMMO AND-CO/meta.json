@@ -1,0 +1,19 @@
+{
+  "app_id": "com.revolut.slot.casino.online",
+  "title": "Revolut Casino - Live Slots",
+  "apk_label": "Revolut Player",
+  "developer": "IMMO AND-CO",
+  "package": "com.revolut.slot.casino.online",
+  "folder": "Revolut Casino - Live Slots-IMMO AND-CO",
+  "path": "revoult casino/Revolut Casino - Live Slots-IMMO AND-CO",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "version_name": "1.0.1",
+  "version_code": "2",
+  "min_sdk": "32",
+  "target_sdk": "36",
+  "agp": "9.0.1",
+  "kotlin": "2.3.20",
+  "gate_url": "https://templatestore.fun/link.txt",
+  "source": "apkpure XAPK via d.apkpure.net"
+}

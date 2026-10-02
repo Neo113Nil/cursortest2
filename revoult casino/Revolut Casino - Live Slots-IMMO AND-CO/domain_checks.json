@@ -1,0 +1,30 @@
+{
+  "domains": ["config.ru", "dispatchers.io", "templatestore.fun"],
+  "note": "config.ru = AAB splits0.xml language split; dispatchers.io = Kotlin Dispatchers.IO; templatestore.fun = first-party gate https://templatestore.fun/link.txt",
+  "results": [
+    {
+      "domain": "config.ru",
+      "virustotal_url": "https://www.virustotal.com/gui/domain/config.ru",
+      "detections": "0/91 (malicious=0, suspicious=0)",
+      "redirect": "https://config.ru/en/",
+      "content": "title: config.ru is for sale. config.ru is for sale en ru en config.ru This domain is for sale The domain is actually the site name and its correct choice influences greatly on the your endeavors success. Often, cost of the domain change during the project running is comparable with the re-branding, so the be",
+      "parked": "похоже на парковку (domain is for sale)"
+    },
+    {
+      "domain": "dispatchers.io",
+      "virustotal_url": "https://www.virustotal.com/gui/domain/dispatchers.io",
+      "detections": "5/91 (malicious=5, suspicious=0)",
+      "redirect": "нет",
+      "content": "не удалось открыть (ReadTimeout)",
+      "parked": "регистратор: NameCheap, Inc."
+    },
+    {
+      "domain": "templatestore.fun",
+      "virustotal_url": "https://www.virustotal.com/gui/domain/templatestore.fun",
+      "detections": "0/91 (malicious=0, suspicious=0)",
+      "redirect": "нет (без редиректа)",
+      "content": "нет",
+      "parked": "регистратор: Beget LLC"
+    }
+  ]
+}
