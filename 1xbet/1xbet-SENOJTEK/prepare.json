@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK via d.apkpure.net (Play Collector folder 1xbet/1xbet-SENOJTEK was missing on origin/main)",
+  "package": "com.championship.warriors.iron.legacy",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Victory Revolution",
+  "play_title": "1xbet",
+  "developer": "SENOJTEK",
+  "sha256": "9c1087cc4934f1217f0ae71cbaea34cdf30fdf4edc591635d7204746ab0c0b3d",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "1xbet_1.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/com.championship.warriors.iron.legacy-1.apk",
+    "apk/com.championship.warriors.iron.legacy-1-config.en.apk",
+    "apk/com.championship.warriors.iron.legacy-1-config.mdpi.apk",
+    "apk/com.championship.warriors.iron.legacy-1-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors count 8"
+  },
+  "cloaking": "да",
+  "gate_url": "https://plainvectorlab.site/api/v1/78d8",
+  "note": "Folder 1xbet/1xbet-SENOJTEK was missing on origin/main. XAPK 1xbet 1.0 / Victory Revolution (vc 1) from APKPure via d.apkpure.net (~21 MB). Splits: config.en, config.mdpi (copied as -config.xxhdpi.apk). No asset split in this XAPK. Play «1xbet» ≠ application-label «Victory Revolution». Gate AES-GCM + XOR: https://plainvectorlab.site/api/v1/78d8. Encrypted DEX ds.bin loads DataSyncProvider (WebView). Offer path ACTION_VIEW. agent_src via jadx 1.5.3, not committed as a tree."
+}
