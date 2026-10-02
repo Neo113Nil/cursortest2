@@ -1,0 +1,78 @@
+{
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Amazon Casino (в приложении: Hous Anima)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.13.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.housanima.ihousanem.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.0.21, kotlinx-coroutines-core 1.8.1, kotlinx-coroutines-android 1.8.1, com.google.android.material 1.13.0, com.pairip.licensecheck; AndroidX: activity 1.11.0, annotation-experimental 1.4.1, appcompat 1.7.1, appcompat-resources 1.7.1, cardview 1.0.0, constraintlayout 2.2.1, coordinatorlayout 1.1.0, core 1.17.0, core-ktx 1.17.0, core-viewtree 1.0.0, cursoradapter 1.0.0, customview 1.1.0, customview-poolingcontainer 1.0.0, drawerlayout 1.1.1, dynamicanimation 1.1.0, emoji2 1.3.0, emoji2-views-helper 1.3.0, fragment 1.5.4, graphics-shapes 1.0.1, interpolator 1.0.0, loader 1.0.0, profileinstaller 1.4.0, recyclerview 1.3.2, savedstate 1.2.1, startup-runtime 1.1.1, tracing 1.2.0, transition 1.5.0, vectordrawable 1.1.0, vectordrawable-animated 1.1.0, versionedparcelable 1.1.1, viewpager 1.0.0, viewpager2 1.1.0-beta02"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "файл hous_anima_data: флаг прохождения обучения, очки, число игр, лучшее время реакции, результаты викторины"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "license check, PAYWALL"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "да",
+    "cloaking_brief": "Play-карточка «Amazon Casino», application-label «Hous Anima». Kotlin 2.0.21 vc4, package com.housanima.ihousanem. INTERNET нет, WebView/Custom Tabs нет, first-party HTTP нет. PairIP говорит с Google Play. Клоака = да по белой оболочке; развилки оффер/белое внутри сборки нет."
+  },
+  "app_id": "com.housanima.ihousanem",
+  "title": "Amazon Casino",
+  "app_label": "Hous Anima",
+  "developer": "PLYK TOV",
+  "url": "https://play.google.com/store/apps/details?id=com.housanima.ihousanem",
+  "version_name": "4.0",
+  "version_code": 4
+}

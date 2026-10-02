@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder amazon casino/Amazon Casino-PLYK TOV was missing on origin/main; apkeep apk-pure also succeeded)",
+  "package": "com.housanima.ihousanem",
+  "version_name": "4.0",
+  "version_code": 4,
+  "app_label": "Hous Anima",
+  "play_title": "Amazon Casino",
+  "developer": "PLYK TOV",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.housanima.ihousanem.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/com.housanima.ihousanem-4.apk",
+    "apk/com.housanima.ihousanem-4-config.en.apk",
+    "apk/com.housanima.ihousanem-4-config.fr.apk",
+    "apk/com.housanima.ihousanem-4-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors count 2"
+  },
+  "cloaking": "да",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.housanima.ihousanem-4.apk",
+    "apk/com.housanima.ihousanem-4-config.en.apk",
+    "apk/com.housanima.ihousanem-4-config.fr.apk",
+    "apk/com.housanima.ihousanem-4-config.xxhdpi.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src.zip",
+    "agent_src/"
+  ],
+  "note": "Folder amazon casino/Amazon Casino-PLYK TOV was missing on origin/main. XAPK Hous Anima 4.0 (vc 4, derived.apk.id 3) from APKCombo (also via apkeep apk-pure). Splits in this XAPK: config.en, config.fr, config.mdpi (copied as -config.xxhdpi.apk). No asset split and no config.lt/config.ru files in the XAPK (config.ru/config.lt are language split names in splits0.xml). Play «Amazon Casino» ≠ application-label «Hous Anima». No INTERNET, WebView, Custom Tabs, OkHttp, HttpURLConnection, remote config, ads, analytics. PairIP LicenseClient talks only to Google Play licensing. SharedPreferences hous_anima_data stores local onboarding/points/quiz/reaction. domain_checks: empty. agent_src via jadx 1.5.3, not committed as a tree."
+}
