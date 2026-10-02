@@ -1,0 +1,14 @@
+{
+  "domains": ["growthfund.top"],
+  "results": [
+    {
+      "domain": "growthfund.top",
+      "virustotal_url": "https://www.virustotal.com/gui/domain/growthfund.top",
+      "detections": "нет",
+      "vendors": [],
+      "redirect": "нет",
+      "page_output": "title: нет. HTTP 200 application/json. {\"world\":{\"name\":\"amazoniareels\",\"setting\":\"colorfuljungle\",\"mode\":\"offlinecasual\"},\"play\":{\"type\":\"drumminigames\",\"missions\":true,\"achievements\":true,\"levels\":true,\"dailyGifts\":true},\"minigames\":[\"jaguargold\",\"totemtemple\",\"parrotluck\",\"riverriches\",\"jaguarchallenge\"],\"collectibles\":{\"avatars\":\"explorers\",\"themes\":\"junglevisuals\",\"cosmetics\":true}} Поля liana в ответе нет.",
+      "parked": "не парковка; Cloudflare (A 104.21.58.162, 172.67.161.141; NS peaches.ns.cloudflare.com / mcgrory.ns.cloudflare.com; RDAP Cloudflare Registrar)"
+    }
+  ]
+}
