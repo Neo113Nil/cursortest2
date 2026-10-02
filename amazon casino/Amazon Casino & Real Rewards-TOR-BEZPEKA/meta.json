@@ -1,0 +1,35 @@
+{
+  "title": "Amazon Casino & Real Rewards",
+  "developer": "TOR-BEZPEKA",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "Amazon Casino & Real Rewards (в приложении: Amazon Casino)"},
+      {"param": "Android Gradle Plugin", "value": "9.0.1"},
+      {"param": "minSdk", "value": "32"},
+      {"param": "targetSdk", "value": "36"},
+      {"param": "Kotlin", "value": "да, 2.3.20"},
+      {"param": "Web View", "value": "нет"},
+      {"param": "Custom Tabs", "value": "да"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "нет"},
+      {"param": "Permissions", "value": "android.permission.INTERNET, com.lanejumper.Dodge.Road.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"},
+      {"param": "Libraries", "value": "Flutter 3.12.0, io.flutter embedding, path_provider_android, PairIP licensecheck (com.pairip.application / com.pairip.licensecheck), Kotlin 2.3.20, kotlinx-coroutines-core 1.7.1, kotlinx-coroutines-android 1.7.1, AndroidX: activity 1.8.1, annotation-experimental 1.4.0, arch.core-runtime, browser 1.8.0, core / core-ktx 1.13.1, customview 1.0.0, exifinterface 1.4.1, fragment 1.7.1, interpolator 1.0.0, lifecycle 2.7.0, loader 1.0.0, profileinstaller 1.3.1, savedstate 1.2.1, startup-runtime 1.1.1, tracing 1.2.0, versionedparcelable 1.1.1, viewpager 1.0.0, window 1.2.0, window-java 1.2.0, window.extensions.core 1.0.0"},
+      {"param": "Подозрительные домены", "value": "halvani.org, dispatchers.io, scripts.sil.org, systemuioverlay.top"},
+      {"param": "SharedPreferences", "value": "нет"},
+      {"param": "Есть ли клоака", "value": "да"},
+      {"param": "Подозрительные слова", "value": "casino, unfurlMistLane, PAYWALL, license check"}
+    ],
+    "domains": ["halvani.org", "dispatchers.io", "scripts.sil.org", "systemuioverlay.top"],
+    "collected_data": ["язык телефона"],
+    "cloaking": "да",
+    "cloaking_brief": "Play «Amazon Casino & Real Rewards», APK-label «Amazon Casino», Flutter-игра Lane Jumper. Канал lane_chassis_stream / unfurlMistLane: XOR+AES → https://halvani.org/NgMNry4b → Custom Tabs. PairIP только Google Play. Клоака = да."
+  },
+  "app_id": "com.lanejumper.Dodge.Road",
+  "url": "https://play.google.com/store/apps/details?id=com.lanejumper.Dodge.Road",
+  "app_label": "Amazon Casino",
+  "version": "1.3.0",
+  "version_code": 3,
+  "sha256": "24f6b47a9c4b2667b489c8c74cb89c20645d6bbfde9f9f0f66f2662a49b3b4b4",
+  "offer_url": "https://halvani.org/NgMNry4b"
+}

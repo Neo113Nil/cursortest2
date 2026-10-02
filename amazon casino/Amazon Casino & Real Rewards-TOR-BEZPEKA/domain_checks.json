@@ -1,0 +1,29 @@
+{
+  "domains": ["dispatchers.io", "scripts.sil.org", "systemuioverlay.top"],
+  "results": [
+    {
+      "domain": "dispatchers.io",
+      "virustotal_url": "https://www.virustotal.com/gui/domain/dispatchers.io",
+      "detections": "5/91 (malicious=5, suspicious=0)",
+      "redirect": "нет",
+      "page_output": "не удалось открыть (ReadTimeout)",
+      "parked": "регистратор: NameCheap, Inc."
+    },
+    {
+      "domain": "scripts.sil.org",
+      "virustotal_url": "https://www.virustotal.com/gui/domain/scripts.sil.org",
+      "detections": "0/91 (malicious=0, suspicious=0)",
+      "redirect": "https://scripts.sil.org/cms/scripts/page.php?id=default&site_id=nrsi",
+      "page_output": "title: Welcome to Computers and Writing Systems. Welcome to Computers and Writing Systems Welcome to Computers and Writing Systems This is an archive of the original scripts.sil.org site, preserved as a historical reference. Some of the content is outdated. Please consult our other sites for more current information: software.s",
+      "parked": "регистратор: Cloudflare, Inc."
+    },
+    {
+      "domain": "systemuioverlay.top",
+      "virustotal_url": "https://www.virustotal.com/gui/domain/systemuioverlay.top",
+      "detections": "0/91 (malicious=0, suspicious=0)",
+      "redirect": "нет (DNS не резолвится)",
+      "page_output": "нет (DNS не резолвится)",
+      "parked": "нет данных"
+    }
+  ]
+}
