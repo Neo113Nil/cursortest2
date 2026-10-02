@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK via d.apkpure.net (Play Collector folder revoult casino/Revolut Slots-TOV EL AUDIT was missing on origin/main)",
+  "package": "com.dcth.per.fora",
+  "version_name": "1.0.5",
+  "version_code": 6,
+  "app_label": "Revolut Slots",
+  "play_title": "Revolut Slots",
+  "developer": "TOV EL AUDIT",
+  "sha256": "d07f8844d0f07af0383ff0b385afbab58733580808230c1244e8fa1633b10a6e",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "Revolut Slots_1.0.5_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/com.dcth.per.fora-6.apk",
+    "apk/com.dcth.per.fora-6-config.en.apk",
+    "apk/com.dcth.per.fora-6-config.mdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors count 2"
+  },
+  "cloaking": "да",
+  "gate_url": "https://fjfr1k2y.sosraivka.homes",
+  "note": "Folder was missing on origin/main. XAPK Revolut Slots 1.0.5 (vc 6) from APKPure via d.apkpure.net (~6.5 MB). Splits in this XAPK: config.en, config.mdpi (no asset/xxhdpi splits). Play «Revolut Slots» = application-label «Revolut Slots». EntryWindow reads assets/entry.json remote https://fjfr1k2y.sosraivka.homes, WebView loadUrl, 10s fail → local vault.invalid/copy Perfora. config.ru = AAB language split in splits0.xml, not a network host. agent_src via jadx 1.5.3, not committed as a tree."
+}

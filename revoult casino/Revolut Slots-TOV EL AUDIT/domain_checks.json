@@ -1,0 +1,14 @@
+{
+  "domains": ["config.ru"],
+  "note": "config.ru = AAB splits0.xml language split (config.ru), not a network host. Real remote host used by the app is fjfr1k2y.sosraivka.homes from assets/entry.json; no VT vendor table was supplied for that host.",
+  "results": [
+    {
+      "domain": "config.ru",
+      "virustotal_url": "https://www.virustotal.com/gui/domain/config.ru",
+      "detections": "0/91 (malicious=0, suspicious=0)",
+      "redirect": "https://config.ru/en/",
+      "content": "title: config.ru is for sale. config.ru is for sale en ru en config.ru This domain is for sale The domain is actually the site name and its correct choice influences greatly on the your endeavors success. Often, cost of the domain change during the project running is comparable with the re-branding, so the be",
+      "parked": "похоже на парковку (domain is for sale)"
+    }
+  ]
+}
