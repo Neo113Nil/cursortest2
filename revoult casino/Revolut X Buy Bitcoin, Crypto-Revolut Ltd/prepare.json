@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "source": "Aptoide pool APK via pool.apk.aptoide.com (Play Collector folder revoult casino/Revolut X Buy Bitcoin, Crypto-Revolut Ltd was missing on origin/main; APKPure empty, APKCombo 410)",
+  "package": "com.revolut.revolutx",
+  "version_name": "1.79",
+  "version_code": 111079101,
+  "app_label": "Revolut X",
+  "play_title": "Revolut X: Buy Bitcoin, Crypto",
+  "play_title_es": "Revolut X: Bitcoin y crypto",
+  "developer": "Revolut Ltd",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "apk/com.revolut.revolutx-111079101.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "resources via jadx --no-src; first-party entry/WebView via jadx --single-class; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3"
+  },
+  "cloaking": "нет",
+  "note": "Folder was missing on origin/main. Universal APK 1.79 / Revolut X (vc 111079101, ~203 MB, md5 16044414402630ce78b924a77886e0f9) from Aptoide pool, signature O=Revolut Ltd, C=GB. No asset/density/ABI splits in this universal APK. Play «Revolut X: Buy Bitcoin, Crypto» / ES «Revolut X: Bitcoin y crypto» matches application-label «Revolut X». DexProtector Application, launcher Auth splash, WebViewActivity CONFIGURATION_ARG for in-app legal/help/bank-link, Akahu Custom Tabs. No cloak gate. agent_src via jadx 1.5.3, not committed as a tree. agent_base.apk is identical to apk/com.revolut.revolutx-111079101.apk; only the apk/ copy is committed (Git LFS) because 203 MB exceeds GitHub non-LFS 100 MB limit."
+}
