@@ -1,0 +1,87 @@
+{
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.2.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.2.20"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Firebase Messaging, OneSignal, Firebase Installations"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.VIBRATE, com.icefishingdrift.app.permission.C2D_MESSAGE, android.permission.POST_NOTIFICATIONS, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, android.permission.RECEIVE_BOOT_COMPLETED, com.sec.android.provider.badge.permission.READ, com.sec.android.provider.badge.permission.WRITE, com.htc.launcher.permission.READ_SETTINGS, com.htc.launcher.permission.UPDATE_SHORTCUT, com.sonyericsson.home.permission.BROADCAST_BADGE, com.sonymobile.home.permission.PROVIDER_INSERT_BADGE, com.anddoes.launcher.permission.UPDATE_COUNT, com.majeur.launcher.permission.UPDATE_BADGE, com.huawei.android.launcher.permission.CHANGE_BADGE, com.huawei.android.launcher.permission.READ_SETTINGS, com.huawei.android.launcher.permission.WRITE_SETTINGS, android.permission.READ_APP_BADGE, com.oppo.launcher.permission.READ_SETTINGS, com.oppo.launcher.permission.WRITE_SETTINGS, me.everything.badger.permission.BADGE_COUNT_READ, me.everything.badger.permission.BADGE_COUNT_WRITE, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.FOREGROUND_SERVICE, com.icefishingdrift.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Android Gradle Plugin 9.2.1, Kotlin 2.2.20, kotlinx-coroutines 1.9.0, Dagger/Hilt 2.59.2, Jetpack Compose UI 1.11.0 / Foundation 1.10.4 / Material3 1.4.0, androidx.activity 1.13.0, androidx.appcompat 1.7.0, androidx.browser 1.3.0, androidx.core 1.19.0, androidx.fragment 1.5.4, androidx.hilt 1.3.0, androidx.lifecycle 2.11.0, androidx.navigation 2.9.8, androidx.room 2.8.4, androidx.datastore 1.1.7, androidx.work 2.8.1, androidx.emoji2 1.4.0, androidx.profileinstaller 1.4.0, androidx.startup 1.2.0, androidx.window 1.5.0, Material 1.14.0, OneSignal 5.9.6, Firebase Analytics 23.2.0, Firebase Messaging / Installations / Datatransport, Play services ads-identifier (AD_ID), OkHttp"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "twilight-mountain-9b34.nazarstrij152.workers.dev, icefishingdrift.online"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "DataStore user_identity (ключи user_id и onesignal_id); DataStore user_preferences (music_enabled, sound_enabled, haptic_enabled); Room ice_fishing_drift.db; служебные записи OneSignal и Firebase"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "webview, loadUrl, fishing-x-drift, jungleDomGuard, workers.dev, onesignal_id, user_id, X-Requested-With"
+      }
+    ],
+    "domains": [
+      "twilight-mountain-9b34.nazarstrij152.workers.dev",
+      "icefishingdrift.online"
+    ],
+    "collected_data": [
+      "идентификатор установки Firebase",
+      "рекламный номер устройства",
+      "локальный идентификатор пользователя",
+      "идентификатор экземпляра аналитики Firebase",
+      "строка браузера телефона"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Play «Ice Fishing» ≠ APK-label «Ice Fishing Drift». LAUNCHER MainActivity → splash ping google generate_204 → POST RSA JSON на twilight-mountain-9b34.nazarstrij152.workers.dev (FID, GAID, UUID, app instance id, UA). Ответ → user_id → WebView https://icefishingdrift.online. Cloak = да."
+  },
+  "app_id": "com.icefishingdrift.app",
+  "title": "Ice Fishing",
+  "app_label": "Ice Fishing Drift",
+  "developer": "usan-code",
+  "url": "https://play.google.com/store/apps/details?id=com.icefishingdrift.app",
+  "version": "1.0",
+  "version_code": 1
+}
