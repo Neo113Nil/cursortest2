@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK via d.apkpure.net / data.winudf.com (Play Collector folder amazon casino/Amazon Slots-VICTORIA TRAVEL UKRAINE was missing on origin/main)",
+  "package": "com.tube.flicker.gas",
+  "version_name": "1.2.0",
+  "version_code": 2,
+  "derived_apk_id": 3,
+  "app_label": "Lumina Sphere",
+  "play_title": "Amazon Slots Real Money Win",
+  "developer": "VICTORIA TRAVEL UKRAINE",
+  "sha256": "78fd4933e6dba226aaf12e6f801dc8b66eb6ef7200e41ded2a8acd09856ff081",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.tube.flicker.gas.xapk (скачан во временную папку, в git не коммитится); APKPure filename Lumina Sphere_1.2.0",
+  "apks": [
+    "apk/com.tube.flicker.gas-2.apk",
+    "apk/com.tube.flicker.gas-2-config.arm64_v8a.apk",
+    "apk/com.tube.flicker.gas-2-config.en.apk",
+    "apk/com.tube.flicker.gas-2-config.mdpi.apk",
+    "apk/com.tube.flicker.gas-2-config.zh.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors count 5"
+  },
+  "cloaking": "да",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.tube.flicker.gas-2.apk",
+    "apk/com.tube.flicker.gas-2-config.arm64_v8a.apk",
+    "apk/com.tube.flicker.gas-2-config.en.apk",
+    "apk/com.tube.flicker.gas-2-config.mdpi.apk",
+    "apk/com.tube.flicker.gas-2-config.zh.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "cloaking_hints.md",
+    "meta.json",
+    "agent_src.zip",
+    "agent_src/"
+  ],
+  "note": "Folder was missing on origin/main. XAPK Lumina Sphere 1.2.0 (vc 2, derived.apk.id 3) from APKPure CDN (~18 MB). Splits in this XAPK: config.arm64_v8a, config.en, config.mdpi, config.zh. No asset split. config.lt/config.ru exist as language split names in splits0.xml only. Play «Amazon Slots Real Money Win» / текущая карточка Play «Amazon Slots» ≠ application-label «Lumina Sphere». INTERNET absent; no WebView/Custom Tabs in dex; y0 is Kotlin Continuation (not loadUrl). MainActivity extends Flutter Activity (c0.AbstractActivityC0103f). GeneratedPluginRegistrant: path_provider_android, shared_preferences_android. PairIP LicenseClient talks to Google Play. google_fonts mentions fonts.gstatic.com. domain_checks: config.ru (language split), dispatchers.io (Dispatchers.IO), systemuioverlay.top (SystemUiOverlay.top), nacrehorizon.org (не найден в этой сборке). agent_src via jadx 1.5.3, not committed as a tree."
+}

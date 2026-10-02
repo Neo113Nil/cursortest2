@@ -1,0 +1,83 @@
+{
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Amazon Slots Real Money Win (в приложении: Lumina Sphere)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.11.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.2.20"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.tube.flicker.gas.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Flutter 3.11.3, Dart SDK (libapp.so / libflutter.so), Kotlin 2.2.20, kotlinx-coroutines-core 1.9.0, kotlinx-coroutines-android 1.9.0, google_fonts, path_provider_android, shared_preferences_android, com.pairip.licensecheck; AndroidX: activity 1.8.1, activity-ktx 1.8.1, annotation-experimental 1.4.0, appcompat 1.1.0, appcompat-resources 1.1.0, asynclayoutinflater 1.0.0, coordinatorlayout 1.0.0, core 1.13.1, core-ktx 1.13.1, cursoradapter 1.0.0, customview 1.1.0, datastore 1.2.0, datastore-core 1.2.0, datastore-preferences 1.2.0, documentfile 1.0.0, drawerlayout 1.0.0, exifinterface 1.4.1, fragment 1.7.1, fragment-ktx 1.7.1, interpolator 1.0.0, legacy-support-core-ui 1.0.0, legacy-support-core-utils 1.0.0, lifecycle 2.7.0 (runtime, viewmodel, livedata, process), loader 1.0.0, localbroadcastmanager 1.0.0, preference 1.2.1, print 1.0.0, profileinstaller 1.3.1, recyclerview 1.0.0, savedstate 1.2.1, savedstate-ktx 1.2.1, slidingpanelayout 1.2.0, startup-runtime 1.1.1, swiperefreshlayout 1.0.0, tracing 1.2.0, transition 1.4.1, vectordrawable 1.1.0, vectordrawable-animated 1.1.0, versionedparcelable 1.1.1, viewpager 1.0.0, window 1.2.0, window-java 1.2.0"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru, dispatchers.io, nacrehorizon.org, systemuioverlay.top"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "плагин Flutter shared_preferences: first_launch, completed_levels, chapter1_complete, chapter2_complete, chapter3_complete, music"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "license check, PAYWALL"
+      }
+    ],
+    "domains": [
+      "config.ru",
+      "dispatchers.io",
+      "nacrehorizon.org",
+      "systemuioverlay.top"
+    ],
+    "collected_data": [],
+    "cloaking": "да",
+    "cloaking_brief": "Play-карточка «Amazon Slots Real Money Win», application-label «Lumina Sphere». Flutter 1.2.0 vc2, package com.tube.flicker.gas. INTERNET нет, WebView/Custom Tabs нет, first-party сеть не вызывает. PairIP говорит с Google Play. Клоака = да по белой оболочке; развилки оффер/белое внутри сборки нет."
+  },
+  "app_id": "com.tube.flicker.gas",
+  "title": "Amazon Slots Real Money Win",
+  "app_label": "Lumina Sphere",
+  "developer": "VICTORIA TRAVEL UKRAINE",
+  "url": "https://play.google.com/store/apps/details?id=com.tube.flicker.gas",
+  "version_name": "1.2.0",
+  "version_code": 2
+}
