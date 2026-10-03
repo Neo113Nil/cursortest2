@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "source": "APKCombo/PureAPK XAPK via Chrome CDP (Play Collector folder chicken road/Chicken Road-DUNCANS DUMPS was missing on origin/main)",
+  "package": "com.duncandumps.duncandumps",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Duncan's Dumps",
+  "play_title": "Chicken Road",
+  "developer": "DUNCANS DUMPS",
+  "sha256": "ad5079f0179b72fac62bbd1a5b2aaa8f8c45e947700d676bf247ae44379f3c07",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "Chicken+Road_1.0_apkcombo.com.xapk (~11 MB, скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "config.mdpi",
+    "config.en",
+    "config.fr"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors count 1"
+  },
+  "kotlin": "1.8.22",
+  "cloaking": "нет",
+  "note": "Folder chicken road/Chicken Road-DUNCANS DUMPS was missing on origin/main. XAPK Chicken Road 1.0 / Duncan's Dumps (vc 1, derived.apk.id 3) from APKCombo CDN (~11 MB). Splits: config.mdpi, config.en, config.fr. No asset split, no arm64_v8a, no config.lt/config.ru in this XAPK. Play «Chicken Road» ≠ application-label «Duncan's Dumps». Entry: SplashActivity (2s + SQLite init) → MainActivity. No WebView/Custom Tabs/OkHttp/Retrofit/Volley/first-party HttpURLConnection/remote config. INTERNET used by Glide for Unsplash photos and PairIP Play license. Quote flow is ACTION_SEND email, maps are ACTION_VIEW geo:. domain_checks not produced (no custom cloak hosts). agent_src via jadx 1.5.3, not committed as a tree."
+}
