@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="androidx_compose_foundation_autofill">Autofill</string>
+    <string name="androidx_startup">androidx.startup</string>
+    <string name="app_name">Betclic</string>
+    <string name="com.google.firebase.crashlytics.mapping_file_id">4c907f2e258e4977a1c0fa3308c11c20</string>
+    <string name="com.google.firebase.crashlytics.version_control_info">repositories {\n  system: GIT\n  local_root_path: \"$PROJECT_DIR\"\n  revision: \"c851527007e52eaf7fe38186c559dc4f46bdde12\"\n}\n</string>
+    <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. Please try again.</string>
+    <string name="default_error_message">Invalid input</string>
+    <string name="default_popup_window_title">Pop-Up Window</string>
+    <string name="gcm_defaultSenderId">358918069937</string>
+    <string name="google_api_key">AIzaSyCtNod3lP307Ckj6CDTeT30TqeH-g5tv9k</string>
+    <string name="google_app_id">1:358918069937:android:5e095091ca373bb43d0c90</string>
+    <string name="google_storage_bucket">betclic-f6bfd.firebasestorage.app</string>
+    <string name="in_progress">In progress</string>
+    <string name="indeterminate">Partially checked</string>
+    <string name="m3c_dialog">Dialog</string>
+    <string name="not_selected">Not selected</string>
+    <string name="project_id">betclic-f6bfd</string>
+    <string name="selected">Selected</string>
+    <string name="state_empty">Empty</string>
+    <string name="state_off">Off</string>
+    <string name="state_on">On</string>
+    <string name="switch_role">Switch</string>
+    <string name="tab">Tab</string>
+    <string name="template_percent">%1$d percent.</string>
+</resources>

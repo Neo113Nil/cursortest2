@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder betclick/Betclic-SAJID EXPRESS LLC was missing on origin/main)",
+  "package": "com.muzourobhaz.zenaghn",
+  "version_name": "1.2",
+  "version_code": 3,
+  "app_label": "Betclic",
+  "play_title": "Betclic",
+  "developer": "SAJID EXPRESS LLC",
+  "sha256": "a819bbfe17963c75ac5a9c5ed228d9235d5e930caba247f8fc68a6de7318df56",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "Betclic_1.2_apkcombo.com.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.muzourobhaz.zenaghn.apk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.en.apk",
+    "apk/config.fr.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "errors": 16,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.muzourobhaz.zenaghn (StudioApplication, MainActivity, matchlink); agent_src gitignored; 16 non-fatal decompile errors"
+  },
+  "cloaking": "да",
+  "gate_url": "https://spots-clicplay.com/sports and https://spots-clicplay.com/spots-update",
+  "link_open_mode": "Custom Tabs / Trusted Web Activity",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.muzourobhaz.zenaghn.apk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.en.apk",
+    "apk/config.fr.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK Betclic 1.2 vc3 from APKCombo (~3.8 MB): base + config.arm64_v8a + config.en + config.fr (pipeline file list named split_config.it; this XAPK has config.fr). Play «Betclic» = application-label «Betclic». MatchLink GET https://spots-clicplay.com/sports and /spots-update; offer via Custom Tabs/TWA; white path Compose UI. agent_src via jadx 1.5.3, not committed."
+}
