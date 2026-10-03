@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="androidx_compose_foundation_autofill">Autofill</string>
+    <string name="androidx_startup">androidx.startup</string>
+    <string name="app_name">Epic Journey</string>
+    <string name="catalog_empty">No dishes match this filter</string>
+    <string name="catalog_empty_hint">Try another region or clear your search</string>
+    <string name="catalog_title">Dishes</string>
+    <string name="default_error_message">Invalid input</string>
+    <string name="default_popup_window_title">Pop-Up Window</string>
+    <string name="in_progress">In progress</string>
+    <string name="indeterminate">Partially checked</string>
+    <string name="not_selected">Not selected</string>
+    <string name="play_best_streak">Best streak %1$d</string>
+    <string name="play_complete">Game complete — %1$d of %2$d perfect rounds</string>
+    <string name="play_instruction">Tap the letters in alphabetical order</string>
+    <string name="play_restart">Restart</string>
+    <string name="play_round">Round %1$d of %2$d</string>
+    <string name="play_title">Match</string>
+    <string name="saved_empty">Rate a dish to see it here</string>
+    <string name="saved_empty_hint">Rate any plate from the buffet tab</string>
+    <string name="saved_title">Recall</string>
+    <string name="search_placeholder">Find mezze</string>
+    <string name="selected">Selected</string>
+    <string name="state_empty">Empty</string>
+    <string name="tab_catalog">Buffet</string>
+    <string name="tab_hub">Portal</string>
+    <string name="tab_play">Match</string>
+    <string name="tab_saved">Cache</string>
+    <string name="template_percent">%1$d percent.</string>
+</resources>

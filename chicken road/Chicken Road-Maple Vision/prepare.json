@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK via d.apkpure.net / data.winudf.com (Play Collector folder chicken road/Chicken Road-Maple Vision was missing on origin/main)",
+  "package": "com.corlis.lobaner.mordranik",
+  "version_name": "1.0",
+  "version_code": 1,
+  "derived_apk_id": 4,
+  "app_label": "Epic Journey",
+  "play_title": "Chicken Road",
+  "developer": "Maple Vision",
+  "sha256": "21860ccdc89cc6e5b0691dcbb63aaaeca337a16a2de264037d5cd0cdc9ce688b",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "Chicken Road_1.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/com.corlis.lobaner.mordranik-1.apk",
+    "apk/com.corlis.lobaner.mordranik-1-config.arm64_v8a.apk",
+    "apk/com.corlis.lobaner.mordranik-1-config.en.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors count 19"
+  },
+  "cloaking": "нет",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.corlis.lobaner.mordranik-1.apk",
+    "apk/com.corlis.lobaner.mordranik-1-config.arm64_v8a.apk",
+    "apk/com.corlis.lobaner.mordranik-1-config.en.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "cloaking_hints.md",
+    "meta.json",
+    "agent_src.zip",
+    "agent_src/"
+  ],
+  "note": "Folder was missing on origin/main. XAPK Chicken Road 1.0 / Epic Journey (vc 1, derived.apk.id 4) from APKPure via d.apkpure.net (~3.4 MB). Splits in this XAPK: config.arm64_v8a, config.en. No asset split. Play «Chicken Road» ≠ application-label «Epic Journey». INTERNET absent; no WebView/Custom Tabs/first-party HTTP. MainApplication starts Koin and Room app.db, seeds local plates (s81). MainActivity is Compose. config.ru = AAB language split in splits0.xml. dispatchers.io = Kotlin Dispatchers.IO. lineheightstyle.alignment.top = LineHeightStyle.Alignment.Top. theme.app = Theme.App. agent_src via jadx 1.5.3, not committed as a tree."
+}
