@@ -1,0 +1,21 @@
+{
+  "app_id": "com.quick.cyber.titan.net.hub.betclic",
+  "title": "Betclic'",
+  "apk_label": "Win",
+  "developer": "Olfin",
+  "package": "com.quick.cyber.titan.net.hub.betclic",
+  "folder": "Betclic'-Olfin",
+  "path": "betclick/Betclic'-Olfin",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "version_name": "1.0",
+  "version_code": "1",
+  "source": "apkcombo XAPK (Play Collector folder was missing on origin/main)",
+  "sha256_base": "d4a6f16fad3564f3debd0e98194e13b12ff964010c1816c5a0fe4e38f5526a9a",
+  "gate_url": "https://throbbing-cake-9194.kolomichyk5647sergi.workers.dev/?app=<package>",
+  "link_open_mode": "ACTION_VIEW",
+  "agp": "9.2.1",
+  "kotlin": "2.2",
+  "minSdk": 32,
+  "targetSdk": 37
+}
