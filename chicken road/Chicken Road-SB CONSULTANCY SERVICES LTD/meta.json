@@ -54,7 +54,7 @@
       },
       {
         "param": "SharedPreferences",
-        "value": "локальный DataStore emberStore, файл files/datastore/emberwatch_archive.preferences_pb"
+        "value": "классический SharedPreferences не используется; вместо него локальный DataStore Preferences emberStore — файл files/datastore/emberwatch_archive.preferences_pb, ключ archive_v1 с JSON сохранений игры (profile: kills, wins, runs, best, barrels, combo, selected, haptics; records: id, score, kills, wave, won, accuracy, time)"
       },
       {
         "param": "Есть ли клоака",
@@ -62,13 +62,13 @@
       },
       {
         "param": "Подозрительные слова",
-        "value": "нет"
+        "value": "redirect"
       }
     ],
     "domains": [],
     "collected_data": [],
     "cloaking": "нет",
-    "cloaking_brief": "Локальная осада Emberwatch / EMBER TRAIL под карточкой Play «Chicken Road». INTERNET, WebView, Custom Tabs, first-party HTTP и remote config отсутствуют. Развилки оффер/белая нет."
+    "cloaking_brief": "Локальная осада Emberwatch под карточкой Play «Chicken Road». Разрешения INTERNET нет; в classes.dex нет ни одной ссылки на java.net, android.webkit, okhttp3, Retrofit, Volley, androidx.browser и android.intent.action.VIEW; remote config и рекламных/аналитических SDK нет. Единственный внешний обмен — PairIP bindService к com.android.vending.licensing.ILicensingService (проверка лицензии Play). Единственное совпадение из списка подозрительных слов — redirect в виде Redirected/RedirectCancelled из androidx.navigationevent. Развилки оффер/белая нет."
   },
   "app_id": "com.kartiop.locak.bahanab",
   "app_label": "Emberwatch",
