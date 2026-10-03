@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" package="com.amazon.clouddrive.photos" platformBuildVersionCode="36" platformBuildVersionName="16">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+    <uses-permission android:name="amazon.permission.COLLECT_METRICS"/>
+    <uses-permission android:name="com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.MANAGE_COR_PFM"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" android:usesPermissionFlags="neverForLocation"/>
+    <queries>
+        <package android:name="com.google.android.webview"/>
+        <package android:name="com.google.android.overlay.googlewebview"/>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="image/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+        <package android:name="com.amazon.dee.app"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.facebook.lite"/>
+        <package android:name="com.amazon.mShop.android.shopping"/>
+        <package android:name="com.amazon.mShop.android.beta"/>
+        <intent>
+            <action android:name="com.amazon.identity.action.BOOTSTRAP_SSO"/>
+        </intent>
+        <intent>
+            <action android:name="com.amazon.dcp.sso.action.session.users.changed"/>
+        </intent>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-feature android:name="com.fireos.sdk.minerva" android:required="false"/>
+    <uses-permission android:name="com.amazon.dcp.metrics.permission.METRICS_PERMISSION"/>
+    <uses-permission android:name="com.amazon.dcp.config.permission.DYN_CONFIG_VALUES_UPDATED"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.USE_DEVICE_CREDENTIALS"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.account.changed"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.CUSTOMER_ATTRIBUTE_SERVICE"/>
+    <uses-permission android:name="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+    <uses-permission android:name="com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER"/>
+    <uses-permission android:name="com.amazon.identity.permission.GENERIC_IPC"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="neverForLocation"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <permission android:label="AllowListPolicyUpdate" android:name="com.amazon.whisperjoin.deviceprovisioningservice.AllowListPolicyUpdatePermission" android:protectionLevel="signature"/>
+    <permission android:label="ArcusSettingsUpdate" android:name="com.amazon.whisperjoin.deviceprovisioningservice.ArcusUpdatePermission" android:protectionLevel="signature"/>
+    <permission android:label="BleSetupActionPermission" android:name="com.amazon.whisperjoin.setup.ble.PERMISSION" android:protectionLevel="signature"/>
+    <permission android:name="com.amazon.whisperjoin.deviceprovisioningservice.FFSServiceActionPermission" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.amazon.whisperjoin.deviceprovisioningservice.AllowListPolicyUpdatePermission"/>
+    <uses-permission android:name="com.amazon.whisperjoin.deviceprovisioningservice.ArcusUpdatePermission"/>
+    <uses-permission android:name="com.amazon.whisperjoin.deviceprovisioningservice.FFSServiceAction.permission"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false"/>
+    <permission android:label="ZigbeeCredentialSync" android:name="com.amazon.whisperjoin.provisioner.zigbee.CREDENTIALS_SYNC_PERMISSION" android:protectionLevel="signature"/>
+    <permission android:name="com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.identity.auth.device.perm.AUTH_SDK" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.dcp.sso.permission.account.changed" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER"/>
+    <uses-permission android:name="android.permission.CREDENTIAL_MANAGER_QUERY_CANDIDATE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <permission android:name="com.amazon.clouddrive.photos.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.amazon.clouddrive.photos.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@xml/data_extraction_rules" android:enableOnBackInvokedCallback="false" android:extractNativeLibs="false" android:fullBackupContent="@xml/backup_rules" android:icon="@mipmap/ic_launcher" android:intentMatchingFlags="enforceIntentFilter" android:label="@string/app_name" android:largeHeap="true" android:name="com.amazon.photos.PhotosApplication" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.amazon.photos.core.activity.HomeActivity" android:screenOrientation="user"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.amazon.photos.activity.LauncherActivity" android:noHistory="false" android:screenOrientation="user">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="amazonphotos"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="www.amazon.com"/>
+                <data android:host="www.amazon.ca"/>
+                <data android:host="www.amazon.com.mx"/>
+                <data android:host="www.amazon.co.uk"/>
+                <data android:host="www.amazon.de"/>
+                <data android:host="www.amazon.fr"/>
+                <data android:host="www.amazon.it"/>
+                <data android:host="www.amazon.es"/>
+                <data android:host="www.amazon.co.jp"/>
+                <data android:host="www.amazon.cn"/>
+                <data android:host="www.amazon.in"/>
+                <data android:host="www.amazon.com.au"/>
+                <data android:host="www.amazon.com.br"/>
+                <data android:pathPrefix="/photos/launcher"/>
+                <data android:pathPrefix="/photos/all"/>
+                <data android:pathPrefix="/photos/people"/>
+                <data android:pathPrefix="/photos/places"/>
+                <data android:pathPrefix="/photos/albums"/>
+                <data android:pathPrefix="/photos/foryou"/>
+                <data android:pathPrefix="/photos/more"/>
+                <data android:pathPrefix="/photos/settings"/>
+                <data android:pathPrefix="/photos/legal"/>
+                <data android:pathPrefix="/photos/family"/>
+                <data android:pathPrefix="/photos/thisday"/>
+                <data android:pathPrefix="/photos/stories"/>
+                <data android:pathPrefix="/photos/memories"/>
+                <data android:pathPrefix="/photos/digitalgreetingcard"/>
+                <data android:pathPrefix="/photos/devicepersonalization"/>
+                <data android:pathPrefix="/photos/search"/>
+                <data android:pathPrefix="/photos/storage"/>
+                <data android:pathPrefix="/photos/uploads"/>
+                <data android:pathPrefix="/photos/whatsNew"/>
+                <data android:pathPrefix="/photos/collections"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="photos.amazon.com"/>
+                <data android:host="photos.amazon.ca"/>
+                <data android:host="photos.amazon.co.uk"/>
+                <data android:host="photos.amazon.de"/>
+                <data android:host="photos.amazon.fr"/>
+                <data android:host="photos.amazon.it"/>
+                <data android:host="photos.amazon.es"/>
+                <data android:host="photos.amazon.co.jp"/>
+                <data android:host="photos.amazon.com.au"/>
+                <data android:pathPrefix="/launcher"/>
+                <data android:pathPrefix="/all"/>
+                <data android:pathPrefix="/people"/>
+                <data android:pathPrefix="/places"/>
+                <data android:pathPrefix="/albums"/>
+                <data android:pathPrefix="/foryou"/>
+                <data android:pathPrefix="/more"/>
+                <data android:pathPrefix="/settings"/>
+                <data android:pathPrefix="/legal"/>
+                <data android:pathPrefix="/family"/>
+                <data android:pathPrefix="/thisday"/>
+                <data android:pathPrefix="/stories"/>
+                <data android:pathPrefix="/memories"/>
+                <data android:pathPrefix="/devicepersonalization"/>
+                <data android:pathPrefix="/search"/>
+                <data android:pathPrefix="/storage"/>
+                <data android:pathPrefix="/uploads"/>
+                <data android:pathPrefix="/prints"/>
+                <data android:pathPrefix="/device-setup"/>
+                <data android:pathPrefix="/collection"/>
+                <data android:pathPrefix="/whatsNew"/>
+                <data android:pathPrefix="/collections"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="app"/>
+                <data android:host="com.amazon.photos"/>
+                <data android:pathPrefix="/launcher"/>
+                <data android:pathPrefix="/all"/>
+                <data android:pathPrefix="/people"/>
+                <data android:pathPrefix="/places"/>
+                <data android:pathPrefix="/albums"/>
+                <data android:pathPrefix="/foryou"/>
+                <data android:pathPrefix="/more"/>
+                <data android:pathPrefix="/settings"/>
+                <data android:pathPrefix="/legal"/>
+                <data android:pathPrefix="/family"/>
+                <data android:pathPrefix="/thisday"/>
+                <data android:pathPrefix="/stories"/>
+                <data android:pathPrefix="/memories"/>
+                <data android:pathPrefix="/devicepersonalization"/>
+                <data android:pathPrefix="/search"/>
+                <data android:pathPrefix="/storage"/>
+                <data android:pathPrefix="/uploads"/>
+                <data android:pathPrefix="/prints"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.amazon.photos.activity.ForeignTaskEscapeActivity" android:taskAffinity="com.amazon.clouddrive.photos.foreign_task_escape" android:theme="@android:style/Theme.NoDisplay"/>
+        <meta-data android:name="MAPDeviceType" android:value="A2PGLM6YI9EXDZ"/>
+        <meta-data android:name="App_Device_Type_For_Central_Device_Type_A1MPSLFC7L5AFK" android:value="A2PGLM6YI9EXDZ"/>
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_kjKgQDN98W8u7e1JzpVJ6ppfyAefpMBl"/>
+        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_fpRkPzIW417s9b2VvkGH4mjkvrnegLzC"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.amazon.photos.infrastructure.AccountStateReceiver" android:permission="com.amazon.dcp.sso.permission.account.changed">
+            <intent-filter>
+                <action android:name="com.amazon.dcp.sso.action.account.removed"/>
+                <action android:name="com.amazon.dcp.sso.action.secondary.account.removed"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.amazon.identity.auth.device.MapInfoProvider.Photos" android:exported="true" android:name="com.amazon.photos.auth.PhotosMAPInformationProvider" android:permission="com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER"/>
+        <provider android:authorities="com.amazon.clouddrive.photos.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ad_services_config"/>
+        <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        <activity android:exported="false" android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"/>
+        <activity android:exported="false" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"/>
+        <activity android:exported="false" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.amazon.photos.core.activity.OnboardingActivity" android:screenOrientation="user" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.amazon.photos.core.activity.RNPlaygroundActivity" android:parentActivityName="com.amazon.photos.core.activity.HomeActivity"/>
+        <provider android:authorities="com.amazon.photos.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.amazon.photos.core.provider.PhotosFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <service android:exported="false" android:name="com.amazon.photos.core.notifications.fcm.FirebaseMessagingServiceImpl">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="false" android:exported="true" android:name="com.amazon.photos.core.widgets.SquarePhotosWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.amazon.photos.widget.CLICK_ACTION"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/photos_widget_square"/>
+        </receiver>
+        <receiver android:enabled="false" android:exported="true" android:name="com.amazon.photos.core.widgets.RectangularPhotosWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.amazon.photos.widget.CLICK_ACTION"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/photos_widget_rectangular"/>
+        </receiver>
+        <service android:exported="false" android:name="com.amazon.photos.core.widgets.PhotosWidgetService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.amazon.photos.core.appstandby.AppStandbyNotificationAlarmReceiver"/>
+        <activity android:name="com.amazon.photos.prints.activity.PrintsActivity"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.amazon.photos.sharedfeatures.share.ShareSheetCustomActionReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.photos.SHARE_SHEET_COPY_LINK_ACTION"/>
+                <action android:name="com.amazon.photos.SHARE_SHEET_CREATE_GROUP_ACTION"/>
+                <action android:name="com.amazon.photos.SHARE_SHEET_ADD_TO_GROUP_ACTION"/>
+                <action android:name="com.amazon.photos.SHARE_SHEET_ADD_TO_FAMILY_VAULT_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.amazon.photos.sharedfeatures.share.NativeShareTargetReceiver"/>
+        <service android:exported="false" android:name="com.amazon.whisperjoin.deviceprovisioningservice.service.FFSBackgroundProvisioningServiceBinder" android:process=":ProvisioningService">
+            <intent-filter>
+                <action android:name="com.amazon.whisperjoin.deviceprovisioningservice.BindService"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.amazon.clouddrive.photos.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <activity android:configChanges="keyboard|keyboardHidden|screenSize" android:exported="true" android:hardwareAccelerated="true" android:label="@string/app_name" android:name="ly.img.android.pesdk.ui.activity.PhotoEditorActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|screenSize" android:exported="true" android:hardwareAccelerated="true" android:label="@string/app_name" android:name="ly.img.android.pesdk.ui.activity.EditorActivity" android:windowSoftInputMode="adjustPan"/>
+        <provider android:authorities="com.amazon.clouddrive.photos.IMGLYAutoInit" android:enabled="true" android:exported="false" android:name="ly.img.android.IMGLYAutoInit"/>
+        <meta-data android:name="com.facebook.soloader.enabled" android:value="false"/>
+        <provider android:authorities="com.amazon.clouddrive.photos.firebaseperfprovider" android:exported="false" android:initOrder="101" android:name="com.google.firebase.perf.provider.FirebasePerfProvider"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service android:name="com.amazon.whisperjoin.deviceprovisioningservice.arcus.FFSArcusSyncJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.amazon.whisperjoin.deviceprovisioningservice.service.allowlist.FFSAllowListJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:name="com.amazon.identity.auth.device.activity.GetAuthenticatorResultsActivity" android:theme="@style/TransparentActivityTheme"/>
+        <activity android:allowTaskReparenting="true" android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:label="Amazon AuthPortal" android:launchMode="singleTop" android:name="com.amazon.identity.auth.device.AuthPortalUIActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:label="Amazon Auth Challenge" android:name="com.amazon.identity.auth.device.activity.AuthChallengeHandleActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:label="Sign up and enroll" android:name="com.amazon.identity.auth.device.activity.ActorSignUpAndEnrollActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:label="Enroll actor UI" android:name="com.amazon.identity.auth.device.activity.ActorEnrollActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:label="Update Pin Preference UI" android:name="com.amazon.identity.auth.device.activity.ActorUpdatePinPreferenceActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:label="Update Phone Number UI" android:name="com.amazon.identity.auth.device.activity.ActorUpdatePhoneNumberActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:name="com.amazon.identity.auth.device.api.ProfilePickerUIActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:label="Update Pin UI" android:name="com.amazon.identity.auth.device.activity.ActorUpdatePinActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <service android:enabled="false" android:exported="true" android:name="com.amazon.identity.auth.device.bootstrapSSO.BootstrapSSOService">
+            <intent-filter>
+                <action android:name="com.amazon.identity.action.BOOTSTRAP_SSO"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.amazon.identity.auth.device.storage.DirtyDataSyncingService">
+            <intent-filter>
+                <action android:name="com.amazon.identity.action.SYNC_DIRTY_DATA"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.amazon.identity.auth.device.storage.DatabaseCleaner$DatabaseCleaningService">
+            <intent-filter>
+                <action android:name="com.amazon.identity.action.CLEAN_DATA"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="false" android:exported="false" android:name="com.amazon.identity.auth.device.storage.LambortishClock$ChangeTimestampsBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.identity.auth.accounts.SessionUserChangedToAccountForPackageChangedAdpater">
+            <intent-filter>
+                <action android:name="com.amazon.dcp.sso.action.session.users.changed"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:enabled="false" android:exported="false" android:name="com.amazon.photos.discovery.internal.receiver.MediaScannerReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.action.NEW_PICTURE"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.action.NEW_VIDEO"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.amazon.clouddrive.photos.ra.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.amazon.alexa.ra.core.data.utils.RaFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:exported="false" android:name="com.moengage.pushbase.internal.activity.PermissionActivity" android:theme="@style/MoEPushPermissionTheme"/>
+        <receiver android:exported="false" android:name="com.moengage.pushbase.internal.MoEPushReceiver"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.moengage.pushbase.activities.PushTracker" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.moengage.pushbase.activities.PushClickDialogTracker" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <service android:exported="false" android:name="com.moengage.pushbase.internal.MoEPushWorker"/>
+        <activity android:exported="true" android:label="@string/moe_debugger_activity_label" android:name="com.moengage.sdk.debugger.MoEDebuggerActivity" android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="debugger" android:scheme="moengage"/>
+            </intent-filter>
+        </activity>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="8.0.0"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivityV2" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.amazon.clouddrive.photos.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:exported="false" android:label="@string/moe_core_rich_landing_title" android:name="com.moe.pushlibrary.activities.MoEActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <provider android:authorities="com.amazon.clouddrive.photos.moengage.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.moengage.core.internal.storage.providers.MoEngageFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/moengage_file_path"/>
+        </provider>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+    </application>
+</manifest>

@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "source": "apkcombo (folder amazon casino/Amazon Photos Photo & Video-Amazon Mobile LLC was missing on origin/main; APKPure blocked by Cloudflare)",
+  "package": "com.amazon.clouddrive.photos",
+  "version_name": "2.47.1307.0-aosp-947002951g",
+  "version_code": 947002951,
+  "app_label": "Amazon Photos",
+  "play_title": "Amazon Photos Photo & Video",
+  "developer": "Amazon Mobile LLC",
+  "sha256": "bf16165019dd0f5ae2bd5c2e013c31545d8acdc41b77656e0048c4a404d939e2",
+  "size_bytes": 129502279,
+  "agent_base_apk": "agent_base.apk (local, not committed)",
+  "jadx": {
+    "ok": true,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.6 --single-class for PhotosApplication/LauncherActivity/HomeActivity/whispercloak/FetchOffers/WebView/Weblab NetworkDelegate; apktool 2.12.1 decoded resources. agent_src gitignored; 123MB APK not committed."
+  },
+  "cloaking": "нет",
+  "analysis_files": [
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Folder was missing on origin/main. Phone APK 2.47.1307.0-aosp-947002951g vc 947002951 from APKCombo R2 (same size 129502279 as APKMirror). Play «Amazon Photos Photo & Video» vs application-label «Amazon Photos» is the same product with a Play subtitle, not a white shell. whispercloak is WhisperJoin AES-GCM/ECDH/JPAKE, not a traffic cloak. FetchOffers is Cloud Drive storage plan IAP (vendorId). WebView/Custom Tabs are MAP login, Amazon help/storage/report-abuse, RN playground, Alexa device setup. Launcher Blocked is age 13 restriction. amazon-customtabtest.com is MAP Custom Tabs test host. agent_src gitignored; large APK not committed."
+}

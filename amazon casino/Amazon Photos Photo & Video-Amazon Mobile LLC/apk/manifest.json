@@ -1,0 +1,12 @@
+{
+  "package": "com.amazon.clouddrive.photos",
+  "version_name": "2.47.1307.0-aosp-947002951g",
+  "version_code": 947002951,
+  "min_sdk": 29,
+  "target_sdk": 36,
+  "application_label": "Amazon Photos",
+  "play_title": "Amazon Photos Photo & Video",
+  "sha256": "bf16165019dd0f5ae2bd5c2e013c31545d8acdc41b77656e0048c4a404d939e2",
+  "size_bytes": 129502279,
+  "note": "APK downloaded locally via APKCombo (APKPure Cloudflare-blocked); large APK files not committed"
+}
