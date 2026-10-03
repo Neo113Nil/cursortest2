@@ -1,0 +1,21 @@
+{
+  "app_id": "com.apex.studio.speedwsp7.betclic",
+  "title": "Betclic",
+  "apk_label": "Win App",
+  "developer": "Denwy app",
+  "package": "com.apex.studio.speedwsp7.betclic",
+  "folder": "Betclic-Denwy app",
+  "path": "betclick/Betclic-Denwy app",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "version_name": "1.7",
+  "version_code": "8",
+  "source": "apkcombo XAPK (Play Collector folder was missing on origin/main)",
+  "sha256_base": "6c2504d749a322c10d86c746a30e5b7339c9713c4006bd6b79cc32cd59f6f83c",
+  "gate_url": "https://still-meadow-7909.v1ddslav-art-svintoshcko.workers.dev/?app=<package>",
+  "link_open_mode": "ACTION_VIEW",
+  "agp": "8.2.0",
+  "kotlin": "1.9.0",
+  "minSdk": 26,
+  "targetSdk": 36
+}
