@@ -1,0 +1,46 @@
+{
+  "suspicious_domains": [
+    "frescomemoria.space",
+    "config.ru",
+    "lineheightstyle.alignment.top"
+  ],
+  "results": [
+    {
+      "domain": "frescomemoria.space",
+      "vt_url": "https://www.virustotal.com/gui/domain/frescomemoria.space",
+      "detections": "нет",
+      "redirect": "нет",
+      "content": "GET https://frescomemoria.space/ и GET https://frescomemoria.space/api/renaissance/frescoRestoration отвечают HTTP 404, тело JSON {\"error\":\"Not Found\"}, заголовок server: cloudflare. Приложение ходит на этот адрес методом POST, не GET.",
+      "parked": "нет (Cloudflare)",
+      "note": "first-party cloak gate; live probe 2026-10-03"
+    },
+    {
+      "domain": "config.ru",
+      "vt": {
+        "vt_url": "https://www.virustotal.com/gui/domain/config.ru",
+        "malicious": 0,
+        "suspicious": 0,
+        "total": 91,
+        "detections": "0/91 (malicious=0, suspicious=0)"
+      },
+      "redirect": "https://config.ru/en/",
+      "content": "title: config.ru is for sale. config.ru is for sale en ru en config.ru This domain is for sale The domain is actually the site name and its correct choice influences greatly on the your endeavors success. Often, cost of the domain change during the project running is comparable with the re-branding, so the be",
+      "parked": "похоже на парковку (domain is for sale)",
+      "note": "языковой сплит splits0.xml (split=\"config.ru\"), не сетевой хост"
+    },
+    {
+      "domain": "lineheightstyle.alignment.top",
+      "vt": {
+        "vt_url": "https://www.virustotal.com/gui/domain/lineheightstyle.alignment.top",
+        "malicious": 0,
+        "suspicious": 0,
+        "total": 91,
+        "detections": "0/91 (malicious=0, suspicious=0)"
+      },
+      "redirect": "нет (DNS не резолвится)",
+      "content": "нет (DNS не резолвится)",
+      "parked": "регистратор: Alibaba Cloud Computing Ltd. d/b/a HiChina (www.net.cn)",
+      "note": "Compose LineHeightStyle.Alignment.Top toString, не сетевой хост"
+    }
+  ]
+}

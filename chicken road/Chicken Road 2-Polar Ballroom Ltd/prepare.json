@@ -1,0 +1,52 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder chicken road/Chicken Road 2-Polar Ballroom Ltd was missing on origin/main)",
+  "package": "com.jorden.karto.vrenxalon",
+  "version_name": "2.0",
+  "version_code": 2,
+  "derived_apk_id": 4,
+  "app_label": "Chicken Road 2",
+  "internal_product": "Fresco Memoria",
+  "play_title": "Chicken Road 2",
+  "developer": "Polar Ballroom Ltd",
+  "sha256": "a3f7648c3ec8c4dc75428c2c03ee318ac78d90a796ebc6d6e2b1db317fabec49",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.jorden.karto.vrenxalon_2.0.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/com.jorden.karto.vrenxalon-2.apk",
+    "apk/com.jorden.karto.vrenxalon-2-config.arm64_v8a.apk",
+    "apk/com.jorden.karto.vrenxalon-2-config.armeabi_v7a.apk",
+    "apk/com.jorden.karto.vrenxalon-2-config.en.apk",
+    "apk/com.jorden.karto.vrenxalon-2-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors count 14"
+  },
+  "cloaking": "да",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.jorden.karto.vrenxalon-2.apk",
+    "apk/com.jorden.karto.vrenxalon-2-config.arm64_v8a.apk",
+    "apk/com.jorden.karto.vrenxalon-2-config.armeabi_v7a.apk",
+    "apk/com.jorden.karto.vrenxalon-2-config.en.apk",
+    "apk/com.jorden.karto.vrenxalon-2-config.xxhdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "cloaking_hints.md",
+    "meta.json",
+    "agent_src.zip",
+    "agent_src/",
+    "agent_src/com/jorden/karto/vrenxalon/MainActivity.java",
+    "agent_src/com/jorden/karto/vrenxalon/FrescoApplication.java"
+  ],
+  "note": "Folder chicken road/Chicken Road 2-Polar Ballroom Ltd was missing on origin/main. XAPK Chicken Road 2 2.0 / Fresco Memoria (vc 2) from APKCombo (~3.3 MB). Splits: config.arm64_v8a, config.armeabi_v7a, config.en, config.xxhdpi. No asset split in this XAPK (Play Collector filenames with vc 1 were not on git). Internal identity FrescoApplication / Theme.FrescoMemoria / frescomemoria.space; strings.xml app_name in 2.0 is Chicken Road 2. Gate POST /api/renaissance/frescoRestoration; workshopDeck Celestial Codex = white, else Custom Tabs. config.ru = language split splits0.xml. lineheightstyle.alignment.top = LineHeightStyle.Alignment.Top. agent_src via jadx 1.5.3, not committed as a tree."
+}

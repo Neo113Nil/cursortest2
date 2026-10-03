@@ -1,0 +1,89 @@
+{
+  "title": "Chicken Road 2",
+  "developer": "Polar Ballroom Ltd",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Chicken Road 2 (в приложении: Fresco Memoria)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.3.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, com.jorden.karto.vrenxalon.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "AGP 9.3.1; Kotlin 2.1 (stdlib + kotlinx-coroutines 1.9.0); Dagger/Hilt 2.60.1; Jetpack Compose 1.11.4; Material3 1.4.0; Navigation 2.10.0; DataStore 1.3.0-alpha11; Gson 2.14.0; AndroidX Browser 1.10.0; Play Services ads-identifier + Cronet; Play Install Referrer; PairIP"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "frescomemoria.space, config.ru, lineheightstyle.alignment.top"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "DataStore datastore/fresco_memoria.preferences_pb (splash_restoration); SharedPreferences com.google.android.gms.signin у сервисов Google"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "Tab, workshopDeck, Celestial Codex, frescoRestoration, splash_restoration, isOfflineMode, advertisingId, installReferrer, androidId, User-Agent, license check, memory, puzzle, casual"
+      }
+    ],
+    "domains": [
+      "frescomemoria.space",
+      "config.ru",
+      "lineheightstyle.alignment.top"
+    ],
+    "collected_data": [
+      "рекламный номер устройства",
+      "строка установки из магазина",
+      "идентификатор Android",
+      "строка браузера устройства"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Полный разбор актуального релиза Play-карточки «Chicken Road 2» (Polar Ballroom Ltd): пакет com.jorden.karto.vrenxalon 2.0 (versionCode 2), XAPK через APKCombo, jadx 1.5.3. Точка входа: PairIP LicenseClient, затем FrescoApplication (Hilt), LAUNCHER — MainActivity (Compose). Тихий POST на https://frescomemoria.space/api/renaissance/frescoRestoration (Cronet): body memory/puzzle/casual = advertisingId/installReferrer/androidId, заголовок User-Agent. Ответ RenaissanceData; workshopDeck == «Celestial Codex» → обычное приложение, иначе Custom Tabs с этой строкой как URL. DataStore fresco_memoria.preferences_pb / splash_restoration. WebView нет. config.ru = языковой сплит splits0.xml; lineheightstyle.alignment.top = LineHeightStyle.Alignment.Top."
+  },
+  "app_id": "com.jorden.karto.vrenxalon",
+  "app_label": "Chicken Road 2",
+  "internal_product": "Fresco Memoria",
+  "url": "https://play.google.com/store/apps/details?id=com.jorden.karto.vrenxalon",
+  "version": "2.0",
+  "version_code": 2,
+  "updated": "2026-10-02"
+}
