@@ -1,0 +1,80 @@
+{
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Chicken Road 2 (в приложении: Florentia Codex)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.3.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.2.0"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.kartiop.locak.spachfykas.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.2.0 (stdlib + builtins, kotlinx-coroutines-core 1.9.0, kotlinx-coroutines-android 1.9.0); Kodein DI; Jetpack Compose 1.11.4 (runtime, ui, foundation, animation, material-ripple, material-icons-core 1.7.8); Material3 1.4.0; AndroidX: activity 1.13.0, activity-compose 1.13.0, activity-ktx 1.13.0, annotation-experimental 1.4.1, appcompat 1.7.0, appcompat-resources 1.7.0, autofill 1.0.0, core 1.19.0, core-ktx 1.19.0, core-viewtree 1.0.0, cursoradapter 1.0.0, customview 1.0.0, customview-poolingcontainer 1.0.0, datastore 1.2.0, datastore-preferences 1.2.0, documentfile 1.0.0, drawerlayout 1.0.0, dynamicanimation 1.0.0, emoji2 1.4.0, emoji2-views-helper 1.4.0, fragment 1.5.4, graphics-path 1.0.1, interpolator 1.0.0, legacy-support-core-utils 1.0.0, lifecycle-* 2.11.0, loader 1.0.0, localbroadcastmanager 1.0.0, navigationevent 1.0.0, print 1.0.0, profileinstaller 1.4.0, savedstate 1.4.0, startup-runtime 1.1.1, tracing 1.2.0, transition 1.6.0, vectordrawable 1.1.0, vectordrawable-animated 1.1.0, versionedparcelable 1.1.1, viewpager 1.0.0, window 1.5.0"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "нет; DataStore florentia_codex.preferences_pb (wallet, unlocked_skins, selected_skin, preferred_mode, runs_played, victories, best_chapter, maestro_victory, leaderboard, checkpoint)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "cloak, Cloak, Cloaked, Shadow cloak, Tab, Redirected, RedirectCancelled"
+      }
+    ],
+    "domains": [
+      "config.ru"
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": "Полный разбор Play-карточки «Chicken Road 2» (WGKIMS LTD): пакет com.kartiop.locak.spachfykas 1.0 (versionCode 1), XAPK через APKPure, jadx 1.5.3. Точка входа: FlorentiaApp (Kodein DI, без onCreate/attachBaseContext) и MainActivity.onCreate (Jetpack Compose, extra screen). Хиты cloak в b60/d50/a5 — игровой предмет Shadow cloak, не gate. Сеть: INTERNET отсутствует; OkHttp/Retrofit/Volley/HttpURLConnection/WebView/Custom Tabs/ACTION_VIEW/remote config нет. Рекламы и аналитики нет. Клоака = нет: карточка Play называется «Chicken Road 2», application-label — «Florentia Codex» (ребрендинг витрины), развилки оффер/белая внутри сборки нет. config.ru — языковой сплит splits0.xml."
+  },
+  "app_id": "com.kartiop.locak.spachfykas",
+  "title": "Chicken Road 2",
+  "app_label": "Florentia Codex",
+  "developer": "WGKIMS LTD",
+  "url": "https://play.google.com/store/apps/details?id=com.kartiop.locak.spachfykas&hl=en&gl=us",
+  "version": "1.0",
+  "version_code": 1
+}
