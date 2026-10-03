@@ -1,0 +1,27 @@
+{
+  "all_custom_domains": [
+    "aged-star-d7e5.mmazur-sashshshsavicktorr2.workers.dev"
+  ],
+  "checked": [
+    "aged-star-d7e5.mmazur-sashshshsavicktorr2.workers.dev"
+  ],
+  "count": 1,
+  "vt_configured": false,
+  "suspicious_domains": [
+    "aged-star-d7e5.mmazur-sashshshsavicktorr2.workers.dev"
+  ],
+  "checks": [
+    {
+      "domain": "aged-star-d7e5.mmazur-sashshshsavicktorr2.workers.dev",
+      "vt_url": "https://www.virustotal.com/gui/domain/aged-star-d7e5.mmazur-sashshshsavicktorr2.workers.dev",
+      "detections": "нет",
+      "malicious": null,
+      "suspicious": null,
+      "total_engines": null,
+      "redirects_to": "нет",
+      "page_excerpt": "{\"status\":\"ok\",\"version\":\"1.0.0\",\"ts\":1791067148754}",
+      "parking": "регистратор: CloudFlare, Inc.",
+      "vendors": {}
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder betclick/Betclic-noel studio was missing on origin/main)",
+  "package": "com.plus.star.quick.wave.sonic.betclic",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Win",
+  "play_title": "Betclic",
+  "developer": "noel studio",
+  "sha256": "e594a3b0bc8dc703ba599c4b1f325981f05f08b60996dad3f9c7523ea517f92a",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.plus.star.quick.wave.sonic.betclic_1.0.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.plus.star.quick.wave.sonic.betclic-1.apk",
+    "apk/com.plus.star.quick.wave.sonic.betclic-1-config.en.apk",
+    "apk/com.plus.star.quick.wave.sonic.betclic-1-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.plus.star.quick.wave.sonic.betclic; agent_src gitignored, not committed"
+  },
+  "cloaking": "да",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.plus.star.quick.wave.sonic.betclic-1.apk",
+    "apk/com.plus.star.quick.wave.sonic.betclic-1-config.en.apk",
+    "apk/com.plus.star.quick.wave.sonic.betclic-1-config.xxhdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK Betclic 1.0 vc1 from APKCombo (~3.6 MB): base + config.en + config.xxhdpi (no asset/arm64 split in this XAPK). Play «Betclic» ≠ application-label «Win». Gate GET https://aged-star-d7e5.mmazur-sashshshsavicktorr2.workers.dev/?app= + package. Offer via ACTION_VIEW; white path MainActivity2. agent_src via jadx 1.5.3, not committed."
+}
