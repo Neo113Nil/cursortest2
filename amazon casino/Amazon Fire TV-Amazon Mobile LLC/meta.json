@@ -36,11 +36,11 @@
       },
       {
         "param": "Аналитика",
-        "value": "Bugsnag, Amazon Minerva, Amazon DCP Metrics, Amazon Weblab, Google Play Install Referrer"
+        "value": "Bugsnag, Amazon Minerva, Amazon DCP Client Metrics (DET), Amazon Weblab, Amazon Arcus (удалённый конфиг), Google Play Install Referrer"
       },
       {
         "param": "Подозрительные домены",
-        "value": "нет"
+        "value": "amazon-customtabtest.com"
       },
       {
         "param": "Есть ли клоака",
@@ -51,7 +51,9 @@
         "value": "cloak, whitelist, allowlist, blacklist, gate, feature-gating, offer, redirect, landing, webview, affiliate"
       }
     ],
-    "domains": [],
+    "domains": [
+      "amazon-customtabtest.com"
+    ],
     "collected_data": [],
     "cloaking": "нет",
     "cloaking_brief": "Официальный com.amazon.storm.lightning.client.aosp 4.8.0 (vc 1226010048), Amazon Mobile LLC. Play «Amazon Fire TV», application-label «Fire TV» — одно приложение-пульт, не белая оболочка. Application = MainApplication, лаунчер = MainActivity (Expo splash + RN «main»). whispercloak — AES-GCM/ECDH/JPAKE для WhisperJoin, не gate. WebView — MAP-логин (pageId=amzn_firetv), RN WebView витрины, Alexa RA. Custom Tabs — федеративный вход MAP; amazon-customtabtest.com только probe resolveActivity. Arcus/Weblab — фичефлаги Fire TV. GAID нет. cloaker/whitepage/is_bot в first-party нет."
