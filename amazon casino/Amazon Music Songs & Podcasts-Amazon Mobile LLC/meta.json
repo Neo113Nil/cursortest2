@@ -1,0 +1,66 @@
+{
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Amazon Music"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "29"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.2.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "Amazon APS, Amazon Mobile Ads"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Bugsnag, Amazon Minerva, Branch, Snowplow, Firebase Messaging, Install Referrer"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "offer, whitelist, blacklist, redirect, landing, webview, clickid, affiliate, betting, slots, gate, casino, poker"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": "Официальный com.amazon.mp3 26.35.0 (vc 526350010), Amazon Mobile LLC. Play «Amazon Music: Escucha Podcasts» и application-label «Amazon Music» — одна и та же витрина, не белая оболочка. Application = AmazonApplication, лаунчер = LauncherActivity: старт в домашний экран музыки, не gate. WebView — аккаунт Amazon, HTML5-магазин music.amazon.*, логин MAP, in-app messaging, RN. Custom Tabs — импорт плейлиста (https) и federated auth MAP, не оффер после проверки. Arcus/AWS Remote Configuration — фичефлаги Amazon Music, не развилка оффер/белая. cloak/cloaker/is_bot/whitepage в first-party нет. isBot в dex — isBottomBar*. casino/poker — Public Suffix List. am.app.link — Branch."
+  },
+  "app_id": "com.amazon.mp3",
+  "title": "Amazon Music: Escucha Podcasts",
+  "app_label": "Amazon Music",
+  "developer": "Amazon Mobile LLC",
+  "url": "https://play.google.com/store/apps/details?id=com.amazon.mp3",
+  "version_name": "26.35.0",
+  "version_code": 526350010
+}

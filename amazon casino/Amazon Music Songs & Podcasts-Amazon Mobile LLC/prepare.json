@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "source": "apkeep:apk-pure (folder amazon casino/Amazon Music Songs & Podcasts-Amazon Mobile LLC was missing on origin/main)",
+  "package": "com.amazon.mp3",
+  "version_name": "26.35.0",
+  "version_code": 526350010,
+  "app_label": "Amazon Music",
+  "play_title": "Amazon Music: Escucha Podcasts",
+  "developer": "Amazon Mobile LLC",
+  "sha256": "d6d7fac861279f9a5250d4f2d4eae3ad5dffcf9647f9fcdb8faf43447a0c629d",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.amazon.mp3@26.35.0.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/com.amazon.mp3-526350010.apk",
+    "apk/com.amazon.mp3-526350010-config.arm64_v8a.apk",
+    "apk/com.amazon.mp3-526350010-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 137,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3 decompiled locally (~89%, OOM at 10g heap, 69814 java files); entry points AmazonApplication/LauncherActivity completed via --single-class; agent_src gitignored"
+  },
+  "cloaking": "нет",
+  "analysis_files": [
+    "agent_base.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Folder was missing on origin/main. XAPK 26.35.0 vc 526350010 from APKPure via apkeep. Default apkeep without version served Wear OS 25.20.0; analysis used phone base APK. Play «Amazon Music: Escucha Podcasts» vs application-label «Amazon Music» is localized Play subtitle, not a white wrapper. WebView/Custom Tabs are Amazon account/store/auth/playlist-import, not a cloak gate. agent_src gitignored; large APKs not committed."
+}
