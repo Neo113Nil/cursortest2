@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "source": "apkeep:apk-pure (folder amazon casino/Amazon Alexa-Amazon Mobile LLC was missing on origin/main)",
+  "package": "com.amazon.dee.app",
+  "version_name": "2.2.716377.0",
+  "version_code": 965237705,
+  "app_label": "Amazon Alexa",
+  "play_title": "Amazon Alexa",
+  "developer": "Amazon Mobile LLC",
+  "sha256": "f9658705207b6c39c2d68a9faf20ef2d5562814beecc3875f9cbd89dca0d15be",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.amazon.dee.app@2.2.716377.0.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/com.amazon.dee.app-965237705.apk",
+    "apk/com.amazon.dee.app-965237705-config.armeabi_v7a.apk",
+    "apk/com.amazon.dee.app-965237705-config.mdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 137,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3 decompiled locally (~34021 java files, OOM mid-run); entry points AndroidAlexaApplication/MainActivity/AlexaWebView/whispercloak completed via --single-class; agent_src gitignored"
+  },
+  "cloaking": "нет",
+  "analysis_files": [
+    "agent_base.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Folder was missing on origin/main. XAPK 2.2.716377.0 vc 965237705 from APKPure via apkeep. Play «Amazon Alexa» equals application-label «Amazon Alexa». whispercloak is WhisperJoin AES-GCM/ECDH crypto, not a traffic cloak. WebView/Custom Tabs are Alexa SPA and MAP login. aeda.ae/afnic.fr/amnic.net/auda.org.au are Mozilla PSL registry hosts, not custom gate domains. agent_src gitignored; large APKs not committed."
+}

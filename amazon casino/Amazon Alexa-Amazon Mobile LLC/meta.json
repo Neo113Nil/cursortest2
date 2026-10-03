@@ -1,0 +1,66 @@
+{
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Amazon Alexa"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.0.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "29"
+      },
+      {
+        "param": "targetSdk",
+        "value": "37"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.2"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "Google IMA"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Bugsnag, Amazon Minerva, Amazon Mobilytics, Branch, Firebase Messaging, Firebase Installations, Install Referrer"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "cloak, whitelist, allowlist, offer, redirect, landing, webview, affiliate, withdraw, casino"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": "Официальный com.amazon.dee.app 2.2.716377.0 (vc 965237705), Amazon Mobile LLC. Play и application-label совпадают: «Amazon Alexa». Application = AndroidAlexaApplication, лаунчер = MainActivity со splash и домашним экраном Alexa. whispercloak — AES-GCM/ECDH/JPAKE для WhisperJoin, не gate трафика. WebView — витрина alexa.amazon.com/spa, MAP-логин, Doppler; внешние URL через ACTION_VIEW. Custom Tabs — вход Amazon MAP, callback com.amazon.mobile.identity.verification://amazon.com. Feature Service/Arcus — фичефлаги Alexa, не оффер/белая. aeda.ae/afnic.fr/amnic.net/auda.org.au — Mozilla Public Suffix List. cloaker/whitepage/is_bot в dex нет."
+  },
+  "app_id": "com.amazon.dee.app",
+  "title": "Amazon Alexa",
+  "app_label": "Amazon Alexa",
+  "developer": "Amazon Mobile LLC",
+  "url": "https://play.google.com/store/apps/details?id=com.amazon.dee.app",
+  "version_name": "2.2.716377.0",
+  "version_code": 965237705
+}
