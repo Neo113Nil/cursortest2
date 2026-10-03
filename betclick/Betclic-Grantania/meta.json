@@ -1,0 +1,41 @@
+{
+  "app_id": "com.grantania.xicxacxoe",
+  "title": "Betclic",
+  "apk_label": "XicXacXoe",
+  "developer": "Grantania",
+  "package": "com.grantania.xicxacxoe",
+  "folder": "Betclic-Grantania",
+  "path": "betclick/Betclic-Grantania",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "version_name": "1.0",
+  "version_code": "1",
+  "source": "apkcombo XAPK (Play Collector folder was missing in git)",
+  "agp": "8.11.2",
+  "kotlin": "да",
+  "minSdk": 24,
+  "targetSdk": 36,
+  "sha256_base": "2dd9acac33f05aee03eb5dcd5794f947d107644f7af5676fa9e33237a692db1e",
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "Betclic (в приложении: XicXacXoe)"},
+      {"param": "Android Gradle Plugin", "value": "8.11.2"},
+      {"param": "minSdk", "value": "24"},
+      {"param": "targetSdk", "value": "36"},
+      {"param": "Kotlin", "value": "да"},
+      {"param": "Web View", "value": "нет"},
+      {"param": "Custom Tabs", "value": "нет"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "нет"},
+      {"param": "Permissions", "value": "com.grantania.xicxacxoe.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"},
+      {"param": "Libraries", "value": "kotlin-stdlib, kotlinx-coroutines-core/android 1.6.4, androidx.appcompat 1.7.1, androidx.activity 1.8.0, androidx.core/core-ktx 1.13.0, androidx.fragment 1.5.4, androidx.recyclerview 1.2.1, androidx.cardview 1.0.0, androidx.coordinatorlayout 1.1.0, androidx.emoji2 1.3.0, androidx.startup 1.1.1, androidx.profileinstaller 1.3.1, androidx.savedstate 1.2.1, androidx.lifecycle, androidx.transition 1.5.0, androidx.drawerlayout 1.1.1, androidx.customview 1.1.0, androidx.vectordrawable 1.1.0, androidx.graphics.shapes 1.0.1, androidx.viewpager2 1.0.0, com.google.android.material 1.13.0, com.pairip.licensecheck"},
+      {"param": "Подозрительные домены", "value": "нет"},
+      {"param": "SharedPreferences", "value": "нет"},
+      {"param": "Есть ли клоака", "value": "да"},
+      {"param": "Подозрительные слова", "value": "PAYWALL, license check, CHECK_LICENSE"}
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "да"
+  }
+}

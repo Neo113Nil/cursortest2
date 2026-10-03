@@ -1,0 +1,46 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder betclick/Betclic-Grantania was missing on origin/main)",
+  "package": "com.grantania.xicxacxoe",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "XicXacXoe",
+  "play_title": "Betclic",
+  "developer": "Grantania",
+  "sha256": "2dd9acac33f05aee03eb5dcd5794f947d107644f7af5676fa9e33237a692db1e",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "Betclic_1.0_apkcombo.com.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.grantania.xicxacxoe-1.apk",
+    "apk/com.grantania.xicxacxoe-1-config.en.apk",
+    "apk/com.grantania.xicxacxoe-1-config.fr.apk",
+    "apk/com.grantania.xicxacxoe-1-config.mdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "errors": 2,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.grantania.xicxacxoe (MainActivity + R) and com.pairip.licensecheck; agent_src gitignored; 2 non-fatal decompile errors"
+  },
+  "cloaking": "да",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.grantania.xicxacxoe-1.apk",
+    "apk/com.grantania.xicxacxoe-1-config.en.apk",
+    "apk/com.grantania.xicxacxoe-1-config.fr.apk",
+    "apk/com.grantania.xicxacxoe-1-config.mdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. Analyzed XAPK Betclic 1.0 vc1 from APKCombo (~11.4 MB): base + config.en + config.fr + config.mdpi. Play «Betclic» ≠ application-label «XicXacXoe». No INTERNET, no WebView/Custom Tabs/OkHttp/HttpURLConnection/remote config in first-party. PairIP LicenseContentProvider → Google Play CHECK_LICENSE only. Play/APKCube also list 1.0.1 vc2 (~8 MB APKS, signed 2026-10-03); that build was not downloaded (Cloudflare captcha / gplaydl dispenser 403). Pipeline file list named -2 splits; this report is vc1. agent_src via jadx 1.5.3, not committed."
+}

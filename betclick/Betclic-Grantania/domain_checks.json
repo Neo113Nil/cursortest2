@@ -1,0 +1,5 @@
+{
+  "suspicious_domains": [],
+  "checked": [],
+  "note": "APK 1.0 vc1 (APKCombo XAPK): no first-party custom hosts. No INTERNET permission. clickpolicy.online is not present in this build's dex/strings."
+}
