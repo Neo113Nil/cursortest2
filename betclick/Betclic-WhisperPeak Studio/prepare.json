@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder was missing in git)",
+  "package": "com.vultranisleap.z3v7k1.app",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Vultranis Leap",
+  "play_title": "Betclic",
+  "developer": "WhisperPeak Studio",
+  "base_apk": "com.vultranisleap.z3v7k1.app.apk",
+  "agent_base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.1; agent_src not committed (gitignored)"
+  },
+  "analysis_files": [
+    "agent_base.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "cloaking_hints.md",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder betclick/Betclic-WhisperPeak Studio was missing on origin/main. XAPK 1.0 (vc1) downloaded from APKCombo. Cloak via TrafitUI + ConfigCat key mkcvif; white button «Tap to start»; offer via EXTERNAL_BROWSER (Custom Tabs class present).",
+  "errors": []
+}
