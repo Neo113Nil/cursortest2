@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" package="com.amazon.storm.lightning.client.aosp" platformBuildVersionCode="36" platformBuildVersionName="16">
+    <uses-feature android:name="com.fireos.sdk.mapclientlib" android:required="true" android:version="8"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="neverForLocation"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.MANAGE_COR_PFM"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.account.changed"/>
+    <uses-permission android:name="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+    <uses-permission android:name="com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER"/>
+    <uses-permission android:name="com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="true"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="com.fireos.sdk.metrics" android:required="false"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="org.chromium.intent.action.PAY"/>
+        </intent>
+        <intent>
+            <action android:name="org.chromium.intent.action.IS_READY_TO_PAY"/>
+        </intent>
+        <intent>
+            <action android:name="org.chromium.intent.action.UPDATE_PAYMENT_DETAILS"/>
+        </intent>
+        <intent>
+            <action android:name="com.amazon.identity.action.BOOTSTRAP_SSO"/>
+        </intent>
+        <intent>
+            <action android:name="com.amazon.dcp.sso.action.session.users.changed"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.OPEN_DOCUMENT_TREE"/>
+        </intent>
+    </queries>
+    <uses-feature android:name="com.fireos.sdk.minerva" android:required="false"/>
+    <uses-permission android:name="amazon.permission.COLLECT_METRICS"/>
+    <uses-permission android:name="com.amazon.dcp.metrics.permission.METRICS_PERMISSION"/>
+    <permission android:name="com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.identity.auth.device.perm.AUTH_SDK" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.dcp.sso.permission.account.changed" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.amazon.dcp.config.permission.DYN_CONFIG_VALUES_UPDATED"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.amazon.identity.permission.GENERIC_IPC"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.USE_DEVICE_CREDENTIALS"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.CUSTOMER_ATTRIBUTE_SERVICE"/>
+    <uses-permission android:name="android.permission.CREDENTIAL_MANAGER_QUERY_CANDIDATE_CREDENTIALS"/>
+    <permission android:label="ZigbeeCredentialSync" android:name="com.amazon.whisperjoin.provisioner.zigbee.CREDENTIALS_SYNC_PERMISSION" android:protectionLevel="signature"/>
+    <permission android:label="AllowListPolicyUpdate" android:name="com.amazon.whisperjoin.deviceprovisioningservice.AllowListPolicyUpdatePermission" android:protectionLevel="signature"/>
+    <permission android:label="ArcusSettingsUpdate" android:name="com.amazon.whisperjoin.deviceprovisioningservice.ArcusUpdatePermission" android:protectionLevel="signature"/>
+    <permission android:label="BleSetupActionPermission" android:name="com.amazon.whisperjoin.setup.ble.PERMISSION" android:protectionLevel="signature"/>
+    <permission android:name="com.amazon.whisperjoin.deviceprovisioningservice.FFSServiceActionPermission" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.amazon.whisperjoin.deviceprovisioningservice.AllowListPolicyUpdatePermission"/>
+    <uses-permission android:name="com.amazon.whisperjoin.deviceprovisioningservice.ArcusUpdatePermission"/>
+    <uses-permission android:name="com.amazon.whisperjoin.deviceprovisioningservice.FFSServiceAction.permission"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <permission android:name="expo.modules.feniksvisualid.permission.START_VISUAL_ID_SERVICE" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:label="System permission for RTCSC Service" android:name="com.amazon.rtcsc.permission.RTCSC" android:protectionLevel="signature"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_ROUTING"/>
+    <uses-permission android:name="amazon.permission.PRIVACY_MODE"/>
+    <uses-permission android:name="amazon.speech.permission.SEND_DATA_TO_ALEXA"/>
+    <uses-permission android:name="amazon.speech.permission.SEND_ALEXA_DIRECTIVE"/>
+    <uses-feature android:name="com.fireos.sdk.amazon_audio_manager" android:required="false" android:version="6"/>
+    <uses-permission android:name="com.amazon.permission.AUDIO_FORCE_USE"/>
+    <permission android:name="com.amazon.storm.lightning.client.aosp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.amazon.storm.lightning.client.aosp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.amazon.rtcsc.permission.RTCSC"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:enableOnBackInvokedCallback="false" android:extractNativeLibs="false" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:localeConfig="@xml/locales_config" android:name="com.amazon.storm.lightning.client.aosp.MainApplication" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/ic_launcher_round" android:theme="@style/AppTheme">
+        <meta-data android:name="MAPIsolateApplication" android:value="true"/>
+        <meta-data android:name="MAPEnvironment" android:value="prod"/>
+        <meta-data android:name="com.bugsnag.android.API_KEY" android:value="8ca25a1a867841d21991749b7928ca99"/>
+        <meta-data android:name="com.bugsnag.android.ENDPOINT_NOTIFY" android:value="https://notify.feniks-bugsnag.amazonfiretvapp.com"/>
+        <meta-data android:name="com.bugsnag.android.ENDPOINT_SESSIONS" android:value="https://sessions.feniks-bugsnag.amazonfiretvapp.com"/>
+        <meta-data android:name="expo.modules.updates.ENABLED" android:value="false"/>
+        <meta-data android:name="expo.modules.updates.EXPO_UPDATES_CHECK_ON_LAUNCH" android:value="ALWAYS"/>
+        <meta-data android:name="expo.modules.updates.EXPO_UPDATES_LAUNCH_WAIT_MS" android:value="0"/>
+        <service android:exported="false" android:name="com.amazon.whisperjoin.deviceprovisioningservice.service.FFSBackgroundProvisioningServiceBinder" android:process=":ProvisioningService">
+            <intent-filter>
+                <action android:name="com.amazon.whisperjoin.deviceprovisioningservice.BindService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.amazon.identity.auth.accounts.MAPSubAuthenticatorService">
+            <intent-filter>
+                <action android:name="com.amazon.dcp.sso.AccountSubAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="com.amazon.dcp.sso.AccountSubAuthenticator" android:resource="@xml/sub_authenticator"/>
+        </service>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:exported="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.amazon.storm.lightning.client.aosp.MainActivity" android:screenOrientation="portrait" android:theme="@style/Theme.App.SplashScreen" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="com.amazon.mobile.feniks"/>
+                <data android:scheme="com.amazon.storm.lightning.client"/>
+                <data android:scheme="com.amazon.storm.lightning.client.aosp"/>
+                <data android:scheme="firetv"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true" data-generated="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:host="getstarted.amazonfiretvapp.com" android:scheme="https"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true" data-generated="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:host="open.amazonfiretvapp.com" android:scheme="https"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
+        <provider android:authorities="amzn_test_appstore_feniks" android:exported="true" android:name="expo.modules.feniksauthentication.TestContentProvider"/>
+        <provider android:authorities="com.amazon.storm.lightning.client.aosp.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <activity android:name="com.amazon.identity.auth.device.activity.GetAuthenticatorResultsActivity" android:theme="@style/TransparentActivityTheme"/>
+        <activity android:allowTaskReparenting="true" android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:label="Amazon AuthPortal" android:launchMode="singleTop" android:name="com.amazon.identity.auth.device.AuthPortalUIActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:label="Amazon Auth Challenge" android:name="com.amazon.identity.auth.device.activity.AuthChallengeHandleActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:label="Sign up and enroll" android:name="com.amazon.identity.auth.device.activity.ActorSignUpAndEnrollActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:label="Enroll actor UI" android:name="com.amazon.identity.auth.device.activity.ActorEnrollActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:label="Update Pin Preference UI" android:name="com.amazon.identity.auth.device.activity.ActorUpdatePinPreferenceActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:label="Update Phone Number UI" android:name="com.amazon.identity.auth.device.activity.ActorUpdatePhoneNumberActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:name="com.amazon.identity.auth.device.api.ProfilePickerUIActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:label="Update Pin UI" android:name="com.amazon.identity.auth.device.activity.ActorUpdatePinActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <service android:enabled="false" android:exported="true" android:name="com.amazon.identity.auth.device.bootstrapSSO.BootstrapSSOService">
+            <intent-filter>
+                <action android:name="com.amazon.identity.action.BOOTSTRAP_SSO"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.amazon.identity.auth.device.storage.DirtyDataSyncingService">
+            <intent-filter>
+                <action android:name="com.amazon.identity.action.SYNC_DIRTY_DATA"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.amazon.identity.auth.device.storage.DatabaseCleaner$DatabaseCleaningService">
+            <intent-filter>
+                <action android:name="com.amazon.identity.action.CLEAN_DATA"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="false" android:exported="false" android:name="com.amazon.identity.auth.device.storage.LambortishClock$ChangeTimestampsBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.identity.auth.accounts.SessionUserChangedToAccountForPackageChangedAdpater">
+            <intent-filter>
+                <action android:name="com.amazon.dcp.sso.action.session.users.changed"/>
+            </intent-filter>
+        </receiver>
+        <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        <service android:name="com.amazon.whisperjoin.deviceprovisioningservice.arcus.FFSArcusSyncJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.amazon.whisperjoin.deviceprovisioningservice.service.allowlist.FFSAllowListJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:foregroundServiceType="camera" android:name="expo.modules.feniksvisualid.VisualIdRtcscService" android:permission="expo.modules.feniksvisualid.permission.START_VISUAL_ID_SERVICE">
+            <meta-data android:name="sessionDomain" android:value="CVVIDEnrollment"/>
+            <intent-filter>
+                <action android:name="com.amazon.rtcsessioncontroller.ACTION_START_APPCLIENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="org.unimodules.core.AppLoader#react-native-headless" android:value="expo.modules.adapters.react.apploader.RNHeadlessAppLoader"/>
+        <meta-data android:name="com.facebook.soloader.enabled" android:value="true"/>
+        <provider android:authorities="com.amazon.storm.lightning.client.aosp.ClipboardFileProvider" android:exported="true" android:name="expo.modules.clipboard.ClipboardFileProvider">
+            <meta-data android:name="expo.modules.clipboard.CLIPBOARD_FILE_PROVIDER_PATHS" android:resource="@xml/clipboard_provider_paths"/>
+        </provider>
+        <provider android:authorities="com.amazon.storm.lightning.client.aosp.FileSystemFileProvider" android:exported="false" android:grantUriPermissions="true" android:name="expo.modules.filesystem.FileSystemFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_system_provider_paths"/>
+        </provider>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <provider android:authorities="com.amazon.storm.lightning.client.aosp.ra.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.amazon.alexa.ra.core.data.utils.RaFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <service android:enabled="true" android:exported="false" android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder">
+            <meta-data android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY" android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl"/>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.HiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.amazon.storm.lightning.client.aosp.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:exported="true" android:name="com.amazon.rtcsc.service.RtcscService" android:permission="com.amazon.rtcsc.permission.RTCSC">
+            <intent-filter>
+                <action android:name="com.amazon.rtcsessioncontroller.ACTION_BIND_TO_RTCSC_SERVICE"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="com.amazon.identity.auth.device" android:required="false"/>
+        <uses-library android:name="com.fireos.sdk.minerva" android:required="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:authorities="com.amazon.storm.lightning.client.aosp.bugsnag-startup" android:exported="false" android:initOrder="9000" android:name="com.bugsnag.android.internal.BugsnagContentProvider"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+    </application>
+</manifest>

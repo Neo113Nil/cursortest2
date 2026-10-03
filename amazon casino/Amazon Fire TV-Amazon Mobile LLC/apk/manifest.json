@@ -1,0 +1,11 @@
+{
+  "package": "com.amazon.storm.lightning.client.aosp",
+  "version_name": "4.8.0",
+  "version_code": 1226010048,
+  "min_sdk": 28,
+  "target_sdk": 36,
+  "application_label": "Fire TV",
+  "play_title": "Amazon Fire TV",
+  "sha256": "09f2a6e5fc37d261a751734e40812b19f6ad68de898b031b175c2aee6032ecc4",
+  "note": "APK downloaded locally via apkeep (apk-pure); large APK files not committed"
+}

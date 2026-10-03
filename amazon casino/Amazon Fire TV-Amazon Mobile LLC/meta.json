@@ -1,0 +1,66 @@
+{
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Amazon Fire TV"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.11.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "28"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1.20"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Bugsnag, Amazon Minerva, Amazon DCP Metrics, Amazon Weblab, Google Play Install Referrer"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "cloak, whitelist, allowlist, blacklist, gate, feature-gating, offer, redirect, landing, webview, affiliate"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": "Официальный com.amazon.storm.lightning.client.aosp 4.8.0 (vc 1226010048), Amazon Mobile LLC. Play «Amazon Fire TV», application-label «Fire TV» — одно приложение-пульт, не белая оболочка. Application = MainApplication, лаунчер = MainActivity (Expo splash + RN «main»). whispercloak — AES-GCM/ECDH/JPAKE для WhisperJoin, не gate. WebView — MAP-логин (pageId=amzn_firetv), RN WebView витрины, Alexa RA. Custom Tabs — федеративный вход MAP; amazon-customtabtest.com только probe resolveActivity. Arcus/Weblab — фичефлаги Fire TV. GAID нет. cloaker/whitepage/is_bot в first-party нет."
+  },
+  "app_id": "com.amazon.storm.lightning.client.aosp",
+  "title": "Amazon Fire TV",
+  "app_label": "Fire TV",
+  "developer": "Amazon Mobile LLC",
+  "url": "https://play.google.com/store/apps/details?id=com.amazon.storm.lightning.client.aosp",
+  "version_name": "4.8.0",
+  "version_code": 1226010048
+}

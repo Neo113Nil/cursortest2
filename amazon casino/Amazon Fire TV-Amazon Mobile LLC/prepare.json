@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "source": "apkeep:apk-pure (folder amazon casino/Amazon Fire TV-Amazon Mobile LLC was missing on origin/main)",
+  "package": "com.amazon.storm.lightning.client.aosp",
+  "version_name": "4.8.0",
+  "version_code": 1226010048,
+  "app_label": "Fire TV",
+  "play_title": "Amazon Fire TV",
+  "developer": "Amazon Mobile LLC",
+  "sha256": "09f2a6e5fc37d261a751734e40812b19f6ad68de898b031b175c2aee6032ecc4",
+  "agent_base_apk": "agent_base.apk",
+  "downloaded_apk": "com.amazon.storm.lightning.client.aosp@4.8.0.apk",
+  "jadx": {
+    "ok": true,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "apktool 2.12.0 decoded resources and all 8 dex to smali; whispercloak/MAP/FeniksRemoteConfig/Weblab/entry points read in full. agent_src gitignored; large APK not committed."
+  },
+  "cloaking": "нет",
+  "analysis_files": [
+    "agent_base.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Folder was missing on origin/main. APK 4.8.0 vc 1226010048 from APKPure via apkeep. Play «Amazon Fire TV» vs application-label «Fire TV» is the same product name shortened, not a white shell. whispercloak is WhisperJoin AES-GCM/ECDH crypto. WebView/Custom Tabs are Amazon MAP login, Fire TV catalog, Alexa RA. amazon-customtabtest.com is MAP Custom Tabs probe via PackageManager.resolveActivity, not a loaded landing. a2z.com Alexa gateways are Amazon device endpoints. agent_src gitignored; large APKs not committed."
+}
