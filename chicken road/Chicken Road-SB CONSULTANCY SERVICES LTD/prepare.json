@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder chicken road/Chicken Road-SB CONSULTANCY SERVICES LTD was missing on origin/main)",
+  "package": "com.kartiop.locak.bahanab",
+  "version_name": "1.0",
+  "version_code": 1,
+  "derived_apk_id": 4,
+  "app_label": "Emberwatch",
+  "play_title": "Chicken Road",
+  "developer": "SB CONSULTANCY SERVICES LTD",
+  "sha256": "eeacc8f6b23d4ebe2488a2a04cb1cf0d86f7bc5d70b581b5e227876b9a3fcfa7",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.kartiop.locak.bahanab_1.0.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/com.kartiop.locak.bahanab-1.apk",
+    "apk/com.kartiop.locak.bahanab-1-config.arm64_v8a.apk",
+    "apk/com.kartiop.locak.bahanab-1-config.armeabi_v7a.apk",
+    "apk/com.kartiop.locak.bahanab-1-config.en.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors count 14"
+  },
+  "cloaking": "нет",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.kartiop.locak.bahanab-1.apk",
+    "apk/com.kartiop.locak.bahanab-1-config.arm64_v8a.apk",
+    "apk/com.kartiop.locak.bahanab-1-config.armeabi_v7a.apk",
+    "apk/com.kartiop.locak.bahanab-1-config.en.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "cloaking_hints.md",
+    "meta.json",
+    "agent_src.zip",
+    "agent_src/",
+    "agent_src/com/kartiop/locak/bahanab/MainActivity.java",
+    "agent_src/com/kartiop/locak/bahanab/EmberApplication.java"
+  ],
+  "note": "Folder chicken road/Chicken Road-SB CONSULTANCY SERVICES LTD was missing on origin/main. XAPK Chicken Road 1.0 / Emberwatch (vc 1, derived.apk.id 4) from APKCombo (~2.2 MB). Splits: config.arm64_v8a, config.armeabi_v7a, config.en. No asset split in this XAPK. Play «Chicken Road» ≠ application-label «Emberwatch». INTERNET absent; no WebView/Custom Tabs/first-party HTTP. PairIP Application wraps EmberApplication and runs Play license check. EmberApplication starts Koin. MainActivity is Compose with local screens main/game/skins/howtoplay (EMBER TRAIL siege). DataStore emberStore → emberwatch_archive.preferences_pb. config.ru = AAB language split in splits0.xml. Native libs only libandroidx.graphics.path.so and libdatastore_shared_counter.so. agent_src via jadx 1.5.3, not committed as a tree."
+}

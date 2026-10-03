@@ -1,0 +1,8 @@
+{
+  "suspicious_domains": [],
+  "results": [],
+  "notes": [
+    "config.ru in splits0.xml is an AAB language split (key=ru), not a network host",
+    "Dispatchers.IO is kotlinx.coroutines, not a domain"
+  ]
+}
