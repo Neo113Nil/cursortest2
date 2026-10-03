@@ -1,0 +1,84 @@
+{
+  "app_id": "com.chickencross.seahop",
+  "title": "Chicken Cross Chicken Road",
+  "developer": "IMLabs",
+  "url": "https://play.google.com/store/apps/details?id=com.chickencross.seahop",
+  "version": "1.0.1.1",
+  "version_code": 2,
+  "apk_label": "Chicken Cross Road: Dodge Cars",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Chicken Cross Chicken Road (в приложении: Chicken Cross Road: Dodge Cars)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1.0"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "Yodo1 MAS, AdMob, AppLovin MAX, Unity Ads, ironSource, Pangle, Bigo Ads, Facebook Audience Network, Fyber Inneractive, InMobi, Mintegral, Moloco, Vungle, BidMachine, Digital Turbine Ignite, AppHarbr"
+      },
+      {
+        "param": "Аналитика",
+        "value": "PostHog, Yodo1 MAS, Google Play Games, Google Ads AppMeasurement"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.VIBRATE, android.permission.ACCESS_NETWORK_STATE, android.permission.CHANGE_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.CHANGE_WIFI_STATE, android.permission.WAKE_LOCK, com.android.vending.BILLING, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_AD_ID, com.android.vending.CHECK_LICENSE, android.permission.FOREGROUND_SERVICE, com.chickencross.seahop.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "AGP 8.10.0; Unity 6000.3.8f1 (IL2CPP); Yodo1 MAS 4.18.1; AdMob play-services-ads 24.9.0; AppLovin MAX adapter 13.5.1.0; Unity Ads; ironSource; Pangle; Bigo Ads; Facebook Audience Network; Fyber Inneractive; InMobi; Mintegral; Moloco; Vungle; BidMachine; Digital Turbine Ignite; AppHarbr 2.35.0; Google Play Billing 9.0.0; Google Play Games 22.0.0; Play License Check (com.pairip); User Messaging Platform 3.2.0; Kotlin 2.1.0; kotlinx-coroutines 1.10.2; OkHttp 4.10.0; Gson; Ktor; Coil; Jetpack Compose 1.2.1; AndroidX: appcompat 1.6.1, activity 1.7.2, browser 1.8.0, core 1.15.0, webkit 1.12.1, room 2.5.2, work 2.8.1, datastore 1.0.0, fragment 1.3.6, lifecycle, startup 1.1.1, profileinstaller 1.3.0; Google GameActivity; PostHog (Unity); DOTween; Newtonsoft.Json"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "ad-host-backup-america.oss-us-west-1.aliyuncs.com, ad-host-backup-asia.oss-ap-southeast-1.aliyuncs.com, ad-host-backup-europe.oss-eu-central-1.aliyuncs.com, adsbigo.com, akm.ssacdn.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Yodo1Mas: конфиг медиации, регион, возраст, JSON качества рекламы; Unity PlayerPrefs для игры; служебные prefs рекламных сетей"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "landing, license check"
+      }
+    ],
+    "domains": [
+      "ad-host-backup-america.oss-us-west-1.aliyuncs.com",
+      "ad-host-backup-asia.oss-ap-southeast-1.aliyuncs.com",
+      "ad-host-backup-europe.oss-eu-central-1.aliyuncs.com",
+      "adsbigo.com",
+      "akm.ssacdn.com"
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
+}

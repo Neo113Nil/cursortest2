@@ -1,0 +1,41 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK via d.apkpure.net / data.winudf.com (Play Collector folder chicken road/Chicken Cross Chicken Road-IMLabs was missing on origin/main)",
+  "package": "com.chickencross.seahop",
+  "version_name": "1.0.1.1",
+  "version_code": 2,
+  "app_label": "Chicken Cross Road: Dodge Cars",
+  "play_title": "Chicken Cross Chicken Road",
+  "developer": "IMLabs",
+  "sha256": "3e29a6cb6602000726071cfeb44da934669f77294068317debbabaab9eaeb32f",
+  "agent_base_apk": "apk/com.chickencross.seahop.apk (тот же base; agent_base.apk локально 116 MB, в git не кладётся: GitHub limit 100 MB; gitattributes запрещает LFS на agent_base.apk)",
+  "xapk": "Chicken Cross: Chicken Road_1.0.1.1_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/com.chickencross.seahop.apk",
+    "apk/config.arm64_v8a.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors count 123"
+  },
+  "cloaking": "нет",
+  "analysis_files": [
+    "apk/com.chickencross.seahop.apk",
+    "apk/config.arm64_v8a.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "cloaking_hints.md",
+    "meta.json",
+    "agent_src.zip",
+    "agent_src/"
+  ],
+  "note": "Folder was missing on origin/main. XAPK 1.0.1.1 vc2 from APKPure via d.apkpure.net (~148 MB): base + config.arm64_v8a. Play «Chicken Cross Chicken Road» / Play page «Chicken Cross: Chicken Road»; APK application-label «Chicken Cross Road: Dodge Cars» — same chicken-road game. Unity 6000.3.8f1 IL2CPP + Yodo1 MAS 4.18.1. PairIP license on Application.attachBaseContext, then UnityPlayerGameActivity. Listed shouldOverrideUrlLoading p/haeg/w/s.java is AppHarbr ad-quality WebViewClient wrapper, not a cloak gate. Domain_checks hosts are Bigo Ads OSS/CDN. agent_src via jadx 1.5.3, not committed as a tree. agent_base.apk is 116 MB (over GitHub 100 MB, and root gitattributes disables LFS for that name); the same bytes are apk/com.chickencross.seahop.apk via LFS."
+}
