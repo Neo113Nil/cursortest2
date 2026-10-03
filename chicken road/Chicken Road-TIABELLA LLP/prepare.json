@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "source": "apkeep:apk-pure (Play Collector folder chicken road/Chicken Road-TIABELLA LLP was missing on origin/main)",
+  "package": "com.watchfacestudio.wartan",
+  "version_name": "1.0.1",
+  "version_code": 2,
+  "app_label": "Hybrid WARTAN Watch face",
+  "play_title": "Chicken Road",
+  "developer": "TIABELLA LLP",
+  "sha256": "ed46d0c517521922034b2dcb9e01aeab02e8a3ff60df2488160d368720aaf2a9",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.watchfacestudio.wartan.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.watchfacestudio.wartan-2.apk",
+    "apk/com.watchfacestudio.wartan-2-config.en.apk",
+    "apk/com.watchfacestudio.wartan-2-config.mdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3, 4334 java files / 2845 classes processed, finished with 5 errors; first-party only MainActivity, BuildConfig, R; agent_src gitignored, first-party zipped as agent_src.zip"
+  },
+  "cloaking": "да",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.watchfacestudio.wartan-2.apk",
+    "apk/com.watchfacestudio.wartan-2-config.en.apk",
+    "apk/com.watchfacestudio.wartan-2-config.mdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Folder chicken road/Chicken Road-TIABELLA LLP was missing on origin/main. XAPK Hybrid WARTAN Watch face 1.0.1 vc2 from APKPure via apkeep (~13 MB): base + config.en + config.mdpi. No asset/lt/ru/xxhdpi splits in this XAPK (Play Collector filenames with those splits were not on git). Play «Chicken Road» ≠ application-label «Hybrid WARTAN Watch face». Wear OS watch-face companion. No INTERNET, WebView UI, Custom Tabs, OkHttp, HttpURLConnection, remote config, ads, analytics, PairIP, first-party SharedPreferences. Cloak = да by white-shell rule; no offer/white traffic fork in this build."
+}
