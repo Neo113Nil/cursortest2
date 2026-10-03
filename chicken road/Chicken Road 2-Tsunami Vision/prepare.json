@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK via d.apkpure.net / data.winudf.com (Play Collector folder chicken road/Chicken Road 2-Tsunami Vision was missing on origin/main)",
+  "package": "com.jorden.karto.tharnox",
+  "version_name": "1.0",
+  "version_code": 1,
+  "derived_apk_id": 4,
+  "app_label": "Hive Almanac",
+  "play_title": "Chicken Road 2",
+  "developer": "Tsunami Vision",
+  "sha256": "8e02c9e119c35b65f9a8066c646a53476097f120ae475536c3551831e1640f5a",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "Chicken Road 2_1.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/com.jorden.karto.tharnox-1.apk",
+    "apk/com.jorden.karto.tharnox-1-config.armeabi_v7a.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors count 23"
+  },
+  "cloaking": "нет",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.jorden.karto.tharnox-1.apk",
+    "apk/com.jorden.karto.tharnox-1-config.armeabi_v7a.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "cloaking_hints.md",
+    "meta.json",
+    "agent_src.zip",
+    "agent_src/"
+  ],
+  "note": "Folder chicken road/Chicken Road 2-Tsunami Vision was missing on origin/main. XAPK Chicken Road 2 1.0 / Hive Almanac (vc 1, derived.apk.id 4) from APKPure via d.apkpure.net (~2.9 MB). Splits in this XAPK: config.armeabi_v7a. No asset split and no arm64_v8a in this XAPK. Play «Chicken Road 2» ≠ application-label «Hive Almanac». INTERNET absent; no WebView/Custom Tabs/first-party HTTP. Application starts Hilt; MainActivity is Compose. Room hive_almanac.db seeded from local list tp. DataStore almanac_prefs.preferences_pb (hide_opened). dispatchers.io = Kotlin Dispatchers.IO. lineheightstyle.alignment.top = LineHeightStyle.Alignment.Top. agent_src via jadx 1.5.3, not committed as a tree."
+}

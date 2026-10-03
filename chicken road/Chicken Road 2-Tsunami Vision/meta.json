@@ -1,0 +1,82 @@
+{
+  "title": "Chicken Road 2",
+  "developer": "Tsunami Vision",
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Chicken Road 2 (в приложении: Hive Almanac)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.4.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "37"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.2"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.jorden.karto.tharnox.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.2 (stdlib + builtins, kotlinx-coroutines-core 1.9.0, kotlinx-coroutines-android 1.9.0); Dagger 2.60.1; Hilt 2.60.1 (hilt-android, hilt-core, hilt-lifecycle-viewmodel 1.4.0, hilt-lifecycle-viewmodel-compose 1.4.0); Jetpack Compose 1.12.0 (animation, animation-core, foundation, foundation-layout, material-ripple, runtime, runtime-annotation, runtime-retain, runtime-saveable, ui, ui-geometry, ui-graphics, ui-text, ui-tooling-preview, ui-unit, ui-util); Compose Material3 1.4.0; Navigation Compose 2.10.0; navigationevent 1.1.2; Room 2.8.4 (runtime, ktx); sqlite 2.6.2; DataStore 1.2.1 (datastore, datastore-core, datastore-preferences, datastore-preferences-core); AndroidX: activity 1.13.0, activity-compose 1.13.0, activity-ktx 1.13.0, annotation-experimental 1.5.0, autofill 1.0.0, core 1.19.0, core-ktx 1.19.0, core-viewtree 1.0.0, customview 1.0.0, customview-poolingcontainer 1.0.0, emoji2 1.4.0, fragment 1.5.1, graphics-path 1.0.1, interpolator 1.0.0, lifecycle-* 2.11.0, loader 1.0.0, profileinstaller 1.4.0, savedstate 1.5.0, startup-runtime 1.1.1, tracing 1.2.0, versionedparcelable 1.1.1, viewpager 1.0.0, window 1.5.0, window-core 1.5.0"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "dispatchers.io, lineheightstyle.alignment.top"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "нет; DataStore datastore/almanac_prefs.preferences_pb (hide_opened); Room hive_almanac.db (frames, runs, compare_pairs, open_events)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "tab, gate, Honey gate, Hand gate, Bottom gate, offer, Redirected, RedirectCancelled"
+      }
+    ],
+    "domains": [
+      "dispatchers.io",
+      "lineheightstyle.alignment.top"
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": "Полный разбор актуального релиза Play-карточки «Chicken Road 2» (Tsunami Vision): пакет com.jorden.karto.tharnox 1.0 (versionCode 1), XAPK через APKPure, jadx 1.5.3. Точка входа: com.jorden.karto.tharnox.core.common.Application.onCreate (Hilt/Dagger), LAUNCHER — MainActivity (Jetpack Compose). Сеть: android.permission.INTERNET отсутствует; в dex нет OkHttp/Retrofit/Volley/HttpURLConnection; WebView/Custom Tabs/ACTION_VIEW на URL с сервера нет. Рекламы, аналитики, remote config, PairIP нет. DataStore almanac_prefs.preferences_pb (hide_opened); Room hive_almanac.db. Клоака = нет: развилки оффер/белая нет, это локальный альманах «Hive Almanac» под именем «Chicken Road 2» в Play. dispatchers.io = Dispatchers.IO; lineheightstyle.alignment.top = LineHeightStyle.Alignment.Top."
+  },
+  "app_id": "com.jorden.karto.tharnox",
+  "app_label": "Hive Almanac",
+  "url": "https://play.google.com/store/apps/details?id=com.jorden.karto.tharnox",
+  "version": "1.0",
+  "version_code": 1,
+  "updated": "2026-09-13"
+}
