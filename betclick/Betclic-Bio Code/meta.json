@@ -1,0 +1,48 @@
+{
+  "app_id": "com.edge.cyber.info.rise.atom.betclic",
+  "title": "Betclic",
+  "apk_label": "Win",
+  "developer": "Bio Code",
+  "package": "com.edge.cyber.info.rise.atom.betclic",
+  "folder": "Betclic-Bio Code",
+  "path": "betclick/Betclic-Bio Code",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "version_name": "1.0",
+  "version_code": "1",
+  "source": "apkcombo XAPK (Play Collector folder was missing in git)",
+  "gate_url": "https://autumn-cake-c8d4.sdiachoklink.workers.dev/?app=",
+  "link_open_mode": "Browser / ACTION_VIEW",
+  "agp": "9.2.1",
+  "kotlin": "да",
+  "minSdk": 32,
+  "targetSdk": 35,
+  "sha256_base": "f2c1ee139d6f44b04cdf967539ddd8106b99379dae1a745fd4b5ba5bccdb2d83",
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "Betclic (в приложении: Win)"},
+      {"param": "Android Gradle Plugin", "value": "9.2.1"},
+      {"param": "minSdk", "value": "32"},
+      {"param": "targetSdk", "value": "35"},
+      {"param": "Kotlin", "value": "да"},
+      {"param": "Web View", "value": "нет"},
+      {"param": "Custom Tabs", "value": "нет"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "нет"},
+      {"param": "Permissions", "value": "android.permission.INTERNET, com.edge.cyber.info.rise.atom.betclic.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"},
+      {"param": "Libraries", "value": "kotlin-stdlib, kotlinx-coroutines-core/android 1.7.3, okhttp3 4.12.0, okio, androidx.appcompat 1.8.0, androidx.activity 1.10.1, androidx.core/core-ktx 1.16.0, androidx.fragment 1.5.4, androidx.recyclerview 1.2.1, androidx.constraintlayout 2.2.2, androidx.viewpager2 1.0.0, androidx.cardview 1.0.0, androidx.coordinatorlayout 1.1.0, androidx.emoji2 1.3.0, androidx.startup 1.1.1, androidx.profileinstaller 1.4.0, androidx.savedstate 1.2.1, androidx.databinding viewbinding 9.2.1, com.google.android.material 1.14.0, com.pairip.application / com.pairip.licensecheck"},
+      {"param": "Подозрительные домены", "value": "autumn-cake-c8d4.sdiachoklink.workers.dev, dispatchers.io"},
+      {"param": "SharedPreferences", "value": "файл app_cfg, ключ dest — сохраняет внешнюю ссылку после проверки; файл ball_games_prefs — локальные рекорды и монеты белой оболочки"},
+      {"param": "Есть ли клоака", "value": "да"},
+      {"param": "Подозрительные слова", "value": "redirect, workers.dev, dest, app_cfg, ?app=, X-Device-Model, User-Agent, Accept-Language, status, Backup, Browser, CHECK_LICENSE, license check"}
+    ],
+    "domains": ["autumn-cake-c8d4.sdiachoklink.workers.dev", "dispatchers.io"],
+    "collected_data": [
+      "имя пакета приложения",
+      "модель телефона",
+      "язык в заголовке",
+      "строка браузера телефона"
+    ],
+    "cloaking": "да"
+  }
+}
