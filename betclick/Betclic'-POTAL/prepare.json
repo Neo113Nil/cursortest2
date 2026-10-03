@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "source": "APKCube APKS 1.3 / build 4 (Play Collector folder betclick/Betclic'-POTAL was missing on origin/main)",
+  "package": "com.totalcasino.app.betzone",
+  "version_name": "1.3",
+  "version_code": 4,
+  "app_label": "BlickGames",
+  "play_title": "Betclic'",
+  "developer": "POTAL",
+  "sha256": "42a1ee23311f9e250d7478bfb5317bf0a25abf786cd861b8049d1a6ab7b2435b",
+  "sha256_apks": "94a6b38055c3091576f79b049e60f740289e0d31acbf1aa6268c3f3544eee493",
+  "agent_base_apk": "agent_base.apk",
+  "apks_name": "Betclic_1.3_apkcube.apks",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.totalcasino.app.betzone-4.apk",
+    "apk/com.totalcasino.app.betzone-4-config.arm64_v8a.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.divkit.bridge + PairIP + Unity; IL2CPP strings in global-metadata.dat; agent_src gitignored"
+  },
+  "cloaking": "да",
+  "gate_url": "https://nmoines.site/get_ui_divkit",
+  "link_open_mode": "DivKit Div2View / ACTION_VIEW",
+  "agp": "8.10.0",
+  "kotlin": "да, 1.8",
+  "minSdk": 25,
+  "targetSdk": 36,
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.totalcasino.app.betzone-4.apk",
+    "apk/com.totalcasino.app.betzone-4-config.arm64_v8a.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "cloaking_hints.md",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder missing on origin/main. APKS vc4 from APKCube (~23 MB): base + config.arm64_v8a (no asset split in this APKS). Play «Betclic'» ≠ application-label «BlickGames». Gate https://nmoines.site/get_ui_divkit in SplashGame.cs. agent_src via jadx 1.5.3, not committed.",
+  "errors": []
+}

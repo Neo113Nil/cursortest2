@@ -1,0 +1,102 @@
+{
+  "app_id": "com.totalcasino.app.betzone",
+  "title": "Betclic'",
+  "apk_label": "BlickGames",
+  "developer": "POTAL",
+  "package": "com.totalcasino.app.betzone",
+  "folder": "Betclic'-POTAL",
+  "path": "betclick/Betclic'-POTAL",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "version_name": "1.3",
+  "version_code": "4",
+  "source": "APKCube APKS vc4 (Play Collector folder was missing in git)",
+  "gate_url": "https://nmoines.site/get_ui_divkit",
+  "token_key": "tv34hgtr2",
+  "link_open_mode": "Yandex DivKit Div2View overlay; http(s) via ACTION_VIEW",
+  "agp": "8.10.0",
+  "kotlin": "да, 1.8",
+  "minSdk": 25,
+  "targetSdk": 36,
+  "sha256_base": "42a1ee23311f9e250d7478bfb5317bf0a25abf786cd861b8049d1a6ab7b2435b",
+  "sha256_apks": "94a6b38055c3091576f79b049e60f740289e0d31acbf1aa6268c3f3544eee493",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Betclic' (в приложении: BlickGames)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 1.8"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.android.vending.CHECK_LICENSE, com.totalcasino.app.betzone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity 2023.3 (IL2CPP, GameActivity, libil2cpp, libunity, libgame, libmain, libswappywrapper, libc++_shared), Unity Input System 1.19.0, Google Android Game SDK (GameActivity), PairIP licensecheck, Yandex DivKit 32.33.0, DivKit Glide loader, AndroidSVG (com.caverock.androidsvg), Glide, OkHttp 4.12.0, Kotlin 1.8, kotlinx-coroutines 1.10.2, androidx.activity 1.9.2, androidx.appcompat 1.6.1, androidx.core 1.13.1, androidx.fragment 1.6.2, androidx.recyclerview 1.3.0, androidx.viewpager2 1.0.0, androidx.datastore 1.0.0, androidx.emoji2 1.2.0, androidx.constraintlayout, androidx.startup 1.1.1, androidx.profileinstaller 1.3.1, androidx.lifecycle, androidx.savedstate 1.2.1, com.divkit.bridge, com.pairip.application"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "nmoines.site"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "память Unity PlayerPrefs: player_id, flow_state, flow_config, divkit_fallback, PrefKeyUserId, PrefKeyProgress, PrefKeySkin, KiwiRun_BestDist, KiwiRun_HS"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "offer, ShopOffer, casino, betzone, redirect, divkit, get_ui_divkit, divkit_fallback, player_id, flow_state, flow_config, OnDivKitClose, ApplyDivKitConfig, FormatPayload, TokenKey, ReadLocaleHeader, ReadDeviceLockState, ACTION_VIEW, license check"
+      }
+    ],
+    "domains": [
+      "nmoines.site"
+    ],
+    "collected_data": [
+      "язык телефона",
+      "страна",
+      "строка идентификации приложения",
+      "идентификатор игрока",
+      "состояние блокировки устройства",
+      "системное свойство Android",
+      "ключ токена",
+      "состояние сценария",
+      "конфигурация сценария"
+    ],
+    "cloaking": "да"
+  }
+}
