@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK via download.pureapk.com / data.winudf.com (Play Collector folder chicken road/Chicken Road-CanvasTime Studio had only AndroidManifest.xml, strings.xml, report.pdf on origin/main)",
+  "package": "com.watchfacestudio.cardilot_cts41",
+  "version_name": "1.0.2",
+  "version_code": 2,
+  "derived_apk_id": 3,
+  "app_label": "CARDILOT CTS41 Watch face",
+  "play_title": "Chicken Road",
+  "developer": "CanvasTime Studio",
+  "sha256": "6a3f9df576042bb5e78bafea85ceff3fab6e0566a1349236da6d0e0709a006a6",
+  "xapk_sha256": "702d855e51623ddc7abe60a4d3df6ffdc41a9751e59b9a1263eb86ed6fcc516d",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "CARDILOT CTS41 Watch face_1.0.2_apkcombo.com.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.watchfacestudio.cardilot_cts41.apk",
+    "apk/config.en.apk",
+    "apk/config.fr.apk",
+    "apk/config.mdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3, 2664 classes processed, finished with 7 errors; first-party only MainActivity, BuildConfig, R; agent_src gitignored, first-party zipped as agent_src.zip"
+  },
+  "cloaking": "да",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.watchfacestudio.cardilot_cts41.apk",
+    "apk/config.en.apk",
+    "apk/config.fr.apk",
+    "apk/config.mdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/",
+    "agent_src.zip"
+  ],
+  "note": "Folder on origin/main had no APK. XAPK CARDILOT CTS41 Watch face 1.0.2 vc2 from APKCombo/PureAPK (~12 MB): base + config.en + config.fr + config.mdpi. Play «Chicken Road» ≠ application-label «CARDILOT CTS41 Watch face». Wear OS watch-face companion. No INTERNET, WebView UI, Custom Tabs, OkHttp, HttpURLConnection, remote config, ads, analytics, PairIP, first-party SharedPreferences. Cloak = да by white-shell rule; no offer/white traffic fork in this build. config.ru in splits0.xml is a language split name, not a host."
+}

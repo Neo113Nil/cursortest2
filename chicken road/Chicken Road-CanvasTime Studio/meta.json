@@ -1,0 +1,80 @@
+{
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Chicken Road (в приложении: CARDILOT CTS41 Watch face)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.6.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 1.8"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.watchfacestudio.cardilot_cts41.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin stdlib (metadata 1.8.0), kotlinx-coroutines-core 1.7.3, kotlinx-coroutines-android 1.7.3; AndroidX: activity 1.8.0, annotation-experimental 1.4.0, appcompat 1.7.1, appcompat-resources 1.7.1, arch.core core-runtime, cardview 1.0.0, constraintlayout 2.2.1, coordinatorlayout 1.1.0, core 1.13.0, core-ktx 1.13.0, cursoradapter 1.0.0, customview 1.1.0, documentfile 1.0.0, drawerlayout 1.1.1, dynamicanimation 1.0.0, emoji2 1.3.0, emoji2-views-helper 1.3.0, fragment 1.5.4, interpolator 1.0.0, legacy-support-core-utils 1.0.0, lifecycle-livedata, lifecycle-livedata-core, lifecycle-process, lifecycle-runtime, lifecycle-viewmodel, lifecycle-viewmodel-savedstate, loader 1.0.0, localbroadcastmanager 1.0.0, print 1.0.0, profileinstaller 1.4.0, recyclerview 1.1.0, savedstate 1.2.1, startup-runtime 1.1.1, tracing 1.0.0, transition 1.5.0, vectordrawable 1.1.0, vectordrawable-animated 1.1.0, versionedparcelable 1.1.1, viewpager 1.0.0, viewpager2 1.0.0, wear-remote-interactions 1.1.0; Google Material Components 1.12.0; Google Play services: play-services-wearable 19.0.0, play-services-base 18.5.0, play-services-basement 18.4.0, play-services-tasks 18.2.0 (вместе с ними в APK попали три класса-исключения com.google.firebase.*; самого Firebase SDK нет)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "нет"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "да",
+    "cloaking_brief": "Полный разбор релиза Play-карточки «Chicken Road» (CanvasTime Studio): пакет com.watchfacestudio.cardilot_cts41 1.0.2 (versionCode 2), XAPK через APKCombo/PureAPK, jadx 1.5.3 (2664 класса, first-party только MainActivity, BuildConfig, R). Точка входа: своего Application нет; MainActivity.onCreate ставит activity_main (ConstraintLayout + ImageView) и вешает onClick. Клик → launchPlayStoreOnWear → новый поток → Wearable.getNodeClient(...).getConnectedNodes; если рядом есть узел — RemoteActivityHelper.startRemoteActivity(ACTION_VIEW market://details?id=com.watchfacestudio.cardilot_cts41) + тост «Please check your watch», иначе «No watch is connected». Сеть: android.permission.INTERNET отсутствует, нет OkHttp/Retrofit/Volley/HttpURLConnection. WebView: только неиспользуемый WebView.findAddress в LinkifyCompat; androidx.browser/Custom Tabs нет. Рекламы, аналитики, remote config, first-party SharedPreferences, нативных библиотек нет; Firebase — три класса-исключения из GMS. cloak/gate/offer URL в собственном коде нет. Клоака = да по правилу белой оболочки: карточка Play называется «Chicken Road», application-label в APK — «CARDILOT CTS41 Watch face»; развилки трафика «оффер/белое» внутри этой сборки нет."
+  },
+  "app_id": "com.watchfacestudio.cardilot_cts41",
+  "title": "Chicken Road",
+  "app_label": "CARDILOT CTS41 Watch face",
+  "developer": "CanvasTime Studio",
+  "url": "https://play.google.com/store/apps/details?id=com.watchfacestudio.cardilot_cts41&hl=en&gl=us",
+  "updated": "2026-09-23",
+  "version": "1.0.2",
+  "version_code": 2,
+  "source": "apkcombo"
+}
