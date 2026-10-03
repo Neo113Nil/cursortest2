@@ -1,0 +1,23 @@
+{
+  "app_id": "com.fieldshift.app.scorecore",
+  "title": "betclic",
+  "apk_label": "Sport",
+  "developer": "TILLROW TRADE LTD",
+  "package": "com.fieldshift.app.scorecore",
+  "folder": "betclic-TILLROW TRADE LTD",
+  "path": "betclick/betclic-TILLROW TRADE LTD",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "version_name": "1.1",
+  "version_code": "2",
+  "source": "apkcombo XAPK (Play Collector folder was missing in git)",
+  "gate_url": "https://vovkinapisinka.site/get",
+  "x_api_key": "753D5E1ADA77B20B9959A1030B8E0BA5CF925F2881D3635C3F791E5A0AE0EEB1",
+  "link_open_mode": "OpenURL / ACTION_VIEW",
+  "agp": "8.10.0",
+  "kotlin": "нет",
+  "minSdk": 25,
+  "targetSdk": 36,
+  "unity": "6000.4.3f1 IL2CPP",
+  "sha256_base": "8f4862cb20d4aaeffedda70a53d8e08a9bbe7db7dcba08ede68ad8d52aadb068"
+}
