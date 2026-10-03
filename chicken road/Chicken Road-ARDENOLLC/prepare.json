@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK via d.apkpure.net / data.winudf.com (Play Collector folder chicken road/Chicken Road-ARDENOLLC was missing on origin/main)",
+  "package": "com.kartiop.locak.hagyvagew",
+  "version_name": "1.0",
+  "version_code": 1,
+  "derived_apk_id": 4,
+  "app_label": "Mossdrop: Slime Trails",
+  "play_title": "Chicken Road",
+  "developer": "ARDENOLLC",
+  "sha256": "8efb789273968d886f2311d6ae29124235bcb8a539becd3616d11bbb155e77c4",
+  "xapk_sha256": "e0613fa2025e88c988bae790ced2f7e19dbb9c0ecc6248303f59238433f9aa5d",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "Chicken_Road_1.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "apk/com.kartiop.locak.hagyvagew-1.apk",
+    "apk/com.kartiop.locak.hagyvagew-1-config.arm64_v8a.apk",
+    "apk/com.kartiop.locak.hagyvagew-1-config.en.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors count 10"
+  },
+  "cloaking": "нет",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.kartiop.locak.hagyvagew-1.apk",
+    "apk/com.kartiop.locak.hagyvagew-1-config.arm64_v8a.apk",
+    "apk/com.kartiop.locak.hagyvagew-1-config.en.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "cloaking_hints.md",
+    "meta.json",
+    "agent_src.zip",
+    "agent_src/",
+    "agent_src/com/kartiop/locak/hagyvagew/MainActivity.java"
+  ],
+  "note": "Folder chicken road/Chicken Road-ARDENOLLC was missing on origin/main. XAPK Chicken Road 1.0 / Mossdrop: Slime Trails (vc 1, derived.apk.id 4) from APKPure (~2.1 MB). Splits: config.arm64_v8a, config.en. No asset split and no armeabi_v7a in this XAPK. Play «Chicken Road» ≠ application-label «Mossdrop: Slime Trails». No INTERNET, WebView, Custom Tabs, OkHttp, HttpURLConnection, remote config, ads, analytics. PairIP LicenseClient talks only to Google Play licensing. DataStore gameData / mossdrop_journal.preferences_pb stores local slime-trail progress. config.ru is language split in splits0.xml. Native libs only libandroidx.graphics.path.so and libdatastore_shared_counter.so. agent_src via jadx 1.5.3, not committed as a tree."
+}

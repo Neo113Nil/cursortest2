@@ -1,0 +1,21 @@
+{
+  "all_custom_domains": ["config.ru"],
+  "checked": ["config.ru"],
+  "count": 1,
+  "vt_configured": true,
+  "suspicious_domains": ["config.ru"],
+  "checks": [
+    {
+      "domain": "config.ru",
+      "vt_url": "https://www.virustotal.com/gui/domain/config.ru",
+      "detections": "0/91 (malicious=0, suspicious=0)",
+      "malicious": 0,
+      "suspicious": 0,
+      "total_engines": 91,
+      "redirects_to": "https://config.ru/en/",
+      "page_excerpt": "title: config.ru is for sale. config.ru is for sale en ru en config.ru This domain is for sale The domain is actually the site name and its correct choice influences greatly on the your endeavors success. Often, cost of the domain change during the project running is comparable with the re-branding, so the be",
+      "parking": "похоже на парковку (domain is for sale)",
+      "note": "config.ru — языковой сплит splits0.xml, не сетевой хост"
+    }
+  ]
+}
