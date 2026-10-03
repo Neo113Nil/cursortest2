@@ -1,0 +1,78 @@
+{
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Amazon Kindle"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.13.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "28"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.2.0"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Crashlytics, Bugsnag, Amazon Minerva, Amazon Weblab, Amazon DCP Metrics"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.READ_PHONE_STATE, android.permission.READ_PRIVILEGED_PHONE_STATE, com.amazon.kindle.permission.RECEIVE_ADM_MESSAGE, com.amazon.device.messaging.permission.RECEIVE, android.permission.WAKE_LOCK, amazon.contentsupport.ACCESS_CONTENT_SUPPORT, amazon.contentsupport.READ_FROM_PROVIDER, amazon.contentsupport.WRITE_TO_PROVIDER, com.amazon.CONTENT_PROVIDER_ACCESS, com.amazon.CONTENT_NOTIFICATION_ACCESS, com.amazon.SYNC_RECEIVER_ACCESS, com.amazon.STORE_ACCESS, com.amazon.SHOW_CONTENT_LIBRARY, com.amazon.PRIME_READER_APP, com.amazon.dcp.sso.permission.AMAZON_ACCOUNT_PROPERTY, com.amazon.dcp.sso.permission.account.changed, com.amazon.dcp.sso.permission.EXPIRE_ACCESS_TOKEN, com.amazon.dcp.sso.permission.MANAGE_DEVICE_AND_USER_DATA, com.amazon.dcp.sso.permission.MULTIPLE_PROFILE_AWARE, com.amazon.gardemanger.OFFICEDOC_RECEIVER_ACCESS, com.amazon.mp3.TPA_ACCESS, amazon.permission.COLLECT_METRICS, amazon.permission.APPLICATION_SETTINGS, amazon.permission.SHARED_STORAGE_WRITE, android.permission.WRITE_SETTINGS, android.permission.WRITE_SECURE_SETTINGS, android.permission.MANAGE_USERS, android.permission.INTERACT_ACROSS_USERS, android.permission.INTERACT_ACROSS_USERS_FULL, com.amazon.sharingservice.android.client.proxy.permission.BINDING, com.amazon.alta.h2clientservice.permission.BIND_SERVICE, com.lab126.downloads.DOWNLOAD_SVC_CLIENT_CONNECT, android.permission.DOWNLOAD_WITHOUT_NOTIFICATION, com.amazon.permission.RECEIVE_TOP_WINDOW_CHANGED, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_WIFI_STATE, android.permission.ACCESS_NETWORK_STATE, android.permission.GET_TASKS, android.permission.INTERNET, android.permission.RECEIVE_BOOT_COMPLETED, android.Manifest.permission.INTERNAL_SYSTEM_WINDOW, android.permission.SYSTEM_ALERT_WINDOW, android.permission.READ_EXTERNAL_STORAGE, android.permission.WRITE_MEDIA_STORAGE, android.permission.MANAGE_EXTERNAL_STORAGE, android.permission.READ_FRAME_BUFFER, com.amazon.dcp.messaging.permission.HANDLE_DEVICE_MESSAGE, com.amazon.dcp.sso.permission.USE_DEVICE_CREDENTIALS, com.amazon.identity.permission.GENERIC_IPC, com.amazon.dcp.sso.permission.MANAGE_COR_PFM, com.amazon.dcp.sso.permission.CUSTOMER_ATTRIBUTE_SERVICE, com.amazon.dcp.config.permission.DYN_CONFIG_VALUES_UPDATED, com.amazon.dcp.settings.permission.READ_SETTINGS, com.amazon.dcp.config.permission.READ_SETTINGS, com.amazon.identity.auth.device.perm.AUTH_SDK, android.permission.POST_NOTIFICATIONS, com.amazon.permission.TASK_SWITCHED, com.amazon.firecard.permission.CARD_PRODUCER, com.amazon.firelauncher.permission.LIBRARY_CHANNEL_CARD_PRODUCER, com.amazon.firelauncher.permission.CHECK_FEATURE_SUPPORT, com.amazon.kindle.otter.oobe.OOBE_PERMISSION, com.amazon.identity.mobi.streamline.permission.account.changed, com.amazon.dcp.metrics.permission.METRICS_PERMISSION, com.amazon.dcp.messaging.permission.QUEUE_MESSAGE, com.amazon.firecard.permission.CDA_IMAGE_PROVIDER_ACCESS_PERMISSION, com.amazon.tablet.junco.permission.READ_RESTRICTIONS, com.amazon.tablet.junco.permission.PROFILE_PASSWORD_AUTHENTICATION, android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK, android.permission.ACCESS_FINE_LOCATION, android.permission.ACCESS_COARSE_LOCATION, com.amazon.kindle.socialsharing.PERMISSION_SHARE, com.amazon.kindle.otter.settings.RECEIVE_GOODREADS_UNLINK, android.permission.FOREGROUND_SERVICE, android.permission.FOREGROUND_SERVICE_DATA_SYNC, android.permission.BROADCAST_STICKY, com.audible.hushpuppy.tablet.permission.COMPANION_MAPPING, android.permission.BLUETOOTH, android.permission.READ_BASIC_PHONE_STATE, android.permission.BLUETOOTH_CONNECT, android.permission.CHANGE_NETWORK_STATE, android.permission.AUTHENTICATE_ACCOUNTS, android.permission.GET_ACCOUNTS, android.permission.MANAGE_ACCOUNTS, android.permission.USE_CREDENTIALS, android.permission.CHANGE_WIFI_STATE, com.amazon.kindle.cms.CMS_ACCESS, android.permission.CHANGE_WIFI_MULTICAST_STATE, com.amazon.kindle.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS, com.amazon.pm.permission.SEND_EVENT, com.amazon.kindle.unifiedsearch.permission.CONTENT_PRODUCER, com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER, com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed, com.amazon.dcp.permission.USE_PERSISTENCE_HELPER"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.2.0 / kotlin-stdlib, kotlinx-coroutines 1.10.2, kotlinx-serialization, Jetpack Compose, AndroidX, Google Material 1.8.0, Dagger 2.56.2, OkHttp 3, Firebase Crashlytics, Bugsnag, Amazon MAP / DCP SSO, Amazon Weblab, Amazon Arcus, Amazon Minerva, Amazon KRX reader SDK, Audible Hushpuppy"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "библиотека Kindle (LIBRARY_PREFS), первый запуск и синхронизация книг, Arcus/Weblab, магазин и заметки, реферал Kindle Player (ASIN), идентификатор установки уведомлений. Ключей offer/gate/cloak нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "cloak, casino, whitelist, blacklist, affiliate, landing, offer, gate, redirect, webview, poker"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": "Официальный com.amazon.kindle 14.146.100(2.0.74785.0) (vc 1306036210), Amazon Mobile LLC. Play «Amazon Kindle», application-label «Kindle» — одно приложение-читалка, не белая оболочка. Application = TateApplication → ReddingApplication: Dagger, MAP-вход, Crashlytics/Bugsnag, Weblab/Arcus. Лаунчер = TabletStartActivity (Theme.Splash) → BaseUpgradePage: библиотека/книга, не gate. WebViewActivity грузит EXTRA_URL (магазин/справка Kindle); shouldOverrideUrlLoading пускает тот же хост во встроенном окне, чужой хост — во внешний браузер. Custom Tabs нет. Weblab/Arcus — фичефлаги Kindle. GAID-класс GMS есть, вызова рекламной сети нет. cloak только cloakroom; casino — Public Suffix List OkHttp; poker — жанр книг. Развилки оффер/белая нет."
+  },
+  "app_id": "com.amazon.kindle",
+  "title": "Amazon Kindle",
+  "app_label": "Kindle",
+  "developer": "Amazon Mobile LLC",
+  "url": "https://play.google.com/store/apps/details?id=com.amazon.kindle",
+  "version_name": "14.146.100(2.0.74785.0)",
+  "version_code": 1306036210
+}

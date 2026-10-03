@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:amazon="http://schemas.amazon.com/apk/res/android" xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" android:installLocation="auto" package="com.amazon.kindle" platformBuildVersionCode="36" platformBuildVersionName="16">
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <permission android:description="@string/store_access_permissions_description" android:label="@string/store_access_permissions_label" android:name="com.amazon.STORE_ACCESS" android:permissionGroup="android.permission-group.PERSONAL_INFO" android:protectionLevel="signature"/>
+    <permission android:description="@string/prime_reader_permissions_description" android:label="@string/prime_reader_permissions_label" android:name="com.amazon.PRIME_READER_APP" android:protectionLevel="signature"/>
+    <permission android:name="com.amazon.kindle.safemode.SAFEMODE_LIBRARY_ACCESS" android:protectionLevel="signature"/>
+    <permission android:name="com.amazon.kindle.permission.LIBRARY_ACCESS" android:protectionLevel="signature"/>
+    <permission android:name="com.amazon.permission.TASK_SWITCHED" android:protectionLevel="signature"/>
+    <permission android:name="android.permission.ACCESS_ALL_DOWNLOADS" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="android.permission.WRITE_SETTINGS" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.kindle.LIBRARY_CONTENT_CHANGED_ACCESS" android:protectionLevel="signature"/>
+    <permission android:name="com.amazon.identity.auth.device.perm.AUTH_SDK" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.dcp.sso.permission.account.changed" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.kindle.permission.RECEIVE_ADM_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.amazon.kindle.permission.RECEIVE_ADM_MESSAGE"/>
+    <uses-permission android:name="com.amazon.device.messaging.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="amazon.contentsupport.ACCESS_CONTENT_SUPPORT"/>
+    <uses-permission android:name="amazon.contentsupport.READ_FROM_PROVIDER"/>
+    <uses-permission android:name="amazon.contentsupport.WRITE_TO_PROVIDER"/>
+    <uses-permission android:name="com.amazon.CONTENT_PROVIDER_ACCESS"/>
+    <uses-permission android:name="com.amazon.CONTENT_NOTIFICATION_ACCESS"/>
+    <uses-permission android:name="com.amazon.SYNC_RECEIVER_ACCESS"/>
+    <uses-permission android:name="com.amazon.STORE_ACCESS"/>
+    <uses-permission android:name="com.amazon.SHOW_CONTENT_LIBRARY"/>
+    <uses-permission android:name="com.amazon.PRIME_READER_APP"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.AMAZON_ACCOUNT_PROPERTY"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.account.changed"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.EXPIRE_ACCESS_TOKEN"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.MANAGE_DEVICE_AND_USER_DATA"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.MULTIPLE_PROFILE_AWARE"/>
+    <uses-permission android:name="com.amazon.gardemanger.OFFICEDOC_RECEIVER_ACCESS"/>
+    <uses-permission android:name="com.amazon.mp3.TPA_ACCESS"/>
+    <uses-permission android:name="amazon.permission.COLLECT_METRICS"/>
+    <uses-permission android:name="amazon.permission.APPLICATION_SETTINGS"/>
+    <uses-permission android:name="amazon.permission.SHARED_STORAGE_WRITE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.MANAGE_USERS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="com.amazon.sharingservice.android.client.proxy.permission.BINDING"/>
+    <uses-permission android:name="com.amazon.alta.h2clientservice.permission.BIND_SERVICE"/>
+    <permission android:name="com.lab126.downloads.DOWNLOAD_SVC_CLIENT_CONNECT" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.lab126.downloads.DOWNLOAD_SVC_CLIENT_CONNECT"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="com.amazon.permission.RECEIVE_TOP_WINDOW_CHANGED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.Manifest.permission.INTERNAL_SYSTEM_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_FRAME_BUFFER"/>
+    <uses-permission android:name="com.amazon.dcp.messaging.permission.HANDLE_DEVICE_MESSAGE"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.USE_DEVICE_CREDENTIALS"/>
+    <uses-permission android:name="com.amazon.identity.permission.GENERIC_IPC"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.EXPIRE_ACCESS_TOKEN"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.MANAGE_COR_PFM"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.CUSTOMER_ATTRIBUTE_SERVICE"/>
+    <uses-permission android:name="com.amazon.dcp.config.permission.DYN_CONFIG_VALUES_UPDATED"/>
+    <uses-permission android:name="com.amazon.dcp.settings.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.amazon.dcp.config.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="true"/>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-feature android:name="com.fireos.sdk.amazon_i18n_manager" android:version="3"/>
+    <uses-feature android:name="com.fireos.sdk.downloadmanager" android:version="3"/>
+    <uses-feature android:name="com.fireos.sdk.h2contracts" android:version="2"/>
+    <uses-feature android:name="com.fireos.sdk.h2shared" android:version="2"/>
+    <uses-feature android:name="com.fireos.sdk.i18nutilities" android:version="4"/>
+    <uses-feature android:name="com.fireos.sdk.mapclientlib" android:version="8"/>
+    <uses-feature android:name="com.fireos.sdk.messaging" android:version="2"/>
+    <uses-feature android:name="com.fireos.sdk.retaildemo" android:required="false" android:version="3"/>
+    <uses-feature android:name="com.fireos.sdk.shared_asset_storage" android:required="false" android:version="3"/>
+    <uses-feature android:name="com.fireos.sdk.speech_mark" android:version="1"/>
+    <uses-feature android:name="com.fireos.sdk.whispersync" android:version="2"/>
+    <uses-permission android:name="com.amazon.permission.TASK_SWITCHED"/>
+    <uses-permission android:name="com.amazon.dcp.messaging.permission.HANDLE_DEVICE_MESSAGE"/>
+    <uses-permission android:name="com.amazon.firecard.permission.CARD_PRODUCER"/>
+    <uses-permission android:name="com.amazon.firelauncher.permission.LIBRARY_CHANNEL_CARD_PRODUCER"/>
+    <uses-permission android:name="com.amazon.firelauncher.permission.CHECK_FEATURE_SUPPORT"/>
+    <uses-permission android:name="com.amazon.kindle.otter.oobe.OOBE_PERMISSION"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE"/>
+        </intent>
+        <package android:name="com.amazon.appmanager"/>
+        <package android:name="com.amazon.firelauncher" package="com.amazon.firelauncher"/>
+    </queries>
+    <queries>
+        <package android:name="com.android.mms"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.facebook.orca"/>
+        <package android:name="com.twitter.android"/>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.tencent.mm"/>
+        <package android:name="com.google.android.apps.plus"/>
+        <package android:name="com.tumblr"/>
+        <package android:name="com.linkedin.android"/>
+        <package android:name="com.pinterest"/>
+        <package android:name="com.sina.weibo"/>
+        <package android:name="com.google.android.talk"/>
+        <package android:name="kik.android"/>
+        <package android:name="com.skype.raider"/>
+        <package android:name="jp.naver.line.android"/>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+    </queries>
+    <permission android:name="com.amazon.dcp.messaging.permission.INITIATE_HANDLE_DEVICE_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.amazon.identity.mobi.streamline.permission.account.changed"/>
+    <permission android:description="@string/content_permissions_description" android:label="@string/content_permissions_label" android:name="com.amazon.CONTENT_PROVIDER_ACCESS" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.amazon.dcp.metrics.permission.METRICS_PERMISSION"/>
+    <uses-permission android:name="com.amazon.dcp.messaging.permission.QUEUE_MESSAGE"/>
+    <permission android:label="PERMISSION" android:name="com.amazon.firecard.permission.CDA_IMAGE_PROVIDER_ACCESS_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.amazon.firecard.permission.CDA_IMAGE_PROVIDER_ACCESS_PERMISSION"/>
+    <uses-permission android:name="com.amazon.tablet.junco.permission.READ_RESTRICTIONS"/>
+    <uses-permission android:name="com.amazon.tablet.junco.permission.PROFILE_PASSWORD_AUTHENTICATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.amazon.kindle.socialsharing.PERMISSION_SHARE"/>
+    <uses-permission android:name="com.amazon.kindle.otter.settings.RECEIVE_GOODREADS_UNLINK"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <permission android:name="com.amazon.kindle.socialsharing.PERMISSION_SHARE" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="com.audible.hushpuppy.tablet.permission.COMPANION_MAPPING"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <uses-permission android:name="android.permission.READ_BASIC_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="com.amazon.kindle.cms.CMS_ACCESS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <permission android:name="com.amazon.kindle.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.amazon.kindle.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS"/>
+    <uses-permission android:name="com.amazon.pm.permission.SEND_EVENT"/>
+    <uses-permission android:name="com.amazon.kindle.unifiedsearch.permission.CONTENT_PRODUCER"/>
+    <uses-permission android:name="com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed"/>
+    <uses-permission android:name="com.amazon.dcp.permission.USE_PERSISTENCE_HELPER"/>
+    <uses-feature android:name="com.fireos.sdk.minerva" android:required="true"/>
+    <application android:allowBackup="true" android:allowNativeHeapPointerTagging="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:backupAgent="com.amazon.kindle.persistence.KindleBackupAgentHelper" android:configChanges="orientation|screenSize" android:debuggable="false" android:enabled="true" android:extractNativeLibs="false" android:hardwareAccelerated="true" android:icon="@drawable/launcher_icon" android:label="@string/app_name_short" android:largeHeap="true" android:logo="@drawable/logo" android:name="com.amazon.kcp.application.TateApplication" android:networkSecurityConfig="@xml/network_security_config" android:preserveLegacyExternalStorage="true" android:requestLegacyExternalStorage="true" android:resizeableActivity="true" android:supportsRtl="true" android:theme="@style/Theme.Kindle">
+        <profileable android:shell="true"/>
+        <amazon:enable-feature android:name="com.amazon.device.messaging" android:required="true"/>
+        <uses-library android:name="org.json.simple" android:required="false"/>
+        <uses-library android:name="langpackage-client" android:required="false"/>
+        <amazon:enable-feature amazon:name="com.amazon.device.sync.sdk.internal"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:label="" android:launchMode="singleTop" android:name="com.amazon.article.reader.ArticleReaderActivity" android:screenOrientation="behind" android:theme="@style/Theme.Dynamic.Ruby.Dark.NoActionBar">
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Ruby.Dark.NoActionBar"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Ruby.Light.NoActionBar"/>
+        </activity>
+        <activity android:label="@string/wordwise_settings_title" android:launchMode="singleTop" android:name="com.amazon.kcp.reader.ui.WordWiseSettingsActivity" android:noHistory="true" android:theme="@style/Theme.Library.Settings">
+            <meta-data android:name="out-of-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Ruby.Dark"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Ruby.Light"/>
+        </activity>
+        <activity android:name="com.amazon.kcp.ui.brochure.BrochureActivity" android:theme="@style/Theme.Transparent.Activity"/>
+        <activity android:name="com.amazon.kcp.library.EditCollectionActivity" android:theme="@style/Theme.Dynamic.NoActionBar">
+            <meta-data android:name="out-of-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Ruby.Dark.NoActionBar"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Ruby.Light.NoActionBar"/>
+        </activity>
+        <activity android:configChanges="uiMode" android:name="com.amazon.kcp.library.AddToCollectionActivity" android:theme="@style/Theme.Dynamic.Ruby.Dark.NoActionBar">
+            <meta-data android:name="out-of-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Ruby.Dark.NoActionBar"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Ruby.Light.NoActionBar"/>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.amazon.kcp.library.CollectionItemsActivity" android:theme="@style/Theme.Dynamic.NoActionBar" android:windowSoftInputMode="adjustPan">
+            <meta-data android:name="out-of-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Ruby.Dark.NoActionBar"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Ruby.Light.NoActionBar"/>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.amazon.kcp.library.releaselicense.dialog.RemoteLicenseReleaseActivity" android:theme="@style/Theme.Dynamic.Ruby.Dark.NoActionBar">
+            <meta-data android:name="out-of-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Ruby.Dark.NoActionBar"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Ruby.Light.NoActionBar"/>
+        </activity>
+        <service android:enabled="true" android:exported="true" android:foregroundServiceType="shortService" android:name="com.amazon.kcp.application.LibrarySwitchService" android:permission="com.amazon.kindle.permission.LIBRARY_ACCESS" android:process="@string/library_switch_process">
+            <intent-filter>
+                <action android:name="com.amazon.kindle.library"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.amazon.kcp.library.download.error.DownloadErrorActivity" android:theme="@style/Theme.Dynamic.Dialog">
+            <meta-data android:name="out-of-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Dialog.Ruby.Dark"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Dialog.Ruby.Light"/>
+        </activity>
+        <activity android:name="com.amazon.kindle.krx.tutorial.JITTutorialFragmentActivity" android:theme="@style/Theme.Transparent.Light"/>
+        <activity android:configChanges="orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.amazon.kcp.oob.MainActivity" android:theme="@style/Theme.Dynamic.Ruby.Dark.NoActionBar" android:windowSoftInputMode="adjustPan">
+            <meta-data android:name="out-of-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Ruby.Dark.NoActionBar"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Ruby.Light.NoActionBar"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.amazon.kcp.reader.BookReaderActivity" android:theme="@style/Base.Kindle.Dark.NonLinear" android:windowSoftInputMode="adjustPan">
+            <meta-data android:name="android.app.default_searchable" android:value="com.amazon.kcp.search.BookReaderSearchActivity"/>
+            <meta-data android:name="in-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Base.Kindle.Dark.NonLinear"/>
+            <meta-data android:name="theme_light" android:resource="@style/Base.Kindle.Light.NonLinear"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.amazon.kcp.reader.FullDefinitionActivity" android:theme="@style/Base.Kindle.Dark.NonLinear">
+            <meta-data android:name="android.app.default_searchable" android:value="com.amazon.kcp.search.BookReaderSearchActivity"/>
+            <meta-data android:name="in-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Base.Kindle.Dark.NonLinear"/>
+            <meta-data android:name="theme_light" android:resource="@style/Base.Kindle.Light.NonLinear"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.amazon.kcp.reader.MopReaderActivity" android:theme="@style/Base.Kindle.Dark.NonLinear" android:windowSoftInputMode="adjustPan">
+            <meta-data android:name="android.app.default_searchable" android:value="com.amazon.kcp.search.BookReaderSearchActivity"/>
+            <meta-data android:name="in-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Base.Kindle.Dark.NonLinear"/>
+            <meta-data android:name="theme_light" android:resource="@style/Base.Kindle.Light.NonLinear"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.amazon.kcp.reader.SimplifiedBookReaderActivity" android:theme="@style/Base.Kindle.Dark.NonLinear">
+            <meta-data android:name="in-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Base.Kindle.Dark.NonLinear"/>
+            <meta-data android:name="theme_light" android:resource="@style/Base.Kindle.Light.NonLinear"/>
+        </activity>
+        <activity android:configChanges="uiMode" android:name="com.amazon.kcp.more.InfoActivity" android:theme="@style/Theme.Dynamic.Ruby.Dark">
+            <meta-data android:name="out-of-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Ruby.Dark"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Ruby.Light"/>
+        </activity>
+        <activity android:configChanges="uiMode" android:label="@string/settings" android:name="com.amazon.kcp.library.SettingsActivity" android:theme="@style/Theme.Dynamic">
+            <meta-data android:name="out-of-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Ruby.Dark"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Ruby.Light"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.amazon.kcp.reader.PdfReaderActivity" android:theme="@style/Base.Kindle.Dark.NonLinear">
+            <meta-data android:name="in-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Base.Kindle.Dark.NonLinear"/>
+            <meta-data android:name="theme_light" android:resource="@style/Base.Kindle.Light.NonLinear"/>
+        </activity>
+        <activity android:name="com.amazon.kindle.FTUELoadingActivity" android:theme="@style/Theme.Dynamic.NoActionBar">
+            <meta-data android:name="out-of-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.FtueLoadingActivity.Ruby"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.FtueLoadingActivity.Ruby"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|screenSize" android:label="@string/phl_title" android:name="com.amazon.kcp.reader.PopularHighlightsActivity" android:theme="@style/Theme.NotebookStyle.Light">
+            <meta-data android:name="in-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.NotebookStyle"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.NotebookStyle.Light"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:name="com.amazon.kcp.reader.sidepanel.ExpandedSidePanelActivity" android:theme="@style/Theme.ReaderStyle" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.amazon.kcp.reader.ImageZoomActivity" android:theme="@style/Theme.NoTitleBar.NoBackground"/>
+        <activity android:name="com.amazon.kcp.periodicals.UnFilteredArticleListActivity" android:theme="@style/Theme.ReaderStyle.NoOverlayActionBar">
+            <meta-data android:name="android.app.default_searchable" android:value="com.amazon.kcp.search.PeriodicalReaderSearchActivity"/>
+        </activity>
+        <activity android:name="com.amazon.kcp.periodicals.FilteredArticleListActivity" android:theme="@style/Theme.ReaderStyle.NoOverlayActionBar">
+            <meta-data android:name="android.app.default_searchable" android:value="com.amazon.kcp.search.PeriodicalReaderSearchActivity"/>
+        </activity>
+        <activity android:label="@string/section_list_title" android:name="com.amazon.kcp.periodicals.SectionListActivity">
+            <meta-data android:name="android.app.default_searchable" android:value="com.amazon.kcp.search.PeriodicalReaderSearchActivity"/>
+        </activity>
+        <activity android:configChanges="uiMode" android:label="@string/about_title" android:name="com.amazon.kcp.info.AboutActivity" android:theme="@style/Theme.Dynamic">
+            <meta-data android:name="out-of-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Ruby.Dark"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Ruby.Light"/>
+        </activity>
+        <activity android:configChanges="uiMode" android:label="@string/setting_manage_additional_fonts_title" android:name="com.amazon.kcp.reader.LargeFontsActivity" android:theme="@style/Theme.Library.Settings">
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Ruby.Dark"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Ruby.Light"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:name="com.amazon.kcp.redding.WebViewActivity" android:theme="@style/default_theme">
+            <meta-data android:name="out-of-book" android:value="true"/>
+        </activity>
+        <activity android:configChanges="uiMode" android:name="com.amazon.kcp.redding.AlertActivity" android:theme="@style/Theme.Dynamic.Dialog">
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Dialog.Ruby.Dark"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Dialog.Ruby.Light"/>
+        </activity>
+        <activity android:configChanges="uiMode" android:name="com.amazon.kcp.redding.ConnectivityAwareAlertActivity" android:theme="@style/Theme.Dynamic.Dialog">
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Dialog.Ruby.Dark"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Dialog.Ruby.Light"/>
+        </activity>
+        <activity android:configChanges="uiMode" android:label="@string/edit_device_name_title" android:name="com.amazon.kcp.library.EditDeviceNameActivity" android:theme="@style/Theme.Library.Settings" android:windowSoftInputMode="stateVisible">
+            <meta-data android:name="out-of-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Ruby.Dark"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Ruby.Light"/>
+        </activity>
+        <activity android:configChanges="uiMode" android:label="@string/send_to_kindle_title" android:name="com.amazon.kcp.library.SendToKindleDetailsActivity" android:theme="@style/Theme.Library.Settings">
+            <meta-data android:name="out-of-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Ruby.Dark"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Ruby.Light"/>
+        </activity>
+        <activity android:exported="false" android:label="@string/app_name_short" android:launchMode="singleTop" android:name="com.amazon.kcp.search.v2.SearchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/library_searchable"/>
+            <meta-data android:name="out-of-book" android:value="true"/>
+        </activity>
+        <activity android:exported="false" android:label="@string/app_name_short" android:launchMode="singleTop" android:name="com.amazon.kcp.search.SearchActivity" android:theme="@style/Theme.Dynamic">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/library_searchable"/>
+        </activity>
+        <activity android:configChanges="uiMode" android:exported="false" android:label="@string/app_name_short" android:launchMode="singleTop" android:name="com.amazon.kcp.search.RubySearchActivity" android:theme="@style/Theme.Dynamic.Ruby.Dark">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/library_searchable"/>
+            <meta-data android:name="out-of-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Ruby.Dark"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Ruby.Light"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:exported="false" android:label="@string/reader_search_result_title" android:launchMode="singleTop" android:name="com.amazon.kcp.search.BookReaderSearchActivity" android:theme="@style/Theme.ReaderSearch.Dark">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/reader_searchable"/>
+            <meta-data android:name="in-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.ReaderSearch.Dark"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.ReaderSearch.Light"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|screenSize" android:exported="false" android:label="@string/reader_search_result_title" android:launchMode="singleTop" android:name="com.amazon.kcp.search.enhancedsearch.ReaderSearchActivity" android:theme="@style/Theme.ReaderSearch.Enhanced.Dark">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="in-book" android:value="true"/>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/reader_searchable"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.ReaderSearch.Enhanced.Dark"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.ReaderSearch.Enhanced.Light"/>
+        </activity>
+        <activity android:name="com.amazon.kcp.reader.BookTOCActivity" android:theme="@style/Theme.Dynamic.NoTitleBar"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.amazon.kcp.store.StoreActivity" android:permission="com.amazon.STORE_ACCESS" android:theme="@android:style/Theme.NoDisplay"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.amazon.kcp.store.RubyStoreActivity" android:permission="com.amazon.STORE_ACCESS" android:theme="@style/Theme.Dynamic.Ruby.Light" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="out-of-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Ruby.Dark"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Ruby.Light"/>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:label="" android:name="com.amazon.kindle.bookopen.content.BookOpenActivity" android:screenOrientation="locked" android:theme="@style/Theme.BookOpenSplash.Ruby.Light">
+            <meta-data android:name="out-of-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.BookOpenSplash.Ruby.Dark"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.BookOpenSplash.Ruby.Light"/>
+        </activity>
+        <activity android:name="com.amazon.kindle.ContentSchemeBookOpenHelperActivity" android:theme="@style/Theme.Dynamic"/>
+        <activity android:configChanges="uiMode" android:name="com.amazon.kindle.setting.layout.ItemsActivity" android:theme="@style/Theme.Dynamic.Ruby.Dark">
+            <meta-data android:name="out-of-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Ruby.Dark"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Ruby.Light"/>
+        </activity>
+        <provider android:authorities="com.amazon.docs.krx.docscontentprovider" android:exported="true" android:name="com.amazon.kindle.docs.DocsContentProvider" android:syncable="false"/>
+        <provider android:authorities="kindle" android:exported="false" android:name="com.amazon.kcp.search.AndroidSearchContentProvider" android:syncable="false"/>
+        <provider android:authorities="kindlereader" android:exported="false" android:name="com.amazon.kcp.search.AndroidSearchRecentSuggestionsProvider" android:syncable="false"/>
+        <provider android:authorities="com.amazon.identity.auth.device.MapInfoProvider.KindleMAPInformationProvider" android:exported="true" android:name="com.amazon.kindle.map.KindleMAPInformationProvider" android:permission="com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER"/>
+        <provider android:authorities="com.amazon.kindle.NotebookShareProviderModule" android:exported="false" android:grantUriPermissions="true" android:name="com.amazon.notebook.module.exporting.NotebookExportFileProvider" android:syncable="false"/>
+        <provider android:authorities="@string/file_provider_authority" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <provider android:authorities="com.amazon.kindle.bookmetadataprovider" android:exported="true" android:name="com.amazon.kindle.contentprovider.ExternalQueryRouter" android:syncable="false"/>
+        <activity android:configChanges="orientation|screenLayout|uiMode|screenSize" android:exported="true" android:hardwareAccelerated="false" android:launchMode="singleTask" android:name="com.amazon.kindle.TabletStartActivity" android:noHistory="true" android:screenOrientation="locked" android:theme="@style/Theme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="kindle"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="read.amazon.com"/>
+                <data android:host="read.amazon.com"/>
+                <data android:host="read.amazon.com"/>
+                <data android:host="read.amazon.ca"/>
+                <data android:host="read.amazon.co.jp"/>
+                <data android:host="read.amazon.co.uk"/>
+                <data android:host="read.amazon.com.au"/>
+                <data android:host="read.amazon.in"/>
+                <data android:host="leer.amazon.com.mx"/>
+                <data android:host="leer.amazon.es"/>
+                <data android:host="leggi.amazon.it"/>
+                <data android:host="ler.amazon.com.br"/>
+                <data android:host="lesen.amazon.de"/>
+                <data android:host="lezen.amazon.nl"/>
+                <data android:host="lire.amazon.fr"/>
+                <data android:pathPrefix="/application"/>
+                <data android:pathPrefix="/gp/r.html"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:mimeType="application/x-mobipocket-ebook" android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:mimeType="application/x-mobi8-ebook" android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:mimeType="application/x-mobipocket-ebook" android:scheme="content"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:mimeType="application/x-mobi8-ebook" android:scheme="content"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:mimeType="application/pdf" android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:mimeType="application/pdf" android:scheme="content"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*" android:pathPattern=".*.pdf" android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.kindle.action.SHOW_AUDIOBOOK_COLLECTIONS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.kindle.action.SHOW_DOC_COLLECTIONS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:name="com.amazon.kindle.TabletUpgradePage" android:targetActivity="com.amazon.kindle.TabletStartActivity"/>
+        <activity android:configChanges="uiMode" android:label="@string/kre_more_as_notification_setting" android:name="com.amazon.kcp.library.NotificationsActivity" android:theme="@style/Theme.Library.Settings">
+            <meta-data android:name="out-of-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Ruby.Dark"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Ruby.Light"/>
+        </activity>
+        <activity android:configChanges="uiMode" android:label="@string/color_theme_settings" android:name="com.amazon.kcp.library.ColorThemeActivity" android:theme="@style/Theme.Dynamic.Ruby.Light">
+            <meta-data android:name="out-of-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Ruby.Dark"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Ruby.Light"/>
+        </activity>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTask" android:name="com.amazon.kcp.notifications.ChannelSignupDialog" android:theme="@style/Theme.Kindle.Light.NoActionBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.amazon.kindle.mangaviewer.TateMangaPagerActivity" android:theme="@style/Base.Kindle.Dark.NonLinear">
+            <meta-data android:name="in-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Base.Kindle.Dark.NonLinear"/>
+            <meta-data android:name="theme_light" android:resource="@style/Base.Kindle.Light.NonLinear"/>
+        </activity>
+        <activity android:name="com.amazon.kcp.application.FatalErrorActivity" android:theme="@style/Theme.AppCompat.DayNight.Dialog.Alert"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.amazon.kindle.tutorial.TooltipTutorialActivity" android:theme="@style/Theme.Transparent.Fullscreen.Light"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.amazon.kindle.tutorial.BrochureActivity" android:theme="@style/Theme.Transparent.Fullscreen.Ruby"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.amazon.kindle.tutorial.StandardFullPageActivity" android:theme="@style/Theme.Transparent.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|screenSize" android:name="com.amazon.kindle.tutorial.DialogTutorialActivity" android:theme="@style/Theme.Transparent.Fullscreen.DialogTutorial.Light"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enableOnBackInvokedCallback="false" android:name="com.amazon.krf.media.FullscreenVideoActivity" android:theme="@style/Theme.ReaderStyle.Black"/>
+        <activity android:label="@string/about_title" android:name="com.amazon.kcp.history.HistoryActivity" android:theme="@style/Theme.Dynamic.Ruby.Dark.NoActionBar">
+            <meta-data android:name="out-of-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Ruby.Dark.NoActionBar"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Ruby.Light.NoActionBar"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|screenSize" android:label="@string/help_and_feedback_title" android:name="com.amazon.kcp.helpandfeedback.HelpAndFeedbackActivity" android:theme="@style/Theme.Dynamic.Ruby.Dark.NoActionBar">
+            <meta-data android:name="out-of-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Ruby.Dark.NoActionBar"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Ruby.Light.NoActionBar"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|screenSize" android:name="com.amazon.kcp.betasurvey.BetaSurveyActivity" android:theme="@style/Theme.Dynamic.Ruby.Dark.NoActionBar">
+            <meta-data android:name="out-of-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Ruby.Dark.NoActionBar"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Ruby.Light.NoActionBar"/>
+        </activity>
+        <activity android:enabled="true" android:name="com.amazon.kindle.RubyOnFireActivity"/>
+        <activity android:name="com.amazon.kindle.restrictions.ExitActivity" android:theme="@android:style/Theme.NoDisplay"/>
+        <activity android:name="com.amazon.kcp.home.ui.NativeDetailPageActivity" android:theme="@style/Theme.Dynamic.NoActionBar">
+            <meta-data android:name="out-of-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Ruby.Dark.NoActionBar"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Ruby.Light.NoActionBar"/>
+        </activity>
+        <receiver android:enabled="false" android:exported="true" android:name="com.amazon.identity.auth.device.storage.LambortishClock$ChangeTimestampsBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.amazon.kindle.receiver.SearchContentReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.kindle.unifiedsearch.action.REFRESH_CONTENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.amazon.kcp.application.AccountRemovedBroadcastReceiver" android:permission="com.amazon.dcp.sso.permission.account.changed">
+            <intent-filter>
+                <action android:name="com.amazon.dcp.sso.action.account.removed"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.identity.mobi.streamline.action.account.removed"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.amazon.identity.auth.device.storage.DirtyDataSyncingService" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK">
+            <intent-filter>
+                <action android:name="com.amazon.identity.action.SYNC_DIRTY_DATA"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.amazon.identity.auth.device.storage.DatabaseCleaner$DatabaseCleaningService" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK">
+            <intent-filter>
+                <action android:name="com.amazon.identity.action.CLEAN_DATA"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:foregroundServiceType="dataSync" android:name="com.amazon.kcp.application.FTUESyncService"/>
+        <service android:exported="true" android:name="com.amazon.identity.auth.accounts.MAPSubAuthenticatorService">
+            <intent-filter>
+                <action android:name="com.amazon.dcp.sso.AccountSubAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="com.amazon.dcp.sso.AccountSubAuthenticator" android:resource="@xml/sub_authenticator"/>
+        </service>
+        <service android:enabled="true" android:exported="true" android:foregroundServiceType="dataSync" android:name="com.amazon.kindle.safemode.library.SafeModeLibraryManagerService" android:permission="com.amazon.kindle.safemode.SAFEMODE_LIBRARY_ACCESS">
+            <intent-filter>
+                <action android:name="com.amazon.kindle.safemode.action.DOWNLOAD_SUBSCRIPTION_BOOK"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.amazon.kindle.GlobalSyncBroadcastEventTracker" android:permission="com.amazon.permission.GLOBAL_SYNC">
+            <intent-filter>
+                <action android:name="com.amazon.intent.SYNC"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.amazon.kindle.tts.TtsVoiceDownloadReceiverNew">
+            <intent-filter>
+                <action android:name="com.amazon.kindle.CONTENT_SUPPORT_INSTALLED"/>
+                <action android:name="com.amazon.kindle.CONTENT_SUPPORT_INSTALL_FAILED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.amazon.kindle.modules.DemoModule" android:permission="com.amazon.kor.demo.permission.DEMO_RESET">
+            <intent-filter>
+                <action android:name="com.amazon.kor.demo.APPLICATION_RESET"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.amazon.kindle.DoFTUEReceiver" android:permission="com.amazon.kindle.tablet.permission.ftue">
+            <intent-filter>
+                <action android:name="com.amazon.kindle.tablet.do_ftue"/>
+                <data android:host="com.amazon.kindle.tablet.ftue" android:path="/kindle" android:scheme="amazon-ftue"/>
+                <data android:host="com.amazon.kindle.tablet.ftue" android:path="/kindle_all" android:scheme="amazon-ftue"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="true" android:foregroundServiceType="dataSync" android:name="com.amazon.kcp.service.BackendInteractionService" android:permission="com.amazon.CONTENT_PROVIDER_ACCESS">
+            <intent-filter>
+                <action android:name="com.amazon.kindle.action.FTUE"/>
+                <action android:name="com.amazon.kindle.action.REGISTER"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.amazon.kindle.PrimeAppReceiver" android:permission="com.amazon.PRIME_READER_APP">
+            <intent-filter>
+                <action android:name="com.amazon.kindle.PRIME"/>
+                <action android:name="android.intent.action.SCREEN_ON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.amazon.kindle.safemode.SafeModeBroadcastReceiver" android:permission="com.amazon.CONTENT_PROVIDER_ACCESS">
+            <intent-filter>
+                <action android:name="com.amazon.kindle.safemode.action.ITEMS_REMOVED_FROM_CATALOG"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.amazon.kcp.accounts.AccountCORPFMChangedListener" android:permission="com.amazon.dcp.sso.permission.MANAGE_COR_PFM">
+            <intent-filter>
+                <action android:name="com.amazon.dcp.sso.broadcast.CORPFMHasChanged"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.amazon.kcp.debug.DebugCommandReceiver" android:permission="com.amazon.CONTENT_PROVIDER_ACCESS">
+            <intent-filter>
+                <action android:name="com.amazon.kindle.debug.action.FLIP_ORIENTATION"/>
+                <action android:name="com.amazon.kindle.debug.action.DEREGISTER_USER"/>
+                <action android:name="com.amazon.kindle.debug.action.CLEAR_NOTIFICATION"/>
+                <action android:name="com.amazon.kindle.debug.action.TRACE_START"/>
+                <action android:name="com.amazon.kindle.debug.action.TRACE_STOP"/>
+                <action android:name="com.amazon.kindle.debug.action.DISABLE_TUTORIALS"/>
+                <action android:name="com.amazon.kindle.debug.action.ENABLE_TUTORIALS"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.amazon.kcp.notifications.ADMNotificationHandler" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:enabled="false" android:exported="true" android:name="com.amazon.kcp.notifications.ADMNotificationJobService$ADMReceiver" android:permission="com.amazon.device.messaging.permission.SEND">
+            <intent-filter>
+                <action android:name="com.amazon.device.messaging.intent.REGISTRATION"/>
+                <action android:name="com.amazon.device.messaging.intent.RECEIVE"/>
+                <category android:name="com.amazon.kindle"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.amazon.kcp.notifications.ADMNotificationJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:enabled="false" android:exported="true" android:name="com.amazon.kcp.notifications.ADMNotificationHandler$ADMReceiver" android:permission="com.amazon.device.messaging.permission.SEND">
+            <intent-filter>
+                <action android:name="com.amazon.device.messaging.intent.REGISTRATION"/>
+                <action android:name="com.amazon.device.messaging.intent.RECEIVE"/>
+                <category android:name="com.amazon.kindle"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.kcp.notifications.receiver.ReaderNotificationsActionReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.kcp.notifications.TAP_ACTION"/>
+                <action android:name="com.amazon.kcp.notifications.FIRST_BUTTON"/>
+                <action android:name="com.amazon.kcp.notifications.SECOND_BUTTON"/>
+                <data android:scheme="kindle"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.amazon.kcp.notifications.NotificationsPublishingJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.amazon.kcp.notifications.NotificationsPublishingIntentService"/>
+        <receiver android:exported="false" android:name="com.amazon.kcp.notifications.NotificationsCancellationReceiver"/>
+        <receiver android:exported="false" android:name="com.amazon.kcp.notifications.ReaderNotificationsAlarmReceiver"/>
+        <receiver android:exported="true" android:name="com.amazon.kindle.cards.FireCardProducerEventReceiver" android:permission="com.amazon.firecard.permission.PRODUCER_CALLBACK_ACCESS">
+            <intent-filter>
+                <action android:name="com.amazon.firecard.action.REFRESH_CARDS"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="isBETA" android:value="false"/>
+        <meta-data android:name="KindleVersionNumber" android:value="14.146.100"/>
+        <meta-data android:name="KindleVersionNumberCode" android:value="version=1306036200"/>
+        <meta-data android:name="android.content.APP_RESTRICTIONS" android:resource="@xml/app_restrictions"/>
+        <service android:enabled="true" android:name="com.amazon.kcp.reader.ui.ThumbnailService" android:process=":thumbnailService"/>
+        <meta-data android:name="LOCALYTICS_ROLLUP_KEY" android:value="81e6e41428e2a32d24032c4-c3c2edbc-fad1-11e2-3880-00a426b17dd8"/>
+        <service android:exported="false" android:name="org.chromium.content.app.SandboxedProcessService0" android:permission="org.chromium.content_shell.permission.SANDBOX" android:process=":sandboxed_process0"/>
+        <service android:exported="false" android:name="org.chromium.content.app.SandboxedProcessService1" android:permission="org.chromium.content_shell.permission.SANDBOX" android:process=":sandboxed_process1"/>
+        <service android:exported="false" android:name="org.chromium.content.app.SandboxedProcessService2" android:permission="org.chromium.content_shell.permission.SANDBOX" android:process=":sandboxed_process2"/>
+        <service android:exported="false" android:name="org.chromium.content.app.SandboxedProcessService3" android:permission="org.chromium.content_shell.permission.SANDBOX" android:process=":sandboxed_process3"/>
+        <service android:exported="false" android:name="org.chromium.content.app.SandboxedProcessService4" android:permission="org.chromium.content_shell.permission.SANDBOX" android:process=":sandboxed_process4"/>
+        <service android:exported="false" android:name="org.chromium.content.app.SandboxedProcessService5" android:permission="org.chromium.content_shell.permission.SANDBOX" android:process=":sandboxed_process5"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <provider android:authorities="com.amazon.kindle.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <meta-data android:name="com.bugsnag.android.API_KEY" android:value="6889a98c3b797aa718f3df529385438a"/>
+        <meta-data android:name="com.bugsnag.android.BUILD_UUID" android:value="0d94c16c51b96586dcc38c54b936d571c4590f0671af6835f8c0643711ff22bd"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:name="com.amazon.kindle.rendering.KRIFReaderActivity" android:theme="@style/KrifActivityStyle"/>
+        <activity android:launchMode="singleTask" android:name="com.amazon.kcp.reader.ui.WordWiseAdjustmentActivity" android:theme="@style/Theme.WordwiseHolo"/>
+        <activity android:launchMode="singleTask" android:name="com.amazon.kcp.reader.ui.PinyinAdjustmentActivity" android:theme="@style/Theme.WordwiseHolo"/>
+        <receiver android:exported="true" android:name="com.amazon.kcp.wordwise.download.WordWiseMessageReceiver" android:permission="com.amazon.dcp.messaging.permission.INITIATE_HANDLE_DEVICE_MESSAGE">
+            <intent-filter>
+                <action android:name="com.amazon.dcp.messaging.topic.DeviceMessaging.LanguageLayer.MessageResponse"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.amazon.kcp.library.TabletLibraryActivity" android:theme="@style/Theme.Dynamic.Ruby.Dark.NoActionBar" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.amazon.kindle.action.SHOW_BOOKS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.amazon.kindle.action.SHOW_NEWS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.amazon.settings.SHOW_APP_SETTINGS" android:value="true"/>
+        <activity android:exported="true" android:label="@string/kindle_settings" android:launchMode="singleTask" android:name="com.amazon.kcp.reader.ui.ReaderSettingActivity" android:theme="@style/Theme.Kindle.Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="amazon.intent.category.SETTINGS"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.amazon.kindle.fileprovider.IMAGE_ACCESS_AUTHORITY" android:enabled="true" android:exported="true" android:name="com.amazon.kindle.cards.PermissionContentProvider" android:permission="com.amazon.firecard.permission.CDA_IMAGE_PROVIDER_ACCESS_PERMISSION"/>
+        <meta-data android:name="fire_launcher_library_section" android:resource="@xml/fire_launcher_library_section"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.amazon.kcp.reader.ui.BookOpenSplashActivity" android:theme="@style/Theme.Splash" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.amazon.kindle.OPEN_BOOK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.amazon.kcp.store.FOSLauncherStoreProxyActivity" android:permission="com.amazon.STORE_ACCESS" android:theme="@style/Theme.Dynamic.NoActionBar">
+            <intent-filter>
+                <action android:name="com.amazon.kindle.action.OPEN_STORE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="true" android:foregroundServiceType="dataSync" android:name="com.amazon.kcp.service.ContentActionService" android:permission="com.amazon.CONTENT_PROVIDER_ACCESS">
+            <intent-filter>
+                <action android:name="com.amazon.kindle.action.DOWNLOAD"/>
+                <action android:name="com.amazon.kindle.action.DELETE"/>
+                <action android:name="com.amazon.kindle.action.CANCEL_DOWNLOAD"/>
+                <action android:name="com.amazon.kindle.action.KEEP"/>
+                <action android:name="com.amazon.kindle.action.UNKEEP"/>
+                <action android:name="com.amazon.kindle.action.HIDE"/>
+                <action android:name="com.amazon.kindle.action.FORCED_SYNC_METADATA"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.amazon.kindle.todo.DcpTodoReceiver" android:permission="com.amazon.dcp.messaging.permission.INITIATE_HANDLE_DEVICE_MESSAGE">
+            <intent-filter>
+                <action android:name="com.amazon.dcp.messaging.topic.V1.DEL.EBOK"/>
+                <action android:name="com.amazon.dcp.messaging.topic.V1.DEL.EBSP"/>
+                <action android:name="com.amazon.dcp.messaging.topic.V1.DEL.MAGZ"/>
+                <action android:name="com.amazon.dcp.messaging.topic.V1.DEL.NWPR"/>
+                <action android:name="com.amazon.dcp.messaging.topic.V1.DOWNLOAD.APNX"/>
+                <action android:name="com.amazon.dcp.messaging.topic.V1.DOWNLOAD.ASC"/>
+                <action android:name="com.amazon.dcp.messaging.topic.V1.DOWNLOAD.AUCM"/>
+                <action android:name="com.amazon.dcp.messaging.topic.V1.DOWNLOAD.PHL"/>
+                <action android:name="com.amazon.dcp.messaging.topic.V1.GET.EBOK"/>
+                <action android:name="com.amazon.dcp.messaging.topic.V1.GET.EBSP"/>
+                <action android:name="com.amazon.dcp.messaging.topic.V1.GET.MAGZ"/>
+                <action android:name="com.amazon.dcp.messaging.topic.V1.GET.NWPR"/>
+                <action android:name="com.amazon.dcp.messaging.topic.V1.GET.PDOC"/>
+                <action android:name="com.amazon.dcp.messaging.topic.V1.GET.PSNL"/>
+                <action android:name="com.amazon.dcp.messaging.topic.V1.SET.ACSR"/>
+                <action android:name="com.amazon.dcp.messaging.topic.V1.SND.SNAX"/>
+                <action android:name="com.amazon.dcp.messaging.topic.V1.UPD_ANOT.EBOK"/>
+                <action android:name="com.amazon.dcp.messaging.topic.V1.UPD_ANOT.EBSP"/>
+                <action android:name="com.amazon.dcp.messaging.topic.V1.UPD_ANOT.PDOC"/>
+                <action android:name="com.amazon.dcp.messaging.topic.V1.UPD_LPRD.EBOK"/>
+                <action android:name="com.amazon.dcp.messaging.topic.V1.UPD_LPRD.EBSP"/>
+                <action android:name="com.amazon.dcp.messaging.topic.V1.UPD_LPRD.PDOC"/>
+                <action android:name="com.amazon.dcp.messaging.topic.V1.UPLOAD.SNAP"/>
+                <action android:name="com.amazon.dcp.messaging.topic.V1.SET.SCFG"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.amazon.kindle.todo.AssetOwnershipSMDPollBroadcastReceiver" android:permission="com.amazon.dcp.messaging.permission.INITIATE_HANDLE_DEVICE_MESSAGE">
+            <intent-filter>
+                <action android:name="com.amazon.dcp.messaging.topic.AssetOwnership.SMD.Poll"/>
+            </intent-filter>
+        </receiver>
+        <service android:foregroundServiceType="mediaPlayback" android:name="com.amazon.kindle.ttscore.TextToSpeechService"/>
+        <receiver android:exported="true" android:name="com.amazon.kcp.application.LocaleChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="uiMode" android:label="@string/automatic_update_toolbar_text" android:name="com.amazon.versioning.reader.ui.activity.AutomaticUpdatePanelActivity"/>
+        <activity android:configChanges="uiMode" android:label="@string/book_update_settings_category" android:name="com.amazon.versioning.reader.ui.activity.BookUpdateSettingsActivity"/>
+        <activity android:configChanges="uiMode" android:label="@string/settings_book_updates" android:name="com.amazon.versioning.reader.ui.activity.NewBookUpdatesSettingsActivity"/>
+        <activity android:configChanges="uiMode" android:label="@string/rce_plugin_activity_title" android:launchMode="singleTop" android:name="com.amazon.kindle.reportcontenterror.activity.CategorySelectionActivity" android:theme="@style/RceTheme_Light"/>
+        <activity android:configChanges="uiMode" android:launchMode="singleTop" android:name="com.amazon.kindle.reportcontenterror.activity.SubcategorySelectionActivity" android:parentActivityName="com.amazon.kindle.reportcontenterror.activity.CategorySelectionActivity" android:theme="@style/RceTheme_Light">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".activity.CategorySelectionActivity"/>
+        </activity>
+        <activity android:configChanges="uiMode" android:launchMode="singleTop" android:name="com.amazon.kindle.reportcontenterror.activity.FeedbackViewComposerActivity" android:parentActivityName="com.amazon.kindle.reportcontenterror.activity.SubcategorySelectionActivity" android:theme="@style/RceTheme_Light">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".activity.SubcategorySelectionActivity"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|screenSize" android:name="com.amazon.kcp.periodicals.activities.PeriodicalContentListActivity" android:theme="@style/Theme.ReaderStyle.NoOverlayActionBar">
+            <meta-data android:name="android.app.default_searchable" android:value="com.amazon.kcp.search.PeriodicalReaderSearchActivity"/>
+            <meta-data android:name="in-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.ReaderStyle.Black.NoOverlayActionBar"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.ReaderStyle.NoOverlayActionBar"/>
+        </activity>
+        <activity android:name="com.amazon.kcp.periodicals.CoverActivity" android:theme="@style/Theme.NoTitleBar.NoBackground"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.amazon.kcp.periodicals.PeriodicalReaderActivity" android:theme="@style/Base.Kindle.Dark.NonLinear">
+            <meta-data android:name="android.app.default_searchable" android:value="com.amazon.kcp.search.PeriodicalReaderSearchActivity"/>
+            <meta-data android:name="in-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Base.Kindle.Dark.NonLinear"/>
+            <meta-data android:name="theme_light" android:resource="@style/Base.Kindle.Light.NonLinear"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|screenSize" android:exported="false" android:label="@string/reader_search_result_title" android:launchMode="singleTop" android:name="com.amazon.kcp.search.PeriodicalReaderSearchActivity" android:theme="@style/Theme.ReaderSearch.Dark">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/reader_searchable"/>
+            <meta-data android:name="in-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.ReaderSearch.Dark"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.ReaderSearch.Light"/>
+        </activity>
+        <receiver android:exported="true" android:name="com.amazon.nwstd.utils.LocaleChangeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="true" android:name="com.amazon.nwstd.service.NwstdIntentService"/>
+        <service android:enabled="true" android:exported="true" android:name="com.amazon.nwstd.service.NwstdJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode|screenSize" android:label="@string/before_you_go" android:launchMode="singleTask" android:name="com.amazon.ea.ui.EndActionsActivity"/>
+        <activity android:configChanges="uiMode" android:label="@string/endactions_reviews_editing_activity_title" android:name="com.amazon.ea.ui.widget.ratingandreview.ReviewBookActivity" android:parentActivityName="com.amazon.ea.ui.EndActionsActivity" android:windowSoftInputMode="stateVisible|adjustResize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.amazon.ea.ui.EndActionsActivity"/>
+        </activity>
+        <activity android:configChanges="uiMode" android:label="@string/endactions_reviews_viewing_activity_title" android:name="com.amazon.ea.ui.widget.ratingandreview.PublishedReviewActivity" android:parentActivityName="com.amazon.ea.ui.EndActionsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.amazon.ea.ui.EndActionsActivity"/>
+        </activity>
+        <activity android:label="start-actions" android:name="com.amazon.startactions.ui.OverlayDummyActivity"/>
+        <activity android:configChanges="uiMode" android:label="@string/featuredbooks_title" android:launchMode="singleTask" android:name="com.amazon.startactions.ui.BookRecommendationsActivity"/>
+        <receiver android:exported="true" android:name="com.amazon.startactions.plugin.receiver.GoodreadsLinkReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.kindle.otter.settings.GOODREADS_UNLINKED"/>
+                <action android:name="com.amazon.kindle.otter.settings.GOODREADS_LINKED"/>
+            </intent-filter>
+        </receiver>
+        <service android:foregroundServiceType="dataSync" android:name="com.amazon.kindle.sdcard.librarytransfer.LibraryTransferService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:foregroundServiceType="dataSync" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <meta-data android:name="com.bugsnag.android.ENDPOINT_NOTIFY" android:value="https://event.bugsnag.kindle.amazon.dev"/>
+        <meta-data android:name="com.bugsnag.android.ENDPOINT_SESSIONS" android:value="https://session.bugsnag.kindle.amazon.dev"/>
+        <meta-data android:name="com.bugsnag.performance.android.ENDPOINT" android:value="https://trace.bugsnag.kindle.amazon.dev/v1/traces"/>
+        <provider android:authorities="com.amazon.kindle.bugsnaginitprovider" android:exported="false" android:initOrder="99" android:name="com.amazon.kindle.BugSnagEarlyInitProvider"/>
+        <activity android:exported="false" android:name="com.amazon.kcp.remotecommunication.views.activity.RemoteCommunicationFullScreenActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:label="@string/notebook_export_title" android:name="com.amazon.notebook.module.fragment.NotebookFragmentActivity" android:theme="@style/Theme.NotebookFragmentStyle">
+            <meta-data android:name="in-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.NotebookFragmentStyle"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.NotebookFragmentStyle.Light"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:label="@string/notebook_command_item_text" android:name="com.amazon.notebook.module.NotebookActivity" android:theme="@style/Theme.NotebookStyle">
+            <meta-data android:name="in-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.NotebookStyle"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.NotebookStyle.Light"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:label="@string/notebook_export_title" android:name="com.amazon.notebook.module.exporting.NotebookExportActivity" android:theme="@style/Theme.NotebookStyle.Dialog">
+            <meta-data android:name="in-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.NotebookStyle.Dialog"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.NotebookStyle.Light.Dialog"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize" android:label="@string/notebook_export_title" android:name="com.amazon.notebook.module.exporting.NotebookExportSelectionActivity" android:theme="@style/Theme.NotebookStyle.Dialog">
+            <meta-data android:name="in-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.NotebookStyle.Dialog"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.NotebookStyle.Light.Dialog"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:name="com.amazon.notebook.module.exporting.NotebookClearClippingLimitActivity" android:theme="@style/Theme.NoTitleBar.NoBackground"/>
+        <activity android:configChanges="uiMode" android:name="com.amazon.kindle.inapp.notifications.InAppNotificationsActivity"/>
+        <activity android:name="androidx.activity.ComponentActivity"/>
+        <activity android:name="com.amazon.sitb.android.plugin.debug.DebugViewConfigurationActivity"/>
+        <activity android:configChanges="uiMode" android:label="@string/klo_XR4T" android:name="com.amazon.klo.KindleLearningObjectActivity" android:theme="@style/KLOTheme.Dark"/>
+        <activity android:configChanges="touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:label="@string/klo_XR4T_term_detail" android:name="com.amazon.klo.KindleLearningObjectDetailActivity" android:theme="@style/KLOTheme.Dark"/>
+        <activity android:configChanges="orientation|uiMode|screenSize" android:label="@string/klo_XR4T_term_detail_feedback" android:name="com.amazon.klo.feedback.KindleLearningObjectFeedbackDetailActivity" android:theme="@style/KLOTheme.Dark.Dialog.Feedback" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="uiMode" android:label="@string/xray_title" android:name="com.amazon.xray.ui.activity.XrayActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|screenSize" android:exported="true" android:label="Activity Share" android:name="com.amazon.kindle.socialsharing.ui.activity.SocialSharingActivity" android:theme="@style/Theme.Transparent.SocialSharing" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.amazon.kindle.socialsharing.ACTION_SHARE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_application_id"/>
+        <activity android:label="Share" android:name="com.facebook.LoginActivity"/>
+        <activity android:name="com.amazon.kindle.socialsharing.ui.activity.CustomOverflowShareActivity" android:theme="@style/Theme.Transparent.SocialSharing"/>
+        <provider android:authorities="com.amazon.kindle.socialsharing.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.amazon.kindle.socialsharing.SocialSharingFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <service android:enabled="true" android:exported="true" android:foregroundServiceType="shortService" android:name="com.amazon.kindle.plugin.FreeTimeBookPluginService" android:permission="com.amazon.CONTENT_PROVIDER_ACCESS">
+            <intent-filter>
+                <action android:name="com.amazon.kindle.freetime.action.DOWNLOAD"/>
+                <action android:name="com.amazon.kindle.freetime.action.CANCEL_DOWNLOAD"/>
+                <action android:name="com.amazon.kindle.freetime.action.DELETE"/>
+                <action android:name="com.amazon.kindle.freetime.action.OPEN"/>
+                <action android:name="com.amazon.kindle.freetime.action.SYNC_BOOK"/>
+                <action android:name="com.amazon.kindle.freetime.action.SYNC_BOOKS"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.amazon.kcp.profiles.content.sharing.ui.shareableitems.YourShareableItemsActivity" android:theme="@style/Theme.Dynamic.Ruby.Dark" android:windowSoftInputMode="adjustNothing">
+            <meta-data android:name="out-of-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Ruby.Dark.Family"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Ruby.Light.Family"/>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:exported="false" android:name="com.amazon.kcp.profiles.setting.activity.FamilySharingSettingPageActivity" android:theme="@style/Theme.Dynamic.Ruby.Light">
+            <meta-data android:name="out-of-book" android:value="true"/>
+            <meta-data android:name="theme_dark" android:resource="@style/Theme.Dynamic.Ruby.Dark"/>
+            <meta-data android:name="theme_light" android:resource="@style/Theme.Dynamic.Ruby.Light"/>
+        </activity>
+        <provider android:authorities="com.amazon.kindle.hushpuppydb.contentprovider" android:exported="false" android:name="com.audible.hushpuppy.service.db.HushpuppyStorageProvider"/>
+        <provider android:authorities="com.amazon.kindle.download.progress.provider" android:exported="false" android:name="com.audible.mobile.download.repository.DownloadProgressReadOnlyContentProvider"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.audible.android.kcp.mediasession.AiRMediaBrowserService">
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.amazon.identity.auth.device.AuthPortalUIActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|screenSize" android:name="com.audible.android.kcp.store.activity.MatchMakerActivity" android:theme="@style/Theme.Store"/>
+        <activity android:configChanges="keyboardHidden|orientation|uiMode|screenSize" android:name="com.audible.android.kcp.store.activity.UpgraderActivity" android:theme="@style/Theme.Upgrader"/>
+        <activity android:exported="false" android:name="com.audible.hushpuppy.common.debug.AudibleDebugActivity"/>
+        <provider android:authorities="com.amazon.kindle.hushpuppy.controller.audible.stats.db.provider" android:exported="false" android:name="com.audible.hushpuppy.controller.audible.stats.db.HushpuppyStatsContentProvider"/>
+        <receiver android:exported="false" android:name="com.amazon.identity.auth.accounts.SessionUserChangedToAccountForPackageChangedAdpater"/>
+        <service android:exported="true" android:name="com.amazon.identity.auth.device.bootstrapSSO.BootstrapSSOService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.amazon.kindle.recaps.RecapsActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.amazon.savedbooks.SavedBooksActivity" android:theme="@style/Theme.Dynamic.Ruby.Light" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.amazon.tools.anr.ui.ANRAnalysisActivity"/>
+        <activity android:name="com.amazon.tools.anr.ui.ANRListActivity"/>
+        <meta-data android:name="AudioDataSourceType.AudibleDRM" android:value="com.audible.mobile.player.AudibleReadyPlayerFactory"/>
+        <meta-data android:name="AudioDataSourceType.HlsAudiblePlayer" android:value="com.audible.mobile.player.sdk.AudiblePlayerFactory"/>
+        <meta-data android:name="AudioDataSourceType.Mp3AudiblePlayer" android:value="com.audible.mobile.player.sdk.AudiblePlayerFactory"/>
+        <meta-data android:name="AAPConfiguration-audible-android-component-player-common" android:value="com.audible.mobile.player.module.configuration.PlayerCommonModuleConfiguration"/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.audible.mobile.download.service.AudiobookDownloadService">
+            <intent-filter>
+                <action android:name="com.audible.mobile.download.action.CANCEL_DOWNLOAD"/>
+                <action android:name="com.audible.mobile.download.action.START_DOWNLOAD"/>
+                <category android:name="com.audible.mobile.download.category.Audiobook"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.audible.mobile.download.service.CoverArtDownloadService">
+            <intent-filter>
+                <action android:name="com.audible.mobile.download.action.CANCEL_DOWNLOAD"/>
+                <action android:name="com.audible.mobile.download.action.START_DOWNLOAD"/>
+                <category android:name="com.audible.mobile.download.category.CoverArt"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.audible.mobile.download.service.PositionSyncDownloadService">
+            <intent-filter>
+                <action android:name="com.audible.mobile.download.action.CANCEL_DOWNLOAD"/>
+                <action android:name="com.audible.mobile.download.action.START_DOWNLOAD"/>
+                <category android:name="com.audible.mobile.download.category.PositionSync"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.audible.mobile.download.service.SampleAudiobookDownloadService">
+            <intent-filter>
+                <action android:name="com.audible.mobile.download.action.CANCEL_DOWNLOAD"/>
+                <action android:name="com.audible.mobile.download.action.START_DOWNLOAD"/>
+                <category android:name="com.audible.mobile.download.category.SampleAudiobook"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.audible.mobile.download.service.SamplePositionSyncDownloadService">
+            <intent-filter>
+                <action android:name="com.audible.mobile.download.action.CANCEL_DOWNLOAD"/>
+                <action android:name="com.audible.mobile.download.action.START_DOWNLOAD"/>
+                <category android:name="com.audible.mobile.download.category.SamplePositionSync"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="AAPMetadata-Audible-API-BaseUrl" android:value="https://api.audible.com/1.0"/>
+        <service android:exported="false" android:name="com.audible.mobile.todo.service.TodoQueueService"/>
+        <provider android:authorities="com.amazon.kindle.audibleStats" android:exported="false" android:name="com.audible.playersdk.stats.data.persistence.localDatabase.sqlite.DefaultStatsContentProvider"/>
+        <meta-data android:name="F_C.version.FireCardProducerApi" android:value="FireCardProducerApi-1.8.4190.0"/>
+        <service android:exported="true" android:name="com.amazon.firecard.producer.ProducerCallbackService" android:permission="com.amazon.firecard.permission.PRODUCER_CALLBACK_ACCESS"/>
+        <service android:exported="false" android:name="com.amazon.firecard.producer.ProducerActionService"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <provider android:authorities="com.amazon.kindle.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="F_C.version.FireHomeApi" android:value="FireHomeApi-1.5.1201.0"/>
+        <provider android:authorities="com.amazon.kindle.BugsnagPerformanceProvider" android:exported="false" android:initOrder="9001" android:name="com.bugsnag.android.performance.internal.startup.BugsnagPerformanceProvider"/>
+        <provider android:authorities="com.amazon.kindle.bugsnag-startup" android:exported="false" android:initOrder="9000" android:name="com.bugsnag.android.internal.BugsnagContentProvider"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <service android:enabled="true" android:exported="true" android:name="com.amazon.kindle.unifiedsearch.producer.services.USearchProducerCallbackService" android:permission="com.amazon.kindle.unifiedsearch.permission.PRODUCER_CALLBACK_ACCESS"/>
+        <meta-data android:name="F_C.version.FireCdaContract" android:value="FireCdaContract-1.5.8640.0"/>
+        <meta-data android:name="F_C.version.FireCardModel" android:value="FireCardModel-1.5.3959.0"/>
+        <meta-data android:name="F_C.version.FireCardUtilities" android:value="FireCardUtilities-1.5.9608.0"/>
+        <provider android:authorities="com.amazon.kindle.ka11y.Ka11ySystemAccessibilityStateSource$SystemSourceRegistrationProvider" android:exported="false" android:name="com.amazon.ka11y.Ka11ySystemAccessibilityStateSource$SystemSourceRegistrationProvider"/>
+        <provider android:authorities="com.amazon.kindle.ka11y.Ka11yAccessibilityServiceCharacteristicsProvider$CharacteristicsCacher" android:exported="false" android:name="com.amazon.ka11y.Ka11yAccessibilityServiceCharacteristicsProvider$CharacteristicsCacher"/>
+        <provider android:authorities="com.amazon.kindle.ka11y.Ka11yContextProvider$ContextInitializer" android:exported="false" android:name="com.amazon.ka11y.Ka11yContextProvider$ContextInitializer"/>
+        <meta-data android:name="F_C.version.FireCardProducerContract" android:value="FireCardProducerContract-1.4.10780.0"/>
+    </application>
+</manifest>
