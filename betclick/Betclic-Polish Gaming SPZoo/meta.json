@@ -1,0 +1,21 @@
+{
+  "app_id": "com.bclc.gurufanility.ternasniy.quize",
+  "title": "Betclic",
+  "apk_label": "Beclc",
+  "developer": "Polish Gaming SPZoo",
+  "package": "com.bclc.gurufanility.ternasniy.quize",
+  "folder": "Betclic-Polish Gaming SPZoo",
+  "path": "betclick/Betclic-Polish Gaming SPZoo",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "version_name": "1.2",
+  "version_code": "3",
+  "source": "apkcombo XAPK (Play Collector folder was missing in git)",
+  "gate_url": "https://cavid.site/collect_quiz_results/",
+  "link_open_mode": "WebView.loadUrl",
+  "agp": "8.9.2",
+  "kotlin": "2.0.21",
+  "minSdk": 26,
+  "targetSdk": 36,
+  "sha256_base": "f3479d0a9e22aeef5a37601c1a85be36499fe3be5a03ea98d162cfc230b41f1d"
+}

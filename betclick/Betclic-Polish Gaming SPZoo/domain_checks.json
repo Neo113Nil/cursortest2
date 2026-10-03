@@ -1,0 +1,32 @@
+{
+  "domains": ["cavid.site", "diia.app", "ua.gov.diia.app"],
+  "pipeline_domains": ["config.ru", "diia.app", "ua.gov.diia.app"],
+  "results": [
+    {
+      "domain": "config.ru",
+      "vt_url": "https://www.virustotal.com/gui/domain/config.ru",
+      "detections": "0/91 (malicious=0, suspicious=0)",
+      "redirect": "http://config.ru/en/",
+      "content_brief": "title: config.ru is for sale. config.ru is for sale en ru en config.ru This domain is for sale The domain is actually the site name and its correct choice influences greatly on the your endeavors success. Often, cost of the domain change during the project running is comparable with the re-branding, so the be",
+      "parked": "похоже на парковку (domain is for sale)",
+      "note": "языковой сплит splits0.xml (split=\"config.ru\"), не сетевой хост"
+    },
+    {
+      "domain": "diia.app",
+      "vt_url": "https://www.virustotal.com/gui/domain/diia.app",
+      "detections": "0/91 (malicious=0, suspicious=0)",
+      "redirect": "нет (без редиректа)",
+      "content_brief": "title: 403 Forbidden. 403 Forbidden 403 Forbidden",
+      "parked": "регистратор/whois связан с парковкой: godaddy"
+    },
+    {
+      "domain": "ua.gov.diia.app",
+      "vt_url": "https://www.virustotal.com/gui/domain/ua.gov.diia.app",
+      "detections": "0/91 (malicious=0, suspicious=0)",
+      "redirect": "нет (DNS не резолвится)",
+      "content_brief": "нет (DNS не резолвится)",
+      "parked": "регистратор/whois связан с парковкой: godaddy"
+    }
+  ],
+  "note": "cavid.site — first-party gate https://cavid.site/collect_quiz_results/ (AES-расшифровка в коде)."
+}
