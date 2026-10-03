@@ -1,0 +1,27 @@
+{
+  "all_custom_domains": [
+    "crimson-thunder-8807.astghik-vartanian-nexora.workers.dev"
+  ],
+  "checked": [
+    "crimson-thunder-8807.astghik-vartanian-nexora.workers.dev"
+  ],
+  "count": 1,
+  "vt_configured": false,
+  "suspicious_domains": [
+    "crimson-thunder-8807.astghik-vartanian-nexora.workers.dev"
+  ],
+  "checks": [
+    {
+      "domain": "crimson-thunder-8807.astghik-vartanian-nexora.workers.dev",
+      "vt_url": "https://www.virustotal.com/gui/domain/crimson-thunder-8807.astghik-vartanian-nexora.workers.dev",
+      "detections": "нет",
+      "malicious": null,
+      "suspicious": null,
+      "total_engines": null,
+      "vendors": {},
+      "redirects_to": "нет",
+      "page_excerpt": "{\"status\":\"ok\",\"version\":\"1.0.0\",\"ts\":1791067899849}",
+      "parking": "регистратор: CloudFlare, Inc."
+    }
+  ]
+}

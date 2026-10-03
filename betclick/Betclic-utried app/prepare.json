@@ -1,0 +1,46 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder betclick/Betclic-utried app was missing on origin/main)",
+  "package": "com.pixel.sonic.omega.hub.spark.betclic",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Win",
+  "play_title": "Betclic",
+  "developer": "utried app",
+  "sha256": "0ad78175cef6f7afaf9a77f0083cc24060c866753e53f73bf9adc532d8886b52",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.pixel.sonic.omega.hub.spark.betclic_1.0.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.pixel.sonic.omega.hub.spark.betclic-1.apk",
+    "apk/com.pixel.sonic.omega.hub.spark.betclic-1-config.en.apk",
+    "apk/com.pixel.sonic.omega.hub.spark.betclic-1-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "errors": 2,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.pixel.sonic.omega.hub.spark.betclic; agent_src gitignored; 2 non-fatal decompile errors"
+  },
+  "cloaking": "да",
+  "gate_url": "https://crimson-thunder-8807.astghik-vartanian-nexora.workers.dev/?app=",
+  "link_open_mode": "Browser / ACTION_VIEW",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.pixel.sonic.omega.hub.spark.betclic-1.apk",
+    "apk/com.pixel.sonic.omega.hub.spark.betclic-1-config.en.apk",
+    "apk/com.pixel.sonic.omega.hub.spark.betclic-1-config.xxhdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK Betclic 1.0 vc1 from APKCombo (~3.6 MB): base + config.en + config.xxhdpi (no asset split in this XAPK). Play «Betclic» ≠ application-label «Win». Gate GET https://crimson-thunder-8807.astghik-vartanian-nexora.workers.dev/?app= + package. Offer via Browser ACTION_VIEW; white path MainActivity2. agent_src via jadx 1.5.3, not committed."
+}
