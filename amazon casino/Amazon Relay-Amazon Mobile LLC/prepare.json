@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "source": "apkeep:apk-pure (folder amazon casino/Amazon Relay-Amazon Mobile LLC was missing on origin/main)",
+  "package": "com.amazon.relay",
+  "version_name": "2.44.233",
+  "version_code": 2442330,
+  "app_label": "Amazon Relay",
+  "play_title": "Amazon Relay",
+  "developer": "Amazon Mobile LLC",
+  "sha256": "7c016e60e1926f27e7137b8956db3ad961a1222a384bb31579ce38b7b305b1bd",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.amazon.relay.xapk (скачан во временную папку, в git не коммитится)",
+  "jadx": {
+    "ok": true,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "apktool 2.12.0 decoded resources and 15 dex to smali; jadx 1.5.3 --single-class for RelayApp/AppLaunchActivity/AppInitializationDelegate/InternalWebViewKt/WebViewFragment/LaunchUrlNavigationItem/ConfigManager/GenericDocumentUploadManager/GatePassFragment/HttpRouter/AgeBlockedActivity and related first-party classes. agent_src gitignored; large APK not committed."
+  },
+  "cloaking": "нет",
+  "analysis_files": [
+    "agent_base.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Folder was missing on origin/main. XAPK 2.44.233 vc 2442330 from APKPure via apkeep. Play «Amazon Relay» equals application-label «Amazon Relay». GatePass is warehouse QR check-in, not a traffic gate. WebView/Custom Tabs are Amazon MAP login, Relay desktop portal, load-board chatbot, Smart Support, document upload URLs, and help links. Weblab/Simba/Arcus-style config are feature flags for freight. agent_src gitignored; large APKs not committed."
+}

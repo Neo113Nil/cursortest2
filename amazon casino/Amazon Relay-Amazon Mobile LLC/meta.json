@@ -1,0 +1,66 @@
+{
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Amazon Relay"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.12.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "29"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Pendo, Amazon Kinesis, Amazon Minerva, Amazon Weblab, AWS Pinpoint, Firebase Messaging"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "gate, whitelist, blacklist, landing, webview, redirect, offer"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": "Официальный com.amazon.relay 2.44.233 (vc 2442330), Amazon Mobile LLC. Play «Amazon Relay» = application-label «Amazon Relay». Application = RelayApp, лаунчер = AppLaunchActivity. GatePass — QR-пропуск на ворота склада, не gate трафика. WebView — MAP-вход (pageId amzn_relay_desktop_*), портал Relay, чат-бот load board, Smart Support. Custom Tabs — пункты меню/справка/TAT. Simba/Weblab — флаги грузового приложения. GAID нет. cloaker/whitepage/is_bot в first-party нет."
+  },
+  "app_id": "com.amazon.relay",
+  "title": "Amazon Relay",
+  "app_label": "Amazon Relay",
+  "developer": "Amazon Mobile LLC",
+  "url": "https://play.google.com/store/apps/details?id=com.amazon.relay",
+  "version_name": "2.44.233",
+  "version_code": 2442330
+}

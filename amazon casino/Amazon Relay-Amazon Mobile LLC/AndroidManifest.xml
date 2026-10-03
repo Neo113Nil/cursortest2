@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.amazon.relay" platformBuildVersionCode="36" platformBuildVersionName="16">
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="com.amazon.identity.action.BOOTSTRAP_SSO"/>
+        </intent>
+        <intent>
+            <action android:name="com.amazon.dcp.sso.action.session.users.changed"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera.any"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="com.amazon.relay.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.amazon.relay.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.amazon.dcp.config.permission.DYN_CONFIG_VALUES_UPDATED"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.USE_DEVICE_CREDENTIALS"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.account.changed"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.MANAGE_COR_PFM"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.CUSTOMER_ATTRIBUTE_SERVICE"/>
+    <uses-permission android:name="com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed"/>
+    <uses-permission android:name="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+    <uses-permission android:name="com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER"/>
+    <uses-permission android:name="com.amazon.identity.permission.GENERIC_IPC"/>
+    <permission android:name="com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.identity.auth.device.perm.AUTH_SDK" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.dcp.sso.permission.account.changed" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.dcp.sso.permission.AmazonAccountPropertyService.property.changed" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.identity.permission.CALL_AMAZON_DEVICE_INFORMATION_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.amazon.dcp.metrics.permission.METRICS_PERMISSION"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="amazon.permission.COLLECT_METRICS"/>
+    <uses-permission android:name="com.amazon.appmanager.preload.permission.READ_PRELOAD_DEVICE_INFO_PROVIDER"/>
+    <uses-permission android:name="android.permission.CREDENTIAL_MANAGER_QUERY_CANDIDATE_CREDENTIALS"/>
+    <uses-feature android:name="com.fireos.sdk.minerva" android:required="false"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:enableOnBackInvokedCallback="false" android:extractNativeLibs="false" android:icon="@mipmap/ic_launcher_release" android:label="@string/app_name" android:name="com.amazon.relay.RelayApp" android:networkSecurityConfig="@xml/network_security_config" android:resizeableActivity="false" android:supportsRtl="false" android:theme="@style/OptimusTheme">
+        <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        <meta-data android:name="asset_statements" android:resource="@string/asset_statements"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode"/>
+        <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="ocr"/>
+        <activity android:exported="true" android:launchMode="singleInstance" android:name="sdk.pendo.io.activities.PendoGateActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="pendo-533cdc07"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.legal.AboutActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.AgeBlockedActivity" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="true" android:name="com.amazon.relay.startup.AppLaunchActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="relay.amazon.com" android:pathPrefix="/loadboard/search" android:scheme="https"/>
+                <data android:host="relay.amazon.co.uk" android:pathPrefix="/loadboard/search" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="relay.amazon.com" android:pathPrefix="/loadboard/orders" android:scheme="https"/>
+                <data android:host="relay.amazon.co.uk" android:pathPrefix="/loadboard/orders" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="relay.amazon.com" android:pathPrefix="/tours/loadboard" android:scheme="https"/>
+                <data android:host="relay.amazon.co.uk" android:pathPrefix="/tours/loadboard" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="relay.amazon.com" android:pathPrefix="/tours" android:scheme="https"/>
+                <data android:host="relay.amazon.co.uk" android:pathPrefix="/tours" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="relay.amazon.com" android:pathPrefix="/contracts" android:scheme="https"/>
+                <data android:host="relay.amazon.co.uk" android:pathPrefix="/contracts" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="relay.amazon.com" android:pathPrefix="/yourcontracts" android:scheme="https"/>
+                <data android:host="relay.amazon.co.uk" android:pathPrefix="/yourcontracts" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="relay.amazon.com" android:pathPrefix="/auctions" android:scheme="https"/>
+                <data android:host="relay.amazon.co.uk" android:pathPrefix="/auctions" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="relay.amazon.com" android:pathPrefix="/notifications" android:scheme="https"/>
+                <data android:host="relay.amazon.co.uk" android:pathPrefix="/notifications" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="relay.amazon.com" android:pathPrefix="/drivers" android:scheme="https"/>
+                <data android:host="relay.amazon.co.uk" android:pathPrefix="/drivers" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="relay.amazon.com" android:pathPrefix="/carrier-performance" android:scheme="https"/>
+                <data android:host="relay.amazon.co.uk" android:pathPrefix="/carrier-performance" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="relay.amazon.com" android:pathPrefix="/financials/settlements/v1" android:scheme="https"/>
+                <data android:host="relay.amazon.co.uk" android:pathPrefix="/financials/settlements/v1" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="relay.amazon.com" android:pathPrefix="/profile/carrier" android:scheme="https"/>
+                <data android:host="relay.amazon.co.uk" android:pathPrefix="/profile/carrier" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="relay.amazon.com" android:pathPrefix="/profile/agreements" android:scheme="https"/>
+                <data android:host="relay.amazon.co.uk" android:pathPrefix="/profile/agreements" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="relay.amazon.com" android:pathPrefix="/profile/users" android:scheme="https"/>
+                <data android:host="relay.amazon.co.uk" android:pathPrefix="/profile/users" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.amazon.relay.ui.legal.DocumentActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.ErrorActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.customerservice.view.activity.CustomerServiceActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.customerservice.view.activity.RatingActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.customerservice.view.activity.WorkplaceIssueActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.feedback.view.activity.FeedbackActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.driveraccount.view.activity.DriverAccountSettingsActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.driveronboarding.view.activity.OnboardingActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.driveronboarding.view.activity.NonDedicatedOnboardingActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.home.ui.LoadExecutionLauncherActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.home.ui.ReportDelayLauncherActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.home.ui.HomeScreenActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.views.RelayViewsActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.core.ui.CoreActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.presentation.driverwork.loadhistory.LoadHistoryActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.barcode.DDUCaptureActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.barcode.DDUConfirmActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.barcode.DDUManualEntryActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.vehicle.ManageVehiclesActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.vehicle.PreregManageVehiclesActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.vehicle.EditVehicleRecordActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.amazon.relay.startup.DeepLinkActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="relay.amazon.com" android:pathPrefix="/app" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="amazonrelay"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.HomeActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.presentation.permissions.locationmandatory.LocationMandatoryActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.prereg.edit.EditPreregActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.driveraccount.view.activity.DriverAccountInviteActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.SettingsActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.driveronboarding.view.activity.ProfileActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.driveronboarding.view.activity.AddCarrierActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.WelcomeActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.amazon.relay.presentation.driverwork.activework.execution.WorkflowActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.amazon.relay.ui.primarydevice.PrimaryDeviceModalActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.amazon.relay.ui.primarydevice.PrimaryDeviceSelfieVerificationModalActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.amazon.relay.presentation.driverwork.loaddocuments.LoadDocumentsActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.trips.ui.AddTrailerActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.ReportDelayActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.amazon.relay.presentation.exceptions.DocumentUploadActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.amazon.relay.presentation.driverwork.ebol.EBOLWhatsNewActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.WhatsNewActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.WhatsNewSWAActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.presentation.config.CountrySelectActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.trips.ui.SelectTrailerActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.presentation.exceptions.ExceptionWizardActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.amazon.relay.trips.ui.ConfirmTrailerActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.amazon.relay.presentation.agreement.AgreementActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.amazon.relay.presentation.clicktocall.ClickToCallActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.presentation.trafficking.TruckersAgainstTraffickingInfoActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.amazon.relay.presentation.driverwork.ebol.ElectronicBillOfLadingActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.amazon.relay.presentation.driverwork.ebolv2.SignOnGlassActivity" android:screenOrientation="landscape" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.presentation.driverwork.verifyequipment.VerifyEquipmentActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.presentation.driverwork.earlydepartureparking.EarlyDepartureParkingActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.presentation.driverwork.verifyequipment.VerifyEquipmentV2Activity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.presentation.vehicleinspection.selectvehicle.SelectVehicleActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.amazon.relay.presentation.vehicleinspection.motinspectiondates.MotActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.amazon.relay.presentation.connections.ConnectionsActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.learningcenter.ui.LearningCenterActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.learningcenter.ui.LearningCenterNavActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.loadboard.LoadBoardActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.pat.PostATruckActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.auctions.AuctionsActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.relayassistant.RelayAssistantActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.contracts.YourContractsActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.shorttermcontracts.ShortTermContractsActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.trips.TripsActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.notifications.NotificationsActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.performance.PerformanceActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.siteusers.SiteUsersActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.driverroster.DriverRosterActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.assets.AssetsActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.payments.PaymentsActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.carriersupport.CarrierSupportActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.rewards.RewardsActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.amazon.relay.smartsupport.views.activity.SmartSupportSheetActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.carrier.CompanyProfileActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.amazon.relay.ui.carrier.CompanyDocumentsActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.amazon.relay.documents.ui.TripDocumentsNavActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.featuredvideo.FeaturedVideoPlayerActivity" android:screenOrientation="portrait" android:theme="@style/OptimusTheme.NoActionBar"/>
+        <service android:exported="false" android:name="com.amazon.relay.job.vehicle.VehicleRecordSyncWorker">
+            <intent-filter>
+                <action android:name="com.firebase.dispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.amazon.relay.messages.receiver.MessagingReceiverService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.amazon.relay.framework.GeofenceTransitionsIntentService"/>
+        <service android:exported="false" android:name="org.eclipse.paho.android.service.MqttService"/>
+        <meta-data android:name="MAPIsolateApplication" android:value="true"/>
+        <receiver android:exported="false" android:name="com.amazon.relay.framework.location.reciever.GeofenceWorkflowTransitionReceiver"/>
+        <receiver android:exported="false" android:name="com.amazon.relay.notifications.messages.OsNotificationBroadcastReceiver"/>
+        <provider android:authorities="com.amazon.identity.auth.device.MapInfoProvider.RelayMobile" android:exported="true" android:name="com.amazon.relay.framework.auth.RelayMAPInformationProvider" android:permission="com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER"/>
+        <provider android:authorities="com.amazon.relay.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:exported="false" android:name="com.amazon.relay.maps.presentation.AddPoiActivity"/>
+        <activity android:exported="false" android:name="com.amazon.relay.maps.presentation.bookingdetails.BookingDetailsActivity"/>
+        <receiver android:exported="false" android:name="com.amazon.relay.maps.location.LocationReceiver"/>
+        <service android:foregroundServiceType="location" android:name="com.amazon.relay.maps.location.service.LocationPollingService" android:stopWithTask="false"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.amazon.relay.maps.presentation.TurnByTurnActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Relay.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.inspections.activity.IntermodalInspectionActivity" android:screenOrientation="portrait" android:theme="@style/Inspections.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.user.module.views.workflow.ProfileUpdateWorkflowActivity" android:screenOrientation="portrait" android:theme="@style/UserModuleTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.user.module.views.photo.PhotoCaptureActivity" android:screenOrientation="portrait" android:theme="@style/UserModuleTheme.SlideTransitionTheme"/>
+        <activity android:exported="false" android:name="com.amazon.relay.user.module.views.license.ConfirmLicenseDetailActivity" android:screenOrientation="portrait" android:theme="@style/UserModuleTheme.SlideTransitionTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.amazon.relay.user.module.views.badge.VirtualBadgeActivity" android:screenOrientation="portrait" android:theme="@style/UserModuleTheme.SlideTransitionTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.amazon.relay.user.module.views.profile.ProfilePageActivity" android:screenOrientation="portrait" android:theme="@style/UserModuleTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.amazon.relay.user.module.views.selfie.workflow.SelfieWorkflowCaptureActivity" android:screenOrientation="portrait" android:theme="@style/UserModuleTheme.SlideTransitionTheme" android:windowSoftInputMode="adjustPan"/>
+        <receiver android:exported="false" android:name="com.amazon.relay.postatruck.notifications.PatOrderMatchedNotificationDismissedBroadcastReceiver"/>
+        <receiver android:exported="false" android:name="com.amazon.relay.carrier.service.notifications.DeeplinkNotificationDismissedBroadcastReceiver"/>
+        <activity android:name="com.amazon.relay.views.common.activity.ClickableCardFullScreenActivity"/>
+        <activity android:exported="false" android:name="com.amazon.relay.foundation.startup.env.CountrySelectActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Relay.NoActionBar"/>
+        <activity android:exported="false" android:name="com.amazon.relay.foundation.views.permission.PermissionActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Relay.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="sdk.pendo.io.activities.PendoGuideVisualActivity" android:theme="@style/Base.Theme.PendoTheme"/>
+        <provider android:authorities="com.amazon.relay.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <activity android:name="com.amplifyframework.devmenu.DeveloperMenuActivity" android:theme="@style/OverlayActivity"/>
+        <service android:enabled="true" android:exported="false" android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder">
+            <meta-data android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY" android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl"/>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.HiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.IdentityCredentialApiHiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.objects.custom.internal.CustomObjectsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.vkp.VkpRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.amazon.relay.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.amazon.relay.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:exported="true" android:name="androidx.compose.ui.tooling.PreviewActivity"/>
+        <activity android:exported="false" android:launchMode="singleInstance" android:name="com.amazonaws.mobileconnectors.pinpoint.targeting.notification.PinpointNotificationActivity" android:theme="@style/PinpointNotificationActivityTheme"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <activity android:exported="true" android:name="androidx.activity.ComponentActivity" android:theme="@android:style/Theme.Material.Light.NoActionBar"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:name="com.amazon.identity.auth.device.activity.GetAuthenticatorResultsActivity" android:theme="@style/TransparentActivityTheme"/>
+        <activity android:allowTaskReparenting="true" android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:label="Amazon AuthPortal" android:launchMode="singleTop" android:name="com.amazon.identity.auth.device.AuthPortalUIActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:label="Amazon Auth Challenge" android:name="com.amazon.identity.auth.device.activity.AuthChallengeHandleActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:label="Sign up and enroll" android:name="com.amazon.identity.auth.device.activity.ActorSignUpAndEnrollActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:label="Enroll actor UI" android:name="com.amazon.identity.auth.device.activity.ActorEnrollActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:label="Update Pin Preference UI" android:name="com.amazon.identity.auth.device.activity.ActorUpdatePinPreferenceActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:label="Update Phone Number UI" android:name="com.amazon.identity.auth.device.activity.ActorUpdatePhoneNumberActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:name="com.amazon.identity.auth.device.api.ProfilePickerUIActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <activity android:configChanges="@integer/config_maskLocaleOrientationKeyboardKeyboardHiddenLayoutDirectionScreenSize" android:exported="false" android:label="Update Pin UI" android:name="com.amazon.identity.auth.device.activity.ActorUpdatePinActivity" android:permission="com.amazon.identity.auth.device.perm.AUTH_SDK"/>
+        <service android:enabled="false" android:exported="true" android:name="com.amazon.identity.auth.device.bootstrapSSO.BootstrapSSOService">
+            <intent-filter>
+                <action android:name="com.amazon.identity.action.BOOTSTRAP_SSO"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.amazon.identity.auth.device.storage.DirtyDataSyncingService">
+            <intent-filter>
+                <action android:name="com.amazon.identity.action.SYNC_DIRTY_DATA"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.amazon.identity.auth.device.storage.DatabaseCleaner$DatabaseCleaningService">
+            <intent-filter>
+                <action android:name="com.amazon.identity.action.CLEAN_DATA"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="false" android:exported="false" android:name="com.amazon.identity.auth.device.storage.LambortishClock$ChangeTimestampsBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.amazon.identity.auth.accounts.SessionUserChangedToAccountForPackageChangedAdpater">
+            <intent-filter>
+                <action android:name="com.amazon.dcp.sso.action.session.users.changed"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.jakewharton.processphoenix.ProcessPhoenix" android:process=":phoenix" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:enabled="true" android:exported="false" android:name="com.here.services.internal.LocationService"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>
