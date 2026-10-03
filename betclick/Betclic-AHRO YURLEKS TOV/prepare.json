@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder betclick/Betclic-AHRO YURLEKS TOV was missing on origin/main)",
+  "package": "com.alaricz.fenmoq.rev",
+  "version_name": "2",
+  "version_code": 2,
+  "app_label": "Betclic",
+  "play_title": "Betclic",
+  "developer": "AHRO YURLEKS TOV",
+  "sha256": "0e76b402f70450100e973985a4c88175a2f0470ef48c5ad2c6adbc967ea6a2fe",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.alaricz.fenmoq.rev_2.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.alaricz.fenmoq.rev-2.apk",
+    "apk/com.alaricz.fenmoq.rev-2-config.en.apk",
+    "apk/com.alaricz.fenmoq.rev-2-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3 with 6 errors; first-party com.alaricz.fenmoq.rev + TWA f1 + n0 prefs; agent_src gitignored"
+  },
+  "cloaking": "да",
+  "gate_url": "https://bclicgamwi.org/",
+  "link_open_mode": "Trusted Web Activity / Custom Tabs / WebViewFallbackActivity.loadUrl",
+  "agp": "8.9.1",
+  "kotlin": "да",
+  "minSdk": 24,
+  "targetSdk": 36,
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.alaricz.fenmoq.rev-2.apk",
+    "apk/com.alaricz.fenmoq.rev-2-config.en.apk",
+    "apk/com.alaricz.fenmoq.rev-2-config.xxhdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "cloaking_hints.md",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK vc2 from APKCombo (~7.5 MB): base + config.en + config.xxhdpi (no asset split in this XAPK). Play «Betclic» = application-label «Betclic». TWA https://bclicgamwi.org/ with query pv5mse/fj8nma. agent_src via jadx 1.5.3, not committed.",
+  "errors": []
+}

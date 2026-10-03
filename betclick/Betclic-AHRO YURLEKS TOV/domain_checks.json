@@ -1,0 +1,42 @@
+{
+  "domains": ["bclicgamwi.org"],
+  "pipeline_domains": ["bclicgamwi.org", "com.chrome.dev", "config.ru", "dispatchers.io"],
+  "results": [
+    {
+      "domain": "bclicgamwi.org",
+      "vt_url": "https://www.virustotal.com/gui/domain/bclicgamwi.org",
+      "detections": "0/91 (malicious=0, suspicious=0)",
+      "redirect": "нет (без редиректа)",
+      "content_brief": "title: Alaric Fenmore. Alaric Fenmore Rotate to portrait Alaric Fenmore Add contact Delete contact New Contact Cancel Save",
+      "parked": "регистратор: Cloudflare, Inc."
+    },
+    {
+      "domain": "com.chrome.dev",
+      "vt_url": "https://www.virustotal.com/gui/domain/com.chrome.dev",
+      "detections": "0/91 (malicious=0, suspicious=0)",
+      "redirect": "нет",
+      "content_brief": "не удалось открыть (SSLError)",
+      "parked": "регистратор: MarkMonitor Inc.",
+      "note": "пакет Chrome в списке TWA-провайдеров AbstractC0934b, не сетевой хост"
+    },
+    {
+      "domain": "config.ru",
+      "vt_url": "https://www.virustotal.com/gui/domain/config.ru",
+      "detections": "0/91 (malicious=0, suspicious=0)",
+      "redirect": "https://config.ru/en/",
+      "content_brief": "title: config.ru is for sale. config.ru is for sale en ru en config.ru This domain is for sale The domain is actually the site name and its correct choice influences greatly on the your endeavors success. Often, cost of the domain change during the project running is comparable with the re-branding, so the be",
+      "parked": "похоже на парковку (domain is for sale)",
+      "note": "языковой сплит splits0.xml (split=\"config.ru\"), не сетевой хост"
+    },
+    {
+      "domain": "dispatchers.io",
+      "vt_url": "https://www.virustotal.com/gui/domain/dispatchers.io",
+      "detections": "5/91 (malicious=5, suspicious=0)",
+      "redirect": "нет",
+      "content_brief": "не удалось открыть (ReadTimeout)",
+      "parked": "регистратор: NameCheap, Inc.",
+      "note": "строка Kotlin Dispatchers.IO, не сетевой хост приложения"
+    }
+  ],
+  "note": "bclicgamwi.org — first-party TWA launchUrl https://bclicgamwi.org/ с query pv5mse/fj8nma."
+}

@@ -1,0 +1,23 @@
+{
+  "app_id": "com.alaricz.fenmoq.rev",
+  "title": "Betclic",
+  "apk_label": "Betclic",
+  "developer": "AHRO YURLEKS TOV",
+  "package": "com.alaricz.fenmoq.rev",
+  "folder": "Betclic-AHRO YURLEKS TOV",
+  "path": "betclick/Betclic-AHRO YURLEKS TOV",
+  "store_title_mismatch": false,
+  "cloaking": "да",
+  "version_name": "2",
+  "version_code": "2",
+  "source": "apkcombo XAPK (Play Collector folder was missing in git)",
+  "onesignal_app_id": "df80c62a-51cc-4f98-a4ba-9ee57b112ec2",
+  "launch_url": "https://bclicgamwi.org/",
+  "link_open_mode": "Trusted Web Activity / Custom Tabs (fallback WebView.loadUrl)",
+  "query_params": "pv5mse=GAID, fj8nma=Firebase appInstanceId",
+  "agp": "8.9.1",
+  "kotlin": "да",
+  "minSdk": 24,
+  "targetSdk": 36,
+  "sha256_base": "0e76b402f70450100e973985a4c88175a2f0470ef48c5ad2c6adbc967ea6a2fe"
+}
