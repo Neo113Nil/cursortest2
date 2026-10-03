@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "source": "APKPure XAPK vc7 (Play Collector folder was missing in git)",
+  "package": "com.dps.pandora",
+  "version_name": "7.0.0",
+  "version_code": 7,
+  "app_label": "Inisial Wallpaper",
+  "play_title": "BetClic",
+  "developer": "DISTRIBUTORKU",
+  "base_apk": "com.dps.pandora-7.apk",
+  "agent_base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; agent_src not committed (gitignored)"
+  },
+  "analysis_files": [
+    "agent_base.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "cloaking_hints.md",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder betclick/BetClic-DISTRIBUTORKU was missing on origin/main. XAPK 7.0.0 (vc7) downloaded from APKPure. Cloak via TrafitUI + ConfigCat key intifjkkpepers; white button «Play Now»; offer via EXTERNAL_BROWSER (Custom Tabs class present).",
+  "errors": []
+}
