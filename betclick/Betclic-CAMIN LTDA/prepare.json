@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder betclick/Betclic-CAMIN LTDA was missing on origin/main)",
+  "package": "com.centercirclerise.rclerise",
+  "version_name": "2",
+  "version_code": 2,
+  "app_label": "Betclic",
+  "play_title": "Betclic",
+  "developer": "CAMIN LTDA",
+  "sha256": "06e76bdbcfaf4a32b7b9df411871f76626613a3db3cb9f2f484007b8083c6531",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "Center Circle Rise_2_apkcombo.com.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.centercirclerise.rclerise-2.apk",
+    "apk/com.centercirclerise.rclerise-2-config.arm64_v8a.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "errors": 16,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.centercirclerise.rclerise (R) + Unity player + com.pairip.licensecheck; IL2CPP global-metadata.dat; agent_src gitignored; 16 non-fatal decompile errors"
+  },
+  "cloaking": "нет",
+  "unity": "6000.0.84f1 IL2CPP",
+  "agp": "9.0.0",
+  "kotlin": "да, 2.0.21",
+  "minSdk": 32,
+  "targetSdk": 36,
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.centercirclerise.rclerise-2.apk",
+    "apk/com.centercirclerise.rclerise-2-config.arm64_v8a.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "cloaking_hints.md",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK Center Circle Rise 2 vc2 from APKCombo (~61 MB): base + config.arm64_v8a (no asset split in this XAPK; pipeline file list named -2-asset). Play «Betclic» = application-label «Betclic». Unity 6000.0.84f1 IL2CPP football jumper; Firebase Analytics; PairIP Play license. No WebView/Custom Tabs/first-party gate URL. agent_src via jadx 1.5.3, not committed.",
+  "errors": []
+}

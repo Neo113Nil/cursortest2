@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="FreeformWindowOrientation_landscape" />
+    <string name="FreeformWindowOrientation_portrait" />
+    <string name="FreeformWindowSize_maximize" />
+    <string name="FreeformWindowSize_phone" />
+    <string name="FreeformWindowSize_tablet" />
+    <string name="app_name">Betclic</string>
+    <string name="common_google_play_services_enable_button">Enable</string>
+    <string name="common_google_play_services_enable_text">Google Play services must be enabled for %1$s.</string>
+    <string name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_install_button">Install</string>
+    <string name="common_google_play_services_install_text">Install Google Play services to continue using %1$s.</string>
+    <string name="common_google_play_services_install_title">Install Google Play services</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play services availability</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_signin_required_text">%1$s couldn\'t connect to Google Play services. Please sign-in to your Google account.</string>
+    <string name="common_google_play_services_signin_required_title">Sign-in required</string>
+    <string name="common_google_play_services_try_again_text">%1$s couldn\'t connect to Google Play services. Please try again.</string>
+    <string name="common_google_play_services_try_again_title">Please try again</string>
+    <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. Please try again.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s can\'t run because your device doesn\'t support Google Play services. Please use a supported device.</string>
+    <string name="common_google_play_services_unsupported_title">Device not compatible</string>
+    <string name="common_google_play_services_update_button">Update</string>
+    <string name="common_google_play_services_update_text">Update Google Play services to use %1$s.</string>
+    <string name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_google_play_services_updating_client_title">Google Play services updating</string>
+    <string name="common_google_play_services_updating_text">%1$s will be available once the Google Play services update is complete.</string>
+    <string name="common_google_play_services_wear_update_text">Update Google Play services to use %1$s.</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="game_view_content_description">Game view</string>
+    <string name="gcm_defaultSenderId">213965359490</string>
+    <string name="google_api_key">AIzaSyANldWEPhBMMrFkNxhn_jJiRlviYKEKM0M</string>
+    <string name="google_app_id">1:213965359490:android:df1bd7158cdc488932e79b</string>
+    <string name="google_crash_reporting_api_key">AIzaSyANldWEPhBMMrFkNxhn_jJiRlviYKEKM0M</string>
+    <string name="google_storage_bucket">center-circle-rise.firebasestorage.app</string>
+    <string name="project_id">center-circle-rise</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

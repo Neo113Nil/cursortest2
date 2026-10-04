@@ -1,0 +1,26 @@
+{
+  "app_id": "com.centercirclerise.rclerise",
+  "title": "Betclic",
+  "apk_label": "Betclic",
+  "developer": "CAMIN LTDA",
+  "package": "com.centercirclerise.rclerise",
+  "folder": "Betclic-CAMIN LTDA",
+  "path": "betclick/Betclic-CAMIN LTDA",
+  "store_title_mismatch": false,
+  "cloaking": "нет",
+  "version_name": "2",
+  "version_code": "2",
+  "source": "apkcombo XAPK (Play Collector folder was missing in git)",
+  "unity": "6000.0.84f1 IL2CPP",
+  "agp": "9.0.0",
+  "kotlin": "да, 2.0.21",
+  "minSdk": 32,
+  "targetSdk": 36,
+  "sha256_base": "06e76bdbcfaf4a32b7b9df411871f76626613a3db3cb9f2f484007b8083c6531",
+  "firebase_project": "center-circle-rise",
+  "storage_bucket": "center-circle-rise.firebasestorage.app",
+  "report_rows": [
+    {"param": "Название приложения", "value": "Betclic"},
+    {"param": "Есть ли клоака", "value": "нет"}
+  ]
+}
