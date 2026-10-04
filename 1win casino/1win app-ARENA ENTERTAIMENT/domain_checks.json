@@ -1,0 +1,32 @@
+{
+  "all_custom_domains": [
+    "moduledailypoint.sbs",
+    "blackice.rest"
+  ],
+  "checked": [
+    {
+      "domain": "moduledailypoint.sbs",
+      "virustotal": {
+        "ok": false,
+        "vt_url": "https://www.virustotal.com/gui/domain/moduledailypoint.sbs",
+        "detections": "нет",
+        "vendor_rows": []
+      },
+      "redirects_to": "нет (корень и /api/v1/wof7 без HTTP-редиректа)",
+      "page_excerpt": "HTTPS-корень — пустой ответ. HTTP-корень: Domain setup in progress. /api/v1/wof7 — текст aes256gcm:…; после расшифровки ключом из APK: https://blackice.rest/terms/?_subid=…&_token=…",
+      "parked_at": "нет (регистратор NameCheap, Inc., NS Cloudflare; не страница for sale)"
+    },
+    {
+      "domain": "blackice.rest",
+      "virustotal": {
+        "ok": false,
+        "vt_url": "https://www.virustotal.com/gui/domain/blackice.rest",
+        "detections": "нет",
+        "vendor_rows": []
+      },
+      "redirects_to": "нет",
+      "page_excerpt": "title: User Agreement. Корень — {\"error\":\"endpoint not found\"}. /terms/ — страница «User Agreement»",
+      "parked_at": "нет (регистратор NAMECHEAP, NS Cloudflare; не страница for sale)"
+    }
+  ]
+}

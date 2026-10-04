@@ -1,0 +1,85 @@
+{
+  "app_id": "com.unstoppable.strikers.vertex.core",
+  "title": "1win app",
+  "developer": "ARENA ENTERTAIMENT",
+  "package": "com.unstoppable.strikers.vertex.core",
+  "app_label": "Ultimate Playmakers",
+  "url": "https://play.google.com/store/apps/details?id=com.unstoppable.strikers.vertex.core&hl=en&gl=us",
+  "version": "2.0",
+  "version_code": 2,
+  "source": "apkcombo XAPK (Play Collector folder was missing on origin/main)",
+  "cloaking": "да",
+  "gate_url": "https://moduledailypoint.sbs/api/v1/wof7",
+  "link_open_mode": "ACTION_VIEW (запасной путь WebView.loadUrl в скрытом DataSyncProvider)",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "1win app (в приложении: Ultimate Playmakers)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.3.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "37"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.2.0"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Google Play Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.unstoppable.strikers.vertex.core.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.appcompat 1.7.1, androidx.core 1.19.0, androidx.activity 1.13.0, androidx.fragment 1.8.9, androidx.lifecycle 2.9.4, androidx.navigation 2.9.5, androidx.constraintlayout 2.2.2, androidx.recyclerview 1.4.0, androidx.webkit 1.16.0, androidx.window, androidx.startup, androidx.profileinstaller, androidx.emoji2 1.3.0, androidx.viewbinding, com.google.android.material 1.14.0, kotlinx-coroutines 1.9.0, kotlin-stdlib 2.2.0, com.android.installreferrer, com.pairip (Play Integrity / licensecheck)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "moduledailypoint.sbs, blackice.rest"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "prefs: uuid и referrer; ultimate_playmakers_settings: музыка и звуки; penalty_career: прогресс обычного приложения"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "Gate, white, white_page, whitepage, aes256gcm, uuid, referrer, loadUrl, shouldOverrideUrlLoading, WebView, ACTION_VIEW, license check"
+      }
+    ],
+    "domains": ["moduledailypoint.sbs", "blackice.rest"],
+    "collected_data": [
+      "идентификатор пользователя",
+      "подпись браузера телефона",
+      "источник установки"
+    ],
+    "cloaking": "да"
+  }
+}

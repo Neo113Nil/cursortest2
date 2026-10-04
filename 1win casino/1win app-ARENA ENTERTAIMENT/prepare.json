@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder 1win casino/1win app-ARENA ENTERTAIMENT was missing on origin/main)",
+  "package": "com.unstoppable.strikers.vertex.core",
+  "version_name": "2.0",
+  "version_code": 2,
+  "app_label": "Ultimate Playmakers",
+  "play_title": "1win app",
+  "developer": "ARENA ENTERTAIMENT",
+  "sha256": "b68105342cf9416b2e28b26e3885bf4ce071ef15fd0bb24db75af494a93866d4",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.unstoppable.strikers.vertex.core_2.0.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.unstoppable.strikers.vertex.core-2.apk",
+    "apk/com.unstoppable.strikers.vertex.core-2-config.en.apk",
+    "apk/com.unstoppable.strikers.vertex.core-2-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3 with 8 errors; first-party com.unstoppable.strikers.vertex.core; hidden DEX assets/ds.bin → DataSyncProvider; agent_src gitignored, not committed"
+  },
+  "cloaking": "да",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.unstoppable.strikers.vertex.core-2.apk",
+    "apk/com.unstoppable.strikers.vertex.core-2-config.en.apk",
+    "apk/com.unstoppable.strikers.vertex.core-2-config.xxhdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK Ultimate Playmakers 2.0 vc2 from APKCombo (~21 MB): base + config.en + config.xxhdpi (no asset/arm64 split in this XAPK). Play «1win app» ≠ application-label «Ultimate Playmakers». Gate POST https://moduledailypoint.sbs/api/v1/wof7 (XOR+AES-GCM); offer via ACTION_VIEW (live decrypt → https://blackice.rest/terms/); white path MainActivity. Hidden WebView DataSyncProvider from ds.bin. agent_src via jadx 1.5.3, not committed."
+}
