@@ -1,0 +1,23 @@
+{
+  "title": "AviatorUSA",
+  "developer": "AviatorUSA",
+  "cloaking": "нет",
+  "app_id": "co.tapcart.app.id_xRwbfkdvTX",
+  "url": "https://play.google.com/store/apps/details?id=co.tapcart.app.id_xRwbfkdvTX&hl=en&gl=us",
+  "version": "176",
+  "brief_report": {
+    "cloaking": "нет",
+    "table": [
+      {"param": "Название приложения", "value": "AviatorUSA"},
+      {"param": "Android Gradle Plugin", "value": "8.12.0"},
+      {"param": "minSdk", "value": "25"},
+      {"param": "targetSdk", "value": "36"},
+      {"param": "Kotlin", "value": "да, 2.1.20"},
+      {"param": "Web View", "value": "да"},
+      {"param": "Custom Tabs", "value": "да"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "Firebase Analytics, Mixpanel, Facebook App Events, Sentry, Klaviyo, Braze, Attentive, Google Play Install Referrer, Notifee"},
+      {"param": "Есть ли клоака", "value": "нет"}
+    ]
+  }
+}

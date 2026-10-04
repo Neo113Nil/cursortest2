@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "note": "Play Collector folder aviator casino/AviatorUSA-AviatorUSA was missing on origin/main. XAPK AviatorUSA 176 from APKPure via d.apkpure.net (~95 MB): base + config.arm64_v8a + config.es + config.xxhdpi (no asset split in this XAPK). Pipeline listing mentioned vc 177; public mirrors had 176. Play «AviatorUSA» = application-label «AviatorUSA». Tapcart/Expo shop for aviatorusa.com. agent_src via jadx 1.5.1, not committed.",
+  "source": "apkpure",
+  "xapk": "AviatorUSA_176_APKPure.xapk",
+  "base_apk": "co.tapcart.app.id_xRwbfkdvTX.apk",
+  "apks": [
+    "co.tapcart.app.id_xRwbfkdvTX.apk",
+    "config.arm64_v8a.apk",
+    "config.xxhdpi.apk",
+    "config.es.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "/tmp/jadx_out",
+    "skipped": false,
+    "base_apk": "agent_base.apk"
+  }
+}
