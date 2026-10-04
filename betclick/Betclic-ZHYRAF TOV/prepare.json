@@ -1,0 +1,33 @@
+{
+  "ok": false,
+  "source": "Play identity locally; Play Collector folder betclick/Betclic-ZHYRAF TOV was missing on origin/main; APK not hosted on mirrors",
+  "package": "com.tapput.questchallejnge",
+  "version_name": "1.0",
+  "version_code": 2,
+  "app_label": "ClickQuest Challenge",
+  "play_title": "Betclic",
+  "developer": "ZHYRAF TOV",
+  "sha256": "",
+  "agent_base_apk": "",
+  "jadx": {
+    "ok": false,
+    "out_dir": "agent_src",
+    "skipped": true,
+    "base_apk": "",
+    "note": "agent_base.apk and agent_src.zip absent; Play 404; APKCombo listing without file; apk-pure empty"
+  },
+  "cloaking": "да",
+  "gate_url": "",
+  "link_open_mode": "",
+  "analysis_files": [
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "cloaking_hints.md",
+    "report.pdf"
+  ],
+  "note": "Play «Betclic» ≠ application-label «ClickQuest Challenge». Play description is notes/organization; screenshots are tap mini-games. domain_checks: no custom hosts. Binary not in git and not downloadable (APKCombo /dl 404, Play 404, APKPure empty). Cloak=да from name mismatch (white shell), not from decompiled gate.",
+  "errors": [
+    "APK binary unavailable: git folder missing, Google Play unpublished, APKCombo/APKPure/Aptoide have no package file"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "app_id": "com.tapput.questchallejnge",
+  "title": "Betclic",
+  "apk_label": "ClickQuest Challenge",
+  "developer": "ZHYRAF TOV",
+  "package": "com.tapput.questchallejnge",
+  "folder": "Betclic-ZHYRAF TOV",
+  "path": "betclick/Betclic-ZHYRAF TOV",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "version_name": "1.0",
+  "version_code": "2",
+  "source": "Play identity + APKCombo stub (APK file missing in git and unpublished from Play/mirrors)",
+  "gate_url": "",
+  "link_open_mode": "",
+  "agp": "",
+  "kotlin": "",
+  "minSdk": "",
+  "targetSdk": "",
+  "sha256_base": "",
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "Betclic (в приложении: ClickQuest Challenge)"},
+      {"param": "Android Gradle Plugin", "value": "нет"},
+      {"param": "minSdk", "value": "нет"},
+      {"param": "targetSdk", "value": "нет"},
+      {"param": "Kotlin", "value": "нет"},
+      {"param": "Web View", "value": "нет"},
+      {"param": "Custom Tabs", "value": "нет"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "нет"},
+      {"param": "Permissions", "value": "нет"},
+      {"param": "Libraries", "value": "нет"},
+      {"param": "Подозрительные домены", "value": "нет"},
+      {"param": "SharedPreferences", "value": "нет"},
+      {"param": "Есть ли клоака", "value": "да"},
+      {"param": "Подозрительные слова", "value": "Betclic, ClickQuest Challenge, challenge"}
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "да"
+  }
+}
