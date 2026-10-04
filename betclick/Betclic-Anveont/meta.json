@@ -1,0 +1,21 @@
+{
+  "app_id": "com.winzuvkhn.betclicqveqab",
+  "title": "Betclic",
+  "apk_label": "WIN",
+  "developer": "Anveont",
+  "package": "com.winzuvkhn.betclicqveqab",
+  "folder": "Betclic-Anveont",
+  "path": "betclick/Betclic-Anveont",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "version_name": "1.0",
+  "version_code": "1",
+  "source": "apkcombo XAPK (Play Collector folder was missing on origin/main)",
+  "sha256_base": "ab03d1eb0eeb86a35821e077ad15ef5b01a2b7cf28d0fe02a820f76b1c479e5d",
+  "gate_url": "https://silent-violet-fae1.dmmagchhhutowvtrooo.workers.dev/?app=<package>",
+  "link_open_mode": "ACTION_VIEW",
+  "agp": "8.7.3",
+  "kotlin": "2.0.21",
+  "minSdk": 26,
+  "targetSdk": 36
+}

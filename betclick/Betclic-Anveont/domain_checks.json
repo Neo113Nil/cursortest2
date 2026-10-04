@@ -1,0 +1,27 @@
+{
+  "all_custom_domains": [
+    "silent-violet-fae1.dmmagchhhutowvtrooo.workers.dev"
+  ],
+  "checked": [
+    "silent-violet-fae1.dmmagchhhutowvtrooo.workers.dev"
+  ],
+  "count": 1,
+  "vt_configured": false,
+  "suspicious_domains": [
+    "silent-violet-fae1.dmmagchhhutowvtrooo.workers.dev"
+  ],
+  "checks": [
+    {
+      "domain": "silent-violet-fae1.dmmagchhhutowvtrooo.workers.dev",
+      "vt_url": "https://www.virustotal.com/gui/domain/silent-violet-fae1.dmmagchhhutowvtrooo.workers.dev",
+      "detections": "нет",
+      "malicious": null,
+      "suspicious": null,
+      "total_engines": null,
+      "vendors": {},
+      "redirects_to": "нет (без редиректа)",
+      "page_excerpt": "{\"status\":\"ok\",\"version\":\"1.0.0\",\"pckg\":2,\"ts\":1791092297315}",
+      "parked": "регистратор: CloudFlare, Inc."
+    }
+  ]
+}
