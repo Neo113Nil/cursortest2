@@ -1,0 +1,27 @@
+{
+  "title": "Aviator: Aviatron",
+  "developer": "LOVING PEOPLE, LOVING PEOPLE NURSES WHO CARE LLC",
+  "cloaking": "нет",
+  "app_id": "com.aviatron.avrt1349",
+  "url": "https://play.google.com/store/apps/details?id=com.aviatron.avrt1349",
+  "brief_report": {
+    "cloaking": "нет",
+    "table": [
+      {"param": "Название приложения", "value": "Aviator: Aviatron (в приложении: Aviatron)"},
+      {"param": "Android Gradle Plugin", "value": "8.11.0"},
+      {"param": "minSdk", "value": "26"},
+      {"param": "targetSdk", "value": "36"},
+      {"param": "Kotlin", "value": "да, 2.1.20"},
+      {"param": "Web View", "value": "нет"},
+      {"param": "Custom Tabs", "value": "да"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "Apphud"},
+      {"param": "Permissions", "value": "android.permission.INTERNET, android.permission.MODIFY_AUDIO_SETTINGS, android.permission.READ_EXTERNAL_STORAGE, android.permission.RECORD_AUDIO, android.permission.SYSTEM_ALERT_WINDOW, android.permission.VIBRATE, android.permission.WRITE_EXTERNAL_STORAGE, com.android.vending.BILLING, android.permission.ACCESS_NETWORK_STATE, com.aviatron.avrt1349.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"},
+      {"param": "Libraries", "value": "Expo SDK 54.0.0, React Native 0.81.5 (Hermes, New Architecture), Kotlin 2.1.20, kotlinx-coroutines, Apphud + react-native-apphud-sdk, expo-web-browser, expo-av, expo-splash-screen, expo-font, expo-file-system, expo-constants, expo-keep-awake, expo-linear-gradient, expo-navigation-bar, expo-screen-orientation, expo-store-review, expo-fetch, react-native-screens, react-native-svg, @react-native-async-storage/async-storage, androidx.appcompat 1.7.0, androidx.browser 1.6.0, androidx.core 1.13.1, coil3, okhttp3, okio, Google Play Billing 7.1.1, ExoPlayer, Google Play services (base, appset, location, auth), com.pairip (license check), Facebook Fresco, bolts, AndroidSVG (caverock)"},
+      {"param": "Подозрительные домены", "value": "нет"},
+      {"param": "SharedPreferences", "value": "apphud_storage: userId, deviceId, paywalls, placements, свойства пользователя; AsyncStorage: флаги промо/онбординга (promo_*), apphud_trial_expiry и прогресс обычного приложения"},
+      {"param": "Есть ли клоака", "value": "нет"},
+      {"param": "Подозрительные слова", "value": "offer, WebBrowser, openURL, emulator, license check, BET & FLY"}
+    ]
+  }
+}

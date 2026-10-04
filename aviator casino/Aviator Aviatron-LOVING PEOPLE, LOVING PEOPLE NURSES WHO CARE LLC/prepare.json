@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "source": "apkeep apk-pure XAPK (Play Collector folder aviator casino/Aviator Aviatron-LOVING PEOPLE, LOVING PEOPLE NURSES WHO CARE LLC was missing on origin/main)",
+  "package": "com.aviatron.avrt1349",
+  "version_name": "1.0.1",
+  "version_code": 3,
+  "app_label": "Aviatron",
+  "play_title": "Aviator: Aviatron",
+  "developer": "LOVING PEOPLE, LOVING PEOPLE NURSES WHO CARE LLC",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.aviatron.avrt1349.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.aviatron.avrt1349-3.apk",
+    "apk/com.aviatron.avrt1349-3-config.arm64_v8a.apk",
+    "apk/com.aviatron.avrt1349-3-config.en.apk",
+    "apk/com.aviatron.avrt1349-3-config.mdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3 with 24 errors; first-party com.aviatron.avrt1349 (MainActivity/MainApplication); Hermes index.android.bundle; agent_src gitignored, not committed"
+  },
+  "cloaking": "нет",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.aviatron.avrt1349-3.apk",
+    "apk/com.aviatron.avrt1349-3-config.arm64_v8a.apk",
+    "apk/com.aviatron.avrt1349-3-config.en.apk",
+    "apk/com.aviatron.avrt1349-3-config.mdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK Aviatron 1.0.1 vc3 from APKPure (~171 MB): base + config.arm64_v8a + config.en + config.mdpi. Play «Aviator: Aviatron» ≈ application-label «Aviatron». Expo 54 / RN 0.81.5 / Hermes. Custom Tabs = expo-web-browser (Privacy Policy / Terms / Play Store). is_bot hits = isBottomNavigationMenuInvalidated + isBothLoaded (false positives). offer = Play Billing / Apphud IAP. Expo Updates ENABLED=false. agent_src via jadx 1.5.3, not committed. agent_base.apk ~156 MB not committed (GitHub 100 MB limit)."
+}
