@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "source": "apkcombo XAPK (Play Collector folder 1win casino/1win-D M SELLARS PLUMBING LIMITED was missing on origin/main)",
+  "package": "com.odilz.brakq.ridgv",
+  "version_name": "2",
+  "version_code": 2,
+  "app_label": "1win",
+  "play_title": "1win Casino y Apuestas",
+  "developer": "D M SELLARS PLUMBING LIMITED",
+  "sha256": "70acf8648326fe4af04fb5e47228d785059fd9d94153c486cca010e5793a6942",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "1win_2_apkcombo.com.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.odilz.brakq.ridgv-2.apk",
+    "apk/com.odilz.brakq.ridgv-2-config.en.apk",
+    "apk/com.odilz.brakq.ridgv-2-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3 with 6 errors; first-party com.odilz.brakq.ridgv; agent_src gitignored, not committed"
+  },
+  "cloaking": "да",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.odilz.brakq.ridgv-2.apk",
+    "apk/com.odilz.brakq.ridgv-2-config.en.apk",
+    "apk/com.odilz.brakq.ridgv-2-config.xxhdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK 1win 2 vc2 from APKCombo (~8 MB): base + config.en + config.xxhdpi (no asset split in this XAPK). Play «1win Casino y Apuestas» ≠ application-label «1win». TWA DEFAULT_URL https://winwingames.org/ with query qlc56p=GAID, qdrgk1b=Firebase appInstanceId; open via Custom Tabs / Trusted Web Activity, fallback WebViewFallbackActivity. agent_src via jadx 1.5.3, not committed."
+}
