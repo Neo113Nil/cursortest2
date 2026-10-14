@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK via apkeep (folder fonbet/Fonbet-Color Studio Apps & Games was missing on origin/main)",
+  "package": "com.next.foot.sport.mob",
+  "version_name": "5.0",
+  "version_code": 5,
+  "app_label": "Фонбет",
+  "play_title": "Fonbet",
+  "developer": "Color Studio Apps & Games",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.next.foot.sport.mob.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "config.arm64_v8a",
+    "config.en",
+    "config.fr",
+    "config.mdpi"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed as a tree; first-party zipped as agent_src.zip; jadx 1.5.3 finished with errors count 49"
+  },
+  "cloaking": "да",
+  "note": "Folder was missing on origin/main. XAPK Fonbet 5.0 / Фонбет (vc 5) downloaded from APKPure via apkeep. Play «Fonbet» ≠ application-label «Фонбет». Custom Tabs to Base64 URL https://stavki.colorstudioapps.com/. Remote text from Supabase https://xsfuzidearfasroefumt.supabase.co table PS283-text_feature, language ru -> text_ru else text. Football fixtures via v3.football.api-sports.io after key from table PS283. No AdMob/Firebase. Keycloak hit is supabase OAuth provider name, not a traffic gate."
+}

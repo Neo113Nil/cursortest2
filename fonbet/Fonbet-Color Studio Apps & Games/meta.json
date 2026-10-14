@@ -1,0 +1,35 @@
+{
+  "app_id": "com.next.foot.sport.mob",
+  "title": "Fonbet",
+  "app_label": "Фонбет",
+  "developer": "Color Studio Apps & Games",
+  "url": "https://play.google.com/store/apps/details?id=com.next.foot.sport.mob&hl=en&gl=us",
+  "updated": "2025-12-29",
+  "version": "5.0",
+  "version_code": 5,
+  "keyword": "fonbet",
+  "folder": "Fonbet-Color Studio Apps & Games",
+  "path": "fonbet/Fonbet-Color Studio Apps & Games",
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "Fonbet (в приложении: Фонбет)"},
+      {"param": "Android Gradle Plugin", "value": "8.12.3"},
+      {"param": "minSdk", "value": "24"},
+      {"param": "targetSdk", "value": "36"},
+      {"param": "Kotlin", "value": "да, 2.2.0"},
+      {"param": "Web View", "value": "нет"},
+      {"param": "Custom Tabs", "value": "да"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "нет"},
+      {"param": "Permissions", "value": "android.permission.INTERNET, com.next.foot.sport.mob.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"},
+      {"param": "Есть ли клоака", "value": "да"}
+    ],
+    "domains": ["colorstudioapps.com"],
+    "collected_data": ["язык телефона"],
+    "cloaking": "да",
+    "cloaking_brief": "Play «Fonbet» ≠ application-label «Фонбет». Вкладка «Ставки», кнопка «ПЕРЕЙТИ» открывает Custom Tabs на https://stavki.colorstudioapps.com/ (URL из Base64). Текст экрана с Supabase PS283-text_feature, выбор text/text_ru по языку телефона."
+  }
+}
