@@ -1,0 +1,12 @@
+{
+  "package": "com.fonbet.all.sport.and.stavki.app",
+  "play_title": "Фонбет - ставки на спорт",
+  "application_label": "Фонбет",
+  "developer": "FNBT_Developers",
+  "version_name": "1.0",
+  "version_code": "1",
+  "min_sdk": 24,
+  "target_sdk": 35,
+  "agp": "8.2.2",
+  "kotlin": "2.1.0"
+}
