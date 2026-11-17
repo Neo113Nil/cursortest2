@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder url-batch/Winline RU-Maxet was missing on origin/main)",
+  "package": "ru.winline.android",
+  "version_name": "1.2",
+  "version_code": 3,
+  "app_label": "Winline RU",
+  "play_title": "Winline RU",
+  "developer": "Maxet",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "Winline RU_1.2_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/ru.winline.android.apk",
+    "apk/config.armeabi_v7a.apk",
+    "apk/config.en.apk",
+    "apk/config.es.apk",
+    "apk/config.mdpi.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "errors": 10,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party ru.winline.android; agent_src gitignored; 10 non-fatal decompile errors"
+  },
+  "cloaking": "нет",
+  "note": "Play Collector folder missing on origin/main. XAPK 1.2 vc3 from APKPure (~7 MB). Play title «Winline RU», APK-label «Winline RU». Custom Tabs на https://game.digiticeltd.com/ только по кнопке мини-игр. Сеть: https://www.championat.com/stat/data/live. Firebase Remote Config только game_title/game_description. Cloak=нет."
+}

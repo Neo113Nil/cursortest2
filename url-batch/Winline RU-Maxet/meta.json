@@ -1,0 +1,16 @@
+{
+  "app_id": "ru.winline.android",
+  "title": "Winline RU",
+  "developer": "Maxet",
+  "apk_label": "Winline RU",
+  "store_title_mismatch": false,
+  "keyword": "Winline RU",
+  "folder": "Winline RU-Maxet",
+  "path": "url-batch/Winline RU-Maxet",
+  "version": "1.2",
+  "version_code": 3,
+  "ok": true,
+  "cloaking": "нет",
+  "source": "apkpure",
+  "notes": "Play title Winline RU, APK-label Winline RU. Application WinlineApp + OneSignal init. MainActivity insets only. LoadingFragment fetches Firebase Remote Config game_title/game_description then always navigates to MainFragment. Retrofit GET https://www.championat.com/stat/data/live. Custom Tabs hardcoded https://game.digiticeltd.com/ on Games button. ACTION_VIEW policy/terms.digiticeltd.com from Information screen. No first-party WebView, no gate/offer/whitelist/bot."
+}
