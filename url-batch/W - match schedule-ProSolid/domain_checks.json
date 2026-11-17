@@ -1,0 +1,12 @@
+{
+  "domains": [
+    {
+      "domain": "cqcjduyxkvyemoswvtwl.supabase.co",
+      "virustotal_url": "https://www.virustotal.com/gui/domain/cqcjduyxkvyemoswvtwl.supabase.co",
+      "detections": "0/92 (malicious=0, suspicious=0)",
+      "redirect": "нет (без редиректа)",
+      "content": "{\"error\":\"requested path is invalid\"}",
+      "parked": "регистратор: GANDI SAS"
+    }
+  ]
+}

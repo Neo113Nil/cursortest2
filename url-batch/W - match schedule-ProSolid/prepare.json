@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder url-batch/W - match schedule-ProSolid was missing on origin/main)",
+  "package": "com.winline.delaet.raznicu.sport.stavki.gp.app",
+  "version_name": "3.1",
+  "version_code": 5,
+  "app_label": "W - match schedule",
+  "play_title": "W - match schedule",
+  "developer": "ProSolid",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "W - match schedule_3.1_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.winline.delaet.raznicu.sport.stavki.gp.app-5.apk",
+    "apk/com.winline.delaet.raznicu.sport.stavki.gp.app-5-config.arm64_v8a.apk",
+    "apk/com.winline.delaet.raznicu.sport.stavki.gp.app-5-config.en.apk",
+    "apk/com.winline.delaet.raznicu.sport.stavki.gp.app-5-config.xxhdpi.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "errors": 44,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.winline.delaet.raznicu.sport.stavki.gp.app; agent_src gitignored; 44 non-fatal decompile errors"
+  },
+  "cloaking": "да",
+  "note": "Play Collector folder missing on origin/main. XAPK 3.1 vc5 from APKPure (~31 MB): base + language/density/abi splits (no asset split, no config.lt in this XAPK). Play title = APK label «W - match schedule». Gate: splash Loading fetches Supabase table VS237-2, follows first Location of log_in_link, stores AUTH_LINK/REG_LINK, opens them in WebView. Cloak=да."
+}

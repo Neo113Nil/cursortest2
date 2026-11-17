@@ -1,0 +1,16 @@
+{
+  "app_id": "com.winline.delaet.raznicu.sport.stavki.gp.app",
+  "title": "W - match schedule",
+  "developer": "ProSolid",
+  "apk_label": "W - match schedule",
+  "store_title_mismatch": false,
+  "keyword": "W - match schedule",
+  "folder": "W - match schedule-ProSolid",
+  "path": "url-batch/W - match schedule-ProSolid",
+  "version": "3.1",
+  "version_code": 5,
+  "ok": true,
+  "cloaking": "да",
+  "source": "apkpure",
+  "notes": "Play title = APK label W - match schedule. Application App.kt + splash Loading.kt. Supabase https://cqcjduyxkvyemoswvtwl.supabase.co table VS237-2 (DataBack: log_in_link, title_check, desc_check). getFirstRedirect reads Location without following. AUTH_LINK/REG_LINK opened in WebView (AuthKt BrowserAuth). LINK_END / NO_REDIRECT_LINK decide white MainScreen vs stay in site. AppMetrica + FCM. Pairip LicenseCheck. Custom Tabs only in unused supabase-auth SDK (Auth plugin not installed)."
+}
