@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder url-batch/Wn - mobile Winline-Game Inferno was missing on origin/main)",
+  "package": "com.wn.football.sport.mobile",
+  "version_name": "6.0",
+  "version_code": 6,
+  "app_label": "Winline",
+  "play_title": "Wn - mobile Winline",
+  "developer": "Game Inferno",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "Wn - mobile Winline_6.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.wn.football.sport.mobile.apk",
+    "apk/config.armeabi_v7a.apk",
+    "apk/config.en.apk",
+    "apk/config.mdpi.apk",
+    "apk/config.zh.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "errors": 17,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.w.football.sport.android; agent_src gitignored; 17 non-fatal decompile errors"
+  },
+  "cloaking": "нет",
+  "note": "Play Collector folder missing on origin/main. XAPK 6.0 vc6 from APKPure (~4 MB). Play title «Wn - mobile Winline», APK-label «Winline» — тот же бренд, не белая оболочка другой игры. Нет WebView/Custom Tabs. ACTION_VIEW на https://profile.gaming-infernodev.com/ только по кнопке профиля. Сеть: api.api-sport.ru (матчи) и line51w.bk6bba-resources.com/events/listlight (лента Winline). Cloak=нет."
+}

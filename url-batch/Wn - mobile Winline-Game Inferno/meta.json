@@ -1,0 +1,16 @@
+{
+  "app_id": "com.wn.football.sport.mobile",
+  "title": "Wn - mobile Winline",
+  "developer": "Game Inferno",
+  "apk_label": "Winline",
+  "store_title_mismatch": true,
+  "keyword": "Wn - mobile Winline",
+  "folder": "Wn - mobile Winline-Game Inferno",
+  "path": "url-batch/Wn - mobile Winline-Game Inferno",
+  "version": "6.0",
+  "version_code": 6,
+  "ok": true,
+  "cloaking": "нет",
+  "source": "apkpure",
+  "notes": "Play title Wn - mobile Winline, APK-label Winline. Application Pairip LicenseClient + App.onCreate. MainActivity Compose. Splash NavigateToMain after key_launch_count++. HTTP: https://api.api-sport.ru/ (Football/Basketball/Hockey/VolleyballApi, Authorization cde6cc6c-686e-4589-9446-378aa59e8ee3) and https://line51w.bk6bba-resources.com/events/listlight (lang ru/en, place=top, scopeMarket=1600, version=12836240133, header Package from key_schedule_api_key never written). ACTION_VIEW https://profile.gaming-infernodev.com/ from Profile button acc_btn. No WebView, Custom Tabs, Firebase, ads, remote config, gate/offer/whitelist/bot."
+}
