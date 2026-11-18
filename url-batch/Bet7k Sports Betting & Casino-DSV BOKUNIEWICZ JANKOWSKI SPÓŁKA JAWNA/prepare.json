@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "source": "apkcube.com APKS via Cloudflare R2 (Play Collector folder was missing on origin/main)",
+  "package": "com.green.max.beam.path.quantum.bet7ksportsbettingcasino",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Win",
+  "play_title": "Bet7k Sports Betting & Casino",
+  "developer": "DSV BOKUNIEWICZ JANKOWSKI SPÓŁKA JAWNA",
+  "sha256": "9e54ea344c96783791e6bf56a4312f06c527c70657881fb735599c211371ec7d",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.green.max.beam.path.quantum.bet7ksportsbettingcasino-1.apk",
+    "apk/com.green.max.beam.path.quantum.bet7ksportsbettingcasino-1-config.en.apk",
+    "apk/com.green.max.beam.path.quantum.bet7ksportsbettingcasino-1-config.xhdpi.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "errors": 2,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.green.max.beam.path.quantum.bet7ksportsbettingcasino; agent_src not committed; 2 non-fatal decompile errors"
+  },
+  "cloaking": "да",
+  "gate_url": "https://pl20goldencanyoncreative.online/?t=f0f8d6b8",
+  "link_open_mode": "Browser / ACTION_VIEW",
+  "note": "Play Collector folder was missing on origin/main. APKS Bet7k Sports Betting & Casino 1.0 vc1 from APKCube (~3.4 MB zip, base 4.97 MB): base + language/density splits (no asset split, no xxhdpi; xhdpi copied). Play «Bet7k Sports Betting & Casino» ≠ application-label «Win». Gate GET https://pl20goldencanyoncreative.online/?t=f0f8d6b8. Offer via Browser ACTION_VIEW; white path MainActivity2. agent_src via jadx 1.5.3, not committed."
+}
