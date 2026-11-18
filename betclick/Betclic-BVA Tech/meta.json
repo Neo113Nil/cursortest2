@@ -1,0 +1,42 @@
+{
+  "app_id": "com.visal.tramol.flenis",
+  "title": "Betclic",
+  "apk_label": "Mahjong Set",
+  "developer": "BVA Tech",
+  "package": "com.visal.tramol.flenis",
+  "folder": "Betclic-BVA Tech",
+  "path": "betclick/Betclic-BVA Tech",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "cloaking_reason": "белая оболочка: карточка Play «Betclic» (букмекер) ≠ application-label «Mahjong Set» (учёт плиток маджонга). Механизма показа оффера в этой сборке нет: нет android.permission.INTERNET, нет WebView / Custom Tabs / ACTION_VIEW, нет HTTP-клиентов, нет remote config.",
+  "version_name": "1.0",
+  "version_code": "1",
+  "source": "apkpure XAPK (Play Collector folder was missing in git)",
+  "agp": "8.7.3",
+  "kotlin": "да (2.1.0)",
+  "minSdk": 26,
+  "targetSdk": 36,
+  "sha256_base": "3f6a02ca14c71afe18391a650535d2a211cdd0c9366d1bd2ed4f93ba08c88b5f",
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "Betclic (в приложении: Mahjong Set)"},
+      {"param": "Android Gradle Plugin", "value": "8.7.3"},
+      {"param": "minSdk", "value": "26"},
+      {"param": "targetSdk", "value": "36"},
+      {"param": "Kotlin", "value": "да (2.1.0)"},
+      {"param": "Web View", "value": "нет"},
+      {"param": "Custom Tabs", "value": "нет"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "нет"},
+      {"param": "Permissions", "value": "com.visal.tramol.flenis.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"},
+      {"param": "Libraries", "value": "kotlin-stdlib 2.1.0, kotlinx-coroutines-core/android 1.7.3, androidx.appcompat 1.7.0, androidx.activity 1.8.1, androidx.fragment 1.8.6, androidx.navigation 2.8.9, androidx.lifecycle 2.9.0, androidx.room 2.7.1, androidx.datastore 1.1.1, androidx.core 1.16.0, com.google.android.material 1.12.0, dagger/hilt 2.51.1, com.pairip.licensecheck"},
+      {"param": "Подозрительные домены", "value": "config.ru"},
+      {"param": "SharedPreferences", "value": "Классических SharedPreferences нет. Настройки лежат в DataStore files/datastore/settings.preferences_pb, ключи: open_case_id, sample_offer_dismissed, show_corner_indices. Данные — в Room mahjong.db (таблицы cases, case_counts)."},
+      {"param": "Есть ли клоака", "value": "да"},
+      {"param": "Подозрительные слова", "value": "offer, offer_title, offer_body, offer_load, offer_dismiss, sample_offer_dismissed, sampleOfferDismissed, showOffer, PAYWALL, PAYWALL_INTENT, paywallintent, showPaywallAndCloseApp, startPaywallActivity, CHECK_LICENSE, LICENSE_DATA, LicenseCheckException, licensecheck"}
+    ],
+    "domains": ["config.ru"],
+    "collected_data": ["имя пакета приложения", "откуда установлено приложение", "признак системного приложения", "версия Android", "флаг окончания пробного периода"],
+    "cloaking": "да"
+  }
+}

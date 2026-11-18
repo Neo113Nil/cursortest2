@@ -1,0 +1,46 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder betclick/Betclic-BVA Tech was missing on origin/main)",
+  "package": "com.visal.tramol.flenis",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Mahjong Set",
+  "play_title": "Betclic",
+  "developer": "BVA Tech",
+  "sha256": "3f6a02ca14c71afe18391a650535d2a211cdd0c9366d1bd2ed4f93ba08c88b5f",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "Betclic_1.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.visal.tramol.flenis-1.apk",
+    "apk/com.visal.tramol.flenis-1-config.arm64_v8a.apk",
+    "apk/com.visal.tramol.flenis-1-config.en.apk",
+    "apk/com.visal.tramol.flenis-1-config.mdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "errors": 2,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.visal.tramol.flenis (MainActivity, MahjongSet, ui/*, data/db); agent_src gitignored; 2 non-fatal decompile errors"
+  },
+  "cloaking": "да",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.visal.tramol.flenis-1.apk",
+    "apk/com.visal.tramol.flenis-1-config.arm64_v8a.apk",
+    "apk/com.visal.tramol.flenis-1-config.en.apk",
+    "apk/com.visal.tramol.flenis-1-config.mdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK Betclic 1.0 vc1 from APKPure (~3.3 MB): base + config.arm64_v8a + config.en + config.mdpi (pipeline file list named asset/xxhdpi; this XAPK has mdpi, no asset split). Play «Betclic» ≠ application-label «Mahjong Set». No INTERNET/WebView/Custom Tabs/OkHttp/HttpURLConnection/remote config. PairIP LicenseClient → Google Play CHECK_LICENSE only. offer_* / showOffer = local sample mahjong cases. config.ru = splits0.xml language split. agent_src via jadx 1.5.3, not committed."
+}
