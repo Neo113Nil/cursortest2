@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "source": "Google Play listing + APKCube scan of Play APK (Play Collector folder betclick/Betclic-MACQUARIE COMMODITIES PTY LIMITED was missing on origin/main; APKPure 404; APKCombo domain expired; XAPK/APKS download blocked by APKCube hold-to-verify after Cloudflare)",
+  "package": "com.dashrush3219.app",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Dash Rush",
+  "play_title": "Betclic",
+  "developer": "MACQUARIE COMMODITIES PTY LIMITED",
+  "format": "apks",
+  "arch": "arm64-v8a",
+  "fileSize": "~3 MB (APKCube)",
+  "minSdk": 29,
+  "targetSdk": null,
+  "pairip": true,
+  "internet_permission": true,
+  "ad_id_permission": true,
+  "permissions": [
+    "com.google.android.gms.permission.AD_ID",
+    "android.permission.INTERNET",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "com.dashrush3219.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.android.vending.CHECK_LICENSE",
+    "android.permission.ACCESS_WIFI_STATE"
+  ],
+  "agent_base_apk": "нет (бинарь не попал в git; скачивание APKS с APKCube после Download anyway упирается в hold-to-verify)",
+  "jadx": {
+    "ok": false,
+    "skipped": true,
+    "note": "agent_src отсутствует; agent_base.apk нет в репозитории. Разбор манифеста/защиты — по скану APKCube того же Play-пакета (fromGooglePlay=true) и карточке Play."
+  },
+  "pipeline_activities": [
+    "com.dashrush3219.app.MainActivity",
+    "com.dashrush3219.app.ClimbActivity",
+    "com.dashrush3219.app.FrameActivity",
+    "com.dashrush3219.app.LoadActivity",
+    "com.dashrush3219.app.SwipeActivity"
+  ],
+  "privacy_policy": "https://sites.google.com/view/dash-rush-/",
+  "cloaking": "да",
+  "note": "Play «Betclic» ≠ application-label «Dash Rush». Карточка Play — букмекерский текст и чужие скриншоты Betclic, жанр Casual. Скан APK: INTERNET, AD_ID, PairIP, CHECK_LICENSE. domain_checks: com.dashrush3219.app и dispatchers.io. Клоака=да как белая оболочка + сеть + рекламный номер."
+}

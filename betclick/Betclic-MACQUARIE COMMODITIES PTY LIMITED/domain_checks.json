@@ -1,0 +1,25 @@
+{
+  "domains": [
+    "com.dashrush3219.app",
+    "dispatchers.io"
+  ],
+  "note": "pipeline hosts: com.dashrush3219.app = package name (DNS NXDOMAIN); dispatchers.io often Kotlin Dispatchers.IO. INTERNET is present, so a real host cannot be ruled out without jadx.",
+  "results": [
+    {
+      "domain": "com.dashrush3219.app",
+      "vt_url": "https://www.virustotal.com/gui/domain/com.dashrush3219.app",
+      "detections": "0/92 (malicious=0, suspicious=0)",
+      "redirect": "нет (DNS не резолвится)",
+      "content": "нет (DNS не резолвится)",
+      "parked": "нет данных"
+    },
+    {
+      "domain": "dispatchers.io",
+      "vt_url": "https://www.virustotal.com/gui/domain/dispatchers.io",
+      "detections": "4/92 (malicious=4, suspicious=0)",
+      "redirect": "https://cakhiatv1.net/",
+      "content": "title: CAKHIATV - TRá»°C TIáº¾P BÃNG ÄÃ CÃ KHá»A - KQBD 24/7 - LINK MÆ¯á»¢T. CAKHIATV - TRá»°C TIáº¾P BÃNG ÄÃ CÃ KHá»A - KQBD 24/7 - LINK MÆ¯á»¢T Bá» qua ná»i dung Trang chá»§ Báº£ng Xáº¿p Háº¡ng Káº¿t Quáº£ BÃ³ng ÄÃ¡ Lá»ch Thi Äáº¥u Nháº­n Äá»nh Tin Tá»©c BÃ³ng ÄÃ¡ Danh Thá»§ BÃ³ng ÄÃ¡ CAKHIATV - Tráº£i Nghiá»m Xem BÃ³ng Äá»nh Cao, KhÃ´n",
+      "parked": "регистратор: NAMECHEAP INC"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "app_id": "com.dashrush3219.app",
+  "title": "Betclic",
+  "apk_label": "Dash Rush",
+  "developer": "MACQUARIE COMMODITIES PTY LIMITED",
+  "package": "com.dashrush3219.app",
+  "folder": "Betclic-MACQUARIE COMMODITIES PTY LIMITED",
+  "path": "betclick/Betclic-MACQUARIE COMMODITIES PTY LIMITED",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "cloaking_reason": "белая оболочка: карточка Play «Betclic» (букмекер) ≠ application-label «Dash Rush» (лазалка). В сборке есть INTERNET, AD_ID, PairIP, CHECK_LICENSE. HTTP-гейт/WebView по скану APKCube не показаны; jadx-исходников в git нет.",
+  "version_name": "1.0",
+  "version_code": "1",
+  "source": "Google Play + APKCube APK scan (Play Collector folder was missing in git)",
+  "agp": "нет",
+  "kotlin": "да",
+  "minSdk": 29,
+  "targetSdk": "нет",
+  "play": {
+    "title": "Betclic",
+    "developer": "MACQUARIE COMMODITIES PTY LIMITED",
+    "genre": "Casual",
+    "summary": "Betclic is the ultimate destination for sports enthusiasts",
+    "containsAds": false,
+    "installs": "5,000+",
+    "updated": "Oct 20, 2026",
+    "privacyPolicy": "https://sites.google.com/view/dash-rush-/"
+  },
+  "apkcube_scan": {
+    "fromGooglePlay": true,
+    "verdict": "secure",
+    "pairip": true,
+    "internet": true,
+    "ad_id": true,
+    "format": "apks",
+    "arch": "arm64-v8a",
+    "size": "3 MB",
+    "android": "10+",
+    "permissions_labels": [
+      "Ad id",
+      "Full network access",
+      "View network connections",
+      "Dynamic receiver not exported permission",
+      "Verify the app licence",
+      "View Wi-Fi connections"
+    ],
+    "permissions": [
+      "com.google.android.gms.permission.AD_ID",
+      "android.permission.INTERNET",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "com.dashrush3219.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "com.android.vending.CHECK_LICENSE",
+      "android.permission.ACCESS_WIFI_STATE"
+    ]
+  },
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Betclic (в приложении: Dash Rush)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "нет"
+      },
+      {
+        "param": "minSdk",
+        "value": "29"
+      },
+      {
+        "param": "targetSdk",
+        "value": "нет"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.google.android.gms.permission.AD_ID, android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.dashrush3219.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE, android.permission.ACCESS_WIFI_STATE"
+      },
+      {
+        "param": "Libraries",
+        "value": "PairIP (com.pairip.licensecheck)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "com.dashrush3219.app, dispatchers.io"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "Betclic, Dash Rush, CHECK_LICENSE, PairIP, pairip, Ad id, LoadActivity, ClimbActivity"
+      }
+    ],
+    "domains": [
+      "com.dashrush3219.app",
+      "dispatchers.io"
+    ],
+    "collected_data": [
+      "имя пакета приложения"
+    ],
+    "cloaking": "да"
+  }
+}
