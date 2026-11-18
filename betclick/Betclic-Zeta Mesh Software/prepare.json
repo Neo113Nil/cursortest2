@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder betclick/Betclic-Zeta Mesh Software was missing on origin/main)",
+  "package": "com.jorden.flomak.snaril",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "M Check",
+  "play_title": "Betclic",
+  "developer": "Zeta Mesh Software",
+  "sha256": "4080496ed369113f68ca02ad1aca0792c5328023840f9e322b4eab220a2d7f9b",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "Betclic_1.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.jorden.flomak.snaril-1.apk",
+    "apk/com.jorden.flomak.snaril-1-config.arm64_v8a.apk",
+    "apk/com.jorden.flomak.snaril-1-config.en.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "errors": 21,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.jorden.flomak.snaril; agent_src gitignored; 21 non-fatal decompile errors"
+  },
+  "cloaking": "нет",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.jorden.flomak.snaril-1.apk",
+    "apk/com.jorden.flomak.snaril-1-config.arm64_v8a.apk",
+    "apk/com.jorden.flomak.snaril-1-config.en.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK Betclic 1.0 vc1 from APKPure (~3.4 MB): base + config.arm64_v8a + config.en (pipeline file list named asset split; this XAPK has no asset split). Play «Betclic» ≠ application-label «M Check». No INTERNET/WebView/Custom Tabs/OkHttp/HttpURLConnection/remote config. PairIP LicenseClient → Google Play CHECK_LICENSE only. Compose M Check + Room + DataStore settings. agent_src via jadx 1.5.3, not committed."
+}
