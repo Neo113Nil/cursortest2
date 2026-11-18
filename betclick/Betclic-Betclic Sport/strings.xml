@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="FreeformWindowOrientation_portrait" />
+    <string name="FreeformWindowSize_maximize" />
+    <string name="app_name">Betclic: Sport platform</string>
+    <string name="game_view_content_description">Game view</string>
+</resources>
