@@ -17,8 +17,9 @@
   "targetSdk": 36,
   "sha256_base": "4080496ed369113f68ca02ad1aca0792c5328023840f9e322b4eab220a2d7f9b",
   "recheck": {
-    "round": 1,
-    "tooling": "jadx 1.5.3 (agent_base.apk, --show-bad-code), DEX string/type tables, unzip config.arm64_v8a + config.en",
+    "round": 2,
+    "tooling": "jadx 1.5.1 (agent_base.apk, полный прогон + --show-bad-code по defpackage.mz), baksmali 2.5.2 (3395 классов classes.dex), таблицы строк/типов DEX, распаковка base + config.arm64_v8a + config.en, jadx --no-src по ресурсам",
+    "round2_findings": "подтверждено: в classes.dex ноль ссылок на java.net / android.webkit / okhttp / retrofit / volley / ktor / cronet; нет android.permission.INTERNET; один classes.dex; assets только dexopt; startActivity только Intent.ACTION_SEND (createChooser, письмо домой), ACTION_PROCESS_TEXT (Compose) и LicenseActivity (PairIP); Uri.parse только в androidx.navigation (android-app://androidx.navigation/); tx(None/Cancelled/Redirected/RedirectCancelled) = результат перевода фокуса в Compose; Build.FINGERPRINT сравнивается с \"robolectric\" внутри Compose; Base64 = сертификаты шрифтов androidx.core, SpanStyle в Compose, JWS лицензии PairIP; Room таблицы bikes, checks, classes, results, sessions; AGP 9.3.2 из META-INF/com/android/build/gradle/app-metadata.properties",
     "entry_point": "com.pairip.application.Application.attachBaseContext → LicenseClient.checkLicense → MCheckApp.onCreate (Room mcheck.db + DataStore settings); launcher com.jorden.flomak.snaril.MainActivity.onCreate → Compose setContent",
     "internet_permission": false,
     "http_clients": "нет (в таблице типов classes.dex нет java.net.URL, HttpURLConnection, OkHttp, Retrofit, Volley, Ktor)",
