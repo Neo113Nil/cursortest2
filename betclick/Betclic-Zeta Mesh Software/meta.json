@@ -7,7 +7,8 @@
   "folder": "Betclic-Zeta Mesh Software",
   "path": "betclick/Betclic-Zeta Mesh Software",
   "store_title_mismatch": true,
-  "cloaking": "нет",
+  "cloaking": "да",
+  "cloaking_reason": "белая оболочка: карточка Play «Betclic» (букмекер) ≠ application-label «M Check» (утилита осмотра детских велосипедов). Механизма показа оффера в этой сборке нет: нет android.permission.INTERNET, нет WebView / Custom Tabs / ACTION_VIEW, нет HTTP-клиентов, нет remote config.",
   "version_name": "1.0",
   "version_code": "1",
   "source": "apkpure XAPK (Play Collector folder was missing in git)",
@@ -17,7 +18,11 @@
   "targetSdk": 36,
   "sha256_base": "4080496ed369113f68ca02ad1aca0792c5328023840f9e322b4eab220a2d7f9b",
   "recheck": {
-    "round": 2,
+    "round": 3,
+    "round3_tooling": "jadx 1.5.3 (agent_base.apk, --show-bad-code, 3301 .java), baksmali 2.5.2 (3486 .smali), собственный разбор таблиц DEX (12844 строки, 4332 типа, 18810 методов, 12126 полей), распаковка base + config.arm64_v8a + config.en, jadx --no-src по ресурсам",
+    "round3_findings": "подтверждено независимо: в таблице типов classes.dex нет java/net, android/webkit, okhttp, retrofit, volley, ktor, cronet, javax/net/ssl, org/apache/http; android.permission.INTERNET не заявлен ни в base, ни в сплитах; loadUrl / shouldOverrideUrlLoading / androidx.browser / android.intent.action.VIEW в smali — 0 вхождений; единственные исходящие Intent: ACTION_SEND (createChooser, письмо домой, ma1), ACTION_PROCESS_TEXT (Compose, js) и LicenseActivity (PairIP); Uri.parse только в androidx.navigation NavDeepLink (w61) и emoji2 ContentProvider (ne0); 'offer' в строках = java.util.ArrayDeque.offer; Redirected/RedirectCancelled = enum tx (перевод фокуса Compose); Build.FINGERPRINT=='robolectric' в xe/fi0 — внутренняя проверка Compose; getSharedPreferences — 0 вхождений; Base64 = сертификаты шрифтов (cp), SpanStyle Compose (ql2), DataStore/autofill (t82), JWS лицензии PairIP; mz.s() case 7 (корутина MCheckApp.onCreate) только засевает два встроенных CheckTemplate в Room; config.ru/config.de/config.fr = языковые сплиты splits0.xml",
+    "round3_license_check": "PairIP: Application.attachBaseContext → LicenseClient.checkLicense → performLocalInstallerCheck (packageName, InstallSourceInfo.getInstallingPackageName()==com.android.vending, applicationInfo.flags, Build.VERSION.SDK_INT) → bindService com.android.vending.licensing.ILicensingService → transact(2) с packageName + binder + опц. end_custom_trial → processResponse: 0=LICENSED (JWS LICENSE_DATA, alg RS256, packageName, repeatedCheckDurationToRetryMillis, repeatedCheckTimeToRetryMillis), 2=NOT_LICENSED → startPaywallActivity(PAYWALL_INTENT), 3=ERROR_INVALID_PACKAGE_NAME",
+    "round2": 2,
     "tooling": "jadx 1.5.1 (agent_base.apk, полный прогон + --show-bad-code по defpackage.mz), baksmali 2.5.2 (3395 классов classes.dex), таблицы строк/типов DEX, распаковка base + config.arm64_v8a + config.en, jadx --no-src по ресурсам",
     "round2_findings": "подтверждено: в classes.dex ноль ссылок на java.net / android.webkit / okhttp / retrofit / volley / ktor / cronet; нет android.permission.INTERNET; один classes.dex; assets только dexopt; startActivity только Intent.ACTION_SEND (createChooser, письмо домой), ACTION_PROCESS_TEXT (Compose) и LicenseActivity (PairIP); Uri.parse только в androidx.navigation (android-app://androidx.navigation/); tx(None/Cancelled/Redirected/RedirectCancelled) = результат перевода фокуса в Compose; Build.FINGERPRINT сравнивается с \"robolectric\" внутри Compose; Base64 = сертификаты шрифтов androidx.core, SpanStyle в Compose, JWS лицензии PairIP; Room таблицы bikes, checks, classes, results, sessions; AGP 9.3.2 из META-INF/com/android/build/gradle/app-metadata.properties",
     "entry_point": "com.pairip.application.Application.attachBaseContext → LicenseClient.checkLicense → MCheckApp.onCreate (Room mcheck.db + DataStore settings); launcher com.jorden.flomak.snaril.MainActivity.onCreate → Compose setContent",
@@ -50,11 +55,11 @@
       {"param": "Libraries", "value": "kotlin-stdlib, kotlinx-coroutines-core 1.9.0, kotlinx-coroutines-android 1.9.0, kotlinx-serialization-core-jvm, androidx.activity / activity-ktx / activity-compose 1.13.0, androidx.annotation-experimental 1.5.0, androidx.autofill 1.0.0, androidx.compose.animation / animation-core 1.12.0, androidx.compose.foundation / foundation-layout 1.12.0, androidx.compose.material3 1.4.0, androidx.compose.material-icons-core 1.7.8, androidx.compose.material-ripple 1.12.0, androidx.compose.runtime / runtime-saveable 1.12.0, androidx.compose.ui / ui-graphics / ui-text / ui-unit / ui-util 1.12.0, androidx.core / core-ktx 1.19.0, androidx.core-viewtree 1.0.0, androidx.customview-poolingcontainer 1.0.0, androidx.datastore / datastore-core / datastore-preferences 1.1.7, androidx.emoji2 1.4.0, androidx.graphics-path 1.0.1, androidx.interpolator 1.0.0, androidx.lifecycle 2.11.0, androidx.navigation-common / navigation-runtime / navigation-compose 2.10.0, androidx.navigationevent / navigationevent-compose 1.1.2, androidx.profileinstaller 1.4.0, androidx.room-runtime / room-ktx 2.8.5, androidx.savedstate / savedstate-ktx / savedstate-compose 1.5.0, androidx.sqlite / sqlite-framework 2.6.2, androidx.startup 1.1.1, androidx.tracing 1.2.0, androidx.versionedparcelable 1.1.1, androidx.window / window-core 1.5.0, com.pairip.application, com.pairip.licensecheck"},
       {"param": "Подозрительные домены", "value": "config.ru"},
       {"param": "SharedPreferences", "value": "Классических SharedPreferences нет. Настройки лежат в файле DataStore datastore/settings.preferences_pb, ключи: instructor, default_check, current_session, last_bike, sample_dismissed. Данные класса и проверок — в базе Room mcheck.db (таблицы checks, classes, bikes, sessions, results)."},
-      {"param": "Есть ли клоака", "value": "нет"},
+      {"param": "Есть ли клоака", "value": "да"},
       {"param": "Подозрительные слова", "value": "class_sample_offer, sampleOffered, sample_dismissed, Redirected, RedirectCancelled, PAYWALL, PAYWALL_INTENT, paywallintent, licensecheck, LicenseCheckException, CHECK_LICENSE"}
     ],
     "domains": ["config.ru"],
-    "collected_data": [],
-    "cloaking": "нет"
+    "collected_data": ["имя пакета приложения", "откуда установлено приложение", "признак системного приложения", "версия Android", "флаг окончания пробного периода"],
+    "cloaking": "да"
   }
 }
