@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "source": "Google Play listing + APKCube scan of Play APK (Play Collector folder betclick/Betclic-JAYBEE CATERING LTD was missing on origin/main; APKPure 404; APKCombo domain expired; XAPK/APKS download blocked by Cloudflare after token)",
+  "package": "com.jorden.kramok.plinuk",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Crock Weeks",
+  "play_title": "Betclic",
+  "developer": "JAYBEE CATERING LTD",
+  "sha256": "4ef8e05275fe1236d31ecae5b8861f147e587bc15679a5b816b9c83bd945f2a8",
+  "sha1": "f19481b01424a847928fd10e55c5d5d892057935",
+  "md5": "d1cfc1b4b10d58fc0a977f3287a686df",
+  "apkId": "126061",
+  "format": "apks",
+  "arch": "arm64-v8a",
+  "fileSize": 2306465,
+  "minSdk": 29,
+  "targetSdk": 36,
+  "pairip": true,
+  "internet_permission": false,
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.RECEIVE_BOOT_COMPLETED",
+    "android.permission.WAKE_LOCK",
+    "com.android.vending.CHECK_LICENSE",
+    "com.jorden.kramok.plinuk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "agent_base_apk": "нет (бинарь не попал в git; скачивание APKS с APKCube после download-token упирается в captcha/pow)",
+  "jadx": {
+    "ok": false,
+    "skipped": true,
+    "note": "agent_src отсутствует; agent_base.apk нет в репозитории. Разбор манифеста/защиты — по скану APKCube того же Play-пакета (fromGooglePlay=true, sha256 выше)."
+  },
+  "cloaking": "да",
+  "note": "Play «Betclic» ≠ application-label «Crock Weeks». Карточка Play — трекер домашней ферментации, полностью офлайн. Скан APK: нет android.permission.INTERNET, pairip=true, CHECK_LICENSE. domain_checks: config.ru и lineheightstyle.alignment.top (ложные хосты). Клоака=да как белая оболочка."
+}

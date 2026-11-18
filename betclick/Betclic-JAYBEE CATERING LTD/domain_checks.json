@@ -1,0 +1,21 @@
+{
+  "domains": ["config.ru", "lineheightstyle.alignment.top"],
+  "results": [
+    {
+      "domain": "config.ru",
+      "vt_url": "https://www.virustotal.com/gui/domain/config.ru",
+      "detections": "0/92 (malicious=0, suspicious=0)",
+      "redirect": "нет",
+      "content": "не удалось открыть (ReadTimeout)",
+      "parked": "регистратор: RU-CENTER-RU"
+    },
+    {
+      "domain": "lineheightstyle.alignment.top",
+      "vt_url": "https://www.virustotal.com/gui/domain/lineheightstyle.alignment.top",
+      "detections": "0/92 (malicious=0, suspicious=0)",
+      "redirect": "нет (DNS не резолвится)",
+      "content": "нет (DNS не резолвится)",
+      "parked": "регистратор: Alibaba Cloud Computing Ltd. d/b/a HiChina (www.net.cn)"
+    }
+  ]
+}

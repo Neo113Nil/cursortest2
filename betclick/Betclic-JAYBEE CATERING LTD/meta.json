@@ -1,0 +1,52 @@
+{
+  "app_id": "com.jorden.kramok.plinuk",
+  "title": "Betclic",
+  "apk_label": "Crock Weeks",
+  "developer": "JAYBEE CATERING LTD",
+  "package": "com.jorden.kramok.plinuk",
+  "folder": "Betclic-JAYBEE CATERING LTD",
+  "path": "betclick/Betclic-JAYBEE CATERING LTD",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "cloaking_reason": "белая оболочка: карточка Play «Betclic» (букмекер) ≠ application-label «Crock Weeks» (учёт недель ферментации). В этой сборке нет android.permission.INTERNET; PairIP + CHECK_LICENSE; HTTP-гейта/WebView/оффера по скану APK нет.",
+  "version_name": "1.0",
+  "version_code": "1",
+  "source": "Google Play + APKCube APK scan (Play Collector folder was missing in git)",
+  "agp": "нет",
+  "kotlin": "да",
+  "minSdk": 29,
+  "targetSdk": 36,
+  "sha256_base": "4ef8e05275fe1236d31ecae5b8861f147e587bc15679a5b816b9c83bd945f2a8",
+  "play": {
+    "title": "Betclic",
+    "developer": "JAYBEE CATERING LTD",
+    "genre": "Books & Reference",
+    "summary": "Betclic helps you track home fermentation weeks based on temperature.",
+    "containsAds": false,
+    "installs": "5+",
+    "updated": "Nov 3, 2026",
+    "offline_claim": "All content is included in the app and works completely offline."
+  },
+  "apkcube_scan": {
+    "fromGooglePlay": true,
+    "verdict": "secure",
+    "pairip": true,
+    "flagged": 0,
+    "vendors": 65,
+    "internet": false,
+    "permissions": [
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.FOREGROUND_SERVICE",
+      "android.permission.POST_NOTIFICATIONS",
+      "android.permission.RECEIVE_BOOT_COMPLETED",
+      "android.permission.WAKE_LOCK",
+      "com.android.vending.CHECK_LICENSE",
+      "com.jorden.kramok.plinuk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+    ]
+  },
+  "brief_report": {
+    "cloaking": "да",
+    "domains": ["config.ru", "lineheightstyle.alignment.top"],
+    "collected_data": ["имя пакета приложения"]
+  }
+}
