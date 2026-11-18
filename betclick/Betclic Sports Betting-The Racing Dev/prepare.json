@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder betclick/Betclic Sports Betting-The Racing Dev was missing on origin/main)",
+  "package": "com.core.nexus.sys.cell.dash.betclicsportsbettingpoker",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Win",
+  "play_title": "Betclic Sports Betting",
+  "developer": "The Racing Dev",
+  "sha256": "0a2b869d3fe88b8f58d1f30f07a89033532c7c5dc782cd5bebd7273284ae7aca",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "Betclic: Sports Betting & Poke_1.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.core.nexus.sys.cell.dash.betclicsportsbettingpoker-1.apk",
+    "apk/com.core.nexus.sys.cell.dash.betclicsportsbettingpoker-1-config.en.apk",
+    "apk/com.core.nexus.sys.cell.dash.betclicsportsbettingpoker-1-config.mdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.core.nexus.sys.cell.dash.betclicsportsbettingpoker; agent_src gitignored, not committed"
+  },
+  "cloaking": "да",
+  "gate_url": "https://ng4northernharborstudio.online/?t=1b7cc17d",
+  "link_open_mode": "Browser / ACTION_VIEW",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.core.nexus.sys.cell.dash.betclicsportsbettingpoker-1.apk",
+    "apk/com.core.nexus.sys.cell.dash.betclicsportsbettingpoker-1-config.en.apk",
+    "apk/com.core.nexus.sys.cell.dash.betclicsportsbettingpoker-1-config.mdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK Betclic Sports Betting 1.0 vc1 from APKPure (~4.3 MB): base + config.en + config.mdpi (no asset/xxhdpi split in this XAPK). Play «Betclic Sports Betting» ≠ application-label «Win». Gate GET https://ng4northernharborstudio.online/?t=1b7cc17d. Offer via ACTION_VIEW; white path MainActivity2. agent_src via jadx 1.5.3, not committed."
+}

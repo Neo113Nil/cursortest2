@@ -1,0 +1,47 @@
+{
+  "app_id": "com.core.nexus.sys.cell.dash.betclicsportsbettingpoker",
+  "title": "Betclic Sports Betting",
+  "apk_label": "Win",
+  "developer": "The Racing Dev",
+  "package": "com.core.nexus.sys.cell.dash.betclicsportsbettingpoker",
+  "folder": "Betclic Sports Betting-The Racing Dev",
+  "path": "betclick/Betclic Sports Betting-The Racing Dev",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "version_name": "1.0",
+  "version_code": "1",
+  "source": "apkpure XAPK (Play Collector folder was missing in git)",
+  "gate_url": "https://ng4northernharborstudio.online/?t=1b7cc17d",
+  "link_open_mode": "Browser / ACTION_VIEW",
+  "agp": "9.2.1",
+  "kotlin": "да",
+  "minSdk": 32,
+  "targetSdk": 36,
+  "sha256_base": "0a2b869d3fe88b8f58d1f30f07a89033532c7c5dc782cd5bebd7273284ae7aca",
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "Betclic Sports Betting (в приложении: Win)"},
+      {"param": "Android Gradle Plugin", "value": "9.2.1"},
+      {"param": "minSdk", "value": "32"},
+      {"param": "targetSdk", "value": "36"},
+      {"param": "Kotlin", "value": "да"},
+      {"param": "Web View", "value": "нет"},
+      {"param": "Custom Tabs", "value": "нет"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "нет"},
+      {"param": "Permissions", "value": "android.permission.INTERNET, com.core.nexus.sys.cell.dash.betclicsportsbettingpoker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"},
+      {"param": "Libraries", "value": "kotlin-stdlib, kotlinx-coroutines-core/android 1.9.0, okhttp3 4.12.0, okio, androidx.appcompat 1.7.1, androidx.activity 1.13.0, androidx.core/core-ktx 1.18.0, androidx.fragment 1.5.4, androidx.recyclerview 1.2.1, androidx.constraintlayout 2.2.1, androidx.viewpager2 1.0.0, androidx.cardview 1.0.0, androidx.coordinatorlayout 1.1.0, androidx.emoji2 1.3.0, androidx.startup 1.1.1, androidx.profileinstaller 1.4.0, androidx.savedstate 1.2.1, androidx.lifecycle, androidx.transition 1.5.0, androidx.drawerlayout 1.1.1, androidx.customview 1.2.0, androidx.vectordrawable 1.1.0, androidx.graphics.shapes 1.0.1, androidx.databinding viewbinding 9.2.1, com.google.android.material 1.14.0, com.pairip.application / com.pairip.licensecheck"},
+      {"param": "Подозрительные домены", "value": "ng4northernharborstudio.online"},
+      {"param": "SharedPreferences", "value": "файл local, ключ saved_url — сохраняет внешнюю ссылку после проверки; файл quick_count_prefs — локальный прогресс белой оболочки"},
+      {"param": "Есть ли клоака", "value": "да"},
+      {"param": "Подозрительные слова", "value": "redirect, saved_url, betting, poker, betclic, X-Device-Model, User-Agent, Accept-Language, status, CHECK_LICENSE, license check, Location"}
+    ],
+    "domains": ["ng4northernharborstudio.online"],
+    "collected_data": [
+      "модель телефона",
+      "строка браузера телефона",
+      "язык в заголовке"
+    ],
+    "cloaking": "да"
+  }
+}
