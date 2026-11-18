@@ -1,0 +1,17 @@
+{
+  "app_id": "com.webstore.footballscores",
+  "title": "7games bet'",
+  "developer": "WEB STORE",
+  "apk_label": "7GamesApp",
+  "store_title_mismatch": true,
+  "play_developer": "WEB STORE",
+  "keyword": "7games bet'",
+  "folder": "7games bet'-WEB STORE",
+  "path": "url-batch/7games bet'-WEB STORE",
+  "version": "300.0.2",
+  "version_code": 300002,
+  "ok": true,
+  "cloaking": "да",
+  "source": "apkpure.net XAPK via d.apkpure.net (Play Collector folder was missing in git)",
+  "notes": "Play «7games bet'» ≠ application-label «7GamesApp» (также app_new_name Football 90). Launcher AdaptiveSwitch: POST https://scoresnews.site/protocol, Custom Tabs offer vs MainActivity native. agent_src via jadx 1.5.3, not committed."
+}

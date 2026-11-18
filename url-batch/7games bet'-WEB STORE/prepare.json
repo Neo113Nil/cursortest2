@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "source": "apkpure.net XAPK via d.apkpure.net (Play Collector folder url-batch/7games bet'-WEB STORE was missing on origin/main)",
+  "package": "com.webstore.footballscores",
+  "version_name": "300.0.2",
+  "version_code": 300002,
+  "app_label": "7GamesApp",
+  "play_title": "7games bet'",
+  "developer": "WEB STORE",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "com.webstore.footballscores.apk",
+    "config.armeabi_v7a.apk",
+    "config.mdpi.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed; jadx 1.5.3 finished with errors, count: 7"
+  },
+  "note": "Play Collector folder was missing on origin/main. XAPK 7games bet' 300.0.2 (vc 300002) from APKPure via d.apkpure.net (~7.5 MB). Splits in this XAPK: base + config.armeabi_v7a + config.mdpi (no asset/arm64_v8a/xxhdpi in this XAPK). Play «7games bet'» ≠ application-label «7GamesApp». Cloak=да. Gate https://scoresnews.site/protocol. agent_src via jadx 1.5.3, not committed."
+}
