@@ -1,0 +1,16 @@
+{
+  "app_id": "com.afaqdev.souratrahman.soratalwa9i3a",
+  "title": "com.afaqdev.souratrahman.soratalwa9i3a",
+  "developer": "unknown",
+  "apk_label": "FV Play",
+  "store_title_mismatch": true,
+  "keyword": "url-batch",
+  "folder": "com.afaqdev.souratrahman.soratalwa9i3a-unknown",
+  "path": "url-batch/com.afaqdev.souratrahman.soratalwa9i3a-unknown",
+  "version": "60.1.1",
+  "version_code": 6011,
+  "ok": true,
+  "cloaking": "да",
+  "source": "apkpure",
+  "notes": "Play/card title = package name; APK application-label = FV Play. Flutter v2 MainActivity V7pxpygng. url_launcher WebView (I0/h, I0/i) + Custom Tabs + webview_flutter. Dart: webview_takeover, takeoverPortal, offers_banner, {CLICK_SOURCE}, Dio. No custom hosts in plaintext (pipeline config.ru = language split)."
+}
