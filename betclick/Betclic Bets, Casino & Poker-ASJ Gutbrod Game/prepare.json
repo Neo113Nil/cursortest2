@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "source": "APKCube APKS (Play Collector folder betclick/Betclic Bets, Casino & Poker-ASJ Gutbrod Game was missing on origin/main)",
+  "package": "com.havoc.crown.play.marvelbet",
+  "version_name": "1.2.6",
+  "version_code": 10,
+  "app_label": "Win App",
+  "play_title": "Betclic Bets, Casino & Poker",
+  "developer": "ASJ Gutbrod Game",
+  "sha256": "d019275417de8de30a42dd2d601455834ffb8bac4167304176a903a7ee72e310",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.havoc.crown.play.marvelbet.apk",
+    "apk/com.havoc.crown.play.marvelbet-split_config.en.apk",
+    "apk/com.havoc.crown.play.marvelbet-split_config.xhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.havoc.crown.play.marvelbet; agent_src gitignored, not committed"
+  },
+  "cloaking": "да",
+  "gate_url": "https://raspy-truth-cea7.cinovnikanzela.workers.dev/?app=com.havoc.crown.play.marvelbet",
+  "link_open_mode": "Browser / ACTION_VIEW",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.havoc.crown.play.marvelbet.apk",
+    "apk/com.havoc.crown.play.marvelbet-split_config.en.apk",
+    "apk/com.havoc.crown.play.marvelbet-split_config.xhdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. APKS from APKCube: base + config.en + density split (bundle xxhdpi, copied as listed xhdpi). Play «Betclic Bets, Casino & Poker» ≠ application-label «Win App». Gate GET https://raspy-truth-cea7.cinovnikanzela.workers.dev/?app=com.havoc.crown.play.marvelbet. Offer via ACTION_VIEW; white path MainActivity2. agent_src via jadx 1.5.3, not committed. config.ru is a Play language split, not a host."
+}
