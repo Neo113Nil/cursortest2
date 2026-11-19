@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder betclick/Betclic-SKYLINEUSMAN LLC was missing on origin/main)",
+  "package": "com.fieldtennis0711.app",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Field Tennis",
+  "play_title": "Betclic",
+  "developer": "SKYLINEUSMAN LLC",
+  "sha256": "e52e9e940cf0ef7a10e67f7c697c02760e8812e08e3381b974e3244e1d243b8f",
+  "sha256_xapk": "97712736cb2363b4712b2aa8a4f49100047c576a2cad2edb9c5948f3a6d67351",
+  "sha1_xapk": "41bea6f01898565a4486ea1ff77c92a5a02d401c",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "Betclic_1.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.fieldtennis0711.app.apk",
+    "apk/com.fieldtennis0711.app-split_config.en.apk",
+    "apk/com.fieldtennis0711.app-split_config.mdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "errors": 9,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.fieldtennis0711.app (MainActivity, ArenaActivity, CastleActivity, CoinActivity, DoorActivity, FieldExecutor); agent_src gitignored; 9 non-fatal decompile errors"
+  },
+  "cloaking": "да",
+  "gate_url": "https://shy-shape-1f83.mcgoonhedge-0be.workers.dev/?app=com.fieldtennis0711.app",
+  "link_open_mode": "ACTION_VIEW",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.fieldtennis0711.app.apk",
+    "apk/com.fieldtennis0711.app-split_config.en.apk",
+    "apk/com.fieldtennis0711.app-split_config.mdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK Betclic 1.0 vc1 from APKPure (~4.5 MB): base + config.en + config.mdpi (pipeline file list named asset/xxhdpi; this XAPK has mdpi, no asset split). Play «Betclic» ≠ application-label «Field Tennis». Gate GET https://shy-shape-1f83.mcgoonhedge-0be.workers.dev/?app= + package; headers X-Device-Model, Accept-Language en-US, User-Agent. Offer via ACTION_VIEW if final URL not workers.dev; white path ArenaActivity. agent_src via jadx 1.5.3, not committed."
+}
