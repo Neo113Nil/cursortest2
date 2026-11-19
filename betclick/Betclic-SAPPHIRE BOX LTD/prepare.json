@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "source": "Google Play listing + APKCube scan of Play APK (Play Collector folder betclick/Betclic-SAPPHIRE BOX LTD was missing on origin/main; APKPure 404; APKCombo domain expired; APKCube Hold-to-verify blocked APKS download)",
+  "package": "com.hoop.tosser.gamme",
+  "version_name": "1.0",
+  "version_code": 2,
+  "app_label": "Hoop Challenge",
+  "play_title": "Betclic",
+  "developer": "SAPPHIRE BOX LTD",
+  "format": "apks",
+  "arch": "arm64-v8a",
+  "fileSize": 2097152,
+  "minSdk": 26,
+  "targetSdk": 36,
+  "pairip": true,
+  "internet_permission": true,
+  "permissions": [
+    "com.google.android.gms.permission.AD_ID",
+    "android.permission.INTERNET",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCESS_WIFI_STATE",
+    "com.hoop.tosser.gamme.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "agent_base_apk": "нет (бинарь не попал в git; APKPure 404; скачивание APKS с APKCube упирается в Hold to verify)",
+  "jadx": {
+    "ok": false,
+    "skipped": true,
+    "note": "agent_src отсутствует в git (gitignore); agent_base.apk нет в репозитории. First-party loadUrl hits from pipeline local scan of agent_src: BubbleDune / BreezeBasket / FinchTulip."
+  },
+  "cloaking": "да",
+  "note": "Play «Betclic» ≠ application-label «Hoop Challenge». INTERNET + AD_ID + CHECK_LICENSE. Pipeline agent_src scan: loadUrl in com.hoop.tosser.gamme.flow.offer. domain_checks: config.ru. Клоака=да как белая оболочка и оффер-WebView."
+}

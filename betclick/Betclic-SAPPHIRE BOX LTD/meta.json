@@ -1,0 +1,41 @@
+{
+  "app_id": "com.hoop.tosser.gamme",
+  "title": "Betclic",
+  "apk_label": "Hoop Challenge",
+  "developer": "SAPPHIRE BOX LTD",
+  "package": "com.hoop.tosser.gamme",
+  "folder": "Betclic-SAPPHIRE BOX LTD",
+  "path": "betclick/Betclic-SAPPHIRE BOX LTD",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "cloaking_reason": "белая оболочка: карточка Play «Betclic» ≠ application-label «Hoop Challenge». INTERNET + AD_ID. Локальный скан agent_src: loadUrl в flow/offer (BubbleDune, BreezeBasket, FinchTulip). PairIP CHECK_LICENSE. Бинарь в git отсутствовал, APKPure 404, APKCube Hold-to-verify заблокировал скачивание.",
+  "version_name": "1.0",
+  "version_code": "2",
+  "source": "Google Play listing + APKCube scan (Play Collector folder was missing in git)",
+  "agp": "нет",
+  "kotlin": "да",
+  "minSdk": 26,
+  "targetSdk": 36,
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "Betclic (в приложении: Hoop Challenge)"},
+      {"param": "Android Gradle Plugin", "value": "нет"},
+      {"param": "minSdk", "value": "26"},
+      {"param": "targetSdk", "value": "36"},
+      {"param": "Kotlin", "value": "да"},
+      {"param": "Web View", "value": "да"},
+      {"param": "Custom Tabs", "value": "нет"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "нет"},
+      {"param": "Permissions", "value": "com.google.android.gms.permission.AD_ID, android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, com.hoop.tosser.gamme.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"},
+      {"param": "Libraries", "value": "PairIP (com.pairip.licensecheck), Google Play Services (AD_ID), android.webkit (WebView loadUrl)"},
+      {"param": "Подозрительные домены", "value": "config.ru"},
+      {"param": "SharedPreferences", "value": "нет"},
+      {"param": "Есть ли клоака", "value": "да"},
+      {"param": "Подозрительные слова", "value": "offer, loadUrl, Hoop Challenge, Betclic, CHECK_LICENSE, PairIP, AD_ID"}
+    ],
+    "domains": ["config.ru"],
+    "collected_data": ["имя пакета приложения"],
+    "cloaking": "да"
+  }
+}
