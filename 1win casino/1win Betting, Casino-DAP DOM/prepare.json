@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder 1win casino/1win Betting, Casino-DAP DOM was missing on origin/main)",
+  "package": "com.element.vision.tombola",
+  "version_name": "1.1.5",
+  "version_code": 6,
+  "app_label": "Win App",
+  "play_title": "1win Betting, Casino",
+  "developer": "DAP DOM",
+  "sha256": "7b75ba63943031184005f8d218a78a41e5939db971b9bbe0ecaf4ba499e3e571",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "1win: Betting, Casino_1.1.5_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.element.vision.tombola-6.apk",
+    "apk/com.element.vision.tombola-6-config.en.apk",
+    "apk/com.element.vision.tombola-6-config.mdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "errors": 0,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.element.vision.tombola (MainActivity, MainActivity2); agent_src gitignored, not committed"
+  },
+  "cloaking": "да",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.element.vision.tombola-6.apk",
+    "apk/com.element.vision.tombola-6-config.en.apk",
+    "apk/com.element.vision.tombola-6-config.mdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK Win App 1.1.5 vc6 from APKPure (~3.1 MB): base + config.en + config.mdpi (pipeline file list named asset/xxhdpi; this XAPK has mdpi, no asset split). Play «1win Betting, Casino» ≠ application-label «Win App». Gate GET https://nameless-mouse-2403.nikisinoleg89.workers.dev/?app= + package; headers X-Device-Model, Accept-Language uk-UA,it-IT;q=0.9,en-US;q=0.8, User-Agent. Offer via ACTION_VIEW if final URL not workers.dev; white path MainActivity2. config.ru = splits0.xml language split. agent_src via jadx 1.5.3, not committed."
+}
