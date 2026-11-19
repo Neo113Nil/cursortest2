@@ -1,0 +1,31 @@
+{
+  "ok": true,
+  "source": "Google Play listing + APKCube scan of Play APK (Play Collector folder betclick/Betclic-Omicron Software Digital was missing on origin/main; APKPure 404; APKCombo domain expired; XAPK/APKS download blocked by APKCube hold-to-verify after Cloudflare)",
+  "package": "com.jorden.glanik.tromil",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Tooth Chart",
+  "play_title": "Betclic",
+  "developer": "Omicron Software Digital",
+  "sha256": "9712db6c54372cef763d6f930ec87e7618b2065ea9dfa3a9adc9891871d7f2f6",
+  "sha1": "97bf290cc0940ec455702884987f24624f5ad4a7",
+  "format": "apks",
+  "arch": "arm64-v8a",
+  "fileSize": "~2 MB (APKCube)",
+  "minSdk": 26,
+  "targetSdk": 36,
+  "internet_permission": false,
+  "permissions": [
+    "com.android.vending.CHECK_LICENSE"
+  ],
+  "permissions_declared_count": 2,
+  "agent_base_apk": "нет (бинарь не попал в git; скачивание APKS с APKCube после Download anyway упирается в hold-to-verify)",
+  "jadx": {
+    "ok": false,
+    "skipped": true,
+    "note": "agent_src отсутствует; agent_base.apk нет в репозитории. Разбор манифеста/защиты — по скану APKCube того же Play-пакета (fromGooglePlay=true, sha256 выше) и карточке Play (permissions: Google Play license check)."
+  },
+  "privacy_policy": "https://telegra.ph/Privacy-Policy--Tooth-Chart-10-29",
+  "cloaking": "да",
+  "note": "Play «Betclic» ≠ application-label «Tooth Chart». Карточка Play — офлайн-справочник зубной нумерации FDI, жанр Books & Reference, без рекламы. Скан APK: 2 permissions, named CHECK_LICENSE, INTERNET в Play не показан, APKS 2 MB arm64-v8a. domain_checks: config.ru. Клоака=да как белая оболочка."
+}

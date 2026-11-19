@@ -1,0 +1,13 @@
+{
+  "domains": ["config.ru"],
+  "results": [
+    {
+      "domain": "config.ru",
+      "vt_url": "https://www.virustotal.com/gui/domain/config.ru",
+      "detections": "0/92 (malicious=0, suspicious=0)",
+      "redirect": "нет",
+      "content": "не удалось открыть (ReadTimeout)",
+      "parked": "регистратор: RU-CENTER-RU"
+    }
+  ]
+}

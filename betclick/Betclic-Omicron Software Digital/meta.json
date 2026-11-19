@@ -1,0 +1,54 @@
+{
+  "app_id": "com.jorden.glanik.tromil",
+  "title": "Betclic",
+  "apk_label": "Tooth Chart",
+  "developer": "Omicron Software Digital",
+  "package": "com.jorden.glanik.tromil",
+  "folder": "Betclic-Omicron Software Digital",
+  "path": "betclick/Betclic-Omicron Software Digital",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "cloaking_reason": "белая оболочка: карточка Play «Betclic» (букмекер) ≠ application-label «Tooth Chart» (справочник нумерации зубов). В карточке Play из разрешений видно только Google Play license check; android.permission.INTERNET нет. HTTP-гейт/WebView/оффер по скану APKCube и Play не показаны; jadx-исходников в git нет.",
+  "version_name": "1.0",
+  "version_code": "1",
+  "source": "Google Play + APKCube APK scan (Play Collector folder was missing in git)",
+  "agp": "нет",
+  "kotlin": "нет",
+  "minSdk": 26,
+  "targetSdk": 36,
+  "sha256_base": "9712db6c54372cef763d6f930ec87e7618b2065ea9dfa3a9adc9891871d7f2f6",
+  "play": {
+    "title": "Betclic",
+    "developer": "Omicron Software Digital",
+    "genre": "Books & Reference",
+    "summary": "Betclic is an offline guide to dental tooth numbering and development.",
+    "containsAds": false,
+    "installs": "1+",
+    "updated": "Nov 3, 2026",
+    "privacyPolicy": "https://telegra.ph/Privacy-Policy--Tooth-Chart-10-29",
+    "permissions": ["Google Play license check"]
+  },
+  "apkcube_scan": {
+    "fromGooglePlay": true,
+    "verdict": "secure",
+    "flagged": 0,
+    "vendors": 65,
+    "internet": false,
+    "format": "apks",
+    "arch": "arm64-v8a",
+    "size": "2 MB",
+    "android": "8.0+",
+    "target_android": "16",
+    "permissions_declared": 2,
+    "permissions": [
+      "com.android.vending.CHECK_LICENSE"
+    ],
+    "signed_by": "CN=Android, O=Google Inc.",
+    "cert_sha256": "c833015208d61bba6dcbbf0cee1814a22f7fa4ca52088d3dd99d483b9045cb56"
+  },
+  "brief_report": {
+    "cloaking": "да",
+    "domains": ["config.ru"],
+    "collected_data": ["имя пакета приложения"]
+  }
+}
