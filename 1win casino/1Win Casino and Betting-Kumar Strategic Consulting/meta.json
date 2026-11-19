@@ -1,0 +1,31 @@
+{
+  "app_id": "com.brevinocharge.u6n9c2.game",
+  "title": "1Win Casino and Betting",
+  "apk_label": "Brevino Charge",
+  "developer": "Kumar Strategic Consulting",
+  "package": "com.brevinocharge.u6n9c2.game",
+  "folder": "1Win Casino and Betting-Kumar Strategic Consulting",
+  "path": "1win casino/1Win Casino and Betting-Kumar Strategic Consulting",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "version_name": "2.0",
+  "version_code": "2",
+  "source": "apkpure XAPK (Play Collector folder was missing in git)",
+  "configcat_sdk_key": "configcat-sdk-1/bi7fCHL9o0iBdnYpQE-HQQ/g8AKqSuolkm0xwaEkwDerw",
+  "configcat_string_key": "xcbhhkfabkfa",
+  "onesignal_app_id": "23bcd20e-57ab-4604-93cd-5a9cb5989b50",
+  "link_open_mode": "BROWSER",
+  "button_text": "Tap here",
+  "agp": "9.2.1",
+  "kotlin": "2.2.10",
+  "minSdk": 32,
+  "targetSdk": 36,
+  "live_configcat_value": "Tap here",
+  "domains": [
+    "app.configcat.com",
+    "cdn-eu.configcat.com",
+    "cdn-global.configcat.com",
+    "configcat.com",
+    "dispatchers.io"
+  ]
+}

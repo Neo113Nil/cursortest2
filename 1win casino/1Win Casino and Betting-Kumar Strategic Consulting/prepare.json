@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder was missing in git)",
+  "package": "com.brevinocharge.u6n9c2.game",
+  "version_name": "2.0",
+  "version_code": 2,
+  "app_label": "Brevino Charge",
+  "play_title": "1Win Casino and Betting",
+  "developer": "Kumar Strategic Consulting",
+  "base_apk": "com.brevinocharge.u6n9c2.game.apk",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "1Win: Casino and Betting_2.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "jadx": {
+    "ok": true,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; agent_src not committed (gitignored)"
+  },
+  "cloaking": "да",
+  "analysis_files": [
+    "agent_base.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "cloaking_hints.md",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK 2.0 (vc2) from APKPure via d.apkpure.net. Play «1Win Casino and Betting» ≠ application-label «Brevino Charge». Cloak via Pulse/ConfigCat key xcbhhkfabkfa; white button «Tap here»; offer via EXTERNAL BROWSER (Custom Tabs class present, default mode BROWSER).",
+  "errors": []
+}
