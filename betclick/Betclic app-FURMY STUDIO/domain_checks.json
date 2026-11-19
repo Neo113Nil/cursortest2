@@ -1,0 +1,20 @@
+{
+  "domains": [
+    {
+      "domain": "api.wagle.sh",
+      "virustotal_url": "https://www.virustotal.com/gui/domain/api.wagle.sh",
+      "detections": "0/92 (malicious=0, suspicious=0)",
+      "redirects_to": "нет (без редиректа)",
+      "page_summary": "title: wagle · feature flags & remote config, agent-native over MCP. wagle · feature flags & remote config, agent-native over MCP",
+      "parked_at": "регистратор: Cloudflare, Inc"
+    },
+    {
+      "domain": "opentelemetry.io",
+      "virustotal_url": "https://www.virustotal.com/gui/domain/opentelemetry.io",
+      "detections": "0/92 (malicious=0, suspicious=0)",
+      "redirects_to": "нет (без редиректа)",
+      "page_summary": "title: OpenTelemetry. OpenTelemetry For AI agents: the site's llms.txt is at /llms.txt. This page has a Markdown version at /index.md. The OpenTelemetry Logo OpenTelemetry Docs Ecosystem Status Community Training Blog English EN বাংলা English Español Français 日本語 한국어 Polski Português Română Українська",
+      "parked_at": "регистратор: 1API GmbH"
+    }
+  ]
+}

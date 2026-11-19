@@ -1,0 +1,48 @@
+{
+  "ok": true,
+  "source": "APKCube APKS (Play Collector folder betclick/Betclic app-FURMY STUDIO was missing on origin/main)",
+  "package": "com.racxitoondrop.mobile.app",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Racxitoon Drop",
+  "play_title": "Betclic app",
+  "developer": "FURMY STUDIO",
+  "sha256": "7aa545a27b5eebd864a05d24d7d1c05616021dcb3cf840beb5585678aa8820f5",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.racxitoondrop.mobile.app-1-config.arm64_v8a.apk",
+    "apk/com.racxitoondrop.mobile.app-1-config.en.apk",
+    "apk/com.racxitoondrop.mobile.app-1-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "errors": 47,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.racxitoondrop.mobile.app (GateActivity, MainActivity) and com.tavrix.wagle; agent_src gitignored; 47 non-fatal decompile errors"
+  },
+  "cloaking": "да",
+  "wagle_sdk_key": "7VgMgKm3lOU4DSmCul3gnpatkxNPpRZT-JFnXJxiakI",
+  "wagle_string_key": "fagghsrf",
+  "onesignal_app_id": "13db9420-ea5e-42a0-bd83-606603901775",
+  "link_open_mode": "CHROME_TAB",
+  "open_in_chrome_tab": true,
+  "button_text": "Ready",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.racxitoondrop.mobile.app-1-config.arm64_v8a.apk",
+    "apk/com.racxitoondrop.mobile.app-1-config.en.apk",
+    "apk/com.racxitoondrop.mobile.app-1-config.xxhdpi.apk",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.md",
+    "meta.json",
+    "cloaking_hints.md",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder on origin/main was missing. APKS Betclic app 1.0 vc1 from APKCube (~16.2 MB, sha256 7aa545a2…): base + config.arm64_v8a + config.en + config.xxhdpi. Play «Betclic app» ≠ application-label «Racxitoon Drop». Cloak via Tavrix/Wagle key fagghsrf; white button «Ready»; offer via CHROME_TAB (Custom Tabs). agent_src via jadx 1.5.3, not committed."
+}

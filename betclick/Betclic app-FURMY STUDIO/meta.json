@@ -1,0 +1,22 @@
+{
+  "package": "com.racxitoondrop.mobile.app",
+  "play_title": "Betclic app",
+  "app_label": "Racxitoon Drop",
+  "developer": "FURMY STUDIO",
+  "version_name": "1.0",
+  "version_code": 1,
+  "min_sdk": 29,
+  "target_sdk": 36,
+  "agp": "9.2.1",
+  "kotlin": "2.2.10",
+  "sha256": "7aa545a27b5eebd864a05d24d7d1c05616021dcb3cf840beb5585678aa8820f5",
+  "cloaking": "да",
+  "wagle_sdk_key": "7VgMgKm3lOU4DSmCul3gnpatkxNPpRZT-JFnXJxiakI",
+  "wagle_project": "01a1794a-8ed2-7205-ad90-d43ed175e916",
+  "wagle_environment": "production",
+  "wagle_string_key": "fagghsrf",
+  "onesignal_app_id": "13db9420-ea5e-42a0-bd83-606603901775",
+  "button_text": "Ready",
+  "link_open_mode": "CHROME_TAB",
+  "notes": "Play title Betclic app ≠ APK label Racxitoon Drop. Launcher GateActivity: TavrixHub/Wagle fetch flag fagghsrf; value Ready opens MainActivity; HTTP URL opens Custom Tabs. Pairip Application wrapper."
+}
