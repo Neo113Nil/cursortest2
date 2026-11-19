@@ -1,0 +1,25 @@
+{
+  "all_custom_domains": [
+    "hidden-thunder-9e5d.ancient-recipe-9ecd.workers.dev"
+  ],
+  "checked": [
+    "hidden-thunder-9e5d.ancient-recipe-9ecd.workers.dev"
+  ],
+  "count": 1,
+  "vt_configured": false,
+  "suspicious_domains": [
+    "hidden-thunder-9e5d.ancient-recipe-9ecd.workers.dev"
+  ],
+  "note": "config.ru in splits0.xml is a Play language split (config.ru), not a network host. The prompt VT table for config.ru is not used. Gate host is Cloudflare Workers; VirusTotal vendors were not returned for it.",
+  "checks": [
+    {
+      "domain": "hidden-thunder-9e5d.ancient-recipe-9ecd.workers.dev",
+      "vt_url": "https://www.virustotal.com/gui/domain/hidden-thunder-9e5d.ancient-recipe-9ecd.workers.dev",
+      "detections": "нет",
+      "vendors": {},
+      "redirects_to": "нет",
+      "page_excerpt": "{\"status\":\"ok\",\"version\":\"1.0.0\"} (служебный JSON, без внешней страницы)",
+      "parked_at": "Cloudflare Workers (workers.dev), A 172.67.141.249"
+    }
+  ]
+}
