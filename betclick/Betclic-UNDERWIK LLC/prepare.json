@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder betclick/Betclic-UNDERWIK LLC was missing on origin/main)",
+  "package": "com.luckyfield7064.app",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Lucky Field",
+  "play_title": "Betclic",
+  "developer": "UNDERWIK LLC",
+  "sha256": "2293498c819975273d8a2c21ce86cecb1a918899db02a570fc1c8658a6a2ec95",
+  "sha1": "b4b675bf9f446f1a2b11416f8b697d5272d5744f",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "Betclic_1.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.luckyfield7064.app.apk",
+    "apk/com.luckyfield7064.app-split_config.en.apk",
+    "apk/com.luckyfield7064.app-split_config.mdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "errors": 9,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.luckyfield7064.app (MainActivity, BossActivity, GuardActivity, LoadActivity, SwipeActivity, VelocityManager); agent_src gitignored; 9 non-fatal decompile errors"
+  },
+  "cloaking": "да",
+  "gate_url": "https://dark-feather-edb6.luedeckrepasky.workers.dev/?app=com.luckyfield7064.app",
+  "link_open_mode": "ACTION_VIEW",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.luckyfield7064.app.apk",
+    "apk/com.luckyfield7064.app-split_config.en.apk",
+    "apk/com.luckyfield7064.app-split_config.mdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK Betclic 1.0 vc1 from APKPure (~4.6 MB): base + config.en + config.mdpi (pipeline file list named split_config.xhdpi; this XAPK has mdpi). Play «Betclic» ≠ application-label «Lucky Field». Gate GET https://dark-feather-edb6.luedeckrepasky.workers.dev/?app= + package; headers X-Device-Model, Accept-Language en-US, User-Agent. Offer via ACTION_VIEW if final URL not workers.dev; white path LoadActivity. agent_src via jadx 1.5.3, not committed."
+}

@@ -1,0 +1,55 @@
+{
+  "app_id": "com.luckyfield7064.app",
+  "title": "Betclic",
+  "apk_label": "Lucky Field",
+  "developer": "UNDERWIK LLC",
+  "package": "com.luckyfield7064.app",
+  "folder": "Betclic-UNDERWIK LLC",
+  "path": "betclick/Betclic-UNDERWIK LLC",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "cloaking_reason": "белая оболочка: Play «Betclic» ≠ application-label «Lucky Field». MainActivity GET https://dark-feather-edb6.luedeckrepasky.workers.dev/?app=com.luckyfield7064.app (модель, User-Agent). Если финальный URL не workers.dev — ACTION_VIEW оффера и cached_redirect_url; иначе LoadActivity.",
+  "version_name": "1.0",
+  "version_code": "1",
+  "source": "apkpure XAPK (Play Collector folder was missing in git)",
+  "gate_url": "https://dark-feather-edb6.luedeckrepasky.workers.dev/?app=com.luckyfield7064.app",
+  "link_open_mode": "ACTION_VIEW (внешний браузер)",
+  "agp": "9.1.0",
+  "kotlin": "да",
+  "minSdk": 32,
+  "targetSdk": 36,
+  "sha256_base": "2293498c819975273d8a2c21ce86cecb1a918899db02a570fc1c8658a6a2ec95",
+  "play": {
+    "title": "Betclic",
+    "developer": "UNDERWIK LLC",
+    "updated": "Nov 9, 2026",
+    "contentRating": "Teen",
+    "supportEmail": "LuedeckRepasky@gmail.com"
+  },
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "Betclic (в приложении: Lucky Field)"},
+      {"param": "Android Gradle Plugin", "value": "9.1.0"},
+      {"param": "minSdk", "value": "32"},
+      {"param": "targetSdk", "value": "36"},
+      {"param": "Kotlin", "value": "да"},
+      {"param": "Web View", "value": "нет"},
+      {"param": "Custom Tabs", "value": "нет"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "нет"},
+      {"param": "Permissions", "value": "android.permission.VIBRATE, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.INTERNET, com.google.android.gms.permission.AD_ID, com.luckyfield7064.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"},
+      {"param": "Libraries", "value": "kotlin-stdlib, kotlinx-coroutines 1.8.1, okhttp3 4.12.0, androidx.appcompat 1.7.1, androidx.activity 1.8.0, androidx.core/core-ktx 1.16.0, androidx.constraintlayout 2.2.1, androidx.fragment 1.5.4, androidx.lifecycle 2.8.7, androidx.recyclerview 1.2.1, androidx.cardview 1.0.0, androidx.coordinatorlayout 1.1.0, androidx.drawerlayout 1.1.1, androidx.emoji2 1.3.0, androidx.profileinstaller 1.4.0, androidx.startup 1.1.1, androidx.transition 1.5.0, androidx.viewpager2 1.0.0, androidx.savedstate 1.2.1, material 1.14.0, viewbinding 9.1.0, pairip licensecheck"},
+      {"param": "Подозрительные домены", "value": "com.luckyfield7064.app"},
+      {"param": "SharedPreferences", "value": "файл app_cfg_store — ключ cached_redirect_url (сохранённый адрес после проверки)"},
+      {"param": "Есть ли клоака", "value": "да"},
+      {"param": "Подозрительные слова", "value": "cached_redirect_url, redirect, workers.dev, status, app="}
+    ],
+    "domains": ["com.luckyfield7064.app"],
+    "collected_data": [
+      "имя пакета приложения",
+      "модель телефона",
+      "строка браузера телефона"
+    ],
+    "cloaking": "да"
+  }
+}
