@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder 1win casino/1Win Casino-ESA Dienstleistung was missing on origin/main)",
+  "package": "com.beach.branch.jolt.batch.giant.x1wincasino",
+  "version_name": "1.0",
+  "version_code": 18,
+  "app_label": "Win",
+  "play_title": "1Win Casino",
+  "developer": "ESA Dienstleistung",
+  "sha256": "6c8a1d60d6fdaf19d431d27006726e4d88a2fdc76e3e2f54b0b37e7a9e0f5e2c",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "1Win Casino_1.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.beach.branch.jolt.batch.giant.x1wincasino-18.apk",
+    "apk/com.beach.branch.jolt.batch.giant.x1wincasino-18-config.en.apk",
+    "apk/com.beach.branch.jolt.batch.giant.x1wincasino-18-config.mdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "errors": 2,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3 with 2 errors; first-party com.beach.branch.jolt.batch.giant.x1wincasino; agent_src gitignored, not committed"
+  },
+  "cloaking": "да",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.beach.branch.jolt.batch.giant.x1wincasino-18.apk",
+    "apk/com.beach.branch.jolt.batch.giant.x1wincasino-18-config.en.apk",
+    "apk/com.beach.branch.jolt.batch.giant.x1wincasino-18-config.mdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK Win 1.0 vc18 from APKPure (~12.6 MB): base + config.en + config.mdpi (pipeline file list named asset/xxhdpi; this XAPK has mdpi, no asset split). Play «1Win Casino» ≠ application-label «Win». Gate GET https://long-bar-525e.ostroverskoanzela.workers.dev/?app= + package; headers X-Device-Model, Accept-Language en-US,en;q=0.9, User-Agent. Offer via ACTION_VIEW if final URL not workers.dev; white path MainActivity2 NEON ARCADE. agent_src via jadx 1.5.3, not committed."
+}
