@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder betclick/Betclic-Butte Hinge Studio was missing on origin/main)",
+  "package": "com.leaguechartbet4479.app",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "League Chart Bet",
+  "play_title": "Betclic",
+  "developer": "Butte Hinge Studio",
+  "sha256": "c1f35960e161f0e14163c7eb8fa9b6707527cb082e130d470f332fd10518f137",
+  "sha1": "b0c9d03eb9e4fb5ef4854a547057337c2c9d0c20",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "Betclic_1.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.leaguechartbet4479.app.apk",
+    "apk/com.leaguechartbet4479.app-split_config.en.apk",
+    "apk/com.leaguechartbet4479.app-split_config.mdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "errors": 9,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.leaguechartbet4479.app (MainActivity, CacheActivity, CardActivity, EnergyActivity, SparkActivity, HarvestValidator); agent_src gitignored; 9 non-fatal decompile errors"
+  },
+  "cloaking": "да",
+  "gate_url": "https://gentle-salad-3999.woodcrestsu.workers.dev/?app=com.leaguechartbet4479.app",
+  "link_open_mode": "ACTION_VIEW",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.leaguechartbet4479.app.apk",
+    "apk/com.leaguechartbet4479.app-split_config.en.apk",
+    "apk/com.leaguechartbet4479.app-split_config.mdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK Betclic 1.0 vc1 from APKPure (~4.6 MB): base + config.en + config.mdpi (pipeline file list named split_config.xhdpi; this XAPK has mdpi). Play «Betclic» ≠ application-label «League Chart Bet». Gate GET https://gentle-salad-3999.woodcrestsu.workers.dev/?app= + package; headers X-Device-Model, Accept-Language en-US, User-Agent. Offer via ACTION_VIEW if final URL not workers.dev; white path CardActivity. agent_src via jadx 1.5.3, not committed."
+}
