@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder 1win casino/1win-Airiss Company was missing on origin/main)",
+  "package": "com.asphaltic.octane.ignition.carburetor.redline",
+  "version_name": "2.0",
+  "version_code": 2,
+  "app_label": "Turbo Blaze",
+  "play_title": "1win",
+  "developer": "Airiss Company",
+  "sha256": "eb531122342a3e4fb9041ad8e02500f99eec1a4f6c1cfed5651f7e6bef7c397d",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "1win_2.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.fr.apk",
+    "config.mdpi.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "errors": 2,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.asphaltic.octane.ignition.carburetor.redline.MainActivity; agent_src gitignored, not committed"
+  },
+  "cloaking": "нет",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "cloaking_hints.md",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK Turbo Blaze / 1win 2.0 vc2 from APKPure (~17.5 MB): base + config.arm64_v8a + config.en + config.fr + config.mdpi. Play «1win» ≠ application-label «Turbo Blaze». Flutter racing game; no INTERNET; no WebView/Custom Tabs; Pairip license check only. Cloak нет: no offer/white fork. agent_src via jadx 1.5.3, not committed.",
+  "errors": []
+}

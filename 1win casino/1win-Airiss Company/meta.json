@@ -1,0 +1,27 @@
+{
+  "app_id": "com.asphaltic.octane.ignition.carburetor.redline",
+  "title": "1win",
+  "apk_label": "Turbo Blaze",
+  "developer": "Airiss Company",
+  "package": "com.asphaltic.octane.ignition.carburetor.redline",
+  "folder": "1win-Airiss Company",
+  "path": "1win casino/1win-Airiss Company",
+  "store_title_mismatch": true,
+  "cloaking": "нет",
+  "version_name": "2.0",
+  "version_code": "2",
+  "source": "apkpure XAPK (Play Collector folder was missing in git)",
+  "agp": "8.6.0",
+  "kotlin": "2.1.0",
+  "minSdk": 25,
+  "targetSdk": 36,
+  "dart": "3.12.0",
+  "sha256": "eb531122342a3e4fb9041ad8e02500f99eec1a4f6c1cfed5651f7e6bef7c397d",
+  "domains": [
+    "com.chrome.dev",
+    "config.ru",
+    "dispatchers.io",
+    "systemuioverlay.top"
+  ],
+  "domains_false_positives": "com.chrome.dev — в APK нет androidx.browser/Custom Tabs и самой строки; config.ru — языковой сплит splits0.xml; dispatchers.io — Kotlin Dispatchers.IO; systemuioverlay.top — Flutter SystemUiOverlay.top"
+}
