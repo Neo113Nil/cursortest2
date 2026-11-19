@@ -1,0 +1,2 @@
+# LFS budget exceeded on origin; keep splits local, do not upload via LFS
+*.apk -filter -diff -merge linguist-generated=true

@@ -1,0 +1,56 @@
+{
+  "app_id": "com.lab.peak.flow.ultra.power.betclicbets",
+  "title": "Betclic Bets, Casino & Poker",
+  "apk_label": "Win",
+  "developer": "Foncont Dev",
+  "package": "com.lab.peak.flow.ultra.power.betclicbets",
+  "folder": "Betclic Bets, Casino & Poker-Foncont Dev",
+  "path": "betclick/Betclic Bets, Casino & Poker-Foncont Dev",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "cloaking_reason": "белая оболочка: карточка Play «Betclic Bets, Casino & Poker» ≠ application-label «Win». MainActivity тихо дергает GET https://ua76silverharborfactory.online/?t=22caa1b0; при Location (HTTP 3xx) открывает внешний браузер, иначе MainActivity2.",
+  "version_name": "1.0",
+  "version_code": "1",
+  "source": "apkpure XAPK (Play Collector folder was missing in git)",
+  "gate_url": "https://ua76silverharborfactory.online/?t=22caa1b0",
+  "link_open_mode": "Browser / ACTION_VIEW",
+  "agp": "9.2.1",
+  "kotlin": "да",
+  "minSdk": 32,
+  "targetSdk": 36,
+  "sha256_base": "5603fde00b5e32e067eeb24ad43ff93a4b92e1090a6336ffbdcb5c5706fc47b9",
+  "play": {
+    "title": "Betclic: Bets, Casino & Poker",
+    "developer": "Foncont Dev",
+    "genre": "GAME_CASINO",
+    "summary": "Betclic: Bets, Casino & Poker: live scores, live casino & sports betting",
+    "updated": "Nov 8, 2026",
+    "contentRating": "Teen"
+  },
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "Betclic Bets, Casino & Poker (в приложении: Win)"},
+      {"param": "Android Gradle Plugin", "value": "9.2.1"},
+      {"param": "minSdk", "value": "32"},
+      {"param": "targetSdk", "value": "36"},
+      {"param": "Kotlin", "value": "да"},
+      {"param": "Web View", "value": "нет"},
+      {"param": "Custom Tabs", "value": "нет"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "нет"},
+      {"param": "Permissions", "value": "android.permission.INTERNET, com.lab.peak.flow.ultra.power.betclicbets.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"},
+      {"param": "Libraries", "value": "kotlin-stdlib, kotlinx-coroutines-core/android 1.9.0, okhttp3 4.12.0, okio, androidx.appcompat 1.7.1, androidx.activity 1.13.0, androidx.core/core-ktx 1.18.0, androidx.fragment 1.5.4, androidx.recyclerview 1.4.0, androidx.constraintlayout 2.2.1, androidx.viewpager2 1.1.0-beta02, androidx.cardview 1.0.0, androidx.coordinatorlayout 1.1.0, androidx.emoji2 1.3.0, androidx.startup 1.1.1, androidx.profileinstaller 1.4.0, androidx.savedstate 1.2.1, androidx.lifecycle, androidx.transition 1.5.0, androidx.drawerlayout 1.1.1, androidx.customview 1.2.0, androidx.vectordrawable 1.1.0, androidx.graphics.shapes 1.0.1, androidx.databinding viewbinding 9.2.1, androidx.navigationevent 1.0.0, androidx.compose.runtime-annotation 1.9.0, com.google.android.material 1.14.0, com.pairip.application / com.pairip.licensecheck"},
+      {"param": "Подозрительные домены", "value": "ua76silverharborfactory.online"},
+      {"param": "SharedPreferences", "value": "файл app_store, ключ last_url — сохраняет внешнюю ссылку после проверки; файл uchi_slova_prefs — локальные колоды и карточки белой оболочки"},
+      {"param": "Есть ли клоака", "value": "да"},
+      {"param": "Подозрительные слова", "value": "last_url, Location, User-Agent, Accept-Language, X-Device-Model, CHECK_LICENSE, license check, betclicbets"}
+    ],
+    "domains": ["ua76silverharborfactory.online"],
+    "collected_data": [
+      "модель телефона",
+      "строка браузера телефона",
+      "язык в заголовке"
+    ],
+    "cloaking": "да"
+  }
+}

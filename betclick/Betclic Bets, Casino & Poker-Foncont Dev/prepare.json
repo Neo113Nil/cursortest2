@@ -1,0 +1,45 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder betclick/Betclic Bets, Casino & Poker-Foncont Dev was missing on origin/main)",
+  "package": "com.lab.peak.flow.ultra.power.betclicbets",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Win",
+  "play_title": "Betclic Bets, Casino & Poker",
+  "developer": "Foncont Dev",
+  "sha256": "5603fde00b5e32e067eeb24ad43ff93a4b92e1090a6336ffbdcb5c5706fc47b9",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "скачан во временную папку с d.apkpure.net (в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.lab.peak.flow.ultra.power.betclicbets.apk",
+    "apk/com.lab.peak.flow.ultra.power.betclicbets-split_config.en.apk",
+    "apk/com.lab.peak.flow.ultra.power.betclicbets-split_config.mdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.lab.peak.flow.ultra.power.betclicbets; agent_src gitignored, not committed"
+  },
+  "cloaking": "да",
+  "gate_url": "https://ua76silverharborfactory.online/?t=22caa1b0",
+  "link_open_mode": "Browser / ACTION_VIEW",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.lab.peak.flow.ultra.power.betclicbets.apk",
+    "apk/com.lab.peak.flow.ultra.power.betclicbets-split_config.en.apk",
+    "apk/com.lab.peak.flow.ultra.power.betclicbets-split_config.mdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK Win 1.0 vc1 from APKPure (~4.7 MB): base + config.en + config.mdpi. Play «Betclic Bets, Casino & Poker» ≠ application-label «Win». Gate GET https://ua76silverharborfactory.online/?t=22caa1b0. Offer via ACTION_VIEW on Location; white path MainActivity2. agent_src via jadx 1.5.3, not committed."
+}
