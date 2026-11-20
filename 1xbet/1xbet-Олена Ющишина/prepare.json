@@ -1,0 +1,52 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder 1xbet/1xbet-Олена Ющишина was missing on origin/main)",
+  "package": "com.teamdriftwin1229.app",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Team Drift Win",
+  "play_title": "1xbet",
+  "developer": "Олена Ющишина",
+  "sha256": "73c0e4eca2aa5d3e2687c0264be76ea9748d8da340a57c7370e541bd7e528a2a",
+  "sha256_xapk": "e2f21c84e62fb172a708bcb9698ac54e6a604adc198210c3c285d91b2ce3edd7",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "1xbet_com.teamdriftwin1229.app_v1.0.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.teamdriftwin1229.app-1.apk",
+    "apk/com.teamdriftwin1229.app-1-config.en.apk",
+    "apk/com.teamdriftwin1229.app-1-config.mdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "errors": 9,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.teamdriftwin1229.app (MainActivity, GateActivity, BossActivity, FinishActivity, OceanActivity); agent_src gitignored; 9 non-fatal decompile errors"
+  },
+  "cloaking": "да",
+  "agp": "9.1.0",
+  "kotlin": "да",
+  "minSdk": 32,
+  "targetSdk": 37,
+  "gate_url": "https://cold-night-ad90.kovalcukviktoria820.workers.dev/?app=com.teamdriftwin1229.app",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.teamdriftwin1229.app-1.apk",
+    "apk/com.teamdriftwin1229.app-1-config.en.apk",
+    "apk/com.teamdriftwin1229.app-1-config.mdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "cloaking_hints.md",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK 1xbet 1.0 vc1 from APKPure (~4.5 MB): base + config.en + config.mdpi (no asset/xxhdpi split in this XAPK). Play «1xbet» ≠ application-label «Team Drift Win». Gate URL obfuscated as int-37: https://cold-night-ad90.kovalcukviktoria820.workers.dev/. PairIP Play license. agent_src via jadx 1.5.3, not committed.",
+  "errors": []
+}
