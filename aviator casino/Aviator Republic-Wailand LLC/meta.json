@@ -9,6 +9,6 @@
   "version": "1.7.2",
   "brief_report": {
     "cloaking": "нет",
-    "cloaking_brief": "React Native aviation community app. WebView hits are react-native-webview SDK and Apple Sign-In, not an offer/white traffic fork. Play name matches APK label."
+    "cloaking_brief": "React Native aviation community app. Checklist: MainActivity/MainApplication RN host; no first-party HTTP gate; loadUrl/shouldOverrideUrlLoading only in react-native-webview SDK and Apple Sign-In WebView; no Custom Tabs; no remote-config offer fork; Play title = APK label Aviator Republic."
   }
 }
