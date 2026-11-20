@@ -1,0 +1,41 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder 1xbet/1xbet Online Casino-ESA Dienstleistung was missing on origin/main)",
+  "package": "com.hook.glee.pane.crock.chip.v1xbetonlinecasino",
+  "version_name": "1.0",
+  "version_code": 66,
+  "app_label": "Win",
+  "play_title": "1xbet Online Casino",
+  "developer": "ESA Dienstleistung",
+  "sha256": "849f58eb7bb1efed9d57a29109fe26788dbc1d83e6ebb887a88ae9e8c25e5f34",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "1xbet Online Casino_1.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.hook.glee.pane.crock.chip.v1xbetonlinecasino-66.apk",
+    "apk/com.hook.glee.pane.crock.chip.v1xbetonlinecasino-66-config.en.apk",
+    "apk/com.hook.glee.pane.crock.chip.v1xbetonlinecasino-66-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "errors": 7,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3 with 7 errors; first-party com.hook.glee.pane.crock.chip.v1xbetonlinecasino; agent_src gitignored, not committed"
+  },
+  "cloaking": "да",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK Win 1.0 vc66 from APKPure (~12.7 MB): base + config.en + config.mdpi (pipeline file list named asset/xxhdpi; this XAPK has mdpi, no asset split). Play «1xbet Online Casino» ≠ application-label «Win». Gate GET https://long-bar-525e.ostroverskoanzela.workers.dev/?app= + package; headers X-Device-Model, Accept-Language en-US,en;q=0.9, User-Agent. Offer via ACTION_VIEW if final URL not workers.dev; white path MainActivity2. agent_src via jadx 1.5.3, not committed."
+}
