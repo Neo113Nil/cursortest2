@@ -1,0 +1,31 @@
+{
+  "ok": false,
+  "source": "Google Play listing + chrome-stats + local agent_src keyword scan (Play Collector folder 1xbet/1xbet official app-BHP (TOWAGE SERVICES) PTY LTD was missing on origin/main)",
+  "package": "com.grersi.app",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Grersi",
+  "play_title": "1xbet official app",
+  "developer": "BHP (TOWAGE SERVICES) PTY LTD",
+  "agent_base_apk": "нет (бинарь не попал в git; APKPure 404; APKCube origin 522; Aptoide APP-1 not found)",
+  "jadx": {
+    "ok": false,
+    "skipped": true,
+    "note": "agent_src/agent_base.apk отсутствовали; скачать XAPK/APK не удалось"
+  },
+  "cloaking": "да",
+  "analysis_files": [
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "cloaking_hints.md",
+    "report.pdf"
+  ],
+  "note": "Play «1xbet official app» ≠ application-label «Grersi». Local scan: MainActivity.java · offer. First-party activities listed: MainActivity, BlockActivity, CoinActivity, DiamondActivity, EchoActivity. Permissions from Play/chrome-stats. Gate URL and request fields not recovered without APK.",
+  "errors": [
+    "Play Collector folder missing on origin/main",
+    "APKPure d.apkpure.net XAPK/APK 404 for com.grersi.app",
+    "APKCube origin Cloudflare 522 after Turnstile",
+    "Aptoide ws75 APP-1 Application not found"
+  ]
+}
