@@ -1,0 +1,20 @@
+{
+  "app_id": "com.puzzlestarmatch2722.app",
+  "title": "1xbet official app",
+  "apk_label": "Puzzle Star Match",
+  "developer": "QBE INSURANCE (AUSTRALIA) LIMITED",
+  "package": "com.puzzlestarmatch2722.app",
+  "folder": "1xbet official app-QBE INSURANCE (AUSTRALIA) LIMITED",
+  "path": "1xbet/1xbet official app-QBE INSURANCE (AUSTRALIA) LIMITED",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "cloaking_reason": "белая оболочка: Play «1xbet official app» ≠ application-label «Puzzle Star Match». Gate OkHttp GET на morning-grass-90d4.taufeeqkhan1429.workers.dev, оффер через ACTION_VIEW.",
+  "version_name": "1.0",
+  "version_code": "1",
+  "min_sdk": 32,
+  "target_sdk": 37,
+  "agp": "9.1.0",
+  "source": "apkpure XAPK",
+  "url": "https://play.google.com/store/apps/details?id=com.puzzlestarmatch2722.app",
+  "gate_url": "https://morning-grass-90d4.taufeeqkhan1429.workers.dev/"
+}
