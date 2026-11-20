@@ -1,0 +1,40 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder 1xbet/1xbet Casino-ESA Dienstleistung was missing on origin/main)",
+  "package": "com.fair.peak.quartz.cage.tower.f1xbetonlinecasinobetting",
+  "version_name": "1.0",
+  "version_code": 76,
+  "app_label": "Win",
+  "play_title": "1xbet Casino",
+  "developer": "ESA Dienstleistung",
+  "sha256": "48da7b7d40c0bbe1292c130a8918040baa319eaf3f6bb7f8c6dd7e0f0265c0ae",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "1xbet Casino._1.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.fair.peak.quartz.cage.tower.f1xbetonlinecasinobetting-76-config.en.apk",
+    "apk/com.fair.peak.quartz.cage.tower.f1xbetonlinecasinobetting-76-config.mdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "errors": 5,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3 with 5 errors; first-party com.fair.peak.quartz.cage.tower.f1xbetonlinecasinobetting; agent_src gitignored, not committed"
+  },
+  "cloaking": "да",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK Win 1.0 vc76 from APKPure (~12.5 MB): base + config.en + config.mdpi (pipeline file list named asset/xxhdpi; this XAPK has mdpi, no asset split). Play «1xbet Casino» ≠ application-label «Win». Gate GET https://long-bar-525e.ostroverskoanzela.workers.dev/?app= + package; headers X-Device-Model, Accept-Language en-US,en;q=0.9, User-Agent. Offer via ACTION_VIEW if final URL not workers.dev; white path MainActivity2 Puzzle Forge. agent_src via jadx 1.5.3, not committed."
+}
