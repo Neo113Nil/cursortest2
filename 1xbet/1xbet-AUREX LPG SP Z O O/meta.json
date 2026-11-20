@@ -1,0 +1,53 @@
+{
+  "app_id": "com.nexus.core.quick.wave.fusion.r1xbet",
+  "title": "1xbet",
+  "apk_label": "Win",
+  "developer": "AUREX LPG SP Z O O",
+  "package": "com.nexus.core.quick.wave.fusion.r1xbet",
+  "folder": "1xbet-AUREX LPG SP Z O O",
+  "path": "1xbet/1xbet-AUREX LPG SP Z O O",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "cloaking_reason": "белая оболочка: Play «1xbet» ≠ application-label «Win». MainActivity GET https://pl18copperravenhub.online/?t=4f5da265 (модель, User-Agent, зашитый Accept-Language). OkHttp без следования редиректам; HTTP 3xx Location — ACTION_VIEW оффера и prefs app_prefs/dest; иначе MainActivity2.",
+  "version_name": "1.0",
+  "version_code": "1",
+  "source": "apkpure.net XAPK via d.apkpure.net (Play Collector folder was missing in git)",
+  "gate_url": "https://pl18copperravenhub.online/?t=4f5da265",
+  "link_open_mode": "ACTION_VIEW (внешний браузер)",
+  "agp": "9.2.1",
+  "kotlin": "да",
+  "minSdk": 29,
+  "targetSdk": 36,
+  "sha256_base": "6fda1d707124e4e2d47271f2c3f884a336edf0eb6578ed535621d2fd9a06ab70",
+  "sha256_xapk": "58b20127fe645092c7db70311cefc58cd9ecf81560df3b72c9c5c3bd8972032c",
+  "play": {
+    "title": "1xbet",
+    "developer": "AUREX LPG SP Z O O"
+  },
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "1xbet (в приложении: Win)"},
+      {"param": "Android Gradle Plugin", "value": "9.2.1"},
+      {"param": "minSdk", "value": "29"},
+      {"param": "targetSdk", "value": "36"},
+      {"param": "Kotlin", "value": "да"},
+      {"param": "Web View", "value": "нет"},
+      {"param": "Custom Tabs", "value": "нет"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "нет"},
+      {"param": "Permissions", "value": "android.permission.INTERNET, com.nexus.core.quick.wave.fusion.r1xbet.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"},
+      {"param": "Libraries", "value": "kotlin-stdlib, kotlinx-coroutines-core/android 1.9.0, okhttp3 4.12.0, okio, androidx.appcompat 1.7.1, androidx.activity/activity-ktx 1.13.0, androidx.core/core-ktx 1.18.0, androidx.fragment 1.5.4, androidx.recyclerview 1.4.0, androidx.constraintlayout 2.2.1, androidx.viewpager2 1.1.0-beta02, androidx.cardview 1.0.0, androidx.coordinatorlayout 1.1.0, androidx.emoji2 1.3.0, androidx.startup 1.1.1, androidx.profileinstaller 1.4.0, androidx.savedstate 1.2.1, androidx.lifecycle, androidx.transition 1.5.0, androidx.drawerlayout 1.1.1, androidx.customview 1.2.0, androidx.vectordrawable 1.1.0, androidx.graphics.shapes 1.0.1, androidx.navigationevent 1.0.0, androidx.compose.runtime-annotation 1.9.0, androidx.databinding viewbinding 9.2.1, com.google.android.material 1.14.0, com.pairip.application / com.pairip.licensecheck"},
+      {"param": "Подозрительные домены", "value": "pl18copperravenhub.online"},
+      {"param": "SharedPreferences", "value": "файл app_prefs — ключ dest (сохранённый адрес после проверки); файл uchi_slova_prefs — локальные данные белой оболочки"},
+      {"param": "Есть ли клоака", "value": "да"},
+      {"param": "Подозрительные слова", "value": "redirect, dest, Location, 1xbet, Win, User-Agent, Accept-Language, X-Device-Model, CHECK_LICENSE, license check"}
+    ],
+    "domains": ["pl18copperravenhub.online"],
+    "collected_data": [
+      "модель телефона",
+      "строка браузера телефона",
+      "заголовок языка"
+    ],
+    "cloaking": "да"
+  }
+}

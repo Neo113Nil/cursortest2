@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "source": "apkpure.net XAPK via d.apkpure.net (Play Collector folder 1xbet/1xbet-AUREX LPG SP Z O O was missing on origin/main)",
+  "package": "com.nexus.core.quick.wave.fusion.r1xbet",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Win",
+  "play_title": "1xbet",
+  "developer": "AUREX LPG SP Z O O",
+  "sha256": "6fda1d707124e4e2d47271f2c3f884a336edf0eb6578ed535621d2fd9a06ab70",
+  "sha256_xapk": "58b20127fe645092c7db70311cefc58cd9ecf81560df3b72c9c5c3bd8972032c",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "1xbet_1.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.nexus.core.quick.wave.fusion.r1xbet-1.apk",
+    "apk/com.nexus.core.quick.wave.fusion.r1xbet-1-config.en.apk",
+    "apk/com.nexus.core.quick.wave.fusion.r1xbet-1-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.nexus.core.quick.wave.fusion.r1xbet; agent_src gitignored, not committed"
+  },
+  "cloaking": "да",
+  "gate_url": "https://pl18copperravenhub.online/?t=4f5da265",
+  "link_open_mode": "ACTION_VIEW (внешний браузер)",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK 1xbet 1.0 / Win (vc 1) from APKPure via d.apkpure.net (~5.2 MB): base + config.en + config.xxhdpi + language splits (pipeline file list named asset; this XAPK has xxhdpi, no asset split). Split APKs not committed: Git LFS. Analysis used agent_base.apk (not LFS). Play «1xbet» ≠ application-label «Win». Gate GET https://pl18copperravenhub.online/?t=4f5da265. Offer via ACTION_VIEW; white path MainActivity2. agent_src via jadx 1.5.3, not committed."
+}
