@@ -1,0 +1,39 @@
+{
+  "ok": true,
+  "source": "apkpure.net XAPK (Play Collector folder aviator casino/AVIATOR - MODA MASCULINA-Loja Aviator was missing on origin/main)",
+  "package": "com.coderivy.aviator",
+  "version_name": "7.21.1",
+  "version_code": 24000534,
+  "app_label": "AVIATOR",
+  "play_title": "AVIATOR - MODA MASCULINA",
+  "developer": "Loja Aviator",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "AVIATOR - MODA MASCULINA_7.21.1_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base; split APKs not committed: Git LFS budget exceeded)"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.coderivy.shop.MainActivity + Flutter shop; q3/DialogC1594n = Facebook SDK WebDialog; agent_src gitignored, not committed"
+  },
+  "cloaking": "нет",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.coderivy.aviator-24000534.apk",
+    "apk/com.coderivy.aviator-24000534-config.armeabi_v7a.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "cloaking_hints.md",
+    "meta.json",
+    "prepare.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK Aviator 7.21.1 vc24000534 from APKPure.net (~51 MB): base + config.armeabi_v7a (pipeline listing named asset/arm64_v8a; this XAPK has v7a, no asset split). Play «AVIATOR - MODA MASCULINA» ≈ application-label «AVIATOR». Flutter-магазин Coderivy + VTEX. loadUrl = Facebook SDK + url_launcher. Remote Config = флаги витрины. Нет first-party gate/offer URL. agent_src via jadx 1.5.3, not committed."
+}

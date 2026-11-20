@@ -1,0 +1,40 @@
+{
+  "domains": [
+    {
+      "domain": "aomedia.org",
+      "vt_url": "https://www.virustotal.com/gui/domain/aomedia.org",
+      "detections": "0/92 (malicious=0, suspicious=0)",
+      "redirect": "нет (без редиректа)",
+      "content": "title: Alliance for Open Media. Alliance for Open Media Skip links Skip to primary navigation Skip to content Skip to footer You are using an outdated browser. Please upgrade your browser to improve your experience. Alliance for Open Media An Alliance of Global Media Innovators About Story FAQ Members Organizat",
+      "parked": "регистратор: Squarespace Domains II LLC",
+      "note": "стандарт AV1 / ExoPlayer-media-kit, не кастомный хост клоаки"
+    },
+    {
+      "domain": "cdn.mxpnl.com",
+      "vt_url": "https://www.virustotal.com/gui/domain/cdn.mxpnl.com",
+      "detections": "0/92 (malicious=0, suspicious=0)",
+      "redirect": "нет (без редиректа)",
+      "content": "title: Page not found - Mixpanel | Product Analytics. Page not found - Mixpanel | Product Analytics Page not found Weâre thinking this isnât the page you want... There is nothing at this URL. Try checking the address or go to: Help Center , Mixpanel Community",
+      "parked": "регистратор: NAMECHEAP INC",
+      "note": "CDN Mixpanel SDK, известная аналитика"
+    },
+    {
+      "domain": "dashif.org",
+      "vt_url": "https://www.virustotal.com/gui/domain/dashif.org",
+      "detections": "0/92 (malicious=0, suspicious=0)",
+      "redirect": "нет (без редиректа)",
+      "content": "title: DASH Industry Forum | Catalyzing the adoption of MPEG-DASH. DASH Industry Forum | Catalyzing the adoption of MPEG-DASH &nbsp; Home About guidelines IOP version 5 Earlier Versions IPR Declarations Specifications Other Publications and Position Papers tools Introduction Reference Tools dash.js Reference Client Conformance Validator Test Ass",
+      "parked": "регистратор/whois связан с парковкой: godaddy",
+      "note": "спецификация MPEG-DASH / медиаплеер, не кастомный хост клоаки"
+    },
+    {
+      "domain": "developer.mozilla.org",
+      "vt_url": "https://www.virustotal.com/gui/domain/developer.mozilla.org",
+      "detections": "0/92 (malicious=0, suspicious=0)",
+      "redirect": "https://developer.mozilla.org/en-US/",
+      "content": "title: MDN Web Docs. MDN Web Docs Skip to main content Skip to search MD",
+      "parked": "нет",
+      "note": "документация Mozilla из медиаплеера, не кастомный хост клоаки"
+    }
+  ]
+}

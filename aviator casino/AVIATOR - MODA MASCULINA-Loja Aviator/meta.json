@@ -1,0 +1,25 @@
+{
+  "title": "AVIATOR - MODA MASCULINA",
+  "developer": "Loja Aviator",
+  "cloaking": "нет",
+  "app_id": "com.coderivy.aviator",
+  "url": "https://play.google.com/store/apps/details?id=com.coderivy.aviator&hl=pt&gl=br",
+  "version": "7.21.1",
+  "version_code": 24000534,
+  "apk_label": "AVIATOR",
+  "brief_report": {
+    "cloaking": "нет",
+    "table": [
+      {"param": "Название приложения", "value": "AVIATOR - MODA MASCULINA"},
+      {"param": "Android Gradle Plugin", "value": "8.11.1"},
+      {"param": "minSdk", "value": "25"},
+      {"param": "targetSdk", "value": "36"},
+      {"param": "Kotlin", "value": "да, 2.1.0"},
+      {"param": "Web View", "value": "да"},
+      {"param": "Custom Tabs", "value": "да"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "Mixpanel, Amplitude, Firebase Analytics, Firebase Crashlytics, Facebook App Events, Google Analytics (measurement)"},
+      {"param": "Есть ли клоака", "value": "нет"}
+    ]
+  }
+}
