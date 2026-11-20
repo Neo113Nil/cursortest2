@@ -1,0 +1,14 @@
+{
+  "suspicious_custom_domains": [],
+  "known_sdk_or_first_party": [
+    "api.revenuecat.com",
+    "api-diagnostics.revenuecat.com",
+    "api-paywalls.revenuecat.com",
+    "api.rc-backup.com",
+    "api-production.8-lives-cat.io",
+    "base44.app",
+    "base44.com",
+    "aviatorcalculator.base44.app"
+  ],
+  "note": "RevenueCat and Base44 hosts are known SDK / first-party app platform. Not listed as suspicious custom domains."
+}
