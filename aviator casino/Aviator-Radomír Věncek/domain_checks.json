@@ -1,0 +1,36 @@
+{
+  "domains": [
+    {
+      "domain": "aviator.martavenckova.cz",
+      "vt_url": "https://www.virustotal.com/gui/domain/aviator.martavenckova.cz",
+      "detections": "0/92 (malicious=0, suspicious=0)",
+      "redirect": "нет (без редиректа)",
+      "content": "title: 403 Forbidden. 403 Forbidden Forbidden You don't have permission to access this resource.",
+      "parked": "регистратор: REG-WEBGLOBE"
+    },
+    {
+      "domain": "aviatornav.app",
+      "vt_url": "https://www.virustotal.com/gui/domain/aviatornav.app",
+      "detections": "0/92 (malicious=0, suspicious=0)",
+      "redirect": "нет (без редиректа)",
+      "content": "title: Aviator &#8211; The Ultimate Navigation Tool. Aviator &#8211; The Ultimate Navigation Tool Aviator Facebook Aviator Other screens Air space & airport data Contact me AVIATOR The Ultimate Navigation Tool Aviator is an Android application – a navigational tool for all aviators. Its main purpose is to help aviators to enjoy",
+      "parked": "нет данных"
+    },
+    {
+      "domain": "openaip.net",
+      "vt_url": "https://www.virustotal.com/gui/domain/openaip.net",
+      "detections": "0/92 (malicious=0, suspicious=0)",
+      "redirect": "https://www.openaip.net/",
+      "content": "title: OpenAIP - Home. OpenAIP - Home Login Map Latest Change Requests Data Exports Airports Reporting Points Airspaces Special Rules Areas Navaids Hang Gliding Sites Hotspots Obstacles RC Airfields Blog Documentation Map Latest Change Requests Data Exports Airports Reporting Points Airspaces Special R",
+      "parked": "регистратор: Cloud DNS Ltd"
+    },
+    {
+      "domain": "openflightmaps.org",
+      "vt_url": "https://www.virustotal.com/gui/domain/openflightmaps.org",
+      "detections": "0/92 (malicious=0, suspicious=0)",
+      "redirect": "нет (без редиректа)",
+      "content": "title: Welcome | open flightmaps | aeronautical data under a public license. Welcome | open flightmaps | aeronautical data under a public license News FAQ Donate About Downloads EB - Belgium ED - Germany EF - Finland EH - Netherlands EK - Denmark EP - Poland ES - Swede",
+      "parked": "нет данных"
+    }
+  ]
+}
