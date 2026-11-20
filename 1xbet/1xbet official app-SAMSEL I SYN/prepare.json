@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "source": "APKCube APKS (Play Collector folder 1xbet/1xbet official app-SAMSEL I SYN was missing on origin/main)",
+  "package": "com.rushblastleague1299.app",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Rush Blast League",
+  "play_title": "1xbet official app",
+  "developer": "SAMSEL I SYN",
+  "sha256": "ce65ed375d7832b7ddd91462b4e866b74723ce7011eb39575779bb05d402bd8f",
+  "sha256_apks": "8fe3e9b417e5abe63e7f74935d911f8d6d39afcafab85ef761ba8eee19b62818",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.rushblastleague1299.app-1.apk",
+    "apk/com.rushblastleague1299.app-1-config.en.apk",
+    "apk/com.rushblastleague1299.app-1-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "errors": 0,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.rushblastleague1299.app (MainActivity, WaveActivity, DamageActivity, WindActivity, CraftActivity); agent_src gitignored"
+  },
+  "cloaking": "да",
+  "agp": "9.1.0",
+  "kotlin": "да",
+  "minSdk": 29,
+  "targetSdk": 37,
+  "gate_url": "https://morning-wildflower-3c66.dankevicivanna3.workers.dev/?app=com.rushblastleague1299.app",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.rushblastleague1299.app-1.apk",
+    "apk/com.rushblastleague1299.app-1-config.en.apk",
+    "apk/com.rushblastleague1299.app-1-config.xxhdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "cloaking_hints.md",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. APKS 1xbet-official-app_1.0_apkcube.apks from APKCube (~3 MB packed, sha256 8fe3e9b4…): base + language/density splits (no asset split). Play «1xbet official app» ≠ application-label «Rush Blast League». Gate URL obfuscated as int[] − 40: https://morning-wildflower-3c66.dankevicivanna3.workers.dev/. PairIP Play license. agent_src via jadx 1.5.3, not committed.",
+  "errors": []
+}
