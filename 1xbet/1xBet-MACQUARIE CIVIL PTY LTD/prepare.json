@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder 1xbet/1xBet-MACQUARIE CIVIL PTY LTD was missing on origin/main)",
+  "package": "com.cricketquest5126.app",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Cricket Quest",
+  "play_title": "1xBet",
+  "developer": "MACQUARIE CIVIL PTY LTD",
+  "sha256": "537896cb51e50002e6da4fb6b3a905c5bd34f97f23551a4dbefef589c375d1c6",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "1xBet_1.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.cricketquest5126.app-1.apk",
+    "apk/com.cricketquest5126.app-1-config.en.apk",
+    "apk/com.cricketquest5126.app-1-config.mdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "errors": 9,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.cricketquest5126.app; agent_src gitignored; 9 non-fatal decompile errors"
+  },
+  "cloaking": "да",
+  "agp": "9.1.0",
+  "kotlin": "да",
+  "minSdk": 32,
+  "targetSdk": 37,
+  "gate_url": "https://round-paper-3c1e.homerfischer230.workers.dev/?app=com.cricketquest5126.app",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.cricketquest5126.app-1.apk",
+    "apk/com.cricketquest5126.app-1-config.en.apk",
+    "apk/com.cricketquest5126.app-1-config.mdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "cloaking_hints.md",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK 1xBet 1.0 vc1 from APKPure (~4.4 MB): base + config.en + config.mdpi (no asset/xxhdpi split in this XAPK). Play «1xBet» ≠ application-label «Cricket Quest». Gate URL obfuscated as int-44: https://round-paper-3c1e.homerfischer230.workers.dev/. PairIP Play license. agent_src via jadx 1.5.3, not committed.",
+  "errors": []
+}

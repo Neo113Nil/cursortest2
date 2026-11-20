@@ -1,0 +1,26 @@
+{
+  "app_id": "com.cricketquest5126.app",
+  "title": "1xBet",
+  "apk_label": "Cricket Quest",
+  "developer": "MACQUARIE CIVIL PTY LTD",
+  "package": "com.cricketquest5126.app",
+  "folder": "1xBet-MACQUARIE CIVIL PTY LTD",
+  "path": "1xbet/1xBet-MACQUARIE CIVIL PTY LTD",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "cloaking_reason": "белая оболочка: Play «1xBet» ≠ application-label «Cricket Quest». MainActivity GET https://round-paper-3c1e.homerfischer230.workers.dev/?app=com.cricketquest5126.app (модель, User-Agent). Если финальный URL не workers.dev — ACTION_VIEW оффера и cached_redirect_url; иначе ItemActivity.",
+  "version_name": "1.0",
+  "version_code": "1",
+  "source": "apkpure XAPK (Play Collector folder was missing in git)",
+  "gate_url": "https://round-paper-3c1e.homerfischer230.workers.dev/?app=com.cricketquest5126.app",
+  "link_open_mode": "ACTION_VIEW (внешний браузер)",
+  "agp": "9.1.0",
+  "kotlin": "да",
+  "minSdk": 32,
+  "targetSdk": 37,
+  "sha256_base": "537896cb51e50002e6da4fb6b3a905c5bd34f97f23551a4dbefef589c375d1c6",
+  "play": {
+    "title": "1xBet",
+    "developer": "MACQUARIE CIVIL PTY LTD"
+  }
+}
