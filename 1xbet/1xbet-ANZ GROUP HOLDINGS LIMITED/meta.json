@@ -1,0 +1,36 @@
+{
+  "app_id": "com.wavestar8951.app",
+  "title": "1xbet",
+  "apk_label": "Wave Star",
+  "developer": "ANZ GROUP HOLDINGS LIMITED",
+  "package": "com.wavestar8951.app",
+  "folder": "1xbet-ANZ GROUP HOLDINGS LIMITED",
+  "path": "1xbet/1xbet-ANZ GROUP HOLDINGS LIMITED",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "cloaking_reason": "белая оболочка: Play «1xbet» ≠ application-label «Wave Star». INTERNET + AD_ID + PairIP. First-party HTTP/WebView URL не сняты: коллекторской папки не было, APKCube PairIP hold-to-verify не пройден, APKPure версий пакета не отдаёт.",
+  "version_name": "1.0",
+  "version_code": "1",
+  "source": "VirusTotal Android Info (inner base.apk 8c7b9eed…) + APKCube listing + Play scraper; APK/XAPK в git нет",
+  "minSdk": 29,
+  "targetSdk": 37,
+  "kotlin": "да",
+  "agp": null,
+  "sha256_base": "8c7b9eed10039594b844018c9381be92e8ab199924b57477d476899e3287cb83",
+  "sha256_apks": "07def110fc30c9cd101880e0d41de785dbdb9f1734f1bc9fe63184aa8b37b14e",
+  "play": {
+    "title": "1xbet",
+    "developer": "ANZ GROUP HOLDINGS LIMITED",
+    "developerEmail": "virju956565@gmail.com",
+    "genre": "Arcade",
+    "privacyPolicy": "https://sites.google.com/view/wavestar/home",
+    "containsAds": false
+  },
+  "activities": [
+    "com.wavestar8951.app.MainActivity",
+    "com.pairip.licensecheck.LicenseActivity",
+    "com.wavestar8951.app.BranchActivity",
+    "com.wavestar8951.app.EnergyActivity",
+    "com.wavestar8951.app.FlyActivity"
+  ]
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Reconstructed from VirusTotal Android Info + APKCube listing for com.wavestar8951.app; not a jadx dump. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.0"
+    package="com.wavestar8951.app">
+    <uses-sdk
+        android:minSdkVersion="29"
+        android:targetSdkVersion="37"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <permission
+        android:name="com.wavestar8951.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.wavestar8951.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <application
+        android:label="Wave Star"
+        android:name="com.pairip.application.Application"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        <activity
+            android:name="com.wavestar8951.app.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.wavestar8951.app.BranchActivity" android:exported="true"/>
+        <activity android:name="com.wavestar8951.app.EnergyActivity" android:exported="true"/>
+        <activity android:name="com.wavestar8951.app.FlyActivity" android:exported="true"/>
+        <activity android:name="com.pairip.licensecheck.LicenseActivity" android:exported="false"/>
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            android:authorities="com.wavestar8951.app.androidx-startup"/>
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:exported="true"/>
+    </application>
+</manifest>
