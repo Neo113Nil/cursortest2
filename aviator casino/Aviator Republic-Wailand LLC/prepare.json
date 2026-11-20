@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "note": "Play Collector folder aviator casino/Aviator Republic-Wailand LLC was missing on origin/main (no agent_base.apk / agent_src). Package com.wailand.aviatorrepublicapp vc 17 / 1.7.2. APKPure has no listing; apkeep apk-pure empty. Google Play download needs AAS token. APKCube fetched metadata (APKS 52 MB, arm64-v8a, SHA-256 ffcc3fc231246f55e731741cd410726af2d7c69f81239edffaa7838bcfec9609) but /download-token returned HTTP 403 after Turnstile + hold-to-verify. Analysis uses pipeline local scan of agent_src (first-party MainActivity/MainApplication + listed WebView hits), Play/chrome-stats permissions, and domain_checks from the task prompt. Play title = application-label «Aviator Republic». agent_src not committed.",
+  "package": "com.wailand.aviatorrepublicapp",
+  "version_name": "1.7.2",
+  "version_code": 17,
+  "source": "play-metadata+pipeline-scan",
+  "min_android": "7.0+",
+  "size_mb": 52,
+  "arch": "arm64-v8a",
+  "sha256": "ffcc3fc231246f55e731741cd410726af2d7c69f81239edffaa7838bcfec9609"
+}

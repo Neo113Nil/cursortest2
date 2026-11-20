@@ -1,0 +1,14 @@
+{
+  "title": "Aviator Republic",
+  "developer": "Wailand LLC",
+  "cloaking": "нет",
+  "app_id": "com.wailand.aviatorrepublicapp",
+  "url": "https://play.google.com/store/apps/details?id=com.wailand.aviatorrepublicapp&hl=en&gl=us",
+  "released": "Jun 25, 2025",
+  "updated": "Mar 4, 2026",
+  "version": "1.7.2",
+  "brief_report": {
+    "cloaking": "нет",
+    "cloaking_brief": "React Native aviation community app. WebView hits are react-native-webview SDK and Apple Sign-In, not an offer/white traffic fork. Play name matches APK label."
+  }
+}
