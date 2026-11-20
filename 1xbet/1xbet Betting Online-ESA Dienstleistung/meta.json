@@ -1,0 +1,53 @@
+{
+  "app_id": "com.stage.cake.corn.vapor.fuse.l1xbetbettingonline",
+  "title": "1xbet Betting Online",
+  "apk_label": "Win",
+  "developer": "ESA Dienstleistung",
+  "package": "com.stage.cake.corn.vapor.fuse.l1xbetbettingonline",
+  "folder": "1xbet Betting Online-ESA Dienstleistung",
+  "path": "1xbet/1xbet Betting Online-ESA Dienstleistung",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "cloaking_reason": "белая оболочка: Play «1xbet Betting Online» ≠ application-label «Win». MainActivity GET https://long-bar-525e.ostroverskoanzela.workers.dev/?app=com.stage.cake.corn.vapor.fuse.l1xbetbettingonline (модель, User-Agent, зашитый Accept-Language). Если финальный URL не workers.dev — ACTION_VIEW оффера и prefs data/redirect_url; иначе MainActivity2 Orbit Defender.",
+  "version_name": "1.0",
+  "version_code": "20",
+  "source": "apkpure XAPK (Play Collector folder was missing in git)",
+  "gate_url": "https://long-bar-525e.ostroverskoanzela.workers.dev/?app=com.stage.cake.corn.vapor.fuse.l1xbetbettingonline",
+  "link_open_mode": "ACTION_VIEW (внешний браузер)",
+  "agp": "9.1.1",
+  "kotlin": "да, 2.2.0",
+  "minSdk": 29,
+  "targetSdk": 36,
+  "sha256_base": "af1fe1596766527e8456d0d7757ebef462b2a9fb269f22197b64a4b0433e4f9f",
+  "play": {
+    "title": "1xbet Betting Online",
+    "developer": "ESA Dienstleistung"
+  },
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "1xbet Betting Online (в приложении: Win)"},
+      {"param": "Android Gradle Plugin", "value": "9.1.1"},
+      {"param": "minSdk", "value": "29"},
+      {"param": "targetSdk", "value": "36"},
+      {"param": "Kotlin", "value": "да, 2.2.0"},
+      {"param": "Web View", "value": "нет"},
+      {"param": "Custom Tabs", "value": "нет"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "нет"},
+      {"param": "Permissions", "value": "android.permission.INTERNET, android.permission.ACCESS_WIFI_STATE, android.permission.ACCESS_NETWORK_STATE, com.stage.cake.corn.vapor.fuse.l1xbetbettingonline.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"},
+      {"param": "Libraries", "value": "androidx.activity, androidx.annotation, androidx.appcompat, androidx.cardview, androidx.compose.runtime, androidx.constraintlayout, androidx.coordinatorlayout, androidx.core, androidx.cursoradapter, androidx.customview, androidx.databinding (viewbinding), androidx.drawerlayout, androidx.dynamicanimation, androidx.emoji2, androidx.fragment, androidx.graphics, androidx.interpolator, androidx.lifecycle, androidx.loader, androidx.navigationevent, androidx.profileinstaller, androidx.recyclerview, androidx.savedstate, androidx.startup, androidx.tracing, androidx.transition, androidx.vectordrawable, androidx.versionedparcelable, androidx.viewpager, androidx.viewpager2, com.google.android.material, kotlinx-coroutines, kotlin-stdlib, okhttp3, okio, com.pairip"},
+      {"param": "Подозрительные домены", "value": "нет"},
+      {"param": "SharedPreferences", "value": "файл data — ключ redirect_url (сохранённый адрес после проверки)"},
+      {"param": "Есть ли клоака", "value": "да"},
+      {"param": "Подозрительные слова", "value": "betting, 1xbet, redirect, workers.dev, status, license check, redirect_url"}
+    ],
+    "domains": [],
+    "collected_data": [
+      "имя пакета приложения",
+      "модель телефона",
+      "строка языка",
+      "строка браузера телефона"
+    ],
+    "cloaking": "да"
+  }
+}
