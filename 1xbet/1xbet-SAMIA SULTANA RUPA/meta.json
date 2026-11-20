@@ -1,0 +1,53 @@
+{
+  "app_id": "com.slope.great.reel.vortex.donor.c1xbet",
+  "title": "1xbet",
+  "apk_label": "Win",
+  "developer": "SAMIA SULTANA RUPA",
+  "package": "com.slope.great.reel.vortex.donor.c1xbet",
+  "folder": "1xbet-SAMIA SULTANA RUPA",
+  "path": "1xbet/1xbet-SAMIA SULTANA RUPA",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "cloaking_reason": "белая оболочка: Play «1xbet» ≠ application-label «Win». MainActivity GET https://aged-pine-bec1.mitads7519.workers.dev/?app=com.slope.great.reel.vortex.donor.c1xbet (модель, User-Agent, зашитый Accept-Language). Если финальный URL не workers.dev — ACTION_VIEW оффера и prefs store/dst; иначе MainActivity2 Карта развития.",
+  "version_name": "1.0",
+  "version_code": "18",
+  "source": "apkpure XAPK (Play Collector folder was missing in git)",
+  "gate_url": "https://aged-pine-bec1.mitads7519.workers.dev/?app=com.slope.great.reel.vortex.donor.c1xbet",
+  "link_open_mode": "ACTION_VIEW (внешний браузер)",
+  "agp": "8.13.2",
+  "kotlin": "да, 2.0.21",
+  "minSdk": 26,
+  "targetSdk": 36,
+  "sha256_base": "2f2d4e2208e1a095db3f3bbc964a5c6632ddcff78e1ef30ad2aafb9bd50b2d0a",
+  "play": {
+    "title": "1xbet",
+    "developer": "SAMIA SULTANA RUPA"
+  },
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "1xbet (в приложении: Win)"},
+      {"param": "Android Gradle Plugin", "value": "8.13.2"},
+      {"param": "minSdk", "value": "26"},
+      {"param": "targetSdk", "value": "36"},
+      {"param": "Kotlin", "value": "да, 2.0.21"},
+      {"param": "Web View", "value": "нет"},
+      {"param": "Custom Tabs", "value": "нет"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "нет"},
+      {"param": "Permissions", "value": "android.permission.VIBRATE, android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.slope.great.reel.vortex.donor.c1xbet.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"},
+      {"param": "Libraries", "value": "androidx.activity, androidx.annotation, androidx.appcompat, androidx.cardview, androidx.constraintlayout, androidx.coordinatorlayout, androidx.core, androidx.cursoradapter, androidx.customview, androidx.databinding (viewbinding), androidx.datastore, androidx.drawerlayout, androidx.dynamicanimation, androidx.emoji2, androidx.fragment, androidx.graphics, androidx.interpolator, androidx.lifecycle, androidx.loader, androidx.profileinstaller, androidx.recyclerview, androidx.savedstate, androidx.startup, androidx.tracing, androidx.transition, androidx.vectordrawable, androidx.versionedparcelable, androidx.viewpager, androidx.viewpager2, com.google.android.material, kotlinx-coroutines, kotlin-stdlib, okhttp3, okio, com.pairip"},
+      {"param": "Подозрительные домены", "value": "нет"},
+      {"param": "SharedPreferences", "value": "файл store — ключ dst (сохранённый адрес после проверки)"},
+      {"param": "Есть ли клоака", "value": "да"},
+      {"param": "Подозрительные слова", "value": "redirect, workers.dev, status, license check, 1xbet"}
+    ],
+    "domains": [],
+    "collected_data": [
+      "имя пакета приложения",
+      "модель телефона",
+      "строка языка",
+      "строка браузера телефона"
+    ],
+    "cloaking": "да"
+  }
+}

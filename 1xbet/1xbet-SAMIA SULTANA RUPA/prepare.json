@@ -1,0 +1,41 @@
+{
+  "ok": true,
+  "source": "apkpure XAPK (Play Collector folder 1xbet/1xbet-SAMIA SULTANA RUPA was missing on origin/main)",
+  "package": "com.slope.great.reel.vortex.donor.c1xbet",
+  "version_name": "1.0",
+  "version_code": 18,
+  "app_label": "Win",
+  "play_title": "1xbet",
+  "developer": "SAMIA SULTANA RUPA",
+  "sha256": "2f2d4e2208e1a095db3f3bbc964a5c6632ddcff78e1ef30ad2aafb9bd50b2d0a",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "1xbet._1.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.mdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "errors": 8,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3 with 8 errors; first-party com.slope.great.reel.vortex.donor.c1xbet; agent_src gitignored, not committed"
+  },
+  "cloaking": "да",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK Win 1.0 vc18 from APKPure (~11.6 MB): base + config.arm64_v8a + config.en + config.mdpi (pipeline file list named asset/xxhdpi; this XAPK has mdpi, no asset split). Play «1xbet» ≠ application-label «Win». Gate GET https://aged-pine-bec1.mitads7519.workers.dev/?app= + package; headers X-Device-Model, Accept-Language en-US,en;q=0.9, User-Agent. Offer via ACTION_VIEW if final URL not workers.dev; white path MainActivity2 Карта развития. agent_src via jadx 1.5.3, not committed."
+}
