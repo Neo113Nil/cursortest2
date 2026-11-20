@@ -1,0 +1,46 @@
+{
+  "ok": true,
+  "source": "apkpure.net XAPK via d.apkpure.net (Play Collector folder 1xbet/1xBet Betting App & Casino-MD ASHIK MIAH was missing on origin/main)",
+  "package": "com.fusion.easy.meta.pulse.agile.f1xbetbettingappcasino",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Win",
+  "play_title": "1xBet Betting App & Casino",
+  "developer": "MD ASHIK MIAH",
+  "sha256": "bf6818d046e52d6b11747c9883f8040607cd396bfbd7541d918f27c76a41e4ff",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "com.fusion.easy.meta.pulse.agile.f1xbetbettingappcasino.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.fusion.easy.meta.pulse.agile.f1xbetbettingappcasino-1.apk",
+    "apk/com.fusion.easy.meta.pulse.agile.f1xbetbettingappcasino-1-config.en.apk",
+    "apk/com.fusion.easy.meta.pulse.agile.f1xbetbettingappcasino-1-config.mdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "errors": 2,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.fusion.easy.meta.pulse.agile.f1xbetbettingappcasino; agent_src gitignored, zipped as agent_src.zip; 2 non-fatal decompile errors"
+  },
+  "cloaking": "да",
+  "gate_url": "https://bd11amberthundercollective.online/?t=44b45b16",
+  "link_open_mode": "Browser / ACTION_VIEW",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.fusion.easy.meta.pulse.agile.f1xbetbettingappcasino-1.apk",
+    "apk/com.fusion.easy.meta.pulse.agile.f1xbetbettingappcasino-1-config.en.apk",
+    "apk/com.fusion.easy.meta.pulse.agile.f1xbetbettingappcasino-1-config.mdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK 1xBet Betting App & Casino 1.0 / Win (vc 1) from APKPure via d.apkpure.net (~3.6 MB): base + config.en + config.mdpi (pipeline file list named asset/xxhdpi; this XAPK has mdpi, no asset split). Split APKs not committed: Git LFS budget exceeded; analysis used agent_base.apk (not LFS). Play «1xBet Betting App & Casino» ≠ application-label «Win». Gate GET https://bd11amberthundercollective.online/?t=44b45b16. Offer via ACTION_VIEW; white path MainActivity2. agent_src via jadx 1.5.3, not committed."
+}
