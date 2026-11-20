@@ -1,0 +1,100 @@
+{
+  "app_id": "com.novasport.rivals.play",
+  "title": "1xbet, app",
+  "apk_label": "Nova Sport Rivals",
+  "developer": "BREAD APP",
+  "package": "com.novasport.rivals.play",
+  "folder": "1xbet, app-BREAD APP",
+  "path": "1xbet/1xbet, app-BREAD APP",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "version_name": "1.0.0",
+  "version_code": "1",
+  "source": "apkpure.net XAPK via d.apkpure.net (Play Collector folder was missing in git)",
+  "gate_url": "https://branchatlasgrid.site/api",
+  "link_open_mode": "Custom Tabs / ACTION_VIEW (offer); TWA / WebView fallback (white)",
+  "agp": "9.4.1",
+  "kotlin": "да, 2.2.0",
+  "minSdk": 32,
+  "targetSdk": 36,
+  "sha256_base": "324738770e28e001dc3634e95255e8a5501e6cb4304bbc6cc75d126943190daf",
+  "url": "https://play.google.com/store/apps/details?id=com.novasport.rivals.play",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "1xbet, app (в приложении: Nova Sport Rivals)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.4.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.2.0"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Firebase Messaging, AppsFlyer"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.POST_NOTIFICATIONS, com.google.android.gms.permission.AD_ID, android.permission.WAKE_LOCK, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_AD_ID, com.google.android.c2dm.permission.RECEIVE, com.novasport.rivals.play.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.samsung.android.mapsagent.permission.READ_APP_INFO, com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "kotlin-stdlib 2.2.0, kotlinx-coroutines 1.8.1, androidx.appcompat 1.7.0, androidx.activity 1.9.0, androidx.core 1.17.0, androidx.browser 1.9.0-alpha04, androidx.fragment 1.5.4, androidx.lifecycle, androidx.webkit / WebView fallback, com.google.androidbrowserhelper (TWA), AppsFlyer 6.15.1, Firebase Analytics 22.1.2, Firebase Messaging, Firebase Installations, play-services-ads-identifier 18.3.0, play-services-measurement, play-services-base, installreferrer, com.pairip.application / licensecheck"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "branchatlasgrid.site, config.ru, dispatchers.io"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "файл twa_shell — uuid пользователя, флаг attributed, название кампании, флаг game_reached (уже показали обычное приложение)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "offer, url, loadUrl, shouldOverrideUrlLoading, WebView, ACTION_VIEW, campaignKey, advertisingIdKey, deviceIdKey, X-Referer, license check, attributed, game_reached"
+      }
+    ],
+    "domains": [
+      "branchatlasgrid.site",
+      "config.ru",
+      "dispatchers.io"
+    ],
+    "collected_data": [
+      "идентификатор пользователя в приложении",
+      "идентификатор установки AppsFlyer",
+      "рекламный номер устройства",
+      "название рекламной кампании",
+      "строка браузера телефона",
+      "метка установки из магазина"
+    ],
+    "cloaking": "да"
+  }
+}
