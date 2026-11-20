@@ -1,0 +1,18 @@
+{
+  "pipeline_false_positive": [
+    {
+      "host": "config.ru",
+      "reason": "AAB language split split=config.ru in splits0.xml, not a network endpoint"
+    }
+  ],
+  "custom_hosts": [
+    {
+      "host": "steadywindowbridge.site",
+      "path": "/tk8w",
+      "url": "https://steadywindowbridge.site/tk8w",
+      "source": "SplashActivity.getEndpointUrl XOR+AES-GCM; DataSyncProvider.endpointEncrypted",
+      "method": "POST",
+      "vt": null
+    }
+  ]
+}

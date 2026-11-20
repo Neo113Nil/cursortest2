@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "source": "apkpure.net XAPK via d.apkpure.net (Play Collector folder 1xbet/1xbet, app-VLASNE FILM was missing on origin/main)",
+  "package": "com.ultrafanatics.football.game",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Ultra Fanatics",
+  "play_title": "1xbet, app",
+  "developer": "VLASNE FILM",
+  "sha256": "5deaab252198085a158a8e748f306489a0f0d2a0c18aaf40b679c2c9373c43ff",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "1xbet, app_1.0_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.mdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "errors": 62,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.ultrafanatics.football.game; encrypted ds.bin → DataSyncProvider; agent_src gitignored, zipped as agent_src.zip; 62 non-fatal decompile errors"
+  },
+  "cloaking": "да",
+  "gate_url": "https://steadywindowbridge.site/tk8w",
+  "link_open_mode": "Browser / ACTION_VIEW",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "cloaking_hints.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK 1xbet, app 1.0 / Ultra Fanatics (vc 1) from APKPure via d.apkpure.net (~38.8 MB): base + config.arm64_v8a + config.en + config.mdpi (pipeline file list named asset/xxhdpi; this XAPK has mdpi, no asset split). Split APKs not committed: analysis used agent_base.apk (not LFS). Play «1xbet, app» ≠ application-label «Ultra Fanatics». Gate POST https://steadywindowbridge.site/tk8w. Offer via ACTION_VIEW after gift screen; white path MainActivity. agent_src via jadx 1.5.3, not committed."
+}
