@@ -1,0 +1,92 @@
+{
+  "xapk_version": 2,
+  "package_name": "com.project.WinZoneJournal",
+  "name": "1xbet päevik",
+  "version_code": "6",
+  "version_name": "1.0.0",
+  "min_sdk_version": "32",
+  "target_sdk_version": "36",
+  "permissions": [
+    "android.permission.INTERNET",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "com.samsung.android.mapsagent.permission.READ_APP_INFO",
+    "com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA",
+    "com.project.WinZoneJournal.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"
+  ],
+  "split_configs": [
+    "config.ar",
+    "config.arm64_v8a",
+    "config.de",
+    "config.en",
+    "config.es",
+    "config.fr",
+    "config.hi",
+    "config.in",
+    "config.ja",
+    "config.pt",
+    "config.ru",
+    "config.xxhdpi",
+    "config.zh"
+  ],
+  "total_size": 23063466,
+  "icon": "icon.png",
+  "split_apks": [
+    {
+      "file": "com.project.WinZoneJournal.apk",
+      "id": "base"
+    },
+    {
+      "file": "config.ar.apk",
+      "id": "config.ar"
+    },
+    {
+      "file": "config.arm64_v8a.apk",
+      "id": "config.arm64_v8a"
+    },
+    {
+      "file": "config.de.apk",
+      "id": "config.de"
+    },
+    {
+      "file": "config.en.apk",
+      "id": "config.en"
+    },
+    {
+      "file": "config.es.apk",
+      "id": "config.es"
+    },
+    {
+      "file": "config.fr.apk",
+      "id": "config.fr"
+    },
+    {
+      "file": "config.hi.apk",
+      "id": "config.hi"
+    },
+    {
+      "file": "config.in.apk",
+      "id": "config.in"
+    },
+    {
+      "file": "config.ja.apk",
+      "id": "config.ja"
+    },
+    {
+      "file": "config.pt.apk",
+      "id": "config.pt"
+    },
+    {
+      "file": "config.ru.apk",
+      "id": "config.ru"
+    },
+    {
+      "file": "config.xxhdpi.apk",
+      "id": "config.xxhdpi"
+    },
+    {
+      "file": "config.zh.apk",
+      "id": "config.zh"
+    }
+  ]
+}

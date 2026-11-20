@@ -1,0 +1,42 @@
+{
+  "app_id": "com.project.WinZoneJournal",
+  "title": "1xbet päevik",
+  "apk_label": "WinZone Journal",
+  "developer": "VDG Città Romana B.V",
+  "package": "com.project.WinZoneJournal",
+  "folder": "1xbet päevik-VDG Città Romana B.V",
+  "path": "1xbet/1xbet päevik-VDG Città Romana B.V",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "version_name": "1.0.0",
+  "version_code": "6",
+  "source": "androidpot.net XAPK (Play Collector folder was missing in git)",
+  "gate_url": "https://merovaxil.bid/hkY6qq1F?sub_id_5=201",
+  "link_open_mode": "WebView (offer); Flutter MainActivity (white)",
+  "agp": "9.0.1",
+  "kotlin": "да, 2.3.20",
+  "minSdk": 32,
+  "targetSdk": 36,
+  "sha256_base": "0dd51016481c8ab0794be0cfe4356010e41bf061cbde3733e502ac1784989cf9",
+  "url": "https://play.google.com/store/apps/details?id=com.project.WinZoneJournal",
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "1xbet päevik (в приложении: WinZone Journal)"},
+      {"param": "Android Gradle Plugin", "value": "9.0.1"},
+      {"param": "minSdk", "value": "32"},
+      {"param": "targetSdk", "value": "36"},
+      {"param": "Kotlin", "value": "да, 2.3.20"},
+      {"param": "Web View", "value": "да"},
+      {"param": "Custom Tabs", "value": "нет"},
+      {"param": "Рекламные сети", "value": "нет"},
+      {"param": "Аналитика", "value": "AppsFlyer"},
+      {"param": "Permissions", "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.samsung.android.mapsagent.permission.READ_APP_INFO, com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA, com.project.WinZoneJournal.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"},
+      {"param": "Libraries", "value": "Flutter, webview_flutter_android, AppsFlyer, Play Integrity 1.3.0, play-services-ads-identifier 18.3.0, play-services-basement, play-services-base, play-services-tasks, installreferrer, androidx.webkit 1.15.0, androidx.appcompat 1.1.0, androidx.core 1.13.1, androidx.activity 1.8.1, androidx.fragment 1.7.1, androidx.lifecycle, androidx.datastore 1.1.7, androidx.window, androidx.profileinstaller, androidx.startup, kotlin-stdlib 2.3.20, kotlinx-coroutines 1.7.3, Grill factory SDK (g8cf0d54ae7441d157d06)"},
+      {"param": "Подозрительные домены", "value": "merovaxil.bid, config.ru, dispatchers.io, systemuioverlay.top"},
+      {"param": "SharedPreferences", "value": "файл k6542f02ae5946f58f5cfcb1d — сгенерированный id устройства и кэш ответа проверки (в этой сборке кэш выключен)"},
+      {"param": "Есть ли клоака", "value": "да"},
+      {"param": "Подозрительные слова", "value": "fallbackUrl, webviewUrlKey, webviewUrlExclusion, redirectUrl, requestUrl, expectedStatus, GrillAppsFlyer, GrillDeviceId, factory, open_app, attributionUrl, useWebViewUrl"}
+    ],
+    "domains": ["merovaxil.bid", "config.ru", "dispatchers.io", "systemuioverlay.top"]
+  }
+}
