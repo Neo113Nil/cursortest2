@@ -1,0 +1,48 @@
+{
+  "app_id": "com.betzona_avt_clone_v1",
+  "title": "1XBET prediction tips",
+  "apk_label": "1xBet Prediction Tips",
+  "developer": "SAPEX ARCHITECHS & ENGINEERS 995",
+  "package": "com.betzona_avt_clone_v1",
+  "folder": "1XBET prediction tips-SAPEX ARCHITECHS & ENGINEERS 995",
+  "path": "1xbet/1XBET prediction tips-SAPEX ARCHITECHS & ENGINEERS 995",
+  "store_title_mismatch": false,
+  "cloaking": "нет",
+  "cloaking_reason": "Play «1XBET prediction tips» ≈ APK-label «1xBet Prediction Tips». Flutter cricket_app: MainActivity только нативная реклама AdMob. GET adminapi.recruitagroup.com/api/public/config/<package> отдаёт слоты Google Ad Manager без url/offer. webview_flutter без WebViewWidget в Dart приложения; Custom Tabs только queries рекламы. Нет cloak/gate/whitelist/is_bot.",
+  "version_name": "1.0.0",
+  "version_code": "1",
+  "source": "apkpure XAPK (Play Collector folder was missing in git)",
+  "gate_url": "https://adminapi.recruitagroup.com/api/public/config/com.betzona_avt_clone_v1",
+  "link_open_mode": "нет оффера",
+  "agp": "9.0.1",
+  "kotlin": "да, 2.3.20",
+  "minSdk": 32,
+  "targetSdk": 36,
+  "sha256_base": "8035a0bc732597808a52309d9cc5b1577b0b7fc9ae50c577570c97a86e6171d1",
+  "play": {
+    "title": "1XBET prediction tips",
+    "developer": "SAPEX ARCHITECHS & ENGINEERS 995"
+  },
+  "brief_report": {
+    "table": [
+      {"param": "Название приложения", "value": "1XBET prediction tips"},
+      {"param": "Android Gradle Plugin", "value": "9.0.1"},
+      {"param": "minSdk", "value": "32"},
+      {"param": "targetSdk", "value": "36"},
+      {"param": "Kotlin", "value": "да, 2.3.20"},
+      {"param": "Web View", "value": "да"},
+      {"param": "Custom Tabs", "value": "да"},
+      {"param": "Рекламные сети", "value": "AdMob, Google Ad Manager"},
+      {"param": "Аналитика", "value": "нет"},
+      {"param": "Permissions", "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.WAKE_LOCK, android.permission.FOREGROUND_SERVICE, com.betzona_avt_clone_v1.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"},
+      {"param": "Libraries", "value": "androidx.activity, androidx.annotation, androidx.appcompat, androidx.browser, androidx.constraintlayout, androidx.coordinatorlayout, androidx.core, androidx.datastore, androidx.fragment, androidx.lifecycle, androidx.preference, androidx.profileinstaller, androidx.recyclerview, androidx.room, androidx.startup, androidx.webkit, androidx.work, androidx.window, com.google.android.gms.ads, com.google.android.gms.common, com.google.android.play.core.hsdp, com.google.android.ump, com.google.common, com.pairip, com.getkeepsafe.relinker, connectivity_plus, io.flutter, io.flutter.plugins.googlemobileads, io.flutter.plugins.sharedpreferences, io.flutter.plugins.webviewflutter, jni, kotlin-stdlib, kotlinx, okio"},
+      {"param": "Подозрительные домены", "value": "adminapi.recruitagroup.com, ca.trufo.ai, config.ru, crt-c2pa.ssl.com, cv.iptc.org"},
+      {"param": "SharedPreferences", "value": "ключ ads_config_json — кэш рекламных слотов с сервера; язык, страна и спортивный профиль после экрана настроек"},
+      {"param": "Есть ли клоака", "value": "нет"},
+      {"param": "Подозрительные слова", "value": "betting, 1xBet, wager, odds, Jackpot, Betzona, license check, shouldDrop"}
+    ],
+    "domains": ["adminapi.recruitagroup.com", "ca.trufo.ai", "config.ru", "crt-c2pa.ssl.com", "cv.iptc.org"],
+    "collected_data": [],
+    "cloaking": "нет"
+  }
+}
