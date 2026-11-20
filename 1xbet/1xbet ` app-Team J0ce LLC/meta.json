@@ -1,0 +1,109 @@
+{
+  "app_id": "com.veltherroomclimatelog.hyx1309",
+  "title": "1xbet ` app",
+  "apk_label": "1xbet velther",
+  "developer": "Team J0ce LLC",
+  "package": "com.veltherroomclimatelog.hyx1309",
+  "folder": "1xbet ` app-Team J0ce LLC",
+  "path": "1xbet/1xbet ` app-Team J0ce LLC",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "cloaking_reason": "белая оболочка: Play «1xbet ` app» ≠ application-label «1xbet velther». WelcomeGate; GET api.ipify.org и ifconfig.me/ip; путь velther_app_insights/device; prefs saved_link; Custom Tabs bolide_antelope / url_launcher WebView.",
+  "version_name": "1.0.2",
+  "version_code": "4",
+  "source": "apkpure.net XAPK via d.apkpure.net (Play Collector folder was missing in git)",
+  "gate_url": "https://api.ipify.org ; https://ifconfig.me/ip ; Dropbox scl/fi/14vxl9hvqpgnlr",
+  "link_open_mode": "Custom Tabs (bolide_antelope) / WebView (url_launcher)",
+  "agp": "8.11.1",
+  "kotlin": "да 2.2.20",
+  "minSdk": 24,
+  "targetSdk": 36,
+  "sha256_base": "f4b4eef0457bc215beda49b84c79d8541736f65681aa433bf3be32ca6193a260",
+  "sha256_xapk": "1f64615e6fc043c010602785a211ddd5d07207e944c3bf7d3496f7350c0db86e",
+  "play": {
+    "title": "1xbet ` app",
+    "developer": "Team J0ce LLC"
+  },
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "1xbet ` app (в приложении: 1xbet velther)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.11.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.2.20"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Microsoft Clarity"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.SCHEDULE_EXACT_ALARM, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.VIBRATE, android.permission.POST_NOTIFICATIONS, com.veltherroomclimatelog.hyx1309.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Flutter embedding 2, kotlin-stdlib 2.2.20, kotlinx-coroutines 1.11.0, androidx.core/core-ktx 1.17.0, androidx.appcompat 1.1.0, androidx.activity 1.9.0, androidx.browser 1.9.0, androidx.fragment 1.7.1, androidx.lifecycle 2.7.0, androidx.datastore 1.1.7, androidx.preference 1.2.1, androidx.window 1.2.0, androidx.profileinstaller 1.3.1, androidx.startup 1.1.1, androidx.savedstate 1.2.1, play-services-base 18.7.2, play-services-basement 18.7.1, play-services-tasks 18.3.2, play-review 2.0.2, url_launcher_android, flutter_local_notifications, share_plus, package_info_plus, permission_handler, in_app_review, jni / jni_flutter, clarity_flutter, bolide_antelope (Custom Tabs, канал sequoiabeacon), com.pairip.application / licensecheck, dart http, riverpod, go_router, flutter_screenutil, uuid, timezone"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "api.ipify.org, appassets.androidplatform.net, config.ru, ifconfig.me"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "ключ f7879bbbfed49721078e7aee83a576a9_saved_link — сохранённая ссылка после проверки; f7879bbbfed49721078e7aee83a576a9_ignore_wrapper — флаг пропуска оболочки; f7879bbbfed49721078e7aee83a576a9_is_first_launch — первый запуск; insights_installation_id и insights_last_payload — идентификатор установки и последний пакет сведений; velther_welcomed — флаг приветствия; velther_readings — локальные записи обычного приложения"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "is_bot, WelcomeGate, saved_link, ignore_wrapper, BolideAntelope, redirect, WebView, loadUrl, gaid, 1xbet, ipify, ifconfig, launchUrl, openUrlInApp"
+      }
+    ],
+    "domains": [
+      "api.ipify.org",
+      "appassets.androidplatform.net",
+      "config.ru",
+      "ifconfig.me"
+    ],
+    "collected_data": [
+      "публичный IP-адрес",
+      "идентификатор установки",
+      "имя пакета приложения",
+      "название приложения",
+      "версия приложения",
+      "код версии приложения",
+      "рекламный номер устройства",
+      "производитель телефона",
+      "строка браузера телефона"
+    ],
+    "cloaking": "да"
+  }
+}

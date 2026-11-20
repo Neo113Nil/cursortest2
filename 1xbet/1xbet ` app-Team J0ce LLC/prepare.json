@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "source": "apkpure.net XAPK via d.apkpure.net (Play Collector folder 1xbet/1xbet ` app-Team J0ce LLC was missing on origin/main)",
+  "package": "com.veltherroomclimatelog.hyx1309",
+  "version_name": "1.0.2",
+  "version_code": 4,
+  "app_label": "1xbet velther",
+  "play_title": "1xbet ` app",
+  "developer": "Team J0ce LLC",
+  "sha256": "f4b4eef0457bc215beda49b84c79d8541736f65681aa433bf3be32ca6193a260",
+  "sha256_xapk": "1f64615e6fc043c010602785a211ddd5d07207e944c3bf7d3496f7350c0db86e",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "1xbet:` app_1.0.2_APKPure.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.veltherroomclimatelog.hyx1309-4.apk",
+    "apk/com.veltherroomclimatelog.hyx1309-4-config.arm64_v8a.apk",
+    "apk/com.veltherroomclimatelog.hyx1309-4-config.en.apk",
+    "apk/com.veltherroomclimatelog.hyx1309-4-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; Flutter first-party com.veltherroomclimatelog.hyx1309 + Dart libapp.so; agent_src gitignored, first-party zipped as agent_src.zip"
+  },
+  "cloaking": "да",
+  "gate_url": "https://api.ipify.org + https://ifconfig.me/ip; Dropbox scl/fi/14vxl9hvqpgnlr; path velther_app_insights/device",
+  "link_open_mode": "Custom Tabs (bolide_antelope / sequoiabeacon) или встроенное окно сайта url_launcher",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK 1xbet ` app 1.0.2 / 1xbet velther (vc 4) from APKPure via d.apkpure.net (~28 MB): base + config.arm64_v8a + config.en + config.mdpi (pipeline file list named asset/xxhdpi; this XAPK has mdpi, no asset split). Split APKs not committed: Git LFS. Analysis used agent_base.apk (not LFS). Play «1xbet ` app» ≠ application-label «1xbet velther». WelcomeGate + veltherFetchPublicIp + insights path velther_app_insights/device + saved_link + BolideAntelope Custom Tabs / url_launcher WebView. s/H.java is_bot = Person.isBot. config.ru = AAB language split. agent_src via jadx 1.5.3, not committed as a tree."
+}
