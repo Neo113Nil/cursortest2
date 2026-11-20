@@ -1,0 +1,26 @@
+{
+  "app_id": "com.ninnadi.app",
+  "title": "1xbet",
+  "apk_label": "Ninnadi",
+  "developer": "BHP (TOWAGE SERVICES) PTY LTD",
+  "package": "com.ninnadi.app",
+  "folder": "1xbet-BHP (TOWAGE SERVICES) PTY LTD",
+  "path": "1xbet/1xbet-BHP (TOWAGE SERVICES) PTY LTD",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "cloaking_reason": "белая оболочка: Play «1xbet» ≠ application-label «Ninnadi». MainActivity GET https://gentle-violet-669d.entoyarul286.workers.dev/?app=com.ninnadi.app (модель, User-Agent). Если финальный URL не workers.dev — ACTION_VIEW оффера и cached_redirect_url; иначе StackActivity.",
+  "version_name": "1.0",
+  "version_code": "1",
+  "source": "apkpure XAPK (Play Collector folder was missing in git)",
+  "gate_url": "https://gentle-violet-669d.entoyarul286.workers.dev/?app=com.ninnadi.app",
+  "link_open_mode": "ACTION_VIEW (внешний браузер)",
+  "agp": "9.1.0",
+  "kotlin": "да",
+  "minSdk": 32,
+  "targetSdk": 36,
+  "sha256_base": "bf508fad7b9cab8c06424a0963f330108eb35035d4b3378ee3e7f2607f942ba9",
+  "play": {
+    "title": "1xbet",
+    "developer": "BHP (TOWAGE SERVICES) PTY LTD"
+  }
+}

@@ -1,0 +1,384 @@
+{
+  "domains": [
+    {
+      "domain": "com.ninnadi.app",
+      "virustotal_url": "https://www.virustotal.com/gui/domain/com.ninnadi.app",
+      "detections": "0/92 (malicious=0, suspicious=0)",
+      "vendors": [
+        {
+          "engine": "0xSI_f33d",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Abusix",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Acronis",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "ADMINUSLabs",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "AILabs (MONITORAPP)",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "AlienVault",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "alphaMountain.ai",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "AlphaSOC",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Antiy-AVL",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "ArcSight Threat Intelligence",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "AutoShun",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Axur",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Bfore.Ai PreCrime",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "BitDefender",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Bkav",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Blueliv",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Certego",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "ChainPatrol",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Chong Lua Dao",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "CINS Army",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "CMC Threat Intelligence",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "CRDF",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Criminal IP",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "CSIS Security Group",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "CTX AI",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Cyan",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Cyble",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "CyRadar",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "desenmascara.me",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "DNS8",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Dr.Web",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "EmergingThreats",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Emsisoft",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Ermes",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "ESET",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "ESTsecurity",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Forcepoint ThreatSeeker",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Fortinet",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Fortra",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "G-Data",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "GCP Abuse Intelligence",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Google Safe Browsing",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "GreenSnow",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "GreyNoise",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Gridinsoft",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Guardpot",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Heimdal Security",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Hunt.io Intelligence",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "IPsum",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Juniper Networks",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Kaspersky",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "LevelBlue",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Lionic",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Lumu",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Malwared",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "MalwarePatrol",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "MalwareURL",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Mimecast",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Netcraft",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "OpenPhish",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Orcapot",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "PhishFort",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Phishing Database",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Phishtank",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "PREBYTES",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "PrecisionSec",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Quick Heal",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Quttera",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "SafeToOpen",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Sansec eComscan",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Scantitan",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "SCUMWARE.org",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Seclookup",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "SecureBrain",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Snort IP sample list",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "SOCRadar",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Sophos",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "StopForumSpam",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Sucuri SiteCheck",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Synthient",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "ThreatHive",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "URLhaus",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "URLQuery",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Viettel Threat Intelligence",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "VIPRE",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "ViriBack",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "VX Vault",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Webroot",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Xcitium Verdict Cloud",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "Yandex Safebrowsing",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "ZeroCERT",
+          "verdict": "Unrated"
+        },
+        {
+          "engine": "ZeroFox",
+          "verdict": "Unrated"
+        }
+      ],
+      "redirects_to": "нет (DNS не резолвится)",
+      "page_brief": "нет (DNS не резолвится)",
+      "parked_at": "нет данных"
+    }
+  ],
+  "count": 1,
+  "note": "Vendor verdicts copied from the pipeline domain_checks tables provided with the analysis prompt."
+}
