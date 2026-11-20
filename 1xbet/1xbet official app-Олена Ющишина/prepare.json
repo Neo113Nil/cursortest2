@@ -1,0 +1,51 @@
+{
+  "ok": true,
+  "source": "APKCube APKS (Play Collector folder 1xbet/1xbet official app-Олена Ющишина was missing on origin/main)",
+  "package": "com.fortuneblastgoal5359.app",
+  "version_name": "1.0",
+  "version_code": 1,
+  "app_label": "Fortune Blast Goal",
+  "play_title": "1xbet official app",
+  "developer": "Олена Ющишина",
+  "sha256": "45c2b6c65debca5b00927425c2237be685fa2fd216adc07304f27b3baaca2b88",
+  "sha256_apks": "b97f5701692c9eacb359bfc736dfa329240eb841c0af17492b8452db54ebb29b",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.fortuneblastgoal5359.app-1.apk",
+    "apk/com.fortuneblastgoal5359.app-1-config.en.apk",
+    "apk/com.fortuneblastgoal5359.app-1-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "errors": 10,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.fortuneblastgoal5359.app (MainActivity, LightActivity, StageActivity, VelocityActivity, SpeedActivity); agent_src gitignored; 10 non-fatal decompile errors"
+  },
+  "cloaking": "да",
+  "agp": "9.1.0",
+  "kotlin": "да",
+  "minSdk": 29,
+  "targetSdk": 37,
+  "gate_url": "https://cold-night-ad90.kovalcukviktoria820.workers.dev/?app=com.fortuneblastgoal5359.app",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.fortuneblastgoal5359.app-1.apk",
+    "apk/com.fortuneblastgoal5359.app-1-config.en.apk",
+    "apk/com.fortuneblastgoal5359.app-1-config.xxhdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "cloaking_hints.md",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. APKS Fortune-Blast-Goal_1.0_apkcube.apks from APKCube (~3 MB packed, sha256 b97f5701…): base + language/density splits. Play «1xbet official app» ≠ application-label «Fortune Blast Goal». Gate URL obfuscated as int-35: https://cold-night-ad90.kovalcukviktoria820.workers.dev/. PairIP Play license. agent_src via jadx 1.5.3, not committed.",
+  "errors": []
+}

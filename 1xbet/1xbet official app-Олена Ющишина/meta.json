@@ -1,0 +1,27 @@
+{
+  "app_id": "com.fortuneblastgoal5359.app",
+  "title": "1xbet official app",
+  "apk_label": "Fortune Blast Goal",
+  "developer": "Олена Ющишина",
+  "package": "com.fortuneblastgoal5359.app",
+  "folder": "1xbet official app-Олена Ющишина",
+  "path": "1xbet/1xbet official app-Олена Ющишина",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "cloaking_reason": "белая оболочка: Play «1xbet official app» ≠ application-label «Fortune Blast Goal». MainActivity GET https://cold-night-ad90.kovalcukviktoria820.workers.dev/?app=com.fortuneblastgoal5359.app (модель, User-Agent). Если финальный URL не workers.dev — ACTION_VIEW и cached_redirect_url; иначе LightActivity.",
+  "version_name": "1.0",
+  "version_code": "1",
+  "source": "APKCube APKS (Play Collector folder was missing in git)",
+  "gate_url": "https://cold-night-ad90.kovalcukviktoria820.workers.dev/?app=com.fortuneblastgoal5359.app",
+  "link_open_mode": "ACTION_VIEW (внешний браузер)",
+  "agp": "9.1.0",
+  "kotlin": "да",
+  "minSdk": 29,
+  "targetSdk": 37,
+  "sha256_base": "45c2b6c65debca5b00927425c2237be685fa2fd216adc07304f27b3baaca2b88",
+  "sha256_apks": "b97f5701692c9eacb359bfc736dfa329240eb841c0af17492b8452db54ebb29b",
+  "play": {
+    "title": "1xbet official app",
+    "developer": "Олена Ющишина"
+  }
+}
