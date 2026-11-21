@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "source": "androidpot.net XAPK (Play Collector folder url-batch/Arctic Fishing-ayazstraumq@holdholding was missing on origin/main)",
+  "package": "com.HnJqVzR.mLpXkT",
+  "version_name": "2.37",
+  "version_code": 1,
+  "app_label": "Arctic Fishing",
+  "play_title": "Arctic Fishing",
+  "developer": "ayazstraumq@holdholding",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "com.HnJqVzR.mLpXkT-1.apk",
+    "com.HnJqVzR.mLpXkT-1-config.arm64_v8a.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed; jadx 1.5.3 finished with errors, count: 16"
+  },
+  "note": "Play Collector folder was missing on origin/main. XAPK Arctic Fishing 2.37 (vc 1) from AndroidPot (~37 MB): base + config.arm64_v8a (no asset split in this XAPK). Play «Arctic Fishing» = application-label «Arctic Fishing». Cloak=да. Gate Unity Cloud Save tut_hint/tut_day + HelpPane WebView. agent_src via jadx 1.5.3, not committed."
+}
