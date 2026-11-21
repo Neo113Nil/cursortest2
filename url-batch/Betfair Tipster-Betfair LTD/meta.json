@@ -1,0 +1,23 @@
+{
+  "app_id": "com.betfair.pelican",
+  "title": "Betfair Tipster",
+  "apk_label": "Betfair Tipster",
+  "play_title": "Betfair Tipster",
+  "developer": "Betfair LTD",
+  "package": "com.betfair.pelican",
+  "folder": "Betfair Tipster-Betfair LTD",
+  "path": "url-batch/Betfair Tipster-Betfair LTD",
+  "store_title_mismatch": false,
+  "cloaking": "нет",
+  "cloaking_reason": "Play «Betfair Tipster» = APK-label «Betfair Tipster». Официальное white-label приложение Pelican Trading (.NET MAUI). MauiWebViewClient.shouldOverrideUrlLoading — фреймворк Microsoft.Maui, не gate. Custom Tabs: Facebook login + MAUI WebAuthenticator (scheme betfair). URL зашиты: docs/knowledgebase.pelicantrading.io, copytrade-resource.com. pairip LicenseClient — проверка лицензии Play, не развилка оффер/белая. cloak/gate/offer/whitelist/is_bot нет.",
+  "version_name": "6.1.0",
+  "version_code": "21903",
+  "source": "androidpot.net XAPK (Play Collector folder url-batch/Betfair Tipster-Betfair LTD was missing on origin/main)",
+  "agp": "нет",
+  "kotlin": "да (2.3.21)",
+  "minSdk": 28,
+  "targetSdk": 36,
+  "webview": "crc6452ffdc5b34af3a0f.MauiWebViewClient → Microsoft.Maui.Platform.MauiWebViewClient (native)",
+  "sha256_base": "a53b7996f52f79d2ebbffacfa8edccd394c10147e6bbf2376fef547951137e9c",
+  "sha256_xapk": "1f0d45576dbac671bef3168d1cacc4d1909421e9da07c624691e2b3ea4a01efb"
+}

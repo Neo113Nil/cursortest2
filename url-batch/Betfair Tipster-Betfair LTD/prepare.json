@@ -1,0 +1,37 @@
+{
+  "ok": true,
+  "source": "androidpot.net XAPK (Play Collector folder url-batch/Betfair Tipster-Betfair LTD was missing on origin/main)",
+  "package": "com.betfair.pelican",
+  "version_name": "6.1.0",
+  "version_code": 21903,
+  "app_label": "Betfair Tipster",
+  "play_title": "Betfair Tipster",
+  "developer": "Betfair LTD",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "com.betfair.pelican.apk",
+    "config.ar.apk",
+    "config.arm64_v8a.apk",
+    "config.de.apk",
+    "config.en.apk",
+    "config.es.apk",
+    "config.fr.apk",
+    "config.hi.apk",
+    "config.in.apk",
+    "config.ja.apk",
+    "config.pt.apk",
+    "config.ru.apk",
+    "config.xxhdpi.apk",
+    "config.zh.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "error_count": 29,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed; jadx 1.5.3"
+  },
+  "note": "Play Collector folder was missing on origin/main. XAPK Betfair Tipster 6.1.0 (vc 21903) from AndroidPot (~85 MB): base 29 MB + language/dpi/abi splits. SHA-256 base a53b7996f52f79d2ebbffacfa8edccd394c10147e6bbf2376fef547951137e9c. Play «Betfair Tipster» = application-label «Betfair Tipster». Cloak=нет. .NET MAUI Pelican.UI, pairip Play license, WebView/Custom Tabs = MAUI/Facebook/OIDC. agent_src via jadx 1.5.3, not committed."
+}
