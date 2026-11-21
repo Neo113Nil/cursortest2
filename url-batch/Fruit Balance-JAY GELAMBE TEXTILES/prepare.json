@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "source": "androidpot.net XAPK (Play Collector folder url-batch/Fruit Balance-JAY GELAMBE TEXTILES was missing on origin/main)",
+  "package": "com.ropreww.kkopfewrv",
+  "version_name": "2.0.5",
+  "version_code": 25,
+  "app_label": "Fruit Balance",
+  "play_title": "Fruit Balance",
+  "developer": "JAY GELAMBE TEXTILES",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "com.ropreww.kkopfewrv.apk",
+    "com.ropreww.kkopfewrv-split_config.arm64_v8a.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed; jadx 1.5.3 finished with errors, count: 7"
+  },
+  "note": "Play Collector folder was missing on origin/main. XAPK Fruit Balance 2.0.5 (vc 25) from AndroidPot (~36 MB): base 16.8 MB + config.arm64_v8a 19.1 MB. SHA-256 XAPK 25d1a14e313d5145e6ba7df44877a0901330bdda6f6b529cf6fd69bc3a9b2718, base 357b106a8d0f096eed2dc8f13b81e58a8e05688c5fc7d7961d78e31eaa71d0f6. Play «Fruit Balance» = application-label «Fruit Balance». Cloak=да. Adjust deferred deeplink + UniWebView/Custom Tabs. agent_src via jadx 1.5.3, not committed."
+}
