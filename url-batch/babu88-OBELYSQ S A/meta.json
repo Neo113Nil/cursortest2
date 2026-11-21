@@ -1,0 +1,28 @@
+{
+  "app_id": "com.crude.pave.chunk.daisy.light.babu88",
+  "title": "babu88",
+  "apk_label": "Win",
+  "developer": "OBELYSQ S A",
+  "package": "com.crude.pave.chunk.daisy.light.babu88",
+  "folder": "babu88-OBELYSQ S A",
+  "path": "url-batch/babu88-OBELYSQ S A",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "version_name": "1.0",
+  "version_code": "100",
+  "source": "APKCube security scan of Play-signed APKS vc100 (Play Collector folder missing in git; APK binary not saved)",
+  "gate_url": "",
+  "link_open_mode": "",
+  "agp": "",
+  "kotlin": "да",
+  "minSdk": 26,
+  "targetSdk": 36,
+  "sha256_base": "1d505dbe4692dd90eeb17547fedc3e2f52b05c9c5c55676e53ebefd2de7e5856",
+  "url": "https://play.google.com/store/apps/details?id=com.crude.pave.chunk.daisy.light.babu88",
+  "cloaking_reason": "белая оболочка: карточка Play «babu88» ≠ application-label «Win». INTERNET + PairIP + first-party CoreHttpHeadersHelper / MainPathBuilderService / StaticConfig. Точный URL гейта из бинаря не снят.",
+  "brief_report": {
+    "cloaking": "да",
+    "domains": [],
+    "collected_data": []
+  }
+}
