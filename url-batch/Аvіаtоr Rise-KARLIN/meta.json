@@ -1,0 +1,22 @@
+{
+  "app_id": "com.mNbVcXz.lKjHgFd",
+  "title": "Аvіаtоr Rise",
+  "apk_label": "Аvіаtоr Rise",
+  "developer": "KARLIN",
+  "package": "com.mNbVcXz.lKjHgFd",
+  "folder": "Аvіаtоr Rise-KARLIN",
+  "path": "url-batch/Аvіаtоr Rise-KARLIN",
+  "store_title_mismatch": false,
+  "cloaking": "да",
+  "cloaking_reason": "React Native + first-party WebView overlay (hqc.wkl.loadUrl / shouldOverrideUrlLoading). Native modules collect GAID, User-Agent, package/version, GL renderer, Play Integrity token; JS opens a URL in the in-app WebView. diia.app / pay.widget.blog / t.me intercepted to ACTION_VIEW. Play title = APK label «Аvіаtоr Rise». config.ru is splits0.xml language split, not a network host.",
+  "version_name": "2.0",
+  "version_code": "2",
+  "source": "apkcube.com APKS (Play Collector folder was missing on origin/main)",
+  "agp": "8.12.0",
+  "kotlin": "да, 2.1.20",
+  "minSdk": 24,
+  "targetSdk": 36,
+  "webview": "hqc.wkl overlay WebView via Vzksuspjeyvcw4niewportReactModule.navzksuspjeyvcw4nigate",
+  "sha256_apks": "1be5f3b46133f7de5496923de32f25a7b4acdeb36874597a06d94824d37048f8",
+  "domains": ["config.ru", "diia.app"]
+}

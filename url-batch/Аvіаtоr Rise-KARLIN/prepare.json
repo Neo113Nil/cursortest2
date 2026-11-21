@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "source": "apkcube.com APKS (Play Collector folder url-batch/Аvіаtоr Rise-KARLIN was missing on origin/main)",
+  "package": "com.mNbVcXz.lKjHgFd",
+  "version_name": "2.0",
+  "version_code": 2,
+  "app_label": "Аvіаtоr Rise",
+  "play_title": "Аvіаtоr Rise",
+  "developer": "KARLIN",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "com.mNbVcXz.lKjHgFd.apk",
+    "com.mNbVcXz.lKjHgFd-split_config.arm64_v8a.apk",
+    "com.mNbVcXz.lKjHgFd-split_config.en.apk",
+    "com.mNbVcXz.lKjHgFd-split_config.xxhdpi.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed; jadx 1.5.3 finished with errors, count: 2"
+  },
+  "note": "Play Collector folder was missing on origin/main. APKS Аvіаtоr Rise 2.0 (vc 2) from APKCube (~14 MB bundle / 15 MB base): base + config.arm64_v8a + config.en + config.xxhdpi. SHA-256 1be5f3b46133f7de5496923de32f25a7b4acdeb36874597a06d94824d37048f8. Play «Аvіаtоr Rise» = application-label «Аvіаtоr Rise». Cloak=да. agent_src via jadx 1.5.3, not committed."
+}
