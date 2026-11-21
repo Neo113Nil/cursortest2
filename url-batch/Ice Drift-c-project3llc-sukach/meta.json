@@ -1,0 +1,23 @@
+{
+  "app_id": "com.Porvexa8.Nulqim",
+  "title": "Ice Drift",
+  "apk_label": "Ice Drift",
+  "developer": "c-project3llc-sukach",
+  "package": "com.Porvexa8.Nulqim",
+  "folder": "Ice Drift-c-project3llc-sukach",
+  "path": "url-batch/Ice Drift-c-project3llc-sukach",
+  "store_title_mismatch": false,
+  "cloaking": "да",
+  "cloaking_reason": "Launcher LensCanvasRouter открывает WebView на https://ice3drift.site с package_name/adv_id/install_ref/user_agent/version_app/android_id/fcm_token_push. DataStore lever_motion_registry=true или нет сети → обычная HubRosterDeck. Play-название = APK-label «Ice Drift».",
+  "version_name": "3.0",
+  "version_code": "3",
+  "source": "androidpot.net XAPK (Play Collector folder was missing on origin/main)",
+  "agp": "9.2.1",
+  "kotlin": "да (2.2.10)",
+  "minSdk": 32,
+  "targetSdk": 36,
+  "gate": "https://ice3drift.site",
+  "webview": "LensCanvasRouter.loadUrl + razazexyn.janok.shouldOverrideUrlLoading; JS onClickedView/ice_drift_button",
+  "custom_tabs": true,
+  "sha256_base": "93adbdd9a07ab096dd05bdfa5fb610f5ba4eb80c5c779fb1321530c3c8b01195"
+}

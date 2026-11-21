@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "source": "androidpot.net XAPK (Play Collector folder url-batch/Ice Drift-c-project3llc-sukach was missing on origin/main)",
+  "package": "com.Porvexa8.Nulqim",
+  "version_name": "3.0",
+  "version_code": 3,
+  "app_label": "Ice Drift",
+  "play_title": "Ice Drift",
+  "developer": "c-project3llc-sukach",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "com.Porvexa8.Nulqim-3.apk",
+    "com.Porvexa8.Nulqim-3-config.arm64_v8a.apk",
+    "com.Porvexa8.Nulqim-3-config.en.apk",
+    "com.Porvexa8.Nulqim-3-config.xxhdpi.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed; jadx 1.5.3 finished with errors, count: 1"
+  },
+  "note": "Play Collector folder was missing on origin/main. XAPK Ice Drift 3.0 (vc 3) from AndroidPot (~6.4 MB): base + language/dpi/abi splits (no asset split in this XAPK). Play «Ice Drift» = application-label «Ice Drift». Cloak=да. Gate https://ice3drift.site in LensCanvasRouter WebView. agent_src via jadx 1.5.3, not committed."
+}

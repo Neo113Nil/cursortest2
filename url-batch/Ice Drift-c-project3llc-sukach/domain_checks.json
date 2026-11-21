@@ -1,0 +1,24 @@
+{
+  "domains": [
+    {
+      "domain": "ice3drift.site",
+      "virustotal_url": "https://www.virustotal.com/gui/domain/ice3drift.site",
+      "detections": null,
+      "vendors": {},
+      "redirects_to": null,
+      "page_summary": "title: Ice Drift. HTML-страница с описанием игры и кнопкой START (id=ice_drift_button)",
+      "parked_at": "Cloudflare"
+    },
+    {
+      "domain": "config.ru",
+      "virustotal_url": "https://www.virustotal.com/gui/domain/config.ru",
+      "detections": "0/92 (malicious=0, suspicious=0)",
+      "malicious": 0,
+      "suspicious": 0,
+      "redirects_to": null,
+      "page_summary": "не удалось открыть (ReadTimeout)",
+      "parked_at": "регистратор: RU-CENTER-RU",
+      "note": "в APK встречается как языковой сплит config.ru, не как сетевой хост"
+    }
+  ]
+}
