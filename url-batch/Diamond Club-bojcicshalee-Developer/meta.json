@@ -1,0 +1,23 @@
+{
+  "app_id": "com.diamondclub.socialcasino",
+  "title": "Diamond Club",
+  "apk_label": "Diamond Club",
+  "developer": "bojcicshalee-Developer",
+  "package": "com.diamondclub.socialcasino",
+  "folder": "Diamond Club-bojcicshalee-Developer",
+  "path": "url-batch/Diamond Club-bojcicshalee-Developer",
+  "store_title_mismatch": false,
+  "cloaking": "да",
+  "cloaking_reason": "Unity + обфусцированный Assembly-CSharp: UniWebViewInterface.load и Custom Tabs открывают URL из игрового движка. Хелперы IsGoogleAuthFlowUrl / IsAboutBlank / GetFailingUrl / lastSafe / firstLoadShown оставляют обычное приложение; http(s) идёт в OpenUrlExternally / TryOpenExternalLikeChrome. Play-название = APK-label «Diamond Club».",
+  "version_name": "3.5.8",
+  "version_code": "58",
+  "source": "androidpot.net XAPK (Play Collector folder was missing on origin/main)",
+  "agp": "9.0.0",
+  "kotlin": "да (kotlinx-coroutines 1.8.0)",
+  "minSdk": 32,
+  "targetSdk": 36,
+  "unity": "6000.3.24f1 IL2CPP",
+  "webview": "com.onevcat.uniwebview.UniWebViewInterface.load → Q2 → a.loadUrl; Custom Tabs m5.launchUrl / C0154w0",
+  "sha256_base": "87d34965492d1d6ab88944d6ee690ace0154f94ce0585f2d23148eebf04a5ace",
+  "sha256_xapk": "abbb982bd4d1a67bf2c5e54ed61d6b6b3d191b2dec1bde41e5f928a9fa383c8d"
+}

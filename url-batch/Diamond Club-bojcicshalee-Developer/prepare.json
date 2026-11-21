@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "source": "androidpot.net XAPK (Play Collector folder url-batch/Diamond Club-bojcicshalee-Developer was missing on origin/main)",
+  "package": "com.diamondclub.socialcasino",
+  "version_name": "3.5.8",
+  "version_code": 58,
+  "app_label": "Diamond Club",
+  "play_title": "Diamond Club",
+  "developer": "bojcicshalee-Developer",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "com.diamondclub.socialcasino.apk",
+    "com.diamondclub.socialcasino-split_config.arm64_v8a.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed; jadx 1.5.3 finished with errors"
+  },
+  "note": "Play Collector folder was missing on origin/main. XAPK Diamond Club 3.5.8 (vc 58) from AndroidPot (~35 MB): base 16.3 MB + config.arm64_v8a 18.6 MB. SHA-256 XAPK abbb982bd4d1a67bf2c5e54ed61d6b6b3d191b2dec1bde41e5f928a9fa383c8d, base 87d34965492d1d6ab88944d6ee690ace0154f94ce0585f2d23148eebf04a5ace. Play «Diamond Club» = application-label «Diamond Club». Cloak=да. UniWebView/Custom Tabs, URL из игрового движка + fork IsGoogleAuthFlowUrl/lastSafe. agent_src via jadx 1.5.3, not committed."
+}
