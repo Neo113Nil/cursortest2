@@ -1,0 +1,25 @@
+{
+  "all_custom_domains": [
+    "com.swaba.app"
+  ],
+  "checked": [
+    {
+      "domain": "com.swaba.app",
+      "virustotal": {
+        "ok": true,
+        "vt_url": "https://www.virustotal.com/gui/domain/com.swaba.app",
+        "detections": "0/92 (malicious=0, suspicious=0)",
+        "last_analysis_stats": {
+          "malicious": 0,
+          "suspicious": 0,
+          "undetected": 92,
+          "harmless": 0,
+          "timeout": 0
+        }
+      },
+      "redirects_to": "нет (DNS не резолвится)",
+      "page_snippet": "нет (DNS не резолвится)",
+      "parked_at": "нет данных"
+    }
+  ]
+}
