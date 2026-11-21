@@ -1,0 +1,57 @@
+{
+  "ok": true,
+  "source": "androidpot XAPK (Play Collector folder url-batch/Tigrinho Aposta-REGALBOURNE LIMITED was missing on origin/main)",
+  "package": "com.regalbournegames.plunderofthegalleon",
+  "version_name": "2.0.0",
+  "version_code": 3,
+  "app_label": "Plunder of the Galleon",
+  "play_title": "Tigrinho Aposta",
+  "developer": "REGALBOURNE LIMITED",
+  "sha256": "56de78760ad38910e7c81269af44fe3fd36d656db60ddcd62165044847e6571a",
+  "agent_base_apk": "agent_base.apk",
+  "xapk": "tigrinho-aposta-2.0.0.xapk (скачан во временную папку, в git не коммитится)",
+  "apks": [
+    "agent_base.apk (base)",
+    "apk/com.regalbournegames.plunderofthegalleon-3.apk",
+    "apk/com.regalbournegames.plunderofthegalleon-3-config.en.apk",
+    "apk/com.regalbournegames.plunderofthegalleon-3-config.xxhdpi.apk"
+  ],
+  "base_apk": "agent_base.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "errors": 7,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "jadx 1.5.3; first-party com.regalbournegames.plunderofthegalleon (MainActivity, PushApplication); agent_src gitignored; 7 non-fatal decompile errors"
+  },
+  "cloaking": "да",
+  "agp": "8.13.2",
+  "kotlin": "да",
+  "minSdk": 26,
+  "targetSdk": 36,
+  "twa_url": "https://plunderofthegalleon.win/",
+  "pipeline_activities": [
+    "com.regalbournegames.plunderofthegalleon.MainActivity",
+    "com.google.androidbrowserhelper.trusted.LauncherActivity",
+    "com.pairip.licensecheck.LicenseActivity"
+  ],
+  "privacy_policy": "https://sites.google.com/view/plunder-of-the-galleon/privacy-policy",
+  "analysis_files": [
+    "agent_base.apk",
+    "apk/com.regalbournegames.plunderofthegalleon-3.apk",
+    "apk/com.regalbournegames.plunderofthegalleon-3-config.en.apk",
+    "apk/com.regalbournegames.plunderofthegalleon-3-config.xxhdpi.apk",
+    "apk/manifest.json",
+    "AndroidManifest.xml",
+    "strings.xml",
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "cloaking_hints.md",
+    "agent_src/"
+  ],
+  "note": "Play Collector folder was missing on origin/main. XAPK Tigrinho Aposta 2.0.0 vc3 from AndroidPot (~5.8 MB): base + language/density splits (no asset split). Play «Tigrinho Aposta» ≠ application-label «Plunder of the Galleon». TWA https://plunderofthegalleon.win/. PairIP Play license. OneSignal 5.9.2. agent_src via jadx 1.5.3, not committed. config.ru = splits0 language split; theme.app = style Theme.App.",
+  "errors": []
+}

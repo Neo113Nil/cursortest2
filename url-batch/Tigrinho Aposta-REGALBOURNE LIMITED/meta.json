@@ -1,0 +1,28 @@
+{
+  "app_id": "com.regalbournegames.plunderofthegalleon",
+  "title": "Tigrinho Aposta",
+  "apk_label": "Plunder of the Galleon",
+  "developer": "REGALBOURNE LIMITED",
+  "package": "com.regalbournegames.plunderofthegalleon",
+  "folder": "Tigrinho Aposta-REGALBOURNE LIMITED",
+  "path": "url-batch/Tigrinho Aposta-REGALBOURNE LIMITED",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "cloaking_reason": "белая оболочка: Play «Tigrinho Aposta» ≠ application-label «Plunder of the Galleon». MainActivity сразу открывает Trusted Web Activity / Custom Tabs на https://plunderofthegalleon.win/ с query ext_uuid (installation_id) и bundle_id. push_url из OneSignal принимается только с тем же host. Отдельного native-гейта оффер/белая нет — весь трафик идёт на сайт.",
+  "version_name": "2.0.0",
+  "version_code": "3",
+  "source": "androidpot XAPK vc3 (Play Collector folder url-batch/Tigrinho Aposta-REGALBOURNE LIMITED was missing on origin/main)",
+  "twa_url": "https://plunderofthegalleon.win/",
+  "link_open_mode": "Trusted Web Activity / Custom Tabs (LauncherActivity), запасной WebViewFallbackActivity",
+  "agp": "8.13.2",
+  "kotlin": "да",
+  "minSdk": 26,
+  "targetSdk": 36,
+  "sha256_base": "56de78760ad38910e7c81269af44fe3fd36d656db60ddcd62165044847e6571a",
+  "onesignal_app_id": "2938423b-50a9-4ebc-86f4-4ded471fddfc",
+  "play": {
+    "title": "Tigrinho Aposta",
+    "developer": "REGALBOURNE LIMITED",
+    "url": "https://play.google.com/store/apps/details?id=com.regalbournegames.plunderofthegalleon"
+  }
+}
