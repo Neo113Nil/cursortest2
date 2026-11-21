@@ -1,0 +1,28 @@
+{
+  "app_id": "com.moss.bloom.coil.curtain.trail.slotbox",
+  "title": "Slotbox",
+  "apk_label": "Win",
+  "developer": "OBELYSQ S A",
+  "package": "com.moss.bloom.coil.curtain.trail.slotbox",
+  "folder": "Slotbox-OBELYSQ S A",
+  "path": "url-batch/Slotbox-OBELYSQ S A",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "version_name": "1.0",
+  "version_code": "97",
+  "source": "APKCube security scan of Play-signed APKS vc97 (Play Collector folder missing in git; APK binary not saved)",
+  "gate_url": "",
+  "link_open_mode": "",
+  "agp": "",
+  "kotlin": "нет",
+  "minSdk": 26,
+  "targetSdk": 36,
+  "sha256_base": "9d0db797fe696e0570c3ac29c085325d166fa3112629684234f28d1d9493d939",
+  "url": "https://play.google.com/store/apps/details?id=com.moss.bloom.coil.curtain.trail.slotbox",
+  "cloaking_reason": "белая оболочка: карточка Play «Slotbox» ≠ application-label «Win». INTERNET + PairIP + CHECK_LICENSE. Точный URL гейта из бинаря не снят.",
+  "brief_report": {
+    "cloaking": "да",
+    "domains": [],
+    "collected_data": []
+  }
+}

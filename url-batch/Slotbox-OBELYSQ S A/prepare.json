@@ -1,0 +1,45 @@
+{
+  "ok": false,
+  "source": "Play identity locally; APKCube security scan of Play-signed APKS 1.0 vc97; Play Collector folder url-batch/Slotbox-OBELYSQ S A was missing on origin/main",
+  "package": "com.moss.bloom.coil.curtain.trail.slotbox",
+  "version_name": "1.0",
+  "version_code": 97,
+  "app_label": "Win",
+  "play_title": "Slotbox",
+  "developer": "OBELYSQ S A",
+  "sha256": "9d0db797fe696e0570c3ac29c085325d166fa3112629684234f28d1d9493d939",
+  "agent_base_apk": "",
+  "jadx": {
+    "ok": false,
+    "out_dir": "agent_src",
+    "skipped": true,
+    "base_apk": "",
+    "note": "agent_base.apk and agent_src.zip absent on origin; APKPure 404; APKCube download-token 403 after PairIP hold-to-verify"
+  },
+  "cloaking": "да",
+  "gate_url": "",
+  "link_open_mode": "",
+  "minSdk": 26,
+  "targetSdk": 36,
+  "pairip": true,
+  "permissions": [
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.INTERNET",
+    "android.permission.VIBRATE",
+    "com.android.vending.CHECK_LICENSE",
+    "com.moss.bloom.coil.curtain.trail.slotbox.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "analysis_files": [
+    "domain_checks.json",
+    "domain_checks.md",
+    "meta.json",
+    "cloaking_hints.md",
+    "report.pdf"
+  ],
+  "note": "Play «Slotbox» ≠ application-label «Win». White copy is creative/visual tools. APKCube scan: INTERNET, PairIP, CHECK_LICENSE, minSdk 26, targetSdk 36, vc 97. domain_checks empty. Binary not committed.",
+  "errors": [
+    "Play Collector folder missing on origin/main",
+    "APKPure 404 for this package",
+    "APKCube download-token 403 after PairIP hold (download not saved)"
+  ]
+}
