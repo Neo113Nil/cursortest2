@@ -1,0 +1,35 @@
+{
+  "ok": true,
+  "source": "androidpot.net XAPK (Play Collector folder url-batch/SportySpin-BUILDING COMMUNITIES INITIATIVE, INC was missing on origin/main)",
+  "package": "com.haryananewspaper.newsindia",
+  "version_name": "9.8.5",
+  "version_code": 994,
+  "app_label": "Sisal",
+  "play_title": "SportySpin",
+  "developer": "BUILDING COMMUNITIES INITIATIVE, INC",
+  "agent_base_apk": "agent_base.apk",
+  "apks": [
+    "com.haryananewspaper.newsindia.apk",
+    "config.ar.apk",
+    "config.de.apk",
+    "config.en.apk",
+    "config.es.apk",
+    "config.fr.apk",
+    "config.hi.apk",
+    "config.in.apk",
+    "config.ja.apk",
+    "config.pt.apk",
+    "config.ru.apk",
+    "config.xxhdpi.apk",
+    "config.zh.apk"
+  ],
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "out_dir": "agent_src",
+    "skipped": false,
+    "base_apk": "agent_base.apk",
+    "note": "decompiled locally; agent_src not committed; jadx 1.5.3"
+  },
+  "note": "Play Collector folder was missing on origin/main. XAPK SportySpin 9.8.5 (vc 994) from AndroidPot (~12 MB): base 11.6 MB + language/dpi splits. SHA-256 base 34a91b9eeed5753675548abc2f6f96a366a12caf00a6ca744b8fb3c810bb2460. Play «SportySpin» ≠ application-label «Sisal». Cloak=да. Play Integrity gate + WebView https://clodabu.xyz/5h4BQnxBp/. agent_src via jadx 1.5.3, not committed."
+}

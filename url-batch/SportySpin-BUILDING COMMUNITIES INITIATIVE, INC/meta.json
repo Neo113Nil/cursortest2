@@ -1,0 +1,23 @@
+{
+  "app_id": "com.haryananewspaper.newsindia",
+  "title": "SportySpin (в приложении: Sisal)",
+  "apk_label": "Sisal",
+  "play_title": "SportySpin",
+  "developer": "BUILDING COMMUNITIES INITIATIVE, INC",
+  "package": "com.haryananewspaper.newsindia",
+  "folder": "SportySpin-BUILDING COMMUNITIES INITIATIVE, INC",
+  "path": "url-batch/SportySpin-BUILDING COMMUNITIES INITIATIVE, INC",
+  "store_title_mismatch": true,
+  "cloaking": "да",
+  "cloaking_reason": "Play «SportySpin» ≠ APK-label «Sisal». SplashActivity расшифровывает ual → https://clodabu.xyz/5h4BQnxBp/, затем Play Integrity (cloudProject 318724638109, decodeIntegrityToken). isT=T → AdvertisingActivity WebView; isT=NT → MainActivity. mb0.shouldOverrideUrlLoading + hybid WebView.loadUrl.",
+  "version_name": "9.8.5",
+  "version_code": "994",
+  "source": "androidpot.net XAPK (Play Collector folder was missing on origin/main)",
+  "agp": "9.1.1",
+  "kotlin": "да (kotlinx-coroutines 1.10.1)",
+  "minSdk": 32,
+  "targetSdk": 36,
+  "gate": "Play Integrity decodeIntegrityToken + https://clodabu.xyz/5h4BQnxBp/",
+  "webview": "net.pubnative.library.layouts.AdvertisingActivity / hybid WebView.loadUrl",
+  "sha256_base": "34a91b9eeed5753675548abc2f6f96a366a12caf00a6ca744b8fb3c810bb2460"
+}

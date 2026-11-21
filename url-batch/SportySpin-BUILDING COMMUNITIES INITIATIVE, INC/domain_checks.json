@@ -1,0 +1,13 @@
+{
+  "domains": [
+    {
+      "domain": "clodabu.xyz",
+      "virustotal_url": "https://www.virustotal.com/gui/domain/clodabu.xyz",
+      "detections": "нет",
+      "vendors": {},
+      "redirects_to": "https://clodabu.xyz/5h4BQnxBp/ → https://clodabu.xyz/5h4BQnxBp/gdpr-policy",
+      "content_summary": "title: Privacy Policy. Страница политики конфиденциальности с кнопками Accept / Decline (id=accept, id=decline), скрипт shared/privacy.js вызывает Android.acceptGDPR / Android.declineGDPR",
+      "parked": "Cloudflare"
+    }
+  ]
+}
